@@ -13,12 +13,12 @@ wl.Descriptions():new_trainingsite_type {
       log = 1,
       stone = 3,
       tropicalwood = 2,
-      palmleaves = 1,
+      palmleaves = 2,
       reed = 2,
-      cloth = 1,
+      cloth = 2,
       diamond = 3,
       copper = 1,
-      gold = 2
+      gold = 1
    },
    return_on_dismantle = {
       stone = 1,
@@ -52,11 +52,12 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    aihints = {
-      prohibited_till = 2400,
+      prohibited_till = 1440,
+      forced_after = 3300,
       basic_amount = 1,
       very_weak_ai_limit = 1,
       weak_ai_limit = 1,
-      normal_ai_limit = 2,
+--      normal_ai_limit = 2,
    },
 
    working_positions = {

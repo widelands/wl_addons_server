@@ -15,13 +15,13 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 1800,
+      prohibited_till = 1260,
       space_consumer = true,
       supports_production_of = { "cassavaleaves" },
-      basic_amount = 3,
-      very_weak_ai_limit = 3,
-      weak_ai_limit = 5,
-      normal_ai_limit = 8,
+      basic_amount = 2,
+      very_weak_ai_limit = 2,
+      weak_ai_limit = 3,
+      normal_ai_limit = 4,
    },
 
    working_positions = {

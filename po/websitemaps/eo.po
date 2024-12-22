@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,12 +10,11 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-17 03:09+0100\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
-"Language-Team: Esperanto (https://app.transifex.com/widelands/teams/35159/"
-"eo/)\n"
-"Language: eo\n"
+"Language-Team: Esperanto (https://app.transifex.com/widelands/teams/35159/eo/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: eo\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: input:6 standard
@@ -500,30 +499,23 @@ msgstr ""
 msgid ""
 "Sire, let me inform you about the surrounding tribes.\n"
 "<br><br>\n"
-"From the north we are endangered by a belligerent tribe, led by warlord "
-"Törver,\n"
-"that is rapidly building up its armies. They may soon have become too strong "
-"to\n"
+"From the north we are endangered by a belligerent tribe, led by warlord Törver,\n"
+"that is rapidly building up its armies. They may soon have become too strong to\n"
 "be defeated.\n"
 "<br><br>\n"
 "A large area to the north-east is agonized by a wild horde of unfettered\n"
 "pirates, led by their insane Arvid. Their presence blocks our ways to other\n"
 "tribes.\n"
 "<br><br>\n"
-"Over the river lies the prosperous land of the mysterious king Runar. We "
-"have\n"
-"been in war with him before the pirates occupied the eastern area. His "
-"strenth\n"
+"Over the river lies the prosperous land of the mysterious king Runar. We have\n"
+"been in war with him before the pirates occupied the eastern area. His strenth\n"
 "is based on his vaste industries and large armies.\n"
 "<br><br>\n"
-"The area beyond the pirates belongs to a developed tribe led by their "
-"mighty\n"
-"chieftain Hjalmar. They have had a long time of preparement to build up "
-"their\n"
+"The area beyond the pirates belongs to a developed tribe led by their mighty\n"
+"chieftain Hjalmar. They have had a long time of preparement to build up their\n"
 "deterring armies.\n"
 "<br><br>\n"
-"The situation looks quite perilous and my advice is that we direct our "
-"efforts\n"
+"The situation looks quite perilous and my advice is that we direct our efforts\n"
 "towards building up a strong army."
 msgstr ""
 
@@ -659,7 +651,7 @@ msgstr ""
 msgid "vtst-mountains"
 msgstr ""
 
-#: input:8 standard
+#: input:8 standard standard input:8
 msgid "vtst-rivers"
 msgstr ""
 
@@ -711,7 +703,8 @@ msgid "2 Spieler entfernt, Landschaft verändert, Häfen hinzugefügt"
 msgstr ""
 
 #: input:10 standard
-msgid "2 Spieler hinzugefügt, Gelände verändert und Rohstoffe besser verteilt."
+msgid ""
+"2 Spieler hinzugefügt, Gelände verändert und Rohstoffe besser verteilt."
 msgstr ""
 
 #: input:10 standard
@@ -735,8 +728,8 @@ msgid ""
 "A fair 8-player map with natural geographic features dividing land. The "
 "geographic features are meant to be somewhat realistic with rivers flowing "
 "from glaciers in the mountains through hills and flatlands into the sea. "
-"Gold is a much rarer resource compared to coal and iron. Different resources "
-"are often found at some distance to each other."
+"Gold is a much rarer resource compared to coal and iron. Different resources"
+" are often found at some distance to each other."
 msgstr ""
 
 #: input:10 standard
@@ -789,19 +782,19 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"Balanced map for multiplayer use, but as the name suggests, lack of building "
-"spaces makes this tricky. Resource distribution makes this still more "
+"Balanced map for multiplayer use, but as the name suggests, lack of building"
+" spaces makes this tricky. Resource distribution makes this still more "
 "complicated as the big bananas have mostly granite and coal, small black "
 "banana islands are full of iron and central mountain full of gold (but "
 "there's forest on top of it). Alternatively one can pursue all these things "
 "more safely from beyond the seas, although each island has at least two "
 "possible port locations. Black mountain isles are for iron and some coal, "
 "medium banana islands (half-rotten looking) for gold and some granite, and "
-"the green islands for increased production capabilities. For landmarks there "
-"are three landmarks to discover and three to fight for on the central island "
-"complex and none beyond that. DO NOT PLAY THIS AGAINST COMPUTER, EXEPT IN "
-"LEARNING PURPOSES OR AS NON-COMPETITIVE CHALLENGE. DO NOT DISABLE START "
-"POSITIONS."
+"the green islands for increased production capabilities. For landmarks there"
+" are three landmarks to discover and three to fight for on the central "
+"island complex and none beyond that. DO NOT PLAY THIS AGAINST COMPUTER, "
+"EXEPT IN LEARNING PURPOSES OR AS NON-COMPETITIVE CHALLENGE. DO NOT DISABLE "
+"START POSITIONS."
 msgstr ""
 
 #: input:10 standard
@@ -825,8 +818,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Blue - Ring of Water, Red - Monastery of Innos, Yellow - Canyon Orcs, Green "
-"- Orcs Village, Gray - Continent Orcs, Orange - Khorinis, Violet - Paladins, "
-"White - Onar's Farm, Azure - Pirates, Burgund - Bandits, Cream - Xardas"
+"- Orcs Village, Gray - Continent Orcs, Orange - Khorinis, Violet - Paladins,"
+" White - Onar's Farm, Azure - Pirates, Burgund - Bandits, Cream - Xardas"
 msgstr ""
 
 #: input:10 standard
@@ -835,19 +828,19 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"DE :  Eine Karte für normale Runden.  Wasser und Berge sind direkt neben der "
-"Startposition.   Es gibt viele Bäume, Felsen, Tiere und Fische.  Das Gelände "
-"ist eben und bietet maximal viel Platz fürs bauen.  Fähren können gebaut und "
-"auf Wasserwegen bis zu einer Länge von 20 Feldern eingesetzt werden.  "
-"Schiffe können gebaut werden und rund um den See sind überall Hafen "
-"Bauplätze.  Grundwasser ist überall vorhanden, jedoch dünn verteilt.  Alle "
+"DE :  Eine Karte für normale Runden.  Wasser und Berge sind direkt neben der"
+" Startposition.   Es gibt viele Bäume, Felsen, Tiere und Fische.  Das "
+"Gelände ist eben und bietet maximal viel Platz fürs bauen.  Fähren können "
+"gebaut und auf Wasserwegen bis zu einer Länge von 20 Feldern eingesetzt "
+"werden.  Schiffe können gebaut werden und rund um den See sind überall Hafen"
+" Bauplätze.  Grundwasser ist überall vorhanden, jedoch dünn verteilt.  Alle "
 "Erze in den Bergen sind reichlich vorhanden.  6 Artefakte existieren "
 "symetrisch angeordnet auf der Karte.    EN :  A Map for normal Rounds.  "
 "Water and Mountains are direct near the starting Position.  It exist many "
 "Trees, Rocks, Animals and Fishes.  The Area have no extrem height different "
 "and give maxium place for building.  Tiny Ships can builded and can working "
-"on see ways up to length of 20 fields.  Normal Ships can builded and overall "
-"around the sea are building places for ports.  Underground Water exist "
+"on see ways up to length of 20 fields.  Normal Ships can builded and overall"
+" around the sea are building places for ports.  Underground Water exist "
 "overall but on small ressourse layer.  All Ores in the Mountains exiting in "
 "huge.  6 Artefacts are symetric on the Map."
 msgstr ""
@@ -889,8 +882,8 @@ msgid ""
 "building sites, one harbor building site in each corner of the island. All "
 "islands are the same size and arranged evenly, so that the distance between "
 "the individual islands is as equal as possible. The starting position is in "
-"the middle of the island and due to its proximity to the coast, it is hardly "
-"protected from landings. Each island is sufficiently large and therefore "
+"the middle of the island and due to its proximity to the coast, it is hardly"
+" protected from landings. Each island is sufficiently large and therefore "
 "offers sufficient building space."
 msgstr ""
 
@@ -915,8 +908,8 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"Eine sehr kleine Karte mit Platz für bis zu 16 Spieler. Jeder Startpunkt ist "
-"gleich. Jeden Spieler stehen alle Ressoursen in begrenzten Mengen zur "
+"Eine sehr kleine Karte mit Platz für bis zu 16 Spieler. Jeder Startpunkt ist"
+" gleich. Jeden Spieler stehen alle Ressoursen in begrenzten Mengen zur "
 "Verfügung."
 msgstr ""
 
@@ -925,16 +918,16 @@ msgid ""
 "Eisenhold - versteckte einst riesige Schätze in den Wäldern.  Die Eichen "
 "mögen zahlreich im Westen sein, die Legende erzählt, dass man sich "
 "entscheiden muss - unendlicher Reichtum, entscheide sich der Wanderer "
-"Eisenholz zu folgen oder aber die Lösung des Raumzeit Dilemma, folge man den "
-"Flüssen nur lange genug nach Norden."
+"Eisenholz zu folgen oder aber die Lösung des Raumzeit Dilemma, folge man den"
+" Flüssen nur lange genug nach Norden."
 msgstr ""
 
 #: input:10 standard
 msgid ""
-"Finally! You have reached the far south and set up a base, but it seems that "
-"the Old Antarctic itself is still not very close. It is told that the land "
-"is so rich that gold stones cover its coast. You have to cut down some trees "
-"and build a ship to continue your journey. Otherwise, there will be no "
+"Finally! You have reached the far south and set up a base, but it seems that"
+" the Old Antarctic itself is still not very close. It is told that the land "
+"is so rich that gold stones cover its coast. You have to cut down some trees"
+" and build a ship to continue your journey. Otherwise, there will be no "
 "precious gold left for you. You may also run out of coal very soon. Your "
 "expedition is not the only one that strives to gain the fabulous wealth and "
 "everlasting fame."
@@ -976,8 +969,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "In the middle of summer, a series of volcanic eruptions drew the winter in. "
-"Suddenly, the sun seemed to be gone and the only light and heat sources left "
-"were those that enforced this dramatic change. Continents, oceans and seas "
+"Suddenly, the sun seemed to be gone and the only light and heat sources left"
+" were those that enforced this dramatic change. Continents, oceans and seas "
 "are frozen now, only the volcanic islands seem to be left as habitable land."
 msgstr ""
 
@@ -1014,8 +1007,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Keine Grenzen sind auf dieser Karte gesetzt, ob du ganz im Wald startetest "
-"als Urwaldvolk oder im Gebirge oder im Lande der Dunklen  -  Teams:  1-8 die "
-"Guten  9-16 Ödlandvölker  -  1,2,3 : die gestrandeten Seefahrer  16,8,9 : "
+"als Urwaldvolk oder im Gebirge oder im Lande der Dunklen  -  Teams:  1-8 die"
+" Guten  9-16 Ödlandvölker  -  1,2,3 : die gestrandeten Seefahrer  16,8,9 : "
 "die Alpenvölker  - - - - - - - - - - -  Wenn ihr zu viert seid, spielt die "
 "Karte als 4 Seefahrer  -  "
 msgstr ""
@@ -1052,7 +1045,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Landschaft und Bergwerke hinzugefügt/verbessert.  Massenhaft unnütze "
-"''Unbewegliche Objekte'' entfernt.  Inseln verbunden.  2 Spieler hinzugefügt."
+"''Unbewegliche Objekte'' entfernt.  Inseln verbunden.  2 Spieler "
+"hinzugefügt."
 msgstr ""
 
 #: input:10 standard
@@ -1118,8 +1112,8 @@ msgid ""
 "for ages. But now our lives should change. Wise men of our tribe say that a "
 "new island has been found, very rich and large. They call it Kalamanthean. "
 "And this new land is promising a cultural growth our tribe is missing. We "
-"just have to build a ship very quickly and sail to the north and to the west "
-"to reach this blessed land of welfare."
+"just have to build a ship very quickly and sail to the north and to the west"
+" to reach this blessed land of welfare."
 msgstr ""
 
 #: input:10 standard
@@ -1134,10 +1128,10 @@ msgstr ""
 msgid ""
 "Perfect map for roleplaying historical empires.    ///Several days of work "
 "and many maps have been implemented to create the most accurate europe map "
-"in Widelands!     ///EASY: Ottoman Empire, Sweden, Russian Empire, "
-"Carthage    ///MEDIUM: French Empire, British Empire, Spain, German Empire, "
-"Roman Empire    ///HARD: Egypt, Poland, Greece    ///SUGGESTIONS FOR "
-"IMPROVMENTS IN THE COMMENTS!!!  I will Update it.  "
+"in Widelands!     ///EASY: Ottoman Empire, Sweden, Russian Empire, Carthage"
+"    ///MEDIUM: French Empire, British Empire, Spain, German Empire, Roman "
+"Empire    ///HARD: Egypt, Poland, Greece    ///SUGGESTIONS FOR IMPROVMENTS "
+"IN THE COMMENTS!!!  I will Update it.  "
 msgstr ""
 
 #: input:10 standard
@@ -1191,17 +1185,17 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Template of the new version of the popular Three Warriors map. Extend to a "
-"player number of your choice with the ''copy paste script'' found in the map "
-"editor forum. Needs a dev build for debug console. Place the script in your "
-"main (widelands.exe) folder. Open with text editor and check player number "
+"player number of your choice with the ''copy paste script'' found in the map"
+" editor forum. Needs a dev build for debug console. Place the script in your"
+" main (widelands.exe) folder. Open with text editor and check player number "
 "and the coordinates in the loops to stamp down the correct part. Save. "
-"Expand map dimensions and open debug console F6. Type >dofile(''copypaste."
-"lua'')<. Enter. Wait, it can take some time with bigger maps. Place animals "
-"and starting points for new players. Feel pround like a new map god and have "
-"fun ;)"
+"Expand map dimensions and open debug console F6. Type "
+">dofile(''copypaste.lua'')<. Enter. Wait, it can take some time with bigger "
+"maps. Place animals and starting points for new players. Feel pround like a "
+"new map god and have fun ;)"
 msgstr ""
 
-#: input:10 standard
+#: input:10 standard standard input:10
 msgid ""
 "Thanks to the limited resources around your headquarters, build ships to "
 "explore rich islands."
@@ -1209,9 +1203,10 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"The gods who created this piece of landscape must be crazy. They proove your "
-"skills in naval warefare and managing a big economy with long transportation "
-"routes. They also try to madden you in this labyrinth of mountains."
+"The gods who created this piece of landscape must be crazy. They proove your"
+" skills in naval warefare and managing a big economy with long "
+"transportation routes. They also try to madden you in this labyrinth of "
+"mountains."
 msgstr ""
 
 #: input:10 standard
@@ -1233,10 +1228,10 @@ msgstr ""
 msgid ""
 "These two large islands surrounded by small islands provide an excellent "
 "place to build civilizations. However, there are more than two tribes "
-"wanting to settle here. There were people living here before and they placed "
-"standing stones to mark places where they found good fishing.  They found "
-"gold on the small  islands and moved some to their villages. They burried it "
-"near places they used for shipping and marked it with stones."
+"wanting to settle here. There were people living here before and they placed"
+" standing stones to mark places where they found good fishing.  They found "
+"gold on the small  islands and moved some to their villages. They burried it"
+" near places they used for shipping and marked it with stones."
 msgstr ""
 
 #: input:10 standard
@@ -1256,9 +1251,10 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"To establish a smuggling route, you need to build a warehouse on a sending/"
-"receiving spot while your team mate has to build one on the corresponding "
-"receiving/sending spot. A ware is then transported every 10 seconds."
+"To establish a smuggling route, you need to build a warehouse on a "
+"sending/receiving spot while your team mate has to build one on the "
+"corresponding receiving/sending spot. A ware is then transported every 10 "
+"seconds."
 msgstr ""
 
 #: input:10 standard
@@ -1270,8 +1266,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Varus befand sich im Jahre 9 n. Chr. weit im Inneren Germaniens. Die Römer "
-"besaßen zwar einige Teile dieses Landes, doch kein zusammenhängendes Gebiet. "
-"Varus’ Gegenspieler war Arminius, ein Fürst der Cherusker. Anders als sein "
+"besaßen zwar einige Teile dieses Landes, doch kein zusammenhängendes Gebiet."
+" Varus’ Gegenspieler war Arminius, ein Fürst der Cherusker. Anders als sein "
 "Bruder Flavus, der Rom immer treu blieb, wandte sich Arminius gegen die "
 "römische Oberherrschaft."
 msgstr ""
@@ -1282,8 +1278,8 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"Vor einigen Jahren drang das Imperia Resica ion das Gebiet der Belearen ein. "
-"Da das Imperium nur wenig Platz beanspruchte, ließen die Belebaren das "
+"Vor einigen Jahren drang das Imperia Resica ion das Gebiet der Belearen ein."
+" Da das Imperium nur wenig Platz beanspruchte, ließen die Belebaren das "
 "Imperium in Ruhe bis die Friesen auftauchten. Da die Belebaren und das "
 "Imperia Resica die vom Norden kommenden Friesen als Gefahr sahen taten sie "
 "sich zusammen."
@@ -1291,10 +1287,10 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"We don't have enough space and our headquarter is in danger here. We need to "
-"build a colony on the other side of this lake. We will gain more land and a "
-"hideaway in case an enemy appears on this side. But I am afraid we will not "
-"reach The Main Landbelt without fight."
+"We don't have enough space and our headquarter is in danger here. We need to"
+" build a colony on the other side of this lake. We will gain more land and a"
+" hideaway in case an enemy appears on this side. But I am afraid we will not"
+" reach The Main Landbelt without fight."
 msgstr ""
 
 #: input:10 standard
@@ -1352,8 +1348,8 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"an archipelago with one large island in the centre. All of the small islands "
-"are inhabitable and each has different resources."
+"an archipelago with one large island in the centre. All of the small islands"
+" are inhabitable and each has different resources."
 msgstr ""
 
 #: input:10 standard
@@ -1404,17 +1400,17 @@ msgstr ""
 msgid ""
 "Build a ship with the gold from the small mine that is located near your "
 "closest harbour site. Previous inhabitants have marked the mine with small "
-"rocks and a standing stone. There are places where the water is too wide for "
-"Ware carriers to cross on foot. Use a ferry to overcome this problem. "
+"rocks and a standing stone. There are places where the water is too wide for"
+" Ware carriers to cross on foot. Use a ferry to overcome this problem. "
 msgstr ""
 
 #: input:11 standard
 msgid ""
 "Collectors and Territorial Lord recommended. Also suitable for a peaceful "
 "mode of play. 2 teams possible, yellow and blue should play against each "
-"other. While playing a single player, you have to count with the possibility "
-"that your opponents may not start an expedition at all and may rather choose "
-"a land path."
+"other. While playing a single player, you have to count with the possibility"
+" that your opponents may not start an expedition at all and may rather "
+"choose a land path."
 msgstr ""
 
 #: input:11 standard
@@ -1422,8 +1418,9 @@ msgid ""
 "DE :  Gold befindet sich in den Berg Ecken.  Auch wenn man Schiffe bauen "
 "kann ist es nur begrenzt sinnvoll.  Gestein Vorkommen sind im Berg direkt "
 "neben deiner Startposition.    EN :  Gold existing in the Edges of the "
-"Mountains.  It is possible to build normal Ships but is it limited useable.  "
-"Stone Ressourses are in the Mountains directly near your Starting Position."
+"Mountains.  It is possible to build normal Ships but is it limited useable."
+"  Stone Ressourses are in the Mountains directly near your Starting "
+"Position."
 msgstr ""
 
 #: input:11 standard
@@ -1456,8 +1453,8 @@ msgstr ""
 msgid ""
 "For hundreds of years this island was kept as sanctuary of the Gods. No "
 "human ever ventured to set a foot on it. But now, that a tribe was finally "
-"barefaced enough to settle on the coast of that island, a lot other followed "
-"afterwards."
+"barefaced enough to settle on the coast of that island, a lot other followed"
+" afterwards."
 msgstr ""
 
 #: input:11 standard
@@ -1467,9 +1464,10 @@ msgid ""
 "Schiffe an der richtigen Position gebaut werden. Ein Fluss führt über eine "
 "winzige Hafeninsel zu einer orangefarbenen Insel mit viel Metall. Dieser "
 "Fluss ist jedoch ein längerer Weg, als andere Wege zu weniger Metall. "
-"Überlege deshalb ganz genau, in welchem Hafen du für eine weitere Expedition "
-"das anfangs wenige Gold ausgibst. Wenn du das Gold nicht für Häfen ausgibst, "
-"fehlt dir der Zugang zu weiterem Gold für Häfen und Expeditionen zum Gegner."
+"Überlege deshalb ganz genau, in welchem Hafen du für eine weitere Expedition"
+" das anfangs wenige Gold ausgibst. Wenn du das Gold nicht für Häfen "
+"ausgibst, fehlt dir der Zugang zu weiterem Gold für Häfen und Expeditionen "
+"zum Gegner."
 msgstr ""
 
 #: input:11 standard
@@ -1519,14 +1517,14 @@ msgstr ""
 
 #: input:11 standard
 msgid ""
-"Places for medium and big buildings are in the places where the city, farms, "
-"ruins and other buildings are in Gothic game.  No coal.  Stone: in place of "
-"caves.  Iron: in place of magic ore mines, Greg's treasures in Jarkendar, a "
-"cave on Pirates beach, a cave north to the city, a collapsed mine next to "
+"Places for medium and big buildings are in the places where the city, farms,"
+" ruins and other buildings are in Gothic game.  No coal.  Stone: in place of"
+" caves.  Iron: in place of magic ore mines, Greg's treasures in Jarkendar, a"
+" cave on Pirates beach, a cave north to the city, a collapsed mine next to "
 "Xardas, the Sleeper's Temple.  Gold: dragons treasures,  thiefs treasure, a "
 "bandits gold mine, a Test of Fire cave next to black troll, a cave next to "
-"the pyramid, a cave on the beach next to Pirates beach.  The are two ways in "
-"the mountains from Khornis to Jarkendar and one long way in the mountains "
+"the pyramid, a cave on the beach next to Pirates beach.  The are two ways in"
+" the mountains from Khornis to Jarkendar and one long way in the mountains "
 "from Mine Valley to Jarkendar. "
 msgstr ""
 
@@ -1546,16 +1544,15 @@ msgstr ""
 #: input:11 standard
 msgid ""
 "Rich on resources. Not balanced for 4 players (red and blue are in the "
-"middle, harder to win). Ideal for 2 teams (red+blue x yellow+green) or for 2 "
-"players (red x blue or yellow x green). The yellow-green combination takes "
+"middle, harder to win). Ideal for 2 teams (red+blue x yellow+green) or for 2"
+" players (red x blue or yellow x green). The yellow-green combination takes "
 "more time to win as the starting positions are far away."
 msgstr ""
 
 #: input:11 standard
 msgid ""
-"Rohstoffe sind mit Bedacht gesetzt, es gibt aber immer mehrere "
-"Möglichkeiten  weiß: der Seefahrer blau: Im Hochgebirge (Tipp) dunkelgrün: "
-"Im Ödland"
+"Rohstoffe sind mit Bedacht gesetzt, es gibt aber immer mehrere Möglichkeiten"
+"  weiß: der Seefahrer blau: Im Hochgebirge (Tipp) dunkelgrün: Im Ödland"
 msgstr ""
 
 #: input:11 standard
@@ -1563,7 +1560,8 @@ msgid "Seefahrt"
 msgstr ""
 
 #: input:11 standard
-msgid "Seefahrt, entspanntes Spielen da Feind nicht so schnell angreifen kann."
+msgid ""
+"Seefahrt, entspanntes Spielen da Feind nicht so schnell angreifen kann."
 msgstr ""
 
 #: input:11 standard
@@ -1578,8 +1576,8 @@ msgstr ""
 msgid ""
 "The map is balanced for 2 or 4  players. Orange player (Grand Bay) and grey "
 "player (The City of Light) are optional. The first one has not enough "
-"resources near his base, the second one is in the middle of the map. This is "
-"a non-addon version of the ''Tropical Mauritius'' map."
+"resources near his base, the second one is in the middle of the map. This is"
+" a non-addon version of the ''Tropical Mauritius'' map."
 msgstr ""
 
 #: input:11 standard
@@ -1596,8 +1594,8 @@ msgid ""
 "enemy to reach The Main Landbelt from where you can access to any corner of "
 "this map. You can also find 4 artifacts there. Your homeland is hard to "
 "defend. Expect that you may lose it, but try to defend it. If you didn't, "
-"your enemy would have an advantage. 1v1, 2 teams or 2 humans with 2 AIs also "
-"possible."
+"your enemy would have an advantage. 1v1, 2 teams or 2 humans with 2 AIs also"
+" possible."
 msgstr ""
 
 #: input:11 standard
@@ -1621,8 +1619,8 @@ msgstr ""
 
 #: input:11 standard
 msgid ""
-"Use the gold near your village to build ships before you build up your army. "
-"Locate gold on the small islands to pay for your army. You need to also be "
+"Use the gold near your village to build ships before you build up your army."
+" Locate gold on the small islands to pay for your army. You need to also be "
 "aware that some very small islands have never been explored and do not have "
 "any port space yet."
 msgstr ""
@@ -1633,7 +1631,7 @@ msgid ""
 "Artefakte, alle auf der Tal-Mittelpunkt-Achse verteilt"
 msgstr ""
 
-#: input:11 standard
+#: input:11 standard standard input:11
 msgid ""
 "Water along the rivers. Fish in the ponds but not in the rivers. Two large "
 "islands with mountains rich of resources."
@@ -1643,8 +1641,8 @@ msgstr ""
 msgid ""
 "Wide rivers are navigable to create a ''trade network''  All Players have "
 "their own Challenges, but are relatively balanced to be playable:  ///1) "
-"British Empire: create sustainable colonies ///2) Russian Empire: Very large "
-"distances  ..."
+"British Empire: create sustainable colonies ///2) Russian Empire: Very large"
+" distances  ..."
 msgstr ""
 
 #: input:11 standard
@@ -1688,8 +1686,9 @@ msgid ""
 "Finally! We have just taken our first step towards victory! Last night, we "
 "landed on the forbidden island and defeated the few guards that were "
 "watching the north-western part of the island. I am quite sure that none of "
-"the other warlords has detected us so far, so we should keep quiet and build "
-"up our infrastructure. Soon we will be strong enough to raid their positions."
+"the other warlords has detected us so far, so we should keep quiet and build"
+" up our infrastructure. Soon we will be strong enough to raid their "
+"positions."
 msgstr ""
 
 #: input:15 standard
@@ -1705,15 +1704,16 @@ msgstr ""
 
 #: input:17 standard
 msgid ""
-"You can see the number of wares traded at any time in the general statistics "
-"menu. Good luck!"
+"You can see the number of wares traded at any time in the general statistics"
+" menu. Good luck!"
 msgstr ""
 
 #: input:21 standard
 msgid "Conquer pirate sentry"
 msgstr ""
 
-#. TRANSLATORS: the first 2 parameters are player names, the last parameter is '<number> points'
+#. TRANSLATORS: the first 2 parameters are player names, the last parameter is
+#. '<number> points'
 #: input:22 standard
 msgid ""
 "A new smuggling route from %1$s to %2$s has been established! Every ware "
@@ -1775,13 +1775,11 @@ msgstr ""
 
 #: input:33 standard
 msgid ""
-"Sire, although our soldiers would face any enemy without the slightest "
-"fear,\n"
+"Sire, although our soldiers would face any enemy without the slightest fear,\n"
 "our rival in the north is still stronger than all our armies combined. We\n"
 "should avoid to have a conflict until we are able to defeat it.\n"
 "<br><br>\n"
-"Be patient and recognize that a strong army is indispensable in this "
-"situation.\n"
+"Be patient and recognize that a strong army is indispensable in this situation.\n"
 "Törver has a very bad reputation."
 msgstr ""
 
@@ -1793,7 +1791,8 @@ msgstr ""
 msgid "Build three lumberjack’s houses, a forester’s house and a sawmill."
 msgstr ""
 
-#. TRANSLATORS: the first parameter is '<number> points', the last 2 parameters are player names
+#. TRANSLATORS: the first parameter is '<number> points', the last 2
+#. parameters are player names
 #: input:34 standard
 msgid "The smuggling route worth %1$s from %2$s to %3$s has been broken!"
 msgstr ""
@@ -1804,8 +1803,8 @@ msgstr ""
 
 #: input:35 standard
 msgid ""
-"Defeat Erwyn. He commands the strongest opposing military force left on this "
-"island."
+"Defeat Erwyn. He commands the strongest opposing military force left on this"
+" island."
 msgstr ""
 
 #: input:36 input:43 standard
@@ -1820,7 +1819,8 @@ msgstr ""
 msgid "Build a first outpost"
 msgstr ""
 
-#. TRANSLATORS: the first 4 parameters are player names, the last parameter is '<number> points'
+#. TRANSLATORS: the first 4 parameters are player names, the last parameter is
+#. '<number> points'
 #: input:39 standard
 msgid ""
 "Game over! %1$s and %2$s have won the game! %3$s and %4$s only managed to "
@@ -1881,10 +1881,8 @@ msgid ""
 "Sire, We received an alarming message from one of our explorers. Törver is\n"
 "expanding his front line and approaching our territory.\n"
 "<br><br>\n"
-"We cannot avoid to attack their armies forever. If we can conquer our "
-"northern\n"
-"enemy then we will enlarge our territory and find more resources to "
-"strengthen\n"
+"We cannot avoid to attack their armies forever. If we can conquer our northern\n"
+"enemy then we will enlarge our territory and find more resources to strengthen\n"
 "our armies.\n"
 "<br><br>\n"
 "We can then also use their access to the lake in order to explore more land."
@@ -1914,8 +1912,8 @@ msgstr ""
 
 #: input:51 standard
 msgid ""
-"Build a quarry close to the lots of stone. So we can free some building lots "
-"and get some valued resources."
+"Build a quarry close to the lots of stone. So we can free some building lots"
+" and get some valued resources."
 msgstr ""
 
 #: input:51 standard
@@ -1962,10 +1960,8 @@ msgstr ""
 
 #: input:58 standard
 msgid ""
-"Sire, the battle with Törver progresses gloriously and we have already "
-"beaten\n"
-"the strongest part of his army. But this enemy will not be defeated easily. "
-"In\n"
+"Sire, the battle with Törver progresses gloriously and we have already beaten\n"
+"the strongest part of his army. But this enemy will not be defeated easily. In\n"
 "a desperate move Törver has called in a group of hardened mercenaries."
 msgstr ""
 
@@ -2018,11 +2014,9 @@ msgstr ""
 #: input:65 standard
 msgid ""
 "We are pretty sure that we are not alone on the island. We do not know\n"
-"if the others on this island are friends or foes so we need to treat "
-"carefully.\n"
+"if the others on this island are friends or foes so we need to treat carefully.\n"
 "Expand and explore the island by building at least one habitat for a scout\n"
-"and military buildings. Favor Towers over other military buildings for "
-"their\n"
+"and military buildings. Favor Towers over other military buildings for their\n"
 "bigger view range."
 msgstr ""
 
@@ -2036,15 +2030,12 @@ msgstr ""
 
 #: input:66 standard
 msgid ""
-"Sire, now that we have conquered the land of Törver, we can make use of "
-"their\n"
-"excellent access to the adjacent great lake. A port in the north will give "
-"us\n"
+"Sire, now that we have conquered the land of Törver, we can make use of their\n"
+"excellent access to the adjacent great lake. A port in the north will give us\n"
 "better opportunities to have contact with other tribes.\n"
 "<br><br>\n"
 "In Törver's headquarters we found papers that describe the construction of\n"
-"ships. Unfortunately, the texts are written in a language that is unknown to "
-"us.\n"
+"ships. Unfortunately, the texts are written in a language that is unknown to us.\n"
 "Our wise men will try to translate these descriptions."
 msgstr ""
 
@@ -2154,8 +2145,8 @@ msgid ""
 "It is amazing how far one can see from the highest tower of the castle. We "
 "can watch the whole island. So now I wonder why Lanissa did not see us and "
 "thus did not prepare. Be that as it may, some things will never come to the "
-"light of day. The only important issue at the moment are the opposing troops "
-"still left. We have discovered enemy positions held by Erwyn to the north "
+"light of day. The only important issue at the moment are the opposing troops"
+" still left. We have discovered enemy positions held by Erwyn to the north "
 "and east of the castle. He is known to be a strong warlord and surely "
 "commands the strongest warriors. In the south, we caught sight of some food "
 "infrastructures guarded by Jomo – a younger warlord – and we should take "
@@ -2164,15 +2155,12 @@ msgstr ""
 
 #: input:79 standard
 msgid ""
-"Sire, our men have located an isolated enemy pirate sentry. The abandoned "
-"huts\n"
+"Sire, our men have located an isolated enemy pirate sentry. The abandoned huts\n"
 "indicate that there is gold nearby.\n"
 "<br><br>\n"
 "We should however be careful if we want to conquer the sentry. There can be\n"
-"more enemy buildings that are still out of sight, and the pirates are known "
-"to\n"
-"be very good fighters. It is best to establish a strong military presence "
-"here\n"
+"more enemy buildings that are still out of sight, and the pirates are known to\n"
+"be very good fighters. It is best to establish a strong military presence here\n"
 "before we proceed."
 msgstr ""
 
@@ -2218,15 +2206,15 @@ msgstr ""
 #: input:83 standard
 msgid ""
 "Our escape from the cursed island was a close one: we managed to load three "
-"ships and make our escape, but the currents of the sinking island tested our "
-"new ships and their design. "
+"ships and make our escape, but the currents of the sinking island tested our"
+" new ships and their design. "
 msgstr ""
 
 #: input:84 standard
 msgid ""
 "And one failed the test: the last days of loading was done in chaos and "
-"without much planing and so one of ships ended up carrying most of the heavy "
-"wares in our possession. "
+"without much planing and so one of ships ended up carrying most of the heavy"
+" wares in our possession. "
 msgstr ""
 
 #: input:84 input:93 standard
@@ -2275,14 +2263,14 @@ msgstr ""
 #: input:88 standard
 msgid ""
 "The fear was great in us all. We expected the other ships to be drowned as "
-"well, but they persisted. We escaped the island and began our smooth sailing "
-"to other costs. "
+"well, but they persisted. We escaped the island and began our smooth sailing"
+" to other costs. "
 msgstr ""
 
 #: input:89 standard
 msgid ""
-"Great! Erwyn gave up when he saw his last buildings burning down. That’s one "
-"less strong warlord on this island!"
+"Great! Erwyn gave up when he saw his last buildings burning down. That’s one"
+" less strong warlord on this island!"
 msgstr ""
 
 #: input:89 standard
@@ -2293,9 +2281,9 @@ msgstr ""
 
 #: input:90 standard
 msgid ""
-"Last night however, we made out a new island. We saw smoke hovering over it. "
-"The black comes from the fiery mountain in the north of the island, the grey "
-"however comes from settlers."
+"Last night however, we made out a new island. We saw smoke hovering over it."
+" The black comes from the fiery mountain in the north of the island, the "
+"grey however comes from settlers."
 msgstr ""
 
 #: input:90 standard
@@ -2317,8 +2305,7 @@ msgid ""
 "transported to our headquarters.\n"
 "<br><br>\n"
 "With our successful expansion into this area we should consider building a\n"
-"warehouse to the direct southwest of the sentry in order to further exploit "
-"this\n"
+"warehouse to the direct southwest of the sentry in order to further exploit this\n"
 "area. There is a good building spot only three steps away from the sentry."
 msgstr ""
 
@@ -2357,9 +2344,9 @@ msgstr ""
 #. TRANSLATORS: Jundlina - Diary
 #: input:97 standard
 msgid ""
-"At least the east side is inhabited, so much is clear. We do not know if the "
-"people there are friends or foes. We do not even know what tribe they might "
-"be from. "
+"At least the east side is inhabited, so much is clear. We do not know if the"
+" people there are friends or foes. We do not even know what tribe they might"
+" be from. "
 msgstr ""
 
 #: input:97 standard
@@ -2375,8 +2362,8 @@ msgstr ""
 #: input:98 standard
 msgid ""
 "The only thing that is sure that they can't be Atlantians for no ship of us "
-"has sailed as far as us in the last hundreds years. I can only hope they are "
-"friendly. "
+"has sailed as far as us in the last hundreds years. I can only hope they are"
+" friendly. "
 msgstr ""
 
 #: input:99 standard
@@ -2450,20 +2437,17 @@ msgstr ""
 
 #: input:105 standard
 msgid ""
-"Sire, the wet season has created swamps along the brook to the east and we "
-"are\n"
-"unable to pass through them. They have to be removed before we can continue. "
-"If\n"
-"you bring enough shovels to the new warehouse then volunteers will remove "
-"the\n"
+"Sire, the wet season has created swamps along the brook to the east and we are\n"
+"unable to pass through them. They have to be removed before we can continue. If\n"
+"you bring enough shovels to the new warehouse then volunteers will remove the\n"
 "swamps."
 msgstr ""
 
 #. TRANSLATORS: Jundlina - Diary
 #: input:105 standard
 msgid ""
-"We still have plenty of coal and iron ore, so a metal workshop and a smelter "
-"will provide us with good tools in no time. Also, we need to solve our "
+"We still have plenty of coal and iron ore, so a metal workshop and a smelter"
+" will provide us with good tools in no time. Also, we need to solve our "
 "building material problem. "
 msgstr ""
 
@@ -2479,8 +2463,8 @@ msgstr ""
 
 #: input:107 standard
 msgid ""
-"Finally! The island is completely ours. Now we just have to defend it better "
-"than the warlords did."
+"Finally! The island is completely ours. Now we just have to defend it better"
+" than the warlords did."
 msgstr ""
 
 #: input:108 standard
@@ -2533,14 +2517,14 @@ msgstr ""
 
 #: input:114 standard
 msgid ""
-"..or build an Arena and a Training Camp. Train your soldiers and attack when "
-"they are ready."
+"..or build an Arena and a Training Camp. Train your soldiers and attack when"
+" they are ready."
 msgstr ""
 
 #: input:114 standard
 msgid ""
-"We should explore the Island in the south and build an expedition port there "
-"let's try to find some mining ressources."
+"We should explore the Island in the south and build an expedition port there"
+" let's try to find some mining ressources."
 msgstr ""
 
 #: input:114 standard
@@ -2559,8 +2543,7 @@ msgstr ""
 #: input:115 standard
 msgid ""
 "Sire, all shovels have been handed out but if we continue at this pace than\n"
-"we will not have removed the swamps before the next wet season. If you "
-"bring\n"
+"we will not have removed the swamps before the next wet season. If you bring\n"
 "more shovels to the new warehouse then more volunteers will join in."
 msgstr ""
 
@@ -2592,17 +2575,15 @@ msgstr ""
 
 #: input:124 standard
 msgid ""
-"Sire, as a result of our attacks on the pirates they have started to "
-"regroup\n"
-"with pirates from other tribes. They could regain much of their previously "
-"lost\n"
-"strength. Our dwindling resources can become a problem with such a large "
-"enemy\n"
+"Sire, as a result of our attacks on the pirates they have started to regroup\n"
+"with pirates from other tribes. They could regain much of their previously lost\n"
+"strength. Our dwindling resources can become a problem with such a large enemy\n"
 "in front of us."
 msgstr ""
 
 #: input:124 standard
-msgid "We need to produce at least 6 gold to be able to colonize our vicinity."
+msgid ""
+"We need to produce at least 6 gold to be able to colonize our vicinity."
 msgstr ""
 
 #: input:125 input:136 input:142 input:151 input:154 input:163 input:166
@@ -2614,8 +2595,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:127 standard
 msgid ""
-"Finally! This island appears to have been made for us, it is a gift from the "
-"Gods to my people and myself. Until now, we have only seen a small part of "
+"Finally! This island appears to have been made for us, it is a gift from the"
+" Gods to my people and myself. Until now, we have only seen a small part of "
 "this island, but this part alone is already bringing sunlight to my mind. I "
 "feel as if we have found a priceless treasure, a land like paradise."
 msgstr ""
@@ -2642,10 +2623,8 @@ msgstr ""
 
 #: input:133 standard
 msgid ""
-"Sire, thanks to our successful efforts to drive out the pirates, lots of "
-"them\n"
-"have fled and moved away in small boats. It is unknown in what direction "
-"they\n"
+"Sire, thanks to our successful efforts to drive out the pirates, lots of them\n"
+"have fled and moved away in small boats. It is unknown in what direction they\n"
 "have escaped."
 msgstr ""
 
@@ -2672,8 +2651,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:141 standard
 msgid ""
-"But until that day, many years may pass! For now, we must concentrate on the "
-"present, and build a few lumberjack’s houses and a sawmill to produce some "
+"But until that day, many years may pass! For now, we must concentrate on the"
+" present, and build a few lumberjack’s houses and a sawmill to produce some "
 "basic building materials."
 msgstr ""
 
@@ -2684,8 +2663,7 @@ msgstr ""
 #: input:141 standard
 msgid ""
 "Sire, after long study and research our wise men have finally managed to\n"
-"decipher the strange language in Törver's descriptions that we had found in "
-"his\n"
+"decipher the strange language in Törver's descriptions that we had found in his\n"
 "headquarters. From now on we are able to build shipyards."
 msgstr ""
 
@@ -2699,8 +2677,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:144 standard
 msgid ""
-"Finally we were set to Fremil again. I couldn't await the chance to clear my "
-"records of this big defeat by the babarians."
+"Finally we were set to Fremil again. I couldn't await the chance to clear my"
+" records of this big defeat by the babarians."
 msgstr ""
 
 #. TRANSLATORS: Lutius - Diary
@@ -2714,8 +2692,7 @@ msgstr ""
 
 #: input:149 standard
 msgid ""
-"Sire, one of our scouts has been captured by the pirates and brought to "
-"their\n"
+"Sire, one of our scouts has been captured by the pirates and brought to their\n"
 "island. He is the only person who knows the way through the swamps towards\n"
 "Hjalmar.\n"
 "<br><br>\n"
@@ -2789,10 +2766,8 @@ msgstr ""
 
 #: input:162 standard
 msgid ""
-"Sire, our soldiers have conquered the island and managed to free the scout. "
-"It\n"
-"turns out that the pirates have left a large amount of gold, beer, and "
-"weapons\n"
+"Sire, our soldiers have conquered the island and managed to free the scout. It\n"
+"turns out that the pirates have left a large amount of gold, beer, and weapons\n"
 "on the island."
 msgstr ""
 
@@ -2822,12 +2797,10 @@ msgstr ""
 
 #: input:170 standard
 msgid ""
-"Sire, our  scout has returned to our territorium and he has shown us the "
-"road\n"
+"Sire, our  scout has returned to our territorium and he has shown us the road\n"
 "through the swamps towards Hjalmar.\n"
 "<br><br>\n"
-"He noticed that we can also move along the other side of the mountain, in "
-"case\n"
+"He noticed that we can also move along the other side of the mountain, in case\n"
 "we might fail here, but it will be much more difficult to do."
 msgstr ""
 
@@ -2860,15 +2833,15 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:177 standard
 msgid ""
-"To make it even worse all the land we can see is blocked by stone and trees. "
-"I fear we won’t find any help we need to build a new ship."
+"To make it even worse all the land we can see is blocked by stone and trees."
+" I fear we won’t find any help we need to build a new ship."
 msgstr ""
 
 #. TRANSLATORS: Lutius - Diary
 #: input:177 standard
 msgid ""
-"to make it even worse all the land we can see is blocked by stone and trees. "
-"I fear we won’t find any help we need to build a new ship."
+"to make it even worse all the land we can see is blocked by stone and trees."
+" I fear we won’t find any help we need to build a new ship."
 msgstr ""
 
 #. TRANSLATORS: Lutius - Diary
@@ -2887,7 +2860,8 @@ msgid "The last frontier"
 msgstr ""
 
 #: input:181 input:188 standard
-msgid "4 shovels for removing the swamps have been collected at the warehouse."
+msgid ""
+"4 shovels for removing the swamps have been collected at the warehouse."
 msgstr ""
 
 #: input:181 input:188 standard
@@ -2896,10 +2870,8 @@ msgstr ""
 
 #: input:181 standard
 msgid ""
-"Sire, we have almost defeated all armies and we are now approaching our "
-"final\n"
-"enemy. They have been expecting us for a long time and will be prepared for "
-"the\n"
+"Sire, we have almost defeated all armies and we are now approaching our final\n"
+"enemy. They have been expecting us for a long time and will be prepared for the\n"
 "heaviest battle in their lifetime.\n"
 "<br><br>\n"
 "Make sure that our armies are at full strength and then act decisively."
@@ -2949,10 +2921,8 @@ msgstr ""
 msgid ""
 "Sire, my congratulations!\n"
 "<br><br>\n"
-"You have completed all goals and defeated all our enemies. You have not "
-"only\n"
-"conquered our rivaling tribes, but you have also captured the hearts of "
-"your\n"
+"You have completed all goals and defeated all our enemies. You have not only\n"
+"conquered our rivaling tribes, but you have also captured the hearts of your\n"
 "beloving people.\n"
 "<br><br>\n"
 "Your name will be remembered forever."
@@ -3026,14 +2996,16 @@ msgstr ""
 #: input:207 standard
 msgid ""
 "Sire, Amalea is right about the resources therefore I correct myself we "
-"should only build an outpost as this is the most effective military building."
+"should only build an outpost as this is the most effective military "
+"building."
 msgstr ""
 
 #. TRANSLATORS: Saledus
 #: input:207 standard
 msgid ""
 "Sire, Amalea is right about the resources. Therefore I correct myself. We "
-"should only build an outpost as this is the most effective military building."
+"should only build an outpost as this is the most effective military "
+"building."
 msgstr ""
 
 #: input:211 standard
@@ -3135,8 +3107,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:231 standard
 msgid ""
-"I think we should try to reveal some building space by cutting all the stone "
-"in a quarry."
+"I think we should try to reveal some building space by cutting all the stone"
+" in a quarry."
 msgstr ""
 
 #. TRANSLATORS: Amalea
@@ -3144,8 +3116,8 @@ msgstr ""
 msgid ""
 "It’s nice, and of course a good idea, to build mines, which will give us a "
 "more comfortable life, but the people working in the mines are unhappy with "
-"the current situation. They have to do hard work and have no time for making "
-"their own food."
+"the current situation. They have to do hard work and have no time for making"
+" their own food."
 msgstr ""
 
 #. TRANSLATORS: Amalea
@@ -3203,8 +3175,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:243 standard
 msgid ""
-"I got the message that our first quarry has started it's work today. Perhaps "
-"it would be a good idea to wait until it has cleared enough space for "
+"I got the message that our first quarry has started it's work today. Perhaps"
+" it would be a good idea to wait until it has cleared enough space for "
 "constructing a lumberjack’s house, so that we can harvest some logs."
 msgstr ""
 
@@ -3225,8 +3197,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:246 standard
 msgid ""
-"Unfortunately the logs are useless for building a new ship – we need to turn "
-"them into planks, which are needed by every ship and every bigger building "
+"Unfortunately the logs are useless for building a new ship – we need to turn"
+" them into planks, which are needed by every ship and every bigger building "
 "too. So we should build a sawmill."
 msgstr ""
 
@@ -3252,8 +3224,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:253 standard
 msgid ""
-"By the Gods! This is absolutely terrible. It seems as if we stand close to a "
-"test – and it seems as if Saledus was right with his fear concerning the "
+"By the Gods! This is absolutely terrible. It seems as if we stand close to a"
+" test – and it seems as if Saledus was right with his fear concerning the "
 "shipwreck he found."
 msgstr ""
 
@@ -3278,8 +3250,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:258 standard
 msgid ""
-"I noticed that our stonemason has started it’s work finally. He will cut the "
-"number of columns defined in our basic economy settings."
+"I noticed that our stonemason has started it’s work finally. He will cut the"
+" number of columns defined in our basic economy settings."
 msgstr ""
 
 #. TRANSLATORS: Amalea
@@ -3401,8 +3373,8 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:276 input:287 standard
 msgid ""
-"The problem is that a port is a building which needs a very special place to "
-"be build. So while buidling our economy we should nevertheless expand "
+"The problem is that a port is a building which needs a very special place to"
+" be build. So while buidling our economy we should nevertheless expand "
 "further to discover the whole island. Let's try to find such a valuable "
 "place."
 msgstr ""
@@ -3410,8 +3382,8 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:276 input:279 standard
 msgid ""
-"The problem is that a port is a building which needs a very special place to "
-"be build. We should expand and try to find such a place."
+"The problem is that a port is a building which needs a very special place to"
+" be build. We should expand and try to find such a place."
 msgstr ""
 
 #. TRANSLATORS: Amalea
@@ -3424,9 +3396,9 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:280 standard
 msgid ""
-"We got first sight of the enemy territory. It appears as though they possess "
-"a good location for a port and a shipyard. We need that peninsula to build a "
-"fleet if we want to leave this island eventually."
+"We got first sight of the enemy territory. It appears as though they possess"
+" a good location for a port and a shipyard. We need that peninsula to build "
+"a fleet if we want to leave this island eventually."
 msgstr ""
 
 #: input:282 input:285 input:293 standard
@@ -3495,7 +3467,8 @@ msgstr ""
 #: input:300 input:303 input:311 standard
 msgid ""
 "To send out an expeditionary ship we first need a ship. Unfortunately we "
-"have only 5 cloth left which we will need to build the port and the shipyard."
+"have only 5 cloth left which we will need to build the port and the "
+"shipyard."
 msgstr ""
 
 #. TRANSLATORS: Falo
@@ -3518,8 +3491,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:306 input:309 input:317 standard
 msgid ""
-"So let's think this over. To produce cloth we need some wool. And to produce "
-"wool we need wheat so let'S find a space for a big building and build a "
+"So let's think this over. To produce cloth we need some wool. And to produce"
+" wool we need wheat so let'S find a space for a big building and build a "
 "wheat farm first."
 msgstr ""
 
@@ -3561,8 +3534,8 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:313 standard
 msgid ""
-"However our scouts report that the two brothers are very fierce fighters. It "
-"will be a tough battle, so build a solid army and fortifications."
+"However our scouts report that the two brothers are very fierce fighters. It"
+" will be a tough battle, so build a solid army and fortifications."
 msgstr ""
 
 #: input:318 standard
@@ -3592,8 +3565,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:326 standard
 msgid ""
-"Instead of overrunning the enemy we should try and train our troops to match "
-"those horrible brothers."
+"Instead of overrunning the enemy we should try and train our troops to match"
+" those horrible brothers."
 msgstr ""
 
 #: input:328 input:331 input:339 standard
@@ -3699,8 +3672,8 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:346 input:349 input:357 standard
 msgid ""
-"Now that we have all ressources ready to built a ship, we should explore the "
-"surrounding islands."
+"Now that we have all ressources ready to built a ship, we should explore the"
+" surrounding islands."
 msgstr ""
 
 #. TRANSLATORS: Saledus
@@ -3711,9 +3684,9 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:349 input:352 input:360 standard
 msgid ""
-"First we need to find some more ressources to back up our growing economy. I "
-"have spotted an island with some mountains in the south. Perhaps we can find "
-"some valuable ressources like iron there."
+"First we need to find some more ressources to back up our growing economy. I"
+" have spotted an island with some mountains in the south. Perhaps we can "
+"find some valuable ressources like iron there."
 msgstr ""
 
 #. TRANSLATORS: Saledus
@@ -3735,24 +3708,24 @@ msgstr ""
 msgid ""
 "But even more important I think I Have heard the wind carrying some weird "
 "but well known sound from the north. If I'm not totally wrong I heard "
-"babarian war drums fromm the north so we should better going to look what is "
-"going on there."
+"babarian war drums fromm the north so we should better going to look what is"
+" going on there."
 msgstr ""
 
 #. TRANSLATORS: Saledus
 #: input:355 input:366 standard
 msgid ""
-"I think I have heard the wind carrying some weird but well known sounds from "
-"the north. If I'm not totally wrong I heard some barbarian war drums, so we "
-"should better going to look what is going on up there."
+"I think I have heard the wind carrying some weird but well known sounds from"
+" the north. If I'm not totally wrong I heard some barbarian war drums, so we"
+" should better going to look what is going on up there."
 msgstr ""
 
 #. TRANSLATORS: Saledus
 #: input:355 standard
 msgid ""
-"I think I have heard the wind carrying some weird but well known sounds from "
-"the north. If I'm not totally wrong I heard some barbarian war, so we should "
-"better going to look what is going on up there."
+"I think I have heard the wind carrying some weird but well known sounds from"
+" the north. If I'm not totally wrong I heard some barbarian war, so we "
+"should better going to look what is going on up there."
 msgstr ""
 
 #. TRANSLATORS: Lutius - Diary
@@ -3764,9 +3737,9 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:360 standard
 msgid ""
-"There are still a few Barbarians hiding on our island, but I am sure that we "
-"will find them soon. Every Barbarian who doesn’t attack us will be put in a "
-"boat with the other peaceful ones, and sent back to their country."
+"There are still a few Barbarians hiding on our island, but I am sure that we"
+" will find them soon. Every Barbarian who doesn’t attack us will be put in a"
+" boat with the other peaceful ones, and sent back to their country."
 msgstr ""
 
 #: input:361 input:372 standard
@@ -3843,9 +3816,9 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:370 standard
 msgid ""
-"I strongly recommend to build a production chain for mining and melting some "
-"gold. I think we need a vineyard, a winery, a tavern, a fisher's house or a "
-"hunter's house and a smelting works."
+"I strongly recommend to build a production chain for mining and melting some"
+" gold. I think we need a vineyard, a winery, a tavern, a fisher's house or a"
+" hunter's house and a smelting works."
 msgstr ""
 
 #: input:373 standard
@@ -3855,16 +3828,16 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:373 input:384 standard
 msgid ""
-"I strongly recommend to build a production chain for mining and melting some "
-"gold. I think we need a vineyard, a winery, a tavern, a fisher's house or a "
-"hunter's house and a smelting works. And the mines themselves of course."
+"I strongly recommend to build a production chain for mining and melting some"
+" gold. I think we need a vineyard, a winery, a tavern, a fisher's house or a"
+" hunter's house and a smelting works. And the mines themselves of course."
 msgstr ""
 
 #. TRANSLATORS: Amalea
 #: input:373 input:376 input:387 standard
 msgid ""
-"If there are difficulties to build all the buildings needed, we should think "
-"about all we have learned so far. We can cut all the stone. We should "
+"If there are difficulties to build all the buildings needed, we should think"
+" about all we have learned so far. We can cut all the stone. We should "
 "perhaps optimize our roads to free up some building site, or even dismantle "
 "some military buildings to get more space for our economy."
 msgstr ""
@@ -3964,8 +3937,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:403 standard
 msgid ""
-"Yes my fellow comrades we have done it. But my heart is still with our home. "
-"We shall set sail as soon as possible to help defend the empire from the "
+"Yes my fellow comrades we have done it. But my heart is still with our home."
+" We shall set sail as soon as possible to help defend the empire from the "
 "babarian tribe."
 msgstr ""
 
@@ -3988,8 +3961,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:410 input:421 standard
 msgid ""
-"For example it might be a good idea to produce a reasonable amount of a ware "
-"and afterwards dismantle the building to gain space for another building."
+"For example it might be a good idea to produce a reasonable amount of a ware"
+" and afterwards dismantle the building to gain space for another building."
 msgstr ""
 
 #: input:415 input:426 standard

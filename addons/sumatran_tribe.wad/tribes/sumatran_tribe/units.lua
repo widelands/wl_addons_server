@@ -86,7 +86,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "log",
                 default_target_quantity = 10000,
-                preciousness = 13,
+                preciousness = 80,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Log, part 1
@@ -111,19 +111,20 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "palmleaves",
-                preciousness = 15,
+                default_target_quantity = 40,
+                preciousness = 11,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Palm Leaves, part 1
                         pgettext("sumatran_ware", "Palm leaves are a basic building material. They are used together with reed for cloth production too."),
                         -- TRANSLATORS: Helptext for a Sumatran ware: Palm Leaves, part 2
-                        pgettext("sumatran_ware", "Leaves gatherers need palm planter’s huts nearby to take care of the supply of palm trees. The trees have to be cut down by woodcutters first, then can the gatherers collect the leaves from the ground."),
+                        pgettext("sumatran_ware", "Leaf gatherers need palm planter’s huts nearby to take care of the supply of palm trees. The trees have to be cut down by woodcutters first, then can the gatherers collect the leaves from the ground."),
                     }
                 }
             },
             {
                 name = "reed",
-                preciousness = 21,
+                preciousness = 50,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Reed, part 1
@@ -147,7 +148,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "stone",
                 default_target_quantity = 30,
-                preciousness = 5,
+                preciousness = 4,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Stone
@@ -157,8 +158,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "sandedwood",
-                default_target_quantity = 10,
-                preciousness = 3,
+                default_target_quantity = 15,
+                preciousness = 10,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Sanded Wood
@@ -168,7 +169,7 @@ wl.Descriptions():new_tribe {
             },
             {
                name = "crocodile_skin",
-                preciousness = 5,
+                preciousness = 150,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran ware: Crocodile Skin
                     purpose = pgettext("sumatran_ware", "Crocodile skin is used for production of clothing for your warriors, hunters, chiefs and scouts.")
@@ -176,7 +177,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "water",
-                preciousness = 5,
+                preciousness = 12,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Water, part 1
@@ -191,7 +192,7 @@ wl.Descriptions():new_tribe {
             -- 2. Food Production
             {
                 name = "cassavaroot",
-                preciousness = 14,
+                preciousness = 8,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Cassava Root, part 1
@@ -201,13 +202,13 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "cassavaleaves",
-                preciousness = 10,
+                preciousness = 40,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Cassava Leaves, part 1
                         pgettext("sumatran_ware", "Cassava leaves are needed to prepare sauce for your meals."),
                         -- TRANSLATORS: Helptext for a Sumatran ware: Cassava Leaves, part 2
-                        pgettext("sumatran_ware", "Make sure that you leaves gatherers collect all leaves from the harvested cassava fields. Otherwise you will have to substitute them with eggs.")
+                        pgettext("sumatran_ware", "Make sure that you leaf gatherers collect all leaves from the harvested cassava fields. Otherwise you will have to substitute them with eggs.")
                     }
                 }
             },
@@ -225,7 +226,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "fish",
-                preciousness = 40,
+                preciousness = 200,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Fish
@@ -235,7 +236,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "meat",
-                preciousness = 35,
+                preciousness = 200,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Meat
@@ -259,7 +260,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "meal",
                 default_target_quantity = 20,
-                preciousness = 12,
+                preciousness = 4,
                 helptexts = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Meal
                     purpose = pgettext("sumatran_ware", "Meal is consumed in mines and training sites. Every new carrier also need meal before his service on a road."),
@@ -279,7 +280,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "palm_wine",
-                preciousness = 2,
+                preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran ware: Palm Wine
                     purpose = pgettext("sumatran_ware", "Palm wine is consumed together with meal in your training sites and in deep mines. It is produced by winery and wineries need fully grown palms nearby.")
@@ -291,7 +292,7 @@ wl.Descriptions():new_tribe {
              {
                 name = "diamond_raw",
                 default_target_quantity = 5,
-                preciousness = 5,
+                preciousness = 12,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran ware: Raw Diamond
                     purpose = pgettext("sumatran_ware", "Raw diamonds are used to produce whetstones or can be polished and used as a precious building material.")
@@ -299,8 +300,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "diamond",
-                default_target_quantity = 5,
-                preciousness = 3,
+                default_target_quantity = 2,
+                preciousness = 2,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran ware: Diamond
                     purpose = pgettext("sumatran_ware", "Diamonds are a very precious building material. These stones are also your main source of wealth, when your goal is to collect precious things.")
@@ -308,8 +309,8 @@ wl.Descriptions():new_tribe {
             },
            {
                 name = "coal",
-                default_target_quantity = 20,
-                preciousness = 8,
+                default_target_quantity = 50,
+                preciousness = 5,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
@@ -322,7 +323,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "copper_ore",
                 default_target_quantity = 10,
-                preciousness = 5,
+                preciousness = 3,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 1
@@ -348,7 +349,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "iron_ore",
                 default_target_quantity = 10,
-                preciousness = 5,
+                preciousness = 3,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 1
@@ -374,7 +375,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "gold_ore",
                 default_target_quantity = 10,
-                preciousness = 5,
+                preciousness = 3,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 1
@@ -387,7 +388,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "gold",
                 default_target_quantity = 5,
-                preciousness = 5,
+                preciousness = 4,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Gold, part 1
@@ -455,7 +456,7 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Machete, part 1
-                        pgettext("sumatran_ware", "The machete is a tool for leaves gatherers, reedcutters and together with buckets also for wine makers."),
+                        pgettext("sumatran_ware", "The machete is a tool for leaf gatherers, reedcutters and together with buckets also for wine makers."),
                         -- TRANSLATORS: Helptext for a Sumatran ware: Machete, part 2
                         pgettext("sumatran_ware", "They are produced by tools workshops.")
                     }
@@ -502,8 +503,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "whetstone",
-                default_target_quantity = 1,
-                preciousness = 1,
+                default_target_quantity = 2,
+                preciousness = 5,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Whetstone
@@ -516,7 +517,7 @@ wl.Descriptions():new_tribe {
             -- 5. Weapons, Armour
             {
                 name = "copper_sheet",
-                default_target_quantity = 5,
+                default_target_quantity = 10,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -527,7 +528,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gold_sheet",
-                default_target_quantity = 5,
+                default_target_quantity = 10,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -537,9 +538,9 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "spear",
-                default_target_quantity = 3,
-                preciousness = 3,
+                name = "sumatran_spear",
+                default_target_quantity = 10,
+                preciousness = 5,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran ware: Spear
                     purpose = pgettext("sumatran_ware", "Widely used weapon for hunters and warriors.")
@@ -547,8 +548,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "crocodile_jacket",
-                default_target_quantity = 1,
-                preciousness = 3,
+                default_target_quantity = 10,
+                preciousness = 5,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran ware: Crocodile Jacket
                     purpose = pgettext("sumatran_ware", "A basic piece of clothing for your warriors, hunters and chiefs.")
@@ -613,8 +614,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "sumatran_carrier_1",
-                default_target_quantity = 10,
-                preciousness = 1,
+                default_target_quantity = 1,
+                preciousness = 2,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
                     purpose = pgettext("sumatran_worker", "Carries items along roads.")
@@ -687,9 +688,9 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "sumatran_leaves_gatherer",
+                name = "sumatran_leaf_gatherer",
                 helptexts = {
-                    -- TRANSLATORS: Helptext for a Sumatran worker: Leaves Gatherer
+                    -- TRANSLATORS: Helptext for a Sumatran worker: Leaf Gatherer
                     purpose = pgettext("sumatran_worker", "Collects palm and cassava leaves.")
                 }
             },
@@ -720,7 +721,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "sumatran_hunter",
                 default_target_quantity = 1,
-                preciousness = 1,
+                preciousness = 3,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran worker: Hunter
                     purpose = pgettext("sumatran_worker", "Produces meat and fish.")
@@ -820,8 +821,8 @@ wl.Descriptions():new_tribe {
             -- 5. Training, Clothing
             {
                 name = "sumatran_soldier",
-                default_target_quantity = 10,
-                preciousness = 3,
+                default_target_quantity = 40,
+                preciousness = 200,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran worker: Warrior
                     purpose = pgettext("sumatran_worker", "Defend and Conquer!")
@@ -830,7 +831,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "sumatran_chief",
                 default_target_quantity = 1,
-                preciousness = 1,
+                preciousness = 3,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran worker: Chief
                     purpose = pgettext("sumatran_worker", "Trains warriors.")
@@ -856,7 +857,7 @@ wl.Descriptions():new_tribe {
                 name = "sumatran_dressmaker",
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran worker: Dressmaker
-                    purpose = pgettext("sumatran_worker", "Produces clothing.")
+                    purpose = pgettext("sumatran_worker", "Dressmaker is an experienced weaver and produces clothing.")
                 }
             },
             {
@@ -870,7 +871,7 @@ wl.Descriptions():new_tribe {
                 name = "sumatran_armorsmith",
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran worker: Armorsmith
-                    purpose = pgettext("sumatran_worker", "Produces armor for training camp.")
+                    purpose = pgettext("sumatran_worker", "Armorsmith is an experienced coppersmith and produces armor for training camps.")
                 }
             }
         },
@@ -895,7 +896,7 @@ wl.Descriptions():new_tribe {
             name = "palm_leaves",
             helptexts = {
                 -- TRANSLATORS: Helptext for a Sumatran immovable: Palm Leaves
-                purpose = _("Palm laves can be picked up by a leaves gatherer and used as building material and for weaving cloth.")
+                purpose = _("Palm leaves can be picked up by a leaf gatherer and used as building material and for weaving cloth.")
             }
         },
         {
@@ -930,7 +931,7 @@ wl.Descriptions():new_tribe {
             name = "cassavaplants_harvested",
             helptexts = {
                 -- TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (harvested)
-                purpose = _("These cassava plants has been harvested. Your leaves gatherer can pick up some cassava leaves here.")
+                purpose = _("These cassava plants has been harvested. Your leaf gatherer can pick up some cassava leaves here.")
             }
         },
         {
@@ -1227,7 +1228,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Palm Planter’s Hut
                 purpose = pgettext("sumatran_building", "Plants palm trees in the surrounding area."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Palm Planter’s Hut
-                note = pgettext("sumatran_building", "You need palm trees for logs, palm wine production and palm leaves, which are collected by leaves gather when a palm tree is cut down."),
+                note = pgettext("sumatran_building", "You need palm trees for logs, palm wine production and palm leaves, which are collected by leaf gather when a palm tree is cut down."),
             }
         },
         {
@@ -1258,11 +1259,11 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "sumatran_leaves_gatherers_hut",
+            name = "sumatran_leaf_gatherers_hut",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Sumatran production site: Leaves Gatherer’s Hut
+                -- TRANSLATORS: Purpose helptext for a Sumatran production site: Leaf Gatherer’s Hut
                 purpose = pgettext("sumatran_building", "Gathers cassava leaves left by farmers and palm leaves left by woodcutters."),
-                -- TRANSLATORS: Note helptext for a Sumatran production site: Leaves Gatherer’s Hut
+                -- TRANSLATORS: Note helptext for a Sumatran production site: Leaf Gatherer’s Hut
                 note = pgettext("sumatran_building", "Both cassava and palm leaves are important wares for your economy and shortages may cause you trouble.")
             }
         },
@@ -1418,7 +1419,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
                 purpose = pgettext("sumatran_building", "Grows cassava for roots and leaves."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Cassava Fields
-                note = pgettext("sumatran_building", "The farmer harvest one cassava root from every field. The remained leaves can be harvested by leaves gatherer."),
+                note = pgettext("sumatran_building", "The farmer harvest one cassava root from every field. The remained leaves can be harvested by leaf gatherer."),
                 performance = pgettext("sumatran_building", "The inexperienced resp. experienced farmer needs %1% resp. %2% on average to produce one cassava root."):bformat(format_seconds(115), format_seconds(75)),
             }
         },
@@ -1428,12 +1429,12 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
                 purpose = pgettext("sumatran_building", "Grows cassava for roots and leaves."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Cassava Plantation
-                note = pgettext("sumatran_building", "Thanks to watering, the farmer harvests two roots from every field. Unfortunately, the amount of leaves left remains unchanged and leaves gatherer can pick up one bundle of leaves from every harvested field."),
+                note = pgettext("sumatran_building", "Thanks to watering, the farmer harvests two roots from every field. Unfortunately, the amount of leaves left remains unchanged and leaf gatherer can pick up one bundle of leaves from every harvested field."),
                 performance = pgettext("sumatran_building", "The farmer needs %1% on average to produce one cassava root."):bformat(format_seconds(45)),
             }
         },
         {
-            name = "sumatran_chickens_farm",
+            name = "sumatran_chicken_farm",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Chicken Farm
                 purpose = pgettext("sumatran_building", "Breeds chickens for eggs and meat."),
@@ -1456,8 +1457,8 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Marsh
                 purpose = pgettext("sumatran_building", "Home of tropical animals. Source of meat and crocodile skin for your hunters."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Jungle Marsh
-                note = pgettext("sumatran_building", "If animals don’t leave a marsh, you have probably built too many roads around the marsh. Roads can block the way for animals to leave. Out of 3 animals leaving the marsh, there is one crocodile."),
-                performance = pgettext("sumatran_building", "There is one animal leaving the marsh in %1% on average."):bformat(format_seconds(58))
+                note = pgettext("sumatran_building", "If animals don’t leave a marsh, you have probably built too many roads around the marsh. Roads can block the way for animals to leave. Out of 4 animals leaving the marsh, there is one crocodile."),
+                performance = pgettext("sumatran_building", "There is one animal leaving the marsh in %1% on average."):bformat(format_seconds(43))
             }
         },
 
@@ -1772,7 +1773,7 @@ wl.Descriptions():new_tribe {
       woodcutter = "sumatran_woodcutters_house",
       forester = "sumatran_palm_planters_hut",
       quarry = "sumatran_stonecutters_hut",
-      building_materials_primary = "sumatran_leaves_gatherers_hut",
+      building_materials_primary = "sumatran_leaf_gatherers_hut",
       building_materials_secondary = "sumatran_workshop_basic",
       building_materials_tertiary = "sumatran_reed_yard",
       hunter = "sumatran_hunters_tent",
@@ -1798,7 +1799,7 @@ wl.Descriptions():new_tribe {
       mine_coal = "sumatran_coal_mine",
       mine_iron = "sumatran_iron_mine",
       mine_gold = "sumatran_copper_gold_mine",
-      agriculture_producer = "sumatran_chickens_farm",
+      agriculture_producer = "sumatran_chicken_farm",
       industry_alternative = "sumatran_sewing_workshop",
       industry_supporter = "sumatran_jungle_preservers_hut",
       terraforming = "sumatran_thermal_springs",

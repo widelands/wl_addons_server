@@ -26,7 +26,7 @@ init = {
       local h = plr:place_building("sumatran_fort", sf, false, true)
       h:set_soldiers{[{0,0,0,0}] = 10}
 
-       place_building_in_region(plr, "sumatran_warehouse", sf:region(7), {
+       place_building_in_region(plr, "sumatran_warehouse", sf:region(6), {
          wares = {
             log = 60,
             reed = 30,
@@ -51,7 +51,7 @@ init = {
             gold = 4,
             diamond_raw = 3,
             diamond = 5,
-            spear = 4,
+            sumatran_spear = 4,
             pick = 4,
             felling_ax = 3,
             shovel = 6,
@@ -60,7 +60,7 @@ init = {
             kitchen_tools = 2,
             buckets = 3,
             whetstone = 1,
-            crocodile_skin = 4
+            crocodile_skin = 2
          },
          workers = {
             sumatran_geologist = 4,
@@ -72,13 +72,14 @@ init = {
             sumatran_woodcutter = 5,
             sumatran_forester = 4,
             sumatran_water_carrier = 2,
-            sumatran_leaves_gatherer = 2,
+            sumatran_leaf_gatherer = 2,
             sumatran_hunter = 3,
             sumatran_farmer_experienced = 3,
             sumatran_farmer = 1,
             sumatran_reedcutter = 1,
             sumatran_cook = 1,
             sumatran_smelter = 1,
+            sumatran_chief = 1,
             sumatran_tribal_chief = 1,
             sumatran_craftsman = 1,
             sumatran_craftsman_experienced = 1,
@@ -87,19 +88,13 @@ init = {
             sumatran_weaver = 1,
          },
          soldiers = {
-            [{0,0,0,0}] = 27,
+            [{0,0,0,0}] = 35,
          }
       })
 
-      place_building_in_region(plr, "sumatran_training_camp", sf:region(12), {
-         inputs = {
-            meal = 8,
-            palm_wine = 10
-         }
+      place_building_in_region(plr, "sumatran_hunting_camp", sf:region(12), {
+         inputs = { meal = 5, palm_wine = 10 }
       })
-
-      place_building_in_region(plr, "sumatran_jungle_marsh", sf:region(13))
-         inputs = {},
       place_building_in_region(plr, "sumatran_workshop_basic", sf:region(12), {
          inputs = { log = 4, diamond_raw = 2, stone = 4 },
       })
@@ -109,12 +104,11 @@ init = {
       place_building_in_region(plr, "sumatran_workshop_weapons", sf:region(12), {
          inputs = { iron = 4 },
       })
-      place_building_in_region(plr, "sumatran_hunters_tent", sf:region(12), {
-         inputs = {},
-      })
       place_building_in_region(plr, "sumatran_furnace", sf:region(12), {
          inputs = { coal = 3, iron_ore = 3, copper_ore = 3 },
       })
+      place_building_in_region(plr, "sumatran_jungle_marsh", sf:region(13))
+      place_building_in_region(plr, "sumatran_hunters_house", sf:region(12))
    end
 }
 pop_textdomain()

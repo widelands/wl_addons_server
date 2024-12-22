@@ -37,11 +37,11 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 1320,
+      prohibited_till = 720,
       basic_amount = 1,
       very_weak_ai_limit = 1,
       weak_ai_limit = 1,
-      normal_ai_limit = 2,
+      normal_ai_limit = 1,
    },
 
    working_positions = {
@@ -50,7 +50,7 @@ wl.Descriptions():new_productionsite_type {
 
    inputs = {
       { name = "crocodile_jacket", amount = 8 },
-      { name = "spear", amount = 8 },
+      { name = "sumatran_spear", amount = 8 },
       { name = "meal", amount = 8 },
       { name = "sumatran_recruit", amount = 8 }
    },
@@ -60,10 +60,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting because ...
          descname = pgettext("sumatran_building", "recruiting"),
          actions = {
-            "call=recruit_warrior",
-            "call=recruit_carrier",
             "call=recruit_hunter",
             "call=recruit_chief",
+            "call=recruit_warrior",
+            "call=recruit_carrier",
          }
       },
       recruit_warrior = {
@@ -72,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
          actions = {
             -- time: 6.4 + 20 + 3.6 = 30 sec
             "return=skipped unless economy needs sumatran_soldier",
-            "consume=crocodile_jacket spear sumatran_recruit",
+            "consume=crocodile_jacket sumatran_spear sumatran_recruit",
             "sleep=duration:1s400ms",
             "animate=working duration:20s",
             "recruit=sumatran_soldier",
@@ -109,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting hunter because ...
          descname = _("recruiting hunter"), actions = { -- time: 6.4 + 20 + 3.6 = 30 sec
             "return=skipped unless economy needs sumatran_hunter",
-            "consume=spear crocodile_jacket sumatran_recruit",
+            "consume=sumatran_spear crocodile_jacket sumatran_recruit",
             "sleep=duration:1s400ms",
             "animate=working duration:20s",
             "recruit=sumatran_hunter",

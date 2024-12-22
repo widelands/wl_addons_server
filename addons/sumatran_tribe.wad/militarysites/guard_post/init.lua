@@ -28,7 +28,7 @@ wl.Descriptions():new_militarysite_type {
     },
     
     aihints = {
---        expansion = false,
+--        expansion = true,
         very_weak_ai_limit = 6,
         weak_ai_limit = 6,
         normal_ai_limit = 6,

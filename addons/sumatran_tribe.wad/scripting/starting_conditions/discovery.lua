@@ -34,7 +34,7 @@ init = {
          copper = 1,
          sumatran_woodcutter = 1,
          sumatran_forester = 1,
-         sumatran_leaves_gatherer = 1,
+         sumatran_leaf_gatherer = 1,
          sumatran_soldier = 1,
       },
       {

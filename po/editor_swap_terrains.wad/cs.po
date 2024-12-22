@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-22 03:05+0200\n"
+"POT-Creation-Date: 2024-12-22 03:11+0100\n"
 "PO-Revision-Date: 2023-07-19 18:08+0000\n"
+"Last-Translator: Ondřej Itřech, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -20,35 +24,38 @@ msgstr ""
 
 #: addons/editor_swap_terrains.wad/addon:2
 msgid "Editor: Swap Terrains"
-msgstr ""
+msgstr "Editor: Prohození terénů"
 
 #: addons/editor_swap_terrains.wad/addon:3
 msgid ""
 "A plugin for the editor to easily replace or swap two terrain types globally."
 msgstr ""
+"Zásuvný modul pro editor, který umožní jednoduché nahrazení nebo prohození "
+"dvou terénu na celé mapě."
 
 #: addons/editor_swap_terrains.wad/init.lua:8
 #: addons/editor_swap_terrains.wad/show_window.lua:24
 msgid "Swap Terrains"
-msgstr ""
+msgstr "Prohodit terény"
 
 #: addons/editor_swap_terrains.wad/init.lua:9
 msgid "Globally exchange two terrains with each other"
-msgstr ""
+msgstr "Na celé mapě provede vzájemné prohození dvou terénů"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:77
 msgid "Replace"
-msgstr ""
+msgstr "Nahradit"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:78
 msgid ""
 "Globally replace all occurrences of the left terrain with the right terrain"
 msgstr ""
+"Na celé mapě nahradí veškerý vlevo zvolený terén terénem zvoleným vpravo"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:90
 msgid "Swap"
-msgstr ""
+msgstr "Prohodit"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:91
 msgid "Globally swap the two selected terrains"
-msgstr ""
+msgstr "Provede prohození dvou zvolených terénů na celé mapě"

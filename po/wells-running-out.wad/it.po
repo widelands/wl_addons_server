@@ -2,26 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Alen Ciga, 2021
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-22 03:05+0200\n"
+"POT-Creation-Date: 2022-03-27 04:03+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Alen Ciga, 2021\n"
-"Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
-"it/)\n"
-"Language: it\n"
+"Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
-"1 : 2;\n"
+"Language: it\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: addons/wells-running-out.wad/addon:2
 msgid "Water Resource Efficiency"
@@ -67,7 +65,8 @@ msgstr ""
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:38
 msgctxt "barbarians_building"
-msgid "The carrier working at this deep well can’t find any water in his well."
+msgid ""
+"The carrier working at this deep well can’t find any water in his well."
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
@@ -84,7 +83,8 @@ msgstr "Pozzo profondo"
 
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:38
 msgctxt "frisians_building"
-msgid "The carrier working at this deep well can’t find any water in his well."
+msgid ""
+"The carrier working at this deep well can’t find any water in his well."
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers

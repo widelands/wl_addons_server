@@ -60,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 1200,
+      prohibited_till = 360,
       basic_amount = 1,
       very_weak_ai_limit = 2,
       weak_ai_limit = 2,
@@ -96,14 +96,14 @@ wl.Descriptions():new_productionsite_type {
             "return=skipped unless economy needs diamond_raw",
             "consume=meal",
             "animate=working duration:17s",
-            "mine=resource_stones radius:2 yield:50% when_empty:5% experience_on_fail:2%",
-            "produce=stone",
-            "animate=working duration:17s",
-            "mine=resource_stones radius:2 yield:50% when_empty:5% experience_on_fail:2%",
-            "produce=stone",
-            "animate=working duration:17s",
-            "mine=resource_stones radius:2 yield:50% when_empty:5% experience_on_fail:2%",
+            "mine=resource_stones radius:2 yield:50% when_empty:10% experience_on_fail:2%",
             "produce=diamond_raw",
+            "animate=working duration:17s",
+            "mine=resource_stones radius:2 yield:50% when_empty:10% experience_on_fail:2%",
+            "produce=stone",
+            "animate=working duration:17s",
+            "mine=resource_stones radius:2 yield:50% when_empty:10% experience_on_fail:2%",
+            "produce=stone",
          }
       },
       mine_stone = {

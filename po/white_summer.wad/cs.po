@@ -2,26 +2,25 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Zlopez <michal.konecny@psmail.xyz>, 2021
 # Ondřej Itřech, 2024
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-09 03:11+0100\n"
+"POT-Creation-Date: 2024-11-19 03:09+0100\n"
 "PO-Revision-Date: 2021-06-05 18:17+0000\n"
 "Last-Translator: Ondřej Itřech, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
-"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #: addons/white_summer.wad/addon:2 addons/white_summer.wad/editor.lua:7
 #: addons/white_summer.wad/editor.lua:38
@@ -30,8 +29,8 @@ msgstr "Bílé léto"
 
 #: addons/white_summer.wad/addon:3
 msgid ""
-"Contains flowering meadows, clearings, dolomites, wet beach, green and muddy "
-"water. New birch."
+"Contains flowering meadows, clearings, dolomites, wet beach, green and muddy"
+" water. New birch."
 msgstr ""
 "Obsahuje kvetoucí louky, mýtiny, dolomity, mokrou pláž, zelenou a bahnitou "
 "vodu. Nová bříza."

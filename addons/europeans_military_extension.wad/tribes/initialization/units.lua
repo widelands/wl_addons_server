@@ -2986,7 +2986,6 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Köln"),
         pgettext("warehousename", "Kraków"),
         pgettext("warehousename", "Krasnodar"),
-        pgettext("warehousename", "Krywyj Rih"),
         pgettext("warehousename", "Kyiv"),
         pgettext("warehousename", "Leeds"),
         pgettext("warehousename", "Leipzig"),

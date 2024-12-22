@@ -93,4 +93,75 @@ wl.Descriptions():modify_unit("worker", "amazons_jungle_master", "programs", "se
 --                   note    = _"Thermal springs are useful especially while playing wasteland and winter maps. In first case to transform mountains is very advatageous, in second case, all types of terrain can be transformed."
 --                }})
 
+-- ----------------- --
+-- CROCODILE HUNTERS --
+-- ----------------- --
+
+-- WORKERS
+wl.Descriptions():modify_unit("worker", "frisians_hunter", "programs", "set", "hunt_crocodile", {
+         "findobject=type:bob radius:10 attrib:crocodile",
+         "walk=object",
+         "animate=idle duration:1s500ms",
+         "removeobject",
+         "createware=meat",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "empire_hunter", "programs", "set", "hunt_crocodile", {
+         "findobject=type:bob radius:10 attrib:crocodile",
+         "walk=object",
+         "animate=idle duration:1s500ms",
+         "removeobject",
+         "createware=meat",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "barbarians_hunter", "programs", "set", "hunt_crocodile", {
+         "findobject=type:bob radius:10 attrib:crocodile",
+         "walk=object",
+         "animate=idle duration:1s500ms",
+         "removeobject",
+         "createware=meat",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "atlanteans_hunter", "programs", "set", "hunt_crocodile", {
+         "findobject=type:bob radius:10 attrib:crocodile",
+         "walk=object",
+         "animate=idle duration:1s500ms",
+         "removeobject",
+         "createware=meat",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "amazons_hunter_gatherer", "programs", "set", "hunt_crocodile", {
+         "findobject=type:bob radius:10 attrib:crocodile",
+         "walk=object",
+         "animate=idle duration:1s500ms",
+         "removeobject",
+         "createware=meat",
+         "return"
+      })
+
+
+-- BUILDINGS
+wl.Descriptions():modify_unit("tribe", "frisians", "add_building", "frisians_crocodile_hunters_house", { helptexts = {
+                  purpose = _"Hunters working at this house can hunt crocodiles for meat.",
+--                  note    = _".",
+               }})
+wl.Descriptions():modify_unit("tribe", "empire", "add_building", "empire_crocodile_hunters_house", { helptexts = {
+                  purpose = _"Hunters working at this house can hunt crocodiles for meat.",
+--                  note    = _".",
+               }})
+wl.Descriptions():modify_unit("tribe", "barbarians", "add_building", "barbarians_crocodile_hunters_hut", { helptexts = {
+                  purpose = _"Hunters working at this house can hunt crocodiles for meat.",
+--                  note    = _".",
+               }})
+wl.Descriptions():modify_unit("tribe", "atlanteans", "add_building", "atlanteans_crocodile_hunters_house", { helptexts = {
+                  purpose = _"Hunters working at this house can hunt crocodiles for meat.",
+--                  note    = _".",
+               }})
+wl.Descriptions():modify_unit("tribe", "amazons", "add_building", "amazons_crocodile_hunters_hut", { helptexts = {
+                  purpose = _"Hunter-gatherer working at this house can hunt crocodiles for meat.",
+--                  note    = _".",
+               }})
+
+
+
 pop_textdomain()

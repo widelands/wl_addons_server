@@ -50,7 +50,7 @@ wl.Descriptions():new_warehouse_type {
        prohibited_till = 1320,
        very_weak_ai_limit = 4,
        weak_ai_limit = 8,
-       normal_ai_limit = 16,
+       normal_ai_limit = 12,
     },
 
     conquers = 5,

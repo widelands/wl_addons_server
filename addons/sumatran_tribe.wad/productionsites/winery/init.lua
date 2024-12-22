@@ -17,8 +17,9 @@ wl.Descriptions():new_productionsite_type {
       reed = 1
    },
    return_on_dismantle = {
+      log = 1,
       stone = 1,
-      tropicalwood = 1
+      palmleaves = 1,
    },
 
    animation_directory = dirname,
@@ -28,12 +29,12 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 660,
+      prohibited_till = 1020,
       requires_supporters = true,
       basic_amount = 2,
       very_weak_ai_limit = 2,
-      weak_ai_limit = 4,
-      normal_ai_limit = 6,
+      weak_ai_limit = 3,
+      normal_ai_limit = 4,
    },
 
    working_positions = {
@@ -49,6 +50,13 @@ wl.Descriptions():new_productionsite_type {
             "sleep=duration:29s"
          }
       },
+   },
+   out_of_resource_notification = {
+      -- Translators: Short for "Out of ..." for a resource
+      title = _("No Palm Trees"),
+      heading = _("Out of Palm Trees"),
+      message = pgettext("sumatran_building", "The winemaker working at this house can’t find any palm trees in her work area. You should consider dismantling or destroying the building or building a palm planter’s hut nearby."),
+      productivity_threshold = 25
    },
 }
 

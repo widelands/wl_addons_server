@@ -45,7 +45,7 @@ init = {
             gold = 4,
             diamond_raw = 3,
             diamond = 5,
-            spear = 4,
+            sumatran_spear = 4,
             pick = 4,
             felling_ax = 3,
             shovel = 6,
@@ -54,7 +54,7 @@ init = {
             kitchen_tools = 2,
             buckets = 3,
             whetstone = 1,
-            crocodile_skin = 4
+            crocodile_skin = 2
         },
         workers = {
             sumatran_geologist = 4,
@@ -66,13 +66,14 @@ init = {
             sumatran_woodcutter = 5,
             sumatran_forester = 4,
             sumatran_water_carrier = 2,
-            sumatran_leaves_gatherer = 2,
+            sumatran_leaf_gatherer = 2,
             sumatran_hunter = 3,
             sumatran_farmer_experienced = 3,
             sumatran_farmer = 1,
             sumatran_reedcutter = 1,
             sumatran_cook = 1,
             sumatran_smelter = 1,
+            sumatran_chief = 1,
             sumatran_tribal_chief = 1,
             sumatran_craftsman = 1,
             sumatran_craftsman_experienced = 1,
@@ -84,29 +85,17 @@ init = {
          soldiers = {
             [{0,0,0,0}] = 35,
             [{1,0,0,1}] = 5,
-            [{1,1,0,0}] = 5,
+            [{0,1,0,1}] = 5,
          }
       })
-
       place_building_in_region(player, "sumatran_workshop_tools", sf:region(8), {
-         inputs = {
-            iron = 5,
-            sandedwood = 5
-         }
+         inputs = { iron = 5, sandedwood = 5 }
       })
-
       place_building_in_region(player, "sumatran_workshop_basic", sf:region(10), {
-         inputs = {
-            log = 8,
-            diamond_raw = 2,
-            stone = 4
-         }
+         inputs = { log = 8, diamond_raw = 2, stone = 4 }
       })
-
-      place_building_in_region(player, "sumatran_hunters_tent", sf:region(11), {
-         inputs = {}
-      })
-
+      place_building_in_region(player, "sumatran_jungle_marsh", sf:region(13))
+      place_building_in_region(player, "sumatran_hunters_house", sf:region(8))
       place_building_in_region(player, "sumatran_fortified_tower", sf:region(13), {
          soldiers = {
             [{0,0,0,0}] = 1,
@@ -156,11 +145,11 @@ init = {
             added = added + 1
          end
          if player:get_wares("reed") < 20 + #warehouses * 10 then
-            wh:set_wares("reed", wh:get_wares("reed") +  3 + #warehouses * 2)
+            wh:set_wares("reed", wh:get_wares("reed") +  5 + #warehouses * 2)
             added = added + 1
          end
          if player:get_wares("palmleaves") < 10 + #warehouses * 5 then
-            wh:set_wares("palmleaves", wh:get_wares("palmleaves") + 3)
+            wh:set_wares("palmleaves", wh:get_wares("palmleaves") + 6)
             added = added + 1
          end
          if player:get_wares("stone") < 30 + #warehouses * 10 then
@@ -177,6 +166,10 @@ init = {
          end
          if wh:get_wares("fish") < 40 + #warehouses * 5 then
             wh:set_wares("fish", wh:get_wares("fish") + 15)
+            added = added + 1
+         end
+         if player:get_wares("copper") < 20 + #warehouses * 5 then
+            wh:set_wares("copper", wh:get_wares("copper") + 3)
             added = added + 1
          end
          if player:get_wares("gold") < 20 + #warehouses * 5 then

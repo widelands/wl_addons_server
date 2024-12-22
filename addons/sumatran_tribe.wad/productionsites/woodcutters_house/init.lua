@@ -23,10 +23,10 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       requires_supporters = true,
-      basic_amount = 8,
+      basic_amount = 7,
       very_weak_ai_limit = 8,
-      weak_ai_limit = 12,
-      normal_ai_limit = 24
+      weak_ai_limit = 10,
+      normal_ai_limit = 13
    },
 
    working_positions = {
@@ -38,9 +38,9 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
          descname = _("felling trees"),
          actions = {
+            "call=harvest_palm",
             "call=harvest",
             "call=harvest_tropicalwood",
-            "call=harvest_palm",
             "sleep=duration:9s",
             "return=skipped",
          }
@@ -49,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
          descname = _("felling trees"),
          actions = {
-            "callworker=harvest on failure complete",
+            "callworker=harvest on failure skip",
             "sleep=duration:6s"
          }
       },
@@ -74,10 +74,10 @@ wl.Descriptions():new_productionsite_type {
    },
    out_of_resource_notification = {
       -- Translators: Short for "Out of ..." for a resource
-      title = _("No Trees"),
+      title = _("No Palm Trees or No Trees at All"),
       heading = _("Out of Trees"),
-      message = pgettext("sumatran_building", "The woodcutter working at this house can’t find any trees in his work area. You should consider dismantling or destroying the building or building a palm planter’s hut or a jungle preserver’s hut nearby."),
-      productivity_threshold = 40
+      message = pgettext("sumatran_building", "The woodcutter working at this house can’t find any palm trees in his work area. You should consider dismantling or destroying the building or building a palm planter’s hut or a jungle preserver’s hut nearby."),
+      productivity_threshold = 30
    },
 }
 

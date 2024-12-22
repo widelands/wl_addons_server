@@ -15,17 +15,19 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 1380,
+      prohibited_till = 1680,
+      forced_after = 3000,
       needs_water = true,
       requires_supporters = true,
       basic_amount = 2,
       very_weak_ai_limit = 2,
-      weak_ai_limit = 4,
-      normal_ai_limit = 6,
+      weak_ai_limit = 2,
+      normal_ai_limit = 3,
    },
 
    working_positions = {
-      sumatran_hunter_chief = 2
+      sumatran_hunter_chief = 2,
+--      sumatran_hunter = 1
    },
 
    programs = {
@@ -33,9 +35,9 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _("hunting"),
          actions = {
-            "call=fish",
             "call=hunt",
             "sleep=duration:15s",
+            "call=fish",
             "call=hunt_crocodile",
             "sleep=duration:15s",
 --            "return=skipped"
@@ -61,17 +63,17 @@ wl.Descriptions():new_productionsite_type {
          descname = _("fishing"),
          actions = {
             "callworker=fish_chief on failure skip",
-            "sleep=duration:25s",
+            "sleep=duration:15s",
          }
       },
    },
    out_of_resource_notification = {
-      -- Translators: Short for "Out of Game and out of fish" for a resource
-      title = _("No Game or No Fish"),
+      -- Translators: Short for "Out of Game" for missing animals
+      title = _("No Game"),
       -- TRANSLATORS: "Game" means animals that you can hunt
       heading = _("Out of Game or Fish"),
       -- TRANSLATORS: "game" means animals that you can hunt
-      message = pgettext("sumatran_building", "The hunter working out of this hunter’s house can’t find any game or fish in his work area."),
+      message = pgettext("sumatran_building", "The hunter working at this hunter’s house can’t find any game in his work area."),
       productivity_threshold = 25
    },
 }

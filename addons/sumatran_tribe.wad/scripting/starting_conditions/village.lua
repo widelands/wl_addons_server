@@ -46,7 +46,7 @@ init = {
             gold = 4,
             diamond_raw = 3,
             diamond = 5,
-            spear = 4,
+            sumatran_spear = 4,
             pick = 4,
             felling_ax = 3,
             shovel = 6,
@@ -55,7 +55,7 @@ init = {
             kitchen_tools = 2,
             buckets = 3,
             whetstone = 1,
-            crocodile_skin = 4
+            crocodile_skin = 2
         },
         workers = {
             sumatran_geologist = 4,
@@ -67,13 +67,14 @@ init = {
             sumatran_woodcutter = 5,
             sumatran_forester = 4,
             sumatran_water_carrier = 2,
-            sumatran_leaves_gatherer = 2,
+            sumatran_leaf_gatherer = 2,
             sumatran_hunter = 3,
             sumatran_farmer_experienced = 3,
             sumatran_farmer = 1,
             sumatran_reedcutter = 1,
             sumatran_cook = 1,
             sumatran_smelter = 1,
+            sumatran_chief = 1,
             sumatran_tribal_chief = 1,
             sumatran_craftsman = 1,
             sumatran_craftsman_experienced = 1,
@@ -85,21 +86,18 @@ init = {
             [{0,0,0,0}] = 5,
          }
       })
-
       place_building_in_region(plr, "sumatran_workshop_tools", sf:region(8), {
          inputs = { sandedwood = 5, iron = 5},
       })
-
       place_building_in_region(plr, "sumatran_workshop_basic", sf:region(8), {
-         inputs = { log = 8, stone = 4 },
+         inputs = { log = 6, diamond_raw = 2, stone = 4 },
       })
-      place_building_in_region(plr, "sumatran_tribal_gathering", sf:region(8), {
-         inputs = { meal = 8 },
-      })
-      place_building_in_region(plr, "sumatran_hunters_tent", sf:region(8), {
+      place_building_in_region(plr, "sumatran_jungle_marsh", sf:region(13))
+      place_building_in_region(plr, "sumatran_hunters_house", sf:region(8), {
          inputs = {},
       })
    end
 }
+
 pop_textdomain()
 return init

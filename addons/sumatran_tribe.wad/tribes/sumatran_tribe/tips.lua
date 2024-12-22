@@ -13,7 +13,7 @@ tips = {
         seconds = 8
     },
     {
-        text = _"Leaves gatherers are important part of your economy, they need cassava fields, plantations and palm planters nearby.",
+        text = _"Leaf gatherers are important part of your economy, they need cassava fields, plantations and palm planters nearby.",
         seconds = 7
     },
     {

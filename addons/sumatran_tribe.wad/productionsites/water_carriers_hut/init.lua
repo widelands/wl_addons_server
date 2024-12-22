@@ -24,12 +24,12 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 420,
+      prohibited_till = 120,
       needs_water = true,
       basic_amount = 3,
-      very_weak_ai_limit = 3,
-      weak_ai_limit = 6,
-      normal_ai_limit = 9,
+      very_weak_ai_limit = 4,
+      weak_ai_limit = 5,
+      normal_ai_limit = 7,
    },
 
    working_positions = {

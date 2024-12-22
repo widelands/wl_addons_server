@@ -10,7 +10,7 @@ init = {
    -- TRANSLATORS: This is the name of a starting condition
    descname = _("Poor Hamlet"),
    -- TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
-   tooltip = _("Start the game with just a warehouse and the bare minimum for bootstrapping an economy. Warning: the AI always and human in most of the cases can’t successfully start from this. Do not even try, if you are not prepared for real struggle. Sicilian Pasture map or Crete’s Vineyard map from position of yellow or green player and peaceful mode of play recomended."),
+   tooltip = _("Start the game with just a warehouse and the bare minimum for bootstrapping an economy. Warning: the AI always and human in most of the cases can’t successfully start from this. Do not even try, if you are not prepared for real struggle. A map with good summer or desert terrain and a lot of space recommended."),
    incompatible_wc = {"scripting/win_conditions/hq_hunter.lua"},
 
    func = function(player, shared_in_start)
@@ -29,7 +29,7 @@ init = {
             felling_ax = 1, -- woodcutter
             pick = 1, -- stonecutter
             shovel = 1, -- forester
-            machete = 2, -- leaves gatherer, reedcutter
+            machete = 2, -- leaf gatherer, reedcutter
             diamond = 1, -- furnace
             copper = 1, -- charcoal kiln
             iron = 1, -- smelter

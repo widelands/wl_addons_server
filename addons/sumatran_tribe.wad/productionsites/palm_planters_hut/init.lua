@@ -23,14 +23,12 @@ wl.Descriptions():new_productionsite_type {
 
 
    aihints = {
-      supports_production_of = { "log" },
-      supports_production_of = { "palmleaves" },
-      supports_production_of = { "palm_wine" },
+      supports_production_of = { "log", "palmleaves", "palm_wine" },
       space_consumer = true,
       basic_amount = 4,
       very_weak_ai_limit = 5,
-      weak_ai_limit = 8,
-      normal_ai_limit = 10,
+      weak_ai_limit = 6,
+      normal_ai_limit = 7,
    },
 
    working_positions = {

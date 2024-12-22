@@ -13,12 +13,12 @@ wl.Descriptions():new_productionsite_type {
         name = "sumatran_hunters_house",
         enhancement_cost = {
             log = 1,
-            stone = 3,
-            reed = 1
+            stone = 2,
+            palmleaves = 1
         },
         enhancement_return_on_dismantle = {
             stone = 1,
-            reed = 1
+            palmleaves = 1
         },
     },
 
@@ -37,12 +37,14 @@ wl.Descriptions():new_productionsite_type {
    }},
 
    aihints = {
-      prohibited_till = 120,
-      forced_after = 360,
-      basic_amount = 3,
-      very_weak_ai_limit = 6,
-      weak_ai_limit = 8,
-      normal_ai_limit = 10,
+--      prohibited_till = 120,
+      forced_after = 60,
+--      supports_production_of = { "crocodile_skin", "meat" },
+--      requires_supporters = true,
+      basic_amount = 2,
+      very_weak_ai_limit = 2,
+      weak_ai_limit = 3,
+      normal_ai_limit = 3,
    },
 
    working_positions = {
@@ -59,7 +61,6 @@ wl.Descriptions():new_productionsite_type {
             "call=fish",
             "call=hunt2",
             "sleep=duration:15s",
-            "call=fish",
             "return=skipped"
          }
       },
@@ -87,12 +88,12 @@ wl.Descriptions():new_productionsite_type {
       },
    },
    out_of_resource_notification = {
-      -- Translators: Short for "Out of Game" for a resource
-      title = _("No Game or Fish"),
+      -- Translators: Short for "Out of Game" for missing animals
+      title = _("No Game"),
       -- TRANSLATORS: "Game" means animals that you can hunt
       heading = _("Out of Game or Fish"),
-      -- TRANSLATORS: "game" means animals that you can hunt
-      message = pgettext("sumatran_building", "The hunter working out of this hunter’s tent can’t find any game or fish in his work area. "),
+      -- TRANSLATORS: "Game" means animals that you can hunt
+      message = pgettext("sumatran_building", "The hunter working at this hunter’s tent can’t find any game in his work area."),
       productivity_threshold = 30
    },
 }

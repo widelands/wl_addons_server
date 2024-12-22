@@ -31,8 +31,8 @@ wl.Descriptions():new_productionsite_type {
       needs_water = true,
       basic_amount = 2,
       very_weak_ai_limit = 3,
-      weak_ai_limit = 4,
-      normal_ai_limit = 4,
+      weak_ai_limit = 3,
+      normal_ai_limit = 3,
    },
 
    working_positions = {
@@ -67,9 +67,9 @@ wl.Descriptions():new_productionsite_type {
    },
    out_of_resource_notification = {
       -- Translators: Short for "Out of ..." for a resource
-      title = _("No Fields"),
+      title = _("No Fields or No Water Nearby"),
       heading = _("Out of Fields"),
-      message = pgettext("sumatran_building", "The gardener working at this reed yard has no cleared soil to plant new plants."),
+      message = pgettext("sumatran_building", "The reed cutter working at this reed yard has no cleared soil to plant new plants."),
       productivity_threshold = 20
    },
 }

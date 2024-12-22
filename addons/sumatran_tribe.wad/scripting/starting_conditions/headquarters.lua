@@ -45,7 +45,7 @@ init = {
             gold = 4,
             diamond_raw = 3,
             diamond = 5,
-            spear = 4,
+            sumatran_spear = 4,
             pick = 4,
             felling_ax = 3,
             shovel = 6,
@@ -54,7 +54,7 @@ init = {
             kitchen_tools = 2,
             buckets = 3,
             whetstone = 1,
-            crocodile_skin = 4
+            crocodile_skin = 2
         },
         workers = {
             sumatran_geologist = 4,
@@ -66,13 +66,14 @@ init = {
             sumatran_woodcutter = 5,
             sumatran_forester = 4,
             sumatran_water_carrier = 2,
-            sumatran_leaves_gatherer = 2,
+            sumatran_leaf_gatherer = 2,
             sumatran_hunter = 3,
             sumatran_farmer_experienced = 3,
             sumatran_farmer = 1,
             sumatran_reedcutter = 1,
             sumatran_cook = 1,
             sumatran_smelter = 1,
+            sumatran_chief = 1,
             sumatran_tribal_chief = 1,
             sumatran_craftsman = 1,
             sumatran_craftsman_experienced = 1,
@@ -81,7 +82,7 @@ init = {
             sumatran_weaver = 1,
       },
       soldiers = {
-         [{0,0,0,0}] = 40,
+         [{0,0,0,0}] = 45,
       }
    })
 end

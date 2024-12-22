@@ -32,6 +32,8 @@ wl.Descriptions():new_militarysite_type {
     
     aihints = {
         expansion = true,
+        fighting = true,
+        basic_amount = 3
     },
 
     max_soldiers = 2,

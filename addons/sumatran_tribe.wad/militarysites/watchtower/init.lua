@@ -42,8 +42,10 @@ wl.Descriptions():new_militarysite_type {
     },
     
     aihints = {
-        prohibited_till = 720,
+        prohibited_till = 960,
+        basic_amount = 2,
         expansion = true,
+        fighting = true,
     },
 
     max_soldiers = 3,

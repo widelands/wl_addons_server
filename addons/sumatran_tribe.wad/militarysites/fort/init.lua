@@ -44,7 +44,7 @@ wl.Descriptions():new_militarysite_type {
     },
     
     aihints = {
-        prohibited_till = 2580,
+        prohibited_till = 5400,
         mountain_conqueror = true
     },
 

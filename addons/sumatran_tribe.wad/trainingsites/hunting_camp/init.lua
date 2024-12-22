@@ -13,12 +13,12 @@ wl.Descriptions():new_trainingsite_type {
       log = 1,
       stone = 3,
       tropicalwood = 2,
-      palmleaves = 1,
+      palmleaves = 2,
       reed = 2,
-      cloth = 1,
+      cloth = 2,
       diamond = 4,
       copper = 1,
-      gold = 2
+      gold = 1
    },
    return_on_dismantle = {
       stone = 1,
@@ -59,11 +59,14 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    aihints = {
-      prohibited_till = 2040,
+      prohibited_till = 1200,
+      forced_after = 3300,
+      trainingsites_max_percent = 40,
+      requires_supporters = true,
       basic_amount = 1,
       very_weak_ai_limit = 1,
       weak_ai_limit = 1,
-      normal_ai_limit = 2,
+--      normal_ai_limit = 1,
    },
 
    working_positions = {
@@ -71,8 +74,8 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    inputs = {
-      { name = "spear", amount = 8 },
-      { name = "meal", amount = 8 },
+      { name = "sumatran_spear", amount = 5 },
+      { name = "meal", amount = 5 },
       { name = "palm_wine", amount = 10 }
    },
 
@@ -90,11 +93,11 @@ wl.Descriptions():new_trainingsite_type {
          descname = pgettext("sumatran_building", "upgrading warrior attack from level 0 to level 1"),
          actions = {
             "checksoldier=soldier:attack level:0", -- Fails when aren't any warriors of level 0 attack
-            "return=failed unless site has spear",
+            "return=failed unless site has sumatran_spear",
             "return=failed unless site has meal",
             "return=failed unless site has palm_wine",
             "callworker=check_chief_crocodile on failure fail",
-            "consume=spear meal palm_wine",
+            "consume=sumatran_spear meal palm_wine",
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:0", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:1",
@@ -107,11 +110,11 @@ wl.Descriptions():new_trainingsite_type {
          descname = pgettext("sumatran_building", "upgrading warrior attack from level 1 to level 2"),
          actions = {
             "checksoldier=soldier:attack level:1",
-            "return=failed unless site has spear",
+            "return=failed unless site has sumatran_spear",
             "return=failed unless site has meal",
             "return=failed unless site has palm_wine:2",
             "callworker=check_chief_crocodile on failure fail",
-            "consume=spear meal palm_wine:2",
+            "consume=sumatran_spear meal palm_wine:2",
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:1", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:2",
@@ -124,11 +127,11 @@ wl.Descriptions():new_trainingsite_type {
          descname = pgettext("sumatran_building", "upgrading warrior attack from level 2 to level 3"),
          actions = {
             "checksoldier=soldier:attack level:2",
-            "return=failed unless site has spear",
+            "return=failed unless site has sumatran_spear",
             "return=failed unless site has meal",
             "return=failed unless site has palm_wine:2",
             "callworker=check_chief_crocodile on failure fail",
-            "consume=spear meal palm_wine:2",
+            "consume=sumatran_spear meal palm_wine:2",
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:2", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:3",
@@ -139,7 +142,7 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    soldier_capacity = 8,
-   trainer_patience = 12,
+   trainer_patience = 20,
 
    messages = {
       -- TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned

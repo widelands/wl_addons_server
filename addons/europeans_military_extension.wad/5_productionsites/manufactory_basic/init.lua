@@ -76,7 +76,8 @@ wl.Descriptions():new_productionsite_type {
     
     inputs = {
         { name = "blackwood", amount = 16 },
-        { name = "reed", amount = 12 },
+        { name = "cloth", amount = 16 },
+        { name = "leather", amount = 12 },
         { name = "coal", amount = 12 },
         { name = "metal_alloy", amount = 12 },
     },
@@ -89,11 +90,11 @@ wl.Descriptions():new_productionsite_type {
                 "call=processing_metal_alloy",
                 "call=processing_metal_alloy",
                 "call=processing_blackwood",
-                "call=processing_reed",
+                "call=processing_cloth",
                 "call=processing_metal_alloy",
                 "call=processing_metal_alloy",
                 "call=processing_blackwood",
-                "call=processing_reed",
+                "call=processing_cloth",
                 "return=skipped"
             }
         },
@@ -115,7 +116,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_wooden and not economy needs armor_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs armor_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs armor_wooden",
-                "consume=blackwood",
+                "consume=blackwood cloth",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -130,7 +131,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_wooden and not economy needs boots_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs boots_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs boots_wooden",
-                "consume=blackwood",
+                "consume=blackwood cloth",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -167,7 +168,7 @@ wl.Descriptions():new_productionsite_type {
                 "produce=spear_wooden:2"
             }
         },
-        processing_reed = {
+        processing_cloth = {
             -- TRANSLATORS: Completed/Skipped/Did not start processing reed for input wares because ...
             descname = pgettext("europeans_building", "processing reed to create tools and armor"),
             actions = {
@@ -179,10 +180,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
-                "return=skipped when economy needs reed and not economy needs armor_processed",
                 "return=skipped when economy needs cloth and not economy needs armor_processed",
+                "return=skipped when economy needs leather and not economy needs armor_processed",
                 "return=skipped when economy needs boots_sturdy and not economy needs armor_processed",
-                "consume=reed:3",
+                "consume=cloth:2 leather:2",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:6m",
                 "produce=armor_processed:2"
@@ -193,10 +194,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs boots_sturdy",
-                "return=skipped when economy needs reed and not economy needs boots_sturdy",
                 "return=skipped when economy needs cloth and not economy needs boots_sturdy",
+                "return=skipped when economy needs leather and not economy needs boots_sturdy",
                 "return=skipped when economy needs armor_processed and not economy needs boots_sturdy",
-                "consume=blackwood reed:2",
+                "consume=blackwood cloth:2 leather:2",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:6m",
                 "produce=boots_sturdy:2"

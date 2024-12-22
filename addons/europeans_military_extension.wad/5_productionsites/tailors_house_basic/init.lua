@@ -71,6 +71,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "armor", amount = 4 },
+        { name = "leather", amount = 4 },
         { name = "cloth", amount = 4 },
         { name = "blackwood", amount = 4 }
     },
@@ -91,8 +92,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
+                "return=skipped when economy needs cloth and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
-                "consume=blackwood",
+                "consume=blackwood cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -103,9 +105,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
-                "return=skipped when economy needs cloth and not economy needs armor_processed",
+                "return=skipped when economy needs armor and not economy needs armor_processed",
+                "return=skipped when economy needs leather and not economy needs armor_processed",
                 "return=skipped when economy needs armor_wooden and not economy needs armor_processed",
-                "consume=armor cloth",
+                "consume=armor leather",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "produce=armor_processed:2"

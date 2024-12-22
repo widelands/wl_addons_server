@@ -27,14 +27,15 @@ init = {
 
    launch_expeditions(player, {
       {
-         log = 5,
+         log = 4,
+         iron = 1,
          palmleaves = 3,
          stone = 1,
          diamond = 1,
          copper = 1,
          sumatran_woodcutter = 1,
          sumatran_forester = 1,
-         sumatran_leaves_gatherer = 1,
+         sumatran_leaf_gatherer = 1,
          sumatran_soldier = 1,
       },
       {
@@ -64,21 +65,23 @@ init = {
          sumatran_hunter = 1,
       },
       {
-         log = 5,
+         log = 4,
+         iron = 1,
          palmleaves = 3,
          stone = 1,
          diamond = 1,
          copper = 1,
          sumatran_woodcutter = 1,
          sumatran_forester = 1,
-         sumatran_leaves_gatherer = 1,
+         sumatran_leaf_gatherer = 1,
          sumatran_soldier = 1,
       },
       {
          tropicalwood = 2,
          palmleaves = 2,
          stone = 1,
-         log = 4,
+         log = 3,
+         iron = 1,
          sumatran_woodcutter = 1,
          sumatran_forester = 1,
          sumatran_stonecutter = 1,
@@ -88,16 +91,17 @@ init = {
       },
       {
          log = 3,
-         palmleaves = 6,
+         palmleaves = 5,
          stone = 2,
          reed = 1,
          sumatran_hunter = 1,
          sumatran_cook = 1,
          sumatran_water_carrier = 1,
+         sumatran_soldier = 1,
       },
       {
          log = 3,
-         stone = 5,
+         stone = 3,
          sumatran_geologist = 1,
          sumatran_miner = 1,
          sumatran_smelter = 1,
@@ -105,6 +109,7 @@ init = {
          sumatran_woodcutter = 1,
          sumatran_forester = 1,
          sumatran_hunter = 1,
+         sumatran_soldier = 2,
       },
    })
 end

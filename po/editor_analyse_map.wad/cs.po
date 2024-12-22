@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 03:11+0200\n"
+"POT-Creation-Date: 2024-12-22 03:11+0100\n"
 "PO-Revision-Date: 2024-01-29 07:14+0000\n"
+"Last-Translator: Ondřej Itřech, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +24,7 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/addon:2
 msgid "Editor: Analyse Map"
-msgstr ""
+msgstr "Editor: Analýza mapy"
 
 #: addons/editor_analyse_map.wad/addon:3
 msgid ""
@@ -60,107 +64,107 @@ msgstr ""
 #: addons/editor_analyse_map.wad/callbacks.lua:56
 #, lua-format
 msgid "For information about the results look at %s"
-msgstr ""
+msgstr "Více informací o výsledcích lze nalézt v %s"
 
 #. TRANSLATORS: Will be inserted into "For information about the results look at %s"
 #: addons/editor_analyse_map.wad/callbacks.lua:58
 msgid "this post in the Widelands forum"
-msgstr ""
+msgstr "této zprávě na diskusním fóru Widelands"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:66
 msgid "Statistic for the whole map"
-msgstr ""
+msgstr "Statistiky za celou mapu"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:75
 msgid "Players on this map"
-msgstr ""
+msgstr "Hráči na mapě"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:77
 msgid "Other findings on this map"
-msgstr ""
+msgstr "Další informace o mapě"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:79
 msgid "Analysing %1$d map fields"
-msgstr ""
+msgstr "Analýza %1$d polí mapy"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:103
 msgid "Analysing %1$d map fields for player %2$s"
-msgstr ""
+msgstr "Analýza %1$d polí mapy za hráče %2$s"
 
 #. TRANSLATORS: Placeholder is a number
 #: addons/editor_analyse_map.wad/callbacks.lua:105
 msgid "Vicinity of Player %1$d"
-msgstr ""
+msgstr "Okolí hráče %1$d"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:111
 msgid "Findings up to %1$d Fields around this players starting position:"
-msgstr ""
+msgstr "Prohledáno %1$d polí v okolí výchzí pozice hráče:"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:121
 msgctxt "statistic_for"
 msgid "Statistic for a player"
 msgid_plural "Statistic for players"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Statistiky hráče"
+msgstr[1] "Statistiky hráčů"
+msgstr[2] "Statistiky hráčů"
+msgstr[3] "Statistiky hráčů"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:13
 msgid "%1$d/%2$d"
-msgstr ""
+msgstr "%1$d/%2$d"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:36
 msgid "%1$d granite or:"
-msgstr ""
+msgstr "%1$d kvádrů žuly nebo:"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:37
 msgid "ca. %1$d granite and ca. %2$d marble"
-msgstr ""
+msgstr "cca. %1$d kvádrů žuly a cca. %2$d kvádrů mramoru"
 
 #. TRANSLATORS: A value with percent sign like: (20%)
 #: addons/editor_analyse_map.wad/helper_functions.lua:72
 msgid "(%1$d%%)"
-msgstr ""
+msgstr "(%1$d%%)"
 
 #. TRANSLATORS: First placeholder is a number or string, second placeholder is the prior created percent string
 #. TRANSLATORS: Result is like: "2 (15%)"
 #: addons/editor_analyse_map.wad/helper_functions.lua:81
 msgid "%1$s %2$s"
-msgstr ""
+msgstr "%1$s %2$s"
 
 #. TRANSLATORS: Table header for of player names
 #: addons/editor_analyse_map.wad/helper_functions.lua:126
 msgid "Name"
-msgstr ""
+msgstr "Jméno"
 
 #. TRANSLATORS: Table header for players start field
 #: addons/editor_analyse_map.wad/helper_functions.lua:128
 msgid "Position"
-msgstr ""
+msgstr "Pozice"
 
 #. TRANSLATORS: Table header for resource names
 #: addons/editor_analyse_map.wad/helper_functions.lua:130
 msgid "Found"
-msgstr ""
+msgstr "Nalezeno"
 
 #. TRANSLATORS: Table header for resource amount
 #: addons/editor_analyse_map.wad/helper_functions.lua:132
 msgid "Amount"
-msgstr ""
+msgstr "Množství"
 
 #. TRANSLATORS: Table header for fields like "15/30"
 #: addons/editor_analyse_map.wad/helper_functions.lua:134
 msgid "Around"
-msgstr ""
+msgstr "Poblíž"
 
 #. TRANSLATORS: Table header for values like "30 Fields"
 #: addons/editor_analyse_map.wad/helper_functions.lua:136
 msgid "Distance"
-msgstr ""
+msgstr "Vzdálenost"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:172
 msgid "%1$d Fields"
-msgstr ""
+msgstr "%1$d Polí"
 
 #: addons/editor_analyse_map.wad/init.lua:8
 msgid "Analyse the map"

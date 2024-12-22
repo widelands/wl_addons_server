@@ -37,10 +37,10 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       prohibited_till = 1620,
-      basic_amount = 2,
-      very_weak_ai_limit = 2,
-      weak_ai_limit = 3,
-      normal_ai_limit = 3,
+      basic_amount = 1,
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 2,
+      normal_ai_limit = 2,
    },
 
    working_positions = {
@@ -63,13 +63,13 @@ wl.Descriptions():new_productionsite_type {
             "return=skipped unless economy needs iron_ore",
             "consume=meal palm_wine",
             "animate=working duration:23s",
-            "mine=resource_iron radius:2 yield:100% when_empty:10% experience_on_fail:10%",
+            "mine=resource_iron radius:2 yield:100% when_empty:10% experience_on_fail:15%",
             "produce=iron_ore",
             "animate=working duration:23s",
-            "mine=resource_iron radius:2 yield:100% when_empty:10% experience_on_fail:10%",
+            "mine=resource_iron radius:2 yield:100% when_empty:10% experience_on_fail:15%",
             "produce=iron_ore",
             "animate=working duration:23s",
-            "mine=resource_iron radius:2 yield:100% when_empty:10% experience_on_fail:10%",
+            "mine=resource_iron radius:2 yield:100% when_empty:10% experience_on_fail:15%",
             "produce=iron_ore",
             "sleep=duration:45s",
          }

@@ -30,13 +30,14 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 1260,
-      forced_after = 1960,
-      supports_production_of = { "crocodile_skin" },
-      basic_amount = 2,
+      prohibited_till = 2040,
+      forced_after = 2700,
+      space_consumer = true,
+      supports_production_of = { "crocodile_skin", "meat" },
+      basic_amount = 1,
       very_weak_ai_limit = 2,
-      weak_ai_limit = 3,
-      normal_ai_limit = 4,
+      weak_ai_limit = 2,
+      normal_ai_limit = 3,
    },
 
    working_positions = {
@@ -49,13 +50,22 @@ wl.Descriptions():new_productionsite_type {
          descname = _("working"),
          actions = {
             "callworker=release",
-            "sleep=duration:58s",
+            "sleep=duration:43s",
             "callworker=release_crocodile",
-            "sleep=duration:58s",
+            "sleep=duration:43s",
             "callworker=release",
-            "sleep=duration:58s"
+            "sleep=duration:43s",
+            "callworker=release",
+            "sleep=duration:43s"
          }
       },
+   },
+   out_of_resource_notification = {
+      -- Translators: Short for "Out of ..." for a resource
+      title = _("No Space"),
+      heading = _("Animals do not leave this march"),
+      message = pgettext ("sumatran_building", "There is not enough space around this march for animals to leave."),
+      productivity_threshold = 10
    },
 }
 

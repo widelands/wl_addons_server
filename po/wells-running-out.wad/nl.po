@@ -2,23 +2,23 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Alex Rijckaert, 2023
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 03:06+0200\n"
+"POT-Creation-Date: 2022-03-27 04:03+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/wells-running-out.wad/addon:2
@@ -32,8 +32,8 @@ msgid ""
 "and frisian wells can be enhanced to deep wells when the worker has enough "
 "experience."
 msgstr ""
-"Maak de bron 'water' nuttiger door putten een grotere straal te geven en een "
-"kans van slechts 5% om water te vinden als ze uitgeput zijn. Daarnaast "
+"Maak de bron 'water' nuttiger door putten een grotere straal te geven en een"
+" kans van slechts 5% om water te vinden als ze uitgeput zijn. Daarnaast "
 "kunnen de barbaarse en Friese putten worden verbeterd tot diepe putten als "
 "de werker genoeg ervaring heeft."
 
@@ -65,7 +65,8 @@ msgstr "Zonder Water"
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:38
 msgctxt "barbarians_building"
-msgid "The carrier working at this deep well can’t find any water in his well."
+msgid ""
+"The carrier working at this deep well can’t find any water in his well."
 msgstr ""
 "De waterdrager die aan deze diepe put werkt, kan geen water in zijn put "
 "vinden."
@@ -84,7 +85,8 @@ msgstr "Diepe Bron"
 
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:38
 msgctxt "frisians_building"
-msgid "The carrier working at this deep well can’t find any water in his well."
+msgid ""
+"The carrier working at this deep well can’t find any water in his well."
 msgstr ""
 "De waterdrager die aan deze diepe put werkt, kan geen water in zijn put "
 "vinden."
@@ -116,7 +118,8 @@ msgstr[1] "%d seconden"
 msgctxt "frisians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
 msgstr ""
-"De diepe waterbron heeft gemiddeld %s nodig om één emmer water te produceren."
+"De diepe waterbron heeft gemiddeld %s nodig om één emmer water te "
+"produceren."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
 #: addons/wells-running-out.wad/postload.lua:39
@@ -130,7 +133,8 @@ msgstr "Bedient de diepe waterbronnen."
 msgctxt "barbarians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
 msgstr ""
-"De diepe waterbron heeft gemiddeld %s nodig om één emmer water te produceren."
+"De diepe waterbron heeft gemiddeld %s nodig om één emmer water te "
+"produceren."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
 #: addons/wells-running-out.wad/postload.lua:74

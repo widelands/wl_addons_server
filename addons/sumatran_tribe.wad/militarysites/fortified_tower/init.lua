@@ -18,7 +18,7 @@ wl.Descriptions():new_militarysite_type {
    },
 
    aihints = {
-      prohibited_till = 780,
+      prohibited_till = 1560,
       fighting = true,
    },
 
