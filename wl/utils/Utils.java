@@ -414,7 +414,7 @@ public class Utils {
 		str = str.replaceAll("\t", "\\\\t");
 		str = str.replaceAll("\r", "\\\\r");
 		str = str.replaceAll("\n", "\\\\n");
-		str = str.replaceAll("\"", "\\\"");
+		str = str.replaceAll("\"", "\\\\\"");
 		return str;
 	}
 
