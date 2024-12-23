@@ -93,12 +93,12 @@ public class TransifexIntegration {
 					    poFile.getName().substring(0, poFile.getName().length() - 3);
 					final String outFile = "i18n/" + poDir.getName() + "/" + lang + ".mo";
 
-					Utils.bashOutput("msgmerge", poFile.getAbsolutePath(),
+					Utils.bash("msgmerge", poFile.getAbsolutePath(),
 					                 new File(poDir, poDir.getName() + ".pot").getAbsolutePath(),
 					                 "-o", poFile.getAbsolutePath());
 					new File("i18n", poDir.getName()).mkdirs();
 					new File("i18n/" + lang, "LC_MESSAGES").mkdirs();
-					Utils.bashOutput("msgfmt", poFile.getAbsolutePath(), "-o", outFile);
+					Utils.bash("msgfmt", poFile.getAbsolutePath(), "-o", outFile);
 					// We permanently need to store MO files in two different
 					// locations for backwards compatibility.
 					Files.copy(new File(outFile).toPath(),
@@ -109,7 +109,7 @@ public class TransifexIntegration {
 		}
 
 		Utils.log("Gathering translation changes...");
-		Utils.bashOutput("git", "add", "i18n");
+		Utils.bash("git", "add", "i18n");
 		HashSet<String> increasedMO = new HashSet<>();
 		for (String changed :
 		     Utils.bashOutput("bash", "-c", "git status -s i18n/*.wad").split("\n")) {
