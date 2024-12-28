@@ -19,9 +19,11 @@
 
 package wl.utils;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.nio.file.Files;
@@ -65,6 +67,7 @@ public class Buildcats {
 					    "--flag=npgettext:2:pass-lua-format", "--flag=npgettext:3:pass-lua-format",
 					    "--language=Lua", "--from-code=UTF-8", "-F",
 					    "-c TRANSLATORS:", "--join-existing", "--output=" + out, "-"});
+					pb.redirectErrorStream(true);
 					Process p = pb.start();
 					OutputStream pipe = p.getOutputStream();
 					for (;;) {
@@ -75,6 +78,9 @@ public class Buildcats {
 					pipe.flush();
 					pipe.close();
 					input.close();
+					BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+					String str;
+					while ((str = b.readLine()) != null) Utils.log("    # " + str);
 					p.waitFor();
 				}
 			} else if (!mapsOnly && isXGettextInput(f.getName())) {
@@ -115,12 +121,19 @@ public class Buildcats {
 		File dir = new File("po", kWebsiteMapsTextdomain);
 		dir.mkdirs();
 		String out = dir.getPath() + "/" + kWebsiteMapsTextdomain + ".pot";
+
+		Utils.bash(
+		        "xgettext", "--language=Lua", "--output=" + out, "--force-po",
+		        "--copyright-holder=\"Widelands Development Team\"",
+		        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
+		        "--from-code=UTF-8", "/dev/null");
+
+		recurse(out, new File(Utils.config("website_maps_path")), true);
+
 		Utils.bash("xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
 		           "--force-po", "--copyright-holder=\"Widelands Development Team\"",
 		           "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
-		           uploaderCommentsFile.getAbsolutePath());
-		recurse(out, new File(Utils.config("website_maps_path")), true);
-		// uploaderCommentsFile.delete();
+		           "--join-existing", uploaderCommentsFile.getAbsolutePath());
 
 		for (File addon : Utils.listSorted(new File("addons"))) {
 			dir = new File("po", addon.getName());
