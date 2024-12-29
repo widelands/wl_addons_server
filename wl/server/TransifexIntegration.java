@@ -80,7 +80,8 @@ public class TransifexIntegration {
 
 		++websiteMapTranslationsVersion;
 
-		try (PrintWriter writer = new PrintWriter(new FileWriter(getWebsiteMapsTranslationsFile()));) {
+		try (PrintWriter writer =
+		         new PrintWriter(new FileWriter(getWebsiteMapsTranslationsFile()));) {
 			writer.println(websiteMapTranslationsVersion);
 		} catch (Exception e) {
 			Utils.log("Could not save new website maps translation version: " + e);
