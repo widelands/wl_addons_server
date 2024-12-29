@@ -78,7 +78,8 @@ public class Buildcats {
 					pipe.flush();
 					pipe.close();
 					input.close();
-					BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+					BufferedReader b =
+					    new BufferedReader(new InputStreamReader(p.getInputStream()));
 					String str;
 					while ((str = b.readLine()) != null) Utils.log("    # " + str);
 					p.waitFor();
@@ -122,11 +123,10 @@ public class Buildcats {
 		dir.mkdirs();
 		String out = dir.getPath() + "/" + kWebsiteMapsTextdomain + ".pot";
 
-		Utils.bash(
-		        "xgettext", "--language=Lua", "--output=" + out, "--force-po",
-		        "--copyright-holder=\"Widelands Development Team\"",
-		        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
-		        "--from-code=UTF-8", "/dev/null");
+		Utils.bash("xgettext", "--language=Lua", "--output=" + out, "--force-po",
+		           "--copyright-holder=\"Widelands Development Team\"",
+		           "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
+		           "--from-code=UTF-8", "/dev/null");
 
 		recurse(out, new File(Utils.config("website_maps_path")), true);
 
