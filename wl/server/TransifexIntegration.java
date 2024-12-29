@@ -19,7 +19,11 @@
 
 package wl.server;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -46,7 +50,42 @@ public class TransifexIntegration {
 	 */
 	public static TransifexIntegration TX = new TransifexIntegration();
 
-	private TransifexIntegration() {}
+	private static File kWebsiteMapsTranslationsFile = new File("website_maps_i18n_version");
+	private long websiteMapTranslationsVersion;
+
+	private TransifexIntegration() {
+		try (
+			BufferedReader reader = new BufferedReader(new FileReader(kWebsiteMapsTranslationsFile));
+		) {
+			websiteMapTranslationsVersion = Long.valueOf(reader.readLine());
+		} catch (Exception e) {
+			Utils.log("Could not read website maps translation version: " + e);
+			websiteMapTranslationsVersion = 0;
+		}
+	}
+
+	/**
+	 * Get the current version of website map translations.
+	 * @return The version number, or 0 if not known.
+	 */
+	public long getWebsiteMapTranslationsVersion() { return websiteMapTranslationsVersion; }
+
+	private void incrementWebsiteMapTranslationsVersion() {
+		if (websiteMapTranslationsVersion == 0) {
+			Utils.log("Refusing to update website maps translation version because it is zero.");
+			return;
+		}
+
+		++websiteMapTranslationsVersion;
+
+		try (
+			PrintWriter writer = new PrintWriter(new FileWriter(kWebsiteMapsTranslationsFile));
+		) {
+			writer.println(websiteMapTranslationsVersion);
+		} catch (Exception e) {
+			Utils.log("Could not save new website maps translation version: " + e);
+		}
+	}
 
 	/**
 	 * Perform a full translations sync.
@@ -56,6 +95,10 @@ public class TransifexIntegration {
 		pull();
 		buildCatalogues();
 		push();
+
+		if (!Utils.bashOutput("bash", "-c", "git status -s po/websitemaps/*.po").isEmpty()) {
+			incrementWebsiteMapTranslationsVersion();
+		}
 	}
 
 	/**

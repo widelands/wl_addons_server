@@ -32,6 +32,7 @@ package wl.server;
  *  <li> <code>ENDOFSTREAM\n</code>
  * </ul>
  * <li> In PV 7+, the server then sends the server's display name followed by <code>\n</code>.
+ * <li> In PV 8+, the server then sends the current version of the website maps translations followed by <code>\n</code>.
  * <li> If the username is "", the server then replies <code>ENDOFSTREAM\n</code>.
  * Otherwise:
  * <ul>

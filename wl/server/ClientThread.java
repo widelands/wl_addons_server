@@ -55,7 +55,7 @@ public class ClientThread implements Runnable {
 
 	/** The newest protocol version the server supports. */
 	// May be increased but never decreased.
-	public static final int kNewestSupportedProtocolVersion = 7;
+	public static final int kNewestSupportedProtocolVersion = 8;
 
 	/**
 	 * Constructor.
@@ -107,7 +107,13 @@ public class ClientThread implements Runnable {
 			boolean admin = false;
 			Set<String> blackWhiteList = new HashSet<>();
 
-			if (protocolVersion >= 7) out.println(Utils.config("name"));
+			if (protocolVersion >= 7) {
+				out.println(Utils.config("name"));
+			}
+			if (protocolVersion >= 8) {
+				out.println(TransifexIntegration.TX.getWebsiteMapTranslationsVersion());
+			}
+
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
