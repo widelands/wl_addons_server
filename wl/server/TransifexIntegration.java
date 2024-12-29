@@ -54,9 +54,8 @@ public class TransifexIntegration {
 	private long websiteMapTranslationsVersion;
 
 	private TransifexIntegration() {
-		try (
-			BufferedReader reader = new BufferedReader(new FileReader(kWebsiteMapsTranslationsFile));
-		) {
+		try (BufferedReader reader =
+		         new BufferedReader(new FileReader(kWebsiteMapsTranslationsFile));) {
 			websiteMapTranslationsVersion = Long.valueOf(reader.readLine());
 		} catch (Exception e) {
 			Utils.log("Could not read website maps translation version: " + e);
@@ -78,9 +77,7 @@ public class TransifexIntegration {
 
 		++websiteMapTranslationsVersion;
 
-		try (
-			PrintWriter writer = new PrintWriter(new FileWriter(kWebsiteMapsTranslationsFile));
-		) {
+		try (PrintWriter writer = new PrintWriter(new FileWriter(kWebsiteMapsTranslationsFile));) {
 			writer.println(websiteMapTranslationsVersion);
 		} catch (Exception e) {
 			Utils.log("Could not save new website maps translation version: " + e);
