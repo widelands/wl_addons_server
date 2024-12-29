@@ -551,7 +551,9 @@ public class HandleCommand {
 		checkCommandVersion(2);
 		ServerUtils.checkNrArgs(cmd, 1);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
-		ServerUtils.checkAddOnExists(cmd[1]);
+		if (!Buildcats.kWebsiteMapsTextdomain.equals(cmd[1])) {
+			ServerUtils.checkAddOnExists(cmd[1]);
+		}
 		ServerUtils.semaphoreRO(cmd[1], () -> {
 			ServerUtils.DirInfo dir;
 			if (commandVersion == 1) {

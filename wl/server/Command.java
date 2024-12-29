@@ -289,7 +289,7 @@ public enum Command {
 	 *
 	 * <p> Parameters:
 	 * <ol>
-	 * <li> Add-on name
+	 * <li> Add-on name (or the special string <code>"websitemaps"</code>)
 	 * </ol>
 	 *
 	 * <p>
