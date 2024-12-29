@@ -66,9 +66,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=ship_construction",
                 "sleep=duration:15s",
-                "call=ferry_construction",
-                "sleep=duration:15s",
                 "call=ship_construction",
+                "sleep=duration:15s",
+                "call=ferry_construction",
                 "return=completed"
             }
         },
@@ -91,8 +91,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
             descname = pgettext("europeans_building", "constructing a ship"),
             actions = {
-                "return=skipped when economy needs blackwood",
-                "return=skipped when economy needs planks",
+                "return=skipped when economy needs europeans_ferry",
                 "call=ship_preparation",
                 "sleep=duration:15s",
                 "call=ship_build"

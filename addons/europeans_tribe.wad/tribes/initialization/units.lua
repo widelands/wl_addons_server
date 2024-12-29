@@ -125,7 +125,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "blackwood",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Blackwood
@@ -134,7 +134,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "planks",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -256,7 +256,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "grout",
-                default_target_quantity = 32,
+                default_target_quantity = 48,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -282,7 +282,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "brick",
-                default_target_quantity = 32,
+                default_target_quantity = 48,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -726,7 +726,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_ferry",
-                default_target_quantity = 16,
+                default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ferry
@@ -2599,7 +2599,6 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Köln"),
         pgettext("warehousename", "Kraków"),
         pgettext("warehousename", "Krasnodar"),
-        pgettext("warehousename", "Krywyj Rih"),
         pgettext("warehousename", "Kyiv"),
         pgettext("warehousename", "Leeds"),
         pgettext("warehousename", "Leipzig"),

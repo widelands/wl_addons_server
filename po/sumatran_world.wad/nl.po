@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2024-12-29 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:41+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -26,9 +26,11 @@ msgid "Sumatran World"
 msgstr "Sumatraanse Wereld"
 
 #: addons/sumatran_world.wad/addon:3
+#, fuzzy
 msgid ""
-"Modifies world for Sumatran tribe. The changes affect Amazons too. Should be "
-"used together with sumatran_tribe.wad."
+"Modifies world for Sumatran tribe. The changes affect Amazons too. Tropical "
+"trees do not grow on winter terrains. You need to transform the terrain by "
+"using terraform. This add-on should be used together with sumatran_tribe.wad."
 msgstr ""
 "Wijzigt de wereld voor de Sumatraanse stam. De veranderingen hebben ook "
 "gevolgen voor de Amazones. Moet samen met sumatran_tribe.wad worden gebruikt."
@@ -42,6 +44,60 @@ msgstr "Krokodil"
 #: addons/sumatran_world.wad/editor.lua:39
 msgid "Sumatra"
 msgstr "Sumatra"
+
+#: addons/sumatran_world.wad/immovables/X_balsa_black_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_balsa_black_amazons/old/init.lua:10
+#, fuzzy
+msgid "Balsa Tree Wasteland (removed)"
+msgstr "Balsaboom (Volwassen)"
+
+#: addons/sumatran_world.wad/immovables/X_balsa_desert_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_balsa_desert_amazons/old/init.lua:10
+#, fuzzy
+msgid "Balsa Tree Desert (removed)"
+msgstr "Balsaboom (Paal)"
+
+#: addons/sumatran_world.wad/immovables/X_balsa_winter_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_balsa_winter_amazons/old/init.lua:10
+#, fuzzy
+msgid "Balsa Tree Winter (removed)"
+msgstr "Balsaboom (Paal)"
+
+#: addons/sumatran_world.wad/immovables/X_ironwood_black_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_ironwood_black_amazons/old/init.lua:10
+#, fuzzy
+msgid "Ironwood T. Wasteland (removed)"
+msgstr "IJzerhoutboom (Paal)"
+
+#: addons/sumatran_world.wad/immovables/X_ironwood_desert_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_ironwood_desert_amazons/old/init.lua:10
+#, fuzzy
+msgid "Ironwood Tree Desert (removed)"
+msgstr "IJzerhoutboom (Paal)"
+
+#: addons/sumatran_world.wad/immovables/X_ironwood_winter_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_ironwood_winter_amazons/old/init.lua:10
+#, fuzzy
+msgid "Ironwood Tree Winter (removed)"
+msgstr "IJzerhoutboom (Paal)"
+
+#: addons/sumatran_world.wad/immovables/X_rubber_black_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_rubber_black_amazons/old/init.lua:10
+#, fuzzy
+msgid "Rubber Tree Wasteland (removed)"
+msgstr "Rubberboom (Volwassen)"
+
+#: addons/sumatran_world.wad/immovables/X_rubber_desert_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_rubber_desert_amazons/old/init.lua:10
+#, fuzzy
+msgid "Rubber Tree Desert (removed)"
+msgstr "Rubberboom (Paal)"
+
+#: addons/sumatran_world.wad/immovables/X_rubber_winter_amazons/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/X_rubber_winter_amazons/old/init.lua:10
+#, fuzzy
+msgid "Rubber Tree Winter (removed)"
+msgstr "Rubberboom (Paal)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/sumatran_world.wad/immovables/balsa/mature/init.lua:10
@@ -65,6 +121,12 @@ msgstr "Balsaboom (Paal)"
 #: addons/sumatran_world.wad/immovables/balsa/sapling/init.lua:10
 msgid "Balsa Tree (Sapling)"
 msgstr "Balsaboom (Zaailing)"
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: addons/sumatran_world.wad/immovables/deadtree7/init.lua:9
+#, fuzzy
+msgid "Dead Tree"
+msgstr "Balsa Boom"
 
 #: addons/sumatran_world.wad/immovables/dipterocarpus/mature/init.lua:9
 msgid "Dipterocarpus (Mature)"
@@ -217,12 +279,12 @@ msgid "Rubber Tree (Mature)"
 msgstr "Rubberboom (Volwassen)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/rubber/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/rubber/old/init.lua:11
 msgid "Rubber Tree (Old)"
 msgstr "Rubberboom (Oud)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/rubber/old/init.lua:12
+#: addons/sumatran_world.wad/immovables/rubber/old/init.lua:13
 msgid "Rubber Tree"
 msgstr "Rubberboom"
 

@@ -6,8 +6,8 @@ include(dirname .. "../terrain_affinity.lua")
 
 wl.Descriptions():new_immovable_type{
    name = "ironwood_black_amazons_old",
-   descname = _(""),
-   species = _(""),
+   descname = _("Ironwood T. Wasteland (removed)"),
+   species = _("Ironwood T. Wasteland (removed)"),
    icon = dirname .. "../menu.png",
    size = "small",
    animation_directory = dirname,
@@ -15,22 +15,21 @@ wl.Descriptions():new_immovable_type{
    programs = {
       main = {
          "animate=idle duration:13m20s",
-         "transform=deadtree5 chance:19.53%",
+         "transform=deadtree7 chance:19.53%",
+      },
+      fall = {
+         "remove=",
       },
    },
    spritesheets = {
-      idle = {
-         basename = "old",
-         fps = 10,
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 24, 60 },
-         sound_effect = {
-            path = "sound/animals/crickets2",
-            priority = "10%"
-         },
-      }
+   idle = {
+      basename = "ironwood_old",
+      hotspot = {25, 62},
+      fps = 8,
+      frames = 4,
+      columns = 2,
+      rows = 2
+     },
    },
 }
 

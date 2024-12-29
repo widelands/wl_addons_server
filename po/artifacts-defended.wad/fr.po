@@ -5,15 +5,16 @@
 #
 # Translators:
 # C138, 2023
+# David D, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2024-12-29 03:10+0100\n"
 "PO-Revision-Date: 2023-11-25 20:04+0000\n"
-"Last-Translator: C138, 2023\n"
+"Last-Translator: David D, 2024\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -24,11 +25,11 @@ msgstr ""
 
 #: addons/artifacts-defended.wad/addon:4
 msgid "artifacts, defended"
-msgstr ""
+msgstr "artefacts, défendus"
 
 #: addons/artifacts-defended.wad/defending.lua:61
 msgid "WARNING"
-msgstr ""
+msgstr "AVERTISSEMENT"
 
 #: addons/artifacts-defended.wad/defending.lua:115
 msgid "to conquer"
@@ -36,7 +37,7 @@ msgstr "à conquérir"
 
 #: addons/artifacts-defended.wad/defending.lua:127
 msgid "Could not adapt the tribe."
-msgstr ""
+msgstr "Impossible d’adapter la tribu."
 
 #: addons/artifacts-defended.wad/defending.lua:143
 msgid "Defending player can not be in a team, remove."
@@ -44,7 +45,7 @@ msgstr "Le défenseur ne peut pas faire partie d'une équipe, retirez-le."
 
 #: addons/artifacts-defended.wad/defending.lua:226
 msgid "ERROR placing building"
-msgstr ""
+msgstr "ERREUR de placement du bâtiment"
 
 #: addons/artifacts-defended.wad/defending.lua:233
 #, lua-format
@@ -58,7 +59,7 @@ msgstr "Champ erroné trouvé"
 #: addons/artifacts-defended.wad/defending.lua:269
 #, lua-format
 msgid "The player %s has no artifacts to defend."
-msgstr ""
+msgstr "Le joueur %s n'a pas d'artefacts à défendre."
 
 #: addons/artifacts-defended.wad/defending.lua:271
 msgid "No artifacts"
@@ -66,7 +67,7 @@ msgstr "Pas d'artefact"
 
 #: addons/artifacts-defended.wad/defending.lua:297
 msgid "could not place normal artifact (1x)"
-msgstr ""
+msgstr "ne pouvait pas placer l’artefact normal (1x)"
 
 #: addons/artifacts-defended.wad/defending.lua:365
 msgid "Several players configured for defending:"
@@ -105,10 +106,12 @@ msgstr ""
 #, lua-format
 msgid "Player %s defends artifacts and has aditionally another start position"
 msgstr ""
+"Joueur %s défend des artefacts et a une autre position de départ "
+"supplémentaire"
 
 #: screenshots/artifacts-defended.wad/descriptions:3
 msgid "found artifact"
-msgstr ""
+msgstr "artefact trouvé"
 
 #: screenshots/artifacts-defended.wad/descriptions:4
 msgid "attack artifact"
@@ -116,4 +119,4 @@ msgstr ""
 
 #: screenshots/artifacts-defended.wad/descriptions:5
 msgid "conquered artifact"
-msgstr ""
+msgstr "artefact conquis"

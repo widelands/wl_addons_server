@@ -15,7 +15,7 @@ wl.Descriptions():new_immovable_type{
    programs = {
       main = {
          "animate=idle duration:25m35s",
-         "transform=deadtree6 chance:12.89%",
+         "transform=deadtree7 chance:0.89%",
          "seed=balsa_amazons_sapling proximity:19.53%",
       },
       fall = {

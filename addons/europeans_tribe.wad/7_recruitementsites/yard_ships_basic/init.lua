@@ -38,8 +38,8 @@ wl.Descriptions():new_productionsite_type {
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
-            granite = 2,
-            marble = 2,
+            granite = 3,
+            marble = 3,
             quartz = 1,
             diamond = 1
         }
@@ -90,7 +90,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
             descname = pgettext("europeans_building", "constructing a ship"),
             actions = {
-                "return=skipped when economy needs blackwood",
                 "return=skipped when economy needs planks",
                 "call=ship_preparation",
                 "sleep=duration:30s",

@@ -4,6 +4,7 @@ local dirname = path.dirname(__file__)
 
 include(dirname .. "../terrain_affinity.lua")
 
+
 wl.Descriptions():new_immovable_type{
    name = "rubber_amazons_old",
    -- TRANSLATORS:  This is an Amazon rare tree.
@@ -15,7 +16,12 @@ wl.Descriptions():new_immovable_type{
    programs = {
       main = {
          "animate=idle duration:25m35s",
-         "transform=deadtree6 chance:12.89%",
+         "transform=deadtree7 chance:0.01%",
+         "seed=rubber_amazons_sapling proximity:19.53%",
+      },
+      grow = {
+         "animate=idle duration:25m35s",
+         "transform=deadtree7 chance:0.01%",
          "seed=rubber_amazons_sapling proximity:19.53%",
       },
       fall = {

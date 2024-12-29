@@ -2,19 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 03:09+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2024-12-29 03:10+0100\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
-"Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/fi/)\n"
+"Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
+"fi/)\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: input:6 standard
@@ -499,24 +500,35 @@ msgstr ""
 msgid ""
 "Sire, let me inform you about the surrounding tribes.\n"
 "<br><br>\n"
-"From the north we are endangered by a belligerent tribe, led by warlord Törver,\n"
-"that is rapidly building up its armies. They may soon have become too strong to\n"
+"From the north we are endangered by a belligerent tribe, led by warlord "
+"Törver,\n"
+"that is rapidly building up its armies. They may soon have become too strong "
+"to\n"
 "be defeated.\n"
 "<br><br>\n"
 "A large area to the north-east is agonized by a wild horde of unfettered\n"
 "pirates, led by their insane Arvid. Their presence blocks our ways to other\n"
 "tribes.\n"
 "<br><br>\n"
-"Over the river lies the prosperous land of the mysterious king Runar. We have\n"
-"been in war with him before the pirates occupied the eastern area. His strenth\n"
+"Over the river lies the prosperous land of the mysterious king Runar. We "
+"have\n"
+"been in war with him before the pirates occupied the eastern area. His "
+"strenth\n"
 "is based on his vaste industries and large armies.\n"
 "<br><br>\n"
-"The area beyond the pirates belongs to a developed tribe led by their mighty\n"
-"chieftain Hjalmar. They have had a long time of preparement to build up their\n"
+"The area beyond the pirates belongs to a developed tribe led by their "
+"mighty\n"
+"chieftain Hjalmar. They have had a long time of preparement to build up "
+"their\n"
 "deterring armies.\n"
 "<br><br>\n"
-"The situation looks quite perilous and my advice is that we direct our efforts\n"
+"The situation looks quite perilous and my advice is that we direct our "
+"efforts\n"
 "towards building up a strong army."
+msgstr ""
+
+#: input:8 standard
+msgid "Skull Island"
 msgstr ""
 
 #: input:8 standard
@@ -651,10 +663,6 @@ msgstr ""
 msgid "vtst-mountains"
 msgstr ""
 
-#: input:8 standard standard input:8
-msgid "vtst-rivers"
-msgstr ""
-
 #: input:9 standard
 msgid "Kristin – edited by 3plus4i"
 msgstr ""
@@ -703,8 +711,7 @@ msgid "2 Spieler entfernt, Landschaft verändert, Häfen hinzugefügt"
 msgstr ""
 
 #: input:10 standard
-msgid ""
-"2 Spieler hinzugefügt, Gelände verändert und Rohstoffe besser verteilt."
+msgid "2 Spieler hinzugefügt, Gelände verändert und Rohstoffe besser verteilt."
 msgstr ""
 
 #: input:10 standard
@@ -728,8 +735,8 @@ msgid ""
 "A fair 8-player map with natural geographic features dividing land. The "
 "geographic features are meant to be somewhat realistic with rivers flowing "
 "from glaciers in the mountains through hills and flatlands into the sea. "
-"Gold is a much rarer resource compared to coal and iron. Different resources"
-" are often found at some distance to each other."
+"Gold is a much rarer resource compared to coal and iron. Different resources "
+"are often found at some distance to each other."
 msgstr ""
 
 #: input:10 standard
@@ -782,19 +789,19 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"Balanced map for multiplayer use, but as the name suggests, lack of building"
-" spaces makes this tricky. Resource distribution makes this still more "
+"Balanced map for multiplayer use, but as the name suggests, lack of building "
+"spaces makes this tricky. Resource distribution makes this still more "
 "complicated as the big bananas have mostly granite and coal, small black "
 "banana islands are full of iron and central mountain full of gold (but "
 "there's forest on top of it). Alternatively one can pursue all these things "
 "more safely from beyond the seas, although each island has at least two "
 "possible port locations. Black mountain isles are for iron and some coal, "
 "medium banana islands (half-rotten looking) for gold and some granite, and "
-"the green islands for increased production capabilities. For landmarks there"
-" are three landmarks to discover and three to fight for on the central "
-"island complex and none beyond that. DO NOT PLAY THIS AGAINST COMPUTER, "
-"EXEPT IN LEARNING PURPOSES OR AS NON-COMPETITIVE CHALLENGE. DO NOT DISABLE "
-"START POSITIONS."
+"the green islands for increased production capabilities. For landmarks there "
+"are three landmarks to discover and three to fight for on the central island "
+"complex and none beyond that. DO NOT PLAY THIS AGAINST COMPUTER, EXEPT IN "
+"LEARNING PURPOSES OR AS NON-COMPETITIVE CHALLENGE. DO NOT DISABLE START "
+"POSITIONS."
 msgstr ""
 
 #: input:10 standard
@@ -818,8 +825,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Blue - Ring of Water, Red - Monastery of Innos, Yellow - Canyon Orcs, Green "
-"- Orcs Village, Gray - Continent Orcs, Orange - Khorinis, Violet - Paladins,"
-" White - Onar's Farm, Azure - Pirates, Burgund - Bandits, Cream - Xardas"
+"- Orcs Village, Gray - Continent Orcs, Orange - Khorinis, Violet - Paladins, "
+"White - Onar's Farm, Azure - Pirates, Burgund - Bandits, Cream - Xardas"
 msgstr ""
 
 #: input:10 standard
@@ -828,19 +835,19 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"DE :  Eine Karte für normale Runden.  Wasser und Berge sind direkt neben der"
-" Startposition.   Es gibt viele Bäume, Felsen, Tiere und Fische.  Das "
-"Gelände ist eben und bietet maximal viel Platz fürs bauen.  Fähren können "
-"gebaut und auf Wasserwegen bis zu einer Länge von 20 Feldern eingesetzt "
-"werden.  Schiffe können gebaut werden und rund um den See sind überall Hafen"
-" Bauplätze.  Grundwasser ist überall vorhanden, jedoch dünn verteilt.  Alle "
+"DE :  Eine Karte für normale Runden.  Wasser und Berge sind direkt neben der "
+"Startposition.   Es gibt viele Bäume, Felsen, Tiere und Fische.  Das Gelände "
+"ist eben und bietet maximal viel Platz fürs bauen.  Fähren können gebaut und "
+"auf Wasserwegen bis zu einer Länge von 20 Feldern eingesetzt werden.  "
+"Schiffe können gebaut werden und rund um den See sind überall Hafen "
+"Bauplätze.  Grundwasser ist überall vorhanden, jedoch dünn verteilt.  Alle "
 "Erze in den Bergen sind reichlich vorhanden.  6 Artefakte existieren "
 "symetrisch angeordnet auf der Karte.    EN :  A Map for normal Rounds.  "
 "Water and Mountains are direct near the starting Position.  It exist many "
 "Trees, Rocks, Animals and Fishes.  The Area have no extrem height different "
 "and give maxium place for building.  Tiny Ships can builded and can working "
-"on see ways up to length of 20 fields.  Normal Ships can builded and overall"
-" around the sea are building places for ports.  Underground Water exist "
+"on see ways up to length of 20 fields.  Normal Ships can builded and overall "
+"around the sea are building places for ports.  Underground Water exist "
 "overall but on small ressourse layer.  All Ores in the Mountains exiting in "
 "huge.  6 Artefacts are symetric on the Map."
 msgstr ""
@@ -882,8 +889,8 @@ msgid ""
 "building sites, one harbor building site in each corner of the island. All "
 "islands are the same size and arranged evenly, so that the distance between "
 "the individual islands is as equal as possible. The starting position is in "
-"the middle of the island and due to its proximity to the coast, it is hardly"
-" protected from landings. Each island is sufficiently large and therefore "
+"the middle of the island and due to its proximity to the coast, it is hardly "
+"protected from landings. Each island is sufficiently large and therefore "
 "offers sufficient building space."
 msgstr ""
 
@@ -908,8 +915,8 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"Eine sehr kleine Karte mit Platz für bis zu 16 Spieler. Jeder Startpunkt ist"
-" gleich. Jeden Spieler stehen alle Ressoursen in begrenzten Mengen zur "
+"Eine sehr kleine Karte mit Platz für bis zu 16 Spieler. Jeder Startpunkt ist "
+"gleich. Jeden Spieler stehen alle Ressoursen in begrenzten Mengen zur "
 "Verfügung."
 msgstr ""
 
@@ -918,16 +925,16 @@ msgid ""
 "Eisenhold - versteckte einst riesige Schätze in den Wäldern.  Die Eichen "
 "mögen zahlreich im Westen sein, die Legende erzählt, dass man sich "
 "entscheiden muss - unendlicher Reichtum, entscheide sich der Wanderer "
-"Eisenholz zu folgen oder aber die Lösung des Raumzeit Dilemma, folge man den"
-" Flüssen nur lange genug nach Norden."
+"Eisenholz zu folgen oder aber die Lösung des Raumzeit Dilemma, folge man den "
+"Flüssen nur lange genug nach Norden."
 msgstr ""
 
 #: input:10 standard
 msgid ""
-"Finally! You have reached the far south and set up a base, but it seems that"
-" the Old Antarctic itself is still not very close. It is told that the land "
-"is so rich that gold stones cover its coast. You have to cut down some trees"
-" and build a ship to continue your journey. Otherwise, there will be no "
+"Finally! You have reached the far south and set up a base, but it seems that "
+"the Old Antarctic itself is still not very close. It is told that the land "
+"is so rich that gold stones cover its coast. You have to cut down some trees "
+"and build a ship to continue your journey. Otherwise, there will be no "
 "precious gold left for you. You may also run out of coal very soon. Your "
 "expedition is not the only one that strives to gain the fabulous wealth and "
 "everlasting fame."
@@ -969,8 +976,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "In the middle of summer, a series of volcanic eruptions drew the winter in. "
-"Suddenly, the sun seemed to be gone and the only light and heat sources left"
-" were those that enforced this dramatic change. Continents, oceans and seas "
+"Suddenly, the sun seemed to be gone and the only light and heat sources left "
+"were those that enforced this dramatic change. Continents, oceans and seas "
 "are frozen now, only the volcanic islands seem to be left as habitable land."
 msgstr ""
 
@@ -1007,8 +1014,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Keine Grenzen sind auf dieser Karte gesetzt, ob du ganz im Wald startetest "
-"als Urwaldvolk oder im Gebirge oder im Lande der Dunklen  -  Teams:  1-8 die"
-" Guten  9-16 Ödlandvölker  -  1,2,3 : die gestrandeten Seefahrer  16,8,9 : "
+"als Urwaldvolk oder im Gebirge oder im Lande der Dunklen  -  Teams:  1-8 die "
+"Guten  9-16 Ödlandvölker  -  1,2,3 : die gestrandeten Seefahrer  16,8,9 : "
 "die Alpenvölker  - - - - - - - - - - -  Wenn ihr zu viert seid, spielt die "
 "Karte als 4 Seefahrer  -  "
 msgstr ""
@@ -1045,8 +1052,7 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Landschaft und Bergwerke hinzugefügt/verbessert.  Massenhaft unnütze "
-"''Unbewegliche Objekte'' entfernt.  Inseln verbunden.  2 Spieler "
-"hinzugefügt."
+"''Unbewegliche Objekte'' entfernt.  Inseln verbunden.  2 Spieler hinzugefügt."
 msgstr ""
 
 #: input:10 standard
@@ -1112,8 +1118,8 @@ msgid ""
 "for ages. But now our lives should change. Wise men of our tribe say that a "
 "new island has been found, very rich and large. They call it Kalamanthean. "
 "And this new land is promising a cultural growth our tribe is missing. We "
-"just have to build a ship very quickly and sail to the north and to the west"
-" to reach this blessed land of welfare."
+"just have to build a ship very quickly and sail to the north and to the west "
+"to reach this blessed land of welfare."
 msgstr ""
 
 #: input:10 standard
@@ -1128,10 +1134,10 @@ msgstr ""
 msgid ""
 "Perfect map for roleplaying historical empires.    ///Several days of work "
 "and many maps have been implemented to create the most accurate europe map "
-"in Widelands!     ///EASY: Ottoman Empire, Sweden, Russian Empire, Carthage"
-"    ///MEDIUM: French Empire, British Empire, Spain, German Empire, Roman "
-"Empire    ///HARD: Egypt, Poland, Greece    ///SUGGESTIONS FOR IMPROVMENTS "
-"IN THE COMMENTS!!!  I will Update it.  "
+"in Widelands!     ///EASY: Ottoman Empire, Sweden, Russian Empire, "
+"Carthage    ///MEDIUM: French Empire, British Empire, Spain, German Empire, "
+"Roman Empire    ///HARD: Egypt, Poland, Greece    ///SUGGESTIONS FOR "
+"IMPROVMENTS IN THE COMMENTS!!!  I will Update it.  "
 msgstr ""
 
 #: input:10 standard
@@ -1174,7 +1180,7 @@ msgid ""
 "Wasser entfernt)"
 msgstr ""
 
-#: input:10 standard
+#: input:10 standard /tmp/15744417009842789764.lua:285
 msgid ""
 "THIS MAP IS DESIGNED FOR A LONG PLAYTIME!!! 8 tribes, 3 Islands and lots of "
 "resources. You have a big advantage in creating colonies and using ferries, "
@@ -1185,28 +1191,21 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Template of the new version of the popular Three Warriors map. Extend to a "
-"player number of your choice with the ''copy paste script'' found in the map"
-" editor forum. Needs a dev build for debug console. Place the script in your"
-" main (widelands.exe) folder. Open with text editor and check player number "
+"player number of your choice with the ''copy paste script'' found in the map "
+"editor forum. Needs a dev build for debug console. Place the script in your "
+"main (widelands.exe) folder. Open with text editor and check player number "
 "and the coordinates in the loops to stamp down the correct part. Save. "
-"Expand map dimensions and open debug console F6. Type "
-">dofile(''copypaste.lua'')<. Enter. Wait, it can take some time with bigger "
-"maps. Place animals and starting points for new players. Feel pround like a "
-"new map god and have fun ;)"
-msgstr ""
-
-#: input:10 standard standard input:10
-msgid ""
-"Thanks to the limited resources around your headquarters, build ships to "
-"explore rich islands."
+"Expand map dimensions and open debug console F6. Type >dofile(''copypaste."
+"lua'')<. Enter. Wait, it can take some time with bigger maps. Place animals "
+"and starting points for new players. Feel pround like a new map god and have "
+"fun ;)"
 msgstr ""
 
 #: input:10 standard
 msgid ""
-"The gods who created this piece of landscape must be crazy. They proove your"
-" skills in naval warefare and managing a big economy with long "
-"transportation routes. They also try to madden you in this labyrinth of "
-"mountains."
+"The gods who created this piece of landscape must be crazy. They proove your "
+"skills in naval warefare and managing a big economy with long transportation "
+"routes. They also try to madden you in this labyrinth of mountains."
 msgstr ""
 
 #: input:10 standard
@@ -1228,10 +1227,10 @@ msgstr ""
 msgid ""
 "These two large islands surrounded by small islands provide an excellent "
 "place to build civilizations. However, there are more than two tribes "
-"wanting to settle here. There were people living here before and they placed"
-" standing stones to mark places where they found good fishing.  They found "
-"gold on the small  islands and moved some to their villages. They burried it"
-" near places they used for shipping and marked it with stones."
+"wanting to settle here. There were people living here before and they placed "
+"standing stones to mark places where they found good fishing.  They found "
+"gold on the small  islands and moved some to their villages. They burried it "
+"near places they used for shipping and marked it with stones."
 msgstr ""
 
 #: input:10 standard
@@ -1251,10 +1250,9 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"To establish a smuggling route, you need to build a warehouse on a "
-"sending/receiving spot while your team mate has to build one on the "
-"corresponding receiving/sending spot. A ware is then transported every 10 "
-"seconds."
+"To establish a smuggling route, you need to build a warehouse on a sending/"
+"receiving spot while your team mate has to build one on the corresponding "
+"receiving/sending spot. A ware is then transported every 10 seconds."
 msgstr ""
 
 #: input:10 standard
@@ -1266,8 +1264,8 @@ msgstr ""
 #: input:10 standard
 msgid ""
 "Varus befand sich im Jahre 9 n. Chr. weit im Inneren Germaniens. Die Römer "
-"besaßen zwar einige Teile dieses Landes, doch kein zusammenhängendes Gebiet."
-" Varus’ Gegenspieler war Arminius, ein Fürst der Cherusker. Anders als sein "
+"besaßen zwar einige Teile dieses Landes, doch kein zusammenhängendes Gebiet. "
+"Varus’ Gegenspieler war Arminius, ein Fürst der Cherusker. Anders als sein "
 "Bruder Flavus, der Rom immer treu blieb, wandte sich Arminius gegen die "
 "römische Oberherrschaft."
 msgstr ""
@@ -1278,8 +1276,8 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"Vor einigen Jahren drang das Imperia Resica ion das Gebiet der Belearen ein."
-" Da das Imperium nur wenig Platz beanspruchte, ließen die Belebaren das "
+"Vor einigen Jahren drang das Imperia Resica ion das Gebiet der Belearen ein. "
+"Da das Imperium nur wenig Platz beanspruchte, ließen die Belebaren das "
 "Imperium in Ruhe bis die Friesen auftauchten. Da die Belebaren und das "
 "Imperia Resica die vom Norden kommenden Friesen als Gefahr sahen taten sie "
 "sich zusammen."
@@ -1287,10 +1285,10 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"We don't have enough space and our headquarter is in danger here. We need to"
-" build a colony on the other side of this lake. We will gain more land and a"
-" hideaway in case an enemy appears on this side. But I am afraid we will not"
-" reach The Main Landbelt without fight."
+"We don't have enough space and our headquarter is in danger here. We need to "
+"build a colony on the other side of this lake. We will gain more land and a "
+"hideaway in case an enemy appears on this side. But I am afraid we will not "
+"reach The Main Landbelt without fight."
 msgstr ""
 
 #: input:10 standard
@@ -1307,6 +1305,10 @@ msgstr ""
 msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen."
+msgstr ""
+
+#: input:10 standard
+msgid "Who rules Skull Island?"
 msgstr ""
 
 #: input:10 standard
@@ -1348,8 +1350,8 @@ msgstr ""
 
 #: input:10 standard
 msgid ""
-"an archipelago with one large island in the centre. All of the small islands"
-" are inhabitable and each has different resources."
+"an archipelago with one large island in the centre. All of the small islands "
+"are inhabitable and each has different resources."
 msgstr ""
 
 #: input:10 standard
@@ -1400,17 +1402,17 @@ msgstr ""
 msgid ""
 "Build a ship with the gold from the small mine that is located near your "
 "closest harbour site. Previous inhabitants have marked the mine with small "
-"rocks and a standing stone. There are places where the water is too wide for"
-" Ware carriers to cross on foot. Use a ferry to overcome this problem. "
+"rocks and a standing stone. There are places where the water is too wide for "
+"Ware carriers to cross on foot. Use a ferry to overcome this problem. "
 msgstr ""
 
 #: input:11 standard
 msgid ""
 "Collectors and Territorial Lord recommended. Also suitable for a peaceful "
 "mode of play. 2 teams possible, yellow and blue should play against each "
-"other. While playing a single player, you have to count with the possibility"
-" that your opponents may not start an expedition at all and may rather "
-"choose a land path."
+"other. While playing a single player, you have to count with the possibility "
+"that your opponents may not start an expedition at all and may rather choose "
+"a land path."
 msgstr ""
 
 #: input:11 standard
@@ -1418,9 +1420,8 @@ msgid ""
 "DE :  Gold befindet sich in den Berg Ecken.  Auch wenn man Schiffe bauen "
 "kann ist es nur begrenzt sinnvoll.  Gestein Vorkommen sind im Berg direkt "
 "neben deiner Startposition.    EN :  Gold existing in the Edges of the "
-"Mountains.  It is possible to build normal Ships but is it limited useable."
-"  Stone Ressourses are in the Mountains directly near your Starting "
-"Position."
+"Mountains.  It is possible to build normal Ships but is it limited useable.  "
+"Stone Ressourses are in the Mountains directly near your Starting Position."
 msgstr ""
 
 #: input:11 standard
@@ -1453,8 +1454,8 @@ msgstr ""
 msgid ""
 "For hundreds of years this island was kept as sanctuary of the Gods. No "
 "human ever ventured to set a foot on it. But now, that a tribe was finally "
-"barefaced enough to settle on the coast of that island, a lot other followed"
-" afterwards."
+"barefaced enough to settle on the coast of that island, a lot other followed "
+"afterwards."
 msgstr ""
 
 #: input:11 standard
@@ -1464,10 +1465,9 @@ msgid ""
 "Schiffe an der richtigen Position gebaut werden. Ein Fluss führt über eine "
 "winzige Hafeninsel zu einer orangefarbenen Insel mit viel Metall. Dieser "
 "Fluss ist jedoch ein längerer Weg, als andere Wege zu weniger Metall. "
-"Überlege deshalb ganz genau, in welchem Hafen du für eine weitere Expedition"
-" das anfangs wenige Gold ausgibst. Wenn du das Gold nicht für Häfen "
-"ausgibst, fehlt dir der Zugang zu weiterem Gold für Häfen und Expeditionen "
-"zum Gegner."
+"Überlege deshalb ganz genau, in welchem Hafen du für eine weitere Expedition "
+"das anfangs wenige Gold ausgibst. Wenn du das Gold nicht für Häfen ausgibst, "
+"fehlt dir der Zugang zu weiterem Gold für Häfen und Expeditionen zum Gegner."
 msgstr ""
 
 #: input:11 standard
@@ -1517,14 +1517,14 @@ msgstr ""
 
 #: input:11 standard
 msgid ""
-"Places for medium and big buildings are in the places where the city, farms,"
-" ruins and other buildings are in Gothic game.  No coal.  Stone: in place of"
-" caves.  Iron: in place of magic ore mines, Greg's treasures in Jarkendar, a"
-" cave on Pirates beach, a cave north to the city, a collapsed mine next to "
+"Places for medium and big buildings are in the places where the city, farms, "
+"ruins and other buildings are in Gothic game.  No coal.  Stone: in place of "
+"caves.  Iron: in place of magic ore mines, Greg's treasures in Jarkendar, a "
+"cave on Pirates beach, a cave north to the city, a collapsed mine next to "
 "Xardas, the Sleeper's Temple.  Gold: dragons treasures,  thiefs treasure, a "
 "bandits gold mine, a Test of Fire cave next to black troll, a cave next to "
-"the pyramid, a cave on the beach next to Pirates beach.  The are two ways in"
-" the mountains from Khornis to Jarkendar and one long way in the mountains "
+"the pyramid, a cave on the beach next to Pirates beach.  The are two ways in "
+"the mountains from Khornis to Jarkendar and one long way in the mountains "
 "from Mine Valley to Jarkendar. "
 msgstr ""
 
@@ -1544,15 +1544,16 @@ msgstr ""
 #: input:11 standard
 msgid ""
 "Rich on resources. Not balanced for 4 players (red and blue are in the "
-"middle, harder to win). Ideal for 2 teams (red+blue x yellow+green) or for 2"
-" players (red x blue or yellow x green). The yellow-green combination takes "
+"middle, harder to win). Ideal for 2 teams (red+blue x yellow+green) or for 2 "
+"players (red x blue or yellow x green). The yellow-green combination takes "
 "more time to win as the starting positions are far away."
 msgstr ""
 
 #: input:11 standard
 msgid ""
-"Rohstoffe sind mit Bedacht gesetzt, es gibt aber immer mehrere Möglichkeiten"
-"  weiß: der Seefahrer blau: Im Hochgebirge (Tipp) dunkelgrün: Im Ödland"
+"Rohstoffe sind mit Bedacht gesetzt, es gibt aber immer mehrere "
+"Möglichkeiten  weiß: der Seefahrer blau: Im Hochgebirge (Tipp) dunkelgrün: "
+"Im Ödland"
 msgstr ""
 
 #: input:11 standard
@@ -1560,8 +1561,7 @@ msgid "Seefahrt"
 msgstr ""
 
 #: input:11 standard
-msgid ""
-"Seefahrt, entspanntes Spielen da Feind nicht so schnell angreifen kann."
+msgid "Seefahrt, entspanntes Spielen da Feind nicht so schnell angreifen kann."
 msgstr ""
 
 #: input:11 standard
@@ -1576,8 +1576,8 @@ msgstr ""
 msgid ""
 "The map is balanced for 2 or 4  players. Orange player (Grand Bay) and grey "
 "player (The City of Light) are optional. The first one has not enough "
-"resources near his base, the second one is in the middle of the map. This is"
-" a non-addon version of the ''Tropical Mauritius'' map."
+"resources near his base, the second one is in the middle of the map. This is "
+"a non-addon version of the ''Tropical Mauritius'' map."
 msgstr ""
 
 #: input:11 standard
@@ -1594,8 +1594,8 @@ msgid ""
 "enemy to reach The Main Landbelt from where you can access to any corner of "
 "this map. You can also find 4 artifacts there. Your homeland is hard to "
 "defend. Expect that you may lose it, but try to defend it. If you didn't, "
-"your enemy would have an advantage. 1v1, 2 teams or 2 humans with 2 AIs also"
-" possible."
+"your enemy would have an advantage. 1v1, 2 teams or 2 humans with 2 AIs also "
+"possible."
 msgstr ""
 
 #: input:11 standard
@@ -1619,8 +1619,8 @@ msgstr ""
 
 #: input:11 standard
 msgid ""
-"Use the gold near your village to build ships before you build up your army."
-" Locate gold on the small islands to pay for your army. You need to also be "
+"Use the gold near your village to build ships before you build up your army. "
+"Locate gold on the small islands to pay for your army. You need to also be "
 "aware that some very small islands have never been explored and do not have "
 "any port space yet."
 msgstr ""
@@ -1631,18 +1631,12 @@ msgid ""
 "Artefakte, alle auf der Tal-Mittelpunkt-Achse verteilt"
 msgstr ""
 
-#: input:11 standard standard input:11
-msgid ""
-"Water along the rivers. Fish in the ponds but not in the rivers. Two large "
-"islands with mountains rich of resources."
-msgstr ""
-
 #: input:11 standard
 msgid ""
 "Wide rivers are navigable to create a ''trade network''  All Players have "
 "their own Challenges, but are relatively balanced to be playable:  ///1) "
-"British Empire: create sustainable colonies ///2) Russian Empire: Very large"
-" distances  ..."
+"British Empire: create sustainable colonies ///2) Russian Empire: Very large "
+"distances  ..."
 msgstr ""
 
 #: input:11 standard
@@ -1686,9 +1680,8 @@ msgid ""
 "Finally! We have just taken our first step towards victory! Last night, we "
 "landed on the forbidden island and defeated the few guards that were "
 "watching the north-western part of the island. I am quite sure that none of "
-"the other warlords has detected us so far, so we should keep quiet and build"
-" up our infrastructure. Soon we will be strong enough to raid their "
-"positions."
+"the other warlords has detected us so far, so we should keep quiet and build "
+"up our infrastructure. Soon we will be strong enough to raid their positions."
 msgstr ""
 
 #: input:15 standard
@@ -1704,16 +1697,15 @@ msgstr ""
 
 #: input:17 standard
 msgid ""
-"You can see the number of wares traded at any time in the general statistics"
-" menu. Good luck!"
+"You can see the number of wares traded at any time in the general statistics "
+"menu. Good luck!"
 msgstr ""
 
 #: input:21 standard
 msgid "Conquer pirate sentry"
 msgstr ""
 
-#. TRANSLATORS: the first 2 parameters are player names, the last parameter is
-#. '<number> points'
+#. TRANSLATORS: the first 2 parameters are player names, the last parameter is '<number> points'
 #: input:22 standard
 msgid ""
 "A new smuggling route from %1$s to %2$s has been established! Every ware "
@@ -1775,11 +1767,13 @@ msgstr ""
 
 #: input:33 standard
 msgid ""
-"Sire, although our soldiers would face any enemy without the slightest fear,\n"
+"Sire, although our soldiers would face any enemy without the slightest "
+"fear,\n"
 "our rival in the north is still stronger than all our armies combined. We\n"
 "should avoid to have a conflict until we are able to defeat it.\n"
 "<br><br>\n"
-"Be patient and recognize that a strong army is indispensable in this situation.\n"
+"Be patient and recognize that a strong army is indispensable in this "
+"situation.\n"
 "Törver has a very bad reputation."
 msgstr ""
 
@@ -1791,8 +1785,7 @@ msgstr ""
 msgid "Build three lumberjack’s houses, a forester’s house and a sawmill."
 msgstr ""
 
-#. TRANSLATORS: the first parameter is '<number> points', the last 2
-#. parameters are player names
+#. TRANSLATORS: the first parameter is '<number> points', the last 2 parameters are player names
 #: input:34 standard
 msgid "The smuggling route worth %1$s from %2$s to %3$s has been broken!"
 msgstr ""
@@ -1803,8 +1796,8 @@ msgstr ""
 
 #: input:35 standard
 msgid ""
-"Defeat Erwyn. He commands the strongest opposing military force left on this"
-" island."
+"Defeat Erwyn. He commands the strongest opposing military force left on this "
+"island."
 msgstr ""
 
 #: input:36 input:43 standard
@@ -1819,8 +1812,7 @@ msgstr ""
 msgid "Build a first outpost"
 msgstr ""
 
-#. TRANSLATORS: the first 4 parameters are player names, the last parameter is
-#. '<number> points'
+#. TRANSLATORS: the first 4 parameters are player names, the last parameter is '<number> points'
 #: input:39 standard
 msgid ""
 "Game over! %1$s and %2$s have won the game! %3$s and %4$s only managed to "
@@ -1881,8 +1873,10 @@ msgid ""
 "Sire, We received an alarming message from one of our explorers. Törver is\n"
 "expanding his front line and approaching our territory.\n"
 "<br><br>\n"
-"We cannot avoid to attack their armies forever. If we can conquer our northern\n"
-"enemy then we will enlarge our territory and find more resources to strengthen\n"
+"We cannot avoid to attack their armies forever. If we can conquer our "
+"northern\n"
+"enemy then we will enlarge our territory and find more resources to "
+"strengthen\n"
 "our armies.\n"
 "<br><br>\n"
 "We can then also use their access to the lake in order to explore more land."
@@ -1912,8 +1906,8 @@ msgstr ""
 
 #: input:51 standard
 msgid ""
-"Build a quarry close to the lots of stone. So we can free some building lots"
-" and get some valued resources."
+"Build a quarry close to the lots of stone. So we can free some building lots "
+"and get some valued resources."
 msgstr ""
 
 #: input:51 standard
@@ -1960,8 +1954,10 @@ msgstr ""
 
 #: input:58 standard
 msgid ""
-"Sire, the battle with Törver progresses gloriously and we have already beaten\n"
-"the strongest part of his army. But this enemy will not be defeated easily. In\n"
+"Sire, the battle with Törver progresses gloriously and we have already "
+"beaten\n"
+"the strongest part of his army. But this enemy will not be defeated easily. "
+"In\n"
 "a desperate move Törver has called in a group of hardened mercenaries."
 msgstr ""
 
@@ -2014,9 +2010,11 @@ msgstr ""
 #: input:65 standard
 msgid ""
 "We are pretty sure that we are not alone on the island. We do not know\n"
-"if the others on this island are friends or foes so we need to treat carefully.\n"
+"if the others on this island are friends or foes so we need to treat "
+"carefully.\n"
 "Expand and explore the island by building at least one habitat for a scout\n"
-"and military buildings. Favor Towers over other military buildings for their\n"
+"and military buildings. Favor Towers over other military buildings for "
+"their\n"
 "bigger view range."
 msgstr ""
 
@@ -2030,12 +2028,15 @@ msgstr ""
 
 #: input:66 standard
 msgid ""
-"Sire, now that we have conquered the land of Törver, we can make use of their\n"
-"excellent access to the adjacent great lake. A port in the north will give us\n"
+"Sire, now that we have conquered the land of Törver, we can make use of "
+"their\n"
+"excellent access to the adjacent great lake. A port in the north will give "
+"us\n"
 "better opportunities to have contact with other tribes.\n"
 "<br><br>\n"
 "In Törver's headquarters we found papers that describe the construction of\n"
-"ships. Unfortunately, the texts are written in a language that is unknown to us.\n"
+"ships. Unfortunately, the texts are written in a language that is unknown to "
+"us.\n"
 "Our wise men will try to translate these descriptions."
 msgstr ""
 
@@ -2145,8 +2146,8 @@ msgid ""
 "It is amazing how far one can see from the highest tower of the castle. We "
 "can watch the whole island. So now I wonder why Lanissa did not see us and "
 "thus did not prepare. Be that as it may, some things will never come to the "
-"light of day. The only important issue at the moment are the opposing troops"
-" still left. We have discovered enemy positions held by Erwyn to the north "
+"light of day. The only important issue at the moment are the opposing troops "
+"still left. We have discovered enemy positions held by Erwyn to the north "
 "and east of the castle. He is known to be a strong warlord and surely "
 "commands the strongest warriors. In the south, we caught sight of some food "
 "infrastructures guarded by Jomo – a younger warlord – and we should take "
@@ -2155,12 +2156,15 @@ msgstr ""
 
 #: input:79 standard
 msgid ""
-"Sire, our men have located an isolated enemy pirate sentry. The abandoned huts\n"
+"Sire, our men have located an isolated enemy pirate sentry. The abandoned "
+"huts\n"
 "indicate that there is gold nearby.\n"
 "<br><br>\n"
 "We should however be careful if we want to conquer the sentry. There can be\n"
-"more enemy buildings that are still out of sight, and the pirates are known to\n"
-"be very good fighters. It is best to establish a strong military presence here\n"
+"more enemy buildings that are still out of sight, and the pirates are known "
+"to\n"
+"be very good fighters. It is best to establish a strong military presence "
+"here\n"
 "before we proceed."
 msgstr ""
 
@@ -2206,15 +2210,15 @@ msgstr ""
 #: input:83 standard
 msgid ""
 "Our escape from the cursed island was a close one: we managed to load three "
-"ships and make our escape, but the currents of the sinking island tested our"
-" new ships and their design. "
+"ships and make our escape, but the currents of the sinking island tested our "
+"new ships and their design. "
 msgstr ""
 
 #: input:84 standard
 msgid ""
 "And one failed the test: the last days of loading was done in chaos and "
-"without much planing and so one of ships ended up carrying most of the heavy"
-" wares in our possession. "
+"without much planing and so one of ships ended up carrying most of the heavy "
+"wares in our possession. "
 msgstr ""
 
 #: input:84 input:93 standard
@@ -2263,14 +2267,14 @@ msgstr ""
 #: input:88 standard
 msgid ""
 "The fear was great in us all. We expected the other ships to be drowned as "
-"well, but they persisted. We escaped the island and began our smooth sailing"
-" to other costs. "
+"well, but they persisted. We escaped the island and began our smooth sailing "
+"to other costs. "
 msgstr ""
 
 #: input:89 standard
 msgid ""
-"Great! Erwyn gave up when he saw his last buildings burning down. That’s one"
-" less strong warlord on this island!"
+"Great! Erwyn gave up when he saw his last buildings burning down. That’s one "
+"less strong warlord on this island!"
 msgstr ""
 
 #: input:89 standard
@@ -2281,9 +2285,9 @@ msgstr ""
 
 #: input:90 standard
 msgid ""
-"Last night however, we made out a new island. We saw smoke hovering over it."
-" The black comes from the fiery mountain in the north of the island, the "
-"grey however comes from settlers."
+"Last night however, we made out a new island. We saw smoke hovering over it. "
+"The black comes from the fiery mountain in the north of the island, the grey "
+"however comes from settlers."
 msgstr ""
 
 #: input:90 standard
@@ -2305,7 +2309,8 @@ msgid ""
 "transported to our headquarters.\n"
 "<br><br>\n"
 "With our successful expansion into this area we should consider building a\n"
-"warehouse to the direct southwest of the sentry in order to further exploit this\n"
+"warehouse to the direct southwest of the sentry in order to further exploit "
+"this\n"
 "area. There is a good building spot only three steps away from the sentry."
 msgstr ""
 
@@ -2344,9 +2349,9 @@ msgstr ""
 #. TRANSLATORS: Jundlina - Diary
 #: input:97 standard
 msgid ""
-"At least the east side is inhabited, so much is clear. We do not know if the"
-" people there are friends or foes. We do not even know what tribe they might"
-" be from. "
+"At least the east side is inhabited, so much is clear. We do not know if the "
+"people there are friends or foes. We do not even know what tribe they might "
+"be from. "
 msgstr ""
 
 #: input:97 standard
@@ -2362,8 +2367,8 @@ msgstr ""
 #: input:98 standard
 msgid ""
 "The only thing that is sure that they can't be Atlantians for no ship of us "
-"has sailed as far as us in the last hundreds years. I can only hope they are"
-" friendly. "
+"has sailed as far as us in the last hundreds years. I can only hope they are "
+"friendly. "
 msgstr ""
 
 #: input:99 standard
@@ -2437,17 +2442,20 @@ msgstr ""
 
 #: input:105 standard
 msgid ""
-"Sire, the wet season has created swamps along the brook to the east and we are\n"
-"unable to pass through them. They have to be removed before we can continue. If\n"
-"you bring enough shovels to the new warehouse then volunteers will remove the\n"
+"Sire, the wet season has created swamps along the brook to the east and we "
+"are\n"
+"unable to pass through them. They have to be removed before we can continue. "
+"If\n"
+"you bring enough shovels to the new warehouse then volunteers will remove "
+"the\n"
 "swamps."
 msgstr ""
 
 #. TRANSLATORS: Jundlina - Diary
 #: input:105 standard
 msgid ""
-"We still have plenty of coal and iron ore, so a metal workshop and a smelter"
-" will provide us with good tools in no time. Also, we need to solve our "
+"We still have plenty of coal and iron ore, so a metal workshop and a smelter "
+"will provide us with good tools in no time. Also, we need to solve our "
 "building material problem. "
 msgstr ""
 
@@ -2463,8 +2471,8 @@ msgstr ""
 
 #: input:107 standard
 msgid ""
-"Finally! The island is completely ours. Now we just have to defend it better"
-" than the warlords did."
+"Finally! The island is completely ours. Now we just have to defend it better "
+"than the warlords did."
 msgstr ""
 
 #: input:108 standard
@@ -2517,14 +2525,14 @@ msgstr ""
 
 #: input:114 standard
 msgid ""
-"..or build an Arena and a Training Camp. Train your soldiers and attack when"
-" they are ready."
+"..or build an Arena and a Training Camp. Train your soldiers and attack when "
+"they are ready."
 msgstr ""
 
 #: input:114 standard
 msgid ""
-"We should explore the Island in the south and build an expedition port there"
-" let's try to find some mining ressources."
+"We should explore the Island in the south and build an expedition port there "
+"let's try to find some mining ressources."
 msgstr ""
 
 #: input:114 standard
@@ -2543,7 +2551,8 @@ msgstr ""
 #: input:115 standard
 msgid ""
 "Sire, all shovels have been handed out but if we continue at this pace than\n"
-"we will not have removed the swamps before the next wet season. If you bring\n"
+"we will not have removed the swamps before the next wet season. If you "
+"bring\n"
 "more shovels to the new warehouse then more volunteers will join in."
 msgstr ""
 
@@ -2575,15 +2584,17 @@ msgstr ""
 
 #: input:124 standard
 msgid ""
-"Sire, as a result of our attacks on the pirates they have started to regroup\n"
-"with pirates from other tribes. They could regain much of their previously lost\n"
-"strength. Our dwindling resources can become a problem with such a large enemy\n"
+"Sire, as a result of our attacks on the pirates they have started to "
+"regroup\n"
+"with pirates from other tribes. They could regain much of their previously "
+"lost\n"
+"strength. Our dwindling resources can become a problem with such a large "
+"enemy\n"
 "in front of us."
 msgstr ""
 
 #: input:124 standard
-msgid ""
-"We need to produce at least 6 gold to be able to colonize our vicinity."
+msgid "We need to produce at least 6 gold to be able to colonize our vicinity."
 msgstr ""
 
 #: input:125 input:136 input:142 input:151 input:154 input:163 input:166
@@ -2595,8 +2606,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:127 standard
 msgid ""
-"Finally! This island appears to have been made for us, it is a gift from the"
-" Gods to my people and myself. Until now, we have only seen a small part of "
+"Finally! This island appears to have been made for us, it is a gift from the "
+"Gods to my people and myself. Until now, we have only seen a small part of "
 "this island, but this part alone is already bringing sunlight to my mind. I "
 "feel as if we have found a priceless treasure, a land like paradise."
 msgstr ""
@@ -2623,8 +2634,10 @@ msgstr ""
 
 #: input:133 standard
 msgid ""
-"Sire, thanks to our successful efforts to drive out the pirates, lots of them\n"
-"have fled and moved away in small boats. It is unknown in what direction they\n"
+"Sire, thanks to our successful efforts to drive out the pirates, lots of "
+"them\n"
+"have fled and moved away in small boats. It is unknown in what direction "
+"they\n"
 "have escaped."
 msgstr ""
 
@@ -2651,8 +2664,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:141 standard
 msgid ""
-"But until that day, many years may pass! For now, we must concentrate on the"
-" present, and build a few lumberjack’s houses and a sawmill to produce some "
+"But until that day, many years may pass! For now, we must concentrate on the "
+"present, and build a few lumberjack’s houses and a sawmill to produce some "
 "basic building materials."
 msgstr ""
 
@@ -2663,7 +2676,8 @@ msgstr ""
 #: input:141 standard
 msgid ""
 "Sire, after long study and research our wise men have finally managed to\n"
-"decipher the strange language in Törver's descriptions that we had found in his\n"
+"decipher the strange language in Törver's descriptions that we had found in "
+"his\n"
 "headquarters. From now on we are able to build shipyards."
 msgstr ""
 
@@ -2677,8 +2691,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:144 standard
 msgid ""
-"Finally we were set to Fremil again. I couldn't await the chance to clear my"
-" records of this big defeat by the babarians."
+"Finally we were set to Fremil again. I couldn't await the chance to clear my "
+"records of this big defeat by the babarians."
 msgstr ""
 
 #. TRANSLATORS: Lutius - Diary
@@ -2692,7 +2706,8 @@ msgstr ""
 
 #: input:149 standard
 msgid ""
-"Sire, one of our scouts has been captured by the pirates and brought to their\n"
+"Sire, one of our scouts has been captured by the pirates and brought to "
+"their\n"
 "island. He is the only person who knows the way through the swamps towards\n"
 "Hjalmar.\n"
 "<br><br>\n"
@@ -2766,8 +2781,10 @@ msgstr ""
 
 #: input:162 standard
 msgid ""
-"Sire, our soldiers have conquered the island and managed to free the scout. It\n"
-"turns out that the pirates have left a large amount of gold, beer, and weapons\n"
+"Sire, our soldiers have conquered the island and managed to free the scout. "
+"It\n"
+"turns out that the pirates have left a large amount of gold, beer, and "
+"weapons\n"
 "on the island."
 msgstr ""
 
@@ -2797,10 +2814,12 @@ msgstr ""
 
 #: input:170 standard
 msgid ""
-"Sire, our  scout has returned to our territorium and he has shown us the road\n"
+"Sire, our  scout has returned to our territorium and he has shown us the "
+"road\n"
 "through the swamps towards Hjalmar.\n"
 "<br><br>\n"
-"He noticed that we can also move along the other side of the mountain, in case\n"
+"He noticed that we can also move along the other side of the mountain, in "
+"case\n"
 "we might fail here, but it will be much more difficult to do."
 msgstr ""
 
@@ -2833,15 +2852,15 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:177 standard
 msgid ""
-"To make it even worse all the land we can see is blocked by stone and trees."
-" I fear we won’t find any help we need to build a new ship."
+"To make it even worse all the land we can see is blocked by stone and trees. "
+"I fear we won’t find any help we need to build a new ship."
 msgstr ""
 
 #. TRANSLATORS: Lutius - Diary
 #: input:177 standard
 msgid ""
-"to make it even worse all the land we can see is blocked by stone and trees."
-" I fear we won’t find any help we need to build a new ship."
+"to make it even worse all the land we can see is blocked by stone and trees. "
+"I fear we won’t find any help we need to build a new ship."
 msgstr ""
 
 #. TRANSLATORS: Lutius - Diary
@@ -2860,8 +2879,7 @@ msgid "The last frontier"
 msgstr ""
 
 #: input:181 input:188 standard
-msgid ""
-"4 shovels for removing the swamps have been collected at the warehouse."
+msgid "4 shovels for removing the swamps have been collected at the warehouse."
 msgstr ""
 
 #: input:181 input:188 standard
@@ -2870,8 +2888,10 @@ msgstr ""
 
 #: input:181 standard
 msgid ""
-"Sire, we have almost defeated all armies and we are now approaching our final\n"
-"enemy. They have been expecting us for a long time and will be prepared for the\n"
+"Sire, we have almost defeated all armies and we are now approaching our "
+"final\n"
+"enemy. They have been expecting us for a long time and will be prepared for "
+"the\n"
 "heaviest battle in their lifetime.\n"
 "<br><br>\n"
 "Make sure that our armies are at full strength and then act decisively."
@@ -2921,8 +2941,10 @@ msgstr ""
 msgid ""
 "Sire, my congratulations!\n"
 "<br><br>\n"
-"You have completed all goals and defeated all our enemies. You have not only\n"
-"conquered our rivaling tribes, but you have also captured the hearts of your\n"
+"You have completed all goals and defeated all our enemies. You have not "
+"only\n"
+"conquered our rivaling tribes, but you have also captured the hearts of "
+"your\n"
 "beloving people.\n"
 "<br><br>\n"
 "Your name will be remembered forever."
@@ -2996,16 +3018,14 @@ msgstr ""
 #: input:207 standard
 msgid ""
 "Sire, Amalea is right about the resources therefore I correct myself we "
-"should only build an outpost as this is the most effective military "
-"building."
+"should only build an outpost as this is the most effective military building."
 msgstr ""
 
 #. TRANSLATORS: Saledus
 #: input:207 standard
 msgid ""
 "Sire, Amalea is right about the resources. Therefore I correct myself. We "
-"should only build an outpost as this is the most effective military "
-"building."
+"should only build an outpost as this is the most effective military building."
 msgstr ""
 
 #: input:211 standard
@@ -3107,8 +3127,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:231 standard
 msgid ""
-"I think we should try to reveal some building space by cutting all the stone"
-" in a quarry."
+"I think we should try to reveal some building space by cutting all the stone "
+"in a quarry."
 msgstr ""
 
 #. TRANSLATORS: Amalea
@@ -3116,8 +3136,8 @@ msgstr ""
 msgid ""
 "It’s nice, and of course a good idea, to build mines, which will give us a "
 "more comfortable life, but the people working in the mines are unhappy with "
-"the current situation. They have to do hard work and have no time for making"
-" their own food."
+"the current situation. They have to do hard work and have no time for making "
+"their own food."
 msgstr ""
 
 #. TRANSLATORS: Amalea
@@ -3175,8 +3195,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:243 standard
 msgid ""
-"I got the message that our first quarry has started it's work today. Perhaps"
-" it would be a good idea to wait until it has cleared enough space for "
+"I got the message that our first quarry has started it's work today. Perhaps "
+"it would be a good idea to wait until it has cleared enough space for "
 "constructing a lumberjack’s house, so that we can harvest some logs."
 msgstr ""
 
@@ -3197,8 +3217,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:246 standard
 msgid ""
-"Unfortunately the logs are useless for building a new ship – we need to turn"
-" them into planks, which are needed by every ship and every bigger building "
+"Unfortunately the logs are useless for building a new ship – we need to turn "
+"them into planks, which are needed by every ship and every bigger building "
 "too. So we should build a sawmill."
 msgstr ""
 
@@ -3224,8 +3244,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:253 standard
 msgid ""
-"By the Gods! This is absolutely terrible. It seems as if we stand close to a"
-" test – and it seems as if Saledus was right with his fear concerning the "
+"By the Gods! This is absolutely terrible. It seems as if we stand close to a "
+"test – and it seems as if Saledus was right with his fear concerning the "
 "shipwreck he found."
 msgstr ""
 
@@ -3250,8 +3270,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:258 standard
 msgid ""
-"I noticed that our stonemason has started it’s work finally. He will cut the"
-" number of columns defined in our basic economy settings."
+"I noticed that our stonemason has started it’s work finally. He will cut the "
+"number of columns defined in our basic economy settings."
 msgstr ""
 
 #. TRANSLATORS: Amalea
@@ -3373,8 +3393,8 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:276 input:287 standard
 msgid ""
-"The problem is that a port is a building which needs a very special place to"
-" be build. So while buidling our economy we should nevertheless expand "
+"The problem is that a port is a building which needs a very special place to "
+"be build. So while buidling our economy we should nevertheless expand "
 "further to discover the whole island. Let's try to find such a valuable "
 "place."
 msgstr ""
@@ -3382,8 +3402,8 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:276 input:279 standard
 msgid ""
-"The problem is that a port is a building which needs a very special place to"
-" be build. We should expand and try to find such a place."
+"The problem is that a port is a building which needs a very special place to "
+"be build. We should expand and try to find such a place."
 msgstr ""
 
 #. TRANSLATORS: Amalea
@@ -3396,9 +3416,9 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:280 standard
 msgid ""
-"We got first sight of the enemy territory. It appears as though they possess"
-" a good location for a port and a shipyard. We need that peninsula to build "
-"a fleet if we want to leave this island eventually."
+"We got first sight of the enemy territory. It appears as though they possess "
+"a good location for a port and a shipyard. We need that peninsula to build a "
+"fleet if we want to leave this island eventually."
 msgstr ""
 
 #: input:282 input:285 input:293 standard
@@ -3467,8 +3487,7 @@ msgstr ""
 #: input:300 input:303 input:311 standard
 msgid ""
 "To send out an expeditionary ship we first need a ship. Unfortunately we "
-"have only 5 cloth left which we will need to build the port and the "
-"shipyard."
+"have only 5 cloth left which we will need to build the port and the shipyard."
 msgstr ""
 
 #. TRANSLATORS: Falo
@@ -3491,8 +3510,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:306 input:309 input:317 standard
 msgid ""
-"So let's think this over. To produce cloth we need some wool. And to produce"
-" wool we need wheat so let'S find a space for a big building and build a "
+"So let's think this over. To produce cloth we need some wool. And to produce "
+"wool we need wheat so let'S find a space for a big building and build a "
 "wheat farm first."
 msgstr ""
 
@@ -3534,8 +3553,8 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:313 standard
 msgid ""
-"However our scouts report that the two brothers are very fierce fighters. It"
-" will be a tough battle, so build a solid army and fortifications."
+"However our scouts report that the two brothers are very fierce fighters. It "
+"will be a tough battle, so build a solid army and fortifications."
 msgstr ""
 
 #: input:318 standard
@@ -3565,8 +3584,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:326 standard
 msgid ""
-"Instead of overrunning the enemy we should try and train our troops to match"
-" those horrible brothers."
+"Instead of overrunning the enemy we should try and train our troops to match "
+"those horrible brothers."
 msgstr ""
 
 #: input:328 input:331 input:339 standard
@@ -3672,8 +3691,8 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:346 input:349 input:357 standard
 msgid ""
-"Now that we have all ressources ready to built a ship, we should explore the"
-" surrounding islands."
+"Now that we have all ressources ready to built a ship, we should explore the "
+"surrounding islands."
 msgstr ""
 
 #. TRANSLATORS: Saledus
@@ -3684,9 +3703,9 @@ msgstr ""
 #. TRANSLATORS: Saledus
 #: input:349 input:352 input:360 standard
 msgid ""
-"First we need to find some more ressources to back up our growing economy. I"
-" have spotted an island with some mountains in the south. Perhaps we can "
-"find some valuable ressources like iron there."
+"First we need to find some more ressources to back up our growing economy. I "
+"have spotted an island with some mountains in the south. Perhaps we can find "
+"some valuable ressources like iron there."
 msgstr ""
 
 #. TRANSLATORS: Saledus
@@ -3708,24 +3727,24 @@ msgstr ""
 msgid ""
 "But even more important I think I Have heard the wind carrying some weird "
 "but well known sound from the north. If I'm not totally wrong I heard "
-"babarian war drums fromm the north so we should better going to look what is"
-" going on there."
+"babarian war drums fromm the north so we should better going to look what is "
+"going on there."
 msgstr ""
 
 #. TRANSLATORS: Saledus
 #: input:355 input:366 standard
 msgid ""
-"I think I have heard the wind carrying some weird but well known sounds from"
-" the north. If I'm not totally wrong I heard some barbarian war drums, so we"
-" should better going to look what is going on up there."
+"I think I have heard the wind carrying some weird but well known sounds from "
+"the north. If I'm not totally wrong I heard some barbarian war drums, so we "
+"should better going to look what is going on up there."
 msgstr ""
 
 #. TRANSLATORS: Saledus
 #: input:355 standard
 msgid ""
-"I think I have heard the wind carrying some weird but well known sounds from"
-" the north. If I'm not totally wrong I heard some barbarian war, so we "
-"should better going to look what is going on up there."
+"I think I have heard the wind carrying some weird but well known sounds from "
+"the north. If I'm not totally wrong I heard some barbarian war, so we should "
+"better going to look what is going on up there."
 msgstr ""
 
 #. TRANSLATORS: Lutius - Diary
@@ -3737,9 +3756,9 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:360 standard
 msgid ""
-"There are still a few Barbarians hiding on our island, but I am sure that we"
-" will find them soon. Every Barbarian who doesn’t attack us will be put in a"
-" boat with the other peaceful ones, and sent back to their country."
+"There are still a few Barbarians hiding on our island, but I am sure that we "
+"will find them soon. Every Barbarian who doesn’t attack us will be put in a "
+"boat with the other peaceful ones, and sent back to their country."
 msgstr ""
 
 #: input:361 input:372 standard
@@ -3816,9 +3835,9 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:370 standard
 msgid ""
-"I strongly recommend to build a production chain for mining and melting some"
-" gold. I think we need a vineyard, a winery, a tavern, a fisher's house or a"
-" hunter's house and a smelting works."
+"I strongly recommend to build a production chain for mining and melting some "
+"gold. I think we need a vineyard, a winery, a tavern, a fisher's house or a "
+"hunter's house and a smelting works."
 msgstr ""
 
 #: input:373 standard
@@ -3828,16 +3847,16 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:373 input:384 standard
 msgid ""
-"I strongly recommend to build a production chain for mining and melting some"
-" gold. I think we need a vineyard, a winery, a tavern, a fisher's house or a"
-" hunter's house and a smelting works. And the mines themselves of course."
+"I strongly recommend to build a production chain for mining and melting some "
+"gold. I think we need a vineyard, a winery, a tavern, a fisher's house or a "
+"hunter's house and a smelting works. And the mines themselves of course."
 msgstr ""
 
 #. TRANSLATORS: Amalea
 #: input:373 input:376 input:387 standard
 msgid ""
-"If there are difficulties to build all the buildings needed, we should think"
-" about all we have learned so far. We can cut all the stone. We should "
+"If there are difficulties to build all the buildings needed, we should think "
+"about all we have learned so far. We can cut all the stone. We should "
 "perhaps optimize our roads to free up some building site, or even dismantle "
 "some military buildings to get more space for our economy."
 msgstr ""
@@ -3937,8 +3956,8 @@ msgstr ""
 #. TRANSLATORS: Lutius - Diary
 #: input:403 standard
 msgid ""
-"Yes my fellow comrades we have done it. But my heart is still with our home."
-" We shall set sail as soon as possible to help defend the empire from the "
+"Yes my fellow comrades we have done it. But my heart is still with our home. "
+"We shall set sail as soon as possible to help defend the empire from the "
 "babarian tribe."
 msgstr ""
 
@@ -3961,8 +3980,8 @@ msgstr ""
 #. TRANSLATORS: Amalea
 #: input:410 input:421 standard
 msgid ""
-"For example it might be a good idea to produce a reasonable amount of a ware"
-" and afterwards dismantle the building to gain space for another building."
+"For example it might be a good idea to produce a reasonable amount of a ware "
+"and afterwards dismantle the building to gain space for another building."
 msgstr ""
 
 #: input:415 input:426 standard
@@ -4001,4 +4020,2912 @@ msgid ""
 "Yes my fellow comrades, we have done it. But my heart is still with our "
 "home. We shall set sail as soon as possible to help defend the empire from "
 "the babarian tribe."
+msgstr ""
+
+#: standard input:8
+msgid "vtst-rivers"
+msgstr ""
+
+#: standard input:10
+msgid ""
+"Thanks to the limited resources around your headquarters, build ships to "
+"explore rich islands."
+msgstr ""
+
+#: standard input:11
+msgid ""
+"Water along the rivers. Fish in the ponds but not in the rivers. Two large "
+"islands with mountains rich of resources."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:1 /tmp/15744417009842789764.lua:2
+#: /tmp/15744417009842789764.lua:3 /tmp/15744417009842789764.lua:4
+#: /tmp/15744417009842789764.lua:5
+msgid "Reupload from old xoops site"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:6 /tmp/15744417009842789764.lua:7
+msgid "Reimported from old xoops site"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:8
+msgid "Reimported from old xoops site. "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:9
+msgid "reimported from old xoops site."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:10
+msgid "Imported from old xoops site"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:11
+msgid ""
+"In the desert the wood is very slow growing. How can we faster build a "
+"bulwark against our enemies? Maybe we can find the legendary land Aquila? "
+"After all, Aquila is promised us."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:12
+msgid ""
+"A little green island, normally a dream but there is an enemy. Find the "
+"extinct volcano to get an infinite quantity of resource. Water is not "
+"available at all places, ask the geologist to find the water."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:13
+msgid ""
+"We are castaway but we are living. The beach we are stranded is very small, "
+"but enough to start an expedition to the moutain behind the island. Some of "
+"the crew will mutiny, because in their mind the best way is to go at the "
+"beach along to the continent we can see opposite our actual position.\r\n"
+"\r\n"
+"Note:\r\n"
+"Never mind which way your crew will go, build a castle at a central position "
+"to protect your homeland, because you be unaware is their friend or enemy. "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:14
+msgid ""
+"A map with very hard and tricky start conditions for both player. There is "
+"enough resource but not enough place \r\n"
+"to build all bigger building for starting the prosperous economy. Every "
+"player must find the way to the \"green\" land\r\n"
+"and look for the places to build all important buildings at right time. It "
+"is tricky to find the right time to destroy\r\n"
+"something (houses, ways ...) to build new starting condition for the next "
+"step. A bad idea, a wrong decision and the player\r\n"
+"lost the game. The ai procedure of the computer player is to weak for this "
+"tricky map, in most of the tested games the computer player \r\n"
+"cannot find the way to the \"green\" land and will lost the games."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:15
+msgid ""
+"The big race. All players will have the same starting condition, a green "
+"land with low resource but enough for a stable econmy. The goal is to grow "
+"your country and to plant trees. The best player with the most trees will "
+"win the game."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:16
+msgid ""
+"The \"blue\" player has all resources and all others nothing, but enough to "
+"live in peace. Greed will be that nobody has a friend, war is the "
+"consequence."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:17
+msgid ""
+"A large lake enclose by mountain's. You can find no way over these "
+"mountain's only a life around this lake is possible. Establish a stable "
+"farming economy and search for resource like iron, cool or gold in the "
+"mountain.\r\n"
+"After a long time you will meet our unfriendly neighbor's and the only two "
+"peoples will survive."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:18
+msgid ""
+"A little touch to the original map \"The long way\", wich add a new "
+"dimension.\r\n"
+"It can be done better, but it shows how the map should be in my opinion."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:19
+msgid ""
+"I have tried a different theme here, Have played it a few times and all "
+"seems ok, although it does slow down occasionally (Prob the Scots "
+"fighting !). I have included a few landmarks - Stonehege,Hadrians Wall, Ben "
+"Nevis etc and each countries main rivers. Plenty of resources too, just be "
+"quick to get some soldiers, as battle commences quite quick. This is my "
+"first map, hope you enjoy it."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:20
+msgid ""
+"Auf einer saftigen Wiese, an einem dichten Wald, hast du mit deinem Stamm "
+"ein neues Quartier aufgeschlagen. Alles sieht gut aus. Doch das andere Volk "
+"in deiner Nähe hat zu wenig Raum für sich und breitet sich deswegen schnell "
+"in dein neues Land aus. Der Kampf um das fruchtbare Land beginnt. Und was "
+"verbirgt sich direkt hinter dem Wald?"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:21
+msgid ""
+"If you're new to the Widelands / the old Settlers -series, then you "
+"shouldn't try this one, unless you like to have a real challenge with your "
+"survival."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:22
+msgid ""
+"The number 5 is the basis of this game. Develop the economy and looking for "
+"an island off the mainland after the gold. The way through the mountains "
+"will be richly rewarded, that is the difficult way worthwhile."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:23
+msgid ""
+"Prepare for an extreme winter. Fish, water and even choppable trees are hard "
+"to find. However, the newly found volcano is place of great riches if you "
+"can manage to reach the top of it."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:24
+msgid ""
+"This is a huge map of europe with a lot of resources. It is made for epic "
+"matches against up to 7 opponents. As it is the first Version of the map - "
+"please let me know your ideas to optimize this baby :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:25
+msgid ""
+"1 vs 1\r\n"
+"2 vs 2\r\n"
+"3 vs 3"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:26
+msgid ""
+"In the past a Vulkan was active and some old lavaflows has leaved his marks. "
+"Follow this marks to find fortune... but be aware of other folks, they just "
+"want the same."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:27
+msgid ""
+"This map is massive, and only four players are set up in it. Best is ports "
+"and ships are utilized."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:28
+msgid ""
+"This was created using my WMF merge script, found on the forum here http://"
+"wl.widelands.org/forum/post/8845/\r\n"
+"\r\n"
+"Highly recommended that you know how to use ports and ships well. This was a "
+"test of the endurance of the script really, but I decided to fill in the "
+"details and tidy it up a bit in the editor to make it playable. My maps are "
+"not for the novice, they really require some knowledge of how the game is "
+"played, especially if you play using anything other than Atlanteans as I "
+"tend to tailor them to that particular tribe. Please, if you do play the "
+"map, let me know what you think, good or bad, offer me some feedback on here "
+"or message me in private if you want, I enjoy making these and am also "
+"working on scenarios."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:29
+msgid ""
+"This map is a lot of fun, and a little bit challenging. The mining resources "
+"are not exactly easy to plan out, and the lack of space makes it very "
+"important to plan your building locations carefully. Please enjoy it."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:30
+msgid ""
+"A highly detailed map of Australia made with playability in mind, so it "
+"isn't authentical but close enough to be a great fun. "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:31
+msgid ""
+"This is a four player maps: Desert Tracks.\r\n"
+"\r\n"
+"This map probably makes Atlanteans more superior, because of the little "
+"tracks spread everywhere,the tracks is only allow small building( for "
+"military building most of time) building on it.\r\n"
+"And Atlanteans can build small tower on the tracks.\r\n"
+"\r\n"
+"To expand the territory, you have to keep building smallest military along "
+"the tracks to finds water, fish, trees, stones, metal ore... (I don't know "
+"why there is water everywhere even I just don't put them there, can someone "
+"tell me how?).\r\n"
+"\r\n"
+"There is only little resources and spaces in the mainland, so you must want "
+"to expand as soon as possible.\r\n"
+"\r\n"
+"And final, each mainland has unique outline, pick whatever you like and "
+"enjoy it!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:32
+msgid ""
+"An island, not big enough for 3 tribes. Battle for territorial control and "
+"the preservation of your tribe.\r\n"
+"\r\n"
+"Version 1.0 "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:33
+msgid "This map is for massive war. Long- term play and great fun!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:34
+msgid "You will need some boats to be faster than the others."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:35
+msgid ""
+"You need to optimize your use of land -- there is a bit too little of it for "
+"a fully fluent economy. Running the game at faster-than-usual speed makes "
+"things more interesting.\r\n"
+"\r\n"
+"Key features:\r\n"
+"\r\n"
+"- Almost no coal available, getting some using burners brings an advantage."
+"\r\n"
+"- Ships are good fellows of yours, in number of ways.\r\n"
+"\r\n"
+"AI plays this map poorly (summer 2013), fun mostly with three human players. "
+"The starting positions are fair. Knowing the map in advance is an advantage "
+"-- for fair play, all should either know this or not know it.\r\n"
+"\r\n"
+"Explicitly licensed under the GNU General Public License version 2. Also "
+"version 3 if you prefer that."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:36
+msgid ""
+"I think that this is the best of the few maps that I made so far. Please "
+"enjoy!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:37
+msgid ""
+"A suitable map for a short game but with enough resources to build up large "
+"armies."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:38
+msgid ""
+"This is kind of prequel to the Fellowships map: Timberlanders is  simpler in "
+"many ways, and mostly suited to learn how to make an efficient \"carbon-free "
+"economy\". It is still fun to play, in my opinion. Licensed under GNU GPL "
+"versions 2 and 3, pick whichever pleases you most."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:39
+msgid ""
+"Some problems with gold and place at first. Best play: 4 vs 4 (1 vs 5, 2 vs "
+"6, ...). Ships are required to fast transport. Good luck!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:40
+msgid ""
+"Just finished and tested this map. The game play is spectacular, a good pace "
+"and many large battles."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:41
+msgid ""
+"The AI may be too weak for experienced players.  Playing on line is "
+"recommended.\r\n"
+"GNU General Public License version 2 is applicable."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:42
+msgid ""
+"Version 2 with port spaces added and a few small updates made.\r\n"
+"GNU General Public License version 2 is applicable."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:43
+msgid ""
+"The map may be challenging to new players, as most starting locations lack "
+"either building space or resources.\r\n"
+"Manage your resources wisely!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:44
+msgid ""
+"My objective was to create a map where you can conquer most of the land "
+"without ships, but with ships its much easier (and more fun) because of "
+"shorter transportation ways. Another aim was to make the map fair for 1 vs 1 "
+"or 2 vs 2."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:45
+msgid "GNU General Public License version 2 is applicable."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:46
+msgid ""
+"The map is suitable for both 2 and 3 player teams, and is difficult to win "
+"against the computer, especially when all opponents are united in one team "
+"and start with citadel or castle villages. Supports seafaring.\r\n"
+"\r\n"
+"Licensed under the GNU General Public License V2.0"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:47
+msgid ""
+"The map is suitable for both 2 and 3 player teams, and is difficult to win "
+"against the computer, especially if all opponents are united in one team and "
+"start with citadel- or castle villages. Supports seafaring. Licensed under "
+"the GNU General Public License V2.0."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:48
+msgid ""
+"A good battle map in which it is necessary to breed animals for sufficient "
+"food production. The map has some problems when the AI players start with "
+"citadel/castle village, normal headquarters are strongly recommended. "
+"Licensed under the GNU General Public License V2.0."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:49
+msgid ""
+"As teppo said: \"With players of unequal skills, unbalanced maps like this "
+"could be a key to a fair play. If the asymmetry is known in advance."
+"\" (https://wl.widelands.org/forum/topic/1280/?page=1). Begginers: position "
+"1 & 2, advanced: 3-6, experts: 7 & 8 (higher position- higher skills). "
+"Please try and comment any problems. I will try to improve the map."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:50
+msgid ""
+"I've made some corrections and update for Widelands bzr6783[trunk](Release). "
+"Description the same as before."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:51
+msgid ""
+"Upgraded version for bzw6785 with the new type port spaces. This map is not "
+"compatible with the official build 17 release version and earlier. The "
+"terrain around the ports has been changed and is now always accessible for "
+"expeditions (without blocking trees). Licensed under the GNU General Public "
+"License V2.0."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:52
+msgid ""
+"The shape is based on the Earth, but some changes were added. You will have "
+"to expand teritory using expedition, but it won't be easy. The coastline is "
+"unfriendly and far away."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:53
+msgid ""
+"This is slightly modified version of my \"Distant enemies\" map. I added "
+"resources for Yellow tribe as it has very few resources available near to "
+"its starting point. If you start as Blue tribe you should have abundance of "
+"resources nearby and should manage to win :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:54
+msgid "Licensed under GNU General Public License version 2."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:55
+msgid ""
+"Corrected small mistake and added some animals on the first island.\r\n"
+"Also added new spoiler here :)\r\n"
+"Have a fun!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:56
+msgid ""
+"Because the map Colonies can be not equal to different skills players I've "
+"made a version without the coal and with very rare gold places. Fights on "
+"this map can be very long and epic. Have fun!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:57
+msgid "Shipped under GNU General Public License version 2."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:58
+msgid ""
+"Single player scenario map with high difficulty level in a historic Swedish "
+"setting.\r\n"
+"\r\n"
+"Shipped under GNU General Public License version 2."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:59
+msgid "My first map for 4 Players ..it's for looooooong playing ;)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:60
+msgid "GNU General Public License version 2."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:61
+msgid ""
+"The map is full of stones and there is no coal. You can end the game very "
+"fast (aobut 3 hours), but also you can play it for a while. Probably you "
+"won't run out of iron."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:62
+msgid ""
+"The first version of map was made with build 17. Second is created with new "
+"standard: build 18 :) Feel free to check the difference (only some port "
+"spaces)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:63
+msgid "Licensed under the GNU General Public License version 2."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:64
+msgid ""
+"Map created by script, except for distribution of resources and placing the "
+"headquarters.\r\n"
+"\r\n"
+"Should be easy to play, though raw materials are bit limited. As usual, AI "
+"is bit stupid for this kind of map...\r\n"
+"\r\n"
+"Report any ideas and suggestions!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:65
+msgid ""
+"An error in the fish resources has been fixed, and I also corrected that "
+"silly typo in the name."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:66
+msgid ""
+"Huge map - too huge for my quite slow PC. A lot of land, a lot of time "
+"before running into enemies. (Maybe more then 8 enemies would be nice). As "
+"usual AI is too stupid and after about 2 hours begin to stagnate. Created "
+"and developed with barbarians in mind, though basic testing was done with "
+"other races as well.\r\n"
+"The landscape was created with fractal algorithm, I believe you will like "
+"it :)\r\n"
+"Comments welcomed."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:67
+msgid ""
+"Map I made to test the seafaring. it is possible to conquer the whole world "
+"if the islands are taken in the right order.\r\n"
+"Hint: don't spoil your gold in the beginning."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:68
+msgid ""
+"Four players, enough room and raw materials. Easy / medium difficulty. "
+"Developed for barbarians."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:69
+msgid ""
+"Updated version with more fishing resources and more balanced game play."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:70
+msgid "New version with more land connections."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:71
+msgid ""
+"Big map where you can train your seafaring abilities. As usual AI players "
+"will be too weak for you. The map was created with my fractal algorithm "
+"(slightly modified diamond-square algorithm). Any ideas welcomed. I tested "
+"it with AI players - so seafaring was not tested at all..."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:72
+msgid ""
+"The number of trees in this map has been reduced significantly after it "
+"turned out that they were an obstacle during the game. It's a great map for "
+"long and balanced games with strong players, for example by tweaking the "
+"startup files in the case of AI players. It is quite difficult to win this "
+"map if all opponents start with attack level 2."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:73
+msgid ""
+"Reworked version - I re-designed mines & raw resources as they were too hard "
+"to get to. Four players - easy to medium difficulty. Developed for "
+"barbarians in mind."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:74
+msgid ""
+"Comment in regard to v.2: I found some bugs in the previous version - simply "
+"some of fields planned as port-capable were not enabled as ports. (There "
+"were no blue placeholders meaning that a port can be build there) \r\n"
+"\r\n"
+"Technical comments: Creating a fractal map with rivers is a challenge. I "
+"tried few approaches but at the end I gave up. The known problem with "
+"diamond-square algorithm is that it creates pits - many deep pits and this "
+"is a problem for rivers. One of approaches was simulate erosion&deposition "
+"process but this is also quite challenging. So I decided to do it other way "
+"round: to generate rivers (inluding height of individual points) via fractal-"
+"like algorithm and then generate landscape around them. This is the result. "
+"Yet, improvements to algorithm are still possible. And the most significant "
+"shortcoming is that rivers do not branch. Maybe in next version... :) \r\n"
+"\r\n"
+"Comment to seafaring: I hope the rivers could be used for seafaring up to "
+"the \"springs\" - I did not tested it yet:( \r\n"
+"\r\n"
+"Any comments welcomed."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:75
+msgid ""
+"Three players, small map, short game :). I did couple of small changes "
+"against v.2 to impove playability...."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:76
+msgid ""
+"My first blackland map :). Should be easy to play. Not suitable for "
+"Atlanteans. These four holes with water should be craters. Their walls are "
+"not as steep as should be but my intend was to make them climb-able - to "
+"allow building fisher huts close to water.  As usuall, any comments welcomed."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:77
+msgid "Par l'eau ou par les montagnes .... ?"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:78
+msgid ""
+"Flat, symmetrical and predictable.\r\n"
+"\r\n"
+"It's designed for doing war rather than looking pretty.\r\n"
+"\r\n"
+"The reason for the strange arrangement of trees and rocks around the start "
+"point is to give the AI a good start."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:79
+msgid ""
+"\r\n"
+"Welcome to the dark forest. To reach the interior of the island, you have to "
+"find a way through the forest.\r\n"
+"Each resource is available to a great extent. The map is also playable for "
+"multiplayer games and suitable for every people.\r\n"
+"Ports are also available and offer an interesting possibility."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:80
+msgid ""
+"I wanted to make the AI a bit more challenging. Playing blue (or maybe red) "
+"should be quite hard, although for an easy time you could play green."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:81
+msgid ""
+"Stranded on an island to rest our tired bones. It seems not to be the best "
+"place...  \r\n"
+"I tested this map only with the Empire tribe."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:82
+msgid ""
+"Es stinkt nach Schwefel, die Bäumen gleichen riesigen Pilzen und die Fische "
+"schmecken seltsam. Doch die neue Insel ist mit Reichtümern gespickt und die "
+"Nachhricht verbreitet sich wie ein Lauffeuer.\r\n"
+"Nun sind 6 Stämme auf dieser Insel gelandet, getrieben von Gier und "
+"Blutdurst, denn die anderen Stämme werden nicht einfach so weichen!\r\n"
+"\r\n"
+"\r\n"
+"\r\n"
+"\r\n"
+"It stinks of sulfur, the same trees giant mushrooms and the fish tasted "
+"strange. But the new island is peppered with riches and the Nachhricht "
+"spreads like wildfire.\r\n"
+"Now 6 strains have landed on this island, driven by greed and bloodlust, "
+"because the other tribes are not simply so soft!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:83
+msgid ""
+"This map was designed to give the AI an advantage against the blue tribe, "
+"but for a more balanced game you could play one of the other colours. I hope "
+"you like it, I've tested with every tribe and there don't seem to be any "
+"problems - each one of them can win, although not without some difficulty."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:84
+msgid "Big world with islands. For seafaring. Second, modified version."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:85
+msgid ""
+"The main goal was to create a map where is almost no ores. Instead of that "
+"the map has enough resources for short battle. If you want to play longer- "
+"you have to reach overseas. There is plenty of ores. All the idea came after "
+"a topic https://wl.widelands.org/forum/topic/1572/?page=1#post-11485 came on "
+"the forum."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:86
+msgid "Few further improvements."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:87
+msgid "Couple of enhancements to the terrain and resources"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:88
+msgid "no comment  needed:)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:89
+msgid ""
+"A large flat map with large rock to block fast expansions. Lots of water, "
+"fish, gold, coal, ... lots of everything. If u really run ot on resourses, "
+"you should consider a diplomatic solution."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:90
+msgid ""
+"Enhanced map. I improved accessibility or mines and I also added further "
+"resources. This is a result of my quite lengthy testing of AI. Everytime I "
+"see some shortcoming on a map I edit and fix it. No seafaring."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:91
+msgid ""
+"This is probably first map where very different types of soil is used so it "
+"is named the way how it looks."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:92
+msgid ""
+"Tricky little map .. Blue = Palermo, Red = Syracuse .. Enjoy the play and "
+"add some comments (:"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:93
+msgid ""
+"This map is inspired to a real place; if you live in Turku, you may "
+"recognize the islands of ruissalo, hirvensalo, satava and kakskerta  as the "
+"blue starting point, and aland, hogskar, and lumparland (not to scale) for "
+"the red. Everything else is made up. Nevertheless, I made it balanced: every "
+"player has exactly 19 big spaces, 50ish (they are difficult to count) medium "
+"spaces and 20ish small spaces, 50 stones, 54 coals, 26 granite, 63 iron, and "
+"19 gold. So you can use it to play with your friends.\r\n"
+"\r\n"
+"This is a very technical map, and by \"technical\" I mean \"difficult\". "
+"Small islands are inefficient to produce wood, and expansion is difficult. "
+"you have to keep making woodcutters to clear the trees, then dismantle then "
+"and make military buidings to take the land, then you dismantle those, cut "
+"the roads and see where you can make a large building, and all the time you "
+"try to not lock yourself. But it is difficult equally for everyone, and if "
+"you enjoy an extra challenge in adapting to an unfriendly environment then "
+"you should like this map.\r\n"
+"\r\n"
+"The AI is incapable of playing this map to any real degree. it cannot cope "
+"with small spaces, and it regularly mmakes smaller buildings on the big "
+"slots. it generallly only manage to make two or three farrms, and sometimes "
+"not even a battle arena."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:94
+msgid ""
+"This is a special map - because of algorithm it was created with. It is "
+"simulation of earth plates movement and collisions. I used this tool: "
+"https://github.com/Mindwerks/worldengine and also the help of creators of "
+"the application. The tool also simulates biomes and further details.\r\n"
+"The map is for 3 players, you will have enough time to build economy before "
+"you meet your enemies. Also seafaring would be much useful, but probably not "
+"absolutely necessary."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:95
+msgid ""
+"This is completely rebuilt The Nile map. If you see any bug- please report "
+"to me.\r\n"
+"The map is made as equal to most of players.\r\n"
+"Opposit situations: Blue & Red; Yellow & Green; Orange & Black & White & "
+"Purple.\r\n"
+"Designed for games: (Red vs Blue), (Yellow & Blue vs Red & Green),\r\n"
+"(White & Purple vs Orange & Black), Blue & white & Purple vs Red & Orange & "
+"Black),\r\n"
+"(Yellow & Purple & White vs Red & Green & Black & Orange),\r\n"
+"(Blue & Yellow & Purple & White vs Red & Orange & Black & Green) "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:96
+msgid ""
+"this map is intended for competitive  game of a human player (blue) against "
+"7 computers. it makes no sense otherwise.\r\n"
+"\r\n"
+"there are many balanced maps, but only few intended to give a hard time to a "
+"human in single player mode. those few (anchor and turtle mountain are the "
+"only ones i know) rely on close start and limited space to make your life "
+"difficult, but once you can establish an economy, they become easy. I wanted "
+"a map that would still be difficult even in the late game. So I gave the "
+"human every possible disadvantage. Need to abandon the starting land and "
+"relocate elsewhere? Making sure (by forcing you to abandon your starting "
+"land) that you will start establishing your economy hours after your "
+"opponents? Check. No coal mines? Check. Land divided in various islands, to "
+"force you to deal with the idiosyncrasies of boat transport? Check. Rugged "
+"land to limit building space? Check. Limited mineral resources? Check.\r\n"
+"\r\n"
+"Furthermore, I wanted the game to still be difficult after you kill the "
+"first AI player, so I gave the first enemies you encounter limited "
+"resources, and more resources to those that come later. So if you take too "
+"much time to kill, you won't be able to conquer any new ores, and you won't "
+"be able to make new soldiers to kill the other players. Of course, you could "
+"always use exhausted mines for a 5% chance of production; and since the "
+"computer does not do it, you will eventually overtake it. But that's easy "
+"and does not morally count as \"winning the map\".\r\n"
+"\r\n"
+"In the end, this is probably the hardest map uploaded to date (but it is "
+"winnable, I playtested it). Play this map only if you are\r\n"
+"\r\n"
+"1) very good, AND looking for a challenge, or\r\n"
+"\r\n"
+"2) a masochist"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:97
+msgid ""
+"pretty much what it says. you have to make an economy good enough that you "
+"will outproduce six AI with only 5% chances of getting ores. You may think "
+"of trying to rush one AI and steal their metal, but I've taken measures "
+"against that - although i could not make it completely impossible, it's very "
+"hard to do and relies a lot on luck. Most important, that's not how the map "
+"is supposed to be played, so be ashamed for even thinking about it.\r\n"
+"\r\n"
+"I managed to defeat it the way it is supposed - building a massive army and "
+"defeating all enemies when they reach you; after that, I consider the map "
+"won without need to actually conquer them  - with barbarians, thanks to "
+"their cheap economy. I won with empire too, but I had to use a bit of a "
+"trick to prevent the AI from attacking. That trick may or may not have "
+"worked with atlanteans, but it required so much continuous micromanaging "
+"that I gave up, at least for now."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:98
+msgid ""
+"Another map generated with worldengine (World generator using simulation of "
+"plates, rain shadow, erosion, etc.)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:99
+msgid ""
+"Another map generated with help of Worldengine ( https://github.com/"
+"Mindwerks/worldengine )"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:100
+msgid ""
+"I wanted this map to be faithful to real terrain, so I used google maps "
+"coordinates to ensure that the positions of the valley floors and mountain "
+"tops are exactly identical to what they are in reality. One step in game "
+"equals to about 100 meters of real distance, and one unit of game height "
+"equates to 30 meters of real height up to 2300 meters, above which "
+"everything is flat because the game allows only elevation up to 60. "
+"Mountaintops and valley floors are to scale, but not the rest of the "
+"mountains; I found that keeping the map to scale would even out the ground "
+"asperities and turn the majestic mountains into gradually sloping hills, and "
+"I tried to preserve the sense of being in narrow valleys instead. "
+"Themountain streams are of course represented as much bigger than they are "
+"in truth, because I can't make them any smaller than one tile. The lakes are "
+"instead up to scale. I also tried to reproduce in a somewhat-recognizable "
+"way some notable geographical features like the Cinque Torri, the Serrai "
+"gorge, or the Città dei Sassi, without caring for scale there. For the "
+"Marmolada glacier I was instead able to make it look realistic while still "
+"preserving the scale.\r\n"
+"\r\n"
+"The six players start from the locations of real towns: in order, Alleghe, "
+"Canazei, La Villa, Cortina d'Ampezzo, Arabba and Andraz. The positions of "
+"buildable terrain generally are based on real towns or hamlets located "
+"there. Some exceptions to this rule were made to ensure that all players "
+"have equal space. The main break from reality concerns Andraz (orange), "
+"which is in truth a town of 30 inhabitant. All of its terrain is mostly "
+"uninhabited, but I needed a player there for map simmetry and balance. Also "
+"the size of Arabba (black) has been considerably increased.\r\n"
+"\r\n"
+"While artistic considerations came first, I made sure to balance the "
+"players, giving each an equal amount of buildable space and resources. This "
+"map can support games of 1v1, 2v2 and 3v3. Several team balances can be "
+"made, the only recommendations are to split players on opposite corners of "
+"the map (blue and yellow, red and green) and to divide evenly the players in "
+"the middle (black and orange). Unfortunately the AI is bad at dealing with "
+"restricted building spaces, so it does not offer a good opponent for this "
+"map.\r\n"
+"\r\n"
+"I consider this map my masterpiece, but I have two regrets about it. The "
+"first is that, given the size of the mountains and the scale I used, the "
+"mountain tops are often not visible to the players, unless they build towers "
+"everywhere (unlikely, with the scant building space) or they build scouts to "
+"explore unreachable terrain. Well, I could think of nothing to do about it. "
+"And I am sorry that my map does the real place little justice. But then, the "
+"dolomites would hardly be that beatuful if they could be easily captured on "
+"a widelands map."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:101
+msgid "Another map of an informal series of maps generated with worldengine"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:102
+msgid ""
+"Map for 2v2 or 1v1, with all 4 starting points identical. Teams can start in "
+"any combination of starting points to have the same team-play. Lots of "
+"resources near starting points. "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:103
+msgid ""
+"Another solo challenge by King of Nowhere! This is my favorite solo "
+"challenge map so far. Probably also the most difficult - though great escape "
+"with barbarians vs 7 atlanteans or no metal challenge with atlanteans were "
+"fairly hardcore too. What I like about this map is the adaptability and "
+"creativity required. The other maps were relatively straightforward: there "
+"was a clear way to win, you just had to do it right. In concentric rings, "
+"you need to adopt several different strategies as the game progresses and "
+"your main problem switches from lack of space, to lack of resources, to "
+"unmanageable travel times. To win this map you need to master many different "
+"aspects of the game, from road building to warehouse micromanagement. Some "
+"of it was serendipitous. I couldn't defeat the map at first, but just as I "
+"was about to change it to reduce the human's disadvantage, I had an eureka "
+"moment and found some very creative solutions. It was very satisfying, and I "
+"hope you can get the same satisfaction when playing this map too. \r\n"
+"Map is most difficult to play against atlantean opponents, easier against "
+"barbarians. It is more difficult to play with barbarians, easier with "
+"empire. For easy mode, play empire vs 7 barbarians; for hard mode, play "
+"barbarians vs 7 atlanteans. P.S. Playing time is around 50 hours; if it's "
+"not your cup of cake, don't try this map. If you want a faster game, you can "
+"try to play with only 4 or 5 opponents.\r\n"
+"Hints: What? You really thought I was going to give hints there? What kind "
+"of challenge would it be then? MUAHAHAHAHA!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:104
+msgid ""
+"A nice river flows throug the map and there would be enough resoureces for "
+"one tribe, but there are two.\r\n"
+"\r\n"
+"Atlanteers will have litte chances here. But Barbarian and Empire have "
+"almost equal chances."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:105
+msgid ""
+"Two tribes found on some high Ilands, theres is everything but enought "
+"space. \r\n"
+"AIs will have trouble. Atlanters should do fine ...."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:106
+msgid ""
+"I wanted this map to be faithful to real terrain, so I used google maps "
+"coordinates to ensure that the positions of the valley floors and mountain "
+"tops are exactly identical to what they are in reality. One step in game "
+"equals to about 100 meters of real distance, and one unit of game height "
+"equates to 30 meters of real height up to 2300 meters, above which "
+"everything is flat because the game allows only elevation up to 60. "
+"Mountaintops and valley floors are to scale, but not the rest of the "
+"mountains; I found that keeping the map to scale would even out the ground "
+"asperities and turn the majestic mountains into gradually sloping hills, and "
+"I tried to preserve the sense of being in narrow valleys instead. The "
+"mountain streams are of course represented as much bigger than they are in "
+"truth, because I can't make them any smaller than one tile. The lakes are "
+"instead up to scale.\r\n"
+"\r\n"
+"I also tried to reproduce in a somewhat-recognizable way some notable "
+"geographical features like the Cinque Torri, the Serrai gorge, or the Città "
+"dei Sassi, without caring for scale there. For the Marmolada glacier I was "
+"instead able to make it look realistic while still preserving the scale. \r\n"
+"\r\n"
+"The six players start from the locations of real towns: in order, Alleghe, "
+"Canazei, La Villa, Cortina d'Ampezzo, Arabba and Andraz. The positions of "
+"buildable terrain generally are based on real towns or hamlets located "
+"there. Some exceptions to this rule were made to ensure that all players "
+"have equal space. The main break from reality concerns Andraz (orange), "
+"which is in truth a town of 30 inhabitant. All of its terrain is mostly "
+"uninhabited, but I needed a player there for map simmetry and balance. Also "
+"the size of Arabba (black) has been considerably increased.\r\n"
+"\r\n"
+"While artistic considerations came first, I made sure to balance the "
+"players, giving each an equal amount of buildable space and resources. \r\n"
+"\r\n"
+"This map can support games of 1v1, 2v2 and 3v3. Several team balances can be "
+"made, the only recommendations are to split players on opposite corners of "
+"the map (blue and yellow, red and green) and to divide evenly the players in "
+"the middle (black and orange). Unfortunately the AI is bad at dealing with "
+"restricted building spaces, so it does not offer a good opponent for this "
+"map.\r\n"
+"\r\n"
+" I consider this map my masterpiece, but I have two regrets about it. The "
+"first is that, given the size of the mountains and the scale I used, the "
+"mountain tops are often not visible to the players, unless they build towers "
+"everywhere (unlikely, with the scant building space) or they build scouts to "
+"explore unreachable terrain. Well, I could think of nothing to do about it. "
+"And I am sorry that my map does the real place little justice. But then, the "
+"dolomites would hardly be that beatuful if they could be easily captured on "
+"a widelands map.\r\n"
+"\r\n"
+"This is an improved version of the map I posted a couple of months ago. I "
+"discovered I accidentally posted an unfinished version of the map, a backup "
+"without some of the later fixes. Differences are minor and mostly aesthetics."
+"\r\n"
+"\r\n"
+"Thanks are due to kaputtnik for the forested mountain terrains."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:107
+msgid "Small 1+1 map, no seafaring."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:108
+msgid ""
+"Lesser ring is a fair 8-player map with ring-shaped landmass and sea. It "
+"features:\r\n"
+"\r\n"
+"* Somewhat realistic division of geography - rivers flow glaciers in the "
+"mountains through hills and finally plains to the sea.\r\n"
+"* Somewhat realistic distribution of resources: Different resources often "
+"found at some distance to each other.\r\n"
+"* Gold is valuable, and thus rare, especially in the early game.\r\n"
+"* There are places of strategic importance, such as river crossings, that "
+"military action focuses on.\r\n"
+"\r\n"
+"Philipp\r\n"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:109
+msgid ""
+"This upload fixes a port space issue in the previous version.\r\n"
+"\r\n"
+"Philipp\r\n"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:110
+msgid ""
+"Another map generated with Worldengine, and manually tweaked afterwards of "
+"course. It is ~ balanced, a lot of resources. All players start on the big "
+"island, seafaring not necessary"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:111
+msgid ""
+"For the first time, I made a map that is both a solo challenge and nice to "
+"look at. The original inspiration for this map was an idea about putting "
+"one's starting position is a desert and force him to deal with the lack of "
+"good terrain to grow trees. I even fancied putting a script that makes wells "
+"not produce except in a few chosen locations, and that will periodically "
+"drain water stored in your warehouses, and would kill your workers if there "
+"is not enough water, so that in the game you'd have to actively fight "
+"thirst. Alas, I don't even know how to start writing a script, so the idea "
+"remained in the back of my mind.\r\n"
+"\r\n"
+"Then, at some point, wandering on google earth I came across the Tibesti "
+"mountains, in central Sahara. I was fascinated by how water interacted with "
+"the mountain desert environment; the dry desert air cools as it climbs the "
+"mountains, and the cold squeezes out what little moisture there is. The rain "
+"is quickly absorbed under the sand, but it keeps flowing underground, "
+"feeding a network of oasis in a radius of hundreds of kilometers. On the "
+"surface it's dry sand, but in some places the water comes close to the "
+"surface, giving rise to apparently inesplicable patches of vegetation in the "
+"middle of a dry valley. This merged with my previous idea, and so this map "
+"was conceived. Notice how the mountains where the blue player starts are "
+"volcanic in origin.\r\n"
+"\r\n"
+"The idea was still that of actually making it out of the desert and "
+"conquering the tribe that had the better land. But why is there such a dry "
+"place and close to it one with abundant rains? Enter the big mountain range "
+"to cast a rain shadow, with the desert on the east and the fertile land to "
+"the west, near the sea. Since I had a mountain range near the sea, I decided "
+"to also add some fjords to it. I don't suppose it is possible to have a hot "
+"desert and fjords nearby - fjords only form near the poles, and in the time "
+"the continental drift bring them to the tropics, the fjords are wheatered "
+"down. Still, they look nice. You can pretend it's a cold desert, like the "
+"mongolian steppe, if you like a more consistent explanation. The two big "
+"rivers uniting near the mouth to form an even bigger river is inspired by "
+"the Shatt al-Arab, and the delta by the Po delta. \r\n"
+"\r\n"
+"As a challenge map, it's fairly easier than my other maps. You need to be "
+"good to win, but unlike my most recent challenges (no metal challenge and "
+"concentric rings) this map is not made to take an extremely strong player "
+"and make him curse at the monitor for days of trial and error.\r\n"
+"\r\n"
+"BONUS CONTENT\r\n"
+"\r\n"
+"Yes, this map even has bonus content! I had two ideas for the map "
+"description. I ended up choosing the one most, well, descriptive. Here are "
+"parts that were cut from the description.\r\n"
+"\r\n"
+"1) \"Your land was conquered by a terrible invader. You survived by escaping "
+"into the inhospitable desert. You have no food, no water, limited supplies. "
+"What do you do?\r\n"
+"\r\n"
+"a) I die\r\n"
+"\r\n"
+"b) I try to find water, I fail, I die.\r\n"
+"\r\n"
+"c) I try to eat a snake, I get bitten, I die.\r\n"
+"\r\n"
+"d) I curse at whoever put me in this situation, then I die.\r\n"
+"\r\n"
+"e) I manage to find water and food and shelter. After living like that for "
+"years, I realize how crappy it is and that I'd have been better off dead. I "
+"suicide.\r\n"
+"\r\n"
+"f) I die\r\n"
+"\r\n"
+"g) I go to the invaders and beg them for mercy. They take me as a slave, and "
+"eventually I die.\r\n"
+"\r\n"
+"h) I tame the desert, adapt to live in it, gather resources from it, build "
+"an advanced civilization, raise a mighty army, lead it against the invaders, "
+"get defeated and killed in battle.\r\n"
+"\r\n"
+"i) As above, but I win. Then I wake up and realize it was only a sunstroke-"
+"fueled allucination.\r\n"
+"\r\n"
+"j) I pick up a spear, cover my face with a black veil and go fight the "
+"invader that has no honor. I die because I'm just a poser. \r\n"
+"\r\n"
+"k) I die\"\r\n"
+"\r\n"
+"2) \"After you win, wonder about the morality of kiling a man and taking the "
+"land where he's lived since he was born, just because his remote ancestors "
+"did the same to your ancestors one or two centuries before. Yes, you figured "
+"it. You bastard.\""
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:112
+msgid ""
+"Two tribes found on some high Ilands, theres is everything but enough space. "
+"AIs will have no chance. \r\n"
+"Atlanters should do fine. I dsitributed the Artifacts across the Ilands so "
+"that hunting them will make sense."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:113
+msgid ""
+"Another random world generated with Worldengine.  If you run into "
+"inaccessible areas give me a feedback, f.e. screenshot (Ctrl-F11) and some "
+"explanation where building-spots are needed and I can update the map. "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:114
+msgid ""
+"I've long been toying with the idea of a fjord-based maps. Eventually I "
+"produced this small duel map for two players. Don't be fooled by the large "
+"map size, it's mostly water and snow; all the action happens in a small "
+"strip near the coast. Just like with real fjords.\r\n"
+"\r\n"
+"EDIT: this map is slightly unbalanced in favor of the blue player, and more "
+"importantly, it has a huge bug with fishes being less than they should be "
+"and in some cases missing completely. I made a new revised map, available "
+"here https://wl.widelands.org/maps/fjords-11/"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:115
+msgid ""
+"Dont seek a beauty in this map - it is purely functional, symmetrical and "
+"fair. I am going to use it for AI training, but perhaps it can be useful for "
+"someone else."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:116
+msgid "Another map I use for AI training. This one looks a bit better."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:117
+msgid ""
+"This is the official \"Checkmate\" map, amplified by 3 additional Artifacts. "
+"The Artifacts are placed in a way that the map keeps its balanced status."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:118
+msgid ""
+"This is an unbalanced map where you need patience and speed to leave the "
+"small islands.\r\n"
+"It was designed for a scenario which can also be played by renaming "
+"_scripting to scripting again inside the archive.\r\n"
+"As it was designed to play against the AI it is to un fair in a networked "
+"game.\r\n"
+"As I know the scenario could be improved I'm happy to receive feedback on it "
+"as well as on the map itself.\r\n"
+"\r\n"
+"Have fun while playing"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:119
+msgid "Overhauled version. Some corrections and resource additions."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:120
+msgid ""
+"This is an unbalanced map where you need patience and speed to leave the "
+"small islands. It was designed for a scenario which can  be played by "
+"renaming _scripting to scripting again inside the archive. As it was "
+"designed to play against the AI it is to unfair in a networked game but "
+"might be fun in a deathmatch against the AI. \r\n"
+"\r\n"
+"Scenario improvement is under way (see post in the forum). And I'm still "
+"happy to discuss any suggestions.\r\n"
+"However I fixed a bug that was crashing the scenario improved some minor "
+"texts and I spent a lot of testing (and enjoyed the playing) and adjustments "
+"in the map to make the AI perform better. \r\n"
+"\r\n"
+"\r\n"
+"Have fun while playing"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:121
+msgid ""
+"the original fjords map was slightly unbalanced to give more space to the "
+"blue player. more important, though, it had some bugs regarding fishes. this "
+"new version fixes both of those problems. I also added some more fishes, to "
+"give a better playability to empire, which is penalized more than the other "
+"tribes by the paucity of large buildings."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:122
+msgid ""
+"This map was inspired by a Boardgame base on hexagonal tiles, if you know it "
+"have fun. If you do not, still should be a nice map.\r\n"
+"\r\n"
+"Can be played by two or four players. Two should be on positon 1,2 or 3,4. "
+"Anything else will result in some unbalanced game. \r\n"
+"Should work nice for artefacts. With four players or two palyers at psoition "
+"3 and 4 Aurocrat will be impossible.\r\n"
+"\r\n"
+"Thanks for some testplayers, the Map should be quite balanced now. "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:123
+msgid ""
+"changelog from previous dolomites map:\r\n"
+"\r\n"
+"- 2 new players added: selva di val gardena (white) and san vito di cadore "
+"(purple). Now the map is for 8 players, and it makes more sense like that."
+"\r\n"
+"\r\n"
+"- improved balance: to ensure that all players have the same amount of "
+"buildable space (30 medium slots, 20 large slots, though one could get more "
+"large slots by sacrificing some medium ones and viceversa)\r\n"
+"\r\n"
+"- more buildable space: there are more medium and large building slots "
+"available to every player. Now you have the space to build towers and gaze "
+"upon the mighty mountains! Now you can play with empire without being "
+"screwed by lack of space for piggeries!\r\n"
+"\r\n"
+"- improved access to some mountain passes: mountain passes were always "
+"intended as formidable obstacles to climb, but some were too much so.\r\n"
+"\r\n"
+"- improved hints: to help players deal with a difficult terrain\r\n"
+"\r\n"
+"- less adherence to real topography: unfortunately :( to fit two more "
+"players and give more space for everyone, I had to add space for settlements "
+"where none is in the real dolomites, and the feeling of building an empire "
+"out of towns and hamlets scattered here and there amid the majestic "
+"mountains is weakened as a result. You can't have everything. Anyway, the "
+"position of the mountain tops and valleys to perfectly reproduce that of the "
+"real place has been left untouched.\r\n"
+"\r\n"
+"Old dolomites map: https://wl.widelands.org/maps/dolomites-v2/"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:124
+msgid ""
+"changelog from previous fjords 1.1 map:\r\n"
+"\r\n"
+"short version: subtly improved balance in a way that most people will never "
+"notice, but that is nonetheless important in a map designed for high-end "
+"competitive multiplayer, and done some fluff\r\n"
+"\r\n"
+"long version:\r\n"
+"\r\n"
+"I noticed from the tournament (although it never became a factor there) that "
+"a castle in the right place could block the opposite side of the fjord, "
+"preventing the enemy from advancing unless he conquered both sides. After "
+"thinking about it, I decided that I liked this feature as a way to introduce "
+"new strategies: you can defend on only one side, but to attack you must go "
+"both ways. Most important, in that map large building slots are so scarce "
+"that nobody was using one for a castle anyway, especially since their main "
+"advantage, i.e. difficult to see by the enemy, is promptly negated by the "
+"ease of building towers. So I wanted to keep this factor as a way to give "
+"players a meaningful decision on whether to use that new large space for a "
+"castle, or to make a new farm. On the down side, situations when both "
+"players are conquering on one side and racing to kill the opponent first, "
+"which were common in the tournament, would be much less difficult to see, so "
+"it wasn't an easy decision. But anyway, I had to ensure that this blocking "
+"feature worked for all players, because it didn't. So I moved the shoreline "
+"a bit in some places.\r\n"
+"\r\n"
+"Other minor stuff I did: fixing some mountain slopes so that it would be "
+"easier to make mines on them; made a stretch of sand on the blue player's "
+"side so that, if in the future short waterways with carriers on boats will "
+"be implemented like they were in settlers 2, both players will have an equal "
+"possibility to use them; changed a bit of coast that accidentally gave one "
+"player a few more building spaces than the other; done a few small aesthetic "
+"changes to the terrain height and the snow cap; changed the hints stating "
+"that empire was disadvantaged because, after version 1.1  added a lot of "
+"fish, empire can finish the game without piggeries and is therefore no "
+"longer disadvantaged; changed the map description to one that I liked more; "
+"added my signature to the map, to sate my megalomania :)\r\n"
+"\r\n"
+"Previous fjords maps: https://wl.widelands.org/maps/fjords/, https://wl."
+"widelands.org/maps/fjords-11/"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:125
+msgid ""
+"This is an unbalanced map where you need patience and speed to leave the "
+"small island. It was designed for a scenario which can be played by renaming "
+"_scripting to scripting again inside the archive. As it was designed to play "
+"against the AI it is to unfair in a networked game but might be fun in a "
+"deathmatch against the AI.\r\n"
+"\r\n"
+"Change's to previous versions:\r\n"
+"\r\n"
+"Changed some features on the map to make the AI perform better. Now the AI "
+"is really advancing very well and you should better be quick on the northern "
+"ireland. \r\n"
+"Improved the scenario as well. Thanks to all the suggestions from the forum "
+"in this place. Now it is less serial an more parallelized with the "
+"objections triggered by the user interaction.\r\n"
+"\r\n"
+"Really looking forward for feedback. "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:126
+msgid ""
+"Another one of my challenge maps. This time you have good land and plenty of "
+"ores, you just have to deal with the craziest transportation system ever "
+"devised for this game. Be ready to make tons of shipyards. I've been working "
+"on and off on this map for over one year because I had a hard time finding a "
+"good balance. Also, the actual difficulty is a bit random, as the six "
+"computer players, while having very similar starting conditions, can develop "
+"in very different ways.\r\n"
+"\r\n"
+"Incidentally, this map also doules as a good test for shipping and economy "
+"algorithms, and one bug has already been found while playing it.\r\n"
+"\r\n"
+"Beat this map fast! If a better shipping algorithm is implemented, you'll "
+"get less bragging points"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:127
+msgid ""
+"This is an unbalanced map where you need patience and speed to leave the "
+"small island. It was designed for a scenario which can be played by renaming "
+"_scripting to scripting again inside the archive. As it was designed to play "
+"against the AI it is to unfair in a networked game but might be fun in a "
+"deathmatch against the AI.\r\n"
+"\r\n"
+"Change's to previous versions:\r\n"
+"Fixed a messageerror in the scripting. Modified the map to allow for better "
+"exploration of the southern island.\r\n"
+"\r\n"
+"Note: if you play a version newer than trunk 8235 you need to change some "
+"line in the scripting have a look to the forum discussion \"Scenario AI\"\r\n"
+"\r\n"
+"Really looking forward for feedback. "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:128
+msgid ""
+"When plaing Version2 we found that one Artefact was not reachable, this "
+"change should fix this "
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:129
+msgid ""
+"This is a map where the two players have lots of time to build up a strong "
+"economy before they meet. Blue is at a disadvantage – first from lack of "
+"space (hardly any big plots), later from unreasonable transport times and an "
+"inefficient road network. Seafaring plays a very special role here – be sure "
+"to make building ports a priority."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:130
+msgid ""
+"If you want, you can edit the map and upload that. Please just mention in "
+"this case that I'm one of the authors ;-)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:131
+msgid ""
+"Seven identical stripes of snow and ice – the ground is mostly unreachable "
+"ice, the terrain where you can build something is hard to see. Every player "
+"has lots of iron, coal, gold and granite at his starting point. Building a "
+"good road network is not easy, because of the bottlenecks between the "
+"stripes and between the western/eastern parts of a stripe (ice in the "
+"mountains). Practically no fish – Atlanteans will probably find this map "
+"hardest. There are lots of rocks and some trees, but you have to get there "
+"first."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:132
+msgid ""
+"If you want, you can edit this map and upload that. In this case, please "
+"just mention that I'm one of the authors"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:133
+msgid ""
+"If the trading-outpost-AI would not be too stupid to build some smelting "
+"works, I would have put no resources at all in the mining areas"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:134
+msgid ""
+"The periodic map with scarce building spots. I am using it for AI training "
+"for branch ai-post-b19-2 branch. I am not sure how current trunk would cope "
+"with this..."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:135 /tmp/15744417009842789764.lua:136
+msgid ""
+"Again, you can edit the map and upload that, if you mention that I'm one of "
+"the authors"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:137
+msgid "A balanced 1vs1-map"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:138
+msgid ""
+"A large map that may require some processor and ram. An island is a fortress."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:139
+msgid "Comments are welcome"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:140
+msgid "A nice map with some secret passages...."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:141
+msgid ""
+"There is an (5.94MB 2282x1223px png) image of the map at: https://i.imgur."
+"com/9VcUtuk.jpg\r\n"
+"\r\n"
+"If you have any comments, please post to the \"uploaded some maps\" thread "
+"(https://wl.widelands.org/forum/topic/4209/?page=3#post-24188); or send me a "
+"message."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:142
+msgid ""
+"Dear fellow widelanders!\r\n"
+"This is my first map - I regretted to choose the biggest one a few times - "
+"but I worked on it for hours and I hope y'all like it! :)\r\n"
+"Have fun with it and please, if you like, give me some feedback so I can get "
+"better at making fun maps for us all!\r\n"
+"Stanzusknaxus"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:143
+msgid "Modified over the horizon map for AI training"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:144
+msgid ""
+"Torus with four cells separated by mountains and connected by long thin path "
+"between mountines. Each cell has different climate and two neighbour cells."
+"\r\n"
+"Blue player has winter cell.\r\n"
+"Red player has ashes cell.\r\n"
+"Yellow player has summer cell.\r\n"
+"Green plauer has green forest cell."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:145
+msgid ""
+"This is my first map.It is used in Economy mode and is not good in Warfare,"
+"Teritorial gnome etc.Good luck :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:146
+msgid ""
+"Long economic play in beatyfull land (you can try every player, all was "
+"tested and detailed in land graphic) for first try player 1 :)  if you have "
+"questions or feedback: pbuczny()gmail.com"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:147
+msgid ""
+"This is a case study map showing a condition where players can deadlock each "
+"other, meaning one player can create a situation where it cannot be attacked "
+"anymore by the other player. This is due to the fact that military buildings "
+"do not push back the border of another player if the military building of "
+"the other player, which placed the border to where it is currently, still "
+"exists.\r\n"
+"\r\n"
+"This map has ports, and when attack via sea will be available the deadlock "
+"could probably be circumvented. With removing the ports, there is no such "
+"possibility."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:148
+msgid ""
+"...an island .... two or three players ....\r\n"
+"\r\n"
+"The map elements are similar but not identical."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:149
+msgid "This is my first map. Comments are very welcome. :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:150
+msgid ""
+"Schön, dass du Interesse an meiner Map hast.\r\n"
+"\r\n"
+"Dies ist meine erste Map, ich werde jeden Kommentar unter dieser Map lesen, "
+"wenn es etwas zu Verbessern gibt, schreibt es mir einfach.\r\n"
+"Diese Map beinhaltet auch Artefakte.\r\n"
+"\r\n"
+"Grüße Tino Schmidt."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:151
+msgid ""
+"First cover map ever? I converted the greenland map Crater into a blackland "
+"map. So you can enjoy it without that much loud bird noise (I also replaced "
+"many animals by quiet ones). The tree growth possibilities should be equal "
+"to the original ones.\r\n"
+"\r\n"
+"It would be interesting if we would have more cover maps like this."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:152
+msgid "Small map, two opponents, short game...."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:153
+msgid ""
+"- perfect balance\r\n"
+"- enouth natural resources for both players\r\n"
+"- 1 vs 1\r\n"
+"- seafaring\r\n"
+"\r\n"
+"building period: 5 hours\r\n"
+"\r\n"
+"Astroids crashed into this group of islands. The water flooded the land and "
+"two tribes find out that they cant escape a battle"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:154
+msgid ""
+"This is an updated version of Ron Ward's UK_11, with ports added to each of "
+"the five countries.  Each country has a very convenient port location and "
+"one a long way from the headquarters."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:155
+msgid ""
+"immature testversion of the second atlantean mission, playtesting "
+"appreciate. Feedback wanted in the corresponding thread https://wl.widelands."
+"org/forum/topic/4504/?page=2#post-28187  \r\n"
+"needs a development build newer then 9119"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:156
+msgid ""
+"New Version of Crossriver with Artifacts.\r\n"
+"Both players can develop in all directtions, Iron is rare, \r\n"
+"so play it wisely ..."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:157
+msgid ""
+"this is the crossriver map with artifacts sslightly moved to have better "
+"balance between the players"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:158
+msgid ""
+"I am playing around with a kind of inverse Map where the Water is higher "
+"then the mountains.\r\n"
+"This is still in Progreess but maybe yoau can give me some comments ...\r\n"
+"\r\n"
+"AND this Map needs a Version _after_ build_ 20 thins a change around a "
+"Mosse / Elk whatever"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:159
+msgid ""
+"playtesting done during the 2016 tournament revealed that the archipelago "
+"sea map was unbalanced. while resources and building spaces were equally "
+"allocated, red player had too few large spaces close by, and needed an "
+"inordinate amount of towers to connect all the islands over the largest "
+"stretches of sea. green and yellow instead had way too little trees around "
+"their starting position, and too little land to grow them.\r\n"
+"\r\n"
+"this updated version of the map attempts to fix this inequality while "
+"leaving everything else - both the balance and the aesthetics - the same. "
+"It's probably still not 100% fair, but definitely a step up over the "
+"original\r\n"
+"\r\n"
+"link to original map: https://www.widelands.org/maps/archipelago-sea/"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:160
+msgid ""
+"I am playing around with a kind of inverse Map where the Water is higher "
+"then the mountains. \r\n"
+"I played all player Positions by now, should be quite OK.\r\n"
+"\r\n"
+"This Map needs a Version after build_ 20 since a change around a Mosse / Elk "
+"whatever"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:161
+msgid "I will post a msg in the map-editor forum. :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:162
+msgid ""
+"Once on this Island lived a peaceful tribe. But then strangers came and "
+"attcked their land.\r\n"
+"The suvivers moved to the other side of the Island, where they try to plan "
+"their campain..."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:163
+msgid ""
+"This is a modification of my previous map. it's a bit easier for the A.I. "
+"(untill port space), the last strip is shorter, and I changed the ressources "
+"distribution. \r\n"
+"\r\n"
+"I playtested my previous map only twice but this version seem better\r\n"
+"\r\n"
+"I still have some concerns : \r\n"
+"\r\n"
+"* not nough stone mine spaces for Empire? (there is enough granite on the "
+"map, but dimonds etc might run out too fast)\r\n"
+"\r\n"
+"* duration of the game : For an average player I guesstimate 5h (+/-1h) to "
+"reach the \"finals\" island without having clean all opponent in the "
+"bracket. I didn't change that but still can make it a bit shorter. I havn't "
+"tested yet how long it takes to reach the last artifact from the port space, "
+"it should be long enough that the winner of the other side of the brackets "
+"has a chance to be a bit late but still annoy, but not too long that it's "
+"boring and there is nothing to do. I guess 1 game-hour should be good, what "
+"do you think?\r\n"
+"\r\n"
+"Have fun.\r\n"
+"\r\n"
+"Ps : There might come a better looking version sometime. But I'm a rather "
+"practical individual, screw aestetics for now !"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:164
+msgid "This map requires a version of Widelands newer than build 18!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:165
+msgid ""
+"This is a map that I created in 1998; I \"found\" it recently and fixed it "
+"up for Widelands. The original was for up to 7 players, this version is for "
+"up to 4 players."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:166
+msgid ""
+"This is a map I created in 2018 and edited a number of times since then; it "
+"is based on Cross2 (which I have also uploaded today). I had lost Cross2 and "
+"since it was a favourite, I created this new version. When I finally found "
+"my original version (Cross2) I was surprised at how different the maps "
+"were. :)\r\n"
+"\r\n"
+"The map is for up to 4 players.\r\n"
+"\r\n"
+"The land is one continent divided into 4 fairly equal sections which are "
+"connected at the edges.\r\n"
+"\r\n"
+"Enjoy. :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:167
+msgid ""
+"This is another of my old maps (from 1997). It's been updated for Widelands. "
+"All the iron is located in the middle; all the gold is located at the "
+"corners.\r\n"
+"\r\n"
+"This is a easy map since the AI players have difficulty finding the gold. "
+"But it _can_ be tricky because all the iron is in the middle. :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:168
+msgid ""
+"This is a variation on one of my mazes. It is similar to islands6 (which I "
+"uploaded 2018-02-15), this version has the islands joined and the \"rivers\" "
+"narrowed to about 2 wide. \r\n"
+"\r\n"
+"Players 1 & 2 have plenty of resources, except gold; Player 3 has plenty of "
+"gold (but no other minerals or stone nearby). \r\n"
+"\r\n"
+"I have uploaded a jpg map to imgur (website), the url is https://i.imgur.com/"
+"Wze5aAj.jpg. \r\n"
+"\r\n"
+"<a href=https://i.imgur.com/Wze5aAj.jpg><img src=https://i.imgur.com/ZGgCGYb."
+"jpg></a>"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:169
+msgid "I just committed small improvements"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:170
+msgid ""
+"There's also two alternative versions of this map available, but not yet "
+"uploaded. One of them is not so seafaring-heavy and one has inland start for "
+"the player and so it is much shorter to play."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:171
+msgid ""
+"After 2 Weeks working this World War One Map is finally finish. \r\n"
+"Hope you have fun with this Map :)\r\n"
+"\r\n"
+"PS I am not the best in making maps - if they are to easy/hard you are "
+"allowed to edit them"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:172
+msgid ""
+"With build 20 this map seemed to perform pretty badly. Biggest issues were "
+"with red player's starting position, but after some more observing I did "
+"plenty of changes to the map and as a result it should now be better than "
+"ever."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:173
+msgid ""
+"It's a first try on a Maptype I loved to play in Settlers 2. You gotta put "
+"in some work for space! \r\n"
+"Enjoy and I hope you like it! (Most likely not bot friendly)\r\n"
+"\r\n"
+"Edit: comments on what to improve are more than welcome!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:174
+msgid ""
+"Updated map \"Long, long way\" with features from current Widelands version. "
+"Thanks to Nordfriese - he had done all the work!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:175
+msgid ""
+"A new version of No metal challenge that has been made winnable. it's a bit "
+"easier to rush one AI and steal their metals, but nowadays the AI is also a "
+"bit faster to get promoted soldiers compared to the times when the map was "
+"made, so no big deal."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:176
+msgid ""
+"Comments are appreciated :)\r\n"
+"\r\n"
+"This map has alot of ressources. So it's also very well suited for people "
+"still learning on how to build a good economy.\r\n"
+"\r\n"
+"It still should be fun for experienced players, since the main island is not "
+"as big as it might seem."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:177
+msgid ""
+"This is result of my new random map generator. Be warned, I had not spent "
+"too much polishing it, but I like the layout and maybe you will too."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:178
+msgid "This is twin map to Highlands, but much much easier."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:179
+msgid ""
+"This map is part of build 20 and older official releases; reuploaded because "
+"it will no longer be official in build 21."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:180
+msgid ""
+"This is a result of my map-generating script, with goal of authenticity. I "
+"did not polish it much, but AI players seems to work and are able to expand. "
+"I dont guarantee that all fields are accessible."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:181
+msgid ""
+"Really small map and probably quite challenging (for AI too). If there is a "
+"demand for this kind of maps, I can generate more 64x64 maps, with less "
+"mines/water, or more flat terrain."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:182
+msgid "Big world for 4 players only. Not for everybody."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:183
+msgid ""
+"Another map generated with my map generator. This time this allows "
+"seafaring, and I spent some time with polishing it, so now AI is capable to "
+"continuously expand and even start expedition from all three starting "
+"points. As before, the terrain is rugged, but starting points provides "
+"sufficient medium+big spots for good start"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:184
+msgid ""
+"I hope you like this map. I have been playing widelands for several years "
+"but only decided to try and build my own maps last year. It took me a while "
+"to work out how big to make it so that I did not get bored playing single "
+"person games. Comments please :-)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:185
+msgid ""
+"This map is a \"presentation\" of an improvement to my map generator, I "
+"introduced water erosion to diamond square algorithm, already used before. "
+"So features of the map are to be more realistic, in my generator there are "
+"also rivers, here you can see only some residuals. The resolution of the map "
+"is not enough to render them.\r\n"
+"Blue position should be easier, because it is most distant to the other two "
+"players.\r\n"
+"Be careful with buildable spots, but the situation should not be that bad as "
+"with \"raw\" diamond-square algorithm."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:186
+msgid ""
+"Just Tibor's map \"Cycles\", but not for 16 players, but for 8, so one can "
+"play on it with the current dev build and build 21 as soon as it will exist."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:187
+msgid ""
+"Changes:\r\n"
+"- better soldiers for the barbarian\r\n"
+"- added training camp, gold production and Arena in a new segment with "
+"objectives and dialogue\r\n"
+"- minor map changes such as gold ressource"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:188
+msgid ""
+"Bin mir nicht sicher ob die AI mit meiner Idee wie ich die Ressourcen am "
+"Startpunkt verteilt habe umgehen kann - möglicherweise ist Kartenkenntnis "
+"erforderlich.\r\n"
+"Im Test hat sie zumindest fröhlich dran vorbei gebaut.\r\n"
+"\r\n"
+"Finde die Karte bislang trotzdem gelungen, weshalb ich sie gerne mit euch "
+"teilen will.\r\n"
+"Freue mich über Feedback."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:189
+msgid ""
+"The map is fair, in the sense that both starting positions are equally good. "
+"The map is somewhat unfair in the sense that it favours the Empire tribe: On "
+"this map, one can build an Empire empire without marble mines.\r\n"
+"\r\n"
+"AI performs poorly on this map (currently), might be useful in competitive "
+"play.\r\n"
+"\r\n"
+"Mountains are color coded, finding the ores should be easy enough. Iron is "
+"near staring point, gold is near enemy (and behind stone on ground)."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:190
+msgid ""
+"Map with very small total land mass, for two players, for a relatively quick "
+"game.\r\n"
+"\r\n"
+"Similar idea as my map \"Micro Map: Three Islands With Bridges\", but now "
+"extended to a network of eight islands that wraps around on all sides.\r\n"
+"\r\n"
+"The islands are numbered for ease of navigation.  The two players start at "
+"islands \"1\" and \"2\".  The network (or lattice) of eight islands is as "
+"follows (depicted below with the wraparound rolled out to an infinite plane):"
+"\r\n"
+"\r\n"
+"~~~~\r\n"
+"           \\       /       \\       /       \\       /\r\n"
+"            1 --- 2         1 --- 2         1 --- 2\r\n"
+"           /       \\       /       \\       /       \\       /\r\n"
+"      --- 4         3 --- 4         3 --- 4         3 --- 4\r\n"
+"           \\       /       \\       /       \\       /       \\\r\n"
+"            5 --- 6         5 --- 6         5 --- 6\r\n"
+"           /       \\       /       \\       /       \\       /\r\n"
+"      --- 8         7 --- 8         7 --- 8         7 --- 8\r\n"
+"           \\       /       \\       /       \\       /       \\\r\n"
+"            1 --- 2         1 --- 2         1 --- 2\r\n"
+"           /       \\       /       \\       /       \\       /\r\n"
+"      --- 4         3 --- 4         3 --- 4         3 --- 4\r\n"
+"           \\       /       \\       /       \\       /       \\\r\n"
+"            5 --- 6         5 --- 6         5 --- 6\r\n"
+"           /       \\       /       \\       /       \\       /\r\n"
+"      --- 8         7 --- 8         7 --- 8         7 --- 8\r\n"
+"           \\       /       \\       /       \\       /       \\\r\n"
+"~~~~\r\n"
+"\r\n"
+"Possibly, this map could also be a nice test for the A.I. :-) \r\n"
+"\r\n"
+"Comment and let me know what you think!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:191
+msgid ""
+"Micro size map for 2 players, for quick game.\r\n"
+"\r\n"
+"Comment and let me know what you think!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:192
+msgid ""
+"Another 1v1 map with only a small amount of buildable land and initial "
+"resource scarcity, for a relatively quick game.\r\n"
+"\r\n"
+"I suspect it would be best to play this map without Fog Of War, so that it "
+"becomes a kind of chess game, with each of the players constantly reacting "
+"to the paths the other player is taking.\r\n"
+"\r\n"
+"The A.I. seems to have a difficult time with this kind of map.:-)\r\n"
+"\r\n"
+"Difficulty (or even playability) of this map depends strongly on the amount "
+"of initial resources in Stock.  So far I mainly testplayed this with the "
+"Barbarians.  Comment below to give your thoughts on how playable this map is "
+"for other Tribes!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:193
+msgid "This map should be easy"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:194 /tmp/15744417009842789764.lua:195
+msgid "Reupload with new name and version"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:196
+msgid ""
+"This is a 4-player Map based on the ideas from the 1v1 Crossriver found "
+"here, too. \r\n"
+"As ther is more space on this Mpa I added some deserts and Wastelands as Eye-"
+"Candy.\r\n"
+"\r\n"
+"I played this a few times now, but it may still be a little imbalanced. "
+"Still I hope you\r\n"
+"have fun playing it."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:197
+msgid ""
+"I hope you like this one... There are 2 very small deposits of gold on each "
+"of the 4 main islands and larger gold deposits on the 5 small islands. The "
+"trick is to get onto the small islands ... **you MUST go to them by boat.** "
+"\r\n"
+"\r\n"
+"If you use one small gold deposit to build your boat and launch an "
+"expedition instead of growing your army it is very easy to get to the large "
+"gold deposits. Look for a circle of small rocks marked by a tall standing "
+"stone to find the small gold mine. Quarry the small rocks to reveal the "
+"mine. \r\n"
+"\r\n"
+"I have been playing this map for a few months as I perfected the landing "
+"ability of a boat on another tribes island without being wiped out before "
+"you get ready for a battle.\r\n"
+"\r\n"
+"Comments please."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:198
+msgid "This is one of my first maps and one of my best maps."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:199
+msgid "Only for fast 1v1s. Hard with Empire."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:200
+msgid "This map is only for 4 - Players - Tournaments. Very Hard with Empire."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:201
+msgid "Only for professional players."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:202
+msgid "The AI is very bad on this map."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:203
+msgid "Very hard for the AI."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:204
+msgid "With Ferries."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:205
+msgid ""
+"Schreibt eure Meinung gerne in die Kommentare :) Ich werde jeden Kommentar "
+"lesen."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:206
+msgid ""
+"Beim erstellen der Karte ist leider etwas schief gelaufen: Beim ersten "
+"Testen ergab, dass sich jeder Spieler gleich gut entwickeln kann. Ich wollte "
+"die Karte am Abend unbedingt noch online stellen, weil ich eh mehrere Woche "
+"vom Kartenbauzeitplan abweiche.\r\n"
+"Deswegen habe ich zu Anfang nur 3 Tests durchgeführt und einen "
+"Ausgleichsgrad von 100% erreicht. Beim erneuten Testen liegt dieser nur noch "
+"auf 20%. Ich bitte dies zu entschuldigen.\r\n"
+"Kartenbauvideo: https://www.youtube.com/watch?v=7E-ol3CA3EA"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:207
+msgid "I hope this map is balanced. Comments are welcome :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:208
+msgid "I hope this map is balanced :) Comments are welcome."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:209
+msgid ""
+"I hope, this map is balanced :) Comments are welcome.\r\n"
+"Seafearing is useless."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:210
+msgid "I hope this map is good :) Comments are welcome."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:211
+msgid ""
+"I hope, this challenge is hard :) \r\n"
+"Playing against 3 AIs have a much better start as you is not easy. What? You "
+"said \"this is very easy\"? You can make this harder:\r\n"
+"1. Start with poor hamlet\r\n"
+"2. The AIs are starting with Trading Outpost\r\n"
+"3. Play as Empire or Atlanteans\r\n"
+"4. Win condition: artifacts (very hard)\r\n"
+"Comments are welcome ;)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:212
+msgid ""
+"The starting positions are 100% equal and the map is flat :) Comments are "
+"welcome."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:213
+msgid ""
+"Long seafearing game for 3 players. The AI has big problems on the map.\r\n"
+"Comments are welcome :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:214
+msgid ""
+"Can't be played with autocrat! Recommended win conditions: Collectors, "
+"Artifacts                \r\n"
+"Comments are welcome"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:215
+msgid "This is the official Crater map, but all is desert terrain."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:216
+msgid ""
+"made for 1v1, 2v2 and 3v3\r\n"
+"\r\n"
+"enjoy"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:217
+msgid ""
+"This is simply the official map Elven Forests, but with one difference: "
+"There are no altitude differences. This increases the fun to play a lot in "
+"my opinion."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:218 /tmp/15744417009842789764.lua:220
+msgid ""
+"Maps for Multiplayer Games created and tested by the-x - strategical - "
+"graphics might be overdone\r\n"
+"-\r\n"
+"\r\n"
+"Players are set in balanced positions, but not identical. Good for "
+"interesting Multiplayer Games and for Tournaments or Casts. Search "
+"\"Widelands Cast\" on youtube.\r\n"
+"\r\n"
+"Gold is hard to find, so master the challenge to hold your enemy back in an "
+"active gameplay.\r\n"
+"\r\n"
+"The-X"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:219
+msgid ""
+"Maps for Multiplayer Games created and tested by the-x - strategical - "
+"graphics might be overdone\r\n"
+"-\r\n"
+"\r\n"
+"Players are set in balanced positions, but not identical. Good for "
+"interesting Multiplayer Games and for Tournaments or Casts.\r\n"
+"\r\n"
+"Gold is hard to find, so master the challenge to hold your enemy back in an "
+"active gameplay.\r\n"
+"\r\n"
+"The-X"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:221
+msgid ""
+"Perfekt für 3 Spieler\r\n"
+"\r\n"
+"-\r\n"
+"\r\n"
+"Maps for Multiplayer Games created and tested by the-x - strategical - "
+"graphics might be overdone\r\n"
+"-\r\n"
+"\r\n"
+"Players are set in balanced positions, but not identical. Good for "
+"interesting Multiplayer Games and for Tournaments or Casts. Search "
+"\"Widelands Cast\" on youtube.\r\n"
+"\r\n"
+"Gold is hard to find, so master the challenge to hold your enemy back in an "
+"active gameplay.\r\n"
+"\r\n"
+"The-X"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:222 /tmp/15744417009842789764.lua:223
+msgid ""
+"A lot of ways might lead to victory :-) be sure to always keep an attention "
+"on your economy and master this test of time\r\n"
+"\r\n"
+"-\r\n"
+"Maps for Multiplayer Games created and tested by the-x - strategical - "
+"graphics might be overdone\r\n"
+"-\r\n"
+"\r\n"
+"Players are set in balanced positions, but not identical. Good for "
+"interesting Multiplayer Games and for Tournaments or Casts. Search "
+"\"Widelands Cast\" on youtube.\r\n"
+"\r\n"
+"Gold is hard to find, so master the challenge to hold your enemy back in an "
+"active gameplay.\r\n"
+"\r\n"
+"The-X"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:224
+msgid ""
+"3v3 Tournament Map\r\n"
+"\r\n"
+"A lot of ways might lead to victory :-) be sure to always keep an attention "
+"on your economy and master this test of time\r\n"
+"\r\n"
+"-\r\n"
+"Maps for Multiplayer Games created and tested by the-x - strategical - "
+"graphics might be overdone\r\n"
+"-\r\n"
+"\r\n"
+"Players are set in balanced positions, but not identical. Good for "
+"interesting Multiplayer Games and for Tournaments or Casts. Search "
+"\"Widelands Cast\" on youtube.\r\n"
+"\r\n"
+"Gold is hard to find, so master the challenge to hold your enemy back in an "
+"active gameplay.\r\n"
+"\r\n"
+"The-X"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:225 /tmp/15744417009842789764.lua:229
+msgid "This map is built for the Leagues of Widelands tournament."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:226
+msgid ""
+"A slightly revised version of Europa 1.1 with port spaces on crimea, "
+"peloponnes, corsica and farör and activation of waterways (length 12)."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:227
+msgid ""
+"Another Version of Europa 1.2 (see comment there) with a street of bosporus "
+"(seeway connection between Black Sea and Mediterranean Sea)."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:228
+msgid "4 Player Map or 6 Player Map"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:230
+msgid ""
+"There are no trees, so the AI probably can't play here. There is also no any "
+"water, so Atlanteans can't play here."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:231
+msgid ""
+"Meine zweite Map von Planeten im Sonnensystem, erste war Merkur: https://www."
+"widelands.org/maps/merkur/\r\n"
+"\r\n"
+"Deutsche Ideen und Feedback bitte hier: https://www.widelands.org/forum/"
+"topic/4985/"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:232
+msgid ""
+"Another map where the tribes need to use boats to expand their lands. \r\n"
+"\r\n"
+"Each tribe is initially given ample resources with the exception of gold. In "
+"each of the six summer lands there is only one gold mine tucked into the "
+"snow boundary mountain range. It is covered by one rock and is marked by a "
+"standing stone. The single mine will provide enough gold to build a port and "
+"start an expedition. \r\n"
+"\r\n"
+"Now to the Winter ground inside the Snow covered mountain range. You will "
+"find a pass that is blocked by rocks. While you leave those rocks in place "
+"no body can attack you except by boat. Enter this frozen area and you will "
+"find plenty of gold and other minerals, however, once you open the pass into "
+"the Winter ground, the other five tribes can attack you.\r\n"
+"\r\n"
+"Comments would be appreciated (especially constructive criticism).\r\n"
+"\r\n"
+"Enjoy :-)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:233
+msgid ""
+"Deutsches Feedback bitte hier: https://www.widelands.org/forum/topic/4985/"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:234
+msgid ""
+"Deutsches Feedback bitte hier: https://www.widelands.org/forum/topic/4985/"
+"\r\n"
+"\r\n"
+"Changes to the previous version:\r\n"
+"\r\n"
+"- much more building space\r\n"
+"\r\n"
+"- fishing works now"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:235 /tmp/15744417009842789764.lua:253
+#: /tmp/15744417009842789764.lua:258
+msgid ""
+"A new version of this map is part of the \"Mostly Balanced Maps\" addon."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:236
+msgid ""
+"A new version of this map is part of the \"Mostly Balanced Maps\" addon. "
+"Available here too [Antarctic Conquest v.2](https://www.widelands.org/maps/"
+"antarctic-conquest-v2/)."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:237
+msgid ""
+"A new version of this map is part of the \"Mostly Balanced Maps\" addon. "
+"Game mechanics is not changed, just the map looks much better now."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:238
+msgid ""
+"This map is for two tribes.\r\n"
+"\r\n"
+"There is only one gold mine on the main land for each tribe. \r\n"
+"There are two islands full of gold; but which ones?\r\n"
+"\r\n"
+"Other resources are plentiful; both on the main land and on the islands.\r\n"
+"\r\n"
+"You MUST build boats to travel to the other tribe and to get to the gold "
+"islands.\r\n"
+"\r\n"
+"Comments are welcome and will be appreciated even if they appear negative - "
+"I am still learning :-)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:239
+msgid ""
+"A map where you can play truly powerful. Lots of wide lands. Optimal fishing "
+"possibilities. \r\n"
+"\r\n"
+"Very good tree growth (unfortunately not optimal, because I've chosen the "
+"wrong one because of wrong informations).\r\n"
+"\r\n"
+"Can you play that powerful on Ice Wars? No, there are too many chokepoints, "
+"weakening your transport.\r\n"
+"\r\n"
+"My idea was a map where one can play as powerful as possible, this seems to "
+"be the best approximation.\r\n"
+"\r\n"
+"I often tested the map and when I saw that there could be one more "
+"improvement I implemented it."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:240
+msgid ""
+"The map Crete’s Vineyard v.2 is not compatible with build 21. Version 1.0 or "
+"newer is needed.\r\n"
+"A new version of this map is part of the \"Mostly Balanced Maps\" addon."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:241
+msgid ""
+"Lesser ring is a fair 8-player map with ring-shaped landmass and sea. It "
+"features:\r\n"
+"\r\n"
+"* Somewhat realistic division of geography - rivers flow glaciers in the "
+"mountains through hills and finally plains to the sea.\r\n"
+"* Somewhat realistic distribution of resources: Different resources often "
+"found at some distance to each other.\r\n"
+"* Gold is rare, and valuable, especially in the early game.\r\n"
+"* There are places of strategic importance, such as river crossings, that "
+"military action focuses on."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:242
+msgid "Reupload of map with correction of spelling error."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:243
+msgid ""
+"My take on expanding the popular 3 Warriors map for X players. Expand this "
+"or the template to your own liking.\r\n"
+"Short review appreciated, i might change some rescources if there are too "
+"many or land features if there is not enough space. May be add some relics "
+"too."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:244
+msgid ""
+"Template to create your own version of New Warriors depending on your player "
+"number."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:245 /tmp/15744417009842789764.lua:246
+#: /tmp/15744417009842789764.lua:247 /tmp/15744417009842789764.lua:248
+#: /tmp/15744417009842789764.lua:249 /tmp/15744417009842789764.lua:250
+msgid "Haven't played in a while, but uploading some maps I made last year."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:251
+msgid ""
+"This map is not compatible with build 21. 1.0 version is needed.\r\n"
+"A new version of this map is part of the \"Mostly Balanced Maps\" addon."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:252
+msgid ""
+"This is a map for two players.\r\n"
+"\r\n"
+"Although the map is one physical land mass you can speed up your expansion "
+"by building ships.\r\n"
+"\r\n"
+"Each tribe has one gold mine close to the headquarters. If you use this gold "
+"to build ships instead of growing your army you can conquer the whole map "
+"much quicker."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:254
+msgid ""
+"Here is a four player map with a challenge. The mainland has a lot of desert "
+"area with a volcano in the middle and four lava flows going all the way to "
+"the ocean.\r\n"
+"\r\n"
+"There are 8 small islands surrounding the mainland. Except for coal, the "
+"mainland only has three mines for each resource per tribal area. There are "
+"ample resources on the islands. Coal is plentiful with mine sites along the "
+"edge of the lava flows as well as on two of the small islands.\r\n"
+"\r\n"
+"The challenge is that you must work your geologist by setting flags in "
+"different spots on the mountains and sending the geologist multiple times "
+"until you discover which potential mine sites actually have a lot of the "
+"resource.\r\n"
+"\r\n"
+"Two of the gold mines for each tribe are actually on the end of coal "
+"deposits so you need to make the geoligist examine every mine spot to find "
+"the Gold mines. The third gold mine is in one of the two corners where you "
+"can cross over into the neighbouring tribal area. This gold mine is alone "
+"and at ground level covered by four rocks and marked with a standing stone."
+"\r\n"
+"\r\n"
+"Fishing areas are all the way around the coast and are marked by pairs of "
+"standing stones (each pair may be laying down or standing straight)."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:255
+msgid "The map Ice Wars, but all coal removed"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:256
+msgid "The Map Cycles, but for 8 players and all coal is removed"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:257
+msgid "The Map \"The Power Map\", but without Coal"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:259
+msgid ""
+"Interesting 1v1 Games, that last ~ 30 min\r\n"
+"\r\n"
+"Many new concepts, like\r\n"
+"\r\n"
+"- you can connect your own territory before reaching the enemy\r\n"
+"\r\n"
+"- Every Ressource is placed logically to the way you expand\r\n"
+"\r\n"
+"- Strategical decisions whether you go for gold / gold first and most of the "
+"strategies are nearly balanced\r\n"
+"\r\n"
+"- best playable with the Addon - \"Fast 1v1 Tournament Balance\" - : https://"
+"we.tl/t-MbicOkQ2t9\r\n"
+"\r\n"
+"A map pack for short games"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:260
+msgid "Interesting fast 1v1 Map"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:261
+msgid ""
+"For anyone who has not heard of El Dorado, it is a legendary gold mine. As "
+"far as I know it has never been re-discovered. You have the chance to be one "
+"of the first to find it with a computer :-)\r\n"
+"\r\n"
+"Many thanks to members of Widelands who have given me tips recently in the "
+"use of the Editor. This map would not have been possible without your "
+"help :-)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:262
+msgid "The Ultimative 16-player map"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:263
+msgid ""
+"This is the stage Castle of Warren from Quest/Square Enix's game Ogre Battle "
+"transferred to Widelands. It's a small two player map (possibly too small) "
+"that can be decided within an hour."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:264 /tmp/15744417009842789764.lua:265
+msgid ""
+"Interesting Map with a lot of Strategical Decisions, Ressources are set "
+"intelligently and you need to consider fish and gold for a economic build up."
+"\r\n"
+"\r\n"
+"Map is completely 3D, so you can meet at each side"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:266
+msgid ""
+"Crash site in a fertile valley. \r\n"
+"4 Players"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:267
+msgid ""
+"- Individualle Disigned Landscapes\r\n"
+"\r\n"
+"- Every Startposition is unique but in total balanced\r\n"
+"\r\n"
+"Valleys, Mountains and Rivers, this Map seems like a Real Landscape and it "
+"is indescribabel to play it with your favorite Widelands Civilization. "
+"Interesting in Diplomaty with 8 human or AI players."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:268
+msgid ""
+"The Map Euphrat is ecellence in Design for 4 Players. You play it 2v2 and "
+"have a lot of strategical choice, only 4 spots have the gold, symmetrical\r\n"
+"\r\n"
+"If you want 1v1:\r\n"
+"Green V Yellow\r\n"
+"\r\n"
+"Players will meet in medium time and will be possible to go (and meet) to "
+"both directions and can connect their way system also in north south "
+"direction (speed boost) trying before the counterpart"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:269
+msgid "many possibilities"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:270
+msgid "Fixed some issues with only blue having animals."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:271
+msgid "Epic Map for 4 Players"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:272
+msgid ""
+"The Varus Battle (Die Varusschlacht)\r\n"
+"In the year 9 AD, Varus was far in the interior of Germania. \r\n"
+"The Romans owned some parts of this land, but no contiguous area. \r\n"
+"Varus' opponent was Arminius, a Cheruscan prince. \r\n"
+"Unlike his brother Flavus, who always remained loyal to Rome, Arminius "
+"turned against Roman supremacy."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:273
+msgid ""
+"The Battle of Norditi was a battle between a Frisian army and an army of "
+"Danish Vikings in 884."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:274
+msgid ""
+"DE : Eine Karte für eher kurze bis mittelmäßig andauernde Runden. Die Karte "
+"ist für den Einzelspieler erstellt worden. Im Mehrspieler würden die Runden "
+"bei deaktivierten Computer Spielern und nur zwei Spielern mittelmäßig bis "
+"lange andauern, da sich dann beide Spieler durch den Wald durcharbeiten "
+"müssen.\r\n"
+"\r\n"
+"\r\n"
+"\r\n"
+"EN : A Map for from short to medium Round Time. The Map is created for "
+"Singleplayer. In Multiplayer the Players need more time and the rounds are "
+"longe, because the players must alone work and cut the forest."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:275
+msgid ""
+"DE : Ein symetrisches grünes quadratisches Tal, umgeben von "
+"Ressoursenreichen Bergen. Zwei kleine Wälder und Steinformationen sind je an "
+"den beiden Startpositionen in ausgewogener Menge vorhanden. Flüsse mit "
+"Fischen sind im Tal vorhanden. Diese Karte ist für Mehrspieler Duelle "
+"gestaltet. Für kurze Runden, jedoch für Spieler die eine kleine "
+"Vorbereitungszeit, in Form eines geringen Abstand-Puffers zum Gegner haben "
+"wollen. Im kompletten Tal ist maximal viel Bauplatz vorhanden.\r\n"
+"\r\n"
+"Karten Version Historie :\r\n"
+"Version 2 : Der Kartennullpunkt wurde versetzt, damit die Karte in der Lade-"
+"Ansicht korrekt dargestellt wird.\r\n"
+"\r\n"
+"\r\n"
+"Die alte Karte \"Quadrat-Tal_v2\" steht / wird nicht mehr zum Download zur "
+"Verfügung. Da Ihre Löschung beantragt wurde.\r\n"
+"\r\n"
+"\r\n"
+"EN : A symmetrical green square valley, surrounded by mountains rich in "
+"resources. There are two small forests and stone formations at each of the "
+"two starting positions in a balanced amount. There are rivers with fish in "
+"the valley. This map is designed for multiplayer duels. For short rounds, "
+"but for players who want to have a little preparation time in the form of a "
+"small distance buffer to the opponent. There is a maximum of building space "
+"available in the entire valley.\r\n"
+"\r\n"
+"Map Version History :\r\n"
+"Version 2 : The Map Zeropoint was changed, to fix a Bug on visualization in "
+"load window of Widelands.\r\n"
+"\r\n"
+"The old Map Version 1 can no longer downloaded. The Map was tagged as "
+"deleting.\r\n"
+"\r\n"
+"Teayo, don't like it that old Map Variants are possible to download."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:276
+msgid ""
+"DE : \r\n"
+"\r\n"
+"Eine Karte ideal geeignet für Mehrspieler Duelle. Wem diese eine Karte nicht "
+"aussreicht, es gibt von dieser Karte weitere sieben verschiedene Varianten. "
+"Von Anfängerfreundlich bis extrem Schwer. Mit zunehmenden Schwierigkeitsgrad "
+"entfallen z.B Bäume, Steine, Tiere, Fische und am Ende sogar die Berg-"
+"Ressoursen.\r\n"
+"\r\n"
+"Die ursprüngliche Karte Rechteck-Tal steht nicht mehr zur Verfügung !\r\n"
+"\r\n"
+"[Rechteck-Tal - Remake - Varianten Bundle - Download ](https://mega.nz/file/"
+"RkxCRZwQ#5_X3G8Wz6pMD7jjAp6VHhxrjmAPQ7hTM6w278ZIaqRM) , Download via Mega.nz "
+"als ZIP-Datei-Archiv , 157 KB\r\n"
+"\r\n"
+"Das Bundle enthält folgende Karten :\r\n"
+"\r\n"
+"* Rechteck-Tal - Remake - 01 - Normal -\r\n"
+"\r\n"
+"* Rechteck-Tal - Remake - 02 - Normal+ - Keine Tiere,Fische\r\n"
+"\r\n"
+"* Rechteck-Tal - Remake - 03 - Schwer - Keine Bäume,Felsen\r\n"
+"\r\n"
+"* Rechteck-Tal - Remake - 04 - Schwer - Keine Kohle\r\n"
+"\r\n"
+"* Rechteck-Tal - Remake - 05 - Schwer+ - Keine Bäume,Felsen,Tiere,Fische\r\n"
+"\r\n"
+"* Rechteck-Tal - Remake - 06 - Extrem - Keine Kohle,Bäume,Felsen,Tiere,"
+"Fische\r\n"
+"\r\n"
+"* Rechteck-Tal - Remake - 07 - Extrem - Keine Gold,Eisen,Kohle\r\n"
+"\r\n"
+"* Rechteck-Tal - Remake - 08 - Extrem+ - Keine Gold,Eisen,Kohle,Bäume,Felsen,"
+"Tiere,Fische\r\n"
+"\r\n"
+"\r\n"
+"Ich wünsche euch viel Spaß !\r\n"
+"\r\n"
+"EN: \r\n"
+"\r\n"
+"A card ideally suited for multiplayer duels. If this one card is not enough "
+"for you, there are seven other variants of this card. From beginner-friendly "
+"to extremely difficult. As the level of difficulty increases, trees, stones, "
+"animals, fish and, at the end of the day, even the mountain resources are "
+"eliminated.\r\n"
+"\r\n"
+"The original Map Rechteck-Tal is no longer download able !"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:277
+msgid ""
+"DE :\r\n"
+"\r\n"
+"Die ursprüngliche Karte Kreis-Insel steht nicht mehr zum Download zur "
+"Verfügung.\r\n"
+"\r\n"
+"EN :\r\n"
+"\r\n"
+"The original Map Kreis-Insel is no longer download able."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:278
+msgid ""
+"Here is a BIG map for those who like VERY long single player games :-) \r\n"
+"\r\n"
+"Actually I did build this map with those who play on-line in mind. There are "
+"8 tribes possible with this map; It is also very large - 512 X 512. I have "
+"set up three large islands and some smaller ones just for resources "
+"[Gold :-)]. This map also has my signature landing ports that guarantee a "
+"safe initiation of an invasion of another tribe by ship. \r\n"
+"\r\n"
+"This has taken a couple of months to build and incorporates all of the map "
+"building skills that I have learned. Again I would like to thank everyone "
+"for their effort in building such an amazing game. Special thanks to those "
+"who have given me valuable help with how to use the editor.\r\n"
+"\r\n"
+"I have thoroughly tested the landing ports as well as completely capturing "
+"the whole of one island. I did not focus on the precise time I spent but the "
+"last 6 days have been pretty much devoted to playing this map at speed 6 "
+"[Normally I play at speed 1 and enjoy watching my tribe living their "
+"lives :-)]. I wanted to get this map ready for upload before the end of the "
+"year."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:279
+msgid ""
+"The Art of Settlers\r\n"
+"\r\n"
+"A map for up to 16 Players where you can find literally everything. Experts "
+"will choose 15 Trading Outpost AI and will manage this extremly hard (!) "
+"contestent. Not even the-x, Creator of this Map managed to beat all 15. New "
+"Players will sail over the Ocean to the other side of the Map and construct "
+"incredible trading routes. They are all over the Map.\r\n"
+"\r\n"
+"One important hint:\r\n"
+"\r\n"
+"Everything in this map makes sence. Ressouces are nicely marked, you will "
+"soon see the different layers. Never ending gold ressources can only be "
+"found by climbing the highest Mountain in the middle before all the 15 "
+"friends or by sailing to the deepest Ocean on exact the opposite Site of the "
+"Map.\r\n"
+"\r\n"
+"Choose wise and you will find everything from time and time. The-x\r\n"
+"Of course you can optimally play this map with your friends, invite as many "
+"and try it ;-)\r\n"
+"\r\n"
+"Strategically you might find one opponent fist and then in an individual "
+"speed more and more, you might also reduce the amount of players the fast "
+"you think you might find some upgrades."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:280
+msgid ""
+"I made this with b21. At least with it there's an issue with one harbor "
+"location. You can build there but never get supplies afterwards. I tried a "
+"bit different location on the same peninsula but it didn't help. I hope "
+"that's not the case with later versions. In case it isn't useable, you can "
+"count it as a successful gaining of the nearby residing artefact if you can "
+"keep that harbor there."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:281
+msgid ""
+"round and round it goes, to the next stripe, that's where it goes. \r\n"
+"ship your stuff, build your stuff, you know the drill. \r\n"
+"\r\n"
+"Have fun!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:282
+msgid ""
+"Sorry but some things are still like in the first version of the map which "
+"are quite illogical.\r\n"
+"oh there are some things in german here the translation: A few years ago the "
+"Imperia Resica ion invaded the territory of the Belearic Islands. Since the "
+"Empire took up little space, the belebars left the Empire alone until the "
+"Frisians showed up. Since the Belebaren and the Imperia Resica saw the "
+"Frisians coming from the north as a threat, they teamed up."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:283
+msgid "I hope you'll like xD"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:284
+msgid "I hope you'll like more now xD"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:286
+msgid "This is the map shown on the editor screenshots. :)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:287
+msgid "Interesting 1v1 Map"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:288 /tmp/15744417009842789764.lua:289
+msgid "A very interesting open 1v1 map with countless of various strategies"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:290
+msgid "Here Ressources are set rare"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:291
+msgid "Balanced Version"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:292
+msgid ""
+"This group of Islands has one large island with a volcano in the center. "
+"Previous inhabitants have buried small deposits of Gold  on the main island "
+"at eight places near areas that that they used for harbours. They have "
+"marked these Gold deposits with small rocks and erected standing stones. "
+"They also cleared other areas on all of the islands in the archipelago and "
+"prepared harbour platforms.\r\n"
+"\r\n"
+"There are plenty of resources on all of the islands including Gold. However; "
+"Gold on the main island is only found in the previously mentioned  eight man "
+"made deposits.\r\n"
+"\r\n"
+"The wisest tribes will build ships with their small deposits of Gold and "
+"sail to the small islands first. After they begin to mine the plentiful Gold "
+"on the small islands they will begin to develop their armies."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:293
+msgid ""
+"This group of Islands has one large island with a volcano in the center. "
+"Previous inhabitants have buried small deposits of Gold on the main island "
+"at eight places near areas that they used for harbors. They have marked "
+"these Gold deposits with small rocks and erected standing stones. They also "
+"cleared other areas on all of the islands in the archipelago and prepared "
+"harbor platforms.\r\n"
+"\r\n"
+"There are plenty of resources on all of the islands including Gold. However; "
+"Gold on the main island is only found in the previously mentioned eight man "
+"made deposits.\r\n"
+"\r\n"
+"The wisest tribes will build ships with their small deposits of Gold and "
+"sail to the small islands first. After they begin to mine the plentiful Gold "
+"on the small islands they will begin to develop their armies.\r\n"
+"\r\n"
+"This map is a variation of Southern Archipelago Mark i. The additions were "
+"made with the Amazon tribe in mind. Of course you can play with any of the "
+"tribes, but the Amazons can increase the fertility of the ground and the "
+"additions provide an excellent opportunity for this.\r\n"
+"\r\n"
+"Several of the natural water courses have been widened. Each of the four "
+"areas on the main island have an aqueduct that was developed by previous "
+"inhabitants. The Ferry tag has been activated so your tribes can traverse "
+"the wider water features."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:294
+msgid ""
+"Reuploaded because the original author didn't wanted have his name public."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:295
+msgid ""
+"Valleys, Mountains and Rivers, this Map seems like a Real Landscape and it "
+"is indescribabel to play it with your favorite Widelands Civilization."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:296
+msgid ""
+"Old Legends told me there were Dinosaurs in this Valley. it might be true, "
+"our hero the-x discovered interesting landscapes that lok like there had "
+"been ancient creatures. Valleys, Mountains and Rivers, this Map seems like a "
+"Real Landscape and it is indescribabel to play it with your favorite "
+"Widelands Civilization."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:297
+msgid ""
+"Valleys, Mountains and Rivers, this Map seems like a Real Landscape and it "
+"is indescribabel to play it with your favorite Widelands Civilization\r\n"
+"\r\n"
+"Interesting in Diplomaty with 6 human players"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:298
+msgid ""
+"Tout est dans le titre !\r\n"
+"\r\n"
+"2/3 ou 4 joueurs"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:299
+msgid ""
+"Für Seefahrer ein Traum!\r\n"
+"\r\n"
+"Ich habe eine neue Karte erstellt, die viele neue Ideen und Inputs bietet "
+"für Spieler, die ein längeres Spiel mögen und gerne zur See fahren. Die "
+"Karte kann man beliebig als Vorlage nehmen, sie ist noch nicht so "
+"detailliert, wie meine anderen Karten, sondern dient als Vorlage für Ideen."
+"\r\n"
+"\r\n"
+"Kann beliebig weiter detailliert und verfeinert werden"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:300
+msgid "Large 16 Player map for Diplomaty or 8v8 Games"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:301
+msgid ""
+"Wide green and rivers a s far as the eye can see. Expeditions in ports are a "
+"must to get to the enemy at all. Weites Grün und Flüsse, soweit das Auge "
+"reicht. Expeditionen in Häfen sind ein Muss um überhaupt zum Gegner zu "
+"kommen."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:302
+msgid "Spielbar in allen Kombinationen"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:303
+msgid ""
+"Get more of my Maps with my Addon.<br>\r\n"
+"Use the Widelands Game internal, to easy downloading, installing and "
+"updating my Map Collection Addon.<br>\r\n"
+"The Addon includes preshow images of each Map in the Addon.<br>\r\n"
+"Leave a comment and rate the Addon.<br>\r\n"
+"<br>\r\n"
+"![test](https://www.widelands.org/forum/"
+"attachment/4748b62a13fb20421beae13c326e2615d8449f17/)"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:304
+msgid ""
+"Silver Mountain is an icredible 1v1 map\r\n"
+"\r\n"
+"can also be played in long games 4v4"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:305
+msgid ""
+"Here is another map for those with older computers.\r\n"
+"\r\n"
+"There are two of my \"Signature Landing Ports\", one on each of the two "
+"largest Islands. If you are playing a \"Single User\" game, build a ship as "
+"quickly as you can and build ports on both sites to stop any AI tribe from "
+"blocking your access later.\r\n"
+"\r\n"
+"PS This map file is an update for the map I uploaded on 2023-07-05. "
+"Unfortunately there was a problem accessing gold on the top of the snow "
+"mountain on one of the islands. That issue has been resolved with this file."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:306
+msgid ""
+"Here is another map for those using Widelands 1.1 or newer.\r\n"
+"\r\n"
+"This map allows the use of Ferries so you can cross the wider areas of water."
+"\r\n"
+"\r\n"
+"There are two of my \"Signature Landing Ports\", one on each of the two "
+"largest Islands. If you are playing a \"Single User\" game, build a ship as "
+"quickly as you can and build ports on both sites to stop any AI tribe from "
+"blocking your access later.\r\n"
+"\r\n"
+"PS This map file is an update for the map I uploaded on 2023-07-05. "
+"Unfortunately there was a problem accessing gold on the top of the snow "
+"mountain on one of the islands. That issue has been resolved with this file."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:307
+msgid ""
+"This map is missing on the Widelands web page. \r\n"
+"I did not build or design this map. It was created by BoeseKaiser, so all "
+"credits to him/her."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:308
+msgid "This map is also available as addon."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:309
+msgid ""
+"SUGGESTIONS FOR IMPROVMENTS IN THE COMMENTS!!!  I will Update it.  \r\n"
+"\r\n"
+"I noticed a few msitakes in the rivers. Will be changed on the next upload!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:310
+msgid ""
+"Several Issues should be fixed now.\r\n"
+"\r\n"
+"Enjoy the Map!"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:311
+msgid "Renabled port spaces"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:312
+msgid ""
+"Expect a long play time on this map...\r\n"
+"\r\n"
+"This map is also available as an add-on."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:313
+msgid ""
+"Ai is working on this map. A map i would call something like an \"artmap\", "
+"visually nice and good play-ability.\r\n"
+"\r\n"
+"This map is also available as an add-on."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:314
+msgid "Combination with new white summer addon recommended."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:315
+msgid "updated version, better balance, some terrain changes, artifacts moved"
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:316
+msgid "Combination with white summer addon recommended."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:317
+msgid ""
+"The original tropical version is available [here](https://www.widelands.org/"
+"forum/post/42193/)."
+msgstr ""
+
+#: /tmp/15744417009842789764.lua:318
+msgid ""
+"Es herrscht ein Krieg in Skandinavien.\r\n"
+"There is a war in Scandinavia."
 msgstr ""

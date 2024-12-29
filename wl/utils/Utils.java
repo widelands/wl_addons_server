@@ -366,6 +366,7 @@ public class Utils {
 				result += str;
 			}
 		}
+		p.waitFor();
 		return (result == null ? "" : result);
 	}
 

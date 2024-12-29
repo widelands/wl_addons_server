@@ -16,6 +16,10 @@ wl.Descriptions():new_immovable_type{
          "remove=chance:7.42%",
          "grow=rubber_amazons_old",
       },
+      grow = {
+         "animate=idle duration:36s",
+         "grow=rubber_amazons_old",
+      },
    },
    icon = dirname .. "../menu.png",
    animation_directory = dirname,

@@ -2,25 +2,26 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Atanase Albaran, 2021
 # C138, 2022
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2024-12-29 03:10+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: C138, 2022\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
 
 #: addons/wells-running-out.wad/addon:2
 msgid "Water Resource Efficiency"
@@ -34,8 +35,8 @@ msgid ""
 "experience."
 msgstr ""
 "Rendre la ressource «eau» plus utile en donnant aux puits un rayon plus "
-"grand et une chance de seulement 5% de trouver de l’eau une fois épuisés. De"
-" plus, les puits barbares et frisons peuvent être transformés en puits "
+"grand et une chance de seulement 5% de trouver de l’eau une fois épuisés. De "
+"plus, les puits barbares et frisons peuvent être transformés en puits "
 "profonds lorsque le travailleur a suffisamment d'expérience."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -66,8 +67,7 @@ msgstr "Eau épuisée"
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:38
 msgctxt "barbarians_building"
-msgid ""
-"The carrier working at this deep well can’t find any water in his well."
+msgid "The carrier working at this deep well can’t find any water in his well."
 msgstr ""
 "Le transporteur travaillant à ce puits profond ne trouve pas d'eau dans son "
 "puits."
@@ -86,8 +86,7 @@ msgstr "Puits profond"
 
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:38
 msgctxt "frisians_building"
-msgid ""
-"The carrier working at this deep well can’t find any water in his well."
+msgid "The carrier working at this deep well can’t find any water in his well."
 msgstr ""
 "Le transporteur travaillant à ce puits profond ne trouve pas d'eau dans son "
 "puits."
