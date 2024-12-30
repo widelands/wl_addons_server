@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2024-12-30 03:09+0100\n"
 "PO-Revision-Date: 2024-01-10 16:15+0000\n"
 "Last-Translator: Juanjo, 2024\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -24,11 +24,12 @@ msgstr ""
 
 #: addons/no-stats-till-spied.wad/addon:4
 msgid "No player stats until a scout spied them"
-msgstr ""
+msgstr "No es mostren les estadístiques dels jugadors fins que els espieu."
 
 #: addons/no-stats-till-spied.wad/addon:5
 msgid "It needs a scout to know details about the other players."
 msgstr ""
+"Cal un explorador per tal d'esbrinar els detalls sobre els altres jugadors."
 
 #: addons/no-stats-till-spied.wad/init.lua:18
 msgid "No player statistics till spied"
@@ -41,12 +42,16 @@ msgid ""
 "            To know statistics about other players, you need a scout to spy "
 "there."
 msgstr ""
+"Els jugadors tenen estadístiques sobre els seus béns dels magatzems (tots "
+"els edificis que emmagatzemen béns).\n"
+"            Per a conèixer les estadístiques dels altres jugadors, fa falta "
+"que envieu un explorador perquè els espiïn."
 
 #. TRANSLATORS: %s is the name of a player
 #: addons/no-stats-till-spied.wad/init.lua:67
 #, lua-format
 msgid "A spy has now information about %s. Find it in statistics."
-msgstr ""
+msgstr "Un espia té informació sobre %s. La trobareu a les estadístiques."
 
 #: addons/no-stats-till-spied.wad/init.lua:69
 msgid "A spy gives information"

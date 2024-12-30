@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-29 03:10+0100\n"
+"POT-Creation-Date: 2024-12-30 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:41+0000\n"
 "Last-Translator: Ondřej Itřech, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -27,14 +27,11 @@ msgid "Sumatran World"
 msgstr "Sumatřský svět"
 
 #: addons/sumatran_world.wad/addon:3
-#, fuzzy
 msgid ""
 "Modifies world for Sumatran tribe. The changes affect Amazons too. Tropical "
 "trees do not grow on winter terrains. You need to transform the terrain by "
 "using terraform. This add-on should be used together with sumatran_tribe.wad."
 msgstr ""
-"Upravuje svět pro Sumatřany. Změny ovlivňují i Amazonky. Měl by být používán "
-"společně se sumatran_tribe.wad."
 
 #: addons/sumatran_world.wad/crocodile/init.lua:7
 msgid "Crocodile"
@@ -48,57 +45,48 @@ msgstr "Sumatra"
 
 #: addons/sumatran_world.wad/immovables/X_balsa_black_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_balsa_black_amazons/old/init.lua:10
-#, fuzzy
 msgid "Balsa Tree Wasteland (removed)"
-msgstr "Balzovník jihoamerický (vzrostlý)"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_balsa_desert_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_balsa_desert_amazons/old/init.lua:10
-#, fuzzy
 msgid "Balsa Tree Desert (removed)"
-msgstr "Balzovník jihoamerický (stromek)"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_balsa_winter_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_balsa_winter_amazons/old/init.lua:10
-#, fuzzy
 msgid "Balsa Tree Winter (removed)"
-msgstr "Balzovník jihoamerický (stromek)"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_ironwood_black_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_ironwood_black_amazons/old/init.lua:10
-#, fuzzy
 msgid "Ironwood T. Wasteland (removed)"
-msgstr "Železodřevný strom (stromek)"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_ironwood_desert_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_ironwood_desert_amazons/old/init.lua:10
-#, fuzzy
 msgid "Ironwood Tree Desert (removed)"
-msgstr "Železodřevný strom (stromek)"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_ironwood_winter_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_ironwood_winter_amazons/old/init.lua:10
-#, fuzzy
 msgid "Ironwood Tree Winter (removed)"
-msgstr "Železodřevný strom (stromek)"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_rubber_black_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_rubber_black_amazons/old/init.lua:10
-#, fuzzy
 msgid "Rubber Tree Wasteland (removed)"
-msgstr "Kaučukovník brazilský (vzrostlý)"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_rubber_desert_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_rubber_desert_amazons/old/init.lua:10
-#, fuzzy
 msgid "Rubber Tree Desert (removed)"
-msgstr "Kaučukovník brazilský (stromek)"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_rubber_winter_amazons/old/init.lua:9
 #: addons/sumatran_world.wad/immovables/X_rubber_winter_amazons/old/init.lua:10
-#, fuzzy
 msgid "Rubber Tree Winter (removed)"
-msgstr "Kaučukovník brazilský (stromek)"
+msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/sumatran_world.wad/immovables/balsa/mature/init.lua:10
@@ -125,9 +113,8 @@ msgstr "Balzovník jihoamerický (sazenice)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/sumatran_world.wad/immovables/deadtree7/init.lua:9
-#, fuzzy
 msgid "Dead Tree"
-msgstr "Balzovník jihoamerický"
+msgstr ""
 
 #: addons/sumatran_world.wad/immovables/dipterocarpus/mature/init.lua:9
 msgid "Dipterocarpus (Mature)"
@@ -310,6 +297,3 @@ msgstr "Popel 1"
 #: addons/sumatran_world.wad/terrains/mountainmeadow/init.lua:5
 msgid "Mountain Meadow"
 msgstr "Horská louka"
-
-#~ msgid "Steppe"
-#~ msgstr "Step"

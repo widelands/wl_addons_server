@@ -69,6 +69,37 @@ function map_direction(startx, starty, targetx, targety)
 end
 
 -- general map settings --
+function change_terrain(startx, starty, radius, terrainname)
+    radius = radius or 1
+    terrainname = terrainname or "water"
+    
+    local game = wl.Game()
+    local map = game.map
+    local centerfield = map:get_field(startx, starty)
+    local fields = centerfield:region(radius)
+
+    for idx, field in ipairs(fields) do
+        field.terr = terrainname
+        field.terd = terrainname
+    end
+end
+
+function place_ressource(startx, starty, radius, resourcename, resourceamount)
+    radius = radius or 1
+    resourceamount = resourceamount or 1
+    resourcename = resourcename or "none"
+    
+    local game = wl.Game()
+    local map = game.map
+    local centerfield = map:get_field(startx, starty)
+    local fields = centerfield:region(radius)
+
+    for idx, field in ipairs(fields) do
+        field.resource = resourcename
+        field.resource_amount = resourceamount
+    end
+end
+
 function place_object(startx, starty, objectname)
     local game = wl.Game()
     local map = game.map
@@ -368,7 +399,6 @@ function remove_all_flags(startx, starty, radius)
 
     local game = wl.Game()
     local map = game.map
-
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
 
@@ -874,7 +904,7 @@ function force_port(startx, starty, radius, player_number, complete)
 end
 
 function force_militarysite(startx, starty, radius, player_number, militarytype)
-    militarytype = militarytype or "small0"
+    militarytype = militarytype or "small"
 
     local game = wl.Game()
     local map = game.map
@@ -886,8 +916,8 @@ function force_militarysite(startx, starty, radius, player_number, militarytype)
     local max_soldier_stats = {0,0,0,0}
 
     if tribe_name == "europeans" then
-        max_soldier_stats = {3,3,3,3}
-        if militarytype == "small0" then
+        max_soldier_stats = {1,1,1,1}
+        if militarytype == "small" then
             building = "europeans_sentry_basic"
         elseif militarytype == "small1" then
             building = "europeans_sentry_level_1"
@@ -895,7 +925,7 @@ function force_militarysite(startx, starty, radius, player_number, militarytype)
             building = "europeans_sentry_level_2"
         elseif militarytype == "small3" then
             building = "europeans_sentry_level_3"
-        elseif militarytype == "medium0" then
+        elseif militarytype == "medium" then
             building = "europeans_barrier_basic"
         elseif militarytype == "medium1" then
             building = "europeans_barrier_level_1"
@@ -903,15 +933,15 @@ function force_militarysite(startx, starty, radius, player_number, militarytype)
             building = "europeans_barrier_level_2"
         elseif militarytype == "medium3" then
             building = "europeans_barrier_level_3"
-        elseif militarytype == "medium4" then
+        elseif militarytype == "tower" then
             building = "europeans_tower_basic"
-        elseif militarytype == "medium5" then
+        elseif militarytype == "tower1" then
             building = "europeans_tower_level_1"
-        elseif militarytype == "medium6" then
+        elseif militarytype == "tower2" then
             building = "europeans_tower_level_2"
-        elseif militarytype == "medium7" then
+        elseif militarytype == "tower3" then
             building = "europeans_tower_level_3"
-        elseif militarytype == "big0" then
+        elseif militarytype == "big" then
             building = "europeans_castle_basic"
         elseif militarytype == "big1" then
             building = "europeans_castle_level_1"

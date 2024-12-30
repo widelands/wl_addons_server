@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2024-12-30 03:09+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -29,7 +29,6 @@ msgid "Sumatrans"
 msgstr "Sumatřané"
 
 #: addons/sumatran_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Needs sumatran_world.wad. This is a testing version of a tribe named "
 "Sumatrans. It uses partially graphics of other tribes, until new graphics is "
@@ -37,9 +36,6 @@ msgid ""
 "nearby. Fortified Village for a stronger opponent. More info in help and "
 "tips."
 msgstr ""
-"Vyžaduje sumatran_world.wad. Jde o první testovací verzi nového kmene "
-"pojmenovaného Sumatřané. Částečně využívá grafiku ostatních kmenů, než bude "
-"k dispozici grafika nová. Více informací v nápovědě a tipech."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/sumatran_tribe.wad/immovables/cassavaplants/harvested/init.lua:8
@@ -576,10 +572,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:8
-#, fuzzy
 msgctxt "amazons_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr "Chata kameníka"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:40
@@ -600,9 +595,8 @@ msgstr "lovení"
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:64
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:54
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:60
-#, fuzzy
 msgid "No Crocodiles"
-msgstr "Krokodýlí boty"
+msgstr ""
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:50
@@ -610,18 +604,16 @@ msgstr "Krokodýlí boty"
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:66
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:56
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:62
-#, fuzzy
 msgid "Out of Game"
-msgstr "Chybí voda"
+msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:52
-#, fuzzy
 msgctxt "amazons_building"
 msgid ""
 "The hunter-gatherer working out of this hut can’t find any crocodiles in her "
 "work area."
-msgstr "Kameník pracující v tomto domku nemůže v okolí najít žádné skály."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/amazons_thermal_springs/init.lua:8
@@ -658,67 +650,59 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:8
-#, fuzzy
 msgctxt "atlanteans_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Lovecký domek"
+msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:55
-#, fuzzy
 msgctxt "atlanteans_building"
 msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
-msgstr "Kameník pracující v tomto domku nemůže v okolí najít žádné skály."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:8
-#, fuzzy
 msgctxt "barbarians_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr "Chata kameníka"
+msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:68
-#, fuzzy
 msgctxt "barbarians_building"
 msgid ""
 "The hunter working out of this hut can’t find any crocodiles in his work "
 "area."
-msgstr "Kameník pracující v tomto domku nemůže v okolí najít žádné skály."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:8
-#, fuzzy
 msgctxt "empire_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Lovecký domek"
+msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:58
-#, fuzzy
 msgctxt "empire_building"
 msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
-msgstr "Kameník pracující v tomto domku nemůže v okolí najít žádné skály."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:8
-#, fuzzy
 msgctxt "frisians_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Lovecký domek"
+msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:64
-#, fuzzy
 msgctxt "frisians_building"
 msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
-msgstr "Kameník pracující v tomto domku nemůže v okolí najít žádné skály."
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/sumatran_tribe.wad/postload.lua:40
@@ -735,14 +719,12 @@ msgstr "kácení stromů"
 #: addons/sumatran_tribe.wad/postload.lua:149
 #: addons/sumatran_tribe.wad/postload.lua:153
 #: addons/sumatran_tribe.wad/postload.lua:157
-#, fuzzy
 msgid "Hunters working at this house can hunt crocodiles for meat."
-msgstr "Kameník pracující v tomto domku nemůže v okolí najít žádné skály."
+msgstr ""
 
 #: addons/sumatran_tribe.wad/postload.lua:161
-#, fuzzy
 msgid "Hunter-gatherer working at this house can hunt crocodiles for meat."
-msgstr "Kameník pracující v tomto domku nemůže v okolí najít žádné skály."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
@@ -951,9 +933,8 @@ msgstr "rybaření"
 
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:72
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:92
-#, fuzzy
 msgid "No Game"
-msgstr "Došla zvěř nebo ryby"
+msgstr ""
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:74
@@ -963,14 +944,11 @@ msgstr "Došla zvěř nebo ryby"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:76
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The hunter working at this hunter’s house can’t find any game in his work "
 "area."
 msgstr ""
-"Lovec pracující v tomto domku nemůže ve svém okolí najít žádnou zvěř nebo "
-"ryby."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:8
@@ -980,14 +958,11 @@ msgstr "Lovcův stan"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:96
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The hunter working at this hunter’s tent can’t find any game in his work "
 "area."
 msgstr ""
-"Lovec pracující v tomto stanu nemůže ve svém okolí najít žádnou zvěř nebo "
-"ryby."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:8
@@ -996,9 +971,8 @@ msgid "Jungle Marsh"
 msgstr "Pralesní močál"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:65
-#, fuzzy
 msgid "No Space"
-msgstr "Došel kámen"
+msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:66
 msgid "Animals do not leave this march"
@@ -1039,10 +1013,9 @@ msgstr "vyhazování zbytků"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:8
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "Leaf Gatherer’s Hut"
-msgstr "Chata sadaře palem"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start gathering leaves because ...
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:41
@@ -1060,14 +1033,12 @@ msgid "gathering cassava leaves"
 msgstr "sbírání maniokového listí"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:68
-#, fuzzy
 msgid "No Leaves"
-msgstr "Palmové listí"
+msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:69
-#, fuzzy
 msgid "Out of Leaves"
-msgstr "Došly stromy"
+msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:70
 msgctxt "sumatran_building"
@@ -1100,19 +1071,15 @@ msgid "harvesting reed"
 msgstr "sklízení rákosu"
 
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:70
-#, fuzzy
 msgid "No Fields or No Water Nearby"
-msgstr "Došla pole nebo voda"
+msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:72
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The reed cutter working at this reed yard has no cleared soil to plant new "
 "plants."
 msgstr ""
-"Farmář pracující na tomto maniokovém poli nemá žádnou volnou půdu na "
-"vysazování nových rostlin."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:8
@@ -1275,14 +1242,12 @@ msgid "making palm wine"
 msgstr "vyrábění palmového vína"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:56
-#, fuzzy
 msgid "No Palm Trees"
-msgstr "Palmové listí"
+msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:57
-#, fuzzy
 msgid "Out of Palm Trees"
-msgstr "Došly stromy"
+msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:58
 msgctxt "sumatran_building"
@@ -1833,13 +1798,10 @@ msgstr ""
 "Najdi správnou rovnováhu mezi sadaři palem a ochránci džungle."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/tips.lua:16
-#, fuzzy
 msgid ""
 "Leaf gatherers are important part of your economy, they need cassava fields, "
 "plantations and palm planters nearby."
 msgstr ""
-"Sběračky listí jsou důležitou součástí hospodářství, potřebují ve svém okolí "
-"manioková pole, plantáže a sadaře palem."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/tips.lua:20
 msgid ""
@@ -3905,10 +3867,9 @@ msgstr "Duch džungle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/leaf_gatherer/init.lua:8
-#, fuzzy
 msgctxt "sumatran_worker"
 msgid "Leaf Gatherer"
-msgstr "Sběračka listí"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/miner/init.lua:8
@@ -3993,14 +3954,3 @@ msgstr "Vinařka"
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
 msgstr "Dřevorubec"
-
-#~ msgid "No Game or No Fish"
-#~ msgstr "Žádná zvěř nebo žádné ryby"
-
-#~ msgctxt "sumatran_worker"
-#~ msgid "Produces clothing."
-#~ msgstr "Vyrábí oděvy."
-
-#~ msgctxt "sumatran_worker"
-#~ msgid "Produces armor for training camp."
-#~ msgstr "Vyrábí zbroj pro výcvikový tábor."

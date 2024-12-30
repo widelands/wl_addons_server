@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2024-12-30 03:09+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -29,7 +29,6 @@ msgid "Sumatrans"
 msgstr "Sumatraner"
 
 #: addons/sumatran_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Needs sumatran_world.wad. This is a testing version of a tribe named "
 "Sumatrans. It uses partially graphics of other tribes, until new graphics is "
@@ -37,9 +36,11 @@ msgid ""
 "nearby. Fortified Village for a stronger opponent. More info in help and "
 "tips."
 msgstr ""
-"Bruukt sumatran_world.wad. Dat is de eerste Testversioon vun eenem nejen "
-"Volk mit de Naam Sumatraner. Dat bruukt in Delen Billers vun anner Völkers, "
-"bit neje Billers verföögbaar sünd. Mehr Informatioonen in de Hülp un Tipps."
+"Bruukt sumatran_world.wad. Dat is eene Testversioon vun eenem nejen Volk mit "
+"de Naam Sumatraner. Dat bruukt in Delen Billers vun anner Völkers, bit neje "
+"Billers verföögbaar sünd. Künstelk Speler bruken Sömmer- un Wüüst-"
+"Landskuppen un mennig Rüümte un Water umbi. Bruuk Schanzendörp för eenen "
+"machtigeren Feind. Mehr Informatioonen in de Hülp un Tipps."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/sumatran_tribe.wad/immovables/cassavaplants/harvested/init.lua:8
@@ -464,6 +465,9 @@ msgid ""
 "diminished returns on investment. This mine can’t be enhanced any further, "
 "so you should consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deesem Depen Koper-Gold-Bargwark is leeg. De Mine produzeert vun "
+"nu an vööl dürer as normaal. De Bargwark kann nich utbaut werden, also "
+"överlegg di, of du de Mine ofbrannen of plattrieten willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:8
@@ -493,6 +497,9 @@ msgid ""
 "returns on investment. This mine can’t be enhanced any further, so you "
 "should consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deesem Depen Iesen-Bargwark is leeg. De Mine produzeert vun nu "
+"an vööl dürer as normaal. De Bargwark kann nich utbaut werden, also överlegg "
+"di, of du de Mine ofbrannen of plattrieten willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/deep_stone_mine/init.lua:8
@@ -530,6 +537,9 @@ msgid ""
 "returns on investment. This mine can’t be enhanced any further, so you "
 "should consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deesem Depen Steen-Bargwark is leeg. De Mine produzeert vun nu "
+"an vööl dürer as normaal. De Bargwark kann nich utbaut werden, also överlegg "
+"di, of du de Mine ofbrannen of plattrieten willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:8
@@ -573,10 +583,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:8
-#, fuzzy
 msgctxt "amazons_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr "Flintslageree"
+msgstr "Krokodiljaggthütt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:40
@@ -597,9 +606,8 @@ msgstr "to jagen"
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:64
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:54
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:60
-#, fuzzy
 msgid "No Crocodiles"
-msgstr "Krokodilschoh"
+msgstr "Keene Krokodilen"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:50
@@ -607,18 +615,18 @@ msgstr "Krokodilschoh"
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:66
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:56
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:62
-#, fuzzy
 msgid "Out of Game"
-msgstr "Hebb keen Water mehr"
+msgstr "Hebb keene Deerten mehr"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:52
-#, fuzzy
 msgctxt "amazons_building"
 msgid ""
 "The hunter-gatherer working out of this hut can’t find any crocodiles in her "
 "work area."
-msgstr "De Flintslager, de bi deesem Huus warkt, hett keene Stenen tum Ofboen."
+msgstr ""
+"De Jägerske-Pottjerske, de bi deese Jaggthütt warkt, hett keene Krokodilen "
+"tum Jagen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/amazons_thermal_springs/init.lua:8
@@ -655,67 +663,67 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:8
-#, fuzzy
 msgctxt "atlanteans_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Jaggthuus"
+msgstr "Krokodiljaggthuus"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:55
-#, fuzzy
 msgctxt "atlanteans_building"
 msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
-msgstr "De Flintslager, de bi deesem Huus warkt, hett keene Stenen tum Ofboen."
+msgstr ""
+"De Jäger, de bi deese Jaggthuus warkt, hett keene Krokodilen in sienem "
+"Arbeidsgewest."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:8
-#, fuzzy
 msgctxt "barbarians_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr "Flintslageree"
+msgstr "Krokodiljaggthütt"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:68
-#, fuzzy
 msgctxt "barbarians_building"
 msgid ""
 "The hunter working out of this hut can’t find any crocodiles in his work "
 "area."
-msgstr "De Flintslager, de bi deesem Huus warkt, hett keene Stenen tum Ofboen."
+msgstr ""
+"De Jäger, de bi deese Jaggthütt warkt, hett keene Krokodilen in sienem "
+"Arbeidsgewest."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:8
-#, fuzzy
 msgctxt "empire_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Jaggthuus"
+msgstr "Krokodiljaggthuus"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:58
-#, fuzzy
 msgctxt "empire_building"
 msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
-msgstr "De Flintslager, de bi deesem Huus warkt, hett keene Stenen tum Ofboen."
+msgstr ""
+"De Jäger, de bi deese Jaggthuus warkt, hett keene Krokodilen in sienem "
+"Arbeidsgewest."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:8
-#, fuzzy
 msgctxt "frisians_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Jaggthuus"
+msgstr "Krokodiljaggthuus"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:64
-#, fuzzy
 msgctxt "frisians_building"
 msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
-msgstr "De Flintslager, de bi deesem Huus warkt, hett keene Stenen tum Ofboen."
+msgstr ""
+"De Jäger, de bi deese Jaggthuus warkt, hett keene Krokodilen in sienem "
+"Arbeidsgewest."
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/sumatran_tribe.wad/postload.lua:40
@@ -732,14 +740,16 @@ msgstr "Bomen to slagen"
 #: addons/sumatran_tribe.wad/postload.lua:149
 #: addons/sumatran_tribe.wad/postload.lua:153
 #: addons/sumatran_tribe.wad/postload.lua:157
-#, fuzzy
 msgid "Hunters working at this house can hunt crocodiles for meat."
-msgstr "De Flintslager, de bi deesem Huus warkt, hett keene Stenen tum Ofboen."
+msgstr ""
+"Jägers, wat bi deesem Jaggthuus warken, könen Krokodilen för hör Fleesk "
+"jagen."
 
 #: addons/sumatran_tribe.wad/postload.lua:161
-#, fuzzy
 msgid "Hunter-gatherer working at this house can hunt crocodiles for meat."
-msgstr "De Flintslager, de bi deesem Huus warkt, hett keene Stenen tum Ofboen."
+msgstr ""
+"De Jägerske-Pottjerske, de bi deese Jaggthuus warkt, kann Krokodilen för hör "
+"Fleesk jagen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
@@ -813,6 +823,8 @@ msgid ""
 "The farmer working at this cassava fields has no cleared soil to plant new "
 "plants."
 msgstr ""
+"De Buur dat warkt bi deese Maniok-Ackers hett keen Meedland waar he wat "
+"anplanten kann."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/cassava_kitchen/init.lua:8
@@ -845,6 +857,8 @@ msgid ""
 "The farmer working at this cassava plantation has no cleared soil to plant "
 "or doesn’t have any water for watering fields."
 msgstr ""
+"De Buur dat warkt bi deese Maniok-Buurderee hett keen Meedland waar he wat "
+"anplanten kann of keen Water, um de Felden to watern."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/charcoal_kiln/init.lua:8
@@ -944,9 +958,8 @@ msgstr "Fisse to fangen"
 
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:72
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:92
-#, fuzzy
 msgid "No Game"
-msgstr "Keene Deerten of keen Fiss"
+msgstr "Keene Deerten"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:74
@@ -956,14 +969,11 @@ msgstr "Hebb keene Deerten of Fiske mehr"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:76
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The hunter working at this hunter’s house can’t find any game in his work "
 "area."
-msgstr ""
-"De Jäger, de bi deese Jaggthuus warkt, hett keene Deerten of Fiske in sienem "
-"Arbeidsgewest."
+msgstr "De Jäger, de bi deese Jaggthuus warkt, hett keene Deerten tum Jagen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:8
@@ -973,14 +983,11 @@ msgstr "Jaggt-Telt"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:96
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The hunter working at this hunter’s tent can’t find any game in his work "
 "area."
-msgstr ""
-"De Jäger, de bi deese Jaggt-Telt warkt, hett keene Deerten of Fiske in "
-"sienem Arbeidsgewest."
+msgstr "De Jäger, de bi deese Jaggt-Telt warkt, hett keene Deerten tum Jagen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:8
@@ -989,18 +996,18 @@ msgid "Jungle Marsh"
 msgstr "Urwald-Fenne"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:65
-#, fuzzy
 msgid "No Space"
-msgstr "Keen Steen"
+msgstr "Keene Rüümte"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:66
 msgid "Animals do not leave this march"
-msgstr ""
+msgstr "Deerten verlaten deese Fenne nich"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:67
 msgctxt "sumatran_building"
 msgid "There is not enough space around this march for animals to leave."
 msgstr ""
+"Um deese Fenne is nich genoog Rüümte rum, dat Deerten se verlaten könen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/jungle_preservers_hut/init.lua:8
@@ -1032,7 +1039,6 @@ msgstr "de Steerten ruttosmieten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:8
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "Leaf Gatherer’s Hut"
 msgstr "Bladenpottjeree"
@@ -1053,14 +1059,12 @@ msgid "gathering cassava leaves"
 msgstr "Maniokbladen to pottjen"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:68
-#, fuzzy
 msgid "No Leaves"
-msgstr "Palmwedel"
+msgstr "Keene Bladen"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:69
-#, fuzzy
 msgid "Out of Leaves"
-msgstr "Hebb keene Bomen mehr"
+msgstr "Hebb keene Bladen mehr"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:70
 msgctxt "sumatran_building"
@@ -1069,6 +1073,9 @@ msgid ""
 "area. You should consider dismantling or destroying the building or building "
 "a palm planter’s hut or cassava fields nearby."
 msgstr ""
+"De Bladenpottjer dat warkt bi deese Bladenpottjeree hett keene Bladen in "
+"sienem Arbeidsgewest. Överlegg di, of du dat Huus plattrieten of ofbrannen "
+"willt, of bau eene Palmenplanteree of Maniok-Ackers in de Naberskupp."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/palm_planters_hut/init.lua:8
@@ -1093,18 +1100,16 @@ msgid "harvesting reed"
 msgstr "Reit to arnten"
 
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:70
-#, fuzzy
 msgid "No Fields or No Water Nearby"
-msgstr "Keene Meedjes of Water"
+msgstr "Keene Meedjes of keen Water in de Naberskupp"
 
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:72
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The reed cutter working at this reed yard has no cleared soil to plant new "
 "plants."
 msgstr ""
-"De Gaardner dat warkt bi deese Reitplanteree hett keen Meedland waar he wat "
+"De Reitbuur dat warkt bi deese Reitplanteree hett keen Meedland waar he wat "
 "anplanten kann."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1269,14 +1274,12 @@ msgid "making palm wine"
 msgstr "Palmwien to maken"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:56
-#, fuzzy
 msgid "No Palm Trees"
-msgstr "Keene Bomen"
+msgstr "Keene Palmbomen"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:57
-#, fuzzy
 msgid "Out of Palm Trees"
-msgstr "Hebb keene Bomen mehr"
+msgstr "Hebb keene Palmbomen mehr"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:58
 msgctxt "sumatran_building"
@@ -1304,7 +1307,7 @@ msgstr "Regenwaldbomen to slagen"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:77
 msgid "No Palm Trees or No Trees at All"
-msgstr ""
+msgstr "Keene Palmbomen of överhoopt keene Bomen"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:78
 msgid "Out of Trees"
@@ -2562,13 +2565,10 @@ msgstr "Deese Maniokplanten sünd klaar tum arnten."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (harvested)
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:934
-#, fuzzy
 msgid ""
 "These cassava plants has been harvested. Your leaf gatherer can pick up some "
 "cassava leaves here."
 msgstr ""
-"Deese Maniokplanten sünd arnt worden. Dien Bladenpottjer kann hier wat "
-"Maniokbladen halen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:941
@@ -3095,14 +3095,11 @@ msgstr "Plant Maniok för Wuddels un Bladen."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Cassava Fields
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1422
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The farmer harvest one cassava root from every field. The remained leaves "
 "can be harvested by leaf gatherer."
 msgstr ""
-"De Buur kann vun elkeen Acker eene Maniok-Wuddel arnten. De överblieven "
-"Bladen könen vun eenem Bladenpottjer arnt worden."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1423
 msgctxt "sumatran_building"
@@ -3735,7 +3732,7 @@ msgstr "Steen"
 #: addons/sumatran_tribe.wad/tribes/wares/sumatran_spear/init.lua:8
 msgctxt "ware"
 msgid "Spear"
-msgstr ""
+msgstr "Pieke"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/tropicalwood/init.lua:8
@@ -3877,7 +3874,6 @@ msgstr "Urwald-Geist"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/leaf_gatherer/init.lua:8
-#, fuzzy
 msgctxt "sumatran_worker"
 msgid "Leaf Gatherer"
 msgstr "Bladenpottjer"
@@ -3965,14 +3961,3 @@ msgstr "Wienmaker"
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
 msgstr "Boomslager"
-
-#~ msgid "No Game or No Fish"
-#~ msgstr "Keene Deerten of keen Fiss"
-
-#~ msgctxt "sumatran_worker"
-#~ msgid "Produces clothing."
-#~ msgstr "Produzeert Kluften."
-
-#~ msgctxt "sumatran_worker"
-#~ msgid "Produces armor for training camp."
-#~ msgstr "Produzeert Wapenrocken för dat Övens-Lager."

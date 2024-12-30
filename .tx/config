@@ -1,14 +1,6 @@
 [main]
 host = https://www.transifex.com
 
-[o:widelands:p:widelands-addons:r:websitemaps]
-file_filter            = po/websitemaps/<lang>.po
-source_file            = po/websitemaps/websitemaps.pot
-source_lang            = en
-type                   = PO
-replace_edited_strings = false
-keep_translations      = false
-
 [o:widelands:p:widelands-addons:r:1v1-high-level-map-pool-wad]
 file_filter            = po/1v1_high_level_map_pool.wad/<lang>.po
 source_file            = po/1v1_high_level_map_pool.wad/1v1_high_level_map_pool.wad.pot
@@ -451,6 +443,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:larger-fonts-1-2-wad]
+file_filter            = po/larger_fonts_1_2.wad/<lang>.po
+source_file            = po/larger_fonts_1_2.wad/larger_fonts_1_2.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:larger-fonts-1-2devel-wad]
 file_filter            = po/larger_fonts_1_2devel.wad/<lang>.po
 source_file            = po/larger_fonts_1_2devel.wad/larger_fonts_1_2devel.wad.pot
@@ -634,6 +634,14 @@ file_filter            = po/ui-inspector.wad/<lang>.po
 source_file            = po/ui-inspector.wad/ui-inspector.wad.pot
 type                   = PO
 minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:websitemaps]
+file_filter            = po/websitemaps/<lang>.po
+source_file            = po/websitemaps/websitemaps.pot
+source_lang            = en
+type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
