@@ -26,7 +26,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
@@ -102,7 +101,7 @@ public class Buildcats {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void buildCatalogues() throws Exception {
-		File uploaderCommentsFile = Files.createTempFile(null, ".lua").toFile();
+		File uploaderCommentsFile = new File("/tmp/websitemaps_uploader_comments.lua");
 		PrintWriter write = new PrintWriter(new FileWriter(uploaderCommentsFile));
 		ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
 		                          "select uploader_comment from wlmaps_map where "
