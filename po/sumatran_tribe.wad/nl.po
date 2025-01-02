@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Alex Rijckaert, 2024
+# Alex Rijckaert, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-30 03:09+0100\n"
+"POT-Creation-Date: 2025-01-02 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
-"Last-Translator: Alex Rijckaert, 2024\n"
+"Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -35,6 +35,11 @@ msgid ""
 "nearby. Fortified Village for a stronger opponent. More info in help and "
 "tips."
 msgstr ""
+"Heeft sumatran_world.wad nodig. Dit is een testversie van een stam genaamd "
+"Sumatranen. Het gebruikt gedeeltelijk afbeeldingen van andere stammen, "
+"totdat er nieuwe afbeeldingen beschikbaar zijn. AI houdt van zomer- en "
+"woestijngebied, veel ruimte en water in de buurt. Versterkt dorp voor een "
+"sterkere tegenstander. Meer informatie in help en tips."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/sumatran_tribe.wad/immovables/cassavaplants/harvested/init.lua:8
@@ -577,7 +582,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:8
 msgctxt "amazons_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr ""
+msgstr "Hut van de krokodillenjager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:40
@@ -599,7 +604,7 @@ msgstr "jagen"
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:54
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:60
 msgid "No Crocodiles"
-msgstr ""
+msgstr "Geen Krokodillen"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:50
@@ -608,7 +613,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:56
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:62
 msgid "Out of Game"
-msgstr ""
+msgstr "Zonder Wild"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:52
@@ -617,6 +622,8 @@ msgid ""
 "The hunter-gatherer working out of this hut can’t find any crocodiles in her "
 "work area."
 msgstr ""
+"De jager-verzamelaar die vanuit deze hut werkt, vindt geen krokodillen in "
+"haar werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/amazons_thermal_springs/init.lua:8
@@ -655,7 +662,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:8
 msgctxt "atlanteans_building"
 msgid "Crocodile Hunter’s House"
-msgstr ""
+msgstr "Het Huis van de Krokodillenjager"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:55
@@ -664,12 +671,14 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"De jager die vanuit dit huis werkt, vindt geen krokodillen in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:8
 msgctxt "barbarians_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr ""
+msgstr "Hut van de krokodillenjager"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:68
@@ -678,12 +687,14 @@ msgid ""
 "The hunter working out of this hut can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"De jager die vanuit deze hut werkt, vindt geen krokodillen in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:8
 msgctxt "empire_building"
 msgid "Crocodile Hunter’s House"
-msgstr ""
+msgstr "Het Huis van de Krokodillenjager"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:58
@@ -692,12 +703,14 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"De jager die vanuit dit huis werkt, vindt geen krokodillen in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:8
 msgctxt "frisians_building"
 msgid "Crocodile Hunter’s House"
-msgstr ""
+msgstr "Het Huis van de Krokodillenjager"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:64
@@ -706,6 +719,8 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"De jager die vanuit dit huis werkt, vindt geen krokodillen in zijn "
+"werkgebied."
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/sumatran_tribe.wad/postload.lua:40
@@ -724,10 +739,13 @@ msgstr "bomen kappen"
 #: addons/sumatran_tribe.wad/postload.lua:157
 msgid "Hunters working at this house can hunt crocodiles for meat."
 msgstr ""
+"Jagers die in dit huis werken, kunnen op krokodillen jagen voor hun vlees."
 
 #: addons/sumatran_tribe.wad/postload.lua:161
 msgid "Hunter-gatherer working at this house can hunt crocodiles for meat."
 msgstr ""
+"Jager-verzamelaars die in dit huis werken, kunnen op krokodillen jagen voor "
+"hun vlees."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
@@ -937,7 +955,7 @@ msgstr "vissen"
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:72
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:92
 msgid "No Game"
-msgstr ""
+msgstr "Geen Wild"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:74
@@ -952,6 +970,8 @@ msgid ""
 "The hunter working at this hunter’s house can’t find any game in his work "
 "area."
 msgstr ""
+"De jager die bij dit jagershuis werkt, kan geen wild vinden in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:8
@@ -966,6 +986,8 @@ msgid ""
 "The hunter working at this hunter’s tent can’t find any game in his work "
 "area."
 msgstr ""
+"De jager die bij deze jagerstent werkt, kan geen wild vinden in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:8
@@ -975,16 +997,16 @@ msgstr "Oerwoud Moeras"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:65
 msgid "No Space"
-msgstr ""
+msgstr "Geen Ruimte"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:66
 msgid "Animals do not leave this march"
-msgstr ""
+msgstr "Dieren verlaten dit moeras niet"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:67
 msgctxt "sumatran_building"
 msgid "There is not enough space around this march for animals to leave."
-msgstr ""
+msgstr "Er is niet genoeg ruimte rond deze tocht voor dieren om weg te gaan."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/jungle_preservers_hut/init.lua:8
@@ -1018,7 +1040,7 @@ msgstr "overtollige hoeveelheden weggooien"
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:8
 msgctxt "sumatran_building"
 msgid "Leaf Gatherer’s Hut"
-msgstr ""
+msgstr "Bladverzamelaars Hut"
 
 #. TRANSLATORS: Completed/Skipped/Did not start gathering leaves because ...
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:41
@@ -1037,11 +1059,11 @@ msgstr "cassavebladeren verzamelen"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:68
 msgid "No Leaves"
-msgstr ""
+msgstr "Geen Bladeren"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:69
 msgid "Out of Leaves"
-msgstr ""
+msgstr "Zonder Bladeren"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:70
 msgctxt "sumatran_building"
@@ -1050,6 +1072,9 @@ msgid ""
 "area. You should consider dismantling or destroying the building or building "
 "a palm planter’s hut or cassava fields nearby."
 msgstr ""
+"De bladverzamelaar die in deze hut werkt, kan geen bladeren vinden in haar "
+"werkgebied. Je zou moeten overwegen om het gebouw te ontmantelen of te "
+"vernietigen of om een palmplantershut of cassavevelden in de buurt te bouwen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/palm_planters_hut/init.lua:8
@@ -1075,7 +1100,7 @@ msgstr "riet oogsten"
 
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:70
 msgid "No Fields or No Water Nearby"
-msgstr ""
+msgstr "Geen Velden of Water in de Buurt"
 
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:72
 msgctxt "sumatran_building"
@@ -1083,6 +1108,8 @@ msgid ""
 "The reed cutter working at this reed yard has no cleared soil to plant new "
 "plants."
 msgstr ""
+"De rietsnijder die op dit rietveld werkt, heeft geen vrijgemaakte grond om "
+"nieuwe planten te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:8
@@ -1248,11 +1275,11 @@ msgstr "palmwijn maken"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:56
 msgid "No Palm Trees"
-msgstr ""
+msgstr "Geen Palmbomen"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:57
 msgid "Out of Palm Trees"
-msgstr ""
+msgstr "Zonder Palmbomen"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:58
 msgctxt "sumatran_building"
@@ -1261,6 +1288,9 @@ msgid ""
 "area. You should consider dismantling or destroying the building or building "
 "a palm planter’s hut nearby."
 msgstr ""
+"De wijnmaker die in dit huis werkt, kan geen palmbomen vinden in haar "
+"werkgebied. Je zou moeten overwegen om het gebouw te ontmantelen of te "
+"vernietigen of om een palmenhut in de buurt te bouwen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:8
@@ -1280,7 +1310,7 @@ msgstr "tropische bomen kappen"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:77
 msgid "No Palm Trees or No Trees at All"
-msgstr ""
+msgstr "Geen Palmbomen of Helemaal Geen Bomen"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:78
 msgid "Out of Trees"
@@ -1293,6 +1323,10 @@ msgid ""
 "area. You should consider dismantling or destroying the building or building "
 "a palm planter’s hut or a jungle preserver’s hut nearby."
 msgstr ""
+"De houthakker die aan dit huis werkt kan geen palmbomen vinden in zijn "
+"werkgebied. Je zou moeten overwegen om het gebouw te ontmantelen of te "
+"vernietigen of om een palmplantershut of een hut voor junglebehoud in de "
+"buurt te bouwen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:8
@@ -1445,6 +1479,11 @@ msgid ""
 "real struggle. A map with good summer or desert terrain and a lot of space "
 "recommended."
 msgstr ""
+"Begin het spel met alleen een pakhuis en het absolute minimum om een "
+"economie op te starten. Waarschuwing: de AI en in de meeste gevallen ook "
+"mensen kunnen hier niet succesvol mee beginnen. Waag het niet als je niet "
+"voorbereid bent op een echte strijd. Een kaart met goed zomer- of "
+"woestijnterrein en veel ruimte wordt aanbevolen."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 msgid "Be careful"
@@ -1814,6 +1853,8 @@ msgid ""
 "Leaf gatherers are important part of your economy, they need cassava fields, "
 "plantations and palm planters nearby."
 msgstr ""
+"Bladverzamelaars zijn een belangrijk onderdeel van je economie, ze hebben "
+"cassavevelden, plantages en palmplanters in de buurt nodig."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/tips.lua:20
 msgid ""
@@ -1916,6 +1957,10 @@ msgid ""
 "palm trees. The trees have to be cut down by woodcutters first, then can the "
 "gatherers collect the leaves from the ground."
 msgstr ""
+"Bladverzamelaars hebben palmplantershutten in de buurt nodig om voor de "
+"aanvoer van palmbomen te zorgen. De bomen moeten eerst omgehakt worden door "
+"houthakkers, daarna kunnen de bladverzamelaars de bladeren van de grond "
+"verzamelen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Reed, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:131
@@ -2023,6 +2068,8 @@ msgid ""
 "Make sure that you leaf gatherers collect all leaves from the harvested "
 "cassava fields. Otherwise you will have to substitute them with eggs."
 msgstr ""
+"Zorg ervoor dat jullie bladverzamelaars alle bladeren van de geoogste "
+"cassavevelden verzamelen. Anders zul je ze moeten vervangen door eieren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Starch, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:221
@@ -2294,6 +2341,8 @@ msgid ""
 "The machete is a tool for leaf gatherers, reedcutters and together with "
 "buckets also for wine makers."
 msgstr ""
+"De machete is een gereedschap voor bladerverzamelaars, rietsnijders en samen "
+"met emmers ook voor wijnmakers."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Kitchen Tools, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:472
@@ -2592,7 +2641,7 @@ msgstr "Weeft stof."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:860
 msgctxt "sumatran_worker"
 msgid "Dressmaker is an experienced weaver and produces clothing."
-msgstr ""
+msgstr "De kleermaker is een ervaren wever en maakt kleding."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Coppersmith
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:867
@@ -2607,6 +2656,7 @@ msgid ""
 "Armorsmith is an experienced coppersmith and produces armor for training "
 "camps."
 msgstr ""
+"De Wapensmid is een ervaren kopersmid en maakt pantsers voor trainingskampen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
 #. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
@@ -2621,6 +2671,8 @@ msgid ""
 "Palm leaves can be picked up by a leaf gatherer and used as building "
 "material and for weaving cloth."
 msgstr ""
+"Palmbladeren kunnen worden opgeraapt door een bladverzamelaar en worden "
+"gebruikt als bouwmateriaal en voor het weven van doek."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (tiny)
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:906
@@ -2648,6 +2700,8 @@ msgid ""
 "These cassava plants has been harvested. Your leaf gatherer can pick up some "
 "cassava leaves here."
 msgstr ""
+"Deze cassaveplanten zijn geoogst. Je bladverzamelaar kan hier wat "
+"cassavebladeren rapen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:941
@@ -2927,6 +2981,9 @@ msgid ""
 "You need palm trees for logs, palm wine production and palm leaves, which "
 "are collected by leaf gather when a palm tree is cut down."
 msgstr ""
+"Je hebt palmbomen nodig voor boomstammen, de productie van palmwijn en "
+"palmbladeren, die worden verzameld door bladeren te verzamelen wanneer een "
+"palmboom wordt omgehakt."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Preserver’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1238
@@ -3222,6 +3279,8 @@ msgid ""
 "The farmer harvest one cassava root from every field. The remained leaves "
 "can be harvested by leaf gatherer."
 msgstr ""
+"De boer oogst een cassavewortel van elk veld. De overgebleven bladeren "
+"kunnen worden geoogst door bladverzamelaars."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1423
 msgctxt "sumatran_building"
@@ -3240,6 +3299,9 @@ msgid ""
 "Unfortunately, the amount of leaves left remains unchanged and leaf gatherer "
 "can pick up one bundle of leaves from every harvested field."
 msgstr ""
+"Dankzij besproeiing oogst de boer twee wortels van elk veld. Helaas blijft "
+"de hoeveelheid bladeren onveranderd en kan de bladverzamelaar één bundel "
+"bladeren van elk geoogst veld plukken."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1433
 msgctxt "sumatran_building"
@@ -3298,6 +3360,9 @@ msgid ""
 "around the marsh. Roads can block the way for animals to leave. Out of 4 "
 "animals leaving the marsh, there is one crocodile."
 msgstr ""
+"Als dieren een moeras niet verlaten, heb je waarschijnlijk te veel wegen "
+"rond het moeras aangelegd. Wegen kunnen de weg blokkeren voor dieren om te "
+"vertrekken. Van de 4 dieren die het moeras verlaten, is er één krokodil."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1461
 msgctxt "sumatran_building"
@@ -3889,7 +3954,7 @@ msgstr "Steen"
 #: addons/sumatran_tribe.wad/tribes/wares/sumatran_spear/init.lua:8
 msgctxt "ware"
 msgid "Spear"
-msgstr ""
+msgstr "Speer"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/tropicalwood/init.lua:8
@@ -4033,7 +4098,7 @@ msgstr "Jungle Spook"
 #: addons/sumatran_tribe.wad/tribes/workers/leaf_gatherer/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Leaf Gatherer"
-msgstr ""
+msgstr "Bladverzamelaar"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/miner/init.lua:8

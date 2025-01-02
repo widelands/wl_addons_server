@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Ondřej Itřech, 2024
+# Ondřej Itřech, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-30 03:09+0100\n"
+"POT-Creation-Date: 2025-01-02 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
-"Last-Translator: Ondřej Itřech, 2024\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/addon:2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/init.lua:11
 msgid "Sumatrans"
-msgstr ""
+msgstr "Sumatraner"
 
 #: addons/sumatran_tribe.wad/addon:3
 msgid ""
@@ -752,28 +752,28 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:8
 msgctxt "sumatran_building"
 msgid "Cassava Fields"
-msgstr ""
+msgstr "Maniokfelder"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cassava because ...
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:68
 #: addons/sumatran_tribe.wad/productionsites/cassava_plantation/init.lua:48
 msgid "planting cassava"
-msgstr ""
+msgstr "Das Pflanzen von Maniok"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cassava because ...
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:76
 #: addons/sumatran_tribe.wad/productionsites/cassava_plantation/init.lua:59
 msgid "harvesting cassava"
-msgstr ""
+msgstr "Das Ernten von Maniok"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:84
 msgid "No Fields"
-msgstr ""
+msgstr "Keine Felder"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:85
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:71
 msgid "Out of Fields"
-msgstr ""
+msgstr "Keine Felder"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:86
 msgctxt "sumatran_building"
@@ -786,7 +786,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/cassava_kitchen/init.lua:8
 msgctxt "sumatran_building"
 msgid "Cassava Kitchen"
-msgstr ""
+msgstr "Maniokküche"
 
 #. TRANSLATORS: Completed/Skipped/Did not start cooking starch because ...
 #: addons/sumatran_tribe.wad/productionsites/cassava_kitchen/init.lua:65
@@ -797,15 +797,15 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/cassava_plantation/init.lua:8
 msgctxt "sumatran_building"
 msgid "Cassava Plantation"
-msgstr ""
+msgstr "Maniokplantage"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_plantation/init.lua:71
 msgid "No Fields or Water"
-msgstr ""
+msgstr "Keine Felder oder kein Wasser"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_plantation/init.lua:72
 msgid "Out of Fields or Water"
-msgstr ""
+msgstr "Keine Felder oder kein Wasser"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_plantation/init.lua:73
 msgctxt "sumatran_building"
@@ -818,18 +818,18 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/charcoal_kiln/init.lua:8
 msgctxt "sumatran_building"
 msgid "Charcoal Kiln"
-msgstr ""
+msgstr "Köhlerei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/sumatran_tribe.wad/productionsites/charcoal_kiln/init.lua:61
 msgid "producing coal"
-msgstr ""
+msgstr "Das Brennen von Kohle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/chicken_farm/init.lua:8
 msgctxt "sumatran_building"
 msgid "Chicken Farm"
-msgstr ""
+msgstr "Geflügelfarm"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding chickens because ...
 #: addons/sumatran_tribe.wad/productionsites/chicken_farm/init.lua:57
@@ -853,7 +853,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/coppersmiths_house/init.lua:8
 msgctxt "sumatran_building"
 msgid "Coppersmith’s House"
-msgstr ""
+msgstr "Kupferschmiedhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a copper sheet because ...
 #: addons/sumatran_tribe.wad/productionsites/coppersmiths_house/init.lua:76
@@ -881,23 +881,23 @@ msgstr "Hochofen"
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/sumatran_tribe.wad/productionsites/furnace/init.lua:89
 msgid "smelting iron"
-msgstr ""
+msgstr "Das Schmelzen von Eisenerz"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting copper because ...
 #: addons/sumatran_tribe.wad/productionsites/furnace/init.lua:103
 msgid "smelting copper"
-msgstr ""
+msgstr "Das Schmelzen von Kupfererz"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/sumatran_tribe.wad/productionsites/furnace/init.lua:117
 msgid "smelting gold"
-msgstr ""
+msgstr "Das Schmelzen von Golderz"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:8
 msgctxt "sumatran_building"
 msgid "Hunter’s House"
-msgstr ""
+msgstr "Jagdhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:55
@@ -933,7 +933,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:8
 msgctxt "sumatran_building"
 msgid "Hunter’s Tent"
-msgstr ""
+msgstr "Jägerzelt"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:96
@@ -947,11 +947,11 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:8
 msgctxt "sumatran_building"
 msgid "Jungle Marsh"
-msgstr ""
+msgstr "Tropischer Sumpf"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:65
 msgid "No Space"
-msgstr ""
+msgstr "Kein Platz"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:66
 msgid "Animals do not leave this march"
@@ -972,7 +972,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/jungle_preservers_hut/init.lua:43
 #: addons/sumatran_tribe.wad/productionsites/palm_planters_hut/init.lua:41
 msgid "planting trees"
-msgstr ""
+msgstr "Das Pflanzen von Bäumen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:8
@@ -983,7 +983,7 @@ msgstr "Küche"
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:67
 msgid "preparing a meal"
-msgstr ""
+msgstr "Das Zubereiten einer Mahlzeit"
 
 #. TRANSLATORS: Completed/Skipped/Did not start throwing out overflows because ...
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:86
@@ -1013,11 +1013,11 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:68
 msgid "No Leaves"
-msgstr ""
+msgstr "Keine Blätter"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:69
 msgid "Out of Leaves"
-msgstr ""
+msgstr "Keine Blätter"
 
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:70
 msgctxt "sumatran_building"
@@ -1064,13 +1064,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:8
 msgctxt "sumatran_building"
 msgid "Scout’s Dwelling"
-msgstr ""
+msgstr " Kundschafterbehausung"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:48
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:61
 msgid "scouting"
-msgstr ""
+msgstr "Das Erkunden"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/sewing_workshop/init.lua:8
@@ -1103,26 +1103,26 @@ msgstr "Werft"
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:85
 msgid "constructing a ship"
-msgstr ""
+msgstr "Das Bauen eines Schiffes"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:8
 msgctxt "sumatran_building"
 msgid "Stonecutter’s Hut"
-msgstr ""
+msgstr "Steinmetzhütte"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying stone because ...
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:40
 msgid "quarrying stone"
-msgstr ""
+msgstr "Das Abbauen von Stein"
 
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:53
 msgid "No Rocks"
-msgstr ""
+msgstr "Keine Felsen"
 
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:54
 msgid "Out of Rocks"
-msgstr ""
+msgstr "Keine Felsen"
 
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:55
 msgctxt "sumatran_building"
@@ -1134,7 +1134,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/thermal_springs/init.lua:8
 msgctxt "sumatran_building"
 msgid "Thermal Springs"
-msgstr ""
+msgstr "Thermalquellen"
 
 #: addons/sumatran_tribe.wad/productionsites/thermal_springs/init.lua:84
 msgctxt "sumatran_building"
@@ -1179,15 +1179,15 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:8
 msgctxt "sumatran_building"
 msgid "Water Carrier’s Hut"
-msgstr ""
+msgstr "Wasserträgerhütte"
 
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:52
 msgid "No Water"
-msgstr ""
+msgstr "Kein Wasser"
 
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:53
 msgid "Out of Water"
-msgstr ""
+msgstr "Kein Wasser"
 
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:54
 msgctxt "sumatran_building"
@@ -1210,7 +1210,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:8
 msgctxt "sumatran_building"
 msgid "Winery"
-msgstr ""
+msgstr "Weinerei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making palm wine beer because ...
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:47
@@ -1219,11 +1219,11 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:56
 msgid "No Palm Trees"
-msgstr ""
+msgstr "Keine Palmen"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:57
 msgid "Out of Palm Trees"
-msgstr ""
+msgstr "Keine Palmen"
 
 #: addons/sumatran_tribe.wad/productionsites/winery/init.lua:58
 msgctxt "sumatran_building"
@@ -1247,15 +1247,15 @@ msgstr "Das Fällen von Palmen"
 #. TRANSLATORS: Completed/Skipped/Did not start felling tropical trees because ...
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:67
 msgid "felling tropical trees"
-msgstr ""
+msgstr "Das Fällen von tropischen Bäumen"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:77
 msgid "No Palm Trees or No Trees at All"
-msgstr ""
+msgstr "Keine Palmen oder überhaupt keine Bäume"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:78
 msgid "Out of Trees"
-msgstr ""
+msgstr "Keine Bäume"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:79
 msgctxt "sumatran_building"
@@ -1269,7 +1269,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:8
 msgctxt "sumatran_building"
 msgid "Basic Workshop"
-msgstr ""
+msgstr "Einfache Werkstatt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sanding wood because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:82
@@ -1284,13 +1284,13 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a whetstone because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:111
 msgid "making a whetstone"
-msgstr ""
+msgstr "Das Herstellen eines Wetzsteins"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:8
 msgctxt "sumatran_building"
 msgid "Tools Workshop"
-msgstr ""
+msgstr "Werkstatt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:94
@@ -1305,48 +1305,48 @@ msgstr "Das Herstellen einer Holzfälleraxt"
 #. TRANSLATORS: Completed/Skipped/Did not start making buckets because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:118
 msgid "making buckets"
-msgstr ""
+msgstr "Das Herstellen von Eimern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making hammer because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:130
 msgid "making hammer"
-msgstr ""
+msgstr "Das Herstellen eines Hammers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:142
 msgid "making kitchen tools"
-msgstr ""
+msgstr "Das Herstellen von Küchengeräten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pick because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:154
 msgid "making pick"
-msgstr ""
+msgstr "Das Herstellen einer Spitzhacke"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making machete because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:166
 msgid "making machete"
-msgstr ""
+msgstr "Das Herstellen eines Buschmessers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making shovel because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:178
 msgid "making shovel"
-msgstr ""
+msgstr "Das Herstellen einer Schaufel"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/workshop_weapons/init.lua:8
 msgctxt "sumatran_building"
 msgid "Weapons Workshop"
-msgstr ""
+msgstr "Waffenwerkstatt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_weapons/init.lua:71
 msgid "making spear"
-msgstr ""
+msgstr "Das Herstellen eines Speers"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/basic_outpost.lua:11
 msgid "Basic Outpost"
-msgstr ""
+msgstr "Einfacher Außenposten"
 
 #. TRANSLATORS: This is the tooltip for the "Basics" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/basic_outpost.lua:13
@@ -1359,7 +1359,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "Entdeckung"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:13
@@ -1385,7 +1385,7 @@ msgstr "Hauptquartier"
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/headquarters.lua:13
 msgid "Start the game with your headquarters only"
-msgstr ""
+msgstr "Beginne das Spiel nur  mit deinem Hauptquartier."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua:11
@@ -1414,13 +1414,16 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 msgid "Be careful"
-msgstr ""
+msgstr "Sei vorsichtig"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 msgid ""
 "You have only one iron for each tool you will need to start your economy. "
 "Make sure no unneeded tool is created."
 msgstr ""
+"Du hast nur ein Eisen für jedes Werkzeug, das du für den Start deiner "
+"Wirtschaft brauchst. Stelle sicher, dass kein unnötiges Werkzeug hergestellt "
+"wird."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
@@ -1444,6 +1447,7 @@ msgstr "Handelsposten"
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""
+"Wenn diesem Spieler wichtige Waren ausgehen, werden sie umsonst aufgefüllt."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/village.lua:11
@@ -1453,7 +1457,7 @@ msgstr "Dorf"
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/village.lua:13
 msgid "Start the game with a peaceful village"
-msgstr ""
+msgstr "Beginne das Spiel mit einem friedlichen Dorf."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:8
@@ -3528,13 +3532,13 @@ msgstr "Kupferrüstung"
 #: addons/sumatran_tribe.wad/tribes/wares/armor_golden/init.lua:8
 msgctxt "ware"
 msgid "Golden Armor"
-msgstr ""
+msgstr "Goldrüstung"
 
 #. TRANSLATORS: This is a ware name.
 #: addons/sumatran_tribe.wad/tribes/wares/cassavaleaves/init.lua:8
 msgctxt "ware"
 msgid "Cassava Leaves"
-msgstr ""
+msgstr "Maniokblätter"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/copper/init.lua:8
@@ -3552,7 +3556,7 @@ msgstr "Kupfererz"
 #: addons/sumatran_tribe.wad/tribes/wares/copper_sheet/init.lua:8
 msgctxt "ware"
 msgid "Copper Sheet"
-msgstr ""
+msgstr "Kupferplatte"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/crocodile_jacket/init.lua:8
@@ -3576,7 +3580,7 @@ msgstr "Krokodilleder"
 #: addons/sumatran_tribe.wad/tribes/wares/diamond_raw/init.lua:8
 msgctxt "ware"
 msgid "Raw Diamond"
-msgstr ""
+msgstr "Rohdiamant"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/eggs/init.lua:8
@@ -3588,13 +3592,13 @@ msgstr "Eier"
 #: addons/sumatran_tribe.wad/tribes/wares/food_waste/init.lua:8
 msgctxt "ware"
 msgid "Food Waste"
-msgstr ""
+msgstr "Speisereste"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/gold_sheet/init.lua:8
 msgctxt "ware"
 msgid "Gold Sheet"
-msgstr ""
+msgstr "Goldplatte"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/palm_wine/init.lua:8
@@ -3612,19 +3616,19 @@ msgstr "Palmenblätter"
 #: addons/sumatran_tribe.wad/tribes/wares/sandedwood/init.lua:8
 msgctxt "ware"
 msgid "Sanded Wood"
-msgstr ""
+msgstr "Geschliffenes Holz"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/shield_golden/init.lua:8
 msgctxt "ware"
 msgid "Golden Shield"
-msgstr ""
+msgstr "Goldener Schild"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/starch/init.lua:8
 msgctxt "ware"
 msgid "Starch"
-msgstr ""
+msgstr "Stärke"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/stone/init.lua:8
@@ -3636,7 +3640,7 @@ msgstr "Stein"
 #: addons/sumatran_tribe.wad/tribes/wares/sumatran_spear/init.lua:8
 msgctxt "ware"
 msgid "Spear"
-msgstr ""
+msgstr "Speer"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/tropicalwood/init.lua:8
@@ -3654,7 +3658,7 @@ msgstr "Kämpfer Kleidung"
 #: addons/sumatran_tribe.wad/tribes/wares/whetstone/init.lua:8
 msgctxt "ware"
 msgid "Whetstone"
-msgstr ""
+msgstr "Wetzstein"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/armorsmith/init.lua:8
@@ -3768,19 +3772,19 @@ msgstr "Jäger"
 #: addons/sumatran_tribe.wad/tribes/workers/hunter_chief/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Chief Hunter"
-msgstr ""
+msgstr "Hauptjäger"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/jungle_ghost/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Jungle Ghost"
-msgstr ""
+msgstr "Dschungelgeist"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/leaf_gatherer/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Leaf Gatherer"
-msgstr ""
+msgstr "Blättersammlerin"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/miner/init.lua:8
@@ -3804,7 +3808,7 @@ msgstr "Rekrut"
 #: addons/sumatran_tribe.wad/tribes/workers/reedcutter/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Reedcutter"
-msgstr ""
+msgstr "Reetschneider"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/scout/init.lua:8
