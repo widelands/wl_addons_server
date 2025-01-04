@@ -20,8 +20,10 @@
 package wl.server;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.InputStreamReader;
 import java.net.Socket;
+import java.nio.file.Files;
 import java.util.HashMap;
 import wl.utils.UpdateList;
 import wl.utils.Utils;
@@ -63,13 +65,19 @@ public class ThreadActivityAndGitHubSyncManager {
 			if (str != null) throw new Exception("Detected merge conflicts: " + str);
 		}
 		UpdateList.rebuildLists();
+
+		File commitNotes = Files.createTempFile(null, null).toFile();
 		Utils.bash("bash", "-c", "git add .");
-		Utils.bash("bash", "-c", "git commit -m 'Automated server sync'");
+		Utils.bash(
+		    "bash", "-c", "./generate_commit_notes.sh > '" + commitNotes.getAbsolutePath() + "'");
+		Utils.bash("bash", "-c", "git commit -F '" + commitNotes.getAbsolutePath() + "'");
 		Utils.bash("bash", "-c",
 		           "git push https://" + Utils.config("githubusername") + ":" +
 		               Utils.config("githubtoken") +
 		               "@github.com/widelands/wl_addons_server.git master");
+
 		Utils.bash("bash", "-c", "git stash clear");
+		commitNotes.delete();
 	}
 
 	private static class Data {
