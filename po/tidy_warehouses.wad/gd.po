@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-04 03:10+0100\n"
+"PO-Revision-Date: 2025-01-03 15:43+0000\n"
+"Language-Team: Gaelic, Scottish (https://app.transifex.com/widelands/"
+"teams/35159/gd/)\n"
+"Language: gd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/tidy_warehouses.wad/addon:2 addons/tidy_warehouses.wad/amazons.lua:13
+#: addons/tidy_warehouses.wad/atlanteans.lua:13
+#: addons/tidy_warehouses.wad/barbarians.lua:13
+#: addons/tidy_warehouses.wad/empire.lua:13
+#: addons/tidy_warehouses.wad/frisians.lua:13
+msgid "Tidy Warehouses"
+msgstr ""
+
+#: addons/tidy_warehouses.wad/addon:3
+msgid ""
+"Start with a basic Headquarter. From time to time your workers do "
+"inventories. If there is more than 500 items in any of your warehouses, "
+"workers throw away one quarter of stock stored in such a warehouse and let "
+"you know, that they have cleaned your warehouse."
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
+#: addons/tidy_warehouses.wad/amazons.lua:15
+#: addons/tidy_warehouses.wad/atlanteans.lua:15
+#: addons/tidy_warehouses.wad/barbarians.lua:15
+#: addons/tidy_warehouses.wad/empire.lua:15
+#: addons/tidy_warehouses.wad/frisians.lua:15
+msgid ""
+"Start with a basic Headquarter. From time to time your workers do "
+"inventories. If there is more than 500 items in any of your warehouses, "
+"workers throw away one quarter of stock stored in such a warehouse."
+msgstr ""
+
+#: addons/tidy_warehouses.wad/amazons.lua:96
+#: addons/tidy_warehouses.wad/atlanteans.lua:99
+#: addons/tidy_warehouses.wad/barbarians.lua:90
+#: addons/tidy_warehouses.wad/empire.lua:96
+#: addons/tidy_warehouses.wad/frisians.lua:111
+msgid "Warehouse cleaned!"
+msgstr ""
+
+#: addons/tidy_warehouses.wad/amazons.lua:170
+#: addons/tidy_warehouses.wad/atlanteans.lua:176
+#: addons/tidy_warehouses.wad/barbarians.lua:163
+#: addons/tidy_warehouses.wad/empire.lua:173
+#: addons/tidy_warehouses.wad/frisians.lua:194
+msgid "%1$s has been cleaned!"
+msgstr ""
+
+#: addons/tidy_warehouses.wad/amazons.lua:171
+#: addons/tidy_warehouses.wad/atlanteans.lua:177
+#: addons/tidy_warehouses.wad/barbarians.lua:164
+#: addons/tidy_warehouses.wad/empire.lua:174
+#: addons/tidy_warehouses.wad/frisians.lua:195
+msgid "%1$d items have been removed, %2$d items left."
+msgstr ""

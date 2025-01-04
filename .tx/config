@@ -604,6 +604,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:tidy-warehouses-wad]
+file_filter            = po/tidy_warehouses.wad/<lang>.po
+source_file            = po/tidy_warehouses.wad/tidy_warehouses.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:time-limitted-peaceful-wad]
 file_filter            = po/time-limitted-peaceful.wad/<lang>.po
 source_file            = po/time-limitted-peaceful.wad/time-limitted-peaceful.wad.pot
