@@ -240,7 +240,20 @@ wl.Descriptions():new_tribe {
             },
         },
         {
-            -- Building Materials 3 (Stone and Clay)
+            -- Building Materials 3 (Stone, Clay and Marble)
+            {
+                name = "coal",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
+                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
+                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
+                    }
+                }
+            },
             {
                 name = "granite",
                 default_target_quantity = 32,
@@ -294,22 +307,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "coal",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
-                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
-                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
-                    }
-                }
-            },
-        },
-        {
-            -- Building Materials 4 (Mining)
-            {
                 name = "marble",
                 default_target_quantity = 16,
                 preciousness = 1,
@@ -327,27 +324,9 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the Europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
                 }
             },
-            {
-                name = "quartz",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
-                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
-                }
-            },
-            {
-                name = "diamond",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
-                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
-                }
-            }
         },
         {
-            -- Metal Economy 
+            -- Metal Economy and Trading
             {
                 name = "ore",
                 default_target_quantity = 32,
@@ -394,6 +373,24 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
                         pgettext("europeans_ware", "It is produced by the smelting works. Some valuable buildings need gold to be built.")
                     }
+                }
+            },
+            {
+                name = "quartz",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
+                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used for trading.")
+                }
+            },
+            {
+                name = "diamond",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
+                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading.")
                 }
             },
             {

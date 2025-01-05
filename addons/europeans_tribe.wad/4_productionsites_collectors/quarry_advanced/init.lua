@@ -73,12 +73,10 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_stone",
                 "call=mine_granite on failure fail",
                 "call=mine_granite on failure fail",
-                "call=mine_marble on failure fail", -- This will find marble 2 out of 8 times
-                "call=mine_quartz on failure fail", -- This will find quartz 1 out of 8 times
+                "call=mine_marble on failure fail", -- This will find marble 2 out of 6 times
                 "call=mine_granite on failure fail",
                 "call=mine_granite on failure fail",
-                "call=mine_marble on failure fail", -- This will find marble 2 out of 8 times
-                "call=mine_diamond on failure fail", -- This will find diamond 1 out of 8 times
+                "call=mine_marble on failure fail", -- This will find marble 2 out of 6 times
                 "sleep=duration:10s",
                 "return=skipped"
             }
@@ -110,21 +108,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "callworker=mine_marble"
             }
-        },
-        mine_quartz = {
-            -- TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
-            descname = pgettext("europeans_building", "mining quartz"),
-            actions = {
-                "callworker=mine_quartz"
-            }
-        },
-        mine_diamond = {
-            -- TRANSLATORS: Completed/Skipped/Did not start mining diamond because ...
-            descname = pgettext("europeans_building", "mining diamond"),
-            actions = {
-                "callworker=mine_diamond"
-            }
-        },
+        }
     },
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource

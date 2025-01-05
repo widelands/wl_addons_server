@@ -35,16 +35,12 @@ wl.Descriptions():new_warehouse_type {
             grout = 2,
             planks = 2,
             marble = 2,
-            marble_column = 1,
-            quartz = 1,
-            diamond = 1
+            marble_column = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 3,
-            marble = 3,
-            quartz = 1,
-            diamond = 1
+            marble = 3
         },
     },
     
@@ -53,16 +49,12 @@ wl.Descriptions():new_warehouse_type {
         grout = 2,
         planks = 2,
         marble = 2,
-        marble_column = 2,
-        quartz = 1,
-        diamond = 1
+        marble_column = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
         granite = 3,
-        marble = 4,
-        quartz = 1,
-        diamond = 1
+        marble = 4
     },
     
     aihints = {},

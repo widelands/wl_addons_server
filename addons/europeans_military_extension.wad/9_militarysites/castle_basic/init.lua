@@ -39,27 +39,23 @@ wl.Descriptions():new_militarysite_type {
             grout = 3,
             planks = 3,
             marble = 3,
-            marble_column = 3,
-            quartz = 1
+            marble_column = 3
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            marble = 6,
-            quartz = 1
+            marble = 6
         },
     },
     buildcost = {
         granite = 4,
         log = 6,
-        reed = 6,
-        quartz = 1
+        reed = 6
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 3,
-        reed = 2,
-        quartz = 1
+        reed = 2
     },
 
     aihints = {

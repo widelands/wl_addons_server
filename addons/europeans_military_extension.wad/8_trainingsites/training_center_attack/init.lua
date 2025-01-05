@@ -28,16 +28,12 @@ wl.Descriptions():new_trainingsite_type {
         planks = 4,
         marble = 4,
         marble_column = 2,
-        cloth = 2,
-        quartz = 1,
-        diamond = 1
+        cloth = 2
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 4,
-        marble = 5,
-        quartz = 1,
-        diamond = 1
+        marble = 5
     },
 
     aihints = {

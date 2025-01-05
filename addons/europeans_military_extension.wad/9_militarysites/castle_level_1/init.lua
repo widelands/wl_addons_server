@@ -40,14 +40,12 @@ wl.Descriptions():new_militarysite_type {
             grout = 3,
             planks = 3,
             marble = 3,
-            marble_column = 3,
-            diamond = 1
+            marble_column = 3
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            marble = 6,
-            diamond = 1
+            marble = 6
         },
     },
 

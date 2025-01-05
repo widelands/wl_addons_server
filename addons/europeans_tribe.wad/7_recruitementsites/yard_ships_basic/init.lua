@@ -32,30 +32,22 @@ wl.Descriptions():new_productionsite_type {
             grout = 2,
             planks = 2,
             marble = 2,
-            marble_column = 1,
-            quartz = 1,
-            diamond = 1
+            marble_column = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 3,
-            marble = 3,
-            quartz = 1,
-            diamond = 1
+            marble = 3
         }
     },
     buildcost = {
         granite = 3,
         log = 3,
-        planks = 3,
-        quartz = 1,
-        diamond = 1
+        planks = 3
     },
     return_on_dismantle = {
         scrap_wood = 5,
-        granite = 3,
-        quartz = 1,
-        diamond = 1
+        granite = 3
     },
 
     aihints = {

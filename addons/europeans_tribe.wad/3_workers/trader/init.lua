@@ -29,6 +29,8 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_recruit = 1,
+        quartz = 1,
+        diamond = 1,
         gold = 1
     },
 
@@ -51,60 +53,53 @@ wl.Descriptions():new_worker_type {
           find_pole = {
                 "findobject=attrib:tradepole radius:80",
           },
-          purchase_granite = {
+          purchase_granite_copper = {
                 "findobject=attrib:tradepole radius:80",
                 "createware=coin_copper",
                 "walk=object",
                 "createware=granite",
                 "return"
           },
-          purchase_marble = {
+          purchase_granite_quartz = {
+                "findobject=attrib:tradepole radius:80",
+                "createware=quartz",
+                "walk=object",
+                "createware=granite",
+                "return"
+          },
+          purchase_marble_copper = {
                 "findobject=attrib:tradepole radius:80",
                 "createware=coin_copper",
                 "walk=object",
                 "createware=marble",
                 "return"
           },
-          purchase_quartz = {
+          purchase_marble_quartz = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=coin_copper",
-                "walk=object",
                 "createware=quartz",
-                "return"
-          },
-          purchase_diamond = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=coin_copper",
                 "walk=object",
-                "createware=diamond",
+                "createware=marble",
                 "return"
           },
-          purchase_metal_alloy = {
+          purchase_metal_alloy_silver = {
                 "findobject=attrib:tradepole radius:80",
                 "createware=coin_silver",
                 "walk=object",
                 "createware=metal_alloy",
                 "return"
           },
-          purchase_gold = {
+          purchase_metal_alloy_gold = {
                 "findobject=attrib:tradepole radius:80",
                 "createware=coin_gold",
                 "walk=object",
-                "createware=gold",
+                "createware=metal_alloy",
                 "return"
           },
-          sale_fruit = {
+          purchase_metal_alloy_diamond = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=fruit",
+                "createware=diamond",
                 "walk=object",
-                "createware=coin_copper",
-                "return"
-          },
-          sale_grape = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=grape",
-                "walk=object",
-                "createware=coin_copper",
+                "createware=metal_alloy",
                 "return"
           },
     },

@@ -28,15 +28,11 @@ wl.Descriptions():new_productionsite_type {
         planks = 2,
         marble = 2,
         marble_column = 2,
-        cloth = 2,
-        quartz = 1,
-        diamond = 1
+        cloth = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 2,
-        quartz = 1,
-        diamond = 1
+        granite = 2
     },
     
     aihints = {
@@ -65,9 +61,11 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=trade_marble_copper",
                 "sleep=duration:10s",
-                "call=trade_quartz_copper",
+                "call=trade_metal_alloy_copper",
                 "sleep=duration:10s",
-                "call=trade_diamond_copper",
+                "call=trade_granite_copper",
+                "sleep=duration:10s",
+                "call=trade_marble_copper",
                 "sleep=duration:10s",
                 "call=trade_metal_alloy_copper"
             }
@@ -92,28 +90,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coin_copper:2",
                 "animate=working duration:3m",
                 "produce=marble:2",
-            }
-        },
-        trade_quartz_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs quartz",
-                "return=failed unless site has coin_copper:4",
-                "consume=coin_copper:4",
-                "animate=working duration:3m",
-                "produce=quartz",
-            }
-        },
-        trade_diamond_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs diamond",
-                "return=failed unless site has coin_copper:4",
-                "consume=coin_copper:4",
-                "animate=working duration:3m",
-                "produce=diamond",
             }
         },
         trade_metal_alloy_copper = {

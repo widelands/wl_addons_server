@@ -42,16 +42,12 @@ wl.Descriptions():new_trainingsite_type {
     buildcost = {
         granite = 4,
         log = 4,
-        reed = 4,
-        quartz = 1,
-        diamond = 1
+        reed = 4
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 3,
-        reed = 2,
-        quartz = 1,
-        diamond = 1
+        reed = 2
     },
     
     aihints = {

@@ -41,15 +41,11 @@ wl.Descriptions():new_productionsite_type {
         planks = 2,
         marble = 2,
         marble_column = 2,
-        cloth = 2,
-        quartz = 1,
-        diamond = 1
+        cloth = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 2,
-        quartz = 1,
-        diamond = 1
+        granite = 2
     },
     
     aihints = {

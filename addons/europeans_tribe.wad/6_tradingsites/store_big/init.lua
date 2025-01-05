@@ -34,16 +34,12 @@ wl.Descriptions():new_productionsite_type {
         planks = 4,
         marble = 4,
         marble_column = 2,
-        cloth = 2,
-        quartz = 1,
-        diamond = 1
+        cloth = 2
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 4,
-        marble = 5,
-        quartz = 1,
-        diamond = 1
+        marble = 5
     },
     
     aihints = {
@@ -72,15 +68,14 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=trade_granite_copper",
                 "call=trade_marble_copper",
-                "sleep=duration:10s",
-                "call=trade_quartz_copper",
-                "call=trade_quartz_silver",
-                "call=trade_quartz_gold",
-                "sleep=duration:10s",
-                "call=trade_diamond_copper",
-                "call=trade_diamond_silver",
-                "call=trade_diamond_gold",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
+                "call=trade_metal_alloy_copper",
+                "call=trade_metal_alloy_silver",
+                "call=trade_metal_alloy_gold",
+                "sleep=duration:20s",
+                "call=trade_granite_copper",
+                "call=trade_marble_copper",
+                "sleep=duration:20s",
                 "call=trade_metal_alloy_copper",
                 "call=trade_metal_alloy_silver",
                 "call=trade_metal_alloy_gold"
@@ -106,72 +101,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coin_copper:2",
                 "animate=working duration:4m",
                 "produce=marble:2",
-            }
-        },
-        trade_quartz_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs quartz",
-                "return=failed unless site has coin_copper:4",
-                "consume=coin_copper:4",
-                "animate=working duration:4m",
-                "produce=quartz",
-            }
-        },
-        trade_quartz_silver = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs quartz",
-                "return=failed unless site has coin_silver:2",
-                "consume=coin_silver:2",
-                "animate=working duration:4m",
-                "produce=quartz",
-            }
-        },
-        trade_quartz_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs quartz",
-                "return=failed unless site has coin_gold",
-                "consume=coin_gold",
-                "animate=working duration:4m",
-                "produce=quartz",
-            }
-        },
-        trade_diamond_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs diamond",
-                "return=failed unless site has coin_copper:4",
-                "consume=coin_copper:4",
-                "animate=working duration:4m",
-                "produce=diamond",
-            }
-        },
-        trade_diamond_silver = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs diamond",
-                "return=failed unless site has coin_silver:2",
-                "consume=coin_silver:2",
-                "animate=working duration:4m",
-                "produce=diamond",
-            }
-        },
-        trade_diamond_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs diamond",
-                "return=failed unless site has coin_gold",
-                "consume=coin_gold",
-                "animate=working duration:4m",
-                "produce=diamond",
             }
         },
         trade_metal_alloy_copper = {
