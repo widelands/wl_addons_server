@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Benedikt Straub <benedikt-straub@web.de>, 2024
+# Benedikt Straub <benedikt-straub@web.de>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-05 03:09+0100\n"
+"POT-Creation-Date: 2025-01-06 03:10+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
-"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
 "nds/)\n"
 "Language: nds\n"
@@ -916,13 +916,13 @@ msgstr "Jäger"
 #: addons/europeans_tribe.wad/3_workers/lumberjack_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Lumberjack"
-msgstr "Meister-Boomslager"
+msgstr "Meister-Boomhauer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/3_workers/lumberjack_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Lumberjack"
-msgstr "Boomslager"
+msgstr "Boomhauer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/3_workers/miner_advanced/init.lua:8
@@ -1448,7 +1448,7 @@ msgstr "Lütte Landumackeree"
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Fisher’s House"
-msgstr "Grote Fiskeree"
+msgstr "Grotes Fiskerhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:42
@@ -1471,13 +1471,13 @@ msgctxt "empire_building"
 msgid ""
 "The fisher working out of this fisher’s house can’t find any fish in his "
 "work area."
-msgstr "De Fisker dat warkt bi deese Fiskeree hett keene Fiske tum Fangen."
+msgstr "De Fisker dat warkt bi deesem Fiskerhuus hett keene Fiske tum Fangen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:8
 msgctxt "barbarians_building"
 msgid "Basic Fisher’s Hut"
-msgstr "Lütte Fiskeree"
+msgstr "Lütte Fiskerkaat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:70
@@ -1491,7 +1491,7 @@ msgid ""
 "area. Remember that you can enhance the building. An advanced fishbreeder "
 "can release more fish into the waters."
 msgstr ""
-"De Fisker, de bi deese Fisker-Huus warkt, hett keene Fiske tum Fangen. Du "
+"De Fisker, de bi deese Fiskerkaat warkt, hett keene Fiske tum Fangen. Du "
 "kannst dat Huus utbauen. Een goder Fisstüchter kann mehr neje Fisse tüchten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1552,7 +1552,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/4_productionsites_collectors/lumberjacks_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Lumberjack’s House"
-msgstr "Grote Boomslageree"
+msgstr "Grotes Boomhauerhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/lumberjacks_house_advanced/init.lua:57
@@ -1584,15 +1584,15 @@ msgid ""
 "his work area. You should consider dismantling or destroying the building or "
 "building a forester’s house."
 msgstr ""
-"De Boomslager dat warkt bi deese Boomslageree hett keene Bomen tum Osslaan. "
+"De Boomhauer dat warkt bi deesem Boomhauerhuus hett keene Bomen tum Osslaan. "
 "Överlegg di, of du dat Huus plattrieten of ofbrannen willt, of bau een "
-"Boomplanteree."
+"Försterhuus."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/4_productionsites_collectors/lumberjacks_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Lumberjack’s Hut"
-msgstr "Lütte Boomslageree"
+msgstr "Lütte Boomhauerkaat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/lumberjacks_house_basic/init.lua:82
@@ -1606,15 +1606,15 @@ msgid ""
 "work area. You should consider enhancing it to increase its working area or "
 "building a ranger’s hut."
 msgstr ""
-"De Boomslager dat warkt bi deese Boomslageree hett keene Bomen tum Ofslaan. "
+"De Boomhauer dat warkt bi deese Boomhauerkaat hett keene Bomen tum Ofslaan. "
 "Överlegg di, of du ’t utbauen willst, um dat Arbeidsgewest to vergrotern, of "
-"of du dat Huus plattrieten of ofbrannen willt, of bau eene Boomplanteree."
+"of du dat Huus plattrieten of ofbrannen willt, of bau eene Boomplanterkaat."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Quarry"
-msgstr "Grote Flintslageree"
+msgstr "Grotes Flintslagerhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:56
@@ -1808,14 +1808,14 @@ msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any stone in his work area."
 msgstr ""
-"De Flintslager, de bi deese Flintslageree warkt, hett keene Stenen tum "
+"De Flintslager, de bi deesem Flintslagerhuus warkt, hett keene Stenen tum "
 "Ofboen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Quarry"
-msgstr "Lütte Flintslageree"
+msgstr "Lüttes Flintslagerhuus"
 
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:140
 msgctxt "europeans_building"
@@ -1823,7 +1823,7 @@ msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work "
 "area. You should consider enhancing it to increase its working area."
 msgstr ""
-"De Flintslager, de bi deese Flintslageree warkt, hett keene Stenen tum "
+"De Flintslager, de bi deesem Flintslagerhuus warkt, hett keene Stenen tum "
 "Ofboen. Överlegg di, of du ’t utbauen willst, um dat Arbeidsgewest to "
 "vergrotern."
 
@@ -2762,7 +2762,7 @@ msgstr "Feldfrüchten-Markt"
 #: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Scout’s House"
-msgstr "Grote Bespejeree"
+msgstr "Grotes Bespejerhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:48
@@ -2774,7 +2774,7 @@ msgstr "to bespejen"
 #: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Scouts House"
-msgstr "Lütte Bespejeree"
+msgstr "Lüttes Bespejerhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:79
@@ -3823,7 +3823,7 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
-"Europäiske Boomslagers kappen de Bomen of; Boomplanters kümmern sük um de "
+"Europäiske Boomhauers kappen de Bomen of; Boomplanters kümmern sük um de "
 "Versörgung mit Bomen. Boomstammen worden ok in de Holtköhl-Branneree, de "
 "Warktüügsmee un de Saagmöhlen bruukt."
 
@@ -4094,13 +4094,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:384
 msgctxt "europeans_ware"
 msgid "These transparent quartz gems are used for trading."
-msgstr ""
+msgstr "Deese schienenden Blinkerflint-Kristallen worden tum Hanneln bruukt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:393
 msgctxt "europeans_ware"
 msgid "These wonderful diamonds are used for trading."
-msgstr ""
+msgstr "Deese wunnermojen Edelstenen worden tum Hanneln bruukt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:403
@@ -4841,13 +4841,13 @@ msgstr "Kappt Bomen in de Naberskupp un maakt daarut Boomstammen."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1730
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
-msgstr "De Boomslageree bruukt Bomen tum Umkappen in de Arbeidsgewest."
+msgstr "De Boomhauerkaat bruukt Bomen tum Umkappen in de Arbeidsgewest."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Lumberjack's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1739
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
-msgstr "De Boomslageree bruukt Bomen tum Umkappen in de Arbeidsgewest."
+msgstr "De Boomhauerhuus bruukt Bomen tum Umkappen in de Arbeidsgewest."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
@@ -4863,7 +4863,7 @@ msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
 msgstr ""
-"De Boomplanteree bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
+"De Boomplanterkaat bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
 "worden könen."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
@@ -4873,7 +4873,7 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
-"De Boomplanteree bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
+"Dat Försterhuus bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
 "worden könen."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
@@ -4926,7 +4926,7 @@ msgstr "Jaggt Deerten, um Fleesk to produzeren."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1798
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
-msgstr "De Jaggthütt bruukt Deerten tum Jagen in de Arbeidsgewest."
+msgstr "De Jaggtkaat bruukt Deerten tum Jagen in de Arbeidsgewest."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1805
@@ -4939,13 +4939,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1812
 msgctxt "europeans_building"
 msgid "Fishes on the coast or in lakes near the fisher’s house."
-msgstr "Fiskt an de Küst of in Meren in de Naberskupp vun de Fiskeree."
+msgstr "Fisket an de Küst of in Meren in de Naberskupp vun de Fiskerhuus."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1815
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
-msgstr "De Fiskeree bruukt Water mit Fisken in de Arbeidsgewest."
+msgstr "Dat Fiskerhuus bruukt Water mit Fisken in de Arbeidsgewest."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1817
@@ -4963,7 +4963,7 @@ msgstr "Tücht un fisket Fiske."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1828
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water within the work area."
-msgstr "De Fiskeree bruukt Water in de Arbeidsgewest."
+msgstr "Dat Fiskerhuus bruukt Water in de Arbeidsgewest."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1830
@@ -6168,21 +6168,3 @@ msgstr "Raadhuus"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "These transparent quartz gems are used to build some exclusive buildings. "
-#~ "They are mined as a byproduct in a deep iron mine or by advanced quarry."
-#~ msgstr ""
-#~ "Deeser schienende Blinkerflint word för eenige besünners gode Husen "
-#~ "bruukt. ’t word vun groten Flintslagerhusen un vun deepen Iesen-"
-#~ "Bargwarken ofboot."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "These wonderful diamonds are used to build advanced buildings. They are "
-#~ "mined as a byproduct in a deep coal mine or by advanced quarry."
-#~ msgstr ""
-#~ "Deese wunnermojen Edelstenen worden för eenige besünners gode Husen "
-#~ "bruukt. Se worden vun groten Flintslagerhusen un vun deepen Köhle-"
-#~ "Bargwarken ofboot."

@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Benedikt Straub <benedikt-straub@web.de>, 2024
+# Benedikt Straub <benedikt-straub@web.de>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-05 03:09+0100\n"
+"POT-Creation-Date: 2025-01-06 03:10+0100\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
-"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
 "nds/)\n"
 "Language: nds\n"
@@ -1171,7 +1171,7 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
-"Europäiske Boomslagers kappen de Bomen of; Boomplanters kümmern sük um de "
+"Europäiske Boomhauers kappen de Bomen of; Boomplanters kümmern sük um de "
 "Versörgung mit Bomen. Boomstammen worden ok in de Holtköhl-Branneree, de "
 "Warktüügsmee un de Saagmöhlen bruukt."
 
@@ -1442,13 +1442,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:384
 msgctxt "europeans_ware"
 msgid "These transparent quartz gems are used for trading."
-msgstr ""
+msgstr "Deese schienenden Blinkerflint-Kristallen worden tum Hanneln bruukt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:393
 msgctxt "europeans_ware"
 msgid "These wonderful diamonds are used for trading."
-msgstr ""
+msgstr "Deese wunnermojen Edelstenen worden tum Hanneln bruukt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:403
@@ -2372,13 +2372,13 @@ msgstr "Kappt Bomen in de Naberskupp un maakt daarut Boomstammen."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1899
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
-msgstr "De Boomslageree bruukt Bomen tum Umkappen in de Arbeidsgewest."
+msgstr "De Boomhauerkaat bruukt Bomen tum Umkappen in de Arbeidsgewest."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Lumberjack's House
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1908
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
-msgstr "De Boomslageree bruukt Bomen tum Umkappen in de Arbeidsgewest."
+msgstr "De Boomhauerhuus bruukt Bomen tum Umkappen in de Arbeidsgewest."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
@@ -2394,7 +2394,7 @@ msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
 msgstr ""
-"De Boomplanteree bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
+"De Boomplanterkaat bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
 "worden könen."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
@@ -2404,7 +2404,7 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
-"De Boomplanteree bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
+"Dat Försterhuus bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
 "worden könen."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
@@ -2457,7 +2457,7 @@ msgstr "Jaggt Deerten, um Fleesk to produzeren."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1967
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
-msgstr "De Jaggthütt bruukt Deerten tum Jagen in de Arbeidsgewest."
+msgstr "De Jaggtkaat bruukt Deerten tum Jagen in de Arbeidsgewest."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1974
@@ -2470,13 +2470,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1981
 msgctxt "europeans_building"
 msgid "Fishes on the coast or in lakes near the fisher’s house."
-msgstr "Fiskt an de Küst of in Meren in de Naberskupp vun de Fiskeree."
+msgstr "Fiskt an de Küst of in Meren in de Naberskupp vun de Fiskerhuus."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1984
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
-msgstr "De Fiskeree bruukt Water mit Fisken in de Arbeidsgewest."
+msgstr "Dat Fiskerhuus bruukt Water mit Fisken in de Arbeidsgewest."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1986
@@ -2494,7 +2494,7 @@ msgstr "Tücht un fisket Fiske."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1997
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water within the work area."
-msgstr "De Fiskeree bruukt Water in de Arbeidsgewest."
+msgstr "Dat Fiskerhuus bruukt Water in de Arbeidsgewest."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1999
@@ -3804,21 +3804,3 @@ msgstr "Raadhuus"
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "These transparent quartz gems are used to build some exclusive buildings. "
-#~ "They are mined as a byproduct in a deep iron mine or by advanced quarry."
-#~ msgstr ""
-#~ "Deeser schienende Blinkerflint word för eenige besünners gode Husen "
-#~ "bruukt. ’t word vun groten Flintslagerhusen un vun deepen Iesen-"
-#~ "Bargwarken ofboot."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "These wonderful diamonds are used to build advanced buildings. They are "
-#~ "mined as a byproduct in a deep coal mine or by advanced quarry."
-#~ msgstr ""
-#~ "Deese wunnermojen Edelstenen worden för eenige besünners gode Husen "
-#~ "bruukt. Se worden vun groten Flintslagerhusen un vun deepen Köhle-"
-#~ "Bargwarken ofboot."
