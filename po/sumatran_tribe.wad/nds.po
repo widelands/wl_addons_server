@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-06 03:10+0100\n"
+"POT-Creation-Date: 2025-01-09 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1013,7 +1013,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/jungle_preservers_hut/init.lua:8
 msgctxt "sumatran_building"
 msgid "Jungle Preserver's Hut"
-msgstr "Waldwahrderee"
+msgstr "Waldwahrderkaat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
 #: addons/sumatran_tribe.wad/productionsites/jungle_preservers_hut/init.lua:43
@@ -1051,7 +1051,7 @@ msgstr "Bladen to pottjen"
 #. TRANSLATORS: Completed/Skipped/Did not start gathering palm leaves because ...
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:50
 msgid "gathering palm leaves"
-msgstr "Palmbladen to pottjen"
+msgstr "Palmwedels to pottjen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start gathering cassava leaves because ...
 #: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:59
@@ -1325,7 +1325,7 @@ msgid ""
 msgstr ""
 "De Boomslager dat warkt bi deesem Huus hett keene Palmbomen in sienem "
 "Arbeidsgewest. Överlegg di, of du dat Huus plattrieten of ofbrannen willt, "
-"of bau eene Palmenplanterkaat of Waldwahrderske-Kaat in de Naberskupp."
+"of bau eene Palmenplanterkaat of Waldwahrderkaat in de Naberskupp."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:8
@@ -1920,6 +1920,8 @@ msgid ""
 "Tropical wood is an important basic building material. It is also used for "
 "charcoal production."
 msgstr ""
+"Regenwaldholt is een wichtig Baukraam. ’t word ok bruukt, um Holtköhl to "
+"produzeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Tropical Wood, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:108
@@ -1929,6 +1931,10 @@ msgid ""
 "as well as dipterocarpus). Woodcutters need jungle preserver’s huts nearby "
 "to take care of the supply of tropical trees."
 msgstr ""
+"’t word produzeert, indeem Regenwaldbomen (Iesenholt, Gummibomen un "
+"Balsabomen un ok Flögelfrüchtenbomen) ofslaan worden. Boomslagers bruken "
+"Waldwahrderkaten in de Naberskupp, um up de Versörgung mit Regenwaldbomen "
+"uptopassen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Palm Leaves, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:119
@@ -1937,6 +1943,8 @@ msgid ""
 "Palm leaves are a basic building material. They are used together with reed "
 "for cloth production too."
 msgstr ""
+"Palmwedel sünd een wichtig Baukraam. Se worden ok tosamen mit Reit bruukt, "
+"um Stoff to produzeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Palm Leaves, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:121
@@ -1946,6 +1954,9 @@ msgid ""
 "palm trees. The trees have to be cut down by woodcutters first, then can the "
 "gatherers collect the leaves from the ground."
 msgstr ""
+"Bladenpottjers bruken Palmenplanterkaten in de Naberskupp, um up de "
+"versörgung mit Palmbomen uptopassen. De Bomen mutten eerst vun Boomslagern "
+"umkappt worden, dann könen de Pottjers de Bladen vun de Eer sammeln."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Reed, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:131
@@ -1954,6 +1965,8 @@ msgid ""
 "Reed is a basic building material. It is used together with palm leaves for "
 "cloth production too."
 msgstr ""
+"Reit is een wichtig Baukraam. ’t word ok tosamen mit Palmwedels bruukt, um "
+"Stoff to produzeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Reed, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:133
@@ -1962,6 +1975,7 @@ msgid ""
 "It is planted and collected by the reed cutters on shores of lakes and "
 "rivers."
 msgstr ""
+"’t word vun de Reitsnieders an Küsten vun Meren un Stromen plant un arnt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cloth, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:143
@@ -1970,6 +1984,8 @@ msgid ""
 "Cloth is needed to build several buildings. Also the dressmakers need cloth "
 "for clothing for your warriors."
 msgstr ""
+"Stoff bruukt man, um eenige Husen to bauen. De Naihster bruukt ok Stoff, um "
+"Kluften för diene Ridders to maken."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cloth, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:145
@@ -1984,6 +2000,8 @@ msgid ""
 "Stone is a basic building material. You also need it for production of "
 "diamonds and whetstones."
 msgstr ""
+"Steen is een wichtig Baukraam. Du bruukst ’t ok, um Edelstenen un "
+"Sliepstenen to produzeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Sanded Wood
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:166
@@ -1992,6 +2010,8 @@ msgid ""
 "Sanded wood is used for tool and spear production. You will need it to build "
 "a ship too. It is made out of logs."
 msgstr ""
+"Sandtholt bruukt man, um Warktüüg un Pieken to produzeren. Man bruukt dat "
+"ok, um een Schipp to bauen. ’t word ut Boomstammen maakt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Skin
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:175
@@ -2000,6 +2020,8 @@ msgid ""
 "Crocodile skin is used for production of clothing for your warriors, "
 "hunters, chiefs and scouts."
 msgstr ""
+"Ut Krokodilhuud produzeert man Kluften för diene Ridders, Jägers, Basen un "
+"Bespejers."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Water, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:184
