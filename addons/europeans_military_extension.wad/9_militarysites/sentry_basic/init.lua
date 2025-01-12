@@ -49,7 +49,7 @@ wl.Descriptions():new_militarysite_type {
         },
     },
     buildcost = {
-        granite = 1,
+        granite = 2,
         log = 2,
         reed = 2
     },

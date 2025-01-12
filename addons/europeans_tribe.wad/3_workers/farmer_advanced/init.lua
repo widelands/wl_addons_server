@@ -9,6 +9,10 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
     
+    buildcost = {
+        europeans_gardener_advanced = 1
+    },
+    
     programs = {
         check_space = {
             "findspace=size:any radius:8 space"
