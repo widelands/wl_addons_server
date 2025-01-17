@@ -5,9 +5,8 @@ local dirname = path.dirname(__file__) .. "../"
 include(dirname .. "../terrain_affinity.lua")
 include(dirname .. "../spritesheets.lua")
 
-
 wl.Descriptions():new_immovable_type{
-   name = "rubber_desert_amazons_sapling",
+   name = "rubber_desert_sapling",
    -- TRANSLATORS:  This is an Amazon rare tree.
    descname = _("Rubber Tree (Sapling)"),
    size = "small",
@@ -16,11 +15,11 @@ wl.Descriptions():new_immovable_type{
       main = {
          "animate=idle duration:55s",
          "remove=chance:13.67%",
-         "grow=rubber_desert_amazons_pole",
+         "grow=rubber_desert_pole",
       },
       grow = {
          "animate=idle duration:28s",
-         "grow=rubber_desert_amazons_pole",
+         "grow=rubber_desert_pole",
       },
    },
    icon = dirname .. "menu_sapling.png",

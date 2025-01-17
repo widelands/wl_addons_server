@@ -6,7 +6,7 @@ include(dirname .. "../terrain_affinity.lua")
 include(dirname .. "../spritesheets.lua")
 
 wl.Descriptions():new_immovable_type{
-   name = "rubber_black_amazons_mature",
+   name = "rubber_black_mature",
    -- TRANSLATORS:  This is an Amazon rare tree.
    descname = _("Rubber Tree (Mature)"),
    size = "small",
@@ -15,11 +15,11 @@ wl.Descriptions():new_immovable_type{
       main = {
          "animate=idle duration:1m12s",
          "remove=chance:7.42%",
-         "grow=rubber_black_amazons_old",
+         "grow=rubber_black_old",
       },
       grow = {
          "animate=idle duration:36s",
-         "grow=rubber_black_amazons_old",
+         "grow=rubber_black_old",
       },
    },
    icon = dirname .. "menu_mature.png",

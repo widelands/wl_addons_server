@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-09 03:10+0100\n"
+"POT-Creation-Date: 2025-01-17 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -2036,6 +2036,8 @@ msgid ""
 "Water is used by the cooks in your kitchens. Cassava plantations and chicken "
 "farm need water too."
 msgstr ""
+"De Kochen in dienen Kökens bruken Water. Maniok-Plantereen un "
+"Hennentüchtereen bruken ok Water."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cassava Root, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:199
@@ -2044,12 +2046,14 @@ msgid ""
 "Cassava root is cooked in cassava kitchens to prepare starch, the main "
 "ingredient of meals."
 msgstr ""
+"Maniok-Wuddels worden in Maniok-Kökens kookt, um Starkde to maken, de Höövd-"
+"Bigaav för Mahltieden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cassava Leaves, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:209
 msgctxt "sumatran_ware"
 msgid "Cassava leaves are needed to prepare sauce for your meals."
-msgstr ""
+msgstr "Maniok-Bladen bruukt man, um Sooß för diene Mahltieden torechttomaken."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cassava Leaves, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:211
@@ -2058,18 +2062,20 @@ msgid ""
 "Make sure that you leaf gatherers collect all leaves from the harvested "
 "cassava fields. Otherwise you will have to substitute them with eggs."
 msgstr ""
+"Wees wiss dat diene Bladenpottjers all Bladen vun de arnt Maniok-Ackers "
+"pottjen. Sünnst muttst du in Stee daarvun Eier bruken."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Starch, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:221
 msgctxt "sumatran_ware"
 msgid "Starch is the main ingredient used by meal preparation."
-msgstr ""
+msgstr "Starkde is de Höövd-Bigaav för Mahltieden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Starch, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:223
 msgctxt "sumatran_ware"
 msgid "It is made out of cassava roots by cooking."
-msgstr ""
+msgstr "Se word ut Maniok-Wuddels maakt, indeem se kookt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Fish
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:233
@@ -2078,6 +2084,8 @@ msgid ""
 "Fresh fish is cooked in the kitchens and added into meals for your warriors "
 "and miners."
 msgstr ""
+"Frisker Fiss word in Kökens kookt un to de Mahltieden för diene Ridders un "
+"Bargwarkskeerls hentogeven."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Meat
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:243
@@ -2086,6 +2094,8 @@ msgid ""
 "Fresh meat is cooked in the kitchens and added into meals for yor warriors, "
 "miners and carriers."
 msgstr ""
+"Friskes Fleesk word in Kökens kookt un to de Mahltieden för diene Ridders, "
+"Bargwarkskeerls un Lastendragers hentogeven."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Eggs, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:254
@@ -2094,12 +2104,13 @@ msgid ""
 "Eggs are used as a substitute for meat, fish and cassava leaves in the "
 "kitchens."
 msgstr ""
+"Eier worden in Stee vun  Fleesk, Fiss un Maniok-Bladen in de Kökens bruukt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Eggs, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:256
 msgctxt "sumatran_ware"
 msgid "You need food waste as a food source for chickens to produce eggs."
-msgstr ""
+msgstr "Du bruukst Spiesenoffall, um de Hennen to föden, wat Eier produzeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Meal
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:266
@@ -2108,6 +2119,8 @@ msgid ""
 "Meal is consumed in mines and training sites. Every new carrier also need "
 "meal before his service on a road."
 msgstr ""
+"Mahltieden worden in Bargwarken un Övens-Boen eten. Elkeen nejer "
+"Lastendrager bruukt ok een Mahl, ehr he up eener Straat warken kann."
 
 #. TRANSLATORS: Note helptext for a Sumatran ware: Meal
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:268
@@ -2117,12 +2130,17 @@ msgid ""
 "starch, cassava leaves, meat or fish and water. Eggs can be used instead "
 "some of these ingredients too."
 msgstr ""
+"Een Mahl is eene beste Verbinnen ut mennig Spiesen-Bigaven. Dat sünd "
+"Starkde, Maniok-Bladen, Fleesk of Fiss un Water. Eier könen ok in Stee vun "
+"eenigen vun deesen Bigaven bruukt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Food Waste
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:276
 msgctxt "sumatran_ware"
 msgid "You can feed food waste to your chickens and gain eggs and meat."
 msgstr ""
+"Du kannst diene Hennen mit Spiesenoffall föden, um Eier un Fleesk to "
+"produzeren."
 
 #. TRANSLATORS: Note helptext for a Sumatran ware: Food Waste
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:278
@@ -2132,6 +2150,9 @@ msgid ""
 "producing food waste by throwing out starch when they don't have cassava "
 "leaves or eggs on stock and meal is needed."
 msgstr ""
+"Spiesenoffall word as Tegenprodukt in dienen Kökens prooduzeert. Kökens "
+"begünnen ok, Spiesenoffall to produzeren, indeem se Starkde rutsmieten, wenn "
+"se keene Maniok-Bladen of Eiers hebben un Mahltieden bruukt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Palm Wine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:286

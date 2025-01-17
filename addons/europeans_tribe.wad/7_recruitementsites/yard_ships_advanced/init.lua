@@ -91,7 +91,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
             descname = pgettext("europeans_building", "constructing a ship"),
             actions = {
-                "return=skipped when economy needs europeans_ferry",
                 "call=ship_preparation",
                 "sleep=duration:15s",
                 "call=ship_build"

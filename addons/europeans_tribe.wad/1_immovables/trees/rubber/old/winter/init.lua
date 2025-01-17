@@ -6,7 +6,7 @@ include(dirname .. "../terrain_affinity.lua")
 include(dirname .. "../spritesheets.lua")
 
 wl.Descriptions():new_immovable_type{
-   name = "rubber_winter_amazons_old",
+   name = "rubber_winter_old",
    -- TRANSLATORS:  This is an Amazon rare tree.
    descname = _("Rubber Tree (Old)"),
    -- TRANSLATORS:  This is an Amazon rare tree.
@@ -17,12 +17,12 @@ wl.Descriptions():new_immovable_type{
       main = {
          "animate=idle duration:25m35s",
          "transform=deadtree7 chance:12.89%",
-         "seed=rubber_winter_amazons_sapling proximity:19.53%",
+         "seed=rubber_winter_sapling proximity:19.53%",
       },
       grow = {
          "animate=idle duration:25m35s",
          "transform=deadtree7 chance:6.44%",
-         "seed=rubber_winter_amazons_sapling proximity:19.53%",
+         "seed=rubber_winter_sapling proximity:19.53%",
       },
       fall = {
          "animate=fall duration:1s",

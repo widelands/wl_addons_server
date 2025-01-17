@@ -6,7 +6,7 @@ include(dirname .. "../terrain_affinity.lua")
 include(dirname .. "../spritesheets.lua")
 
 wl.Descriptions():new_immovable_type{
-   name = "rubber_black_amazons_pole",
+   name = "rubber_black_pole",
    -- TRANSLATORS:  This is an Amazon rare tree.
    descname = _("Rubber Tree (Pole)"),
    size = "small",
@@ -15,11 +15,11 @@ wl.Descriptions():new_immovable_type{
       main = {
          "animate=idle duration:1m05s",
          "remove=chance:9.37%",
-         "grow=rubber_black_amazons_mature",
+         "grow=rubber_black_mature",
       },
       grow = {
          "animate=idle duration:33s",
-         "grow=rubber_black_amazons_mature",
+         "grow=rubber_black_mature",
       },
    },
    icon = dirname .. "menu_pole.png",
