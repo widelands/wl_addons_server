@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-06 03:10+0100\n"
+"POT-Creation-Date: 2025-01-18 03:10+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -98,14 +98,14 @@ msgstr "Gold to smelten"
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:8
 msgctxt "barbarians_building_small"
 msgid "Small Weaving Mill"
-msgstr "Lütte Spinnweelmöhlen"
+msgstr "Lütter Weevstohl"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:50
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:109
 msgid "weaving"
-msgstr "to spinnen"
+msgstr "to weven"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:8
@@ -266,18 +266,16 @@ msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:90
 msgid "Weaves cloth out of reed."
-msgstr "Spinnt Stoff ut Reit."
+msgstr "Weevt Stoff ut Reit."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:91
 msgid "This building operates as an ordinary weaving mill only 25% slower."
-msgstr ""
-"Deeses Huus warkt as eene normaale Spinnweelmöhlen, blots 25% langsaamer."
+msgstr "Deeses Huus warkt as een normaaler Weevstohl, blots 25% langsaamer."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:92
 msgctxt "empire_building"
 msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
-msgstr ""
-"De Spinner bruukt dör de Bank %1% um Reit in een Deel Stoff to spinnen."
+msgstr "De Wever bruukt dör de Bank %1% um Reit in een Deel Stoff to weven."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:124
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:128
