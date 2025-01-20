@@ -32,8 +32,6 @@ wl.Descriptions():new_tribe {
     bridge_height = 8,
     
     collectors_points_table = {
-        { ware = "armor", points = 1 },
-        { ware = "metal_alloy", points = 1 },
         { ware = "quartz", points = 1 },
         { ware = "diamond", points = 1 },
         { ware = "gold", points = 2 },
@@ -2639,6 +2637,13 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
                 purpose = pgettext("europeans_building", "Market building to sale processed products for coins.")
+            }
+        },
+        {
+            name = "europeans_market_food",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
+                purpose = pgettext("europeans_building", "Market building to sale foods for coins.")
             }
         },
         {

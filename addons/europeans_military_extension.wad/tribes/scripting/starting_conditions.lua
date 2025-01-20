@@ -340,7 +340,7 @@ function set_starting_warecount(player)
     for i, ware in ipairs(tribe.wares) do
         if (ware:is_construction_material(player.tribe_name)) then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_wares(ware.name, ((ware_economy:target_quantity(ware.name) + 16) / #warehouses))
+                warehouse:set_wares(ware.name, ((ware_economy:target_quantity(ware.name) + 32) / #warehouses))
             end
         else
             for j, warehouse in ipairs(warehouses) do
