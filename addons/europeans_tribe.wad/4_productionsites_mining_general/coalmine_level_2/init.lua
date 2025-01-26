@@ -52,7 +52,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 8 }
+        { name = "blackwood", amount = 6 }
     },
 
     programs = {
@@ -60,21 +60,21 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped when economy needs log and not economy needs granite and not economy needs diamond and not economy needs coal",
-                "return=skipped unless site has log:4",
-                "consume=log:2",
+                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs diamond and not economy needs coal",
+                "return=skipped unless site has blackwood:3",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=log",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=log",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
@@ -109,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=log:4",
+                "consume=blackwood:3",
                 "produce=coal:8 granite:6 diamond",
             }
         },

@@ -49,6 +49,7 @@ wl.Descriptions():new_militarysite_type {
     
     aihints = {
         expansion = true,
+        fighting = false,
         mountain_conqueror = true
     },
 

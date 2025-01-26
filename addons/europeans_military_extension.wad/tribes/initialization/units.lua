@@ -35,25 +35,25 @@ wl.Descriptions():new_tribe {
         { ware = "quartz", points = 1 },
         { ware = "diamond", points = 1 },
         { ware = "gold", points = 2 },
-        { ware = "coin_copper", points = 4 },
-        { ware = "coin_silver", points = 6 },
-        { ware = "coin_gold", points = 8 },
-        { ware = "armor_wooden", points = 2 },
-        { ware = "boots_wooden", points = 2 },
-        { ware = "spear_wooden", points = 2 },
-        { ware = "helmet_wooden", points = 2 },
-        { ware = "armor_processed", points = 4 },
-        { ware = "boots_sturdy", points = 4 },
-        { ware = "spear_advanced", points = 4 },
-        { ware = "helmet_mask", points = 4 },
-        { ware = "armor_compressed", points = 6 },
-        { ware = "boots_swift", points = 6 },
-        { ware = "ax_broad", points = 6 },
-        { ware = "shield_steel", points = 6 },
-        { ware = "armor_advanced", points = 8 },
-        { ware = "boots_advanced", points = 8 },
-        { ware = "sword_broad", points = 8 },
-        { ware = "shield_advanced", points = 8 },
+        { ware = "coin_copper", points = 3 },
+        { ware = "coin_silver", points = 4 },
+        { ware = "coin_gold", points = 6 },
+        { ware = "armor_wooden", points = 1 },
+        { ware = "boots_wooden", points = 1 },
+        { ware = "spear_wooden", points = 1 },
+        { ware = "helmet_wooden", points = 1 },
+        { ware = "armor_processed", points = 2 },
+        { ware = "boots_sturdy", points = 2 },
+        { ware = "spear_advanced", points = 2 },
+        { ware = "helmet_mask", points = 2 },
+        { ware = "armor_compressed", points = 3 },
+        { ware = "boots_swift", points = 3 },
+        { ware = "ax_broad", points = 3 },
+        { ware = "shield_steel", points = 3 },
+        { ware = "armor_advanced", points = 4 },
+        { ware = "boots_advanced", points = 4 },
+        { ware = "sword_broad", points = 4 },
+        { ware = "shield_advanced", points = 4 },
     },
 
     -- Image file paths for this tribe's road and waterway textures
@@ -2804,6 +2804,15 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Europeans military site: Sentry
                 note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_sentry_mountain",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+                note = pgettext("europeans_building", "Modified version which can placed on mountains.")
             }
         },
         {

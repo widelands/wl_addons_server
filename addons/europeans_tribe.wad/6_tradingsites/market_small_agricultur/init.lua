@@ -158,7 +158,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing trading of gold"),
             actions = {
                 "return=skipped when site has gold:4",
-                "return=skipped unless economy needs europeans_soldier",
                 "sleep=duration:15m",
             }
         },

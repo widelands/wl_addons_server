@@ -36,8 +36,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_food_ironmine_level_1",
         enhancement_cost = {
-            log = 4,
-            cloth = 1
+            planks = 4
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
@@ -47,7 +46,7 @@ wl.Descriptions():new_productionsite_type {
     },
     buildcost = {
         log = 6,
-        reed = 2
+        reed = 6
     },
     return_on_dismantle = {
         scrap_wood = 4,

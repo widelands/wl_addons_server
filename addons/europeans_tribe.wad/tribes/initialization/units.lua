@@ -2430,13 +2430,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_battlearena_basic",
-            helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
-                note = pgettext("europeans_building", "Produces weapons and armor from basic materials and trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’ with this tools."),
-            }
-        },
-        {
             name = "europeans_training_center_health",
             helptexts = {
                 -- TRANSLATORS: Note helptext for a Europeans training site: Dungeon
@@ -2490,6 +2483,15 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
                 note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_sentry_mountain",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+                note = pgettext("europeans_building", "Modified version which can placed on mountains.")
             }
         },
         {
@@ -2745,7 +2747,7 @@ wl.Descriptions():new_tribe {
         shipyard = "europeans_shipyard_basic",
         smelting = "europeans_smelting_works_basic",
         training_small = "europeans_training_center_health",
-        training_large = "europeans_battlearena_basic",
+        training_large = "europeans_training_center_attack",
         warehouse = "europeans_warehouse",
         weaving_mill = "europeans_weaving_mill_basic",
         well = "europeans_well_basic",

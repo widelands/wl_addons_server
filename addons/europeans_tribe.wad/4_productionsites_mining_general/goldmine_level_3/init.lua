@@ -52,7 +52,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "blackwood", amount = 6 }
+        { name = "blackwood", amount = 8 }
     },
 
     programs = {

@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_sentry_basic",
+    name = "europeans_sentry_mountain",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Basic Sentry"),
+    descname = pgettext("europeans_building", "Mountain Sentry"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -30,7 +30,7 @@ wl.Descriptions():new_militarysite_type {
       },
     },
     
-    size = "small",
+    size = "mine",
     destructible = true,
     
     buildcost = {
@@ -48,7 +48,7 @@ wl.Descriptions():new_militarysite_type {
     aihints = {
         expansion = true,
         fighting = false,
-        mountain_conqueror = false
+        mountain_conqueror = true
     },
 
     max_soldiers = 2,

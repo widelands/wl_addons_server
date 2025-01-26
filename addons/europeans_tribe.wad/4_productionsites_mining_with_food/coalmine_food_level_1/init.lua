@@ -36,8 +36,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_food_coalmine_level_2",
         enhancement_cost = {
-            log = 4,
-            cloth = 1
+            planks = 4
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,

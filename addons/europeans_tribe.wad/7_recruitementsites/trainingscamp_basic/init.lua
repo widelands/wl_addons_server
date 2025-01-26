@@ -54,12 +54,14 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "europeans_recruit", amount = 2 },
-        { name = "armor", amount = 2 },
-        { name = "rubber", amount = 2 },
-        { name = "cloth", amount = 2 },
-        { name = "metal_alloy", amount = 2 },
-        { name = "gold", amount = 2 }
+        { name = "europeans_recruit", amount = 6 },
+        { name = "armor", amount = 6 },
+        { name = "rubber", amount = 6 },
+        { name = "cloth", amount = 6 },
+        { name = "metal_alloy", amount = 6 },
+        { name = "coin_copper", amount = 2 },
+        { name = "coin_silver", amount = 2 },
+        { name = "coin_gold", amount = 2 }
     },
     
     programs = {
@@ -67,20 +69,24 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=recruit_soldier",
+                "call=recruit_soldier_gold",
+                "sleep=duration:30s",
+                "call=recruit_soldier_silver",
+                "sleep=duration:30s",
+                "call=recruit_soldier_copper",
                 "return=skipped"
             }
         },
-        recruit_soldier = {
+        recruit_soldier_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-            descname = pgettext("europeans_building", "recruiting soldier"),
+            descname = pgettext("europeans_building", "recruiting soldier with copper coin"),
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "return=failed unless site has armor",
                 "return=failed unless site has rubber",
                 "return=failed unless site has cloth",
                 "return=failed unless site has metal_alloy",
-                "return=failed unless site has gold",
+                "return=failed unless site has coin_copper",
                 "consume=europeans_recruit",
                 "consume=armor",
                 "animate=working duration:10s",
@@ -90,9 +96,57 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:10s",
                 "consume=metal_alloy",
                 "animate=working duration:10s",
-                "consume=gold",
+                "consume=coin_copper",
                 "animate=working duration:5s",
                 "recruit=europeans_soldier"
+            }
+        },
+        recruit_soldier_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+            descname = pgettext("europeans_building", "recruiting soldier with silver coin"),
+            actions = {
+                "return=skipped unless economy needs europeans_soldier",
+                "return=failed unless site has armor:2",
+                "return=failed unless site has rubber:2",
+                "return=failed unless site has cloth:2",
+                "return=failed unless site has metal_alloy:2",
+                "return=failed unless site has coin_silver",
+                "consume=europeans_recruit:2",
+                "consume=armor:2",
+                "animate=working duration:10s",
+                "consume=rubber:2",
+                "animate=working duration:10s",
+                "consume=cloth:2",
+                "animate=working duration:10s",
+                "consume=metal_alloy:2",
+                "animate=working duration:10s",
+                "consume=coin_silver",
+                "animate=working duration:5s",
+                "recruit=europeans_soldier:2"
+            }
+        },
+        recruit_soldier_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+            descname = pgettext("europeans_building", "recruiting soldier with gold coin"),
+            actions = {
+                "return=skipped unless economy needs europeans_soldier",
+                "return=failed unless site has armor:3",
+                "return=failed unless site has rubber:3",
+                "return=failed unless site has cloth:3",
+                "return=failed unless site has metal_alloy:3",
+                "return=failed unless site has coin_gold",
+                "consume=europeans_recruit:3",
+                "consume=armor:3",
+                "animate=working duration:10s",
+                "consume=rubber:3",
+                "animate=working duration:10s",
+                "consume=cloth:3",
+                "animate=working duration:10s",
+                "consume=metal_alloy:3",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:5s",
+                "recruit=europeans_soldier:3"
             }
         },
     },

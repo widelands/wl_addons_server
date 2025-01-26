@@ -416,13 +416,13 @@ end
 
 function allow_all_militarysites(player)
     if player.tribe.name == "europeans" then
-        player:allow_buildings{"europeans_sentry_basic", "europeans_barrier_basic", "europeans_tower_basic", "europeans_castle_basic",}
+        player:allow_buildings{"europeans_sentry_basic", "europeans_sentry_mountain", "europeans_barrier_basic", "europeans_tower_basic", "europeans_castle_basic",}
     end
 end
 
 function forbid_all_militarysites(player)
     if player.tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_sentry_basic", "europeans_barrier_basic", "europeans_tower_basic", "europeans_castle_basic",}
+        player:forbid_buildings{"europeans_sentry_basic", "europeans_sentry_mountain", "europeans_barrier_basic", "europeans_tower_basic", "europeans_castle_basic",}
     end
 end
 

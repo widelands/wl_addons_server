@@ -36,7 +36,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_ironmine_level_2",
         enhancement_cost = {
-            log = 4
+            planks = 4
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
@@ -52,7 +52,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 6 }
+        { name = "blackwood", amount = 6 }
     },
 
     programs = {
@@ -60,19 +60,19 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped when economy needs log and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs ore",
-                "return=skipped unless site has log:3",
-                "consume=log",
+                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs ore",
+                "return=skipped unless site has blackwood:3",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=log",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=log",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_ore",
@@ -114,7 +114,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=log:3",
+                "consume=blackwood:3",
                 "produce=granite:3 marble:3 quartz ore:2",
             }
         },
