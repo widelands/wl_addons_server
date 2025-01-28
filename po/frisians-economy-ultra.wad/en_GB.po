@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Andi Chandler <andi@gowling.com>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2025-01-28 03:09+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2025\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
 "teams/35159/en_GB/)\n"
 "Language: en_GB\n"
@@ -20,7 +24,7 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/addon:2
 msgid "Frisians Economy Ultra"
-msgstr ""
+msgstr "Frisians Economy Ultra"
 
 #: addons/frisians-economy-ultra.wad/addon:3
 msgid ""
@@ -32,42 +36,42 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr ""
+msgstr "Barley Flour"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Barley Mill"
-msgstr ""
+msgstr "Barley Mill"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
-msgstr ""
+msgstr "grinding barley"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
-msgstr ""
+msgstr "Leather"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8
 msgctxt "frisians_worker"
 msgid "Miller"
-msgstr ""
+msgstr "Miller"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/oat/init.lua:8
 msgctxt "ware"
 msgid "Oat"
-msgstr ""
+msgstr "Oat"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Oat Farm"
-msgstr ""
+msgstr "Oat Farm"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:65
@@ -77,39 +81,40 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
-msgstr ""
+msgstr "working"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
 msgid "planting oat"
-msgstr ""
+msgstr "planting oat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:81
 msgid "harvesting oat"
-msgstr ""
+msgstr "harvesting oat"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:90
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
 msgid "No Fields"
-msgstr ""
+msgstr "No Fields"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:91
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
 msgid "Out of Fields"
-msgstr ""
+msgstr "Out of Fields"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:92
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this oat farm has no cleared soil to plant his seeds."
 msgstr ""
+"The farmer working at this oat farm has no cleared soil to plant his seeds."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr ""
+msgstr "Oat Field (harvested)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/medium/init.lua:8

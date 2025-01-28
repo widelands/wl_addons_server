@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 03:11+0100\n"
+"POT-Creation-Date: 2025-01-28 03:09+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -2846,24 +2846,21 @@ msgstr "Dummy Trainingskamp"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:82
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting soldier with copper coin"
-msgstr "soldaat aanwerven"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:106
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting soldier with silver coin"
-msgstr "soldaat aanwerven"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:130
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting soldier with gold coin"
-msgstr "soldaat aanwerven"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:8
@@ -3101,10 +3098,9 @@ msgstr "Je soldaten hebben de vijand bij het wachtershuis verslagen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/9_militarysites/sentry_mountain/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Mountain Sentry"
-msgstr "Basis Wachtpost"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/9_militarysites/tower_basic/init.lua:8
@@ -6254,15 +6250,3 @@ msgstr "Hoofdkwartier"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Battle Arena"
-#~ msgstr "Dummy Gevechtsarena"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Produces weapons and armor from basic materials and trains soldiers in "
-#~ "‘Evade’, ‘Health’ and ‘Attack’ with this tools."
-#~ msgstr ""
-#~ "Produceert wapens en pantsers van basismaterialen en traint soldaten in "
-#~ "'Ontwijk', 'Gezondheid' en 'Aanval' met dit gereedschap."
