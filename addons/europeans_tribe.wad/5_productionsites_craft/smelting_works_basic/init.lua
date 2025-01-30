@@ -31,8 +31,7 @@ wl.Descriptions():new_productionsite_type {
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
-            marble = 1,
-            scrap_metal = 1
+            marble = 1
         }
     },
     buildcost = {
@@ -42,8 +41,7 @@ wl.Descriptions():new_productionsite_type {
     },
     return_on_dismantle = {
         scrap_wood = 3,
-        granite = 2,
-        scrap_metal = 1
+        granite = 2
     },
 
     aihints = {
@@ -57,8 +55,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coal", amount = 6 },
-        { name = "ore", amount = 6 }
+        { name = "coal", amount = 8 },
+        { name = "ore", amount = 8 }
     },
 
     programs = {
@@ -74,14 +72,15 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
             descname = pgettext("europeans_building", "smelting ore"),
             actions = {
-                "return=skipped when economy needs coal and not economy needs gold and not economy needs metal_alloy",
-                "consume=ore:3 coal:3",
+                "return=skipped when economy needs coal and not economy needs gold",
+                "consume=ore:4 coal:4",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
                 "animate=working duration:2m",
                 "playsound=sound/metal/ironping priority:60%",
+                "produce=gold:2",
                 "animate=working duration:2m",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=metal_alloy:2 gold"
+                "produce=gold:2"
             }
         }
     },

@@ -330,28 +330,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "scrap_metal",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
-                    purpose = pgettext("europeans_ware", "Discarded weapons and armor can be recycled in an advanced smelting works to produce new tools, weapon and armor.")
-                }
-            },
-            {
-                name = "metal_alloy",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
-                        pgettext("ware", "Mixed metal alloy is smelted out of ores."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
-                        pgettext("europeans_ware", "It is produced by the smelting works. Weapons, armor and tools are made of alloy.")
-                    }
-                }
-            },
-            {
                 name = "gold",
                 default_target_quantity = 32,
                 preciousness = 1,
@@ -2407,13 +2385,6 @@ wl.Descriptions():new_tribe {
             name = "europeans_store_small",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Store
-                purpose = pgettext("europeans_building", "Store building to purchase wares from other allied tribes.")
-            }
-        },
-        {
-            name = "europeans_store_big",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Store
                 purpose = pgettext("europeans_building", "Store building to purchase wares from other allied tribes.")
             }
         },

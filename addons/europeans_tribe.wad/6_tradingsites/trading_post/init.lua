@@ -63,15 +63,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=trade_granite_copper",
                 "call=trade_marble_copper",
-                "sleep=duration:10s",
-                "call=trade_metal_alloy_silver",
-                "call=trade_metal_alloy_diamond",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_granite_quartz",
                 "call=trade_marble_quartz",
-                "sleep=duration:10s",
-                "call=trade_metal_alloy_gold",
-                "call=trade_metal_alloy_diamond"
             }
         },
         trade_granite_copper = {
@@ -123,45 +117,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=quartz:2",
                 "callworker=purchase_marble_quartz",
                 "produce=marble:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_metal_alloy_silver = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs metal_alloy",
-                "callworker=find_pole",
-                "return=failed unless site has coin_silver:6",
-                "consume=coin_silver:4",
-                "callworker=purchase_metal_alloy_silver",
-                "produce=metal_alloy",
-                "sleep=duration:30s",
-            }
-        },
-        trade_metal_alloy_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs metal_alloy",
-                "callworker=find_pole",
-                "return=failed unless site has coin_gold:2",
-                "consume=coin_gold:2",
-                "callworker=purchase_metal_alloy_gold",
-                "produce=metal_alloy",
-                "sleep=duration:30s",
-            }
-        },
-        trade_metal_alloy_diamond = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs metal_alloy",
-                "callworker=find_pole",
-                "return=failed unless site has diamond:2",
-                "consume=diamond:2",
-                "callworker=purchase_metal_alloy_diamond",
-                "produce=metal_alloy",
                 "sleep=duration:30s",
             }
         },

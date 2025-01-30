@@ -350,6 +350,17 @@ function set_starting_warecount(player)
     end
 end
 
+function allow_productionsites_without_input(player)
+    local map = wl.Game().map
+    local tribe = player.tribe
+
+    for i, tbuilding in ipairs(tribe.buildings) do
+        if ((tbuilding.type_name == "productionsite") or (tbuilding.type_name == "trainingsite")) and (#tbuilding.inputs == 0) then
+            player:allow_buildings{tbuilding.name}
+        end
+    end
+end
+
 function allow_productionsites_per_input(player)
     local map = wl.Game().map
     local tribe = player.tribe
@@ -415,20 +426,18 @@ function allow_warehouses_per_ware_amount(player)
 end
 
 function allow_all_militarysites(player)
-    if player.tribe.name == "europeans" then
-        player:allow_buildings{"europeans_sentry_basic", "europeans_sentry_mountain", "europeans_barrier_basic", "europeans_tower_basic", "europeans_castle_basic",}
-        player:allow_buildings{"europeans_sentry_level_1", "europeans_barrier_level_1", "europeans_tower_level_1", "europeans_castle_level_1",}
-        player:allow_buildings{"europeans_sentry_level_2", "europeans_barrier_level_2", "europeans_tower_level_2", "europeans_castle_level_2",}
-        player:allow_buildings{"europeans_sentry_level_3", "europeans_barrier_level_3", "europeans_tower_level_3", "europeans_castle_level_3",}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "militarysite") then
+            player:allow_buildings{building.name}
+        end
     end
 end
 
 function forbid_all_militarysites(player)
-    if player.tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_sentry_basic", "europeans_sentry_mountain", "europeans_barrier_basic", "europeans_tower_basic", "europeans_castle_basic",}
-        player:forbid_buildings{"europeans_sentry_level_1", "europeans_barrier_level_1", "europeans_tower_level_1", "europeans_castle_level_1",}
-        player:forbid_buildings{"europeans_sentry_level_2", "europeans_barrier_level_2", "europeans_tower_level_2", "europeans_castle_level_2",}
-        player:forbid_buildings{"europeans_sentry_level_3", "europeans_barrier_level_3", "europeans_tower_level_3", "europeans_castle_level_3",}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "militarysite") then
+            player:forbid_buildings{building.name}
+        end
     end
 end
 
@@ -517,26 +526,28 @@ function reset_player_warehouse_policy(player)
     local map = game.map
     local tribe = player.tribe
 
-    for i, ware in ipairs(tribe.wares) do
-        for k, building in ipairs(player:get_buildings("europeans_headquarters")) do
-            building:set_warehouse_policies(ware.name, "normal")
-        end
-        for k, building in ipairs(player:get_buildings("europeans_warehouse")) do
-            building:set_warehouse_policies(ware.name, "normal")
-        end
-        for k, building in ipairs(player:get_buildings("europeans_port")) do
-            building:set_warehouse_policies(ware.name, "normal")
+    local warehouse_types = {}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "warehouse") then
+            table.insert(warehouse_types, building.name)
         end
     end
-    for i, worker in ipairs(tribe.workers) do
-        for k, building in ipairs(player:get_buildings("europeans_headquarters")) do
-            building:set_warehouse_policies(worker.name, "normal")
+
+    local warehouses = {}
+    for i, building_name in ipairs(warehouse_types) do
+        warehouses = array_combine(warehouses, player:get_buildings(building_name))
+    end
+
+    if #warehouses > 1 then
+        for i, ware in ipairs(tribe.wares) do
+            for j, building in ipairs(warehouses) do
+                building:set_warehouse_policies(ware.name, "normal")
+            end
         end
-        for k, building in ipairs(player:get_buildings("europeans_warehouse")) do
-            building:set_warehouse_policies(worker.name, "normal")
-        end
-        for k, building in ipairs(player:get_buildings("europeans_port")) do
-            building:set_warehouse_policies(worker.name, "normal")
+        for i, worker in ipairs(tribe.workers) do
+            for j, building in ipairs(warehouses) do
+                building:set_warehouse_policies(worker.name, "normal")
+            end
         end
     end
 end
@@ -611,7 +622,7 @@ function doing_ai_stuff(player, increment)
     if (increment == 0) then
         player:forbid_buildings("all")
         allow_all_militarysites(player)
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_well_basic", "europeans_farm_small_basic"}
+        allow_productionsites_without_input(player)
     end
     if (increment >= 2) then
         allow_productionsites_per_input(player)
@@ -634,12 +645,9 @@ function doing_ai_stuff_seafaring(player, increment)
     if (increment == 0) then
         player:forbid_buildings("all")
         allow_all_militarysites(player)
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_well_basic", "europeans_farm_small_basic"}
+        allow_productionsites_without_input(player)
     end
     if (increment >= 2) then
-        player:allow_buildings{"europeans_tree_nursery_basic"}
-    end
-    if (increment >= 4) then
         allow_productionsites_per_input(player)
         allow_warehouses_per_ware_amount(player)
     end

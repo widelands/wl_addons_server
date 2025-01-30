@@ -65,6 +65,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs brick and not economy needs grout",
                 "return=skipped when economy needs granite and not economy needs grout",
+                "return=skipped when economy needs coal and not economy needs grout",
                 "consume=coal:3 granite:4",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:2m",
@@ -80,6 +81,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs grout and not economy needs brick",
                 "return=skipped when economy needs granite and not economy needs brick",
+                "return=skipped when economy needs coal and not economy needs brick",
                 "consume=granite:2 clay:4",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:1m",

@@ -50,15 +50,12 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_worker_basic = 1
+        europeans_recruit = 2
     },
 
     inputs = {
         { name = "europeans_recruit", amount = 6 },
         { name = "armor", amount = 6 },
-        { name = "rubber", amount = 6 },
-        { name = "cloth", amount = 6 },
-        { name = "metal_alloy", amount = 6 },
         { name = "coin_copper", amount = 2 },
         { name = "coin_silver", amount = 2 },
         { name = "coin_gold", amount = 2 }
@@ -83,19 +80,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "return=failed unless site has armor",
-                "return=failed unless site has rubber",
-                "return=failed unless site has cloth",
-                "return=failed unless site has metal_alloy",
                 "return=failed unless site has coin_copper",
                 "consume=europeans_recruit",
                 "consume=armor",
-                "animate=working duration:10s",
-                "consume=rubber",
-                "animate=working duration:10s",
-                "consume=cloth",
-                "animate=working duration:10s",
-                "consume=metal_alloy",
-                "animate=working duration:10s",
+                "animate=working duration:25s",
                 "consume=coin_copper",
                 "animate=working duration:5s",
                 "recruit=europeans_soldier"
@@ -107,19 +95,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "return=failed unless site has armor:2",
-                "return=failed unless site has rubber:2",
-                "return=failed unless site has cloth:2",
-                "return=failed unless site has metal_alloy:2",
                 "return=failed unless site has coin_silver",
                 "consume=europeans_recruit:2",
-                "consume=armor:2",
-                "animate=working duration:10s",
-                "consume=rubber:2",
-                "animate=working duration:10s",
-                "consume=cloth:2",
-                "animate=working duration:10s",
-                "consume=metal_alloy:2",
-                "animate=working duration:10s",
+                "consume=armor",
+                "animate=working duration:15s",
+                "consume=armor",
+                "animate=working duration:15s",
                 "consume=coin_silver",
                 "animate=working duration:5s",
                 "recruit=europeans_soldier:2"
@@ -131,18 +112,13 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "return=failed unless site has armor:3",
-                "return=failed unless site has rubber:3",
-                "return=failed unless site has cloth:3",
-                "return=failed unless site has metal_alloy:3",
                 "return=failed unless site has coin_gold",
                 "consume=europeans_recruit:3",
-                "consume=armor:3",
+                "consume=armor",
                 "animate=working duration:10s",
-                "consume=rubber:3",
+                "consume=armor",
                 "animate=working duration:10s",
-                "consume=cloth:3",
-                "animate=working duration:10s",
-                "consume=metal_alloy:3",
+                "consume=armor",
                 "animate=working duration:10s",
                 "consume=coin_gold",
                 "animate=working duration:5s",

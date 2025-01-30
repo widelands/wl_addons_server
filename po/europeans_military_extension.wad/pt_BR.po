@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 03:11+0100\n"
+"POT-Creation-Date: 2025-01-30 03:10+0100\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/widelands/"
 "teams/35159/pt_BR/)\n"
@@ -86,6 +86,24 @@ msgid "Wooden Helmet"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_military_extension.wad/2_wares/metal_alloy/init.lua:8
+msgctxt "ware"
+msgid "Mixed Metal Alloy"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_military_extension.wad/2_wares/ore/init.lua:8
+msgctxt "ware"
+msgid "Ore"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_military_extension.wad/2_wares/scrap_metal/init.lua:8
+msgctxt "ware"
+msgid "Scrap Metal"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_military_extension.wad/2_wares/shield_advanced/init.lua:8
 msgctxt "ware"
 msgid "Advanced Shield"
@@ -144,6 +162,8 @@ msgstr ""
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_basic/init.lua:88
 #: addons/europeans_military_extension.wad/5_productionsites/shoemakers_house_advanced/init.lua:51
 #: addons/europeans_military_extension.wad/5_productionsites/shoemakers_house_basic/init.lua:81
+#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:56
+#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_basic/init.lua:67
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_advanced/init.lua:63
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_basic/init.lua:81
 #: addons/europeans_military_extension.wad/5_productionsites/tailors_house_advanced/init.lua:64
@@ -332,6 +352,31 @@ msgid "Basic Shoemakers House"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Smelting Works"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start recyling metal_alloy because ...
+#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:68
+msgctxt "europeans_building"
+msgid "recycling metal_alloy"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
+#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:80
+#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_basic/init.lua:75
+msgctxt "europeans_building"
+msgid "smelting ore"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Smelting Works"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaponsmithy"
@@ -353,6 +398,22 @@ msgstr ""
 #: addons/europeans_military_extension.wad/5_productionsites/tailors_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Tailors House"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:8
+msgctxt "europeans_building"
+msgid "Big Store"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:67
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:86
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:97
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:108
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:119
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:130
+msgid "trading"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -584,31 +645,31 @@ msgid "Basic Barrier"
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:76
+#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your barrier."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:78
+#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:80
+#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:78
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:82
+#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:80
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the barrier."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:84
+#: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:82
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the barrier."
 msgstr ""
@@ -833,35 +894,35 @@ msgid "Basic Sentry"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:76
+#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:74
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your guardhouse."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:78
+#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:76
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:49
 msgctxt "europeans_building"
 msgid "Your guardhouse discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:80
+#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:78
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:51
 msgctxt "europeans_building"
 msgid "Your guardhouse is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:82
+#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:80
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the guardhouse."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:84
+#: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:82
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the guardhouse."
@@ -952,31 +1013,31 @@ msgid "Basic Tower"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:76
+#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your medium tower."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:78
+#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "Your medium tower discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:80
+#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:78
 msgctxt "europeans_building"
 msgid "Your medium tower is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:82
+#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:80
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the medium tower."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:84
+#: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:82
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the medium tower."
 msgstr ""

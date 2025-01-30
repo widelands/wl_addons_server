@@ -81,27 +81,6 @@ wl.Descriptions():new_worker_type {
                 "createware=marble",
                 "return"
           },
-          purchase_metal_alloy_silver = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=coin_silver",
-                "walk=object",
-                "createware=metal_alloy",
-                "return"
-          },
-          purchase_metal_alloy_gold = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=coin_gold",
-                "walk=object",
-                "createware=metal_alloy",
-                "return"
-          },
-          purchase_metal_alloy_diamond = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=diamond",
-                "walk=object",
-                "createware=metal_alloy",
-                "return"
-          },
     },
 }
 

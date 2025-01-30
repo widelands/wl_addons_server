@@ -58,16 +58,12 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "call=trade_granite_copper",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "call=trade_marble_copper",
-                "sleep=duration:10s",
-                "call=trade_metal_alloy_copper",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "call=trade_granite_copper",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "call=trade_marble_copper",
-                "sleep=duration:10s",
-                "call=trade_metal_alloy_copper"
             }
         },
         trade_granite_copper = {
@@ -90,17 +86,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coin_copper:2",
                 "animate=working duration:3m",
                 "produce=marble:2",
-            }
-        },
-        trade_metal_alloy_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs metal_alloy",
-                "return=failed unless site has coin_copper:4",
-                "consume=coin_copper:4",
-                "animate=working duration:3m",
-                "produce=metal_alloy",
             }
         },
     },

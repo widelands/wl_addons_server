@@ -44,14 +44,11 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     working_positions = {
-        europeans_worker_advanced = 2
+        europeans_recruit = 2
     },
 
     inputs = {
-        { name = "meat", amount = 8 },
-        { name = "fish", amount = 8 },
-        { name = "biscuit", amount = 8 },
-        { name = "beer_strong", amount = 8 },
+        { name = "coin_gold", amount = 8 }
     },
 
     programs = {
@@ -70,9 +67,9 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:attack level:0",
-                "consume=fish,meat biscuit beer_strong",
+                "consume=coin_gold",
                 "animate=working duration:10s",
-                "consume=fish,meat biscuit beer_strong",
+                "consume=coin_gold",
                 "animate=working duration:10s",
                 "train=soldier:attack level:1"
             }

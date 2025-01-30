@@ -45,9 +45,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coal", amount = 10 },
-        { name = "ore", amount = 8 },
-        { name = "scrap_metal", amount = 4 }
+        { name = "coal", amount = 12 },
+        { name = "ore", amount = 12 }
     },
 
     programs = {
@@ -55,39 +54,23 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=recycle_metal_alloy",
-                "sleep=duration:15s",
                 "call=smelting_ore",
-                "sleep=duration:15s",
-                "call=recycle_metal_alloy",
                 "return=skipped"
-            }
-        },
-        recycle_metal_alloy = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recyling metal_alloy because ...
-            descname = pgettext("europeans_building", "recycling metal_alloy"),
-            actions = {
-                "return=skipped when economy needs gold and not economy needs metal_alloy",
-                "consume=scrap_metal:2 coal:2",
-                "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:2m",
-                "playsound=sound/metal/ironping priority:60%",
-                "produce=metal_alloy:2"
             }
         },
         smelting_ore = {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
             descname = pgettext("europeans_building", "smelting ore"),
             actions = {
-                "return=skipped when economy needs coal and not economy needs gold and not economy needs metal_alloy",
-                "return=skipped when site has scrap_metal:2 and economy needs ore",
+                "return=skipped when economy needs coal and not economy needs gold",
                 "consume=ore:6 coal:6",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
                 "animate=working duration:2m",
                 "playsound=sound/metal/ironping priority:60%",
+                "produce=gold:3",
                 "animate=working duration:2m",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=gold:3 metal_alloy:3"
+                "produce=gold:3"
             }
         }
     },

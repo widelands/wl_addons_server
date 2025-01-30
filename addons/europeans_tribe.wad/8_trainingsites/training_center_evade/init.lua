@@ -51,14 +51,11 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     working_positions = {
-        europeans_worker_advanced = 2
+        europeans_recruit = 2
     },
 
     inputs = {
-        { name = "meat", amount = 8 },
-        { name = "fish", amount = 8 },
-        { name = "honey_bread", amount = 8 },
-        { name = "mead", amount = 8 },
+        { name = "coin_silver", amount = 8 }
     },
 
     programs = {
@@ -77,9 +74,9 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:evade level:0",
-                "consume=fish,meat honey_bread mead",
+                "consume=coin_silver",
                 "animate=working duration:10s",
-                "consume=fish,meat honey_bread mead",
+                "consume=coin_silver",
                 "animate=working duration:10s",
                 "train=soldier:evade level:1"
             }
