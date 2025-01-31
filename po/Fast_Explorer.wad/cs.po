@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-01-31 03:09+0100\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -24,18 +28,21 @@ msgid ""
 "for single player, the other one for multiplayer games. Teams are not "
 "supported."
 msgstr ""
+"Mapa pro výherní podmínku \"Rychlý objevitel vyhrává\". Mapa \"Rychlý "
+"objevitel SP\" je pro jednoho hráče, druhá je určena pro multiplayer. Týmy "
+"nejsou podporovány."
 
 #: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4
 msgid "Fast_Explorer"
-msgstr ""
+msgstr "Rychlý objevitel"
 
 #: input:8 standard
 msgid "Fast Explorer MP"
-msgstr ""
+msgstr "Rychlý objevitel MP"
 
 #: input:8 standard
 msgid "Fast Explorer SP"
-msgstr ""
+msgstr "Rychlý objevitel SP"
 
 #: input:10 standard
 msgid ""
@@ -43,6 +50,9 @@ msgid ""
 "with your friends in a multiplayer game. This map contain 5 times the same "
 "island as in the map ''Fast Explorer SP''."
 msgstr ""
+"Použij tuto mapu pro hru s více hráči a s výherní podmínkou \"Rychlý "
+"objevitel vyhrává\". Mapa sestává z 5-ti stejných \"Rychlý objevitel SP\" "
+"ostrovů."
 
 #: input:10 standard
 msgid ""
@@ -52,6 +62,11 @@ msgid ""
 "contains only one player and is meant to publish your personal time along "
 "with the replay in the forum topic ''Fast Explorer''!"
 msgstr ""
+"Použij tuto mapu pro hru s výherní podmínkou \"Rychlý objevitel vyhrává\" a "
+"zúčastni se turnaje \"Rychlý objevitel\"! Cilem je co nejrychleji rozšířit "
+"své území a získat 4 hrdiny naloděné na bitevní lodi. Tato mapa je pouze pro "
+"jednoho hráče a je určena pro uveřejnění dosaženého času a záznamu hry na "
+"Widelands fóru ve vlákně \"Rychlý objevitel\"."
 
 #: input:11 standard
 msgid ""
@@ -59,3 +74,6 @@ msgid ""
 "places. Limited resources needs some micromanaging of productionsites and "
 "warehouses."
 msgstr ""
+"Buduj cesty a umisťuj vlajky s rozmyslem. Stav sklady na strategicky "
+"důležitých místech. Z důvodu omezených surovin bude třeba pracovat s "
+"ekonomickým nastavením a prioritami u výrobních budov a skladů."

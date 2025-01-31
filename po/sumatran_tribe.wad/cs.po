@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 03:10+0100\n"
+"POT-Creation-Date: 2025-01-31 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -1088,7 +1088,7 @@ msgstr "sklízení rákosu"
 
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:70
 msgid "No Fields or No Water Nearby"
-msgstr ""
+msgstr "Žádná pole nebo v blízkosti není žádná voda"
 
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:72
 msgctxt "sumatran_building"
@@ -1096,6 +1096,8 @@ msgid ""
 "The reed cutter working at this reed yard has no cleared soil to plant new "
 "plants."
 msgstr ""
+"Sběrač rákosu pracující na tomto rákosovém poli nemůže pěstovat rákos, "
+"protože nemá kam sázet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:8
@@ -1272,6 +1274,8 @@ msgid ""
 "area. You should consider dismantling or destroying the building or building "
 "a palm planter’s hut nearby."
 msgstr ""
+"Vinařka pracující v tomto domku nemůže ve svém okolí najít žádné palmy. Zvaž "
+"rozebrání, nebo zničení budovy, nebo stavbu chaty sadaře palem poblíž budovy."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:8
@@ -1304,6 +1308,9 @@ msgid ""
 "area. You should consider dismantling or destroying the building or building "
 "a palm planter’s hut or a jungle preserver’s hut nearby."
 msgstr ""
+"Dřevorubec pracující v tomto domku nemůže ve svém okolí najít žádné palmy. "
+"Zvaž rozebrání, nebo zničení budovy, nebo stavbu chaty sadaře palem, nebo "
+"stavbu chaty ochránce džungle poblíž budovy."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:8
@@ -1418,7 +1425,7 @@ msgstr "Opevněná vesnice"
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/fortified_village.lua:13
 msgid "Start the game with a fortified military installation"
-msgstr ""
+msgstr "Začít hru s obsazenými vojenskými budovami"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/headquarters.lua:11
@@ -1454,6 +1461,11 @@ msgid ""
 "real struggle. A map with good summer or desert terrain and a lot of space "
 "recommended."
 msgstr ""
+"Začni hru jen se skladem a nejzákladnějším minimem pro rozběh hospodářství. "
+"Pozor: UI vždy a většinou i člověk za těchto podmínek nedokáže úspěšně "
+"zahájit hru. Ani se o to nepokoušej, pokud nejsi připraven na opravdové "
+"živoření. Doporučena mapa s vhodným letním a pouštním terénem a dostatkem "
+"místa."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 msgid "Be careful"
@@ -1512,7 +1524,7 @@ msgstr "Lovecký tábor"
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:85
 #: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:80
 msgid "sleeping"
-msgstr ""
+msgstr "podřimování"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:93
@@ -1818,6 +1830,8 @@ msgid ""
 "Leaf gatherers are important part of your economy, they need cassava fields, "
 "plantations and palm planters nearby."
 msgstr ""
+"Sběračky listí jsou důležitou součástí hospodářství, potřebují ve svém okolí "
+"manioková pole, plantáže a sadaře palem."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/tips.lua:20
 msgid ""
@@ -1917,6 +1931,9 @@ msgid ""
 "palm trees. The trees have to be cut down by woodcutters first, then can the "
 "gatherers collect the leaves from the ground."
 msgstr ""
+"Sběračky listí potřebují ve svém okolí chaty sadařů palem, aby zabezpečili "
+"dostatek palem. Stromy musí nejprve pokácet dřevorubci, pak mohou sběračky "
+"posbírat listy ze země."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Reed, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:131
@@ -2012,7 +2029,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:209
 msgctxt "sumatran_ware"
 msgid "Cassava leaves are needed to prepare sauce for your meals."
-msgstr ""
+msgstr "Maniokové listy jsou potřeba na přípravu omáčky k jídlům."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cassava Leaves, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:211
@@ -2021,18 +2038,20 @@ msgid ""
 "Make sure that you leaf gatherers collect all leaves from the harvested "
 "cassava fields. Otherwise you will have to substitute them with eggs."
 msgstr ""
+"Postarej se, aby sběračky listí posbíraly všechny listy ze sklizených "
+"maniokových polí. Jinak je budeš muset nahrazovat vejci."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Starch, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:221
 msgctxt "sumatran_ware"
 msgid "Starch is the main ingredient used by meal preparation."
-msgstr ""
+msgstr "Škrob je hlavní surovinou používanou na přípravu jídel."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Starch, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:223
 msgctxt "sumatran_ware"
 msgid "It is made out of cassava roots by cooking."
-msgstr ""
+msgstr "Je získáván z maniokových hlíz."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Fish
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:233
@@ -2041,6 +2060,8 @@ msgid ""
 "Fresh fish is cooked in the kitchens and added into meals for your warriors "
 "and miners."
 msgstr ""
+"Čerstvé ryby jsou vařeny v kuchyních a přidávány do jídel pro tvé bojovníky "
+"a horníky."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Meat
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:243
@@ -2049,6 +2070,8 @@ msgid ""
 "Fresh meat is cooked in the kitchens and added into meals for yor warriors, "
 "miners and carriers."
 msgstr ""
+"Čerstvé maso je vařeno v kuchyních a přidáváno do jídel pro tvé bojovníky a "
+"horníky."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Eggs, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:254
@@ -2057,12 +2080,14 @@ msgid ""
 "Eggs are used as a substitute for meat, fish and cassava leaves in the "
 "kitchens."
 msgstr ""
+"Vejce jsou spotřebovávána v kuchyních jako náhrada za maso, ryby nebo "
+"maniokové listy."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Eggs, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:256
 msgctxt "sumatran_ware"
 msgid "You need food waste as a food source for chickens to produce eggs."
-msgstr ""
+msgstr "Aby slepice snášely vejce, potřebuješ jídlové zbytky jako krmivo."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Meal
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:266
@@ -2071,6 +2096,8 @@ msgid ""
 "Meal is consumed in mines and training sites. Every new carrier also need "
 "meal before his service on a road."
 msgstr ""
+"Jídlo je konzumováno v dolech a na cvičištích. Každý nový nosič musí také "
+"dostat jídlo než se vydá na svou službu na cestách."
 
 #. TRANSLATORS: Note helptext for a Sumatran ware: Meal
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:268
@@ -2080,12 +2107,17 @@ msgid ""
 "starch, cassava leaves, meat or fish and water. Eggs can be used instead "
 "some of these ingredients too."
 msgstr ""
+"Jidlo je optimální kombinací několika surovin. Jsou jimi škrob, maniokové "
+"listy, maso nebo ryba a voda. Místo některých z těchto surovin lze použít "
+"také vejce."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Food Waste
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:276
 msgctxt "sumatran_ware"
 msgid "You can feed food waste to your chickens and gain eggs and meat."
 msgstr ""
+"Jídlové zbytky můžeš použít jako krmivo pro slepice a získáš tak vejce a "
+"maso."
 
 #. TRANSLATORS: Note helptext for a Sumatran ware: Food Waste
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:278
@@ -2095,6 +2127,9 @@ msgid ""
 "producing food waste by throwing out starch when they don't have cassava "
 "leaves or eggs on stock and meal is needed."
 msgstr ""
+"Jídlové zbytky jsou vedlejším produktem kuchyní. Kuchyně také začínají "
+"produkovat jídlové zbytky vyhazováním škrobu, pokud nemají dostatek "
+"maniokových listů nebo vajec na skladě a je potřeba vyrábět jídlo."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Palm Wine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:286
@@ -2103,6 +2138,9 @@ msgid ""
 "Palm wine is consumed together with meal in your training sites and in deep "
 "mines. It is produced by winery and wineries need fully grown palms nearby."
 msgstr ""
+"Palmové víno se spotřebovává společně s jídlem na tvých cvičištích a v "
+"hlubokých dolech. Vyrábí se ve vinařství a vinařství potřebují ve svém okolí "
+"plně dorostlé palmy."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Raw Diamond
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:298
@@ -2111,6 +2149,8 @@ msgid ""
 "Raw diamonds are used to produce whetstones or can be polished and used as a "
 "precious building material."
 msgstr ""
+"Surové diamanty se používají k výrobě brousků nebo mohou být broušeny a "
+"použity jako cenný stavební materiál."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Diamond
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:307
@@ -2119,13 +2159,16 @@ msgid ""
 "Diamonds are a very precious building material. These stones are also your "
 "main source of wealth, when your goal is to collect precious things."
 msgstr ""
+"Diamanty jsou velmi cenným stavebním materiálem. Tyto drahé kameny jsou také "
+"tvým hlavním zdrojem bohatství, pokud je cílem hry posbírat co nejvíce "
+"cenností."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:317
 msgctxt "ware"
 msgid ""
 "The fires of the sumatran furnaces by smelting metals are fed with coal."
-msgstr ""
+msgstr "Při tavení kovů jsou ohně sumatřských hutí krmeny uhlím."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:319
@@ -2134,12 +2177,14 @@ msgid ""
 "It is mined in coal mines or produced out of logs and tropical wood by a "
 "charcoal kiln."
 msgstr ""
+"Těží se v uhelných dolech nebo se vyrábí z klád a tropického dřeva v "
+"milířích."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:330
 msgctxt "default_ware"
 msgid "Copper ore can be smelted into copper in a furnace."
-msgstr ""
+msgstr "Měděnou rudu lze v huti přetavit na měď."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 2
@@ -2150,6 +2195,8 @@ msgstr ""
 msgctxt "sumatran_ware"
 msgid "Your miners need meals and in deep mines also palm wine to produce it."
 msgstr ""
+"Aby ji horníci mohli těžit potřebují jídlo a v hlubokých dolech také palmové "
+"víno."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:343
@@ -2157,6 +2204,8 @@ msgctxt "ware"
 msgid ""
 "Copper is needed for armor production. It is a rare building material too."
 msgstr ""
+"Měď je potřeba na výrobu zbroje. Slouží také jako nepříliš běžný stavební "
+"materiál."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
@@ -2164,25 +2213,25 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:371
 msgctxt "sumatran_ware"
 msgid "It is produced by the furnaces."
-msgstr ""
+msgstr "Je vyráběna v hutích."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:356
 msgctxt "default_ware"
 msgid "Iron ore can be smelted into iron in a furnace."
-msgstr ""
+msgstr "Železnou rudu lze v huti přetavit na železo."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:369
 msgctxt "ware"
 msgid "Iron is needed for tool and weapon production."
-msgstr ""
+msgstr "Železo je potřeba na výrobu nástrojů a zbraní."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:382
 msgctxt "default_ware"
 msgid "Gold ore can be smelted into gold in a furnace."
-msgstr ""
+msgstr "Zlatou rudu lze v huti přetavit na zlato."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:395
@@ -2190,6 +2239,7 @@ msgctxt "ware"
 msgid ""
 "Gold is needed for armor production. It is a rare building material too."
 msgstr ""
+"Zlato je potřeba na výrobu zbroje. Slouží také jako vzácný stavební materiál."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:397
@@ -2198,6 +2248,8 @@ msgid ""
 "Gold is the most valuable of all metals, and it is smelted out of gold ore "
 "in furnaces."
 msgstr ""
+"Zlato je nejcennějším ze všech kovů a je získáváno tavením zlaté rudy v "
+"hutích."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:411
@@ -2220,19 +2272,19 @@ msgstr "Těžební sekera je nástroj na kácení stromů a používají ji dře
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:500
 msgctxt "sumatran_ware"
 msgid "They are produced by tools workshops."
-msgstr ""
+msgstr "Jsou vyráběny v nástrojářských dílnách."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Pick
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:424
 msgctxt "sumatran_ware"
 msgid "Picks are used by stonecutters and miners."
-msgstr ""
+msgstr "Krumpáče používají kameníci a horníci."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Shovel
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:435
 msgctxt "sumatran_ware"
 msgid "The shovel is an essential tool for foresters and farmers."
-msgstr ""
+msgstr "Lopata je nezbytným nástrojem pro lesníky a farmáře."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:446
@@ -2241,6 +2293,8 @@ msgid ""
 "The hammer is the most used tool. Geologists, builders, smiths, shipwrights "
 "and craftsmen, they all need hammer."
 msgstr ""
+"Kladivo je nejpoužívanějším nástrojem. Geologové, stavaři, kovotepci, loďaři "
+"a řemeslníci, ti všichni ho potřebují."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:459
@@ -2249,18 +2303,20 @@ msgid ""
 "The machete is a tool for leaf gatherers, reedcutters and together with "
 "buckets also for wine makers."
 msgstr ""
+"Mačeta je nástrojem sběraček listí, sběračů rákosu a společně s kýbly také "
+"vinařek."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Kitchen Tools, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:472
 msgctxt "sumatran_ware"
 msgid "Kitchen tools are used by cooks."
-msgstr ""
+msgstr "Kuchyňské nářadí používají kuchaři."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Fire Tongs, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:485
 msgctxt "sumatran_ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Kovářské kleště jsou nástrojem používaným při tavení rudy."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Buckets, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:498
@@ -2268,13 +2324,13 @@ msgctxt "sumatran_ware"
 msgid ""
 "Buckets are used by water carriers and together with a machete by wine "
 "makers."
-msgstr ""
+msgstr "Kýble jsou používány nosiči vody a společně s mačetou vinařkami."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Whetstone
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:511
 msgctxt "sumatran_ware"
 msgid "Whetstones are used by craftsmen and are produced in a basic workshop."
-msgstr ""
+msgstr "Brousky jsou používány řemeslníky a vyrábí se v obyčejných dílnách."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Sheet
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
@@ -2282,19 +2338,19 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:536
 msgctxt "ware"
 msgid "Source material for armor production."
-msgstr ""
+msgstr "Vstupní materiál na výrobu zbroje."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Spear
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:546
 msgctxt "sumatran_ware"
 msgid "Widely used weapon for hunters and warriors."
-msgstr ""
+msgstr "Zbraň s širokým využitím pro lovce a bojovníky."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Jacket
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:555
 msgctxt "sumatran_ware"
 msgid "A basic piece of clothing for your warriors, hunters and chiefs."
-msgstr ""
+msgstr "Základní druh oblečení pro tvé bojovníky, lovce a náčelníky."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Warrior's Dress
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:564
@@ -2304,6 +2360,9 @@ msgid ""
 "a sewing workshop and used in a training camp – together with meal and palm "
 "wine – to ensure that the warrior’s health will be on the highest level."
 msgstr ""
+"Oděv bojovníka je ideálním druhem oblečení pro bojovníky. Vyrábí se v šicí "
+"dílně a používá se ve výcvikovém táboře – společně s jídlem a palmovým vínem "
+"– aby zabezpečilo, že zdraví bojovníka bude na nejvyšší možné úrovni."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Shoes
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:573
@@ -2313,6 +2372,9 @@ msgid ""
 "together with meal and palm wine – to train soldiers in evade. Scouts wear "
 "this type of shoes too."
 msgstr ""
+"Tyto boty se vyrábí  v šicí dílně a používají se ve výcvikovém táboře – "
+"společně s jídlem a palmovým vínem – při tréninku bojovníků v úhybu. Také "
+"průzkumníci používají tento druh obuvi."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Armor
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:582
@@ -2322,6 +2384,9 @@ msgid ""
 "armorsmithy and used in a training camp – together with meal and palm wine – "
 "to train warriors in defense."
 msgstr ""
+"Měděná zbroj je základním obranným prostředkem pro bojovníky. Vyrábí se v "
+"platnéřství a používá se ve výcvikovém táboře – společně s jídlem a palmovým "
+"vínem – při tréninku bojovníků v obraně."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Golden Armor
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:591
@@ -2331,6 +2396,9 @@ msgid ""
 "an armorsmithy and used in a training camp – together with meal and palm "
 "wine – to train warriors in defense."
 msgstr ""
+"Zlatá zbroj je vylepšeným obranným prostředkem pro bojovníky. Vyrábí se v "
+"platnéřství a používá se ve výcvikovém táboře – společně s jídlem a palmovým "
+"vínem – při tréninku bojovníků v obraně."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Golden Shield
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:600
@@ -2340,6 +2408,9 @@ msgid ""
 "produced in an armorsmithy and used in a training camp – together with meal "
 "and palm wine – to train warriors in defense."
 msgstr ""
+"Zlatý štít je nejúčinnějším obranným prostředkem pro bojovníky. Vyrábí se v "
+"platnéřství a používá se ve výcvikovém táboře – společně s jídlem a palmovým "
+"vínem – při tréninku bojovníků v obraně."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
@@ -2347,19 +2418,19 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:621
 msgctxt "sumatran_worker"
 msgid "Carries items along roads."
-msgstr ""
+msgstr "Přenáší náklad na cestách."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Ferry
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:628
 msgctxt "sumatran_worker"
 msgid "Ships wares across narrow rivers and straights."
-msgstr ""
+msgstr "Dopravuje suroviny přes řeky a úžiny."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Recruit
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:635
 msgctxt "sumatran_worker"
 msgid "Eager to become a soldier and defend his tribe!"
-msgstr ""
+msgstr "Odhodlaný stát se vojákem a bránit svůj kmen!"
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Breeder
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:642
@@ -2371,19 +2442,19 @@ msgstr "Chová zvířata."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:649
 msgctxt "sumatran_worker"
 msgid "Explorers territory of your enemy."
-msgstr ""
+msgstr "Prozkoumává území tvého nepřítele."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Jungle Ghost
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:656
 msgctxt "sumatran_worker"
 msgid "Gives life to the tropical animals and dwells in thermal springs."
-msgstr ""
+msgstr "Dává život tropickým zvířatům a přebývá v termálních pramenech."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Stonecutter
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:666
 msgctxt "sumatran_worker"
 msgid "Mines stone."
-msgstr ""
+msgstr "Láme kámen."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Woodcutter
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:673
@@ -2413,13 +2484,13 @@ msgstr "Sbírá palmové a maniokové listí."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:701
 msgctxt "sumatran_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Pracuje v loděnici a staví lodě."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Builder
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:708
 msgctxt "sumatran_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Pracuje na staveništích a staví nové budovy."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Water Carrier
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:718
@@ -2527,7 +2598,7 @@ msgstr "Tká látku."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:860
 msgctxt "sumatran_worker"
 msgid "Dressmaker is an experienced weaver and produces clothing."
-msgstr ""
+msgstr "Krejčová je zkušená tkadlena a šije oděvy."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Coppersmith
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:867
@@ -2541,7 +2612,7 @@ msgctxt "sumatran_worker"
 msgid ""
 "Armorsmith is an experienced coppersmith and produces armor for training "
 "camps."
-msgstr ""
+msgstr "Zbrojíř je zkušený kovotepec a vyrábí zbroj pro cvičiště."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
 #. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
@@ -2556,6 +2627,8 @@ msgid ""
 "Palm leaves can be picked up by a leaf gatherer and used as building "
 "material and for weaving cloth."
 msgstr ""
+"Palmové listí mohou posbírat sběračky listí a může být použito jako stavební "
+"materiál a na tkaní látky."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (tiny)
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:906
@@ -2583,6 +2656,8 @@ msgid ""
 "These cassava plants has been harvested. Your leaf gatherer can pick up some "
 "cassava leaves here."
 msgstr ""
+"Tyto maniokové rostliny byly sklizeny. Tvé sběračky listí zde mouhou "
+"posbírat  maniokové listy."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:941
@@ -2719,18 +2794,19 @@ msgstr "Ložiska uhlí obsahují uhlí, které lze těžit pomocí uhelných dol
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1098
 msgid "There is only a little bit of coal here."
-msgstr ""
+msgstr "Zde se dá najít něco málo uhlí."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1107
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1151
 msgid "This vein contains iron ore that can be dug up by iron mines."
 msgstr ""
+"Tato žíla obsahuje železnou rudu, kterou lze těžit pomocí železorudných dolů."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1109
 msgid "There is only a little bit of iron ore here."
-msgstr ""
+msgstr "Zde se dá najít něco málo železné rudy."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1118
@@ -2738,11 +2814,13 @@ msgstr ""
 msgid ""
 "This vein contains copper-gold ore that can be dug up by copper-gold mines."
 msgstr ""
+"Tato žíla obsahuje měděnozlatou rudu, kterou lze těžit pomocí měděnozlatých "
+"dolů."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1120
 msgid "There is only a little bit of copper-gold ore here."
-msgstr ""
+msgstr "Zde se dá najít něco málo měděnozlaté rudy."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1129
@@ -2751,48 +2829,51 @@ msgid ""
 "Stone is a basic building material and can be dug up by a stone mine. You "
 "will also get some raw diamonds from the mine."
 msgstr ""
+"Kámen je základním stavebním materiálem a lze ho těžit v dolech na kámen. "
+"Tento důl produkuje také surové diamanty."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1131
 msgid "There is only a little bit of stone and diamonds here."
-msgstr ""
+msgstr "Zde se dá najít něco málo kamene a diamantů."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1142
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Zde je velké ložisko uhlí."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1153
 msgid "There is a lot of of iron ore here."
-msgstr ""
+msgstr "Zde je velké ložisko železné rudy."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1164
 msgid "There is a lot of copper-gold ore here."
-msgstr ""
+msgstr "Zde je velké ložisko měděnozlaté rudy."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1175
 msgid "There is a lot of stone and diamonds here."
-msgstr ""
+msgstr "Zde je velké ložisko kamene a diamantů."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ship Under Construction
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1183
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "Na tomto místě se staví loď."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran warehouse: Headquarters
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1195
 msgctxt "sumatran_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
+"Poskytuje ubytování tvým lidem a také skladuje tvé suroviny a nástroje."
 
 #. TRANSLATORS: Note helptext for a Sumatran warehouse: Headquarters
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1197
 msgctxt "sumatran_building"
 msgid "The headquarters is your main building."
-msgstr ""
+msgstr "Hlavní budova je tvou klíčovou budovou."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran warehouse: Warehouse
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1204
@@ -2801,6 +2882,8 @@ msgid ""
 "Your workers and warriors will find shelter here. Also stores your wares and "
 "tools."
 msgstr ""
+"Tady najdou tví dělníci a bojovníci přístřeší. Také se zde uchovává tvé "
+"zboží a nářadí."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran warehouse: Port
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1211
@@ -2809,6 +2892,8 @@ msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "warriors, wares and tools."
 msgstr ""
+"Slouží jako základna pro zámořské plavby a obchod. Také skladuje suroviny, "
+"nástroje a poskytuje přístřeší bojovníkům."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Woodcutter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1220
@@ -2817,6 +2902,7 @@ msgid ""
 "Fells trees in the surrounding area and processes them into logs or tropical "
 "wood."
 msgstr ""
+"Kácí stromy ve svém okolí a zpracovává je na klády, nebo tropické dřevo."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Woodcutter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1222
@@ -2829,12 +2915,17 @@ msgid ""
 "cut down both tropical and palm trees, the building’s productivity can "
 "decrease."
 msgstr ""
+"Dřevorubci rozeznávají 3 druhy stromů. Tropické stromy (železodřevný strom, "
+"balzovník, kaučukovník a dvojkřídláč), palmy (5 druhů oficiálních palem) a "
+"všechny ostatní stromy. Stromy prvních dvou kategorií jsou káceny pouze "
+"pokud ekonomika potřebuje tropické dřevo, respektive klády. Pokud dřevorubec "
+"nemůže kácet jak tropické stromy tak palmy, jeho produktivita může klesnout."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Palm Planter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1229
 msgctxt "sumatran_building"
 msgid "Plants palm trees in the surrounding area."
-msgstr ""
+msgstr "Vysazuje ve svém okolí palmy."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Palm Planter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1231
@@ -2843,12 +2934,14 @@ msgid ""
 "You need palm trees for logs, palm wine production and palm leaves, which "
 "are collected by leaf gather when a palm tree is cut down."
 msgstr ""
+"Palmy potřebuješ na klády, palmové víno a palmové listy, které sbírají "
+"sběračky listí, když je palma pokácena."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Preserver’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1238
 msgctxt "sumatran_building"
 msgid "Plants tropical trees in the surrounding area."
-msgstr ""
+msgstr "Vysazuje ve svém okolí tropické stromy."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Jungle Preserver’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1240
@@ -2857,24 +2950,26 @@ msgid ""
 "The tropical trees are source of tropical wood, which is an important "
 "building material."
 msgstr ""
+"Tropické stromy jsou zdrojem tropického dřeva, které je důležitým stavebním "
+"materiálem."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stonecutter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1247
 msgctxt "sumatran_building"
 msgid "Cuts raw pieces of stone out of rocks in the vicinity."
-msgstr ""
+msgstr "Láme kamenné kvádry ze skal v okolí."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Stonecutter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1249
 msgctxt "sumatran_building"
 msgid "The stonecutter needs rocks to cut within the work area."
-msgstr ""
+msgstr "Lom potřebuje ve svém okolí skály."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Water Carrier’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1256
 msgctxt "sumatran_building"
 msgid "Draws water out of the rivers and lakes."
-msgstr ""
+msgstr "Čerpá vodu z řek a jezer."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Water Carrier’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1258
@@ -2883,6 +2978,8 @@ msgid ""
 "Water carriers cannot dig up water from the ground. Roads and trees along "
 "the shoreline block drawing water."
 msgstr ""
+"Nosiči vody neumí čerpat vodu z hlubin země. Cesty a stromy na pobřeží brání "
+"v získávání vody."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Leaf Gatherer’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1265
@@ -2890,6 +2987,8 @@ msgctxt "sumatran_building"
 msgid ""
 "Gathers cassava leaves left by farmers and palm leaves left by woodcutters."
 msgstr ""
+"Zajišťuje sběr maniokových listů zanechaných farmáři a palmových listů "
+"zanechaných dřevorubci."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Leaf Gatherer’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1267
@@ -2898,12 +2997,14 @@ msgid ""
 "Both cassava and palm leaves are important wares for your economy and "
 "shortages may cause you trouble."
 msgstr ""
+"Obojí, maniokové i palmové listy, jsou důležitými surovinami pro tvé "
+"hospodářství a jejich nedostatek ti může způsobit problémy."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s Tent
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1274
 msgctxt "building"
 msgid "Hunts animals to produce meat and catches fishes in the waters."
-msgstr ""
+msgstr "Loví zvěř na maso a chytá ryby ve vodě."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s Tent
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1276
@@ -2921,6 +3022,8 @@ msgid ""
 "Hunts animals to produce meat and catches fishes in the waters. Hunters in "
 "this houses can hunt crocodiles for skin and meat too."
 msgstr ""
+"Loví zvěř na maso a chytá ryby ve vodě. Lovci v těchto domcích mohou také "
+"lovit krokodýly pro jejich kůži i na maso."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1285
@@ -2941,6 +3044,10 @@ msgid ""
 "to transform mountains is very advatageous, in the second case, all types of "
 "terrain can be transformed."
 msgstr ""
+"Termální prameny přeměňují terén na terén více výhodný pro tropické stromy. "
+"To je užitečné zejména při hře na pustinných a zimních mapách. V prvím "
+"případě se vyplatí přetvářet zejména horský terén, v druhém případě lze "
+"přeměnit všechny druhy terénu."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1294
@@ -2972,13 +3079,13 @@ msgstr "Potřebuje ve svém okolí vodní plochu."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1319
 msgctxt "sumatran_building"
 msgid "Produces sandedwood, diamonds and whetstones."
-msgstr ""
+msgstr "Vyrábí broušené dřevo, diamanty a brousky."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tools Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1326
 msgctxt "sumatran_building"
 msgid "Forges the tools that your workers need."
-msgstr ""
+msgstr "Vyrábí všechny nástroje, které tví dělníci potřebují."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Tools Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1328
@@ -2988,63 +3095,66 @@ msgid ""
 "your worker needs to gain some experience by working in a basic workshop for "
 "some period of time."
 msgstr ""
+"Dávej pozor na to, že budova potřebuje zkušeného pracovníka. Pokud ho nemáš, "
+"tak musí  tvůj pracovník nejprve získat nějaké zkušenosti dočasnou prací v "
+"obyčejné dílně."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1329
 msgctxt "sumatran_building"
 msgid "The toolsmith needs %1% on average to make one tool."
-msgstr ""
+msgstr "Zkušený řemeslník potřebuje na výrobu jednoho nástroje v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Weapons Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1336
 msgctxt "sumatran_building"
 msgid "Produces spears for hunters, warriors and hunting camps."
-msgstr ""
+msgstr "Zajišťuje výrobu oštěpů pro lovce, bojovníky a lovecké tábory."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Coppersmith’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1343
 msgctxt "sumatran_building"
 msgid "Produces copper sheets and gold sheets."
-msgstr ""
+msgstr "Vyrábí měděné a zlaté pláty."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Armorsmithy
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1350
 msgctxt "sumatran_building"
 msgid "Produces shields and armor."
-msgstr ""
+msgstr "Vyrábí štíty a zbroj."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1351
 msgctxt "sumatran_building"
 msgid "The armorsmith needs %1% on average to make one piece of armor."
-msgstr ""
+msgstr "Zbrojíř potřebuje na výrobu jednoho dílu zbroje v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Winery
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1358
 msgctxt "sumatran_building"
 msgid "Produces palm wine."
-msgstr ""
+msgstr "Vyrábí palmové víno."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Winery
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1360
 msgctxt "sumatran_building"
 msgid "The worker needs old palms around his house."
-msgstr ""
+msgstr "Pracovnice potřebuje ve svém okolí staré palmy."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Kitchen
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1367
 msgctxt "sumatran_building"
 msgid "Produces starch."
-msgstr ""
+msgstr "Vyrábí škrob."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1368
 msgctxt "sumatran_building"
 msgid "The cook needs %1% on average to cook 3 portions of starch."
-msgstr ""
+msgstr "Kuchař potřebuje na výrobu 3 porcí škrobu v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Kitchen
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1375
 msgctxt "sumatran_building"
 msgid "Produces meal."
-msgstr ""
+msgstr "Připravuje jídla."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Kitchen
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1377
@@ -3054,6 +3164,9 @@ msgid ""
 "Otherwise your cook will start to throw out starch as food waste for your "
 "chicken farms."
 msgstr ""
+"Pokud potřebuješ jídlo zajisti, aby byly skladem maniokové listy nebo vejce. "
+"Jinak začne kuchař vyhazovat škrob a produkovat tak jídlové zbytky pro "
+"kuřecí farmy."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1378
 msgctxt "sumatran_building"
@@ -3062,41 +3175,44 @@ msgid ""
 "cassava leaves or eggs for a meal, he throws out 2 bags of food waste in the "
 "same amount of time."
 msgstr ""
+"Kuchař potřebuje na přípravu dvou jídel v průměru %1%. Pokud není dost "
+"maniokových listů nebo vajec na přípravu jídla, vyhodí za stejný časový "
+"interval dva pytle s jídlovými zbytky."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Sewing Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1385
 msgctxt "sumatran_building"
 msgid "Produces clothing."
-msgstr ""
+msgstr "Vyrábí oděvy."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1386
 msgctxt "sumatran_building"
 msgid "The dressmaker needs %1% on average to sew one piece of clothing."
-msgstr ""
+msgstr "Krejčová potřebuje na výrobu jednoho oděvu v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Furnace
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1393
 msgctxt "sumatran_building"
 msgid "Smelts ore into iron, copper and gold."
-msgstr ""
+msgstr "Taví a slévá rudu na železo, měď a zlato."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Charcoal Kiln
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1400
 msgctxt "sumatran_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Pálí klády na dřevěné uhlí."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1408
 msgctxt "sumatran_building"
 msgid "Recruits warriors, hunters, chiefs and carriers."
-msgstr ""
+msgstr "Rekrutuje bojovníky, lovce, náčelníky a nosiče."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1410
 msgctxt "sumatran_building"
 msgid "Equips the recruits with all necessary weapons and clothing."
-msgstr ""
+msgstr "Vybavuje rekruty všemi potřebnými zbraněmi a oděvy."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
@@ -3104,7 +3220,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1430
 msgctxt "sumatran_building"
 msgid "Grows cassava for roots and leaves."
-msgstr ""
+msgstr "Pěstuje maniok na hlízy a listy."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Cassava Fields
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1422
@@ -3113,6 +3229,8 @@ msgid ""
 "The farmer harvest one cassava root from every field. The remained leaves "
 "can be harvested by leaf gatherer."
 msgstr ""
+"Farmář sklidí jednu maniokovou hlízu z každého pole. Zbylé listy mohou být "
+"sklizeny sběračkou listí."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1423
 msgctxt "sumatran_building"
@@ -3120,6 +3238,8 @@ msgid ""
 "The inexperienced resp. experienced farmer needs %1% resp. %2% on average to "
 "produce one cassava root."
 msgstr ""
+"Nezkušený, respektive zkušený farmář potřebuje na vyprodukování jedné "
+"maniokové hlízy v průměru %1%, respektive %2%."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Cassava Plantation
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1432
@@ -3129,17 +3249,20 @@ msgid ""
 "Unfortunately, the amount of leaves left remains unchanged and leaf gatherer "
 "can pick up one bundle of leaves from every harvested field."
 msgstr ""
+"Díky zavlažování sklidí farmář z každého pole dvě maniokové hlízy. "
+"Naneštěstí množství vyprodukovaného listí zůstává stejné a sběračka listí "
+"může sklidit jeden svazek listů z každého sklizeného pole."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1433
 msgctxt "sumatran_building"
 msgid "The farmer needs %1% on average to produce one cassava root."
-msgstr ""
+msgstr "Farmář potřebuje na vyprodukování jedné maniokové hlízy v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Chicken Farm
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1440
 msgctxt "sumatran_building"
 msgid "Breeds chickens for eggs and meat."
-msgstr ""
+msgstr "Chová slepice na vejce a na maso."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Chicken Farm
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1442
@@ -3148,29 +3271,33 @@ msgid ""
 "The production of eggs is divided into two cycles. In first one only eggs "
 "are produced, in second one, you gain eggs and meat."
 msgstr ""
+"Produkce vajec je rozdělena do dvou cyklů. V prvním získáš pouze vejce, v "
+"druhém vedle vajec ještě maso navíc."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1443
 msgctxt "sumatran_building"
 msgid "The breeder needs %1% on average to produce one basket of eggs or meat."
 msgstr ""
+"Chovatel potřebuje na vyprodukování jednoho koše vajec, nebo masa v průměru "
+"%1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Weaving Mill
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1450
 msgctxt "sumatran_building"
 msgid "Weaves cloth out of reed and palm leaves."
-msgstr ""
+msgstr "Tká látku z rákosu a palmových listů."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1451
 msgctxt "sumatran_building"
 msgid "The weaver needs %1% on average to make one piece of cloth."
-msgstr ""
+msgstr "Tkadlena potřebuje na utkání jednoho kusu látky v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Marsh
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1458
 msgctxt "sumatran_building"
 msgid ""
 "Home of tropical animals. Source of meat and crocodile skin for your hunters."
-msgstr ""
+msgstr "Domov tropických zvířat. Zdroj masa a krokodýlí kůže pro tvé lovce."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Jungle Marsh
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1460
@@ -3180,17 +3307,20 @@ msgid ""
 "around the marsh. Roads can block the way for animals to leave. Out of 4 "
 "animals leaving the marsh, there is one crocodile."
 msgstr ""
+"Pokud zvěř neopouští močál, pak je kolem pravděpodobně postaveno příliš "
+"mnoho cest. Cesty mohou bránit zvířatům v opouštění močálu. Ze 4 zvířat, "
+"která močál opustí, je jeden krokodýl."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1461
 msgctxt "sumatran_building"
 msgid "There is one animal leaving the marsh in %1% on average."
-msgstr ""
+msgstr "V průměru opustí močál jedno zvíře za %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Coal Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1470
 msgctxt "sumatran_building"
 msgid "Digs coal out of the ground in mountain terrain."
-msgstr ""
+msgstr "Kutá uhlí v horském terénu."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Coal Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1472
@@ -3199,13 +3329,15 @@ msgid ""
 "This mine can’t be enhanced. You can use it as an alternative to your "
 "charcoal burners, when you have enough meal or lack of wood."
 msgstr ""
+"Tento důl nelze vylepšit. Je alternativou k milířům, pokud máš dostatek "
+"jídla nebo nedostatek dřeva."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1473
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1483
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1503
 msgctxt "sumatran_building"
 msgid "The miner needs %1% on average to produce one piece of ore."
-msgstr ""
+msgstr "Horník potřebuje na získání jednoho kusu rudy v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
@@ -3213,7 +3345,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1490
 msgctxt "sumatran_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Těží železnou rudu v horském terénu."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Iron Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1482
@@ -3222,6 +3354,8 @@ msgid ""
 "In comparison to a deep mine, production of this mine is quicker but more "
 "expensive."
 msgstr ""
+"Ve srovnání s hlubokým dolem je produkce tohoto dolu rychlejší, ale "
+"nákladnější."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Iron Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1492
@@ -3229,12 +3363,14 @@ msgctxt "sumatran_building"
 msgid ""
 "In comparison to a basic mine, production of this mine is slower but cheaper."
 msgstr ""
+"Ve srovnání se základním dolem je produkce tohoto dolu pomalejší, ale "
+"levnější."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1493
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1513
 msgctxt "sumatran_building"
 msgid "The miners need %1% on average to produce one piece of ore."
-msgstr ""
+msgstr "Horníci potřebují na získání jednoho kusu rudy v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
@@ -3242,7 +3378,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1510
 msgctxt "sumatran_building"
 msgid "Digs copper ore and gold ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Těží měděnou a zlatou rudu v horském terénu."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Copper-Gold Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1502
@@ -3252,6 +3388,9 @@ msgid ""
 "expensive. The mine has two programs. Can produce higher ratio of gold ore "
 "when gold ore is needed. "
 msgstr ""
+"Ve srovnání s hlubokým dolem je produkce tohoto dolu rychlejší, ale dražší. "
+"Důl má dva programy. Může produkovat vyšší podíl zlaté rudy pokud je zlatá "
+"ruda potřeba."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Copper-Gold Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1512
@@ -3261,12 +3400,16 @@ msgid ""
 "cheaper. The mine has two programs. Can produce higher ratio of gold ore "
 "when gold ore is needed."
 msgstr ""
+"Ve srovnání se základním dolem je produkce tohoto dolu pomalejší, ale "
+"levnější. Důl má dva programy. Může produkovat vyšší podíl zlaté rudy pokud "
+"je zlatá ruda potřeba. Prázdné doly produkují primárně zlato, pokud "
+"hospodářství potřebuje zlato."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1520
 msgctxt "sumatran_building"
 msgid "Digs raw diamonds and stone out of the ground in mountain terrain."
-msgstr ""
+msgstr "Těží surové diamanty a kámen v horském terénu."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1522
@@ -3276,18 +3419,23 @@ msgid ""
 "expensive. The mine has two programs. When economy doesn’t need raw "
 "diamonds, the miners don’t bother by searching them."
 msgstr ""
+"Ve srovnání s hlubokým dolem je produkce tohoto dolu rychlejší, ale dražší. "
+"Důl má dva programy. Pokud hospodářství nepotřebuje surové diamanty, horníci "
+"se neobtěžují jejich hledáním."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1523
 msgctxt "sumatran_building"
 msgid ""
 "The miner needs %1% on average to produce one piece of stone or raw diamond."
 msgstr ""
+"Horník potřebuje na získání jednoho kvádru kamene, nebo jednoho surového "
+"diamantu v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1530
 msgctxt "sumatran_building"
 msgid "Digs diamonds and stone out of the ground in mountain terrain."
-msgstr ""
+msgstr "Těží diamanty a kámen v horském terénu."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1532
@@ -3297,12 +3445,17 @@ msgid ""
 "has two programs. When economy doesn’t need raw diamonds, the miners don’t "
 "bother by searching them."
 msgstr ""
+"Ve srovnání se základním dolem je produkce tohoto dolu pomalejší, ale "
+"levnější. Důl má dva programy. Pokud hospodářství nepotřebuje surové "
+"diamanty, horníci se neobtěžují jejich hledáním."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1533
 msgctxt "sumatran_building"
 msgid ""
 "The miners need %1% on average to produce one piece of stone or raw diamond."
 msgstr ""
+"Horníci potřebují na získání jednoho kvádru kamene, nebo jednoho surového "
+"diamantu v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Training Camp, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1543
@@ -3314,7 +3467,7 @@ msgstr "Cvičí vojáky v úhybu, obraně a zdraví."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1545
 msgctxt "sumatran_building"
 msgid "Equips the warriors with all necessary armor parts and weapons."
-msgstr ""
+msgstr "Vybavuje bojovníky všemi potřebnými částmi zbroje a zbraněmi."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Hunting Camp
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1553
@@ -3346,7 +3499,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1609
 msgctxt "sumatran_building"
 msgid "Garrisons warriors to expand your territory."
-msgstr ""
+msgstr "Obsazením budovy svou posádkou rozšiřuješ svá území."
 
 #. TRANSLATORS: Note helptext for a Sumatran military site: Guard Post
 #. TRANSLATORS: Note helptext for a Sumatran military site: Small Sentry
@@ -3364,6 +3517,9 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a warrior to "
 "send him away."
 msgstr ""
+"Pokud máš nedostatek bojovníků pro obsazení nové vojenské budovy, použij "
+"tlačítko s šipkou dolů pro snížení kapacity. Můžeš také kliknout na ikonu "
+"bojovníka a poslat ho tak z budovy pryč."
 
 #. TRANSLATORS: Note helptext for a Sumatran military site: Fortified Tower
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1602
@@ -3373,6 +3529,9 @@ msgid ""
 "Enhancement of big sentry costs you one log and one reed more but you save "
 "one block of stone instead."
 msgstr ""
+"Tuto budovu lze postavit vylepšením hlídkovací věže, nebo velké strážnice. "
+"Vylepšení z velké strážnice je o kládu a rákos dražší, ale za to ušetří "
+"jeden kvádr kamene."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Ferry Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1620
@@ -3387,30 +3546,34 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
 "ware between ports."
 msgstr ""
+"Staví lodě, které se užívají k osídlování zámořských území a pro transport "
+"zboží mezi přístavy."
 
 #. TRANSLATORS: Lore helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1638
 msgctxt "sumatran_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
-msgstr ""
+msgstr "„Nepřísahej při stavaři, který nemá všechen stavební materiál.“"
 
 #. TRANSLATORS: Lore author helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1640
 msgctxt "sumatran_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr ""
+"často užívané přísloví při vyjádření dobré vůle k těžko splnitelným úkolům"
 
 #. TRANSLATORS: Purpose helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1642
 msgctxt "sumatran_building"
 msgid "A new building is being built at this construction site."
-msgstr ""
+msgstr "Na tomto místě započala stavba nové budovy."
 
 #. TRANSLATORS: Lore helptext for a Sumatran building: Dismantle Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1649
 msgctxt "sumatran_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
+"„Vždy najdeš novou cestu, za předpokladu, že jsi ochotný opustit tu starou.“"
 
 #. TRANSLATORS: Lore author helptext for a Sumatran building: Dismantle Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1651
@@ -3426,6 +3589,8 @@ msgid ""
 "resources that were used during this building’s construction to your tribe’s "
 "stores."
 msgstr ""
+"Na tomto staveništi dochází k rozebírání budovy. Do tvého kmenového skladu "
+"budou vráceny některé ze surovin, které byly použity při stavbě této budovy."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1692
 msgctxt "warehousename"
