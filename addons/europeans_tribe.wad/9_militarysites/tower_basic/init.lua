@@ -43,6 +43,7 @@ wl.Descriptions():new_militarysite_type {
     },
     return_on_dismantle = {
         scrap_wood = 2,
+        reed = 2,
         granite = 3,
         marble = 3
     },

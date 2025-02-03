@@ -308,31 +308,31 @@ function set_starting_warecount(player)
     for i, worker in ipairs(tribe.workers) do
         if string.find(worker.name, "soldier") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name)) / #warehouses))
+                warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name)) / #warehouses))
             end
         elseif string.find(worker.name, "carrier") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name)) / #warehouses))
+                warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name)) / #warehouses))
             end
         elseif string.find(worker.name, "builder") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 16) / #warehouses))
+                warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name) + 16) / #warehouses))
             end
         elseif string.find(worker.name, "worker") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 8) / #warehouses))
+                warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name) + 8) / #warehouses))
             end
         elseif string.find(worker.name, "basic") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 8) / #warehouses))
+                warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name) + 8) / #warehouses))
             end
         elseif string.find(worker.name, "advanced") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
+                warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
             end
         else
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
+                warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
             end
         end
     end
@@ -340,11 +340,11 @@ function set_starting_warecount(player)
     for i, ware in ipairs(tribe.wares) do
         if (ware:is_construction_material(player.tribe_name)) then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_wares(ware.name, ((ware_economy:target_quantity(ware.name) + 32) / #warehouses))
+                warehouse:set_wares(ware.name, math.ceil((ware_economy:target_quantity(ware.name) + 32) / #warehouses))
             end
         else
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_wares(ware.name, 1)
+                warehouse:set_wares(ware.name, math.floor((ware_economy:target_quantity(ware.name) + 1) / #warehouses / 4))
             end
         end
     end
@@ -622,9 +622,10 @@ function doing_ai_stuff(player, increment)
     if (increment == 0) then
         player:forbid_buildings("all")
         allow_all_militarysites(player)
+        player:forbid_buildings{"europeans_sentry_mountain"}
         allow_productionsites_without_input(player)
     end
-    if (increment >= 2) then
+    if (increment >= 1) then
         allow_productionsites_per_input(player)
         allow_warehouses_per_ware_amount(player)
     end
@@ -645,9 +646,10 @@ function doing_ai_stuff_seafaring(player, increment)
     if (increment == 0) then
         player:forbid_buildings("all")
         allow_all_militarysites(player)
+        player:forbid_buildings{"europeans_sentry_mountain"}
         allow_productionsites_without_input(player)
     end
-    if (increment >= 2) then
+    if (increment >= 1) then
         allow_productionsites_per_input(player)
         allow_warehouses_per_ware_amount(player)
     end

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-31 03:10+0100\n"
+"POT-Creation-Date: 2025-02-03 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -29,12 +29,12 @@ msgid "Sumatrans"
 msgstr "Sumatřané"
 
 #: addons/sumatran_tribe.wad/addon:3
+#, fuzzy
 msgid ""
-"Needs sumatran_world.wad. This is a testing version of a tribe named "
-"Sumatrans. It uses partially graphics of other tribes, until new graphics is "
-"available. AI likes summer and desert terrain, a lot of space and water "
-"nearby. Fortified Village for a stronger opponent. More info in help and "
-"tips."
+"Needs sumatran_world.wad. It uses partially graphics of other tribes, until "
+"new graphics is available. AI likes summer and desert terrain, a lot of "
+"space and water nearby. Fortified Village for a stronger opponent. More info "
+"in help and tips."
 msgstr ""
 "Vyžaduje sumatran_world.wad. Jde o testovací verzi kmene pojmenovaného "
 "Sumatřané. Částečně využívá grafiku ostatních kmenů, než bude k dispozici "
@@ -942,19 +942,19 @@ msgstr "lovení krokodýla"
 msgid "fishing"
 msgstr "rybaření"
 
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:72
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:79
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:92
 msgid "No Game"
 msgstr "Žádná zvěř"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:74
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:81
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:94
 msgid "Out of Game or Fish"
 msgstr "Došla zvěř nebo ryby"
 
 #. TRANSLATORS: "game" means animals that you can hunt
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:76
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:83
 msgctxt "sumatran_building"
 msgid ""
 "The hunter working at this hunter’s house can’t find any game in his work "
@@ -986,12 +986,14 @@ msgid "No Space"
 msgstr "Není místo"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:66
-msgid "Animals do not leave this march"
+#, fuzzy
+msgid "Animals do not leave this marsh"
 msgstr "Zvěř neopouští tento močál"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:67
+#, fuzzy
 msgctxt "sumatran_building"
-msgid "There is not enough space around this march for animals to leave."
+msgid "There is not enough space around this marsh for animals to leave."
 msgstr ""
 "V okolí tohoto močálu není dostatek místa pro to, aby ho zvěř měla kudy "
 "opouštět."
@@ -1494,6 +1496,32 @@ msgstr ""
 "hospodářství. Pozor: UI za těchto podmínek nedokáže úspěšně zahájit hru."
 
 #. TRANSLATORS: This is the name of a starting condition
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
+#, fuzzy
+msgid "Tidy Warehouses"
+msgstr "Kmenový sklad"
+
+#. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:15
+msgid ""
+"Start with a basic Headquarter. From time to time your workers do "
+"inventories. If there is more than 500 items in any of your warehouses, "
+"workers throw away one quarter of stock stored in such a warehouse."
+msgstr ""
+
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:105
+msgid "Warehouse cleaned!"
+msgstr ""
+
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:183
+msgid "%1$s has been cleaned!"
+msgstr ""
+
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:184
+msgid "%1$d items have been removed, %2$d items left."
+msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
 msgstr "Obchodní stanice"
@@ -1546,14 +1574,14 @@ msgstr "cvičení útoku bojovníka z úrovně 2 na úroveň 3"
 
 #. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
-#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:149
+#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:157
 #: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:189
 msgctxt "sumatran_building"
 msgid "No warrior to train!"
 msgstr "Nejsou bojovníci k výcviku!"
 
 #. TRANSLATORS: Sumatran training site tooltip when none of the present warriors match the current training program
-#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:151
+#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:159
 #: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:191
 msgctxt "sumatran_building"
 msgid "No warrior found for this training level!"
@@ -2154,10 +2182,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Diamond
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:307
+#, fuzzy
 msgctxt "sumatran_ware"
 msgid ""
-"Diamonds are a very precious building material. These stones are also your "
-"main source of wealth, when your goal is to collect precious things."
+"Diamonds are a very precious building material. These precious stones are "
+"also your main source of wealth, when goal of game is to collect precious "
+"things."
 msgstr ""
 "Diamanty jsou velmi cenným stavebním materiálem. Tyto drahé kameny jsou také "
 "tvým hlavním zdrojem bohatství, pokud je cílem hry posbírat co nejvíce "
@@ -2165,9 +2195,10 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:317
+#, fuzzy
 msgctxt "ware"
 msgid ""
-"The fires of the sumatran furnaces by smelting metals are fed with coal."
+"While smelting metals, the fires of the sumatran furnaces are fed with coal."
 msgstr "Při tavení kovů jsou ohně sumatřských hutí krmeny uhlím."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 2
@@ -2288,10 +2319,11 @@ msgstr "Lopata je nezbytným nástrojem pro lesníky a farmáře."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:446
+#, fuzzy
 msgctxt "sumatran_ware"
 msgid ""
-"The hammer is the most used tool. Geologists, builders, smiths, shipwrights "
-"and craftsmen, they all need hammer."
+"The hammer is the most used tool. Geologists, builders, coppersmiths, "
+"shipwrights and craftsmen, they all need hammer."
 msgstr ""
 "Kladivo je nejpoužívanějším nástrojem. Geologové, stavaři, kovotepci, loďaři "
 "a řemeslníci, ti všichni ho potřebují."
@@ -2440,8 +2472,9 @@ msgstr "Chová zvířata."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Scout
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:649
+#, fuzzy
 msgctxt "sumatran_worker"
-msgid "Explorers territory of your enemy."
+msgid "Explores territory of your enemy."
 msgstr "Prozkoumává území tvého nepřítele."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Jungle Ghost
@@ -2844,7 +2877,8 @@ msgstr "Zde je velké ložisko uhlí."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1153
-msgid "There is a lot of of iron ore here."
+#, fuzzy
+msgid "There is a lot of iron ore here."
 msgstr "Zde je velké ložisko železné rudy."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
@@ -3008,12 +3042,14 @@ msgstr "Loví zvěř na maso a chytá ryby ve vodě."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s Tent
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1276
+#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
-"The building has 2 different working areas. Smaller for fishing and the "
-"larger for hunting."
+"The building has 3 different working areas. Smallest for fishing, larger for "
+"hunting and the largest is not used by the worker in this type of building."
 msgstr ""
-"Budova má 2 různé pracovní oblasti. Menší pro rybaření a větší pro lov zvěře."
+"Budova má 3 různé pracovní oblasti. Nejmenší pro rybaření, větší pro lov "
+"zvěře a největší pro lov krokodýlů."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1283
@@ -3029,20 +3065,20 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1285
 msgctxt "sumatran_building"
 msgid ""
-"The building has 3 different working areas. Smallest for fishing, larger for "
-"hunting and the largest for crocodile hunting."
+"The building has 2 different working areas. Smaller for fishing and the "
+"larger for hunting."
 msgstr ""
-"Budova má 3 různé pracovní oblasti. Nejmenší pro rybaření, větší pro lov "
-"zvěře a největší pro lov krokodýlů."
+"Budova má 2 různé pracovní oblasti. Menší pro rybaření a větší pro lov zvěře."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1292
+#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "Thermal springs make terrain more favorable for tropical trees. This is "
 "useful especially while playing wasteland and winter maps. In the first case "
-"to transform mountains is very advatageous, in the second case, all types of "
-"terrain can be transformed."
+"to transform mountains is very advantageous, in the second case, all types "
+"of terrain can be transformed."
 msgstr ""
 "Termální prameny přeměňují terén na terén více výhodný pro tropické stromy. "
 "To je užitečné zejména při hře na pustinných a zimních mapách. V prvím "
@@ -3100,8 +3136,9 @@ msgstr ""
 "obyčejné dílně."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1329
+#, fuzzy
 msgctxt "sumatran_building"
-msgid "The toolsmith needs %1% on average to make one tool."
+msgid "The experienced craftsman needs %1% on average to make one tool."
 msgstr "Zkušený řemeslník potřebuje na výrobu jednoho nástroje v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Weapons Workshop
@@ -3394,11 +3431,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Copper-Gold Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1512
+#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "In comparison to a basic mine, production of this mine is slower but "
 "cheaper. The mine has two programs. Can produce higher ratio of gold ore "
-"when gold ore is needed."
+"when gold ore is needed. Empty mines produce gold primarily, when gold is "
+"needed."
 msgstr ""
 "Ve srovnání se základním dolem je produkce tohoto dolu pomalejší, ale "
 "levnější. Důl má dva programy. Může produkovat vyšší podíl zlaté rudy pokud "
@@ -3406,7 +3445,9 @@ msgstr ""
 "hospodářství potřebuje zlato."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1520
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1530
 msgctxt "sumatran_building"
 msgid "Digs raw diamonds and stone out of the ground in mountain terrain."
 msgstr "Těží surové diamanty a kámen v horském terénu."
@@ -3430,12 +3471,6 @@ msgid ""
 msgstr ""
 "Horník potřebuje na získání jednoho kvádru kamene, nebo jednoho surového "
 "diamantu v průměru %1%."
-
-#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1530
-msgctxt "sumatran_building"
-msgid "Digs diamonds and stone out of the ground in mountain terrain."
-msgstr "Těží diamanty a kámen v horském terénu."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1532
@@ -3523,9 +3558,10 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for a Sumatran military site: Fortified Tower
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1602
+#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
-"This building can be build by enhancing a watchtower or big sentry. "
+"This building can be built by enhancing a watchtower or big sentry. "
 "Enhancement of big sentry costs you one log and one reed more but you save "
 "one block of stone instead."
 msgstr ""
@@ -3541,10 +3577,11 @@ msgstr "Staví přívozy."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Shipyard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1629
+#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
-"ware between ports."
+"wares between ports."
 msgstr ""
 "Staví lodě, které se užívají k osídlování zámořských území a pro transport "
 "zboží mezi přístavy."
@@ -4135,3 +4172,7 @@ msgstr "Vinařka"
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
 msgstr "Dřevorubec"
+
+#~ msgctxt "sumatran_building"
+#~ msgid "Digs diamonds and stone out of the ground in mountain terrain."
+#~ msgstr "Těží diamanty a kámen v horském terénu."

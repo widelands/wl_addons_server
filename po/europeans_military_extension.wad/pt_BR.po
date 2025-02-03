@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-30 03:10+0100\n"
+"POT-Creation-Date: 2025-02-03 03:10+0100\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/widelands/"
 "teams/35159/pt_BR/)\n"
@@ -401,12 +401,34 @@ msgid "Basic Tailors House"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:8
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:8
 msgctxt "europeans_building"
-msgid "Big Store"
+msgid "Food market"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:68
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:156
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:168
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:180
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:192
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:204
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:216
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:228
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:240
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:252
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:264
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:276
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:288
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:300
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:312
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:324
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:336
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:348
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:360
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:372
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:384
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:396
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:67
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:86
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:97
@@ -414,6 +436,36 @@ msgstr ""
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:119
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:130
 msgid "trading"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:79
+msgctxt "europeans_building"
+msgid "trading food for copper coins"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:102
+msgctxt "europeans_building"
+msgid "trading food for silver coins"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:125
+msgctxt "europeans_building"
+msgid "trading food for gold coins"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+#: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:148
+msgctxt "europeans_building"
+msgid "pausing trading of gold"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:8
+msgctxt "europeans_building"
+msgid "Big Store"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1275,58 +1327,58 @@ msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans ware: Cloth
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:190
-msgctxt "europeans_ware"
-msgid "Cloth is needed to build several buildings. It is produced out of reed."
-msgstr ""
-
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:200
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:191
 msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:202
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:193
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:212
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:203
 msgctxt "europeans_ware"
 msgid ""
 "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms "
 "with level 4 or 5 can produce wool."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans ware: Armor
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:221
+#. TRANSLATORS: Helptext for an Europeans ware: Cloth
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:212
 msgctxt "europeans_ware"
-msgid ""
-"Raw material for some sorts of armor. It is produced in the weaving mill out "
-"of wool or reed."
+msgid "Cloth is needed to build several buildings. It is produced out of reed."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:231
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:222
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved armor and boots."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:233
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:224
 msgctxt "europeans_ware"
 msgid "It is produced in tree nursery or in rubber farm."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:243
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:234
 msgctxt "europeans_ware"
 msgid ""
 "The animal farm produces leather, which is used as a raw material for making "
 "boots."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Armor
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:243
+msgctxt "europeans_ware"
+msgid ""
+"Raw material for some sorts of armor. It is produced in the weaving mill out "
+"of wool or reed."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
@@ -1517,24 +1569,24 @@ msgctxt "europeans_ware"
 msgid "Wheat is produced by farms and used by mills to produce mixed flour."
 msgstr ""
 
-#. TRANSLATORS: Helptext for a Europeans ware: Barley
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:469
-msgctxt "europeans_ware"
-msgid "Barley is a slow-growing grain that is used for brewing beer or mead."
-msgstr ""
-
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:478
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:469
 msgctxt "europeans_ware"
 msgid "Advanced farms need to be provided with corn to feed the farm animals."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Blackroot
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:487
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:478
 msgctxt "europeans_ware"
 msgid ""
 "Blackroots are a special kind of root. Advanced farms need to be provided "
 "with blackroot."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans ware: Barley
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:487
+msgctxt "europeans_ware"
+msgid "Barley is a slow-growing grain that is used for brewing beer or mead."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey
@@ -2360,7 +2412,7 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1970
 msgctxt "europeans_building"
-msgid "Hunts animals to produce meat."
+msgid "Hunts animals to produce meat and leather."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
@@ -2372,7 +2424,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1979
 msgctxt "europeans_building"
-msgid "Releases animals into the wild to steady the meat production."
+msgid ""
+"Releases animals into the wild to steady the meat and leather production."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
@@ -2468,7 +2521,7 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2118
 msgctxt "europeans_building"
-msgid "Weaves cloth and armor out of cotton, wool and reed."
+msgid "Weaves cloth out of cotton or wool."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
@@ -2484,11 +2537,15 @@ msgid "Hardening log to produce blackwood and saws log to produce planks."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2139
+msgctxt "europeans_building"
+msgid "Burns scrap_wood into charcoal."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2146
 msgctxt "europeans_building"
-msgid "Burns logs into charcoal."
+msgid "Burns scrap_wood or logs into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
@@ -2527,7 +2584,7 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2171
 msgctxt "europeans_building"
-msgid "Smelts ore into iron."
+msgid "Smelts ore into iron and gold."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
@@ -2538,53 +2595,53 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2185
-msgctxt "europeans_building"
-msgid "Grinds corn to produce cornmeal."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2192
 msgctxt "europeans_building"
-msgid ""
-"Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour."
+msgid "Grinds wheat and rye to produce mixed flour."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2199
 msgctxt "building"
-msgid "Prepares rations to feed the scouts and miners."
+msgid "Produces bread out of water, honey and flour."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2206
 msgctxt "building"
-msgid "Prepares rations, snacks and meals to feed all miners."
+msgid "Produces bread and biscuit out of water, fruits, honey and flour."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2213
 msgctxt "europeans_building"
-msgid "Produces beer to keep the miners strong and happy."
+msgid "Produces beer for markets and mines."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Brewery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2220
 msgctxt "europeans_building"
-msgid "Produces beer, mead and strong_beer for trainingssites."
+msgid "Produces beer, mead and strong_beer for markets and mines."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Winery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2227
 msgctxt "europeans_building"
-msgid "Produces mead and wine."
+msgid "Produces beer, mead, strong_beer and wine for markets and mines."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2234
+msgctxt "europeans_building"
+msgid ""
+"Medium factory that produces processed armor and clothing from basic armor."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2241
 msgctxt "europeans_building"
 msgid ""
-"Medium factory that produces armor and clothing from simple raw materials."
+"Medium factory that produces advanced armor and clothing from basic armor."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers_house
@@ -2604,13 +2661,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2279
 msgctxt "europeans_building"
-msgid "Sows and harvests corn, rye and wheat."
+msgid "Sows and harvests barley, rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2286
 msgctxt "europeans_building"
-msgid "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
+msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Cattle Farm
@@ -2763,50 +2820,78 @@ msgctxt "europeans_food_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2632
 msgctxt "europeans_building"
 msgid "Market building to sale natural products for coins."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2639
+msgctxt "europeans_building"
+msgid "Market building to sale beer for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2646
+msgctxt "europeans_building"
+msgid "Market building to sale bread for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2653
 msgctxt "europeans_building"
 msgid "Market building to sale processed products for coins."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2646
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2660
+msgctxt "europeans_building"
+msgid "Market building to sale fish, meat and leather for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2667
+msgctxt "europeans_building"
+msgid "Market building to sale mead and wine for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2674
+msgctxt "europeans_building"
+msgid "Market building to sale wood products for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Big Market
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2681
 msgctxt "europeans_building"
 msgid "Market building to sale foods for coins."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Store
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Store
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2653
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2660
+#. TRANSLATORS: Purpose helptext for an Europeans market: Big Store
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2688
 msgctxt "europeans_building"
 msgid "Store building to purchase wares from other allied tribes."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2669
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2680
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2697
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2708
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2671
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2682
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2699
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2710
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts and weapons."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2690
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2718
 msgctxt "europeans_building"
 msgid ""
 "Produces weapons and armor from basic materials and trains soldiers in "
@@ -2816,9 +2901,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2698
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2709
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2720
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2726
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2737
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2748
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."
 msgstr ""
@@ -2826,9 +2911,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2700
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2711
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2722
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2728
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2739
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2750
 msgctxt "europeans_building"
 msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
@@ -2836,31 +2921,31 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Dungeon
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2730
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2758
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Health’."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Trainingscamp
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2737
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2765
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Evade’."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2744
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2772
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Defense’."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Fitness Center
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2751
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2779
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Attack’."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2758
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2786
 msgctxt "europeans_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
@@ -2869,14 +2954,14 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2760
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2769
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2788
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2797
 msgctxt "europeans_building"
 msgid "Needs water nearby."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard / Ferry Yard
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2767
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2795
 msgctxt "europeans_building"
 msgid "Constructs ships and additional ferries."
 msgstr ""
@@ -2897,24 +2982,24 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2777
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2786
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2795
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2804
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2813
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2822
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2831
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2840
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2849
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2858
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2867
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2876
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2885
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2894
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2903
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2912
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2921
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2930
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2805
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2814
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2823
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2832
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2841
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2850
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2859
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2868
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2877
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2886
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2895
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2904
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2913
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2922
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2931
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2940
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2949
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2958
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr ""
@@ -2927,23 +3012,23 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans military site: Tower
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
 #. TRANSLATORS: Note helptext for an Europeans military site: Fortress
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2779
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2788
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2797
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2806
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2824
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2833
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2842
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2851
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2860
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2869
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2878
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2887
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2896
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2905
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2914
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2923
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2932
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2807
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2816
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2825
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2834
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2852
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2861
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2870
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2879
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2888
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2897
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2906
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2915
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2924
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2933
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2942
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2951
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2960
 msgctxt "europeans_building"
 msgid ""
 "If you’re low on soldiers to occupy new military sites, use the downward "
@@ -2952,43 +3037,43 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2815
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2843
 msgctxt "europeans_building"
 msgid "Modified version which can placed on mountains."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2940
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2968
 msgctxt "europeans_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Construction Site
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2942
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2970
 msgctxt "europeans_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Construction Site
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2944
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2972
 msgctxt "europeans_building"
 msgid "A new building is being built at this construction site."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Dismantle Site
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2951
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2979
 msgctxt "europeans_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Dismantle Site
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2953
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2981
 msgctxt "europeans_building"
 msgid "Proverb"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Dismantle Site
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2955
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2983
 msgctxt "europeans_building"
 msgid ""
 "A building is being dismantled at this dismantle site, returning some of the "
@@ -2996,614 +3081,614 @@ msgid ""
 "stores."
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2962
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2990
 msgctxt "warehousename"
 msgid "Amsterdam"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2963
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2991
 msgctxt "warehousename"
 msgid "Andorra"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2964
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2992
 msgctxt "warehousename"
 msgid "Antwerpen"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2965
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2993
 msgctxt "warehousename"
 msgid "Astrachan"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2966
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2994
 msgctxt "warehousename"
 msgid "Athen"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2967
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2995
 msgctxt "warehousename"
 msgid "Balaschicha"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2968
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2996
 msgctxt "warehousename"
 msgid "Barcelona"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2969
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2997
 msgctxt "warehousename"
 msgid "Beograd"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2970
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2998
 msgctxt "warehousename"
 msgid "Berlin"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2971
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2999
 msgctxt "warehousename"
 msgid "Bern"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2972
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3000
 msgctxt "warehousename"
 msgid "Birmingham"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2973
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3001
 msgctxt "warehousename"
 msgid "Bradford"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2974
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3002
 msgctxt "warehousename"
 msgid "Bremen"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2975
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3003
 msgctxt "warehousename"
 msgid "Bruxelles"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2976
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3004
 msgctxt "warehousename"
 msgid "București"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2977
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3005
 msgctxt "warehousename"
 msgid "Budapest"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2978
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3006
 msgctxt "warehousename"
 msgid "Charkiw"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2979
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3007
 msgctxt "warehousename"
 msgid "Chișinău"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2980
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3008
 msgctxt "warehousename"
 msgid "Den Haag"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2981
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3009
 msgctxt "warehousename"
 msgid "Dnipro"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2982
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3010
 msgctxt "warehousename"
 msgid "Donezk"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2983
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3011
 msgctxt "warehousename"
 msgid "Dortmund"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2984
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3012
 msgctxt "warehousename"
 msgid "Dresden"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2985
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3013
 msgctxt "warehousename"
 msgid "Dublin"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2986
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3014
 msgctxt "warehousename"
 msgid "Duisburg"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2987
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3015
 msgctxt "warehousename"
 msgid "Düsseldorf"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2988
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3016
 msgctxt "warehousename"
 msgid "Edinburgh"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2989
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3017
 msgctxt "warehousename"
 msgid "Essen"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2990
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3018
 msgctxt "warehousename"
 msgid "Frankfurt"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2991
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3019
 msgctxt "warehousename"
 msgid "Genova"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2992
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3020
 msgctxt "warehousename"
 msgid "Glasgow"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2993
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3021
 msgctxt "warehousename"
 msgid "Göteborg"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2994
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3022
 msgctxt "warehousename"
 msgid "Hamburg"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2995
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3023
 msgctxt "warehousename"
 msgid "Hannover"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2996
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3024
 msgctxt "warehousename"
 msgid "Helsinki"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2997
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3025
 msgctxt "warehousename"
 msgid "Homel"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2998
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3026
 msgctxt "warehousename"
 msgid "Ischewsk"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2999
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3027
 msgctxt "warehousename"
 msgid "Istanbul"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3000
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3028
 msgctxt "warehousename"
 msgid "Jaroslawl"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3001
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3029
 msgctxt "warehousename"
 msgid "Kasan"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3002
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3030
 msgctxt "warehousename"
 msgid "Kirow"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3003
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3031
 msgctxt "warehousename"
 msgid "København"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3004
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3032
 msgctxt "warehousename"
 msgid "Köln"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3005
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3033
 msgctxt "warehousename"
 msgid "Kraków"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3006
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3034
 msgctxt "warehousename"
 msgid "Krasnodar"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3007
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3035
 msgctxt "warehousename"
 msgid "Kyiv"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3008
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3036
 msgctxt "warehousename"
 msgid "Leeds"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3009
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3037
 msgctxt "warehousename"
 msgid "Leipzig"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3010
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3038
 msgctxt "warehousename"
 msgid "Lipezk"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3011
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3039
 msgctxt "warehousename"
 msgid "Lisboa"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3012
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3040
 msgctxt "warehousename"
 msgid "Ljubljana"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3013
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3041
 msgctxt "warehousename"
 msgid "Łódź"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3014
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3042
 msgctxt "warehousename"
 msgid "London"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3015
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3043
 msgctxt "warehousename"
 msgid "Luxemburg"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3016
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3044
 msgctxt "warehousename"
 msgid "Lwiw"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3017
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3045
 msgctxt "warehousename"
 msgid "Lyon"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3018
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3046
 msgctxt "warehousename"
 msgid "Machatschkala"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3019
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3047
 msgctxt "warehousename"
 msgid "Madrid"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3020
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3048
 msgctxt "warehousename"
 msgid "Málaga"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3021
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3049
 msgctxt "warehousename"
 msgid "Manchester"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3022
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3050
 msgctxt "warehousename"
 msgid "Marseille"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3023
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3051
 msgctxt "warehousename"
 msgid "Milano"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3024
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3052
 msgctxt "warehousename"
 msgid "Minsk"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3025
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3053
 msgctxt "warehousename"
 msgid "Monaco"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3026
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3054
 msgctxt "warehousename"
 msgid "Moskwa"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3027
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3055
 msgctxt "warehousename"
 msgid "München"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3028
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3056
 msgctxt "warehousename"
 msgid "Napoli"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3029
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3057
 msgctxt "warehousename"
 msgid "Nikosia"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3030
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3058
 msgctxt "warehousename"
 msgid "Nürnberg"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3031
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3059
 msgctxt "warehousename"
 msgid "Odessa"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3032
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3060
 msgctxt "warehousename"
 msgid "Orenburg"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3033
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3061
 msgctxt "warehousename"
 msgid "Oslo"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3034
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3062
 msgctxt "warehousename"
 msgid "Palermo"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3035
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3063
 msgctxt "warehousename"
 msgid "Paris"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3036
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3064
 msgctxt "warehousename"
 msgid "Pensa"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3037
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3065
 msgctxt "warehousename"
 msgid "Perm"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3038
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3066
 msgctxt "warehousename"
 msgid "Podgorica"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3039
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3067
 msgctxt "warehousename"
 msgid "Poznań"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3040
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3068
 msgctxt "warehousename"
 msgid "Praha"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3041
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3069
 msgctxt "warehousename"
 msgid "Prishtina"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3042
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3070
 msgctxt "warehousename"
 msgid "Reykjavík"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3043
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3071
 msgctxt "warehousename"
 msgid "Rīga"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3044
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3072
 msgctxt "warehousename"
 msgid "Rjasan"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3045
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3073
 msgctxt "warehousename"
 msgid "Roma"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3046
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3074
 msgctxt "warehousename"
 msgid "Rotterdam"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3047
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3075
 msgctxt "warehousename"
 msgid "San Marino"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3048
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3076
 msgctxt "warehousename"
 msgid "Samara"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3049
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3077
 msgctxt "warehousename"
 msgid "Sankt Petersburg"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3050
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3078
 msgctxt "warehousename"
 msgid "Saporischschja"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3051
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3079
 msgctxt "warehousename"
 msgid "Sarajevo"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3052
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3080
 msgctxt "warehousename"
 msgid "Saratow"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3053
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3081
 msgctxt "warehousename"
 msgid "Sevilla"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3054
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3082
 msgctxt "warehousename"
 msgid "Sheffield"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3055
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3083
 msgctxt "warehousename"
 msgid "Skopje"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3056
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3084
 msgctxt "warehousename"
 msgid "Sofia"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3057
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3085
 msgctxt "warehousename"
 msgid "Stockholm"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3058
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3086
 msgctxt "warehousename"
 msgid "Stuttgart"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3059
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3087
 msgctxt "warehousename"
 msgid "Tallinn"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3060
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3088
 msgctxt "warehousename"
 msgid "Tirana"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3061
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3089
 msgctxt "warehousename"
 msgid "Toljatti"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3062
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3090
 msgctxt "warehousename"
 msgid "Torino"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3063
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3091
 msgctxt "warehousename"
 msgid "Ufa"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3064
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3092
 msgctxt "warehousename"
 msgid "Uljanowsk"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3065
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3093
 msgctxt "warehousename"
 msgid "Vaduz"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3066
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3094
 msgctxt "warehousename"
 msgid "Valencia"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3067
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3095
 msgctxt "warehousename"
 msgid "Valletta"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3068
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3096
 msgctxt "warehousename"
 msgid "Vilnius"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3069
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3097
 msgctxt "warehousename"
 msgid "Warszawa"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3070
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3098
 msgctxt "warehousename"
 msgid "Wien"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3071
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3099
 msgctxt "warehousename"
 msgid "Wolgograd"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3072
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3100
 msgctxt "warehousename"
 msgid "Woronesch"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3073
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3101
 msgctxt "warehousename"
 msgid "Wrocław"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3074
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3102
 msgctxt "warehousename"
 msgid "Zagreb"
 msgstr ""
 
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3075
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3103
 msgctxt "warehousename"
 msgid "Zaragoza"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3081
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3109
 msgctxt "europeans"
 msgid "Worker missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3083
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3111
 msgctxt "europeans"
 msgid "Worker is coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3085
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3113
 msgctxt "europeans"
 msgid "Workers missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3087
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3115
 msgctxt "europeans"
 msgid "Workers are coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3089
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3117
 msgctxt "europeans"
 msgid "Expert missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3091
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3119
 msgctxt "europeans"
 msgid "Experts missing"
 msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3105
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3133
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
@@ -3612,7 +3697,7 @@ msgstr[1] ""
 msgstr[2] ""
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3107
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3135
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
@@ -3621,7 +3706,7 @@ msgstr[1] ""
 msgstr[2] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3109
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3137
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
@@ -3630,7 +3715,7 @@ msgstr[1] ""
 msgstr[2] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3111
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:3139
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"

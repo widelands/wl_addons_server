@@ -13,7 +13,7 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_farmer_advanced",
     
     buildcost = {
-        europeans_gardener_basic = 1
+        europeans_gardener_advanced = 1
     },
 
     programs = {

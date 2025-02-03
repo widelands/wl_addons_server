@@ -51,7 +51,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:1m",
                 "callworker=hunt",
                 "sleep=duration:1m",
-                "produce=leather"
+                "produce=leather wool"
             }
         },
     },

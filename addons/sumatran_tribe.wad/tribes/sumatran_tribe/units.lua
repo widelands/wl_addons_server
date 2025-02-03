@@ -304,7 +304,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 2,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran ware: Diamond
-                    purpose = pgettext("sumatran_ware", "Diamonds are a very precious building material. These stones are also your main source of wealth, when your goal is to collect precious things.")
+                    purpose = pgettext("sumatran_ware", "Diamonds are a very precious building material. These precious stones are also your main source of wealth, when goal of game is to collect precious things.")
                 }
             },
            {
@@ -314,7 +314,7 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
-                        pgettext("ware", "The fires of the sumatran furnaces by smelting metals are fed with coal."),
+                        pgettext("ware", "While smelting metals, the fires of the sumatran furnaces are fed with coal."),
                         -- TRANSLATORS: Helptext for a Sumatran ware: Coal, part 2
                         pgettext("sumatran_ware", "It is mined in coal mines or produced out of logs and tropical wood by a charcoal kiln.")
                     }
@@ -443,7 +443,7 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 1
-                        pgettext("sumatran_ware", "The hammer is the most used tool. Geologists, builders, smiths, shipwrights and craftsmen, they all need hammer."),
+                        pgettext("sumatran_ware", "The hammer is the most used tool. Geologists, builders, coppersmiths, shipwrights and craftsmen, they all need hammer."),
                         -- TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 2
                         pgettext("sumatran_ware", "They are produced by tools workshops.")
                     }
@@ -646,7 +646,7 @@ wl.Descriptions():new_tribe {
                 name = "sumatran_scout",
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran worker: Scout
-                    purpose = pgettext("sumatran_worker", "Explorers territory of your enemy.")
+                    purpose = pgettext("sumatran_worker", "Explores territory of your enemy.")
                 }
             },
             {
@@ -1150,7 +1150,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 1
                     _("This vein contains iron ore that can be dug up by iron mines."),
                     -- TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
-                    _("There is a lot of of iron ore here.")
+                    _("There is a lot of iron ore here.")
                 }
             }
         },
@@ -1273,7 +1273,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s Tent
                 purpose = pgettext("building", "Hunts animals to produce meat and catches fishes in the waters."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s Tent
-                note = pgettext("sumatran_building", "The building has 2 different working areas. Smaller for fishing and the larger for hunting."),
+                note = pgettext("sumatran_building", "The building has 3 different working areas. Smallest for fishing, larger for hunting and the largest is not used by the worker in this type of building."),
              }
         },
         {
@@ -1282,14 +1282,14 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s House
                 purpose = pgettext("building", "Hunts animals to produce meat and catches fishes in the waters. Hunters in this houses can hunt crocodiles for skin and meat too."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s House
-                note = pgettext("sumatran_building", "The building has 3 different working areas. Smallest for fishing, larger for hunting and the largest for crocodile hunting."),
+                note = pgettext("sumatran_building", "The building has 2 different working areas. Smaller for fishing and the larger for hunting."),
             }
         },
         {
             name = "sumatran_thermal_springs",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs
-                purpose = pgettext("sumatran_building", "Thermal springs make terrain more favorable for tropical trees. This is useful especially while playing wasteland and winter maps. In the first case to transform mountains is very advatageous, in the second case, all types of terrain can be transformed."),
+                purpose = pgettext("sumatran_building", "Thermal springs make terrain more favorable for tropical trees. This is useful especially while playing wasteland and winter maps. In the first case to transform mountains is very advantageous, in the second case, all types of terrain can be transformed."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs
                 note = pgettext("sumatran_building", "Thermal springs need maintenance. That costs you logs, stone and water."),
             }
@@ -1326,7 +1326,7 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("sumatran_building", "Forges the tools that your workers need."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Tools Workshop
                 note = pgettext("sumatran_building", "Notice that the building needs an experienced worker. If you don’t have any, your worker needs to gain some experience by working in a basic workshop for some period of time."),
-                performance = pgettext("sumatran_building", "The toolsmith needs %1% on average to make one tool."):bformat(format_seconds(59))
+                performance = pgettext("sumatran_building", "The experienced craftsman needs %1% on average to make one tool."):bformat(format_seconds(59))
             }
         },
         {
@@ -1509,7 +1509,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
                 purpose = pgettext("sumatran_building", "Digs copper ore and gold ore out of the ground in mountain terrain."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Deep Copper-Gold Mine
-                note = pgettext("sumatran_building", "In comparison to a basic mine, production of this mine is slower but cheaper. The mine has two programs. Can produce higher ratio of gold ore when gold ore is needed."),
+                note = pgettext("sumatran_building", "In comparison to a basic mine, production of this mine is slower but cheaper. The mine has two programs. Can produce higher ratio of gold ore when gold ore is needed. Empty mines produce gold primarily, when gold is needed."),
                 performance = pgettext("sumatran_building", "The miners need %1% on average to produce one piece of ore."):bformat(format_seconds(35))
             }
         },
@@ -1527,7 +1527,7 @@ wl.Descriptions():new_tribe {
             name = "sumatran_deep_stone_mine",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
-                purpose = pgettext("sumatran_building", "Digs diamonds and stone out of the ground in mountain terrain."),
+                purpose = pgettext("sumatran_building", "Digs raw diamonds and stone out of the ground in mountain terrain."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Deep Stone Mine
                 note = pgettext("sumatran_building", "In comparison to a basic mine, production of this mine is slower. The mine has two programs. When economy doesn’t need raw diamonds, the miners don’t bother by searching them."),
                 performance = pgettext("sumatran_building", "The miners need %1% on average to produce one piece of stone or raw diamond."):bformat(format_seconds(35))
@@ -1599,7 +1599,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran military site: Fortified Tower
                 purpose = pgettext("sumatran_building", "Garrisons warriors to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Sumatran military site: Fortified Tower
-                note = pgettext("sumatran_building", "This building can be build by enhancing a watchtower or big sentry. Enhancement of big sentry costs you one log and one reed more but you save one block of stone instead.")
+                note = pgettext("sumatran_building", "This building can be built by enhancing a watchtower or big sentry. Enhancement of big sentry costs you one log and one reed more but you save one block of stone instead.")
             }
         },
         {
@@ -1626,7 +1626,7 @@ wl.Descriptions():new_tribe {
             name = "sumatran_shipyard",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Shipyard
-                purpose = pgettext("sumatran_building", "Constructs ships that are used for overseas colonization and for shipping ware between ports.")
+                purpose = pgettext("sumatran_building", "Constructs ships that are used for overseas colonization and for shipping wares between ports.")
             }
         },
 

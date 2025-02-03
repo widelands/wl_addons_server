@@ -139,6 +139,14 @@ wl.Descriptions():new_trainingsite_type {
             "sleep=duration:10s"
          }
       },
+      encyclopedia = {
+         -- just a dummy program to fix encyclopedia
+         descname = "encyclopedia",
+         actions = {
+            "consume=sumatran_spear meal palm_wine:2",
+            "produce=meat crocodile_skin",
+         }
+      },
    },
 
    soldier_capacity = 8,

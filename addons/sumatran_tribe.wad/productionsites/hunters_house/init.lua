@@ -66,6 +66,13 @@ wl.Descriptions():new_productionsite_type {
             "sleep=duration:15s",
          }
       },
+      encyclopedia = {
+         -- just a dummy program to fix encyclopedia
+         descname = "encyclopedia",
+         actions = {
+            "produce=meat crocodile_skin",
+         }
+      },
    },
    out_of_resource_notification = {
       -- Translators: Short for "Out of Game" for missing animals

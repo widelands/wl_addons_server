@@ -63,8 +63,8 @@ wl.Descriptions():new_productionsite_type {
    out_of_resource_notification = {
       -- Translators: Short for "Out of ..." for a resource
       title = _("No Space"),
-      heading = _("Animals do not leave this march"),
-      message = pgettext ("sumatran_building", "There is not enough space around this march for animals to leave."),
+      heading = _("Animals do not leave this marsh"),
+      message = pgettext ("sumatran_building", "There is not enough space around this marsh for animals to leave."),
       productivity_threshold = 10
    },
 }

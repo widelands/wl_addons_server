@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_productionsite_type {
     name = "europeans_trainingscamp_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Trainingscamp"),
+    descname = pgettext("europeans_building", "Basic Trainingscamp"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,

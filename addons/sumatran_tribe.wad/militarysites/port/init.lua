@@ -9,21 +9,11 @@ wl.Descriptions():new_warehouse_type {
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    spritesheets = {
+   animations = {
       idle = {
-         fps = 10,
-         frames = 20,
-         columns = 10,
-         rows = 2,
-         hotspot = { 98, 98 }
-      },
-      build = {
-         frames = 4,
-         columns = 4,
-         rows = 1,
-         hotspot = { 98, 98 }
-      },
-    },
+         hotspot = { 77, 105 }
+      }
+   },
     
     size = "port",
     map_check = {"seafaring"},

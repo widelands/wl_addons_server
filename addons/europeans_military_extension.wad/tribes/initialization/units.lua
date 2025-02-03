@@ -104,7 +104,7 @@ wl.Descriptions():new_tribe {
             -- Building Materials 1 (Wood)
           {
                 name = "water",
-                default_target_quantity = 64,
+                default_target_quantity = 48,
                 preciousness = 4,
                 helptexts = {
                     purpose = {
@@ -117,7 +117,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "log",
-                default_target_quantity = 32,
+                default_target_quantity = 48,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -170,7 +170,7 @@ wl.Descriptions():new_tribe {
             -- Building Materials 2 (Agricultur)
             {
                 name = "reed",
-                default_target_quantity = 32,
+                default_target_quantity = 48,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -179,15 +179,6 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
                         pgettext("europeans_ware", "It is produced by the reed yard."),
                     }
-                }
-            },
-            {
-                name = "cloth",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
-                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
                 }
             },
             {
@@ -205,7 +196,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "wool",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wool
@@ -213,17 +204,17 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "armor",
-                default_target_quantity = 16,
+                name = "cloth",
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
+                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
                 }
             },
             {
                 name = "rubber",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -236,11 +227,20 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "leather",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wool
                     purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
+                }
+            },
+            {
+                name = "armor",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
                 }
             },
         },
@@ -248,7 +248,7 @@ wl.Descriptions():new_tribe {
             -- Building Materials 3 (Stone, Clay and Marble)
             {
                 name = "coal",
-                default_target_quantity = 32,
+                default_target_quantity = 48,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -261,7 +261,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "granite",
-                default_target_quantity = 32,
+                default_target_quantity = 48,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -274,7 +274,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "grout",
-                default_target_quantity = 48,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -287,7 +287,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "clay",
-                default_target_quantity = 8,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -300,7 +300,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "brick",
-                default_target_quantity = 48,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -313,7 +313,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "marble",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Marble
@@ -461,15 +461,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "barley",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Barley
-                    purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer or mead.")
-                }
-            },
-            {
                 name = "corn",
                 default_target_quantity = 32,
                 preciousness = 1,
@@ -485,6 +476,15 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Blackroot
                     purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Advanced farms need to be provided with blackroot.")
+                }
+            },
+            {
+                name = "barley",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Barley
+                    purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer or mead.")
                 }
             },
             {
@@ -1967,7 +1967,7 @@ wl.Descriptions():new_tribe {
             name = "europeans_hunters_house_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
-                purpose = pgettext("europeans_building", "Hunts animals to produce meat."),
+                purpose = pgettext("europeans_building", "Hunts animals to produce meat and leather."),
                 -- TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
                 note = pgettext("europeans_building", "The hunter’s hut needs animals to hunt within the work area."),
             }
@@ -1976,7 +1976,7 @@ wl.Descriptions():new_tribe {
             name = "europeans_hunters_house_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
-                purpose = pgettext("europeans_building", "Releases animals into the wild to steady the meat production.")
+                purpose = pgettext("europeans_building", "Releases animals into the wild to steady the meat and leather production.")
             }
         },
         {
@@ -2115,7 +2115,7 @@ wl.Descriptions():new_tribe {
             name = "europeans_weaving_mill_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves cloth and armor out of cotton, wool and reed.")
+                purpose = pgettext("europeans_building", "Weaves cloth out of cotton or wool.")
             }
         },
         {
@@ -2136,14 +2136,14 @@ wl.Descriptions():new_tribe {
             name = "europeans_charcoal_kiln_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
-                purpose = pgettext("europeans_building", "Burns logs into charcoal.")
+                purpose = pgettext("europeans_building", "Burns scrap_wood into charcoal.")
             }
         },
         {
             name = "europeans_charcoal_kiln_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
-                purpose = pgettext("europeans_building", "Burns logs into charcoal.")
+                purpose = pgettext("europeans_building", "Burns scrap_wood or logs into charcoal.")
             }
         },
         {
@@ -2168,7 +2168,7 @@ wl.Descriptions():new_tribe {
             name = "europeans_smelting_works_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
-                purpose = pgettext("europeans_building", "Smelts ore into iron.")
+                purpose = pgettext("europeans_building", "Smelts ore into iron and gold.")
             }
         },
         {
@@ -2182,63 +2182,63 @@ wl.Descriptions():new_tribe {
             name = "europeans_mill_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Mill
-                purpose = pgettext("europeans_building", "Grinds corn to produce cornmeal.")
+                purpose = pgettext("europeans_building", "Grinds wheat and rye to produce mixed flour.")
             }
         },
         {
             name = "europeans_mill_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Mill
-                purpose = pgettext("europeans_building", "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour.")
+                purpose = pgettext("europeans_building", "Grinds wheat and rye to produce mixed flour.")
             }
         },
         {
             name = "europeans_bakery_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-                purpose = pgettext("building", "Prepares rations to feed the scouts and miners.")
+                purpose = pgettext("building", "Produces bread out of water, honey and flour.")
             }
         },
         {
             name = "europeans_bakery_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-                purpose = pgettext("building", "Prepares rations, snacks and meals to feed all miners.")
+                purpose = pgettext("building", "Produces bread and biscuit out of water, fruits, honey and flour.")
             }
         },
         {
             name = "europeans_brewery_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
-                purpose = pgettext("europeans_building", "Produces beer to keep the miners strong and happy.")
+                purpose = pgettext("europeans_building", "Produces beer for markets and mines."),
             }
         },
         {
             name = "europeans_brewery_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Brewery
-                purpose = pgettext("europeans_building", "Produces beer, mead and strong_beer for trainingssites."),
+                purpose = pgettext("europeans_building", "Produces beer, mead and strong_beer for markets and mines."),
             }
         },
         {
             name = "europeans_brewery_winery",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Winery
-                purpose = pgettext("europeans_building", "Produces mead and wine.")
+                purpose = pgettext("europeans_building", "Produces beer, mead, strong_beer and wine for markets and mines.")
             }
         },
         {
             name = "europeans_tailors_house_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
-                purpose = pgettext("europeans_building", "Medium factory that produces armor and clothing from simple raw materials.")
+                purpose = pgettext("europeans_building", "Medium factory that produces processed armor and clothing from basic armor.")
             }
         },
         {
             name = "europeans_tailors_house_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
-                purpose = pgettext("europeans_building", "Medium factory that produces armor and clothing from simple raw materials.")
+                purpose = pgettext("europeans_building", "Medium factory that produces advanced armor and clothing from basic armor.")
             }
         },
         {
@@ -2276,14 +2276,14 @@ wl.Descriptions():new_tribe {
             name = "europeans_farm_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Farm
-                purpose = pgettext("europeans_building", "Sows and harvests corn, rye and wheat."),
+                purpose = pgettext("europeans_building", "Sows and harvests barley, rye and wheat."),
             }
         },
         {
             name = "europeans_farm_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."),
+                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, rye and wheat."),
             }
         },
         {
@@ -2628,35 +2628,63 @@ wl.Descriptions():new_tribe {
         {
             name = "europeans_market_agricultur",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
                 purpose = pgettext("europeans_building", "Market building to sale natural products for coins.")
             }
         },
         {
-            name = "europeans_market_craft",
+            name = "europeans_market_beer",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+                purpose = pgettext("europeans_building", "Market building to sale beer for coins.")
+            }
+        },
+        {
+            name = "europeans_market_bread",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+                purpose = pgettext("europeans_building", "Market building to sale bread for coins.")
+            }
+        },
+        {
+            name = "europeans_market_cloth",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
                 purpose = pgettext("europeans_building", "Market building to sale processed products for coins.")
+            }
+        },
+        {
+            name = "europeans_market_meat",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+                purpose = pgettext("europeans_building", "Market building to sale fish, meat and leather for coins.")
+            }
+        },
+        {
+            name = "europeans_market_wine",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+                purpose = pgettext("europeans_building", "Market building to sale mead and wine for coins.")
+            }
+        },
+        {
+            name = "europeans_market_wood",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+                purpose = pgettext("europeans_building", "Market building to sale wood products for coins.")
             }
         },
         {
             name = "europeans_market_food",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Big Market
                 purpose = pgettext("europeans_building", "Market building to sale foods for coins.")
-            }
-        },
-        {
-            name = "europeans_store_small",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Store
-                purpose = pgettext("europeans_building", "Store building to purchase wares from other allied tribes.")
             }
         },
         {
             name = "europeans_store_big",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Store
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Big Store
                 purpose = pgettext("europeans_building", "Store building to purchase wares from other allied tribes.")
             }
         },

@@ -59,7 +59,9 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 6 }
+        { name = "reed", amount = 6 },
+        { name = "rubber", amount = 4 },
+        { name = "leather", amount = 4 }
     },
 
     programs = {
@@ -91,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs reed and not economy needs armor",
                 "return=skipped when economy needs cloth and not economy needs armor",
-                "consume=reed:3",
+                "consume=reed:3 leather:2 rubber:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:3m",
                 "produce=armor:2"

@@ -10,19 +10,19 @@ wl.Descriptions():new_warehouse_type {
     
     animation_directory = dirname,
     spritesheets = {
-      idle = {
-         fps = 10,
-         frames = 20,
-         columns = 10,
-         rows = 2,
-         hotspot = { 98, 98 }
-      },
-      build = {
-         frames = 4,
-         columns = 4,
-         rows = 1,
-         hotspot = { 98, 98 }
-      },
+        idle = {
+            fps = 10,
+            frames = 20,
+            rows = 5,
+            columns = 4,
+            hotspot = { 66, 80 }
+        },
+        build = {
+            frames = 4,
+            rows = 2,
+            columns = 2,
+            hotspot = { 59, 77 }
+        },
     },
     
     size = "port",
