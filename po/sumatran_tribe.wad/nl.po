@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-03 03:10+0100\n"
+"POT-Creation-Date: 2025-02-04 03:11+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -28,18 +28,12 @@ msgid "Sumatrans"
 msgstr "Sumatranen"
 
 #: addons/sumatran_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Needs sumatran_world.wad. It uses partially graphics of other tribes, until "
 "new graphics is available. AI likes summer and desert terrain, a lot of "
 "space and water nearby. Fortified Village for a stronger opponent. More info "
 "in help and tips."
 msgstr ""
-"Heeft sumatran_world.wad nodig. Dit is een testversie van een stam genaamd "
-"Sumatranen. Het gebruikt gedeeltelijk afbeeldingen van andere stammen, "
-"totdat er nieuwe afbeeldingen beschikbaar zijn. AI houdt van zomer- en "
-"woestijngebied, veel ruimte en water in de buurt. Versterkt dorp voor een "
-"sterkere tegenstander. Meer informatie in help en tips."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/sumatran_tribe.wad/immovables/cassavaplants/harvested/init.lua:8
@@ -1000,15 +994,13 @@ msgid "No Space"
 msgstr "Geen Ruimte"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:66
-#, fuzzy
 msgid "Animals do not leave this marsh"
-msgstr "Dieren verlaten dit moeras niet"
+msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:67
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "There is not enough space around this marsh for animals to leave."
-msgstr "Er is niet genoeg ruimte rond deze tocht voor dieren om weg te gaan."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/jungle_preservers_hut/init.lua:8
@@ -1516,9 +1508,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
-#, fuzzy
 msgid "Tidy Warehouses"
-msgstr "Stammenmagazijn"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -2215,26 +2206,19 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Diamond
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:307
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid ""
 "Diamonds are a very precious building material. These precious stones are "
 "also your main source of wealth, when goal of game is to collect precious "
 "things."
 msgstr ""
-"Diamanten zijn een zeer kostbaar bouwmateriaal. Deze stenen zijn ook je "
-"belangrijkste bron van rijkdom als het je doel is om kostbare dingen te "
-"verzamelen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:317
-#, fuzzy
 msgctxt "ware"
 msgid ""
 "While smelting metals, the fires of the sumatran furnaces are fed with coal."
 msgstr ""
-"De vuren van de sumatraanse ovens voor het smelten van metalen worden gevoed "
-"met kolen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:319
@@ -2357,14 +2341,11 @@ msgstr "De schop is een essentieel gereedschap voor bosbouwers en boeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:446
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid ""
 "The hammer is the most used tool. Geologists, builders, coppersmiths, "
 "shipwrights and craftsmen, they all need hammer."
 msgstr ""
-"De hamer is het meest gebruikte gereedschap. Geologen, bouwers, smeden, "
-"scheepstimmerlieden en ambachtslieden, ze hebben allemaal een hamer nodig."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:459
@@ -2515,10 +2496,9 @@ msgstr "Kweekt dieren."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Scout
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:649
-#, fuzzy
 msgctxt "sumatran_worker"
 msgid "Explores territory of your enemy."
-msgstr "Verken het gebied van je vijand."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Jungle Ghost
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:656
@@ -2923,9 +2903,8 @@ msgstr "Er is hier veel steenkool."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1153
-#, fuzzy
 msgid "There is a lot of iron ore here."
-msgstr "Er is hier veel ijzererts."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1164
@@ -3088,14 +3067,11 @@ msgstr "Hij jaagt op dieren om vlees te produceren en vangt vis in de wateren."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s Tent
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1276
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The building has 3 different working areas. Smallest for fishing, larger for "
 "hunting and the largest is not used by the worker in this type of building."
 msgstr ""
-"Het gebouw heeft 3 verschillende werkgebieden. De kleinste om te vissen, de "
-"grootste om te jagen en de grootste om op krokodillen te jagen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1283
@@ -3119,7 +3095,6 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1292
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "Thermal springs make terrain more favorable for tropical trees. This is "
@@ -3127,10 +3102,6 @@ msgid ""
 "to transform mountains is very advantageous, in the second case, all types "
 "of terrain can be transformed."
 msgstr ""
-"Thermale bronnen maken het terrein gunstiger voor tropische bomen. Dit is "
-"vooral handig als je wasteland- en winterkaarten speelt. In het eerste geval "
-"is het zeer voordelig om bergen te transformeren, in het tweede geval kunnen "
-"alle soorten terrein worden getransformeerd."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1294
@@ -3185,11 +3156,9 @@ msgstr ""
 "basiswerkplaats te werken."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1329
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "The experienced craftsman needs %1% on average to make one tool."
 msgstr ""
-"De gereedschapsmid heeft gemiddeld %1% nodig om één gereedschap te maken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Weapons Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1336
@@ -3486,7 +3455,6 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Copper-Gold Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1512
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "In comparison to a basic mine, production of this mine is slower but "
@@ -3494,9 +3462,6 @@ msgid ""
 "when gold ore is needed. Empty mines produce gold primarily, when gold is "
 "needed."
 msgstr ""
-"In vergelijking met een basismijn is de productie van deze mijn langzamer "
-"maar goedkoper. De mijn heeft twee programma's. Kan een hoger percentage "
-"gouderts produceren wanneer gouderts nodig is."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
@@ -3612,16 +3577,12 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for a Sumatran military site: Fortified Tower
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1602
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "This building can be built by enhancing a watchtower or big sentry. "
 "Enhancement of big sentry costs you one log and one reed more but you save "
 "one block of stone instead."
 msgstr ""
-"Dit gebouw kan worden gebouwd door een wachttoren of grote schildwacht te "
-"verbeteren. Het verbeteren van de grote wachttoren kost je één boomstam en "
-"één riet meer, maar je bespaart in plaats daarvan één blok steen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Ferry Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1620
@@ -3631,14 +3592,11 @@ msgstr "Bouwt veerboten."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Shipyard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1629
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
 "wares between ports."
 msgstr ""
-"Bouwt schepen die worden gebruikt voor overzeese kolonisatie en voor het "
-"verschepen van goederen tussen havens."
 
 #. TRANSLATORS: Lore helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1638
@@ -4220,7 +4178,3 @@ msgstr "Wijnmaker"
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
 msgstr "Houtvester"
-
-#~ msgctxt "sumatran_building"
-#~ msgid "Digs diamonds and stone out of the ground in mountain terrain."
-#~ msgstr "Graaft diamanten en stenen uit de grond in bergachtig terrein."
