@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 03:11+0100\n"
+"POT-Creation-Date: 2025-02-05 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -35,6 +35,10 @@ msgid ""
 "space and water nearby. Fortified Village for a stronger opponent. More info "
 "in help and tips."
 msgstr ""
+"Bruukt sumatran_world.wad. Dat bruukt in Delen Billers vun anner Völkers, "
+"bit neje Billers verföögbaar sünd. Künstelk Speler bruken Sömmer- un Wüüst-"
+"Landskuppen un mennig Rüümte un Water umbi. Bruuk Schanzendörp för eenen "
+"machtigeren Feind. Mehr Informatioonen in de Hülp un Tipps."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/sumatran_tribe.wad/immovables/cassavaplants/harvested/init.lua:8
@@ -995,12 +999,13 @@ msgstr "Keene Rüümte"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:66
 msgid "Animals do not leave this marsh"
-msgstr ""
+msgstr "Deerten verlaten deese Fenne nich"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:67
 msgctxt "sumatran_building"
 msgid "There is not enough space around this marsh for animals to leave."
 msgstr ""
+"Um deese Fenne is nich genoog Rüümte rum, dat Deerten se verlaten könen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/jungle_preservers_hut/init.lua:8
@@ -1504,7 +1509,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
 msgid "Tidy Warehouses"
-msgstr ""
+msgstr "Kraamhusen uprümen"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1513,18 +1518,22 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Begünn mit eenem slichten Raadhuus. Of un an doon diene Arbeiders "
+"Bestandsupnahmen. Wenn mehr as 500 Dingen in elkeen vun dienem Kraamhusen "
+"sünd, smieten de Arbeiders een Veerdel vun de Bestand in sülk eenem "
+"Kraamhuus weg."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:105
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Kraamhuus uprüümt!"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:183
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s is uprüümt worden!"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:184
 msgid "%1$d items have been removed, %2$d items left."
-msgstr ""
+msgstr "%1$d Dingen sünd wegdaan worden, %2$d Dingen blieven."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -2201,6 +2210,9 @@ msgid ""
 "also your main source of wealth, when goal of game is to collect precious "
 "things."
 msgstr ""
+"Edelstenen sünd een bannig düür Baukraam. Deese Edelstenen sünd ok diene "
+"wichtigste Quell vun Riekdoom, wenn diene Speel-Upgaav is, dürabel Kraam to "
+"pottjen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:317
@@ -2208,6 +2220,7 @@ msgctxt "ware"
 msgid ""
 "While smelting metals, the fires of the sumatran furnaces are fed with coal."
 msgstr ""
+"Dat Füür in sumatraansk Smeltwarken bi’m Smelten vun Metallen verbrannt Köhl."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:319
@@ -2333,6 +2346,8 @@ msgid ""
 "The hammer is the most used tool. Geologists, builders, coppersmiths, "
 "shipwrights and craftsmen, they all need hammer."
 msgstr ""
+"De Klöpper is dat wichtigst Warktüüg. Schattsökers, Baulüü, Kopersmidden, "
+"Schippebauers un Handwarkers all bruken eenen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:459
@@ -2483,7 +2498,7 @@ msgstr "Tücht Deerten."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:649
 msgctxt "sumatran_worker"
 msgid "Explores territory of your enemy."
-msgstr ""
+msgstr "Försket Geweste vun dienem Feind ut."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Jungle Ghost
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:656
@@ -2890,7 +2905,7 @@ msgstr "Hier is een Bült vun Köhl."
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1153
 msgid "There is a lot of iron ore here."
-msgstr ""
+msgstr "Hier is een Bült vun Iesenkluut."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1164
@@ -3058,6 +3073,9 @@ msgid ""
 "The building has 3 different working areas. Smallest for fishing, larger for "
 "hunting and the largest is not used by the worker in this type of building."
 msgstr ""
+"Dat Huus hett 3 verschedene Arbeidsgeweste. Dat lütte is tum Fisken, dat "
+"grotere tum Jagen un dat grootste word vun de Arbeider in deeser Aard vun "
+"Huus nich bruukt."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1283
@@ -3088,6 +3106,10 @@ msgid ""
 "to transform mountains is very advantageous, in the second case, all types "
 "of terrain can be transformed."
 msgstr ""
+"Hete Quellen maken de Landskupp beter för Regenwaldbomen. Dat is besünners "
+"nüttelk, wenn du up Unland- of Winter-Kaarten spöölst. In de eerste Fall is "
+"dat bannig nüttelk, Bargen umtowanneln; in de anner Fall könen all Aarden "
+"vun Landskuppen umwannelt worden."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1294
@@ -3144,7 +3166,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1329
 msgctxt "sumatran_building"
 msgid "The experienced craftsman needs %1% on average to make one tool."
-msgstr ""
+msgstr "De Meister-Handwarker bruukt dör de Bank %1% um een Warktüüg to maken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Weapons Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1336
@@ -3447,6 +3469,10 @@ msgid ""
 "when gold ore is needed. Empty mines produce gold primarily, when gold is "
 "needed."
 msgstr ""
+"Im Vergliek mit eenem normaalen Bargwark produzeert deeses Bargwark "
+"langsaamer, aver billiger. Dat Bargwark hett twee Warkwiesen; ’t kann eenen "
+"hogern Andeel vun Goldkluut produzeren, wenn Goldkluut bruukt word. Lege "
+"Bargwarken produzeren mehr Gold, wenn Gold bruukt word."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
@@ -3569,6 +3595,9 @@ msgid ""
 "Enhancement of big sentry costs you one log and one reed more but you save "
 "one block of stone instead."
 msgstr ""
+"Deeses Huus kann baut worden, indeem een Wachtoorn of eene Grote Wachters-"
+"Kamer utbaut wordn. Dat Utbauen vun eener Groten Wachters-Kamer köst di "
+"eenen Boomstamm un een Reit mehr, aver daarför spaarst du een Deel Steen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Ferry Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1620
@@ -3583,6 +3612,8 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
 "wares between ports."
 msgstr ""
+"Baut Schippen, de för tum Gründen vun nejen Dörpen un tum Schippern vun "
+"Waren tüsken Muden bruukt worden."
 
 #. TRANSLATORS: Lore helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1638

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 03:10+0100\n"
+"POT-Creation-Date: 2025-02-05 03:10+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -2774,37 +2774,37 @@ msgstr "dat Hanneln vun Gold antohollen"
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:8
 msgctxt "europeans_building"
 msgid "Cloth market"
-msgstr ""
+msgstr "Stoff-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:8
 msgctxt "europeans_building"
 msgid "Meat and Fish market"
-msgstr ""
+msgstr "Fleesk- un Fiss-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:8
 msgctxt "europeans_building"
 msgid "Wood products market"
-msgstr ""
+msgstr "Holtprodukten-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:8
 msgctxt "europeans_building"
 msgid "Beer market"
-msgstr ""
+msgstr "Beer-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:8
 msgctxt "europeans_building"
 msgid "Bread market"
-msgstr ""
+msgstr "Brood-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:8
 msgctxt "europeans_building"
 msgid "Mead and Wine market"
-msgstr ""
+msgstr "Hönnigbeer- un Wien-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:8
@@ -2841,25 +2841,25 @@ msgstr "Hannelsposten"
 #: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Trainingscamp"
-msgstr ""
+msgstr "Lüttes Övenslager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:79
 msgctxt "europeans_building"
 msgid "recruiting soldier with copper coin"
-msgstr ""
+msgstr "eenen Soldaten mit Koperdeit antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:94
 msgctxt "europeans_building"
 msgid "recruiting soldier with silver coin"
-msgstr ""
+msgstr "eenen Soldaten mit Sülverdeit antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:111
 msgctxt "europeans_building"
 msgid "recruiting soldier with gold coin"
-msgstr ""
+msgstr "eenen Soldaten mit Golddeit antohüren"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:8
@@ -2894,7 +2894,7 @@ msgstr "Lütte Warft"
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Trainingscamp"
-msgstr ""
+msgstr "Grotes Övenslager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:66
@@ -3072,7 +3072,7 @@ msgstr "Diene Soldaten hebben de Feinde in eener Wahrders-Kamer manntjet."
 #: addons/europeans_tribe.wad/9_militarysites/sentry_mountain/init.lua:8
 msgctxt "europeans_building"
 msgid "Mountain Sentry"
-msgstr ""
+msgstr "Barg-Wachters-Kamer"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/9_militarysites/tower_basic/init.lua:8
@@ -4913,7 +4913,7 @@ msgstr "Sleit Flint un Marmel ut Stenen in de Naberskupp."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1763
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat and leather."
-msgstr ""
+msgstr "Jaggt Deerten, um Fleesk un Leer to produzeren."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1765
@@ -4927,6 +4927,8 @@ msgctxt "europeans_building"
 msgid ""
 "Releases animals into the wild to steady the meat and leather production."
 msgstr ""
+"Lett Deerten in de Wildernis löss, daarmit de Jäger alltieden wat um Fleesk "
+"un Leer to jagen hett."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1779
@@ -5024,7 +5026,7 @@ msgstr "Weevt Stoff ut Reit."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1911
 msgctxt "europeans_building"
 msgid "Weaves cloth out of cotton or wool."
-msgstr ""
+msgstr "Weevt Stoff ut Boomwull of Wull."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1918
@@ -5044,13 +5046,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1932
 msgctxt "europeans_building"
 msgid "Burns scrap_wood into charcoal."
-msgstr ""
+msgstr "Brannt Holtköhle ut Altholt."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1939
 msgctxt "europeans_building"
 msgid "Burns scrap_wood or logs into charcoal."
-msgstr ""
+msgstr "Brannt Holtköhle ut Altholt of Boomstammen."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1946
@@ -5099,56 +5101,57 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1971
 msgctxt "europeans_building"
 msgid "Smelts ore into gold."
-msgstr ""
+msgstr "Smelt Kluten to Gold."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1978
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1985
 msgctxt "europeans_building"
 msgid "Grinds wheat and rye to produce mixed flour."
-msgstr ""
+msgstr "Mahlt Weit un Rogg to misket Mehl."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1992
 msgctxt "building"
 msgid "Produces bread out of water, honey and flour."
-msgstr ""
+msgstr "Produzeert Brood ut Water, Hönnig un Mehl."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1999
 msgctxt "building"
 msgid "Produces bread and biscuit out of water, fruits, honey and flour."
-msgstr ""
+msgstr "Produzeert Brood un Kookjes ut Water, Früchten, Hönnig un Mehl."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2006
 msgctxt "europeans_building"
 msgid "Produces beer for markets and mines."
-msgstr ""
+msgstr "Produzeert Beer för Markten un Bargwarken."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Brewery
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2013
 msgctxt "europeans_building"
 msgid "Produces beer, mead and strong_beer for markets and mines."
-msgstr ""
+msgstr "Produzeert Beer, Hönnigbeer un deftigs Beer för Markten un Bargwarken."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Winery
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2020
 msgctxt "europeans_building"
 msgid "Produces beer, mead, strong_beer and wine for markets and mines."
 msgstr ""
+"Produzeert Beer, Hönnigbeer, deftigs Beer un Wien för Markten un Bargwarken."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2028
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, rye and wheat."
-msgstr ""
+msgstr "Sait un arnt Garst, Rogg un Weit."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2035
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-msgstr ""
+msgstr "Sait un arnt Garst, Weit, Rogg, Swartwuddels un Mais."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Cattle Farm
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2042
@@ -5307,13 +5310,13 @@ msgstr "Markthuus, waar man natürelk Früchten tegen Deiten verkopen kann."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2374
 msgctxt "europeans_building"
 msgid "Market building to sale beer for coins."
-msgstr ""
+msgstr "Markthuus, waar man Beer tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2381
 msgctxt "europeans_building"
 msgid "Market building to sale bread for coins."
-msgstr ""
+msgstr "Markthuus, waar man Brood tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2388
@@ -5325,19 +5328,19 @@ msgstr "Markthuus, waar man verarbeidt Warens tegen Deiten verkopen kann."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2395
 msgctxt "europeans_building"
 msgid "Market building to sale fish, meat and leather for coins."
-msgstr ""
+msgstr "Markthuus, waar man Fiss, Fleesk un Leer tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2402
 msgctxt "europeans_building"
 msgid "Market building to sale mead and wine for coins."
-msgstr ""
+msgstr "Markthuus, waar man Hönnigbeer un Wien tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2409
 msgctxt "europeans_building"
 msgid "Market building to sale wood products for coins."
-msgstr ""
+msgstr "Markthuus, waar man Produkten ut Holt tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2418
@@ -5355,7 +5358,7 @@ msgstr "Rüst de Lehrwichters mit all nödigen Wapen un Wapenrocken ut."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2428
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."
-msgstr ""
+msgstr "Lehrt Soldaten »Gesundheid«, »Utwieken«, »Verteidigung« un »Angriff«."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2435
@@ -5416,7 +5419,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2465
 msgctxt "europeans_building"
 msgid "Modified version which can placed on mountains."
-msgstr ""
+msgstr "Ännert Versioon, wat up Bargen baut worden kann."
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2501
