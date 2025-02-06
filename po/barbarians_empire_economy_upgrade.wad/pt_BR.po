@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-02-06 03:09+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/widelands/"
 "teams/35159/pt_BR/)\n"
@@ -25,9 +25,10 @@ msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:3
 msgid ""
-"Upgrade of smelters and stonemasons makes the barbarians and empire more "
-"competitive. With this upgrade, you need one lump of coal to produce 2 "
-"pieces of metal. Build costs of some militarary sites modified too."
+"Upgrade of smelting works and stonemason’s houses makes the Barbarians and "
+"Empire more competitive. With this upgrade, you need one lump of coal to "
+"produce 2 pieces of metal. There are few new buildings available and build "
+"costs of some military sites are modified too."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -96,7 +97,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:50
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:109
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:119
 msgid "weaving"
 msgstr ""
 
@@ -187,82 +188,99 @@ msgid "sculpting marble columns"
 msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:23
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:27
-msgid "Fishes on the coast near the fisher’s house."
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:32
+msgid "Fishes on the coast near the fisher’s hut."
 msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:24
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:28
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:33
 msgid ""
-"The independent fisher works slowly but is able to fish in places where an "
-"ordinary fisher can't reach. He has a larger working area so you can get "
-"more fishes in total. It is useful only on open waters."
+"The independent fisher works slowly but is able to catch fish in places "
+"where an ordinary fisher can't reach. Thanks to his larger reach, you can "
+"get more fishes in total. It is useful only for open water."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:34
+#. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 1
+#. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:27
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:36
+msgctxt "empire_building"
+msgid "The fisher needs %1% on average to catch one fish."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 2
+#. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:29
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:38
+msgctxt "empire_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr ""
+
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:44
 msgid "Carves marble columns out of marble."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:35
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:45
 msgid ""
 "Advanced stonemason's house needs less marble to produce one marble column. "
-"To produce one bulk of 3 columns the building need 4 pieces of marble in "
-"stock."
+"To produce one bulk of 3 columns, 4 pieces of marble are needed."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:38
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:48
 msgid "Sows and harvests wheat."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:39
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:49
 msgid ""
 "Production of two small farms is approximately equal to production of one "
 "normal farm."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:42
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:52
 msgid "Grinds wheat to produce flour."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:43
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:53
 msgctxt "empire_building"
 msgid "The miller needs %1% on average to grind wheat into a sack of flour."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:87
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:97
 msgctxt "barbarians_building"
 msgid ""
 "‘Fine cloth and jewelry mean nothing to a true Barbarian.<br>But a noble "
 "sail in the wind will please his eyes.’"
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:89
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:99
 msgctxt "barbarians_building"
 msgid ""
 "Khantarakh, ‘The Modern Barbarian Economy’,<br>9ᵗʰ cowhide ‘Seafaring and "
 "Conquest’"
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:90
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:100
 msgid "Weaves cloth out of reed."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:91
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:101
 msgid "This building operates as an ordinary weaving mill only 25% slower."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:92
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:102
 msgctxt "empire_building"
 msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:124
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:128
+#. TRANSLATORS: Purpose helptext for a Barbarian production site: Advanced Smelting Works
+#. TRANSLATORS: Purpose helptext for an Empire production site: Advanced Smelting Works
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:135
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:140
 msgid "Smelts iron ore into iron and gold ore into gold."
 msgstr ""
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:125
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:129
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:136
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:141
 msgid ""
 "Advanced smelting works needs just one lump of coal to produce 2 iron ingots "
 "or 2 bars of gold. The building produces iron and gold faster than basic "

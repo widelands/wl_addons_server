@@ -6,7 +6,7 @@ push_textdomain("barbarians_empire_economy_upgrade.wad", true)
 wl.Descriptions():modify_unit("worker", "barbarians_fisher", "programs", "set", "independent_fishing", {
          "findspace=size:any radius:7 resource:resource_fish",
          "walk=coords",
-         "animate=fish duration:12s",
+         "animate=fish duration:10s",
          "mine=resource_fish radius:2",
          "createware=fish",
          "return"
@@ -14,25 +14,35 @@ wl.Descriptions():modify_unit("worker", "barbarians_fisher", "programs", "set", 
 wl.Descriptions():modify_unit("worker", "empire_fisher", "programs", "set", "independent_fishing", {
          "findspace=size:any radius:7 resource:resource_fish",
          "walk=coords",
-         "animate=fishing duration:12s",
+         "animate=fishing duration:10s",
          "mine=resource_fish radius:2",
          "createware=fish",
          "return"
       })
 wl.Descriptions():modify_unit("tribe", "barbarians", "add_building", "barbarians_independent_fishing_hut", { helptexts = {
-                  purpose = _"Fishes on the coast near the fisher’s house.",
-                  note    = _"The independent fisher works slowly but is able to fish in places where an ordinary fisher can't reach. He has a larger working area so you can get more fishes in total. It is useful only on open waters."
-               }})
+                  purpose = _"Fishes on the coast near the fisher’s hut.",
+                  note    = _"The independent fisher works slowly but is able to catch fish in places where an ordinary fisher can't reach. Thanks to his larger reach, you can get more fishes in total. It is useful only for open water.",
+                  performance = {
+               -- TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 1
+                    pgettext("empire_building", "The fisher needs %1% on average to catch one fish."):bformat(format_seconds(65)),
+               -- TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 2
+                    pgettext("empire_building", "In case of slopes or obstacles in the way, the time is increased.")
+               }}})
 wl.Descriptions():modify_unit("tribe", "empire", "add_building", "empire_independent_fishing_hut", { helptexts = {
-                  purpose = _"Fishes on the coast near the fisher’s house.",
-                  note    = _"The independent fisher works slowly but is able to fish in places where an ordinary fisher can't reach. He has a larger working area so you can get more fishes in total. It is useful only on open waters."
-               }})
+                  purpose = _"Fishes on the coast near the fisher’s hut.",
+                  note    = _"The independent fisher works slowly but is able to catch fish in places where an ordinary fisher can't reach. Thanks to his larger reach, you can get more fishes in total. It is useful only for open water.",
+                  performance = {
+               -- TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
+                    pgettext("empire_building", "The fisher needs %1% on average to catch one fish."):bformat(format_seconds(65)),
+               -- TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
+                    pgettext("empire_building", "In case of slopes or obstacles in the way, the time is increased.")
+               }}})
 -----------------------
 -- EMPIRE BUILDINGS
 
 wl.Descriptions():modify_unit("tribe", "empire", "add_building", "empire_stonemasons_house_advanced", { helptexts = { 
                   purpose = _"Carves marble columns out of marble.",
-                  note    = _"Advanced stonemason's house needs less marble to produce one marble column. To produce one bulk of 3 columns the building need 4 pieces of marble in stock."
+                  note    = _"Advanced stonemason's house needs less marble to produce one marble column. To produce one bulk of 3 columns, 4 pieces of marble are needed."
                }})
 wl.Descriptions():modify_unit("tribe", "empire", "add_building", "empire_farm_small", { helptexts = { 
                   purpose = _"Sows and harvests wheat.",
@@ -121,10 +131,12 @@ wl.Descriptions():modify_unit("productionsite", "barbarians_weaving_mill", "prog
 --SMELTING
 
 wl.Descriptions():modify_unit("tribe", "barbarians", "add_building", "barbarians_smelting_works_advanced", { helptexts = {
+                  -- TRANSLATORS: Purpose helptext for a Barbarian production site: Advanced Smelting Works
                   purpose = _"Smelts iron ore into iron and gold ore into gold.",
                   note    = _"Advanced smelting works needs just one lump of coal to produce 2 iron ingots or 2 bars of gold. The building produces iron and gold faster than basic smelting works. When there are not 2 pieces of required ore in stock, the building operates as a basic smelting works."
                }})
 wl.Descriptions():modify_unit("tribe", "empire", "add_building", "empire_smelting_works_advanced", { helptexts = { 
+                  -- TRANSLATORS: Purpose helptext for an Empire production site: Advanced Smelting Works
 		  purpose = _"Smelts iron ore into iron and gold ore into gold.",
                   note    = _"Advanced smelting works needs just one lump of coal to produce 2 iron ingots or 2 bars of gold. The building produces iron and gold faster than basic smelting works. When there are not 2 pieces of required ore in stock, the building operates as a basic smelting works."
                }})
@@ -158,6 +170,9 @@ wl.Descriptions():modify_unit("building", "empire_smelting_works", "enhancement"
 
 wl.Descriptions():modify_unit("building", "barbarians_tower", "buildcost", "set", "blackwood", 4)
 wl.Descriptions():modify_unit("building", "barbarians_tower", "buildcost", "set", "cloth", 1)
+wl.Descriptions():modify_unit("building", "empire_blockhouse", "buildcost", "remove", "log")
+--wl.Descriptions():modify_unit("militarysite", "empire_blockhouse", "conquers", 5)
+
 
 wl.Descriptions():modify_unit("building", "barbarians_fortress", "enhancement", {
       name = "barbarians_citadel",
@@ -184,6 +199,16 @@ wl.Descriptions():modify_unit("building", "empire_fortress", "enhancement", {
          marble_column = 2
       }
    })
+wl.Descriptions():modify_unit("building", "empire_blockhouse", "enhancement", {
+      name = "empire_sentry",
+      enhancement_cost = {
+         granite = 1
+      },
+      enhancement_return_on_dismantle = {
+         granite = 1
+      }
+   })
+
 
 -----------------------
 

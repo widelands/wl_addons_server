@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2025-02-06 03:10+0100\n"
 "PO-Revision-Date: 2024-01-10 16:15+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +24,15 @@ msgstr ""
 
 #: addons/no-stats-till-spied.wad/addon:4
 msgid "No player stats until a scout spied them"
-msgstr ""
+msgstr "Bez statistik hráčů dokud je průzkumník nevypátrá"
 
 #: addons/no-stats-till-spied.wad/addon:5
 msgid "It needs a scout to know details about the other players."
-msgstr ""
+msgstr "Na získání podrobností o ostatních hráčích je potřeba průzkumník."
 
 #: addons/no-stats-till-spied.wad/init.lua:18
 msgid "No player statistics till spied"
-msgstr ""
+msgstr "Žádné statistiky hráčů dokud nejsou vypátrané"
 
 #: addons/no-stats-till-spied.wad/init.lua:19
 msgid ""
@@ -37,13 +41,19 @@ msgid ""
 "            To know statistics about other players, you need a scout to spy "
 "there."
 msgstr ""
+"Hráči uchovávají své statistiky ve skladech (všechny budovy skladující "
+"suroviny).\n"
+"            K získání statistik druhých hráčů potřebuješ na dané místo "
+"dostat skauta."
 
 #. TRANSLATORS: %s is the name of a player
 #: addons/no-stats-till-spied.wad/init.lua:67
 #, lua-format
 msgid "A spy has now information about %s. Find it in statistics."
 msgstr ""
+"Průzkumník právě získal informace o hráči %s. Můžeš si je prohlédnout ve "
+"statistice."
 
 #: addons/no-stats-till-spied.wad/init.lua:69
 msgid "A spy gives information"
-msgstr ""
+msgstr "Zvěd dodává informace"

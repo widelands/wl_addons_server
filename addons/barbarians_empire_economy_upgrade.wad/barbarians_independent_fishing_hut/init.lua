@@ -49,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"fishing",
             actions = {
                 "callworker=independent_fishing",
-                "sleep=duration:35s"
+                "sleep=duration:30s"
             }
         }
         
