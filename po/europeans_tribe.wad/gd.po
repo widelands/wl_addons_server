@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-03 03:10+0100\n"
+"POT-Creation-Date: 2025-02-07 03:10+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Language-Team: Gaelic, Scottish (https://app.transifex.com/widelands/"
 "teams/35159/gd/)\n"
@@ -1483,19 +1483,19 @@ msgctxt "europeans_building"
 msgid "releasing and hunting"
 msgstr ""
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:60
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:57
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:82
 msgid "No Game"
 msgstr ""
 
 #. TRANSLATORS: "Game" means animals that you can hunt
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:62
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:59
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:84
 msgid "Out of Game"
 msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:64
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:61
 msgctxt "europeans_building"
 msgid ""
 "The hunter working out of this hunter’s house can’t find any game in his "
@@ -5930,33 +5930,14 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/discovery_ai.lua:11
-msgid "Discovery (AI optimized)"
-msgstr ""
-
-#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-#. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/discovery_ai.lua:13
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/harbors_ai.lua:13
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:13
-msgid "AI optimized starting condition, not for human player."
-msgstr ""
-
-#. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/discovery_human.lua:11
-msgid "Discovery (Human Player)"
+msgid "Discovery"
 msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/discovery_human.lua:13
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies."
-msgstr ""
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/harbors_ai.lua:11
-msgid "Harbors (AI optimized)"
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
@@ -5967,11 +5948,6 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/harbors_human.lua:13
 msgid "Start the game with one port only."
-msgstr ""
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
-msgid "Headquarters (AI optimized)"
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition

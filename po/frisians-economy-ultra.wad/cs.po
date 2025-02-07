@@ -6,15 +6,16 @@
 # Translators:
 # af24e571988b09e5b46468ac89010e87_d1b4333, 2021
 # Zlopez <michal.konecny@psmail.xyz>, 2021
+# Ondřej Itřech, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2025-02-07 03:10+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
-"Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -68,13 +69,13 @@ msgstr "Mlynář"
 #: addons/frisians-economy-ultra.wad/oat/init.lua:8
 msgctxt "ware"
 msgid "Oat"
-msgstr ""
+msgstr "Oves"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Oat Farm"
-msgstr ""
+msgstr "Ovesná farma"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:65
@@ -89,12 +90,12 @@ msgstr "vyrábění"
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
 msgid "planting oat"
-msgstr ""
+msgstr "setí ovsa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:81
 msgid "harvesting oat"
-msgstr ""
+msgstr "sklízení ovsa"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:90
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
@@ -110,37 +111,37 @@ msgstr "Došla pole"
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this oat farm has no cleared soil to plant his seeds."
-msgstr ""
+msgstr "Sedlák pracující na této ovesné farmě nemá žádnou volnou půdu na osev."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr ""
+msgstr "Ovesné pole (sklizené)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr ""
+msgstr "Ovesné pole (vzrostlé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr ""
+msgstr "Ovesné pole (zralé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr ""
+msgstr "Ovesné pole (malé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr ""
+msgstr "Ovesné pole (oseté)"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:9
 msgid "This rye field has been harvested."
@@ -164,23 +165,23 @@ msgstr "Toto je právě oseté žitné pole."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:25
 msgid "This oat field has been harvested."
-msgstr ""
+msgstr "Toto ovesné pole bylo již sklizeno."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:28
 msgid "This oat field is ready for harvesting."
-msgstr ""
+msgstr "Toto ovesné pole je připraveno ke sklizni."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:31
 msgid "This oat field is flowering. Beekeepers can use it to produce honey."
-msgstr ""
+msgstr "Toto ovesné pole právě kvete. Včelař tu může zajistit získání medu."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:34
 msgid "This oat field is growing."
-msgstr ""
+msgstr "Toto je rostoucí ovesné pole."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:37
 msgid "This oat field has just been planted."
-msgstr ""
+msgstr "Toto je právě oseté ovesné pole."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:45
 msgid "Salt is washed from the sea and used to conserve meat and fish."
@@ -200,7 +201,7 @@ msgstr "Poté co je ječmen semletý na mouku, může se z něj péct chléb."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:57
 msgid "Oat is used to bake bread and also fed to the reindeer."
-msgstr ""
+msgstr "Oves je využíván k pečení chleba a jako krmivo pro soby."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:60
 msgid "Fur can be tanned into leather, which is needed to produce garments."
@@ -244,7 +245,7 @@ msgstr "Na žitné farmě se seje a sklízí žito."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:134
 msgid "The oat farm sows and harvests oat."
-msgstr ""
+msgstr "Na ovesné farmě se seje a sklízí oves."
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:144
@@ -260,14 +261,14 @@ msgstr "uzení masa"
 #: addons/frisians-economy-ultra.wad/postload.lua:171
 msgctxt "frisians_building"
 msgid "rearing reindeer"
-msgstr ""
+msgstr "chování sobů"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:181
 #: addons/frisians-economy-ultra.wad/postload.lua:191
 msgctxt "frisians_building"
 msgid "producing fur"
-msgstr ""
+msgstr "vyčiňování kůže"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:217
@@ -397,4 +398,4 @@ msgstr "činění kožešiny"
 
 #: screenshots/frisians-economy-ultra.wad/descriptions:1
 msgid "Example screenshot of version 1"
-msgstr ""
+msgstr "Ilustrační snímek obrazovky verze 1"

@@ -2626,56 +2626,7 @@ wl.Descriptions():new_tribe {
         },
         -- Market
         {
-            name = "europeans_market_agricultur",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale natural products for coins.")
-            }
-        },
-        {
-            name = "europeans_market_beer",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale beer for coins.")
-            }
-        },
-        {
-            name = "europeans_market_bread",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale bread for coins.")
-            }
-        },
-        {
-            name = "europeans_market_cloth",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale processed products for coins.")
-            }
-        },
-        {
-            name = "europeans_market_meat",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale fish, meat and leather for coins.")
-            }
-        },
-        {
-            name = "europeans_market_wine",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale mead and wine for coins.")
-            }
-        },
-        {
-            name = "europeans_market_wood",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale wood products for coins.")
-            }
-        },
-        {
-            name = "europeans_market_food",
+            name = "europeans_market_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans market: Big Market
                 purpose = pgettext("europeans_building", "Market building to sale foods for coins.")

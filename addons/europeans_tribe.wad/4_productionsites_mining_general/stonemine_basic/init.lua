@@ -59,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 6 }
+        { name = "blackwood", amount = 6 }
     },
 
     programs = {
@@ -67,21 +67,21 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped when economy needs log and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs diamond",
+                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs diamond",
                 "sleep=duration:5s",
                 "call=mine_granite_basic",
-                "return=skipped unless site has log:3",
-                "consume=log",
+                "return=skipped unless site has blackwood:3",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_granite",
                 "call=mine_marble",
                 "sleep=duration:5s",
-                "consume=log",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=log",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_diamond",
@@ -99,7 +99,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "return=skipped unless economy needs granite",
-                "return=skipped when site has log:3",
+                "return=skipped when site has blackwood:3",
                 "animate=working duration:30s",
                 "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:10%",
                 "produce=granite",
@@ -133,7 +133,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=log:3",
+                "consume=blackwood:3",
                 "produce=granite:4 marble:3 quartz diamond",
             }
         },

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 03:10+0100\n"
+"POT-Creation-Date: 2025-02-07 03:10+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1496,19 +1496,19 @@ msgctxt "europeans_building"
 msgid "releasing and hunting"
 msgstr "vrijlaten en jagen"
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:60
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:57
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:82
 msgid "No Game"
 msgstr "Geen Wild"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:62
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:59
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:84
 msgid "Out of Game"
 msgstr "Zonder Wild"
 
 #. TRANSLATORS: "game" means animals that you can hunt
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:64
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:61
 msgctxt "europeans_building"
 msgid ""
 "The hunter working out of this hunter’s house can’t find any game in his "
@@ -6131,23 +6131,9 @@ msgstr[0] "%1%(+%2%) soldaat"
 msgstr[1] "%1%(+%2%) soldaten"
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/discovery_ai.lua:11
-msgid "Discovery (AI optimized)"
-msgstr "Ontdekking (AI geoptimaliseerd)"
-
-#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-#. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/discovery_ai.lua:13
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/harbors_ai.lua:13
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:13
-msgid "AI optimized starting condition, not for human player."
-msgstr "AI geoptimaliseerde startconditie, niet voor menselijke speler."
-
-#. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/discovery_human.lua:11
-msgid "Discovery (Human Player)"
-msgstr "Ontdekking ( Menselijke Speler)"
+msgid "Discovery"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/discovery_human.lua:13
@@ -6156,11 +6142,6 @@ msgid ""
 msgstr ""
 "Start het spel met drie schepen op de oceaan en slechts een handvol "
 "voorraden."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/harbors_ai.lua:11
-msgid "Harbors (AI optimized)"
-msgstr "Havens (AI geoptimaliseerd)"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/harbors_human.lua:11
@@ -6173,11 +6154,6 @@ msgid "Start the game with one port only."
 msgstr "Begin het spel met slechts één haven."
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
-msgid "Headquarters (AI optimized)"
-msgstr "Hoofdkwartier (AI geoptimaliseerd)"
-
-#. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:11
 msgid "Headquarters"
 msgstr "Hoofdkwartier"
@@ -6186,3 +6162,18 @@ msgstr "Hoofdkwartier"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
+
+#~ msgid "Discovery (AI optimized)"
+#~ msgstr "Ontdekking (AI geoptimaliseerd)"
+
+#~ msgid "AI optimized starting condition, not for human player."
+#~ msgstr "AI geoptimaliseerde startconditie, niet voor menselijke speler."
+
+#~ msgid "Discovery (Human Player)"
+#~ msgstr "Ontdekking ( Menselijke Speler)"
+
+#~ msgid "Harbors (AI optimized)"
+#~ msgstr "Havens (AI geoptimaliseerd)"
+
+#~ msgid "Headquarters (AI optimized)"
+#~ msgstr "Hoofdkwartier (AI geoptimaliseerd)"

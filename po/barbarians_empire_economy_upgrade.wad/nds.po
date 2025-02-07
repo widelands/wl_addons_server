@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-06 03:09+0100\n"
+"POT-Creation-Date: 2025-02-07 03:09+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -27,17 +27,12 @@ msgid "Barbarians-Empire Upgrade"
 msgstr "Verhogens för Wille Lüü & Latiensk Riek"
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:3
-#, fuzzy
 msgid ""
 "Upgrade of smelting works and stonemason’s houses makes the Barbarians and "
 "Empire more competitive. With this upgrade, you need one lump of coal to "
 "produce 2 pieces of metal. There are few new buildings available and build "
 "costs of some military sites are modified too."
 msgstr ""
-"Betere Smeltwarken un Steenbickerhusen maken de Wille Lüü un dat Latiensk "
-"Riek starker to Spölen. Mit deesen Verhogerns bruukst du blots een Deel "
-"Köhl, um 2 Delen Metall to produzeren. Baukosten vun eenigen Soldateree-Boen "
-"ok anpasst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:8
@@ -199,31 +194,24 @@ msgstr "Marmelpielers to sniddjen"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:23
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:32
-#, fuzzy
 msgid "Fishes on the coast near the fisher’s hut."
-msgstr "Fiskt an de Küst in de Naberskupp vun de Fiskerhuus."
+msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:24
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:33
-#, fuzzy
 msgid ""
 "The independent fisher works slowly but is able to catch fish in places "
 "where an ordinary fisher can't reach. Thanks to his larger reach, you can "
 "get more fishes in total. It is useful only for open water."
 msgstr ""
-"De sülvstständig Fisker warkt langsaam, kann aver an Steden fisken, waar de "
-"normaale Fisker nich henkummt. He hett een grotes Warkgewest, so dat du in’t "
-"Geheel mehr Fiske kriggst. Dat is blots up open Waters nüttelk."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 1
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:27
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:36
-#, fuzzy
 msgctxt "empire_building"
 msgid "The fisher needs %1% on average to catch one fish."
 msgstr ""
-"De Müller bruukt dör de Bank %1% um Weit för eenen Sack Mehl to mahlen."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 2
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
@@ -238,14 +226,10 @@ msgid "Carves marble columns out of marble."
 msgstr "Sniddjet Marmelpielers ut Marmel."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:45
-#, fuzzy
 msgid ""
 "Advanced stonemason's house needs less marble to produce one marble column. "
 "To produce one bulk of 3 columns, 4 pieces of marble are needed."
 msgstr ""
-"Dat grote Steenbickerhuus bruukt minner Marmel, um eenen Marmelpieler to "
-"produzeren. Um 3 Pielers up eenmaal to produzeren, mutt dat Huus 4 Blocken "
-"Marmel im Lager hebben."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:48
 msgid "Sows and harvests wheat."

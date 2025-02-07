@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-06 03:09+0100\n"
+"POT-Creation-Date: 2025-02-07 03:09+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -26,7 +26,6 @@ msgid "Barbarians-Empire Upgrade"
 msgstr "Barbaren-Imperium Verbesserung"
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:3
-#, fuzzy
 msgid ""
 "Upgrade of smelting works and stonemason’s houses makes the Barbarians and "
 "Empire more competitive. With this upgrade, you need one lump of coal to "
@@ -34,9 +33,9 @@ msgid ""
 "costs of some military sites are modified too."
 msgstr ""
 "Die Verbesserung von Hochöfen und Steinmetzen macht die Barbaren und das "
-"Imperium wettbewerbsfähiger. Mit dieser Verbesserung brauchst du ein Stück "
+"Imperium wettbewerbsfähiger. Mit dieser Verbesserung braucht man ein Stück "
 "Kohle zur Herstellung von 2 Stücken Metall. Du hast ein paar neue Gebäude "
-"zur Verfügung und auch die Baukosten einiger Militärgebäuden sind geändert."
+"zur Verfügung und auch die Baukosten einiger Militärgebäude sind geändert."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:8
@@ -201,19 +200,17 @@ msgstr "Das Formen von Marmorsäulen"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:23
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:32
-#, fuzzy
 msgid "Fishes on the coast near the fisher’s hut."
 msgstr "Fischt an der Küste nahe der Fischerhütte. "
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:24
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:33
-#, fuzzy
 msgid ""
 "The independent fisher works slowly but is able to catch fish in places "
 "where an ordinary fisher can't reach. Thanks to his larger reach, you can "
 "get more fishes in total. It is useful only for open water."
 msgstr ""
-"Der freie Fischer arbeitet langsam, aber kann an Stellen angeln, wo ein "
+"Der freie Fischer arbeitet langsam, aber er kann an Stellen angeln, wo ein "
 "normaler Fischer nicht reichen kann. Seine Reichweite ist grösser, so kann "
 "er insgesamt mehrere Fische fangen. Es lohnt sich nur auf offenem Wasser."
 
@@ -221,12 +218,9 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:27
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:36
-#, fuzzy
 msgctxt "empire_building"
 msgid "The fisher needs %1% on average to catch one fish."
-msgstr ""
-"Der Müller braucht durchschnittlich %1%, um Weizen zu einem Sack Mehl zu "
-"mahlen."
+msgstr "Der Fischer benötigt durchschnittlich %1%, um ein Fisch zu fangen."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 2
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
@@ -235,13 +229,13 @@ msgstr ""
 msgctxt "empire_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"Wenn Steigungen oder Hindernisse im Weg sind, verlängert sich die Zeit."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:44
 msgid "Carves marble columns out of marble."
 msgstr "Gestaltet Säulen aus Marmor."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:45
-#, fuzzy
 msgid ""
 "Advanced stonemason's house needs less marble to produce one marble column. "
 "To produce one bulk of 3 columns, 4 pieces of marble are needed."
@@ -259,7 +253,7 @@ msgid ""
 "normal farm."
 msgstr ""
 "Die Produktion zwei kleiner Bauernhöfe ist ungefähr gleich wie Produktion "
-"eines normalen Bauernhof."
+"eines normalen Bauernhofes."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:52
 msgid "Grinds wheat to produce flour."
@@ -297,7 +291,7 @@ msgstr "Webt Stoff aus Reet."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:101
 msgid "This building operates as an ordinary weaving mill only 25% slower."
 msgstr ""
-"Diese Gebäude arbeitet genauso wie eine gewöhnliche Weberei nur 25% "
+"Dieses Gebäude arbeitet genauso wie eine gewöhnliche Weberei nur 25% "
 "langsamer."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:102
@@ -322,7 +316,7 @@ msgid ""
 "smelting works. When there are not 2 pieces of required ore in stock, the "
 "building operates as a basic smelting works."
 msgstr ""
-"Der verbesserten Hochofen braucht ein Stück Kohle, um 2 Eisenbarren oder 2 "
-"Goldziegel herzustellen. Die Gebäude herstellt Eisen und Gold schneller als "
-"ein normaler Hochofen. Wenn 2 Stücke verlangtes Erz nicht vorhanden sind, "
-"arbeitet diese Gebäude genauso wie ein normaler Hochofen."
+"Der verbesserte Hochofen braucht ein Stück Kohle, um 2 Eisenbarren oder 2 "
+"Goldziegel herzustellen. Das Gebäude herstellt Eisen und Gold schneller als "
+"ein normaler Hochofen. Wenn 2 Stücke verlangten Erzes nicht vorhanden sind, "
+"arbeitet dieses Gebäude genauso wie ein normaler Hochofen."

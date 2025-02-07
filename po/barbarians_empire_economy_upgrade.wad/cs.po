@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-06 03:09+0100\n"
+"POT-Creation-Date: 2025-02-07 03:09+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -27,16 +27,16 @@ msgid "Barbarians-Empire Upgrade"
 msgstr "Barbaři-císařství vylepšení"
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:3
-#, fuzzy
 msgid ""
 "Upgrade of smelting works and stonemason’s houses makes the Barbarians and "
 "Empire more competitive. With this upgrade, you need one lump of coal to "
 "produce 2 pieces of metal. There are few new buildings available and build "
 "costs of some military sites are modified too."
 msgstr ""
-"Vylepšení slévačů a kameníků zvyšuje bojeschopnost barbarů a císařství. S "
-"tímto vylepšením je potřeba pouze jedna hrouda uhlí na výrobu 2 kusů kovu. "
-"Také jsou upraveny stavební náklady některých vojenských budov."
+"Vylepšení sléváren a domků kameníka zvyšuje bojeschopnost barbarů a "
+"císařství. S tímto vylepšením je potřeba pouze jedna hrouda uhlí na výrobu 2 "
+"kusů kovu. K dispozici je pár nových budov a také jsou upraveny stavební "
+"náklady některých vojenských budov."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:8
@@ -199,32 +199,27 @@ msgstr "tesání mramorových sloupů"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:23
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:32
-#, fuzzy
 msgid "Fishes on the coast near the fisher’s hut."
-msgstr "Rybaří na pobřeží poblíž rybářského domku."
+msgstr "Rybaří na pobřeží poblíž rybářské chaty."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:24
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:33
-#, fuzzy
 msgid ""
 "The independent fisher works slowly but is able to catch fish in places "
 "where an ordinary fisher can't reach. Thanks to his larger reach, you can "
 "get more fishes in total. It is useful only for open water."
 msgstr ""
-"Svobodný rybář pracuje pomalu, ale je schopný lovit až tam, kde se běžný "
-"rybář nedostane. Má větší pracovní oblast, takže můžeš celkově získat více "
-"ryb. Vyplatí se pouze na otevřených vodách."
+"Svobodný rybář pracuje pomalu, ale je schopný ulovit rybu tam, kde se běžný "
+"rybář nedostane. Díky jeho delšímu dosahu můžeš celkově získat více ryb. "
+"Vyplatí se pouze na otevřených vodách."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 1
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:27
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:36
-#, fuzzy
 msgctxt "empire_building"
 msgid "The fisher needs %1% on average to catch one fish."
-msgstr ""
-"Mlynář potřebuje v průměru %1% na to, aby semlel pšenici na jeden pytel "
-"mouky."
+msgstr "Rybář potřebuje na ulovení jedné ryby v průměru %1%."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 2
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
@@ -233,20 +228,19 @@ msgstr ""
 msgctxt "empire_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"V případě nerovného terénu a překážek v cestě může potřebný čas ještě vzrůst."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:44
 msgid "Carves marble columns out of marble."
 msgstr "Tesá mramorové sloupy z mramoru."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:45
-#, fuzzy
 msgid ""
 "Advanced stonemason's house needs less marble to produce one marble column. "
 "To produce one bulk of 3 columns, 4 pieces of marble are needed."
 msgstr ""
 "Vylepšený domek kameníka potřebuje na výrobu jednoho mramorového sloupu méně "
-"mramoru. K výrobě jedné dávky 3 sloupů budova spotřebuje 4 kvádry mramoru ze "
-"svého skladu."
+"mramoru. K výrobě jedné dávky 3 sloupů je potřeba 4 kvádrů mramoru."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:48
 msgid "Sows and harvests wheat."

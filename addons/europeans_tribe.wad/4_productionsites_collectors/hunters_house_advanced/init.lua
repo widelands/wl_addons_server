@@ -40,12 +40,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
             descname = pgettext("europeans_building", "releasing and hunting"),
             actions = {
-                "return=skipped when economy needs water and not economy needs meat",
-                "return=skipped when economy needs water and not economy needs leather",
-                "return=skipped when economy needs blackroot and not economy needs meat",
-                "return=skipped when economy needs blackroot and not economy needs leather",
-                "return=skipped when economy needs fruit and not economy needs meat",
-                "return=skipped when economy needs fruit and not economy needs leather",
+                "return=skipped when economy needs water and not economy needs meat and not economy needs leather and not economy needs wool",
+                "return=skipped when economy needs blackroot and not economy needs meat and not economy needs leather and not economy needs wool",
+                "return=skipped when economy needs fruit and not economy needs meat and not economy needs leather and not economy needs wool",
                 "consume=water blackroot fruit",
                 "callworker=release",
                 "sleep=duration:1m",

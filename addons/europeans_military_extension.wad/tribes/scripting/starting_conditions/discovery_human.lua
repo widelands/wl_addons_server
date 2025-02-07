@@ -8,7 +8,7 @@ push_textdomain("europeans_military_extension.wad", true)
 
 local init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Discovery (Human Player)",
+    descname = _ "Discovery",
     -- TRANSLATORS: This is the tooltip for the "Discovery" starting condition
     tooltip = _"Start the game with three ships on the ocean and only a handful of supplies.",
     map_tags = {"seafaring"},

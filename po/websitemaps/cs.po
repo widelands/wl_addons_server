@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2025-02-04 03:10+0100\n"
+"POT-Creation-Date: 2025-02-07 03:09+0100\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -20,21 +24,21 @@ msgstr ""
 
 #: input:6 standard
 msgid "Smugglers"
-msgstr ""
+msgstr "Pašeráci"
 
 #: input:6 input:31 input:42 input:56 input:64 input:77 input:90 input:103
 #: input:113 input:122 input:131 input:139 input:147 input:160 input:168
 #: input:179 input:190 standard
 msgid "Your advisor"
-msgstr ""
+msgstr "Tvůj rádce"
 
 #: input:7 standard
 msgid "Along the River"
-msgstr ""
+msgstr "Podél řeky"
 
 #: input:7 standard
 msgid "Defeat Törver"
-msgstr ""
+msgstr "Poraž Törvera"
 
 #: input:8 standard
 msgid "10i"
@@ -74,7 +78,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Amoebae"
-msgstr ""
+msgstr "Améba"
 
 #: input:8 standard
 msgid "An_Empire_Strikes_Back (Kralle Edition)"
@@ -82,7 +86,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Antarctic Conquest v.2"
-msgstr ""
+msgstr "Dobývání Antarktidy v.2"
 
 #: input:8 standard
 msgid "Archipelago Ignite"
@@ -126,7 +130,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Cenere di Pompei v.2"
-msgstr ""
+msgstr "Cenere di Pompei v.2"
 
 #: input:8 standard
 msgid "Char Wars - The Empire burns coal"
@@ -282,7 +286,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Flower Power"
-msgstr ""
+msgstr "Moc květin"
 
 #: input:8 standard
 msgid "Forest Valley Tournament version"
@@ -322,7 +326,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Great Danube Basin"
-msgstr ""
+msgstr "Velká dunajská nížina"
 
 #: input:8 standard
 msgid "Great Danube Basin (Kralle Edition)"
@@ -330,7 +334,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Green Mauritius"
-msgstr ""
+msgstr "Zelený Mauricius"
 
 #: input:8 standard
 msgid "Großgebirge v.2"
@@ -402,7 +406,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Kingdom of Borneo"
-msgstr ""
+msgstr "Království Borneo"
 
 #: input:8 standard
 msgid "Kingdom of Borneo (Kralle Edition)"
@@ -442,7 +446,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Mountain Labyrinth"
-msgstr ""
+msgstr "Horský labyrint"
 
 #: input:8 standard
 msgid "New Warriors"
@@ -466,7 +470,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "River Explorers v.2"
-msgstr ""
+msgstr "Říční průzkumníci v.2"
 
 #: input:8 standard
 msgid "Roman Empire"
@@ -557,7 +561,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "The Great Lakes - Ports in Danger"
-msgstr ""
+msgstr "Velká jezera - Přístavy v ohrožení"
 
 #: input:8 standard
 msgid "The Great Lakes - Ports in Danger (Kralle Edition)"
@@ -601,7 +605,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Tripolis"
-msgstr ""
+msgstr "Tripolis"
 
 #: input:8 standard
 msgid "Tripolis  for 1v1"
@@ -609,7 +613,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "Tripolis (edited)"
-msgstr ""
+msgstr "Tripolis (editováno)"
 
 #: input:8 standard
 msgid "Two Campaigns Mark ii"
@@ -1002,7 +1006,7 @@ msgstr ""
 
 #: input:10 standard
 msgid "Keine Beschreibung vorhanden"
-msgstr ""
+msgstr "bez popisu"
 
 #: input:10 standard
 msgid ""
@@ -1319,7 +1323,7 @@ msgstr ""
 
 #: input:10 standard
 msgid "You are an Amoebae, expand and conquer all other Amoebae... "
-msgstr ""
+msgstr "Jsi amébou, roztáhni se a pohlť ostatní améby..."
 
 #: input:10 standard
 msgid ""
@@ -1388,6 +1392,11 @@ msgid ""
 "Outpost. Map is more suitable for multiplayer. Each player has two port "
 "spaces on his home island."
 msgstr ""
+"Borneo lze velmi snadno poznat podle jeho bílých pláží. Je na něm 10 míst "
+"pro přístav a 13 artefaktů. Pokud chceš vyhrát, měl bys tam založit přístav "
+"Nevhodné pro Autokrat a Dobyvatel. UI by měla začínat s Obchodní stanicí. "
+"Mapa je vhodnější pro multiplayer. Každý hráč má na svém domovském ostrově 2 "
+"přístavy."
 
 #: input:11 standard
 msgid ""
@@ -1405,6 +1414,10 @@ msgid ""
 "that your opponents may not start an expedition at all and may rather choose "
 "a land path."
 msgstr ""
+"Zejména vhodné pro Sběratele a Vládce území a také pro mírové nastavení hry. "
+"Možné hrát hru s dvěma týmy, žlutý a modrý by měli hrát proti sobě. Při hře "
+"jednoho hráče je třeba počítat s možností, že protivníci výpravu nezahájí a "
+"rozhodnou se pro cestu po souši."
 
 #: input:11 standard
 msgid ""
@@ -1434,6 +1447,11 @@ msgid ""
 "coast to force the shipbuilder to build ships on the wanted coast. The AI "
 "does not work very well on this map. "
 msgstr ""
+"Povolení námořního vojenství doporučeno. Budeš se muset plavit po moři a "
+"pravděpodobně postavit hodně přístavů loděnic, než narazíš na nepřítele. "
+"Možná bude potřeba omezit pracovní oblast loděnic stavěním cest po pobřeží, "
+"abys loďaře přinutil postavit loď na požadovaném břehu. UI se na této mapě "
+"nedaří příliš dobře."
 
 #: input:11 standard
 msgid ""
@@ -1448,6 +1466,9 @@ msgid ""
 "barefaced enough to settle on the coast of that island, a lot other followed "
 "afterwards."
 msgstr ""
+"Po staletí byl tento ostrov uchováván jako posvátné místo božstva. Nikdo se "
+"neodvážil na něj vkročit. Ale nyní se našel dostatečně protřelý kmen, aby se "
+"usadil na jeho pobřeží, a mnoho dalších následovalo jeho příkladu."
 
 #: input:11 standard
 msgid ""
@@ -1489,16 +1510,20 @@ msgid ""
 "Map is balanced for 4 players. Gold is very rare on this map. There is a "
 "small deposit of 100 pieces of golden ore near each starting position."
 msgstr ""
+"Mapa je vyvážená pro 4 hráče. Zlato se ne této mapě vyskytuje velmi zřídka. "
+"Poblíž každé počáteční pozice se nachází ložisko se 100 kusy zlaté rudy."
 
 #: input:11 standard
 msgid ""
 "Naval warefare is not needed but recommended. Gold can only be found on the "
 "leaves."
 msgstr ""
+"Použití námořní vojenství není nezbytné, ale je doporučeno. Zlato se nachází "
+"pouze na listech."
 
 #: input:11 standard
 msgid "No fish, no trees."
-msgstr ""
+msgstr "Žádné ryby, žádné stromy."
 
 #: input:11 standard
 msgid ""
@@ -1535,7 +1560,7 @@ msgstr ""
 
 #: input:11 standard
 msgid "Seefahrt"
-msgstr ""
+msgstr "Mořeplavba"
 
 #: input:11 standard
 msgid "Seefahrt, entspanntes Spielen da Feind nicht so schnell angreifen kann."
@@ -1552,6 +1577,7 @@ msgstr ""
 #: input:11 standard
 msgid "Teams recommended. Rich in resources. AI is weak on this map."
 msgstr ""
+"Týmy doporučeny. Bohatá na zdroje. AI si na této mapě nevede příliš dobře."
 
 #: input:11 standard
 msgid ""
@@ -1560,6 +1586,10 @@ msgid ""
 "resources near his base, the second one is in the middle of the map. This is "
 "a non-addon version of the ''Tropical Mauritius'' map."
 msgstr ""
+"Mapa je vyvážená pro 2 nebo 4 hráče. Oranžová (Grand Bay) a šedá (The City "
+"of Light) pozice jsou pouze volitelné. První z nich nemá poblíž své výchozí "
+"pozice dostatek surovin, druhá je ve středu mapy. Toto je rozšíření "
+"nepotřebující verze mapy \"Tropický Mauricius\"."
 
 #: input:11 standard
 msgid ""
@@ -1567,6 +1597,9 @@ msgid ""
 "also be fun for multiplayer if more advanced player starts from blue "
 "player's position and less advanced players from the rest two places."
 msgstr ""
+"Tato mapa je navržena tak, aby byla hrána z pozice modrého. Může být vhodná "
+"i pro hru více hráčů, pokud zkušenější hráč začíná z modré pozice a méně "
+"zkušení hráči ze zbylých dvou pozic."
 
 #: input:11 standard
 msgid ""
@@ -1586,6 +1619,11 @@ msgid ""
 "possible (recommended for yellow and blue in case one of these is your "
 "enemy). While played from red position Empire is more challenging,"
 msgstr ""
+"Jde o upravenou verzi oficiální mapy. Týmy doporučeny. K překonání "
+"nedostatku zlata je třeba vyslat výpravu. Pro AI možná Obchodní stanice "
+"( doporučena pro žlutého a modrého, pokud je některý z nich tvým "
+"protivníkem). Pokud hráno z pozice červeného, císařství představuje větší "
+"výzvu."
 
 #: input:11 standard
 msgid ""
@@ -1593,6 +1631,9 @@ msgid ""
 "optimal. There are only few spots where you can build bridges across the "
 "wide rivers and few mountain passes. The map is rich on resources."
 msgstr ""
+"Mapa je pro 2 až 6 hráčů. Ale 3, nebo 4 jsou zřejmě nejoptimálnější. Na mapě "
+"je pouze několik málo míst, kde lze postavit mosty přes široké řeky, a "
+"několik horských průsmyků. Mapa je bohatá na zdroje."
 
 #: input:11 standard
 msgid ""

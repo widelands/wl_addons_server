@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Ondřej Itřech, 2024
+# Ondřej Itřech, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-02-07 03:09+0100\n"
 "PO-Revision-Date: 2024-01-29 07:14+0000\n"
-"Last-Translator: Ondřej Itřech, 2024\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -31,6 +31,8 @@ msgid ""
 "Analysis tool: Compare the resources in the vicinity of player positions "
 "with a few clicks, or display a statistic of the whole map."
 msgstr ""
+"Analytický nástroj: Pomocí pár kliknutí porovnej zdroje v okolí výchozích "
+"pozic hráčů nebo si nech zobrazit statistiky za celou mapu."
 
 #: addons/editor_analyse_map.wad/callbacks.lua:12
 msgid ""
@@ -38,27 +40,31 @@ msgid ""
 "maps, like Europe v1.2, investigating needs also round about 1.5 GB free "
 "memory!"
 msgstr ""
+"Propočítat všechna data za celou mapu může chvíli trvat. V případě opravdu "
+"velkých map, jako třeba Evropa v1.2, může být pro účel pročtu potřeba okolo "
+"1,5 GB volné paměti!"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:13
 msgid "The Editor does not react for this time!"
-msgstr ""
+msgstr "V průběhu výpočtu editor neodpovídá!"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:14
 msgid "If you are sure click the button below and be patient …"
 msgstr ""
+"Pokud chceš provést analýzu klikni na tlačítko dole a počkej na výsledek ..."
 
 #: addons/editor_analyse_map.wad/callbacks.lua:41
 msgctxt "around_player_position:"
 msgid "Investigate around the player position:"
 msgid_plural "Investigate around the player positions:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Prověřit oblast v okolí hráče:"
+msgstr[1] "Prověřit oblast v okolí hráčů:"
+msgstr[2] "Prověřit oblast v okolí hráčů:"
+msgstr[3] "Prověřit oblast v okolí hráčů:"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:47
 msgid "Memory usage: %1$10.2f MB"
-msgstr ""
+msgstr "Využití paměti: %1$10.2f MB"
 
 #. TRANSLATORS: Placeholder is "this post in the Widelands forum"
 #: addons/editor_analyse_map.wad/callbacks.lua:56
@@ -168,80 +174,84 @@ msgstr "%1$d Polí"
 
 #: addons/editor_analyse_map.wad/init.lua:8
 msgid "Analyse the map"
-msgstr ""
+msgstr "Analyzovat mapu"
 
 #: addons/editor_analyse_map.wad/init.lua:9
 msgid "Compare player positions with a few clicks or analyse the whole map."
 msgstr ""
+"Pomocí pár kliknutí prorovnej pozice hráčů nebo získej informace o "
+"parametrech mapy."
 
 #: addons/editor_analyse_map.wad/windows.lua:71
 msgid "What should be investigated?"
-msgstr ""
+msgstr "Co se má propočítat?"
 
 #: addons/editor_analyse_map.wad/windows.lua:92
 msgid "The whole map"
-msgstr ""
+msgstr "Celá mapa"
 
 #: addons/editor_analyse_map.wad/windows.lua:100
 msgid "Information about players"
-msgstr ""
+msgstr "Informace o hráčích"
 
 #: addons/editor_analyse_map.wad/windows.lua:174
 msgid "General Options"
-msgstr ""
+msgstr "Všeobecné možnosti"
 
 #: addons/editor_analyse_map.wad/windows.lua:187
 msgid "Show building plots"
-msgstr ""
+msgstr "Propočítat stavební místa"
 
 #: addons/editor_analyse_map.wad/windows.lua:194
 msgid "Show Percent"
-msgstr ""
+msgstr "Spočítat podíly"
 
 #: addons/editor_analyse_map.wad/windows.lua:195
 msgid "Show the percentage of all mineable resources"
-msgstr ""
+msgstr "Spočítat podíly nerostných surovin"
 
 #: addons/editor_analyse_map.wad/windows.lua:202
 msgid "Calculate Marble"
-msgstr ""
+msgstr "Propočítat mramor"
 
 #: addons/editor_analyse_map.wad/windows.lua:203
 msgid "Include the granite/marmor ratio for rocks"
-msgstr ""
+msgstr "Propočet skal včetně poměru žuly ku mramoru"
 
 #: addons/editor_analyse_map.wad/windows.lua:218
 msgid "Show memory usage"
-msgstr ""
+msgstr "Zobrazit využití paměti"
 
 #: addons/editor_analyse_map.wad/windows.lua:219
 msgid "Show memory usage, informational only when investigating the whole map"
 msgstr ""
+"Zobrazí využití paměti, informačně přínosné pouze v případě propočtu celé "
+"mapy"
 
 #: addons/editor_analyse_map.wad/windows.lua:233
 msgid "Investigate the whole map"
-msgstr ""
+msgstr "Propočítat celou mapu"
 
 #: addons/editor_analyse_map.wad/windows.lua:240
 msgid "Investigate the checked players"
-msgstr ""
+msgstr "Propočítat zvolené hráče"
 
 #: addons/editor_analyse_map.wad/windows.lua:285
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: addons/editor_analyse_map.wad/windows.lua:309
 msgid "Analysing"
-msgstr ""
+msgstr "Provádí se rozbor"
 
 #: screenshots/editor_analyse_map.wad/descriptions:3
 msgid "Analyse a map, Options"
-msgstr ""
+msgstr "Rozbor mapy, možnosti"
 
 #: screenshots/editor_analyse_map.wad/descriptions:4
 msgid "Result for analysing Players"
-msgstr ""
+msgstr "Výsledek za hráče"
 
 #: screenshots/editor_analyse_map.wad/descriptions:5
 msgid "Result when investigating a whole map"
-msgstr ""
+msgstr "Výsledek za celou mapu"
