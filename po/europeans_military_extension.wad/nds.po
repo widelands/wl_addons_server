@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 03:09+0100\n"
+"POT-Creation-Date: 2025-02-08 03:10+0100\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -405,10 +405,9 @@ msgstr "Lütte Sniederee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Big market"
-msgstr "Spiesen-Markt"
+msgstr "Groter Markt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:68
@@ -3870,7 +3869,7 @@ msgstr[1] "%1%(+%2%) Soldaten"
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/discovery_human.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "Utförsken"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/discovery_human.lua:13
@@ -3898,49 +3897,3 @@ msgstr "Raadhuus"
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale natural products for coins."
-#~ msgstr "Markthuus, waar man natürelk Früchten tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale beer for coins."
-#~ msgstr "Markthuus, waar man Beer tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale bread for coins."
-#~ msgstr "Markthuus, waar man Brood tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale processed products for coins."
-#~ msgstr "Markthuus, waar man verarbeidt Warens tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale fish, meat and leather for coins."
-#~ msgstr ""
-#~ "Markthuus, waar man Fiss, Fleesk un Leer tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale mead and wine for coins."
-#~ msgstr "Markthuus, waar man Hönnigbeer un Wien tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale wood products for coins."
-#~ msgstr "Markthuus, waar man Produkten ut Holt tegen Deiten verkopen kann."
-
-#~ msgid "Discovery (AI optimized)"
-#~ msgstr "Utförsken (künstelk Speler)"
-
-#~ msgid "AI optimized starting condition, not for human player."
-#~ msgstr ""
-#~ "Anfangskondiesje, wat för künstelk Spelers dacht is un nich för de "
-#~ "minskelk Speler."
-
-#~ msgid "Discovery (Human Player)"
-#~ msgstr "Utförsken (minskelk Speler)"
-
-#~ msgid "Harbors (AI optimized)"
-#~ msgstr "Muden (künstelk Speler)"
-
-#~ msgid "Headquarters (AI optimized)"
-#~ msgstr "Raadhuus (künstelk Speler)"
