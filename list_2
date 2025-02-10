@@ -255,7 +255,7 @@ verified
 Aalnase
 Aalnase
 1718728173
-144
+146
 0
 0
 0
@@ -346,7 +346,7 @@ You are an Amoebae, expand and conquer all other Amoebae...
 kaputtnik
 kaputtnik
 1701363821
-122
+123
 0
 0
 0
@@ -434,7 +434,7 @@ Face to face artifacts run! You will see your enemy most of the time and only th
 kaputtnik
 kaputtnik
 1674478722
-285
+286
 0
 0
 0
@@ -516,7 +516,7 @@ Bluebyte-Settlers-II-Fan-Map
 reworked by hessenfarmer
 hessenfarmer
 1673901188
-445
+446
 0
 0
 0
@@ -606,7 +606,7 @@ The legend says: ''When ever one goes down our mountain, he never comes back''. 
 kaputtnik
 kaputtnik
 1679920754
-219
+221
 0
 0
 0
@@ -696,7 +696,7 @@ Maps for the ''Fast Explorer wins'' win condition. ''Fast Explorer SP'' is for s
 kaputtnik
 kaputtnik
 1731074666
-50
+52
 0
 0
 0
@@ -781,7 +781,7 @@ Four flowers are struggling for live...
 kaputtnik
 kaputtnik
 1716155346
-102
+103
 0
 0
 0
@@ -945,7 +945,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-762
+765
 1
 0
 0
@@ -1152,7 +1152,7 @@ This Addon contains all of my Maps. Some of my Maps are also on the Widelands We
 Teayo
 Teayo
 1688747564
-261
+262
 0
 0
 0
@@ -1298,7 +1298,7 @@ The gods who created this piece of landscape must be crazy. They proove your ski
 kaputtnik
 kaputtnik
 1715265495
-216
+218
 0
 0
 0
@@ -1500,7 +1500,7 @@ Provides the scenario ''Along the River''.  This scenario was converted to be pl
 hessenfarmer, fk
 hessenfarmer
 1633431899
-329
+330
 0
 0
 0
@@ -1668,7 +1668,7 @@ Keine Grenzen sind auf dieser Karte gesetzt, ob du ganz im Wald startetest als U
 the-x
 the-x
 1692450525
-169
+170
 2
 0
 0
@@ -1744,7 +1744,7 @@ Ohne Seefahrt kommt man nicht weit.
 Whiskey  Charlie Lima
 WeirdCatLord
 1674388992
-200
+201
 0
 0
 0
@@ -1908,7 +1908,7 @@ This map has been designed especially for naval invasions. Each player starts on
 Nordfriese
 Nordfriese
 1689081253
-179
+180
 0
 0
 0
@@ -1997,7 +1997,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-752
+754
 0
 0
 0
@@ -2084,7 +2084,7 @@ Maps for the 2021 Tournament
 hessenfarmer
 hessenfarmer
 1619867883
-437
+438
 0
 0
 0
@@ -2368,7 +2368,7 @@ Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind e
 auktionadmin
 auktionadmin
 1680190966
-397
+399
 0
 0
 0
@@ -2580,7 +2580,7 @@ Tribe's buildings for the start condition 'artifacts defended'<br><br><br><br>Ha
 aDiscoverer
 aDiscoverer
 1700941791
-98
+99
 0
 0
 0
@@ -2860,7 +2860,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-789
+791
 0
 0
 0
@@ -3016,7 +3016,7 @@ If there is no enemy military building in sight, every new construction site is 
 kaputtnik
 kaputtnik
 1613666291
-291
+292
 0
 0
 0
@@ -3095,7 +3095,7 @@ Upgrade of smelting works and stonemason’s houses makes the Barbarians and Emp
 OIPUN
 OIPUN
 1719251296
-345
+351
 0
 0
 0
@@ -3106,7 +3106,7 @@ OIPUN
 0
 0
 1
-5
+8
 Cupper
 It seems to be an ERROR:<br>Klicking help for farm widelands crashed, ALWAYS.<br>When this Addon is ON.<br><br>Good idea building wares in a bulk. :-)
 1.0.0
@@ -3127,9 +3127,21 @@ OIPUN
 This information is new to me. I have this add-on almost at the top of my add-on list and I never had a single problem, do you have more info about this problem? What WL version do you use? There is probably some collision with an add-on, which I don't use, but you do. Should be easy to find out by watching when the problem occurs while moving the add-on higher in the list.
 2.0.3
 1739053983
+OIPUN
+Yes, I was a little bit too quick with my first reply. I should investigate first. I see the problem is caused by adding performance to fishing huts in encyclopedia and that is crazy. Version 2.0.2 was fine and when I remove this performance info from 2.0.3, it is working fine too. I use over 30 add-ons right now and the problem occurs only when this add-on is over Sumatrans, all other add-ons are fine. And this doesn't make any sense, really. Anyway, thank you for reporting. I will investigate further and I will find some solution. The new version should not contain this bug. Crazy.
 2.0.3
-15
-786081
+1739084547
+Cupper
+I make a copy of the technical-info,<br><font size=11>- Years ago there was a map called "Call Of Death",where it was important to have the right order of the addons, too.</font> However, here is the info:<br><font italic=true>45 addons installed,yet.</font><br>  > Version: 1.2.1 Release    <br>> Operating System: Windows (64 bit)    <br>> Compiled with SDL version: 2.30.9    <br>> SDL video driver: windows    <br>> Locale: ...    <br>> Home Directory: C:\Users\...\.widelands    <br>> Configuration File: C:\Users\...\.widelands\config    <br>> Data Directory: C:\Users\...\AppData\Local\Widelands_121\data    <br>> Locale Directory: C:\Users\...\AppData\Local\Widelands_121\data\locale    <br>> Executable Directory: C:\Users\...\AppData\Local\Widelands_121    <br>> Enabled Add-Ons: basic-outpost.wad, sumatran_world.wad, sumatran_tribe.wad, wells-running-out.wad, barbarians_empire_economy_upgrade.wad    <br>> Inactive Installed Add-Ons: 8_Islands.wad, Amoebae.wad, Fast_Explorer.wad, Flower_Power.wad, Krater_2_2.wad, Let_the_Naval_warfare_begin.wad, Naval_Tournament_23_Maps.wad, Surreal_Valleys.wad, artifacts-defended-tribe.wad, artifacts-defended.wad, artifacts-extendable.wad, australia_tasmania_newzealand.wad, boss-village.wad, editor_copy_area.wad, editor_height_tools.wad, editor_swap_terrains.wad, europeans_military_extension.wad, europeans_tribe.wad, explorer-wins.wad, explorer-wins_50.wad, fast_explorer_wins.wad, first_heroes_win.wad, foreign_planet.wad, frisians-economy-ultra.wad, higher-experience.wad, impassable_water.wad, legacy_terrains.wad, more-fish-and-water.wad, no-stats-till-spied.wad, no-stats.wad, notify-speed.wad, pioneer-post.wad, royal.wad, the_inperium_of_the_7a.wad, tidy_warehouses.wad, time-limitted-peaceful.wad, tropical_maps.wad, tropics.wad, white_summer.wad, white_summer_maps.wad    
+2.0.3
+1739096472
+OIPUN
+OK with this version, the order of add-ons should not matter. I had to replace the pgettext of Barbarian Independent Fishing Hut Performance with a simple string. The funny thing is that right beneath, there is a completely same pgettext for Empire IFH and it works without problems. I also decided to add lore. And again :-( everywhere it works fine just Empire IFH has problem with latin_lore. So I solved that once again by putting just simple strings there. Not a nice solution but probably better than having an add-on that can crash. Not happy about that.
+2.0.4
+1739131763
+2.0.4
+16
+793006
 tribes
 0
 8
@@ -3310,7 +3322,7 @@ ru.mo
 sk.mo
 sv.mo
 166
-68b61b188e5cea1f09a565b582564b92
+2adc629ea2a79d9bd7703bb0ca2b49ea
 b2be5f1a4be1bbb6d7221c42ce193812
 7c0c2ac90b9d391acfde7a4728e8da3c
 b4c35c457ac084603f86a2dc123c5045
@@ -3339,7 +3351,7 @@ bddbe15962b7ec5a71932177e70795ad
 f9b9cce6319e1c692a0f97053491f7e6
 617d6ee34b3cfbc081c56976bf29008d
 9606d4937157076ab076d7ef4aba2077
-d3ed105022e12c376e81c1ea2860eda3
+6bbab46eddbf1b19a78d7c64687f89b6
 7832128a2739f31ce49d4cb90f30d75a
 27e439b3bf018934e3045eefc7c05863
 e545e325dfd272deb645f22ddb91988d
@@ -3435,7 +3447,7 @@ bb1e2b07550e22ca3a4818b5f849babf
 f5785ff34eaf73c4a9d2c8c1beca640b
 32069846768152715eddaba98b992817
 7acd1d0ed5f9567d9286e14815452453
-fe19fbca263951a5611cae9cd5f819c7
+b39d80affa4f8bbefced6094f0febbf8
 30bb4bb628205eacd88afbb8a9d02616
 54913eb259f2d706eb36e217d18f31c6
 9a0a8cfbc44be21121929881affc2d5b
@@ -3447,17 +3459,17 @@ a771e92a3d8deeeff7181615a391d858
 e1422d09df856d94367251cd7e454889
 4b7aa5fbeb45057a1ec5531235669ee9
 2b8650cda7d988202ddbbe354b961a40
-c2739d69429c1da0b7a6bf0917ca9603
+d7ac0bf8d80df5c789f0f1065277fefa
 a4ef24d3a3413168e62cf792fb4962a8
 c4f74f62454209d57cf79a13371c78cf
 64539c4d07bec05cc89ddc8bfc495a24
 2204f1eb5da0e2d4dc74cb8245319ac8
-74165570a19af4f2e68e69dc22501b8d
+1f2d48a0afa5ecfc626c26afbd14849d
 e86bd1ec52834697be113ae6fda645ae
 922d06c7aa566e74db8622d08151c6e4
-f3b3338944ae13daf356e3f6f5ad8463
+2a486cd5875abc7e8d09d0fe41b7e3a6
 7c7e2671ae5631322ed889b7e252c7c3
-5fe248a29ccfb0bdf8144753e7b6d9e5
+84eb7bf64aa7a14e06adccede17d3c35
 78a67d32363a66e8c361c855e72fd7ba
 a2d973c50bdfaf139792186fdab8a851
 e59082b392c3715721e923b943fab65c
@@ -3468,8 +3480,8 @@ d2f115c161b7bb372e36cbe8d11f3dba
 07b2d7eedbe6989e6c152a4c49e71e55
 d3ee3ac8d554d5a93cfacd72d4145dfb
 6b1b7d0d4d3ff2245466dfa4c7ac6b3c
-fc806c33ad102ab32f3f21773b5e1da0
-d7e1f060133f9b6f99753410af9c1d9d
+ff8cbed519aeb6e14bd5c4e637382bf9
+0c93c333cd6dbd0f7231f59ea1f82be0
 d421cd9f1d9de3d373a9852889c7d39e
 a8361c8fc5a8254eaffa125eab827252
 857ad4a3a4f36f1adc97be1a66364a93
@@ -3484,7 +3496,7 @@ Basic Outpost
 blind
 blind3rdeye
 1700920458
-240
+242
 0
 0
 0
@@ -3571,7 +3583,7 @@ No description
 Mr_Reibekuchen
 Mr_Reibekuchen
 1647247922
-318
+320
 0
 0
 0
@@ -3658,7 +3670,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-836
+838
 0
 0
 0
@@ -4055,7 +4067,7 @@ Analysis tool: Compare the resources in the vicinity of player positions with a 
 kaputtnik
 kaputtnik
 1706043656
-117
+119
 0
 0
 0
@@ -4183,7 +4195,7 @@ A plugin for the editor to copy the contents of a map region to another region.
 Nordfriese
 Nordfriese
 1691145323
-93
+95
 0
 0
 0
@@ -4386,7 +4398,7 @@ A plugin for the editor to easily replace or swap two terrain types globally.
 Nordfriese
 Nordfriese
 1689789945
-108
+109
 0
 0
 0
@@ -4868,9 +4880,9 @@ MarkMcWire
 0
 0
 0
-1.0.0
+1.0.1
 0
-250478
+249806
 starting_condition
 1
 europeans_tribe.wad
@@ -4948,7 +4960,7 @@ tribes/scripting/starting_conditions/headquarters_human.lua
 tribes/scripting/starting_conditions.lua
 0
 65
-03a48e3f6440b416a5304a321fe50f98
+a96e3a7bd544e43b320d98524a8c41a1
 fa217da3593442222ca3c2c20a290a4f
 8f6b04e3d33d8a5b8058e42ed9083bcd
 11bc0810b164f72e37e28c8e7894fbbc
@@ -5012,7 +5024,7 @@ a17f7a9861073dc020df68ed529f7331
 ca6529efec77e9f69407fa3f256d09a9
 6847a0afce41e80c115f0b2845b9fab4
 71b75ec210bb45b323db2c857da2fc43
-5bef3b5b9c118a72d7859ac2f890d460
+1bed1402ebcaaea7870e4e86216098fe
 0
 verified
 europeans_map_modified.wad
@@ -5106,7 +5118,7 @@ Adds additional buildings and trainingsites to the base definitions. This makes 
 MarkMcWire
 MarkMcWire
 1734222489
-165
+168
 1
 0
 0
@@ -6772,7 +6784,7 @@ Provides all current features of the Europeans tribe.
 MarkMcWire
 MarkMcWire
 1734192332
-192
+194
 1
 0
 0
@@ -16317,7 +16329,7 @@ The player who has explored most of the world wins the game
 aDiscoverer
 aDiscoverer
 1667043185
-355
+357
 0
 0
 0
@@ -16551,7 +16563,7 @@ The first player who has at least 4 fully trained soldiers in a warship wins the
 kaputtnik
 kaputtnik
 1731074892
-49
+50
 0
 0
 0
@@ -16709,7 +16721,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-561
+562
 0
 0
 0
@@ -16790,7 +16802,7 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-700
+701
 0
 0
 0
@@ -17018,7 +17030,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-1140
+1142
 0
 0
 0
@@ -17186,7 +17198,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-1080
+1082
 0
 0
 0
@@ -18358,7 +18370,7 @@ Increases all worker experience thresholds to 40 times the default value.
 Nordfriese
 Nordfriese
 1600000000
-349
+350
 0
 0
 0
@@ -18447,7 +18459,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-500
+502
 0
 0
 0
@@ -19339,7 +19351,7 @@ Replaces some terrain graphics with those from the ancient Widelands days.
 Nordfriese
 Nordfriese
 1621620072
-380
+382
 0
 0
 0
@@ -19660,7 +19672,7 @@ Minimalistic theme with reduced colors and small window borders.
 kaputtnik
 kaputtnik
 1614637671
-338
+339
 0
 0
 0
@@ -19904,7 +19916,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-608
+609
 0
 0
 0
@@ -19987,7 +19999,7 @@ This set of maps contains 10 small and medium-sized maps for 2-8 players. You ca
 OIPUN
 OIPUN
 1615637480
-707
+709
 0
 0
 0
@@ -20963,7 +20975,7 @@ Reduce the game speed to 1× whenever a new message arrives in your inbox.
 Nordfriese
 Nordfriese
 1723377908
-86
+88
 0
 0
 0
@@ -21173,7 +21185,7 @@ A headquarters-like starting condition with fewer wares and workers.
 the-x
 the-x
 1622117845
-265
+268
 0
 0
 0
@@ -21262,7 +21274,7 @@ A headquarters-like starting condition with approximately 30% more wares and wor
 the-x
 the-x
 1622124029
-406
+408
 0
 0
 0
@@ -21347,7 +21359,7 @@ Dark theme (very loosely) based on kaputtnik's minimalistic theme and adwaita.
 atomikaya
 atomikaya
 1671793402
-301
+302
 0
 0
 0
@@ -21568,7 +21580,7 @@ A proof-of-concept map generator that generates very, very simple maps.
 Nordfriese
 Nordfriese
 1670750534
-124
+125
 0
 0
 0
@@ -21647,7 +21659,7 @@ Enhanced Trading Outpost starting conditions for all official tribes. Intended t
 Nordfriese & the-x
 Nordfriese
 1600000000
-336
+338
 0
 0
 0
@@ -21742,7 +21754,7 @@ Needs sumatran_world.wad. It uses partially graphics of other tribes, until new 
 OIPUN
 OIPUN
 1733507996
-115
+117
 0
 0
 0
@@ -26334,7 +26346,7 @@ Modifies world for Sumatran tribe. The changes affect Amazons too. Tropical tree
 OIPUN
 OIPUN
 1733507938
-120
+122
 0
 0
 0
@@ -27351,7 +27363,7 @@ Time limited peaceful mode
 aDiscoverer
 aDiscoverer
 1687443995
-55
+56
 0
 0
 0
@@ -27361,12 +27373,20 @@ aDiscoverer
 0
 0
 0
-1
-1
+2
+3
 OIPUN
 I've played one game with this add-on. I set the time limit to 90, met first enemy after 75 min and everything went fine. I also removed the desync and replay is working well. I think this add-on should be marked as sync_safe. 10 points
 0.2.0
 1738599397
+Cupper
+Addon works very good.<br>But why must mark "peaceful mode" in the options to enable ???<br>Because of this, the wincon "autocrat"  set "peaceful mode" inactive. So it's impossible to play "autocrat" timedelayed.
+0.2.0
+1739099683
+Cupper
+<font size=18><font italic=true>Now I see clearly !!</font></font><br>You ( 'aDiscoverer' ) have integraded a dialogue-box for time. <font bold=true>NOT BY DEFAULT ???</font> why not?<br>@ all:<br>1) To active the box change column 4 from <font color=0006f6>nil</font> to <font bold=true><font color=00c0f7>"always"</font></font>. (not only the word, quotation marks,too!)<br>First time the box was very small.<br>To change that:<br>2) Column 96: change resizing = "fullsize" <font size=11>(don't work)</font> into <font bold=true><font color=00befb>"align"</font></font> (default - as I read).<br><font size=18>Perfect now.</font><br>Because of this box must "peaceful mode" enabled, when not U are killed before U click on the OK-button.  ;-)
+0.2.0
+1739124647
 0.2.0
 12
 5009
@@ -27565,7 +27585,7 @@ Terrains and (alpha) trees for tropical areas. Someday in future this add-on mig
 Yo...
 Yo...
 1622321739
-493
+494
 0
 0
 0
@@ -27967,7 +27987,7 @@ Make the ‘water’ resource more useful by giving wells a larger radius and a 
 Nordfriese
 Nordfriese
 1600000000
-526
+527
 0
 0
 0
@@ -28500,7 +28520,7 @@ Do you sometimes ask yourself: 'Where are my heroes?'. This add-on finds heroes 
 kaputtnik
 kaputtnik
 1708356983
-166
+169
 0
 0
 0
@@ -28593,7 +28613,7 @@ Contains flowering meadows, clearings, dolomites, wet beach, green and muddy wat
 OIPUN
 OIPUN
 1622916439
-687
+690
 0
 0
 0
@@ -29149,7 +29169,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-453
+455
 0
 0
 0

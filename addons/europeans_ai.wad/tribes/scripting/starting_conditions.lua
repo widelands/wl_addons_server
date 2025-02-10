@@ -268,25 +268,6 @@ function place_initial_port(player, startfield)
     end
 end
 
-function place_port(player, startx, starty, radius)
-    local game = wl.Game()
-    local map = game.map
-    local centerfield = map:get_field(startx, starty)
-    local fields = centerfield:region(radius)
-
-    local tribe = player.tribe
-    local portname = tribe.port
-    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
-        for i, portfield in pairs(map.port_spaces) do
-             for j, field in pairs(fields) do
-                 if (portfield.x == field.x) and (portfield.y == field.y) then
-                     place_building(player, portfield.x, portfield.y, 0, portname)
-                 end
-             end
-        end
-    end
-end
-
 function set_starting_warecount(player)
     local game = wl.Game()
     local tribe = player.tribe

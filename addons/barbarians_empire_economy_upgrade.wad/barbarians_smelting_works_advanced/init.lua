@@ -69,6 +69,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                -- time total: 4 * ( 3.6 + 30 ) + 2 * 15 + 2 * ( 3.6 + 60 ) + 15 = 306.6 sec
                 "call=smelting_iron",
                 "call=smelting_2iron",
                 "call=smelting_iron",
@@ -119,10 +120,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs gold",
                 "consume=gold_ore:1 coal:1",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=smelting_gold duration:1m",
+                "animate=smelting_gold duration:50s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=gold",
-                "sleep=duration:8s"
+                "sleep=duration:14s400ms"
             }
         },
         smelting_iron = {
@@ -133,10 +134,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs iron",
                 "consume=iron_ore:1 coal:1",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=smelting_iron duration:1m",
+                "animate=smelting_iron duration:50s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron",
-                "sleep=duration:8s"
+                "sleep=duration:14s400ms"
             }
         }
     },

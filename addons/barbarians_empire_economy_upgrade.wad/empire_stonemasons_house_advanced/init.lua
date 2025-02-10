@@ -55,6 +55,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                -- time total: 18 + 10 + 3 * ( 3.6 + 33 ) = 137.8 sec ( 46 sec/item )
                 "call=sculpting_marble_column",
                 "sleep=duration:18s",
                 "return=skipped"
