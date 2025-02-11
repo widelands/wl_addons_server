@@ -476,6 +476,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:maps-for-1-2-wad]
+file_filter            = po/maps_for_1.2.wad/<lang>.po
+source_file            = po/maps_for_1.2.wad/maps_for_1.2.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:minimalistic-theme-wad]
 file_filter            = po/minimalistic_theme.wad/<lang>.po
 source_file            = po/minimalistic_theme.wad/minimalistic_theme.wad.pot

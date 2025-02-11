@@ -13,7 +13,7 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_lumberjack_advanced",
     
     buildcost = {
-        europeans_carrier = 1
+        europeans_worker_basic = 1
     },    
 
     programs = {

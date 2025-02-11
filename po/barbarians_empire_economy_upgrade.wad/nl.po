@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 03:10+0100\n"
+"POT-Creation-Date: 2025-02-11 03:10+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -254,11 +254,9 @@ msgstr ""
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:54
-#, fuzzy
 msgctxt "empire_building"
 msgid "The fisher needs %1$s on average to catch one fish."
 msgstr ""
-"De molenaar heeft gemiddeld %1% tarwe nodig om er een zak meel van te maken."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:56
@@ -297,10 +295,9 @@ msgid ""
 msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:75
-#, fuzzy
 msgctxt "empire_building"
 msgid "The stonemason needs %1% on average to carve one marble column."
-msgstr "De wever heeft gemiddeld %1% nodig om riet tot een doek te weven."
+msgstr ""
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
@@ -391,15 +388,13 @@ msgid "Weaves cloth out of reed."
 msgstr "Weeft stoffen van riet."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:156
-#, fuzzy
 msgid "This building operates as an ordinary weaving mill only 20% slower."
-msgstr "Dit gebouw werkt als een gewone weverij maar dan 25% langzamer."
+msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:157
-#, fuzzy
 msgctxt "barbarians_building"
 msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
-msgstr "De wever heeft gemiddeld %1% nodig om riet tot een doek te weven."
+msgstr ""
 
 #. TRANSLATORS: Lore helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:191
@@ -424,17 +419,12 @@ msgstr "Smelt ijzererts om in ijzer en gouderts in goud."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:197
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:216
-#, fuzzy
 msgid ""
 "Advanced smelting works needs just one lump of coal to produce 2 iron ingots "
 "or 2 bars of gold. The building produces iron and gold faster than a basic "
 "smelting works. When there are not 2 pieces of required ore in stock, the "
 "building operates as a basic smelting works."
 msgstr ""
-"Een geavanceerde smelterij heeft slechts één brok steenkool nodig om 2 "
-"ijzerbaren of 2 goudstaven te produceren. Het gebouw produceert sneller "
-"ijzer en goud dan de basissmelterij. Als er geen 2 stukken van het benodigde "
-"erts in voorraad zijn, werkt het gebouw als een basissmelterij."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:199

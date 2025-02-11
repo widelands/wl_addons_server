@@ -13,7 +13,7 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_miner_advanced",
     
     buildcost = {
-        europeans_stonecutter_basic = 1
+        europeans_worker_basic = 1
     },
 
     animation_directory = dirname,

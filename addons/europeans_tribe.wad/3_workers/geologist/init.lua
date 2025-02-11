@@ -10,7 +10,7 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     buildcost = {
-        europeans_builder = 1
+        europeans_worker_basic = 1
     },
 
     programs = {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 03:10+0100\n"
+"POT-Creation-Date: 2025-02-11 03:10+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Language-Team: Spanish (https://app.transifex.com/widelands/teams/35159/"
 "es/)\n"
@@ -2597,7 +2597,7 @@ msgstr ""
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:8
 msgctxt "europeans_building"
-msgid "Agricultur products market"
+msgid "Agricultur products Market"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
@@ -2608,6 +2608,23 @@ msgstr ""
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:167
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:179
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:191
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:71
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:129
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:141
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:153
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:165
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:177
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:189
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:68
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:132
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:144
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:156
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:168
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:180
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:192
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:204
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:216
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:228
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:62
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:132
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:144
@@ -2631,6 +2648,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:208
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:220
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:232
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:67
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:125
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:137
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:149
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:161
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:173
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:185
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:71
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:129
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:141
@@ -2638,30 +2662,6 @@ msgstr ""
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:165
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:177
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:189
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:71
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:129
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:141
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:153
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:165
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:177
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:189
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:68
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:132
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:144
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:156
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:168
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:180
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:192
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:204
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:216
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:228
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:67
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:125
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:137
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:149
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:161
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:173
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:185
 #: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:62
 #: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:73
 #: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:86
@@ -2672,86 +2672,86 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:84
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:82
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:79
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:73
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:83
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:78
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:82
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:82
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:79
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:78
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:97
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:95
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:94
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:90
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:98
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:91
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:95
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:95
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:94
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:91
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:110
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:108
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:109
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:107
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:113
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:104
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:108
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:108
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:109
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:104
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:123
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:121
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:124
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:124
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:128
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:117
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:121
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:121
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:124
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:117
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_beer/init.lua:8
+msgctxt "europeans_building"
+msgid "Beer Market"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_bread/init.lua:8
+msgctxt "europeans_building"
+msgid "Bread Market"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:8
 msgctxt "europeans_building"
-msgid "Cloth market"
+msgid "Cloth Market"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_meat/init.lua:8
 msgctxt "europeans_building"
-msgid "Meat and Fish market"
+msgid "Meat and Fish Market"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_wine/init.lua:8
+msgctxt "europeans_building"
+msgid "Mead and Wine Market"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:8
 msgctxt "europeans_building"
-msgid "Wood products market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_beer/init.lua:8
-msgctxt "europeans_building"
-msgid "Beer market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_bread/init.lua:8
-msgctxt "europeans_building"
-msgid "Bread market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/6_tradingsites/markt_small_wine/init.lua:8
-msgctxt "europeans_building"
-msgid "Mead and Wine market"
+msgid "Wood products Market"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings

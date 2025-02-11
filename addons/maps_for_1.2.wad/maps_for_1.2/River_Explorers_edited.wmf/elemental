@@ -1,0 +1,26 @@
+# Automatically created by Widelands 1.2.1 Release
+
+[global]
+packet_version="1"
+map_w="128"
+map_h="128"
+nr_players="4"
+name=_"River Explorers (edited)"
+author="Jenia (edited by OIPUN)"
+descr=_"We have a long way behind us. So long that memories of my home feel like memories of some dream. It's like the place that made me the man I am never existed. But I'm still here, still feeling the same gravity. And this dark land ... No matter how sinister it looks, the water fills me with joy. It makes me wanna build a ship and set up a new port. Let's turn the dream I once had into reality again."
+hint=_"This is a modified version of an official map. Teams recommended. To overcome gold shortage an expedition is necessary. Trading Outpost for AI possible (recommended for yellow and blue in case one of these is your enemy). While played from red position, Empire is more challenging."
+theme="wasteland"
+tags="1v1,2teams,artifacts,ferries,ffa,seafaring,unbalanced"
+addons=
+
+[teams00]
+team1="0,1"
+team2="2,3"
+
+[teams01]
+team1="0"
+team2="3"
+
+[teams02]
+team1="1"
+team2="3"

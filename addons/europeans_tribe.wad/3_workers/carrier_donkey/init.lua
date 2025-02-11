@@ -9,7 +9,7 @@ wl.Descriptions():new_carrier_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
 
-    ware_hotspot =  { -2, 8 },
+    ware_hotspot = { -2, 8 },
 
     animation_directory = dirname,
     spritesheets = {

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 03:10+0100\n"
+"POT-Creation-Date: 2025-02-11 03:10+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -202,7 +202,7 @@ msgstr "Das Formen von Marmorsäulen"
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:26
 msgctxt "barbarians_building"
 msgid "‘What do you mean, my fish ain’t fresh?!’"
-msgstr ""
+msgstr "„Was soll das heißen, mein Fisch ist nicht frisch?!“"
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:28
@@ -211,6 +211,8 @@ msgid ""
 "Frequent response of a Barbarian fisherman,<br>often followed by an "
 "enjoyable brawl"
 msgstr ""
+"Häufige Antwort eines Fischers der Barbaren,<br>oft gefolgt von einem "
+"fröhlichen Handgemenge"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:29
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:50
@@ -230,13 +232,13 @@ msgstr ""
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:33
-#, fuzzy
 msgid "The fisher needs 1 minute and 5 seconds on average to catch one fish."
-msgstr "Der Fischer benötigt durchschnittlich %1%, um ein Fisch zu fangen."
+msgstr ""
+"Der Fischer benötigt durchschnittlich 1 Minute und 5 Sekunden, um ein Fisch "
+"zu fangen."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 2
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:35
-#, fuzzy
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
 "Wenn Steigungen oder Hindernisse im Weg sind, verlängert sich die Zeit."
@@ -246,28 +248,26 @@ msgstr ""
 #. "Make haste slowly."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:43
 msgid "Festina lente.<br>"
-msgstr ""
+msgstr "Festina lente.<br>"
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Independent Fishing Hut
 #. Translation for the classical Latin quote:
 #. "Festina lente."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:47
 msgid "Make haste slowly."
-msgstr ""
+msgstr "Eile mit Weile."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:49
-#, fuzzy
 msgctxt "empire_building"
 msgid "Fisherman’s secret to catch more fishes"
-msgstr "Der Fischer benötigt durchschnittlich %1%, um ein Fisch zu fangen."
+msgstr ""
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:54
-#, fuzzy
 msgctxt "empire_building"
 msgid "The fisher needs %1$s on average to catch one fish."
-msgstr "Der Fischer benötigt durchschnittlich %1%, um ein Fisch zu fangen."
+msgstr "Der Fischer benötigt durchschnittlich %1$s, um ein Fisch zu fangen."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:56
@@ -281,7 +281,7 @@ msgstr ""
 #. optional translation: "Let us improve life through science and art."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:66
 msgid "Inventas vitam iuvat excoluisse per artes."
-msgstr ""
+msgstr "Inventas vitam iuvat excoluisse per artes."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Advanced Stonemason's House
 #. Translation for the classical Latin quote:
@@ -289,12 +289,13 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:70
 msgid "An innovative lifestyle helps to cultivate through art."
 msgstr ""
+"Erfindungen verbessern das Leben, das durch die Künste verschönert wird."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Advanced Stonemason's House
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:72
 msgctxt "empire_building"
 msgid "Motto of the Stonemasons’ Guild"
-msgstr ""
+msgstr "Wahlspruch der Steinmetzgilde"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:73
 msgid "Carves marble columns out of marble."
@@ -309,24 +310,25 @@ msgstr ""
 "herzustellen. Zur Herstellung von 3 Säulen braucht man 4 Stück Marmor."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:75
-#, fuzzy
 msgctxt "empire_building"
 msgid "The stonemason needs %1% on average to carve one marble column."
-msgstr "Der Fischer benötigt durchschnittlich %1%, um ein Fisch zu fangen."
+msgstr ""
+"Der Steinmetz benötigt durchschnittlich %1%, um eine Marmorsäule "
+"herzustellen."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "Eggs today are better than chickens tomorrow."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:83
 msgid "Ad praesens ova cras pullis sunt meliora."
-msgstr ""
+msgstr "Ad praesens ova cras pullis sunt meliora."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Small Farm
 #. Translation for the adapted classical Latin quote:
 #. "Ad praesens ova cras pullis sunt meliora."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:87
 msgid "Eggs today are better than chickens tomorrow."
-msgstr ""
+msgstr "Heute ein Ei ist besser als morgen eine Henne."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Small Farm
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:89
@@ -353,14 +355,14 @@ msgstr ""
 #. "Work conquers all things."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:99
 msgid "Labor omnia vincit."
-msgstr ""
+msgstr "Labor omnia vincit."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Small Mill
 #. Translation for the classical Latin quote:
 #. "Labor omnia vincit."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:103
 msgid "Work conquers all things."
-msgstr ""
+msgstr "Arbeit besiegt alles."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Small Mill
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:105
@@ -404,14 +406,12 @@ msgid "Weaves cloth out of reed."
 msgstr "Webt Stoff aus Reet."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:156
-#, fuzzy
 msgid "This building operates as an ordinary weaving mill only 20% slower."
 msgstr ""
-"Dieses Gebäude arbeitet genauso wie eine gewöhnliche Weberei nur 25% "
+"Dieses Gebäude arbeitet genauso wie eine gewöhnliche Weberei nur 20% "
 "langsamer."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:157
-#, fuzzy
 msgctxt "barbarians_building"
 msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
 msgstr ""
@@ -425,12 +425,15 @@ msgid ""
 "‘From inferior looking rubble they form shiny gold and gleaming iron.<br>The "
 "smelters are real magicians among our craftsmen.’"
 msgstr ""
+"„Aus unscheinbarem Geröll fertigen sie glänzendes Gold und schimmerndes "
+"Eisen.<br>Wahrlich, die Gießer sind die wahren Magier unter unseren "
+"Handwerkern.“"
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:194
 msgctxt "barbarians_building"
 msgid "Chat’Karuth<br>at the 5ᵗʰ conference of master craftsmen"
-msgstr ""
+msgstr "Chat’Karuth<br>in einer Rede vor dem 5. Kongress der Handwerksmeister"
 
 #. TRANSLATORS: Purpose helptext for a Barbarian production site: Advanced Smelting Works
 #. TRANSLATORS: Purpose helptext for an Empire production site: Advanced Smelting Works
@@ -441,7 +444,6 @@ msgstr "Verhüttet Eisenerz zu Eisen und Golderz zu Gold."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:197
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:216
-#, fuzzy
 msgid ""
 "Advanced smelting works needs just one lump of coal to produce 2 iron ingots "
 "or 2 bars of gold. The building produces iron and gold faster than a basic "
@@ -449,7 +451,7 @@ msgid ""
 "building operates as a basic smelting works."
 msgstr ""
 "Der verbesserte Hochofen braucht ein Stück Kohle, um 2 Eisenbarren oder 2 "
-"Goldziegel herzustellen. Das Gebäude herstellt Eisen und Gold schneller als "
+"Goldbarren herzustellen. Das Gebäude herstellt Eisen und Gold schneller als "
 "ein normaler Hochofen. Wenn 2 Stücke verlangten Erzes nicht vorhanden sind, "
 "arbeitet dieses Gebäude genauso wie ein normaler Hochofen."
 
@@ -463,20 +465,25 @@ msgid ""
 "ingot takes %2$s on average and production of one gold bar takes %3$s on "
 "average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und alle Metalle von der Wirtschaft "
+"benötigt werden, dauert die Produktion vier Eisenstangen und zwei Goldbarren "
+"im Durchschnitt %1$s. Wenn nur eine Art Metall benötigt wird, dauert die "
+"Produktion eines Eisens im Durchschnitt %2$s und die eines Goldbarrens im "
+"Durchschnitt %3$s."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "Who gives promptly, gives twice."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:207
 msgid "Bis dat, qui cito dat."
-msgstr ""
+msgstr "Bis dat, qui cito dat."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Advanced Smelting Works
 #. Translation for the classical Latin quote:
 #. "Bis dat, qui cito dat."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:211
 msgid "Who gives promptly, gives twice."
-msgstr ""
+msgstr "Wer schnell gibt, gibt doppelt."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:213
@@ -496,3 +503,8 @@ msgid ""
 "ingot takes %2$s on average and production of one gold bar takes %3$s on "
 "average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und alle Metalle von der Wirtschaft "
+"benötigt werden, dauert die Produktion vier Eisenstangen und zwei Goldbarren "
+"im Durchschnitt %1$s. Wenn nur eine Art Metall benötigt wird, dauert die "
+"Produktion eines Eisens im Durchschnitt %2$s und die eines Goldbarrens im "
+"Durchschnitt %3$s."
