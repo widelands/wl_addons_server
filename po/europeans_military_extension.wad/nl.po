@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Alex Rijckaert, 2024
+# Alex Rijckaert, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 03:10+0100\n"
+"POT-Creation-Date: 2025-02-13 03:10+0100\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
-"Last-Translator: Alex Rijckaert, 2024\n"
+"Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -91,19 +91,19 @@ msgstr "Houten Helm"
 #: addons/europeans_military_extension.wad/2_wares/metal_alloy/init.lua:8
 msgctxt "ware"
 msgid "Mixed Metal Alloy"
-msgstr ""
+msgstr "Gemengde Metaallegering"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_military_extension.wad/2_wares/ore/init.lua:8
 msgctxt "ware"
 msgid "Ore"
-msgstr ""
+msgstr "Erts"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_military_extension.wad/2_wares/scrap_metal/init.lua:8
 msgctxt "ware"
 msgid "Scrap Metal"
-msgstr ""
+msgstr "Metaalschroot"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_military_extension.wad/2_wares/shield_advanced/init.lua:8
@@ -357,26 +357,26 @@ msgstr "Basis Schoenmakershuis"
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Geavanceerde Smelterij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling metal_alloy because ...
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:68
 msgctxt "europeans_building"
 msgid "recycling metal_alloy"
-msgstr ""
+msgstr "recycleren metaal_legering"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:80
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_basic/init.lua:75
 msgctxt "europeans_building"
 msgid "smelting ore"
-msgstr ""
+msgstr "erts smelten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Smelting Works"
-msgstr ""
+msgstr "Basis Smelterij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_advanced/init.lua:8
@@ -406,7 +406,7 @@ msgstr "Basis Kleermakershuis"
 #: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Market"
-msgstr ""
+msgstr "Grote Markt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:68
@@ -438,37 +438,37 @@ msgstr ""
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:119
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:130
 msgid "trading"
-msgstr ""
+msgstr "handel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:79
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
-msgstr ""
+msgstr "voedsel ruilen voor koperen munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:102
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
-msgstr ""
+msgstr "voedsel ruilen voor zilveren munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:125
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
-msgstr ""
+msgstr "voedsel ruilen voor gouden munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_military_extension.wad/6_tradingsites/market_big/init.lua:148
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
-msgstr ""
+msgstr "pauzeren van de handel in goud"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Store"
-msgstr ""
+msgstr "Grootwarenhuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:8
@@ -1567,13 +1567,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:389
 msgctxt "europeans_ware"
 msgid "These transparent quartz gems are used for trading."
-msgstr ""
+msgstr "Deze transparante kwarts edelstenen worden gebruikt voor de handel."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:398
 msgctxt "europeans_ware"
 msgid "These wonderful diamonds are used for trading."
-msgstr ""
+msgstr "Deze prachtige diamanten worden gebruikt voor de handel."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:408
@@ -2591,7 +2591,7 @@ msgstr "Hakt blokken graniet en marmer uit rotsen in de omgeving."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1970
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat and leather."
-msgstr ""
+msgstr "Jaagt op dieren om vlees en leer te produceren."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1972
@@ -2605,6 +2605,7 @@ msgctxt "europeans_building"
 msgid ""
 "Releases animals into the wild to steady the meat and leather production."
 msgstr ""
+"Laat dieren los in het wild om de vlees- en leerproductie op peil te houden."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1986
@@ -2700,7 +2701,7 @@ msgstr "Weeft stoffen van riet."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2118
 msgctxt "europeans_building"
 msgid "Weaves cloth out of cotton or wool."
-msgstr ""
+msgstr "Weeft stoffen van katoen of wol."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2125
@@ -2720,13 +2721,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2139
 msgctxt "europeans_building"
 msgid "Burns scrap_wood into charcoal."
-msgstr ""
+msgstr "Verbrandt afvalhout tot houtskool."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2146
 msgctxt "europeans_building"
 msgid "Burns scrap_wood or logs into charcoal."
-msgstr ""
+msgstr "Verbrandt afvalhout of houtblokken tot houtskool."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2153
@@ -2775,7 +2776,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2171
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
-msgstr ""
+msgstr "Smelt erts tot ijzer en goud."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2178
@@ -2788,37 +2789,37 @@ msgstr "Smelt erts tot ijzer en goud. Recycleert schroot."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2192
 msgctxt "europeans_building"
 msgid "Grinds wheat and rye to produce mixed flour."
-msgstr ""
+msgstr "Maalt tarwe en rogge tot gemengde bloem."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2199
 msgctxt "building"
 msgid "Produces bread out of water, honey and flour."
-msgstr ""
+msgstr "Maakt brood van water, honing en bloem."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2206
 msgctxt "building"
 msgid "Produces bread and biscuit out of water, fruits, honey and flour."
-msgstr ""
+msgstr "Maakt brood en koekjes van water, fruit, honing en bloem."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2213
 msgctxt "europeans_building"
 msgid "Produces beer for markets and mines."
-msgstr ""
+msgstr "Produceert bier voor markten en mijnen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Brewery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2220
 msgctxt "europeans_building"
 msgid "Produces beer, mead and strong_beer for markets and mines."
-msgstr ""
+msgstr "Produceert bier, mede en sterk_bier voor markten en mijnen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Winery
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2227
 msgctxt "europeans_building"
 msgid "Produces beer, mead, strong_beer and wine for markets and mines."
-msgstr ""
+msgstr "Produceert bier, mede, sterk_bier en wijn voor markten en mijnen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2234
@@ -2826,6 +2827,7 @@ msgctxt "europeans_building"
 msgid ""
 "Medium factory that produces processed armor and clothing from basic armor."
 msgstr ""
+"Middelgrote fabriek die bewerkt pantser en kleding maakt van basispantser."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2241
@@ -2833,6 +2835,8 @@ msgctxt "europeans_building"
 msgid ""
 "Medium factory that produces advanced armor and clothing from basic armor."
 msgstr ""
+"Middelgrote fabriek die geavanceerde bepantsering en kleding maakt van "
+"basisbepantsering."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers_house
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2248
@@ -2852,13 +2856,13 @@ msgstr "Middelgrote fabriek die wapens maakt van eenvoudige grondstoffen."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2279
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, rye and wheat."
-msgstr ""
+msgstr "Zaaien en oogsten van gerst, rogge en tarwe."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2286
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-msgstr ""
+msgstr "Zaait en oogst gerst, zwartwortel, mais, rogge, en tarwe."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Cattle Farm
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2293
@@ -3024,7 +3028,7 @@ msgstr "Graaft gouderts uit de grond in bergachtig terrein."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2632
 msgctxt "europeans_building"
 msgid "Market building to sale foods for coins."
-msgstr ""
+msgstr "Marktgebouw om voedsel te verkopen voor munten."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Big Store
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2639
@@ -3208,7 +3212,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2794
 msgctxt "europeans_building"
 msgid "Modified version which can placed on mountains."
-msgstr ""
+msgstr "Aangepaste versie die op bergen kan worden geplaatst."
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2919
@@ -3896,7 +3900,7 @@ msgstr[1] "%1%(+%2%) soldaten"
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/discovery_human.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "Ontdekking"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/discovery_human.lua:13

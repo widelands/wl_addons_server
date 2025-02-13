@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 03:11+0100\n"
+"POT-Creation-Date: 2025-02-13 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -34,6 +34,10 @@ msgid ""
 "space and water nearby. Fortified Village for a stronger opponent. More info "
 "in help and tips."
 msgstr ""
+"Heeft sumatran_world.wad nodig. Het gebruikt gedeeltelijk afbeeldingen van "
+"andere stammen, totdat er nieuwe afbeeldingen beschikbaar zijn. AI houdt van "
+"zomer- en woestijngebied, veel ruimte en water in de buurt. Versterkt dorp "
+"voor een sterkere tegenstander. Meer info in help en tips."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/sumatran_tribe.wad/immovables/cassavaplants/harvested/init.lua:8
@@ -995,12 +999,12 @@ msgstr "Geen Ruimte"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:66
 msgid "Animals do not leave this marsh"
-msgstr ""
+msgstr "Dieren verlaten dit moeras niet"
 
 #: addons/sumatran_tribe.wad/productionsites/jungle_marsh/init.lua:67
 msgctxt "sumatran_building"
 msgid "There is not enough space around this marsh for animals to leave."
-msgstr ""
+msgstr "Er is niet genoeg ruimte rond dit moeras voor dieren om weg te gaan."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/jungle_preservers_hut/init.lua:8
@@ -1509,7 +1513,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
 msgid "Tidy Warehouses"
-msgstr ""
+msgstr "Opgeruimde magazijnen"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1518,18 +1522,22 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Begin met een basishoofdkwartier. Van tijd tot tijd doen je werknemers "
+"inventarisaties. Als er meer dan 500 artikelen in een van je magazijnen "
+"liggen, gooien je werknemers een kwart van de voorraad weg die in zo'n "
+"magazijn ligt opgeslagen."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:105
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Magazijn opgeruimd!"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:183
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s is opgeruimd!"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:184
 msgid "%1$d items have been removed, %2$d items left."
-msgstr ""
+msgstr "%1$d  items zijn verwijderd, %2$d items over."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -2212,6 +2220,9 @@ msgid ""
 "also your main source of wealth, when goal of game is to collect precious "
 "things."
 msgstr ""
+"Diamanten zijn een zeer kostbaar bouwmateriaal. Deze kostbare stenen zijn "
+"ook je belangrijkste bron van rijkdom, wanneer het doel van het spel het "
+"verzamelen van kostbare dingen is."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:317
@@ -2219,6 +2230,8 @@ msgctxt "ware"
 msgid ""
 "While smelting metals, the fires of the sumatran furnaces are fed with coal."
 msgstr ""
+"Bij het smelten van metalen worden de vuren van de sumatraanovens gevoed met "
+"kolen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:319
@@ -2346,6 +2359,9 @@ msgid ""
 "The hammer is the most used tool. Geologists, builders, coppersmiths, "
 "shipwrights and craftsmen, they all need hammer."
 msgstr ""
+"De hamer is het meest gebruikte gereedschap. Geologen, bouwers, "
+"koperslagers, scheepstimmerlieden en ambachtslieden, ze hebben allemaal een "
+"hamer nodig."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:459
@@ -2498,7 +2514,7 @@ msgstr "Kweekt dieren."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:649
 msgctxt "sumatran_worker"
 msgid "Explores territory of your enemy."
-msgstr ""
+msgstr "Verken het gebied van je vijand."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Jungle Ghost
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:656
@@ -2904,7 +2920,7 @@ msgstr "Er is hier veel steenkool."
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1153
 msgid "There is a lot of iron ore here."
-msgstr ""
+msgstr "Er is hier veel ijzererts."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1164
@@ -3072,6 +3088,9 @@ msgid ""
 "The building has 3 different working areas. Smallest for fishing, larger for "
 "hunting and the largest is not used by the worker in this type of building."
 msgstr ""
+"Het gebouw heeft 3 verschillende werkgebieden. De kleinste om te vissen, de "
+"grootste om te jagen en de grootste wordt niet gebruikt door de arbeider in "
+"dit type gebouw."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1283
@@ -3102,6 +3121,10 @@ msgid ""
 "to transform mountains is very advantageous, in the second case, all types "
 "of terrain can be transformed."
 msgstr ""
+"Thermale bronnen maken het terrein gunstiger voor tropische bomen. Dit is "
+"vooral handig als je wasteland- en winterkaarten speelt. In het eerste geval "
+"is het zeer voordelig om bergen te transformeren, in het tweede geval kunnen "
+"alle soorten terrein worden getransformeerd."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1294
@@ -3159,6 +3182,7 @@ msgstr ""
 msgctxt "sumatran_building"
 msgid "The experienced craftsman needs %1% on average to make one tool."
 msgstr ""
+"De ervaren vakman heeft gemiddeld %1% nodig om één gereedschap te maken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Weapons Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1336
@@ -3462,6 +3486,10 @@ msgid ""
 "when gold ore is needed. Empty mines produce gold primarily, when gold is "
 "needed."
 msgstr ""
+"In vergelijking met een basismijn is de productie van deze mijn langzamer "
+"maar goedkoper. De mijn heeft twee programma's. Kan een hoger percentage "
+"gouderts produceren als gouderts nodig is. Lege mijnen produceren "
+"voornamelijk goud als er goud nodig is."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
@@ -3583,6 +3611,9 @@ msgid ""
 "Enhancement of big sentry costs you one log and one reed more but you save "
 "one block of stone instead."
 msgstr ""
+"Dit gebouw kan worden gebouwd door een wachttoren of grote schildwacht te "
+"verbeteren. Het verbeteren van de grote wachttoren kost je één boomstam en "
+"één riet meer, maar je bespaart in plaats daarvan één blok steen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Ferry Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1620
@@ -3597,6 +3628,8 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
 "wares between ports."
 msgstr ""
+"Bouwt schepen die worden gebruikt voor overzeese kolonisatie en voor het "
+"verschepen van goederen tussen havens."
 
 #. TRANSLATORS: Lore helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1638

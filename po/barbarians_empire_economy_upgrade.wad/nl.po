@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Alex Rijckaert, 2024
+# Alex Rijckaert, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 03:10+0100\n"
+"POT-Creation-Date: 2025-02-13 03:10+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
-"Last-Translator: Alex Rijckaert, 2024\n"
+"Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -32,6 +32,10 @@ msgid ""
 "produce 2 pieces of metal. There are few new buildings available and build "
 "costs of some military sites are modified too."
 msgstr ""
+"De upgrade van smelterijen en steenhouwerijen maakt de Barbaren en het Rijk "
+"competitiever. Met deze upgrade heb je één brok steenkool nodig om 2 stukken "
+"metaal te produceren. Er zijn weinig nieuwe gebouwen beschikbaar en de "
+"bouwkosten van sommige militaire locaties zijn ook aangepast."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:8
@@ -199,7 +203,7 @@ msgstr "marmeren zuilen beeldhouwen"
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:26
 msgctxt "barbarians_building"
 msgid "‘What do you mean, my fish ain’t fresh?!’"
-msgstr ""
+msgstr "Hoe bedoel je, mijn vis is niet vers?!'"
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:28
@@ -208,11 +212,13 @@ msgid ""
 "Frequent response of a Barbarian fisherman,<br>often followed by an "
 "enjoyable brawl"
 msgstr ""
+"Veelvoorkomende reactie van een Barbaarse visser,<br>vaak gevolgd door een "
+"leuke knokpartij"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:29
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:50
 msgid "Fishes on the coast near the fisher’s hut."
-msgstr ""
+msgstr "Vissen aan de kust bij de vissershut."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:30
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:51
@@ -221,68 +227,74 @@ msgid ""
 "where an ordinary fisher can't reach. Thanks to his larger reach, you can "
 "get more fishes in total. It is useful only for open water."
 msgstr ""
+"De onafhankelijke visser werkt langzaam, maar kan vis vangen op plaatsen "
+"waar een gewone visser niet kan komen. Dankzij zijn grotere reikwijdte kun "
+"je in totaal meer vissen vangen. Hij is alleen nuttig voor open water."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:33
 msgid "The fisher needs 1 minute and 5 seconds on average to catch one fish."
 msgstr ""
+"De visser heeft gemiddeld 1 minuut en 5 seconden nodig om één vis te vangen."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 2
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:35
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "Make haste slowly."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:43
 msgid "Festina lente.<br>"
-msgstr ""
+msgstr "Festina lente.<br>"
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Independent Fishing Hut
 #. Translation for the classical Latin quote:
 #. "Festina lente."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:47
 msgid "Make haste slowly."
-msgstr ""
+msgstr "Haast je langzaam."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:49
 msgctxt "empire_building"
 msgid "Fisherman’s secret to catch more fishes"
-msgstr ""
+msgstr "Het geheim van een visser om meer vis te vangen"
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:54
 msgctxt "empire_building"
 msgid "The fisher needs %1$s on average to catch one fish."
-msgstr ""
+msgstr "De visser heeft gemiddeld %1$s nodig om één vis te vangen."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:56
 msgctxt "empire_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. optional translation: "Let us improve life through science and art."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:66
 msgid "Inventas vitam iuvat excoluisse per artes."
-msgstr ""
+msgstr "Inventas vitam iuvat excoluisse per artes."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Advanced Stonemason's House
 #. Translation for the classical Latin quote:
 #. "Inventas vitam iuvat excoluisse per artes."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:70
 msgid "An innovative lifestyle helps to cultivate through art."
-msgstr ""
+msgstr "Een innovatieve levensstijl helpt te cultiveren door middel van kunst."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Advanced Stonemason's House
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:72
 msgctxt "empire_building"
 msgid "Motto of the Stonemasons’ Guild"
-msgstr ""
+msgstr "Motto van het gilde van steenhouwers"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:73
 msgid "Carves marble columns out of marble."
@@ -293,25 +305,29 @@ msgid ""
 "Advanced stonemason's house needs less marble to produce one marble column. "
 "To produce one bulk of 3 columns, 4 pieces of marble are needed."
 msgstr ""
+"Een gevorderde steenhouwer heeft minder marmer nodig om één marmeren kolom "
+"te produceren. Om één bulk van 3 zuilen te maken, zijn 4 stukken marmer "
+"nodig."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:75
 msgctxt "empire_building"
 msgid "The stonemason needs %1% on average to carve one marble column."
 msgstr ""
+"De steenhouwer heeft gemiddeld %1% nodig om één marmeren kolom te hakken."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "Eggs today are better than chickens tomorrow."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:83
 msgid "Ad praesens ova cras pullis sunt meliora."
-msgstr ""
+msgstr "Ad praesens ova cras pullis sunt meliora."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Small Farm
 #. Translation for the adapted classical Latin quote:
 #. "Ad praesens ova cras pullis sunt meliora."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:87
 msgid "Eggs today are better than chickens tomorrow."
-msgstr ""
+msgstr "Eieren zijn vandaag beter dan kippen morgen."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Small Farm
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:89
@@ -320,6 +336,8 @@ msgid ""
 "An impatient farmer considers building a small farm while sitting in a "
 "warehouse during marble shortage"
 msgstr ""
+"Een ongeduldige boer overweegt een kleine boerderij te bouwen terwijl hij in "
+"een pakhuis zit tijdens een tekort aan marmer"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:90
 msgid "Sows and harvests wheat."
@@ -338,14 +356,14 @@ msgstr ""
 #. "Work conquers all things."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:99
 msgid "Labor omnia vincit."
-msgstr ""
+msgstr "Labor omnia vincit."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Small Mill
 #. Translation for the classical Latin quote:
 #. "Labor omnia vincit."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:103
 msgid "Work conquers all things."
-msgstr ""
+msgstr "Werk overwint alle dingen."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Small Mill
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:105
@@ -354,6 +372,8 @@ msgid ""
 "A miller answering question whether his job wouldn’t be easier if he had a "
 "better mill"
 msgstr ""
+"Een molenaar antwoordt op de vraag of zijn werk niet makkelijker zou zijn "
+"als hij een betere molen had"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:106
 msgid "Grinds wheat to produce flour."
@@ -389,12 +409,12 @@ msgstr "Weeft stoffen van riet."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:156
 msgid "This building operates as an ordinary weaving mill only 20% slower."
-msgstr ""
+msgstr "Dit gebouw werkt als een gewone weverij die maar 20% langzamer draait."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:157
 msgctxt "barbarians_building"
 msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
-msgstr ""
+msgstr "De wever heeft gemiddeld %1% nodig om riet tot een doek te weven."
 
 #. TRANSLATORS: Lore helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:191
@@ -403,12 +423,14 @@ msgid ""
 "‘From inferior looking rubble they form shiny gold and gleaming iron.<br>The "
 "smelters are real magicians among our craftsmen.’"
 msgstr ""
+"‘Uit minderwaardig uitziend puin vormen ze glanzend goud en glanzend ijzer."
+"<br>De smelters zijn echte tovenaars onder onze ambachtslieden.'"
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:194
 msgctxt "barbarians_building"
 msgid "Chat’Karuth<br>at the 5ᵗʰ conference of master craftsmen"
-msgstr ""
+msgstr "Chat’Karuth<br>op de 5ᵗʰ conferentie van meester-ambachtslieden"
 
 #. TRANSLATORS: Purpose helptext for a Barbarian production site: Advanced Smelting Works
 #. TRANSLATORS: Purpose helptext for an Empire production site: Advanced Smelting Works
@@ -425,6 +447,10 @@ msgid ""
 "smelting works. When there are not 2 pieces of required ore in stock, the "
 "building operates as a basic smelting works."
 msgstr ""
+"Een geavanceerde smelterij heeft slechts één brok steenkool nodig om 2 "
+"ijzerbaren of 2 goudstaven te produceren. Het gebouw produceert sneller "
+"ijzer en goud dan een gewone smelterij. Als er geen 2 stukken van het "
+"benodigde erts in voorraad zijn, werkt het gebouw als een basissmelterij."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:199
@@ -436,20 +462,25 @@ msgid ""
 "ingot takes %2$s on average and production of one gold bar takes %3$s on "
 "average."
 msgstr ""
+"Als dit gebouw volledig bevoorraad is en alle metalen nodig zijn voor de "
+"economie, kost de productie van vier ijzerstaven en twee goudstaven "
+"gemiddeld %1$s Als de economie slechts één soort metaal nodig heeft, kost de "
+"productie van één ijzeren staaf gemiddeld %2$s en de productie van één "
+"goudstaaf gemiddeld%3$s."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "Who gives promptly, gives twice."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:207
 msgid "Bis dat, qui cito dat."
-msgstr ""
+msgstr "Bis dat, qui cito dat."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Advanced Smelting Works
 #. Translation for the classical Latin quote:
 #. "Bis dat, qui cito dat."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:211
 msgid "Who gives promptly, gives twice."
-msgstr ""
+msgstr "Wie meteen geeft, geeft twee keer."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:213
@@ -458,6 +489,8 @@ msgid ""
 "An old proverb which was, by invention of Advanced Smelting Works, proven to "
 "be correct"
 msgstr ""
+"Een oud spreekwoord dat, door de uitvinding van de Geavanceerde Smelterij, "
+"correct bleek te zijn"
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:218
@@ -469,3 +502,8 @@ msgid ""
 "ingot takes %2$s on average and production of one gold bar takes %3$s on "
 "average."
 msgstr ""
+"Als dit gebouw volledig bevoorraad is en alle metalen nodig zijn voor de "
+"economie, kost de productie van vier ijzerstaven en twee goudstaven "
+"gemiddeld %1$s Als de economie slechts één soort metaal nodig heeft, kost de "
+"productie van één ijzeren staaf gemiddeld %2$s en de productie van één "
+"goudstaaf gemiddeld%3$s."
