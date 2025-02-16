@@ -397,7 +397,7 @@ function allow_warehouses_per_ware_amount(player)
     end
 end
 
-function allow_all_militarysites(player)
+function allow_all_militarysites_ai(player)
     for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
         if (building.type_name == "militarysite") then
             player:allow_buildings{building.name}
@@ -405,7 +405,7 @@ function allow_all_militarysites(player)
     end
 end
 
-function forbid_all_militarysites(player)
+function forbid_all_militarysites_ai(player)
     for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
         if (building.type_name == "militarysite") then
             player:forbid_buildings{building.name}
@@ -413,7 +413,7 @@ function forbid_all_militarysites(player)
     end
 end
 
-function dismantle_idle_buildings(player, productivity_threshold)
+function dismantle_idle_buildings_ai(player, productivity_threshold)
     productivity_threshold = productivity_threshold or 10
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
@@ -426,7 +426,7 @@ function dismantle_idle_buildings(player, productivity_threshold)
     end
 end
 
-function balance_player_warehouse_wares(player)
+function balance_player_warehouse_wares_ai(player)
     local game = wl.Game()
     local map = game.map
     local tribe = player.tribe
@@ -461,7 +461,7 @@ function balance_player_warehouse_wares(player)
     end
 end
 
-function balance_player_warehouse_workers(player)
+function balance_player_warehouse_workers_ai(player)
     local game = wl.Game()
     local map = game.map
     local tribe = player.tribe
@@ -493,7 +493,7 @@ function balance_player_warehouse_workers(player)
     end
 end
 
-function reset_player_warehouse_policy(player)
+function reset_player_warehouse_policy_ai(player)
     local game = wl.Game()
     local map = game.map
     local tribe = player.tribe
@@ -524,7 +524,7 @@ function reset_player_warehouse_policy(player)
     end
 end
 
-function upgrade_random_militarysites(player)
+function upgrade_random_militarysites_ai(player)
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
             if ((tbuilding.type_name == "militarysite") or (tbuilding.type_name == "trainingsite")) and (tbuilding.enhancement) then
@@ -535,7 +535,7 @@ function upgrade_random_militarysites(player)
     end
 end
 
-function place_warehouses_on_starting_spots(player)
+function place_warehouses_on_starting_spots_ai(player)
     local game = wl.Game()
     local map = game.map
     local sf = map.player_slots[player.number].starting_field
@@ -585,7 +585,7 @@ function doing_ai_stuff(player, increment, timefactor)
     -- Unlocking buildings
     if (increment == 0) then
         player:forbid_buildings("all")
-        allow_all_militarysites(player)
+        allow_all_militarysites_ai(player)
         player:forbid_buildings{"europeans_sentry_mountain"}
     end
     if (increment >= timefactor) then
@@ -598,15 +598,15 @@ function doing_ai_stuff(player, increment, timefactor)
 
     -- Experimental actions
     if (increment >= timefactor * 8) then
-        dismantle_idle_buildings(player)
-        upgrade_random_militarysites(player)
+        dismantle_idle_buildings_ai(player)
+        upgrade_random_militarysites_ai(player)
     end
     
     -- Forcing additional warehouses
     if (increment >= timefactor * 16) and (increment % 4 == 0) then
         place_port_random_ai(player)
     elseif (increment >= timefactor * 16) and (increment % 4 == 2) then
-        place_warehouses_on_starting_spots(player)
+        place_warehouses_on_starting_spots_ai(player)
     end
 end
 
@@ -614,7 +614,7 @@ function doing_ai_stuff_seafaring(player, increment)
     -- Unlocking buildings
     if (increment == 0) then
         player:forbid_buildings("all")
-        allow_all_militarysites(player)
+        allow_all_militarysites_ai(player)
         player:forbid_buildings{"europeans_sentry_mountain"}
         allow_productionsites_without_input(player)
     end
@@ -627,28 +627,26 @@ function doing_ai_stuff_seafaring(player, increment)
     if (increment >= 16) and (increment < 288) and (increment % 4 == 0) then
         launch_expeditions(player, {
             {
-                europeans_soldier = 8,
+                europeans_soldier = 6,
                 europeans_builder = 6,
-                europeans_worker_basic = 6,
-                europeans_lumberjack_basic = 4,
-                europeans_stonecutter_basic = 4,
-                europeans_forester_basic = 4,
+                europeans_worker_basic = 12,
+                europeans_worker_advanced = 8,
             }
         })
         place_port_random_ai(player)
     elseif (increment >= 288) and (increment < 576) and (increment % 4 == 0) then
         place_port_random_ai(player)
     elseif (increment >= 288) and (increment < 576) and (increment % 4 == 2) then
-        place_warehouses_on_starting_spots(player)
+        place_warehouses_on_starting_spots_ai(player)
     end
     if (increment >= 24) and (increment % 2 == 0) then
-        upgrade_random_militarysites(player)
+        upgrade_random_militarysites_ai(player)
     end
     if (increment >= 24) and (increment % 2 == 1) then
-        dismantle_idle_buildings(player)
+        dismantle_idle_buildings_ai(player)
     end
     if (increment >= 48) and (increment % 2 == 0) then
-        balance_player_warehouse_wares(player)
-        balance_player_warehouse_workers(player)
+        balance_player_warehouse_wares_ai(player)
+        balance_player_warehouse_workers_ai(player)
     end
 end
