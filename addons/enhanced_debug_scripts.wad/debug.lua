@@ -40,7 +40,7 @@ function map_direction(startx, starty, targetx, targety)
     if math.abs(diffy) >= mapy then
         diffy = diffy * - 1
     end
-    
+
     if (diffx == 0) and (diffy == 0) then
         direction = ""
     elseif (diffx == 0) and (diffy < 0) and (targety % 2 == 0) then
@@ -64,15 +64,15 @@ function map_direction(startx, starty, targetx, targety)
     elseif (diffx > 0) and (diffy > 0) then
         direction = "br"
     end
-    
+
     return direction
 end
 
 -- general map settings --
 function change_terrain(startx, starty, radius, terrainname)
     radius = radius or 1
-    terrainname = terrainname or "water"
-    
+    terrainname = terrainname or "summer_water"
+
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
@@ -84,11 +84,11 @@ function change_terrain(startx, starty, radius, terrainname)
     end
 end
 
-function place_ressource(startx, starty, radius, resourcename, resourceamount)
+function place_resource(startx, starty, radius, resourcename, resourceamount)
     radius = radius or 1
     resourceamount = resourceamount or 1
     resourcename = resourcename or "none"
-    
+
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
@@ -143,17 +143,40 @@ function place_random_trees(startx, starty, radius, objectcount)
 
     -- apple tree = Apfelbaum, cherry tree = Kirschbaum, pear tree = Birnbaum, walnut tree = Walnussbaum
     -- ash = Esche, chestnut = Kastanie, elm = Ulme, fir = Tanne, hornbeam = Hainbuche, linden tree = Linde, pine = Kiefer, poplar = Pappel, willow = Weide
-    local treelist = {
-    "alder_summer_mature", -- Erle
-    "aspen_summer_mature", -- Espe
-    "beech_summer_mature", -- Buche
-    "birch_summer_mature", -- Birke
-    "larch_summer_mature", -- Lärche
-    "maple_winter_mature", -- Ahorn
-    "oak_summer_mature", -- Eiche
-    "rowan_summer_mature", -- Eberesche
-    "spruce_summer_mature" -- Fichte
+    local treelist_desert = {
+        "palm_borassus_desert_mature",
+        "palm_coconut_desert_mature",
+        "palm_date_desert_mature",
+        "palm_oil_desert_mature",
+        "palm_roystonea_desert_mature"
     }
+
+    local treelist_summer = {
+        "alder_summer_mature", -- Erle
+        "aspen_summer_mature", -- Espe
+        "beech_summer_mature", -- Buche
+        "birch_summer_mature", -- Birke
+        "larch_summer_mature", -- Lärche
+        "oak_summer_mature", -- Eiche
+        "rowan_summer_mature", -- Eberesche
+        "spruce_summer_mature" -- Fichte
+    }
+    local treelist_wasteland = {
+        "cirrus_wasteland_mature",
+        "liana_wasteland_mature",
+        "mushroom_dark_wasteland_mature",
+        "mushroom_green_wasteland_mature",
+        "mushroom_red_wasteland_mature",
+        "twine_wasteland_mature",
+        "umbrella_green_wasteland_mature",
+        "umbrella_red_wasteland_mature"
+    }
+    local treelist_winter = {
+        "maple_winter_mature", -- Ahorn
+    }
+
+    local treelist = treelist_summer
+
     local randomtree = treelist[math.random(#treelist)]
 
     local rcount = 1
@@ -168,12 +191,21 @@ end
 function place_random_rocks(startx, starty, radius, objectcount)
     objectcount = objectcount or 1
 
-    local rocklist = {
-    "blackland_rocks1", "blackland_rocks2", "blackland_rocks3", "blackland_rocks4", "blackland_rocks5", "blackland_rocks6",
-    "desert_rocks1", "desert_rocks2", "desert_rocks3", "desert_rocks4", "desert_rocks5", "desert_rocks6",
-    "greenland_rocks1", "greenland_rocks2", "greenland_rocks3", "greenland_rocks4", "greenland_rocks5", "greenland_rocks6",
-    "winterland_rocks1", "winterland_rocks2", "winterland_rocks3", "winterland_rocks4", "winterland_rocks5", "winterland_rocks6"
+    local rocklist_blackland = {
+        "blackland_rocks1", "blackland_rocks2", "blackland_rocks3", "blackland_rocks4", "blackland_rocks5", "blackland_rocks6",
     }
+    local rocklist_desert = {
+        "desert_rocks1", "desert_rocks2", "desert_rocks3", "desert_rocks4", "desert_rocks5", "desert_rocks6",
+    }
+    local rocklist_greenland = {
+        "greenland_rocks1", "greenland_rocks2", "greenland_rocks3", "greenland_rocks4", "greenland_rocks5", "greenland_rocks6",
+    }
+    local rocklist_winterland = {
+        "winterland_rocks1", "winterland_rocks2", "winterland_rocks3", "winterland_rocks4", "winterland_rocks5", "winterland_rocks6"
+    }
+
+    local rocklist = rocklist_greenland
+
     local randomrock = rocklist[math.random(#rocklist)]
 
     local rcount = 1
@@ -199,6 +231,15 @@ function destroy_object(startx, starty)
     map:get_field(startx, starty).immovable:destroy()
 end
 
+function force_object(startx, starty, objectname)
+    remove_object(startx, starty)
+    place_object(startx, starty, objectname)
+end
+
+function force_trade_pole(startx, starty)
+    force_object(startx, starty, "europeans_trade_pole")
+end
+
 -- general player settings --
 function switch_player(player_number1, player_number2)
     local game = wl.Game()
@@ -208,7 +249,7 @@ end
 
 function observer_mode_team(team_number, observer)
     observer = observer or true
-    
+
     local game = wl.Game()
     for k, tplayer in ipairs(game.players) do
         if tplayer.team == team_number then
@@ -219,7 +260,7 @@ end
 
 function observer_mode_player(player_number, observer)
     observer = observer or true
-    
+
     local game = wl.Game()
     local player = game.players[player_number]
     player.see_all = observer
@@ -306,7 +347,26 @@ function conquer_fields(startx, starty, radius, player_number)
     player:conquer(centerfield, radius)
 end
 
-function conquer_water_fields(radius, player_number)
+function conquer_water_fields(startx, starty, radius, player_number)
+    radius = radius or 0
+
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local map = game.map
+    local centerfield = map:get_field(startx, starty)
+    local fields = centerfield:region(radius)
+
+    -- gather all portfields from the map
+    for i, field in pairs(fields) do
+        if field:has_caps("swimmable") then
+            player:conquer(field, 0)
+        end
+    end
+end
+
+function conquer_all_water_fields(player_number, radius)
+    radius = radius or 0
+
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
@@ -501,14 +561,14 @@ function force_connection(startx, starty, targetx, targety, roadtype, create_car
     end
 
     create_carriers = create_carriers or false
-    
+
     local road_command = nil
     local road_field = nil
     local road_endfield = nil
 
     local road_distance = map_distance(startx, starty, targetx, targety)
     local road_direction = map_direction(startx, starty, targetx, targety)
-    
+
     local game = wl.Game()
     local map = game.map
     local startfield = map:get_field(startx, starty)
@@ -546,8 +606,8 @@ function force_connection(startx, starty, targetx, targety, roadtype, create_car
         elseif road_direction then
             road_command = road_direction
         end
-        
-        if (road_endfield == targetfield) then 
+
+        if (road_endfield == targetfield) then
             break
         else
             road_direction = map_direction(road_endfield.x, road_endfield.y, targetfield.x, targetfield.y)
@@ -627,7 +687,7 @@ end
 
 function force_ship(startx, starty, player_number, capacity)
     capacity = capacity or 64
-    
+
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
@@ -639,7 +699,7 @@ end
 
 function force_ship_random(player_number, capacity)
     capacity = capacity or 64
-    
+
     local game = wl.Game()
     local map = game.map
     local oceanfields = map:find_ocean_fields(1)
@@ -903,8 +963,10 @@ function force_port(startx, starty, radius, player_number, complete)
     end
 end
 
-function force_militarysite(startx, starty, radius, player_number, militarytype)
-    militarytype = militarytype or "small"
+function force_militarysite(startx, starty, radius, player_number, size, index, heroes)
+    size = size or "small"
+    index = index or 0
+    heroes = heroes or false
 
     local game = wl.Game()
     local map = game.map
@@ -915,135 +977,85 @@ function force_militarysite(startx, starty, radius, player_number, militarytype)
 
     local max_soldier_stats = {0,0,0,0}
 
-    if tribe_name == "europeans" then
+    if heroes and (tribe_name == "europeans") then
         max_soldier_stats = {1,1,1,1}
-        if militarytype == "small" then
-            building = "europeans_sentry_basic"
-        elseif militarytype == "small1" then
-            building = "europeans_sentry_level_1"
-        elseif militarytype == "small2" then
-            building = "europeans_sentry_level_2"
-        elseif militarytype == "small3" then
-            building = "europeans_sentry_level_3"
-        elseif militarytype == "medium" then
-            building = "europeans_barrier_basic"
-        elseif militarytype == "medium1" then
-            building = "europeans_barrier_level_1"
-        elseif militarytype == "medium2" then
-            building = "europeans_barrier_level_2"
-        elseif militarytype == "medium3" then
-            building = "europeans_barrier_level_3"
-        elseif militarytype == "tower" then
-            building = "europeans_tower_basic"
-        elseif militarytype == "tower1" then
-            building = "europeans_tower_level_1"
-        elseif militarytype == "tower2" then
-            building = "europeans_tower_level_2"
-        elseif militarytype == "tower3" then
-            building = "europeans_tower_level_3"
-        elseif militarytype == "big" then
-            building = "europeans_castle_basic"
-        elseif militarytype == "big1" then
-            building = "europeans_castle_level_1"
-        elseif militarytype == "big2" then
-            building = "europeans_castle_level_2"
-        elseif militarytype == "big3" then
-            building = "europeans_castle_level_3"
-        elseif militarytype == "big4" then
-            building = "europeans_castle_level_4"
-        else
-            building = "europeans_sentry_basic"
-        end
-    elseif tribe_name == "amazons" then
+    elseif heroes and (tribe_name == "amazons") then
         max_soldier_stats = {3,2,2,3}
-        if militarytype == "small1" then
-            building = "amazons_treetop_sentry"
-        elseif militarytype == "small2" then
-            building = "amazons_patrol_post"
-        elseif militarytype == "medium1" then
-            building = "amazons_warriors_dwelling"
-        elseif militarytype == "medium2" then
-            building = "amazons_tower"
-        elseif militarytype == "medium3" then
-            building = "amazons_observation_tower"
-        elseif militarytype == "big1" then
-            building = "amazons_fortress"
-        elseif militarytype == "big2" then
-            building = "amazons_fortification"
-        else
-            building = "amazons_treetop_sentry"
-        end
-    elseif tribe_name == "atlanteans" then
+    elseif heroes and (tribe_name == "atlanteans") then
         max_soldier_stats = {1,4,2,2}
-        if militarytype == "small1" then
-            building = "atlanteans_guardhouse"
-        elseif militarytype == "small2" then
-            building = "atlanteans_tower_small"
-        elseif militarytype == "medium1" then
-            building = "atlanteans_guardhall"
-        elseif militarytype == "medium2" then
-            building = "atlanteans_tower"
-        elseif militarytype == "medium3" then
-            building = "atlanteans_tower_high"
-        elseif militarytype == "big1" then
-            building = "atlanteans_castle"
-        else
-            building = "atlanteans_guardhouse"
-        end
-    elseif tribe_name == "barbarians" then
+    elseif heroes and (tribe_name == "barbarians") then
         max_soldier_stats = {3,5,0,2}
-        if militarytype == "small1" then
-            building = "barbarians_sentry"
-        elseif militarytype == "medium1" then
-            building = "barbarians_barrier"
-        elseif militarytype == "medium2" then
-            building = "barbarians_tower"
-        elseif militarytype == "big1" then
-            building = "barbarians_fortress"
-        elseif militarytype == "big2" then
-            building = "barbarians_citadel"
-        else
-            building = "barbarians_sentry"
-        end
-    elseif tribe_name == "empire" then
+    elseif heroes and (tribe_name == "empire") then
         max_soldier_stats = {4,4,0,2}
-        if militarytype == "small1" then
-            building = "empire_blockhouse"
-        elseif militarytype == "small2" then
-            building = "empire_sentry"
-        elseif militarytype == "medium1" then
-            building = "empire_barrier"
-        elseif militarytype == "medium2" then
-            building = "empire_outpost"
-        elseif militarytype == "medium3" then
-            building = "empire_tower"
-        elseif militarytype == "big1" then
-            building = "empire_fortress"
-        elseif militarytype == "big2" then
-            building = "empire_castle"
-        else
-            building = "empire_blockhouse"
-        end
-    elseif tribe_name == "frisians" then
+    elseif heroes and (tribe_name == "frisians") then
         max_soldier_stats = {2,6,2,0}
-        if militarytype == "small1" then
-            building = "frisians_wooden_tower"
-        elseif militarytype == "small2" then
-            building = "frisians_wooden_tower_high"
-        elseif militarytype == "small3" then
-            building = "frisians_sentinel"
-        elseif militarytype == "medium1" then
-            building = "frisians_outpost"
-        elseif militarytype == "big1" then
-            building = "frisians_tower"
-        elseif militarytype == "big2" then
-            building = "frisians_fortress"
-        else
-            building = "frisians_wooden_tower"
-        end
     end
 
-    local militarysite = player:place_building(building, fields[math.random(#fields)], false, true)
+    if tribe_name == "europeans" then
+        if (size == "mine") or (size == "mountain") then
+            militarysites = {"europeans_sentry_mountain"}
+        elseif size == "small" then
+            militarysites = {"europeans_sentry_basic", "europeans_sentry_level_1", "europeans_sentry_level_2", "europeans_sentry_level_3"}
+        elseif size == "medium" then
+            militarysites = {"europeans_barrier_basic", "europeans_barrier_level_1", "europeans_barrier_level_2", "europeans_barrier_level_3"}
+        elseif size == "tower" then
+            militarysites = {"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
+        elseif size == "big" then
+            militarysites = {"europeans_castle_basic", "europeans_castle_level_1", "europeans_castle_level_2", "europeans_castle_level_3", "europeans_castle_level_4"}
+        end
+    elseif tribe_name == "amazons" then
+        if size == "small" then
+            militarysites = {"amazons_treetop_sentry", "amazons_patrol_post"}
+        elseif size == "medium" then
+            militarysites = {"amazons_warriors_dwelling"}
+        elseif size == "tower" then
+            militarysites = {"amazons_tower", "amazons_observation_tower"}
+        elseif size == "big" then
+            militarysites = {"amazons_fortress", "amazons_fortification"}
+        end
+    elseif tribe_name == "atlanteans" then
+        if size == "small" then
+            militarysites = {"atlanteans_guardhouse", "atlanteans_tower_small"}
+        elseif size == "medium" then
+            militarysites = {"atlanteans_guardhall"}
+        elseif size == "tower" then
+            militarysites = {"atlanteans_tower", "atlanteans_tower_high"}
+        elseif size == "big" then
+            militarysites = {"atlanteans_castle"}
+        end
+    elseif tribe_name == "barbarians" then
+        if size == "small" then
+            militarysites = {"barbarians_sentry"}
+        elseif size == "medium" then
+            militarysites = {"barbarians_barrier"}
+        elseif size == "tower" then
+            militarysites = {"barbarians_tower"}
+        elseif size == "big" then
+            militarysites = {"barbarians_fortress", "barbarians_citadel"}
+        end
+    elseif tribe_name == "empire" then
+        if size == "small" then
+            militarysites = {"empire_blockhouse", "empire_sentry"}
+        elseif size == "medium" then
+            militarysites = {"empire_barrier", "empire_outpost"}
+        elseif size == "tower" then
+            militarysites = {"empire_tower"}
+        elseif size == "big" then
+            militarysites = {"empire_fortress", "empire_castle"}
+        end
+    elseif tribe_name == "frisians" then
+        if size == "small" then
+            militarysites = {"frisians_wooden_tower", "frisians_wooden_tower_high"}
+        elseif size == "medium" then
+            militarysites = {"frisians_sentinel", "frisians_outpost"}
+        elseif size == "tower" then
+            militarysites = {"frisians_tower"}
+        elseif size == "big" then
+            militarysites = {"frisians_fortress"}
+        end
+    end
+    index = (index % #militarysites) + 1
+    local militarysite = player:place_building(militarysites[index], fields[math.random(#fields)], false, true)
     militarysite:set_soldiers(max_soldier_stats, militarysite.max_soldiers)
 end
 
@@ -1465,143 +1477,461 @@ function set_militarysite_preference(startx, starty, preference)
 end
 
 -- building functions without coordinates --
-function dismantle_all_buildings(player_number, building_name)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    local tribe_name = tribe.name
+function force_port_random(player_number)
+    player_number = player_number or 0
 
-    for k, tplayer in ipairs(game.players) do
-        for i, tbuilding in ipairs(tplayer.tribe.buildings) do
-            for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-                if tbuilding.name == string.lower(building_name) then
-                    building:dismantle(true)
-                elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name)) then
-                    building:dismantle(true)
-                elseif string.find(tbuilding.name, string.lower(building_name)) then
-                    building:dismantle(true)
-                elseif tbuilding.type_name == string.lower(building_name) then
-                    building:dismantle(true)
+    local game = wl.Game()
+    local map = game.map
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) and (player.tribe.port) then
+            local random_idx = math.random(map.number_of_port_spaces)
+            for i, portfield in pairs(map.port_spaces) do
+                local field = map:get_field(portfield.x, portfield.y)
+                if (i >= random_idx-1) and (field.owner == player) and (field.brn.owner == player) then
+                    if not (field.immovable) or ((field.immovable) and not ((field.immovable.descr.type_name == "constructionsite") or (field.immovable.descr.type_name == "warehouse"))) then
+                        player:place_building(player.tribe.port, field, true, true)
+                        break
+                    end
                 end
-           end
+            end
         end
-    end
-end
-
-function upgrade_all_buildings(player_number, building_name)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    local tribe_name = tribe.name
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.name == string.lower(building_name) then
-             building:enhance(true)
-          elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name)) then
-             building:enhance(true)
-          elseif string.find(tbuilding.name, string.lower(building_name)) then
-             building:enhance(true)
-          elseif tbuilding.type_name == string.lower(building_name) then
-             building:enhance(true)
-          end
-       end
-    end
-end
-
-function start_all_buildings(player_number, building_name)
-    building_name = building_name or "all"
-
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    local tribe_name = tribe.name
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-            if string.lower(building_name) == "all" then
-                if (building.is_stopped == true) then
-                    building:toggle_start_stop()
-                end
-            elseif tbuilding.name == string.lower(building_name) then
-                if (building.is_stopped == true) then
-                    building:toggle_start_stop()
-                end
-            elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name)) then
-                if (building.is_stopped == true) then
-                    building:toggle_start_stop()
-                end
-            elseif string.find(tbuilding.name, string.lower(building_name)) then
-                if (building.is_stopped == true) then
-                    building:toggle_start_stop()
-                end
-            elseif tbuilding.type_name == string.lower(building_name) then
-                if (building.is_stopped == true) then
-                    building:toggle_start_stop()
+    else
+        if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
+            local random_idx = math.random(map.number_of_port_spaces)
+            for i, portfield in pairs(map.port_spaces) do
+                local field = map:get_field(portfield.x, portfield.y)
+                if (i >= random_idx-1) and (field.owner) and (field.brn.owner == field.owner) and (field.owner.tribe.port) then
+                    if not (field.immovable) or ((field.immovable) and not ((field.immovable.descr.type_name == "constructionsite") or (field.immovable.descr.type_name == "warehouse"))) then
+                        field.owner:place_building(field.owner.tribe.port, field, true, true)
+                        break
+                    end
                 end
             end
         end
     end
 end
 
-function stop_all_buildings(player_number, building_name)
-    building_name = building_name or "all"
+function force_warehouses_on_starting_spots(player_number)
+    player_number = player_number or 0
 
     local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    local tribe_name = tribe.name
+    local map = game.map
 
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-            if string.lower(building_name) == "all" then
-                if not (building.is_stopped == true) then
-                    building:toggle_start_stop()
+    if player_number > 0 then
+        local player = game.players[player_number]
+        local sf = map.player_slots[player.number].starting_field
+        for i, slot in ipairs(map.player_slots) do
+            sf = slot.starting_field
+            if (sf.owner == player) then
+                if not (sf.immovable) or ((sf.immovable) and not ((sf.immovable.descr.type_name == "constructionsite") or (sf.immovable.descr.type_name == "warehouse"))) then
+                    player:place_building(player.tribe.name .. "_warehouse", sf, true, true)
                 end
-            elseif tbuilding.name == string.lower(building_name) then
-                if not (building.is_stopped == true) then
-                    building:toggle_start_stop()
+            end
+        end
+    else
+        for i, slot in ipairs(map.player_slots) do
+            local sf = slot.starting_field
+            local player = sf.owner
+            if (player) then
+                if not (sf.immovable) or ((sf.immovable) and not ((sf.immovable.descr.type_name == "constructionsite") or (sf.immovable.descr.type_name == "warehouse"))) then
+                    player:place_building(player.tribe.name .. "_warehouse", sf, true, true)
                 end
-            elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name)) then
-                if not (building.is_stopped == true) then
-                    building:toggle_start_stop()
+            end
+        end
+    end
+end
+
+function dismantle_all_buildings(player_number, building_name)
+    player_number = player_number or 0
+
+    local game = wl.Game()
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        for k, tplayer in ipairs(game.players) do
+            for i, tbuilding in ipairs(tplayer.tribe.buildings) do
+                for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                    if tbuilding.name == string.lower(building_name) then
+                        building:dismantle(true)
+                    elseif tbuilding.type_name == tbuilding.name == (player.tribe.name .. "_" .. string.lower(building_name)) then
+                        building:dismantle(true)
+                    elseif string.find(tbuilding.name, string.lower(building_name)) then
+                        building:dismantle(true)
+                    elseif tbuilding.type_name == string.lower(building_name) then
+                        building:dismantle(true)
+                    end
+               end
+            end
+        end
+    else
+        for k, player in ipairs(game.players) do
+            for i, tbuilding in ipairs(player.tribe.buildings) do
+                for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                    if tbuilding.name == string.lower(building_name) then
+                        building:dismantle(true)
+                    elseif tbuilding.type_name == tbuilding.name == (player.tribe.name .. "_" .. string.lower(building_name)) then
+                        building:dismantle(true)
+                    elseif string.find(tbuilding.name, string.lower(building_name)) then
+                        building:dismantle(true)
+                    elseif tbuilding.type_name == string.lower(building_name) then
+                        building:dismantle(true)
+                    end
+               end
+            end
+        end
+    end
+end
+
+function upgrade_all_buildings(player_number, building_name)
+    player_number = player_number or 0
+
+    local game = wl.Game()
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        for i, tbuilding in ipairs(player.tribe.buildings) do
+           for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+              if tbuilding.name == string.lower(building_name) then
+                 building:enhance(true)
+              elseif tbuilding.type_name == tbuilding.name == (player.tribe.name .. "_" .. string.lower(building_name)) then
+                 building:enhance(true)
+              elseif string.find(tbuilding.name, string.lower(building_name)) then
+                 building:enhance(true)
+              elseif tbuilding.type_name == string.lower(building_name) then
+                 building:enhance(true)
+              end
+           end
+        end
+    else
+        for k, player in ipairs(game.players) do
+            for i, tbuilding in ipairs(player.tribe.buildings) do
+                for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                    if tbuilding.name == string.lower(building_name) then
+                        building:enhance(true)
+                    elseif tbuilding.type_name == tbuilding.name == (player.tribe.name .. "_" .. string.lower(building_name)) then
+                        building:enhance(true)
+                    elseif string.find(tbuilding.name, string.lower(building_name)) then
+                        building:dismantle(true)
+                    elseif tbuilding.type_name == string.lower(building_name) then
+                        building:enhance(true)
+                    end
+               end
+            end
+        end
+    end
+end
+
+function stop_all_buildings(player_number, building_name, yesno)
+    player_number = player_number or 0
+    building_name = building_name or "all"
+    yesno = yesno and true
+
+    local game = wl.Game()
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        for i, tbuilding in ipairs(player.tribe.buildings) do
+            for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                if string.lower(building_name) == "all" then
+                    if (building.is_stopped == yesno) then
+                        building:toggle_start_stop()
+                    end
+                elseif tbuilding.name == string.lower(building_name) then
+                    if (building.is_stopped == yesno) then
+                        building:toggle_start_stop()
+                    end
+                elseif tbuilding.type_name == tbuilding.name == (player.tribe.name .. "_" .. string.lower(building_name)) then
+                    if (building.is_stopped == yesno) then
+                        building:toggle_start_stop()
+                    end
+                elseif string.find(tbuilding.name, string.lower(building_name)) then
+                    if (building.is_stopped == yesno) then
+                        building:toggle_start_stop()
+                    end
+                elseif tbuilding.type_name == string.lower(building_name) then
+                    if (building.is_stopped == yesno) then
+                        building:toggle_start_stop()
+                    end
                 end
-            elseif string.find(tbuilding.name, string.lower(building_name)) then
-                if not (building.is_stopped == true) then
-                    building:toggle_start_stop()
+            end
+        end
+    else
+        for k, player in ipairs(game.players) do
+            for i, tbuilding in ipairs(player.tribe.buildings) do
+                for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                    if string.lower(building_name) == "all" then
+                        if (building.is_stopped == yesno) then
+                            building:toggle_start_stop()
+                        end
+                    elseif tbuilding.name == string.lower(building_name) then
+                        if (building.is_stopped == yesno) then
+                            building:toggle_start_stop()
+                        end
+                    elseif tbuilding.type_name == tbuilding.name == (player.tribe.name .. "_" .. string.lower(building_name)) then
+                        if (building.is_stopped == yesno) then
+                            building:toggle_start_stop()
+                        end
+                    elseif string.find(tbuilding.name, string.lower(building_name)) then
+                        if (building.is_stopped == yesno) then
+                            building:toggle_start_stop()
+                        end
+                    elseif tbuilding.type_name == string.lower(building_name) then
+                        if (building.is_stopped == yesno) then
+                            building:toggle_start_stop()
+                        end
+                    end
                 end
-            elseif tbuilding.type_name == string.lower(building_name) then
-                if not (building.is_stopped == true) then
-                    building:toggle_start_stop()
+            end
+        end
+    end
+end
+
+function start_all_buildings(player_number, building_name)
+    player_number = player_number or 0
+    building_name = building_name or "all"
+
+    stop_all_buildings(player_number, building_name, false)
+end
+
+function dismantle_idle_buildings(player_number, productivity_threshold)
+    player_number = player_number or 0
+    productivity_threshold = productivity_threshold or 10
+
+    local game = wl.Game()
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        for i, tbuilding in ipairs(player.tribe.buildings) do
+            for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                if ((tbuilding.type_name == "productionsite") and (building.productivity < productivity_threshold)) then
+                    building:dismantle(true)
+                    break
                 end
+           end
+        end
+    else
+        for k, player in ipairs(game.players) do
+            for i, tbuilding in ipairs(player.tribe.buildings) do
+                for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                    if ((tbuilding.type_name == "productionsite") and (building.productivity < productivity_threshold)) then
+                        building:dismantle(true)
+                        break
+                    end
+               end
             end
         end
     end
 end
 
 function set_all_militarysites_preference(player_number, building_name, preference)
+    player_number = player_number or 0
     preference = preference or "any"
     if not preference or not (string.find(preference, "rookies") or string.find(preference, "heroes")) then
         preference = "any"
     end
 
     local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    local tribe_name = tribe.name
 
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-            if (string.lower(building_name) == "all") and (building.descr.type_name == "militarysite") then
-                building.soldier_preference = preference
-            elseif (tbuilding.name == string.lower(building_name)) and (building.descr.type_name == "militarysite") then
-                building.soldier_preference = preference
-            elseif (tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name))) and (tbuilding.type_name == "militarysite") then
-                building.soldier_preference = preference
-            elseif string.find(tbuilding.name, string.lower(building_name)) and (tbuilding.type_name == "militarysite") then
-                building.soldier_preference = preference
-            elseif (tbuilding.type_name == string.lower(building_name)) and (tbuilding.type_name == "militarysite") then
-                building.soldier_preference = preference
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        for i, tbuilding in ipairs(player.tribe.buildings) do
+            for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                if (string.lower(building_name) == "all") and (building.descr.type_name == "militarysite") then
+                    building.soldier_preference = preference
+                elseif (tbuilding.name == string.lower(building_name)) and (building.descr.type_name == "militarysite") then
+                    building.soldier_preference = preference
+                elseif (tbuilding.type_name == tbuilding.name == (player.tribe.name .. "_" .. string.lower(building_name))) and (tbuilding.type_name == "militarysite") then
+                    building.soldier_preference = preference
+                elseif string.find(tbuilding.name, string.lower(building_name)) and (tbuilding.type_name == "militarysite") then
+                    building.soldier_preference = preference
+                elseif (tbuilding.type_name == string.lower(building_name)) and (tbuilding.type_name == "militarysite") then
+                    building.soldier_preference = preference
+                end
+            end
+        end
+    else
+        for k, player in ipairs(game.players) do
+            for i, tbuilding in ipairs(player.tribe.buildings) do
+                for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                    if (string.lower(building_name) == "all") and (building.descr.type_name == "militarysite") then
+                        building.soldier_preference = preference
+                    elseif (tbuilding.name == string.lower(building_name)) and (building.descr.type_name == "militarysite") then
+                        building.soldier_preference = preference
+                    elseif (tbuilding.type_name == tbuilding.name == (player.tribe.name .. "_" .. string.lower(building_name))) and (tbuilding.type_name == "militarysite") then
+                        building.soldier_preference = preference
+                    elseif string.find(tbuilding.name, string.lower(building_name)) and (tbuilding.type_name == "militarysite") then
+                        building.soldier_preference = preference
+                    elseif (tbuilding.type_name == string.lower(building_name)) and (tbuilding.type_name == "militarysite") then
+                        building.soldier_preference = preference
+                    end
+                end
+            end
+        end
+    end
+end
+
+function set_all_ports_soldier_policy(player_number, policy)
+    player_number = player_number or 0
+    policy = policy or "normal"
+
+    local game = wl.Game()
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        for i, port in ipairs(player:get_buildings(player.tribe.port)) do
+            port:set_warehouse_policies(player.tribe.soldier, policy)
+        end
+    else
+        for k, player in ipairs(game.players) do
+            for i, port in ipairs(player:get_buildings(player.tribe.port)) do
+                port:set_warehouse_policies(player.tribe.soldier, policy)
+            end
+        end
+    end
+end
+
+function allow_all_militarysites(player_number, size)
+    player_number = player_number or 0
+    size = size or "all"
+
+    local game = wl.Game()
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        for i, building in ipairs(wl.Game():get_tribe_description(player.tribe.name).buildings) do
+            if (building.type_name == "militarysite") and ((building.size == size) or (size == "all")) then
+                player:allow_buildings{building.name}
+            end
+        end
+    else
+        for k, player in ipairs(game.players) do
+            for i, building in ipairs(wl.Game():get_tribe_description(player.tribe.name).buildings) do
+                if (building.type_name == "militarysite") and ((building.size == size) or (size == "all")) then
+                    player:allow_buildings{building.name}
+                end
+            end
+        end
+    end
+end
+
+function forbid_all_militarysites(player_number, size)
+    player_number = player_number or 0
+    size = size or "all"
+
+    local game = wl.Game()
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+
+        for i, building in ipairs(wl.Game():get_tribe_description(player.tribe.name).buildings) do
+            if (building.type_name == "militarysite") and ((building.size == size) or (size == "all")) then
+                player:forbid_buildings{building.name}
+            end
+        end
+    else
+        for k, player in ipairs(game.players) do
+            for i, building in ipairs(wl.Game():get_tribe_description(player.tribe.name).buildings) do
+                if (building.type_name == "militarysite") and ((building.size == size) or (size == "all"))then
+                    player:forbid_buildings{building.name}
+                end
+            end
+        end
+    end
+end
+
+function forbid_player_militarysites(player_number, size, yesno)
+    player_number = player_number or 0
+    militarytype = militarytype or "small"
+    yesno = yesno and true
+
+    local game = wl.Game()
+
+    if player_number > 0 then
+        local player = game.players[player_number]
+        local tribe_name = player.tribe.name
+        local militarysites = {}
+
+        if tribe_name == "europeans" then
+            if (size == "mine") or (size == "mountain") then
+                militarysites = {"europeans_sentry_mountain"}
+            elseif size == "small" then
+                militarysites = {"europeans_sentry_basic"}
+            elseif size == "medium" then
+                militarysites = {"europeans_barrier_basic"}
+            elseif size == "tower" then
+                militarysites = {"europeans_tower_basic"}
+            elseif size == "big" then
+                militarysites = {"europeans_castle_basic"}
+            end
+        elseif tribe_name == "amazons" then
+            if size == "small" then
+                militarysites = {"amazons_treetop_sentry", "amazons_patrol_post"}
+            elseif size == "medium" then
+                militarysites = {"amazons_warriors_dwelling"}
+            elseif size == "tower" then
+                militarysites = {"amazons_tower", "amazons_observation_tower"}
+            elseif size == "big" then
+                militarysites = {"amazons_fortress", "amazons_fortification"}
+            end
+        elseif tribe_name == "atlanteans" then
+            if size == "small" then
+                militarysites = {"atlanteans_guardhouse", "atlanteans_tower_small"}
+            elseif size == "medium" then
+                militarysites = {"atlanteans_guardhall"}
+            elseif size == "tower" then
+                militarysites = {"atlanteans_tower", "atlanteans_tower_high"}
+            elseif size == "big" then
+                militarysites = {"atlanteans_castle"}
+            end
+        elseif tribe_name == "barbarians" then
+            if size == "small" then
+                militarysites = {"barbarians_sentry"}
+            elseif size == "medium" then
+                militarysites = {"barbarians_barrier"}
+            elseif size == "tower" then
+                militarysites = {"barbarians_tower"}
+            elseif size == "big" then
+                militarysites = {"barbarians_fortress", "barbarians_citadel"}
+            end
+        elseif tribe_name == "empire" then
+            if size == "small" then
+                militarysites = {"empire_blockhouse", "empire_sentry"}
+            elseif size == "medium" then
+                militarysites = {"empire_barrier", "empire_outpost"}
+            elseif size == "tower" then
+                militarysites = {"empire_tower"}
+            elseif size == "big" then
+                militarysites = {"empire_fortress", "empire_castle"}
+            end
+        elseif tribe_name == "frisians" then
+            if size == "small" then
+                militarysites = {"frisians_wooden_tower", "frisians_wooden_tower_high"}
+            elseif size == "medium" then
+                militarysites = {"frisians_sentinel", "frisians_outpost"}
+            elseif size == "tower" then
+                militarysites = {"frisians_tower"}
+            elseif size == "big" then
+                militarysites = {"frisians_fortress"}
+            end
+        end
+
+        if yesno then
+            for i, militarysite in pairs(militarysites) do
+                player:forbid_buildings{militarysite}
+            end
+        else
+            for i, militarysite in pairs(militarysites) do
+                player:allow_buildings{militarysite}
             end
         end
     end

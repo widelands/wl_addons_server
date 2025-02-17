@@ -170,6 +170,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Twisted-Paths--wad]
+file_filter            = po/Twisted_Paths_.wad/<lang>.po
+source_file            = po/Twisted_Paths_.wad/Twisted_Paths_.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:WideGreen-wad]
 file_filter            = po/WideGreen.wad/<lang>.po
 source_file            = po/WideGreen.wad/WideGreen.wad.pot
