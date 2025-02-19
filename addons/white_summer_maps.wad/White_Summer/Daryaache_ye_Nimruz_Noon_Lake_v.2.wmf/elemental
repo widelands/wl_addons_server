@@ -1,0 +1,26 @@
+# Automatically created by Widelands 1.2.1 Release
+
+[global]
+packet_version="1"
+map_w="432"
+map_h="288"
+nr_players="8"
+name=_"Daryaache-ye Nimruz (Noon Lake) v.2"
+author="OIPUN"
+descr=_"The last years were really dry. Fortunately, there is still enough water coming from the mountains so we are able to irrigate our fields. It seems inevitable that our beautiful Noon Lake will turn into a desert at some point in the future. We should build an empire, now or never. Our descendants will live in desert but they will be proud of the fact how powerful and vibrant their homeland once was."
+hint=_"This is a large map with a lot of space for long games. Map is rich in resources and has 7 artifacts. Blue and red position are a little bit more far away from resources and isolated. In general the map is balanced."
+tags="1v1,2teams,3teams,artifacts,balanced,ferries,ffa,seafaring"
+addons="white_summer.wad:2.0.1"
+
+[teams00]
+team1="0,2"
+team2="1,5"
+team3="4,3"
+
+[teams01]
+team1="0,3"
+team2="1,5"
+
+[teams02]
+team1="0,2"
+team2="4,5"
