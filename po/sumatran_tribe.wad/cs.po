@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 03:10+0100\n"
+"POT-Creation-Date: 2025-02-20 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -36,7 +36,7 @@ msgid ""
 "in help and tips."
 msgstr ""
 "Vyžaduje sumatran_world.wad. Částečně využívá grafiku ostatních kmenů, než "
-"bude k dispozici grafika nová. UI vyhovuje letní a pouštní terén, hodně "
+"bude k dispozici grafika nová. AI vyhovuje letní a pouštní terén, hodně "
 "místa a pozice poblíž vody. Pro silnějšího protivníka lze zvolit opevněnou "
 "vesnici. Více informací v nápovědě a tipech."
 
@@ -1233,7 +1233,7 @@ msgctxt "sumatran_building"
 msgid ""
 "The water carrier working at this hut can’t find any water in its vicinity."
 msgstr ""
-"Nosič vody pracující v této chtce nemůže ve svém okolí najít žádnou vodu."
+"Nosič vody pracující v této chatce nemůže ve svém okolí najít žádnou vodu."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/weaving_mill/init.lua:8
@@ -1402,7 +1402,7 @@ msgid ""
 msgstr ""
 "Začni hru s hlavní budovou a omezeným výběrem surovin, které ti budou stačit "
 "tak akorát na výrobu pár nástrojů pro rozběh plně funkčního  hospodářství. "
-"Upozoznění: UI za těchto podmínek nedokáže úspěšně zahájit hru."
+"Upozornění: AI za těchto podmínek nedokáže úspěšně zahájit hru."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:11
@@ -1504,7 +1504,7 @@ msgid ""
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
 "Zahaj hru s běžnou hlavní budovou. Tví pracovníci dělají čas od času "
-"inventury. Pokud je v některém z tvých skadů více než 500 položek, "
+"inventury. Pokud je v některém z tvých skladů více než 500 položek, "
 "pracovníci vyhodí z daného skladu čtvrtinu skladových zásob."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:105
@@ -1889,7 +1889,7 @@ msgid ""
 "you get them. Meal is essential for training, mining and road traffic."
 msgstr ""
 "Pečlivě si prostuduj, které suroviny jsou třeba na přípravu jídla a jak je "
-"lze získat. Jidlo je nezbytné pro trénink, doly i dopravu na cestách."
+"lze získat. Jídlo je nezbytné pro trénink, doly i dopravu na cestách."
 
 #. TRANSLATORS: Format string for a Latin quote and its translation
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:12
@@ -2133,7 +2133,7 @@ msgid ""
 "starch, cassava leaves, meat or fish and water. Eggs can be used instead "
 "some of these ingredients too."
 msgstr ""
-"Jidlo je optimální kombinací několika surovin. Jsou jimi škrob, maniokové "
+"Jídlo je optimální kombinací několika surovin. Jsou jimi škrob, maniokové "
 "listy, maso nebo ryba a voda. Místo některých z těchto surovin lze použít "
 "také vejce."
 
@@ -2683,7 +2683,7 @@ msgid ""
 "These cassava plants has been harvested. Your leaf gatherer can pick up some "
 "cassava leaves here."
 msgstr ""
-"Tyto maniokové rostliny byly sklizeny. Tvé sběračky listí zde mouhou "
+"Tyto maniokové rostliny byly sklizeny. Tvé sběračky listí zde mohou "
 "posbírat  maniokové listy."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field

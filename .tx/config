@@ -122,6 +122,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Thanias-Sound-wad]
+file_filter            = po/Thanias_Sound.wad/<lang>.po
+source_file            = po/Thanias_Sound.wad/Thanias_Sound.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:The-Long-Way-to-Tiperary--for-16-players--experimental--wad]
 file_filter            = po/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad/<lang>.po
 source_file            = po/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad.pot

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 03:10+0100\n"
+"POT-Creation-Date: 2025-02-20 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -435,6 +435,8 @@ msgid ""
 "returns on investment. You should consider enhancing, dismantling or "
 "destroying it."
 msgstr ""
+"Die Hauptader dieser Kupfergoldmine ist erschöpft. Die Produktivität wird "
+"stark einbrechen. Du solltest diese Mine ausbauen, abreißen oder zerstören."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/deep_copper_gold_mine/init.lua:8
@@ -453,6 +455,9 @@ msgid ""
 "diminished returns on investment. This mine can’t be enhanced any further, "
 "so you should consider dismantling or destroying it."
 msgstr ""
+"Die Hauptader dieser tiefen Kupfergoldmine ist erschöpft. Die Produktivität "
+"wird stark einbrechen. Diese Mine kann nicht mehr erweitert werden, daher "
+"solltest du ihren Abriss oder ihre Zerstörung bedenken."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:8
@@ -482,6 +487,9 @@ msgid ""
 "returns on investment. This mine can’t be enhanced any further, so you "
 "should consider dismantling or destroying it."
 msgstr ""
+"Die Hauptader dieser tiefen Eisenerzmine ist erschöpft. Die Produktivität "
+"wird stark einbrechen. Diese Mine kann nicht mehr erweitert werden, daher "
+"solltest du ihren Abriss oder ihre Zerstörung bedenken."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/deep_stone_mine/init.lua:8
@@ -510,7 +518,7 @@ msgstr "Kein Stein"
 
 #: addons/sumatran_tribe.wad/mines/deep_stone_mine/init.lua:120
 msgid "Stone Vein Exhausted"
-msgstr ""
+msgstr "Gesteinsader erschöpft"
 
 #: addons/sumatran_tribe.wad/mines/deep_stone_mine/init.lua:122
 msgctxt "sumatran_building"
@@ -519,6 +527,9 @@ msgid ""
 "returns on investment. This mine can’t be enhanced any further, so you "
 "should consider dismantling or destroying it."
 msgstr ""
+"Die Hauptader dieser tiefen Steinmine ist erschöpft. Die Produktivität wird "
+"stark einbrechen. Diese Mine kann nicht mehr erweitert werden, daher "
+"solltest du ihren Abriss oder ihre Zerstörung bedenken."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:8
@@ -536,6 +547,8 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"Die Hauptader dieser Eisenerzmine ist erschöpft. Die Produktivität wird "
+"stark einbrechen. Du solltest diese Mine ausbauen, abreißen oder zerstören."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/stone_mine/init.lua:8
@@ -545,7 +558,7 @@ msgstr "Steinmine"
 
 #: addons/sumatran_tribe.wad/mines/stone_mine/init.lua:136
 msgid "Main Stone Vein Exhausted"
-msgstr ""
+msgstr "Hauptgesteinsader erschöpft"
 
 #: addons/sumatran_tribe.wad/mines/stone_mine/init.lua:138
 msgctxt "sumatran_building"
@@ -553,6 +566,8 @@ msgid ""
 "This stone mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"Die Hauptader dieser Steinmine ist erschöpft. Die Produktivität wird stark "
+"einbrechen. Du solltest diese Mine ausbauen, abreißen oder zerstören."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:8
@@ -611,7 +626,7 @@ msgstr "Thermalquellen"
 #: addons/sumatran_tribe.wad/productionsites/thermal_springs/init.lua:59
 #: addons/sumatran_tribe.wad/productionsites/thermal_springs/init.lua:73
 msgid "enhancing the fertility of land"
-msgstr ""
+msgstr "Das Verbessern der Fruchtbarkeit des Landes"
 
 #: addons/sumatran_tribe.wad/other_tribes/amazons_thermal_springs/init.lua:80
 #: addons/sumatran_tribe.wad/productionsites/thermal_springs/init.lua:82
@@ -695,7 +710,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:39
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:50
 msgid "felling trees"
-msgstr ""
+msgstr "Das Fällen von Bäumen"
 
 #: addons/sumatran_tribe.wad/postload.lua:145
 #: addons/sumatran_tribe.wad/postload.lua:149
@@ -730,7 +745,7 @@ msgstr "Rüstungsschmiede"
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:72
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:80
 msgid "working"
-msgstr ""
+msgstr "Das Arbeiten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a copper armor because ...
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:68
@@ -1365,6 +1380,8 @@ msgstr "Entdeckung"
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies"
 msgstr ""
+"Beginne das Spiel mit drei Schiffen auf dem Ozean und nur einer Hand voll an "
+"Gütern."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/fortified_village.lua:11
