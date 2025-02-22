@@ -261,7 +261,7 @@ Aalnase
 
 sync_safe
 1718728173
-150
+151
 0
 0
 0
@@ -531,7 +531,7 @@ hessenfarmer
 
 sync_safe
 1673901188
-450
+451
 0
 0
 0
@@ -624,7 +624,7 @@ kaputtnik
 
 sync_safe
 1679920754
-227
+228
 0
 0
 0
@@ -805,7 +805,7 @@ kaputtnik
 
 sync_safe
 1716155346
-108
+109
 0
 0
 0
@@ -890,7 +890,7 @@ Aalnase
 
 sync_safe
 1700772630
-152
+153
 0
 0
 0
@@ -1066,7 +1066,7 @@ the-x
 
 sync_safe
 1701271619
-108
+109
 0
 0
 0
@@ -1105,7 +1105,7 @@ ShipExplorerOZ
 
 sync_safe
 1712418149
-136
+137
 0
 0
 0
@@ -1191,7 +1191,7 @@ Teayo
 
 sync_safe
 1688747564
-268
+269
 0
 0
 0
@@ -1340,7 +1340,7 @@ kaputtnik
 
 sync_safe
 1715265495
-228
+229
 0
 0
 0
@@ -1459,7 +1459,7 @@ hessenfarmer
 
 sync_safe
 1690230129
-229
+230
 0
 0
 0
@@ -1548,7 +1548,7 @@ hessenfarmer
 
 sync_safe
 1633431899
-332
+333
 0
 0
 0
@@ -1722,7 +1722,7 @@ the-x
 
 sync_safe
 1692450525
-174
+175
 2
 0
 0
@@ -1765,7 +1765,7 @@ the-x
 
 sync_safe
 1689580553
-128
+129
 0
 0
 0
@@ -1804,7 +1804,7 @@ Ron_of_Nord
 
 sync_safe
 1739941423
-3
+4
 0
 0
 0
@@ -1817,7 +1817,7 @@ sync_safe
 0
 0
 1
-1
+2
 528227
 maps
 1
@@ -1858,7 +1858,7 @@ sv.mo
 56bcc11abd571f7cf65fd2aab120afd1
 9efd37d36698975c9db9862a56210432
 fdfa3422886ff09f97d85f4be66347a5
-4183a3d97d35b0215b7141c58b003d95
+32b0c03cfdf0fcfa4f71199353eca129
 bee48268776e1d22a7f4c7432ae4236d
 ca2b0472f75ef943bc629102fbeda7fa
 875478a793ddbdbcc093a033253facc3
@@ -1872,7 +1872,7 @@ fd76cdcdf856a73165a68921f8c3295a
 d19fea137a82445a026a3b8cfffc50cd
 ba17f051434fee511a79bf935240bb04
 d29b5c902176777362475ffe3d9e8e40
-b6e7530f54dcc55c96daace1ca4d123f
+2f02d696602c826fee9200bff9d77048
 1a678e75ea3da347bca9d627d7eed7a9
 972735000bdb0ab3a57f6d02979fafa6
 e973e884960ad53bb0af128394b2c98b
@@ -1890,7 +1890,7 @@ WeirdCatLord
 
 sync_safe
 1674388992
-204
+205
 0
 0
 0
@@ -1975,7 +1975,7 @@ WeirdCatLord
 
 sync_safe
 1674389456
-192
+193
 0
 0
 0
@@ -2060,7 +2060,7 @@ Nordfriese
 
 sync_safe
 1689081253
-184
+185
 0
 0
 0
@@ -2152,7 +2152,7 @@ TRueDesk
 
 sync_safe
 1666686938
-762
+763
 0
 0
 0
@@ -2532,7 +2532,7 @@ Ron_of_Nord
 
 sync_safe
 1739669633
-6
+7
 0
 0
 0
@@ -2618,7 +2618,7 @@ auktionadmin
 
 sync_safe
 1680190966
-405
+406
 0
 0
 0
@@ -2715,7 +2715,7 @@ the-x
 
 sync_safe
 1689341723
-121
+122
 0
 0
 0
@@ -2800,7 +2800,7 @@ the-x
 
 sync_safe
 1701270383
-136
+137
 0
 0
 0
@@ -3287,7 +3287,7 @@ kaputtnik
 
 desync
 1613666291
-296
+297
 0
 0
 0
@@ -3369,7 +3369,7 @@ OIPUN
 
 sync_safe
 1719251296
-378
+388
 0
 0
 0
@@ -3380,7 +3380,7 @@ sync_safe
 0
 0
 1
-8
+9
 Cupper
 It seems to be an ERROR:<br>Klicking help for farm widelands crashed, ALWAYS.<br>When this Addon is ON.<br><br>Good idea building wares in a bulk. :-)
 1.0.0
@@ -3413,9 +3413,13 @@ OIPUN
 OK with this version, the order of add-ons should not matter. I had to replace the pgettext of Barbarian Independent Fishing Hut Performance with a simple string. The funny thing is that right beneath, there is a completely same pgettext for Empire IFH and it works without problems. I also decided to add lore. And again :-( everywhere it works fine just Empire IFH has problem with latin_lore. So I solved that once again by putting just simple strings there. Not a nice solution but probably better than having an add-on that can crash. Not happy about that.
 2.0.4
 1739131763
-2.0.4
-18
-793006
+OIPUN
+I've found the problem issue is solved completely now.
+2.0.5
+1740125661
+2.0.5
+19
+793445
 tribes
 0
 8
@@ -3596,7 +3600,7 @@ ru.mo
 sk.mo
 sv.mo
 166
-2adc629ea2a79d9bd7703bb0ca2b49ea
+458891372f6074fc3b150bf93ff043d9
 b2be5f1a4be1bbb6d7221c42ce193812
 7c0c2ac90b9d391acfde7a4728e8da3c
 b4c35c457ac084603f86a2dc123c5045
@@ -3738,12 +3742,12 @@ a4ef24d3a3413168e62cf792fb4962a8
 c4f74f62454209d57cf79a13371c78cf
 64539c4d07bec05cc89ddc8bfc495a24
 2204f1eb5da0e2d4dc74cb8245319ac8
-1f2d48a0afa5ecfc626c26afbd14849d
+4c40a5ccaa82503aa2558201d77b79df
 e86bd1ec52834697be113ae6fda645ae
 922d06c7aa566e74db8622d08151c6e4
-8416c452f900e0f637bca89a255fde68
+4ad52782fbff2d33c1c97a6c2f9d3f7b
 7c7e2671ae5631322ed889b7e252c7c3
-554395e261cb4653a679d7bf3084080d
+f4f5a86412c1c8c6468b9444e4b29d83
 78a67d32363a66e8c361c855e72fd7ba
 a2d973c50bdfaf139792186fdab8a851
 e59082b392c3715721e923b943fab65c
@@ -3754,8 +3758,8 @@ d2f115c161b7bb372e36cbe8d11f3dba
 07b2d7eedbe6989e6c152a4c49e71e55
 d3ee3ac8d554d5a93cfacd72d4145dfb
 6b1b7d0d4d3ff2245466dfa4c7ac6b3c
-3286d9e906f901876c5fce8bff9a6633
-b043a36bdea59da65e5d40928bf9d4fc
+bc6dbf37d40f4ffdd9a853051a719f74
+d0979a44a76c476a943f17bc8a38a594
 d421cd9f1d9de3d373a9852889c7d39e
 a8361c8fc5a8254eaffa125eab827252
 857ad4a3a4f36f1adc97be1a66364a93
@@ -3773,7 +3777,7 @@ blind3rdeye
 
 sync_safe
 1700920458
-254
+255
 0
 0
 0
@@ -5094,7 +5098,7 @@ MarkMcWire
 
 desync
 1623355770
-59
+60
 0
 0
 0
@@ -5178,7 +5182,7 @@ MarkMcWire
 
 sync_safe
 1738853304
-7
+8
 0
 0
 0
@@ -5346,7 +5350,7 @@ MarkMcWire
 
 sync_safe
 1625854267
-985
+988
 0
 0
 0
@@ -5434,7 +5438,7 @@ MarkMcWire
 
 sync_safe
 1734222489
-203
+208
 1
 0
 0
@@ -7103,7 +7107,7 @@ MarkMcWire
 
 sync_safe
 1734192332
-231
+235
 1
 0
 0
@@ -17055,7 +17059,7 @@ Nordfriese
 
 sync_safe
 1600000000
-569
+571
 0
 0
 0
@@ -17139,7 +17143,7 @@ Nordfriese
 
 sync_safe
 1600000000
-711
+712
 0
 0
 0
@@ -17370,7 +17374,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1157
+1160
 0
 0
 0
@@ -17541,7 +17545,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1099
+1101
 0
 0
 0
@@ -18716,7 +18720,7 @@ Nordfriese
 
 sync_safe
 1600000000
-359
+361
 0
 0
 0
@@ -19068,7 +19072,7 @@ the-x
 
 sync_safe
 1625156361
-35
+36
 0
 0
 0
@@ -19320,7 +19324,7 @@ arch_stanton
 
 sync_safe
 1648329410
-424
+425
 1
 0
 0
@@ -19541,7 +19545,7 @@ tothxa
 
 sync_safe
 1735340602
-29
+30
 0
 0
 0
@@ -19627,7 +19631,7 @@ tothxa
 
 sync_safe
 1682797554
-171
+174
 0
 1
 0
@@ -20494,7 +20498,7 @@ Nordfriese
 
 sync_safe
 1600000000
-617
+619
 0
 0
 0
@@ -20580,7 +20584,7 @@ OIPUN
 
 sync_safe
 1615637480
-726
+729
 0
 0
 0
@@ -20593,7 +20597,7 @@ sync_safe
 0
 0
 1.0.3
-36
+37
 8394638
 maps
 0
@@ -20887,7 +20891,7 @@ adf6235dc93c1cd75abb6b4b9daeaafc
 c5ea0528d33a71b4e05e165ab066ae94
 eb9e20950c6a672a50c1a685d2a342a0
 8bdd1ee9f4064bce1f23f77fd48654ca
-2daf715b8612e5df83f88a02f6d1102c
+1f28dd6da6fbdb2bddee9be2fb9c2567
 d503b3d0d81085deabd0a54e96d3029a
 d1bad6bbcc969278cbbe2779629141d9
 e255b5cc7fc7958239dbeef26aa81782
@@ -21568,7 +21572,7 @@ Nordfriese
 
 sync_safe
 1723377908
-94
+96
 0
 0
 0
@@ -21666,7 +21670,7 @@ tothxa
 
 desync
 1638011892
-286
+287
 0
 0
 0
@@ -21876,7 +21880,7 @@ the-x
 
 sync_safe
 1622124029
-421
+422
 0
 0
 0
@@ -21964,7 +21968,7 @@ atomikaya
 
 sync_safe
 1671793402
-316
+317
 0
 0
 0
@@ -22368,7 +22372,7 @@ OIPUN
 
 sync_safe
 1733507996
-129
+137
 0
 0
 0
@@ -22379,7 +22383,7 @@ sync_safe
 0
 1
 1
-4
+5
 Cupper
 Nice tribe, playable and nice buildings. Lovely.  But hard to get diamants 4 expedition when only few stones (mining) avaible.
 1.0.0
@@ -22396,9 +22400,13 @@ OIPUN
 Yes, I tested more unofficial versions. The important thing is that it works. I considered writing Yo... to inform him about this update, but as he is inactive now, I decided not to. But when now some people are getting interested in playing tropics, I should probably write him a message soon.
 1.0.1
 1734338619
-2.0.1
-20
-16423425
+OIPUN
+New version, a bug is corrected.
+2.0.2
+1740125189
+2.0.2
+21
+16428684
 tribes
 1
 sumatran_world.wad
@@ -24751,7 +24759,7 @@ ru.mo
 sk.mo
 sv.mo
 2201
-77494c90c708c325e8c086fafcbeb3a9
+55951fb000b7cf92c552d4f8b5e58a42
 187a152283002cea7cbda6c880317bdf
 d59d656865d39e92521214281aa95ca4
 a4d8dc5b09e3251587ebd7dc8b9bd636
@@ -25101,7 +25109,7 @@ ca24068631a144b7cdf515e38f524e06
 d8ec63a0431a5b675a73d480470c2191
 de847877983b55306aaff06949c165f2
 28b11f850811090ca67ceafdb7c258d7
-244107517f47d4739a99aca8a3a6a2fc
+03c66fab803bdedb3df160a6ded6bdf5
 a55d54b1b7da8c7a4f74b14ccc44efa1
 abc9ed94568a4cd57a90a786b33fd39f
 6e0519e5dadca1138ace16e0891b83a3
@@ -25548,7 +25556,7 @@ a7dfe8d45e8ed682292f928db8c63ca7
 f5ec6e628bbc82f6bac0a8d1aed69c65
 4e4091bf4e6a7599bdca2be9d63e2e98
 b0afeee8f970ac33c8d8ee9f370d6373
-e97f363603776cd9fbf081f051b40117
+cfffbe4a8d5ce4403cb3299df8491c69
 63c5b6f9375e6af54609fbe6ccc740f3
 f757b3c61660506ec4b80e337616a61e
 e42f1711d5fda6dabeb84df9fe724e18
@@ -26931,9 +26939,9 @@ ecf9a3a77f316e2c2639cefeb1417ab3
 6cb1f566536c54f240bc43f810386b90
 8b0f600090bf26e334fc6ea2f0849c06
 bd51d897417c13a1e04c1891bedbf512
-06e03c8ab0165b7be7dbf9c80f86c3e8
+953f2ff2283e83cec3b9d028b7aaf6f5
 26aed6f205d8d2a4b7008bc81aa94058
-1ef5f5ade76ff2b89e61ea8f29121494
+c504c206908c0e279287190df1a5c6f8
 1fa9d71dc9e399e7fdc9a38651c74179
 28427f096fb6a1906c05c83d9b243b22
 4a7c90d3a1ddef51e3efc4d2e17c991f
@@ -26944,8 +26952,8 @@ f7b29d889298620ed94c634b4360a1f6
 b33bea6588ef70afa8faa80c7d1cab7c
 c4f7a7e78b02274802fb4349df232f7c
 184841b11e802884e2f0ede3f1f1be57
-cf3b0c63c3cd1eece1cb33ab32db5f0b
-d7bd2867e1bd3d1cb39e01d6dd35e202
+76c6c7bd50485e9ac61d2664d0a11ef1
+8d2c4397ad106d62c2ff434f56822974
 d6aa9f444b78ff960c0ff26868d8d8d8
 eb9196a44a3ed7e6b050a5d7d03f73c3
 e1d99c4d855000fea472ea8597ca7483
@@ -27900,7 +27908,7 @@ OIPUN
 
 sync_safe
 1735910819
-22
+23
 0
 0
 0
@@ -28086,7 +28094,7 @@ OIPUN
 
 sync_safe
 1731948448
-77
+78
 0
 0
 0
@@ -28220,7 +28228,7 @@ Yo...
 
 sync_safe
 1622321739
-504
+505
 0
 0
 0
@@ -28628,7 +28636,7 @@ Nordfriese
 
 sync_safe
 1600000000
-542
+545
 0
 0
 0
@@ -29164,7 +29172,7 @@ kaputtnik
 
 sync_safe
 1708356983
-183
+184
 0
 0
 0
@@ -29260,7 +29268,7 @@ OIPUN
 
 sync_safe
 1622916439
-701
+702
 0
 0
 0
@@ -29819,7 +29827,7 @@ OIPUN
 
 sync_safe
 1623262581
-470
+471
 0
 0
 0

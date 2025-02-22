@@ -9,7 +9,7 @@ include "tribes/scripting/help/time_strings.lua"
 
 -- For lore texts
 -- TRANSLATORS: Format string for a Latin quote and its translation
-quote_with_translation_format = pgettext("sumatran_lore", "‘%1%’<br>(%2%)")
+quote_with_translation_format = pgettext("empire_lore", "‘%1%’<br>(%2%)")
 function latin_lore(latin, translation)
    return quote_with_translation_format:bformat(latin, translation)
 end
@@ -85,7 +85,7 @@ wl.Descriptions():new_tribe {
             -- 1. Building Materials (Basic)
             {
                 name = "log",
-                default_target_quantity = 10000,
+                default_target_quantity = 1000,
                 preciousness = 80,
                 helptexts = {
                     purpose = {
@@ -98,7 +98,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "tropicalwood",
-                default_target_quantity = 10000,
+                default_target_quantity = 1000,
                 preciousness = 3,
                 helptexts = {
                     purpose = {

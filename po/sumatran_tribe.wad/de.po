@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 03:10+0100\n"
+"POT-Creation-Date: 2025-02-22 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -701,26 +701,135 @@ msgid ""
 "area."
 msgstr ""
 
+#. TRANSLATORS: Format string for a latin quote and its translation
+#. TRANSLATORS: Format string for a Latin quote and its translation
+#: addons/sumatran_tribe.wad/postload.lua:9
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:12
+#, fuzzy
+msgctxt "empire_lore"
+msgid "‘%1%’<br>(%2%)"
+msgstr "‘%1%’<br>(%2%)"
+
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-#: addons/sumatran_tribe.wad/postload.lua:40
 #: addons/sumatran_tribe.wad/postload.lua:50
-#: addons/sumatran_tribe.wad/postload.lua:56
-#: addons/sumatran_tribe.wad/postload.lua:62
-#: addons/sumatran_tribe.wad/postload.lua:68
+#: addons/sumatran_tribe.wad/postload.lua:60
+#: addons/sumatran_tribe.wad/postload.lua:66
+#: addons/sumatran_tribe.wad/postload.lua:72
+#: addons/sumatran_tribe.wad/postload.lua:78
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:39
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:50
 msgid "felling trees"
 msgstr "Das Fällen von Bäumen"
 
-#: addons/sumatran_tribe.wad/postload.lua:145
-#: addons/sumatran_tribe.wad/postload.lua:149
-#: addons/sumatran_tribe.wad/postload.lua:153
-#: addons/sumatran_tribe.wad/postload.lua:157
+#: addons/sumatran_tribe.wad/postload.lua:158
+#: addons/sumatran_tribe.wad/postload.lua:179
+#: addons/sumatran_tribe.wad/postload.lua:189
+#: addons/sumatran_tribe.wad/postload.lua:199
 msgid "Hunters working at this house can hunt crocodiles for meat."
 msgstr ""
 
-#: addons/sumatran_tribe.wad/postload.lua:161
+#: addons/sumatran_tribe.wad/postload.lua:159
+#: addons/sumatran_tribe.wad/postload.lua:180
+#: addons/sumatran_tribe.wad/postload.lua:190
+#: addons/sumatran_tribe.wad/postload.lua:200
+#: addons/sumatran_tribe.wad/postload.lua:210
+msgid ""
+"This building is useful only when you have a Sumatran opponent and there are "
+"crocodiles coming from his territory into your territory."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 1
+#: addons/sumatran_tribe.wad/postload.lua:162
+msgctxt "frisians_building"
+msgid ""
+"This building can produce one meat between %1$s and %2$s, depending on how "
+"far the hunter has to walk."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 2
+#: addons/sumatran_tribe.wad/postload.lua:164
+msgctxt "frisians_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr ""
+
+#. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
+#. Adaptation of a classical Latin quote meaning:
+#. "Here be crocodiles."
+#: addons/sumatran_tribe.wad/postload.lua:172
+msgid "Hic sunt crocodili."
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Empire production site: Crocodile Hunter’s House
+#. Translation for adaptation of a classical Latin quote:
+#. "Hic sunt crocodili."
+#: addons/sumatran_tribe.wad/postload.lua:176
+msgid "Here be crocodiles."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Empire production site: Crocodile Hunter’s House
+#: addons/sumatran_tribe.wad/postload.lua:178
+msgctxt "empire_building"
+msgid "Written on uncharted territories of imperial maps"
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for an Empire production site: Crocodile Hunter’s House, part 1
+#: addons/sumatran_tribe.wad/postload.lua:183
+msgctxt "empire_building"
+msgid ""
+"This building can produce one meat between %1$s and %2$s, depending on how "
+"far the hunter has to walk."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for an Empire production site: Crocodile Hunter’s House, part 2
+#: addons/sumatran_tribe.wad/postload.lua:185
+msgctxt "empire_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Barbarian production site: Crocodile Hunter’s House, part 1
+#: addons/sumatran_tribe.wad/postload.lua:193
+msgctxt "barbarians_building"
+msgid ""
+"This building can produce one meat between %1$s and %2$s, depending on how "
+"far the hunter has to walk."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Barbarian production site: Crocodile Hunter’s House, part 2
+#: addons/sumatran_tribe.wad/postload.lua:195
+msgctxt "barbarians_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
+#: addons/sumatran_tribe.wad/postload.lua:203
+msgctxt "atlanteans_building"
+msgid ""
+"This building can produce one meat between %1$s and %2$s, depending on how "
+"far the hunter has to walk."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
+#: addons/sumatran_tribe.wad/postload.lua:205
+msgctxt "atlanteans_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr ""
+
+#: addons/sumatran_tribe.wad/postload.lua:209
 msgid "Hunter-gatherer working at this house can hunt crocodiles for meat."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for an Amazon production site: Crocodile Hunter’s House, part 1
+#: addons/sumatran_tribe.wad/postload.lua:213
+msgctxt "amazons_building"
+msgid ""
+"This building can produce one meat between %1$s and %2$s, depending on how "
+"far the hunter has to walk."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for an Amazon production site: Crocodile Hunter’s House, part 2
+#: addons/sumatran_tribe.wad/postload.lua:215
+msgctxt "amazons_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1834,12 +1943,6 @@ msgid ""
 "Study carefully what ingredients do you need to prepare a meal and how can "
 "you get them. Meal is essential for training, mining and road traffic."
 msgstr ""
-
-#. TRANSLATORS: Format string for a Latin quote and its translation
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:12
-msgctxt "sumatran_lore"
-msgid "‘%1%’<br>(%2%)"
-msgstr "‘%1%’<br>(%2%)"
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Log, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:93

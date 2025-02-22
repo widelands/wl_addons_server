@@ -1,5 +1,16 @@
 addon_dirname = path.dirname(__file__)
 push_textdomain("barbarians_empire_economy_upgrade.wad", true)
+
+-- For formatting time strings
+include "tribes/scripting/help/time_strings.lua"
+
+-- For lore texts
+-- TRANSLATORS: Format string for a latin quote and its translation
+quote_with_translation_format = pgettext("empire_lore", "‘%1%’<br>(%2%)")
+function latin_lore(latin, translation)
+   return quote_with_translation_format:bformat(latin, translation)
+end
+
 -----------------------
 --FISHING
 
@@ -29,22 +40,22 @@ wl.Descriptions():modify_unit("tribe", "barbarians", "add_building", "barbarians
                   purpose = _"Fishes on the coast near the fisher’s hut.",
                   note    = _"The independent fisher works slowly but is able to catch fish in places where an ordinary fisher can't reach. Thanks to his larger reach, you can get more fishes in total. It is useful only for open water.",
                   performance = {
-                    -- TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 1
-                    _"The fisher needs 1 minute and 5 seconds on average to catch one fish.",
-                    -- TRANSLATORS: Performance helptext for a Barbarian production site: Independent Fishing Hut, part 2
-                    _"In case of slopes or obstacles in the way, the time is increased."
+                    -- TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
+                    pgettext("empire_building", "The fisher needs %1$s on average to catch one fish."):bformat(format_minutes_seconds(1, 5)),
+                    -- TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
+                    pgettext("empire_building", "In case of slopes or obstacles in the way, the time is increased.")
                }}})
 
 wl.Descriptions():modify_unit("tribe", "empire", "add_building", "empire_independent_fishing_hut", { helptexts = {
-                  lore = {
+                  lore = latin_lore(
                      -- TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
                      --    Classical Latin quote meaning:
                      --    "Make haste slowly."
-                     _"Festina lente.<br>",
+                     _("Festina lente."),
                      -- TRANSLATORS: Lore helptext for an Empire production site: Independent Fishing Hut
                      --    Translation for the classical Latin quote:
                      --    "Festina lente."
-                     _("Make haste slowly.")},
+                     _("Make haste slowly.")),
                   -- TRANSLATORS: Lore author helptext for an Empire production site: Independent Fishing Hut
                   lore_author = pgettext("empire_building", "Fisherman’s secret to catch more fishes"),
                   purpose = _"Fishes on the coast near the fisher’s hut.",
