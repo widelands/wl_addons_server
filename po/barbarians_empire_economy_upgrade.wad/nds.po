@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-22 03:10+0100\n"
+"POT-Creation-Date: 2025-02-23 03:10+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -200,7 +200,7 @@ msgstr "Marmelpielers to sniddjen"
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:9
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "»%1%«<br>(%2%)"
 
 #. TRANSLATORS: Lore helptext for a Barbarian production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:37
@@ -252,9 +252,8 @@ msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
 #. Classical Latin quote meaning:
 #. "Make haste slowly."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:54
-#, fuzzy
 msgid "Festina lente."
-msgstr "Festina lente.<br>"
+msgstr "Festina lente."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Independent Fishing Hut
 #. Translation for the classical Latin quote:
@@ -497,12 +496,3 @@ msgstr ""
 "bruukt, bruukt dat Huus dör de Bank %1$s, um veer Delen Iesen un twee Delen "
 "Gold to produzeren. Wenn blots eene Aard vun Metall bruukt word, bruukt dat "
 "Huus dör de Bank %2$s för een Deel Iesen un %3$s för een Deel Gold."
-
-#~ msgid ""
-#~ "The fisher needs 1 minute and 5 seconds on average to catch one fish."
-#~ msgstr ""
-#~ "De Fisker bruukt dör de Bank 1 Menüüt un 5 Sekünnen um eenen Fiss to "
-#~ "fangen."
-
-#~ msgid "In case of slopes or obstacles in the way, the time is increased."
-#~ msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."

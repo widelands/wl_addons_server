@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-22 03:10+0100\n"
+"POT-Creation-Date: 2025-02-23 03:10+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -727,7 +727,6 @@ msgstr ""
 #. TRANSLATORS: Format string for a Latin quote and its translation
 #: addons/sumatran_tribe.wad/postload.lua:9
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:12
-#, fuzzy
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
 msgstr "»%1%«<br>(%2%)"
@@ -761,6 +760,8 @@ msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
+"Deeses Huus is blots dann nüttelk, wenn du tegen eenen Sumatraansk Feind "
+"spöölst un Krokodilen ut sienem Gewest in dien Gewest komen."
 
 #. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:162
@@ -769,34 +770,34 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, wo "
+"wied de Jäger lopen mutt."
 
 #. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:164
 msgctxt "frisians_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Adaptation of a classical Latin quote meaning:
 #. "Here be crocodiles."
 #: addons/sumatran_tribe.wad/postload.lua:172
-#, fuzzy
 msgid "Hic sunt crocodili."
-msgstr "Krokodilen to jagen"
+msgstr "Hic sunt crocodili."
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Crocodile Hunter’s House
 #. Translation for adaptation of a classical Latin quote:
 #. "Hic sunt crocodili."
 #: addons/sumatran_tribe.wad/postload.lua:176
-#, fuzzy
 msgid "Here be crocodiles."
-msgstr "Keene Krokodilen"
+msgstr "Hier wesen Krokodilen."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Crocodile Hunter’s House
 #: addons/sumatran_tribe.wad/postload.lua:178
 msgctxt "empire_building"
 msgid "Written on uncharted territories of imperial maps"
-msgstr ""
+msgstr "Staht up nich utwiesen Kuntreien up Rieks-Kaarten"
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:183
@@ -805,12 +806,14 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, wo "
+"wied de Jäger lopen mutt."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:185
 msgctxt "empire_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:193
@@ -819,12 +822,14 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, wo "
+"wied de Jäger lopen mutt."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:195
 msgctxt "barbarians_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:203
@@ -833,12 +838,14 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, wo "
+"wied de Jäger lopen mutt."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:205
 msgctxt "atlanteans_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
 
 #: addons/sumatran_tribe.wad/postload.lua:209
 msgid "Hunter-gatherer working at this house can hunt crocodiles for meat."
@@ -853,12 +860,14 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, wo "
+"wied de Jägerske lopen mutt."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:215
 msgctxt "amazons_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
