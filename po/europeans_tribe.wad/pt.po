@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 03:10+0100\n"
+"POT-Creation-Date: 2025-02-24 03:10+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Language-Team: Portuguese (https://app.transifex.com/widelands/teams/35159/"
 "pt/)\n"
@@ -1030,15 +1030,15 @@ msgstr ""
 #: addons/europeans_tribe.wad/4_productionsites_mining_general/well_level_5/init.lua:57
 #: addons/europeans_tribe.wad/4_productionsites_mining_general/well_level_6/init.lua:38
 #: addons/europeans_tribe.wad/5_productionsites_craft/charcoal_kiln_advanced/init.lua:49
-#: addons/europeans_tribe.wad/5_productionsites_craft/charcoal_kiln_basic/init.lua:76
+#: addons/europeans_tribe.wad/5_productionsites_craft/charcoal_kiln_basic/init.lua:77
 #: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_advanced/init.lua:49
-#: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_basic/init.lua:83
+#: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_basic/init.lua:84
 #: addons/europeans_tribe.wad/5_productionsites_craft/smelting_works_advanced/init.lua:55
 #: addons/europeans_tribe.wad/5_productionsites_craft/smelting_works_basic/init.lua:65
 #: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_advanced/init.lua:52
-#: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_basic/init.lua:70
+#: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_basic/init.lua:71
 #: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_advanced/init.lua:60
-#: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_basic/init.lua:70
+#: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_basic/init.lua:71
 #: addons/europeans_tribe.wad/5_productionsites_food/bakery_advanced/init.lua:57
 #: addons/europeans_tribe.wad/5_productionsites_food/bakery_basic/init.lua:71
 #: addons/europeans_tribe.wad/5_productionsites_food/brewery_advanced/init.lua:66
@@ -1436,12 +1436,12 @@ msgid "breeding and fishing"
 msgstr ""
 
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:57
-#: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:79
+#: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:80
 msgid "No Fish"
 msgstr ""
 
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:58
-#: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:80
+#: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:81
 msgid "Out of Fish"
 msgstr ""
 
@@ -1459,11 +1459,11 @@ msgid "Basic Fisher’s Hut"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:70
+#: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:71
 msgid "fishing"
 msgstr ""
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:81
+#: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:82
 msgctxt "europeans_building"
 msgid ""
 "The fisher working out of this fisher’s hut can’t find any fish in his work "
@@ -1484,13 +1484,13 @@ msgid "releasing and hunting"
 msgstr ""
 
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:57
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:82
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:83
 msgid "No Game"
 msgstr ""
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:59
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:84
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:85
 msgid "Out of Game"
 msgstr ""
 
@@ -1509,12 +1509,12 @@ msgid "Basic Hunter’s Hut"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:72
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:73
 msgid "hunting"
 msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
-#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:86
+#: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:87
 msgctxt "europeans_building"
 msgid ""
 "The hunter working out of this hunter’s hut can’t find any game in his work "
@@ -2382,7 +2382,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/europeans_tribe.wad/5_productionsites_craft/charcoal_kiln_advanced/init.lua:59
 #: addons/europeans_tribe.wad/5_productionsites_craft/charcoal_kiln_advanced/init.lua:69
-#: addons/europeans_tribe.wad/5_productionsites_craft/charcoal_kiln_basic/init.lua:84
+#: addons/europeans_tribe.wad/5_productionsites_craft/charcoal_kiln_basic/init.lua:85
 msgctxt "europeans_building"
 msgid "producing coal"
 msgstr ""
@@ -2401,14 +2401,14 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_advanced/init.lua:59
-#: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_basic/init.lua:93
+#: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_basic/init.lua:94
 msgctxt "europeans_building"
 msgid "sawing logs"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
 #: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_advanced/init.lua:93
-#: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_basic/init.lua:119
+#: addons/europeans_tribe.wad/5_productionsites_craft/sawmill_basic/init.lua:120
 msgctxt "europeans_building"
 msgid "hardening wood"
 msgstr ""
@@ -2446,14 +2446,14 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
 #: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_advanced/init.lua:64
-#: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_basic/init.lua:80
+#: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_basic/init.lua:81
 msgctxt "europeans_building"
 msgid "mixing grout"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
 #: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_advanced/init.lua:80
-#: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_basic/init.lua:96
+#: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_basic/init.lua:97
 msgctxt "europeans_building"
 msgid "burning bricks"
 msgstr ""
@@ -2478,14 +2478,14 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_advanced/init.lua:70
-#: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_basic/init.lua:80
+#: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_basic/init.lua:81
 msgctxt "europeans_building"
 msgid "weaving cloth"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_advanced/init.lua:81
-#: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_basic/init.lua:92
+#: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_basic/init.lua:93
 msgctxt "europeans_building"
 msgid "tailoring a suit of armor"
 msgstr ""
