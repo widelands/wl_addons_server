@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-24 03:10+0100\n"
+"POT-Creation-Date: 2025-02-25 03:10+0100\n"
 "PO-Revision-Date: 2025-02-10 18:28+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -27,19 +27,19 @@ msgid "Maps for 1.2"
 msgstr "Mapy pro 1.2"
 
 #: addons/maps_for_1.2.wad/addon:3
-#, fuzzy
 msgid ""
 "Contains ''Lake and Forest (edited)'', ''Atlas Range Spring'', ''Cenere di "
 "Pompei'', ''River Explorers (edited)'', ''Tripolis (edited)'', ''Kyklades'' "
 "and ''Green Mauritius''."
 msgstr ""
-"Obsahuje mapy ''Cenere di Pompei'', ''Říční průzkumníci (editováno)'', "
-"''Tripolis (editováno)'', ''Kyklady'' a ''Zelený Mauricius''."
+"Obsahuje mapy ''Jezero a les (editováno)'', ''Pohoří Atlas jaro'', ''Cenere "
+"di Pompei'', ''Říční průzkumníci (editováno)'', ''Tripolis (editováno)'', "
+"''Kyklady'' a ''Zelený Mauricius''."
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Atlas_Range_Spring.wmf/elemental:8
 #: screenshots/maps_for_1.2.wad/descriptions:4
 msgid "Atlas Range Spring"
-msgstr ""
+msgstr "Pohoří Atlas jaro"
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Atlas_Range_Spring.wmf/elemental:10
 msgid ""
@@ -49,6 +49,11 @@ msgid ""
 "prevent other tribes migrating to our land and using this newly gained "
 "wealth for themselves."
 msgstr ""
+"Toto jaro, po letech sucha, přišly černé mraky a zanechaly naše hory tak "
+"zelené, že ani nejstarší lidé našeho kmene nepamatují dobu, kdy byla tato "
+"země takto zelená. Nyní bychom si měli vybudovat nějaké zázemí, abychom "
+"zabránili pronikání jiných kmenů na naše území a tomu, že by mohli chtít "
+"využít toto nově nabyté bohatství ve svůj prospěch."
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Atlas_Range_Spring.wmf/elemental:11
 msgid ""
@@ -56,13 +61,15 @@ msgid ""
 "space, a lot of resources, enough fishes, few rocks and trees and is easy to "
 "play. According to my testing, it should be well balanced too."
 msgstr ""
+"Jde o vylepšenou letní verzi mapy \"Pohoří Atlas\". Mapa je omezená na "
+"prostor, má bohaté zdroje, dostatek ryb, pár skal a stromů a je snadno "
+"hratelná. Podle mého testování by také měla být dobře vyvážená."
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Cenere_di_Pompei_v2.wmf/elemental:8
 msgid "Cenere di Pompei v.2"
 msgstr "Cenere di Pompei v.2"
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Cenere_di_Pompei_v2.wmf/elemental:10
-#, fuzzy
 msgid ""
 "After the eruption of Vesuvius this land is completely uninhabited. Just "
 "thick layers of ash cover the northern parts. Let's conquer the land and "
@@ -119,7 +126,6 @@ msgid "Few small islands in the middle of Aegean Sea."
 msgstr "Pár malých ostrůvků uprostřed Egejského moře."
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Kyklades.wmf/elemental:11
-#, fuzzy
 msgid ""
 "This is a small map. Game with only 2 players recommended. Yellow and Green "
 "position are not suitable for AI (islands are very small). Barbarians are "
@@ -130,13 +136,12 @@ msgstr ""
 "pro AI."
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Lake_and_Forest_edited.wmf/elemental:8
-#, fuzzy
 msgid "Lake and Forest (edited)"
-msgstr "Říční průzkumníci (editováno)"
+msgstr "Jezero a les (editováno)"
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Lake_and_Forest_edited.wmf/elemental:10
 msgid "A lake in this forest separates two rivalling tribes."
-msgstr ""
+msgstr "Jezero v tomto lese odděluje od sebe dva znepřátelené kmeny."
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Lake_and_Forest_edited.wmf/elemental:11
 msgid ""
@@ -145,6 +150,10 @@ msgid ""
 "for planting trees. Be careful, thanks to the lake, enemy seems to be far "
 "away, but as soon as he can see you, he should be able to attack you too."
 msgstr ""
+"Velmi malá mapa pro rychlé hry. Mapa je bohatá na zdroje a vyvážená. AI si "
+"nevede příliš dobře, protože země v okolí výchozích pozic není vhodná pro "
+"výsadbu stromů. Dávej si pozor, díky jezeru se zdá, že je nepřítel daleko, "
+"ale jakmile tě má nadohled, mohl by být schopný na tebe i zaútočit."
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/River_Explorers_edited.wmf/elemental:8
 msgid "River Explorers (edited)"
@@ -175,7 +184,7 @@ msgid ""
 msgstr ""
 "Jde o upravenou verzi oficiální mapy. Týmy doporučeny. K překonání "
 "nedostatku zlata je třeba vyslat výpravu. Pro AI možná Obchodní stanice "
-"( doporučena pro žlutého a modrého, pokud je některý z nich tvým "
+"(doporučena pro žlutého a modrého, pokud je některý z nich tvým "
 "protivníkem). Pokud hráno z pozice červeného, císařství představuje větší "
 "výzvu."
 
@@ -192,27 +201,26 @@ msgstr ""
 "a dobře sehraný tým."
 
 #: addons/maps_for_1.2.wad/maps_for_1.2/Tripolis_edited.wmf/elemental:11
-#, fuzzy
 msgid ""
 "Teams recommended. Rich in resources. AI is weak on this map. Gold is far "
 "away on places, where players should meet."
 msgstr ""
-"Týmy doporučeny. Bohatá na zdroje. AI si na této mapě nevede příliš dobře."
+"Týmy doporučeny. Bohatá na zdroje. AI si na této mapě nevede příliš dobře. "
+"Zlato je daleko v místech, kde by se hráči měli potkávat."
 
 #: screenshots/maps_for_1.2.wad/descriptions:3
 msgid "Amazons using Sumatran Thermal springs to transform Tripolis map"
 msgstr ""
+"Amazonky používající sumatřské termální prameny transformují mapu Tripolis"
 
 #: screenshots/maps_for_1.2.wad/descriptions:5
-#, fuzzy
 msgid "Green Mauritius - Blue"
-msgstr "Zelený Mauricius"
+msgstr "Zelený Mauricius - modrý"
 
 #: screenshots/maps_for_1.2.wad/descriptions:6
-#, fuzzy
 msgid "Green Mauritius - Red"
-msgstr "Zelený Mauricius"
+msgstr "Zelený Mauricius - červený"
 
 #: screenshots/maps_for_1.2.wad/descriptions:8
 msgid "Lake and Forest"
-msgstr ""
+msgstr "Jezero a les"
