@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2025-03-03 03:11+0100\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -20,69 +24,77 @@ msgstr ""
 
 #: addons/explorer-wins.wad/addon:6
 msgid "The player who has explored most of the world wins the game"
-msgstr ""
+msgstr "Hráč, který objeví většinu mapy, vítězí."
 
 #: addons/explorer-wins.wad/addon:9
 msgid "explorer wins"
-msgstr ""
+msgstr "Objevitel vítězí"
 
 #: addons/explorer-wins.wad/init.lua:19
 msgid "Explorer Wins"
-msgstr ""
+msgstr "Objevitel vítězí"
 
 #: addons/explorer-wins.wad/init.lua:21
 #, lua-format
 msgid "The player who has explored %1d%% of the world wins the game"
-msgstr ""
+msgstr "Hráč, který prozkoumá %1d%% mapy, vyhraje hru."
 
 #: addons/explorer-wins.wad/init.lua:26
 msgid "% explored"
-msgstr ""
+msgstr "% objeveno"
 
 #: addons/explorer-wins.wad/init.lua:46
 msgid ""
 "There are %1$d fields on the map, but only %2$d are terrestrial, which is "
 "%3$d%%. You need to explore %4$d%%."
 msgstr ""
+"Mapa se skládá z %1$d polí, z toho je pouze %2$d schůdných, což představuje "
+"%3$d%%. Potřebuješ objevit %4$d%%."
 
 #: addons/explorer-wins.wad/init.lua:50
 msgid "Probably not winnable"
-msgstr ""
+msgstr "pravděpodobně nelze vyhrát"
 
 #: addons/explorer-wins.wad/init.lua:50
 msgid "This map is probably not winnable with %1$s."
-msgstr ""
+msgstr "Tuto mapu pravděpodobně nelze s \"%1$s\" vyhrát."
 
 #: addons/explorer-wins.wad/init.lua:52
 msgid "Maybe not winnable"
-msgstr ""
+msgstr "možná nelze vyhrát"
 
 #: addons/explorer-wins.wad/init.lua:52
 msgid "This map is maybe not winnable with %1$s."
-msgstr ""
+msgstr "Tuto mapu možná nelze s \"%1$s\" vyhrát."
 
 #: addons/explorer-wins.wad/init.lua:69
 msgid "You can explore by expanding, with a scout, with ships, ..."
 msgstr ""
+"Objevovat nová území lze pomocí rozšiřování vlastního území, pomocí "
+"průzkumníků, lodí, ..."
 
 #: addons/explorer-wins.wad/init.lua:94
 msgid "Win condition not compatible with \"No fog of war\""
 msgstr ""
+"Výherní podmínka není kompatibilní s volitelným nastavením \"Bez válečné "
+"mlhy\"."
 
 #: addons/explorer-wins.wad/init.lua:95
 msgid ""
 "The win condition %1$s can not be played with \"No fog of war\" enabled."
 msgstr ""
+"Výherní podmínku \"%1$s\" nelze kombinovat s volitelným nastavením \"Bez "
+"válečné mlhy\"."
 
 #: addons/explorer-wins.wad/init.lua:96
 msgid "Continue playing endlessly or restart with fog."
-msgstr ""
+msgstr "Hrej nekonečnou hru, nebo začni znova s mlhou."
 
 #: addons/explorer-wins.wad/init.lua:150
 msgid "Player %1$1d has explored %2$1d%%"
-msgstr ""
+msgstr "%1$1d má prozkoumáno %2$1d%% mapy."
 
 #: addons/explorer-wins.wad/init.lua:152
 #, lua-format
 msgid " (%d fields)"
-msgstr ""
+msgstr "(%d polí)"
