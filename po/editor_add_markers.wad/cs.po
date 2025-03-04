@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-03-04 03:10+0100\n"
 "PO-Revision-Date: 2024-02-27 16:25+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -23,58 +27,61 @@ msgid ""
 "Add immovable markers evenly on the map to have some points of orientation. "
 "Uses Snowman for position 0,0 and Column for other positions."
 msgstr ""
+"Umístí na mapu pravidelné značky v podobě pevných předmětů, které umožní "
+"lepší orientaci. Pro počáteční pozici 0,0 je použit sněhulák pro ostatní "
+"pozice sloupek."
 
 #: addons/editor_add_markers.wad/addon:9
 msgid "Editor: Place markers evenly on the map"
-msgstr ""
+msgstr "Editor: Rovnoměrně rozmístěné značky"
 
 #: addons/editor_add_markers.wad/init.lua:8
 #: addons/editor_add_markers.wad/settings_window.lua:57
 #: addons/editor_add_markers.wad/settings_window.lua:140
 msgid "Place markers"
-msgstr ""
+msgstr "Umístění značek"
 
 #: addons/editor_add_markers.wad/init.lua:9
 msgid "Place markers evenly on the map to get some points of orientation."
-msgstr ""
+msgstr "Umístí na mapu pravidelné značky, které umožní lepší orientaci."
 
 #: addons/editor_add_markers.wad/settings_window.lua:17
 msgid "%1$d Fields"
-msgstr ""
+msgstr "%1$d polí"
 
 #: addons/editor_add_markers.wad/settings_window.lua:73
 msgid "Choose the distance between markers:"
-msgstr ""
+msgstr "Zvolit rozestupy mezi značkami:"
 
 #: addons/editor_add_markers.wad/settings_window.lua:85
 msgid "Horizontally"
-msgstr ""
+msgstr "Vodorovně"
 
 #: addons/editor_add_markers.wad/settings_window.lua:99
 #: addons/editor_add_markers.wad/settings_window.lua:129
 msgid "Choose a distance"
-msgstr ""
+msgstr "zvolit vzdálenost"
 
 #: addons/editor_add_markers.wad/settings_window.lua:115
 msgid "Vertically"
-msgstr ""
+msgstr "Svisle"
 
 #: addons/editor_add_markers.wad/settings_window.lua:147
 msgid "Undo"
-msgstr ""
+msgstr "Vrátit zpět"
 
 #: addons/editor_add_markers.wad/settings_window.lua:154
 msgid "Center position 0,0"
-msgstr ""
+msgstr "Počátek mapy 0,0"
 
 #: addons/editor_add_markers.wad/settings_window.lua:162
 msgid "Remove all markers"
-msgstr ""
+msgstr "Odebrat všechny značky"
 
 #: addons/editor_add_markers.wad/settings_window.lua:171
 msgid "Hide"
-msgstr ""
+msgstr "Skrýt"
 
 #: addons/editor_add_markers.wad/settings_window.lua:172
 msgid "Hide window to keep the settings"
-msgstr ""
+msgstr "Skrýt okno a ponechat nastavení"

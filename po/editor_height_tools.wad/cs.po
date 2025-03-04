@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-03-04 03:10+0100\n"
 "PO-Revision-Date: 2024-01-29 07:15+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -20,44 +24,49 @@ msgstr ""
 
 #: addons/editor_height_tools.wad/addon:2
 msgid "Editor: Height Tools"
-msgstr ""
+msgstr "Editor: Výškový nástroj"
 
 #: addons/editor_height_tools.wad/addon:3
 msgid ""
 "Adjust height for the whole map or apply heights to mountainous terrains "
 "automatically"
 msgstr ""
+"Upraví výšku celé mapy nebo automaticky nadefinuje výšku horského terénu."
 
 #. TRANSLATORS: Short for "set height to:"
 #: addons/editor_height_tools.wad/auto_height.lua:15
 msgid "Set to:"
-msgstr ""
+msgstr "Nastavit na:"
 
 #. TRANSLATORS: Short for "lower height by"
 #: addons/editor_height_tools.wad/auto_height.lua:18
 msgid "Lower by:"
-msgstr ""
+msgstr "Snížit o:"
 
 #. TRANSLATORS: Short for "elevate height by"
 #: addons/editor_height_tools.wad/auto_height.lua:21
 msgid "Elevate by:"
-msgstr ""
+msgstr "Zvýšit o:"
 
 #: addons/editor_height_tools.wad/auto_height.lua:42
 msgid ""
 "A coordinate can't be read.\n"
 "Make sure you have entered a valid coordinate in form of 20,34"
 msgstr ""
+"Souřadnice nebylo možné přečíst.\n"
+"Ujisti se, že byly zadány platné souřadnice ve formátu například 20,34."
 
 #: addons/editor_height_tools.wad/auto_height.lua:49
 msgid ""
 "The coordinates exceeds the map height or width!\n"
 "Please enter valid coordinates!"
 msgstr ""
+"Souřadnice leží mimo rozměr mapy!\n"
+"Prosím, zadej platné souřadnice!"
 
 #: addons/editor_height_tools.wad/auto_height.lua:277
 msgid "Warning"
-msgstr ""
+msgstr "Upozornění"
 
 #: addons/editor_height_tools.wad/auto_height.lua:278
 msgid ""
@@ -67,61 +76,67 @@ msgid ""
 "Click 'Cancel' to define a smaller area. Before clicking OK be sure to save "
 "the map!"
 msgstr ""
+"Dojde k úpravě výšky u %1$d polí! To může odhadem trvat déle než %2$d "
+"sekund.\n"
+"Po tuto dobu nebude editor reagovat.\n"
+"Pokud chceš definovat menší oblast, klikni na \"Zrušit\". Před potvrzením "
+"pomocí \"OK\" se ujisti, že je mapa uložená!"
 
 #: addons/editor_height_tools.wad/error_window.lua:7
 msgid "Error"
-msgstr ""
+msgstr "Chyba"
 
 #: addons/editor_height_tools.wad/error_window.lua:28
 #: addons/editor_height_tools.wad/settings_window.lua:291
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: addons/editor_height_tools.wad/init.lua:12
 msgid "Height Tools"
-msgstr ""
+msgstr "Výškový nástroj"
 
 #: addons/editor_height_tools.wad/init.lua:13
 msgid ""
 "Set height for the whole map or apply heights to mountainous terrains "
 "automatically"
 msgstr ""
+"Nastav výšku pro celou mapu, nebo automaticky změň výšku horského terénu"
 
 #: addons/editor_height_tools.wad/settings_window.lua:14
 msgid "Choose an option"
-msgstr ""
+msgstr "Vyber možnost"
 
 #: addons/editor_height_tools.wad/settings_window.lua:28
 msgid "Adjust height of all fields"
-msgstr ""
+msgstr "Upravit výšku všech polí"
 
 #: addons/editor_height_tools.wad/settings_window.lua:43
 msgid "Set all fields to value"
-msgstr ""
+msgstr "nastavit výšku všech polí na hodnotu"
 
 #: addons/editor_height_tools.wad/settings_window.lua:47
 msgid "Lower all fields by value"
-msgstr ""
+msgstr "snížit všechna pole o hodnotu"
 
 #: addons/editor_height_tools.wad/settings_window.lua:51
 msgid "Elevate all fields by value"
-msgstr ""
+msgstr "zvednout všechna pole o hodnotu"
 
 #: addons/editor_height_tools.wad/settings_window.lua:63
 msgid "Set to: "
-msgstr ""
+msgstr "Nastavit na:"
 
 #: addons/editor_height_tools.wad/settings_window.lua:70
 msgid "Value for all fields"
-msgstr ""
+msgstr "hodnota pro všechna pole"
 
 #: addons/editor_height_tools.wad/settings_window.lua:86
 msgid "Adjust Height"
-msgstr ""
+msgstr "Upravit výšku"
 
 #: addons/editor_height_tools.wad/settings_window.lua:96
 msgid "Apply random heights to mountain terrains"
-msgstr ""
+msgstr "Náhodná výška pro horský terén"
 
 #: addons/editor_height_tools.wad/settings_window.lua:104
 msgid ""
@@ -130,6 +145,9 @@ msgid ""
 "hexagonal area, like when using a big tool size, by entering the coordinates "
 "of the center and a radius."
 msgstr ""
+"Zvol obdelníkovitou oblast zadáním souřadnic horního levého rohu a spodního "
+"pravého rohu, nebo šestiúhelníkovitou oblast zadáním souřadnic a poloměru, "
+"podobně jako při volbě velikosti nástroje."
 
 #: addons/editor_height_tools.wad/settings_window.lua:105
 msgid ""
@@ -137,85 +155,89 @@ msgid ""
 "right side, e.g.: (20,&nbsp;52,&nbsp;10). The values represents (x-"
 "coordinate,&nbsp;&nbsp;y-coordinate,&nbsp;height)"
 msgstr ""
+"Aktuální hodnotu souřadnic kurzoru lze nalézt v pravé části hlavního panelu "
+"ve formátu (x-ová souřadnice,&nbsp;y-ová souřadnice,&nbsp;výška), např.: (20,"
+"&nbsp;52,&nbsp;10)."
 
 #: addons/editor_height_tools.wad/settings_window.lua:111
 msgid "Global Options"
-msgstr ""
+msgstr "Všeobecné volby"
 
 #: addons/editor_height_tools.wad/settings_window.lua:125
 msgid "Max. Height:"
-msgstr ""
+msgstr "Maximální výška:"
 
 #: addons/editor_height_tools.wad/settings_window.lua:126
 msgid "Restrict the height to this maximum height."
-msgstr ""
+msgstr "Nastav limit pro maximální výšku."
 
 #: addons/editor_height_tools.wad/settings_window.lua:135
 msgid "Place sign"
-msgstr ""
+msgstr "Umístit značku"
 
 #: addons/editor_height_tools.wad/settings_window.lua:136
 msgid "Place a column at given coordinates"
-msgstr ""
+msgstr "Označit zadané souřadnice značkou"
 
 #: addons/editor_height_tools.wad/settings_window.lua:147
 msgid "Hexagonal Area"
-msgstr ""
+msgstr "Šestiúhelníkovitá oblast"
 
 #: addons/editor_height_tools.wad/settings_window.lua:163
 msgid "Coordinates of the center field of the hexagonal area, e.g.: 20,35"
-msgstr ""
+msgstr "Středové souřadnice šestiúhelníkovitého pole, např.: 20,35"
 
 #: addons/editor_height_tools.wad/settings_window.lua:171
 #: addons/editor_height_tools.wad/settings_window.lua:242
 #: addons/editor_height_tools.wad/settings_window.lua:271
 msgid "Enter coordinates in form of x, y"
-msgstr ""
+msgstr "Zadej souřadnice ve formátu x, y"
 
 #: addons/editor_height_tools.wad/settings_window.lua:192
 msgid "Choose a value for the radius"
-msgstr ""
+msgstr "Zvolit velikost poloměru"
 
 #: addons/editor_height_tools.wad/settings_window.lua:210
 msgid "Random Hexagonal Mountains"
-msgstr ""
+msgstr "Náhodně upravit výšku horského terénu"
 
 #: addons/editor_height_tools.wad/settings_window.lua:218
 msgid "Rectangular Area"
-msgstr ""
+msgstr "Obdelníkovitá oblast"
 
 #: addons/editor_height_tools.wad/settings_window.lua:234
 msgid "Coordinates of the top left corner of the rectangle, e.g.: 10,20"
-msgstr ""
+msgstr "Souřadnice levého horního rohu obdelníku, např.: 10,20"
 
 #: addons/editor_height_tools.wad/settings_window.lua:263
 msgid "Coordinates of the bottom right corner of the rectangle, e.g.: 20,35"
-msgstr ""
+msgstr "Souřadnice pravého spodního rohu obdelníku, např.: 20,35"
 
 #: addons/editor_height_tools.wad/settings_window.lua:282
 msgid "Random Rectangular Mountains"
-msgstr ""
+msgstr "Náhodně upravit výšku horského terénu"
 
 #: screenshots/editor_height_tools.wad/descriptions:3
 msgid "Design your flat map and add some mountain terrains"
-msgstr ""
+msgstr "Vytvoř svou vlastní plochou mapu a přidej na ni horský terén."
 
 #: screenshots/editor_height_tools.wad/descriptions:4
 msgid "Open the height tools, define a rectangular area and click on "
-msgstr ""
+msgstr "Otevři výškový nástroj, zvol obdelníkovitou oblast a potvrď."
 
 #: screenshots/editor_height_tools.wad/descriptions:5
 msgid "Two signs are placed representing the given coordinates"
-msgstr ""
+msgstr "Zadané souřadnice jsou na mapě vyznačeny dvěma značkami."
 
 #: screenshots/editor_height_tools.wad/descriptions:6
 msgid ""
 "The created mountain on the left doesn't look good? Enter the coordinates of "
 "the center and click on "
 msgstr ""
+"Vytvořená hora v levo nevypadá dobře? Zadej středové souřadnice a potvrď."
 
 #: screenshots/editor_height_tools.wad/descriptions:7
 msgid ""
 "You could also modify a mountain. Enter the coordinates of the new center "
 "and click on "
-msgstr ""
+msgstr "Můžeš upravit další horu. Zadej nové středové souřadnice a potvrď."
