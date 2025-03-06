@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/empire/miner/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_miner_advanced",
@@ -19,7 +20,7 @@ wl.Descriptions():new_worker_type {
             hotspot = { 3, 23 }
         },
     },
-    spritesheets ={
+    spritesheets = {
         walk = {
             fps = 10,
             frames = 10,

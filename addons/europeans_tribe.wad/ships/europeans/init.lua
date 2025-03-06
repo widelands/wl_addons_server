@@ -75,7 +75,8 @@
 
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/ships/atlanteans/"
 
 wl.Descriptions():new_ship_type {
     name = "europeans_ship",

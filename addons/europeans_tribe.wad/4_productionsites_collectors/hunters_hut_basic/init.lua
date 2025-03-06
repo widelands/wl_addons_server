@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-local dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/barbarians/hunters_hut/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_hunters_house_basic",

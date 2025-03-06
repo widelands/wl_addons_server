@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/barbarians/gamekeepers_hut/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_farm_small_basic",
@@ -65,10 +66,10 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         space_consumer = true,
-        basic_amount = 2,
-        very_weak_ai_limit = 2,
-        weak_ai_limit = 4,
-        normal_ai_limit = 8,
+        basic_amount = 1,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
     },
 
     working_positions = {

@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/barbarians/farmer/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_farmer_basic",
@@ -244,12 +245,12 @@ wl.Descriptions():new_worker_type {
             hotspot = { 8, 19 }
         },
         beeswarm = {
-            basename = "beeswarm",
-            fps = 50,
-            frames = 100,
-            columns = 5,
-            rows = 20,
-            hotspot = {26, 31}
+            basename = "gather",
+            fps = 5,
+            frames = 20,
+            rows = 5,
+            columns = 4,
+            hotspot = { 8, 19 }
         },
         walk = {
             fps = 10,

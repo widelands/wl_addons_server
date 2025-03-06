@@ -2020,6 +2020,27 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Produces beer, mead, strong_beer and wine for markets and mines.")
             }
         },
+        {
+            name = "europeans_tavern_basic",
+            helptexts = {
+                 -- TRANSLATORS: Purpose helptext for a production site: Tavern
+                purpose = pgettext("building", "Prepares rations to feed the scouts and miners."),
+            }
+        },
+        {
+            name = "europeans_inn_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a production site: Inn
+                purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the deep mines."),
+            }
+        },
+        {
+            name = "europeans_inn_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a production site: Big Inn
+                purpose = pgettext("europeans_building", "Prepares rations, snacks and meals to feed all miners."),
+            }
+        },
         -- Big
         {
             name = "europeans_farm_basic",
@@ -2368,20 +2389,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_market_beer",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale beer for coins.")
-            }
-        },
-        {
-            name = "europeans_market_bread",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale bread for coins.")
-            }
-        },
-        {
             name = "europeans_market_cloth",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
@@ -2389,24 +2396,17 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_market_meat",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale fish, meat and leather for coins.")
-            }
-        },
-        {
-            name = "europeans_market_wine",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale mead and wine for coins.")
-            }
-        },
-        {
             name = "europeans_market_wood",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
                 purpose = pgettext("europeans_building", "Market building to sale wood products for coins.")
+            }
+        },
+        {
+            name = "europeans_market_big",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Big Market
+                purpose = pgettext("europeans_building", "Market building to sale foods for coins.")
             }
         },
         -- Recruitement and Training Sites

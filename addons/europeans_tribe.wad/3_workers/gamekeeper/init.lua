@@ -1,12 +1,13 @@
 push_textdomain("europeans_tribe.wad", true)
 
-local dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/barbarians/gamekeeper/"
+dirname2 = "tribes/workers/barbarians/hunter/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_gamekeeper",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Gamekeeper"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
     
@@ -38,14 +39,13 @@ wl.Descriptions():new_worker_type {
         }
     },
 
-    spritesheets = {
+    animation_directory = dirname,
+    animations = {
         idle = {
-            fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
-            hotspot = { 10, 20 }
+            hotspot = { 14, 22 }
         },
+    },
+    spritesheets = {
         walk = {
             fps = 10,
             frames = 10,
@@ -55,12 +55,12 @@ wl.Descriptions():new_worker_type {
             hotspot = { 15, 22 }
         },
         hunting = {
-            basename = "idle",
-            fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
-            hotspot = { 10, 20 }
+            basename = "releaseout",
+            fps = 5,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 15, 22 }
         },
         releasein = {
             fps = 5,

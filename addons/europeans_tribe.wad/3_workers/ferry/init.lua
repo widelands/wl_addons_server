@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/atlanteans/ferry/"
 
 wl.Descriptions():new_ferry_type {
     name = "europeans_ferry",
@@ -12,16 +13,16 @@ wl.Descriptions():new_ferry_type {
     animation_directory = dirname,
     spritesheets = {
         idle = {
-            hotspot = {29, 25},
+            hotspot = {22, 22},
             fps = 10,
             columns = 5,
             rows = 8,
-            frames = 40,
+            frames = 39,
         },
         walk = {
             basename = "sail",
             directional = true,
-            hotspot = {29, 25},
+            hotspot = {22, 22},
             fps = 10,
             columns = 5,
             rows = 8,
@@ -30,7 +31,7 @@ wl.Descriptions():new_ferry_type {
         walkload = {
             basename = "sail",
             directional = true,
-            hotspot = {29, 25},
+            hotspot = {22, 22},
             fps = 10,
             columns = 5,
             rows = 8,

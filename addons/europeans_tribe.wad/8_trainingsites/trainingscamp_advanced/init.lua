@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/empire/barracks/"
 
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_trainingscamp_advanced",
@@ -73,6 +74,7 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
             actions = {
+                "return=skipped unless site has coin_silver:2",
                 "checksoldier=soldier:health level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:health level:0",
@@ -87,6 +89,7 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier attack from level 0 to level 1"),
             actions = {
+                "return=skipped unless site has coin_gold:2",
                 "checksoldier=soldier:attack level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:attack level:0",
@@ -101,6 +104,7 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier defense from level 0 to level 1"),
             actions = {
+                "return=skipped unless site has coin_gold:2",
                 "checksoldier=soldier:defense level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:defense level:0",
@@ -115,6 +119,7 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
             actions = {
+                "return=skipped unless site has coin_silver:2",
                 "checksoldier=soldier:evade level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:evade level:0",

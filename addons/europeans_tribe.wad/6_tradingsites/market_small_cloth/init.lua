@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/barbarians/big_inn/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_market_cloth",
@@ -11,12 +12,22 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     animations = {
         idle = {
-            hotspot = { 63, 68 }
+            hotspot = { 57, 88 },
         },
+    },
+    spritesheets = {
         working = {
-            basename = "idle",
-            hotspot = { 63, 68 },
+            frames = 20,
+            rows = 5,
+            columns = 4,
+            hotspot = { 57, 81 }
         },
+        build = {
+            frames = 4,
+            rows = 2,
+            columns = 2,
+            hotspot = { 57, 67 }
+        }
     },
     
     size = "medium",
@@ -72,9 +83,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_copper",
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
-                "call=pausing_production_for_gold",
                 "sleep=duration:15s",
                 "call=trade_cloth_copper",
                 "sleep=duration:15s",
@@ -89,9 +100,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for silver coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_silver",
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
-                "call=pausing_production_for_gold",
                 "sleep=duration:15s",
                 "call=trade_cloth_silver",
                 "sleep=duration:15s",
@@ -106,9 +117,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for gold coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_gold",
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",
-                "call=pausing_production_for_gold",
                 "sleep=duration:15s",
                 "call=trade_cloth_gold",
                 "sleep=duration:15s",
@@ -117,14 +128,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=trade_cotton_gold",
                 "sleep=duration:15s",
                 "call=trade_wool_gold"
-            }
-        },
-        pausing_production_for_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing trading of gold"),
-            actions = {
-                "return=skipped when site has gold:4",
-                "sleep=duration:15m",
             }
         },
         trade_cotton_copper = {

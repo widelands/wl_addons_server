@@ -513,25 +513,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans ware: Grape
                     purpose = pgettext("europeans_ware", "These grapes are the base for a tasty wine. They are harvested in a advanced farm and processed in a winery.")
                 }
-            },
-            {
-                name = "meat",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms. Miners consume meat.")
-                }
-            },
-            {
-                name = "fish",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
-                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms. Miners consume fish.")
-                }
-            },
+            }
         },
         {
             -- Food 2
@@ -607,6 +589,58 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_ware", "It is produced in a winery out of grape. Advanced miners consume wine.")
                 }
             },
+        },
+        {
+            -- Food 3
+            {
+                name = "meat",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
+                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms. Miners consume meat.")
+                }
+            },
+            {
+                name = "fish",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
+                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms. Miners consume fish.")
+                }
+            },
+            {
+                name = "ration",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for a Barbarian ware: Ration, part 1
+                        pgettext("ware", "A small bite to keep miners strong and working. The scout also consumes rations on his scouting trips."),
+                        -- TRANSLATORS: Helptext for a Barbarian ware: Ration, part 2
+                        pgettext("europeans_ware", "Rations are produced in a tavern, an inn or a big inn out of fish or meat or pitta bread.")
+                    }
+                }
+            },
+            {
+                name = "snack",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Barbarian ware: Snack
+                    purpose = pgettext("europeans_ware", "A bigger morsel than the ration to provide miners in deep mines. It is produced in an inn or a big inn out of fish/meat, pitta bread and beer/mead.")
+                }
+            },
+            {
+                name = "meal",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Barbarian ware: Meal
+                    purpose = pgettext("europeans_ware", "A meal is made out of pitta bread, strong beer/wine and fish/meat in a big inn. This substantial food is exactly what workers in a deeper mine need.")
+                }
+            }
         },
         {
             -- Armor
@@ -2228,6 +2262,27 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "europeans_tavern_basic",
+            helptexts = {
+                 -- TRANSLATORS: Purpose helptext for a production site: Tavern
+                purpose = pgettext("building", "Prepares rations to feed the scouts and miners."),
+            }
+        },
+        {
+            name = "europeans_inn_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a production site: Inn
+                purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the deep mines."),
+            }
+        },
+        {
+            name = "europeans_inn_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a production site: Big Inn
+                purpose = pgettext("europeans_building", "Prepares rations, snacks and meals to feed all miners."),
+            }
+        },
+        {
             name = "europeans_tailors_house_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
@@ -2269,8 +2324,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Medium factory that produces weapons from simple raw materials.")
             }
         },
-
-
         -- Big
         {
             name = "europeans_farm_basic",

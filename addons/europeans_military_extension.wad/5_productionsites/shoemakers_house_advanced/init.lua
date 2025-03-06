@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/empire/toolsmithy/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_shoemakers_house_advanced",
@@ -8,22 +9,22 @@ wl.Descriptions():new_productionsite_type {
     descname = pgettext("europeans_building", "Advanced Shoemakers House"),
     icon = dirname .. "menu.png",
 
-   animation_directory = dirname,
-   spritesheets = {
-      idle = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 46, 55 },
-      },
-      working = {
-         basename = "idle",
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 46, 55 },
-      },
-   },
+    animation_directory = dirname,
+    spritesheets = {
+        idle = {
+            frames = 1,
+            columns = 1,
+            rows = 1,
+            hotspot = { 63, 64 },
+        },
+        working = {
+            basename = "idle",
+            frames = 1,
+            columns = 1,
+            rows = 1,
+            hotspot = { 63, 64 },
+        },
+    },
 
     size = "medium",
     

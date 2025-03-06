@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/empire/weaponsmithy/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_weaponsmithy_advanced",
@@ -37,7 +38,6 @@ wl.Descriptions():new_productionsite_type {
       },
     },
     
-
     size = "medium",
     
     aihints = {

@@ -1,12 +1,12 @@
 push_textdomain("europeans_tribe.wad", true)
 
-local dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/atlanteans/fisher/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_fisher_basic",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Basic Fisher"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
 
@@ -27,36 +27,44 @@ wl.Descriptions():new_worker_type {
             "walk=coords",
             "playsound=sound/fisher/fisher_throw_net priority:50% allow_multiple",
             "mine=resource_fish radius:1",
-            "animate=fish duration:10s500ms",
+            "animate=fishing duration:10s500ms",
             "playsound=sound/fisher/fisher_pull_net priority:50% allow_multiple",
             "createware=fish",
             "return"
         }
     },
 
+    animation_directory = dirname,
     animations = {
         idle = {
-            hotspot = { 7, 33 },
+            hotspot = { 2, 20 },
         },
     },
     spritesheets = {
+        fishing = {
+            fps = 10,
+            frames = 30,
+            rows = 6,
+            columns = 5,
+            hotspot = { 10, 21 }
+        },
         walk = {
+            fps = 20,
+            frames = 20,
+            rows = 5,
+            columns = 4,
+            directional = true,
+            hotspot = { 8, 21 }
+        },
+        walkload = {
             fps = 10,
             frames = 10,
             rows = 4,
             columns = 3,
             directional = true,
-            hotspot = { 8, 32 }
+            hotspot = { 8, 20 }
         },
-        -- TODO(GunChleoc): Needs walkload animation, or some ware hotspot/sizing magic.
-        fish = {
-            fps = 10,
-            frames = 30,
-            rows = 6,
-            columns = 5,
-            hotspot = { 7, 33 }
-        }
-    }
+    },
 }
 
 pop_textdomain()

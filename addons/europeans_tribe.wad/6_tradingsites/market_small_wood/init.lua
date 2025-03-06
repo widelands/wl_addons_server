@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/barbarians/inn/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_market_wood",
@@ -15,19 +16,20 @@ wl.Descriptions():new_productionsite_type {
             hotspot = { 57, 88 },
         },
     },
+
     spritesheets = {
-        working = {
-            frames = 20,
-            rows = 5,
-            columns = 4,
-            hotspot = { 57, 81 }
-        },
         build = {
             frames = 4,
             rows = 2,
             columns = 2,
-            hotspot = { 57, 67 }
-        }
+            hotspot = { 51, 81 }
+        },
+        working = {
+            frames = 20,
+            rows = 5,
+            columns = 4,
+            hotspot = { 51, 81 }
+        },
     },
 
     size = "medium",
@@ -61,6 +63,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "gold", amount = 6 },
+        { name = "rubber", amount = 16 },
         { name = "blackwood", amount = 16 },
         { name = "planks", amount = 16 }
     },
@@ -81,47 +84,45 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_copper",
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
-                "call=pausing_production_for_gold",
-                "sleep=duration:15s",
-                "call=trade_planks_copper",
-                "sleep=duration:15s",
-                "call=trade_blackwood_copper"
+                "sleep=duration:10s",
+                "call=trade_rubber_copper",
+                "sleep=duration:10s",
+                "call=trade_blackwood_copper",
+                "sleep=duration:10s",
+                "call=trade_planks_copper"
             }
         },
         trading_for_silver = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for silver coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_silver",
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
-                "call=pausing_production_for_gold",
                 "sleep=duration:10s",
-                "call=trade_planks_silver",
+                "call=trade_rubber_silver",
                 "sleep=duration:10s",
-                "call=trade_blackwood_silver"
+                "call=trade_blackwood_silver",
+                "sleep=duration:10s",
+                "call=trade_planks_silver"
             }
         },
         trading_for_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for gold coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_gold",
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",
-                "call=pausing_production_for_gold",
                 "sleep=duration:10s",
-                "call=trade_planks_gold",
+                "call=trade_rubber_gold",
                 "sleep=duration:10s",
-                "call=trade_blackwood_gold"
-            }
-        },
-        pausing_production_for_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing trading of gold"),
-            actions = {
-                "return=skipped when site has gold:4",
-                "sleep=duration:15m",
+                "call=trade_blackwood_gold",
+                "sleep=duration:10s",
+                "call=trade_planks_gold"
             }
         },
         trade_blackwood_copper = {
@@ -196,6 +197,42 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
+        trade_rubber_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has rubber:4",
+                "return=skipped unless site has gold",
+                "consume=rubber:2 gold",
+                "animate=working duration:30s",
+                "produce=coin_copper:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_rubber_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has rubber:6",
+                "return=skipped unless site has gold",
+                "consume=rubber:3 gold",
+                "animate=working duration:30s",
+                "produce=coin_silver:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_rubber_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has rubber:8",
+                "return=skipped unless site has gold",
+                "consume=rubber:4 gold",
+                "animate=working duration:30s",
+                "produce=coin_gold:2",
+                "sleep=duration:30s",
+            }
+        }
     },
 }
 

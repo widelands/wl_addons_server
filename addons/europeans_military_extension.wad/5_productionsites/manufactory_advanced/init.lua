@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/empire/weaponsmithy/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_manufactory_advanced",
@@ -8,34 +9,34 @@ wl.Descriptions():new_productionsite_type {
     descname = pgettext("europeans_building", "Advanced Big Manufactory"),
     icon = dirname .. "menu.png",
     
-   animation_directory = dirname,
-   spritesheets = {
-      idle = {
-         frames = 1,
-         rows = 1,
-         columns = 1,
-         hotspot = { 48, 65 },
-      },
-      build = {
-         frames = 4,
-         columns = 4,
-         rows = 1,
-         hotspot = { 48, 65 },
-      },
-      unoccupied = {
-         frames = 1,
-         rows = 1,
-         columns = 1,
-         hotspot = { 48, 65 },
-      },
-      working = {
-         fps = 2,
-         frames = 20,
-         columns = 10,
-         rows = 2,
-         hotspot = { 48, 65 },
-      },
-   },
+    animation_directory = dirname,
+    spritesheets = {
+        idle = {
+            frames = 1,
+            rows = 1,
+            columns = 1,
+            hotspot = { 48, 65 },
+        },
+        build = {
+            frames = 4,
+            columns = 4,
+            rows = 1,
+            hotspot = { 48, 65 },
+        },
+        unoccupied = {
+            frames = 1,
+            rows = 1,
+            columns = 1,
+            hotspot = { 48, 65 },
+        },
+        working = {
+            fps = 2,
+            frames = 20,
+            columns = 10,
+            rows = 2,
+            hotspot = { 48, 65 },
+        },
+    },
 
     size = "big",
     destructible = true,

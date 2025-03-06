@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/warehouses/empire/warehouse/"
 
 wl.Descriptions():new_warehouse_type {
     name = "europeans_warehouse",

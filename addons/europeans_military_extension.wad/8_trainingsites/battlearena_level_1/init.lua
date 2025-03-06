@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/trainingsites/barbarians/trainingcamp/"
 
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_battlearena_level_1",

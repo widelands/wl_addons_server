@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/empire/donkey/"
 
 wl.Descriptions():new_carrier_type {
     name = "europeans_carrier_donkey",

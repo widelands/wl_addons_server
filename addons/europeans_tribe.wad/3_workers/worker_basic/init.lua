@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/barbarians/smelter/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_worker_basic",
@@ -19,18 +20,26 @@ wl.Descriptions():new_worker_type {
     animation_directory = dirname,
     animations = {
         idle = {
-            hotspot = { 6, 28 },
+            hotspot = { 5, 18 }
         }
     },
     spritesheets = {
         walk = {
-            fps = 15,
+            fps = 10,
             frames = 10,
             rows = 4,
             columns = 3,
             directional = true,
-            hotspot = { 11, 24 }
-        }
+            hotspot = { 15, 21 }
+        },
+        walkload = {
+            fps = 10,
+            frames = 20,
+            rows = 5,
+            columns = 4,
+            directional = true,
+            hotspot = { 9, 21 }
+        },
     }
 }
 

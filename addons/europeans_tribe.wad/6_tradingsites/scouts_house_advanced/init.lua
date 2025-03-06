@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/empire/scouts_house/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_scouts_house_advanced",
@@ -39,6 +40,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
+        { name = "snack", amount = 2 },
         { name = "coin_silver", amount = 2 }
     },
 
@@ -48,8 +50,10 @@ wl.Descriptions():new_productionsite_type {
             descname = _"scouting",
             actions = {
                 "return=skipped when economy needs coin_silver",
+                "consume=snack",
+                "sleep=duration:15s",
                 "consume=coin_silver",
-                "sleep=duration:30s",
+                "sleep=duration:15s",
                 "callworker=scout",
                 "sleep=duration:30s",
                 "callworker=scout",
@@ -62,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
         targeted_scouting = {
             descname = _"scouting",
             actions = {
-                "consume=coin_silver",
+                "consume=snack coin_silver",
                 "callworker=targeted_scouting"
             }
         },

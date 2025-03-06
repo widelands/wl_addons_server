@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-local dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/barbarians/fishers_hut/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_fishers_house_basic",
@@ -18,7 +19,6 @@ wl.Descriptions():new_productionsite_type {
             hotspot = { 39, 52 },
         },
     },
-
     spritesheets ={
         build = {
             frames = 4,

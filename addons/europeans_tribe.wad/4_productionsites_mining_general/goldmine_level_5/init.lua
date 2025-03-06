@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/productionsites/atlanteans/goldmine/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_goldmine_level_5",
@@ -31,7 +32,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 6 },
+        { name = "planks", amount = 6 }
     },
 
     programs = {

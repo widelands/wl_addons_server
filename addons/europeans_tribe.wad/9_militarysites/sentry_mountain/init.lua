@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/militarysites/barbarians/sentry/"
 
 wl.Descriptions():new_militarysite_type {
     name = "europeans_sentry_mountain",
@@ -15,19 +16,19 @@ wl.Descriptions():new_militarysite_type {
       }
     },
     spritesheets = {
-      idle = {
-         fps = 10,
-         frames = 20,
-         rows = 5,
-         columns = 4,
-         hotspot = { 39, 40 }
-      },
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 39, 40 }
-      },
+        idle = {
+            fps = 10,
+            frames = 20,
+            rows = 5,
+            columns = 4,
+            hotspot = { 39, 40 }
+        },
+        build = {
+            frames = 4,
+            rows = 2,
+            columns = 2,
+            hotspot = { 39, 40 }
+        },
     },
     
     size = "mine",

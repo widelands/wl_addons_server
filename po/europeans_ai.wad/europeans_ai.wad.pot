@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 03:09+0100\n"
+"POT-Creation-Date: 2025-03-06 03:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1268,20 +1268,38 @@ msgctxt "europeans_building"
 msgid "Produces beer, mead, strong_beer and wine for markets and mines."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a production site: Tavern
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2027
+msgctxt "building"
+msgid "Prepares rations to feed the scouts and miners."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a production site: Inn
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2034
+msgctxt "building"
+msgid "Prepares rations and snacks to feed the miners in the deep mines."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a production site: Big Inn
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2041
+msgctxt "europeans_building"
+msgid "Prepares rations, snacks and meals to feed all miners."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for production site: Farm
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2028
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2049
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2035
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2056
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Cattle Farm
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2042
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2063
 msgctxt "europeans_building"
 msgid ""
 "Breeds strong oxen for adding them to the transportation system. "
@@ -1289,7 +1307,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2049
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2070
 msgctxt "europeans_building"
 msgid ""
 "Breeds strong oxen and cute and helpful horses and donkeys for adding them "
@@ -1301,10 +1319,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Marble Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2057
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2064
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2071
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2078
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2085
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2092
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2099
 msgctxt "europeans_building"
 msgid ""
 "Digs granite, marble, quartz and diamond out of the ground in mountain "
@@ -1317,12 +1335,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2085
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2092
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2099
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2106
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2113
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2120
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2127
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2134
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2141
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr ""
@@ -1333,12 +1351,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2127
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2134
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2141
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2148
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2155
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2162
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2169
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2176
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2183
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr ""
@@ -1349,12 +1367,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2169
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2176
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2183
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2190
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2197
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2204
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2211
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2218
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2225
 msgctxt "europeans_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
 msgstr ""
@@ -1363,10 +1381,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Marble Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2212
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2219
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2226
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2233
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2240
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2247
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2254
 msgctxt "europeans_food_building"
 msgid ""
 "Digs granite, marble, quartz and diamond out of the ground in mountain "
@@ -1379,12 +1397,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2240
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2247
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2254
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2261
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2268
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2275
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2282
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2289
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2296
 msgctxt "europeans_food_building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr ""
@@ -1395,12 +1413,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2282
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2289
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2296
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2303
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2310
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2317
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2324
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2331
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2338
 msgctxt "europeans_food_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr ""
@@ -1411,56 +1429,38 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2324
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2331
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2338
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2345
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2352
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2359
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2366
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2373
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2380
 msgctxt "europeans_food_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2367
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2388
 msgctxt "europeans_building"
 msgid "Market building to sale natural products for coins."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2374
-msgctxt "europeans_building"
-msgid "Market building to sale beer for coins."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2381
-msgctxt "europeans_building"
-msgid "Market building to sale bread for coins."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2388
+#: addons/europeans_ai.wad/tribes/initialization/units.lua:2395
 msgctxt "europeans_building"
 msgid "Market building to sale processed products for coins."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-#: addons/europeans_ai.wad/tribes/initialization/units.lua:2395
-msgctxt "europeans_building"
-msgid "Market building to sale fish, meat and leather for coins."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2402
 msgctxt "europeans_building"
-msgid "Market building to sale mead and wine for coins."
+msgid "Market building to sale wood products for coins."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+#. TRANSLATORS: Purpose helptext for an Europeans market: Big Market
 #: addons/europeans_ai.wad/tribes/initialization/units.lua:2409
 msgctxt "europeans_building"
-msgid "Market building to sale wood products for coins."
+msgid "Market building to sale foods for coins."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
