@@ -9,17 +9,6 @@ wl.Descriptions():new_productionsite_type {
    icon = dirname .. "menu.png",
    size = "small",
 
-   buildcost = {
-      log = 2,
-      planks = 3,
-      granite = 2
-   },
-   return_on_dismantle = {
-      log = 1,
-      planks = 1,
-      granite = 1
-   },
-
    animation_directory = dirname,
    animations = {
       idle = {
@@ -42,8 +31,19 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _("hunting"),
          actions = {
-            "callworker=hunt_crocodile",
+            "call=hunt_crocodile",
+            "callworker=hunt",
+            "sleep=duration:35s",
+            "callworker=hunt",
             "sleep=duration:35s"
+         }
+      },
+      hunt_crocodile = {
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
+         descname = _("hunting crocodile"),
+         actions = {
+            "callworker=hunt_crocodile on failure skip",
+            "sleep=duration:9s",
          }
       },
    },
@@ -53,7 +53,7 @@ wl.Descriptions():new_productionsite_type {
       heading = _("Out of Game"),
       -- TRANSLATORS: "game" means animals that you can hunt
       message = pgettext("atlanteans_building", "The hunter working out of this house can’t find any crocodiles in his work area."),
-      productivity_threshold = 5
+      productivity_threshold = 20
    },
 }
 

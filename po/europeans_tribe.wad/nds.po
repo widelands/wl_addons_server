@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-06 03:10+0100\n"
+"POT-Creation-Date: 2025-03-07 03:11+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -706,7 +706,7 @@ msgstr "Hönnigbeer"
 #: addons/europeans_tribe.wad/2_wares/meal/init.lua:8
 msgctxt "ware"
 msgid "Meal"
-msgstr ""
+msgstr "Mahl"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/2_wares/meat/init.lua:8
@@ -736,7 +736,7 @@ msgstr "Blinkerflint"
 #: addons/europeans_tribe.wad/2_wares/ration/init.lua:8
 msgctxt "ware"
 msgid "Ration"
-msgstr ""
+msgstr "Happ"
 
 #. TRANSLATORS: This is a ware name used in lists of wares. Used for thatching roofs and as a fiber for weaving cloth, fishing nets etc.
 #: addons/europeans_tribe.wad/2_wares/reed/init.lua:8
@@ -766,7 +766,7 @@ msgstr "Altholt"
 #: addons/europeans_tribe.wad/2_wares/snack/init.lua:8
 msgctxt "ware"
 msgid "Snack"
-msgstr ""
+msgstr "Spies"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/2_wares/water/init.lua:8
@@ -2670,55 +2670,48 @@ msgstr "Lütte Möhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_basic/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Tavern"
-msgstr "Lütter Toorn"
+msgstr "Lütte Kneipe"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration" because ...
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_basic/init.lua:89
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:59
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:74
-#, fuzzy
 msgctxt "europeans_building"
 msgid "preparing a ration"
-msgstr "Beesten to tüchten"
+msgstr "eenen Happ torechttomaken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Inn"
-msgstr "Meister-Bargwarkskeerl"
+msgstr "Weertshuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a snack" because ...
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:73
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:87
-#, fuzzy
 msgctxt "europeans_building"
 msgid "preparing a snack"
-msgstr "Langohren to tüchten"
+msgstr "eene Spies torechttomaken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal" because ...
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:87
-#, fuzzy
 msgctxt "europeans_building"
 msgid "preparing a meal"
-msgstr "Beesten to tüchten"
+msgstr "een Mahl torechttomaken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Inn"
-msgstr "Iesen-Bargwark"
+msgstr "Kroog"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Big Market"
-msgstr "Beer-Markt"
+msgstr "Groter Markt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:67
@@ -3868,7 +3861,7 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
-"Europäiske Boomhauers kappen de Bomen of; Boomplanters kümmern sük um de "
+"Europäiske Boomhauers kappen de Bomen of; Boomplanters kümmern sik um de "
 "Versörgung mit Bomen. Boomstammen worden ok in de Holtköhl-Branneree, de "
 "Warktüügsmee un de Saagmöhlen bruukt."
 
@@ -4328,6 +4321,8 @@ msgid ""
 "A small bite to keep miners strong and working. The scout also consumes "
 "rations on his scouting trips."
 msgstr ""
+"Wat goods, um Bargwarkskeerls stark un tofree to hollen. De Bespejer bruukt "
+"ok Happen, wenn he spioneren gaht."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Ration, part 2
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:584
@@ -4336,6 +4331,8 @@ msgid ""
 "Rations are produced in a tavern, an inn or a big inn out of fish or meat or "
 "pitta bread."
 msgstr ""
+"Happen worden in eener Kneipe, eenem Kroog of eenem Weertshuus ut Fiss of "
+"Fleesk of Pitta-Brood produzeert."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Snack
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:594
@@ -4344,6 +4341,9 @@ msgid ""
 "A bigger morsel than the ration to provide miners in deep mines. It is "
 "produced in an inn or a big inn out of fish/meat, pitta bread and beer/mead."
 msgstr ""
+"Wat beters as een Happ, um Bargwarkskeerls in Deepen Bargwarken to "
+"versörgen. ’t word in eenem Kroog of Weertshuus ut Fiss/Fleesk, Pitta-Brood "
+"un Beer/Hönnigbeer produzeert."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Meal
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:603
@@ -4352,6 +4352,9 @@ msgid ""
 "A meal is made out of pitta bread, strong beer/wine and fish/meat in a big "
 "inn. This substantial food is exactly what workers in a deeper mine need."
 msgstr ""
+"Een Mahl word in eenem Weertshuus ut Pitta-Brood, Deftigen Beer of Wien un "
+"Fiss of Fleesk maakt. Dat is wat de Arbeiders in eenem Bannig deepen "
+"Bargwark bruken."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:620
@@ -5203,19 +5206,22 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2061
 msgctxt "building"
 msgid "Prepares rations to feed the scouts and miners."
-msgstr ""
+msgstr "Maakt Happen för Bespejers un Bargwarkskeerls torecht."
 
 #. TRANSLATORS: Purpose helptext for a production site: Inn
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2068
 msgctxt "building"
 msgid "Prepares rations and snacks to feed the miners in the deep mines."
 msgstr ""
+"Maakt Happen un Spiesen för de Bargwarkskeerls in de deepen Bargwarken "
+"torecht."
 
 #. TRANSLATORS: Purpose helptext for a production site: Big Inn
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2075
 msgctxt "europeans_building"
 msgid "Prepares rations, snacks and meals to feed all miners."
 msgstr ""
+"Maakt Happen, Spiesen un Mahltieden för all de Bargwarkskeerls torecht."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2083
@@ -5396,10 +5402,9 @@ msgstr "Markthuus, waar man Produkten ut Holt tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Big Market
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2443
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale foods for coins."
-msgstr "Markthuus, waar man Brood tegen Deiten verkopen kann."
+msgstr "Markthuus, waar man Spiesen tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2452
@@ -6190,32 +6195,3 @@ msgstr "Raadhuus"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of gold"
-#~ msgstr "dat Hanneln vun Gold antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Bread Market"
-#~ msgstr "Brood-Markt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Meat and Fish Market"
-#~ msgstr "Fleesk- un Fiss-Markt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Mead and Wine Market"
-#~ msgstr "Hönnigbeer- un Wien-Markt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale beer for coins."
-#~ msgstr "Markthuus, waar man Beer tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale fish, meat and leather for coins."
-#~ msgstr ""
-#~ "Markthuus, waar man Fiss, Fleesk un Leer tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale mead and wine for coins."
-#~ msgstr "Markthuus, waar man Hönnigbeer un Wien tegen Deiten verkopen kann."

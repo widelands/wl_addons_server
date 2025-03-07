@@ -48,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 1140,
+      prohibited_till = 2160,
       basic_amount = 1,
       very_weak_ai_limit = 1,
       weak_ai_limit = 1,
@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _("making spear"),
          actions = {
-            -- time total: 20 + 3.6 + 11.4 = 35 sec
+            -- time total: 15 + 3.6 + 6.4 = 25 sec
             "return=skipped unless economy needs sumatran_spear",
             "return=failed unless site has sandedwood",
             "return=failed unless site has iron",

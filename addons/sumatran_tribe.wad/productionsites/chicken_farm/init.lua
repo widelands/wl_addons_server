@@ -67,9 +67,9 @@ wl.Descriptions():new_productionsite_type {
          descname = pgettext("sumatran_building", "producing eggs"),
          actions = {
             -- time total: 25 + 3.6 + 11.4 = 40 sec
-            "return=skipped unless economy needs eggs",
             "return=failed unless site has food_waste:3",
             "return=failed unless site has water",
+            "return=skipped unless economy needs eggs",
             "consume=food_waste:3 water",
             "animate=working duration:25s", 
             "produce=eggs",
@@ -81,9 +81,9 @@ wl.Descriptions():new_productionsite_type {
          descname = pgettext("sumatran_building", "producing eggs and meat"),
          actions = {
             -- time total: 25 + 3.6 + 1.4 + 3.6 + 11.4 = 45 sec
-            "return=skipped unless economy needs eggs",
             "return=failed unless site has food_waste:3",
             "return=failed unless site has water",
+            "return=skipped unless economy needs eggs",
             "consume=food_waste:3 water",
             "animate=working duration:25s", 
             "produce=eggs",

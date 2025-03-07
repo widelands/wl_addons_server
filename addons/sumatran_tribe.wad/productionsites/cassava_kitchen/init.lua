@@ -65,7 +65,7 @@ wl.Descriptions():new_productionsite_type {
          descname = _("cooking starch"),
          actions = {
             -- time total: 1.2 + 50 + (3 * 3.6) + 13 = 75 sec
-            "return=skipped unless economy needs starch",
+--            "return=skipped unless economy needs starch",
             "return=failed unless site has cassavaroot:4",
             "return=failed unless site has water:3",
             "consume=cassavaroot:4 water:3",

@@ -47,6 +47,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting cassava because ...
          descname = _("planting cassava"),
          actions = {
+            "return=failed unless site has water",
             "callworker=check",
             "consume=water",
             "callworker=plant",

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-06 03:10+0100\n"
+"POT-Creation-Date: 2025-03-07 03:11+0100\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1232,7 +1232,7 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
-"Europäiske Boomhauers kappen de Bomen of; Boomplanters kümmern sük um de "
+"Europäiske Boomhauers kappen de Bomen of; Boomplanters kümmern sik um de "
 "Versörgung mit Bomen. Boomstammen worden ok in de Holtköhl-Branneree, de "
 "Warktüügsmee un de Saagmöhlen bruukt."
 
@@ -1718,6 +1718,8 @@ msgid ""
 "A small bite to keep miners strong and working. The scout also consumes "
 "rations on his scouting trips."
 msgstr ""
+"Wat goods, um Bargwarkskeerls stark un tofree to hollen. De Bespejer bruukt "
+"ok Happen, wenn he spioneren gaht."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Ration, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:622
@@ -1726,6 +1728,8 @@ msgid ""
 "Rations are produced in a tavern, an inn or a big inn out of fish or meat or "
 "pitta bread."
 msgstr ""
+"Happen worden in eener Kneipe, eenem Kroog of eenem Weertshuus ut Fiss of "
+"Fleesk of Pitta-Brood produzeert."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Snack
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:632
@@ -1734,6 +1738,9 @@ msgid ""
 "A bigger morsel than the ration to provide miners in deep mines. It is "
 "produced in an inn or a big inn out of fish/meat, pitta bread and beer/mead."
 msgstr ""
+"Wat beters as een Happ, um Bargwarkskeerls in Deepen Bargwarken to "
+"versörgen. ’t word in eenem Kroog of Weertshuus ut Fiss/Fleesk, Pitta-Brood "
+"un Beer/Hönnigbeer produzeert."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Meal
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:641
@@ -1742,6 +1749,9 @@ msgid ""
 "A meal is made out of pitta bread, strong beer/wine and fish/meat in a big "
 "inn. This substantial food is exactly what workers in a deeper mine need."
 msgstr ""
+"Een Mahl word in eenem Weertshuus ut Pitta-Brood, Deftigen Beer of Wien un "
+"Fiss of Fleesk maakt. Dat is wat de Arbeiders in eenem Bannig deepen "
+"Bargwark bruken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:653
@@ -2780,19 +2790,22 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2268
 msgctxt "building"
 msgid "Prepares rations to feed the scouts and miners."
-msgstr ""
+msgstr "Maakt Happen för Bespejers un Bargwarkskeerls torecht."
 
 #. TRANSLATORS: Purpose helptext for a production site: Inn
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2275
 msgctxt "building"
 msgid "Prepares rations and snacks to feed the miners in the deep mines."
 msgstr ""
+"Maakt Happen un Spiesen för de Bargwarkskeerls in de deepen Bargwarken "
+"torecht."
 
 #. TRANSLATORS: Purpose helptext for a production site: Big Inn
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2282
 msgctxt "europeans_building"
 msgid "Prepares rations, snacks and meals to feed all miners."
 msgstr ""
+"Maakt Happen, Spiesen un Mahltieden för all de Bargwarkskeerls torecht."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2289
@@ -3895,23 +3908,3 @@ msgstr "Raadhuus"
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Big Market"
-#~ msgstr "Groter Markt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for copper coins"
-#~ msgstr "Eten tegen Koperdeiten to hanneln"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for silver coins"
-#~ msgstr "Eten tegen Sülverdeiten to hanneln"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for gold coins"
-#~ msgstr "Eten tegen Golddeiten to hanneln"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of gold"
-#~ msgstr "dat Hanneln vun Gold antohollen"

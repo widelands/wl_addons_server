@@ -9,15 +9,6 @@ wl.Descriptions():new_productionsite_type {
    icon = dirname .. "menu.png",
    size = "small",
 
-   buildcost = {
-      log = 6,
-      rope = 2
-   },
-   return_on_dismantle = {
-      log = 3,
-      rope = 1
-   },
-
    animation_directory = dirname,
    animations = {
       idle = {hotspot = {39, 46}},
@@ -39,7 +30,33 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _("hunting"),
          actions = {
-            "callworker=hunt_crocodile",
+            "call=hunt_crocodile",
+            "call=hunt",
+            "call=fish",
+
+         }
+      },
+      hunt_crocodile = {
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
+         descname = _("hunting crocodile"),
+         actions = {
+            "callworker=hunt_crocodile on failure skip",
+            "sleep=duration:9s",
+         }
+      },
+      hunt = {
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
+         descname = _("gathering meat"),
+         actions = {
+            "callworker=hunt",
+            "sleep=duration:34s",
+         }
+      },
+      fish = {
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
+         descname = _("gathering fish"),
+         actions = {
+            "callworker=fish",
             "sleep=duration:34s",
          }
       },
@@ -50,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
       heading = _("Out of Game"),
       -- TRANSLATORS: "game" means animals that you can hunt
       message = pgettext("amazons_building", "The hunter-gatherer working out of this hut can’t find any crocodiles in her work area."),
-      productivity_threshold = 5
+      productivity_threshold = 20
    },
 }
 

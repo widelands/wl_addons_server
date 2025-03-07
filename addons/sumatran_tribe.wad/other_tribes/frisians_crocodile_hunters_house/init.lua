@@ -10,17 +10,6 @@ wl.Descriptions():new_productionsite_type {
    icon = dirname .. "menu.png",
    size = "small",
 
-   buildcost = {
-      brick = 3,
-      log = 2,
-      reed = 2
-   },
-   return_on_dismantle = {
-      brick = 1,
-      log = 1,
-      reed = 1
-   },
-
    spritesheets = {
       idle = {
          hotspot = {40, 69},
@@ -51,8 +40,41 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _("hunting"),
          actions = {
-            "callworker=hunt_crocodile",
-            "sleep=duration:35s",
+            "call=hunt_crocodile",
+            "call=hunt",
+            "call=hunt",
+            "call=hunt_crocodile",
+            "call=hunt",
+            "call=hunt_crocodile2",
+            "call=hunt",
+            "callworker=hunt",
+            "produce=fur",
+            "sleep=duration:35s"
+         }
+      },
+      hunt = {
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
+         descname = _("hunting"),
+         actions = {
+            "callworker=hunt",
+            "sleep=duration:35s"
+         }
+      },
+      hunt_crocodile = {
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
+         descname = _("hunting crocodile"),
+         actions = {
+            "callworker=hunt_crocodile on failure skip",
+            "sleep=duration:9s"
+         }
+      },
+      hunt_crocodile2 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
+         descname = _("hunting crocodile"),
+         actions = {
+            "callworker=hunt_crocodile on failure skip",
+            "produce=fur",
+            "sleep=duration:9s",
          }
       },
    },
@@ -62,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
       heading = _("Out of Game"),
       -- TRANSLATORS: "game" means animals that you can hunt
       message = pgettext("frisians_building", "The hunter working out of this house can’t find any crocodiles in his work area."),
-      productivity_threshold = 5
+      productivity_threshold = 20
    },
 }
 

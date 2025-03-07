@@ -50,8 +50,8 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       prohibited_till = 180,
-      basic_amount = 1,
-      very_weak_ai_limit = 1,
+      basic_amount = 2,
+      very_weak_ai_limit = 2,
       weak_ai_limit = 2,
       normal_ai_limit = 2,
    },
@@ -97,6 +97,7 @@ wl.Descriptions():new_productionsite_type {
          actions = {
             -- time total: 73 sec
             "return=skipped unless economy needs diamond",
+            "return=skipped when economy needs whetstone",
             "return=failed unless site has diamond_raw",
             "return=failed unless site has stone",
             "consume=diamond_raw stone",

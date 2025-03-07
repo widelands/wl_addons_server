@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-06 03:10+0100\n"
+"POT-Creation-Date: 2025-03-07 03:11+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -2672,55 +2672,48 @@ msgstr "Basis Molen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_basic/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Tavern"
-msgstr "Basis Toren"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration" because ...
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_basic/init.lua:89
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:59
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:74
-#, fuzzy
 msgctxt "europeans_building"
 msgid "preparing a ration"
-msgstr "veeteelt"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Inn"
-msgstr "Gevorderde Mijnwerker"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a snack" because ...
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:73
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:87
-#, fuzzy
 msgctxt "europeans_building"
 msgid "preparing a snack"
-msgstr "ezels houden"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal" because ...
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:87
-#, fuzzy
 msgctxt "europeans_building"
 msgid "preparing a meal"
-msgstr "veeteelt"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Inn"
-msgstr "Basis IJzermijn"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Big Market"
-msgstr "Biermarkt"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:67
@@ -5423,10 +5416,9 @@ msgstr "Marktgebouw voor de verkoop van houtproducten voor munten."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Big Market
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2443
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale foods for coins."
-msgstr "Marktgebouw om brood te verkopen voor munten."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2452
@@ -6223,31 +6215,3 @@ msgstr "Hoofdkwartier"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of gold"
-#~ msgstr "pauzeren van de handel in goud"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Bread Market"
-#~ msgstr "Broodmarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Meat and Fish Market"
-#~ msgstr "Vlees- en Vismarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Mead and Wine Market"
-#~ msgstr "Mede en Wijnmarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale beer for coins."
-#~ msgstr "Marktgebouw om bier te verkopen voor munten."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale fish, meat and leather for coins."
-#~ msgstr "Marktgebouw voor de verkoop van vis, vlees en leer voor munten."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale mead and wine for coins."
-#~ msgstr "Marktgebouw om mede en wijn te verkopen voor munten."
