@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-07 03:11+0100\n"
+"POT-Creation-Date: 2025-03-08 03:11+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -607,15 +607,13 @@ msgstr "lovení krokodýla"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:49
-#, fuzzy
 msgid "gathering meat"
-msgstr "sbírání listí"
+msgstr "lovení masa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:57
-#, fuzzy
 msgid "gathering fish"
-msgstr "sbírání listí"
+msgstr "lovení ryb"
 
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:65
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:51
@@ -681,7 +679,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:8
 msgctxt "atlanteans_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Dům lovce krokodýlů"
+msgstr "Domek lovce krokodýlů"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:55
@@ -711,7 +709,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:8
 msgctxt "empire_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Dům lovce krokodýlů"
+msgstr "Domek lovce krokodýlů"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:59
@@ -726,7 +724,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:8
 msgctxt "frisians_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Dům lovce krokodýlů"
+msgstr "Domek lovce krokodýlů"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:86
@@ -763,26 +761,28 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Samozřejmě že lov krokodýlů je dobrý nápad. Výkonnost lovení se příliš "
+"nezlepší, ale může stoupnout produktivita, pokud v okolních lesích nebude "
+"dostatek zvěře."
 
 #. TRANSLATORS: Lore author helptext for a Frisian production site: Crocodile Hunter’s House
 #: addons/sumatran_tribe.wad/postload.lua:178
 msgctxt "frisians_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "lovec obhajuje záměr postavit domek lovce krokodýlů"
 
 #: addons/sumatran_tribe.wad/postload.lua:179
 #: addons/sumatran_tribe.wad/postload.lua:220
 #: addons/sumatran_tribe.wad/postload.lua:253
 #: addons/sumatran_tribe.wad/postload.lua:285
-#, fuzzy
 msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
-msgstr "Lovci pracující v tomto domku mohou lovit krokodýly na maso."
+msgstr ""
+"Loví zvěř na maso. Lovci pracující v tomto domku mohou také lovit krokodýly."
 
 #. TRANSLATORS: Note helptext for a Frisian production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:182
-#, fuzzy
 msgctxt "frisians_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -793,13 +793,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for a Frisian production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:184
-#, fuzzy
 msgctxt "frisians_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Budova má 2 různé pracovní oblasti. Menší pro rybaření a větší pro lov zvěře."
+"Budova má 2 různé pracovní oblasti. Menší pro lovení krokodýlů a větší pro "
+"lov zvěře."
 
 #. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:188
@@ -810,6 +810,10 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Pokud je dostatek krokodýlů a jiné zvěře, lovci potřebují na získání jednoho "
+"kusu masa v průměru %1$s. Pokud nejsou krokodýli, budova funguje jako "
+"obyčejný domek lovce a lovci potřebují na získání jednoho kusu masa v "
+"průměru %2$s."
 
 #. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:190
@@ -825,6 +829,8 @@ msgid ""
 "If there is a sufficient amount of crocodiles and other animals, the hunters "
 "produce one fur after they have produced four pieces of meat."
 msgstr ""
+"Pokud je dostatek krokodýlů a jiné zvěře, lovci vyprodukují jednu kůži poté, "
+"co vyprodukují čtyři kusy masa."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Adaptation of a classical Latin quote meaning:
@@ -848,7 +854,6 @@ msgstr "nápis na neprozkoumaných územích císařských map"
 
 #. TRANSLATORS: Note helptext for an Empire production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:223
-#, fuzzy
 msgctxt "empire_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -859,13 +864,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for an Empire production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:225
-#, fuzzy
 msgctxt "empire_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Budova má 2 různé pracovní oblasti. Menší pro rybaření a větší pro lov zvěře."
+"Budova má 2 různé pracovní oblasti. Menší pro lovení krokodýlů a větší pro "
+"lov zvěře."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:229
@@ -876,6 +881,10 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Pokud je dostatek krokodýlů a jiné zvěře, lovci potřebují na získání jednoho "
+"kusu masa v průměru %1$s. Pokud nejsou krokodýli, budova funguje jako "
+"obyčejný domek lovce a lovci potřebují na získání jednoho kusu masa v "
+"průměru %2$s."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:231
@@ -890,16 +899,17 @@ msgid ""
 "Hunting crocodiles keeps our living space save. The crocodiles could easily "
 "become overpopulated once they appear in our territory."
 msgstr ""
+"Lov krokodýlů udržuje náš životní prostor bezpečným. Krokodýli by se snadno "
+"mohli přemnožit, jakmile se dostanou na naše území."
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Crocodile Hunter’s Hut
 #: addons/sumatran_tribe.wad/postload.lua:252
 msgctxt "barbarians_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's hut"
-msgstr ""
+msgstr "lovec obhajuje záměr postavit chatu lovce krokodýlů"
 
 #. TRANSLATORS: Note helptext for a Barbarian production site: Crocodile Hunter’s Hut, part 1
 #: addons/sumatran_tribe.wad/postload.lua:256
-#, fuzzy
 msgctxt "barbarians_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -910,13 +920,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for a Barbarian production site: Crocodile Hunter’s Hut, part 2
 #: addons/sumatran_tribe.wad/postload.lua:258
-#, fuzzy
 msgctxt "barbarians_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Budova má 2 různé pracovní oblasti. Menší pro rybaření a větší pro lov zvěře."
+"Budova má 2 různé pracovní oblasti. Menší pro lovení krokodýlů a větší pro "
+"lov zvěře."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Crocodile Hunter’s Hut, part 1
 #: addons/sumatran_tribe.wad/postload.lua:262
@@ -927,6 +937,10 @@ msgid ""
 "building operates as a basic hunter's hut and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Pokud je dostatek krokodýlů a jiné zvěře, lovci potřebují na získání jednoho "
+"kusu masa v průměru %1$s. Pokud nejsou krokodýli, budova funguje jako "
+"obyčejná chata lovce a lovci potřebují na získání jednoho kusu masa v "
+"průměru %2$s."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Crocodile Hunter’s Hut, part 2
 #: addons/sumatran_tribe.wad/postload.lua:264
@@ -942,16 +956,18 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Samozřejmě že lov krokodýlů je dobrý nápad. Výkonnost lovení se příliš "
+"nezlepší, ale může stoupnout produktivita, pokud v okolních lesích nebude "
+"dostatek zvěře."
 
 #. TRANSLATORS: Lore author helptext for an Atlantean production site: Crocodile Hunter’s House
 #: addons/sumatran_tribe.wad/postload.lua:284
 msgctxt "atlanteans_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "lovec obhajuje záměr postavit domek lovce krokodýlů"
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:288
-#, fuzzy
 msgctxt "atlanteans_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -962,13 +978,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:290
-#, fuzzy
 msgctxt "atlanteans_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Budova má 2 různé pracovní oblasti. Menší pro rybaření a větší pro lov zvěře."
+"Budova má 2 různé pracovní oblasti. Menší pro lovení krokodýlů a větší pro "
+"lov zvěře."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:294
@@ -979,6 +995,10 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Pokud je dostatek krokodýlů a jiné zvěře, lovci potřebují na získání jednoho "
+"kusu masa v průměru %1$s. Pokud nejsou krokodýli, budova funguje jako "
+"obyčejný domek lovce a lovci potřebují na získání jednoho kusu masa v "
+"průměru %2$s."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:296
@@ -993,26 +1013,25 @@ msgid ""
 "Hunting crocodiles keeps our living space save. The crocodiles could easily "
 "become overpopulated once they appear in our territory."
 msgstr ""
+"Lov krokodýlů udržuje náš životní prostor bezpečným. Krokodýli by se snadno "
+"mohli přemnožit, jakmile se dostanou na naše území."
 
 #. TRANSLATORS: Lore author helptext for an Amazon production site: Crocodile Hunter’s Hut
 #: addons/sumatran_tribe.wad/postload.lua:317
-#, fuzzy
 msgctxt "amazons_building"
 msgid "Hunter-gatherer advocates the idea of building a crocodile hunter's hut"
-msgstr "Lovkyně-sběračka pracující v tomto domku může lovit krokodýly na maso."
+msgstr "lovkyně-sběračka obhajuje záměr postavit chatu lovkyně krokodýlů"
 
 #: addons/sumatran_tribe.wad/postload.lua:318
-#, fuzzy
 msgid ""
 "Hunts animals to produce meat. Catches fish in the waters. Hunter-gatherers "
 "working at this house can hunt crocodiles too."
 msgstr ""
-"Loví zvěř na maso a chytá ryby ve vodě. Lovci v těchto domcích mohou také "
-"lovit krokodýly pro jejich kůži i na maso."
+"Loví zvěř na maso a chytá ryby ve vodě. Lovkyně-sběračky pracující v tomto "
+"domku mohou také lovit krokodýly."
 
 #. TRANSLATORS: Note helptext for an Amazon production site: Crocodile Hunter’s Hut, part 1
 #: addons/sumatran_tribe.wad/postload.lua:321
-#, fuzzy
 msgctxt "amazons_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -1023,13 +1042,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for an Amazon production site: Crocodile Hunter’s Hut, part 2
 #: addons/sumatran_tribe.wad/postload.lua:323
-#, fuzzy
 msgctxt "amazons_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting and fishing."
 msgstr ""
-"Budova má 2 různé pracovní oblasti. Menší pro rybaření a větší pro lov zvěře."
+"Budova má 2 různé pracovní oblasti. Menší pro lovení krokodýlů a větší pro "
+"lov zvěře a rybaření."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Crocodile Hunter’s Hut, part 1
 #: addons/sumatran_tribe.wad/postload.lua:327
@@ -1040,6 +1059,10 @@ msgid ""
 "are no crocodiles, the building operates as a basic hunter-gatherer's hut "
 "and needs %2$s on average to produce one meat or fish."
 msgstr ""
+"Pokud je dostatek krokodýlů, jiné zvěře a ryb, lovkyně-sběračky potřebují na "
+"získání jednoho kusu masa nebo jedné ryby v průměru %1$s. Pokud nejsou "
+"krokodýli, budova funguje jako obyčejná chata lovkyně-sběračky a potřebuje "
+"na získání jednoho kusu masa nebo ryby v průměru %2$s."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Crocodile Hunter’s Hut, part 2
 #: addons/sumatran_tribe.wad/postload.lua:329
@@ -2496,11 +2519,10 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:311
 msgctxt "sumatran_ware"
 msgid "The production of diamonds is skipped when whetstone is needed."
-msgstr ""
+msgstr "Pokud hospodářství potřebuje brousek, výroba diamantů je odložena."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:322
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid ""
 "While smelting metals, the fires of the sumatran furnaces are fed with coal."
@@ -2518,7 +2540,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:335
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid "Copper ore can be smelted into copper in a furnace."
 msgstr "Měděnou rudu lze v huti přetavit na měď."
@@ -2537,7 +2558,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:348
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid ""
 "Copper is needed for armor production. It is a rare building material too."
@@ -2555,7 +2575,6 @@ msgstr "Je vyráběna v hutích."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:361
-#, fuzzy
 msgctxt "ware"
 msgid "Iron ore can be smelted into iron in a furnace."
 msgstr "Železnou rudu lze v huti přetavit na železo."
@@ -2568,7 +2587,6 @@ msgstr "Železo je potřeba na výrobu nástrojů a zbraní."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:387
-#, fuzzy
 msgctxt "ware"
 msgid "Gold ore can be smelted into gold in a furnace."
 msgstr "Zlatou rudu lze v huti přetavit na zlato."
@@ -2676,7 +2694,6 @@ msgstr "Brousky jsou používány řemeslníky a vyrábí se v obyčejných díl
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:530
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:541
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid "Source material for armor production."
 msgstr "Vstupní materiál na výrobu zbroje."
@@ -3452,10 +3469,9 @@ msgid "Produces spears for hunters, warriors and hunting camps."
 msgstr "Zajišťuje výrobu oštěpů pro lovce, bojovníky a lovecké tábory."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1342
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "The experienced craftsman needs %1% on average to make one spear."
-msgstr "Zkušený řemeslník potřebuje na výrobu jednoho nástroje v průměru %1%."
+msgstr "Zkušený řemeslník potřebuje na výrobu jedno oštěpu v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Coppersmith’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1349
@@ -4479,43 +4495,3 @@ msgstr "Vinařka"
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
 msgstr "Dřevorubec"
-
-#~ msgctxt "frisians_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Tato budova může vyprodukovat jedno maso za %1$s až %2$s, záleží na tom, "
-#~ "jak dlouhou cestu musí lovec urazit."
-
-#~ msgctxt "empire_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Tato budova může vyprodukovat jedno maso za %1$s až %2$s, záleží na tom, "
-#~ "jak dlouhou cestu musí lovec urazit."
-
-#~ msgctxt "barbarians_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Tato budova může vyprodukovat jedno maso za %1$s až %2$s, záleží na tom, "
-#~ "jak dlouhou cestu musí lovec urazit."
-
-#~ msgctxt "atlanteans_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Tato budova může vyprodukovat jedno maso za %1$s až %2$s, záleží na tom, "
-#~ "jak dlouhou cestu musí lovec urazit."
-
-#~ msgctxt "amazons_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Tato budova může vyprodukovat jedno maso za %1$s až %2$s, záleží na tom, "
-#~ "jak dlouhou cestu musí lovec urazit."

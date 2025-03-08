@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-07 03:11+0100\n"
+"POT-Creation-Date: 2025-03-08 03:11+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -613,15 +613,13 @@ msgstr "Krokodilen to jagen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:49
-#, fuzzy
 msgid "gathering meat"
-msgstr "Bladen to pottjen"
+msgstr "Fleesk to pottjen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:57
-#, fuzzy
 msgid "gathering fish"
-msgstr "Bladen to pottjen"
+msgstr "Fiss to pottjen"
 
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:65
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:51
@@ -773,28 +771,29 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Natürelk is dat klook, Krokodilen to jagen. De Nüttelkheid vun de Jaggt word "
+"daardör twaar nich vööl verbetert, aver de Wöörde kann sik verhoogen, wenn "
+"in de Walden umbi nich genoog Deerten sünd."
 
 #. TRANSLATORS: Lore author helptext for a Frisian production site: Crocodile Hunter’s House
 #: addons/sumatran_tribe.wad/postload.lua:178
 msgctxt "frisians_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "Jäger is för de Plaan, een Krokodiljaggthuus to bauen"
 
 #: addons/sumatran_tribe.wad/postload.lua:179
 #: addons/sumatran_tribe.wad/postload.lua:220
 #: addons/sumatran_tribe.wad/postload.lua:253
 #: addons/sumatran_tribe.wad/postload.lua:285
-#, fuzzy
 msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
-"Jägers, wat bi deesem Jaggthuus warken, könen Krokodilen för hör Fleesk "
-"jagen."
+"Jaggt Deerten, um Fleesk to produzeren. Jägers in deesem Huus könen ok "
+"Krokodilen jagen."
 
 #. TRANSLATORS: Note helptext for a Frisian production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:182
-#, fuzzy
 msgctxt "frisians_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -805,14 +804,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for a Frisian production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:184
-#, fuzzy
 msgctxt "frisians_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is tum Fisken un dat "
-"grote tum Jagen."
+"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is för de "
+"Krokodiljaggt un dat grote tum Jagen vun anner Deerten."
 
 #. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:188
@@ -823,6 +821,10 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Wenn dat genoog Krokodilen un anner Deerten gifft, bruuken de Jägers dör de "
+"Bank %1$s, um een Fleesk to produzeren. Wenn dat keene Krokodilen gifft, "
+"warkt dat Huus as een normaal Jaggthuus un de Jägers bruken dör de Bank "
+"%2$s, um een Fleesk to produzeren."
 
 #. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:190
@@ -837,6 +839,8 @@ msgid ""
 "If there is a sufficient amount of crocodiles and other animals, the hunters "
 "produce one fur after they have produced four pieces of meat."
 msgstr ""
+"Wenn dat genoog Krokodilen un anner Deerten gifft, produzeren de Jägers een "
+"Fell, nadeem se veer Delen Fleesk produzeert hebben."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Adaptation of a classical Latin quote meaning:
@@ -860,7 +864,6 @@ msgstr "Staht up nich utwiesen Kuntreien up Rieks-Kaarten"
 
 #. TRANSLATORS: Note helptext for an Empire production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:223
-#, fuzzy
 msgctxt "empire_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -871,14 +874,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for an Empire production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:225
-#, fuzzy
 msgctxt "empire_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is tum Fisken un dat "
-"grote tum Jagen."
+"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is för de "
+"Krokodiljaggt un dat grote tum Jagen vun anner Deerten."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:229
@@ -889,6 +891,10 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Wenn dat genoog Krokodilen un anner Deerten gifft, bruuken de Jägers dör de "
+"Bank %1$s, um een Fleesk to produzeren. Wenn dat keene Krokodilen gifft, "
+"warkt dat Huus as een normaal Jaggthuus un de Jägers bruken dör de Bank "
+"%2$s, um een Fleesk to produzeren."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:231
@@ -902,16 +908,17 @@ msgid ""
 "Hunting crocodiles keeps our living space save. The crocodiles could easily "
 "become overpopulated once they appear in our territory."
 msgstr ""
+"Indeem wi Krokodilen jagen, hollen wi uns’ Levensrüümte seker. De Krokodilen "
+"könen sik licht to stark vermehren, wenn se eerst maal in uns’ Gewest leven."
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Crocodile Hunter’s Hut
 #: addons/sumatran_tribe.wad/postload.lua:252
 msgctxt "barbarians_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's hut"
-msgstr ""
+msgstr "Jäger is för de Plaan, eene Krokodiljaggtkaat to bauen"
 
 #. TRANSLATORS: Note helptext for a Barbarian production site: Crocodile Hunter’s Hut, part 1
 #: addons/sumatran_tribe.wad/postload.lua:256
-#, fuzzy
 msgctxt "barbarians_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -922,14 +929,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for a Barbarian production site: Crocodile Hunter’s Hut, part 2
 #: addons/sumatran_tribe.wad/postload.lua:258
-#, fuzzy
 msgctxt "barbarians_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is tum Fisken un dat "
-"grote tum Jagen."
+"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is för de "
+"Krokodiljaggt un dat grote tum Jagen vun anner Deerten."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Crocodile Hunter’s Hut, part 1
 #: addons/sumatran_tribe.wad/postload.lua:262
@@ -940,6 +946,10 @@ msgid ""
 "building operates as a basic hunter's hut and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Wenn dat genoog Krokodilen un anner Deerten gifft, bruuken de Jägers dör de "
+"Bank %1$s, um een Fleesk to produzeren. Wenn dat keene Krokodilen gifft, "
+"warkt de Kaat as eene normaal Jaggtkaat un de Jägers bruken dör de Bank "
+"%2$s, um een Fleesk to produzeren."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Crocodile Hunter’s Hut, part 2
 #: addons/sumatran_tribe.wad/postload.lua:264
@@ -954,16 +964,18 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Natürelk is dat klook, Krokodilen to jagen. De Nüttelkheid vun de Jaggt word "
+"daardör twaar nich vööl verbetert, aver de Wöörde kann sik verhoogen, wenn "
+"in de Walden umbi nich genoog Deerten sünd."
 
 #. TRANSLATORS: Lore author helptext for an Atlantean production site: Crocodile Hunter’s House
 #: addons/sumatran_tribe.wad/postload.lua:284
 msgctxt "atlanteans_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "Jäger is för de Plaan, een Krokodiljaggthuus to bauen"
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:288
-#, fuzzy
 msgctxt "atlanteans_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -974,14 +986,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:290
-#, fuzzy
 msgctxt "atlanteans_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is tum Fisken un dat "
-"grote tum Jagen."
+"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is för de "
+"Krokodiljaggt un dat grote tum Jagen vun anner Deerten."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:294
@@ -992,6 +1003,10 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Wenn dat genoog Krokodilen un anner Deerten gifft, bruuken de Jägers dör de "
+"Bank %1$s, um een Fleesk to produzeren. Wenn dat keene Krokodilen gifft, "
+"warkt dat Huus as een normaal Jaggthuus un de Jägers bruken dör de Bank "
+"%2$s, um een Fleesk to produzeren."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:296
@@ -1005,28 +1020,25 @@ msgid ""
 "Hunting crocodiles keeps our living space save. The crocodiles could easily "
 "become overpopulated once they appear in our territory."
 msgstr ""
+"Indeem wi Krokodilen jagen, hollen wi uns’ Levensrüümte seker. De Krokodilen "
+"könen sik licht to stark vermehren, wenn se eerst maal in uns’ Gewest leven."
 
 #. TRANSLATORS: Lore author helptext for an Amazon production site: Crocodile Hunter’s Hut
 #: addons/sumatran_tribe.wad/postload.lua:317
-#, fuzzy
 msgctxt "amazons_building"
 msgid "Hunter-gatherer advocates the idea of building a crocodile hunter's hut"
-msgstr ""
-"De Jägerske-Pottjerske, de bi deese Jaggthuus warkt, kann Krokodilen för hör "
-"Fleesk jagen."
+msgstr "Jägerske-Pottjerske is för de Plaan, eene Krokodiljaggtkaat to bauen"
 
 #: addons/sumatran_tribe.wad/postload.lua:318
-#, fuzzy
 msgid ""
 "Hunts animals to produce meat. Catches fish in the waters. Hunter-gatherers "
 "working at this house can hunt crocodiles too."
 msgstr ""
-"Jaggt Deerten, um Fleesk to produzeren, un fangt Fisse im Water. Jägers in "
-"deesem Huus könen ok Krokodilen för hör Huud un Fleesk jagen."
+"Jaggt Deerten, um Fleesk to produzeren. Fangt Fisse im Water. Jägerske-"
+"Pottjersken in deesem Huus könen ok Krokodilen jagen."
 
 #. TRANSLATORS: Note helptext for an Amazon production site: Crocodile Hunter’s Hut, part 1
 #: addons/sumatran_tribe.wad/postload.lua:321
-#, fuzzy
 msgctxt "amazons_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
@@ -1037,14 +1049,13 @@ msgstr ""
 
 #. TRANSLATORS: Note helptext for an Amazon production site: Crocodile Hunter’s Hut, part 2
 #: addons/sumatran_tribe.wad/postload.lua:323
-#, fuzzy
 msgctxt "amazons_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting and fishing."
 msgstr ""
-"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is tum Fisken un dat "
-"grote tum Jagen."
+"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is för de "
+"Krokodiljaggt un dat grote tum Jagen vun anner Deerten un tum Fisken."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Crocodile Hunter’s Hut, part 1
 #: addons/sumatran_tribe.wad/postload.lua:327
@@ -1055,6 +1066,11 @@ msgid ""
 "are no crocodiles, the building operates as a basic hunter-gatherer's hut "
 "and needs %2$s on average to produce one meat or fish."
 msgstr ""
+"Wenn dat genoog Krokodilen un anner Deerten un Fisse gifft, bruuken de "
+"Jägerske-Pottjersken dör de Bank %1$s, um een Fleesk of Fiss to produzeren. "
+"Wenn dat keene Krokodilen gifft, warkt de Kaat as eene normaal Jägerske-"
+"Pottjerske-Kaat un bruukt dör de Bank %2$s, um een Fleesk of Fiss to "
+"produzeren."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Crocodile Hunter’s Hut, part 2
 #: addons/sumatran_tribe.wad/postload.lua:329
@@ -2520,11 +2536,10 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:311
 msgctxt "sumatran_ware"
 msgid "The production of diamonds is skipped when whetstone is needed."
-msgstr ""
+msgstr "Edelstenen worden nich produzeert, wenn Sliepstenen bruukt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:322
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid ""
 "While smelting metals, the fires of the sumatran furnaces are fed with coal."
@@ -2543,7 +2558,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:335
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid "Copper ore can be smelted into copper in a furnace."
 msgstr "Koperkluut kann in eener Smelteree to Koper smelt worden."
@@ -2562,7 +2576,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:348
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid ""
 "Copper is needed for armor production. It is a rare building material too."
@@ -2579,7 +2592,6 @@ msgstr "’t word vun de Smeltereen produzeert."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:361
-#, fuzzy
 msgctxt "ware"
 msgid "Iron ore can be smelted into iron in a furnace."
 msgstr "Iesenkluut kann in eener Smelteree to Iesen smelt worden."
@@ -2592,7 +2604,6 @@ msgstr "Iesen bruukt man, um Warktüüg un Wapens to smeden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:387
-#, fuzzy
 msgctxt "ware"
 msgid "Gold ore can be smelted into gold in a furnace."
 msgstr "Goldkluut kann in eener Smelteree to Gold smelt worden."
@@ -2705,7 +2716,6 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:530
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:541
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid "Source material for armor production."
 msgstr "Quellmaterial tum Smeden vun Wapenrocken."
@@ -3489,10 +3499,9 @@ msgid "Produces spears for hunters, warriors and hunting camps."
 msgstr "Produzeert Pieken för Jägers, Ridders un Jaggtlagers."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1342
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "The experienced craftsman needs %1% on average to make one spear."
-msgstr "De Meister-Handwarker bruukt dör de Bank %1% um een Warktüüg to maken."
+msgstr "De Meister-Handwarker bruukt dör de Bank %1% um eene Pieke to maken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Coppersmith’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1349
@@ -4511,43 +4520,3 @@ msgstr "Wienmaker"
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
 msgstr "Boomslager"
-
-#~ msgctxt "frisians_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, "
-#~ "wo wied de Jäger lopen mutt."
-
-#~ msgctxt "empire_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, "
-#~ "wo wied de Jäger lopen mutt."
-
-#~ msgctxt "barbarians_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, "
-#~ "wo wied de Jäger lopen mutt."
-
-#~ msgctxt "atlanteans_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, "
-#~ "wo wied de Jäger lopen mutt."
-
-#~ msgctxt "amazons_building"
-#~ msgid ""
-#~ "This building can produce one meat between %1$s and %2$s, depending on "
-#~ "how far the hunter has to walk."
-#~ msgstr ""
-#~ "Deeses Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, "
-#~ "wo wied de Jägerske lopen mutt."
