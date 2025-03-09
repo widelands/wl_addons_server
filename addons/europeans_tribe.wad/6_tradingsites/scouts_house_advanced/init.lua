@@ -40,8 +40,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "snack", amount = 2 },
-        { name = "coin_silver", amount = 2 }
+        { name = "snack", amount = 2 }
     },
 
     programs = {
@@ -49,24 +48,22 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start scouting because ...
             descname = _"scouting",
             actions = {
-                "return=skipped when economy needs coin_silver",
+                "return=skipped when economy needs snack and not workers need experience",
                 "consume=snack",
                 "sleep=duration:15s",
-                "consume=coin_silver",
+                "callworker=scout",
                 "sleep=duration:15s",
                 "callworker=scout",
-                "sleep=duration:30s",
+                "sleep=duration:15s",
                 "callworker=scout",
-                "sleep=duration:30s",
-                "callworker=scout",
-                "sleep=duration:30s",
+                "sleep=duration:15s",
                 "callworker=scout"
             }
         },
         targeted_scouting = {
             descname = _"scouting",
             actions = {
-                "consume=snack coin_silver",
+                "consume=snack",
                 "callworker=targeted_scouting"
             }
         },

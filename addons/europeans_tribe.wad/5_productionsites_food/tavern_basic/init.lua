@@ -88,10 +88,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing a ration" because ...
             descname = pgettext("europeans_building", "preparing a ration"),
             actions = {
-                "return=skipped unless economy needs ration",
+                "return=skipped unless economy needs ration or workers need experience",
                 "consume=beer bread fish,meat",
                 "sleep=duration:5s",
-                "playsound=sound/empire/taverns/ration priority:80%",
+                "playsound=sound/barbarians/taverns/tavern priority:80%",
                 "animate=working duration:10s",
                 "sleep=duration:5s",
                 "produce=ration"

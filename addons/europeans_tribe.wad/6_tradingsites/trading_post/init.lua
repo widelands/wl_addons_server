@@ -28,21 +28,7 @@ wl.Descriptions():new_productionsite_type {
     
     size = "small",
     destructible = true,
-    
-    buildcost = {
-        granite = 1,
-        brick = 1,
-        grout = 1,
-        planks = 1,
-        marble = 1,
-        marble_column = 1
-    },
-    return_on_dismantle = {
-        scrap_wood = 1,
-        granite = 1,
-        marble = 1
-    },
-    
+        
     aihints = {},
 
     working_positions = {
@@ -50,11 +36,12 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coin_copper", amount = 12 },
+        { name = "meal", amount = 2 },
+        { name = "coin_copper", amount = 8 },
         { name = "coin_silver", amount = 6 },
         { name = "coin_gold", amount = 4 },
         { name = "quartz", amount = 6 },
-        { name = "diamond", amount = 4 },
+        { name = "diamond", amount = 4 }
     },
 
     programs = {
@@ -62,11 +49,18 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "return=skipped unless site has meal",
+                "return=skipped unless economy needs granite or economy needs marble",
+                "consume=meal",
+                "sleep=duration:10s",
                 "call=trade_granite_copper",
                 "call=trade_marble_copper",
-                "sleep=duration:30s",
+                "sleep=duration:10s",
                 "call=trade_granite_quartz",
                 "call=trade_marble_quartz",
+                "sleep=duration:10s",
+                "call=trade_granite_diamond",
+                "call=trade_marble_diamond",
             }
         },
         trade_granite_copper = {
@@ -76,9 +70,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs granite",
                 "callworker=find_pole",
                 "return=failed unless site has coin_copper:5",
-                "consume=coin_copper:5",
+                "consume=coin_copper:2",
                 "callworker=purchase_granite_copper",
-                "produce=granite:2",
+                "produce=granite:6",
                 "sleep=duration:30s",
             }
         },
@@ -91,7 +85,20 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has quartz:2",
                 "consume=quartz:2",
                 "callworker=purchase_granite_quartz",
-                "produce=granite:6",
+                "produce=granite:9",
+                "sleep=duration:30s",
+            }
+        },
+        trade_granite_diamond = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs granite",
+                "callworker=find_pole",
+                "return=failed unless site has diamond:2",
+                "consume=diamond:2",
+                "callworker=purchase_granite_diamond",
+                "produce=granite:12",
                 "sleep=duration:30s",
             }
         },
@@ -102,9 +109,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs marble",
                 "callworker=find_pole",
                 "return=failed unless site has coin_copper:8",
-                "consume=coin_copper:4",
+                "consume=coin_copper:2",
                 "callworker=purchase_marble_copper",
-                "produce=marble:2",
+                "produce=marble:4",
                 "sleep=duration:30s",
             }
         },
@@ -117,7 +124,20 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has quartz:2",
                 "consume=quartz:2",
                 "callworker=purchase_marble_quartz",
-                "produce=marble:4",
+                "produce=marble:6",
+                "sleep=duration:30s",
+            }
+        },
+        trade_marble_diamond = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs marble",
+                "callworker=find_pole",
+                "return=failed unless site has diamond:2",
+                "consume=diamond:2",
+                "callworker=purchase_marble_diamond",
+                "produce=marble:8",
                 "sleep=duration:30s",
             }
         },

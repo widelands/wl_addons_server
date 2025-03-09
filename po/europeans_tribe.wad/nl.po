@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-07 03:11+0100\n"
+"POT-Creation-Date: 2025-03-09 03:11+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1067,8 +1067,8 @@ msgstr "Geavanceerde Dierenboerderij"
 #: addons/europeans_tribe.wad/5_productionsites_food/mill_advanced/init.lua:62
 #: addons/europeans_tribe.wad/5_productionsites_food/mill_basic/init.lua:74
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_basic/init.lua:81
-#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:47
-#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:64
+#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:52
+#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:65
 #: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:68
 #: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:66
 #: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:101
@@ -2678,8 +2678,8 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration" because ...
 #: addons/europeans_tribe.wad/5_productionsites_food/tavern_basic/init.lua:89
-#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:59
-#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:74
+#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:64
+#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:75
 msgctxt "europeans_building"
 msgid "preparing a ration"
 msgstr ""
@@ -2691,14 +2691,14 @@ msgid "Advanced Inn"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a snack" because ...
-#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:73
-#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:87
+#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:78
+#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_basic/init.lua:88
 msgctxt "europeans_building"
 msgid "preparing a snack"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal" because ...
-#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:87
+#: addons/europeans_tribe.wad/5_productionsites_food/tavern_inn_advanced/init.lua:92
 msgctxt "europeans_building"
 msgid "preparing a meal"
 msgstr ""
@@ -2715,29 +2715,18 @@ msgctxt "europeans_building"
 msgid "Big Market"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:67
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:147
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:159
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:171
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:183
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:195
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:207
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:219
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:231
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:243
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:255
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:267
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:279
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:291
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:303
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:315
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:327
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:339
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:351
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:363
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:375
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:387
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:63
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:119
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:131
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:143
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:155
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:167
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:179
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:191
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:203
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:215
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:76
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:138
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:150
@@ -2774,16 +2763,18 @@ msgstr ""
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:202
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:214
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:226
-#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:63
-#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:74
-#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:87
-#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:100
-#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:113
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:50
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:68
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:81
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:94
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:107
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:120
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:133
 msgid "trading"
 msgstr "handel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:78
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:74
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:87
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:84
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:85
@@ -2792,7 +2783,7 @@ msgid "trading food for copper coins"
 msgstr "voedsel ruilen voor koperen munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:101
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:89
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:104
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:101
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:100
@@ -2801,7 +2792,7 @@ msgid "trading food for silver coins"
 msgstr "voedsel ruilen voor zilveren munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:124
+#: addons/europeans_tribe.wad/6_tradingsites/market_big/init.lua:104
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_agricultur/init.lua:121
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:118
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:115
@@ -2834,8 +2825,8 @@ msgid "Advanced Scout’s House"
 msgstr "Geavanceerd Verkennershuis "
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
-#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:50
-#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:67
+#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:49
+#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:64
 msgid "scouting"
 msgstr "verkennen"
 
@@ -2846,8 +2837,8 @@ msgid "Basic Scouts House"
 msgstr "Basis Verkennershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
-#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:81
-#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:94
+#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:80
+#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:91
 msgctxt "europeans_building"
 msgid "scouting"
 msgstr "verkennen"
@@ -5547,33 +5538,33 @@ msgstr ""
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2557
 msgctxt "warehousename"
-msgid "Amsterdam"
-msgstr "Amsterdam"
+msgid "Aberdeen"
+msgstr ""
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2558
 msgctxt "warehousename"
-msgid "Andorra"
-msgstr "Andorra"
+msgid "Algeciras"
+msgstr ""
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2559
+msgctxt "warehousename"
+msgid "Amsterdam"
+msgstr "Amsterdam"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2560
 msgctxt "warehousename"
 msgid "Antwerpen"
 msgstr "Antwerpen"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2560
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2561
 msgctxt "warehousename"
 msgid "Astrachan"
 msgstr "Astrachan"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2561
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2562
 msgctxt "warehousename"
 msgid "Athen"
 msgstr "Athene"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2562
-msgctxt "warehousename"
-msgid "Balaschicha"
-msgstr "Balaschicha"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2563
 msgctxt "warehousename"
@@ -5582,577 +5573,548 @@ msgstr "Barcelona"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2564
 msgctxt "warehousename"
-msgid "Beograd"
-msgstr "Belgrado"
+msgid "Bergen"
+msgstr ""
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2565
-msgctxt "warehousename"
-msgid "Berlin"
-msgstr "Berlijn"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2566
-msgctxt "warehousename"
-msgid "Bern"
-msgstr "Bern"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2567
-msgctxt "warehousename"
-msgid "Birmingham"
-msgstr "Birmingham"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2568
-msgctxt "warehousename"
-msgid "Bradford"
-msgstr "Bradford"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2569
 msgctxt "warehousename"
 msgid "Bremen"
 msgstr "Bremen"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2570
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2566
 msgctxt "warehousename"
-msgid "Bruxelles"
-msgstr "Brussel"
+msgid "Calais"
+msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2571
-msgctxt "warehousename"
-msgid "București"
-msgstr "Boekarest"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2572
-msgctxt "warehousename"
-msgid "Budapest"
-msgstr "Budapest"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2573
-msgctxt "warehousename"
-msgid "Charkiw"
-msgstr "Charkiw"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2574
-msgctxt "warehousename"
-msgid "Chișinău"
-msgstr "Chisinau"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2575
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2567
 msgctxt "warehousename"
 msgid "Den Haag"
 msgstr "Den Haag"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2576
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2568
+#, fuzzy
 msgctxt "warehousename"
-msgid "Dnipro"
-msgstr "Dnipro"
+msgid "Dover"
+msgstr "Ontdekking"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2577
-msgctxt "warehousename"
-msgid "Donezk"
-msgstr "Donezk"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2578
-msgctxt "warehousename"
-msgid "Dortmund"
-msgstr "Dortmund"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2579
-msgctxt "warehousename"
-msgid "Dresden"
-msgstr "Dresden"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2580
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2569
 msgctxt "warehousename"
 msgid "Dublin"
 msgstr "Dublin"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2581
-msgctxt "warehousename"
-msgid "Duisburg"
-msgstr "Duisburg"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2582
-msgctxt "warehousename"
-msgid "Düsseldorf"
-msgstr "Düsseldorf"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2583
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2570
 msgctxt "warehousename"
 msgid "Edinburgh"
 msgstr "Edinburgh"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2584
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2571
 msgctxt "warehousename"
-msgid "Essen"
-msgstr "Essen"
+msgid "Gdańsk"
+msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2585
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2572
 msgctxt "warehousename"
-msgid "Frankfurt"
-msgstr "Frankfurt"
+msgid "Genua"
+msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2586
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2573
 msgctxt "warehousename"
-msgid "Genova"
-msgstr "Genua"
+msgid "Gibraltar"
+msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2587
-msgctxt "warehousename"
-msgid "Glasgow"
-msgstr "Glasgow"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2588
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2574
 msgctxt "warehousename"
 msgid "Göteborg"
 msgstr "Gotenburg"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2589
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2575
 msgctxt "warehousename"
 msgid "Hamburg"
 msgstr "Hamburg"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2590
-msgctxt "warehousename"
-msgid "Hannover"
-msgstr "Hannover"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2591
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2576
 msgctxt "warehousename"
 msgid "Helsinki"
 msgstr "Helsinki"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2592
-msgctxt "warehousename"
-msgid "Homel"
-msgstr "Homel"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2593
-msgctxt "warehousename"
-msgid "Ischewsk"
-msgstr "Ischewsk"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2594
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2577
 msgctxt "warehousename"
 msgid "Istanbul"
 msgstr "Istanbul"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2595
-msgctxt "warehousename"
-msgid "Jaroslawl"
-msgstr "Jaroslawl"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2596
-msgctxt "warehousename"
-msgid "Kasan"
-msgstr "Kasan"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2597
-msgctxt "warehousename"
-msgid "Kirow"
-msgstr "Kirow"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2598
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2578
 msgctxt "warehousename"
 msgid "København"
 msgstr "Kopenhagen"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2599
-msgctxt "warehousename"
-msgid "Köln"
-msgstr "Keulen"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2600
-msgctxt "warehousename"
-msgid "Kraków"
-msgstr "Krakau"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2601
-msgctxt "warehousename"
-msgid "Krasnodar"
-msgstr "Krasnodar"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2602
-msgctxt "warehousename"
-msgid "Kyiv"
-msgstr "Kiev"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2603
-msgctxt "warehousename"
-msgid "Leeds"
-msgstr "Leeds"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2604
-msgctxt "warehousename"
-msgid "Leipzig"
-msgstr "Leipzig"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2605
-msgctxt "warehousename"
-msgid "Lipezk"
-msgstr "Lipezk"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2606
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2579
 msgctxt "warehousename"
 msgid "Lisboa"
 msgstr "Lissabon"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2607
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2580
 msgctxt "warehousename"
-msgid "Ljubljana"
-msgstr "Ljubljana"
+msgid "Liverpool"
+msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2608
-msgctxt "warehousename"
-msgid "Łódź"
-msgstr "Łódź"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2609
-msgctxt "warehousename"
-msgid "London"
-msgstr "Londen"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2610
-msgctxt "warehousename"
-msgid "Luxemburg"
-msgstr "Luxemburg"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2611
-msgctxt "warehousename"
-msgid "Lwiw"
-msgstr "Lwiw"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2612
-msgctxt "warehousename"
-msgid "Lyon"
-msgstr "Lyon"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2613
-msgctxt "warehousename"
-msgid "Machatschkala"
-msgstr "Machatschkala"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2614
-msgctxt "warehousename"
-msgid "Madrid"
-msgstr "Madrid"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2615
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2581
 msgctxt "warehousename"
 msgid "Málaga"
 msgstr "Malaga"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2616
-msgctxt "warehousename"
-msgid "Manchester"
-msgstr "Manchester"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2617
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2582
 msgctxt "warehousename"
 msgid "Marseille"
 msgstr "Marseille"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2618
-msgctxt "warehousename"
-msgid "Milano"
-msgstr "Milaan"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2619
-msgctxt "warehousename"
-msgid "Minsk"
-msgstr "Minsk"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2620
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2583
 msgctxt "warehousename"
 msgid "Monaco"
 msgstr "Monaco"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2621
-msgctxt "warehousename"
-msgid "Moskwa"
-msgstr "Moskou"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2622
-msgctxt "warehousename"
-msgid "München"
-msgstr "München"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2623
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2584
 msgctxt "warehousename"
 msgid "Napoli"
 msgstr "Napels"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2624
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2585
 msgctxt "warehousename"
 msgid "Nikosia"
 msgstr "Nikosia"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2625
-msgctxt "warehousename"
-msgid "Nürnberg"
-msgstr "Neurenberg"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2626
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2586
 msgctxt "warehousename"
 msgid "Odessa"
 msgstr "Odessa"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2627
-msgctxt "warehousename"
-msgid "Orenburg"
-msgstr "Orenburg"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2628
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2587
 msgctxt "warehousename"
 msgid "Oslo"
 msgstr "Oslo"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2629
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2588
 msgctxt "warehousename"
 msgid "Palermo"
 msgstr "Palermo"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2630
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2589
 msgctxt "warehousename"
-msgid "Paris"
-msgstr "Parijs"
+msgid "Piräus"
+msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2631
-msgctxt "warehousename"
-msgid "Pensa"
-msgstr "Pensa"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2632
-msgctxt "warehousename"
-msgid "Perm"
-msgstr "Perm"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2633
-msgctxt "warehousename"
-msgid "Podgorica"
-msgstr "Podgorica"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2634
-msgctxt "warehousename"
-msgid "Poznań"
-msgstr "Poznan"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2635
-msgctxt "warehousename"
-msgid "Praha"
-msgstr "Praag"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2636
-msgctxt "warehousename"
-msgid "Prishtina"
-msgstr "Pristina"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2637
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2590
 msgctxt "warehousename"
 msgid "Reykjavík"
 msgstr "Reykjavík"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2638
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2591
 msgctxt "warehousename"
 msgid "Rīga"
 msgstr "Rīga"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2639
-msgctxt "warehousename"
-msgid "Rjasan"
-msgstr "Rjasan"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2640
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2592
 msgctxt "warehousename"
 msgid "Roma"
 msgstr "Rome"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2641
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2593
 msgctxt "warehousename"
 msgid "Rotterdam"
 msgstr "Rotterdam"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2642
-msgctxt "warehousename"
-msgid "San Marino"
-msgstr "San Marino"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2643
-msgctxt "warehousename"
-msgid "Samara"
-msgstr "Samara"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2644
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2594
 msgctxt "warehousename"
 msgid "Sankt Petersburg"
 msgstr "Sint-Petersburg"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2645
-msgctxt "warehousename"
-msgid "Saporischschja"
-msgstr "Zaporizja"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2646
-msgctxt "warehousename"
-msgid "Sarajevo"
-msgstr "Sarajevo"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2647
-msgctxt "warehousename"
-msgid "Saratow"
-msgstr "Saratow"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2648
-msgctxt "warehousename"
-msgid "Sevilla"
-msgstr "Sevilla"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2649
-msgctxt "warehousename"
-msgid "Sheffield"
-msgstr "Sheffield"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2650
-msgctxt "warehousename"
-msgid "Skopje"
-msgstr "Skopje"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2651
-msgctxt "warehousename"
-msgid "Sofia"
-msgstr "Sofia"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2652
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2595
 msgctxt "warehousename"
 msgid "Stockholm"
 msgstr "Stockholm"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2653
-msgctxt "warehousename"
-msgid "Stuttgart"
-msgstr "Stuttgart"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2654
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2596
 msgctxt "warehousename"
 msgid "Tallinn"
 msgstr "Tallinn"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2655
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2597
 msgctxt "warehousename"
-msgid "Tirana"
-msgstr "Tirana"
+msgid "Triest"
+msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2656
-msgctxt "warehousename"
-msgid "Toljatti"
-msgstr "Toljatti"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2657
-msgctxt "warehousename"
-msgid "Torino"
-msgstr "Turijn"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2658
-msgctxt "warehousename"
-msgid "Ufa"
-msgstr "Ufa"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2659
-msgctxt "warehousename"
-msgid "Uljanowsk"
-msgstr "Uljanowsk"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2660
-msgctxt "warehousename"
-msgid "Vaduz"
-msgstr "Vaduz"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2661
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2598
 msgctxt "warehousename"
 msgid "Valencia"
 msgstr "Valencia"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2662
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2599
 msgctxt "warehousename"
 msgid "Valletta"
 msgstr "Valletta"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2663
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2603
+msgctxt "warehousename"
+msgid "Andorra"
+msgstr "Andorra"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2604
+msgctxt "warehousename"
+msgid "Beograd"
+msgstr "Belgrado"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2605
+msgctxt "warehousename"
+msgid "Berlin"
+msgstr "Berlijn"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2606
+msgctxt "warehousename"
+msgid "Bern"
+msgstr "Bern"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2607
+msgctxt "warehousename"
+msgid "Bratislava"
+msgstr ""
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2608
+msgctxt "warehousename"
+msgid "Bruxelles"
+msgstr "Brussel"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2609
+msgctxt "warehousename"
+msgid "București"
+msgstr "Boekarest"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2610
+msgctxt "warehousename"
+msgid "Budapest"
+msgstr "Budapest"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2611
+msgctxt "warehousename"
+msgid "Chișinău"
+msgstr "Chisinau"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2612
+msgctxt "warehousename"
+msgid "Kyiv"
+msgstr "Kiev"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2613
+msgctxt "warehousename"
+msgid "Ljubljana"
+msgstr "Ljubljana"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2614
+msgctxt "warehousename"
+msgid "London"
+msgstr "Londen"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2615
+msgctxt "warehousename"
+msgid "Luxemburg"
+msgstr "Luxemburg"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2616
+msgctxt "warehousename"
+msgid "Madrid"
+msgstr "Madrid"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2617
+msgctxt "warehousename"
+msgid "Minsk"
+msgstr "Minsk"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2618
+msgctxt "warehousename"
+msgid "Moskwa"
+msgstr "Moskou"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2619
+msgctxt "warehousename"
+msgid "Paris"
+msgstr "Parijs"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2620
+msgctxt "warehousename"
+msgid "Podgorica"
+msgstr "Podgorica"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2621
+msgctxt "warehousename"
+msgid "Praha"
+msgstr "Praag"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2622
+msgctxt "warehousename"
+msgid "Prishtina"
+msgstr "Pristina"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2623
+msgctxt "warehousename"
+msgid "San Marino"
+msgstr "San Marino"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2624
+msgctxt "warehousename"
+msgid "Sarajevo"
+msgstr "Sarajevo"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2625
+msgctxt "warehousename"
+msgid "Skopje"
+msgstr "Skopje"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2626
+msgctxt "warehousename"
+msgid "Sofia"
+msgstr "Sofia"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2627
+msgctxt "warehousename"
+msgid "Tirana"
+msgstr "Tirana"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2628
+msgctxt "warehousename"
+msgid "Vaduz"
+msgstr "Vaduz"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2629
 msgctxt "warehousename"
 msgid "Vilnius"
 msgstr "Vilnius"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2664
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2630
 msgctxt "warehousename"
 msgid "Warszawa"
 msgstr "Warszawa"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2665
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2631
 msgctxt "warehousename"
 msgid "Wien"
 msgstr "Wenen"
 
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2666
-msgctxt "warehousename"
-msgid "Wolgograd"
-msgstr "Wolgograd"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2667
-msgctxt "warehousename"
-msgid "Woronesch"
-msgstr "Woronesch"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2668
-msgctxt "warehousename"
-msgid "Wrocław"
-msgstr "Wrocław"
-
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2669
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2632
 msgctxt "warehousename"
 msgid "Zagreb"
 msgstr "Zagreb"
 
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2638
+msgctxt "warehousename"
+msgid "Birmingham"
+msgstr "Birmingham"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2639
+msgctxt "warehousename"
+msgid "Bradford"
+msgstr "Bradford"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2640
+msgctxt "warehousename"
+msgid "Charkiw"
+msgstr "Charkiw"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2641
+msgctxt "warehousename"
+msgid "Dnipro"
+msgstr "Dnipro"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2642
+msgctxt "warehousename"
+msgid "Donezk"
+msgstr "Donezk"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2643
+msgctxt "warehousename"
+msgid "Dortmund"
+msgstr "Dortmund"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2644
+msgctxt "warehousename"
+msgid "Dresden"
+msgstr "Dresden"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2645
+msgctxt "warehousename"
+msgid "Duisburg"
+msgstr "Duisburg"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2646
+msgctxt "warehousename"
+msgid "Düsseldorf"
+msgstr "Düsseldorf"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2647
+msgctxt "warehousename"
+msgid "Essen"
+msgstr "Essen"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2648
+msgctxt "warehousename"
+msgid "Frankfurt"
+msgstr "Frankfurt"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2649
+msgctxt "warehousename"
+msgid "Genova"
+msgstr "Genua"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2650
+msgctxt "warehousename"
+msgid "Glasgow"
+msgstr "Glasgow"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2651
+msgctxt "warehousename"
+msgid "Hannover"
+msgstr "Hannover"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2652
+msgctxt "warehousename"
+msgid "Homel"
+msgstr "Homel"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2653
+msgctxt "warehousename"
+msgid "Köln"
+msgstr "Keulen"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2654
+msgctxt "warehousename"
+msgid "Kraków"
+msgstr "Krakau"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2655
+msgctxt "warehousename"
+msgid "Krywyj Rih"
+msgstr ""
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2656
+msgctxt "warehousename"
+msgid "Leeds"
+msgstr "Leeds"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2657
+msgctxt "warehousename"
+msgid "Leipzig"
+msgstr "Leipzig"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2658
+msgctxt "warehousename"
+msgid "Łódź"
+msgstr "Łódź"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2659
+msgctxt "warehousename"
+msgid "Lwiw"
+msgstr "Lwiw"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2660
+msgctxt "warehousename"
+msgid "Lyon"
+msgstr "Lyon"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2661
+msgctxt "warehousename"
+msgid "Manchester"
+msgstr "Manchester"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2662
+msgctxt "warehousename"
+msgid "Milano"
+msgstr "Milaan"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2663
+msgctxt "warehousename"
+msgid "München"
+msgstr "München"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2664
+msgctxt "warehousename"
+msgid "Nürnberg"
+msgstr "Neurenberg"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2665
+msgctxt "warehousename"
+msgid "Poznań"
+msgstr "Poznan"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2666
+msgctxt "warehousename"
+msgid "Saporischschja"
+msgstr "Zaporizja"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2667
+msgctxt "warehousename"
+msgid "Sevilla"
+msgstr "Sevilla"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2668
+msgctxt "warehousename"
+msgid "Sheffield"
+msgstr "Sheffield"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2669
+msgctxt "warehousename"
+msgid "Stuttgart"
+msgstr "Stuttgart"
+
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2670
+msgctxt "warehousename"
+msgid "Torino"
+msgstr "Turijn"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2671
+msgctxt "warehousename"
+msgid "Wrocław"
+msgstr "Wrocław"
+
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2672
 msgctxt "warehousename"
 msgid "Zaragoza"
 msgstr "Zaragoza"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2676
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2678
 msgctxt "europeans"
 msgid "Worker missing"
 msgstr "Werker vermist"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2678
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2680
 msgctxt "europeans"
 msgid "Worker is coming"
 msgstr "Werker komt er aan"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2680
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2682
 msgctxt "europeans"
 msgid "Workers missing"
 msgstr "Werkers vermist"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2682
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2684
 msgctxt "europeans"
 msgid "Workers are coming"
 msgstr "Werkers komen eraan"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2684
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2686
 msgctxt "europeans"
 msgid "Expert missing"
 msgstr "Expert vermist"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2686
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2688
 msgctxt "europeans"
 msgid "Experts missing"
 msgstr "Experten vermist"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2700
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2702
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
@@ -6160,7 +6122,7 @@ msgstr[0] "%1% soldaat (+%2%)"
 msgstr[1] "%1% soldaten (+%2%)"
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2702
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2704
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
@@ -6168,7 +6130,7 @@ msgstr[0] "%1% soldaat"
 msgstr[1] "%1% soldaten"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2704
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2706
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
@@ -6176,7 +6138,7 @@ msgstr[0] "%1%(+%2%) soldaat (+%3%)"
 msgstr[1] "%1%(+%2%) soldaten (+%3%)"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
-#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2706
+#: addons/europeans_tribe.wad/tribes/initialization/units.lua:2708
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
@@ -6215,3 +6177,79 @@ msgstr "Hoofdkwartier"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
+
+#~ msgctxt "warehousename"
+#~ msgid "Balaschicha"
+#~ msgstr "Balaschicha"
+
+#~ msgctxt "warehousename"
+#~ msgid "Ischewsk"
+#~ msgstr "Ischewsk"
+
+#~ msgctxt "warehousename"
+#~ msgid "Jaroslawl"
+#~ msgstr "Jaroslawl"
+
+#~ msgctxt "warehousename"
+#~ msgid "Kasan"
+#~ msgstr "Kasan"
+
+#~ msgctxt "warehousename"
+#~ msgid "Kirow"
+#~ msgstr "Kirow"
+
+#~ msgctxt "warehousename"
+#~ msgid "Krasnodar"
+#~ msgstr "Krasnodar"
+
+#~ msgctxt "warehousename"
+#~ msgid "Lipezk"
+#~ msgstr "Lipezk"
+
+#~ msgctxt "warehousename"
+#~ msgid "Machatschkala"
+#~ msgstr "Machatschkala"
+
+#~ msgctxt "warehousename"
+#~ msgid "Orenburg"
+#~ msgstr "Orenburg"
+
+#~ msgctxt "warehousename"
+#~ msgid "Pensa"
+#~ msgstr "Pensa"
+
+#~ msgctxt "warehousename"
+#~ msgid "Perm"
+#~ msgstr "Perm"
+
+#~ msgctxt "warehousename"
+#~ msgid "Rjasan"
+#~ msgstr "Rjasan"
+
+#~ msgctxt "warehousename"
+#~ msgid "Samara"
+#~ msgstr "Samara"
+
+#~ msgctxt "warehousename"
+#~ msgid "Saratow"
+#~ msgstr "Saratow"
+
+#~ msgctxt "warehousename"
+#~ msgid "Toljatti"
+#~ msgstr "Toljatti"
+
+#~ msgctxt "warehousename"
+#~ msgid "Ufa"
+#~ msgstr "Ufa"
+
+#~ msgctxt "warehousename"
+#~ msgid "Uljanowsk"
+#~ msgstr "Uljanowsk"
+
+#~ msgctxt "warehousename"
+#~ msgid "Wolgograd"
+#~ msgstr "Wolgograd"
+
+#~ msgctxt "warehousename"
+#~ msgid "Woronesch"
+#~ msgstr "Woronesch"

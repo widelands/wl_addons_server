@@ -51,8 +51,9 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
+        { name = "beer", amount = 4 },
+        { name = "bread", amount = 4 },
         { name = "mead", amount = 4 },
-        { name = "beer_strong", amount = 4 },
         { name = "honey_bread", amount = 4 },
         { name = "meat", amount = 4 },
         { name = "fish", amount = 4 }
@@ -74,9 +75,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "preparing a ration"),
             actions = {
                 "return=skipped when economy needs snack and not economy needs ration",
-                "consume=mead,beer_strong honey_bread fish,meat",
+                "consume=beer bread fish,meat",
                 "sleep=duration:5s",
-                "playsound=sound/empire/taverns/ration priority:80%",
+                "playsound=sound/barbarians/taverns/tavern priority:80%",
                 "animate=working duration:10s",
                 "sleep=duration:5s",
                 "produce=ration"
@@ -87,7 +88,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "preparing a snack"),
             actions = {
                 "return=skipped when economy needs ration and not economy needs snack",
-                "consume=mead,beer_strong honey_bread fish meat",
+                "consume=mead honey_bread fish,meat",
                 "sleep=duration:5s",
                 "playsound=sound/barbarians/taverns/inn priority:80%",
                 "animate=working duration:10s",

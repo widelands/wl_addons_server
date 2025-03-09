@@ -67,6 +67,13 @@ wl.Descriptions():new_worker_type {
                 "createware=granite",
                 "return"
           },
+          purchase_granite_diamond = {
+                "findobject=attrib:tradepole radius:80",
+                "createware=diamond",
+                "walk=object",
+                "createware=granite",
+                "return"
+          },
           purchase_marble_copper = {
                 "findobject=attrib:tradepole radius:80",
                 "createware=coin_copper",
@@ -77,6 +84,13 @@ wl.Descriptions():new_worker_type {
           purchase_marble_quartz = {
                 "findobject=attrib:tradepole radius:80",
                 "createware=quartz",
+                "walk=object",
+                "createware=marble",
+                "return"
+          },
+          purchase_marble_diamond = {
+                "findobject=attrib:tradepole radius:80",
+                "createware=diamond",
                 "walk=object",
                 "createware=marble",
                 "return"
