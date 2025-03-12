@@ -34,13 +34,12 @@ wl.Descriptions():new_warehouse_type {
         brick = 5,
         grout = 5,
         planks = 5,
-        marble = 5,
         marble_column = 4
     },
     return_on_dismantle = {
         scrap_wood = 5,
         granite = 6,
-        marble = 6
+        marble = 4
     },
     
     aihints = {

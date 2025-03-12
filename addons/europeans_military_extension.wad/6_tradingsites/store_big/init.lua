@@ -33,14 +33,12 @@ wl.Descriptions():new_productionsite_type {
         brick = 4,
         grout = 4,
         planks = 4,
-        marble = 4,
-        marble_column = 2,
-        cloth = 2
+        marble_column = 2
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 4,
-        marble = 5
+        marble = 2
     },
     
     aihints = {
@@ -68,14 +66,12 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "call=trade_granite_copper",
-                "call=trade_marble_copper",
                 "sleep=duration:20s",
                 "call=trade_metal_alloy_copper",
                 "call=trade_metal_alloy_silver",
                 "call=trade_metal_alloy_gold",
                 "sleep=duration:20s",
                 "call=trade_granite_copper",
-                "call=trade_marble_copper",
                 "sleep=duration:20s",
                 "call=trade_metal_alloy_copper",
                 "call=trade_metal_alloy_silver",
@@ -91,17 +87,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coin_copper",
                 "animate=working duration:4m",
                 "produce=granite:2",
-            }
-        },
-        trade_marble_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs marble",
-                "return=failed unless site has coin_copper:2",
-                "consume=coin_copper:2",
-                "animate=working duration:4m",
-                "produce=marble:2",
             }
         },
         trade_metal_alloy_copper = {

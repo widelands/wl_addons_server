@@ -1,18 +1,21 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- dirname = path.dirname(__file__)
-dirname = "tribes/buildings/militarysites/atlanteans/guardhall/"
+dirname = "tribes/buildings/militarysites/empire/outpost/"
 
 wl.Descriptions():new_militarysite_type {
     name = "europeans_barrier_level_1",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Guardhall"),
+    descname = pgettext("europeans_building", "Outpost"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    animations = {
+    spritesheets = {
       idle = {
-         hotspot = { 62, 73 },
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 59, 77 }
       }
     },
     
@@ -22,25 +25,35 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_barrier_level_2",
         enhancement_cost = {
-            brick = 2,
-            grout = 2,
-            planks = 2,
-            marble = 2,
-            marble_column = 2
+            brick = 1,
+            grout = 1,
+            planks = 1,
+            marble_column = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
-            marble = 4
+            scrap_wood = 1,
+            granite = 1,
+            marble = 1
         },
+    },
+    buildcost = {
+        brick = 3,
+        grout = 3,
+        planks = 3,
+        marble_column = 2
+    },
+    return_on_dismantle = {
+        scrap_wood = 2,
+        granite = 2,
+        marble = 2
     },
 
     aihints = {},
 
-    max_soldiers = 6,
-    vision_range = 8,
+    max_soldiers = 8,
+    vision_range = 10,
     heal_per_second = 160,
-    conquers = 6,
+    conquers = 8,
     prefer_heroes = true,
 
     messages = {

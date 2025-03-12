@@ -37,16 +37,15 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_tower_level_1",
         enhancement_cost = {
-            brick = 2,
-            grout = 2,
-            planks = 2,
-            marble = 2,
-            marble_column = 2
+            brick = 1,
+            grout = 1,
+            planks = 1,
+            marble_column = 3
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
-            marble = 4
+            scrap_wood = 1,
+            granite = 1,
+            marble = 3
         },
     },
     buildcost = {
@@ -65,9 +64,9 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 4,
-    vision_range = 12,
+    vision_range = 16,
     heal_per_second = 120,
-    conquers = 8,
+    conquers = 12,
     prefer_heroes = false,
 
     messages = {

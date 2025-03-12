@@ -40,13 +40,12 @@ wl.Descriptions():new_militarysite_type {
             brick = 1,
             grout = 1,
             planks = 1,
-            marble = 1,
             marble_column = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
             granite = 1,
-            marble = 2
+            marble = 1
         },
     },
     buildcost = {
@@ -65,9 +64,9 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 2,
-    vision_range = 6,
+    vision_range = 8,
     heal_per_second = 60,
-    conquers = 5,
+    conquers = 6,
     prefer_heroes = false,
 
     messages = {

@@ -35,13 +35,12 @@ wl.Descriptions():new_productionsite_type {
         granite = 4,
         log = 4,
         reed = 2,
-        marble = 1,
         marble_column = 1
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 2,
-        marble = 2
+        marble = 1
     },
 
     aihints = {

@@ -54,13 +54,10 @@ wl.Descriptions():new_productionsite_type {
                 "consume=meal",
                 "sleep=duration:10s",
                 "call=trade_granite_copper",
-                "call=trade_marble_copper",
                 "sleep=duration:10s",
                 "call=trade_granite_quartz",
-                "call=trade_marble_quartz",
                 "sleep=duration:10s",
-                "call=trade_granite_diamond",
-                "call=trade_marble_diamond",
+                "call=trade_granite_diamond"
             }
         },
         trade_granite_copper = {
@@ -99,45 +96,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=diamond:2",
                 "callworker=purchase_granite_diamond",
                 "produce=granite:12",
-                "sleep=duration:30s",
-            }
-        },
-        trade_marble_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs marble",
-                "callworker=find_pole",
-                "return=failed unless site has coin_copper:8",
-                "consume=coin_copper:2",
-                "callworker=purchase_marble_copper",
-                "produce=marble:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_marble_quartz = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs marble",
-                "callworker=find_pole",
-                "return=failed unless site has quartz:2",
-                "consume=quartz:2",
-                "callworker=purchase_marble_quartz",
-                "produce=marble:6",
-                "sleep=duration:30s",
-            }
-        },
-        trade_marble_diamond = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs marble",
-                "callworker=find_pole",
-                "return=failed unless site has diamond:2",
-                "consume=diamond:2",
-                "callworker=purchase_marble_diamond",
-                "produce=marble:8",
                 "sleep=duration:30s",
             }
         },

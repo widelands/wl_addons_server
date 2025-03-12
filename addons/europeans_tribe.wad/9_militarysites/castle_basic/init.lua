@@ -36,16 +36,13 @@ wl.Descriptions():new_militarysite_type {
     buildcost = {
         brick = 4,
         grout = 4,
-        marble = 4,
-        marble_column = 4,
         planks = 4,
-        cloth = 4,
+        marble_column = 4
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        reed = 2,
         granite = 4,
-        marble = 6
+        marble = 4
     },
 
     aihints = {

@@ -36,16 +36,13 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_castle_level_1",
         enhancement_cost = {
-            brick = 3,
-            grout = 3,
-            planks = 3,
-            marble = 3,
-            marble_column = 3
+            brick = 2,
+            grout = 2,
+            planks = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 3,
-            granite = 3,
-            marble = 6
+            scrap_wood = 2,
+            granite = 2
         },
     },
     buildcost = {
@@ -68,7 +65,7 @@ wl.Descriptions():new_militarysite_type {
     max_soldiers = 8,
     vision_range = 12,
     heal_per_second = 200,
-    conquers = 8,
+    conquers = 9,
     prefer_heroes = true,
 
     messages = {

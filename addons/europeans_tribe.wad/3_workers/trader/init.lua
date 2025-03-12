@@ -29,8 +29,6 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_recruit = 1,
-        quartz = 1,
-        diamond = 1,
         gold = 1
     },
 
@@ -74,28 +72,7 @@ wl.Descriptions():new_worker_type {
                 "createware=granite",
                 "return"
           },
-          purchase_marble_copper = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=coin_copper",
-                "walk=object",
-                "createware=marble",
-                "return"
-          },
-          purchase_marble_quartz = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=quartz",
-                "walk=object",
-                "createware=marble",
-                "return"
-          },
-          purchase_marble_diamond = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=diamond",
-                "walk=object",
-                "createware=marble",
-                "return"
-          },
-    },
+    }
 }
 
 pop_textdomain()
