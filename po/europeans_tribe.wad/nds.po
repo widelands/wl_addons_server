@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-12 03:10+0100\n"
+"POT-Creation-Date: 2025-03-13 03:11+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -2822,10 +2822,9 @@ msgstr "Stoff-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Mine products Market"
-msgstr "Holtprodukten-Markt"
+msgstr "Bargbau-Produkten-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:9
@@ -5410,10 +5409,9 @@ msgstr "Markthuus, waar man Produkten ut Holt tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Market
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2446
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale mining products for coins."
-msgstr "Markthuus, waar man Produkten ut Holt tegen Deiten verkopen kann."
+msgstr "Markthuus, waar man Produkten vum Bargbau tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Big Market
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2453
@@ -5544,115 +5542,112 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2566
 msgctxt "warehousename"
 msgid "Albania"
-msgstr ""
+msgstr "Albanien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2567
-#, fuzzy
 msgctxt "warehousename"
 msgid "Andora"
 msgstr "Andorra"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2568
-#, fuzzy
 msgctxt "warehousename"
 msgid "Armenia"
-msgstr "Carmentis"
+msgstr "Armenien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2569
 msgctxt "warehousename"
 msgid "Austria"
-msgstr ""
+msgstr "Österriek"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2570
 msgctxt "warehousename"
 msgid "Azerbaijan"
-msgstr ""
+msgstr "Aserbaidschan"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2571
 msgctxt "warehousename"
 msgid "Belaruz"
-msgstr ""
+msgstr "Wittrussland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2572
 msgctxt "warehousename"
 msgid "Belgium"
-msgstr ""
+msgstr "Belgien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2573
 msgctxt "warehousename"
 msgid "Bosnia"
-msgstr ""
+msgstr "Bosnien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2574
 msgctxt "warehousename"
 msgid "Bulgaria"
-msgstr ""
+msgstr "Bulgarien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2575
 msgctxt "warehousename"
 msgid "Corsica"
-msgstr ""
+msgstr "Korsika"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2576
 msgctxt "warehousename"
 msgid "Creta"
-msgstr ""
+msgstr "Kreta"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2577
 msgctxt "warehousename"
 msgid "Croatia"
-msgstr ""
+msgstr "Kroatien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2578
 msgctxt "warehousename"
 msgid "Cyprus"
-msgstr ""
+msgstr "Zypern"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2579
 msgctxt "warehousename"
 msgid "Czecia"
-msgstr ""
+msgstr "Tschechien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2580
 msgctxt "warehousename"
 msgid "Denmark"
-msgstr ""
+msgstr "Dänemark"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2581
 msgctxt "warehousename"
 msgid "England"
-msgstr ""
+msgstr "England"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2582
 msgctxt "warehousename"
 msgid "Espania"
-msgstr ""
+msgstr "Spaanje"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2583
 msgctxt "warehousename"
 msgid "Estonia"
-msgstr ""
+msgstr "Estland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2584
 msgctxt "warehousename"
 msgid "Faroer"
-msgstr ""
+msgstr "Färöers"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2585
-#, fuzzy
 msgctxt "warehousename"
 msgid "Francia"
-msgstr "Valencia"
+msgstr "Frankja"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2586
 msgctxt "warehousename"
 msgid "Georgia"
-msgstr ""
+msgstr "Georgien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2587
 msgctxt "warehousename"
 msgid "Germania"
-msgstr ""
+msgstr "Germaanje"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2588
 msgctxt "warehousename"
@@ -5662,66 +5657,64 @@ msgstr "Gibraltar"
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2589
 msgctxt "warehousename"
 msgid "Greece"
-msgstr ""
+msgstr "Griekenland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2590
 msgctxt "warehousename"
 msgid "Guernsey"
-msgstr ""
+msgstr "Guernsey"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2591
 msgctxt "warehousename"
 msgid "Herzegovina"
-msgstr ""
+msgstr "Herzegovina"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2592
 msgctxt "warehousename"
 msgid "Hungaria"
-msgstr ""
+msgstr "Ungarn"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2593
 msgctxt "warehousename"
 msgid "Ireland"
-msgstr ""
+msgstr "Irland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2594
 msgctxt "warehousename"
 msgid "Island"
-msgstr ""
+msgstr "Island"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2595
 msgctxt "warehousename"
 msgid "Italia"
-msgstr ""
+msgstr "Itaalje"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2596
-#, fuzzy
 msgctxt "warehousename"
 msgid "Jersey "
-msgstr "Perses"
+msgstr "Jersey"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2597
 msgctxt "warehousename"
 msgid "Kosovo"
-msgstr ""
+msgstr "Kosovo"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2598
 msgctxt "warehousename"
 msgid "Latvia"
-msgstr ""
+msgstr "Lettland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2599
 msgctxt "warehousename"
 msgid "Liechtenstein"
-msgstr ""
+msgstr "Liechtenstein"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2600
 msgctxt "warehousename"
 msgid "Lithuania"
-msgstr ""
+msgstr "Litauen"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2601
-#, fuzzy
 msgctxt "warehousename"
 msgid "Luxembourg"
 msgstr "Luxemburg"
@@ -5729,12 +5722,12 @@ msgstr "Luxemburg"
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2602
 msgctxt "warehousename"
 msgid "Malta"
-msgstr ""
+msgstr "Malta"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2603
 msgctxt "warehousename"
 msgid "Moldova"
-msgstr ""
+msgstr "Moldawien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2604
 msgctxt "warehousename"
@@ -5744,44 +5737,42 @@ msgstr "Monaco"
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2605
 msgctxt "warehousename"
 msgid "Montenegro"
-msgstr ""
+msgstr "Montenegro"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2606
 msgctxt "warehousename"
 msgid "Netherlands"
-msgstr ""
+msgstr "Holland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2607
 msgctxt "warehousename"
 msgid "Norge"
-msgstr ""
+msgstr "Norge"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2608
 msgctxt "warehousename"
 msgid "North Macedonia"
-msgstr ""
+msgstr "Noordmazedonien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2609
 msgctxt "warehousename"
 msgid "Poland"
-msgstr ""
+msgstr "Polen"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2610
-#, fuzzy
 msgctxt "warehousename"
 msgid "Portugal"
-msgstr "Muu"
+msgstr "Portugal"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2611
-#, fuzzy
 msgctxt "warehousename"
 msgid "Romania"
-msgstr "Rom"
+msgstr "Rumäänje"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2612
 msgctxt "warehousename"
 msgid "Russia"
-msgstr ""
+msgstr "Russland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2613
 msgctxt "warehousename"
@@ -5791,67 +5782,67 @@ msgstr "San Marino"
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2614
 msgctxt "warehousename"
 msgid "Sardinia"
-msgstr ""
+msgstr "Sardinien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2615
 msgctxt "warehousename"
 msgid "Scotia"
-msgstr ""
+msgstr "Schottland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2616
 msgctxt "warehousename"
 msgid "Serbia"
-msgstr ""
+msgstr "Serbien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2617
 msgctxt "warehousename"
 msgid "Sicilia"
-msgstr ""
+msgstr "Sizielje"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2618
 msgctxt "warehousename"
 msgid "Slovakia"
-msgstr ""
+msgstr "Slovakei"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2619
 msgctxt "warehousename"
 msgid "Slowenia"
-msgstr ""
+msgstr "Sloweenje"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2620
 msgctxt "warehousename"
 msgid "Suomi"
-msgstr ""
+msgstr "Finnland"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2621
 msgctxt "warehousename"
 msgid "Sweden"
-msgstr ""
+msgstr "Schweden"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2622
 msgctxt "warehousename"
 msgid "Swissia"
-msgstr ""
+msgstr "Schweiz"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2623
 msgctxt "warehousename"
 msgid "Turkia"
-msgstr ""
+msgstr "Türkei"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2624
 msgctxt "warehousename"
 msgid "Ukrainia"
-msgstr ""
+msgstr "Ukraine"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2625
 msgctxt "warehousename"
 msgid "Vatikan"
-msgstr ""
+msgstr "Vatikan"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2626
 msgctxt "warehousename"
 msgid "Wales"
-msgstr ""
+msgstr "Wales"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2632
@@ -5952,407 +5943,3 @@ msgstr "Raadhuus"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "warehousename"
-#~ msgid "Aberdeen"
-#~ msgstr "Aberdeen"
-
-#~ msgctxt "warehousename"
-#~ msgid "Algeciras"
-#~ msgstr "Algeciras"
-
-#~ msgctxt "warehousename"
-#~ msgid "Amsterdam"
-#~ msgstr "Amsterdam"
-
-#~ msgctxt "warehousename"
-#~ msgid "Antwerpen"
-#~ msgstr "Antwerpen"
-
-#~ msgctxt "warehousename"
-#~ msgid "Astrachan"
-#~ msgstr "Astrachan"
-
-#~ msgctxt "warehousename"
-#~ msgid "Athen"
-#~ msgstr "Athen"
-
-#~ msgctxt "warehousename"
-#~ msgid "Barcelona"
-#~ msgstr "Barcelona"
-
-#~ msgctxt "warehousename"
-#~ msgid "Bergen"
-#~ msgstr "Bergen"
-
-#~ msgctxt "warehousename"
-#~ msgid "Bremen"
-#~ msgstr "Bremen"
-
-#~ msgctxt "warehousename"
-#~ msgid "Calais"
-#~ msgstr "Calais"
-
-#~ msgctxt "warehousename"
-#~ msgid "Den Haag"
-#~ msgstr "Den Haag"
-
-#~ msgctxt "warehousename"
-#~ msgid "Dover"
-#~ msgstr "Dover"
-
-#~ msgctxt "warehousename"
-#~ msgid "Dublin"
-#~ msgstr "Dublin"
-
-#~ msgctxt "warehousename"
-#~ msgid "Edinburgh"
-#~ msgstr "Edinburgh"
-
-#~ msgctxt "warehousename"
-#~ msgid "Gdańsk"
-#~ msgstr "Danzig"
-
-#~ msgctxt "warehousename"
-#~ msgid "Genua"
-#~ msgstr "Genua"
-
-#~ msgctxt "warehousename"
-#~ msgid "Göteborg"
-#~ msgstr "Göteborg"
-
-#~ msgctxt "warehousename"
-#~ msgid "Hamburg"
-#~ msgstr "Hamburg"
-
-#~ msgctxt "warehousename"
-#~ msgid "Helsinki"
-#~ msgstr "Helsinki"
-
-#~ msgctxt "warehousename"
-#~ msgid "Istanbul"
-#~ msgstr "Istanbul"
-
-#~ msgctxt "warehousename"
-#~ msgid "København"
-#~ msgstr "Kopenhagen"
-
-#~ msgctxt "warehousename"
-#~ msgid "Lisboa"
-#~ msgstr "Lissabon"
-
-#~ msgctxt "warehousename"
-#~ msgid "Liverpool"
-#~ msgstr "Liverpool"
-
-#~ msgctxt "warehousename"
-#~ msgid "Málaga"
-#~ msgstr "Málaga"
-
-#~ msgctxt "warehousename"
-#~ msgid "Marseille"
-#~ msgstr "Marseille"
-
-#~ msgctxt "warehousename"
-#~ msgid "Napoli"
-#~ msgstr "Napoli"
-
-#~ msgctxt "warehousename"
-#~ msgid "Nikosia"
-#~ msgstr "Nikosia"
-
-#~ msgctxt "warehousename"
-#~ msgid "Odessa"
-#~ msgstr "Odessa"
-
-#~ msgctxt "warehousename"
-#~ msgid "Oslo"
-#~ msgstr "Oslo"
-
-#~ msgctxt "warehousename"
-#~ msgid "Palermo"
-#~ msgstr "Palermo"
-
-#~ msgctxt "warehousename"
-#~ msgid "Piräus"
-#~ msgstr "Piräus"
-
-#~ msgctxt "warehousename"
-#~ msgid "Reykjavík"
-#~ msgstr "Reykjavík"
-
-#~ msgctxt "warehousename"
-#~ msgid "Rīga"
-#~ msgstr "Riga"
-
-#~ msgctxt "warehousename"
-#~ msgid "Rotterdam"
-#~ msgstr "Rotterdam"
-
-#~ msgctxt "warehousename"
-#~ msgid "Sankt Petersburg"
-#~ msgstr "Sankt Petersburg"
-
-#~ msgctxt "warehousename"
-#~ msgid "Stockholm"
-#~ msgstr "Stockholm"
-
-#~ msgctxt "warehousename"
-#~ msgid "Tallinn"
-#~ msgstr "Tallinn"
-
-#~ msgctxt "warehousename"
-#~ msgid "Triest"
-#~ msgstr "Triest"
-
-#~ msgctxt "warehousename"
-#~ msgid "Valletta"
-#~ msgstr "Valletta"
-
-#~ msgctxt "warehousename"
-#~ msgid "Beograd"
-#~ msgstr "Beograd"
-
-#~ msgctxt "warehousename"
-#~ msgid "Berlin"
-#~ msgstr "Berlin"
-
-#~ msgctxt "warehousename"
-#~ msgid "Bern"
-#~ msgstr "Bern"
-
-#~ msgctxt "warehousename"
-#~ msgid "Bratislava"
-#~ msgstr "Bratislava"
-
-#~ msgctxt "warehousename"
-#~ msgid "Bruxelles"
-#~ msgstr "Brüssel"
-
-#~ msgctxt "warehousename"
-#~ msgid "București"
-#~ msgstr "Bukarest"
-
-#~ msgctxt "warehousename"
-#~ msgid "Budapest"
-#~ msgstr "Budapest"
-
-#~ msgctxt "warehousename"
-#~ msgid "Chișinău"
-#~ msgstr "Chișinău"
-
-#~ msgctxt "warehousename"
-#~ msgid "Kyiv"
-#~ msgstr "Kiew"
-
-#~ msgctxt "warehousename"
-#~ msgid "Ljubljana"
-#~ msgstr "Ljubljana"
-
-#~ msgctxt "warehousename"
-#~ msgid "London"
-#~ msgstr "London"
-
-#~ msgctxt "warehousename"
-#~ msgid "Madrid"
-#~ msgstr "Madrid"
-
-#~ msgctxt "warehousename"
-#~ msgid "Minsk"
-#~ msgstr "Minsk"
-
-#~ msgctxt "warehousename"
-#~ msgid "Moskwa"
-#~ msgstr "Moskau"
-
-#~ msgctxt "warehousename"
-#~ msgid "Paris"
-#~ msgstr "Paris"
-
-#~ msgctxt "warehousename"
-#~ msgid "Podgorica"
-#~ msgstr "Podgorica"
-
-#~ msgctxt "warehousename"
-#~ msgid "Praha"
-#~ msgstr "Prag"
-
-#~ msgctxt "warehousename"
-#~ msgid "Prishtina"
-#~ msgstr "Prishtina"
-
-#~ msgctxt "warehousename"
-#~ msgid "Sarajevo"
-#~ msgstr "Sarajevo"
-
-#~ msgctxt "warehousename"
-#~ msgid "Skopje"
-#~ msgstr "Skopje"
-
-#~ msgctxt "warehousename"
-#~ msgid "Sofia"
-#~ msgstr "Sofia"
-
-#~ msgctxt "warehousename"
-#~ msgid "Tirana"
-#~ msgstr "Tirana"
-
-#~ msgctxt "warehousename"
-#~ msgid "Vaduz"
-#~ msgstr "Vaduz"
-
-#~ msgctxt "warehousename"
-#~ msgid "Vilnius"
-#~ msgstr "Vilnius"
-
-#~ msgctxt "warehousename"
-#~ msgid "Warszawa"
-#~ msgstr "Warschau"
-
-#~ msgctxt "warehousename"
-#~ msgid "Wien"
-#~ msgstr "Wien"
-
-#~ msgctxt "warehousename"
-#~ msgid "Zagreb"
-#~ msgstr "Zagreb"
-
-#~ msgctxt "warehousename"
-#~ msgid "Birmingham"
-#~ msgstr "Birmingham"
-
-#~ msgctxt "warehousename"
-#~ msgid "Bradford"
-#~ msgstr "Bradford"
-
-#~ msgctxt "warehousename"
-#~ msgid "Charkiw"
-#~ msgstr "Charkow"
-
-#~ msgctxt "warehousename"
-#~ msgid "Dnipro"
-#~ msgstr "Dnipro"
-
-#~ msgctxt "warehousename"
-#~ msgid "Donezk"
-#~ msgstr "Donezk"
-
-#~ msgctxt "warehousename"
-#~ msgid "Dortmund"
-#~ msgstr "Dortmund"
-
-#~ msgctxt "warehousename"
-#~ msgid "Dresden"
-#~ msgstr "Dresden"
-
-#~ msgctxt "warehousename"
-#~ msgid "Duisburg"
-#~ msgstr "Duisburg"
-
-#~ msgctxt "warehousename"
-#~ msgid "Düsseldorf"
-#~ msgstr "Düsseldorf"
-
-#~ msgctxt "warehousename"
-#~ msgid "Essen"
-#~ msgstr "Essen"
-
-#~ msgctxt "warehousename"
-#~ msgid "Frankfurt"
-#~ msgstr "Frankfurt"
-
-#~ msgctxt "warehousename"
-#~ msgid "Genova"
-#~ msgstr "Genf"
-
-#~ msgctxt "warehousename"
-#~ msgid "Glasgow"
-#~ msgstr "Glasgow"
-
-#~ msgctxt "warehousename"
-#~ msgid "Hannover"
-#~ msgstr "Hannover"
-
-#~ msgctxt "warehousename"
-#~ msgid "Homel"
-#~ msgstr "Homel"
-
-#~ msgctxt "warehousename"
-#~ msgid "Köln"
-#~ msgstr "Köln"
-
-#~ msgctxt "warehousename"
-#~ msgid "Kraków"
-#~ msgstr "Krakau"
-
-#~ msgctxt "warehousename"
-#~ msgid "Krywyj Rih"
-#~ msgstr "Krywyj Rih"
-
-#~ msgctxt "warehousename"
-#~ msgid "Leeds"
-#~ msgstr "Leeds"
-
-#~ msgctxt "warehousename"
-#~ msgid "Leipzig"
-#~ msgstr "Leipzig"
-
-#~ msgctxt "warehousename"
-#~ msgid "Łódź"
-#~ msgstr "Łódź"
-
-#~ msgctxt "warehousename"
-#~ msgid "Lwiw"
-#~ msgstr "Lwiw"
-
-#~ msgctxt "warehousename"
-#~ msgid "Lyon"
-#~ msgstr "Lyon"
-
-#~ msgctxt "warehousename"
-#~ msgid "Manchester"
-#~ msgstr "Manchester"
-
-#~ msgctxt "warehousename"
-#~ msgid "Milano"
-#~ msgstr "Mailand"
-
-#~ msgctxt "warehousename"
-#~ msgid "München"
-#~ msgstr "München"
-
-#~ msgctxt "warehousename"
-#~ msgid "Nürnberg"
-#~ msgstr "Nürnberg"
-
-#~ msgctxt "warehousename"
-#~ msgid "Poznań"
-#~ msgstr "Posen"
-
-#~ msgctxt "warehousename"
-#~ msgid "Saporischschja"
-#~ msgstr "Saporischschja"
-
-#~ msgctxt "warehousename"
-#~ msgid "Sevilla"
-#~ msgstr "Sevilla"
-
-#~ msgctxt "warehousename"
-#~ msgid "Sheffield"
-#~ msgstr "Sheffield"
-
-#~ msgctxt "warehousename"
-#~ msgid "Stuttgart"
-#~ msgstr "Stuttgart"
-
-#~ msgctxt "warehousename"
-#~ msgid "Torino"
-#~ msgstr "Torino"
-
-#~ msgctxt "warehousename"
-#~ msgid "Wrocław"
-#~ msgstr "Breslau"
-
-#~ msgctxt "warehousename"
-#~ msgid "Zaragoza"
-#~ msgstr "Zaragoza"
