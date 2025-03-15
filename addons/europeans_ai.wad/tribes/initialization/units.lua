@@ -151,85 +151,7 @@ wl.Descriptions():new_tribe {
             },
         },
         {
-            -- Building Materials 2 (Agricultur)
-            {
-                name = "reed",
-                default_target_quantity = 48,
-                preciousness = 2,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
-                        pgettext("europeans_ware", "Reed is an important building material."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
-                        pgettext("europeans_ware", "It is produced by the reed yard."),
-                    }
-                }
-            },
-            {
-                name = "cotton",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
-                        pgettext("europeans_ware", "Cotton is a raw material used to make clothing."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
-                        pgettext("europeans_ware", "It is produced by normal farms."),
-                    }
-                }
-            },
-            {
-                name = "wool",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
-                }
-            },
-            {
-                name = "cloth",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
-                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
-                }
-            },
-            {
-                name = "rubber",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
-                        pgettext("europeans_ware", "Rubber is needed to make improved armor and boots."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
-                        pgettext("europeans_ware", "It is produced in tree nursery or in rubber farm."),
-                    }
-                }
-            },
-            {
-                name = "leather",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
-                }
-            },
-            {
-                name = "armor",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
-                }
-            },
-        },
-        {
-            -- Building Materials 3 (Stone, Clay and Marble)
+            -- Building Materials 2 (Stone, Grout and Brick)
             {
                 name = "coal",
                 default_target_quantity = 48,
@@ -294,7 +216,10 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "The Europeans produces bricks in lime kiln or stonemasons house out of clay, granite and water.")
                     }
                 }
-            },
+            }
+        },
+        {
+            -- Minerals (Marble, Quartz, Diamond)
             {
                 name = "marble",
                 default_target_quantity = 32,
@@ -311,6 +236,24 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Marble Column
                     purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the Europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
+                }
+            },
+            {
+                name = "quartz",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
+                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used for trading.")
+                }
+            },
+            {
+                name = "diamond",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
+                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading.")
                 }
             },
         },
@@ -340,24 +283,6 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
                         pgettext("europeans_ware", "It is produced by the smelting works. Some valuable buildings need gold to be built.")
                     }
-                }
-            },
-            {
-                name = "quartz",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
-                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used for trading.")
-                }
-            },
-            {
-                name = "diamond",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
-                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading.")
                 }
             },
             {
@@ -567,6 +492,84 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wine
                     purpose = pgettext("europeans_ware", "It is produced in a winery out of grape. Advanced miners consume wine.")
+                }
+            },
+        },
+        {
+            -- Raw Materials for craft (Agricultur)
+            {
+                name = "reed",
+                default_target_quantity = 48,
+                preciousness = 2,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
+                        pgettext("europeans_ware", "Reed is an important building material."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
+                        pgettext("europeans_ware", "It is produced by the reed yard."),
+                    }
+                }
+            },
+            {
+                name = "cotton",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
+                        pgettext("europeans_ware", "Cotton is a raw material used to make clothing."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
+                        pgettext("europeans_ware", "It is produced by normal farms."),
+                    }
+                }
+            },
+            {
+                name = "wool",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
+                }
+            },
+            {
+                name = "cloth",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
+                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
+                }
+            },
+            {
+                name = "rubber",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
+                        pgettext("europeans_ware", "Rubber is needed to make improved armor and boots."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
+                        pgettext("europeans_ware", "It is produced in tree nursery or in rubber farm."),
+                    }
+                }
+            },
+            {
+                name = "leather",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
+                }
+            },
+            {
+                name = "armor",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
                 }
             },
         },
@@ -1865,20 +1868,6 @@ wl.Descriptions():new_tribe {
         {
             name = "europeans_well_level_4",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Well
-                purpose = pgettext("europeans_building", "Draws water out of the deep.")
-            }
-        },
-        {
-            name = "europeans_well_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Well
-                purpose = pgettext("europeans_building", "Draws water out of the deep.")
-            }
-        },
-        {
-            name = "europeans_well_level_6",
-            helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
                 purpose = pgettext("europeans_building", "Draws water out of the deep.")
             }
@@ -2135,13 +2124,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_coalmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-                purpose = pgettext("europeans_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
             name = "europeans_ironmine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
@@ -2177,13 +2159,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_ironmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-                purpose = pgettext("europeans_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
             name = "europeans_goldmine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Gold Mine
@@ -2215,13 +2190,6 @@ wl.Descriptions():new_tribe {
             name = "europeans_goldmine_level_4",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
-                purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_goldmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
                 purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
             }
         },
@@ -2403,6 +2371,13 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "europeans_market_stone",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
+                purpose = pgettext("europeans_building", "Market building to sale mining products for coins.")
+            }
+        },
+        {
             name = "europeans_market_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans market: Big Market
@@ -2518,124 +2493,69 @@ wl.Descriptions():new_tribe {
         }
     },
     
-    port_names = {
-        -- Europeans cities with ports
-        pgettext("warehousename", "Aberdeen"),
-        pgettext("warehousename", "Algeciras"),
-        pgettext("warehousename", "Amsterdam"),
-        pgettext("warehousename", "Antwerpen"),
-        pgettext("warehousename", "Astrachan"),
-        pgettext("warehousename", "Athen"),
-        pgettext("warehousename", "Barcelona"),
-        pgettext("warehousename", "Bergen"),
-        pgettext("warehousename", "Bremen"),
-        pgettext("warehousename", "Calais"),
-        pgettext("warehousename", "Den Haag"),
-        pgettext("warehousename", "Dover"),
-        pgettext("warehousename", "Dublin"),
-        pgettext("warehousename", "Edinburgh"),
-        pgettext("warehousename", "Gdańsk"),
-        pgettext("warehousename", "Genua"),
-        pgettext("warehousename", "Gibraltar"),
-        pgettext("warehousename", "Göteborg"),
-        pgettext("warehousename", "Hamburg"),
-        pgettext("warehousename", "Helsinki"),
-        pgettext("warehousename", "Istanbul"),
-        pgettext("warehousename", "København"),
-        pgettext("warehousename", "Lisboa"),
-        pgettext("warehousename", "Liverpool"),
-        pgettext("warehousename", "Málaga"),
-        pgettext("warehousename", "Marseille"),
-        pgettext("warehousename", "Monaco"),
-        pgettext("warehousename", "Napoli"),
-        pgettext("warehousename", "Nikosia"),
-        pgettext("warehousename", "Odessa"),
-        pgettext("warehousename", "Oslo"),
-        pgettext("warehousename", "Palermo"),
-        pgettext("warehousename", "Piräus"),
-        pgettext("warehousename", "Reykjavík"),
-        pgettext("warehousename", "Rīga"),
-        pgettext("warehousename", "Roma"),
-        pgettext("warehousename", "Rotterdam"),
-        pgettext("warehousename", "Sankt Petersburg"),
-        pgettext("warehousename", "Stockholm"),
-        pgettext("warehousename", "Tallinn"),
-        pgettext("warehousename", "Triest"),
-        pgettext("warehousename", "Valencia"),
-        pgettext("warehousename", "Valletta"),
-    },
-    headquaters_names = {
-        -- Europeans capital cities without ports
-        pgettext("warehousename", "Andorra"),
-        pgettext("warehousename", "Beograd"),
-        pgettext("warehousename", "Berlin"),
-        pgettext("warehousename", "Bern"),
-        pgettext("warehousename", "Bratislava"),
-        pgettext("warehousename", "Bruxelles"),
-        pgettext("warehousename", "București"),
-        pgettext("warehousename", "Budapest"),
-        pgettext("warehousename", "Chișinău"),
-        pgettext("warehousename", "Kyiv"),
-        pgettext("warehousename", "Ljubljana"),
-        pgettext("warehousename", "London"),
-        pgettext("warehousename", "Luxemburg"),
-        pgettext("warehousename", "Madrid"),
-        pgettext("warehousename", "Minsk"),
-        pgettext("warehousename", "Moskwa"),
-        pgettext("warehousename", "Paris"),
-        pgettext("warehousename", "Podgorica"),
-        pgettext("warehousename", "Praha"),
-        pgettext("warehousename", "Prishtina"),
-        pgettext("warehousename", "San Marino"),
-        pgettext("warehousename", "Sarajevo"),
-        pgettext("warehousename", "Skopje"),
-        pgettext("warehousename", "Sofia"),
-        pgettext("warehousename", "Tirana"),
-        pgettext("warehousename", "Vaduz"),
-        pgettext("warehousename", "Vilnius"),
-        pgettext("warehousename", "Warszawa"),
-        pgettext("warehousename", "Wien"),
-        pgettext("warehousename", "Zagreb"),
-
-
-    },
     warehouse_names = {
-        -- Other Europeans big cities with more than 500.000 people, except Russia
-        pgettext("warehousename", "Birmingham"),
-        pgettext("warehousename", "Bradford"),
-        pgettext("warehousename", "Charkiw"),
-        pgettext("warehousename", "Dnipro"),
-        pgettext("warehousename", "Donezk"),
-        pgettext("warehousename", "Dortmund"),
-        pgettext("warehousename", "Dresden"),
-        pgettext("warehousename", "Duisburg"),
-        pgettext("warehousename", "Düsseldorf"),
-        pgettext("warehousename", "Essen"),
-        pgettext("warehousename", "Frankfurt"),
-        pgettext("warehousename", "Genova"),
-        pgettext("warehousename", "Glasgow"),
-        pgettext("warehousename", "Hannover"),
-        pgettext("warehousename", "Homel"),
-        pgettext("warehousename", "Köln"),
-        pgettext("warehousename", "Kraków"),
-        pgettext("warehousename", "Krywyj Rih"),
-        pgettext("warehousename", "Leeds"),
-        pgettext("warehousename", "Leipzig"),
-        pgettext("warehousename", "Łódź"),
-        pgettext("warehousename", "Lwiw"),
-        pgettext("warehousename", "Lyon"),
-        pgettext("warehousename", "Manchester"),
-        pgettext("warehousename", "Milano"),
-        pgettext("warehousename", "München"),
-        pgettext("warehousename", "Nürnberg"),
-        pgettext("warehousename", "Poznań"),
-        pgettext("warehousename", "Saporischschja"),
-        pgettext("warehousename", "Sevilla"),
-        pgettext("warehousename", "Sheffield"),
-        pgettext("warehousename", "Stuttgart"),
-        pgettext("warehousename", "Torino"),
-        pgettext("warehousename", "Wrocław"),
-        pgettext("warehousename", "Zaragoza"),
+        -- Other Europeans countries and big Mediterranean islands
+        pgettext("warehousename", "Albania"),
+        pgettext("warehousename", "Andora"),
+        pgettext("warehousename", "Armenia"),
+        pgettext("warehousename", "Austria"),
+        pgettext("warehousename", "Azerbaijan"),
+        pgettext("warehousename", "Belaruz"),
+        pgettext("warehousename", "Belgium"),
+        pgettext("warehousename", "Bosnia"),
+        pgettext("warehousename", "Bulgaria"),
+        pgettext("warehousename", "Corsica"),
+        pgettext("warehousename", "Creta"),
+        pgettext("warehousename", "Croatia"),
+        pgettext("warehousename", "Cyprus"),
+        pgettext("warehousename", "Czecia"),
+        pgettext("warehousename", "Denmark"),
+        pgettext("warehousename", "England"),
+        pgettext("warehousename", "Espania"),
+        pgettext("warehousename", "Estonia"),
+        pgettext("warehousename", "Faroer"),
+        pgettext("warehousename", "Francia"),
+        pgettext("warehousename", "Georgia"),
+        pgettext("warehousename", "Germania"),
+        pgettext("warehousename", "Gibraltar"),
+        pgettext("warehousename", "Greece"),
+        pgettext("warehousename", "Guernsey"),
+        pgettext("warehousename", "Herzegovina"),
+        pgettext("warehousename", "Hungaria"),
+        pgettext("warehousename", "Ireland"),
+        pgettext("warehousename", "Island"),
+        pgettext("warehousename", "Italia"),
+        pgettext("warehousename", "Jersey "),
+        pgettext("warehousename", "Kosovo"),
+        pgettext("warehousename", "Latvia"),
+        pgettext("warehousename", "Liechtenstein"),
+        pgettext("warehousename", "Lithuania"),
+        pgettext("warehousename", "Luxembourg"),
+        pgettext("warehousename", "Malta"),
+        pgettext("warehousename", "Moldova"),
+        pgettext("warehousename", "Monaco"),
+        pgettext("warehousename", "Montenegro"),
+        pgettext("warehousename", "Netherlands"),
+        pgettext("warehousename", "Norge"),
+        pgettext("warehousename", "North Macedonia"),
+        pgettext("warehousename", "Poland"),
+        pgettext("warehousename", "Portugal"),
+        pgettext("warehousename", "Romania"),
+        pgettext("warehousename", "Russia"),
+        pgettext("warehousename", "San Marino"),
+        pgettext("warehousename", "Sardinia"),
+        pgettext("warehousename", "Scotia"),
+        pgettext("warehousename", "Serbia"),
+        pgettext("warehousename", "Sicilia"),
+        pgettext("warehousename", "Slovakia"),
+        pgettext("warehousename", "Slowenia"),
+        pgettext("warehousename", "Suomi"),
+        pgettext("warehousename", "Sweden"),
+        pgettext("warehousename", "Swissia"),
+        pgettext("warehousename", "Turkia"),
+        pgettext("warehousename", "Ukrainia"),
+        pgettext("warehousename", "Vatikan"),
+        pgettext("warehousename", "Wales"),
     },
     
    -- Productionsite status strings
@@ -2678,8 +2598,8 @@ wl.Descriptions():new_tribe {
     carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3", "europeans_carrier_ox", "europeans_carrier_donkey", "europeans_carrier_horse"},
     ferry = "europeans_ferry",
     geologist = "europeans_geologist",
-    port = "europeans_port",
-    scouts_house = "europeans_scouts_house_basic",
+    port = "europeans_port_big",
+    scouts_house = "europeans_scouts_house_advanced",
     ship = "europeans_ship",
     soldier = "europeans_soldier",
     

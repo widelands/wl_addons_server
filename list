@@ -405,7 +405,7 @@ Face to face artifacts run! You will see your enemy most of the time and only th
 kaputtnik
 kaputtnik
 1674478722
-295
+296
 1
 9.0
 0
@@ -636,7 +636,7 @@ Maps for the ''Fast Explorer wins'' win condition. ''Fast Explorer SP'' is for s
 kaputtnik
 kaputtnik
 1731074666
-62
+63
 1
 10.0
 0
@@ -1688,7 +1688,7 @@ Ohne Seefahrt kommt man nicht weit.
 Whiskey  Charlie Lima
 WeirdCatLord
 1674388992
-216
+218
 1
 7.0
 0
@@ -1761,7 +1761,7 @@ Ohne Seefahrt kommt man nicht weit.
 Whiskey  Charlie Lima
 WeirdCatLord
 1674389456
-202
+204
 0
 0.0
 0
@@ -2515,7 +2515,7 @@ Tribe's buildings for the start condition 'artifacts defended'<br><br><br><br>Ha
 aDiscoverer
 aDiscoverer
 1700941791
-104
+105
 1
 5.0
 0
@@ -2979,7 +2979,7 @@ Upgrade of smelting works and stonemason’s houses makes the Barbarians and Emp
 OIPUN
 OIPUN
 1719251296
-419
+422
 1
 10.0
 9
@@ -3375,7 +3375,7 @@ Basic Outpost
 blind
 blind3rdeye
 1700920458
-266
+267
 2
 10.0
 0
@@ -3453,7 +3453,7 @@ No description
 Mr_Reibekuchen
 Mr_Reibekuchen
 1647247922
-338
+340
 1
 10.0
 0
@@ -3901,7 +3901,7 @@ Analysis tool: Compare the resources in the vicinity of player positions with a 
 kaputtnik
 kaputtnik
 1706043656
-133
+135
 2
 10.0
 2
@@ -4104,7 +4104,7 @@ Adjust height for the whole map or apply heights to mountainous terrains automat
 kaputtnik
 kaputtnik
 1706093867
-80
+81
 0
 0.0
 0
@@ -4566,9 +4566,9 @@ MarkMcWire
 0
 0.0
 0
-1.5.1
+1.5.2
 18
-72336
+76146
 script
 0
 0
@@ -4601,8 +4601,8 @@ ru.mo
 sk.mo
 sv.mo
 26
-61b8651903be8af2e4c7ef256c5c9b90
-ee4f1c9dddb0703992b325ba5765f86d
+de2000962721d500e790fb0b76a4d9e6
+ece2356c78a3df0d0cb853bd55badfd5
 a10ee4293a25ebf3c49782a6a0fac2eb
 bac9abc1728afa7e9187364b2fc38834
 5bf228c3c420bcbe1db36c5567479e03
@@ -4638,9 +4638,9 @@ MarkMcWire
 0
 0.0
 0
-1.0.4
+1.0.6
 0
-248279
+244808
 starting_condition
 1
 europeans_tribe.wad
@@ -4718,7 +4718,7 @@ tribes/scripting/starting_conditions/headquarters_human.lua
 tribes/scripting/starting_conditions.lua
 0
 65
-60ecf3ffe951ce6f684ffe99015e177e
+91d7dcf87480ece52f2281b6367fc485
 fa217da3593442222ca3c2c20a290a4f
 8f6b04e3d33d8a5b8058e42ed9083bcd
 11bc0810b164f72e37e28c8e7894fbbc
@@ -4775,7 +4775,7 @@ f6c8a28dd17631108c1ac2aef4b57a1f
 f9535866c7d646605d5bf64a69a93c5c
 1efb7ff7991fe7e24bc91f3bb50e7e7c
 49887d8a8a2758f7fa58838695193c4c
-01c93aa837d4b57a2930fc2336a1f1e2
+78a79167144073264cd7204839fee1d1
 814c45142fa2b01db3c9821706ff54f0
 d386a85d50b3c4365782ae3c9f507f37
 1dca563dc2bd997a4c4dd246f7b9536a
@@ -4790,7 +4790,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-1013
+1016
 0
 0.0
 1
@@ -4866,7 +4866,7 @@ Adds additional buildings and trainingsites to the base definitions. This makes 
 MarkMcWire
 MarkMcWire
 1734222489
-267
+271
 2
 5.5
 2
@@ -5575,7 +5575,7 @@ Provides all current features of the Europeans tribe.
 MarkMcWire
 MarkMcWire
 1734192332
-302
+303
 2
 5.5
 3
@@ -9862,7 +9862,7 @@ The first player who has at least 4 fully trained soldiers in a warship wins the
 kaputtnik
 kaputtnik
 1731074892
-55
+56
 1
 10.0
 0
@@ -10002,7 +10002,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-584
+585
 0
 0.0
 0
@@ -12522,7 +12522,7 @@ Replaces some terrain graphics with those from the ancient Widelands days.
 Nordfriese
 Nordfriese
 1621620072
-396
+397
 3
 8.333333
 0
@@ -12821,17 +12821,19 @@ Contains ''Lake and Forest (edited)'', ''Atlas Range Spring'', ''Cenere di Pompe
 OIPUN
 OIPUN
 1739211494
-47
+49
 0
 0.0
 0
-1.0.2
+1.0.3
 8
-8441934
+9324403
 maps
 0
-17
+19
 maps_for_1.2
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/binary
 maps_for_1.2/Atlas_Range_Spring.wmf
 maps_for_1.2/Atlas_Range_Spring.wmf/binary
 maps_for_1.2/Calvisson_edited.wmf
@@ -12848,10 +12850,21 @@ maps_for_1.2/River_Explorers_edited.wmf
 maps_for_1.2/River_Explorers_edited.wmf/binary
 maps_for_1.2/Tripolis_edited.wmf
 maps_for_1.2/Tripolis_edited.wmf/binary
-91
+102
 addon
 dirnames
 icon.png
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/binary/heights
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/binary/mapobjects
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/binary/resource
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/binary/terrain
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/elemental
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/minimap.png
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/objective
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/player_names
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/player_position
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/port_spaces
+maps_for_1.2/7_Lakes_Kings_and_Queens.wmf/version
 maps_for_1.2/Atlas_Range_Spring.wmf/binary/heights
 maps_for_1.2/Atlas_Range_Spring.wmf/binary/mapobjects
 maps_for_1.2/Atlas_Range_Spring.wmf/binary/resource
@@ -12964,10 +12977,21 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-114
-fe25a722aea5f8e1b1256e97475587fb
+125
+cb9d9a777b0d5029b76553946df28431
 91db810ae00923f07f6f4d2bea0c9c09
 35a3268553d4c824a54f894b204a83d6
+eefbaf8a2353efed86b1ebd4be472c73
+cbe9116cc3965fbea6d5c5e8c2ae99a2
+3b0527bf753d78deabd8afc01a199efc
+ec32add459e04d13a38659b32ac436b2
+7e42fd86218d8e384b80eb9ee0c8febd
+71cd52e8b060114b19c55ee01fd8014f
+8a3fec7365886d5d668b02420d6d80e0
+99ea5efa5e48954ee0864d5a7c159577
+f94bdc83771a1b322af50f766751138c
+4dfe90af67977654dffdc33c8d8a03fc
+be1ec6097198188e04f23e3606e8cedb
 5ac4ec663ea3b5c290cad3feb284b8d8
 da4861f530337fd210f5d13ea6b431fb
 421644b02da2be7d775f401c7818247f
@@ -13086,7 +13110,7 @@ Minimalistic theme with reduced colors and small window borders.
 kaputtnik
 kaputtnik
 1614637671
-352
+353
 3
 8.666667
 0
@@ -13315,7 +13339,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-632
+633
 0
 0.0
 0
@@ -13389,7 +13413,7 @@ This set of maps contains 10 small and medium-sized maps for 2-8 players. You ca
 OIPUN
 OIPUN
 1615637480
-756
+757
 0
 0.0
 0
@@ -14317,7 +14341,7 @@ Reduce the game speed to 1× whenever a new message arrives in your inbox.
 Nordfriese
 Nordfriese
 1723377908
-105
+107
 2
 10.0
 3
@@ -14403,7 +14427,7 @@ Keep resource indicators until a mine starts to work in the area. Mines will gra
 tothxa
 tothxa
 1638011892
-293
+295
 0
 0.0
 2
@@ -14589,7 +14613,7 @@ A headquarters-like starting condition with approximately 30% more wares and wor
 the-x
 the-x
 1622124029
-435
+436
 1
 10.0
 0
@@ -14937,7 +14961,7 @@ Enhanced Trading Outpost starting conditions for all official tribes. Intended t
 Nordfriese & the-x
 Nordfriese
 1600000000
-345
+347
 0
 0.0
 2
@@ -15023,7 +15047,7 @@ Needs sumatran_world.wad. It uses partially graphics of other tribes, until new 
 OIPUN
 OIPUN
 1733507996
-176
+177
 3
 8.666667
 5
@@ -19610,7 +19634,7 @@ Modifies world for Sumatran tribe. The changes affect Amazons too. Tropical tree
 OIPUN
 OIPUN
 1733507938
-149
+150
 3
 8.666667
 4
@@ -20591,7 +20615,7 @@ Time limited peaceful mode
 aDiscoverer
 aDiscoverer
 1687443995
-62
+63
 2
 10.0
 3
@@ -21171,7 +21195,7 @@ Make the ‘water’ resource more useful by giving wells a larger radius and a 
 Nordfriese
 Nordfriese
 1600000000
-561
+563
 2
 10.0
 0
@@ -21695,7 +21719,7 @@ Do you sometimes ask yourself: 'Where are my heroes?'. This add-on finds heroes 
 kaputtnik
 kaputtnik
 1708356983
-192
+193
 1
 10.0
 2
@@ -21779,7 +21803,7 @@ Contains flowering meadows, clearings, dolomites, wet beach, green and muddy wat
 OIPUN
 OIPUN
 1622916439
-719
+720
 2
 9.5
 0
@@ -22320,7 +22344,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-488
+489
 2
 8.5
 0
