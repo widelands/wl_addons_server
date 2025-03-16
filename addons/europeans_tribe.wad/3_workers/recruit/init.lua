@@ -12,7 +12,6 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_carrier = 1,
-        quartz = 1,
         armor = 1
     },
 

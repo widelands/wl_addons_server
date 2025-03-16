@@ -52,10 +52,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "armor", amount = 6 },
-        { name = "leather", amount = 4 },
-        { name = "rubber", amount = 4 },
-        { name = "cloth", amount = 4 },
+        { name = "armor", amount = 16 },
         { name = "blackwood", amount = 4 }
     },
 
@@ -79,14 +76,14 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
-                "return=skipped when economy needs cloth and not economy needs armor_wooden",
+                "return=skipped when economy needs armor and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_wooden",
-                "consume=blackwood cloth",
+                "consume=blackwood armor",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
-                "playsound=sound/smiths/sharpening priority:90%",
+                "playsound=sound/mill/weaving priority:90%",
                 "produce=armor_wooden:2"
             }
         },
@@ -95,12 +92,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
                 "return=skipped when economy needs armor and not economy needs armor_processed",
-                "return=skipped when economy needs leather and not economy needs armor_processed",
                 "return=skipped when economy needs armor_wooden and not economy needs armor_processed",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_processed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_processed",
-                "consume=armor:2 leather",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "consume=armor:3",
+                "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:6m",
                 "produce=armor_processed:2"
             }
@@ -110,12 +106,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of chain armor"),
             actions = {
                 "return=skipped when economy needs armor and not economy needs armor_compressed",
-                "return=skipped when economy needs leather and not economy needs armor_compressed",
-                "return=skipped when economy needs rubber and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_wooden and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_processed and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_compressed",
-                "consume=armor:2 leather rubber",
+                "consume=armor:4",
+                "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:6m",
                 "produce=armor_compressed:2"
             }
@@ -125,12 +120,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of advanced armor"),
             actions = {
                 "return=skipped when economy needs armor and not economy needs armor_advanced",
-                "return=skipped when economy needs leather and not economy needs armor_advanced",
-                "return=skipped when economy needs rubber and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_wooden and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_processed and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_advanced",
-                "consume=armor:2 leather:2 rubber:2",
+                "consume=armor:6",
+                "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:6m",
                 "produce=armor_advanced:2"
             }

@@ -33,16 +33,6 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "mine",
-    enhancement = {
-        name = "europeans_coalmine_level_5",
-        enhancement_cost = {
-            planks = 4
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 1
-        }
-    },
 
     aihints = {},
 
@@ -91,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining coal"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_coal radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_coal radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=coal",
             }
         },
@@ -99,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_coal radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_coal radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=granite",
             }
         },
@@ -107,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining diamond"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_coal radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_coal radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=diamond",
             }
         },

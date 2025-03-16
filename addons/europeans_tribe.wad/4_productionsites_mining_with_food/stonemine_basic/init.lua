@@ -92,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:10s",
-                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
                 "produce=granite",
             }
         },
@@ -102,7 +102,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs granite",
                 "return=skipped when site has ration:3",
                 "animate=working duration:30s",
-                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
                 "produce=granite",
             }
         },
@@ -110,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining marble"),
             actions = {
                 "animate=working duration:10s",
-                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
                 "produce=marble",
             }
         },
@@ -118,7 +118,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining quartz"),
             actions = {
                 "animate=working duration:25s",
-                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
                 "produce=quartz",
             }
         },
@@ -126,7 +126,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining diamond"),
             actions = {
                 "animate=working duration:25s",
-                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
                 "produce=diamond",
             }
         },

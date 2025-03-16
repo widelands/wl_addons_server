@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- dirname = path.dirname(__file__)
-dirname = "tribes/buildings/productionsites/atlanteans/well/"
+dirname = "tribes/buildings/productionsites/empire/well/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_well_level_2",
@@ -10,13 +10,19 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
+    spritesheets = {
       idle = {
-         hotspot = { 36, 42 },
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 39, 57 },
       },
       working = {
          basename = "idle",
-         hotspot = { 36, 42 },
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 39, 57 },
       },
     },
 
@@ -64,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs water",
                 "animate=working duration:8s",
-                "mine=resource_water radius:6 yield:70% when_empty:70%",
+                "mine=resource_water radius:4 yield:70% when_empty:70%",
                 "produce=water",
                 "animate=working duration:2s",
                 "produce=water",
@@ -80,7 +86,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water",
                 "animate=working duration:7s",
-                "mine=resource_water radius:6 yield:70% when_empty:70%",
+                "mine=resource_water radius:4 yield:70% when_empty:70%",
                 "animate=working duration:7s",
                 "produce=water",
                 "sleep=duration:60s"

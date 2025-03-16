@@ -82,7 +82,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
                 "return=skipped when economy needs cloth and not economy needs armor",
-                "consume=cotton,wool:4 leather:2 rubber:2",
+                "consume=cotton,wool:4 leather,rubber:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:3m",
                 "produce=armor:3"

@@ -5,13 +5,17 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_productionsite_type {
     name = "europeans_market_stone",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Mine products Market"),
+    descname = pgettext("europeans_building", "Mining products Market"),
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
     animations = {
         idle = {
+            hotspot = { 58, 58 },
+        },
+        working = {
+            basename = "idle",
             hotspot = { 58, 58 },
         },
     },

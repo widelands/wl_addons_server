@@ -84,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=reed:3",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:2m",
-                "produce=cloth:3"
+                "produce=cloth:2"
             }
         },
         produce_armor = {
@@ -93,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs reed and not economy needs armor",
                 "return=skipped when economy needs cloth and not economy needs armor",
-                "consume=reed:3 leather:2 rubber:2",
+                "consume=reed:3 leather,rubber:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:3m",
                 "produce=armor:2"

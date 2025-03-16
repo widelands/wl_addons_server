@@ -33,17 +33,6 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "mine",
-    enhancement = {
-        name = "europeans_food_ironmine_level_5",
-        enhancement_cost = {
-            planks = 4
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 1,
-            marble = 1
-        }
-    },
     
     aihints = {},
 
@@ -53,7 +42,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "snack", amount = 8 }
+        { name = "meal", amount = 8 }
     },
 
     programs = {
@@ -61,27 +50,27 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped when economy needs snack and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs ore",
-                "return=skipped unless site has snack:4",
-                "consume=snack",
+                "return=skipped when economy needs meal and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs ore",
+                "return=skipped unless site has meal:4",
+                "consume=meal",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_granite",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=snack",
+                "consume=meal",
                 "call=mine_granite",
                 "call=mine_ore",
                 "call=mine_granite",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=snack",
+                "consume=meal",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_granite",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=snack",
+                "consume=meal",
                 "call=mine_granite",
                 "call=mine_ore",
                 "call=mine_granite",
@@ -92,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_iron radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_iron radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=granite",
             }
         },
@@ -100,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining marble"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_iron radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_iron radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=marble",
             }
         },
@@ -108,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining quartz"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_iron radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_iron radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=quartz",
             }
         },
@@ -116,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining ore"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_iron radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_iron radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=ore",
             }
         },
@@ -124,7 +113,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=snack:4",
+                "consume=meal:4",
                 "produce=granite:8 marble:2 quartz:2 ore:4",
             }
         },

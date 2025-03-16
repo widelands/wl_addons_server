@@ -97,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_advanced and not economy needs helmet_wooden",
                 "consume=blackwood",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=helmet_wooden:2"
@@ -112,7 +112,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs helmet_mask and not economy needs spear_wooden",
                 "return=skipped when economy needs spear_advanced and not economy needs spear_wooden",
                 "consume=blackwood",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=spear_wooden:2"

@@ -68,9 +68,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "armor", amount = 4 },
-        { name = "leather", amount = 4 },
-        { name = "cloth", amount = 4 },
+        { name = "armor", amount = 8 },
         { name = "blackwood", amount = 4 }
     },
 
@@ -90,12 +88,12 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
-                "return=skipped when economy needs cloth and not economy needs armor_wooden",
+                "return=skipped when economy needs armor and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
-                "consume=blackwood cloth",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "consume=blackwood armor",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:10m",
-                "playsound=sound/smiths/sharpening priority:90%",
+                "playsound=sound/barbarians/weaver priority:90% allow_multiple",
                 "produce=armor_wooden:2"
             }
         },
@@ -104,10 +102,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
                 "return=skipped when economy needs armor and not economy needs armor_processed",
-                "return=skipped when economy needs leather and not economy needs armor_processed",
                 "return=skipped when economy needs armor_wooden and not economy needs armor_processed",
-                "consume=armor leather",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "consume=armor:3",
+                "playsound=sound/barbarians/weaver priority:90% allow_multiple",
                 "animate=working duration:10m",
                 "produce=armor_processed:2"
             }

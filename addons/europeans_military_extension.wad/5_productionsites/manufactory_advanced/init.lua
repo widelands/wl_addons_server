@@ -54,7 +54,8 @@ wl.Descriptions():new_productionsite_type {
     
     inputs = {
         { name = "blackwood", amount = 16 },
-        { name = "cloth", amount = 16 },
+        { name = "armor", amount = 16 },
+        { name = "cloth", amount = 12 },
         { name = "leather", amount = 12 },
         { name = "rubber", amount = 12 },
         { name = "coal", amount = 12 },
@@ -90,12 +91,12 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
-                "return=skipped when economy needs cloth and not economy needs armor_wooden",
-                "return=skipped when economy needs boots_wooden and not economy needs armor_wooden",
-                "return=skipped when economy needs helmet_wooden and not economy needs armor_wooden",
-                "return=skipped when economy needs spear_wooden and not economy needs armor_wooden",
-                "consume=blackwood cloth",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "return=skipped when economy needs armor and not economy needs armor_wooden",
+                "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
+                "return=skipped when economy needs armor_compressed and not economy needs armor_wooden",
+                "return=skipped when economy needs armor_advanced and not economy needs armor_wooden",
+                "consume=blackwood armor",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=armor_wooden:2"
@@ -107,13 +108,15 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs boots_wooden",
                 "return=skipped when economy needs cloth and not economy needs boots_wooden",
-                "return=skipped when economy needs armor_wooden and not economy needs boots_wooden",
-                "return=skipped when economy needs helmet_wooden and not economy needs boots_wooden",
-                "return=skipped when economy needs spear_wooden and not economy needs boots_wooden",
-                "consume=blackwood cloth",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:4m",
-                "playsound=sound/smiths/sharpening priority:90%",
+                "return=skipped when economy needs boots_sturdy and not economy needs boots_wooden",
+                "return=skipped when economy needs boots_swift and not economy needs boots_wooden",
+                "return=skipped when economy needs boots_advanced and not economy needs boots_wooden",
+                "consume=blackwood",
+                "playsound=sound/sawmill/sawmill priority:40% allow_multiple",
+                "animate=working duration:2m",
+                "consume=cloth",
+                "playsound=sound/mill/weaving priority:90%",
+                "animate=working duration:2m",
                 "produce=boots_wooden:2"
             }
         },
@@ -126,7 +129,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "consume=blackwood",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "playsound=sound/sawmill/sawmill priority:40% allow_multiple",
                 "animate=working duration:4m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=helmet_wooden:2"
@@ -141,7 +144,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "consume=blackwood",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "playsound=sound/sawmill/sawmill priority:40% allow_multiple",
                 "animate=working duration:4m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=spear_wooden:2"
@@ -151,8 +154,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
             descname = pgettext("europeans_building", "processing cloth to create tools and armor"),
             actions = {
-                "call=producing_armor",
-                "call=producing_armor",
                 "call=producing_armor_processed",
                 "call=producing_boots_sturdy",
                 "call=producing_armor_compressed",
@@ -161,36 +162,15 @@ wl.Descriptions():new_productionsite_type {
                 "call=producing_boots_advanced",
             }
         },
-        producing_armor = {
-            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
-            descname = pgettext("europeans_building", "tailoring a suit of armor"),
-            actions = {
-                "return=skipped when economy needs cloth and not economy needs armor",
-                "return=skipped when economy needs armor_processed and not economy needs armor",
-                "return=skipped when economy needs armor_compressed and not economy needs armor",
-                "return=skipped when economy needs armor_advanced and not economy needs armor",
-                "return=skipped when economy needs boots_sturdy and not economy needs armor",
-                "return=skipped when economy needs boots_swift and not economy needs armor",
-                "return=skipped when economy needs boots_advanced and not economy needs armor",
-                "consume=cloth:4",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:3m",
-                "produce=armor:3"
-            }
-        },
         producing_armor_processed = {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
-                "return=skipped when economy needs cloth and not economy needs armor_processed",
-                "return=skipped when economy needs leather and not economy needs armor_processed",
                 "return=skipped when economy needs armor and not economy needs armor_processed",
+                "return=skipped when economy needs armor_wooden and not economy needs armor_processed",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_processed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_processed",
-                "return=skipped when economy needs boots_sturdy and not economy needs armor_processed",
-                "return=skipped when economy needs boots_swift and not economy needs armor_processed",
-                "return=skipped when economy needs boots_advanced and not economy needs armor_processed",
-                "consume=cloth:3 leather",
+                "consume=armor:3",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:4m",
                 "produce=armor_processed:2"
@@ -200,16 +180,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of chain armor"),
             actions = {
-                "return=skipped when economy needs cloth and not economy needs armor_compressed",
-                "return=skipped when economy needs leather and not economy needs armor_compressed",
-                "return=skipped when economy needs rubber and not economy needs armor_compressed",
                 "return=skipped when economy needs armor and not economy needs armor_compressed",
+                "return=skipped when economy needs armor_wooden and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_processed and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_compressed",
-                "return=skipped when economy needs boots_sturdy and not economy needs armor_compressed",
-                "return=skipped when economy needs boots_swift and not economy needs armor_compressed",
-                "return=skipped when economy needs boots_advanced and not economy needs armor_compressed",
-                "consume=cloth:3 leather rubber",
+                "consume=armor:4",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:4m",
                 "produce=armor_compressed:2"
@@ -219,16 +194,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of advanced armor"),
             actions = {
-                "return=skipped when economy needs cloth and not economy needs armor_advanced",
-                "return=skipped when economy needs leather and not economy needs armor_advanced",
-                "return=skipped when economy needs rubber and not economy needs armor_advanced",
                 "return=skipped when economy needs armor and not economy needs armor_advanced",
+                "return=skipped when economy needs armor_wooden and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_processed and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_advanced",
-                "return=skipped when economy needs boots_sturdy and not economy needs armor_advanced",
-                "return=skipped when economy needs boots_swift and not economy needs armor_advanced",
-                "return=skipped when economy needs boots_advanced and not economy needs armor_advanced",
-                "consume=cloth:3 leather:2 rubber:2",
+                "consume=armor:6",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:4m",
                 "produce=armor_advanced:2"
@@ -240,16 +210,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs boots_sturdy",
                 "return=skipped when economy needs cloth and not economy needs boots_sturdy",
-                "return=skipped when economy needs leather and not economy needs boots_sturdy",
-                "return=skipped when economy needs armor and not economy needs boots_sturdy",
-                "return=skipped when economy needs armor_processed and not economy needs boots_sturdy",
-                "return=skipped when economy needs armor_compressed and not economy needs boots_sturdy",
-                "return=skipped when economy needs armor_advanced and not economy needs boots_sturdy",
+                "return=skipped when economy needs rubber and economy needs leather and not economy needs boots_sturdy",
+                "return=skipped when economy needs boots_wooden and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_swift and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_sturdy",
-                "consume=blackwood cloth leather",
+                "consume=blackwood",
+                "playsound=sound/sawmill/sawmill priority:40% allow_multiple",
+                "animate=working duration:2m",
+                "consume=cloth leather,rubber",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:4m",
+                "animate=working duration:2m",
                 "produce=boots_sturdy:2"
             }
         },
@@ -259,17 +229,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs boots_swift",
                 "return=skipped when economy needs cloth and not economy needs boots_swift",
-                "return=skipped when economy needs leather and not economy needs boots_swift",
-                "return=skipped when economy needs rubber and not economy needs boots_swift",
-                "return=skipped when economy needs armor and not economy needs boots_swift",
-                "return=skipped when economy needs armor_processed and not economy needs boots_swift",
-                "return=skipped when economy needs armor_compressed and not economy needs boots_swift",
-                "return=skipped when economy needs armor_advanced and not economy needs boots_swift",
+                "return=skipped when economy needs rubber and economy needs leather and not economy needs boots_swift",
+                "return=skipped when economy needs boots_wooden and not economy needs boots_swift",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_swift",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_swift",
-                "consume=blackwood cloth:2 leather rubber",
+                "consume=blackwood",
+                "playsound=sound/sawmill/sawmill priority:40% allow_multiple",
+                "animate=working duration:2m",
+                "consume=cloth leather,rubber:2",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:4m",
+                "animate=working duration:2m",
                 "produce=boots_swift:2"
             }
         },
@@ -279,17 +248,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs boots_advanced",
                 "return=skipped when economy needs cloth and not economy needs boots_advanced",
-                "return=skipped when economy needs leather and not economy needs boots_advanced",
-                "return=skipped when economy needs rubber and not economy needs boots_advanced",
-                "return=skipped when economy needs armor and not economy needs boots_advanced",
-                "return=skipped when economy needs armor_processed and not economy needs boots_advanced",
-                "return=skipped when economy needs armor_compressed and not economy needs boots_advanced",
-                "return=skipped when economy needs armor_advanced and not economy needs boots_advanced",
+                "return=skipped when economy needs rubber and economy needs leather and not economy needs boots_advanced",
+                "return=skipped when economy needs boots_wooden and not economy needs boots_advanced",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_advanced",
                 "return=skipped when economy needs boots_swift and not economy needs boots_advanced",
-                "consume=blackwood cloth:2 leather:2 rubber:2",
+                "consume=blackwood",
+                "playsound=sound/sawmill/sawmill priority:40% allow_multiple",
+                "animate=working duration:2m",
+                "consume=cloth:2 leather,rubber:2",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:4m",
+                "animate=working duration:2m",
                 "produce=boots_advanced:2"
             }
         },

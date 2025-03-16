@@ -33,17 +33,6 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "mine",
-    enhancement = {
-        name = "europeans_ironmine_level_5",
-        enhancement_cost = {
-            planks = 4
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 1,
-            marble = 1
-        }
-    },
     
     aihints = {},
 
@@ -92,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_iron radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_iron radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=granite",
             }
         },
@@ -100,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining marble"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_iron radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_iron radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=marble",
             }
         },
@@ -108,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining quartz"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_iron radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_iron radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=quartz",
             }
         },
@@ -116,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining ore"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_iron radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_iron radius:8 yield:100% when_empty:20% experience_on_fail:10%",
                 "produce=ore",
             }
         },

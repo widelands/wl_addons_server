@@ -32,23 +32,38 @@ wl.Descriptions():new_trainingsite_type {
     size = "big",
     destructible = true,
     
+    enhancement = {
+        name = "europeans_trainingscamp_big",
+        enhancement_cost = {
+            brick = 1,
+            grout = 1,
+            planks = 1,
+            marble_column = 2
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 1,
+            granite = 1,
+            marble = 2
+        },
+    },
+    
     buildcost = {
         brick = 3,
         grout = 3,
         planks = 3,
-        marble_column = 1
+        marble_column = 2
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 4,
-        marble = 1
+        marble = 2
     },
 
     aihints = {
-        trainingsites_max_percent = 100,
+        trainingsites_max_percent = 50,
         very_weak_ai_limit = 1,
-        weak_ai_limit = 3,
-        normal_ai_limit = 6,
+        weak_ai_limit = 2,
+        normal_ai_limit = 4,
     },
 
     working_positions = {
@@ -56,8 +71,7 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     inputs = {
-        { name = "coin_silver", amount = 16 },
-        { name = "coin_gold", amount = 16 }
+        { name = "coin_silver", amount = 16 }
     },
 
     programs = {
@@ -88,13 +102,13 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier attack from level 0 to level 1"),
             actions = {
-                "return=skipped unless site has coin_gold:2",
+                "return=skipped unless site has coin_silver:2",
                 "checksoldier=soldier:attack level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:attack level:0",
-                "consume=coin_gold",
+                "consume=coin_silver",
                 "animate=working duration:10s",
-                "consume=coin_gold",
+                "consume=coin_silver",
                 "animate=working duration:10s",
                 "train=soldier:attack level:1"
             }
@@ -103,13 +117,13 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier defense from level 0 to level 1"),
             actions = {
-                "return=skipped unless site has coin_gold:2",
+                "return=skipped unless site has coin_silver:2",
                 "checksoldier=soldier:defense level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:defense level:0",
-                "consume=coin_gold",
+                "consume=coin_silver",
                 "animate=working duration:10s",
-                "consume=coin_gold",
+                "consume=coin_silver",
                 "animate=working duration:10s",
                 "train=soldier:defense level:1"
             }

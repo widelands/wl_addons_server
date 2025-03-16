@@ -70,7 +70,8 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "blackwood", amount = 4 },
         { name = "cloth", amount = 4 },
-        { name = "leather", amount = 2 }
+        { name = "leather", amount = 2 },
+        { name = "rubber", amount = 2 }
     },
 
     programs = {
@@ -92,9 +93,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs cloth and not economy needs boots_wooden",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_wooden",
                 "consume=blackwood cloth",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:10m",
-                "playsound=sound/smiths/sharpening priority:90%",
+                "playsound=sound/barbarians/weaver priority:90% allow_multiple",
                 "produce=boots_wooden:2"
             }
         },
@@ -106,9 +107,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs cloth and not economy needs boots_sturdy",
                 "return=skipped when economy needs leather and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_wooden and not economy needs boots_sturdy",
-                "consume=blackwood cloth leather",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:10m",
+                "consume=blackwood",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
+                "animate=working duration:4m",
+                "consume=cloth leather,rubber",
+                "playsound=sound/barbarians/weaver priority:90% allow_multiple",
+                "animate=working duration:6m",
                 "produce=boots_sturdy:2"
             }
         }

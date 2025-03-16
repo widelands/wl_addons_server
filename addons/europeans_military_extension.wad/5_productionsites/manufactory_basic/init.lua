@@ -73,11 +73,13 @@ wl.Descriptions():new_productionsite_type {
     },
     
     inputs = {
-        { name = "blackwood", amount = 16 },
-        { name = "cloth", amount = 16 },
-        { name = "leather", amount = 12 },
-        { name = "coal", amount = 12 },
-        { name = "metal_alloy", amount = 12 },
+        { name = "blackwood", amount = 12 },
+        { name = "armor", amount = 8 },
+        { name = "cloth", amount = 8 },
+        { name = "leather", amount = 8 },
+        { name = "rubber", amount = 8 },
+        { name = "coal", amount = 8 },
+        { name = "metal_alloy", amount = 8 },
     },
 
     programs = {
@@ -111,13 +113,12 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
-                "return=skipped when economy needs boots_wooden and not economy needs armor_wooden",
-                "return=skipped when economy needs helmet_wooden and not economy needs armor_wooden",
-                "return=skipped when economy needs spear_wooden and not economy needs armor_wooden",
-                "consume=blackwood cloth",
-                "playsound=sound/barbarians/blackwood priority:60%",
+                "return=skipped when economy needs armor and not economy needs armor_wooden",
+                "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
+                "consume=blackwood armor",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:6m",
-                "playsound=sound/barbarians/blackwood priority:60%",
+                "playsound=sound/barbarians/weaver priority:90% allow_multiple",
                 "produce=armor_wooden:2"
             }
         },
@@ -130,9 +131,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs helmet_wooden and not economy needs boots_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs boots_wooden",
                 "consume=blackwood cloth",
-                "playsound=sound/barbarians/blackwood priority:60%",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:6m",
-                "playsound=sound/barbarians/blackwood priority:60%",
+                "playsound=sound/barbarians/weaver priority:90% allow_multiple",
                 "produce=boots_wooden:2"
             }
         },
@@ -145,9 +146,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "consume=blackwood",
-                "playsound=sound/barbarians/blackwood priority:60%",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:6m",
-                "playsound=sound/barbarians/blackwood priority:60%",
+                "playsound=sound/barbarians/blackwood priority:60% allow_multiple",
                 "produce=helmet_wooden:2"
             }
         },
@@ -160,9 +161,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "consume=blackwood",
-                "playsound=sound/barbarians/blackwood priority:60%",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:6m",
-                "playsound=sound/barbarians/blackwood priority:60%",
+                "playsound=sound/smiths/sharpening priority:90%",
                 "produce=spear_wooden:2"
             }
         },
@@ -178,11 +179,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
-                "return=skipped when economy needs cloth and not economy needs armor_processed",
-                "return=skipped when economy needs leather and not economy needs armor_processed",
-                "return=skipped when economy needs boots_sturdy and not economy needs armor_processed",
-                "consume=cloth:2 leather:2",
-                "playsound=sound/barbarians/weaver priority:90%",
+                "return=skipped when economy needs armor and not economy needs armor_processed",
+                "return=skipped when economy needs armor_wooden and not economy needs armor_processed",
+                "consume=armor:3",
+                "playsound=sound/barbarians/weaver priority:90% allow_multiple",
                 "animate=working duration:6m",
                 "produce=armor_processed:2"
             }
@@ -194,10 +194,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood and not economy needs boots_sturdy",
                 "return=skipped when economy needs cloth and not economy needs boots_sturdy",
                 "return=skipped when economy needs leather and not economy needs boots_sturdy",
-                "return=skipped when economy needs armor_processed and not economy needs boots_sturdy",
-                "consume=blackwood cloth:2 leather:2",
-                "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:6m",
+                "return=skipped when economy needs boots_wooden and not economy needs boots_sturdy",
+                "consume=blackwood",
+                "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
+                "animate=working duration:2m",
+                "consume=cloth leather,rubber",
+                "playsound=sound/barbarians/weaver priority:90% allow_multiple",
+                "animate=working duration:4m",
                 "produce=boots_sturdy:2"
             }
         },

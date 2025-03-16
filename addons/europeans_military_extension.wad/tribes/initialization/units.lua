@@ -2109,20 +2109,6 @@ wl.Descriptions():new_tribe {
         {
             name = "europeans_well_level_4",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Well
-                purpose = pgettext("europeans_building", "Draws water out of the deep.")
-            }
-        },
-        {
-            name = "europeans_well_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Well
-                purpose = pgettext("europeans_building", "Draws water out of the deep.")
-            }
-        },
-        {
-            name = "europeans_well_level_6",
-            helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
                 purpose = pgettext("europeans_building", "Draws water out of the deep.")
             }
@@ -2435,13 +2421,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_coalmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-                purpose = pgettext("europeans_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
             name = "europeans_ironmine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
@@ -2477,13 +2456,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_ironmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-                purpose = pgettext("europeans_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
             name = "europeans_goldmine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Gold Mine
@@ -2515,13 +2487,6 @@ wl.Descriptions():new_tribe {
             name = "europeans_goldmine_level_4",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
-                purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_goldmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
                 purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
             }
         },
@@ -2590,13 +2555,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_food_coalmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-                purpose = pgettext("europeans_food_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
             name = "europeans_food_ironmine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
@@ -2632,13 +2590,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_food_ironmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-                purpose = pgettext("europeans_food_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
             name = "europeans_food_goldmine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Gold Mine
@@ -2670,13 +2621,6 @@ wl.Descriptions():new_tribe {
             name = "europeans_food_goldmine_level_4",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
-                purpose = pgettext("europeans_food_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_goldmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
                 purpose = pgettext("europeans_food_building", "Digs gold ore out of the ground in mountain terrain.")
             }
         },
@@ -2756,34 +2700,6 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 2
                     pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
                 },
-            }
-        },
-        {
-            name = "europeans_training_center_health",
-            helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Dungeon
-                note = pgettext("europeans_building", "Trains soldiers only in ‘Health’."),
-            }
-        },
-        {
-            name = "europeans_training_center_evade",
-            helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Trainingscamp
-                note = pgettext("europeans_building", "Trains soldiers only in ‘Evade’."),
-            }
-        },
-        {
-            name = "europeans_training_center_defense",
-            helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
-                note = pgettext("europeans_building", "Trains soldiers only in ‘Defense’."),
-            }
-        },
-        {
-            name = "europeans_training_center_attack",
-            helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Fitness Center
-                note = pgettext("europeans_building", "Trains soldiers only in ‘Attack’."),
             }
         },
         {
@@ -3043,8 +2959,8 @@ wl.Descriptions():new_tribe {
     carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3", "europeans_carrier_ox", "europeans_carrier_donkey", "europeans_carrier_horse"},
     ferry = "europeans_ferry",
     geologist = "europeans_geologist",
-    port = "europeans_port",
-    scouts_house = "europeans_scouts_house_basic",
+    port = "europeans_port_big",
+    scouts_house = "europeans_scouts_house_advanced",
     ship = "europeans_ship",
     soldier = "europeans_soldier",
     
@@ -3071,11 +2987,11 @@ wl.Descriptions():new_tribe {
         forester = "europeans_tree_nursery_basic",
         hunter = "europeans_hunters_house_basic",
         military_small_primary = "europeans_sentry_basic",
-        military_small_secondary = "europeans_sentry_level_3",
+        military_small_secondary = "europeans_sentry_level_1",
         military_medium_primary = "europeans_barrier_basic",
-        military_medium_secondary = "europeans_barrier_level_3",
+        military_medium_secondary = "europeans_barrier_level_2",
         military_tower = "europeans_tower_basic",
-        military_fortress = "europeans_castle_basic",
+        military_fortress = "europeans_castle_level_2",
         military_castle = "europeans_castle_level_3",
         mill = "europeans_mill_basic",
         mine_coal = "europeans_coalmine_basic",
@@ -3088,8 +3004,8 @@ wl.Descriptions():new_tribe {
         second_carrier = "europeans_animal_farm_advanced",
         shipyard = "europeans_shipyard_basic",
         smelting = "europeans_smelting_works_basic",
-        training_small = "europeans_training_center_health",
-        training_large = "europeans_battlearena_basic",
+        training_small = "europeans_battlearena_basic",
+        training_large = "europeans_battlearena_level_3",
         warehouse = "europeans_warehouse",
         weapon_manufactory = "europeans_weaponsmithy_basic",
         weaving_mill = "europeans_weaving_mill_basic",

@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_stones radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_stones radius:8 yield:75% when_empty:15% experience_on_fail:10%",
                 "produce=granite",
             }
         },
@@ -99,7 +99,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining marble"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_stones radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_stones radius:8 yield:75% when_empty:15% experience_on_fail:10%",
                 "produce=marble",
             }
         },
@@ -107,7 +107,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining quartz"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_stones radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_stones radius:8 yield:75% when_empty:15% experience_on_fail:10%",
                 "produce=quartz",
             }
         },
@@ -115,7 +115,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining diamond"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_stones radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+                "mine=resource_stones radius:8 yield:75% when_empty:15% experience_on_fail:10%",
                 "produce=diamond",
             }
         },
