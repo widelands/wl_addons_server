@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-16 03:11+0100\n"
+"POT-Creation-Date: 2025-03-17 03:11+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -2698,7 +2698,6 @@ msgstr "Stoff-Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Mining products Market"
 msgstr "Bargbau-Produkten-Markt"
@@ -2849,38 +2848,33 @@ msgstr "Keen Soldat för deese Lehr funnen!"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Big Trainingscamp"
-msgstr "Lüttes Övenslager"
+msgstr "Grotes Övenslager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:74
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr "Soldaten-Gesundheid vun Stand 0 to Stand 1 to verbetern"
+msgstr "Soldaten-Gesundheid vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:104
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr "Soldaten-Angriff vun Stand 0 to Stand 1 to verbetern"
+msgstr "Soldaten-Angriff vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:134
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr "Soldaten-Verteidigung vun Stand 0 to Stand 1 to verbetern"
+msgstr "Soldaten-Verteidigung vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:164
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr "Soldaten-Utwieken vun Stand 0 up Stand 1 to verbetern"
+msgstr "Soldaten-Utwieken vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/9_militarysites/barrier_basic/init.lua:9
@@ -5850,53 +5844,3 @@ msgstr "Raadhuus"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Well Level 4"
-#~ msgstr "Well vun de Grött 4"
-
-#~ msgid "mining water"
-#~ msgstr "Water oftoboen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Well Level 5"
-#~ msgstr "Well vun de Grött 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Coal Mine Level 5"
-#~ msgstr "Köhle-Bargwark vun de Grött 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This coal mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De Ader vun deese Köhle-Bargwark is leeg. Dat Bargwark produzeert vun nu "
-#~ "an vööl dürer as normaal. Överlegg di, of du dat Bargwark plattrieten of "
-#~ "ofbrannen willst."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gold Mine Level 5"
-#~ msgstr "Gold-Bargwark vun de Grött 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This gold mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De Ader vun deese Gold-Bargwark is leeg. Dat Bargwark produzeert vun nu "
-#~ "an vööl dürer as normaal. Överlegg di, of du dat Bargwark plattrieten of "
-#~ "ofbrannen willst."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Iron Mine Level 5"
-#~ msgstr "Iesen-Bargwark vun de Grött 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This iron mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De Ader vun deese Iesen-Bargwark is leeg. Dat Bargwark produzeert vun nu "
-#~ "an vööl dürer as normaal. Överlegg di, of du dat Bargwark plattrieten of "
-#~ "ofbrannen willst."

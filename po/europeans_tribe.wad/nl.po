@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-16 03:11+0100\n"
+"POT-Creation-Date: 2025-03-17 03:11+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -2702,10 +2702,9 @@ msgstr "Textielmarkt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Mining products Market"
-msgstr "Markt voor Houtproducten"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/6_tradingsites/market_small_wood/init.lua:9
@@ -2853,38 +2852,33 @@ msgstr "Geen soldaat gevonden voor dit trainingsniveau!"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Big Trainingscamp"
-msgstr "Basis Trainingskamp"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:74
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr "gezondheid van soldaat upgraden van niveau 0 naar niveau 1"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:104
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr "soldaat aanval upgraden van niveau 0 naar niveau 1"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:134
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr "soldaat verdediging upgraden van niveau 0 naar niveau 1"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:164
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr "soldaat ontwijking upgraden van niveau 0 naar niveau 1"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/9_militarysites/barrier_basic/init.lua:9
@@ -5872,53 +5866,3 @@ msgstr "Hoofdkwartier"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Well Level 4"
-#~ msgstr "Waterbron Niveau 4"
-
-#~ msgid "mining water"
-#~ msgstr "water winnen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Well Level 5"
-#~ msgstr "Waterbron Niveau 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Coal Mine Level 5"
-#~ msgstr "Kolenmijn Niveau 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This coal mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze kolenmijn is uitgeput. Verwacht een sterk "
-#~ "verminderd rendement op je investering. Je zou moeten overwegen om hem te "
-#~ "ontmantelen of te vernietigen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gold Mine Level 5"
-#~ msgstr "Goudmijn Niveau 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This gold mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze goudmijn is uitgeput. Verwacht een sterk "
-#~ "verminderde opbrengst van je investering. Overweeg het te ontmantelen of "
-#~ "te vernietigen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Iron Mine Level 5"
-#~ msgstr "IJzermijn Niveau 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This iron mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze ijzermijn is uitgeput. Verwacht een sterk "
-#~ "verminderd rendement op je investering. Overweeg hem te ontmantelen of te "
-#~ "vernietigen."
