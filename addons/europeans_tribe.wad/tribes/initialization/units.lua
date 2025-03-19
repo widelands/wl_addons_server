@@ -765,8 +765,8 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_forester_basic",
-                default_target_quantity = 1,
+                name = "europeans_forester",
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
@@ -774,12 +774,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_forester_advanced",
+                name = "europeans_terraformer",
                 default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
-                    purpose = pgettext("europeans_worker", "Plant trees.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Plant trees and increases soil fertility.")
                 }
             },
             {
@@ -799,7 +799,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Gardener
                     purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house and planting reed, cotton and rubber trees.")
                 }
-            },
+            }
         },
         {
             -- Agriculture workers
@@ -861,6 +861,15 @@ wl.Descriptions():new_tribe {
         {
             -- Miners and Stonecutters
             {
+                name = "europeans_geologist",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Geologist
+                    purpose = pgettext("europeans_worker", "Discovers resources for mining.")
+                }
+            },
+            {
                 name = "europeans_stonecutter_basic",
                 default_target_quantity = 1,
                 preciousness = 1,
@@ -895,37 +904,10 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Miner
                     purpose = pgettext("europeans_worker", "Mines ore and minerals.")
                 }
-            },
-            {
-                name = "europeans_terraformer_basic",
-                default_target_quantity = 2,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
-                }
-            },
-            {
-                name = "europeans_terraformer_advanced",
-                default_target_quantity = 2,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
-                }
             }
         },
         {
             -- Scouting and Trading
-            {
-                name = "europeans_geologist",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Geologist
-                    purpose = pgettext("europeans_worker", "Discovers resources for mining.")
-                }
-            },
             {
                 name = "europeans_scout_basic",
                 default_target_quantity = 1,
@@ -1744,21 +1726,19 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_tree_nursery_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
-                purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
-                -- TRANSLATORS: Note helptext for a Europeans production site: Ranger's Hut
-                note = pgettext("europeans_building", "The ranger’s hut needs free space within the work area to plant the trees."),
-            }
-        },
-        {
-            name = "europeans_tree_nursery_advanced",
+            name = "europeans_foresters_hut",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
                 purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
                 -- TRANSLATORS: Note helptext for an Europeans production site: Forester's House
                 note = pgettext("europeans_building", "The forester’s house needs free space within the work area to plant the trees.")
+            }
+        },
+        {
+            name = "europeans_terraformers_house",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
+                purpose = pgettext("building", "Plant trees and increases soil fertility.")
             }
         },
         {
@@ -1833,20 +1813,6 @@ wl.Descriptions():new_tribe {
                    -- TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
                    pgettext("europeans_building", "Roads and trees along the shoreline block breeding and fishing."),
                 },
-            }
-        },
-        {
-            name = "europeans_terraformers_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Terraformer's Hut
-                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
-            }
-        },
-        {
-            name = "europeans_terraformers_house_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
-                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
             }
         },
         {
@@ -2639,7 +2605,7 @@ wl.Descriptions():new_tribe {
         ferry_yard = "europeans_shipyard_advanced",
         fisher = "europeans_fishers_house_basic",
         fish_meat_replenisher = "europeans_animal_farm_advanced",
-        forester = "europeans_tree_nursery_basic",
+        forester = "europeans_foresters_hut",
         hunter = "europeans_hunters_house_basic",
         military_small_primary = "europeans_sentry_basic",
         military_small_secondary = "europeans_barrier_basic",

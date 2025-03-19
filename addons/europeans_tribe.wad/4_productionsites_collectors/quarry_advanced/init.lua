@@ -21,7 +21,7 @@ wl.Descriptions():new_productionsite_type {
 
     size = "small",
     enhancement = {
-        name = "europeans_tree_nursery_advanced",
+        name = "europeans_farm_small_basic",
         enhancement_cost = {
             planks = 1
         },

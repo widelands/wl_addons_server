@@ -51,7 +51,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
-        normal_ai_limit = 2,
+        normal_ai_limit = 1,
     },
 
     working_positions = {
@@ -85,16 +85,15 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
-                "return=skipped when economy needs gold and not economy needs coin_copper",
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_fish_copper",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_meat_copper",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_leather_copper",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_reed_copper"
             }
         },
@@ -102,16 +101,15 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for silver coins"),
             actions = {
-                "return=skipped when economy needs gold and not economy needs coin_silver",
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_fish_silver",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_meat_silver",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_leather_silver",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_reed_silver"
             }
         },
@@ -119,16 +117,15 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for gold coins"),
             actions = {
-                "return=skipped when economy needs gold and not economy needs coin_gold",
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_fish_gold",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_meat_gold",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_leather_gold",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_reed_gold"
             }
         },
@@ -139,7 +136,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has fish:4",
                 "return=skipped unless site has gold",
                 "consume=fish:4 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_copper:2",
                 "sleep=duration:30s",
             }
@@ -151,7 +148,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has fish:6",
                 "return=skipped unless site has gold",
                 "consume=fish:6 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_silver:2",
                 "sleep=duration:30s",
             }
@@ -163,7 +160,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has fish:8",
                 "return=skipped unless site has gold",
                 "consume=fish:8 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_gold:2",
                 "sleep=duration:30s",
             }
@@ -175,7 +172,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has leather:4",
                 "return=skipped unless site has gold",
                 "consume=leather:4 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_copper:2",
                 "sleep=duration:30s",
             }
@@ -187,7 +184,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has leather:6",
                 "return=skipped unless site has gold",
                 "consume=leather:6 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_silver:2",
                 "sleep=duration:30s",
             }
@@ -199,7 +196,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has leather:8",
                 "return=skipped unless site has gold",
                 "consume=leather:8 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_gold:2",
                 "sleep=duration:30s",
             }
@@ -211,7 +208,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has meat:4",
                 "return=skipped unless site has gold",
                 "consume=meat:4 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_copper:2",
                 "sleep=duration:30s",
             }
@@ -223,7 +220,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has meat:6",
                 "return=skipped unless site has gold",
                 "consume=meat:6 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_silver:2",
                 "sleep=duration:30s",
             }
@@ -235,7 +232,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has meat:8",
                 "return=skipped unless site has gold",
                 "consume=meat:8 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_gold:2",
                 "sleep=duration:30s",
             }
@@ -247,7 +244,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed:4",
                 "return=skipped unless site has gold",
                 "consume=reed:4 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_copper:2",
                 "sleep=duration:30s",
             }
@@ -259,7 +256,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed:6",
                 "return=skipped unless site has gold",
                 "consume=reed:6 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_silver:2",
                 "sleep=duration:30s",
             }
@@ -271,7 +268,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed:8",
                 "return=skipped unless site has gold",
                 "consume=reed:8 gold",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=coin_gold:2",
                 "sleep=duration:30s",
             }

@@ -20,15 +20,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "small",
-    enhancement = {
-        name = "europeans_tree_nursery_advanced",
-        enhancement_cost = {
-            planks = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 1
-        },
-    },
    
     aihints = {
         very_weak_ai_limit = 4,
@@ -57,6 +48,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
+                "return=skipped when economy needs rubber and not economy needs log",
                 "callworker=harvest_tree"
             }
         },
@@ -66,6 +58,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs log and not economy needs rubber",
                 "callworker=harvest_rubber",
+                "sleep=duration:5s",
                 "callworker=harvest_tree"
             }
         },
