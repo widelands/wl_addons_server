@@ -78,6 +78,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making honey because ...
             descname = pgettext("europeans_building", "making honey"),
             actions = {
+                "return=skipped unless economy needs honey",
                 "sleep=duration:2s",
                 "callworker=check_flower",
                 "callworker=bees",
@@ -153,6 +154,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
             descname = pgettext("europeans_building", "harvesting berries"),
             actions = {
+                "return=skipped unless economy needs fruit",
                 "return=skipped when economy needs grape and not economy needs fruit",
                 "return=skipped when economy needs reed and not economy needs fruit",
                 "callworker=harvest_berrybush",
@@ -164,6 +166,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
             descname = pgettext("europeans_building", "harvesting grapes"),
             actions = {
+                "return=skipped unless economy needs grape",
                 "return=skipped when economy needs fruit and not economy needs grape",
                 "return=skipped when economy needs reed and not economy needs grape",
                 "callworker=harvest_grape",
@@ -175,6 +178,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
+                "return=skipped unless economy needs reed",
                 "return=skipped when economy needs fruit and not economy needs reed",
                 "return=skipped when economy needs grape and not economy needs reed",
                 "callworker=harvest_reed",

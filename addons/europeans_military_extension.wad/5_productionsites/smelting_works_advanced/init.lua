@@ -68,6 +68,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recyling metal_alloy because ...
             descname = pgettext("europeans_building", "recycling metal_alloy"),
             actions = {
+                "return=skipped unless economy needs metal_alloy",
                 "return=skipped when economy needs gold and not economy needs metal_alloy",
                 "consume=scrap_metal:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
@@ -80,6 +81,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
             descname = pgettext("europeans_building", "smelting ore"),
             actions = {
+                "return=skipped unless economy needs gold or economy needs metal_alloy",
                 "return=skipped when economy needs coal and not economy needs gold and not economy needs metal_alloy",
                 "return=skipped when site has scrap_metal:2 and economy needs ore",
                 "consume=ore:6 coal:6",

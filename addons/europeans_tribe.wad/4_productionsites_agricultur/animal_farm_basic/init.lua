@@ -114,6 +114,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
            descname = pgettext("europeans_building", "producing meat"),
            actions = {
+                "return=skipped unless economy needs meat",
                 "return=skipped when economy needs leather and not economy needs meat",
                 "return=skipped when economy needs water and not economy needs meat",
                 "return=skipped when economy needs rye and economy needs wheat and economy needs barley and not economy needs meat",
@@ -136,6 +137,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
            descname = pgettext("europeans_building", "producing meat and leather"),
            actions = {
+                "return=skipped unless economy needs leather",
                 "return=skipped when economy needs water and not economy needs leather",
                 "return=skipped when economy needs rye and economy needs wheat and economy needs barley and not economy needs leather",
                 "consume=water rye,wheat,barley",

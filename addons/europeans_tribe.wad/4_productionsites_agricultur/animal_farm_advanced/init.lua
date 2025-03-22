@@ -147,6 +147,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
            descname = pgettext("europeans_building", "producing wool"),
            actions = {
+                "return=skipped unless economy needs wool",
                 "return=skipped when economy needs leather and not economy needs wool",
                 "return=skipped when economy needs water and not economy needs wool",
                 "return=skipped when economy needs blackroot and economy needs corn and not economy needs wool",
@@ -168,6 +169,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
            descname = pgettext("europeans_building", "producing meat and leather"),
            actions = {
+                "return=skipped unless economy needs leather",
                 "return=skipped when economy needs wool and not economy needs leather",
                 "return=skipped when economy needs water and not economy needs leather",
                 "return=skipped when economy needs blackroot and economy needs corn and not economy needs leather",
@@ -189,6 +191,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
            descname = pgettext("europeans_building", "producing meat"),
            actions = {
+                "return=skipped unless economy needs meat",
                 "return=skipped when economy needs leather and not economy needs meat",
                 "return=skipped when economy needs water and not economy needs meat",
                 "return=skipped when economy needs blackroot and economy needs corn and not economy needs meat",
@@ -210,6 +213,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start producing fish because ...
            descname = pgettext("europeans_building", "breeding fish"),
             actions = {
+                "return=skipped unless economy needs fish",
                 "return=skipped when economy needs water and not economy needs fish",
                 "return=skipped when economy needs blackroot and economy needs corn and not economy needs fish",
                 "return=skipped when economy needs fruit and not economy needs fish",

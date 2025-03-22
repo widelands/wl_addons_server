@@ -61,6 +61,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
+                "return=skipped unless economy needs ore",
                 "return=skipped when economy needs ration and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs ore",
                 "return=skipped unless site has ration:3",
                 "consume=ration",
@@ -71,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=ration",
                 "call=mine_granite",
                 "call=mine_marble",
-                "call=mine_quartz",
+                "call=mine_ore",
                 "sleep=duration:5s",
                 "consume=ration",
                 "call=mine_granite",
@@ -95,14 +96,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=marble",
             }
         },
-        mine_quartz = {
-            descname = pgettext("europeans_building", "mining quartz"),
-            actions = {
-                "animate=working duration:25s",
-                "mine=resource_iron radius:4 yield:40% when_empty:5% experience_on_fail:10%",
-                "produce=quartz",
-            }
-        },
         mine_ore = {
             descname = pgettext("europeans_building", "mining ore"),
             actions = {
@@ -116,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=ration:3",
-                "produce=granite:3 marble:3 quartz ore:2",
+                "produce=granite:3 marble:3 ore:3",
             }
         },
     },

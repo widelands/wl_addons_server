@@ -171,6 +171,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
+                "return=skipped unless economy needs reed",
                 "callworker=harvest_reed",
                 "produce=reed:2"
             }

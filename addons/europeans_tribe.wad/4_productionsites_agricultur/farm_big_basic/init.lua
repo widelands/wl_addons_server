@@ -110,6 +110,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making honey because ...
             descname = pgettext("europeans_building", "making honey"),
             actions = {
+                "return=skipped unless economy needs honey",
                 "sleep=duration:2s",
                 "callworker=check_flower",
                 "callworker=bees",
@@ -195,6 +196,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
             descname = pgettext("europeans_building", "harvesting barley"),
             actions = {
+                "return=skipped unless economy needs barley",
                 "return=skipped when economy needs rye and not economy needs barley",
                 "return=skipped when economy needs wheat and not economy needs barley",
                 "return=skipped unless economy needs barley or workers need experience",
@@ -210,6 +212,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
             descname = pgettext("europeans_building", "harvesting rye"),
             actions = {
+                "return=skipped unless economy needs rye",
                 "return=skipped when economy needs barley and not economy needs rye",
                 "return=skipped when economy needs wheat and not economy needs rye",
                 "return=skipped unless economy needs rye or workers need experience",
@@ -225,6 +228,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
             descname = pgettext("europeans_building", "harvesting wheat"),
             actions = {
+                "return=skipped unless economy needs wheat",
                 "return=skipped when economy needs barley and not economy needs wheat",
                 "return=skipped when economy needs rye and not economy needs wheat",
                 "return=skipped unless economy needs wheat or workers need experience",

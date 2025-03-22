@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- dirname = path.dirname(__file__)
-dirname = "tribes/workers/empire/forester/"
+dirname = "tribes/workers/barbarians/ranger/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_forester",
@@ -25,7 +25,7 @@ wl.Descriptions():new_worker_type {
             "findspace=size:any radius:8 avoid:field saplingsearches:12",
             "walk=coords",
             "animate=dig duration:1s",
-            "animate=planting duration:1s",
+            "animate=plant duration:1s",
             "plant=attrib:tree_sapling",
             "animate=water duration:1s",
             "return"
@@ -34,7 +34,7 @@ wl.Descriptions():new_worker_type {
             "findspace=size:any radius:8 avoid:field saplingsearches:12",
             "walk=coords",
             "animate=dig duration:1s",
-            "animate=planting duration:1s",
+            "animate=plant duration:1s",
             "plant=attrib:rubber_tree_sapling",
             "animate=water duration:1s",
             "return"
@@ -44,47 +44,38 @@ wl.Descriptions():new_worker_type {
     animation_directory = dirname,
     animations = {
         idle = {
-            hotspot = { 3, 23 }
+            hotspot = { 8, 23 }
         },
     },
     spritesheets = {
-        dig = {
-            fps = 5,
-            frames = 10,
-            rows = 4,
-            columns = 3,
-            hotspot = { 5, 22 }
-        },
-        planting = {
-            fps = 10,
-            frames = 10,
-            rows = 4,
-            columns = 3,
-            hotspot = { 18, 23 }
-        },
-        water = {
-            fps = 5,
-            frames = 10,
-            rows = 4,
-            columns = 3,
-            hotspot = { 18, 26 }
-        },
         walk = {
             fps = 10,
             frames = 10,
             rows = 4,
             columns = 3,
             directional = true,
-            hotspot = { 10, 23 }
+            hotspot = { 11, 20 }
         },
-        walkload = {
-            basename = "walk",
+        dig = {
+            fps = 5,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 12, 22 }
+        },
+        plant = {
             fps = 10,
             frames = 10,
             rows = 4,
             columns = 3,
-            directional = true,
-            hotspot = { 10, 23 }
+            hotspot = { 16, 20 }
+        },
+        water = {
+            fps = 5,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 18, 23 }
         },
     }
 }

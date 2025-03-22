@@ -79,6 +79,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
             descname = pgettext("europeans_building", "grinding rye and wheat"),
             actions = {
+                "return=skipped unless economy needs flour",
                 "return=skipped when economy needs rye and not economy needs flour",
                 "return=skipped when economy needs wheat and not economy needs flour",
                 "consume=rye",

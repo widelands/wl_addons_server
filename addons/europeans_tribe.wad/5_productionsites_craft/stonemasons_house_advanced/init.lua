@@ -64,9 +64,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
             descname = pgettext("europeans_building", "mixing grout"),
             actions = {
+                "return=skipped unless economy needs grout",
                 "return=skipped when economy needs brick and not economy needs grout",
                 "return=skipped when economy needs granite and not economy needs grout",
                 "return=skipped when economy needs coal and not economy needs grout",
+                "return=skipped when economy needs water and not economy needs grout",
                 "consume=coal:3 granite:4",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:2m",
@@ -80,6 +82,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
             descname = pgettext("europeans_building", "burning bricks"),
             actions = {
+                "return=skipped unless economy needs brick",
                 "return=skipped when economy needs grout and not economy needs brick",
                 "return=skipped when economy needs granite and not economy needs brick",
                 "return=skipped when economy needs coal and not economy needs brick",
@@ -96,6 +99,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
             descname = pgettext("europeans_building", "sculpting a marble column"),
             actions = {
+                "return=skipped unless economy needs marble_column",
                 "return=skipped when economy needs marble and not economy needs marble_column",
                 "consume=marble:3",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",

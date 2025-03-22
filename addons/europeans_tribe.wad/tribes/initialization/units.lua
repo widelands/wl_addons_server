@@ -258,68 +258,6 @@ wl.Descriptions():new_tribe {
             },
         },
         {
-            -- Metal Economy and Trading
-            {
-                name = "ore",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
-                        pgettext("default_ware", "Ore is mined in ore mines."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
-                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
-                    }
-                }
-            },
-            {
-                name = "gold",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
-                        pgettext("ware", "Gold is the most valuable of all metals, and it is smelted out of ore."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
-                        pgettext("europeans_ware", "It is produced by the smelting works. Some valuable buildings need gold to be built.")
-                    }
-                }
-            },
-            {
-                name = "coin_copper",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Copper Coin
-                        pgettext("ware", "Copper coins are money made of copper or bronze (copper and tin). Its the standard barter object."),
-                    }
-                }
-            },
-            {
-                name = "coin_silver",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Silver Coin
-                        pgettext("ware", "Silver coins are money made of silver. Its a valuable barter object."),
-                    }
-                }
-            },
-            {
-                name = "coin_gold",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Gold Coin
-                        pgettext("ware", "Gold coins are money made of gold. Its most valuable barter object."),
-                    }
-                }
-            }
-        },
-        {
             -- Food 1
             {
                 name = "rye",
@@ -606,6 +544,68 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
                 }
             },
+        },
+        {
+            -- Metal Economy and Trading
+            {
+                name = "ore",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
+                        pgettext("default_ware", "Ore is mined in ore mines."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
+                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
+                    }
+                }
+            },
+            {
+                name = "gold",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
+                        pgettext("ware", "Gold is the most valuable of all metals, and it is smelted out of ore."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
+                        pgettext("europeans_ware", "It is produced by the smelting works. Some valuable buildings need gold to be built.")
+                    }
+                }
+            },
+            {
+                name = "coin_copper",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Copper Coin
+                        pgettext("ware", "Copper coins are money made of copper or bronze (copper and tin). Its the standard barter object."),
+                    }
+                }
+            },
+            {
+                name = "coin_silver",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Silver Coin
+                        pgettext("ware", "Silver coins are money made of silver. Its a valuable barter object."),
+                    }
+                }
+            },
+            {
+                name = "coin_gold",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Gold Coin
+                        pgettext("ware", "Gold coins are money made of gold. Its most valuable barter object."),
+                    }
+                }
+            }
         },
     },
     -- Workers positions in workers windows.

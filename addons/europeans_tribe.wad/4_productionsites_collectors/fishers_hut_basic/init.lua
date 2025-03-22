@@ -68,6 +68,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
             descname = _("fishing"),
             actions = {
+                "return=skipped unless economy needs fish",
                 "callworker=fish",
                 "sleep=duration:2m"
             }

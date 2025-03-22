@@ -101,6 +101,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making honey because ...
             descname = pgettext("europeans_building", "making honey"),
             actions = {
+                "return=skipped unless economy needs honey",
                 "sleep=duration:2s",
                 "callworker=check_flower",
                 "callworker=bees",
@@ -255,6 +256,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
             descname = pgettext("europeans_building", "harvesting barley"),
             actions = {
+                "return=skipped unless economy needs barley",
                 "return=skipped when economy needs blackroot and not economy needs barley",
                 "return=skipped when economy needs corn and not economy needs barley",
                 "return=skipped when economy needs cotton and not economy needs barley",
@@ -272,6 +274,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
             descname = pgettext("europeans_building", "harvesting blackroot"),
             actions = {
+                "return=skipped unless economy needs blackroot",
                 "return=skipped when economy needs barley and not economy needs blackroot",
                 "return=skipped when economy needs corn and not economy needs blackroot",
                 "return=skipped when economy needs cotton and not economy needs blackroot",
@@ -289,6 +292,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
             descname = pgettext("europeans_building", "harvesting corn"),
             actions = {
+                "return=skipped unless economy needs corn",
                 "return=skipped when economy needs barley and not economy needs corn",
                 "return=skipped when economy needs blackroot and not economy needs corn",
                 "return=skipped when economy needs cotton and not economy needs corn",
@@ -306,6 +310,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
             descname = pgettext("europeans_building", "harvesting berries"),
             actions = {
+                "return=skipped unless economy needs cotton",
                 "return=skipped when economy needs barley and not economy needs cotton",
                 "return=skipped when economy needs blackroot and not economy needs cotton",
                 "return=skipped when economy needs corn and not economy needs cotton",
@@ -323,6 +328,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
             descname = pgettext("europeans_building", "harvesting rye"),
             actions = {
+                "return=skipped unless economy needs rye",
                 "return=skipped when economy needs barley and not economy needs rye",
                 "return=skipped when economy needs blackroot and not economy needs rye",
                 "return=skipped when economy needs corn and not economy needs rye",
@@ -340,6 +346,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
             descname = pgettext("europeans_building", "harvesting wheat"),
             actions = {
+                "return=skipped unless economy needs wheat",
                 "return=skipped when economy needs barley and not economy needs wheat",
                 "return=skipped when economy needs blackroot and not economy needs wheat",
                 "return=skipped when economy needs corn and not economy needs wheat",

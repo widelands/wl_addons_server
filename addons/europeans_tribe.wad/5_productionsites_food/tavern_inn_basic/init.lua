@@ -71,6 +71,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing a ration" because ...
             descname = pgettext("europeans_building", "preparing a ration"),
             actions = {
+                "return=skipped unless economy needs ration",
                 "return=skipped when economy needs snack and not economy needs ration",
                 "consume=beer bread fish,meat",
                 "sleep=duration:5s",
@@ -84,6 +85,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing a snack" because ...
             descname = pgettext("europeans_building", "preparing a snack"),
             actions = {
+                "return=skipped unless economy needs snack",
                 "return=skipped when economy needs ration and not economy needs snack",
                 "consume=mead honey_bread fish,meat",
                 "sleep=duration:5s",

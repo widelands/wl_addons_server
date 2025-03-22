@@ -32,7 +32,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 6 }
+        { name = "blackwood", amount = 6 }
     },
 
     programs = {
@@ -40,27 +40,28 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped when economy needs planks and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs diamond",
-                "return=skipped unless site has planks:4",
-                "consume=planks",
+                "return=skipped unless economy needs granite or economy needs marble or economy needs quartz or economy needs diamond",
+                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs diamond",
+                "return=skipped unless site has blackwood:4",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_granite",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=planks",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_granite",
                 "call=mine_diamond",
                 "sleep=duration:5s",
-                "consume=planks",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_granite",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=planks",
+                "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_granite",
@@ -104,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=planks:4",
+                "consume=blackwood:4",
                 "produce=granite:8 marble:4 quartz:2 diamond:2",
             }
         },

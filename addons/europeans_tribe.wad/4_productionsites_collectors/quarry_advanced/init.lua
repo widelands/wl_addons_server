@@ -86,6 +86,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
            descname = pgettext("europeans_building", "quarrying granite"),
             actions = {
+                "return=skipped unless economy needs granite",
                 "callworker=cut_granite"
             }
         },
@@ -93,6 +94,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
            descname = pgettext("europeans_building", "quarrying marble"),
             actions = {
+                "return=skipped unless economy needs marble",
                 "callworker=cut_marble"
             }
         },
@@ -100,6 +102,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
+                "return=skipped unless economy needs granite",
                 "callworker=mine_granite"
             }
         },
@@ -107,6 +110,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
             descname = pgettext("europeans_building", "mining marble"),
             actions = {
+                "return=skipped unless economy needs marble",
                 "callworker=mine_marble"
             }
         }

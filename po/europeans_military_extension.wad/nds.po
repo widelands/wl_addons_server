@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 03:10+0100\n"
+"POT-Creation-Date: 2025-03-22 03:11+0100\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -361,7 +361,7 @@ msgid "recycling metal_alloy"
 msgstr "Metall to verweerten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
-#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:81
+#: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:82
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "smelting ore"
@@ -1184,89 +1184,14 @@ msgctxt "europeans_ware"
 msgid "These wonderful diamonds are used for trading."
 msgstr "Deese wunnermojen Edelstenen worden tum Hanneln bruukt."
 
-#. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:285
-msgctxt "default_ware"
-msgid "Ore is mined in ore mines."
-msgstr "Kluten worden in Kluten-Bargwarken ofboot."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:287
-msgctxt "europeans_ware"
-msgid "It is smelted in a smelting works to retrieve all the metals."
-msgstr "’t word in Smeltwarken smelt, um all de Metallen to winnen."
-
-#. TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:297
-msgctxt "europeans_ware"
-msgid ""
-"Discarded weapons and armor can be recycled in an advanced smelting works to "
-"produce new tools, weapon and armor."
-msgstr ""
-"Olle Wapen un Wapenrocken könen in de groten Smeltwarken verweert worden, um "
-"neje Wapens, Wapenrocken un Warktüüg to produzeren."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:307
-msgctxt "ware"
-msgid "Mixed metal alloy is smelted out of ores."
-msgstr "Metall word ut Kluten smelt."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:309
-msgctxt "europeans_ware"
-msgid ""
-"It is produced by the smelting works. Weapons, armor and tools are made of "
-"alloy."
-msgstr ""
-"’t word vun de Smeltwark produzeert. Wapens, Wapenrocken un Warktüüg sünd ut "
-"Metall."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:320
-msgctxt "ware"
-msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
-msgstr "Gold is dat düürste vun allen Metallen un word ut Kluten smelt."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:322
-msgctxt "europeans_ware"
-msgid ""
-"It is produced by the smelting works. Some valuable buildings need gold to "
-"be built."
-msgstr ""
-"’t word in de Smeltwark produzeert. Eenige düre Husen bruken Gold tum Bauen."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:333
-msgctxt "ware"
-msgid ""
-"Copper coins are money made of copper or bronze (copper and tin). Its the "
-"standard barter object."
-msgstr ""
-"Koperdeiten sünd Geld ut Koper of Bronze (Koper un Tinn). Dat is dat "
-"normaale Hannelsding."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:344
-msgctxt "ware"
-msgid "Silver coins are money made of silver. Its a valuable barter object."
-msgstr "Sülverdeiten sünd Geld ut Sülver. Dat is een düres Hannelsding."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:355
-msgctxt "ware"
-msgid "Gold coins are money made of gold. Its most valuable barter object."
-msgstr "Golddeiten sünd Geld ut Gold. Dat is dat allerdüürste Hannelsding."
-
 #. TRANSLATORS: Helptext for an Europeans ware: Rye, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:369
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:285
 msgctxt "europeans_ware"
 msgid "Rye is essential for survival."
 msgstr "Sünner Rogg kann man nich överleven."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rye, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:371
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:287
 msgctxt "europeans_ware"
 msgid "Rye is produced by farms and used by mills to produce mixed flour."
 msgstr ""
@@ -1274,13 +1199,13 @@ msgstr ""
 "produzeren."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wheat, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:382
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:298
 msgctxt "europeans_ware"
 msgid "Wheat is essential for survival."
 msgstr "Sünner Weit kann man nich överleven."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wheat, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:384
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:300
 msgctxt "europeans_ware"
 msgid "Wheat is produced by farms and used by mills to produce mixed flour."
 msgstr ""
@@ -1288,14 +1213,14 @@ msgstr ""
 "produzeren."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:394
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:310
 msgctxt "europeans_ware"
 msgid "Advanced farms need to be provided with corn to feed the farm animals."
 msgstr ""
 "Grote Buurdereen mutten mit Mais versörgt worden, um dat Veeh to föden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Blackroot
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:403
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:319
 msgctxt "europeans_ware"
 msgid ""
 "Blackroots are a special kind of root. Advanced farms need to be provided "
@@ -1305,7 +1230,7 @@ msgstr ""
 "mit Swartwuddels versörgt worden."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Barley
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:412
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:328
 msgctxt "europeans_ware"
 msgid "Barley is a slow-growing grain that is used for brewing beer or mead."
 msgstr ""
@@ -1313,7 +1238,7 @@ msgstr ""
 "Hönnigbeer to broen."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:421
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:337
 msgctxt "europeans_ware"
 msgid "Honey is produced by bees belonging to a farm. It is used to brew mead."
 msgstr ""
@@ -1321,7 +1246,7 @@ msgstr ""
 "bruukt, um Hönnigbeer to broen."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Fruit
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:430
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:346
 msgctxt "europeans_ware"
 msgid ""
 "Fruit are berries gathered from berry bushes by a fruit collector. They are "
@@ -1331,7 +1256,7 @@ msgstr ""
 "um Früchtenwien to broen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Grape
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:439
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:355
 msgctxt "europeans_ware"
 msgid ""
 "These grapes are the base for a tasty wine. They are harvested in a advanced "
@@ -1341,7 +1266,7 @@ msgstr ""
 "Buurdereen arnt un in de Wienmakeree verarbeidt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Flour
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:451
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:367
 msgctxt "europeans_ware"
 msgid ""
 "Mixed flour is produced by the mill out of rye and wheat and is needed in "
@@ -1351,7 +1276,7 @@ msgstr ""
 "bruukt, um Brood to produzeren."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Bread
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:460
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:376
 msgctxt "europeans_ware"
 msgid ""
 "Bread are produced in a bakery out of water and flour. Basic miners consume "
@@ -1360,7 +1285,7 @@ msgstr ""
 "Brood word in de Backeree ut Water un Mehl maakt. Bargwarkskeerls eten Brood."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey Bread
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:469
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:385
 msgctxt "europeans_ware"
 msgid ""
 "Honey Bread are produced in a bakery out of water, honey and flour. Normal "
@@ -1370,7 +1295,7 @@ msgstr ""
 "Bargwarkskeerls eten Hönnigbrood."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Biscuit
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:478
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:394
 msgctxt "europeans_ware"
 msgid ""
 "Biscuits are produced in a bakery out of water, flour, honey and fruits. "
@@ -1380,7 +1305,7 @@ msgstr ""
 "Meister-Bargwarkskeerls eten Kookjes."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:487
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:403
 msgctxt "europeans_ware"
 msgid ""
 "This beer is produced in a brewery out of barley and water. Basic miners "
@@ -1390,7 +1315,7 @@ msgstr ""
 "drinken Beer."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Mead
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:496
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:412
 msgctxt "europeans_ware"
 msgid ""
 "Mead is produced by breweries out of water, barley and honey. Normal miners "
@@ -1400,7 +1325,7 @@ msgstr ""
 "Bargwarkskeerls drinken Hönnigbeer."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:505
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:421
 msgctxt "europeans_ware"
 msgid ""
 "This strong beer is produced in a brewery out of barley and water. Advanced "
@@ -1410,7 +1335,7 @@ msgstr ""
 "Bargwarkskeerls drinken deftigs Beer."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wine
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:514
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:430
 msgctxt "europeans_ware"
 msgid "It is produced in a winery out of grape. Advanced miners consume wine."
 msgstr ""
@@ -1418,7 +1343,7 @@ msgstr ""
 "drinken Wien."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:526
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:442
 msgctxt "europeans_ware"
 msgid ""
 "Meat contains a lot of energy, and it is produced in animal farms. Miners "
@@ -1428,7 +1353,7 @@ msgstr ""
 "produzeert. Bargwarkskeerls eten Fleesk."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:535
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:451
 msgctxt "europeans_ware"
 msgid ""
 "Fish is one of the biggest food resources of the Europeans, and it is "
@@ -1438,7 +1363,7 @@ msgstr ""
 "Deertentüchtereen produzeert. Bargwarkskeerls eten Fiss."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Ration, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:545
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:461
 msgctxt "ware"
 msgid ""
 "A small bite to keep miners strong and working. The scout also consumes "
@@ -1448,7 +1373,7 @@ msgstr ""
 "ok Happen, wenn he spioneren gaht."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Ration, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:547
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:463
 msgctxt "europeans_ware"
 msgid ""
 "Rations are produced in a tavern, an inn or a big inn out of fish or meat or "
@@ -1458,7 +1383,7 @@ msgstr ""
 "Fleesk of Pitta-Brood produzeert."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Snack
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:557
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:473
 msgctxt "europeans_ware"
 msgid ""
 "A bigger morsel than the ration to provide miners in deep mines. It is "
@@ -1469,7 +1394,7 @@ msgstr ""
 "un Beer/Hönnigbeer produzeert."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Meal
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:566
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:482
 msgctxt "europeans_ware"
 msgid ""
 "A meal is made out of pitta bread, strong beer/wine and fish/meat in a big "
@@ -1480,31 +1405,31 @@ msgstr ""
 "Bargwark bruken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:579
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:495
 msgctxt "europeans_ware"
 msgid "Reed is an important building material."
 msgstr "Reit is een wichtig Baukraam."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:581
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:497
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
 msgstr "’t word vun de Reitplanteree produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:592
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:508
 msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
 msgstr "Ut Boomwull maakt man Kluften."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:594
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:510
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
 msgstr "'t word vun de Buurderee produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:604
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:520
 msgctxt "europeans_ware"
 msgid ""
 "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms "
@@ -1514,25 +1439,25 @@ msgstr ""
 "Deertentüchtereen vun de Grött 4 of 5 könen Wull produzeren."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cloth
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:613
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:529
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
 msgstr "Eenige Husen bruken Stoff. ’t word ut Reit maakt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:623
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:539
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved armor and boots."
 msgstr "Gummi elasticum bruukt man för betere Wapenrocken un Stevels."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:625
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:541
 msgctxt "europeans_ware"
 msgid "It is produced in tree nursery or in rubber farm."
 msgstr "’t word vun de Boomgaardneree of de Gummi-Buurderee produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:635
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:551
 msgctxt "europeans_ware"
 msgid ""
 "The animal farm produces leather, which is used as a raw material for making "
@@ -1540,7 +1465,7 @@ msgid ""
 msgstr "De Deertentüchteree produzeert Leer, wat man Stevels ut maakt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:644
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:560
 msgctxt "europeans_ware"
 msgid ""
 "Raw material for some sorts of armor. It is produced in the weaving mill out "
@@ -1550,7 +1475,7 @@ msgstr ""
 "Wull of Reit produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:656
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:572
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
@@ -1561,7 +1486,7 @@ msgstr ""
 "Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:665
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:581
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
@@ -1572,7 +1497,7 @@ msgstr ""
 "Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:674
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:590
 msgctxt "europeans_ware"
 msgid ""
 "The compressed armor is a medium armor for European soldiers. It is produced "
@@ -1584,7 +1509,7 @@ msgstr ""
 "mehr Gesundheid-Punkten uttorüsten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:683
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:599
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
@@ -1594,7 +1519,7 @@ msgstr ""
 "um Soldaten mit mehr Gesundheid-Punkten uttorüsten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:692
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:608
 msgctxt "europeans_ware"
 msgid ""
 "Wooden boots are basic footwear for soldiers to be protect on their feet. "
@@ -1604,7 +1529,7 @@ msgstr ""
 "worden vun de Naihsterske produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:701
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:617
 msgctxt "europeans_ware"
 msgid ""
 "Sturdy boots are excellent footwear for soldiers to be quicker on their "
@@ -1616,7 +1541,7 @@ msgstr ""
 "Stand 1 uttobilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:710
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:626
 msgctxt "europeans_ware"
 msgid ""
 "Swift boots are light and durable footwear for soldiers to be quicker on "
@@ -1628,7 +1553,7 @@ msgstr ""
 "Soldatsken vun Utwieken-Stand 1 up Stand 2 uttobilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
-#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:719
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:635
 msgctxt "europeans_ware"
 msgid ""
 "Hero boots! The only suitable footwear for a real hero. They are produced by "
@@ -1637,6 +1562,81 @@ msgstr ""
 "Heldenstevels! Nix anners könen echte Helden an de Foten dragen. Se worden "
 "vun de Naihsterske produzeert un bruukt, um Soldatsken vun Utwieken-Stand 2 "
 "up Stand 3 uttobilden. "
+
+#. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:648
+msgctxt "default_ware"
+msgid "Ore is mined in ore mines."
+msgstr "Kluten worden in Kluten-Bargwarken ofboot."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:650
+msgctxt "europeans_ware"
+msgid "It is smelted in a smelting works to retrieve all the metals."
+msgstr "’t word in Smeltwarken smelt, um all de Metallen to winnen."
+
+#. TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:660
+msgctxt "europeans_ware"
+msgid ""
+"Discarded weapons and armor can be recycled in an advanced smelting works to "
+"produce new tools, weapon and armor."
+msgstr ""
+"Olle Wapen un Wapenrocken könen in de groten Smeltwarken verweert worden, um "
+"neje Wapens, Wapenrocken un Warktüüg to produzeren."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:670
+msgctxt "ware"
+msgid "Mixed metal alloy is smelted out of ores."
+msgstr "Metall word ut Kluten smelt."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:672
+msgctxt "europeans_ware"
+msgid ""
+"It is produced by the smelting works. Weapons, armor and tools are made of "
+"alloy."
+msgstr ""
+"’t word vun de Smeltwark produzeert. Wapens, Wapenrocken un Warktüüg sünd ut "
+"Metall."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:683
+msgctxt "ware"
+msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
+msgstr "Gold is dat düürste vun allen Metallen un word ut Kluten smelt."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:685
+msgctxt "europeans_ware"
+msgid ""
+"It is produced by the smelting works. Some valuable buildings need gold to "
+"be built."
+msgstr ""
+"’t word in de Smeltwark produzeert. Eenige düre Husen bruken Gold tum Bauen."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:696
+msgctxt "ware"
+msgid ""
+"Copper coins are money made of copper or bronze (copper and tin). Its the "
+"standard barter object."
+msgstr ""
+"Koperdeiten sünd Geld ut Koper of Bronze (Koper un Tinn). Dat is dat "
+"normaale Hannelsding."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:707
+msgctxt "ware"
+msgid "Silver coins are money made of silver. Its a valuable barter object."
+msgstr "Sülverdeiten sünd Geld ut Sülver. Dat is een düres Hannelsding."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
+#: addons/europeans_military_extension.wad/tribes/initialization/units.lua:718
+msgctxt "ware"
+msgid "Gold coins are money made of gold. Its most valuable barter object."
+msgstr "Golddeiten sünd Geld ut Gold. Dat is dat allerdüürste Hannelsding."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:731
@@ -1830,7 +1830,7 @@ msgstr "Plant Bomen."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:971
 msgctxt "europeans_worker"
 msgid "Plant trees and increases soil fertility."
-msgstr ""
+msgstr "Plant Bomen un maakt dat Land früchtbaarer."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:980
@@ -2297,7 +2297,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1948
 msgctxt "building"
 msgid "Plant trees and increases soil fertility."
-msgstr ""
+msgstr "Plant Bomen un maakt dat Land früchtbaarer."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1955
@@ -3367,18 +3367,3 @@ msgstr "Raadhuus"
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Terraforms desert and coast into fertile soil."
-#~ msgstr "Ackert Wüüst un Küst in früchtbares Land um."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The ranger’s hut needs free space within the work area to plant the trees."
-#~ msgstr ""
-#~ "De Boomplanterkaat bruukt freje Rüümte in de Arbeidsgewest, waar Bomen "
-#~ "plant worden könen."
-
-#~ msgctxt "building"
-#~ msgid "Terraforms deserts and coasts into fertile soil."
-#~ msgstr "Ackert Wüüsten un Küsten in früchtbares Land um."

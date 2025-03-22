@@ -48,6 +48,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
+                "return=skipped unless economy needs log",
                 "return=skipped when economy needs rubber and not economy needs log",
                 "callworker=harvest_tree"
             }
@@ -56,6 +57,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling rubber trees"),
             actions = {
+                "return=skipped unless economy needs rubber",
                 "return=skipped when economy needs log and not economy needs rubber",
                 "callworker=harvest_rubber",
                 "sleep=duration:5s",

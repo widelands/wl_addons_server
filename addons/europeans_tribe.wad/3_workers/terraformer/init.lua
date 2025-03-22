@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/empire/forester/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_terraformer",
@@ -68,49 +69,48 @@ wl.Descriptions():new_worker_type {
     animation_directory = dirname,
     animations = {
         idle = {
-            basename = "idle",
             hotspot = {8, 23}
         },
     },
     spritesheets = {
         dig = {
-            fps = 20,
+            fps = 5,
             frames = 10,
-            columns = 5,
-            rows = 2,
-            hotspot = {15, 20}
+            rows = 4,
+            columns = 3,
+            hotspot = { 5, 22 }
         },
         plant = {
+            basename = "planting",
             fps = 10,
             frames = 10,
-            columns = 5,
-            rows = 2,
-            hotspot = {15, 18}
+            rows = 4,
+            columns = 3,
+            hotspot = { 18, 23 }
         },
         water = {
-            fps = 10,
+            fps = 5,
             frames = 10,
-            columns = 5,
-            rows = 2,
-            hotspot = {14, 20}
+            rows = 4,
+            columns = 3,
+            hotspot = { 18, 26 }
         },
         walk = {
-            basename = "walk",
-            fps = 15,
+            fps = 10,
             frames = 10,
-            columns = 5,
-            rows = 2,
+            rows = 4,
+            columns = 3,
             directional = true,
-            hotspot = {11, 24}
+            hotspot = { 10, 23 }
         },
         walkload = {
-            basename = "walkload",
-            fps = 15,
+            basename = "walk",
+            fps = 10,
             frames = 10,
-            columns = 5,
-            rows = 2,
+            rows = 4,
+            columns = 3,
             directional = true,
-            hotspot = {10, 26}
+            hotspot = { 10, 23 }
         },
     }
 }

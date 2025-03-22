@@ -73,6 +73,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
             descname = pgettext("europeans_building", "smelting ore"),
             actions = {
+                "return=skipped unless economy needs gold or economy needs metal_alloy",
                 "return=skipped when economy needs coal and not economy needs gold and not economy needs metal_alloy",
                 "consume=ore:3 coal:3",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
