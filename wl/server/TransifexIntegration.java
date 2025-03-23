@@ -100,6 +100,8 @@ public class TransifexIntegration {
 		if (!Utils.bashOutput("bash", "-c", "git status -s po/websitemaps/*.po").isEmpty()) {
 			incrementWebsiteMapTranslationsVersion();
 		}
+
+		Utils.clearTranslationsCache();
 	}
 
 	/**

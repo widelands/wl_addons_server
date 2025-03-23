@@ -65,6 +65,11 @@ Table                        | Column Names                                     
 `wlprofile_profile`          | `user_id` <br> `deleted`                                  | `int` <br> `tinyint`                               | 
 `wladdons_settings_addonnoticetype` | `id`      <br> `slug` <br> `send_default` <br> `author_related_default` | `int` <br> `varchar` <br> `tinyint` <br> `tinyint` | 
 `wladdons_settings_addonnoticeuser` | `user_id` <br> `notice_type_id`           <br> `shouldsend`             | `int` <br> `int`                    <br> `tinyint` | 
+`wlmaps_map`                 |  `id` <br> `name` <br> `slug` <br> `author` <br> `w` <br> `h` <br> `nr_players` <br> `descr` <br> `minimap` <br> `file` <br> `world_name` <br> `pub_date` <br> `uploader_comment` <br> `uploader_id` <br> `nr_downloads` <br> `hint` <br> `wl_version_after` | `int` <br> `varchar` <br> `varchar` <br> `varchar` <br> `int` <br> `int` <br> `int` <br> `longtext` <br> `varchar` <br> `varchar` <br> `varchar` <br> `datetime` <br> `longtext` <br> `int` <br> `int` <br> `longtext` <br> `datetime` | 
+`star_ratings_rating`              | `id` <br> `count` <br> `total` <br> `average` <br> `object_id` <br> `content_type_id` | `int` <br> `int` <br> `int` <br> `decimal` <br> `int` <br> `int` | 
+`star_ratings_userrating`          | `id` <br> `created` <br> `modified` <br> `ip` <br> `score` <br> `rating_id` <br> `user_id` | `int` <br> `datetime` <br> `datetime` <br> `char` <br> `smallint` <br> `int` <br> `int` | 
+`threadedcomments_threadedcomment` | `id` <br> `content_type_id` <br> `object_id` <br> `parent_id` <br> `user_id` <br> `date_submitted` <br> `date_modified` <br> `date_approved` <br> `comment` <br> `markup` <br> `is_public` <br> `is_approved` | `int` <br> `int` <br> `int` <br> `int` <br> `int` <br> `datetime` <br> `datetime` <br> `datetime` <br> `longtext` <br> `int` <br> `tinyint` <br> `tinyint` | 
+`django_content_type` | `id` <br> `app_label` <br> `model` | `int` <br> `varchar` <br> `varchar` | 
 
 #### The Add-Ons Database
 

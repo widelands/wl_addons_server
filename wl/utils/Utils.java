@@ -434,6 +434,17 @@ public class Utils {
 		return str;
 	}
 
+	private static final Map<String, String> _translation_cache = new HashMap<>();
+
+	/**
+	 * Forget all cached translations.
+	 */
+	public static void clearTranslationsCache() {
+		synchronized (_translation_cache) {
+			_translation_cache.clear();
+		}
+	}
+
 	/**
 	 * Translate a string.
 	 * @param value Text to translate.
@@ -443,10 +454,19 @@ public class Utils {
 	 */
 	public static String translate(String value, String textdomain, String locale) {
 		if (textdomain == null || textdomain.isEmpty() || value == null || value.isEmpty() ||
-		    locale == null || locale.isEmpty())
+		    locale == null || locale.isEmpty()) {
 			return value;
+		}
+
+		final String cacheKey = locale + "@" + textdomain + "@" + value;
+		String result;
+		synchronized (_translation_cache) {
+			result = _translation_cache.get(cacheKey);
+		}
+		if (result != null) return result;
+
 		try {
-			String result =
+			result =
 			    new BufferedReader(
 			        new InputStreamReader(
 			            Runtime.getRuntime()
@@ -456,7 +476,13 @@ public class Utils {
 			                                        escapeAsShellArgument(value) + "\""})
 			                .getInputStream()))
 			        .readLine();
-			return unescapeFromShell(result);
+			result = unescapeFromShell(result);
+
+			synchronized (_translation_cache) {
+				_translation_cache.put(cacheKey, result);
+			}
+
+			return result;
 		} catch (Exception e) {
 			log("WARNING: gettext error for '" + value + "' @ '" + textdomain + "' / '" + locale +
 			    "': " + e);
