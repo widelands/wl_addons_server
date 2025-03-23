@@ -440,9 +440,7 @@ public class Utils {
 	 * Forget all cached translations.
 	 */
 	public static void clearTranslationsCache() {
-		synchronized (_translation_cache) {
-			_translation_cache.clear();
-		}
+		synchronized (_translation_cache) { _translation_cache.clear(); }
 	}
 
 	/**
@@ -460,9 +458,7 @@ public class Utils {
 
 		final String cacheKey = locale + "@" + textdomain + "@" + value;
 		String result;
-		synchronized (_translation_cache) {
-			result = _translation_cache.get(cacheKey);
-		}
+		synchronized (_translation_cache) { result = _translation_cache.get(cacheKey); }
 		if (result != null) return result;
 
 		try {
@@ -478,9 +474,7 @@ public class Utils {
 			        .readLine();
 			result = unescapeFromShell(result);
 
-			synchronized (_translation_cache) {
-				_translation_cache.put(cacheKey, result);
-			}
+			synchronized (_translation_cache) { _translation_cache.put(cacheKey, result); }
 
 			return result;
 		} catch (Exception e) {
