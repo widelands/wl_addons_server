@@ -33,6 +33,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Atau-Natu-wad]
+file_filter            = po/Atau_Natu.wad/<lang>.po
+source_file            = po/Atau_Natu.wad/Atau_Natu.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Call-of-death-wad]
 file_filter            = po/Call_of_death.wad/<lang>.po
 source_file            = po/Call_of_death.wad/Call_of_death.wad.pot
