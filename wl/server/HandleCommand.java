@@ -1199,8 +1199,8 @@ public class HandleCommand {
 					if (sql.rs.next() &&
 					    timestamp - sql.rs.getLong("edit_timestamp") < minUploadInterval) {
 						throw new ServerUtils.WLProtocolException(
-						    "Please do not upload updates for an add-on more often than every " +
-						    "three "
+						    "Please do not upload updates for an add-on more often than every "
+						    + "three "
 						    + "days. "
 						    + "In urgent cases please contact the Widelands Development Team.");
 					}
