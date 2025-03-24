@@ -26,7 +26,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.sql.ResultSet;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -103,17 +102,19 @@ public class Buildcats {
 	public static void buildCatalogues() throws Exception {
 		File uploaderCommentsFile = new File("/tmp/websitemaps_uploader_comments.lua");
 		PrintWriter write = new PrintWriter(new FileWriter(uploaderCommentsFile));
-		ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-		                          "select uploader_comment from wlmaps_map where "
-		                              + "uploader_comment is not null and uploader_comment != ''");
+		Utils.QueryResult sql =
+		    Utils.sqlQuery(Utils.Databases.kWebsite,
+		                   "select uploader_comment from wlmaps_map where "
+		                       + "uploader_comment is not null and uploader_comment != ''");
 		int nrComments = 0;
-		while (sql.next()) {
-			String str = sql.getString("uploader_comment");
+		while (sql.rs.next()) {
+			String str = sql.rs.getString("uploader_comment");
 			write.print("_(\"");
 			write.print(Utils.escapeAsShellArgument(str));
 			write.println("\")");
 			++nrComments;
 		}
+		sql.close();
 		write.close();
 		Utils.log("Buildcats: Wrote " + nrComments + " uploader comments to " +
 		          uploaderCommentsFile.getAbsolutePath());

@@ -28,7 +28,6 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.nio.file.Files;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -331,10 +330,12 @@ public class ServerUtils {
 	 *     Exception.
 	 */
 	public static Long getMapID(String slug) throws Exception {
-		ResultSet r =
-		    Utils.sql(Utils.Databases.kWebsite, "select id from wlmaps_map where slug=?", slug);
-		if (!r.next()) throw new WLProtocolException("Map '" + slug + "' is not in the database");
-		return r.getLong("id");
+		try (Utils.QueryResult r = Utils.sqlQuery(
+		         Utils.Databases.kWebsite, "select id from wlmaps_map where slug=?", slug);) {
+			if (!r.rs.next())
+				throw new WLProtocolException("Map '" + slug + "' is not in the database");
+			return r.rs.getLong("id");
+		}
 	}
 
 	/**
@@ -425,45 +426,51 @@ public class ServerUtils {
 	 */
 	public static Set<Long> getNotificationSubscribers(String noticetype, Set<Long> limitToUsers)
 	    throws Exception {
-		ResultSet sql =
-		    Utils.sql(Utils.Databases.kWebsite,
-		              "select id,send_default from wladdons_settings_addonnoticetype where slug=?",
-		              Utils.config("noticetype_" + noticetype));
-		if (!sql.next()) {
-			Utils.log("WARNING: Notice type '" + noticetype + "' is not known");
-			return new HashSet<Long>();
-		}
-		final long noticetypeID = sql.getLong("id");
-		final boolean sendDefault = sql.getLong("send_default") > 0;
+		try (Utils.QueryResult sqlMain = Utils.sqlQuery(
+		         Utils.Databases.kWebsite,
+		         "select id,send_default from wladdons_settings_addonnoticetype where slug=?",
+		         Utils.config("noticetype_" + noticetype));) {
+			if (!sqlMain.rs.next()) {
+				Utils.log("WARNING: Notice type '" + noticetype + "' is not known");
+				return new HashSet<Long>();
+			}
+			final long noticetypeID = sqlMain.rs.getLong("id");
+			final boolean sendDefault = sqlMain.rs.getLong("send_default") > 0;
 
-		Set<Long> usersToSendMailTo = new HashSet<>();
-		if (sendDefault) {
-			if (limitToUsers == null) {
-				Utils.log("WARNING: Refusing to send mass e-mail to all users by default");
+			Set<Long> usersToSendMailTo = new HashSet<>();
+			if (sendDefault) {
+				if (limitToUsers == null) {
+					Utils.log("WARNING: Refusing to send mass e-mail to all users by default");
+				} else {
+					// Send the e-mail to affected users only, sending a mail by default.
+					for (Long user : limitToUsers) {
+						try (Utils.QueryResult sql = Utils.sqlQuery(
+						         Utils.Databases.kWebsite,
+						         "select shouldsend from wladdons_settings_addonnoticeuser "
+						             + "where notice_type_id=? and user_id=?",
+						         noticetypeID, user);) {
+							if (!sql.rs.next() || sql.rs.getLong("shouldsend") > 0)
+								usersToSendMailTo.add(user);
+						}
+					}
+				}
 			} else {
-				// Send the e-mail to affected users only, sending a mail by default.
-				for (Long user : limitToUsers) {
-					sql = Utils.sql(Utils.Databases.kWebsite,
-					                "select shouldsend from wladdons_settings_addonnoticeuser "
-					                    + "where notice_type_id=? and user_id=?",
-					                noticetypeID, user);
-					if (!sql.next() || sql.getLong("shouldsend") > 0) usersToSendMailTo.add(user);
+				// Send the e-mail to users who explicitly subscribed.
+				try (Utils.QueryResult sql = Utils.sqlQuery(
+				         Utils.Databases.kWebsite,
+				         "select user_id from wladdons_settings_addonnoticeuser where "
+				             + "notice_type_id=? and shouldsend>0",
+				         noticetypeID);) {
+					while (sql.rs.next()) {
+						long user = sql.rs.getLong("user_id");
+						if (limitToUsers == null || limitToUsers.contains(user))
+							usersToSendMailTo.add(user);
+					}
 				}
 			}
-		} else {
-			// Send the e-mail to users who explicitly subscribed.
-			sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select user_id from wladdons_settings_addonnoticeuser where "
-			                    + "notice_type_id=? and shouldsend>0",
-			                noticetypeID);
-			while (sql.next()) {
-				long user = sql.getLong("user_id");
-				if (limitToUsers == null || limitToUsers.contains(user))
-					usersToSendMailTo.add(user);
-			}
-		}
 
-		return usersToSendMailTo;
+			return usersToSendMailTo;
+		}
 	}
 
 	/**
@@ -484,41 +491,47 @@ public class ServerUtils {
 
 		Set<Long> uploadersToInform = new HashSet<>();
 		if (oldMessage == null) {
-			ResultSet sql =
-			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
-			              Utils.getAddOnID(addon));
-			while (sql.next()) uploadersToInform.add(sql.getLong("user"));
-			uploadersToInform.remove(Utils.getUserID(commenter));
+			try (Utils.QueryResult sql = Utils.sqlQuery(Utils.Databases.kAddOns,
+			                                            "select user from uploaders where addon=?",
+			                                            Utils.getAddOnID(addon));) {
+				while (sql.rs.next()) uploadersToInform.add(sql.rs.getLong("user"));
+				uploadersToInform.remove(Utils.getUserID(commenter));
+			}
 		}
 
 		for (String username : mentioned) {
-			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-			                          "select id,email from auth_user where username=?", username);
-			if (!sql.next()) {
-				Utils.log("User '" + username + "' is not registered.");
-				continue;
-			}
-			final long id = sql.getLong("id");
-			if (getNotificationSubscribers("comment-mention", Set.of(id)).isEmpty()) continue;
+			try (Utils.QueryResult sql =
+			         Utils.sqlQuery(Utils.Databases.kWebsite,
+			                        "select id,email from auth_user where username=?", username);) {
+				if (!sql.rs.next()) {
+					Utils.log("User '" + username + "' is not registered.");
+					continue;
+				}
+				final long id = sql.rs.getLong("id");
+				if (getNotificationSubscribers("comment-mention", Set.of(id)).isEmpty()) continue;
 
-			uploadersToInform.remove(id);
-			Utils.sendEMail(sql.getString("email"), "Add-On Comment Mention",
-			                "Dear " + username + ",\n\nyou have been mentioned in a comment by " +
-			                    commenter + " on the add-on '" + addon + "':\n\n" + comment,
-			                true);
+				uploadersToInform.remove(id);
+				Utils.sendEMail(sql.rs.getString("email"), "Add-On Comment Mention",
+				                "Dear " + username +
+				                    ",\n\nyou have been mentioned in a comment by " + commenter +
+				                    " on the add-on '" + addon + "':\n\n" + comment,
+				                true);
+			}
 		}
 
 		uploadersToInform = getNotificationSubscribers("comment-added", uploadersToInform);
 
 		for (Long uploader : uploadersToInform) {
-			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-			                          "select username,email from auth_user where id=?", uploader);
-			sql.next();
-			Utils.sendEMail(sql.getString("email"), "New Add-On Comment",
-			                "Dear " + sql.getString("username") + ",\n\n" + commenter +
-			                    " has written a new comment on your add-on '" + addon + "':\n\n" +
-			                    comment,
-			                true);
+			try (Utils.QueryResult sql =
+			         Utils.sqlQuery(Utils.Databases.kWebsite,
+			                        "select username,email from auth_user where id=?", uploader);) {
+				sql.rs.next();
+				Utils.sendEMail(sql.rs.getString("email"), "New Add-On Comment",
+				                "Dear " + sql.rs.getString("username") + ",\n\n" + commenter +
+				                    " has written a new comment on your add-on '" + addon +
+				                    "':\n\n" + comment,
+				                true);
+			}
 		}
 	}
 

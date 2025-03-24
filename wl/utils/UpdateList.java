@@ -22,7 +22,6 @@ package wl.utils;
 import java.io.File;
 import java.io.PrintWriter;
 import java.nio.file.Files;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -97,30 +96,33 @@ public class UpdateList {
 				continue;
 			}
 
-			ResultSet sqlMain =
-			    Utils.sql(Utils.Databases.kAddOns, "select * from addons where name=?", addon);
-			sqlMain.next();
-			final long addOnID = sqlMain.getLong("id");
+			Utils.QueryResult sqlMain =
+			    Utils.sqlQuery(Utils.Databases.kAddOns, "select * from addons where name=?", addon);
+			sqlMain.rs.next();
+			final long addOnID = sqlMain.rs.getLong("id");
 
 			long[] votes = Utils.getVotes(addOnID);
 
 			List<Utils.AddOnComment> comments = new ArrayList<>();
-			ResultSet sql = Utils.sql(
+			Utils.QueryResult sql = Utils.sqlQuery(
 			    Utils.Databases.kAddOns, "select * from usercomments where addon=?", addOnID);
-			while (sql.next()) {
+			while (sql.rs.next()) {
 				comments.add(new Utils.AddOnComment(
-				    sql.getLong("id"), sql.getLong("user"), sql.getLong("timestamp"), null, null,
-				    sql.getString("version"),
+				    sql.rs.getLong("id"), sql.rs.getLong("user"), sql.rs.getLong("timestamp"), null,
+				    null, sql.rs.getString("version"),
 				    // These lists don't allow newlines, so we use two spaces
 				    // instead. Localization is not possible here.
-				    sql.getString("message").replaceAll("[\n\r\t]", "  ")));
+				    sql.rs.getString("message").replaceAll("[\n\r\t]", "  ")));
 			}
 
-			Data d =
-			    new Data(Utils.getUploadersString(addOnID, true), sqlMain.getLong("i18n_version"),
-			             sqlMain.getInt("security") > 0, sqlMain.getLong("timestamp"),
-			             sqlMain.getLong("downloads"), comments, votes);
+			Data d = new Data(Utils.getUploadersString(addOnID, true),
+			                  sqlMain.rs.getLong("i18n_version"), sqlMain.rs.getInt("security") > 0,
+			                  sqlMain.rs.getLong("timestamp"), sqlMain.rs.getLong("downloads"),
+			                  comments, votes);
 			result.put(addon, d);
+
+			sqlMain.close();
+			sql.close();
 
 			recurse(d.dirs, d.files, d.checksums, d.sizes, addonDir, "");
 			gatherLocales(addonDir, d.locales, d.checksums);

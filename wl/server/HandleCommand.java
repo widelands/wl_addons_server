@@ -23,7 +23,6 @@ import java.io.File;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.nio.file.Files;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -220,41 +219,47 @@ public class HandleCommand {
 		    (cmd[1].equalsIgnoreCase("showall") || cmd[1].equalsIgnoreCase("showcompatible"));
 		ArrayList<String> compatibleAddOns = new ArrayList<>();
 
-		ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select name from addons order by name");
-		while (sql.next()) {
-			final String addon = sql.getString("name");
-			if (versionCheck) {
-				Utils.Profile profile =
-				    Utils.readProfile(new File("addons/" + addon + "/addon"), addon);
-				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
-				                                         ServerUtils.findMinWlVersion(addon),
-				                                         profile.get("max_wl_version") != null ?
-				                                             profile.get("max_wl_version").value :
-				                                             null)) {
-					continue;
-				}
-			}
-			compatibleAddOns.add(addon);
-		}
-
-		if (commandVersion >= 3) {
-			sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select slug,file,wl_version_after from wlmaps_map order by slug");
-			while (sql.next()) {
-				if (!new File(Utils.config("website_maps_path"), sql.getString("file")).isFile()) {
-					continue;  // File does not exist
-				}
-
+		try (Utils.QueryResult sql = Utils.sqlQuery(
+		         Utils.Databases.kAddOns, "select name from addons order by name");) {
+			while (sql.rs.next()) {
+				final String addon = sql.rs.getString("name");
 				if (versionCheck) {
-					String mapRequirement = sql.getString("wl_version_after");
-					mapRequirement = ServerUtils.sanitizeMapMinWlVersion(mapRequirement);
-					if (!mapRequirement.isEmpty() && !ServerUtils.matchesWidelandsVersion(
-					                                     widelandsVersion, mapRequirement, null)) {
+					Utils.Profile profile =
+					    Utils.readProfile(new File("addons/" + addon + "/addon"), addon);
+					if (!ServerUtils.matchesWidelandsVersion(
+					        widelandsVersion, ServerUtils.findMinWlVersion(addon),
+					        profile.get("max_wl_version") != null ?
+					            profile.get("max_wl_version").value :
+					            null)) {
 						continue;
 					}
 				}
+				compatibleAddOns.add(addon);
+			}
+		}
 
-				compatibleAddOns.add(sql.getString("slug") + ".map");
+		if (commandVersion >= 3) {
+			try (Utils.QueryResult sql = Utils.sqlQuery(
+			         Utils.Databases.kWebsite,
+			         "select slug,file,wl_version_after from wlmaps_map order by slug");) {
+				while (sql.rs.next()) {
+					if (!new File(Utils.config("website_maps_path"), sql.rs.getString("file"))
+					         .isFile()) {
+						continue;  // File does not exist
+					}
+
+					if (versionCheck) {
+						String mapRequirement = sql.rs.getString("wl_version_after");
+						mapRequirement = ServerUtils.sanitizeMapMinWlVersion(mapRequirement);
+						if (!mapRequirement.isEmpty() &&
+						    !ServerUtils.matchesWidelandsVersion(
+						        widelandsVersion, mapRequirement, null)) {
+							continue;
+						}
+					}
+
+					compatibleAddOns.add(sql.rs.getString("slug") + ".map");
+				}
 			}
 		}
 
@@ -299,59 +304,179 @@ public class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ServerUtils.semaphoreRO(cmd[1], () -> {
-			ResultSet sqlMain =
-			    Utils.sql(Utils.Databases.kAddOns, "select * from addons where name=?", cmd[1]);
-			if (!sqlMain.next())
-				throw new ServerUtils.WLProtocolException("Add-on '" + cmd[1] +
+			try (Utils.QueryResult sqlMain = Utils.sqlQuery(
+			         Utils.Databases.kAddOns, "select * from addons where name=?", cmd[1]);) {
+				if (!sqlMain.rs.next())
+					throw new ServerUtils.WLProtocolException("Add-on '" + cmd[1] +
+					                                          "' is not in the database");
+				final long addOnID = sqlMain.rs.getLong("id");
+
+				Utils.Profile profile =
+				    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]);
+				Utils.Profile.Section screenies =
+				    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1])
+				        .getSection("");
+
+				out.println(profile.get("name").value);
+				out.println(profile.get("name").value(locale));
+				out.println(profile.get("description").value);
+				out.println(profile.get("description").value(locale));
+				out.println(profile.get("author").value);
+				out.println(profile.get("author").value(locale));
+
+				out.println(Utils.getUploadersString(
+				    addOnID, commandVersion < 2));  // Version 1 assumes there is only one uploader
+
+				out.println(profile.get("version").value);
+				out.println(sqlMain.rs.getLong("i18n_version"));
+				out.println(profile.get("category").value);
+				out.println(profile.get("requires").value);
+				out.println(ServerUtils.findMinWlVersion(cmd[1]));
+				out.println((profile.get("max_wl_version") != null ?
+				                 profile.get("max_wl_version").value :
+				                 ""));
+				out.println(
+				    (profile.get("sync_safe") != null ? profile.get("sync_safe").value : ""));
+
+				out.println(screenies.contents.size());
+				for (String key : screenies.contents.keySet())
+					out.println(key + "\n" + screenies.contents.get(key).value(locale));
+
+				out.println(Utils.filesize(new File("addons", cmd[1])));
+				out.println(sqlMain.rs.getLong("timestamp"));
+				out.println(sqlMain.rs.getLong("downloads"));
+
+				for (long v : Utils.getVotes(addOnID)) out.println(v);
+
+				ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
+				try (Utils.QueryResult sql =
+				         Utils.sqlQuery(Utils.Databases.kAddOns,
+				                        "select * from usercomments where addon=?", addOnID);) {
+					while (sql.rs.next()) {
+						Long editorID = sql.rs.getLong("editor");
+						if (sql.rs.wasNull()) editorID = null;
+						Long editTS = sql.rs.getLong("edit_timestamp");
+						if (sql.rs.wasNull()) editTS = null;
+						comments.add(new Utils.AddOnComment(
+						    sql.rs.getLong("id"), sql.rs.getLong("user"),
+						    sql.rs.getLong("timestamp"), editorID, editTS,
+						    sql.rs.getString("version"), sql.rs.getString("message")));
+					}
+				}
+
+				out.println(comments.size());
+				for (Utils.AddOnComment c : comments) {
+					if (commandVersion >= 2) out.println(c.commentID);
+					out.println(Utils.getUsername(c.userID));
+					out.println(c.timestamp);
+					out.println(c.editorID == null ? "" : Utils.getUsername(c.editorID));
+					out.println(c.editTimestamp == null ? 0 : c.editTimestamp);
+					out.println(c.version);
+
+					String[] msg = c.message.split("\n");
+					out.println(msg.length - 1);
+					for (String m : msg) out.println(m);
+				}
+
+				out.println(sqlMain.rs.getLong("security") > 0 ? "verified" : "unchecked");
+				if (commandVersion >= 2) out.println(sqlMain.rs.getLong("quality"));
+
+				File iconFile = new File("addons/" + cmd[1], "icon.png");
+				if (iconFile.isFile()) {
+					ServerUtils.writeOneFile(iconFile, out);
+				} else {
+					out.println("0\n0");
+				}
+
+				out.println("ENDOFSTREAM");
+			}
+		});
+	}
+
+	/**
+	 * Handle a CMD_INFO command for a map.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 * @todo Localization for map strings
+	 */
+	private void handleCmdInfoMap() throws Exception {
+		try (Utils.QueryResult sqlMain = Utils.sqlQuery(
+		         Utils.Databases.kWebsite,
+		         "select *, UNIX_TIMESTAMP(pub_date) as timestamp from wlmaps_map where slug=?",
+		         cmd[1]);) {
+			if (!sqlMain.rs.next())
+				throw new ServerUtils.WLProtocolException("Map '" + cmd[1] +
 				                                          "' is not in the database");
-			final long addOnID = sqlMain.getLong("id");
 
-			Utils.Profile profile =
-			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]);
-			Utils.Profile.Section screenies =
-			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1])
-			        .getSection("");
+			final long mapID = sqlMain.rs.getLong("id");
+			final String name = sqlMain.rs.getString("name");
+			final String descr = sqlMain.rs.getString("descr");
+			final String hint = sqlMain.rs.getString("hint");
+			final String uploader_comment = sqlMain.rs.getString("uploader_comment");
+			final String author = sqlMain.rs.getString("author");
 
-			out.println(profile.get("name").value);
-			out.println(profile.get("name").value(locale));
-			out.println(profile.get("description").value);
-			out.println(profile.get("description").value(locale));
-			out.println(profile.get("author").value);
-			out.println(profile.get("author").value(locale));
+			final File minimapFile =
+			    new File(Utils.config("website_maps_path"), sqlMain.rs.getString("minimap"));
+			final File mapFile =
+			    new File(Utils.config("website_maps_path"), sqlMain.rs.getString("file"));
 
-			out.println(Utils.getUploadersString(
-			    addOnID, commandVersion < 2));  // Version 1 assumes there is only one uploader
+			if (!mapFile.isFile())
+				throw new ServerUtils.WLProtocolException("Map file does not exist");
 
-			out.println(profile.get("version").value);
-			out.println(sqlMain.getLong("i18n_version"));
-			out.println(profile.get("category").value);
-			out.println(profile.get("requires").value);
-			out.println(ServerUtils.findMinWlVersion(cmd[1]));
+			out.println(Utils.richtextEscape(name));
+			out.println(Utils.richtextEscape(
+			    Utils.translate(name, Buildcats.kWebsiteMapsTextdomain, locale)));
+			out.println(Utils.richtextEscape(descr));
+			out.println(Utils.richtextEscape(
+			    Utils.translate(descr, Buildcats.kWebsiteMapsTextdomain, locale)));
+			out.println(Utils.richtextEscape(author));
+			out.println(Utils.richtextEscape(
+			    Utils.translate(author, Buildcats.kWebsiteMapsTextdomain, locale)));
+			out.println(Utils.getUsername(sqlMain.rs.getLong("uploader_id")));
+
+			out.println();       // add-on version
+			out.println("0");    // i18n version
+			out.println("map");  // category
+			out.println();       // requirements
 			out.println(
-			    (profile.get("max_wl_version") != null ? profile.get("max_wl_version").value : ""));
-			out.println((profile.get("sync_safe") != null ? profile.get("sync_safe").value : ""));
+			    ServerUtils.sanitizeMapMinWlVersion(sqlMain.rs.getString("wl_version_after")));
+			out.println();        // max version
+			out.println("true");  // sync safety - we just hope it contains no bad scripting...
+			out.println("0");     // number of screenshots
 
-			out.println(screenies.contents.size());
-			for (String key : screenies.contents.keySet())
-				out.println(key + "\n" + screenies.contents.get(key).value(locale));
+			out.println(mapFile.length());
+			out.println(sqlMain.rs.getLong("timestamp"));
+			out.println(sqlMain.rs.getLong("nr_downloads"));
 
-			out.println(Utils.filesize(new File("addons", cmd[1])));
-			out.println(sqlMain.getLong("timestamp"));
-			out.println(sqlMain.getLong("downloads"));
+			int[] votes = new int[10];
+			try (Utils.QueryResult sql = Utils.sqlQuery(
+			         Utils.Databases.kWebsite,
+			         "select score from star_ratings_userrating where rating_id=(select id from "
+			             + "star_ratings_rating where object_id=?)",
+			         mapID);) {
+				for (int i = 0; i < votes.length; ++i) votes[i] = 0;
+				while (sql.rs.next()) votes[sql.rs.getInt("score") - 1]++;
+				for (int v : votes) out.println(v);
+			}
 
-			for (long v : Utils.getVotes(addOnID)) out.println(v);
-
-			ResultSet sql = Utils.sql(
-			    Utils.Databases.kAddOns, "select * from usercomments where addon=?", addOnID);
 			ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
-			while (sql.next()) {
-				Long editorID = sql.getLong("editor");
-				if (sql.wasNull()) editorID = null;
-				Long editTS = sql.getLong("edit_timestamp");
-				if (sql.wasNull()) editTS = null;
-				comments.add(new Utils.AddOnComment(
-				    sql.getLong("id"), sql.getLong("user"), sql.getLong("timestamp"), editorID,
-				    editTS, sql.getString("version"), sql.getString("message")));
+			try (Utils.QueryResult sql = Utils.sqlQuery(
+			         Utils.Databases.kWebsite,
+			         "select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, "
+			             + "UNIX_TIMESTAMP(date_modified) as edited, comment "
+			             + "from threadedcomments_threadedcomment where "
+			             + "content_type_id=(select id from django_content_type where "
+			             + "app_label=?) and object_id=? and is_public>0",
+			         Utils.config("website_maps_slug"), mapID);) {
+				while (sql.rs.next()) {
+					Long user = sql.rs.getLong("user_id");
+					Long ts1 = sql.rs.getLong("timestamp");
+					Long ts2 = sql.rs.getLong("edited");
+					if (ts2.longValue() <= ts1.longValue()) ts2 = null;
+
+					comments.add(new Utils.AddOnComment(sql.rs.getLong("id"), user, ts1,
+					                                    ts2 == null ? null : user, ts2, "",
+					                                    sql.rs.getString("comment")));
+				}
 			}
 			out.println(comments.size());
 			for (Utils.AddOnComment c : comments) {
@@ -367,134 +492,29 @@ public class HandleCommand {
 				for (String m : msg) out.println(m);
 			}
 
-			out.println(sqlMain.getLong("security") > 0 ? "verified" : "unchecked");
-			if (commandVersion >= 2) out.println(sqlMain.getLong("quality"));
+			out.println("verified");  // we don't review maps currently
+			out.println("2");         // nor do we assess their quality
 
-			File iconFile = new File("addons/" + cmd[1], "icon.png");
-			if (iconFile.isFile()) {
-				ServerUtils.writeOneFile(iconFile, out);
+			if (minimapFile.isFile()) {
+				ServerUtils.writeOneFile(minimapFile, out);
 			} else {
-				out.println("0\n0");
+				out.println("0\n0");  // minimap should always exist, but not critical if it doesn't
 			}
 
+			out.println(mapFile.getName());
+			out.println(Utils.richtextEscape(hint));
+			out.println(Utils.richtextEscape(
+			    Utils.translate(hint, Buildcats.kWebsiteMapsTextdomain, locale)));
+			out.println(Utils.richtextEscape(uploader_comment));
+			out.println(Utils.richtextEscape(
+			    Utils.translate(uploader_comment, Buildcats.kWebsiteMapsTextdomain, locale)));
+			out.println(sqlMain.rs.getInt("w"));
+			out.println(sqlMain.rs.getInt("h"));
+			out.println(sqlMain.rs.getInt("nr_players"));
+			out.println(sqlMain.rs.getString("world_name"));
+
 			out.println("ENDOFSTREAM");
-		});
-	}
-
-	/**
-	 * Handle a CMD_INFO command for a map.
-	 * @throws Exception If anything at all goes wrong, throw an Exception.
-	 * @todo Localization for map strings
-	 */
-	private void handleCmdInfoMap() throws Exception {
-		ResultSet sqlMain = Utils.sql(
-		    Utils.Databases.kWebsite,
-		    "select *, UNIX_TIMESTAMP(pub_date) as timestamp from wlmaps_map where slug=?", cmd[1]);
-		if (!sqlMain.next())
-			throw new ServerUtils.WLProtocolException("Map '" + cmd[1] +
-			                                          "' is not in the database");
-
-		final long mapID = sqlMain.getLong("id");
-		final String name = sqlMain.getString("name");
-		final String descr = sqlMain.getString("descr");
-		final String hint = sqlMain.getString("hint");
-		final String uploader_comment = sqlMain.getString("uploader_comment");
-		final String author = sqlMain.getString("author");
-
-		final File minimapFile =
-		    new File(Utils.config("website_maps_path"), sqlMain.getString("minimap"));
-		final File mapFile = new File(Utils.config("website_maps_path"), sqlMain.getString("file"));
-
-		if (!mapFile.isFile()) throw new ServerUtils.WLProtocolException("Map file does not exist");
-
-		out.println(Utils.richtextEscape(name));
-		out.println(
-		    Utils.richtextEscape(Utils.translate(name, Buildcats.kWebsiteMapsTextdomain, locale)));
-		out.println(Utils.richtextEscape(descr));
-		out.println(
-		    Utils.richtextEscape(Utils.translate(descr, Buildcats.kWebsiteMapsTextdomain, locale)));
-		out.println(Utils.richtextEscape(author));
-		out.println(Utils.richtextEscape(
-		    Utils.translate(author, Buildcats.kWebsiteMapsTextdomain, locale)));
-		out.println(Utils.getUsername(sqlMain.getLong("uploader_id")));
-
-		out.println();       // add-on version
-		out.println("0");    // i18n version
-		out.println("map");  // category
-		out.println();       // requirements
-		out.println(ServerUtils.sanitizeMapMinWlVersion(sqlMain.getString("wl_version_after")));
-		out.println();        // max version
-		out.println("true");  // sync safety - we just hope it contains no bad scripting...
-		out.println("0");     // number of screenshots
-
-		out.println(mapFile.length());
-		out.println(sqlMain.getLong("timestamp"));
-		out.println(sqlMain.getLong("nr_downloads"));
-
-		ResultSet sql =
-		    Utils.sql(Utils.Databases.kWebsite,
-		              "select score from star_ratings_userrating where rating_id=(select id from "
-		                  + "star_ratings_rating where object_id=?)",
-		              mapID);
-		int[] votes = new int[10];
-		for (int i = 0; i < votes.length; ++i) votes[i] = 0;
-		while (sql.next()) votes[sql.getInt("score") - 1]++;
-		for (int v : votes) out.println(v);
-
-		sql = Utils.sql(Utils.Databases.kWebsite,
-		                "select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, "
-		                    + "UNIX_TIMESTAMP(date_modified) as edited, comment "
-		                    + "from threadedcomments_threadedcomment where "
-		                    + "content_type_id=(select id from django_content_type where "
-		                    + "app_label=?) and object_id=? and is_public>0",
-		                Utils.config("website_maps_slug"), mapID);
-		ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
-		while (sql.next()) {
-			Long user = sql.getLong("user_id");
-			Long ts1 = sql.getLong("timestamp");
-			Long ts2 = sql.getLong("edited");
-			if (ts2.longValue() <= ts1.longValue()) ts2 = null;
-
-			comments.add(new Utils.AddOnComment(sql.getLong("id"), user, ts1,
-			                                    ts2 == null ? null : user, ts2, "",
-			                                    sql.getString("comment")));
 		}
-		out.println(comments.size());
-		for (Utils.AddOnComment c : comments) {
-			if (commandVersion >= 2) out.println(c.commentID);
-			out.println(Utils.getUsername(c.userID));
-			out.println(c.timestamp);
-			out.println(c.editorID == null ? "" : Utils.getUsername(c.editorID));
-			out.println(c.editTimestamp == null ? 0 : c.editTimestamp);
-			out.println(c.version);
-
-			String[] msg = c.message.split("\n");
-			out.println(msg.length - 1);
-			for (String m : msg) out.println(m);
-		}
-
-		out.println("verified");  // we don't review maps currently
-		out.println("2");         // nor do we assess their quality
-
-		if (minimapFile.isFile()) {
-			ServerUtils.writeOneFile(minimapFile, out);
-		} else {
-			out.println("0\n0");  // minimap should always exist, but not critical if it doesn't
-		}
-
-		out.println(mapFile.getName());
-		out.println(Utils.richtextEscape(hint));
-		out.println(
-		    Utils.richtextEscape(Utils.translate(hint, Buildcats.kWebsiteMapsTextdomain, locale)));
-		out.println(Utils.richtextEscape(uploader_comment));
-		out.println(Utils.richtextEscape(
-		    Utils.translate(uploader_comment, Buildcats.kWebsiteMapsTextdomain, locale)));
-		out.println(sqlMain.getInt("w"));
-		out.println(sqlMain.getInt("h"));
-		out.println(sqlMain.getInt("nr_players"));
-		out.println(sqlMain.getString("world_name"));
-
-		out.println("ENDOFSTREAM");
 	}
 
 	/**
@@ -507,22 +527,23 @@ public class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 1);
 
 		if (checkCmd1IsMap()) {
-			ResultSet sql =
-			    Utils.sql(Utils.Databases.kWebsite,
-			              "select file,nr_downloads from wlmaps_map where slug=?", cmd[1]);
-			if (!sql.next())
-				throw new ServerUtils.WLProtocolException("Map '" + cmd[1] +
-				                                          "' is not in the database");
+			try (Utils.QueryResult sql = Utils.sqlQuery(
+			         Utils.Databases.kWebsite,
+			         "select file,nr_downloads from wlmaps_map where slug=?", cmd[1]);) {
+				if (!sql.rs.next())
+					throw new ServerUtils.WLProtocolException("Map '" + cmd[1] +
+					                                          "' is not in the database");
 
-			ServerUtils.writeOneFile(
-			    new File(Utils.config("website_maps_path"), sql.getString("file")), out);
+				ServerUtils.writeOneFile(
+				    new File(Utils.config("website_maps_path"), sql.rs.getString("file")), out);
 
-			// TODO enable download counter for maps
-			// Utils.sql(Utils.Databases.kWebsite, "update wlmaps_map set nr_downloads=? where
-			// slug=?", sql.getLong("nr_downloads") + 1, cmd[1]);
+				// TODO enable download counter for maps
+				// Utils.sqlCall(Utils.Databases.kWebsite, "update wlmaps_map set nr_downloads=?
+				// where slug=?", sql.rs.getLong("nr_downloads") + 1, cmd[1]);
 
-			out.println("ENDOFSTREAM");
-			return;
+				out.println("ENDOFSTREAM");
+				return;
+			}
 		}
 
 		ServerUtils.checkAddOnExists(cmd[1]);
@@ -533,11 +554,13 @@ public class HandleCommand {
 			dir.writeAllFileInfos(out);
 		});
 
-		ResultSet sql = Utils.sql(
-		    Utils.Databases.kAddOns, "select id,downloads from addons where name=?", cmd[1]);
-		sql.next();
-		Utils.sql(Utils.Databases.kAddOns, "update addons set downloads=? where id=?",
-		          sql.getLong("downloads") + 1, sql.getLong("id"));
+		try (Utils.QueryResult sql =
+		         Utils.sqlQuery(Utils.Databases.kAddOns,
+		                        "select id,downloads from addons where name=?", cmd[1]);) {
+			sql.rs.next();
+			Utils.sqlCall(Utils.Databases.kAddOns, "update addons set downloads=? where id=?",
+			              sql.rs.getLong("downloads") + 1, sql.rs.getLong("id"));
+		}
 
 		out.println("ENDOFSTREAM");
 	}
@@ -600,12 +623,12 @@ public class HandleCommand {
 
 		final long addon = Utils.getAddOnID(cmd[1]);
 		final int vote = Integer.valueOf(cmd[2]);
-		Utils.sql(Utils.Databases.kAddOns, "delete from uservotes where user=? and addon=?",
-		          userDatabaseID, addon);
+		Utils.sqlCall(Utils.Databases.kAddOns, "delete from uservotes where user=? and addon=?",
+		              userDatabaseID, addon);
 		if (vote > 0) {
-			Utils.sql(Utils.Databases.kAddOns,
-			          "insert into uservotes (user, addon, vote) value (?,?,?)", userDatabaseID,
-			          addon, vote);
+			Utils.sqlCall(Utils.Databases.kAddOns,
+			              "insert into uservotes (user, addon, vote) value (?,?,?)", userDatabaseID,
+			              addon, vote);
 		}
 
 		out.println("ENDOFSTREAM");
@@ -625,19 +648,21 @@ public class HandleCommand {
 		}
 
 		if (checkCmd1IsMap()) {
-			ResultSet sql =
-			    Utils.sql(Utils.Databases.kWebsite,
-			              "select score from star_ratings_userrating where user_id=? and "
-			                  + "rating_id=(select id from star_ratings_rating where object_id=?)",
-			              userDatabaseID, ServerUtils.getMapID(cmd[1]));
-			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
+			try (Utils.QueryResult sql = Utils.sqlQuery(
+			         Utils.Databases.kWebsite,
+			         "select score from star_ratings_userrating where user_id=? and "
+			             + "rating_id=(select id from star_ratings_rating where object_id=?)",
+			         userDatabaseID, ServerUtils.getMapID(cmd[1]));) {
+				out.println(sql.rs.next() ? ("" + sql.rs.getLong(1)) : "0");
+			}
 		} else {
 			ServerUtils.checkAddOnExists(cmd[1]);
 
-			ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-			                          "select vote from uservotes where user=? and addon=?",
-			                          userDatabaseID, Utils.getAddOnID(cmd[1]));
-			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
+			try (Utils.QueryResult sql = Utils.sqlQuery(
+			         Utils.Databases.kAddOns, "select vote from uservotes where user=? and addon=?",
+			         userDatabaseID, Utils.getAddOnID(cmd[1]));) {
+				out.println(sql.rs.next() ? ("" + sql.rs.getLong(1)) : "0");
+			}
 		}
 
 		out.println("ENDOFSTREAM");
@@ -668,7 +693,7 @@ public class HandleCommand {
 		}
 		ServerUtils.checkEndOfStream(in);
 
-		Utils.sql(
+		Utils.sqlCall(
 		    Utils.Databases.kAddOns,
 		    "insert into usercomments (addon,user,timestamp,version,message) value(?,?,?,?,?)",
 		    Utils.getAddOnID(cmd[1]), userDatabaseID, (System.currentTimeMillis() / 1000), cmd[2],
@@ -701,58 +726,65 @@ public class HandleCommand {
 		if (commandVersion >= 2) {
 			commentID = Integer.valueOf(cmd[1]);
 		} else {
-			ResultSet sql =
-			    Utils.sql(Utils.Databases.kAddOns, "select id from usercomments where addon=?",
-			              Utils.getAddOnID(cmd[1]));
-			for (int i = Integer.valueOf(cmd[2]); i >= 0; i--) {
-				if (!sql.next()) {
-					throw new ServerUtils.WLProtocolException("Invalid comment index " + cmd[2]);
+			try (Utils.QueryResult sql = Utils.sqlQuery(Utils.Databases.kAddOns,
+			                                            "select id from usercomments where addon=?",
+			                                            Utils.getAddOnID(cmd[1]));) {
+				for (int i = Integer.valueOf(cmd[2]); i >= 0; i--) {
+					if (!sql.rs.next()) {
+						throw new ServerUtils.WLProtocolException("Invalid comment index " +
+						                                          cmd[2]);
+					}
 				}
+				commentID = sql.rs.getLong("id");
 			}
-			commentID = sql.getLong("id");
 		}
-		ResultSet sql = Utils.sql(
-		    Utils.Databases.kAddOns,
-		    "select user,editor,timestamp,addon,message from usercomments where id=?", commentID);
-		if (!sql.next())
-			throw new ServerUtils.WLProtocolException("Invalid comment ID " + commentID);
+		try (Utils.QueryResult sql = Utils.sqlQuery(
+		         Utils.Databases.kAddOns,
+		         "select user,editor,timestamp,addon,message from usercomments where id=?",
+		         commentID);) {
+			if (!sql.rs.next())
+				throw new ServerUtils.WLProtocolException("Invalid comment ID " + commentID);
 
-		if (!admin) {
-			if (sql.getLong("user") != userDatabaseID)
-				throw new ServerUtils.WLProtocolException(
-				    "Forbidden to edit another user's comment");
-			final long editor = sql.getLong("editor");
-			if (!sql.wasNull() && editor != userDatabaseID)
-				throw new ServerUtils.WLProtocolException(
-				    "Forbidden to edit a comment edited by a maintainer");
-			if (System.currentTimeMillis() / 1000 - sql.getLong("timestamp") >
-			    ServerUtils.kCommentEditTimeout)
-				throw new ServerUtils.WLProtocolException(
-				    "Forbidden to edit a comment later than one day after posting");
+			if (!admin) {
+				if (sql.rs.getLong("user") != userDatabaseID)
+					throw new ServerUtils.WLProtocolException(
+					    "Forbidden to edit another user's comment");
+				final long editor = sql.rs.getLong("editor");
+				if (!sql.rs.wasNull() && editor != userDatabaseID)
+					throw new ServerUtils.WLProtocolException(
+					    "Forbidden to edit a comment edited by a maintainer");
+				if (System.currentTimeMillis() / 1000 - sql.rs.getLong("timestamp") >
+				    ServerUtils.kCommentEditTimeout)
+					throw new ServerUtils.WLProtocolException(
+					    "Forbidden to edit a comment later than one day after posting");
+			}
+
+			final int nrLines = Integer.valueOf(cmd[commandVersion < 2 ? 3 : 2]);
+			if (nrLines < 0 || nrLines > 100 || (nrLines == 0 && commandVersion < 2))
+				throw new ServerUtils.WLProtocolException("Comment too long (" + nrLines +
+				                                          " lines)");
+			String msg = "";
+			for (int i = nrLines; i > 0; --i) {
+				if (!msg.isEmpty()) msg += "\n";
+				msg += ServerUtils.readLine(in);
+			}
+
+			ServerUtils.checkEndOfStream(in);
+
+			if (nrLines == 0) {
+				Utils.sqlCall(
+				    Utils.Databases.kAddOns, "delete from usercomments where id=?", commentID);
+			} else {
+				ServerUtils.sendCommentNotifications(Utils.getAddOnName(sql.rs.getLong("addon")),
+				                                     username, msg, sql.rs.getString("message"));
+				Utils.sqlCall(
+				    Utils.Databases.kAddOns,
+				    "update usercomments set editor=?, edit_timestamp=?, message=? where id=?",
+				    userDatabaseID, (System.currentTimeMillis() / 1000), msg, commentID);
+			}
+
+			out.println("ENDOFSTREAM");
 		}
-
-		final int nrLines = Integer.valueOf(cmd[commandVersion < 2 ? 3 : 2]);
-		if (nrLines < 0 || nrLines > 100 || (nrLines == 0 && commandVersion < 2))
-			throw new ServerUtils.WLProtocolException("Comment too long (" + nrLines + " lines)");
-		String msg = "";
-		for (int i = nrLines; i > 0; --i) {
-			if (!msg.isEmpty()) msg += "\n";
-			msg += ServerUtils.readLine(in);
-		}
-
-		ServerUtils.checkEndOfStream(in);
-
-		if (nrLines == 0) {
-			Utils.sql(Utils.Databases.kAddOns, "delete from usercomments where id=?", commentID);
-		} else {
-			ServerUtils.sendCommentNotifications(
-			    Utils.getAddOnName(sql.getLong("addon")), username, msg, sql.getString("message"));
-			Utils.sql(Utils.Databases.kAddOns,
-			          "update usercomments set editor=?, edit_timestamp=?, message=? where id=?",
-			          userDatabaseID, (System.currentTimeMillis() / 1000), msg, commentID);
-		}
-
-		out.println("ENDOFSTREAM");
 	}
 
 	/**
@@ -842,7 +874,7 @@ public class HandleCommand {
 		final int state = Integer.valueOf(cmd[2]);
 		if (state != 0 && state != 1)
 			throw new ServerUtils.WLProtocolException("Invalid state " + cmd[2]);
-		Utils.sql(
+		Utils.sqlCall(
 		    Utils.Databases.kAddOns, "update addons set security=? where name=?", state, cmd[1]);
 
 		out.println("ENDOFSTREAM");
@@ -864,10 +896,10 @@ public class HandleCommand {
 		final int quality = Integer.valueOf(cmd[2]);
 		if (quality < 0 || quality > 3)
 			throw new ServerUtils.WLProtocolException("Invalid quality " + cmd[2]);
-		Utils.sql(Utils.Databases.kAddOns,
-		          quality > 0 ? "update addons set quality=?, security=1 where name=?" :
-		                        "update addons set quality=? where name=?",
-		          quality, cmd[1]);
+		Utils.sqlCall(Utils.Databases.kAddOns,
+		              quality > 0 ? "update addons set quality=?, security=1 where name=?" :
+		                            "update addons set quality=? where name=?",
+		              quality, cmd[1]);
 
 		out.println("ENDOFSTREAM");
 	}
@@ -931,32 +963,35 @@ public class HandleCommand {
 			        ("\n\n-------------------------\n\nThe add-on can still be restored manually "
 			         + "from the Git history and the last database backups."));
 
-			ResultSet sql =
-			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
 			Set<Long> notifyUsers = new HashSet<>();
-			while (sql.next()) notifyUsers.add(sql.getLong("user"));
-			notifyUsers = ServerUtils.getNotificationSubscribers("deleted", notifyUsers);
-
-			for (Long user : notifyUsers) {
-				sql = Utils.sql(Utils.Databases.kWebsite,
-				                "select email,username from auth_user where id=?", user);
-				sql.next();
-
-				Utils.sendEMail(
-				    sql.getString("email"), "Add-On Deleted",
-				    "Dear " + sql.getString("username") + ",\n\nyour add-on '" + cmd[1] +
-				        ("' has been deleted by the server administrators for the following "
-				         + "reason:\n") +
-				        reason + "\n\n-------------------------\n" +
-				        ("If you believe this decision to be incorrect, please contact us in "
-				         + "the forum at https://www.widelands.org/forum/forum/17/."),
-				    true);
+			try (Utils.QueryResult sql = Utils.sqlQuery(
+			         Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);) {
+				while (sql.rs.next()) notifyUsers.add(sql.rs.getLong("user"));
+				notifyUsers = ServerUtils.getNotificationSubscribers("deleted", notifyUsers);
 			}
 
-			Utils.sql(Utils.Databases.kAddOns, "delete from uservotes where addon=?", id);
-			Utils.sql(Utils.Databases.kAddOns, "delete from usercomments where addon=?", id);
-			Utils.sql(Utils.Databases.kAddOns, "delete from addons where id=?", id);
-			Utils.sql(Utils.Databases.kAddOns, "delete from uploaders where addon=?", id);
+			for (Long user : notifyUsers) {
+				try (Utils.QueryResult sql =
+				         Utils.sqlQuery(Utils.Databases.kWebsite,
+				                        "select email,username from auth_user where id=?", user);) {
+					sql.rs.next();
+
+					Utils.sendEMail(
+					    sql.rs.getString("email"), "Add-On Deleted",
+					    "Dear " + sql.rs.getString("username") + ",\n\nyour add-on '" + cmd[1] +
+					        ("' has been deleted by the server administrators for the following "
+					         + "reason:\n") +
+					        reason + "\n\n-------------------------\n" +
+					        ("If you believe this decision to be incorrect, please contact us in "
+					         + "the forum at https://www.widelands.org/forum/forum/17/."),
+					    true);
+				}
+			}
+
+			Utils.sqlCall(Utils.Databases.kAddOns, "delete from uservotes where addon=?", id);
+			Utils.sqlCall(Utils.Databases.kAddOns, "delete from usercomments where addon=?", id);
+			Utils.sqlCall(Utils.Databases.kAddOns, "delete from addons where id=?", id);
+			Utils.sqlCall(Utils.Databases.kAddOns, "delete from uploaders where addon=?", id);
 
 			ServerUtils.doDelete(new File("addons", cmd[1]));
 			ServerUtils.doDelete(new File("po", cmd[1]));
@@ -1140,29 +1175,35 @@ public class HandleCommand {
 				long maxFiles = 1000;
 				long maxDirs = 1000;
 				long minUploadInterval = 60 * 60 * 24 * 3;
-				ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-				                          "select filesize,nrfiles,nrdirs,upload_interval from "
-				                              + "upload_override where name=?",
-				                          cmd[1]);
-				if (sql.next()) {
-					long val;
-					val = sql.getLong("filesize");
-					if (!sql.wasNull()) maxFilesize = val;
-					val = sql.getLong("nrfiles");
-					if (!sql.wasNull()) maxFiles = val;
-					val = sql.getLong("nrdirs");
-					if (!sql.wasNull()) maxDirs = val;
-					val = sql.getLong("upload_interval");
-					if (!sql.wasNull()) minUploadInterval = val;
+				try (Utils.QueryResult sql =
+				         Utils.sqlQuery(Utils.Databases.kAddOns,
+				                        "select filesize,nrfiles,nrdirs,upload_interval from "
+				                            + "upload_override where name=?",
+				                        cmd[1]);) {
+					if (sql.rs.next()) {
+						long val;
+						val = sql.rs.getLong("filesize");
+						if (!sql.rs.wasNull()) maxFilesize = val;
+						val = sql.rs.getLong("nrfiles");
+						if (!sql.rs.wasNull()) maxFiles = val;
+						val = sql.rs.getLong("nrdirs");
+						if (!sql.rs.wasNull()) maxDirs = val;
+						val = sql.rs.getLong("upload_interval");
+						if (!sql.rs.wasNull()) minUploadInterval = val;
+					}
 				}
 
-				sql = Utils.sql(Utils.Databases.kAddOns,
-				                "select edit_timestamp from addons where name=?", cmd[1]);
-				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < minUploadInterval) {
-					throw new ServerUtils.WLProtocolException(
-					    "Please do not upload updates for an add-on more often than every three "
-					    + "days. "
-					    + "In urgent cases please contact the Widelands Development Team.");
+				try (Utils.QueryResult sql = Utils.sqlQuery(
+				         Utils.Databases.kAddOns, "select edit_timestamp from addons where name=?",
+				         cmd[1]);) {
+					if (sql.rs.next() &&
+					    timestamp - sql.rs.getLong("edit_timestamp") < minUploadInterval) {
+						throw new ServerUtils.WLProtocolException(
+						    "Please do not upload updates for an add-on more often than every " +
+						    "three "
+						    + "days. "
+						    + "In urgent cases please contact the Widelands Development Team.");
+					}
 				}
 
 				if (commandVersion == 1) {
@@ -1207,49 +1248,53 @@ public class HandleCommand {
 
 					diff = ServerUtils.diff(addOnDir.getPath(), tempDir.getPath());
 
-					sql = Utils.sql(Utils.Databases.kAddOns,
-					                "select id,security,quality from addons where name=?", cmd[1]);
-					sql.next();
-					oldSecurity = sql.getInt("security");
-					oldQuality = sql.getInt("quality");
-					final boolean trust = blackWhiteList.contains("trust_upgrade");
-					Utils.sql(
-					    Utils.Databases.kAddOns,
-					    "update addons set security=?, quality=?, edit_timestamp=? where id=?",
-					    trust ? oldSecurity : 0, trust ? oldQuality : 0, timestamp,
-					    sql.getLong("id"));
+					try (Utils.QueryResult sql = Utils.sqlQuery(
+					         Utils.Databases.kAddOns,
+					         "select id,security,quality from addons where name=?", cmd[1]);) {
+						sql.rs.next();
+						oldSecurity = sql.rs.getInt("security");
+						oldQuality = sql.rs.getInt("quality");
+						final boolean trust = blackWhiteList.contains("trust_upgrade");
+						Utils.sqlCall(
+						    Utils.Databases.kAddOns,
+						    "update addons set security=?, quality=?, edit_timestamp=? where id=?",
+						    trust ? oldSecurity : 0, trust ? oldQuality : 0, timestamp,
+						    sql.rs.getLong("id"));
+					}
 
 					ServerUtils.doDelete(addOnDir);
 				} else {
 					File emptyDir = Files.createTempDirectory(null).toFile();
 					diff = ServerUtils.diff(emptyDir.getPath(), tempDir.getPath());
 
-					Utils.sql(Utils.Databases.kAddOns,
-					          "insert into addons "
-					              + "(name,timestamp,edit_timestamp,i18n_version,security,quality,"
-					              + "downloads) value(?,?,?,0,?,0,0)",
-					          cmd[1], timestamp, timestamp,
-					          blackWhiteList.contains("trust_new") ? 1 : 0);
-					Utils.sql(Utils.Databases.kAddOns,
-					          "insert into uploaders (addon,user) value(?,?)",
-					          Utils.getAddOnID(cmd[1]), userDatabaseID);
+					Utils.sqlCall(
+					    Utils.Databases.kAddOns,
+					    "insert into addons "
+					        + "(name,timestamp,edit_timestamp,i18n_version,security,quality,"
+					        + "downloads) value(?,?,?,0,?,0,0)",
+					    cmd[1], timestamp, timestamp, blackWhiteList.contains("trust_new") ? 1 : 0);
+					Utils.sqlCall(Utils.Databases.kAddOns,
+					              "insert into uploaders (addon,user) value(?,?)",
+					              Utils.getAddOnID(cmd[1]), userDatabaseID);
 				}
 
 				for (Long user : ServerUtils.getNotificationSubscribers("new", null)) {
-					sql = Utils.sql(
-					    Utils.Databases.kWebsite, "select email from auth_user where id=?", user);
-					sql.next();
-					Utils.sendEMail(
-					    sql.getString("email"),
-					    (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
-					    (isUpdate ? ("An add-on has been updated by " + username) :
-					                ("A new add-on has been submitted by " + username)) +
-					        ":\n\n"
-					        + "Name: " + newProfile.get("name").value + "\n"
-					        + "Description: " + newProfile.get("description").value + "\n"
-					        + "Category: " + newProfile.get("category").value + "\n"
-					        + "Version: " + newProfile.get("version").value,
-					    true);
+					try (Utils.QueryResult sql =
+					         Utils.sqlQuery(Utils.Databases.kWebsite,
+					                        "select email from auth_user where id=?", user);) {
+						sql.rs.next();
+						Utils.sendEMail(
+						    sql.rs.getString("email"),
+						    (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
+						    (isUpdate ? ("An add-on has been updated by " + username) :
+						                ("A new add-on has been submitted by " + username)) +
+						        ":\n\n"
+						        + "Name: " + newProfile.get("name").value + "\n"
+						        + "Description: " + newProfile.get("description").value + "\n"
+						        + "Category: " + newProfile.get("category").value + "\n"
+						        + "Version: " + newProfile.get("version").value,
+						    true);
+					}
 				}
 
 				Utils.sendEMailToSubscribedAdmins(

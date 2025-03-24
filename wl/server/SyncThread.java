@@ -22,7 +22,6 @@ package wl.server;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -67,7 +66,9 @@ public class SyncThread implements Runnable {
 				Thread.sleep(then - now);
 
 				Utils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
-				for (Utils.Databases db : Utils.Databases.values()) Utils.sql(db, "show tables");
+				for (Utils.Databases db : Utils.Databases.values()) {
+					Utils.sqlCall(db, "show tables");
+				}
 
 				Utils.log("Backing up the database...");
 				new File("backup").mkdir();
@@ -84,23 +85,30 @@ public class SyncThread implements Runnable {
 						ArrayList<String> unverified = new ArrayList<>();
 						ArrayList<String> unassessed = new ArrayList<>();
 						ArrayList<String> notx = new ArrayList<>();
-						ResultSet sql =
-						    Utils.sql(Utils.Databases.kAddOns,
-						              "select name from addons where security=0 order by name");
-						while (sql.next()) unverified.add(sql.getString("name"));
-						sql = Utils.sql(
+
+						Utils.QueryResult sql = Utils.sqlQuery(
+						    Utils.Databases.kAddOns,
+						    "select name from addons where security=0 order by name");
+						while (sql.rs.next()) unverified.add(sql.rs.getString("name"));
+						sql.close();
+
+						sql = Utils.sqlQuery(
 						    Utils.Databases.kAddOns,
 						    "select name from addons where security>0 and quality=0 order by name");
-						while (sql.next()) unassessed.add(sql.getString("name"));
-						sql = Utils.sql(
+						while (sql.rs.next()) unassessed.add(sql.rs.getString("name"));
+						sql.close();
+
+						sql = Utils.sqlQuery(
 						    Utils.Databases.kAddOns,
 						    "select name from addons where security>0 and quality>0 order by name");
-						while (sql.next()) {
-							String name = sql.getString("name");
+						while (sql.rs.next()) {
+							String name = sql.rs.getString("name");
 							if (Utils.bashResult("tx", "status", "-r",
 							                     ServerUtils.toTransifexResource(name)) != 0)
 								notx.add(name);
 						}
+						sql.close();
+
 						if (!unverified.isEmpty() || !unassessed.isEmpty() || !notx.isEmpty()) {
 							String message = String.format(
 							    "There are currently %d unverified add-ons, %d add-on awaiting "

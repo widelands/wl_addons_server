@@ -31,6 +31,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -112,6 +113,36 @@ public class Utils {
 	private static final Connection[] _databases = new Connection[Databases.values().length];
 
 	/**
+	 * The result of an SQL call. You <b>must</b> close this object after use.
+	 */
+	public static class QueryResult implements AutoCloseable {
+		/** The underlying result set. */
+		public final ResultSet rs;
+
+		/** The statement from which this result set was generated. */
+		private final Statement statement;
+
+		/**
+		 * Constructor.
+		 * @param stmt The underlying SQL statement.
+		 * @param r The result set to wrap.
+		 */
+		public QueryResult(Statement stmt, ResultSet r) {
+			statement = stmt;
+			rs = r;
+		}
+
+		/**
+		 * Close the underlying statement and its result set.
+		 * @throws Exception If anything at all goes wrong, throw an Exception.
+		 */
+		@Override
+		public void close() throws Exception {
+			statement.close();
+		}
+	};
+
+	/**
 	 * Initialize the databases. Call this only on startup.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
@@ -128,18 +159,45 @@ public class Utils {
 
 	/**
 	 * Execute an SQL statement. Use placeholders for all parameters to prevent SQL injection.
+	 *
+	 * <p>
+	 * Be sure to close the returned object after use.
+	 *
 	 * @param db Database to use.
 	 * @param query Statement to execute. Use '?' for placeholders.
 	 * @param values Values to substitute for the placeholders.
 	 * @return The result of the query for SELECT statements; null for other statements.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	public static ResultSet sql(Databases db, String query, Object... values) throws Exception {
+	public static QueryResult sqlQuery(Databases db, String query, Object... values)
+	    throws Exception {
 		Connection c = _databases[db.ordinal()];
 		synchronized (c) {
 			PreparedStatement s = c.prepareStatement(query);
 			for (int i = 0; i < values.length; i++) s.setObject(i + 1, values[i]);
-			return s.execute() ? s.getResultSet() : null;
+			if (!s.execute()) return null;
+			return new QueryResult(s, s.getResultSet());
+		}
+	}
+
+	/**
+	 * Execute an SQL call. Use placeholders for all parameters to prevent SQL injection.
+	 *
+	 * <p>
+	 * Be sure to close the returned object after use.
+	 *
+	 * @param db Database to use.
+	 * @param query Statement to execute. Use '?' for placeholders.
+	 * @param values Values to substitute for the placeholders.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	public static void sqlCall(Databases db, String query, Object... values) throws Exception {
+		Connection c = _databases[db.ordinal()];
+		synchronized (c) {
+			PreparedStatement s = c.prepareStatement(query);
+			for (int i = 0; i < values.length; i++) s.setObject(i + 1, values[i]);
+			s.execute();
+			s.close();
 		}
 	}
 
@@ -150,9 +208,11 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static String getUsername(long id) throws Exception {
-		ResultSet r = sql(Databases.kWebsite, "select username from auth_user where id=?", id);
-		if (!r.next()) return null;
-		return r.getString("username");
+		try (QueryResult r =
+		         sqlQuery(Databases.kWebsite, "select username from auth_user where id=?", id);) {
+			if (!r.rs.next()) return null;
+			return r.rs.getString("username");
+		}
 	}
 
 	/**
@@ -162,9 +222,11 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static Long getUserID(String name) throws Exception {
-		ResultSet r = sql(Databases.kWebsite, "select id from auth_user where username=?", name);
-		if (!r.next()) return null;
-		return r.getLong("id");
+		try (QueryResult r =
+		         sqlQuery(Databases.kWebsite, "select id from auth_user where username=?", name);) {
+			if (!r.rs.next()) return null;
+			return r.rs.getLong("id");
+		}
 	}
 
 	/**
@@ -175,11 +237,13 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static boolean checkUserDisabledNotifications(long user, long notice) throws Exception {
-		ResultSet sql = sql(Databases.kWebsite,
-		                    "select send from notification_noticesetting where user_id=? and "
-		                        + "medium=1 and notice_type_id=?",
-		                    user, notice);
-		return sql.next() && sql.getShort("send") < 1;
+		try (QueryResult sql =
+		         sqlQuery(Databases.kWebsite,
+		                  "select send from notification_noticesetting where user_id=? and "
+		                      + "medium=1 and notice_type_id=?",
+		                  user, notice);) {
+			return sql.rs.next() && sql.rs.getShort("send") < 1;
+		}
 	}
 
 	/**
@@ -189,9 +253,11 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static Long getAddOnID(String name) throws Exception {
-		ResultSet r = sql(Databases.kAddOns, "select id from addons where name=?", name);
-		if (!r.next()) return null;
-		return r.getLong("id");
+		try (QueryResult r =
+		         sqlQuery(Databases.kAddOns, "select id from addons where name=?", name);) {
+			if (!r.rs.next()) return null;
+			return r.rs.getLong("id");
+		}
 	}
 
 	/**
@@ -201,9 +267,11 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static String getAddOnName(long id) throws Exception {
-		ResultSet r = sql(Databases.kAddOns, "select name from addons where id=?", id);
-		if (!r.next()) return null;
-		return r.getString("name");
+		try (QueryResult r =
+		         sqlQuery(Databases.kAddOns, "select name from addons where id=?", id);) {
+			if (!r.rs.next()) return null;
+			return r.rs.getString("name");
+		}
 	}
 
 	/**
@@ -215,16 +283,18 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static boolean isUploader(String addon, long userID) throws Exception {
-		ResultSet sql =
-		    sql(Databases.kAddOns, "select user from uploaders where addon=?", getAddOnID(addon));
-		boolean noUploaders = true;
-		while (sql.next()) {
-			if (sql.getLong("user") == userID) {
-				return true;
+		try (QueryResult sql =
+		         sqlQuery(Databases.kAddOns, "select user from uploaders where addon=?",
+		                  getAddOnID(addon));) {
+			boolean noUploaders = true;
+			while (sql.rs.next()) {
+				if (sql.rs.getLong("user") == userID) {
+					return true;
+				}
+				noUploaders = false;
 			}
-			noUploaders = false;
+			return noUploaders;
 		}
-		return noUploaders;
 	}
 
 	/**
@@ -234,11 +304,13 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static long[] getVotes(long addon) throws Exception {
-		ResultSet sql = sql(Databases.kAddOns, "select vote from uservotes where addon=?", addon);
-		long[] votes = new long[10];
-		for (int i = 0; i < votes.length; i++) votes[i] = 0;
-		while (sql.next()) votes[sql.getInt("vote") - 1]++;
-		return votes;
+		try (QueryResult sql =
+		         sqlQuery(Databases.kAddOns, "select vote from uservotes where addon=?", addon);) {
+			long[] votes = new long[10];
+			for (int i = 0; i < votes.length; i++) votes[i] = 0;
+			while (sql.rs.next()) votes[sql.rs.getInt("vote") - 1]++;
+			return votes;
+		}
 	}
 
 	/**
@@ -249,14 +321,16 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
-		ResultSet sql = sql(Databases.kAddOns, "select user from uploaders where addon=?", addon);
-		String uploaders = "";
-		while (sql.next()) {
-			if (!uploaders.isEmpty()) uploaders += ",";
-			uploaders += getUsername(sql.getLong("user"));
-			if (onlyFirst) break;
+		try (QueryResult sql =
+		         sqlQuery(Databases.kAddOns, "select user from uploaders where addon=?", addon);) {
+			String uploaders = "";
+			while (sql.rs.next()) {
+				if (!uploaders.isEmpty()) uploaders += ",";
+				uploaders += getUsername(sql.rs.getLong("user"));
+				if (onlyFirst) break;
+			}
+			return uploaders;
 		}
-		return uploaders;
 	}
 
 	/**
@@ -866,10 +940,12 @@ public class Utils {
 	 */
 	public static void sendEMailToSubscribedAdmins(int verbosity, String subject, String msg)
 	    throws Exception {
-		ResultSet sql = sql(Databases.kAddOns, "select email,level from notifyadmins");
-		while (sql.next()) {
-			if (sql.getInt("level") >= verbosity) {
-				sendEMail(sql.getString("email"), subject, msg, false);
+		try (QueryResult sql =
+		         sqlQuery(Databases.kAddOns, "select email,level from notifyadmins");) {
+			while (sql.rs.next()) {
+				if (sql.rs.getInt("level") >= verbosity) {
+					sendEMail(sql.rs.getString("email"), subject, msg, false);
+				}
 			}
 		}
 	}

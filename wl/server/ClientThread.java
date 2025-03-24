@@ -22,7 +22,6 @@ package wl.server;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.net.Socket;
-import java.sql.ResultSet;
 import java.util.Base64;
 import java.util.HashSet;
 import java.util.Set;
@@ -117,33 +116,35 @@ public class ClientThread implements Runnable {
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
-				ResultSet sql =
-				    Utils.sql(Utils.Databases.kWebsite,
-				              "select id,is_active from auth_user where username=?", username);
-				if (!sql.next())
+				Utils.QueryResult sql =
+				    Utils.sqlQuery(Utils.Databases.kWebsite,
+				                   "select id,is_active from auth_user where username=?", username);
+				if (!sql.rs.next())
 					throw new ServerUtils.WLProtocolException("User " + username +
 					                                          " is not registered");
-				if (sql.getShort("is_active") == 0)
+				if (sql.rs.getShort("is_active") == 0)
 					throw new ServerUtils.WLProtocolException("Access denied for banned user " +
 					                                          username);
-				userDatabaseID = sql.getLong("id");
+				userDatabaseID = sql.rs.getLong("id");
+				sql.close();
 
-				sql = Utils.sql(Utils.Databases.kWebsite,
-				                "select deleted from wlprofile_profile where user_id=?",
-				                userDatabaseID);
-				if (!sql.next())
+				sql = Utils.sqlQuery(Utils.Databases.kWebsite,
+				                     "select deleted from wlprofile_profile where user_id=?",
+				                     userDatabaseID);
+				if (!sql.rs.next())
 					throw new ServerUtils.WLProtocolException("User " + username +
 					                                          " does not have a valid profile");
-				if (sql.getShort("deleted") > 0)
+				if (sql.rs.getShort("deleted") > 0)
 					throw new ServerUtils.WLProtocolException("Access denied for deleted user " +
 					                                          username);
+				sql.close();
 
-				sql =
-				    Utils.sql(Utils.Databases.kAddOns,
-				              "select action,value from blackwhitelist where id=?", userDatabaseID);
-				while (sql.next()) {
-					if (sql.getShort("value") > 0) {
-						String str = sql.getString("action");
+				sql = Utils.sqlQuery(Utils.Databases.kAddOns,
+				                     "select action,value from blackwhitelist where id=?",
+				                     userDatabaseID);
+				while (sql.rs.next()) {
+					if (sql.rs.getShort("value") > 0) {
+						String str = sql.rs.getString("action");
 						if (str.equals("deny_login")) {
 							throw new ServerUtils.WLProtocolException(
 							    "Access denied for blocked user " + username);
@@ -151,21 +152,26 @@ public class ClientThread implements Runnable {
 						blackWhiteList.add(str);
 					}
 				}
+				sql.close();
 
-				sql = Utils.sql(Utils.Databases.kWebsite,
-				                "select permissions,password from wlggz_ggzauth where user_id=?",
-				                userDatabaseID);
-				if (!sql.next())
+				sql =
+				    Utils.sqlQuery(Utils.Databases.kWebsite,
+				                   "select permissions,password from wlggz_ggzauth where user_id=?",
+				                   userDatabaseID);
+				if (!sql.rs.next())
 					throw new ServerUtils.WLProtocolException(
 					    "User " + username + " did not set an online gaming password");
-				final long permissions = sql.getLong("permissions");
+				final long permissions = sql.rs.getLong("permissions");
 				if (permissions != 7 && permissions != 127)
 					throw new ServerUtils.WLProtocolException(
 					    "User " + username + " has invalid permissions code " + permissions);
 				admin = (permissions == 127);
 				String passwordHash = "";
-				for (byte b : Base64.getDecoder().decode(sql.getString("password")))
+				for (byte b : Base64.getDecoder().decode(sql.rs.getString("password"))) {
 					passwordHash = String.format("%s%02x", passwordHash, b);
+				}
+
+				sql.close();
 
 				ServerUtils.passwordAuthentification(in, out, passwordHash);
 				out.println(admin ? "ADMIN" : "SUCCESS");

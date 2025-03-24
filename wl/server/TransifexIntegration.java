@@ -25,7 +25,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.nio.file.Files;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashSet;
@@ -169,11 +168,15 @@ public class TransifexIntegration {
 			if (increasedMO.contains(changed)) continue;
 			increasedMO.add(changed);
 
-			ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-			                          "select id,i18n_version from addons where name=?", changed);
-			if (!sql.next()) throw new Exception("Add-on '" + changed + "' is not in the database");
-			Utils.sql(Utils.Databases.kAddOns, "update addons set i18n_version=? where id=?",
-			          sql.getLong("i18n_version") + 1, sql.getLong("id"));
+			try (Utils.QueryResult sql =
+			         Utils.sqlQuery(Utils.Databases.kAddOns,
+			                        "select id,i18n_version from addons where name=?", changed);) {
+				if (!sql.rs.next())
+					throw new Exception("Add-on '" + changed + "' is not in the database");
+				Utils.sqlCall(Utils.Databases.kAddOns,
+				              "update addons set i18n_version=? where id=?",
+				              sql.rs.getLong("i18n_version") + 1, sql.rs.getLong("id"));
+			}
 		}
 		UpdateList.rebuildLists();
 		Utils.bashOutput("./skip_timestamp_only_po_changes.sh");
@@ -215,14 +218,15 @@ public class TransifexIntegration {
 		final boolean shouldSendOldIssues = Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 1;
 
 		for (Issue i : allIssues) {
-			ResultSet sql =
-			    Utils.sql(Utils.Databases.kAddOns, "select * from txissues where id=?", i.issueID);
-			if (!sql.next()) {
-				newIssues.add(i);
-				Utils.sql(
-				    Utils.Databases.kAddOns, "insert into txissues (id) value (?)", i.issueID);
-			} else if (shouldSendOldIssues) {
-				oldIssuesToSend.add(i);
+			try (Utils.QueryResult sql = Utils.sqlQuery(
+			         Utils.Databases.kAddOns, "select * from txissues where id=?", i.issueID);) {
+				if (!sql.rs.next()) {
+					newIssues.add(i);
+					Utils.sqlCall(
+					    Utils.Databases.kAddOns, "insert into txissues (id) value (?)", i.issueID);
+				} else if (shouldSendOldIssues) {
+					oldIssuesToSend.add(i);
+				}
 			}
 		}
 
@@ -244,14 +248,16 @@ public class TransifexIntegration {
 
 		Map<Long, Map<String, List[]>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
-			ResultSet sql =
-			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
-			              Utils.getAddOnID(addon));
-			while (sql.next()) {
-				Long uploader = sql.getLong("user");
-				if (!perUploader.containsKey(uploader))
-					perUploader.put(uploader, new LinkedHashMap<>());
-				perUploader.get(uploader).put(addon, perAddOn.get(addon));
+			try (Utils.QueryResult sql = Utils.sqlQuery(Utils.Databases.kAddOns,
+			                                            "select user from uploaders where addon=?",
+			                                            Utils.getAddOnID(addon));) {
+				while (sql.rs.next()) {
+					Long uploader = sql.rs.getLong("user");
+					if (!perUploader.containsKey(uploader)) {
+						perUploader.put(uploader, new LinkedHashMap<>());
+					}
+					perUploader.get(uploader).put(addon, perAddOn.get(addon));
+				}
 			}
 		}
 
@@ -259,62 +265,68 @@ public class TransifexIntegration {
 		    ServerUtils.getNotificationSubscribers("transifex-issues", perUploader.keySet());
 
 		for (Long uploader : perUploader.keySet()) {
-			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-			                          "select email,username from auth_user where id=?", uploader);
-			sql.next();
-			final String username = sql.getString("username");
-			if (!subscribed.contains(uploader)) continue;
+			try (Utils.QueryResult sql =
+			         Utils.sqlQuery(Utils.Databases.kWebsite,
+			                        "select email,username from auth_user where id=?", uploader);) {
+				sql.rs.next();
+				final String username = sql.rs.getString("username");
+				if (!subscribed.contains(uploader)) continue;
 
-			Map<String, List[]> relevantIssues = perUploader.get(uploader);
-			long totalNew = 0;
-			long totalOld = 0;
-			for (List[] l : relevantIssues.values()) {
-				totalNew += l[0].size();
-				totalOld += l[1].size();
-			}
-
-			String text = "Dear " + username + ",\n";
-			if (totalNew > 0 && totalOld > 0) {
-				text += "the translators have found " + totalNew +
-				        " new issue(s) in your add-on(s). Additionally, " + totalOld +
-				        " issue(s) in your add-on(s) reported"
-				        + " by the translators are still unresolved. This"
-				        + " affects a total of " + relevantIssues.size() + " of your add-ons.";
-			} else if (totalNew > 0) {
-				text += "the translators have found " + totalNew + " new issue(s) in " +
-				        relevantIssues.size() + " of your add-on(s).";
-			} else {
-				text += "this is your monthly reminder that " + totalOld + " issue(s) in " +
-				        relevantIssues.size() + " of your add-on(s) reported by the"
-				        + " translators are still unresolved.";
-			}
-			text += " Below you may find a list of the string issues.";
-			for (String addon : relevantIssues.keySet()) {
-				for (int index = 0; index <= 1; ++index) {
-					List<Issue> list = (List<Issue>)relevantIssues.get(addon)[index];
-					if (list.isEmpty()) continue;
-					text += "\n\n################################################################"
-					        + "################\n " + list.size() + " " +
-					        (index == 0 ? "new" : "existing") + " issue(s) in add-on " + addon;
-					for (Issue i : list) {
-						text += "\n "
-						        + "----------------------------------------------------------------"
-						        + "----------------"
-						        // linebreak comment
-						        + "\n  Issue ID      : " + i.issueID       // linebreak comment
-						        + "\n  Source String : " + i.string      // linebreak comment
-						        + "\n  String ID     : " + i.stringID    // linebreak comment
-						        + "\n  Occurrences   : " + i.occurrence  // linebreak comment
-						        +
-						        "\n  Last modified : " + i.datetime_modified  // linebreak comment
-						        + "\n  Priority      : " + i.priority         // linebreak comment
-						        + "\n  Issue message : " + i.message;
-					}
-					text += "\n##################################################################"
-					        + "##############";
+				Map<String, List[]> relevantIssues = perUploader.get(uploader);
+				long totalNew = 0;
+				long totalOld = 0;
+				for (List[] l : relevantIssues.values()) {
+					totalNew += l[0].size();
+					totalOld += l[1].size();
 				}
+
+				String text = "Dear " + username + ",\n";
+				if (totalNew > 0 && totalOld > 0) {
+					text += "the translators have found " + totalNew +
+					        " new issue(s) in your add-on(s). Additionally, " + totalOld +
+					        " issue(s) in your add-on(s) reported"
+					        + " by the translators are still unresolved. This"
+					        + " affects a total of " + relevantIssues.size() +
+					        " of your add-ons.";
+				} else if (totalNew > 0) {
+					text += "the translators have found " + totalNew + " new issue(s) in " +
+					        relevantIssues.size() + " of your add-on(s).";
+				} else {
+					text += "this is your monthly reminder that " + totalOld + " issue(s) in " +
+					        relevantIssues.size() + " of your add-on(s) reported by the"
+					        + " translators are still unresolved.";
+				}
+				text += " Below you may find a list of the string issues.";
+				for (String addon : relevantIssues.keySet()) {
+					for (int index = 0; index <= 1; ++index) {
+						List<Issue> list = (List<Issue>)relevantIssues.get(addon)[index];
+						if (list.isEmpty()) continue;
+						text +=
+						    "\n\n################################################################"
+						    + "################\n " + list.size() + " " +
+						    (index == 0 ? "new" : "existing") + " issue(s) in add-on " + addon;
+						for (Issue i : list) {
+							text +=
+							    "\n "
+							    + "----------------------------------------------------------------"
+							    + "----------------"
+							    // linebreak comment
+							    + "\n  Issue ID      : " + i.issueID       // linebreak comment
+							    + "\n  Source String : " + i.string      // linebreak comment
+							    + "\n  String ID     : " + i.stringID    // linebreak comment
+							    + "\n  Occurrences   : " + i.occurrence  // linebreak comment
+							    +
+							    "\n  Last modified : " + i.datetime_modified  // linebreak comment
+							    + "\n  Priority      : " + i.priority         // linebreak comment
+							    + "\n  Issue message : " + i.message;
+						}
+						text +=
+						    "\n##################################################################"
+						    + "##############";
+					}
+				}
+				Utils.sendEMail(sql.rs.getString("email"), "Transifex String Issues", text, true);
 			}
-			Utils.sendEMail(sql.getString("email"), "Transifex String Issues", text, true);
 		}
 	}
 
