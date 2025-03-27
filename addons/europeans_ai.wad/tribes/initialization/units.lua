@@ -32,7 +32,6 @@ wl.Descriptions():new_tribe {
     bridge_height = 8,
     
     collectors_points_table = {
-        { ware = "quartz", points = 1 },
         { ware = "diamond", points = 1 },
         { ware = "gold", points = 2 },
         { ware = "coin_copper", points = 4 },
@@ -216,10 +215,7 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "The Europeans produces bricks in lime kiln or stonemasons house out of clay, granite and water.")
                     }
                 }
-            }
-        },
-        {
-            -- Minerals (Marble, Quartz, Diamond)
+            },
             {
                 name = "marble",
                 default_target_quantity = 32,
@@ -236,86 +232,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Marble Column
                     purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the Europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
-                }
-            },
-            {
-                name = "quartz",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
-                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used for trading.")
-                }
-            },
-            {
-                name = "diamond",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
-                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading.")
-                }
-            },
-        },
-        {
-            -- Metal Economy and Trading
-            {
-                name = "ore",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
-                        pgettext("default_ware", "Ore is mined in ore mines."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
-                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
-                    }
-                }
-            },
-            {
-                name = "gold",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
-                        pgettext("ware", "Gold is the most valuable of all metals, and it is smelted out of ore."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
-                        pgettext("europeans_ware", "It is produced by the smelting works. Some valuable buildings need gold to be built.")
-                    }
-                }
-            },
-            {
-                name = "coin_copper",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Copper Coin
-                        pgettext("ware", "Copper coins are money made of copper or bronze (copper and tin). Its the standard barter object."),
-                    }
-                }
-            },
-            {
-                name = "coin_silver",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Silver Coin
-                        pgettext("ware", "Silver coins are money made of silver. Its a valuable barter object."),
-                    }
-                }
-            },
-            {
-                name = "coin_gold",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Gold Coin
-                        pgettext("ware", "Gold coins are money made of gold. Its most valuable barter object."),
-                    }
                 }
             }
         },
@@ -573,6 +489,77 @@ wl.Descriptions():new_tribe {
                 }
             },
         },
+        {
+            -- Metal Economy and Trading
+            {
+                name = "ore",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
+                        pgettext("default_ware", "Ore is mined in ore mines."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
+                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
+                    }
+                }
+            },
+            {
+                name = "gold",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
+                        pgettext("ware", "Gold is the most valuable of all metals, and it is smelted out of ore."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
+                        pgettext("europeans_ware", "It is produced by the smelting works. Some valuable buildings need gold to be built.")
+                    }
+                }
+            },
+            {
+                name = "coin_copper",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Copper Coin
+                        pgettext("ware", "Copper coins are money made of copper or bronze (copper and tin). Its the standard barter object."),
+                    }
+                }
+            },
+            {
+                name = "coin_silver",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Silver Coin
+                        pgettext("ware", "Silver coins are money made of silver. Its a valuable barter object."),
+                    }
+                }
+            },
+            {
+                name = "coin_gold",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Gold Coin
+                        pgettext("ware", "Gold coins are money made of gold. Its most valuable barter object."),
+                    }
+                }
+            },
+            {
+                name = "diamond",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
+                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading.")
+                }
+            }
+        },
     },
     -- Workers positions in workers windows.
     -- This also gives us the information which workers the tribe uses.
@@ -731,8 +718,8 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_forester_basic",
-                default_target_quantity = 1,
+                name = "europeans_forester",
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
@@ -740,12 +727,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_forester_advanced",
+                name = "europeans_terraformer",
                 default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
-                    purpose = pgettext("europeans_worker", "Plant trees.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Plant trees and increases soil fertility.")
                 }
             },
             {
@@ -765,7 +752,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Gardener
                     purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house and planting reed, cotton and rubber trees.")
                 }
-            },
+            }
         },
         {
             -- Agriculture workers
@@ -827,6 +814,15 @@ wl.Descriptions():new_tribe {
         {
             -- Miners and Stonecutters
             {
+                name = "europeans_geologist",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Geologist
+                    purpose = pgettext("europeans_worker", "Discovers resources for mining.")
+                }
+            },
+            {
                 name = "europeans_stonecutter_basic",
                 default_target_quantity = 1,
                 preciousness = 1,
@@ -861,37 +857,10 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Miner
                     purpose = pgettext("europeans_worker", "Mines ore and minerals.")
                 }
-            },
-            {
-                name = "europeans_terraformer_basic",
-                default_target_quantity = 2,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
-                }
-            },
-            {
-                name = "europeans_terraformer_advanced",
-                default_target_quantity = 2,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
-                }
             }
         },
         {
             -- Scouting and Trading
-            {
-                name = "europeans_geologist",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Geologist
-                    purpose = pgettext("europeans_worker", "Discovers resources for mining.")
-                }
-            },
             {
                 name = "europeans_scout_basic",
                 default_target_quantity = 1,
@@ -1710,21 +1679,19 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_tree_nursery_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
-                purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
-                -- TRANSLATORS: Note helptext for a Europeans production site: Ranger's Hut
-                note = pgettext("europeans_building", "The ranger’s hut needs free space within the work area to plant the trees."),
-            }
-        },
-        {
-            name = "europeans_tree_nursery_advanced",
+            name = "europeans_foresters_hut",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
                 purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
                 -- TRANSLATORS: Note helptext for an Europeans production site: Forester's House
                 note = pgettext("europeans_building", "The forester’s house needs free space within the work area to plant the trees.")
+            }
+        },
+        {
+            name = "europeans_terraformers_house",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
+                purpose = pgettext("building", "Plant trees and increases soil fertility.")
             }
         },
         {
@@ -1799,20 +1766,6 @@ wl.Descriptions():new_tribe {
                    -- TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
                    pgettext("europeans_building", "Roads and trees along the shoreline block breeding and fishing."),
                 },
-            }
-        },
-        {
-            name = "europeans_terraformers_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Terraformer's Hut
-                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
-            }
-        },
-        {
-            name = "europeans_terraformers_house_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
-                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
             }
         },
         {
@@ -2064,28 +2017,28 @@ wl.Descriptions():new_tribe {
             name = "europeans_stonemine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Granite Mine
-                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_stonemine_level_1",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Marble Mine
-                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_stonemine_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
-                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_stonemine_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
-                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
@@ -2198,28 +2151,28 @@ wl.Descriptions():new_tribe {
             name = "europeans_food_stonemine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Granite Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_food_stonemine_level_1",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Marble Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_food_stonemine_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_food_stonemine_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
@@ -2620,7 +2573,7 @@ wl.Descriptions():new_tribe {
         ferry_yard = "europeans_shipyard_advanced",
         fisher = "europeans_fishers_house_basic",
         fish_meat_replenisher = "europeans_animal_farm_advanced",
-        forester = "europeans_tree_nursery_basic",
+        forester = "europeans_foresters_hut",
         hunter = "europeans_hunters_house_basic",
         military_small_primary = "europeans_sentry_basic",
         military_small_secondary = "europeans_barrier_basic",

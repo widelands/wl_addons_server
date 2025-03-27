@@ -68,8 +68,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs granite or economy needs marble or economy needs quartz or economy needs diamond",
-                "return=skipped when economy needs ration and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs diamond",
+                "return=skipped unless economy needs granite or economy needs marble or economy needs diamond",
+                "return=skipped when economy needs ration and not economy needs granite and not economy needs marble and not economy needs diamond",
                 "sleep=duration:5s",
                 "call=mine_granite_basic",
                 "return=skipped unless site has ration:3",
@@ -81,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=ration",
                 "call=mine_granite",
                 "call=mine_marble",
-                "call=mine_quartz",
+                "call=mine_diamond",
                 "sleep=duration:5s",
                 "consume=ration",
                 "call=mine_granite",
@@ -115,14 +115,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=marble",
             }
         },
-        mine_quartz = {
-            descname = pgettext("europeans_building", "mining quartz"),
-            actions = {
-                "animate=working duration:25s",
-                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
-                "produce=quartz",
-            }
-        },
         mine_diamond = {
             descname = pgettext("europeans_building", "mining diamond"),
             actions = {
@@ -136,7 +128,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=ration:3",
-                "produce=granite:4 marble:3 quartz diamond",
+                "produce=granite:4 marble:3 diamond:2",
             }
         },
     },

@@ -56,6 +56,16 @@ wl.Descriptions():new_trainingsite_type {
             marble = 2
         },
     },
+    
+    buildcost = {
+        brick = 4,
+        grout = 4,
+        planks = 4
+    },
+    return_on_dismantle = {
+        scrap_wood = 4,
+        granite = 4
+    },
 
     aihints = {
         trainingsites_max_percent = 33,

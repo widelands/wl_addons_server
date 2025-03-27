@@ -40,7 +40,6 @@ wl.Descriptions():new_productionsite_type {
         { name = "coin_copper", amount = 8 },
         { name = "coin_silver", amount = 6 },
         { name = "coin_gold", amount = 4 },
-        { name = "quartz", amount = 6 },
         { name = "diamond", amount = 4 }
     },
 
@@ -49,14 +48,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless site has meal",
                 "return=skipped unless economy needs granite or economy needs marble",
+                "return=skipped unless site has meal",
                 "consume=meal",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_granite_copper",
-                "sleep=duration:10s",
-                "call=trade_granite_quartz",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "call=trade_granite_diamond"
             }
         },
@@ -70,19 +67,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coin_copper:2",
                 "callworker=purchase_granite_copper",
                 "produce=granite:6",
-                "sleep=duration:30s",
-            }
-        },
-        trade_granite_quartz = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs granite",
-                "callworker=find_pole",
-                "return=failed unless site has quartz:2",
-                "consume=quartz:2",
-                "callworker=purchase_granite_quartz",
-                "produce=granite:9",
                 "sleep=duration:30s",
             }
         },

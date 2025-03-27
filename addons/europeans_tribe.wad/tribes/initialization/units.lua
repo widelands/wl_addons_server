@@ -32,7 +32,6 @@ wl.Descriptions():new_tribe {
     bridge_height = 8,
     
     collectors_points_table = {
-        { ware = "quartz", points = 1 },
         { ware = "diamond", points = 1 },
         { ware = "gold", points = 2 },
         { ware = "coin_copper", points = 4 },
@@ -216,10 +215,7 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "The Europeans produces bricks in lime kiln or stonemasons house out of clay, granite and water.")
                     }
                 }
-            }
-        },
-        {
-            -- Minerals (Marble, Quartz, Diamond)
+            },
             {
                 name = "marble",
                 default_target_quantity = 32,
@@ -237,25 +233,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans ware: Marble Column
                     purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the Europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
                 }
-            },
-            {
-                name = "quartz",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
-                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used for trading.")
-                }
-            },
-            {
-                name = "diamond",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
-                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading.")
-                }
-            },
+            }
         },
         {
             -- Food 1
@@ -604,6 +582,15 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Gold Coin
                         pgettext("ware", "Gold coins are money made of gold. Its most valuable barter object."),
                     }
+                }
+            },
+            {
+                name = "diamond",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
+                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading.")
                 }
             }
         },
@@ -2064,28 +2051,28 @@ wl.Descriptions():new_tribe {
             name = "europeans_stonemine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Granite Mine
-                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_stonemine_level_1",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Marble Mine
-                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_stonemine_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
-                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_stonemine_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
-                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
@@ -2198,28 +2185,28 @@ wl.Descriptions():new_tribe {
             name = "europeans_food_stonemine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Granite Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_food_stonemine_level_1",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Marble Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_food_stonemine_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {
             name = "europeans_food_stonemine_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
             }
         },
         {

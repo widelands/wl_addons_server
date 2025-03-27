@@ -40,14 +40,14 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs granite or economy needs marble or economy needs quartz or economy needs diamond",
-                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs diamond",
+                "return=skipped unless economy needs granite or economy needs marble or economy needs diamond",
+                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs diamond",
                 "return=skipped unless site has blackwood:4",
                 "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_granite",
-                "call=mine_quartz",
+                "call=mine_diamond",
                 "sleep=duration:5s",
                 "consume=blackwood",
                 "call=mine_granite",
@@ -59,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_granite",
-                "call=mine_quartz",
+                "call=mine_diamond",
                 "sleep=duration:5s",
                 "consume=blackwood",
                 "call=mine_granite",
@@ -85,14 +85,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=marble",
             }
         },
-        mine_quartz = {
-            descname = pgettext("europeans_building", "mining quartz"),
-            actions = {
-                "animate=working duration:35s",
-                "mine=resource_stones radius:12 yield:100% when_empty:20% experience_on_fail:10%",
-                "produce=quartz",
-            }
-        },
         mine_diamond = {
             descname = pgettext("europeans_building", "mining diamond"),
             actions = {
@@ -106,7 +98,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=blackwood:4",
-                "produce=granite:8 marble:4 quartz:2 diamond:2",
+                "produce=granite:8 marble:4 diamond:4",
             }
         },
     },

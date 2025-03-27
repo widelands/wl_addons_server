@@ -39,20 +39,40 @@ wl.Descriptions():new_productionsite_type {
 
     programs = {
         main = {
-            -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
-            descname = pgettext("europeans_building", "breeding and fishing"),
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _"working",
             actions = {
-                "return=skipped unless economy needs fish",
+                "call=breeding",
+                "sleep=duration:10s",
+                "call=breeding",
+                "sleep=duration:10s",
+                "call=fishing",
+                "sleep=duration:10s",
+                "call=fishing",
+                "return=skipped"
+            }
+        },
+        breeding = {
+            -- TRANSLATORS: Completed/Skipped/Did not start breeding because ...
+            descname = pgettext("europeans_building", "breeding"),
+            actions = {
                 "return=skipped when economy needs water and not economy needs fish",
                 "return=skipped when economy needs corn and not economy needs fish",
                 "return=skipped when economy needs fruit and not economy needs fish",
                 "consume=water corn fruit",
-                "callworker=breed",
                 "sleep=duration:1m",
+                "callworker=breed"
+            }
+        },
+        fishing = {
+            -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
+            descname = pgettext("europeans_building", "fishing"),
+            actions = {
+                "return=skipped unless economy needs fish",
                 "callworker=fish",
                 "sleep=duration:1m"
             }
-        },
+        }
     },
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource

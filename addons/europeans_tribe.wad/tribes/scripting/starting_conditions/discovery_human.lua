@@ -31,48 +31,42 @@ local init = {
             europeans_builder = 4,
             europeans_worker_advanced = 8,
             europeans_worker_basic = 12,
-            log = 24,
-            granite = 24,
+            log = 28,
+            granite = 28,
             reed = 24,
             planks = 4,
             brick = 4,
             grout = 4,
             marble = 4,
-            marble_column = 4,
-            quartz = 4,
-            diamond = 4
+            marble_column = 4
         },
         {
             europeans_soldier = 4,
             europeans_builder = 4,
             europeans_worker_advanced = 8,
             europeans_worker_basic = 12,
-            log = 24,
-            granite = 24,
+            log = 28,
+            granite = 28,
             reed = 24,
             planks = 4,
             brick = 4,
             grout = 4,
             marble = 4,
-            marble_column = 4,
-            quartz = 4,
-            diamond = 4
+            marble_column = 4
         },
         {
             europeans_soldier = 4,
             europeans_builder = 4,
             europeans_worker_advanced = 8,
             europeans_worker_basic = 12,
-            log = 24,
-            granite = 24,
+            log = 28,
+            granite = 28,
             reed = 24,
             planks = 4,
             brick = 4,
             grout = 4,
             marble = 4,
-            marble_column = 4,
-            quartz = 4,
-            diamond = 4
+            marble_column = 4
         },
     })
     

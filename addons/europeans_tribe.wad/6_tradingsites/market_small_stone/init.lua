@@ -50,8 +50,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "gold", amount = 6 },
+        { name = "marble", amount = 10 },
         { name = "marble_column", amount = 10 },
-        { name = "quartz", amount = 10 },
         { name = "diamond", amount = 10 }
     },
 
@@ -74,9 +74,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
                 "sleep=duration:30s",
-                "call=trade_marble_column_copper",
+                "call=trade_marble_copper",
                 "sleep=duration:30s",
-                "call=trade_quartz_copper",
+                "call=trade_marble_column_copper",
                 "sleep=duration:30s",
                 "call=trade_diamond_copper"
             }
@@ -88,9 +88,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
                 "sleep=duration:30s",
-                "call=trade_marble_column_silver",
+                "call=trade_marble_silver",
                 "sleep=duration:30s",
-                "call=trade_quartz_silver",
+                "call=trade_marble_column_silver",
                 "sleep=duration:30s",
                 "call=trade_diamond_silver"
             }
@@ -102,47 +102,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",
                 "sleep=duration:30s",
+                "call=trade_marble_gold",
+                "sleep=duration:30s",
                 "call=trade_marble_column_gold",
                 "sleep=duration:30s",
-                "call=trade_quartz_gold",
-                "sleep=duration:30s",
                 "call=trade_diamond_gold"
-            }
-        },
-        trade_quartz_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless site has quartz:4",
-                "return=skipped unless site has gold",
-                "consume=quartz:2 gold",
-                "animate=working duration:20s",
-                "produce=coin_copper:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_quartz_silver = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless site has quartz:6",
-                "return=skipped unless site has gold",
-                "consume=quartz:3 gold",
-                "animate=working duration:20s",
-                "produce=coin_silver:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_quartz_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless site has quartz:8",
-                "return=skipped unless site has gold",
-                "consume=quartz:4 gold",
-                "animate=working duration:20s",
-                "produce=coin_gold:4",
-                "sleep=duration:30s",
             }
         },
         trade_diamond_copper = {
@@ -212,6 +176,42 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has marble_column:8",
                 "return=skipped unless site has gold",
                 "consume=marble_column:4 gold",
+                "animate=working duration:20s",
+                "produce=coin_gold:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_marble_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has marble:4",
+                "return=skipped unless site has gold",
+                "consume=marble:2 gold",
+                "animate=working duration:20s",
+                "produce=coin_copper:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_marble_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has marble:6",
+                "return=skipped unless site has gold",
+                "consume=marble:3 gold",
+                "animate=working duration:20s",
+                "produce=coin_silver:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_marble_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has marble:8",
+                "return=skipped unless site has gold",
+                "consume=marble:4 gold",
                 "animate=working duration:20s",
                 "produce=coin_gold:4",
                 "sleep=duration:30s",

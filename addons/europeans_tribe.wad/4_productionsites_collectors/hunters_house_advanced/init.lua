@@ -38,21 +38,41 @@ wl.Descriptions():new_productionsite_type {
 
     programs = {
         main = {
-            -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
-            descname = pgettext("europeans_building", "releasing and hunting"),
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _"working",
             actions = {
-                "return=skipped unless economy needs leather or economy needs wool or economy needs meat",
+                "call=releasing",
+                "sleep=duration:10s",
+                "call=releasing",
+                "sleep=duration:10s",
+                "call=hunting",
+                "sleep=duration:10s",
+                "call=hunting",
+                "return=skipped"
+            }
+        },
+        releasing = {
+            -- TRANSLATORS: Completed/Skipped/Did not start releasing because ...
+            descname = pgettext("europeans_building", "releasing"),
+            actions = {
                 "return=skipped when economy needs water and not economy needs meat and not economy needs leather and not economy needs wool",
                 "return=skipped when economy needs blackroot and not economy needs meat and not economy needs leather and not economy needs wool",
                 "return=skipped when economy needs fruit and not economy needs meat and not economy needs leather and not economy needs wool",
                 "consume=water blackroot fruit",
-                "callworker=release",
                 "sleep=duration:1m",
+                "callworker=release"
+            }
+        },
+        hunting = {
+            -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
+            descname = pgettext("europeans_building", "hunting"),
+            actions = {
+                "return=skipped unless economy needs leather or economy needs wool or economy needs meat",
                 "callworker=hunt",
                 "sleep=duration:1m",
                 "produce=leather wool"
             }
-        },
+        }
     },
     out_of_resource_notification = {
         -- Translators: Short for "Out of Game" for a resource

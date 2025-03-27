@@ -113,8 +113,8 @@ wl.Descriptions():new_soldier_type {
     
     -- buildcost = {
         -- europeans_recruit = 1,
-        -- quartz = 1,
-        -- diamond = 1
+        -- armor = 1,
+        -- gold = 1
     -- },
         
     -- Battle attributes - initial values and per level increase
