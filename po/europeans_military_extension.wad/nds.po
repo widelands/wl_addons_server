@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-27 03:11+0100\n"
+"POT-Creation-Date: 2025-03-28 03:11+0100\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -2664,13 +2664,11 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2324
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2331
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2338
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
 "mountain terrain."
-msgstr ""
-"Grafft in Bargen Flint, Marmel, Blinkerflint un Edelstenen ut de Grund."
+msgstr "Grafft in Bargen Flint, Marmel un anner düre Mineraale ut de Grund."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -2722,13 +2720,11 @@ msgstr "Grafft in Bargen Goldkluut ut de Grund."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2458
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2465
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2472
-#, fuzzy
 msgctxt "europeans_food_building"
 msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
 "mountain terrain."
-msgstr ""
-"Grafft in Bargen Flint, Marmel, Blinkerflint un Edelstenen ut de Grund."
+msgstr "Grafft in Bargen Flint, Marmel un anner düre Mineraale ut de Grund."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -3363,8 +3359,3 @@ msgstr "Raadhuus"
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "These transparent quartz gems are used for trading."
-#~ msgstr ""
-#~ "Deese schienenden Blinkerflint-Kristallen worden tum Hanneln bruukt."

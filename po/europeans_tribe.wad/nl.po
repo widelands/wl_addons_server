@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-27 03:11+0100\n"
+"POT-Creation-Date: 2025-03-28 03:11+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1422,17 +1422,15 @@ msgstr "Geavanceerd Vissershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:57
-#, fuzzy
 msgctxt "europeans_building"
 msgid "breeding"
-msgstr "vis kweken"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:69
-#, fuzzy
 msgctxt "europeans_building"
 msgid "fishing"
-msgstr "vissen"
+msgstr ""
 
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:79
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:79
@@ -1502,17 +1500,15 @@ msgstr "Geavanceerd Jagershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start releasing because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:56
-#, fuzzy
 msgctxt "europeans_building"
 msgid "releasing"
-msgstr "vrijlaten en jagen"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:68
-#, fuzzy
 msgctxt "europeans_building"
 msgid "hunting"
-msgstr "jagen"
+msgstr ""
 
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:79
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:83
@@ -5143,13 +5139,11 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2061
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2068
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2075
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
 "mountain terrain."
 msgstr ""
-"Graaft graniet, marmer, kwarts en diamant uit de grond in bergachtig terrein."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -5201,13 +5195,11 @@ msgstr "Graaft gouderts uit de grond in bergachtig terrein."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2195
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2202
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2209
-#, fuzzy
 msgctxt "europeans_food_building"
 msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
 "mountain terrain."
 msgstr ""
-"Graaft graniet, marmer, kwarts en diamant uit de grond in bergachtig terrein."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -5813,19 +5805,3 @@ msgstr "Hoofdkwartier"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
-
-#~ msgctxt "ware"
-#~ msgid "Quartz"
-#~ msgstr "Kwarts"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding and fishing"
-#~ msgstr "fokken en vissen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "mining quartz"
-#~ msgstr "kwarts delven"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "These transparent quartz gems are used for trading."
-#~ msgstr "Deze transparante kwarts edelstenen worden gebruikt voor de handel."

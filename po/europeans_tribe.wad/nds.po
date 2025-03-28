@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-27 03:11+0100\n"
+"POT-Creation-Date: 2025-03-28 03:11+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1423,14 +1423,12 @@ msgstr "Grotes Fiskerhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:57
-#, fuzzy
 msgctxt "europeans_building"
 msgid "breeding"
-msgstr "Fisse to tüchten"
+msgstr "to tüchten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:69
-#, fuzzy
 msgctxt "europeans_building"
 msgid "fishing"
 msgstr "Fisse to fangen"
@@ -1500,14 +1498,12 @@ msgstr "Grotes Jaggthuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start releasing because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:56
-#, fuzzy
 msgctxt "europeans_building"
 msgid "releasing"
-msgstr "Deerten to tüchten un to jagen"
+msgstr "Deerten freeitosetten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:68
-#, fuzzy
 msgctxt "europeans_building"
 msgid "hunting"
 msgstr "to jagen"
@@ -5115,13 +5111,11 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2061
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2068
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2075
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
 "mountain terrain."
-msgstr ""
-"Grafft in Bargen Flint, Marmel, Blinkerflint un Edelstenen ut de Grund."
+msgstr "Grafft in Bargen Flint, Marmel un anner düre Mineraale ut de Grund."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -5173,13 +5167,11 @@ msgstr "Grafft in Bargen Goldkluut ut de Grund."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2195
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2202
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2209
-#, fuzzy
 msgctxt "europeans_food_building"
 msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
 "mountain terrain."
-msgstr ""
-"Grafft in Bargen Flint, Marmel, Blinkerflint un Edelstenen ut de Grund."
+msgstr "Grafft in Bargen Flint, Marmel un anner düre Mineraale ut de Grund."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -5779,20 +5771,3 @@ msgstr "Raadhuus"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "ware"
-#~ msgid "Quartz"
-#~ msgstr "Blinkerflint"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding and fishing"
-#~ msgstr "Fisse to tüchten un to fisken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "mining quartz"
-#~ msgstr "Blinkerflint oftoboen"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "These transparent quartz gems are used for trading."
-#~ msgstr ""
-#~ "Deese schienenden Blinkerflint-Kristallen worden tum Hanneln bruukt."
