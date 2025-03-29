@@ -538,16 +538,13 @@ public class Utils {
 		synchronized (_translation_cache) { result = _translation_cache.get(cacheKey); }
 		if (result != null) return result;
 
-		try (
-			BufferedReader reader = new BufferedReader(
-			        new InputStreamReader(
-			            Runtime.getRuntime()
-			                .exec(new String[] {"bash", "-c",
-			                                    "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
-			                                        " LANGUAGE=" + locale + " gettext -s \"" +
-			                                        escapeAsShellArgument(value) + "\""})
-			                .getInputStream()));
-			) {
+		try (BufferedReader reader = new BufferedReader(new InputStreamReader(
+		         Runtime.getRuntime()
+		             .exec(new String[] {"bash", "-c",
+		                                 "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
+		                                     " LANGUAGE=" + locale + " gettext -s \"" +
+		                                     escapeAsShellArgument(value) + "\""})
+		             .getInputStream()));) {
 			result = reader.readLine();
 			result = unescapeFromShell(result);
 
