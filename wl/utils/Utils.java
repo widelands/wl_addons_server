@@ -388,6 +388,7 @@ public class Utils {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(pr.getInputStream()));
 			pr.waitFor();
 			String md5 = reader.readLine();
+			reader.close();
 			return md5.split(" ")[0];
 		} catch (Exception e) {
 			log("ERROR checksumming '" + (f == null ? "(null)" : f.getPath()) + "': " + e);
@@ -418,6 +419,7 @@ public class Utils {
 		p.waitFor();
 		int e = p.exitValue();
 		log("    = " + e);
+		b.close();
 		return e;
 	}
 
@@ -441,6 +443,7 @@ public class Utils {
 			}
 		}
 		p.waitFor();
+		b.close();
 		return (result == null ? "" : result);
 	}
 
@@ -535,17 +538,17 @@ public class Utils {
 		synchronized (_translation_cache) { result = _translation_cache.get(cacheKey); }
 		if (result != null) return result;
 
-		try {
-			result =
-			    new BufferedReader(
+		try (
+			BufferedReader reader = new BufferedReader(
 			        new InputStreamReader(
 			            Runtime.getRuntime()
 			                .exec(new String[] {"bash", "-c",
 			                                    "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
 			                                        " LANGUAGE=" + locale + " gettext -s \"" +
 			                                        escapeAsShellArgument(value) + "\""})
-			                .getInputStream()))
-			        .readLine();
+			                .getInputStream()));
+			) {
+			result = reader.readLine();
 			result = unescapeFromShell(result);
 
 			synchronized (_translation_cache) { _translation_cache.put(cacheKey, result); }
@@ -792,6 +795,7 @@ public class Utils {
 			if (str == null) break;
 			lines.add(str);
 		}
+		reader.close();
 		return readProfile(lines, textdomain);
 	}
 

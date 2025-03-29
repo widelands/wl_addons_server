@@ -579,8 +579,10 @@ public class ServerUtils {
 		md5.println(correctPassword);
 		md5.println(r);
 		md5.close();
-		final String expected =
-		    new BufferedReader(new InputStreamReader(p.getInputStream())).readLine().split(" ")[0];
+
+		BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+		final String expected = reader.readLine().split(" ")[0];
+		reader.close();
 
 		final String password = readLine(in);
 		checkEndOfStream(in);
