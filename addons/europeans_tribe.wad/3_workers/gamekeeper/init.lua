@@ -33,7 +33,35 @@ wl.Descriptions():new_worker_type {
             "walk=object",
             "animate=hunting duration:1s",
             "removeobject",
-            "createware=meat",
+            "createware=leather",
+            "return"
+        },
+        catch_ox = {
+            "findobject=type:bob radius:13",
+            "walk=object",
+            "animate=releaseout duration:1s",
+            "removeobject",
+            "return"
+        },
+        catch_donkey = {
+            "findobject=type:bob radius:13",
+            "walk=object",
+            "animate=releaseout duration:1s",
+            "removeobject",
+            "return"
+        },
+        catch_horse = {
+            "findobject=type:bob radius:13",
+            "walk=object",
+            "animate=releaseout duration:1s",
+            "removeobject",
+            "return"
+        },
+        catch_reindeer = {
+            "findobject=type:bob radius:13",
+            "walk=object",
+            "animate=releaseout duration:1s",
+            "removeobject",
             "return"
         }
     },

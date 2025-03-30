@@ -31,22 +31,19 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             brick = 2,
             grout = 2,
-            planks = 2,
             marble_column = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
             granite = 3,
             marble = 1
         }
     },
     buildcost = {
         granite = 3,
-        log = 3,
         planks = 3
     },
     return_on_dismantle = {
-        scrap_wood = 5,
+        scrap_wood = 3,
         granite = 3
     },
 

@@ -29,7 +29,7 @@ wl.Descriptions():new_worker_type {
             "walk=object",
             "animate=hunting duration:1s",
             "removeobject",
-            "createware=meat",
+            "createware=leather",
             "return"
         }
     },

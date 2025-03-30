@@ -34,7 +34,7 @@ wl.Descriptions():new_productionsite_type {
       },
     },
     
-    size = "medium",
+    size = "big",
 
     aihints = {
         supports_seafaring = true,

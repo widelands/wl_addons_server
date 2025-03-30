@@ -37,11 +37,9 @@ wl.Descriptions():new_trainingsite_type {
         enhancement_cost = {
             brick = 1,
             grout = 1,
-            planks = 1,
             marble_column = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1,
             granite = 1,
             marble = 2
         },

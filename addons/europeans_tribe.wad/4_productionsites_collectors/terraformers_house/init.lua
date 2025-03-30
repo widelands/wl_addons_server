@@ -76,13 +76,13 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has water:2",
                 "consume=water",
-                "callworker=plant_rubber_tree",
-                "callworker=plant_tree",
+                "callworker=plant_balsa_tree",
+                "callworker=plant_ironwood_tree",
                 "callworker=plant_rubber_tree",
                 "callworker=plant_tree",
                 "consume=water",
-                "callworker=plant_rubber_tree",
-                "callworker=plant_tree",
+                "callworker=plant_balsa_tree",
+                "callworker=plant_ironwood_tree",
                 "callworker=plant_rubber_tree",
                 "callworker=plant_tree"
             }

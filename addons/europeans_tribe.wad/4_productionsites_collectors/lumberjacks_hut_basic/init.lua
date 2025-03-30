@@ -33,25 +33,18 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             brick = 1,
             grout = 1,
-            marble = 1,
-            planks = 1,
-            cloth = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1,
-            granite = 1,
-            marble = 1
+            granite = 1
         },
     },
     buildcost = {
         granite = 2,
-        log = 2,
-        reed = 2
+        log = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 1,
-        reed = 1
+        granite = 1
     },
 
     aihints = {
@@ -79,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = _"felling trees",
             actions = {
-                "return=skipped unless economy needs log",
+                "return=skipped unless economy needs log or workers need experience",
                 "callworker=harvest_tree"
             }
         }

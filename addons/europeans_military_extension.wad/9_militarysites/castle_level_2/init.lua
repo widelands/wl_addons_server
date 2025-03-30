@@ -33,11 +33,9 @@ wl.Descriptions():new_militarysite_type {
         enhancement_cost = {
             brick = 2,
             grout = 2,
-            planks = 2,
             marble_column = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
             granite = 2,
             marble = 2
         },

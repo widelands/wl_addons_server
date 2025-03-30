@@ -25,19 +25,16 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_smelting_works_advanced",
         enhancement_cost = {
             brick = 2,
-            grout = 2,
-            planks = 2
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
             granite = 2,
             scrap_metal = 1
         }
     },
     buildcost = {
         granite = 3,
-        log = 3,
-        reed = 3
+        planks = 3
     },
     return_on_dismantle = {
         scrap_wood = 3,

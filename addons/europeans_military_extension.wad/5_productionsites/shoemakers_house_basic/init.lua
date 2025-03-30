@@ -39,18 +39,15 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_shoemakers_house_advanced",
         enhancement_cost = {
             brick = 2,
-            grout = 2,
-            planks = 2
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
             granite = 2
         }
     },
     buildcost = {
         granite = 3,
-        log = 3,
-        reed = 3
+        planks = 3
     },
     return_on_dismantle = {
         scrap_wood = 3,
@@ -69,6 +66,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "blackwood", amount = 4 },
+        { name = "balsa", amount = 4 },
         { name = "cloth", amount = 4 },
         { name = "leather", amount = 2 },
         { name = "rubber", amount = 2 }
@@ -90,12 +88,15 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a pair of wooden boots"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs boots_wooden",
+                "return=skipped when economy needs balsa and not economy needs boots_wooden",
                 "return=skipped when economy needs cloth and not economy needs boots_wooden",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_wooden",
-                "consume=blackwood cloth",
+                "consume=blackwood balsa",
                 "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
-                "animate=working duration:10m",
+                "animate=working duration:5m",
+                "consume=cloth",
                 "playsound=sound/barbarians/weaver priority:90% allow_multiple",
+                "animate=working duration:5m",
                 "produce=boots_wooden:2"
             }
         },
@@ -104,10 +105,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs boots_sturdy",
+                "return=skipped when economy needs balsa and not economy needs boots_sturdy",
                 "return=skipped when economy needs cloth and not economy needs boots_sturdy",
                 "return=skipped when economy needs leather and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_wooden and not economy needs boots_sturdy",
-                "consume=blackwood",
+                "consume=blackwood balsa",
                 "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:4m",
                 "consume=cloth leather,rubber",

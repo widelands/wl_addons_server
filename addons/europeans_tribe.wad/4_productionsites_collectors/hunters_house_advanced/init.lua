@@ -31,9 +31,10 @@ wl.Descriptions():new_productionsite_type {
     },
     
     inputs = {
-        { name = "water", amount = 4 },
-        { name = "blackroot", amount = 4 },
-        { name = "fruit", amount = 4 },
+        { name = "water", amount = 12 },
+        { name = "honey", amount = 12 },
+        { name = "fruit", amount = 12 },
+        { name = "grape", amount = 12 }
     },
 
     programs = {
@@ -42,11 +43,25 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=releasing",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
+                "call=catching_ox",
+                "sleep=duration:5s",
                 "call=releasing",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
+                "call=catching_donkey",
+                "sleep=duration:5s",
+                "call=releasing",
+                "sleep=duration:5s",
+                "call=catching_horse",
+                "sleep=duration:5s",
+                "call=releasing",
+                "sleep=duration:5s",
+                "call=catching_reindeer",
+                "sleep=duration:5s",
+                "call=releasing",
+                "sleep=duration:5s",
                 "call=hunting",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "call=hunting",
                 "return=skipped"
             }
@@ -55,10 +70,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start releasing because ...
             descname = pgettext("europeans_building", "releasing"),
             actions = {
-                "return=skipped when economy needs water and not economy needs meat and not economy needs leather and not economy needs wool",
-                "return=skipped when economy needs blackroot and not economy needs meat and not economy needs leather and not economy needs wool",
-                "return=skipped when economy needs fruit and not economy needs meat and not economy needs leather and not economy needs wool",
-                "consume=water blackroot fruit",
+                "return=skipped when economy needs water and not economy needs leather and not economy needs wool",
+                "return=skipped when economy needs honey and not economy needs leather and not economy needs wool",
+                "return=skipped when economy needs fruit and not economy needs leather and not economy needs wool",
+                "return=skipped when economy needs grape and not economy needs leather and not economy needs wool",
+                "consume=water honey fruit grape",
                 "sleep=duration:1m",
                 "callworker=release"
             }
@@ -67,10 +83,50 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
             descname = pgettext("europeans_building", "hunting"),
             actions = {
-                "return=skipped unless economy needs leather or economy needs wool or economy needs meat",
+                "return=skipped unless economy needs leather or economy needs wool",
                 "callworker=hunt",
                 "sleep=duration:1m",
-                "produce=leather wool"
+                "produce=wool"
+            }
+        },
+        catching_ox = {
+            -- TRANSLATORS: Completed/Skipped/Did not start catching because ...
+            descname = pgettext("europeans_building", "catching ox"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_ox",
+                "callworker=catch_ox",
+                "sleep=duration:1m",
+                "recruit=europeans_carrier_ox"
+            }
+        },
+        catching_donkey = {
+            -- TRANSLATORS: Completed/Skipped/Did not start catching because ...
+            descname = pgettext("europeans_building", "catching donkey"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_donkey",
+                "callworker=catch_donkey",
+                "sleep=duration:1m",
+                "recruit=europeans_carrier_donkey"
+            }
+        },
+        catching_horse = {
+            -- TRANSLATORS: Completed/Skipped/Did not start catching because ...
+            descname = pgettext("europeans_building", "catching horse"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_horse",
+                "callworker=catch_horse",
+                "sleep=duration:1m",
+                "recruit=europeans_carrier_horse"
+            }
+        },
+        catching_reindeer = {
+            -- TRANSLATORS: Completed/Skipped/Did not start catching because ...
+            descname = pgettext("europeans_building", "catching reindeer"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_reindeer",
+                "callworker=catch_reindeer",
+                "sleep=duration:1m",
+                "recruit=europeans_carrier_reindeer"
             }
         }
     },

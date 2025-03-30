@@ -42,31 +42,27 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_farm_small_advanced",
         enhancement_cost = {
             brick = 1,
-            grout = 1,
-            planks = 1
+            grout = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1,
             granite = 1
         }
     },
     buildcost = {
         granite = 2,
-        log = 2,
-        reed = 2
+        planks = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 1,
-        reed = 1
+        granite = 1
     },
 
     aihints = {
         space_consumer = true,
-        basic_amount = 1,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3,
+        basic_amount = 2,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 4,
+        normal_ai_limit = 8
     },
 
     working_positions = {

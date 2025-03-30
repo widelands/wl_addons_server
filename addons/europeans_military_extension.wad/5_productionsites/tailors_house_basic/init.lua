@@ -39,18 +39,15 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_tailors_house_advanced",
         enhancement_cost = {
             brick = 2,
-            grout = 2,
-            planks = 2
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
             granite = 2
         },
     },
     buildcost = {
         granite = 3,
-        log = 3,
-        reed = 3
+        planks = 3
     },
     return_on_dismantle = {
         scrap_wood = 3,
@@ -69,7 +66,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "armor", amount = 8 },
-        { name = "blackwood", amount = 4 }
+        { name = "blackwood", amount = 4 },
+        { name = "balsa", amount = 4 }
     },
 
     programs = {
@@ -88,9 +86,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
+                "return=skipped when economy needs balsa and not economy needs armor_wooden",
                 "return=skipped when economy needs armor and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
-                "consume=blackwood armor",
+                "consume=blackwood balsa armor",
                 "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/barbarians/weaver priority:90% allow_multiple",

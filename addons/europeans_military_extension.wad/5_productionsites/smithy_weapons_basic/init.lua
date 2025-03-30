@@ -39,18 +39,15 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_weaponsmithy_advanced",
         enhancement_cost = {
             brick = 2,
-            grout = 2,
-            planks = 2
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
             granite = 2
         }
     },
     buildcost = {
         granite = 3,
-        log = 3,
-        reed = 3
+        planks = 3
     },
     return_on_dismantle = {
         scrap_wood = 3,
@@ -69,6 +66,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "blackwood", amount = 6 },
+        { name = "ironwood", amount = 6 },
         { name = "metal_alloy", amount = 4 },
         { name = "coal", amount = 4 }
     },
@@ -93,10 +91,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs helmet_wooden",
+                "return=skipped when economy needs ironwood and not economy needs helmet_wooden",
                 "return=skipped when economy needs helmet_mask and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_advanced and not economy needs helmet_wooden",
-                "consume=blackwood",
+                "consume=blackwood ironwood",
                 "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -108,10 +107,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs spear_wooden",
+                "return=skipped when economy needs ironwood and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_mask and not economy needs spear_wooden",
                 "return=skipped when economy needs spear_advanced and not economy needs spear_wooden",
-                "consume=blackwood",
+                "consume=blackwood ironwood",
                 "playsound=sound/atlanteans/saw/sawing priority:60% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",

@@ -28,6 +28,26 @@ wl.Descriptions():new_worker_type {
             "terraform=amazons",
             "return"
         },
+        plant_balsa_tree = {
+            "findspace=size:any radius:8 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=plant duration:1s",
+            "plant=attrib:balsa_tree_sapling",
+            "animate=water duration:1s",
+            "terraform=amazons",
+            "return"
+        },
+        plant_ironwood_tree = {
+            "findspace=size:any radius:8 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=plant duration:1s",
+            "plant=attrib:ironwood_tree_sapling",
+            "animate=water duration:1s",
+            "terraform=amazons",
+            "return"
+        },
         plant_rubber_tree = {
             "findspace=size:any radius:8 avoid:field saplingsearches:12",
             "walk=coords",

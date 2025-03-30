@@ -37,8 +37,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_farmer_advanced = 1,
-        europeans_farmer_basic = 1
+        europeans_gardener_advanced = 2
     },
     
     inputs = {
@@ -70,8 +69,7 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
                 "call=plant_berrybush",
-                "call=plant_grape",
-                "call=plant_reed"
+                "call=plant_grape"
             }
         },
         making_honey = {
@@ -93,8 +91,7 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_fields",
                 "call=pausing_production_for_outputs",
                 "call=harvest_berry",
-                "call=harvest_grape",
-                "call=harvest_reed"
+                "call=harvest_grape"
             }
         },
         pausing_production_for_inputs = {
@@ -111,7 +108,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs fruit",
                 "return=skipped when economy needs grape",
-                "return=skipped when economy needs reed",
                 "sleep=duration:5m"
             }
         },
@@ -120,7 +116,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "planting berry bushes"),
             actions = {
                 "return=skipped when economy needs grape and not economy needs fruit",
-                "return=skipped when economy needs reed and not economy needs fruit",
                 "return=skipped unless site has water",
                 "consume=water",
                 "callworker=plant_berrybush",
@@ -132,21 +127,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "planting grapes"),
             actions = {
                 "return=skipped when economy needs fruit and not economy needs grape",
-                "return=skipped when economy needs reed and not economy needs grape",
                 "return=skipped unless site has water:2",
                 "consume=water:2",
                 "callworker=plant_grape",
-                "animate=working duration:1s"
-            }
-        },
-        plant_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-            descname = pgettext("europeans_building", "planting reed"),
-            actions = {
-                "return=skipped when economy needs fruit and not economy needs reed",
-                "return=skipped when economy needs grape and not economy needs reed",
-                "consume=water",
-                "callworker=plant_reed",
                 "animate=working duration:1s"
             }
         },
@@ -156,7 +139,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fruit",
                 "return=skipped when economy needs grape and not economy needs fruit",
-                "return=skipped when economy needs reed and not economy needs fruit",
                 "callworker=harvest_berrybush",
                 "animate=working duration:1s",
                 "produce=fruit"
@@ -168,24 +150,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs grape",
                 "return=skipped when economy needs fruit and not economy needs grape",
-                "return=skipped when economy needs reed and not economy needs grape",
                 "callworker=harvest_grape",
                 "animate=working duration:1s",
                 "produce=grape"
             }
-        },
-        harvest_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-            descname = pgettext("europeans_building", "harvesting reed"),
-            actions = {
-                "return=skipped unless economy needs reed",
-                "return=skipped when economy needs fruit and not economy needs reed",
-                "return=skipped when economy needs grape and not economy needs reed",
-                "callworker=harvest_reed",
-                "animate=working duration:1s",
-                "produce=reed:3"
-            }
-        },
+        }
     },
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource

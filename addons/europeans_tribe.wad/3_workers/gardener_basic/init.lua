@@ -17,27 +17,30 @@ wl.Descriptions():new_worker_type {
     },
 
     programs = {
+        check_space = {
+            "findspace=size:any radius:3 avoid:field",
+        },
         check_dig_space = {
-            "findspace=size:any radius:4 avoid:field",
+            "findspace=size:any radius:3 avoid:field",
         },
         check_pond_dry = {
-            "findobject=attrib:pond_dry radius:4",
+            "findobject=attrib:pond_dry radius:3",
         },
         check_pond_water = {
-            "findobject=attrib:pond_water radius:4",
+            "findobject=attrib:pond_water radius:3",
         },
         check_fields = {
-            "findobject=attrib:field radius:4"
+            "findobject=attrib:field radius:3"
         },
         dig = {
-            "findspace=size:any radius:4 avoid:field",
+            "findspace=size:any radius:3 avoid:field",
             "walk=coords",
             "animate=dig duration:3s",
             "plant=attrib:pond_dry",
             "return"
         },
         fill_pond_dry = {
-            "findobject=attrib:pond_dry radius:4",
+            "findobject=attrib:pond_dry radius:3",
             "walk=object",
             "animate=water duration:3s",
             "callobject=fill_pond",
@@ -45,7 +48,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_cotton = {
-            "findobject=attrib:pond_water radius:4",
+            "findobject=attrib:pond_water radius:3",
             "walk=object",
             "animate=plant duration:3s",
             "callobject=plant_cotton_in_pond",
@@ -53,7 +56,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_reed = {
-            "findobject=attrib:pond_water radius:4",
+            "findobject=attrib:pond_water radius:3",
             "walk=object",
             "animate=plant duration:3s",
             "callobject=plant_reed_in_pond",
@@ -61,13 +64,33 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_reed = {
-            "findobject=attrib:ripe_reed radius:4",
+            "findobject=attrib:ripe_reed radius:3",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=idle duration:3s",
+            "animate=harvesting duration:3s",
             "callobject=harvest",
-            "animate=idle duration:1s",
+            "animate=gathering duration:1s",
             "createware=reed",
+            "return"
+        },
+        harvest_cotton = {
+            "findobject=attrib:ripe_cotton radius:3",
+            "walk=object",
+            "playsound=sound/farm/scythe priority:70% allow_multiple",
+            "animate=harvesting duration:3s",
+            "callobject=harvest",
+            "animate=gathering duration:1s",
+            "createware=cotton",
+            "return"
+        },
+        check_flower = {
+            "findobject=attrib:flowering radius:4",
+        },
+        bees = {
+            "findobject=attrib:flowering radius:4",
+            "walk=object",
+            "animate=beeswarm duration:6s",
+            "createware=honey",
             "return"
         },
     },
@@ -100,6 +123,14 @@ wl.Descriptions():new_worker_type {
             directional = true,
             hotspot = {10, 26}
         },
+        beeswarm = {
+            basename = "plant",
+            fps = 10,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 16, 20 }
+        },
         dig = {
             basename = "dig",
             fps = 20,
@@ -108,7 +139,31 @@ wl.Descriptions():new_worker_type {
             rows = 2,
             hotspot = {15, 20}
         },
+        gathering = {
+            basename = "plant",
+            fps = 10,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 16, 20 }
+        },
+        harvesting = {
+            basename = "plant",
+            fps = 10,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 16, 20 }
+        },
         plant = {
+            fps = 10,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 16, 20 }
+        },
+        planting = {
+            basename = "plant",
             fps = 10,
             frames = 10,
             rows = 4,

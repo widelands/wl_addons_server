@@ -38,22 +38,20 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             brick = 1,
             grout = 1,
-            planks = 1
+            marble_column = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1,
-            granite = 1
+            granite = 1,
+            marble = 1
         },
     },
 
     buildcost = {
         granite = 2,
-        log = 2,
-        reed = 2
+        planks = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        reed = 1,
         granite = 1
     },
 
@@ -68,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "ration", amount = 2 }
+        { name = "fruit", amount = 2 }
     },
 
     programs = {
@@ -77,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "scouting"),
             actions = {
                 "return=skipped when economy needs ration and not workers need experience",
-                "consume=ration",
+                "consume=fruit",
                 "sleep=duration:15s",
                 "callworker=scout",
                 "sleep=duration:15s",
@@ -87,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
         targeted_scouting = {
             descname = pgettext("europeans_building", "scouting"),
             actions = {
-                "consume=ration",
+                "consume=fruit",
                 "callworker=targeted_scouting"
             }
         },

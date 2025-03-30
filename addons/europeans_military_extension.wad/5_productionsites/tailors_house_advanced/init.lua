@@ -53,7 +53,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "armor", amount = 16 },
-        { name = "blackwood", amount = 4 }
+        { name = "blackwood", amount = 4 },
+        { name = "balsa", amount = 4 }
     },
 
     programs = {
@@ -76,11 +77,12 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
+                "return=skipped when economy needs balsa and not economy needs armor_wooden",
                 "return=skipped when economy needs armor and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_wooden",
-                "consume=blackwood armor",
+                "consume=blackwood balsa armor",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
                 "playsound=sound/mill/weaving priority:90%",

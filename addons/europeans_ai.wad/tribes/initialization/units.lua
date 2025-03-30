@@ -112,17 +112,8 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "blackwood",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Blackwood
-                    purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener (basic sawmill).")
-                }
-            },
-            {
                 name = "planks",
-                default_target_quantity = 32,
+                default_target_quantity = 48,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -132,6 +123,37 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "They are produced out of logs by the sawmill."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
                         pgettext("europeans_ware", "They are also used by the ferryyard and shipyard.")
+                    }
+                }
+            },
+            {
+                name = "blackwood",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Blackwood
+                    purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener (basic sawmill).")
+                }
+            },
+            {
+                name = "balsa",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Balsa
+                        pgettext("europeans_ware", "Balsa wood is an important trade ware. Balsa trees are cut by an experienced woodcutter.")
+                    }
+                }
+            },
+            {
+                name = "ironwood",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Ironwood
+                        pgettext("europeans_ware", "This very hard wood is as hard as iron. It is cut by a very experienced woodcutter.")
                     }
                 }
             },
@@ -236,67 +258,14 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            -- Food 1
-            {
-                name = "rye",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Rye, part 1
-                        pgettext("europeans_ware", "Rye is essential for survival."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Rye, part 2
-                        pgettext("europeans_ware", "Rye is produced by farms and used by mills to produce mixed flour.")
-                    }
-                }
-            },
-            {
-                name = "wheat",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Wheat, part 1
-                        pgettext("europeans_ware", "Wheat is essential for survival."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Wheat, part 2
-                        pgettext("europeans_ware", "Wheat is produced by farms and used by mills to produce mixed flour.")
-                    }
-                }
-            },
-            {
-                name = "corn",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Corn
-                    purpose = pgettext("europeans_ware", "Advanced farms need to be provided with corn to feed the farm animals.")
-                }
-            },
-            {
-                name = "blackroot",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Blackroot
-                    purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Advanced farms need to be provided with blackroot.")
-                }
-            },
-            {
-                name = "barley",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Barley
-                    purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer or mead.")
-                }
-            },
+            -- Animal economy
             {
                 name = "honey",
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Honey
-                    purpose = pgettext("europeans_ware", "Honey is produced by bees belonging to a farm. It is used to brew mead.")
+                    purpose = pgettext("europeans_ware", "Honey is produced by bees belonging to a farm. It is used to feed animals.")
                 }
             },
             {
@@ -318,96 +287,21 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "meat",
+                name = "wool",
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms. Miners consume meat.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
                 }
             },
             {
-                name = "fish",
+                name = "leather",
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
-                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms. Miners consume fish.")
-                }
-            },
-        },
-        {
-            -- Food 2
-            {
-                name = "flour",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Flour
-                    purpose = pgettext("europeans_ware", "Mixed flour is produced by the mill out of rye and wheat and is needed in the bakery to produce bread.")
-                }
-            },
-            {
-                name = "bread",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Bread
-                    purpose = pgettext("europeans_ware", "Bread are produced in a bakery out of water and flour. Basic miners consume bread.")
-                }
-            },
-            {
-                name = "honey_bread",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Honey Bread
-                    purpose = pgettext("europeans_ware", "Honey Bread are produced in a bakery out of water, honey and flour. Normal miners consume honey bread.")
-                }
-            },
-            {
-                name = "biscuit",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Biscuit
-                    purpose = pgettext("europeans_ware", "Biscuits are produced in a bakery out of water, flour, honey and fruits. Advanced miners consume biscuit.")
-                }
-            },
-            {
-                name = "beer",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Beer
-                    purpose = pgettext("europeans_ware", "This beer is produced in a brewery out of barley and water. Basic miners consume beer.")
-                }
-            },
-            {
-                name = "mead",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Mead
-                    purpose = pgettext("europeans_ware", "Mead is produced by breweries out of water, barley and honey. Normal miners consume mead.")
-                }
-            },
-            {
-                name = "beer_strong",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Beer
-                    purpose = pgettext("europeans_ware", "This strong beer is produced in a brewery out of barley and water. Advanced miners consume strong beer.")
-                }
-            },
-            {
-                name = "wine",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wine
-                    purpose = pgettext("europeans_ware", "It is produced in a winery out of grape. Advanced miners consume wine.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
                 }
             },
         },
@@ -415,8 +309,8 @@ wl.Descriptions():new_tribe {
             -- Raw Materials for craft (Agricultur)
             {
                 name = "reed",
-                default_target_quantity = 48,
-                preciousness = 2,
+                default_target_quantity = 32,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
@@ -440,15 +334,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "wool",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
-                }
-            },
-            {
                 name = "cloth",
                 default_target_quantity = 32,
                 preciousness = 1,
@@ -468,15 +353,6 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
                         pgettext("europeans_ware", "It is produced in tree nursery or in rubber farm."),
                     }
-                }
-            },
-            {
-                name = "leather",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
                 }
             },
             {
@@ -735,6 +611,9 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_worker", "Plant trees and increases soil fertility.")
                 }
             },
+        },
+        {
+            -- Agriculture workers
             {
                 name = "europeans_gardener_basic",
                 default_target_quantity = 1,
@@ -751,27 +630,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Gardener
                     purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house and planting reed, cotton and rubber trees.")
-                }
-            }
-        },
-        {
-            -- Agriculture workers
-            {
-                name = "europeans_farmer_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Farmer
-                    purpose = pgettext("europeans_worker", "Plants and harvests fields.")
-                }
-            },
-            {
-                name = "europeans_farmer_advanced",
-                default_target_quantity = 4,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Farmer
-                    purpose = pgettext("europeans_worker", "Plants and harvests fields.")
                 }
             },
             {
@@ -792,24 +650,6 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_worker", "The gamekeeper makes sure that the natural population of animals never drops too low.")
                 }
             },
-            {
-                name = "europeans_fisher_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Fisher
-                    purpose = pgettext("europeans_worker", "The fisher fishes delicious fish out of rivers, lakes or the ocean.")
-                }
-            },
-            {
-                name = "europeans_fishbreeder",
-                default_target_quantity = 4,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Fishbreeder
-                    purpose = pgettext("europeans_worker", "Breeds fish in nearby waters.")
-                }
-            }
         },
         {
             -- Miners and Stonecutters
@@ -924,41 +764,6 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
                 purpose = _("The remains of a destroyed building.")
-            }
-        },
-        {
-            name = "barleyfield_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: barley field
-                purpose = _("This field has just been planted.")
-            }
-        },
-        {
-            name = "barleyfield_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: barley field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "barleyfield_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: barley field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "barleyfield_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: barley field
-                purpose = _("This field is ready for harvesting.")
-            }
-        },
-        {
-            name = "barleyfield_harvested",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: barley field
-                purpose = _("This field has been harvested.")
             }
         },
         {
@@ -1214,76 +1019,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "blackrootfield_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field has just been planted.")
-            }
-        },
-        {
-            name = "blackrootfield_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "blackrootfield_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "blackrootfield_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field is ready for harvesting.")
-            }
-        },
-        {
-            name = "blackrootfield_harvested",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field has been harvested.")
-            }
-        },
-        {
-            name = "cornfield_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: corn field
-                purpose = _("This field has just been planted.")
-            }
-        },
-        {
-            name = "cornfield_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: corn field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "cornfield_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: corn field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "cornfield_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: corn field
-                purpose = _("This field is ready for harvesting.")
-            }
-        },
-        {
-            name = "cornfield_harvested",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: corn field
-                purpose = _("This field has been harvested.")
-            }
-        },
-        {
             name = "grapevine_tiny",
             helptexts = {
                 -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
@@ -1351,76 +1086,6 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Helptext for a Europeans immovable: Reed Field
                 purpose = _("This reed field is ready for harvesting.")
-            }
-        },
-        {
-            name = "ryefield_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: rye field
-                purpose = _("This field has just been planted.")
-            }
-        },
-        {
-            name = "ryefield_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: rye field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "ryefield_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: rye field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "ryefield_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: rye field
-                purpose = _("This field is ready for harvesting.")
-            }
-        },
-        {
-            name = "ryefield_harvested",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: rye field
-                purpose = _("This field has been harvested.")
-            }
-        },
-        {
-            name = "wheatfield_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-                purpose = _("This field has just been planted.")
-            }
-        },
-        {
-            name = "wheatfield_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "wheatfield_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "wheatfield_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-                purpose = _("This field is ready for harvesting.")
-            }
-        },
-        {
-            name = "wheatfield_harvested",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-                purpose = _("This field has been harvested.")
             }
         },
         {
@@ -1541,84 +1206,84 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "balsa_amazons_old",
+            name = "balsa_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "balsa_black_amazons_old",
+            name = "balsa_black_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "balsa_desert_amazons_old",
+            name = "balsa_desert_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "balsa_winter_amazons_old",
+            name = "balsa_winter_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "ironwood_amazons_old",
+            name = "ironwood_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "ironwood_black_amazons_old",
+            name = "ironwood_black_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "ironwood_desert_amazons_old",
+            name = "ironwood_desert_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "ironwood_winter_amazons_old",
+            name = "ironwood_winter_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "rubber_amazons_old",
+            name = "rubber_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "rubber_black_amazons_old",
+            name = "rubber_black_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "rubber_desert_amazons_old",
+            name = "rubber_desert_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },
         {
-            name = "rubber_winter_amazons_old",
+            name = "rubber_winter_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
@@ -1743,32 +1408,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_fishers_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
-                purpose = pgettext("europeans_building", "Fishes on the coast or in lakes near the fisher’s house."),
-                note = {
-                   -- TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 1
-                   pgettext("europeans_building", "The fisher’s house needs water full of fish within the work area."),
-                   -- TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
-                   pgettext("europeans_building", "Roads and trees along the shoreline block fishing."),
-                },
-            }
-        },
-        {
-            name = "europeans_fishers_house_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Fishers House
-                purpose = pgettext("europeans_building", "Breeds and fishes fish."),
-                note = {
-                   -- TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 1
-                   pgettext("europeans_building", "The fisher’s house needs water within the work area."),
-                   -- TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
-                   pgettext("europeans_building", "Roads and trees along the shoreline block breeding and fishing."),
-                },
-            }
-        },
-        {
             name = "europeans_scouts_house_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
@@ -1840,20 +1479,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_weaving_mill_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves cloth out of reed.")
-            }
-        },
-        {
-            name = "europeans_weaving_mill_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves cloth out of cotton or wool.")
-            }
-        },
-        {
             name = "europeans_sawmill_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
@@ -1913,103 +1538,19 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Smelts ore into gold.")
             }
         },
-        {
-            name = "europeans_mill_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Mill
-                purpose = pgettext("europeans_building", "Grinds wheat and rye to produce mixed flour.")
-            }
-        },
-        {
-            name = "europeans_mill_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Mill
-                purpose = pgettext("europeans_building", "Grinds wheat and rye to produce mixed flour.")
-            }
-        },
-        {
-            name = "europeans_bakery_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-                purpose = pgettext("building", "Produces bread out of water, honey and flour.")
-            }
-        },
-        {
-            name = "europeans_bakery_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-                purpose = pgettext("building", "Produces bread and biscuit out of water, fruits, honey and flour.")
-            }
-        },
-        {
-            name = "europeans_brewery_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
-                purpose = pgettext("europeans_building", "Produces beer for markets and mines."),
-            }
-        },
-        {
-            name = "europeans_brewery_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Brewery
-                purpose = pgettext("europeans_building", "Produces beer, mead and strong_beer for markets and mines."),
-            }
-        },
-        {
-            name = "europeans_brewery_winery",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Winery
-                purpose = pgettext("europeans_building", "Produces beer, mead, strong_beer and wine for markets and mines.")
-            }
-        },
-        {
-            name = "europeans_tavern_basic",
-            helptexts = {
-                 -- TRANSLATORS: Purpose helptext for a production site: Tavern
-                purpose = pgettext("building", "Prepares rations to feed the scouts and miners."),
-            }
-        },
-        {
-            name = "europeans_inn_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a production site: Inn
-                purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the deep mines."),
-            }
-        },
-        {
-            name = "europeans_inn_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a production site: Big Inn
-                purpose = pgettext("europeans_building", "Prepares rations, snacks and meals to feed all miners."),
-            }
-        },
         -- Big
         {
-            name = "europeans_farm_basic",
+            name = "europeans_weaving_mill_basic",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Farm
-                purpose = pgettext("europeans_building", "Sows and harvests barley, rye and wheat."),
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
+                purpose = pgettext("europeans_building", "Weaves cloth out of reed.")
             }
         },
         {
-            name = "europeans_farm_advanced",
+            name = "europeans_weaving_mill_advanced",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, rye and wheat."),
-            }
-        },
-        {
-            name = "europeans_animal_farm_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Cattle Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat for food production and leather for shoemaker."),
-            }
-        },
-        {
-            name = "europeans_animal_farm_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful horses and donkeys for adding them to the transportation system. Additionally keeps sheep for wool production and produces leather, meat and fish.")
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
+                purpose = pgettext("europeans_building", "Weaves cloth out of cotton or wool.")
             }
         },
         -- Mines
@@ -2146,169 +1687,7 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
             }
         },
-        -- Mines with Food
-        {
-            name = "europeans_food_stonemine_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Granite Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_stonemine_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Marble Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_stonemine_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_stonemine_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
-                purpose = pgettext("europeans_food_building", "Digs granite, marble and other valuable minerals out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_coalmine_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Coal Mine
-                purpose = pgettext("europeans_food_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_coalmine_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
-                purpose = pgettext("europeans_food_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_coalmine_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
-                purpose = pgettext("europeans_food_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_coalmine_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-                purpose = pgettext("europeans_food_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_coalmine_level_4",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
-                purpose = pgettext("europeans_food_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_coalmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-                purpose = pgettext("europeans_food_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_ironmine_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
-                purpose = pgettext("europeans_food_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_ironmine_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
-                purpose = pgettext("europeans_food_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_ironmine_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
-                purpose = pgettext("europeans_food_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_ironmine_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-                purpose = pgettext("europeans_food_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_ironmine_level_4",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
-                purpose = pgettext("europeans_food_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_ironmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-                purpose = pgettext("europeans_food_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_goldmine_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Gold Mine
-                purpose = pgettext("europeans_food_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_goldmine_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
-                purpose = pgettext("europeans_food_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_goldmine_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
-                purpose = pgettext("europeans_food_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_goldmine_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-                purpose = pgettext("europeans_food_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_goldmine_level_4",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
-                purpose = pgettext("europeans_food_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_food_goldmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-                purpose = pgettext("europeans_food_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
         -- Market
-        {
-            name = "europeans_market_agricultur",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale natural products for coins.")
-            }
-        },
         {
             name = "europeans_market_cloth",
             helptexts = {
@@ -2317,10 +1696,10 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_market_wood",
+            name = "europeans_market_plant",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale wood products for coins.")
+                purpose = pgettext("europeans_building", "Market building to sale plant products for coins.")
             }
         },
         {
@@ -2331,10 +1710,10 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_market_big",
+            name = "europeans_market_wood",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans market: Big Market
-                purpose = pgettext("europeans_building", "Market building to sale foods for coins.")
+                purpose = pgettext("europeans_building", "Market building to sale wood products for coins.")
             }
         },
         -- Recruitement and Training Sites
@@ -2557,22 +1936,16 @@ wl.Descriptions():new_tribe {
     soldier = "europeans_soldier",
     
     fastplace = {
-        agriculture_producer = "europeans_farm_advanced",
-        agriculture_consumer_primary = "europeans_mill_basic",
-        agriculture_consumer_secondary = "europeans_brewery_basic",
-        bakery = "europeans_bakery_basic",
         barracks = "europeans_trainingscamp_basic",
-        brewery = "europeans_brewery_basic",
         building_materials_primary = "europeans_weaving_mill_basic",
         building_materials_secondary = "europeans_sawmill_basic",
         building_materials_tertiary = "europeans_stonemasons_house_basic",
         charcoal = "europeans_charcoal_kiln_basic",
-        farm_primary = "europeans_farm_medium_basic",
-        farm_secondary = "europeans_farm_basic",
-        farm_tertiary = "europeans_farm_advanced",
+        farm_primary = "europeans_farm_small_basic",
+        farm_secondary = "europeans_farm_medium_basic",
+        farm_tertiary = "europeans_farm_medium_advanced",
         ferry_yard = "europeans_shipyard_advanced",
-        fisher = "europeans_fishers_house_basic",
-        fish_meat_replenisher = "europeans_animal_farm_advanced",
+        fish_meat_replenisher = "europeans_hunters_house_advanced",
         forester = "europeans_foresters_hut",
         hunter = "europeans_hunters_house_basic",
         military_small_primary = "europeans_sentry_basic",
@@ -2581,7 +1954,6 @@ wl.Descriptions():new_tribe {
         military_medium_secondary = "europeans_castle_basic",
         military_tower = "europeans_tower_basic",
         military_fortress = "europeans_castle_basic",
-        mill = "europeans_mill_basic",
         mine_coal = "europeans_coalmine_basic",
         mine_gold = "europeans_goldmine_basic",
         mine_iron = "europeans_ironmine_basic",
@@ -2589,11 +1961,11 @@ wl.Descriptions():new_tribe {
         quarry = "europeans_quarry_basic",
         port = "europeans_port",
         scout = "europeans_scouts_house_basic",
-        second_carrier = "europeans_animal_farm_advanced",
+        second_carrier = "europeans_hunters_house_advanced",
         shipyard = "europeans_shipyard_basic",
         smelting = "europeans_smelting_works_basic",
-        training_small = "europeans_training_center_health",
-        training_large = "europeans_training_center_attack",
+        training_small = "europeans_trainingscamp_advanced",
+        training_big = "europeans_trainingscamp_big",
         warehouse = "europeans_warehouse",
         weaving_mill = "europeans_weaving_mill_basic",
         well = "europeans_well_basic",

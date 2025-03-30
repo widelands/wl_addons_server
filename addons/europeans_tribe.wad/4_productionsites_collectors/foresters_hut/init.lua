@@ -42,23 +42,19 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_terraformers_house",
         enhancement_cost = {
             brick = 1,
-            grout = 1,
-            planks = 1
+            grout = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1,
             granite = 1
         },
     },
     buildcost = {
         granite = 2,
-        log = 2,
-        reed = 2
+        log = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 1,
-        reed = 1
+        granite = 1
     },
     
     aihints = {
@@ -86,13 +82,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=plant_trees",
                 "sleep=duration:5s",
                 "callworker=check_space",
-                "call=plant_rubber_trees",
-                "sleep=duration:5s",
-                "callworker=check_space",
                 "call=plant_trees",
-                "sleep=duration:5s",
-                "callworker=check_space",
-                "call=plant_rubber_trees",
                 "return=skipped"
             }
         },
@@ -102,26 +92,17 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has water:2",
                 "consume=water",
+                "callworker=plant_balsa_tree",
+                "callworker=plant_ironwood_tree",
                 "callworker=plant_rubber_tree",
-                "callworker=plant_rubber_tree",
-                "consume=water",
-                "callworker=plant_rubber_tree",
-                "callworker=plant_rubber_tree"
-            }
-        },
-        plant_rubber_trees = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-            descname = pgettext("europeans_building", "planting rubber trees"),
-            actions = {
-                "return=skipped unless site has water:2",
-                "consume=water",
-                "callworker=plant_tree",
                 "callworker=plant_tree",
                 "consume=water",
-                "callworker=plant_tree",
+                "callworker=plant_balsa_tree",
+                "callworker=plant_ironwood_tree",
+                "callworker=plant_rubber_tree",
                 "callworker=plant_tree"
             }
-        },
+        }
     },
 }
 

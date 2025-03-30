@@ -37,23 +37,19 @@ wl.Descriptions():new_militarysite_type {
         name = "europeans_castle_level_1",
         enhancement_cost = {
             brick = 2,
-            grout = 2,
-            planks = 2
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
             granite = 2
         },
     },
     buildcost = {
         granite = 4,
-        log = 6,
-        reed = 6
+        planks = 6
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        granite = 3,
-        reed = 2
+        granite = 3
     },
 
     aihints = {

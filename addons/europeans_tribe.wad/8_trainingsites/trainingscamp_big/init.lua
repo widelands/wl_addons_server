@@ -15,14 +15,14 @@ wl.Descriptions():new_trainingsite_type {
          frames = 1,
          columns = 1,
          rows = 1,
-         hotspot = { 87, 113 }
+         hotspot = { 88, 113 }
       },
       working = {
          basename = "idle",
          frames = 1,
          columns = 1,
          rows = 1,
-         hotspot = { 87, 113 }
+         hotspot = { 88, 113 }
       }
     },
     

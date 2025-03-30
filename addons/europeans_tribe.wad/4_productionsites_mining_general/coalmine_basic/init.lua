@@ -45,8 +45,7 @@ wl.Descriptions():new_productionsite_type {
         }
     },
     buildcost = {
-        log = 6,
-        reed = 6
+        log = 6
     },
     return_on_dismantle = {
         scrap_wood = 4,
