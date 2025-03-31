@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-07 03:11+0100\n"
+"POT-Creation-Date: 2025-03-31 03:11+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -3285,7 +3285,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1406
 msgctxt "sumatran_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Crema troncs per fer-ne carbó vegetal."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1414
@@ -3612,7 +3612,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1657
 msgctxt "sumatran_building"
 msgid "Proverb"
-msgstr ""
+msgstr "Proverbi"
 
 #. TRANSLATORS: Purpose helptext for a Sumatran building: Dismantle Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1659
@@ -3747,81 +3747,81 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1726
 msgctxt "sumatrans"
 msgid "Worker missing"
-msgstr ""
+msgstr "Fa falta un treballador"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is 1 worker coming
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1728
 msgctxt "sumatrans"
 msgid "Worker is coming"
-msgstr ""
+msgstr "Ve un treballador."
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1730
 msgctxt "sumatrans"
 msgid "Workers missing"
-msgstr ""
+msgstr "Fan falta treballadors"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1732
 msgctxt "sumatrans"
 msgid "Workers are coming"
-msgstr ""
+msgstr "Vénen treballadors."
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is 1 experienced worker missing
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1734
 msgctxt "sumatrans"
 msgid "Expert missing"
-msgstr ""
+msgstr "Fa falta un expert"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1736
 msgctxt "sumatrans"
 msgid "Experts missing"
-msgstr ""
+msgstr "Fan falta experts"
 
 #. TRANSLATORS: %1% is the number of sumatran warriors the plural refers to. %2% is the maximum number of warrior slots in the building.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1750
 msgctxt "sumatran_soldier"
 msgid "%1% warrior (+%2%)"
 msgid_plural "%1% warriors (+%2%)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1% guerrer (+%2%)"
+msgstr[1] "%1% guerrers (+%2%)"
 
 #. TRANSLATORS: Number of sumatran warriors stationed at a militarysite.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1752
 msgctxt "sumatran_soldier"
 msgid "%1% warrior"
 msgid_plural "%1% warriors"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1% guerrer"
+msgstr[1] "%1% guerrers"
 
 #. TRANSLATORS: %1% is the number of sumatran warriors the plural refers to. %2% are currently open warrior slots in the building. %3% is the maximum number of warrior slots in the building
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1754
 msgctxt "sumatran_soldier"
 msgid "%1%(+%2%) warrior (+%3%)"
 msgid_plural "%1%(+%2%) warriors (+%3%)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1%(+%2%) guerrer (+%3%)"
+msgstr[1] "%1%(+%2%) guerrers (+%3%)"
 
 #. TRANSLATORS: %1% is the number of sumatran warriors the plural refers to. %2% are currently open warrior slots in the building.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1756
 msgctxt "sumatran_soldier"
 msgid "%1%(+%2%) warrior"
 msgid_plural "%1%(+%2%) warriors"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1%(+%2%) guerrer"
+msgstr[1] "%1%(+%2%) guerrers"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/armor_copper/init.lua:9
 msgctxt "ware"
 msgid "Copper Armor"
-msgstr ""
+msgstr "Armadura de coure"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/armor_golden/init.lua:8
 msgctxt "ware"
 msgid "Golden Armor"
-msgstr ""
+msgstr "Armadura d'or"
 
 #. TRANSLATORS: This is a ware name.
 #: addons/sumatran_tribe.wad/tribes/wares/cassavaleaves/init.lua:8
@@ -3833,13 +3833,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/wares/copper/init.lua:8
 msgctxt "ware"
 msgid "Copper"
-msgstr ""
+msgstr "Coure"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/copper_ore/init.lua:8
 msgctxt "ware"
 msgid "Copper Ore"
-msgstr ""
+msgstr "Mineral de coure"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/copper_sheet/init.lua:8
@@ -3851,31 +3851,31 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/wares/crocodile_jacket/init.lua:8
 msgctxt "ware"
 msgid "Crocodile Jacket"
-msgstr ""
+msgstr "Jaqueta de pell de cocodril"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/crocodile_shoes/init.lua:8
 msgctxt "sumatran_ware"
 msgid "Crocodile Shoes"
-msgstr ""
+msgstr "Sabates de pell de cocodril"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/crocodile_skin/init.lua:8
 msgctxt "ware"
 msgid "Crocodile Skin"
-msgstr ""
+msgstr "Pell de cocodril"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/diamond_raw/init.lua:8
 msgctxt "ware"
 msgid "Raw Diamond"
-msgstr ""
+msgstr "Diamant en brut"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/eggs/init.lua:8
 msgctxt "ware"
 msgid "Eggs"
-msgstr ""
+msgstr "Ous"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/food_waste/init.lua:8
@@ -3965,25 +3965,25 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/builder/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Builder"
-msgstr ""
+msgstr "Constructor"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/carrier/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Carrier (female)"
-msgstr ""
+msgstr "Transportista (femella)"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/carrier_1/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Carrier (male)"
-msgstr ""
+msgstr "Transportista (mascle)"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/charcoal_burner/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Charcoal Burner"
-msgstr ""
+msgstr "Carboner"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/chief/init.lua:8
@@ -3995,7 +3995,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/cook/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Cook"
-msgstr ""
+msgstr "Cuiner"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/coppersmith/init.lua:8
@@ -4025,49 +4025,49 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/farmer/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Farmer"
-msgstr ""
+msgstr "Agricultor"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/farmer_experienced/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Experienced Farmer"
-msgstr ""
+msgstr "Agricultor amb experiència"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/ferry/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Ferry"
-msgstr ""
+msgstr "Transbordador"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/forester/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Forester"
-msgstr ""
+msgstr "Guarda forestal"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/geologist/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Geologist"
-msgstr ""
+msgstr "Geòleg"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/hunter/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Hunter"
-msgstr ""
+msgstr "Caçador"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/hunter_chief/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Chief Hunter"
-msgstr ""
+msgstr "Cap dels caçadors"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/jungle_ghost/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Jungle Ghost"
-msgstr ""
+msgstr "Fantasma de la selva"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/leaf_gatherer/init.lua:8
@@ -4079,19 +4079,19 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/miner/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Miner"
-msgstr ""
+msgstr "Miner"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/miner_master/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Master Miner"
-msgstr ""
+msgstr "Mestre miner"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/recruit/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Recruit"
-msgstr ""
+msgstr "Recluta"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/reedcutter/init.lua:8
@@ -4103,37 +4103,37 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/scout/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Scout"
-msgstr ""
+msgstr "Explorador"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/shipwright/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Shipwright"
-msgstr ""
+msgstr "Mestre d'aixa"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/smelter/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Smelter"
-msgstr ""
+msgstr "Fonedor"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/soldier/init.lua:107
 msgctxt "sumatran_worker"
 msgid "Warrior"
-msgstr ""
+msgstr "Guerrer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/stonecutter/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Stonecutter"
-msgstr ""
+msgstr "Pedrer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/tribal_chief/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Tribal Chief"
-msgstr ""
+msgstr "Cap de la tribu"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/water_carrier/init.lua:8
@@ -4145,7 +4145,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/weaver/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Weaver"
-msgstr ""
+msgstr "Teixidor"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/winemaker/init.lua:8
@@ -4157,4 +4157,4 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/woodcutter/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
-msgstr ""
+msgstr "Llenyataire"
