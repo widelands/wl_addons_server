@@ -9,11 +9,7 @@ wl.Descriptions():new_worker_type {
     descname = pgettext("europeans_worker", "Advanced Shipwright"),
     icon = dirname .. "menu.png",
     vision_range = 2,
-    
-    buildcost = {
-        europeans_worker_advanced = 1
-    },  
-    
+
     programs = {
         check_space = {
             "findspace=size:swim radius:6"

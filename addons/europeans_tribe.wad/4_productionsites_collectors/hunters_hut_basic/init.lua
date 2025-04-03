@@ -67,10 +67,30 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
             descname = _("hunting"),
             actions = {
-                "return=skipped unless economy needs leather or economy needs meat",
+                "call=catching_ox",
+                "sleep=duration:10s",
+                "call=hunting",
+                "return=skipped"
+            }
+        },
+        hunting = {
+            -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
+            descname = pgettext("europeans_building", "hunting"),
+            actions = {
+                "return=skipped unless economy needs leather or economy needs wool",
                 "callworker=hunt",
                 "sleep=duration:2m",
                 "produce=wool"
+            }
+        },
+        catching_ox = {
+            -- TRANSLATORS: Completed/Skipped/Did not start catching because ...
+            descname = pgettext("europeans_building", "catching ox"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_ox",
+                "callworker=catch_ox",
+                "sleep=duration:2m",
+                "recruit=europeans_carrier_ox"
             }
         },
     },

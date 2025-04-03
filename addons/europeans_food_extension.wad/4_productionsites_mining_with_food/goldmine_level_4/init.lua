@@ -37,8 +37,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_miner_advanced = 2,
-        europeans_miner_basic = 1
+        europeans_miner_advanced = 3
     },
 
     inputs = {
@@ -55,26 +54,26 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has meal:4",
                 "consume=meal",
                 "call=mine_granite",
+                "call=mine_ore",
                 "call=mine_marble",
-                "call=mine_granite",
                 "call=mine_ore",
                 "sleep=duration:5s",
                 "consume=meal",
                 "call=mine_granite",
                 "call=mine_ore",
-                "call=mine_granite",
-                "call=mine_ore",
-                "sleep=duration:5s",
-                "consume=meal",
-                "call=mine_granite",
                 "call=mine_marble",
-                "call=mine_granite",
                 "call=mine_ore",
                 "sleep=duration:5s",
                 "consume=meal",
                 "call=mine_granite",
                 "call=mine_ore",
+                "call=mine_marble",
+                "call=mine_ore",
+                "sleep=duration:5s",
+                "consume=meal",
                 "call=mine_granite",
+                "call=mine_ore",
+                "call=mine_marble",
                 "call=mine_ore",
             }
         },
@@ -107,7 +106,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=meal:4",
-                "produce=granite:8 marble:2 ore:6",
+                "produce=granite:4 marble:4 ore:8",
             }
         },
     },

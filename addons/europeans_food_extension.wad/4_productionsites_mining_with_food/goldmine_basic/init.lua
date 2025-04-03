@@ -79,7 +79,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5s",
                 "consume=ration",
                 "call=mine_granite",
-                "call=mine_marble",
+                "call=mine_ore",
                 "call=mine_ore",
                 "sleep=duration:5s",
                 "consume=ration",
@@ -117,7 +117,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=ration:3",
-                "produce=granite:3 marble:3 ore:3",
+                "produce=granite:3 marble:2 ore:4",
             }
         },
     },

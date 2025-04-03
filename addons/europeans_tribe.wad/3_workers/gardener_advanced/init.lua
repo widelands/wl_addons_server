@@ -1,6 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+-- dirname = path.dirname(__file__)
+dirname = "tribes/workers/empire/forester/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_gardener_advanced",
@@ -8,10 +9,6 @@ wl.Descriptions():new_worker_type {
     descname = pgettext ("europeans_worker", "Advanced Gardener"),
     icon = dirname .. "menu.png",  
     vision_range = 2,
-    
-    buildcost = {
-        europeans_worker_advanced = 1
-    },  
     
     programs = {
         check_space = {
@@ -152,22 +149,21 @@ wl.Descriptions():new_worker_type {
     },
     spritesheets = {
         walk = {
-            basename = "walk",
-            fps = 15,
+            fps = 10,
             frames = 10,
-            columns = 5,
-            rows = 2,
+            rows = 4,
+            columns = 3,
             directional = true,
-            hotspot = {11, 24}
+            hotspot = { 10, 23 }
         },
         walkload = {
-            basename = "walkload",
-            fps = 15,
+            basename = "walk",
+            fps = 10,
             frames = 10,
-            columns = 5,
-            rows = 2,
+            rows = 4,
+            columns = 3,
             directional = true,
-            hotspot = {10, 26}
+            hotspot = { 10, 23 }
         },
         beeswarm = {
             basename = "planting",
@@ -178,12 +174,11 @@ wl.Descriptions():new_worker_type {
             hotspot = { 18, 23 }
         },
         dig = {
-            basename = "dig",
-            fps = 20,
+            fps = 5,
             frames = 10,
-            columns = 5,
-            rows = 2,
-            hotspot = {15, 20}
+            rows = 4,
+            columns = 3,
+            hotspot = { 5, 22 }
         },
         gathering = {
             basename = "planting",

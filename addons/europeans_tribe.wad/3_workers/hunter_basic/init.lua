@@ -11,7 +11,7 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
 
-    experience = 48,
+    experience = 24,
     becomes = "europeans_gamekeeper",
     
     buildcost = {
@@ -31,7 +31,14 @@ wl.Descriptions():new_worker_type {
             "removeobject",
             "createware=leather",
             "return"
-        }
+        },
+        catch_ox = {
+            "findobject=type:bob radius:13",
+            "walk=object",
+            "animate=hunting duration:1s",
+            "removeobject",
+            "return"
+        },
     },
 
     spritesheets = {

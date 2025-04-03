@@ -37,8 +37,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_miner_advanced = 2,
-        europeans_miner_basic = 1
+        europeans_miner_advanced = 3
     },
 
     inputs = {

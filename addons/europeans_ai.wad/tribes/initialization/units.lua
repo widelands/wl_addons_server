@@ -361,7 +361,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool, cotton or reed.")
                 }
             },
         },
@@ -638,7 +638,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Hunter
-                    purpose = pgettext("europeans_worker", "The hunter brings fresh, raw meat to the colonists.")
+                    purpose = pgettext("europeans_worker", "The hunter brings ox, leather and wool to the colonists.")
                 }
             },
             {
@@ -1395,7 +1395,7 @@ wl.Descriptions():new_tribe {
             name = "europeans_hunters_house_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
-                purpose = pgettext("europeans_building", "Hunts animals to produce meat and leather."),
+                purpose = pgettext("europeans_building", "Hunts animals to produce wool and leather."),
                 -- TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
                 note = pgettext("europeans_building", "The hunter’s hut needs animals to hunt within the work area."),
             }
@@ -1404,7 +1404,7 @@ wl.Descriptions():new_tribe {
             name = "europeans_hunters_house_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
-                purpose = pgettext("europeans_building", "Releases animals into the wild to steady the meat and leather production.")
+                purpose = pgettext("europeans_building", "Releases animals into the wild to steady the wool and leather production.")
             }
         },
         {

@@ -6,7 +6,7 @@ dirname = "tribes/buildings/productionsites/empire/fishers_house/"
 wl.Descriptions():new_productionsite_type {
     name = "europeans_fishers_house_advanced",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Advanced Fisher’s House"),
+    descname = pgettext("europeans_building", "Fishbreeder’s House"),
     icon = dirname .. "menu.png",
     size = "small",
 
