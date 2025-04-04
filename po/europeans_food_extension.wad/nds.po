@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-03 03:10+0200\n"
+"POT-Creation-Date: 2025-04-04 03:11+0200\n"
 "PO-Revision-Date: 2025-03-29 14:10+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -544,10 +544,9 @@ msgstr "Buurderee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Fishbreeder’s House"
-msgstr "Grotes Fiskerhuus"
+msgstr "Fisstüchterhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding because ...
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:57
@@ -601,10 +600,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Gamekeeper’s House"
-msgstr "Grotes Fiskerhuus"
+msgstr "Deertentüchterhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start releasing because ...
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:56
@@ -3305,7 +3303,3 @@ msgstr "Raadhuus"
 #: addons/europeans_food_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Hunter’s House"
-#~ msgstr "Grotes Jaggthuus"

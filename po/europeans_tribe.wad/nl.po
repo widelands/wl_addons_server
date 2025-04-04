@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-03 03:11+0200\n"
+"POT-Creation-Date: 2025-04-04 03:11+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1042,10 +1042,9 @@ msgstr "bomen planten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Gamekeeper's House"
-msgstr "Jachtopzichter"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start releasing because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:71
@@ -3276,14 +3275,11 @@ msgstr "Het wordt geproduceerd in boomkwekerijen of op rubberplantages."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:364
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Raw material for some sorts of armor. It is produced in the weaving mill out "
 "of wool, cotton or reed."
 msgstr ""
-"Grondstof voor sommige soorten harnassen. Het wordt in de weverij gemaakt "
-"van wol of riet."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:377
@@ -3473,10 +3469,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Hunter
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:641
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "The hunter brings ox, leather and wool to the colonists."
-msgstr "De jager brengt vers, rauw vlees naar de kolonisten."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gamekeeper
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:650
@@ -3890,10 +3885,9 @@ msgstr "Hakt blokken graniet en marmer uit rotsen in de omgeving."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1398
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Hunts animals to produce wool and leather."
-msgstr "Jaagt op dieren om vlees en leer te produceren."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1400
@@ -3903,12 +3897,10 @@ msgstr "De jagershut heeft dieren nodig om in het werkgebied te jagen."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1407
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Releases animals into the wild to steady the wool and leather production."
 msgstr ""
-"Laat dieren los in het wild om de vlees- en leerproductie op peil te houden."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
@@ -4650,7 +4642,3 @@ msgstr "Hoofdkwartier"
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Hunter’s House"
-#~ msgstr "Geavanceerd Jagershuis"
