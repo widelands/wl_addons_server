@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-09 03:10+0200\n"
+"POT-Creation-Date: 2025-04-10 03:10+0200\n"
 "PO-Revision-Date: 2025-04-08 17:14+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +28,7 @@ msgstr ""
 #: addons/castaways.wad/barbarians.lua:11 addons/castaways.wad/empire.lua:11
 #: addons/castaways.wad/frisians.lua:11
 msgid "Castaways"
-msgstr ""
+msgstr "Trosečníci"
 
 #: addons/castaways.wad/addon:3
 msgid ""
@@ -32,6 +36,9 @@ msgid ""
 "workers. You will need to find a portspace with direct access to rocks and "
 "trees. For more information, see description."
 msgstr ""
+"Zahaj hru s jednou lodí uprostřed oceánu, minimem zboží a pár pracovníky. "
+"Budeš muset najít místo pro přístav s přímým přístupem ke skalám a stromům. "
+"Více informací v popisku."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/amazons.lua:13
@@ -43,6 +50,13 @@ msgid ""
 "quartz for one tool you will need to start your economy. For unknown maps, "
 "game without fog of war recommended. A higher game speed is also recommended."
 msgstr ""
+"Zahaj hru s jednou lodí uprostřed oceánu, minimem zboží a pár pracovníky. "
+"Upozornění: AI za těchto podmínek nedokáže úspěšně zahájit hru. Budeš muset "
+"najít místo pro přístav s přímým přístupem ke skalám a stromům a rozebrat "
+"pár budov a pošetřit tak stavební materiál. Dávej si pozor, máš pouze jeden "
+"křemen na jeden nástroj, který budeš potřebovat pro rozběh hospodářství. V "
+"případě hry na neznámé mapě doporučena hra bez válečné mlhy. Také se "
+"doporučuje nastavení vyššího tempa hry."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/atlanteans.lua:13
@@ -53,6 +67,10 @@ msgid ""
 "to find a portspace with direct access to rocks and trees. For unknown maps, "
 "game without fog of war recommended."
 msgstr ""
+"Zahaj hru s jednou lodí uprostřed oceánu, minimem zboží a pár pracovníky. "
+"Upozornění: AI za těchto podmínek nedokáže úspěšně zahájit hru. Budeš muset "
+"najít místo pro přístav s přímým přístupem ke skalám a stromům. V případě "
+"hry na neznámé mapě doporučena hra bez válečné mlhy."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/frisians.lua:13
@@ -63,3 +81,8 @@ msgid ""
 "to spare your building material. For unknown maps, game without fog of war "
 "recommended. A higher game speed is also recommended."
 msgstr ""
+"Zahaj hru s jednou lodí uprostřed oceánu, minimem zboží a pár pracovníky. "
+"Upozornění: AI za těchto podmínek nedokáže úspěšně zahájit hru. Budeš muset "
+"najít místo pro přístav s přímým přístupem ke stromům a rozebrat pár budov a "
+"pošetřit tak stavební materiál. V případě hry na neznámé mapě doporučena hra "
+"bez válečné mlhy. Také se doporučuje nastavení vyššího tempa hry."
