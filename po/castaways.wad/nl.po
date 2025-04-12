@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-09 03:10+0200\n"
+"POT-Creation-Date: 2025-04-12 03:10+0200\n"
 "PO-Revision-Date: 2025-04-08 17:14+0000\n"
+"Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +27,7 @@ msgstr ""
 #: addons/castaways.wad/barbarians.lua:11 addons/castaways.wad/empire.lua:11
 #: addons/castaways.wad/frisians.lua:11
 msgid "Castaways"
-msgstr ""
+msgstr "Schipbreukelingen"
 
 #: addons/castaways.wad/addon:3
 msgid ""
@@ -31,6 +35,9 @@ msgid ""
 "workers. You will need to find a portspace with direct access to rocks and "
 "trees. For more information, see description."
 msgstr ""
+"Begin het spel met één schip op de oceaan, een minimum aan goederen en "
+"weinig arbeiders. Je zult een havenruimte moeten vinden met directe toegang "
+"tot rotsen en bomen. Zie de beschrijving voor meer informatie."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/amazons.lua:13
@@ -42,6 +49,14 @@ msgid ""
 "quartz for one tool you will need to start your economy. For unknown maps, "
 "game without fog of war recommended. A higher game speed is also recommended."
 msgstr ""
+"Begin het spel met één schip op de oceaan, het minimum aan goederen en "
+"weinig arbeiders. Waarschuwing: de AI kan hier niet succesvol mee beginnen. "
+"Je zult een havenruimte moeten vinden met directe toegang tot rotsen en "
+"bomen en een aantal gebouwen moeten ontmantelen om je bouwmateriaal te "
+"sparen. Wees voorzichtig, je hebt maar één kwarts voor één stuk gereedschap "
+"dat je nodig hebt om je economie te starten. Voor onbekende kaarten wordt "
+"een spel zonder oorlogsmist aanbevolen. Een hogere spelsnelheid is ook aan "
+"te raden."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/atlanteans.lua:13
@@ -52,6 +67,10 @@ msgid ""
 "to find a portspace with direct access to rocks and trees. For unknown maps, "
 "game without fog of war recommended."
 msgstr ""
+"Begin het spel met één schip op de oceaan, het minimum aan goederen en "
+"weinig arbeiders. Waarschuwing: de AI kan hier niet succesvol mee starten. "
+"Je zult een havenruimte moeten vinden met directe toegang tot rotsen en "
+"bomen. Voor onbekende kaarten wordt een spel zonder oorlogsmist aanbevolen."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/frisians.lua:13
@@ -62,3 +81,9 @@ msgid ""
 "to spare your building material. For unknown maps, game without fog of war "
 "recommended. A higher game speed is also recommended."
 msgstr ""
+"Begin het spel met één schip op de oceaan, een minimum aan goederen en "
+"weinig arbeiders. Waarschuwing: de AI kan hier niet succesvol mee beginnen. "
+"Je zult een havenruimte moeten vinden met directe toegang tot bomen en een "
+"aantal gebouwen moeten ontmantelen om je bouwmateriaal te sparen. Voor "
+"onbekende kaarten wordt een spel zonder oorlogsmist aanbevolen. Een hogere "
+"spelsnelheid wordt ook aanbevolen."

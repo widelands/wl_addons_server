@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 03:11+0200\n"
+"POT-Creation-Date: 2025-04-12 03:11+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -817,7 +817,7 @@ msgstr "Vinya"
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:43
 #: addons/europeans_tribe.wad/4_productionsites_collectors/lumberjacks_house_advanced/init.lua:37
 #: addons/europeans_tribe.wad/4_productionsites_collectors/lumberjacks_hut_basic/init.lua:64
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:46
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:37
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:64
 #: addons/europeans_tribe.wad/4_productionsites_collectors/terraformers_house/init.lua:49
 #: addons/europeans_tribe.wad/4_productionsites_collectors_water/well_basic/init.lua:68
@@ -1204,7 +1204,7 @@ msgid "Advanced Quarry"
 msgstr "Pedrera avançada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:57
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:48
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:75
 msgctxt "europeans_building"
 msgid "quarrying"
@@ -1216,7 +1216,7 @@ msgstr "tallar pedra"
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:72
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:63
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:89
 #: addons/europeans_tribe.wad/4_productionsites_mining/coalmine_basic/init.lua:68
 #: addons/europeans_tribe.wad/4_productionsites_mining/coalmine_level_1/init.lua:61
@@ -1242,21 +1242,21 @@ msgid "mining"
 msgstr "extraure recursos"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:87
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:78
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:103
 msgctxt "europeans_building"
 msgid "quarrying granite"
 msgstr "tallar granit"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:95
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:86
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:111
 msgctxt "europeans_building"
 msgid "quarrying marble"
 msgstr "tallar marbre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:103
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:94
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:119
 #: addons/europeans_tribe.wad/4_productionsites_mining/coalmine_basic/init.lua:99
 #: addons/europeans_tribe.wad/4_productionsites_mining/coalmine_basic/init.lua:107
@@ -1284,7 +1284,7 @@ msgid "mining granite"
 msgstr "extraure granit"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:111
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:102
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:127
 #: addons/europeans_tribe.wad/4_productionsites_mining/goldmine_basic/init.lua:100
 #: addons/europeans_tribe.wad/4_productionsites_mining/goldmine_level_1/init.lua:92
@@ -1304,17 +1304,17 @@ msgctxt "europeans_building"
 msgid "mining marble"
 msgstr "extraure marbre"
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:120
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:111
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:136
 msgid "No Rocks"
 msgstr "No hi ha roques"
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:121
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:112
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:137
 msgid "Out of Rocks"
 msgstr "Sense roques"
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:122
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:113
 msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any stone in his work area."

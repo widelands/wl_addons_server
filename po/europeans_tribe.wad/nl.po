@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 03:11+0200\n"
+"POT-Creation-Date: 2025-04-12 03:11+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -816,7 +816,7 @@ msgstr "Wijngaard"
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:43
 #: addons/europeans_tribe.wad/4_productionsites_collectors/lumberjacks_house_advanced/init.lua:37
 #: addons/europeans_tribe.wad/4_productionsites_collectors/lumberjacks_hut_basic/init.lua:64
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:46
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:37
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:64
 #: addons/europeans_tribe.wad/4_productionsites_collectors/terraformers_house/init.lua:49
 #: addons/europeans_tribe.wad/4_productionsites_collectors_water/well_basic/init.lua:68
@@ -1044,7 +1044,7 @@ msgstr "bomen planten"
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:9
 msgctxt "europeans_building"
 msgid "Gamekeeper's House"
-msgstr ""
+msgstr "Jachtopzichters Huis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start releasing because ...
 #: addons/europeans_tribe.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:71
@@ -1208,7 +1208,7 @@ msgid "Advanced Quarry"
 msgstr "Geavanceerde Steengroeve"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:57
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:48
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:75
 msgctxt "europeans_building"
 msgid "quarrying"
@@ -1220,7 +1220,7 @@ msgstr "steenhouwen"
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:72
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:63
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:89
 #: addons/europeans_tribe.wad/4_productionsites_mining/coalmine_basic/init.lua:68
 #: addons/europeans_tribe.wad/4_productionsites_mining/coalmine_level_1/init.lua:61
@@ -1246,21 +1246,21 @@ msgid "mining"
 msgstr "mijnbouw"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:87
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:78
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:103
 msgctxt "europeans_building"
 msgid "quarrying granite"
 msgstr "steenhouwen graniet"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:95
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:86
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:111
 msgctxt "europeans_building"
 msgid "quarrying marble"
 msgstr "steenhouwen marmer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:103
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:94
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:119
 #: addons/europeans_tribe.wad/4_productionsites_mining/coalmine_basic/init.lua:99
 #: addons/europeans_tribe.wad/4_productionsites_mining/coalmine_basic/init.lua:107
@@ -1288,7 +1288,7 @@ msgid "mining granite"
 msgstr "graniet delven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:111
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:102
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:127
 #: addons/europeans_tribe.wad/4_productionsites_mining/goldmine_basic/init.lua:100
 #: addons/europeans_tribe.wad/4_productionsites_mining/goldmine_level_1/init.lua:92
@@ -1308,17 +1308,17 @@ msgctxt "europeans_building"
 msgid "mining marble"
 msgstr "marmer delven"
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:120
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:111
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:136
 msgid "No Rocks"
 msgstr "Geen Rotsen"
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:121
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:112
 #: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_basic/init.lua:137
 msgid "Out of Rocks"
 msgstr "Zonder Rotsen"
 
-#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:122
+#: addons/europeans_tribe.wad/4_productionsites_collectors/quarry_advanced/init.lua:113
 msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any stone in his work area."
@@ -3280,6 +3280,8 @@ msgid ""
 "Raw material for some sorts of armor. It is produced in the weaving mill out "
 "of wool, cotton or reed."
 msgstr ""
+"Grondstof voor sommige soorten wapenrustingen. Het wordt in de weverij "
+"gemaakt van wol, katoen of riet."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:377
@@ -3471,7 +3473,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:641
 msgctxt "europeans_worker"
 msgid "The hunter brings ox, leather and wool to the colonists."
-msgstr ""
+msgstr "De jager brengt de os, het leer en de wol naar de kolonisten."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gamekeeper
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:650
@@ -3887,7 +3889,7 @@ msgstr "Hakt blokken graniet en marmer uit rotsen in de omgeving."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1398
 msgctxt "europeans_building"
 msgid "Hunts animals to produce wool and leather."
-msgstr ""
+msgstr "Jaagt op dieren om wol en leer te produceren."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1400
@@ -3901,6 +3903,7 @@ msgctxt "europeans_building"
 msgid ""
 "Releases animals into the wild to steady the wool and leather production."
 msgstr ""
+"Laat dieren vrij in het wild om de wol- en leerproductie op peil te houden."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
