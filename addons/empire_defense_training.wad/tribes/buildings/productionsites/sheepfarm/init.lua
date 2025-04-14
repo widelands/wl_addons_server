@@ -1,0 +1,72 @@
+push_textdomain("tribes")
+
+local dirname = path.dirname(__file__)
+
+wl.Descriptions():new_productionsite_type {
+   name = "empire_sheepfarm",
+   -- TRANSLATORS: This is a building name used in lists of buildings
+   descname = pgettext("empire_building", "Sheep Farm"),
+   icon = dirname .. "menu.png",
+   size = "big",
+
+   buildcost = {
+      log = 2,
+      granite = 2,
+      marble = 2
+   },
+   return_on_dismantle = {
+      log = 1,
+      granite = 1,
+      marble = 1
+   },
+
+
+   animation_directory = dirname,
+   spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 89, 82 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 89, 82 },
+      },
+   },
+
+   aihints = {
+      prohibited_till = 380,
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 3
+   },
+
+   working_positions = {
+      empire_shepherd = 1
+   },
+
+   inputs = {
+      { name = "water", amount = 7 },
+      { name = "wheat", amount = 7 }
+   },
+
+   programs = {
+      main = {
+         -- TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
+         descname = _("breeding sheep"),
+         actions = {
+            "return=skipped unless economy needs wool",
+            "consume=water wheat",
+            "sleep=duration:25s",
+            "playsound=sound/farm/sheep priority:50% allow_multiple",
+            "animate=working duration:30s",
+            "produce=wool"
+         }
+      },
+   },
+}
+
+pop_textdomain()

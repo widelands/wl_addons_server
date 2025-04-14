@@ -1,0 +1,657 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Ondřej Itřech, 2025
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-14 03:11+0200\n"
+"PO-Revision-Date: 2025-04-13 08:05+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
+"Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: addons/lutas_atlanteans.wad/addon:2
+msgid "Lutas’ Atlanteans"
+msgstr "Lutasovi Atlanťané"
+
+#: addons/lutas_atlanteans.wad/addon:3
+msgid ""
+"Some people already thought that they are nowhere to be found. But here they "
+"are. The true Atlanteans, who stayed faithful to their only God Lutas."
+msgstr ""
+"Někteří se už domnívali, že se po nich již slehla zem. Ale kdepak, tu jsou. "
+"Opravdoví Atlanťané, ti co zůstali věrní svému jedinému bohu Lutasovi."
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/lutas_atlanteans.wad/atlanteans_fisher/init.lua:8
+msgctxt "atlanteans_worker"
+msgid "Fisher"
+msgstr "Rybář"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/lutas_atlanteans.wad/atlanteans_priestess/init.lua:8
+msgctxt "atlanteans_worker"
+msgid "Priestess"
+msgstr "Kněžka"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/lutas_atlanteans.wad/atlanteans_soldier/init.lua:107
+msgctxt "atlanteans_worker"
+msgid "Soldier"
+msgstr "Voják"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/lutas_atlanteans.wad/fishers_house/init.lua:8
+msgctxt "atlanteans_building"
+msgid "Fisher’s House"
+msgstr "Domek rybáře"
+
+#. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
+#: addons/lutas_atlanteans.wad/fishers_house/init.lua:42
+#: addons/lutas_atlanteans.wad/fishers_house/init.lua:55
+msgid "fishing"
+msgstr "rybaření"
+
+#. TRANSLATORS: Completed/Skipped/Did not start collecting seashells because ...
+#: addons/lutas_atlanteans.wad/fishers_house/init.lua:67
+msgid "collecting seashells"
+msgstr "sbírání mušlí"
+
+#: addons/lutas_atlanteans.wad/fishers_house/init.lua:80
+msgid "No Fish"
+msgstr "Žádné ryby"
+
+#: addons/lutas_atlanteans.wad/fishers_house/init.lua:81
+msgid "Out of Fish"
+msgstr "Došly ryby"
+
+#: addons/lutas_atlanteans.wad/fishers_house/init.lua:82
+msgctxt "atlanteans_building"
+msgid ""
+"The fisher working out of this fisher’s house can’t find any fish in his "
+"work area. Remember that you can increase the number of existing fish by "
+"building a fish breeder’s house."
+msgstr ""
+"Rybář pracující v tomto domku rybáře nemůže ve své pracovní oblasti najít "
+"žádné ryby. Pamatuj, že na udržení rybí populace je potřeba postavit domek "
+"porybného."
+
+#: addons/lutas_atlanteans.wad/immovables/seashell1/init.lua:7
+#: addons/lutas_atlanteans.wad/immovables/seashell2/init.lua:7
+msgid "Lutas’ Seashell"
+msgstr "Lutasova mušle"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/lutas_atlanteans.wad/labyrinth/init.lua:8
+msgctxt "atlanteans_building"
+msgid "Labyrinth"
+msgstr "Labyrint"
+
+#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
+#: addons/lutas_atlanteans.wad/labyrinth/init.lua:57
+#: addons/lutas_atlanteans.wad/temple/init.lua:58
+msgid "sleeping"
+msgstr "podřimování"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/lutas_atlanteans.wad/labyrinth/init.lua:65
+msgctxt "atlanteans_building"
+msgid "upgrading soldier defense from level 0 to level 1"
+msgstr "cvičení obrany vojáka z úrovně 0 na úroveň 1"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/lutas_atlanteans.wad/labyrinth/init.lua:79
+msgctxt "atlanteans_building"
+msgid "upgrading soldier defense from level 1 to level 2"
+msgstr "cvičení obrany vojáka z úrovně 1 na úroveň 2"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/lutas_atlanteans.wad/labyrinth/init.lua:93
+msgctxt "atlanteans_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr "cvičení úhybu vojáka z úrovně 0 na úroveň 1"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/lutas_atlanteans.wad/labyrinth/init.lua:106
+msgctxt "atlanteans_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr "cvičení úhybu vojáka z úrovně 1 na úroveň 2"
+
+#. TRANSLATORS: Atlantean training site tooltip when it has no soldiers assigned
+#: addons/lutas_atlanteans.wad/labyrinth/init.lua:124
+msgctxt "atlanteans_building"
+msgid "No soldier to train!"
+msgstr "Nejsou vojáci k výcviku!"
+
+#. TRANSLATORS: Atlantean training site tooltip when none of the present soldiers match the current training program
+#: addons/lutas_atlanteans.wad/labyrinth/init.lua:126
+msgctxt "atlanteans_building"
+msgid "No soldier found for this training level!"
+msgstr "Nenalezen voják pro požadovanou úroveň výcviku!"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/lutas_atlanteans.wad/low_coalmine/init.lua:8
+msgctxt "atlanteans_building"
+msgid "Low Coal Mine"
+msgstr "Nízký uhelný důl"
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#: addons/lutas_atlanteans.wad/low_coalmine/init.lua:53
+#: addons/lutas_atlanteans.wad/low_coalmine/init.lua:75
+msgid "mining coal"
+msgstr "kutání uhlí"
+
+#: addons/lutas_atlanteans.wad/low_coalmine/init.lua:94
+msgid "No Coal"
+msgstr "Došlo uhlí"
+
+#: addons/lutas_atlanteans.wad/low_coalmine/init.lua:95
+msgid "Main Coal Vein Exhausted"
+msgstr "Hlavní ložisko uhlí je vyčerpáno"
+
+#: addons/lutas_atlanteans.wad/low_coalmine/init.lua:97
+msgctxt "atlanteans_building"
+msgid ""
+"This coal mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+"Hlavní ložisko tohoto uhelného dolu je vyčerpáno. Očekávej významný pokles "
+"návratnosti těžby. Zvaž jeho vylepšení, rozebrání, nebo zničení."
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:8
+msgctxt "atlanteans_building"
+msgid "Low Crystal Mine"
+msgstr "Nízký důl na křišťál"
+
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:53
+msgid "working"
+msgstr "těžení"
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:63
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:107
+msgid "mining granite"
+msgstr "lámání žuly"
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:79
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:115
+msgid "mining quartz"
+msgstr "dolování křemene"
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining diamonds because ...
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:95
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:123
+msgid "mining diamonds"
+msgstr "těžba diamantů"
+
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:157
+msgid "No Crystals"
+msgstr "Žádné drahé kameny"
+
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:158
+msgid "Main Crystal Vein Exhausted"
+msgstr "Hlavní žíla křišťálu je vyčerpaná"
+
+#: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:160
+msgctxt "atlanteans_building"
+msgid ""
+"This crystal mine’s main vein is exhausted. Expect strongly diminished "
+"returns on investment. You should consider enhancing, dismantling or "
+"destroying it."
+msgstr ""
+"Hlavní žíla tohoto dolu na křišťál je vyčerpaná. Očekávej významný pokles v "
+"návratnosti těžby. Zvaž jeho rozebrání nebo zničení."
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/lutas_atlanteans.wad/low_goldmine/init.lua:8
+msgctxt "atlanteans_building"
+msgid "Low Gold Mine"
+msgstr "Nízký důl na zlato"
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#: addons/lutas_atlanteans.wad/low_goldmine/init.lua:53
+#: addons/lutas_atlanteans.wad/low_goldmine/init.lua:65
+msgid "mining gold"
+msgstr "dolování zlata"
+
+#: addons/lutas_atlanteans.wad/low_goldmine/init.lua:83
+msgid "No Gold"
+msgstr "Došlo zlato"
+
+#: addons/lutas_atlanteans.wad/low_goldmine/init.lua:84
+msgid "Main Gold Vein Exhausted"
+msgstr "Hlavní zlatá žíla je vyčerpaná"
+
+#: addons/lutas_atlanteans.wad/low_goldmine/init.lua:86
+msgctxt "atlanteans_building"
+msgid ""
+"This gold mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+"Hlavní žíla tohoto dolu na zlato je vyčerpaná. Očekávej významný pokles "
+"návratnosti těžby. Zvaž jeho vylepšení, rozebrání, nebo zničení."
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/lutas_atlanteans.wad/low_ironmine/init.lua:8
+msgctxt "atlanteans_building"
+msgid "Low Iron Mine"
+msgstr "Nízký železorudný důl "
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#: addons/lutas_atlanteans.wad/low_ironmine/init.lua:53
+#: addons/lutas_atlanteans.wad/low_ironmine/init.lua:67
+msgid "mining iron"
+msgstr "těžba železa"
+
+#: addons/lutas_atlanteans.wad/low_ironmine/init.lua:86
+msgid "No Iron"
+msgstr "Došlo železo"
+
+#: addons/lutas_atlanteans.wad/low_ironmine/init.lua:87
+msgid "Main Iron Vein Exhausted"
+msgstr "Hlavní železorudná žíla je vyčerpaná"
+
+#: addons/lutas_atlanteans.wad/low_ironmine/init.lua:89
+msgctxt "atlanteans_building"
+msgid ""
+"This iron mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+"Hlavní žíla tohoto železorudného dolu je vyčerpaná. Očekávej významný pokles "
+"v návratnosti těžby. Zvaž jeho vylepšení, rozebrání, nebo zničení."
+
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Iron Mine
+#: addons/lutas_atlanteans.wad/postload.lua:13
+msgctxt "building"
+msgid "Digs iron ore out of the ground in mountain terrain."
+msgstr "Těží železnou rudu v horském terénu."
+
+#. TRANSLATORS: Lore helptext for an Atlantean production site: Low Iron Mine
+#. TRANSLATORS: Lore helptext for an Atlantean production site: Low Coal Mine
+#: addons/lutas_atlanteans.wad/postload.lua:15
+#: addons/lutas_atlanteans.wad/postload.lua:30
+msgctxt "atlanteans_building"
+msgid ""
+"‘Way down here in this low mine<br>where the sun it dare not shine,<br>I "
+"sweat and toil till day is done,<br>but I’ll be back with morning come.’"
+msgstr ""
+"‘Tu cesta dolů do hluboké sloje,<br>kde nikdy slunce svitu není,<br>tu do "
+"dne konce lopota je moje,<br>zas budu zpět za rozednění.’"
+
+#. TRANSLATORS: Lore author helptext for an A	tlantean production site:  Low Iron Mine
+#. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Coal Mine
+#: addons/lutas_atlanteans.wad/postload.lua:20
+#: addons/lutas_atlanteans.wad/postload.lua:35
+msgctxt "atlanteans_building"
+msgid "Song from the miners’ guild"
+msgstr "píseň cechu horníků"
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Iron Mine
+#: addons/lutas_atlanteans.wad/postload.lua:22
+#, lua-format
+msgctxt "atlanteans_building"
+msgid ""
+"If the food supply is steady, this mine can produce iron ore in %s on "
+"average."
+msgstr ""
+"Pokud je stabilní přísun jídla, může tento důl vytěžit v průměru jednu "
+"železnou rudu za %s."
+
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Coal Mine
+#: addons/lutas_atlanteans.wad/postload.lua:28
+msgctxt "building"
+msgid "Digs coal out of the ground in mountain terrain."
+msgstr "Kutá uhlí v horském terénu."
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Coal Mine
+#: addons/lutas_atlanteans.wad/postload.lua:37
+#, lua-format
+msgctxt "atlanteans_building"
+msgid ""
+"If the food supply is steady, this mine can produce coal in %s on average."
+msgstr ""
+"Pokud je stabilní přísun jídla, může tento důl vytěžit v průměru jednu "
+"hroudu uhlí za %s."
+
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Crystal Mine
+#: addons/lutas_atlanteans.wad/postload.lua:43
+msgctxt "atlanteans_building"
+msgid ""
+"Carves precious (and normal) stones out of the rock in mountain terrain."
+msgstr "Dobývá drahé i běžné kameny ze skal v horském terénu."
+
+#. TRANSLATORS: Lore helptext for an Atlantean production site: Low Crystal Mine
+#: addons/lutas_atlanteans.wad/postload.lua:45
+msgctxt "atlanteans_building"
+msgid ""
+"No, no, there is no need to build a deep mine. This low mine ensures a quick "
+"supply of sufficient amount of the hardest diamonds for our double tridents."
+msgstr ""
+"Ne, ne, opravdu není potřeba stavět hluboký důl. Tento nízký nám rychle "
+"zajistí dodávku dostatečného množství těch nejtvrdších diamantů na naše "
+"dvojité trojzubce."
+
+#. TRANSLATORS: Lore author helptext for an Atlantean production site: Low Crystal Mine
+#: addons/lutas_atlanteans.wad/postload.lua:47
+msgctxt "atlanteans_building"
+msgid "An impatient trainer can’t wait his first double trident delivery"
+msgstr ""
+"netrpělivý cvičitel se už nemůže dočkat první dodávky dvojitých trojzubců"
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Crystal Mine
+#: addons/lutas_atlanteans.wad/postload.lua:49
+msgctxt "atlanteans_building"
+msgid ""
+"If this building is fully supplied and all minerals are needed by the "
+"economy, production of one granite takes %1$s, one quartz takes %2$s and one "
+"diamond takes %3$s on average. If only one kind of mineral is needed by the "
+"economy, production of one granite takes %4$s, one quartz takes %5$s and one "
+"diamond takes %6$s on average."
+msgstr ""
+"Pokud je budova dobře zásobována a hospodářství potřebuje všechny nerostné "
+"suroviny, pak v průměru produkce žulového kvádru zabere %1$s, produkce "
+"křemene zabere %2$s a produkce diamantu zabere %3$s. Pokud se nedostává "
+"pouze jeden druh nerostné suroviny, pak v průměru produkce žulového kvádru "
+"zabere %4$s, produkce křemene zabere %5$s a produkce diamantu zabere %6$s."
+
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Gold Mine
+#: addons/lutas_atlanteans.wad/postload.lua:55
+msgctxt "building"
+msgid "Digs gold ore out of the ground in mountain terrain."
+msgstr "Těží zlatou rudu v horském terénu."
+
+#. TRANSLATORS: Lore helptext for an Atlantean production site: Low Gold Mine
+#: addons/lutas_atlanteans.wad/postload.lua:57
+msgctxt "atlanteans_building"
+msgid ""
+"We Atlanteans are very proud of our weaving abilities and we are especially "
+"proud of our golden tabards. That is why a quick supply of gold into our "
+"spinning mills is question of honour for us."
+msgstr ""
+"My Atlanťané se můžeme opravdu pyšnit našimi tkalcovskými schopnostmi, "
+"obzvláště pomyslíme-li na naše zlaté tabardy. To je důvod, proč rychlé "
+"zásobení našich přádelen zlatem je pro nás otázkou naší cti."
+
+#. TRANSLATORS: Lore author helptext for an Atlantean production site: Low Gold Mine
+#: addons/lutas_atlanteans.wad/postload.lua:59
+msgctxt "atlanteans_building"
+msgid "A priestess is ashamed by not having golden tabards for soldiers"
+msgstr ""
+"kněžka se cítí být zahanbena, že nemá dostatek zlatých tabardů pro vojáky ve "
+"výcviku"
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Gold Mine
+#: addons/lutas_atlanteans.wad/postload.lua:61
+#, lua-format
+msgctxt "atlanteans_building"
+msgid ""
+"If the food supply is steady, this mine can produce gold ore in %s on "
+"average."
+msgstr ""
+"Pokud je stabilní přísun jídla, může tento důl vytěžit v průměru jednu "
+"zlatou rudu za %s."
+
+#: addons/lutas_atlanteans.wad/postload.lua:113
+#: addons/lutas_atlanteans.wad/postload.lua:116
+msgid ""
+"Fishers can collect this type of seashells for meat. They appear on shores "
+"around temple when priestess prays to the God Lutas before improving "
+"soldiers health."
+msgstr ""
+"Rybář může sbírat tento druh mušlí na maso. Objevují se na pobřeží v okolí "
+"chrámu ve chvíli, kdy se kněžka modlí k Bohu Lutasovi, předtím než má dojít "
+"k zlepšení zdraví vojáka."
+
+#. TRANSLATORS: Purpose helptext for an Atlantean worker: Priestess
+#: addons/lutas_atlanteans.wad/postload.lua:125
+msgctxt "building"
+msgid "Works in temple and improves soldiers in ‘Health’."
+msgstr "Pracuje v chrámu a zlepšuje zdraví vojáků."
+
+#. TRANSLATORS: Note helptext for an Atlantean worker: Priestess
+#: addons/lutas_atlanteans.wad/postload.lua:127
+msgctxt "atlanteans_building"
+msgid ""
+"The priestess has to pray to the God Lutas on a shore. Make sure she has "
+"free access to water. Lutas is showing her his favour when a seashell "
+"appears on the cost. This seashell can be collected by a fisher for meat "
+"later."
+msgstr ""
+"Kněžka se musí modlit k Bohu Lutasovi na pobřeží. Zajisti, aby měla volný "
+"přístup k vodě. Lutas jí projevuje svou náklonnost tím, že se na pobřeží "
+"vyplaví mušle. Tato mušle může být následně sebrána rybářem a zpracována na "
+"maso."
+
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Fisher's House
+#: addons/lutas_atlanteans.wad/postload.lua:140
+msgctxt "atlanteans_building"
+msgid "Fishes on the coast near the fisher’s house and collects seashells too."
+msgstr "Rybaří na pobřeží poblíž rybářského domku a také sbírá mušle."
+
+#. TRANSLATORS: Note helptext for an Atlantean production site: Fisher's House, part 1
+#: addons/lutas_atlanteans.wad/postload.lua:143
+msgctxt "atlanteans_building"
+msgid "The fisher’s house needs water full of fish within the work area."
+msgstr ""
+"Domek rybáře potřebuje ve své pracovní oblasti vodní plochu, ve které jsou "
+"ryby."
+
+#. TRANSLATORS: Note helptext for an Atlantean production site: Fisher's House, part 2
+#: addons/lutas_atlanteans.wad/postload.lua:145
+msgctxt "atlanteans_building"
+msgid ""
+"Build a fish breeder’s house close to the fisher’s house to make sure that "
+"you don’t run out of fish."
+msgstr ""
+"Postav domek porybného poblíž domku rybáře, aby rybář všechny ryby nevylovil."
+
+#. TRANSLATORS: Note helptext for an Atlantean production site: Fisher's House, part 3
+#: addons/lutas_atlanteans.wad/postload.lua:147
+msgctxt "atlanteans_building"
+msgid "Roads and trees along the shoreline block fishing."
+msgstr "Cesty a stromy podél pobřeží brání v rybaření."
+
+#. TRANSLATORS: Note lore for an Atlantean production site: Fisher's House use some local fiser song as you like
+#: addons/lutas_atlanteans.wad/postload.lua:150
+msgctxt "atlanteans_building"
+msgid ""
+"‘Take your net and come to the sea<br>In the early morning the moon ya still "
+"see<br>Collect ya catch by net or by spear,<br>and don’t forget to give "
+"Satul his share.’"
+msgstr ""
+
+#. TRANSLATORS: Note lore_author for an Atlantean production site: Fisher's House
+#: addons/lutas_atlanteans.wad/postload.lua:155
+msgctxt "atlanteans_building"
+msgid "A song from the fishers’ guild"
+msgstr "píseň cechu rybářů"
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Fisher's House, part 1
+#: addons/lutas_atlanteans.wad/postload.lua:158
+msgctxt "atlanteans_building"
+msgid ""
+"The fisher can catch two fishes and collect one seashell between %1$s and "
+"%2$s, depending on how far he has to walk. If there are no seashells, it "
+"takes between %3$s and %4$s to catch one fish."
+msgstr ""
+"Rybář může chytit dvě ryby a sebrat jednu mušli za %1$s až %2$s, záleží na "
+"tom, jak dlouhou cestu musí urazit. Pokud v okolí nejsou žádné mušle, pak "
+"ulovit jednu rybu zabere %3$s až %4$s."
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Fisher's House, part 2
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Woodcutter's House, part 2
+#: addons/lutas_atlanteans.wad/postload.lua:160
+#: addons/lutas_atlanteans.wad/postload.lua:178
+msgctxt "atlanteans_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr ""
+"V případě nerovného terénu a překážek v cestě může potřebný čas ještě vzrůst."
+
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Woodcutter's House
+#: addons/lutas_atlanteans.wad/postload.lua:167
+msgctxt "building"
+msgid "Fells trees in the surrounding area and processes them into logs."
+msgstr "Kácí stromy v okolí a zpracovává je na klády."
+
+#. TRANSLATORS: Note helptext for an Atlantean production site: Woodcutter's House
+#: addons/lutas_atlanteans.wad/postload.lua:169
+msgctxt "atlanteans_building"
+msgid ""
+"The woodcutter’s house needs trees to fell within the work area. The "
+"woodcutter in this house is 5 seconds faster than a normal Atlantean "
+"woodcutter."
+msgstr ""
+"Domek dřevorubce potřebuje ve svém okolí stromy. Dřevorubec v tomto domku je "
+"o 5 sekund rychlejší než běžný atlantský dřevorubec."
+
+#. TRANSLATORS: Note lore for an Atlantean production site: Woodcutter's House
+#: addons/lutas_atlanteans.wad/postload.lua:171
+msgctxt "atlanteans_building"
+msgid ""
+"We want to fell trees in a clean and dignified way, therefore we use saws. "
+"An ax is a tool used by other tribes only."
+msgstr ""
+"Chceme kácet stromy čistým a důstojným způsobem, a proto používáme pily. "
+"Ostatním kmenům poslouží obyčejná sekera."
+
+#. TRANSLATORS: Note lore_author for an Atlantean production site: Woodcutter's House
+#: addons/lutas_atlanteans.wad/postload.lua:173
+msgctxt "atlanteans_building"
+msgid "Atlantean woodcutter asked why saws are used to cut trees"
+msgstr "atlantský dřevorubec je tázán, proč se na kácení stromů používají pily"
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Woodcutter's House, part 1
+#: addons/lutas_atlanteans.wad/postload.lua:176
+msgctxt "atlanteans_building"
+msgid ""
+"This building can produce one log between %1$s and %2$s, depending on how "
+"far the woodcutter has to walk."
+msgstr ""
+"Tato budova může vyprodukovat jednu kládu za %1$s až %2$s, záleží na tom, "
+"jak dlouhou cestu musí dřevorubec urazit."
+
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Temple
+#: addons/lutas_atlanteans.wad/postload.lua:187
+msgctxt "building"
+msgid "Improves soldiers in ‘Health’."
+msgstr "Zlepšuje zdraví vojáků."
+
+#. TRANSLATORS: Note helptext for an Atlantean production site: Temple
+#: addons/lutas_atlanteans.wad/postload.lua:189
+msgctxt "atlanteans_building"
+msgid ""
+"The priestess has to pray to the God Lutas on a shore. Make sure she has "
+"free access to water. Lutas is showing her his favour when a seashell "
+"appears on the cost. This seashell can be collected by a fisher for meat."
+msgstr ""
+"Kněžka se musí modlit k Bohu Lutasovi na pobřeží. Zajisti, aby měla volný "
+"přístup k vodě. Lutas jí projevuje svou náklonnost tím, že se na pobřeží "
+"vyplaví mušle. Tato mušle může být sebrána rybářem a zpracována na maso."
+
+#. TRANSLATORS: Lore helptext for an Atlantean training site: Temple
+#: addons/lutas_atlanteans.wad/postload.lua:191
+msgctxt "atlanteans_building"
+msgid "She spells seashells on the seashore of shallow sea. S-E-A-S-H-E-L-L-S."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Atlantean production site: Temple
+#: addons/lutas_atlanteans.wad/postload.lua:193
+msgctxt "atlanteans_building"
+msgid "An Atlantean spell, which is to be repeated ten times in quick pace"
+msgstr ""
+"atlantské zaklínadlo, které musí být zopakováno desetkrát rychle po sobě"
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring a golden tabard because ...
+#: addons/lutas_atlanteans.wad/postload.lua:201
+msgid "tailoring a golden tabard"
+msgstr "šití zlatého tabardu"
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a diamond double trident because ...
+#: addons/lutas_atlanteans.wad/postload.lua:214
+msgid "forging a diamond double trident"
+msgstr "kování diamantového dvojitého trojzubce"
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a heavy double trident because ...
+#: addons/lutas_atlanteans.wad/postload.lua:230
+msgid "forging a heavy double trident"
+msgstr "kování těžkého dvojitého trojzubce"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/lutas_atlanteans.wad/temple/init.lua:8
+msgctxt "atlanteans_building"
+msgid "Temple"
+msgstr "Chrám"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/lutas_atlanteans.wad/temple/init.lua:66
+msgctxt "atlanteans_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr "vylepšení zdraví vojáka z úrovně 0 na úroveň 1"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/lutas_atlanteans.wad/temple/init.lua:79
+msgctxt "atlantean_building"
+msgid "upgrading soldier health from level 1 to level 2"
+msgstr "vylepšení zdraví vojáka z úrovně 1 na úroveň 2"
+
+#. TRANSLATORS: Atlantean training site tooltip when it has no soldier assigned
+#: addons/lutas_atlanteans.wad/temple/init.lua:97
+msgctxt "atlantean_building"
+msgid "No soldier to train!"
+msgstr "Nejsou vojáci k výcviku!"
+
+#. TRANSLATORS: Atlantean training site tooltip when none of the present soldier match the current training program
+#: addons/lutas_atlanteans.wad/temple/init.lua:99
+msgctxt "atlantean_building"
+msgid "No soldier found for this training level!"
+msgstr "Nenalezen voják pro požadovanou úroveň výcviku!"
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/lutas_atlanteans.wad/trident_double/init.lua:8
+msgctxt "ware"
+msgid "Diamond Double Trident"
+msgstr "Diamantový dvojitý trojzubec"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/lutas_atlanteans.wad/woodcutters_house/init.lua:8
+msgctxt "atlanteans_building"
+msgid "Woodcutter’s House"
+msgstr "Domek dřevorubce"
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: addons/lutas_atlanteans.wad/woodcutters_house/init.lua:37
+msgid "felling trees"
+msgstr "kácení stromů"
+
+#: addons/lutas_atlanteans.wad/woodcutters_house/init.lua:50
+msgid "No Trees"
+msgstr "Žádné stromy"
+
+#: addons/lutas_atlanteans.wad/woodcutters_house/init.lua:51
+msgid "Out of Trees"
+msgstr "Došly stromy"
+
+#: addons/lutas_atlanteans.wad/woodcutters_house/init.lua:52
+msgctxt "atlanteans_building"
+msgid ""
+"The woodcutter working at this woodcutter’s house can’t find any trees in "
+"his work area. You should consider dismantling or destroying the building or "
+"building a forester’s house."
+msgstr ""
+"Dřevorubec pracující v tomto domku dřevorubce nemůže ve svém okolí najít "
+"žádné stromy. Zvaž jeho rozebrání, zničení, nebo postavení domku lesníka."
