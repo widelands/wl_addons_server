@@ -3,19 +3,26 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Viktor Skachkov <awsswa59@gmail.com>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-17 03:11+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-04-16 20:23+0000\n"
+"Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2025\n"
+"Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
+"ru/)\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: addons/empire_defense_training.wad/addon:2
 msgid "Empire Defense Training"
@@ -63,7 +70,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:8
 msgctxt "empire_building"
 msgid "Armor Smithy"
-msgstr ""
+msgstr "Кузница Доспехов"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:71
@@ -71,113 +78,114 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:49
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:71
 msgid "working"
-msgstr ""
+msgstr "работает"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:85
 msgid "forging a helmet"
-msgstr ""
+msgstr "кует шлем"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of armor because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:97
 msgid "forging a suit of armor"
-msgstr ""
+msgstr "кует доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:109
 msgid "forging a suit of chain armor"
-msgstr ""
+msgstr "кует кольчужные доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:121
 msgid "forging a suit of gilded armor"
-msgstr ""
+msgstr "кует позолоченные доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:133
 msgid "forging a steel shield"
-msgstr ""
+msgstr "кует стальной щит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:145
 msgid "forging an advanced shield"
-msgstr ""
+msgstr "кует Улучшенный щит"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/bakery/init.lua:8
 msgctxt "empire_building"
 msgid "Bakery"
-msgstr ""
+msgstr "Пекарня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/bakery/init.lua:65
 msgctxt "empire_building"
 msgid "baking bread"
-msgstr ""
+msgstr "печет хлеб"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/brewery/init.lua:8
 msgctxt "empire_building"
 msgid "Brewery"
-msgstr ""
+msgstr "Пивоварня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/brewery/init.lua:59
 msgid "brewing beer"
-msgstr ""
+msgstr "варит пиво"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:8
 msgctxt "empire_building"
 msgid "Farm"
-msgstr ""
+msgstr "Ферма"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:56
 msgid "planting wheat"
-msgstr ""
+msgstr "сеет пшеницу"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:64
 msgid "harvesting wheat"
-msgstr ""
+msgstr "жнет пшеницу"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:74
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:75
 msgid "No Fields"
-msgstr ""
+msgstr "Нет полей"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:75
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:76
 msgid "Out of Fields"
-msgstr ""
+msgstr "Место под поле исчерпано"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:76
 msgctxt "empire_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
 msgstr ""
+"У фермера, работающего на этой ферме, нет свободной земли для посадки семян."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/piggery/init.lua:8
 msgctxt "empire_building"
 msgid "Piggery"
-msgstr ""
+msgstr "Свиноферма"
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/piggery/init.lua:57
 msgid "raising pigs"
-msgstr ""
+msgstr "растит свиней"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/sheepfarm/init.lua:8
 msgctxt "empire_building"
 msgid "Sheep Farm"
-msgstr ""
+msgstr "Овцеферма"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/sheepfarm/init.lua:59
 msgid "breeding sheep"
-msgstr ""
+msgstr "разводит овец"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/stonemasons_house/init.lua:8
@@ -204,7 +212,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grapevines because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:65
 msgid "harvesting grapes"
-msgstr ""
+msgstr "собирает виноград"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:77
 msgctxt "empire_building"
@@ -222,61 +230,61 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:83
 msgid "forging a wooden spear"
-msgstr ""
+msgstr "изготавливает Деревянное копьё"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:98
 msgid "forging a spear"
-msgstr ""
+msgstr "изготавливает копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:113
 msgid "forging an advanced spear"
-msgstr ""
+msgstr "изготавливает Улучшенное копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a heavy spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:128
 msgid "forging a heavy spear"
-msgstr ""
+msgstr "изготавливает Тяжелое копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a war spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:143
 msgid "forging a war spear"
-msgstr ""
+msgstr "изготавливает Боевое копье"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaving_mill/init.lua:8
 msgctxt "empire_building"
 msgid "Weaving Mill"
-msgstr ""
+msgstr "Ткацкая фабрика"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaving_mill/init.lua:65
 msgid "weaving"
-msgstr ""
+msgstr "Ткачество"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/winery/init.lua:8
 msgctxt "empire_building"
 msgid "Winery"
-msgstr ""
+msgstr "Винодельня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/winery/init.lua:59
 msgid "making wine"
-msgstr ""
+msgstr "делает вино"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:8
 msgctxt "empire_building"
 msgid "Arena"
-msgstr ""
+msgstr "Арена"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:87
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:48
 msgid "sleeping"
-msgstr ""
+msgstr "спит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:95
@@ -310,7 +318,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:8
 msgctxt "empire_building"
 msgid "Colosseum"
-msgstr ""
+msgstr "Колизей"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:70
@@ -328,4 +336,99 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/workers/empire/soldier/init.lua:107
 msgctxt "empire_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Солдат"
+
+#~ msgid "Empire"
+#~ msgstr "Империя"
+
+#~ msgid "Discovery"
+#~ msgstr "Открытие"
+
+#~ msgid "Headquarters"
+#~ msgstr "Штаб"
+
+#~ msgid "Be careful"
+#~ msgstr "Будь осторожен"
+
+#~ msgid "Village"
+#~ msgstr "Деревня"
+
+#~ msgctxt "empire_lore"
+#~ msgid "‘%1%’<br>(%2%)"
+#~ msgstr "‘%1%’<br>(%2%)"
+
+#~ msgctxt "empire_worker"
+#~ msgid "Carries items along your roads."
+#~ msgstr "Поставляет товары по вашим дорогам."
+
+#~ msgctxt "empire_worker"
+#~ msgid "Fells trees."
+#~ msgstr "Валит деревья."
+
+#~ msgctxt "empire_worker"
+#~ msgid "Plants trees."
+#~ msgstr "Сажает деревья."
+
+#~ msgctxt "empire_worker"
+#~ msgid "Breeds pigs."
+#~ msgstr "Разводит свиней"
+
+#~ msgctxt "empire_worker"
+#~ msgid "Trains the soldiers."
+#~ msgstr "Обучает солдат."
+
+#~ msgid "There is a lot of coal here."
+#~ msgstr "Здесь много угля."
+
+#~ msgid "There is a lot of iron here."
+#~ msgstr "Здесь много железа."
+
+#~ msgid "There is a lot of gold here."
+#~ msgstr "Здесь много золота."
+
+#~ msgid "There is a lot of marble here."
+#~ msgstr "Здесь много мрамора."
+
+#~ msgctxt "empire_building"
+#~ msgid "A baker accusing another of theft"
+#~ msgstr "Пекарь обвиняет другого в краже"
+
+#~ msgid "Alea iacta est!"
+#~ msgstr "Кости были брошены"
+
+#~ msgid "Veni, Vidi, Vici!"
+#~ msgstr "Пришел, увидел, победил!"
+
+#~ msgid "I came, I saw, I conquered!"
+#~ msgstr "Пришел, увидел, победил!"
+
+#~ msgid "If you want peace, prepare for war."
+#~ msgstr "Если хотите мира, готовьтесь к войне."
+
+#~ msgctxt "building"
+#~ msgid "Proverb"
+#~ msgstr "Поговорка"
+
+#~ msgctxt "empire"
+#~ msgid "Worker missing"
+#~ msgstr "Не хватает работника"
+
+#~ msgctxt "empire"
+#~ msgid "Worker is coming"
+#~ msgstr "Работник в пути"
+
+#~ msgctxt "empire"
+#~ msgid "Workers missing"
+#~ msgstr "Не хватает работников"
+
+#~ msgctxt "empire"
+#~ msgid "Workers are coming"
+#~ msgstr "Работники в пути"
+
+#~ msgctxt "empire_soldier"
+#~ msgid "%1%(+%2%) soldier"
+#~ msgid_plural "%1%(+%2%) soldiers"
+#~ msgstr[0] "%1%(+%2%) солдат"
+#~ msgstr[1] "%1%(+%2%) солдат"
+#~ msgstr[2] "%1%(+%2%) солдатов"
+#~ msgstr[3] "%1%(+%2%) солдаты"

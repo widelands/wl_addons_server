@@ -64,6 +64,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting grapevines because ...
          descname = _("harvesting grapes"),
          actions = {
+            "return=skipped unless economy needs grape",
             "callworker=harvest",
             "sleep=duration:5s"
          }

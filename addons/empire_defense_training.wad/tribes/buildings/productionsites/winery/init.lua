@@ -59,6 +59,7 @@ wl.Descriptions():new_productionsite_type {
          descname = _("making wine"),
          actions = {
             -- Grapes are only needed for wine, so no need to check if wine is needed
+            "return=skipped unless economy needs wine",
             "consume=grape:2",
             "sleep=duration:30s",
             "playsound=sound/empire/winebubble priority:40% allow_multiple",

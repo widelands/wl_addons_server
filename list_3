@@ -2840,7 +2840,7 @@ auktionadmin
 
 sync_safe
 1680190966
-427
+428
 0
 0
 0
@@ -3591,7 +3591,7 @@ OIPUN
 
 sync_safe
 1719251296
-454
+456
 0
 0
 0
@@ -3999,7 +3999,7 @@ blind3rdeye
 
 sync_safe
 1700920458
-285
+286
 0
 0
 0
@@ -4089,7 +4089,7 @@ Mr_Reibekuchen
 
 sync_safe
 1647247922
-351
+352
 0
 0
 0
@@ -4179,7 +4179,7 @@ OIPUN
 
 sync_safe
 1744125815
-7
+8
 0
 0
 0
@@ -4271,7 +4271,7 @@ Nordfriese
 
 sync_safe
 1600000000
-893
+894
 0
 0
 0
@@ -4677,7 +4677,7 @@ kaputtnik
 
 sync_safe
 1706043656
-143
+144
 0
 0
 0
@@ -5428,12 +5428,12 @@ sync_safe
 0
 0
 0
-1.0.0
-0
-3548735
+1.0.1
+1
+3145672
 tribes
 0
-24
+21
 tribes
 tribes/buildings
 tribes/buildings/productionsites
@@ -5452,14 +5452,12 @@ tribes/buildings/trainingsites
 tribes/buildings/trainingsites/empire
 tribes/buildings/trainingsites/empire/arena
 tribes/buildings/trainingsites/empire/colosseum
-tribes/initialization
-tribes/initialization/images
-tribes/initialization/starting_conditions
 tribes/workers
 tribes/workers/empire
 tribes/workers/empire/soldier
-255
+192
 addon
+postload.lua
 tribes/buildings/productionsites/armorsmithy/build_0.5.png
 tribes/buildings/productionsites/armorsmithy/build_1.png
 tribes/buildings/productionsites/armorsmithy/build_2.png
@@ -5597,70 +5595,6 @@ tribes/buildings/trainingsites/empire/colosseum/idle_4.png
 tribes/buildings/trainingsites/empire/colosseum/init.lua
 tribes/buildings/trainingsites/empire/colosseum/menu.png
 tribes/buildings/trainingsites/empire/colosseum/register.lua
-tribes/initialization/images/bridge_busy_e_0.5.png
-tribes/initialization/images/bridge_busy_e_1.png
-tribes/initialization/images/bridge_busy_e_2.png
-tribes/initialization/images/bridge_busy_e_4.png
-tribes/initialization/images/bridge_busy_se_0.5.png
-tribes/initialization/images/bridge_busy_se_1.png
-tribes/initialization/images/bridge_busy_se_2.png
-tribes/initialization/images/bridge_busy_se_4.png
-tribes/initialization/images/bridge_busy_sw_0.5.png
-tribes/initialization/images/bridge_busy_sw_1.png
-tribes/initialization/images/bridge_busy_sw_2.png
-tribes/initialization/images/bridge_busy_sw_4.png
-tribes/initialization/images/bridge_normal_e_0.5.png
-tribes/initialization/images/bridge_normal_e_1.png
-tribes/initialization/images/bridge_normal_e_2.png
-tribes/initialization/images/bridge_normal_e_4.png
-tribes/initialization/images/bridge_normal_se_0.5.png
-tribes/initialization/images/bridge_normal_se_1.png
-tribes/initialization/images/bridge_normal_se_2.png
-tribes/initialization/images/bridge_normal_se_4.png
-tribes/initialization/images/bridge_normal_sw_0.5.png
-tribes/initialization/images/bridge_normal_sw_1.png
-tribes/initialization/images/bridge_normal_sw_2.png
-tribes/initialization/images/bridge_normal_sw_4.png
-tribes/initialization/images/flag_0.5.png
-tribes/initialization/images/flag_0.5_pc.png
-tribes/initialization/images/flag_1.png
-tribes/initialization/images/flag_1_pc.png
-tribes/initialization/images/flag_2.png
-tribes/initialization/images/flag_2_pc.png
-tribes/initialization/images/flag_4.png
-tribes/initialization/images/flag_4_pc.png
-tribes/initialization/images/frontier_0.5.png
-tribes/initialization/images/frontier_0.5_pc.png
-tribes/initialization/images/frontier_1.png
-tribes/initialization/images/frontier_1_pc.png
-tribes/initialization/images/frontier_2.png
-tribes/initialization/images/frontier_2_pc.png
-tribes/initialization/images/frontier_4.png
-tribes/initialization/images/frontier_4_pc.png
-tribes/initialization/images/icon.png
-tribes/initialization/images/pinned_note_0.5.png
-tribes/initialization/images/pinned_note_0.5_pc.png
-tribes/initialization/images/pinned_note_1.png
-tribes/initialization/images/pinned_note_1_pc.png
-tribes/initialization/images/pinned_note_2.png
-tribes/initialization/images/pinned_note_2_pc.png
-tribes/initialization/images/pinned_note_4.png
-tribes/initialization/images/pinned_note_4_pc.png
-tribes/initialization/images/roadt_busy.png
-tribes/initialization/images/roadt_normal_00.png
-tribes/initialization/images/roadt_normal_01.png
-tribes/initialization/images/roadt_normal_02.png
-tribes/initialization/images/waterway_0.png
-tribes/initialization/init.lua
-tribes/initialization/starting_conditions/discovery.lua
-tribes/initialization/starting_conditions/fortified_village.lua
-tribes/initialization/starting_conditions/headquarters.lua
-tribes/initialization/starting_conditions/new_world.lua
-tribes/initialization/starting_conditions/poor_hamlet.lua
-tribes/initialization/starting_conditions/struggling_outpost.lua
-tribes/initialization/starting_conditions/trading_outpost.lua
-tribes/initialization/starting_conditions/village.lua
-tribes/initialization/units.lua
 tribes/workers/empire/soldier/atk_fail_e_1.png
 tribes/workers/empire/soldier/atk_fail_e_1_pc.png
 tribes/workers/empire/soldier/atk_fail_w_1.png
@@ -5714,9 +5648,33 @@ tribes/workers/empire/soldier/walk_sw_1.png
 tribes/workers/empire/soldier/walk_sw_1_pc.png
 tribes/workers/empire/soldier/walk_w_1.png
 tribes/workers/empire/soldier/walk_w_1_pc.png
-0
-255
-8bd1b8e57e736fda1f2849e91a6be95d
+23
+bg.mo
+ca.mo
+cs.mo
+da.mo
+de.mo
+en_GB.mo
+eo.mo
+es.mo
+fi.mo
+fr.mo
+gd.mo
+hu.mo
+it.mo
+ja.mo
+ko.mo
+nds.mo
+nl.mo
+pl.mo
+pt.mo
+pt_BR.mo
+ru.mo
+sk.mo
+sv.mo
+215
+9b1e1ec42e2a8f973c9f246780b49fd6
+572cd84aea748795c2c8162145b427a2
 86a9a52ce7446429f2458983aa80628e
 3d3b87fabf04d4a7458711c59baea149
 f74984538603bfac641ca2b6b0221976
@@ -5770,7 +5728,7 @@ a24ccb63d34d41af83ce57a0f9284c02
 a97e3cd9e7b9474af920ef22ee3e7b97
 6f5239b21bac24f500e6e66019ab8087
 ca57ee77e22930adf5677e6924f652fd
-5e31d9aba3873cc588ed7db8233a3b5d
+984c87c28584fa1e77fb6e194be02fe1
 6e7c9a03b6cd8c0e3e66cd160a69b15b
 443dd275308cdaf9beaacb8e0feeafff
 115d5982a5f32c6ad5e6221f7038756b
@@ -5798,7 +5756,7 @@ e66cd28a88cf3d45969fe9c45df008ed
 b189f342982657601bfaf4792c018192
 7e3f4ec9134eab0de8c076714413a32b
 c8ccfb1dd8adceb69c57719d60b51bae
-ad4092edb294ca793f663cb62d7d5539
+47857fbb9b0d744c557b65049159baa7
 acb2a62d975e20fc414d50e1d9d4bda5
 8c344e7250c948ffad62e4a2abea52a1
 5dfab8936ed98932df5830c05bf0e953
@@ -5833,7 +5791,7 @@ e318d6082a3f837ec7bec124172bf257
 b525ad56efa8309e28299e1b376017d4
 d565c50ea859ade3f493d28fa3a08b6e
 a858f4bedb6e9bb3057373db66ea970a
-cb0b5fa4596593368ef376c40a11409c
+a282a98b252d5b99931e62e0f393d55e
 60d69b8bd93bb1d9827a9d45e6163055
 3793f6d1d97ceb5867099aef24825fc0
 8833b436918dfe3c754c00b2db59d60e
@@ -5854,70 +5812,6 @@ a0fb4f5dd0fecd8fa6df11e5c9e8795e
 5b2085ca38a9133a2c16713ff05817c9
 fb7222dfaf04cfa33f1d7a372da3cc3a
 24cc2283765e4e89d788c77da0b0e61e
-3f88ae2e20241b92e2c7e33015a51259
-228dcd1c4bd7dd38e504c33ac7b303b5
-0f808634b6439aabd53026797d4618c6
-785091ff2807319afa609ad551d746c4
-18745df529b9ab612ece1eac1c912d06
-8ec48092187c91169e23a99f8466fe4f
-85a8bab7ed9fa13d65b0de15fbbe0828
-e63c1c8a0b72ee9effca1da28bbedf55
-1849709d27ad7d807bb87e19960a958c
-108d0637358c3837b1ac5d8bbe9cbb20
-841d1f7c92807cf1c6b1c62ffa87407c
-6b7131daed1b7d90de1254c1f51b2759
-c6659bbc7510cc1bef7863113f59b223
-d732d432b679c1fe27a762b6347eb3a3
-32910d0ded8a3ac240c863f3e178a597
-39d559395316bf3a85cd8645e1541e9c
-f8f2ff2e7daba95cfb4435224d633370
-50a96ddd09fdb01d5c2b040f3735a6a6
-971899e4a8c88c7588bfdcf28878a1ee
-60f6186c04495e6c56da766c26e1b4bd
-17c5696b276006493a3537bc87f93a3a
-37fa9dab353e3d9005162103e662d542
-b858bf9ea91d98c855ad0ebfbc46141b
-f3398c17546c10497170f8d634b91e54
-d39e9bcd0ea20b63e3466bec2a162a6d
-10aaebdbce854a8692b76e2bec3c5526
-7f8d76ac1af261ec013241bd1f2569c2
-e5dbc3e138229bf4b6767b166d6d27ad
-9631addf1819a18ef47903acb97c5bf1
-1e0535159ed58df7d7e13ca61ef94792
-b25030d9d8964ed90cc7a7dd7028a146
-aa5ff2d795b081532609ff4b726cb9d7
-d9442c7070159f1b6781298be23f6bc2
-680d05b000389c74f20a23642df32279
-2358fb8c4e89676d15a3d73996a6a65b
-98b655a3ca336afaa0d90422869baa16
-b545f364953449d4fd312c349a598fa0
-6f929e6d04b2b3aca3d9ebc6fd94a385
-f327ae7d0a8596786d4a7bc8b15702c7
-902d86b4d85f24928041d390e1359bf3
-1c35b951cf918ffd3c26fc85933f5860
-88b05093b109c693ea2bd4cfddde3b25
-0c1937d614491f7a8fac8d6db8217a9a
-4296283d96336464b6f43439dfbe6e4b
-17b2d3485163a08d65ec20ffbe20767e
-174994aa7fc8f6bd91788d9cd07d5ce9
-0eba7f4ca5618a22c61155db548d8ef8
-d509d6f555a13b078b5874aa2daa72ce
-5566d954793dd247cbbfdc2dfee2bb5d
-3b8274813dd977389c5bc4d550e93620
-2e7c719e17e1c86f2d8781966a3113a7
-92c89657eaceae77eb14fe6de38b2bb9
-62992f4b4f21f8ab45fa2ba788406fd8
-f9535866c7d646605d5bf64a69a93c5c
-60defaac4962a8fcf747ff1e3d54c5e9
-b944fce3284816b635e00d426f3b0844
-216a9962bcb1aea1f2661f91c21a918a
-dff598af4896f87c6feb963ac47ecab5
-6b87b24470018780586136da7492ece2
-d5759548cf369faa1221a1220e2b0427
-b996cf995d1273b0778d9cd2e1a150eb
-ea8c3709221f41b8e5d3f009998e992c
-dcbcfd88e0aee2725a691da469a59a21
-d5be03a8dc1d28b715661330fe90c483
 c236d9a12f635d2568922f13d68db94b
 6e5dacff8a9ffcc00373bec6e1c471b3
 40ac3b3ad2046ddd282e1488e6a43f1c
@@ -5971,6 +5865,29 @@ fed1b3be10d339430fecebdca2bc5774
 000db8bcdb8459ba0eb605613aecdcc2
 ee347a4c389231020d05f81acb915652
 4d45687fd0fe24f433792e46787a9e18
+bbf3b69501ac90e33be1d45a53b99c01
+e07a5f477c3277ea3f6bad93574bfbef
+ff76bb441b5a8dfb8d959dcb4e5e3010
+28502508cd511edb9b630f5ac7b58634
+2007b898df09bba0a2e973bbdf575118
+523858cf0f3e17caf3b3894586f35a40
+f628deb187dcd1425f4ed0b62479bc87
+0909f3b581fc2c6f151070d346017c50
+d86544d763514678a70d961a17a77145
+61617b7c8c53e2580919df021b5b628e
+d8699b00c4123f099de3f755d88a66b1
+31f0c80c3d5836b43adb777258f118a9
+870ede5d81b0d31fe6ed018f3522f85f
+1110474d4e383d28b18ae5c999ab19d2
+50c3591825230e566114d55cd5031414
+9b91c08be8f451770628eb15f911ac8a
+d4869a122f2d0efdfe3d59ce17dd43c7
+3b1867ad6a52874779322a7fe78feec8
+e58efaab72cafb2ef3794835052bad62
+52145770df3385db28b9ef4f758caffe
+914f53171008a14f9cf9e622ab9c42e2
+1b8f877003bc14bb04e6e26265d2470a
+f3f0ca2a66f5ecb79bbc815303262a84
 0
 verified
 enhanced_debug_scripts.wad
@@ -6234,7 +6151,7 @@ MarkMcWire
 
 sync_safe
 1743251069
-29
+30
 0
 0
 0
@@ -7263,7 +7180,7 @@ MarkMcWire
 
 sync_safe
 1734222489
-376
+377
 1
 0
 0
@@ -7946,7 +7863,7 @@ MarkMcWire
 
 sync_safe
 1734192332
-416
+418
 1
 0
 0
@@ -11015,7 +10932,7 @@ Nordfriese
 
 sync_safe
 1600000000
-602
+603
 0
 0
 0
@@ -11330,7 +11247,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1219
+1220
 0
 0
 0
@@ -11501,7 +11418,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1169
+1170
 0
 0
 0
@@ -16330,7 +16247,7 @@ Nordfriese
 
 sync_safe
 1723377908
-115
+116
 0
 0
 0
@@ -16546,7 +16463,7 @@ the-x
 
 sync_safe
 1622117845
-290
+292
 0
 0
 0
@@ -16638,7 +16555,7 @@ the-x
 
 sync_safe
 1622124029
-453
+454
 0
 0
 0
@@ -16950,7 +16867,7 @@ Nordfriese
 
 sync_safe
 1670750534
-139
+140
 0
 0
 0
@@ -17032,7 +16949,7 @@ Nordfriese
 
 sync_safe
 1600000000
-353
+354
 0
 0
 0
@@ -23394,7 +23311,7 @@ Nordfriese
 
 sync_safe
 1600000000
-590
+593
 0
 0
 0

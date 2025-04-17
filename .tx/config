@@ -355,6 +355,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:empire-defense-training-wad]
+file_filter            = po/empire_defense_training.wad/<lang>.po
+source_file            = po/empire_defense_training.wad/empire_defense_training.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:enhanced-debug-scripts-wad]
 file_filter            = po/enhanced_debug_scripts.wad/<lang>.po
 source_file            = po/enhanced_debug_scripts.wad/enhanced_debug_scripts.wad.pot

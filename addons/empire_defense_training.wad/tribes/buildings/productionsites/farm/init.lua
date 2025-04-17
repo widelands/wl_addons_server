@@ -63,6 +63,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
          descname = _("harvesting wheat"),
          actions = {
+            "return=skipped unless economy needs wheat",
             "callworker=harvest",
             "sleep=duration:4s"
          }
