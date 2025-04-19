@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-17 03:11+0200\n"
+"POT-Creation-Date: 2025-04-19 03:11+0200\n"
 "PO-Revision-Date: 2025-04-16 20:23+0000\n"
+"Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: addons/empire_defense_training.wad/addon:2
 msgid "Empire Defense Training"
-msgstr ""
+msgstr "Imperium verdedigingstraining"
 
 #: addons/empire_defense_training.wad/addon:3
 msgid ""
@@ -27,12 +31,18 @@ msgid ""
 "additonal shields and modification of arena and colosseum. Plus additional "
 "buildcost modifications proposed by tothxa."
 msgstr ""
+"Deze addon voegt een verdedigingstraining toe aan de Imperium-stam. Dit "
+"omvat extra schilden en aanpassing van arena en colosseum. Plus extra "
+"bouwkostenaanpassingen voorgesteld door tothxa."
 
 #: addons/empire_defense_training.wad/postload.lua:6
 msgid ""
 "This steel shield is produced in the armor smithy and used in the arena – "
 "together with food – to train soldiers from defense level 0 to level 1."
 msgstr ""
+"Dit stalen schild wordt geproduceerd in de harnassmederij en gebruikt in de "
+"arena – samen met voedsel – om soldaten te trainen van verdedigingsniveau 0 "
+"tot niveau 1."
 
 #: addons/empire_defense_training.wad/postload.lua:9
 msgid ""
@@ -40,30 +50,41 @@ msgid ""
 "produced in the armor smithy and used in the colosseum – together with food "
 "– to train soldiers from defense level 1 to level 2."
 msgstr ""
+"Deze geavanceerde schilden worden gebruikt door de beste soldaten van het "
+"rijk. Ze worden geproduceerd in de harnassmederij en gebruikt in het "
+"colosseum – samen met voedsel – om soldaten van verdedigingsniveau 1 tot "
+"niveau 2 te trainen."
 
 #: addons/empire_defense_training.wad/postload.lua:13
 msgid ""
 "Wheat is produced by farms and used by mills and breweries. Donkey farms, "
 "sheep farms and piggeries also need to be supplied with wheat."
 msgstr ""
+"Tarwe wordt geproduceerd door boerderijen en gebruikt door molens en "
+"brouwerijen. Ook ezelboerderijen, schapenboerderijen en varkenshouderijen "
+"hebben tarwe nodig."
 
 #: addons/empire_defense_training.wad/postload.lua:16
 msgid ""
 "These grapes are the base for a tasty wine. They are harvested in a vineyard "
 "and processed in a winery."
 msgstr ""
+"Deze druiven vormen de basis voor een lekkere wijn. Ze worden geoogst in een "
+"wijngaard en verwerkt in een wijnmakerij."
 
 #: addons/empire_defense_training.wad/postload.lua:19
 msgid ""
 "This tasty wine is drunk by the miners working the marble and gold mines. It "
 "is produced in a winery."
 msgstr ""
+"Deze smakelijke wijn wordt gedronken door de mijnwerkers die in de marmer- "
+"en goudmijnen werken. Hij wordt geproduceerd in een wijnmakerij."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:8
 msgctxt "empire_building"
 msgid "Armor Smithy"
-msgstr ""
+msgstr "Pantsersmederij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:71
@@ -71,140 +92,142 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:49
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:71
 msgid "working"
-msgstr ""
+msgstr "werkende"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:85
 msgid "forging a helmet"
-msgstr ""
+msgstr "een helm smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of armor because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:97
 msgid "forging a suit of armor"
-msgstr ""
+msgstr "een harnas smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:109
 msgid "forging a suit of chain armor"
-msgstr ""
+msgstr "een maliënkolder smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:121
 msgid "forging a suit of gilded armor"
-msgstr ""
+msgstr "een verguld harnas smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:133
 msgid "forging a steel shield"
-msgstr ""
+msgstr "een stalen schild smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:145
 msgid "forging an advanced shield"
-msgstr ""
+msgstr "een geavanceerd schild smeden"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/bakery/init.lua:8
 msgctxt "empire_building"
 msgid "Bakery"
-msgstr ""
+msgstr "Bakkerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/bakery/init.lua:65
 msgctxt "empire_building"
 msgid "baking bread"
-msgstr ""
+msgstr "brood bakken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/brewery/init.lua:8
 msgctxt "empire_building"
 msgid "Brewery"
-msgstr ""
+msgstr "Brouwerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/brewery/init.lua:59
 msgid "brewing beer"
-msgstr ""
+msgstr "bier brouwen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:8
 msgctxt "empire_building"
 msgid "Farm"
-msgstr ""
+msgstr "Boerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:56
 msgid "planting wheat"
-msgstr ""
+msgstr "tarwe planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:64
 msgid "harvesting wheat"
-msgstr ""
+msgstr "tarwe oogsten"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:74
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:75
 msgid "No Fields"
-msgstr ""
+msgstr "Geen Velden"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:75
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:76
 msgid "Out of Fields"
-msgstr ""
+msgstr "Zonder Velden"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:76
 msgctxt "empire_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
 msgstr ""
+"De boer die op deze boerderij werkt, heeft geen vrijgemaakte grond om zijn "
+"zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/piggery/init.lua:8
 msgctxt "empire_building"
 msgid "Piggery"
-msgstr ""
+msgstr "Varkensfokkerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/piggery/init.lua:57
 msgid "raising pigs"
-msgstr ""
+msgstr "varkens houden"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/sheepfarm/init.lua:8
 msgctxt "empire_building"
 msgid "Sheep Farm"
-msgstr ""
+msgstr "Schapenboerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/sheepfarm/init.lua:59
 msgid "breeding sheep"
-msgstr ""
+msgstr "schapen fokken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/stonemasons_house/init.lua:8
 msgctxt "empire_building"
 msgid "Stonemason’s House"
-msgstr ""
+msgstr "Steenhouwershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/stonemasons_house/init.lua:57
 msgid "sculpting a marble column"
-msgstr ""
+msgstr "een marmeren zuil beeldhouwen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:8
 msgctxt "empire_building"
 msgid "Vineyard"
-msgstr ""
+msgstr "Wijngaard"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grapevines because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:57
 msgid "planting grapevines"
-msgstr ""
+msgstr "wijnstokken planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grapevines because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:65
 msgid "harvesting grapes"
-msgstr ""
+msgstr "druiven oogsten"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:77
 msgctxt "empire_building"
@@ -212,120 +235,122 @@ msgid ""
 "The vine farmer working at this vineyard has no cleared soil to plant his "
 "grapevines."
 msgstr ""
+"De wijnboer die op deze wijngaard werkt, heeft geen vrijgemaakte grond om "
+"zijn wijnstokken te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:8
 msgctxt "empire_building"
 msgid "Weapon Smithy"
-msgstr ""
+msgstr "Wapensmederij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:83
 msgid "forging a wooden spear"
-msgstr ""
+msgstr "een houten speer smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:98
 msgid "forging a spear"
-msgstr ""
+msgstr "een speer smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:113
 msgid "forging an advanced spear"
-msgstr ""
+msgstr "een geavanceerde speer smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a heavy spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:128
 msgid "forging a heavy spear"
-msgstr ""
+msgstr "een zware speer smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a war spear because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:143
 msgid "forging a war spear"
-msgstr ""
+msgstr "een oorlogsspeer smeden"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaving_mill/init.lua:8
 msgctxt "empire_building"
 msgid "Weaving Mill"
-msgstr ""
+msgstr "Weverij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaving_mill/init.lua:65
 msgid "weaving"
-msgstr ""
+msgstr "weven"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/winery/init.lua:8
 msgctxt "empire_building"
 msgid "Winery"
-msgstr ""
+msgstr "Wijnmakerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/winery/init.lua:59
 msgid "making wine"
-msgstr ""
+msgstr "wijn maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:8
 msgctxt "empire_building"
 msgid "Arena"
-msgstr ""
+msgstr "Arena"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:87
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:48
 msgid "sleeping"
-msgstr ""
+msgstr "slapen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:95
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:56
 msgctxt "empire_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "soldaat ontwijking upgraden van niveau 0 naar niveau 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:109
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:84
 msgctxt "empire_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "soldaat verdediging upgraden van niveau 0 naar niveau 1"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:128
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:117
 msgctxt "empire_building"
 msgid "No soldier to train!"
-msgstr ""
+msgstr "Geen soldaat om te trainen!"
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:130
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:119
 msgctxt "empire_building"
 msgid "No soldier found for this training level!"
-msgstr ""
+msgstr "Geen soldaat gevonden voor dit trainingsniveau!"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:8
 msgctxt "empire_building"
 msgid "Colosseum"
-msgstr ""
+msgstr "Colosseum"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:70
 msgctxt "empire_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "soldaat ontwijking upgraden van niveau 1 naar niveau 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:98
 msgctxt "empire_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "soldaat verdediging upgraden van niveau 1 naar niveau 2"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/empire_defense_training.wad/tribes/workers/empire/soldier/init.lua:107
 msgctxt "empire_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldaat"

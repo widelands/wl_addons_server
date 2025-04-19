@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Juanjo, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-14 03:11+0200\n"
+"POT-Creation-Date: 2025-04-19 03:11+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
+"Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -44,19 +48,19 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/atlanteans_soldier/init.lua:107
 msgctxt "atlanteans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldat"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/fishers_house/init.lua:8
 msgctxt "atlanteans_building"
 msgid "Fisher’s House"
-msgstr ""
+msgstr "Casa del pescador"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/lutas_atlanteans.wad/fishers_house/init.lua:42
 #: addons/lutas_atlanteans.wad/fishers_house/init.lua:55
 msgid "fishing"
-msgstr ""
+msgstr "pescar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start collecting seashells because ...
 #: addons/lutas_atlanteans.wad/fishers_house/init.lua:67
@@ -88,49 +92,49 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/labyrinth/init.lua:8
 msgctxt "atlanteans_building"
 msgid "Labyrinth"
-msgstr ""
+msgstr "Laberint"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/lutas_atlanteans.wad/labyrinth/init.lua:57
 #: addons/lutas_atlanteans.wad/temple/init.lua:58
 msgid "sleeping"
-msgstr ""
+msgstr "dormir"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/lutas_atlanteans.wad/labyrinth/init.lua:65
 msgctxt "atlanteans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "promoure la defensa del soldat de nivell 0 a nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/lutas_atlanteans.wad/labyrinth/init.lua:79
 msgctxt "atlanteans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "promoure la defensa del soldat de nivell 1 a nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/lutas_atlanteans.wad/labyrinth/init.lua:93
 msgctxt "atlanteans_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "promoure l'evasió del soldat de nivell 0 a nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/lutas_atlanteans.wad/labyrinth/init.lua:106
 msgctxt "atlanteans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "promoure l'evasió del soldat de nivell 1 a nivell 2"
 
 #. TRANSLATORS: Atlantean training site tooltip when it has no soldiers assigned
 #: addons/lutas_atlanteans.wad/labyrinth/init.lua:124
 msgctxt "atlanteans_building"
 msgid "No soldier to train!"
-msgstr ""
+msgstr "Sense soldats per entrenar"
 
 #. TRANSLATORS: Atlantean training site tooltip when none of the present soldiers match the current training program
 #: addons/lutas_atlanteans.wad/labyrinth/init.lua:126
 msgctxt "atlanteans_building"
 msgid "No soldier found for this training level!"
-msgstr ""
+msgstr "No s'ha trobat cap soldat per entrenar aquest nivell."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/low_coalmine/init.lua:8
@@ -142,15 +146,15 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/low_coalmine/init.lua:53
 #: addons/lutas_atlanteans.wad/low_coalmine/init.lua:75
 msgid "mining coal"
-msgstr ""
+msgstr "extraure carbó"
 
 #: addons/lutas_atlanteans.wad/low_coalmine/init.lua:94
 msgid "No Coal"
-msgstr ""
+msgstr "No hi ha carbó"
 
 #: addons/lutas_atlanteans.wad/low_coalmine/init.lua:95
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "S'ha exhaurit el filó de carbó"
 
 #: addons/lutas_atlanteans.wad/low_coalmine/init.lua:97
 msgctxt "atlanteans_building"
@@ -158,6 +162,9 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"El filó principal d'aquesta mina de carbó s'ha esgotat. Les extraccions es "
+"reduiran considerablement. Considereu ampliar la mina, desmantellar-la o "
+"destruir-la."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:8
@@ -168,25 +175,25 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:53
 msgid "working"
-msgstr ""
+msgstr "treballar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:63
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:107
 msgid "mining granite"
-msgstr ""
+msgstr "extraure granit"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:79
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:115
 msgid "mining quartz"
-msgstr ""
+msgstr "extraure quars"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining diamonds because ...
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:95
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:123
 msgid "mining diamonds"
-msgstr ""
+msgstr "extraure diamants"
 
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:157
 msgid "No Crystals"
@@ -194,7 +201,7 @@ msgstr ""
 
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:158
 msgid "Main Crystal Vein Exhausted"
-msgstr ""
+msgstr "S'ha exhaurit el filó de pedres precioses"
 
 #: addons/lutas_atlanteans.wad/low_crystalmine/init.lua:160
 msgctxt "atlanteans_building"
@@ -203,6 +210,9 @@ msgid ""
 "returns on investment. You should consider enhancing, dismantling or "
 "destroying it."
 msgstr ""
+"El filó principal d'aquesta mina de pedres precioses s'ha esgotat. Les "
+"extraccions es reduiran considerablement. Considereu ampliar la mina, "
+"desmantellar-la o destruir-la."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/low_goldmine/init.lua:8
@@ -274,7 +284,7 @@ msgid ""
 "sweat and toil till day is done,<br>but I’ll be back with morning come.’"
 msgstr ""
 
-#. TRANSLATORS: Lore author helptext for an A	tlantean production site:  Low Iron Mine
+#. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Iron Mine
 #. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Coal Mine
 #: addons/lutas_atlanteans.wad/postload.lua:20
 #: addons/lutas_atlanteans.wad/postload.lua:35
@@ -423,7 +433,7 @@ msgctxt "atlanteans_building"
 msgid ""
 "‘Take your net and come to the sea<br>In the early morning the moon ya still "
 "see<br>Collect ya catch by net or by spear,<br>and don’t forget to give "
-"Satul his share.’"
+"Lutas his share.’"
 msgstr ""
 
 #. TRANSLATORS: Note lore_author for an Atlantean production site: Fisher's House
@@ -447,7 +457,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/postload.lua:178
 msgctxt "atlanteans_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Si hi ha desnivells o obstacles pel camí, augmenta el temps necessari."
 
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Woodcutter's House
 #: addons/lutas_atlanteans.wad/postload.lua:167
@@ -460,7 +470,7 @@ msgstr ""
 msgctxt "atlanteans_building"
 msgid ""
 "The woodcutter’s house needs trees to fell within the work area. The "
-"woodcutter in this house is 5 seconds faster than a normal Atlantean "
+"woodcutter in this house is 3 seconds faster than a normal Atlantean "
 "woodcutter."
 msgstr ""
 

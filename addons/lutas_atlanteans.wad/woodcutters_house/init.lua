@@ -37,11 +37,11 @@ wl.Descriptions():new_productionsite_type {
          descname = _("felling trees"),
          actions = {
             -- time of worker: 29.2-68.8 sec, 
-            -- min. time total: 29.2 + 15 = 44.2 sec
-            -- max. time total: 68.8 + 15 = 83.8 sec
-            -- avg. time total: 50.8 + 15 = 65.8 sec
+            -- min. time total: 29.2 + 17 = 46.2 sec
+            -- max. time total: 68.8 + 17 = 85.8 sec
+            -- avg. time total: 50.8 + 17 = 67.8 sec
             "callworker=harvest",
-            "sleep=duration:15s"
+            "sleep=duration:17s"
          }
       },
    },

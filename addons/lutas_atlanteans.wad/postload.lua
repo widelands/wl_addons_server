@@ -16,7 +16,7 @@ wl.Descriptions():modify_unit("tribe", "atlanteans", "add_building", "atlanteans
                                           [[where the sun it dare not shine,<br>]] ..
                                           [[I sweat and toil till day is done,<br>]] ..
                                           [[but I’ll be back with morning come.’]]),
-            -- TRANSLATORS: Lore author helptext for an A	tlantean production site:  Low Iron Mine
+            -- TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Iron Mine
             lore_author = pgettext("atlanteans_building", "Song from the miners’ guild"),
             -- TRANSLATORS: Performance helptext for an Atlantean production site: Low Iron Mine
             performance = pgettext("atlanteans_building", "If the food supply is steady, this mine can produce iron ore in %s on average."):bformat(format_seconds(25))
@@ -150,7 +150,7 @@ wl.Descriptions():modify_unit("tribe", "atlanteans", "add_building", "atlanteans
             lore = pgettext("atlanteans_building", [[‘Take your net and come to the sea<br>]] ..
                                           [[In the early morning the moon ya still see<br>]] ..
                                           [[Collect ya catch by net or by spear,<br>]] ..
-                                          [[and don’t forget to give Satul his share.’]]),
+                                          [[and don’t forget to give Lutas his share.’]]),
             -- TRANSLATORS: Note lore_author for an Atlantean production site: Fisher's House
             lore_author = pgettext("atlanteans_building", "A song from the fishers’ guild"),
             performance = {
@@ -166,14 +166,14 @@ wl.Descriptions():modify_unit("tribe", "atlanteans", "add_building", "atlanteans
             -- TRANSLATORS: Purpose helptext for an Atlantean production site: Woodcutter's House
             purpose = pgettext("building", "Fells trees in the surrounding area and processes them into logs."),
             -- TRANSLATORS: Note helptext for an Atlantean production site: Woodcutter's House
-            note = pgettext("atlanteans_building", "The woodcutter’s house needs trees to fell within the work area. The woodcutter in this house is 5 seconds faster than a normal Atlantean woodcutter."),
+            note = pgettext("atlanteans_building", "The woodcutter’s house needs trees to fell within the work area. The woodcutter in this house is 3 seconds faster than a normal Atlantean woodcutter."),
             -- TRANSLATORS: Note lore for an Atlantean production site: Woodcutter's House
             lore = pgettext("atlanteans_building", "We want to fell trees in a clean and dignified way, therefore we use saws. An ax is a tool used by other tribes only."),
             -- TRANSLATORS: Note lore_author for an Atlantean production site: Woodcutter's House
             lore_author = pgettext("atlanteans_building", "Atlantean woodcutter asked why saws are used to cut trees"),
             performance = {
                -- TRANSLATORS: Performance helptext for an Atlantean production site: Woodcutter's House, part 1
-               pgettext("atlanteans_building", "This building can produce one log between %1$s and %2$s, depending on how far the woodcutter has to walk."):bformat(format_seconds(44), format_minutes_seconds(1, 24)),
+               pgettext("atlanteans_building", "This building can produce one log between %1$s and %2$s, depending on how far the woodcutter has to walk."):bformat(format_seconds(46), format_minutes_seconds(1, 26)),
                -- TRANSLATORS: Performance helptext for an Atlantean production site: Woodcutter's House, part 2
                pgettext("atlanteans_building", "In case of slopes or obstacles in the way, the time is increased.")
             }

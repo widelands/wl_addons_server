@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 03:11+0200\n"
+"POT-Creation-Date: 2025-04-19 03:11+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -296,43 +296,43 @@ msgstr ""
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:8
 msgctxt "sumatran_building"
 msgid "Small Sentry"
-msgstr ""
+msgstr "Guarda sentinella petita"
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:47
 msgctxt "sumatran_building"
 msgid "Your warriors have occupied your sentry."
-msgstr ""
+msgstr "Els guerrers han ocupat la vostra guarda sentinella."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:49
 msgctxt "sumatran_building"
 msgid "Your sentry discovered an aggressor."
-msgstr ""
+msgstr "La guarda sentinella ha vist un agressor."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:51
 msgctxt "sumatran_building"
 msgid "Your sentry is under attack."
-msgstr ""
+msgstr "Estan atacant la guarda sentinella."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:53
 msgctxt "sumatran_building"
 msgid "The enemy defeated your warriors at the sentry."
-msgstr ""
+msgstr "L'enemic ha vençut els guerrers de la guarda sentinella."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:55
 msgctxt "sumatran_building"
 msgid "Your warriors defeated the enemy at the sentry."
-msgstr ""
+msgstr "Els guerrers han vençut l'enemic a la guarda sentinella."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/warehouse/init.lua:8
 msgctxt "sumatran_building"
 msgid "Tribal Warehouse"
-msgstr ""
+msgstr "Magatzem tribal"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/watchtower/init.lua:8
@@ -374,20 +374,20 @@ msgstr ""
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:8
 msgctxt "sumatran_building"
 msgid "Coal Mine"
-msgstr ""
+msgstr "Mina de carbó"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:66
 msgid "mining coal"
-msgstr ""
+msgstr "extraure carbó"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:83
 msgid "No Coal"
-msgstr ""
+msgstr "No hi ha carbó"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:84
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "S'ha exhaurit el filó de carbó"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:86
 msgctxt "sumatran_building"
@@ -462,7 +462,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:59
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:81
 msgid "mining iron ore"
-msgstr ""
+msgstr "extraure mineral de ferro"
 
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:80
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:99
@@ -522,11 +522,11 @@ msgstr ""
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:8
 msgctxt "sumatran_building"
 msgid "Iron Mine"
-msgstr ""
+msgstr "Mina de ferro"
 
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:100
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "S'ha exhaurit el filó de ferro"
 
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:102
 msgctxt "sumatran_building"
@@ -534,6 +534,9 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"El filó principal d'aquesta mina de ferro s'ha esgotat. Les extraccions es "
+"reduiran considerablement. Considereu ampliar la mina, desmantellar-la o "
+"destruir-la."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/stone_mine/init.lua:8
@@ -551,6 +554,9 @@ msgid ""
 "This stone mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"El filó principal d'aquesta mina de pedra s'ha esgotat. Les extraccions es "
+"reduiran considerablement. Considereu ampliar la mina, desmantellar-la o "
+"destruir-la."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:8
@@ -571,7 +577,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:69
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:76
 msgid "hunting"
-msgstr ""
+msgstr "caçar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:41
@@ -582,7 +588,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:73
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:55
 msgid "hunting crocodile"
-msgstr ""
+msgstr "caçar cocodrils"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:49
@@ -712,7 +718,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:12
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "«%1%»<br>(%2%)"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/sumatran_tribe.wad/postload.lua:50
@@ -723,7 +729,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:39
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:50
 msgid "felling trees"
-msgstr ""
+msgstr "tallar arbres"
 
 #: addons/sumatran_tribe.wad/postload.lua:175
 msgctxt "frisians_building"
@@ -778,7 +784,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/postload.lua:190
 msgctxt "frisians_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Si hi ha desnivells o obstacles pel camí, augmenta el temps necessari."
 
 #. TRANSLATORS: Performance helptext for a Frisian production site: Crocodile Hunter’s House, part 3
 #: addons/sumatran_tribe.wad/postload.lua:192
@@ -838,7 +844,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/postload.lua:231
 msgctxt "empire_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Si hi ha desnivells o obstacles pel camí, augmenta el temps necessari."
 
 #: addons/sumatran_tribe.wad/postload.lua:249
 msgctxt "barbarians_building"
@@ -883,7 +889,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/postload.lua:264
 msgctxt "barbarians_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Si hi ha desnivells o obstacles pel camí, augmenta el temps necessari."
 
 #: addons/sumatran_tribe.wad/postload.lua:281
 msgctxt "atlanteans_building"
@@ -929,7 +935,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/postload.lua:296
 msgctxt "atlanteans_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Si hi ha desnivells o obstacles pel camí, augmenta el temps necessari."
 
 #: addons/sumatran_tribe.wad/postload.lua:314
 msgctxt "amazons_building"
@@ -980,7 +986,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/postload.lua:329
 msgctxt "amazons_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Si hi ha desnivells o obstacles pel camí, augmenta el temps necessari."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
@@ -3148,7 +3154,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1306
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Explora territoris desconeguts."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Reed Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1315
@@ -3162,7 +3168,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1628
 msgctxt "sumatran_building"
 msgid "Needs water nearby."
-msgstr ""
+msgstr "Necessita estar prop de l'aigua."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Basic Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1324
