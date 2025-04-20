@@ -57,14 +57,6 @@ wl.Descriptions():new_worker_type {
             "animate=planting duration:4s",
             "return"
         },
-        plant_blackroot = {
-            "findspace=size:any radius:8 space",
-            "walk=coords",
-            "animate=planting duration:4s",
-            "plant=attrib:seed_blackroot",
-            "animate=planting duration:4s",
-            "return"
-        },
         plant_corn = {
             "findspace=size:any radius:8 space",
             "walk=coords",
@@ -86,6 +78,14 @@ wl.Descriptions():new_worker_type {
             "walk=coords",
             "animate=planting duration:4s",
             "plant=attrib:seed_grapes",
+            "animate=planting duration:4s",
+            "return"
+        },
+        plant_oat = {
+            "findspace=size:any radius:8 space",
+            "walk=coords",
+            "animate=planting duration:4s",
+            "plant=attrib:seed_oat",
             "animate=planting duration:4s",
             "return"
         },
@@ -133,16 +133,6 @@ wl.Descriptions():new_worker_type {
             "createware=fruit",
             "return"
         },
-        harvest_blackroot = {
-            "findobject=attrib:ripe_blackroot radius:8",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvesting duration:4s",
-            "callobject=harvest",
-            "animate=gathering duration:2s",
-            "createware=blackroot",
-            "return"
-        },
         harvest_corn = {
             "findobject=attrib:ripe_corn radius:8",
             "walk=object",
@@ -171,6 +161,16 @@ wl.Descriptions():new_worker_type {
             "callobject=harvest",
             "animate=gathering duration:2s",
             "createware=grape",
+            "return"
+        },
+        harvest_oat = {
+            "findobject=attrib:ripe_oat radius:8",
+            "walk=object",
+            "playsound=sound/farm/scythe priority:70% allow_multiple",
+            "animate=harvesting duration:4s",
+            "callobject=harvest",
+            "animate=gathering duration:2s",
+            "createware=oat",
             "return"
         },
         harvest_reed = {

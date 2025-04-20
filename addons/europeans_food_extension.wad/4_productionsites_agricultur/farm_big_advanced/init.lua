@@ -41,7 +41,7 @@ wl.Descriptions():new_productionsite_type {
     },
     
     inputs = {
-        { name = "water", amount = 16 }
+        { name = "water", amount = 8 }
     },
 
     programs = {
@@ -71,16 +71,15 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "sleep=duration:2s",
                 "callworker=check_space",
-                "call=pausing_production_for_inputs",
                 "call=plant_barley",
                 "call=plant_rye",
                 "call=plant_wheat",
-                "call=plant_blackroot",
+                "call=plant_oat",
                 "call=plant_corn",
                 "call=plant_barley",
                 "call=plant_rye",
                 "call=plant_wheat",
-                "call=plant_blackroot",
+                "call=plant_oat",
                 "call=plant_corn",
             }
         },
@@ -113,24 +112,16 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "callworker=check_fields",
                 "call=pausing_production_for_outputs",
-                "call=harvest_blackroot",
+                "call=harvest_oat",
                 "call=harvest_corn",
                 "call=harvest_barley",
                 "call=harvest_rye",
                 "call=harvest_wheat",
-                "call=harvest_blackroot",
+                "call=harvest_oat",
                 "call=harvest_corn",
                 "call=harvest_barley",
                 "call=harvest_rye",
                 "call=harvest_wheat"
-            }
-        },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
-            actions = {
-                "return=skipped when site has water:8",
-                "sleep=duration:5m"
             }
         },
         pausing_production_for_outputs = {
@@ -138,7 +129,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing production because output not needed yet"),
             actions = {
                 "return=skipped when economy needs barley",
-                "return=skipped when economy needs blackroot",
+                "return=skipped when economy needs oat",
                 "return=skipped when economy needs corn",
                 "return=skipped when economy needs rye",
                 "return=skipped when economy needs wheat",
@@ -149,31 +140,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
             descname = pgettext("europeans_building", "planting barley"),
             actions = {
-                "return=skipped when economy needs blackroot and not economy needs barley",
+                "return=skipped when economy needs oat and not economy needs barley",
                 "return=skipped when economy needs corn and not economy needs barley",
                 "return=skipped when economy needs rye and not economy needs barley",
                 "return=skipped when economy needs wheat and not economy needs barley",
-                "return=skipped unless site has water",
-                "consume=water",
                 "callworker=plant_barley",
                 "animate=working duration:1s",
                 "callworker=plant_barley",
-                "animate=working duration:1s"
-            }
-        },
-        plant_blackroot = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
-            descname = pgettext("europeans_building", "planting blackroot"),
-            actions = {
-                "return=skipped when economy needs barley and not economy needs blackroot",
-                "return=skipped when economy needs corn and not economy needs blackroot",
-                "return=skipped when economy needs rye and not economy needs blackroot",
-                "return=skipped when economy needs wheat and not economy needs blackroot",
-                "return=skipped unless site has water",
-                "consume=water",
-                "callworker=plant_blackroot",
-                "animate=working duration:1s",
-                "callworker=plant_blackroot",
                 "animate=working duration:1s"
             }
         },
@@ -182,14 +155,26 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "planting corn"),
             actions = {
                 "return=skipped when economy needs barley and not economy needs corn",
-                "return=skipped when economy needs blackroot and not economy needs corn",
+                "return=skipped when economy needs oat and not economy needs corn",
                 "return=skipped when economy needs rye and not economy needs corn",
                 "return=skipped when economy needs wheat and not economy needs corn",
-                "return=skipped unless site has water",
-                "consume=water",
                 "callworker=plant_corn",
                 "animate=working duration:1s",
                 "callworker=plant_corn",
+                "animate=working duration:1s"
+            }
+        },
+        plant_oat = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
+            descname = pgettext("europeans_building", "planting oat"),
+            actions = {
+                "return=skipped when economy needs barley and not economy needs oat",
+                "return=skipped when economy needs corn and not economy needs oat",
+                "return=skipped when economy needs rye and not economy needs oat",
+                "return=skipped when economy needs wheat and not economy needs oat",
+                "callworker=plant_oat",
+                "animate=working duration:1s",
+                "callworker=plant_oat",
                 "animate=working duration:1s"
             }
         },
@@ -198,11 +183,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "planting rye"),
             actions = {
                 "return=skipped when economy needs barley and not economy needs rye",
-                "return=skipped when economy needs blackroot and not economy needs rye",
+                "return=skipped when economy needs oat and not economy needs rye",
                 "return=skipped when economy needs corn and not economy needs rye",
                 "return=skipped when economy needs wheat and not economy needs rye",
-                "return=skipped unless site has water",
-                "consume=water",
                 "callworker=plant_rye",
                 "animate=working duration:1s",
                 "callworker=plant_rye",
@@ -214,11 +197,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "planting wheat"),
             actions = {
                 "return=skipped when economy needs barley and not economy needs wheat",
-                "return=skipped when economy needs blackroot and not economy needs wheat",
+                "return=skipped when economy needs oat and not economy needs wheat",
                 "return=skipped when economy needs corn and not economy needs wheat",
                 "return=skipped when economy needs rye and not economy needs wheat",
-                "return=skipped unless site has water",
-                "consume=water",
                 "callworker=plant_wheat",
                 "animate=working duration:1s",
                 "callworker=plant_wheat",
@@ -230,7 +211,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting barley"),
             actions = {
                 "return=skipped unless economy needs barley",
-                "return=skipped when economy needs blackroot and not economy needs barley",
+                "return=skipped when economy needs oat and not economy needs barley",
                 "return=skipped when economy needs corn and not economy needs barley",
                 "return=skipped when economy needs rye and not economy needs barley",
                 "return=skipped when economy needs wheat and not economy needs barley",
@@ -242,21 +223,21 @@ wl.Descriptions():new_productionsite_type {
                 "produce=barley"
             }
         },
-        harvest_blackroot = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
-            descname = pgettext("europeans_building", "harvesting blackroot"),
+        harvest_oat = {
+            -- TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
+            descname = pgettext("europeans_building", "harvesting oat"),
             actions = {
-                "return=skipped unless economy needs blackroot",
-                "return=skipped when economy needs barley and not economy needs blackroot",
-                "return=skipped when economy needs corn and not economy needs blackroot",
-                "return=skipped when economy needs rye and not economy needs blackroot",
-                "return=skipped when economy needs wheat and not economy needs blackroot",
-                "callworker=harvest_blackroot",
+                "return=skipped unless economy needs oat",
+                "return=skipped when economy needs barley and not economy needs oat",
+                "return=skipped when economy needs corn and not economy needs oat",
+                "return=skipped when economy needs rye and not economy needs oat",
+                "return=skipped when economy needs wheat and not economy needs oat",
+                "callworker=harvest_oat",
                 "animate=working duration:1s",
-                "produce=blackroot",
-                "callworker=harvest_blackroot",
+                "produce=oat",
+                "callworker=harvest_oat",
                 "animate=working duration:1s",
-                "produce=blackroot"
+                "produce=oat"
             }
         },
         harvest_corn = {
@@ -265,7 +246,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs corn",
                 "return=skipped when economy needs barley and not economy needs corn",
-                "return=skipped when economy needs blackroot and not economy needs corn",
+                "return=skipped when economy needs oat and not economy needs corn",
                 "return=skipped when economy needs rye and not economy needs corn",
                 "return=skipped when economy needs wheat and not economy needs corn",
                 "callworker=harvest_corn",
@@ -282,7 +263,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs rye",
                 "return=skipped when economy needs barley and not economy needs rye",
-                "return=skipped when economy needs blackroot and not economy needs rye",
+                "return=skipped when economy needs oat and not economy needs rye",
                 "return=skipped when economy needs corn and not economy needs rye",
                 "return=skipped when economy needs wheat and not economy needs rye",
                 "callworker=harvest_rye",
@@ -299,7 +280,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs wheat",
                 "return=skipped when economy needs barley and not economy needs wheat",
-                "return=skipped when economy needs blackroot and not economy needs wheat",
+                "return=skipped when economy needs oat and not economy needs wheat",
                 "return=skipped when economy needs corn and not economy needs wheat",
                 "return=skipped when economy needs rye and not economy needs wheat",
                 "callworker=harvest_wheat",

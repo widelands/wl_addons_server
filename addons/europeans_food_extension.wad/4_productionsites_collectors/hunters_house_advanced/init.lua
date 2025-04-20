@@ -32,7 +32,7 @@ wl.Descriptions():new_productionsite_type {
     
     inputs = {
         { name = "water", amount = 4 },
-        { name = "blackroot", amount = 4 },
+        { name = "oat", amount = 4 },
         { name = "fruit", amount = 4 },
     },
 
@@ -56,9 +56,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "releasing"),
             actions = {
                 "return=skipped when economy needs water and not economy needs meat and not economy needs leather and not economy needs wool",
-                "return=skipped when economy needs blackroot and not economy needs meat and not economy needs leather and not economy needs wool",
+                "return=skipped when economy needs oat and not economy needs meat and not economy needs leather and not economy needs wool",
                 "return=skipped when economy needs fruit and not economy needs meat and not economy needs leather and not economy needs wool",
-                "consume=water blackroot fruit",
+                "consume=water oat fruit",
                 "sleep=duration:1m",
                 "callworker=release"
             }

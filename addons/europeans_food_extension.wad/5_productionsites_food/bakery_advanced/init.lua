@@ -47,7 +47,10 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 8 },
-        { name = "flour", amount = 8 },
+        { name = "wheat_flour", amount = 6 },
+        { name = "barley_flour", amount = 4 },
+        { name = "oat_flour", amount = 4 },
+        { name = "rye_flour", amount = 4 },
         { name = "honey", amount = 4 },
         { name = "fruit", amount = 4 }
     },
@@ -75,10 +78,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs bread",
                 "return=skipped when economy needs water and not economy needs bread",
-                "return=skipped when economy needs flour and not economy needs bread",
+                "return=skipped when economy needs wheat_flour and not economy needs bread",
+                "return=skipped when economy needs rye_flour and not economy needs bread",
                 "return=skipped when economy needs honey_bread and not economy needs bread",
                 "return=skipped when economy needs biscuit and not economy needs bread",
-                "consume=water:2 flour:2",
+                "consume=water:2 wheat_flour rye_flour",
                 "animate=working duration:2m",
                 "produce=bread:2"
             }
@@ -89,12 +93,13 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs honey_bread",
                 "return=skipped when economy needs water and not economy needs honey_bread",
-                "return=skipped when economy needs flour and not economy needs honey_bread",
+                "return=skipped when economy needs wheat_flour and not economy needs bread",
+                "return=skipped when economy needs rye_flour and not economy needs bread",
                 "return=skipped when economy needs honey and not economy needs honey_bread",
                 "return=skipped when economy needs bread and not economy needs honey_bread",
                 "return=skipped when economy needs biscuit and not economy needs honey_bread",
                 "return=skipped unless site has honey",
-                "consume=water:2 flour:2 honey",
+                "consume=water:2 wheat_flour rye_flour honey",
                 "animate=working duration:2m",
                 "produce=honey_bread:2"
             }
@@ -105,15 +110,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs biscuit",
                 "return=skipped when economy needs water and not economy needs biscuit",
-                "return=skipped when economy needs flour and not economy needs biscuit",
+                "return=skipped when economy needs wheat_flour and not economy needs bread",
+                "return=skipped when economy needs barley_flour and not economy needs bread",
                 "return=skipped when economy needs honey and not economy needs biscuit",
                 "return=skipped when economy needs fruit and not economy needs biscuit",
                 "return=skipped when economy needs bread and not economy needs biscuit",
                 "return=skipped when economy needs honey_bread and not economy needs biscuit",
                 "return=skipped unless site has honey",
-                "consume=water:2 flour:2 honey fruit:2",
+                "consume=water:3 wheat_flour oat_flour barley_flour honey fruit:2",
                 "animate=working duration:2m",
-                "produce=biscuit:2"
+                "produce=biscuit:3"
             }
         },
     },

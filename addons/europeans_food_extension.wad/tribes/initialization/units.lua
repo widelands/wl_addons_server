@@ -260,6 +260,24 @@ wl.Descriptions():new_tribe {
         {
             -- Food 1
             {
+                name = "barley",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Barley
+                    purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer or mead and producing flour.")
+                }
+            },
+            {
+                name = "oat",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Oat
+                    purpose = pgettext("europeans_ware", "Oat is a grain that is used for feeding animals and producing flour.")
+                }
+            },
+            {
                 name = "rye",
                 default_target_quantity = 32,
                 preciousness = 1,
@@ -268,7 +286,7 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Rye, part 1
                         pgettext("europeans_ware", "Rye is essential for survival."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Rye, part 2
-                        pgettext("europeans_ware", "Rye is produced by farms and used by mills to produce mixed flour.")
+                        pgettext("europeans_ware", "Rye is produced by farms and used by mills to produce flour.")
                     }
                 }
             },
@@ -281,7 +299,7 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Wheat, part 1
                         pgettext("europeans_ware", "Wheat is essential for survival."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Wheat, part 2
-                        pgettext("europeans_ware", "Wheat is produced by farms and used by mills to produce mixed flour.")
+                        pgettext("europeans_ware", "Wheat is produced by farms and used by mills to produce flour.")
                     }
                 }
             },
@@ -292,24 +310,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Corn
                     purpose = pgettext("europeans_ware", "Advanced farms need to be provided with corn to feed the farm animals.")
-                }
-            },
-            {
-                name = "blackroot",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Blackroot
-                    purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Advanced farms need to be provided with blackroot.")
-                }
-            },
-            {
-                name = "barley",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Barley
-                    purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer or mead.")
                 }
             },
             {
@@ -343,12 +343,39 @@ wl.Descriptions():new_tribe {
         {
             -- Food 2
             {
-                name = "flour",
+                name = "barley_flour",
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Flour
-                    purpose = pgettext("europeans_ware", "Mixed flour is produced by the mill out of rye and wheat and is needed in the bakery to produce bread.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Barley Flour
+                    purpose = pgettext("europeans_ware", "Barley flour is produced by the mill out of barley and is needed in the bakery to produce biscuit.")
+                }
+            },
+            {
+                name = "oat_flour",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Oat Flour
+                    purpose = pgettext("europeans_ware", "Oat flour is produced by the mill out of oat and is needed in the bakery to produce biscuit.")
+                }
+            },
+            {
+                name = "rye_flour",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Rye Flour
+                    purpose = pgettext("europeans_ware", "Rye flour is produced by the mill out of rye and is needed in the bakery to produce basic bread.")
+                }
+            },
+            {
+                name = "wheat_flour",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wheat Flour
+                    purpose = pgettext("europeans_ware", "Wheat flour is produced by the mill out of wheat and is needed in the bakery to produce bread and biscuit.")
                 }
             },
             {
@@ -379,6 +406,36 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "wine",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wine
+                    purpose = pgettext("europeans_ware", "It is produced in a winery out of grape. Advanced miners consume wine.")
+                }
+            }
+        },
+        {
+            -- Food 3
+            {
+                name = "meat",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
+                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms. Miners consume meat.")
+                }
+            },
+            {
+                name = "fish",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
+                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms. Miners consume fish.")
+                }
+            },
+            {
                 name = "beer",
                 default_target_quantity = 32,
                 preciousness = 1,
@@ -401,38 +458,8 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Beer
+                    -- TRANSLATORS: Helptext for an Europeans ware: Strong Beer
                     purpose = pgettext("europeans_ware", "This strong beer is produced in a brewery out of barley and water. Advanced miners consume strong beer.")
-                }
-            },
-            {
-                name = "wine",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wine
-                    purpose = pgettext("europeans_ware", "It is produced in a winery out of grape. Advanced miners consume wine.")
-                }
-            },
-        },
-        {
-            -- Food 3
-            {
-                name = "meat",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms. Miners consume meat.")
-                }
-            },
-            {
-                name = "fish",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
-                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms. Miners consume fish.")
                 }
             },
             {
@@ -1270,41 +1297,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "blackrootfield_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field has just been planted.")
-            }
-        },
-        {
-            name = "blackrootfield_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "blackrootfield_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field is growing.")
-            }
-        },
-        {
-            name = "blackrootfield_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field is ready for harvesting.")
-            }
-        },
-        {
-            name = "blackrootfield_harvested",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: blackroot field
-                purpose = _("This field has been harvested.")
-            }
-        },
-        {
             name = "cornfield_tiny",
             helptexts = {
                 -- TRANSLATORS: Helptext for an Europeans immovable: corn field
@@ -1365,6 +1357,41 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
                 purpose = _("This grapevine is ready for harvesting.")
+            }
+        },
+        {
+            name = "oatfield_tiny",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: oat field
+                purpose = _("This field has just been planted.")
+            }
+        },
+        {
+            name = "oatfield_small",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: oat field
+                purpose = _("This field is growing.")
+            }
+        },
+        {
+            name = "oatfield_medium",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: oat field
+                purpose = _("This field is growing.")
+            }
+        },
+        {
+            name = "oatfield_ripe",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: oat field
+                purpose = _("This field is ready for harvesting.")
+            }
+        },
+        {
+            name = "oatfield_harvested",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: oat field
+                purpose = _("This field has been harvested.")
             }
         },
         {
@@ -2051,7 +2078,7 @@ wl.Descriptions():new_tribe {
             name = "europeans_farm_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, rye and wheat."),
+                purpose = pgettext("europeans_building", "Sows and harvests barley, oat, corn, rye and wheat."),
             }
         },
         {

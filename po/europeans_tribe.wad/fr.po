@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-12 03:11+0200\n"
+"POT-Creation-Date: 2025-04-20 03:12+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
@@ -831,11 +831,11 @@ msgstr ""
 #: addons/europeans_tribe.wad/5_productionsites_craft/stonemasons_house_basic/init.lua:65
 #: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_advanced/init.lua:61
 #: addons/europeans_tribe.wad/5_productionsites_craft/weaving_mill_basic/init.lua:66
-#: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:66
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:66
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:101
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:72
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:89
+#: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:67
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:67
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:102
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:73
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:90
 msgid "working"
 msgstr ""
 
@@ -1804,78 +1804,78 @@ msgid "Wood Market"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:61
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:114
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:126
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:138
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:150
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:162
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:174
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:186
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:198
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:210
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:62
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:121
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:133
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:145
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:157
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:169
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:181
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:193
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:205
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:217
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:229
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:241
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:253
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:74
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:127
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:139
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:151
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:163
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:175
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:187
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:199
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:211
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:223
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:61
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:114
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:126
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:138
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:150
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:162
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:174
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:186
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:198
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:210
-#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:49
-#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:62
-#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:75
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:62
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:115
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:127
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:139
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:151
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:163
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:175
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:187
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:199
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:211
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:63
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:122
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:134
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:146
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:158
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:170
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:182
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:194
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:206
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:218
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:230
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:242
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:254
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:75
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:128
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:140
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:152
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:164
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:176
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:188
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:200
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:212
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:224
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:62
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:115
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:127
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:139
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:151
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:163
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:175
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:187
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:199
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:211
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:51
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:64
+#: addons/europeans_tribe.wad/6_tradingsites/trading_post/init.lua:77
 msgid "trading"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:72
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:73
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:85
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:72
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:73
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:74
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:86
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:73
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:86
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:89
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:99
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:86
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:87
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:90
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:100
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:87
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:100
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:105
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:113
-#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:100
+#: addons/europeans_tribe.wad/6_tradingsites/market_big_wood/init.lua:101
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_cloth/init.lua:106
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_plant/init.lua:114
+#: addons/europeans_tribe.wad/6_tradingsites/market_small_stone/init.lua:101
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
 msgstr ""
@@ -1905,8 +1905,8 @@ msgid "Advanced Scout’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
-#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:49
-#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:64
+#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:50
+#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_advanced/init.lua:65
 msgid "scouting"
 msgstr ""
 
@@ -1917,8 +1917,8 @@ msgid "Basic Scouts House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
-#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:75
-#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:86
+#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:76
+#: addons/europeans_tribe.wad/6_tradingsites/scouts_house_basic/init.lua:87
 msgctxt "europeans_building"
 msgid "scouting"
 msgstr ""
@@ -1936,19 +1936,19 @@ msgid "Basic Trainingscamp"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:78
+#: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:79
 msgctxt "europeans_building"
 msgid "recruiting soldier with copper coin"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:93
+#: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:94
 msgctxt "europeans_building"
 msgid "recruiting soldier with silver coin"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:110
+#: addons/europeans_tribe.wad/7_recruitementsites/trainingscamp_basic/init.lua:111
 msgctxt "europeans_building"
 msgid "recruiting soldier with gold coin"
 msgstr ""
@@ -1960,18 +1960,18 @@ msgid "Combined Ferry- and Shipyard"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:78
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:79
 msgctxt "europeans_building"
 msgid "constructing a ferry"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:93
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:110
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:143
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:80
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:98
-#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:131
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:94
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:111
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_advanced/init.lua:144
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:81
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:99
+#: addons/europeans_tribe.wad/7_recruitementsites/yard_ships_basic/init.lua:132
 msgctxt "europeans_building"
 msgid "constructing a ship"
 msgstr ""
@@ -1989,49 +1989,49 @@ msgid "Advanced Trainingscamp"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:78
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:51
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:79
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:52
 msgid "sleeping"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:86
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:59
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:87
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:60
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:101
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:89
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:102
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:90
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:116
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:119
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:117
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:120
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:131
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:149
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:132
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:150
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:151
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:184
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:152
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:185
 msgctxt "europeans_building"
 msgid "No soldier to train!"
 msgstr ""
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:153
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:186
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_advanced/init.lua:154
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:187
 msgctxt "europeans_building"
 msgid "No soldier found for this training level!"
 msgstr ""
@@ -2043,25 +2043,25 @@ msgid "Big Trainingscamp"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:74
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:75
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:104
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:105
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:134
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:135
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:164
+#: addons/europeans_tribe.wad/8_trainingsites/trainingscamp_big/init.lua:165
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr ""

@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_productionsite_type {
     name = "europeans_market_food",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Big Food Market"),
+    descname = pgettext("europeans_building", "Food Market"),
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     
@@ -39,6 +39,7 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 2,
+        prohibited_till = 7200
     },
 
     working_positions = {

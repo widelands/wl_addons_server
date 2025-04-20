@@ -42,8 +42,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 10 },
+        { name = "oat", amount = 6 },
         { name = "corn", amount = 6 },
-        { name = "blackroot", amount = 6 },
         { name = "fruit", amount = 6 },
         { name = "grape", amount = 6 }
     },
@@ -76,9 +76,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs europeans_carrier_ox or economy needs europeans_carrier_donkey or economy needs europeans_carrier_horse",
                 "return=skipped when economy needs water",
                 "return=skipped when economy needs corn",
-                "return=skipped when economy needs blackroot",
+                "return=skipped when economy needs oat",
                 "return=skipped when economy needs fruit",
-                "consume=water:2 corn blackroot fruit",
+                "consume=water:2 corn oat fruit",
                 "animate=working duration:60s",
                 "sleep=duration:2m"
             }
@@ -88,16 +88,16 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
                 "return=skipped when economy needs water",
-                "return=skipped when economy needs blackroot and economy needs corn",
+                "return=skipped when economy needs oat and economy needs corn",
                 "return=skipped when economy needs fruit",
                 "return=skipped when economy needs grape",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
-                "consume=water blackroot,corn grape",
+                "consume=water oat,corn grape",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
@@ -108,16 +108,16 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing donkeys"),
             actions = {
                 "return=skipped when economy needs water",
-                "return=skipped when economy needs blackroot and economy needs corn",
+                "return=skipped when economy needs oat and economy needs corn",
                 "return=skipped when economy needs fruit",
                 "return=skipped when economy needs grape",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
-                "consume=water blackroot,corn grape",
+                "consume=water oat,corn grape",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "recruit=europeans_carrier_donkey"
@@ -128,16 +128,16 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "breeding horses"),
             actions = {
                 "return=skipped when economy needs water",
-                "return=skipped when economy needs blackroot and economy needs corn",
+                "return=skipped when economy needs oat and economy needs corn",
                 "return=skipped when economy needs fruit",
                 "return=skipped when economy needs grape",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/horse priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little foals ;)
-                "consume=water blackroot,corn grape",
+                "consume=water oat,corn grape",
                 "playsound=sound/farm/horse priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little foals ;)
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/horse priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little foals ;)
                 "recruit=europeans_carrier_horse"
@@ -150,16 +150,16 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs wool",
                 "return=skipped when economy needs leather and not economy needs wool",
                 "return=skipped when economy needs water and not economy needs wool",
-                "return=skipped when economy needs blackroot and economy needs corn and not economy needs wool",
+                "return=skipped when economy needs oat and economy needs corn and not economy needs wool",
                 "return=skipped when economy needs fruit and not economy needs wool",
                 "return=skipped when economy needs grape and not economy needs wool",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water blackroot,corn grape",
+                "consume=water oat,corn grape",
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=wool:3"
@@ -172,16 +172,16 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs leather",
                 "return=skipped when economy needs wool and not economy needs leather",
                 "return=skipped when economy needs water and not economy needs leather",
-                "return=skipped when economy needs blackroot and economy needs corn and not economy needs leather",
+                "return=skipped when economy needs oat and economy needs corn and not economy needs leather",
                 "return=skipped when economy needs fruit and not economy needs leather",
                 "return=skipped when economy needs grape and not economy needs leather",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water:2 blackroot,corn:2 grape:2",
+                "consume=water:2 oat,corn:2 grape:2",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=meat:4 leather"
@@ -194,16 +194,16 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs meat",
                 "return=skipped when economy needs leather and not economy needs meat",
                 "return=skipped when economy needs water and not economy needs meat",
-                "return=skipped when economy needs blackroot and economy needs corn and not economy needs meat",
+                "return=skipped when economy needs oat and economy needs corn and not economy needs meat",
                 "return=skipped when economy needs fruit and not economy needs meat",
                 "return=skipped when economy needs grape and not economy needs meat",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water:2 blackroot,corn:2 grape:2",
+                "consume=water:2 oat,corn:2 grape:2",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=meat:4"
@@ -215,16 +215,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fish",
                 "return=skipped when economy needs water and not economy needs fish",
-                "return=skipped when economy needs blackroot and economy needs corn and not economy needs fish",
+                "return=skipped when economy needs oat and economy needs corn and not economy needs fish",
                 "return=skipped when economy needs fruit and not economy needs fish",
                 "return=skipped when economy needs grape and not economy needs fish",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water:2 blackroot,corn:2 grape:2",
+                "consume=water:2 oat,corn:2 grape:2",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water blackroot,corn fruit",
+                "consume=water oat,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=fish:4"

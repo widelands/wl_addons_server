@@ -59,8 +59,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "rye", amount = 4 },
-        { name = "wheat", amount = 4 }
+        { name = "rye", amount = 8 },
+        { name = "wheat", amount = 8 }
     },
 
     programs = {
@@ -68,26 +68,41 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=produce_mixed_flour",
+                "call=produce_wheat_flour",
+                "call=produce_rye_flour",
                 "return=skipped"
             }
         },
-        produce_mixed_flour = {
-            -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
-            descname = pgettext("europeans_building", "grinding rye and wheat"),
+        produce_rye_flour = {
+            -- TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
+            descname = pgettext("europeans_building", "grinding rye"),
             actions = {
-                "return=skipped unless economy needs flour",
-                "return=skipped when economy needs rye and not economy needs flour",
-                "return=skipped when economy needs wheat and not economy needs flour",
+                "return=skipped when economy needs rye and not economy needs rye_flour",
+                "return=skipped unless economy needs rye_flour",
                 "consume=rye",
+                "playsound=sound/mill/mill_turning priority:85% allow_multiple",
+                "animate=working duration:2m",
+                "consume=rye",
+                "playsound=sound/mill/mill_turning priority:85% allow_multiple",
+                "animate=working duration:2m",
+                "produce=rye_flour:2"
+            }
+        },
+        produce_wheat_flour = {
+            -- TRANSLATORS: Completed/Skipped/Did not start grinding wheat because ...
+            descname = pgettext("europeans_building", "grinding wheat"),
+            actions = {
+                "return=skipped when economy needs wheat and not economy needs wheat_flour",
+                "return=skipped unless economy needs wheat_flour",
+                "consume=wheat",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
                 "animate=working duration:2m",
                 "consume=wheat",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
                 "animate=working duration:2m",
-                "produce=flour:2"
+                "produce=wheat_flour:2"
             }
-        }
+        },
     },
 }
 

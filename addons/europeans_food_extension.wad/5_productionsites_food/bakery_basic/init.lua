@@ -56,7 +56,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 4 },
-        { name = "flour", amount = 4 },
+        { name = "wheat_flour", amount = 4 },
+        { name = "rye_flour", amount = 4 },
         { name = "honey", amount = 4 }
     },
 
@@ -77,9 +78,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs bread",
                 "return=skipped when economy needs water and not economy needs bread",
-                "return=skipped when economy needs flour and not economy needs bread",
+                "return=skipped when economy needs wheat_flour and not economy needs bread",
+                "return=skipped when economy needs rye_flour and not economy needs bread",
                 "return=skipped when economy needs honey_bread and not economy needs bread",
-                "consume=water:2 flour:2",
+                "consume=water:2 wheat_flour rye_flour",
                 "animate=working duration:3m",
                 "produce=bread:2"
             }
@@ -90,11 +92,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs honey_bread",
                 "return=skipped when economy needs water and not economy needs honey_bread",
-                "return=skipped when economy needs flour and not economy needs honey_bread",
+                "return=skipped when economy needs wheat_flour and not economy needs bread",
+                "return=skipped when economy needs rye_flour and not economy needs bread",
                 "return=skipped when economy needs honey and not economy needs honey_bread",
                 "return=skipped when economy needs bread and not economy needs honey_bread",
                 "return=skipped unless site has honey",
-                "consume=water:2 flour:2 honey",
+                "consume=water:2 wheat_flour rye_flour honey",
                 "animate=working duration:3m",
                 "produce=honey_bread:2"
             }

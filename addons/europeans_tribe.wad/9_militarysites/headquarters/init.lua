@@ -26,7 +26,7 @@ wl.Descriptions():new_warehouse_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 1,
-        prohibited_till = 9600
+        prohibited_till = 10800
     },
 
     vision_range = 24,

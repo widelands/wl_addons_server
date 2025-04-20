@@ -53,9 +53,9 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 8 },
+        { name = "oat", amount = 8 },
         { name = "wheat", amount = 4 },
-        { name = "rye", amount = 4 },
-        { name = "barley", amount = 4 }
+        { name = "rye", amount = 4 }
     },
 
     programs = {
@@ -80,8 +80,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "return=skipped when economy needs wheat",
                 "return=skipped when economy needs rye",
-                "return=skipped when economy needs barley",
-                "consume=water:2 wheat rye barley",
+                "return=skipped when economy needs oat",
+                "consume=water:2 wheat rye oat",
                 "animate=working duration:90s",
                 "sleep=duration:5m"
             }
@@ -91,17 +91,17 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
                 "return=skipped when economy needs water and not economy needs europeans_carrier_ox",
-                "return=skipped when economy needs rye and economy needs wheat and economy needs barley and not economy needs europeans_carrier_ox",
-                "consume=water rye,wheat,barley",
+                "return=skipped when economy needs rye and economy needs wheat and economy needs oat and not economy needs europeans_carrier_ox",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:25s", -- Animation of feeding the cattle
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:25s", -- Animation of feeding the cattle
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
@@ -114,17 +114,17 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs meat",
                 "return=skipped when economy needs leather and not economy needs meat",
                 "return=skipped when economy needs water and not economy needs meat",
-                "return=skipped when economy needs rye and economy needs wheat and economy needs barley and not economy needs meat",
-                "consume=water rye,wheat,barley",
+                "return=skipped when economy needs rye and economy needs wheat and economy needs oat and not economy needs meat",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:25s",
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:25s",
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=meat:2"
@@ -136,17 +136,17 @@ wl.Descriptions():new_productionsite_type {
            actions = {
                 "return=skipped unless economy needs leather",
                 "return=skipped when economy needs water and not economy needs leather",
-                "return=skipped when economy needs rye and economy needs wheat and economy needs barley and not economy needs leather",
-                "consume=water rye,wheat,barley",
+                "return=skipped when economy needs rye and economy needs wheat and economy needs oat and not economy needs leather",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:25s",
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:25s",
-                "consume=water rye,wheat,barley",
+                "consume=water rye,wheat,oat",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=meat:2 leather"

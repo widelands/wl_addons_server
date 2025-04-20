@@ -56,7 +56,12 @@ wl.Descriptions():new_warehouse_type {
         marble = 2
     },
     
-    aihints = {},
+    aihints = {
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
+        prohibited_till = 7200
+    },
 
     vision_range = 10,
     heal_per_second = 160,

@@ -29,7 +29,9 @@ wl.Descriptions():new_productionsite_type {
     size = "small",
     destructible = true,
         
-    aihints = {},
+    aihints = {
+        prohibited_till = 7200
+    },
 
     working_positions = {
         europeans_trader = 1

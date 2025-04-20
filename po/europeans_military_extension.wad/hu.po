@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-30 04:10+0200\n"
+"POT-Creation-Date: 2025-04-20 03:11+0200\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
 "hu/)\n"
@@ -167,8 +167,8 @@ msgstr ""
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_basic/init.lua:77
 #: addons/europeans_military_extension.wad/5_productionsites/tailors_house_advanced/init.lua:63
 #: addons/europeans_military_extension.wad/5_productionsites/tailors_house_basic/init.lua:76
-#: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:57
-#: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:77
+#: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:58
+#: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:78
 msgid "working"
 msgstr ""
 
@@ -395,11 +395,11 @@ msgid "Big Store"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:66
-#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:83
-#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:94
-#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:105
-#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:116
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:67
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:84
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:95
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:106
+#: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:117
 msgid "trading"
 msgstr ""
 
@@ -410,8 +410,8 @@ msgid "Advanced Trainingscamp"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:65
-#: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:85
+#: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:66
+#: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:86
 msgctxt "europeans_building"
 msgid "recruiting soldier"
 msgstr ""
@@ -429,72 +429,72 @@ msgid "Basic Battle Arena"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:84
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:95
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:76
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:54
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:85
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:96
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:77
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:55
 msgid "sleeping"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:93
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:104
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:85
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:63
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:94
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:105
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:86
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:64
 msgctxt "europeans_building"
 msgid "pausing training because lack of weapons, armor and boots"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:101
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:113
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:95
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:73
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:102
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:114
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:96
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:74
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:112
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:136
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:130
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:108
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:113
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:137
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:131
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:109
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:123
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:159
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:165
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:143
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:124
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:160
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:166
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:144
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:134
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:182
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:200
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:178
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:135
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:183
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:201
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:179
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:150
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:210
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:240
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:218
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:151
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:211
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:241
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:219
 msgctxt "europeans_building"
 msgid "No soldier to train!"
 msgstr ""
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:152
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:212
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:242
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:220
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:153
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:213
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:243
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:221
 msgctxt "europeans_building"
 msgid "No soldier found for this training level!"
 msgstr ""
@@ -506,33 +506,33 @@ msgid "Normal Battle Arena"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:124
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:106
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:84
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:125
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:107
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:85
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:147
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:141
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:119
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:148
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:142
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:120
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:170
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:176
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:154
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:171
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:177
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:155
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:193
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:211
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:189
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:194
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:212
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:190
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr ""
@@ -544,29 +544,29 @@ msgid "Advanced Battle Arena"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:118
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:96
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:119
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:97
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 2 to level 3"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:153
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:131
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:154
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:132
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:188
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:166
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:189
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:167
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 2 to level 3"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:223
-#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:201
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:224
+#: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:202
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 2 to level 3"
 msgstr ""
