@@ -738,7 +738,7 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static Profile readProfile(File f, String textdomain) throws Exception {
-		synchronized(_staticprofiles) {
+		synchronized (_staticprofiles) {
 			if (_staticprofiles.containsKey(f)) return _staticprofiles.get(f);
 		}
 
@@ -749,9 +749,7 @@ public class Utils {
 			profile = new Profile();
 		}
 
-		synchronized(_staticprofiles) {
-			_staticprofiles.put(f, profile);
-		}
+		synchronized (_staticprofiles) { _staticprofiles.put(f, profile); }
 		return profile;
 	}
 
@@ -763,8 +761,7 @@ public class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	public static Profile readProfile(InputStream stream, String textdomain)
-	    throws Exception {
+	public static Profile readProfile(InputStream stream, String textdomain) throws Exception {
 		List<String> lines = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
 		for (;;) {
@@ -784,8 +781,7 @@ public class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	public static Profile readProfile(List<String> lines, String textdomain)
-	    throws Exception {
+	public static Profile readProfile(List<String> lines, String textdomain) throws Exception {
 		Profile profile = new Profile();
 		Profile.Section section = new Profile.Section("");
 		for (int lineNr = 0; lineNr < lines.size(); ++lineNr) {
@@ -848,9 +844,7 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void editProfile(File f, Profile profile) throws Exception {
-		synchronized(_staticprofiles) {
-			_staticprofiles.put(f, profile);
-		}
+		synchronized (_staticprofiles) { _staticprofiles.put(f, profile); }
 		f.getParentFile().mkdirs();
 		PrintStream out = new PrintStream(f);
 		profile.write(out);
@@ -870,9 +864,7 @@ public class Utils {
 				}
 			}
 		} else {
-			synchronized(_staticprofiles) {
-				_staticprofiles.remove(f);
-			}
+			synchronized (_staticprofiles) { _staticprofiles.remove(f); }
 		}
 	}
 
@@ -882,10 +874,10 @@ public class Utils {
 	 */
 	public static void initProfileCache() throws Exception {
 		log("Initializing profiles cache...");
-		synchronized(_staticprofiles) {
+		synchronized (_staticprofiles) {
 			_staticprofiles.clear();
 			for (File dir : new File("addons").listFiles()) {
-				for (String str : new String[] { "addon", "dirnames" }) {
+				for (String str : new String[] {"addon", "dirnames"}) {
 					File f = new File(dir, str);
 					if (f.isFile()) readProfile(f, dir.getName());
 				}
