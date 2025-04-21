@@ -64,6 +64,7 @@ public class ThreadActivityAndGitHubSyncManager {
 			String str = b.readLine();
 			if (str != null) throw new Exception("Detected merge conflicts: " + str);
 		}
+		Utils.initProfileCache();
 		UpdateList.rebuildLists();
 
 		File commitNotes = Files.createTempFile(null, null).toFile();

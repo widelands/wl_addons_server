@@ -1334,6 +1334,7 @@ public class HandleCommand {
 				        + "\n\n-------------------------\n\n" + diff);
 
 				ServerUtils.doMove(tempDir, addOnDir);
+				Utils.flushProfileCache(addOnDir);
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
 				ServerUtils.doDelete(tempDir);

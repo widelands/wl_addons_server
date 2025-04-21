@@ -43,6 +43,8 @@ public class Server {
 
 		Utils.initDatabases();
 
+		Utils.initProfileCache();
+
 		Utils.log("Server starting...");
 		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
 		new Thread(SyncThread.INSTANCE, "Syncer").start();

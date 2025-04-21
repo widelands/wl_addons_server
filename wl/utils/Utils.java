@@ -47,29 +47,6 @@ import java.util.stream.Stream;
 public class Utils {
 	private Utils() {}
 
-	private static class ChecksummedFile {
-		public final File file;
-		public final String cachedChecksum;
-
-		public ChecksummedFile(File f) {
-			file = f;
-			cachedChecksum = cs();
-		}
-
-		private String cs() { return file.isFile() ? checksum(file) : ""; }
-
-		@Override
-		public boolean equals(Object o) {
-			if (!(o instanceof ChecksummedFile)) return false;
-
-			ChecksummedFile c = (ChecksummedFile)o;
-			if (!c.file.equals(file)) return false;
-
-			String newCS = cs();
-			return cachedChecksum.equals(newCS) && c.cachedChecksum.equals(newCS);
-		}
-	}
-
 	/**
 	 * Print log output to standard output.
 	 * Output is formatted with a timestamp and the thread name.
@@ -750,7 +727,7 @@ public class Utils {
 			return s;
 		}
 	}
-	private static final Map<ChecksummedFile, Profile> _staticprofiles = new HashMap<>();
+	private static final Map<File, Profile> _staticprofiles = new HashMap<>();
 
 	/**
 	 * Parse an ini-style file and return its contents as a map of key-value pairs.
@@ -760,9 +737,10 @@ public class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	synchronized public static Profile readProfile(File f, String textdomain) throws Exception {
-		ChecksummedFile key = new ChecksummedFile(f);
-		if (_staticprofiles.containsKey(key)) return _staticprofiles.get(key);
+	public static Profile readProfile(File f, String textdomain) throws Exception {
+		synchronized(_staticprofiles) {
+			if (_staticprofiles.containsKey(f)) return _staticprofiles.get(f);
+		}
 
 		Profile profile;
 		if (f.isFile()) {
@@ -771,7 +749,9 @@ public class Utils {
 			profile = new Profile();
 		}
 
-		_staticprofiles.put(key, profile);
+		synchronized(_staticprofiles) {
+			_staticprofiles.put(f, profile);
+		}
 		return profile;
 	}
 
@@ -783,7 +763,7 @@ public class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	synchronized public static Profile readProfile(InputStream stream, String textdomain)
+	public static Profile readProfile(InputStream stream, String textdomain)
 	    throws Exception {
 		List<String> lines = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
@@ -804,7 +784,7 @@ public class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	synchronized public static Profile readProfile(List<String> lines, String textdomain)
+	public static Profile readProfile(List<String> lines, String textdomain)
 	    throws Exception {
 		Profile profile = new Profile();
 		Profile.Section section = new Profile.Section("");
@@ -867,11 +847,50 @@ public class Utils {
 	 * @param profile New profile to write.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	synchronized public static void editProfile(File f, Profile profile) throws Exception {
+	public static void editProfile(File f, Profile profile) throws Exception {
+		synchronized(_staticprofiles) {
+			_staticprofiles.put(f, profile);
+		}
 		f.getParentFile().mkdirs();
 		PrintStream out = new PrintStream(f);
 		profile.write(out);
 		out.close();
+	}
+
+	/**
+	 * Clear an ini-style file from the profile cache.
+	 * @param f File or directory to forget.
+	 */
+	public static void flushProfileCache(File f) {
+		if (f.isDirectory()) {
+			File[] files = f.listFiles();
+			if (files != null) {
+				for (File file : files) {
+					flushProfileCache(file);
+				}
+			}
+		} else {
+			synchronized(_staticprofiles) {
+				_staticprofiles.remove(f);
+			}
+		}
+	}
+
+	/**
+	 * Clear and initially populate the ini-style file profiles cache.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	public static void initProfileCache() throws Exception {
+		log("Initializing profiles cache...");
+		synchronized(_staticprofiles) {
+			_staticprofiles.clear();
+			for (File dir : new File("addons").listFiles()) {
+				for (String str : new String[] { "addon", "dirnames" }) {
+					File f = new File(dir, str);
+					if (f.isFile()) readProfile(f, dir.getName());
+				}
+			}
+		}
 	}
 
 	/**
