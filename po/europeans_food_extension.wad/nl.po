@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-20 03:11+0200\n"
+"POT-Creation-Date: 2025-04-21 03:11+0200\n"
 "PO-Revision-Date: 2025-03-29 14:10+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -83,38 +83,33 @@ msgstr "Maïsveld (zeer klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/harvested/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr "Tarweveld (geoogst)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/medium/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr "Tarweveld (medium)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/ripe/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr "Tarweveld (rijp)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/small/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr "Tarweveld (klein)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/tiny/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr "Tarweveld (zeer klein)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/ryefield/harvested/init.lua:8
@@ -184,10 +179,9 @@ msgstr "Gerst"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/barley_flour/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr "Gerst"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/beer/init.lua:8
@@ -275,10 +269,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/oat_flour/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Oat Flour"
-msgstr "Meel"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/ration/init.lua:8
@@ -294,10 +287,9 @@ msgstr "Rogge"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/rye_flour/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr "Meel"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/snack/init.lua:8
@@ -313,10 +305,9 @@ msgstr "Tarwe"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/wheat_flour/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Wheat Flour"
-msgstr "Meel"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/wine/init.lua:8
@@ -493,10 +484,9 @@ msgstr "maïs planten"
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:169
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:155
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting oat"
-msgstr "tarwe planten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:183
@@ -522,10 +512,9 @@ msgstr "gerst oogsten"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:228
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:208
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting oat"
-msgstr "tarwe oogsten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:245
@@ -1136,33 +1125,29 @@ msgstr "Geavanceerde Molen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_advanced/init.lua:75
-#, fuzzy
 msgctxt "europeans_building"
 msgid "grinding barley"
-msgstr "gerst planten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding oat because ...
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_advanced/init.lua:90
-#, fuzzy
 msgctxt "europeans_building"
 msgid "grinding oat"
-msgstr "kolen delven"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_advanced/init.lua:105
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_basic/init.lua:78
-#, fuzzy
 msgctxt "europeans_building"
 msgid "grinding rye"
-msgstr "Erts delven"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding wheat because ...
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_advanced/init.lua:120
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_basic/init.lua:93
-#, fuzzy
 msgctxt "europeans_building"
 msgid "grinding wheat"
-msgstr "rogge en tarwe malen"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_basic/init.lua:9
@@ -1211,10 +1196,9 @@ msgstr "Basis Herberg"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/6_tradingsites/market_big_food/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Food Market"
-msgstr "Grote Markt"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
@@ -1507,14 +1491,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Barley
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:268
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Barley is a slow-growing grain that is used for brewing beer or mead and "
 "producing flour."
 msgstr ""
-"Gerst is een langzaam groeiend graan dat wordt gebruikt voor het brouwen van "
-"bier of mede."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Oat
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:277
@@ -1530,12 +1511,9 @@ msgstr "Rogge is essentieel om te overleven"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rye, part 2
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:289
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Rye is produced by farms and used by mills to produce flour."
 msgstr ""
-"Rogge is geproduceerd door boerderijen en wordt gebruikt door molens om "
-"gemengd meel te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wheat, part 1
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:300
@@ -1545,12 +1523,9 @@ msgstr "Tarwe is essentieel om te overleven."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wheat, part 2
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:302
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Wheat is produced by farms and used by mills to produce flour."
 msgstr ""
-"Tarwe wordt geproduceerd door boerderijen en gebruikt door molens om meel te "
-"maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:312
@@ -1590,47 +1565,35 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Barley Flour
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:351
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Barley flour is produced by the mill out of barley and is needed in the "
 "bakery to produce biscuit."
 msgstr ""
-"Gemengd meel wordt door de molen gemaakt uit rogge en tarwe en is nodig in "
-"de taverne of herreberg om rantsoen, snack of een maaltijd mee te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Oat Flour
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:360
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Oat flour is produced by the mill out of oat and is needed in the bakery to "
 "produce biscuit."
 msgstr ""
-"Gemengd meel wordt door de molen gemaakt uit rogge en tarwe en is nodig in "
-"de taverne of herreberg om rantsoen, snack of een maaltijd mee te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rye Flour
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:369
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Rye flour is produced by the mill out of rye and is needed in the bakery to "
 "produce basic bread."
 msgstr ""
-"Gemengd meel wordt door de molen gemaakt uit rogge en tarwe en is nodig in "
-"de taverne of herreberg om rantsoen, snack of een maaltijd mee te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wheat Flour
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:378
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Wheat flour is produced by the mill out of wheat and is needed in the bakery "
 "to produce bread and biscuit."
 msgstr ""
-"Gemengd meel wordt door de molen gemaakt uit rogge en tarwe en is nodig in "
-"de taverne of herreberg om rantsoen, snack of een maaltijd mee te maken."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Bread
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:387
@@ -2762,10 +2725,9 @@ msgstr "Zaaien en oogsten van gerst, rogge en tarwe."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2081
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, oat, corn, rye and wheat."
-msgstr "Zaait en oogst gerst, zwartwortel, mais, rogge, en tarwe."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Cattle Farm
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2088
@@ -3429,43 +3391,3 @@ msgstr "Hoofdkwartier"
 #: addons/europeans_food_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (harvested)"
-#~ msgstr "Blackroot Veld (geoogst)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (medium)"
-#~ msgstr "Blackroot Veld (medium)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (ripe)"
-#~ msgstr "Blackroot Veld (rijp)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (small)"
-#~ msgstr "Blackroot Veld (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (tiny)"
-#~ msgstr "Blackroot Veld (zeer klein)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for waiting for inputs"
-#~ msgstr "productie onderbreken om te wachten op input"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting blackroot"
-#~ msgstr "blackroot planten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting blackroot"
-#~ msgstr "blackroot oogsten"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Blackroots are a special kind of root. Advanced farms need to be provided "
-#~ "with blackroot."
-#~ msgstr ""
-#~ "Blackroots zijn een speciaal soort wortel. Schapenboerderijen moeten "
-#~ "worden voorzien van blackroot."

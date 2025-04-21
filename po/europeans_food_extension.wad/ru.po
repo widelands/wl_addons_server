@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-20 03:11+0200\n"
+"POT-Creation-Date: 2025-04-21 03:11+0200\n"
 "PO-Revision-Date: 2025-03-29 14:10+0000\n"
 "Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -86,38 +86,33 @@ msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/harvested/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr "Пшеничное поле (убрано)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/medium/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr "Ячменное поле ( растет )"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/ripe/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr "Ячменное поле (спелое)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/small/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr "Ячменное поле (ростки)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/oatfield/tiny/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr "Ячменное поле (крохотное)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/ryefield/harvested/init.lua:8
@@ -187,10 +182,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/barley_flour/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr "Ячменное поле (спелое)"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/beer/init.lua:8
@@ -278,10 +272,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/oat_flour/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Oat Flour"
-msgstr "Мука"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/ration/init.lua:8
@@ -297,10 +290,9 @@ msgstr "Рожь"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/rye_flour/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr "Мука"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/snack/init.lua:8
@@ -316,10 +308,9 @@ msgstr "Пшеница"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/wheat_flour/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Wheat Flour"
-msgstr "Мука"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/wine/init.lua:8
@@ -496,10 +487,9 @@ msgstr "сеет кукурузу"
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:169
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:155
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting oat"
-msgstr "сеет кукурузу"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:183
@@ -525,10 +515,9 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:228
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:208
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting oat"
-msgstr "собирает кукурузу"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:245
@@ -1109,17 +1098,15 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_advanced/init.lua:75
-#, fuzzy
 msgctxt "europeans_building"
 msgid "grinding barley"
-msgstr "сеет ячмень"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding oat because ...
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_advanced/init.lua:90
-#, fuzzy
 msgctxt "europeans_building"
 msgid "grinding oat"
-msgstr "добывает уголь"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_advanced/init.lua:105
@@ -1131,10 +1118,9 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start grinding wheat because ...
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_advanced/init.lua:120
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_basic/init.lua:93
-#, fuzzy
 msgctxt "europeans_building"
 msgid "grinding wheat"
-msgstr "производит мясо"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/5_productionsites_food/mill_basic/init.lua:9
@@ -1183,10 +1169,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/6_tradingsites/market_big_food/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Food Market"
-msgstr "Большой продовольственный рынок"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
@@ -3222,11 +3207,3 @@ msgstr "Штаб"
 #: addons/europeans_food_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
 msgstr "Начать игру, имея только штаб"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (harvested)"
-#~ msgstr "Козельцовое поле (убрано)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (ripe)"
-#~ msgstr "Козельцовое поле (крохотное)"
