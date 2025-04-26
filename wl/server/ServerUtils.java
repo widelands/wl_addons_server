@@ -345,7 +345,8 @@ public class ServerUtils {
 	 */
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
 		Utils.CachedFileContents content = Utils.loadFileContents(f);
-		if (content == null) throw new WLProtocolException("Server could not read file " + f.getName());
+		if (content == null)
+			throw new WLProtocolException("Server could not read file " + f.getName());
 
 		out.println(content.checksum);
 		out.println(content.content.length);

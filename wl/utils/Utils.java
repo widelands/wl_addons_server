@@ -373,14 +373,17 @@ public class Utils {
 
 			Runtime rt = Runtime.getRuntime();
 			Process pr = rt.exec(new String[] {"md5sum", file.getPath()});
-			try (BufferedReader reader = new BufferedReader(new InputStreamReader(pr.getInputStream()));) {
+			try (BufferedReader reader =
+			         new BufferedReader(new InputStreamReader(pr.getInputStream()));) {
 				pr.waitFor();
 				String md5 = reader.readLine();
 				checksum = md5.split(" ")[0];
 			}
 
 			if (file.length() > Integer.MAX_VALUE) {
-				throw new RuntimeException("Failed to read file '" + file.getName() + "': Too long (" + file.length() + " bytes; maximum is " + Integer.MAX_VALUE + ")");
+				throw new RuntimeException("Failed to read file '" + file.getName() +
+				                           "': Too long (" + file.length() +
+				                           " bytes; maximum is " + Integer.MAX_VALUE + ")");
 			}
 			try (FileInputStream read = new FileInputStream(file);) {
 				content = new byte[(int)file.length()];
@@ -388,7 +391,8 @@ public class Utils {
 				while (pos < content.length) {
 					int r = read.read(content, pos, content.length - pos);
 					if (r < 1 || pos + r > content.length) {
-						throw new RuntimeException("Failed to read file '" + file.getName() + "': Bad read of length " + r);
+						throw new RuntimeException("Failed to read file '" + file.getName() +
+						                           "': Bad read of length " + r);
 					}
 					pos += r;
 				}
