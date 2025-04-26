@@ -22,7 +22,6 @@ package wl.server;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
@@ -345,20 +344,12 @@ public class ServerUtils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
-		out.println(Utils.checksum(f));
-		long l = f.length();
-		out.println(l);
-		FileInputStream read = new FileInputStream(f);
-		while (l > 0) {
-			int len = (int)Math.min(l, Integer.MAX_VALUE - 1);
-			byte[] buffer = new byte[len];
-			int r = read.read(buffer, 0, len);
-			if (r != len)
-				throw new WLProtocolException("Server-side error: Read " + r +
-				                              " bytes but expected " + len);
-			out.write(buffer);
-			l -= len;
-		}
+		Utils.CachedFileContents content = Utils.loadFileContents(f);
+		if (content == null) throw new WLProtocolException("Server could not read file " + f.getName());
+
+		out.println(content.checksum);
+		out.println(content.content.length);
+		out.write(content.content);
 	}
 
 	/**

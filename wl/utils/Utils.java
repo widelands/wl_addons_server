@@ -21,6 +21,7 @@ package wl.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
@@ -353,25 +354,79 @@ public class Utils {
 		return maps;
 	}
 
+	/** The cached checksum and contents of a file, timestamped by the file's last modified date. */
+	public static class CachedFileContents {
+		/** Timestamp when the file was last modified. */
+		public final long lastModified;
+		/** The file's checksum. */
+		public final String checksum;
+		/** The file's raw content. */
+		public final byte[] content;
+
+		/**
+		 * Load a file into the cache.
+		 * @param file File to load.
+		 * @throws Exception If the file can't be accessed.
+		 */
+		public CachedFileContents(File file) throws Exception {
+			lastModified = file.lastModified();
+
+			Runtime rt = Runtime.getRuntime();
+			Process pr = rt.exec(new String[] {"md5sum", file.getPath()});
+			try (BufferedReader reader = new BufferedReader(new InputStreamReader(pr.getInputStream()));) {
+				pr.waitFor();
+				String md5 = reader.readLine();
+				checksum = md5.split(" ")[0];
+			}
+
+			if (file.length() > Integer.MAX_VALUE) {
+				throw new RuntimeException("Failed to read file '" + file.getName() + "': Too long (" + file.length() + " bytes; maximum is " + Integer.MAX_VALUE + ")");
+			}
+			try (FileInputStream read = new FileInputStream(file);) {
+				content = new byte[(int)file.length()];
+				int pos = 0;
+				while (pos < content.length) {
+					int r = read.read(content, pos, content.length - pos);
+					if (r < 1 || pos + r > content.length) {
+						throw new RuntimeException("Failed to read file '" + file.getName() + "': Bad read of length " + r);
+					}
+					pos += r;
+				}
+			}
+		}
+	}
+
+	private static Map<File, CachedFileContents> _files_cache = new HashMap<>();
+
+	/**
+	 * Get the contents and checksum of a file.
+	 * @param file File to fetch.
+	 * @return The file contents, or null if the file can't be accessed.
+	 */
+	public static CachedFileContents loadFileContents(File file) {
+		synchronized (_files_cache) {
+			CachedFileContents cached = _files_cache.get(file);
+			if (cached == null || file.lastModified() != cached.lastModified) {
+				try {
+					cached = new CachedFileContents(file);
+					_files_cache.put(file, cached);
+				} catch (Exception e) {
+					e.printStackTrace();
+					return null;
+				}
+			}
+			return cached;
+		}
+	}
+
 	/**
 	 * Compute the md5 checksum of a regular file.
 	 * @param f File to checksum.
 	 * @return The checksum as string, or "" in case of an error.
 	 */
 	public static String checksum(File f) {
-		try {
-			Runtime rt = Runtime.getRuntime();
-			Process pr = rt.exec(new String[] {"md5sum", f.getPath()});
-			BufferedReader reader = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-			pr.waitFor();
-			String md5 = reader.readLine();
-			reader.close();
-			return md5.split(" ")[0];
-		} catch (Exception e) {
-			log("ERROR checksumming '" + (f == null ? "(null)" : f.getPath()) + "': " + e);
-			e.printStackTrace();
-		}
-		return "";
+		CachedFileContents c = loadFileContents(f);
+		return c != null ? c.checksum : "";
 	}
 
 	/**
