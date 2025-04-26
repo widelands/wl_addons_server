@@ -572,6 +572,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:new-soldiers-wad]
+file_filter            = po/new_soldiers.wad/<lang>.po
+source_file            = po/new_soldiers.wad/new_soldiers.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:no-default-resources-wad]
 file_filter            = po/no_default_resources.wad/<lang>.po
 source_file            = po/no_default_resources.wad/no_default_resources.wad.pot

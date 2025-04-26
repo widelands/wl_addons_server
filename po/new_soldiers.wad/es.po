@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-26 03:11+0200\n"
+"PO-Revision-Date: 2025-04-25 19:29+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/widelands/teams/35159/"
+"es/)\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: addons/new_soldiers.wad/addon:2
+msgid "New Soldiers"
+msgstr ""
+
+#: addons/new_soldiers.wad/addon:3
+msgid ""
+"New more balanced soldiers. Soldiers of Empire train defence in colosseum. "
+"Amazons need gold for first level of defence training."
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/new_soldiers.wad/amazons_soldier/init.lua:20
+msgctxt "amazons_worker"
+msgid "Soldier"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/new_soldiers.wad/atlanteans_soldier/init.lua:107
+msgctxt "atlanteans_worker"
+msgid "Soldier"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/new_soldiers.wad/barbarians_soldier/init.lua:107
+msgctxt "barbarians_worker"
+msgid "Soldier"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:8
+msgctxt "empire_building"
+msgid "Colosseum"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:45
+msgid "sleeping"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:53
+msgctxt "empire_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:66
+msgctxt "amazons_building"
+msgid "upgrading soldier defense from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:85
+msgctxt "empire_building"
+msgid "No soldier to train!"
+msgstr ""
+
+#. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:87
+msgctxt "empire_building"
+msgid "No soldier found for this training level!"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/new_soldiers.wad/empire_soldier/init.lua:107
+msgctxt "empire_worker"
+msgid "Soldier"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/new_soldiers.wad/frisians_soldier/init.lua:628
+msgctxt "frisians_worker"
+msgid "Soldier"
+msgstr ""
+
+#. TRANSLATORS: Format string for a latin quote and its translation
+#: addons/new_soldiers.wad/postload.lua:9
+msgctxt "empire_lore"
+msgid "‘%1%’<br>(%2%)"
+msgstr ""
+
+#: addons/new_soldiers.wad/postload.lua:19
+msgid "This shiel is udsed for defense training."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a wooden shield because ...
+#: addons/new_soldiers.wad/postload.lua:24
+msgid "making a wooden shield"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: addons/new_soldiers.wad/postload.lua:40
+msgid "working"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
+#: addons/new_soldiers.wad/postload.lua:57
+msgid "making a padded vest"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/new_soldiers.wad/shield_wooden/init.lua:8
+msgctxt "ware"
+msgid "Wooden Shield"
+msgstr ""
