@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-26 03:11+0200\n"
+"POT-Creation-Date: 2025-04-27 03:11+0200\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: addons/new_soldiers.wad/addon:2
 msgid "New Soldiers"
-msgstr ""
+msgstr "Neue Soldaten"
 
 #: addons/new_soldiers.wad/addon:3
 msgid ""
@@ -31,94 +35,94 @@ msgstr ""
 #: addons/new_soldiers.wad/amazons_soldier/init.lua:20
 msgctxt "amazons_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Kriegerin"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_soldiers.wad/atlanteans_soldier/init.lua:107
 msgctxt "atlanteans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldat"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_soldiers.wad/barbarians_soldier/init.lua:107
 msgctxt "barbarians_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Krieger"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:8
 msgctxt "empire_building"
 msgid "Colosseum"
-msgstr ""
+msgstr " Kolosseum"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:45
 msgid "sleeping"
-msgstr ""
+msgstr "Das Schlafen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:53
 msgctxt "empire_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "Das Verbessern des Ausweichens eines Soldaten von Stufe 0 auf 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:66
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "Das Verbessern der Verteidigung eines Soldaten von Stufe 0 auf 1"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:85
 msgctxt "empire_building"
 msgid "No soldier to train!"
-msgstr ""
+msgstr "Kein Soldat zur Ausbildung vorhanden!"
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:87
 msgctxt "empire_building"
 msgid "No soldier found for this training level!"
-msgstr ""
+msgstr "Kein Soldat für diese Ausbildungsstufe gefunden!"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_soldiers.wad/empire_soldier/init.lua:107
 msgctxt "empire_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldat"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_soldiers.wad/frisians_soldier/init.lua:628
 msgctxt "frisians_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Krieger"
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/new_soldiers.wad/postload.lua:9
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "‘%1%’<br>(%2%)"
 
 #: addons/new_soldiers.wad/postload.lua:19
 msgid "This shiel is udsed for defense training."
-msgstr ""
+msgstr "Dieser Schild ist beim Verteidigungstraining der Soldaten verwendet."
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden shield because ...
 #: addons/new_soldiers.wad/postload.lua:24
 msgid "making a wooden shield"
-msgstr ""
+msgstr "Das Herstellen eines hölzernen Schilds"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/new_soldiers.wad/postload.lua:40
 msgid "working"
-msgstr ""
+msgstr "Das Herstellen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
 #: addons/new_soldiers.wad/postload.lua:57
 msgid "making a padded vest"
-msgstr ""
+msgstr "Das Herstellen einer gepolsterten Weste"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_soldiers.wad/shield_wooden/init.lua:8
 msgctxt "ware"
 msgid "Wooden Shield"
-msgstr ""
+msgstr "Hölzerner Schild"
