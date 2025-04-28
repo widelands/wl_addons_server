@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-27 03:11+0200\n"
+"POT-Creation-Date: 2025-04-28 03:11+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1731,7 +1731,7 @@ msgstr "Graniet is een fundamenteel bouwmateriaal."
 msgctxt "lutas_atlanteans_ware"
 msgid "The Atlanteans produce granite blocks in quarries and crystal mines."
 msgstr ""
-"De Atlantiërs produceren granieten blokken in steengroeven en kristalmijnen."
+"De Atlanteanen produceren granieten blokken in steengroeven en kristalmijnen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Log, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:119
@@ -1811,6 +1811,9 @@ msgid ""
 "smoked in a smokery before being delivered to mines, training sites and "
 "scouts."
 msgstr ""
+"Vis is een van de grootste voedselbronnen van de Atlantiërs. Het moet worden "
+"gerookt in een rokerij voordat het wordt geleverd aan mijnen, "
+"trainingslocaties en verkenners."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Smoked Fish
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:175
@@ -1819,6 +1822,8 @@ msgid ""
 "As no Atlantean likes raw fish, smoking it in a smokery is the most common "
 "way to make it edible."
 msgstr ""
+"Omdat geen enkele Atlantiër van rauwe vis houdt, is roken in een rokerij de "
+"meest gebruikelijke manier om het eetbaar te maken."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Meat, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:184
@@ -1827,6 +1832,8 @@ msgid ""
 "Meat contains a lot of energy, and it is obtained from wild game taken by "
 "hunters or from seashells collected by fishers."
 msgstr ""
+"Vlees bevat veel energie en wordt verkregen van wild dat door jagers wordt "
+"gevangen of van zeeschelpen die door vissers worden verzameld."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Meat, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:186
@@ -1835,6 +1842,8 @@ msgid ""
 "Meat has to be smoked in a smokery before being delivered to mines and "
 "training sites (dungeon, labyrinth and temple)."
 msgstr ""
+"Vlees moet worden gerookt in een rokerij voordat het wordt geleverd aan "
+"mijnen en trainingslocaties (kerker, labyrint en tempel)."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Smoked Meat
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:196
@@ -1844,18 +1853,22 @@ msgid ""
 "and training sites (labyrinth, dungeon and temple) where the miners and "
 "soldiers prepare a nutritious lunch for themselves."
 msgstr ""
+"Gerookt vlees wordt gemaakt van vlees in een rokerij. Het wordt geleverd aan "
+"de mijnen en trainingslocaties (labyrint, kerker en tempel) waar de "
+"mijnwerkers en soldaten een voedzame lunch voor zichzelf bereiden."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Water, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:205
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Water is de essentie van het leven!"
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Water, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:207
 msgctxt "lutas_atlanteans_ware"
 msgid "Water is used in the bakery and the horse and spider farms."
 msgstr ""
+"Water wordt gebruikt in de bakkerij en de paarden- en spinnenboerderijen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Corn
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:216
@@ -1865,6 +1878,9 @@ msgid ""
 "baker needs for a good bread. Also horse and spider farms need to be "
 "provided with corn."
 msgstr ""
+"Deze maïs wordt in de molen verwerkt tot fijn maïsmeel dat elke Atlantische "
+"bakker nodig heeft voor een goed brood. Ook paarden- en spinnenboerderijen "
+"moeten van maïs worden voorzien."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Cornmeal
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:225
@@ -1873,6 +1889,8 @@ msgid ""
 "Cornmeal is produced in a mill out of corn and is one of three parts of the "
 "Atlantean bread produced in bakeries."
 msgstr ""
+"Maïsmeel wordt in een molen gemaakt van maïs en is een van de drie "
+"onderdelen van het Atlantische brood dat in bakkerijen wordt gemaakt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Blackroot
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:233
@@ -1882,6 +1900,9 @@ msgid ""
 "processed in mills. The Atlanteans like their strong taste and use their "
 "flour for making bread."
 msgstr ""
+"Helmkruid is een speciaal soort wortel die wordt geproduceerd op "
+"helmkruidboerderijen en verwerkt in molens. De Atlantiërs houden van hun "
+"sterke smaak en gebruiken het meel voor het maken van brood."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Blackroot Flour
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:242
@@ -1890,6 +1911,8 @@ msgid ""
 "Blackroot Flour is produced in mills out of blackroots. It is used in "
 "bakeries to make a tasty bread."
 msgstr ""
+"Helmkruidbloem wordt in molens gemaakt van helmkruid. Het wordt gebruikt in "
+"bakkerijen om een lekker brood te maken."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Bread
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:251
@@ -1899,6 +1922,10 @@ msgid ""
 "water. It is appreciated as basic food by miners, scouts and soldiers in "
 "training sites (labyrinth, dungeon and temple)."
 msgstr ""
+"Dit smakelijke brood wordt in bakkerijen gemaakt van maïsmeel, "
+"helmkruidbloem en water. Het wordt gewaardeerd als basisvoedsel door "
+"mijnwerkers, verkenners en soldaten op trainingslocaties (labyrint, kerker "
+"en tempel)."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Quartz
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:263
@@ -1907,6 +1934,8 @@ msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
 "They are produced in crystal mines."
 msgstr ""
+"Deze transparante kwarts edelstenen worden gebruikt om sommige exclusieve "
+"gebouwen te bouwen. Ze worden geproduceerd in kristalmijnen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Diamond
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:272
@@ -1915,12 +1944,16 @@ msgid ""
 "These wonderful diamonds are used to build some exclusive buildings. They "
 "are mined in crystal mines."
 msgstr ""
+"Deze prachtige diamanten worden gebruikt om een aantal exclusieve gebouwen "
+"te bouwen. Ze worden gedolven in kristalmijnen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Coal, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:282
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
+"Steenkool wordt gewonnen in kolenmijnen of geproduceerd uit houtblokken door "
+"een houtskooloven."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Coal, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:284
@@ -1929,24 +1962,26 @@ msgid ""
 "The Atlantean fires in smelting works, armor smithies and weapon smithies "
 "are fed with coal."
 msgstr ""
+"De Atlanteaanse vuren in smelterijen, harnassmederijen en wapensmederijen "
+"worden gevoed met kolen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Iron Ore, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:295
 msgctxt "default_ware"
 msgid "Iron ore is mined in iron mines."
-msgstr ""
+msgstr "IJzererts wordt gedolven in ijzermijnen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Iron Ore, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:297
 msgctxt "lutas_atlanteans_ware"
 msgid "It is smelted in a smelting works to retrieve the iron."
-msgstr ""
+msgstr "Het wordt gesmolten in een smelterij om het ijzer eruit te halen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Iron, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:308
 msgctxt "ware"
 msgid "Iron is smelted out of iron ore."
-msgstr ""
+msgstr "IJzer wordt gesmolten uit ijzererts."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Iron, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:310
@@ -1955,12 +1990,14 @@ msgid ""
 "It is produced by the smelting works and used in the toolsmithy, armor "
 "smithy and weapon smithy."
 msgstr ""
+"Het wordt geproduceerd door de smelterij en gebruikt in de "
+"gereedschapsmakerij, harnassmederij en wapensmederij."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold Ore, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:321
 msgctxt "ware"
 msgid "Gold ore is mined in a gold mine."
-msgstr ""
+msgstr "Gouderts wordt gedolven in een goudmijn."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold Ore, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:323
@@ -1969,6 +2006,8 @@ msgid ""
 "Smelted in a smelting works, it turns into gold which is used as a precious "
 "building material and to produce weapons and armor."
 msgstr ""
+"Gesmolten in een hoogoven, verandert het in goud dat wordt gebruikt als "
+"kostbaar bouwmateriaal en om wapens en pantsers te maken."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:334
@@ -1976,6 +2015,8 @@ msgctxt "ware"
 msgid ""
 "Gold is the most valuable of all metals, and it is smelted out of gold ore."
 msgstr ""
+"Goud is het meest waardevolle van alle metalen en wordt gesmolten uit "
+"gouderts."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:336
@@ -1984,6 +2025,8 @@ msgid ""
 "It is produced by the smelting works and used by the armor smithy, the "
 "weapon smithy and the gold spinning mill."
 msgstr ""
+"Het wordt geproduceerd door de hoogoven en gebruikt door de wapensmederij, "
+"de wapensmederij en de goudspinnerij."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Pick
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:347
@@ -1992,18 +2035,20 @@ msgid ""
 "Picks are used by stonecutters and miners. They are produced by the "
 "toolsmith."
 msgstr ""
+"Pikhouwelen worden gebruikt door steenhouwers en mijnwerkers. Ze worden "
+"gemaakt door de werktuigsmid."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Fire Tongs, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:357
 msgctxt "ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Vuurtangen zijn de gereedschappen voor het smelten van ertsen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Fire Tongs, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:359
 msgctxt "lutas_atlanteans_ware_fire_tongs"
 msgid "They are used in the smelting works and produced by the toolsmith."
-msgstr ""
+msgstr "Ze worden gebruikt in de hoogoven en gemaakt door de werktuigsmid."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Saw
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:371
@@ -2012,12 +2057,14 @@ msgid ""
 "The saw is needed by the sawyer, the woodcutter and the toolsmith. It is "
 "produced by the toolsmith."
 msgstr ""
+"De zaag is nodig voor de zager, de werktuigsmid en de werktuigsmid. Hij "
+"wordt gemaakt door de werktuigsmid."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Shovel, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:381
 msgctxt "ware"
 msgid "Shovels are needed for the proper handling of plants."
-msgstr ""
+msgstr "Schoppen zijn nodig om de planten goed te kunnen hanteren."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Shovel, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:383
@@ -2026,6 +2073,8 @@ msgid ""
 "Therefore the forester and the blackroot farmer use them. They are produced "
 "by the toolsmith."
 msgstr ""
+"Daarom gebruiken de boswachter en de helmkruidkweker ze. Ze worden gemaakt "
+"door de werktuigsmid."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Hammer, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:394

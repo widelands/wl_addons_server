@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-29 03:10+0100\n"
+"POT-Creation-Date: 2025-04-28 03:12+0200\n"
 "PO-Revision-Date: 2021-06-05 18:17+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -35,85 +35,85 @@ msgstr ""
 "Enthollt Blomenmeden, Freeiland, Dolomiten, natten Strand, grönes Water un "
 "mudderig Water. Neje Bark."
 
-#: addons/white_summer.wad/immovables/birch/init.lua:14
-msgid "Birch (Sapling)"
-msgstr "Bark (Kiensel)"
-
-#: addons/white_summer.wad/immovables/birch/init.lua:39
-msgid "Birch (Pole)"
-msgstr "Bark (Jung)"
-
-#: addons/white_summer.wad/immovables/birch/init.lua:65
+#: addons/white_summer.wad/immovables/birch/mature/init.lua:9
 msgid "Birch (Mature)"
 msgstr "Bark (Riep)"
 
-#: addons/white_summer.wad/immovables/birch/init.lua:91
+#: addons/white_summer.wad/immovables/birch/old/init.lua:9
 msgid "Birch (Old)"
 msgstr "Bark (Old)"
 
-#: addons/white_summer.wad/immovables/birch/init.lua:92
+#: addons/white_summer.wad/immovables/birch/old/init.lua:10
 msgid "Birch"
 msgstr "Bark"
 
-#: addons/white_summer.wad/immovables/linden/init.lua:14
-msgid "Linden (Sapling)"
-msgstr "Lindboom (Kiensel)"
+#: addons/white_summer.wad/immovables/birch/pole/init.lua:9
+msgid "Birch (Pole)"
+msgstr "Bark (Jung)"
 
-#: addons/white_summer.wad/immovables/linden/init.lua:39
-msgid "Linden (Pole)"
-msgstr "Lindboom (Jung)"
+#: addons/white_summer.wad/immovables/birch/sapling/init.lua:9
+msgid "Birch (Sapling)"
+msgstr "Bark (Kiensel)"
 
-#: addons/white_summer.wad/immovables/linden/init.lua:65
+#: addons/white_summer.wad/immovables/linden/mature/init.lua:9
 msgid "Linden (Mature)"
 msgstr "Lindboom (Riep)"
 
-#: addons/white_summer.wad/immovables/linden/init.lua:91
+#: addons/white_summer.wad/immovables/linden/old/init.lua:9
 msgid "Linden (Old)"
 msgstr "Lindboom (Old)"
 
-#: addons/white_summer.wad/immovables/linden/init.lua:92
+#: addons/white_summer.wad/immovables/linden/old/init.lua:10
 msgid "Linden"
 msgstr "Lindboom"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:14
-msgid "Pine (Sapling)"
-msgstr "Föhre (Kiensel)"
+#: addons/white_summer.wad/immovables/linden/pole/init.lua:9
+msgid "Linden (Pole)"
+msgstr "Lindboom (Jung)"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:39
-msgid "Pine (Pole)"
-msgstr "Föhre (Jung)"
+#: addons/white_summer.wad/immovables/linden/sapling/init.lua:9
+msgid "Linden (Sapling)"
+msgstr "Lindboom (Kiensel)"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:65
+#: addons/white_summer.wad/immovables/pine/mature/init.lua:9
 msgid "Pine (Mature)"
 msgstr "Föhre (Riep)"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:91
+#: addons/white_summer.wad/immovables/pine/old/init.lua:10
 msgid "Pine (Old)"
 msgstr "Föhre (Old)"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:92
+#: addons/white_summer.wad/immovables/pine/old/init.lua:11
 msgid "Pine"
 msgstr "Föhre"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:14
-msgid "Red Maple (Sapling)"
-msgstr "Rode Plataan (Kiensel)"
+#: addons/white_summer.wad/immovables/pine/pole/init.lua:9
+msgid "Pine (Pole)"
+msgstr "Föhre (Jung)"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:39
-msgid "Red Maple (Pole)"
-msgstr "Rode Plataan (Jung)"
+#: addons/white_summer.wad/immovables/pine/sapling/init.lua:9
+msgid "Pine (Sapling)"
+msgstr "Föhre (Kiensel)"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:65
+#: addons/white_summer.wad/immovables/red_maple/mature/init.lua:9
 msgid "Red Maple (Mature)"
 msgstr "Rode Plataan (Riep)"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:91
+#: addons/white_summer.wad/immovables/red_maple/old/init.lua:9
 msgid "Red Maple (Old)"
 msgstr "Rode Plataan (Old)"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:92
+#: addons/white_summer.wad/immovables/red_maple/old/init.lua:10
 msgid "Red Maple"
 msgstr "Rode Plataan"
+
+#: addons/white_summer.wad/immovables/red_maple/pole/init.lua:9
+msgid "Red Maple (Pole)"
+msgstr "Rode Plataan (Jung)"
+
+#: addons/white_summer.wad/immovables/red_maple/sapling/init.lua:9
+msgid "Red Maple (Sapling)"
+msgstr "Rode Plataan (Kiensel)"
 
 #: addons/white_summer.wad/terrains/clearing1/init.lua:10
 msgid "Clearing 1"

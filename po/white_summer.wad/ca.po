@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-29 03:10+0100\n"
+"POT-Creation-Date: 2025-04-28 03:12+0200\n"
 "PO-Revision-Date: 2021-06-05 18:17+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -33,85 +33,85 @@ msgid ""
 "water. New birch."
 msgstr ""
 
-#: addons/white_summer.wad/immovables/birch/init.lua:14
-msgid "Birch (Sapling)"
-msgstr ""
-
-#: addons/white_summer.wad/immovables/birch/init.lua:39
-msgid "Birch (Pole)"
-msgstr ""
-
-#: addons/white_summer.wad/immovables/birch/init.lua:65
+#: addons/white_summer.wad/immovables/birch/mature/init.lua:9
 msgid "Birch (Mature)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/birch/init.lua:91
+#: addons/white_summer.wad/immovables/birch/old/init.lua:9
 msgid "Birch (Old)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/birch/init.lua:92
+#: addons/white_summer.wad/immovables/birch/old/init.lua:10
 msgid "Birch"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/linden/init.lua:14
-msgid "Linden (Sapling)"
-msgstr "Tell (plançó)"
+#: addons/white_summer.wad/immovables/birch/pole/init.lua:9
+msgid "Birch (Pole)"
+msgstr ""
 
-#: addons/white_summer.wad/immovables/linden/init.lua:39
-msgid "Linden (Pole)"
-msgstr "Tell (jove)"
+#: addons/white_summer.wad/immovables/birch/sapling/init.lua:9
+msgid "Birch (Sapling)"
+msgstr ""
 
-#: addons/white_summer.wad/immovables/linden/init.lua:65
+#: addons/white_summer.wad/immovables/linden/mature/init.lua:9
 msgid "Linden (Mature)"
 msgstr "Tell (adult)"
 
-#: addons/white_summer.wad/immovables/linden/init.lua:91
+#: addons/white_summer.wad/immovables/linden/old/init.lua:9
 msgid "Linden (Old)"
 msgstr "Tell (vell)"
 
-#: addons/white_summer.wad/immovables/linden/init.lua:92
+#: addons/white_summer.wad/immovables/linden/old/init.lua:10
 msgid "Linden"
 msgstr "Tell"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:14
-msgid "Pine (Sapling)"
-msgstr "Pi (plançó)"
+#: addons/white_summer.wad/immovables/linden/pole/init.lua:9
+msgid "Linden (Pole)"
+msgstr "Tell (jove)"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:39
-msgid "Pine (Pole)"
-msgstr "Pi (jove)"
+#: addons/white_summer.wad/immovables/linden/sapling/init.lua:9
+msgid "Linden (Sapling)"
+msgstr "Tell (plançó)"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:65
+#: addons/white_summer.wad/immovables/pine/mature/init.lua:9
 msgid "Pine (Mature)"
 msgstr "Pi (adult)"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:91
+#: addons/white_summer.wad/immovables/pine/old/init.lua:10
 msgid "Pine (Old)"
 msgstr "Pi (vell)"
 
-#: addons/white_summer.wad/immovables/pine/init.lua:92
+#: addons/white_summer.wad/immovables/pine/old/init.lua:11
 msgid "Pine"
 msgstr "Pi"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:14
-msgid "Red Maple (Sapling)"
-msgstr "Auró roig (plançó)"
+#: addons/white_summer.wad/immovables/pine/pole/init.lua:9
+msgid "Pine (Pole)"
+msgstr "Pi (jove)"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:39
-msgid "Red Maple (Pole)"
-msgstr "Auró roig (jove)"
+#: addons/white_summer.wad/immovables/pine/sapling/init.lua:9
+msgid "Pine (Sapling)"
+msgstr "Pi (plançó)"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:65
+#: addons/white_summer.wad/immovables/red_maple/mature/init.lua:9
 msgid "Red Maple (Mature)"
 msgstr "Auró roig (adult)"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:91
+#: addons/white_summer.wad/immovables/red_maple/old/init.lua:9
 msgid "Red Maple (Old)"
 msgstr "Auró roig (vell)"
 
-#: addons/white_summer.wad/immovables/red_maple/init.lua:92
+#: addons/white_summer.wad/immovables/red_maple/old/init.lua:10
 msgid "Red Maple"
 msgstr "Auró roig"
+
+#: addons/white_summer.wad/immovables/red_maple/pole/init.lua:9
+msgid "Red Maple (Pole)"
+msgstr "Auró roig (jove)"
+
+#: addons/white_summer.wad/immovables/red_maple/sapling/init.lua:9
+msgid "Red Maple (Sapling)"
+msgstr "Auró roig (plançó)"
 
 #: addons/white_summer.wad/terrains/clearing1/init.lua:10
 msgid "Clearing 1"
