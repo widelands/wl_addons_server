@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-26 03:11+0200\n"
+"POT-Creation-Date: 2025-04-30 03:11+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -1142,10 +1142,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:13
 msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
-"an economy. Warning: the AI always and human in most of the cases can’t "
-"successfully start from this. Do not even try, if you are not prepared for "
-"real struggle. A map with good summer or desert terrain and a lot of space "
-"recommended."
+"an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
@@ -1193,8 +1190,16 @@ msgstr ""
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
-msgid "%1$d items have been removed, %2$d items left."
-msgstr ""
+msgid "%1$d item has been removed."
+msgid_plural "%1$d items have been removed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
+msgid "%2$d item lefts."
+msgid_plural "%2$d items left."
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -3311,7 +3316,7 @@ msgid ""
 "train the soldiers."
 msgstr ""
 
-#. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Weaving Mill -- listen to that song please
+#. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Weaving Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1548
 msgctxt "lutas_atlanteans_building"
 msgid ""
@@ -3470,7 +3475,7 @@ msgctxt "lutas_atlanteans_building"
 msgid ""
 "Only the pure, white stones Diamond and Quartz will enlighten our people. "
 "Thus, every major building will need them so the inhabitants may worship "
-"Satul to warm them."
+"Lutas to give them joy."
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
@@ -3511,11 +3516,9 @@ msgid "Trains soldiers in ‘Attack’."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
-#. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1687
-#: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1702
 msgctxt "lutas_atlanteans_building"
-msgid "Equips the soldiers with all necessary weapons and armor parts."
+msgid "Equips the soldiers with all necessary weapons."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Dungeon
@@ -3534,6 +3537,12 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1700
 msgctxt "lutas_atlanteans_building"
 msgid "Trains soldiers in ‘Defense’ and ‘Evade’."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 2
+#: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1702
+msgctxt "lutas_atlanteans_building"
+msgid "Equips the soldiers with all necessary weapons and armor parts."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Labyrinth

@@ -2,7 +2,7 @@
 -- needed before a game is loaded or the editor has been started.
 
 dirname = path.dirname(__file__)
-push_textdomain("lutas_atlanteans_tribe.wad", true)
+push_textdomain("lutas_atlanteans.wad", true)
 
 local init_lutas_atlanteans = {
     name = "lutas_atlanteans",

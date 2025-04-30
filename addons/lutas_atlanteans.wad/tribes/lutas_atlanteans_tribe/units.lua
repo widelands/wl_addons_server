@@ -1194,7 +1194,7 @@ wl.Descriptions():new_tribe {
             lore_author = pgettext("lutas_atlanteans_building", "Atlantean woodcutter asked why saws are used to cut trees"),
             performance = {
                -- TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Woodcutter's House, part 1
-               pgettext("lutas_atlanteans_building", "This building can produce one log between %1$s and %2$s, depending on how far the woodcutter has to walk."):bformat(format_seconds(42), format_minutes_seconds(1, 22)),
+               pgettext("lutas_atlanteans_building", "This building can produce one log between %1$s and %2$s, depending on how far the woodcutter has to walk."):bformat(format_seconds(44), format_minutes_seconds(1, 24)),
                -- TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Woodcutter's House, part 2
                pgettext("lutas_atlanteans_building", "In case of slopes or obstacles in the way, the time is increased.")
             }
@@ -1544,7 +1544,7 @@ wl.Descriptions():new_tribe {
          helptexts = {
             -- TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Weaving Mill
             purpose = pgettext("lutas_atlanteans_building", "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and train the soldiers."),
-            -- TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Weaving Mill -- listen to that song please
+            -- TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Weaving Mill
             lore = pgettext("lutas_atlanteans_building", "Here are the Wide Lands where people may dwell, "..
                                                    "walking around caring everything’s well."),
             -- TRANSLATORS: Lore author helptext for a Lutas’ Atlanteans’ production site: Weaving Mill
@@ -1620,7 +1620,7 @@ wl.Descriptions():new_tribe {
             purpose = pgettext("lutas_atlanteans_building", "Carves precious (and normal) stones out of the rock in mountain terrain."),
             -- TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
             lore = pgettext("lutas_atlanteans_building", "Only the pure, white stones Diamond and Quartz will enlighten our people. "..
-                                                   "Thus, every major building will need them so the inhabitants may worship Satul to warm them."),
+                                                   "Thus, every major building will need them so the inhabitants may worship Lutas to give them joy."),
             -- TRANSLATORS: Lore author helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
             lore_author = pgettext("lutas_atlanteans_building", "First part of the Atlantean almanach on architecture"),
             -- TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
@@ -1684,7 +1684,7 @@ wl.Descriptions():new_tribe {
                -- TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 1
                pgettext("lutas_atlanteans_building", "Trains soldiers in ‘Attack’."),
                -- TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
-               pgettext("lutas_atlanteans_building", "Equips the soldiers with all necessary weapons and armor parts.")
+               pgettext("lutas_atlanteans_building", "Equips the soldiers with all necessary weapons.")
             },
             -- TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Dungeon
             lore = pgettext("lutas_atlanteans_building", "Make our enemies feel the pain, so enter here to gain your train!"),

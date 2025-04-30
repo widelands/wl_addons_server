@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-26 03:11+0200\n"
+"POT-Creation-Date: 2025-04-30 03:11+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1189,18 +1189,13 @@ msgstr "Nares Dörp"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:13
+#, fuzzy
 msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
-"an economy. Warning: the AI always and human in most of the cases can’t "
-"successfully start from this. Do not even try, if you are not prepared for "
-"real struggle. A map with good summer or desert terrain and a lot of space "
-"recommended."
+"an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
-"Begünn dat Speel mit nix as eenem Kraamhuus un so minn Waren as würrelk "
-"nödig, um eene Weertskupp uptobauen. Wahrschau: Künstelk Spelers un "
-"mennigmaal of Minsken könen daar nich mit recht mit starten. Versöök dat "
-"nich eenmaal, wenn du nich eenen lepen Kamp willst. Eene Kaart mit goden "
-"Sömmer- of Wüüsten-Landskuppen un mennig Rüümte word anraden."
+"Begünn dat Speel mit dienem Raadhuus un blot een paar Waren, um eene "
+"Weertskupp uptobauen. Wahrschau: Künstelk Spelers könen daar nich mit spölen."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 msgid "Be careful"
@@ -1255,8 +1250,17 @@ msgstr "%1$s is uprüümt worden!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
-msgid "%1$d items have been removed, %2$d items left."
-msgstr "%1$d Dingen sünd wegdaan worden, %2$d Dingen blieven."
+#, fuzzy
+msgid "%1$d item has been removed."
+msgid_plural "%1$d items have been removed."
+msgstr[0] "%1$d Dingen sünd wegdaan worden, %2$d Dingen blieven."
+msgstr[1] "%1$d Dingen sünd wegdaan worden, %2$d Dingen blieven."
+
+#: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
+msgid "%2$d item lefts."
+msgid_plural "%2$d items left."
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -3632,7 +3636,7 @@ msgstr ""
 "Weevt Spinnenstoff för Husen un Seils, un Kluften, um Soldaten uttorüsten un "
 "to lehren."
 
-#. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Weaving Mill -- listen to that song please
+#. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Weaving Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1548
 msgctxt "lutas_atlanteans_building"
 msgid ""
@@ -3816,11 +3820,12 @@ msgstr ""
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1622
+#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "Only the pure, white stones Diamond and Quartz will enlighten our people. "
 "Thus, every major building will need them so the inhabitants may worship "
-"Satul to warm them."
+"Lutas to give them joy."
 msgstr ""
 "Nix as de reinen, witten Stenen Edelsteen un Blinkerflint worden uns’ Lüü "
 "lechtmaken. Um dat mutt elkeen groters Huus se bruken, dat de Inwohners "
@@ -3868,11 +3873,10 @@ msgid "Trains soldiers in ‘Attack’."
 msgstr "Lehrt Soldaten »Angriff«."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
-#. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1687
-#: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1702
+#, fuzzy
 msgctxt "lutas_atlanteans_building"
-msgid "Equips the soldiers with all necessary weapons and armor parts."
+msgid "Equips the soldiers with all necessary weapons."
 msgstr "Rüst de Soldaten mit all nödigen Wapen un Wapenrocken ut."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Dungeon
@@ -3892,6 +3896,12 @@ msgstr "Schrieven up de Ingang tu de Gefahrelken Gangen"
 msgctxt "lutas_atlanteans_building"
 msgid "Trains soldiers in ‘Defense’ and ‘Evade’."
 msgstr "Lehrt Soldaten »Verteidigung« un »Utwieken«."
+
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 2
+#: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1702
+msgctxt "lutas_atlanteans_building"
+msgid "Equips the soldiers with all necessary weapons and armor parts."
+msgstr "Rüst de Soldaten mit all nödigen Wapen un Wapenrocken ut."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Labyrinth
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1705
@@ -4925,3 +4935,16 @@ msgstr "Wever"
 msgctxt "lutas_atlanteans_worker"
 msgid "Woodcutter"
 msgstr "Boomsaager"
+
+#~ msgid ""
+#~ "Start the game with just a warehouse and the bare minimum for "
+#~ "bootstrapping an economy. Warning: the AI always and human in most of the "
+#~ "cases can’t successfully start from this. Do not even try, if you are not "
+#~ "prepared for real struggle. A map with good summer or desert terrain and "
+#~ "a lot of space recommended."
+#~ msgstr ""
+#~ "Begünn dat Speel mit nix as eenem Kraamhuus un so minn Waren as würrelk "
+#~ "nödig, um eene Weertskupp uptobauen. Wahrschau: Künstelk Spelers un "
+#~ "mennigmaal of Minsken könen daar nich mit recht mit starten. Versöök dat "
+#~ "nich eenmaal, wenn du nich eenen lepen Kamp willst. Eene Kaart mit goden "
+#~ "Sömmer- of Wüüsten-Landskuppen un mennig Rüümte word anraden."

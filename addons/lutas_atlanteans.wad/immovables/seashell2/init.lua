@@ -5,6 +5,7 @@ local dirname = path.dirname(__file__)
 wl.Descriptions():new_immovable_type{
    name = "seashell2",
    descname = _("Lutas’ Seashell"),
+   icon = dirname .. "menu.png",
    size = "none",
    programs = {
       main = {

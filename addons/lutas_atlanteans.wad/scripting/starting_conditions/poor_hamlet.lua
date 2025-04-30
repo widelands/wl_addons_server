@@ -10,7 +10,7 @@ init = {
    -- TRANSLATORS: This is the name of a starting condition
    descname = _("Poor Hamlet"),
    -- TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
-   tooltip = _("Start the game with just a warehouse and the bare minimum for bootstrapping an economy. Warning: the AI always and human in most of the cases can’t successfully start from this. Do not even try, if you are not prepared for real struggle. A map with good summer or desert terrain and a lot of space recommended."),
+   tooltip = _("Start the game with just a warehouse and the bare minimum for bootstrapping an economy. Warning: the AI can’t successfully start from this."),
    incompatible_wc = {"scripting/win_conditions/hq_hunter.lua"},
 
    func = function(player, shared_in_start)

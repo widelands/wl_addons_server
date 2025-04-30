@@ -1,4 +1,4 @@
-push_textdomain("lutas_atlanteans_tribe.wad", true)
+push_textdomain("lutas_atlanteans.wad", true)
 
 local dirname = path.dirname(__file__)
 
