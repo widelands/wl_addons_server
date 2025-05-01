@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-30 03:11+0200\n"
+"POT-Creation-Date: 2025-05-01 03:12+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1192,14 +1192,10 @@ msgstr "Arme Hamlet"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:13
-#, fuzzy
 msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
 "an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
-"Begin het spel met alleen je hoofdkwartier en heel weinig goederen om een "
-"economie op te starten. Waarschuwing: de AI kan hier niet succesvol mee "
-"starten."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 msgid "Be careful"
@@ -1255,11 +1251,10 @@ msgstr "%1$s is opgeruimd!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
-#, fuzzy
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] "%1$d  items zijn verwijderd, %2$d items over."
-msgstr[1] "%1$d  items zijn verwijderd, %2$d items over."
+msgstr[0] ""
+msgstr[1] ""
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
 msgid "%2$d item lefts."
@@ -3850,16 +3845,12 @@ msgstr ""
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1622
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "Only the pure, white stones Diamond and Quartz will enlighten our people. "
 "Thus, every major building will need them so the inhabitants may worship "
 "Lutas to give them joy."
 msgstr ""
-"Alleen de zuivere, witte stenen Diamant en Kwarts zullen onze mensen "
-"verlichten. Daarom zal elk groot gebouw ze nodig hebben zodat de inwoners "
-"Satul kunnen aanbidden om hen te verwarmen."
 
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1625
@@ -3906,10 +3897,9 @@ msgstr "Traint soldaten in 'Aanvallen'."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1687
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid "Equips the soldiers with all necessary weapons."
-msgstr "Rust de soldaten uit met alle benodigde wapens en pantseronderdelen."
+msgstr ""
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Dungeon
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1690
@@ -4972,16 +4962,3 @@ msgstr "Wever"
 msgctxt "lutas_atlanteans_worker"
 msgid "Woodcutter"
 msgstr "Houtvester"
-
-#~ msgid ""
-#~ "Start the game with just a warehouse and the bare minimum for "
-#~ "bootstrapping an economy. Warning: the AI always and human in most of the "
-#~ "cases can’t successfully start from this. Do not even try, if you are not "
-#~ "prepared for real struggle. A map with good summer or desert terrain and "
-#~ "a lot of space recommended."
-#~ msgstr ""
-#~ "Begin het spel met alleen een pakhuis en het absolute minimum om een "
-#~ "economie op te starten. Waarschuwing: de AI en in de meeste gevallen ook "
-#~ "mensen kunnen hier niet succesvol mee beginnen. Waag het niet als je niet "
-#~ "voorbereid bent op een echte strijd. Een kaart met goed zomer- of "
-#~ "woestijnterrein en veel ruimte wordt aanbevolen."

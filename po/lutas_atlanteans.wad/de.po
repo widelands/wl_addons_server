@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-30 03:11+0200\n"
+"POT-Creation-Date: 2025-05-01 03:12+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -1019,12 +1019,12 @@ msgstr "Das Schmieden eines Stahldreizacks"
 #. TRANSLATORS: Completed/Skipped/Did not start forging a diamond double trident because ...
 #: addons/lutas_atlanteans.wad/productionsites/weaponsmithy/init.lua:112
 msgid "forging a diamond double trident"
-msgstr "Das Schmieden eines Diamantendoppeldreizacks"
+msgstr "Das Schmieden eines Diamant-Doppel-Dreizacks"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a heavy double trident because ...
 #: addons/lutas_atlanteans.wad/productionsites/weaponsmithy/init.lua:128
 msgid "forging a heavy double trident"
-msgstr "Das Schmieden eines schweren Doppeldreizacks"
+msgstr "Das Schmieden eines schweren Doppel-Dreizacks"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/weaving_mill/init.lua:8
@@ -1177,15 +1177,10 @@ msgstr "Armes Dorf"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:13
-#, fuzzy
 msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
 "an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
-"Beginne das Spiel mit deinem Hauptquartier und einer kleinen Auswahl an "
-"Waren – gerade genug, um ein paar Werkzeuge herzustellen, die beim Aufbau "
-"einer vollständigen Wirtschaft helfen. Warnung: Die KI kann damit nicht "
-"erfolgreich starten."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 msgid "Be careful"
@@ -1211,6 +1206,9 @@ msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Am Anfang des Spieles stehen nur ein Hauptquartier und sehr wenige Waren für "
+"den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
+"erfolgreich starten."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:13
@@ -1235,11 +1233,10 @@ msgstr ""
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
-#, fuzzy
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] "Dieses Feld wurde abgeerntet."
-msgstr[1] "Dieses Feld wurde abgeerntet."
+msgstr[0] ""
+msgstr[1] ""
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
 msgid "%2$d item lefts."
@@ -1381,6 +1378,8 @@ msgid ""
 "This tribe is known from the oldest tales. The sons and daughters of "
 "Atlantis."
 msgstr ""
+"Dieser Stamm wird schon in den ältesten Sagen erwähnt. Die Söhne und Töchter "
+"von Atlantis."
 
 #. TRANSLATORS: This is the Lutas' Atlanteans' ship's name used in lists of units
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/ship/init.lua:8
@@ -1704,13 +1703,14 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:107
 msgctxt "ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "Stein ist ein grundlegendes Baumaterial."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Granite, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:109
 msgctxt "lutas_atlanteans_ware"
 msgid "The Atlanteans produce granite blocks in quarries and crystal mines."
 msgstr ""
+"Die Atlanter stellen Steinblöcke in Steinbrüchen und Kristallminen her."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Log, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:119
@@ -1719,6 +1719,8 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Stämme sind ein grundlegendes Baumaterial. Sie werden durch das Fällen von "
+"Bäumen produziert."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Log, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:121
@@ -1728,18 +1730,21 @@ msgid ""
 "every building. Besides the sawmill, the charcoal kiln, the toolsmithy and "
 "the smokery also need logs for their work."
 msgstr ""
+"Atlanter nutzen Stämme auch als das Ausgangsmaterial für Bretter, die für "
+"fast jedes Gebäude gebraucht werden. Außer der Sägemühle brauchen auch die "
+"Köhlerei, die Werkzeugmacherei und die Räucherei Stämme für ihre Arbeit."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Planks, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:132
 msgctxt "ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Bretter sind ein wichtiges Baumaterial."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Planks, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:134
 msgctxt "lutas_atlanteans_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Sie werden in der Sägemühle hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Planks, part 3
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:136
@@ -1748,6 +1753,8 @@ msgid ""
 "The weapon smithy and the shipyard also use planks to produce the different "
 "tridents and mighty ships."
 msgstr ""
+"Sie werden in der Waffenschmiede für Dreizacke sowie in der Werft für "
+"mächtige Schiffe benötigt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Spider Silk
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:146
@@ -1757,6 +1764,10 @@ msgid ""
 "be processed into spidercloth or tabards in a weaving mill, or used to make "
 "tools in the toolsmithy."
 msgstr ""
+"Spinnenseide wird von Spinnen hergestellt, die in Spinnenzuchten gezüchtet "
+"werden. Sie kann in einer Weberei zu Spinnenstoff oder Wappenröcken "
+"weiterverarbeitet, oder in der Werkzeugmacherei zur Herstellung von "
+"Werkzeugen benutzt werden."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Spidercloth
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:155
@@ -1766,6 +1777,9 @@ msgid ""
 "shipyard. Also some higher developed buildings need spidercloth for their "
 "construction."
 msgstr ""
+"Spinnenstoff wird aus Spinnenseide in einer Weberei hergestellt. Er wird von "
+"der Werft verwendet. Einige fortgeschrittenere Gebäude brauchen ebenfalls "
+"Spinnenstoff für den Bau."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Fish
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:166
@@ -1775,6 +1789,9 @@ msgid ""
 "smoked in a smokery before being delivered to mines, training sites and "
 "scouts."
 msgstr ""
+"Fisch ist eine der Hauptnahrungsquellen der Atlanter. Er muss in einer "
+"Räucherei geräuchert werden, bevor er zu den Minen, Ausbildungsgebäuden und "
+"Kundschaftern gebracht wird."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Smoked Fish
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:175
@@ -1783,6 +1800,8 @@ msgid ""
 "As no Atlantean likes raw fish, smoking it in a smokery is the most common "
 "way to make it edible."
 msgstr ""
+"Da die Atlanter Fisch nicht roh mögen, wird er üblicherweise in einer "
+"Räucherei geräuchert, um ihn genießbar zu machen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Meat, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:184
@@ -1791,6 +1810,8 @@ msgid ""
 "Meat contains a lot of energy, and it is obtained from wild game taken by "
 "hunters or from seashells collected by fishers."
 msgstr ""
+"Fleisch liefert eine Menge Energie und wird von Jägern aus erlegtem Wild "
+"oder von Fischern aus gesammelten Muscheln gewonnen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Meat, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:186
@@ -1799,6 +1820,8 @@ msgid ""
 "Meat has to be smoked in a smokery before being delivered to mines and "
 "training sites (dungeon, labyrinth and temple)."
 msgstr ""
+"Fleisch muss in einer Räucherei geräuchert werden, bevor es zu Minen und "
+"Ausbildungsgebäuden (Verlies, Labyrinth und Tempel) gebracht wird."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Smoked Meat
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:196
@@ -1808,18 +1831,22 @@ msgid ""
 "and training sites (labyrinth, dungeon and temple) where the miners and "
 "soldiers prepare a nutritious lunch for themselves."
 msgstr ""
+"Räucherfleisch wird aus Fleisch in einer Räucherei hergestellt. Es wird in "
+"die Minen und Ausbildungsgebäude (Labyrinth, Verlies und Tempel) geliefert, "
+"wo sich die Bergleute und Soldaten ein nahrhaftes Mittagessen zubereiten."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Water, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:205
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Wasser ist Leben!"
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Water, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:207
 msgctxt "lutas_atlanteans_ware"
 msgid "Water is used in the bakery and the horse and spider farms."
 msgstr ""
+"Wasser wird in der Bäckerei, der Pferdezucht und der Spinnenzucht verwendet."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Corn
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:216
@@ -1829,6 +1856,9 @@ msgid ""
 "baker needs for a good bread. Also horse and spider farms need to be "
 "provided with corn."
 msgstr ""
+"Dieser Mais wird in der Mühle zu Maismehl weiterverarbeitet, welches jeder "
+"atlantischer Bäcker für gutes Brot benötigt. Auch bei der Pferdezucht und in "
+"Spinnenzuchten wird Mais benötigt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Cornmeal
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:225
@@ -1837,6 +1867,8 @@ msgid ""
 "Cornmeal is produced in a mill out of corn and is one of three parts of the "
 "Atlantean bread produced in bakeries."
 msgstr ""
+"Maismehl wird in einer Mühle aus Mais hergestellt und ist eine der drei "
+"Zutaten des atlantischen Brotes, welches in der Bäckerei hergestellt wird."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Blackroot
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:233
@@ -1846,6 +1878,9 @@ msgid ""
 "processed in mills. The Atlanteans like their strong taste and use their "
 "flour for making bread."
 msgstr ""
+"Dunkelrüben sind eine besondere Art Wurzeln, die auf Dunkelrübenhöfen "
+"angebaut und in Mühlen weiterverarbeitet werden. Die Atlanter mögen ihren "
+"kräftigen Geschmack und verwenden ihr Mehl zum Brotbacken."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Blackroot Flour
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:242
@@ -1854,6 +1889,8 @@ msgid ""
 "Blackroot Flour is produced in mills out of blackroots. It is used in "
 "bakeries to make a tasty bread."
 msgstr ""
+"Dunkelrübenmehl wird in Mühlen aus Dunkelrüben hergestellt. Es wird in "
+"Bäckereien verwendet, um leckeres Brot zu backen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Bread
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:251
@@ -1863,6 +1900,10 @@ msgid ""
 "water. It is appreciated as basic food by miners, scouts and soldiers in "
 "training sites (labyrinth, dungeon and temple)."
 msgstr ""
+"Dieses köstliche Brot wird in Bäckereien aus Maismehl, Dunkelrübenmehl und "
+"Wasser hergestellt. Es wird von Bergleuten, Kundschaftern und Soldaten in "
+"Ausbildungsgebäuden (Verlies, Labyrinth und Tempel) als Grundnahrungsmittel "
+"geschätzt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Quartz
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:263
@@ -1871,6 +1912,8 @@ msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
 "They are produced in crystal mines."
 msgstr ""
+"Dieser durchsichtige Bergkristall wird beim Bau einiger besonderer Gebäude "
+"verwendet. Er wird in der Kristallmine abgebaut."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Diamond
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:272
@@ -1879,12 +1922,16 @@ msgid ""
 "These wonderful diamonds are used to build some exclusive buildings. They "
 "are mined in crystal mines."
 msgstr ""
+"Diese wunderbaren Diamanten werden beim Bau einiger besonderer Gebäude "
+"verwendet. Sie werden in der Kristallmine abgebaut."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Coal, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:282
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
+"Kohle wird von Kohleminen abgebaut oder in einer Köhlerei aus Stämmen "
+"hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Coal, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:284
@@ -1893,24 +1940,26 @@ msgid ""
 "The Atlantean fires in smelting works, armor smithies and weapon smithies "
 "are fed with coal."
 msgstr ""
+"Die atlantischen Feuer in Hochöfen, Rüstungs- und Waffenschmieden werden mit "
+"Kohle geheizt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Iron Ore, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:295
 msgctxt "default_ware"
 msgid "Iron ore is mined in iron mines."
-msgstr ""
+msgstr "Eisenerz wird in Eisenerzminen gefördert."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Iron Ore, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:297
 msgctxt "lutas_atlanteans_ware"
 msgid "It is smelted in a smelting works to retrieve the iron."
-msgstr ""
+msgstr "Es wird in einem Hochofen geschmolzen, um Eisen zu erhalten."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Iron, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:308
 msgctxt "ware"
 msgid "Iron is smelted out of iron ore."
-msgstr ""
+msgstr "Eisen wird aus Eisenerz gewonnen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Iron, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:310
@@ -1919,12 +1968,14 @@ msgid ""
 "It is produced by the smelting works and used in the toolsmithy, armor "
 "smithy and weapon smithy."
 msgstr ""
+"Es wird in Hochöfen hergestellt und in der Rüstungs- und Waffenschmiede "
+"sowie in der Werkzeugmacherei verwendet."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold Ore, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:321
 msgctxt "ware"
 msgid "Gold ore is mined in a gold mine."
-msgstr ""
+msgstr "Golderz wird in einer Goldmine gefördert."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold Ore, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:323
@@ -1933,6 +1984,8 @@ msgid ""
 "Smelted in a smelting works, it turns into gold which is used as a precious "
 "building material and to produce weapons and armor."
 msgstr ""
+"Im Hochofen wird es zu Gold verhüttet, welches für einige große Gebäude und "
+"zur Herstellung von Waffen und Rüstungen benötigt wird."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:334
@@ -1940,6 +1993,8 @@ msgctxt "ware"
 msgid ""
 "Gold is the most valuable of all metals, and it is smelted out of gold ore."
 msgstr ""
+"Gold, das wertvollste aller Metalle, wird durch Verhüttung von Golderz "
+"gewonnen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:336
@@ -1948,6 +2003,8 @@ msgid ""
 "It is produced by the smelting works and used by the armor smithy, the "
 "weapon smithy and the gold spinning mill."
 msgstr ""
+"Es wird im Hochofen hergestellt und von der Rüstungs- und Waffenschmiede "
+"sowie der Goldspinnerei verwendet."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Pick
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:347
@@ -1956,18 +2013,20 @@ msgid ""
 "Picks are used by stonecutters and miners. They are produced by the "
 "toolsmith."
 msgstr ""
+"Spitzhacken werden von Steinmetzen und Bergleuten verwendet. Sie werden vom "
+"Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Fire Tongs, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:357
 msgctxt "ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Feuerzangen sind Werkzeuge um Erze zu schmelzen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Fire Tongs, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:359
 msgctxt "lutas_atlanteans_ware_fire_tongs"
 msgid "They are used in the smelting works and produced by the toolsmith."
-msgstr ""
+msgstr "Sie werden am Hochofen benutzt und vom Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Saw
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:371
@@ -1976,12 +2035,14 @@ msgid ""
 "The saw is needed by the sawyer, the woodcutter and the toolsmith. It is "
 "produced by the toolsmith."
 msgstr ""
+"Die Säge wird vom Säger, vom Holzfäller und vom Werkzeugmacher benötigt. Sie "
+"wird vom Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Shovel, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:381
 msgctxt "ware"
 msgid "Shovels are needed for the proper handling of plants."
-msgstr ""
+msgstr "Schaufeln werden zum richtigen Umgang mit Pflanzen gebraucht."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Shovel, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:383
@@ -1990,12 +2051,14 @@ msgid ""
 "Therefore the forester and the blackroot farmer use them. They are produced "
 "by the toolsmith."
 msgstr ""
+"Daher verwenden sie die Förster und Dunkelrübenbauern. Sie werden vom "
+"Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Hammer, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:394
 msgctxt "ware"
 msgid "The hammer is an essential tool."
-msgstr ""
+msgstr "Der Hammer ist ein unentbehrliches Werkzeug."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Hammer, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:396
@@ -2005,6 +2068,9 @@ msgid ""
 "hammer. Make sure you’ve always got some in reserve! They are produced by "
 "the toolsmith."
 msgstr ""
+"Er wird von Geologen, Bauarbeitern, Waffen- und Rüstungsschmieden und "
+"Schiffbauern gebraucht. Sorge dafür, dass du immer einige in Reserve hast! "
+"Er wird vom Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Spider Tongs
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:406
@@ -2013,18 +2079,21 @@ msgid ""
 "Spider tongs are used by the spider breeder to handle the spiders. They are "
 "produced by the toolsmith."
 msgstr ""
+"Die Spinnenzange wird vom Spinnenzüchter verwendet. Sie wird vom "
+"Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Fishing Net
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:415
 msgctxt "lutas_atlanteans_ware"
 msgid "The fishing net is used by the fisher and produced by the toolsmith."
 msgstr ""
+"Das Fischernetz wird vom Fischer benutzt und vom Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Buckets
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:424
 msgctxt "lutas_atlanteans_ware"
 msgid "Big buckets for the fish breeder – produced by the toolsmith."
-msgstr ""
+msgstr "Große Eimer für den Fischzüchter – hergestellt vom Werkzeugmacher."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Hunting Bow
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:433
@@ -2032,6 +2101,8 @@ msgctxt "lutas_atlanteans_ware"
 msgid ""
 "This bow is used by the Atlantean hunter. It is produced by the toolsmith."
 msgstr ""
+"Dieser Bogen wird von atlantischen Jägern verwendet. Er wird vom "
+"Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Hook Pole
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:442
@@ -2040,30 +2111,34 @@ msgid ""
 "This hook pole is used by the smoker to suspend all the meat and fish from "
 "the top of the smokery. It is created by the toolsmith."
 msgstr ""
+"Diese Hakenstange wird vom Räucherer verwendet, um das Fleisch und den Fisch "
+"oben in der Räucherei aufzuhängen. Sie wird vom Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Scythe, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:452
 msgctxt "ware"
 msgid "The scythe is the tool of the farmers."
-msgstr ""
+msgstr "Die Sense ist das Werkzeug der Bauern."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Scythe, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:454
 msgctxt "lutas_atlanteans_ware"
 msgid "Scythes are produced by the toolsmith."
-msgstr ""
+msgstr "Sensen werden vom Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Bread Paddle, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:465
 msgctxt "ware"
 msgid "The bread paddle is the tool of the baker, each baker needs one."
 msgstr ""
+"Der Brotschieber ist das Werkzeug der Bäcker, jeder Bäcker benötigt einen "
+"eigenen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Bread Paddle, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:467
 msgctxt "lutas_atlanteans_ware"
 msgid "Bread paddles are produced by the toolsmith."
-msgstr ""
+msgstr "Brotschieber werden vom Werkzeugmacher hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Light Trident
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:480
@@ -2073,6 +2148,9 @@ msgid ""
 "it makes up the equipment of young soldiers. Light tridents are produced in "
 "the weapon smithy as are all other tridents."
 msgstr ""
+"Dies ist die Grundwaffe der atlantischen Soldaten. Zusammen mit dem "
+"Wappenrock ist er die Grundausrüstung für junge Soldaten. Leichte Dreizacke "
+"werden, wie alle anderen Dreizacke auch, in der Waffenschmiede hergestellt."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Long Trident
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:489
@@ -2082,6 +2160,9 @@ msgid ""
 "produced in the weapon smithy and used in the dungeon – together with food – "
 "to train soldiers from attack level 0 to level 1."
 msgstr ""
+"Der lange Dreizack ist der erste Dreizack in der Ausbildung der Soldaten. Er "
+"wird in der Waffenschmiede hergestellt und im Verlies – zusammen mit Nahrung "
+"– verwendet, um die Soldaten im Angriff von Stufe 0 auf Stufe 1 auszubilden."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Steel Trident
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:498
@@ -2091,6 +2172,9 @@ msgid ""
 "advanced soldiers in the dungeon – together with food – to train from attack "
 "level 1 to level 2."
 msgstr ""
+"Das ist der mittlere Dreizack. Er wird in der Waffenschmiede hergestellt und "
+"von fortgeschrittenen Soldaten im Verlies – zusammen mit Nahrung – "
+"verwendet, um die Soldaten im Angriff von Stufe 1 auf Stufe 2 auszubilden."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Diamond Double Trident
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:507
@@ -2100,6 +2184,10 @@ msgid ""
 "Atlantean weapon smithy. It is used in a dungeon – together with food – to "
 "train soldiers from attack level 2 to level 3."
 msgstr ""
+"Der Diamant-Doppel-Dreizack ist einer der besten Dreizacke, der in der "
+"atlantischen Waffenschmiede hergestellt wird. Er wird in einem Verlies – "
+"zusammen mit Nahrung – verwendet, um die Soldaten im Angriff von Stufe 2 auf "
+"Stufe 3 auszubilden."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Heavy Double Trident
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:516
@@ -2110,6 +2198,10 @@ msgid ""
 "used in the dungeon – together with food – to train soldiers from attack "
 "level 3 to level 4."
 msgstr ""
+"Das ist die gefährlichste Waffe des atlantischen Militärs. Nur die besten "
+"Soldaten können sie verwenden. Sie wird in der Waffenschmiede hergestellt "
+"und im Verlies – zusammen mit Nahrung – verwendet, um die Soldaten im "
+"Angriff von Stufe 3 auf Stufe 4 auszubilden."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Steel Shield
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:525
@@ -2118,6 +2210,9 @@ msgid ""
 "This steel shield is produced in the armor smithy and used in the labyrinth "
 "– together with food – to train soldiers from defense level 0 to level 1."
 msgstr ""
+"Dieser Stahlschild wird in der Rüstungsschmiede hergestellt und im Labyrinth "
+"– zusammen mit Nahrung – verwendet, um die Verteidigung der Soldaten von "
+"Stufe 0 auf Stufe 1 zu verbessern."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Advanced Shield
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:534
@@ -2127,6 +2222,10 @@ msgid ""
 "are produced in the armor smithy and used in the labyrinth – together with "
 "food – to train soldiers from defense level 1 to level 2."
 msgstr ""
+"Diese verbesserten Schilde werden von den besten Soldaten der Atlanter "
+"verwendet. Sie werden in der Rüstungsschmiede hergestellt und im Labyrinth – "
+"zusammen mit Nahrung – verwendet, um die Verteidigung der Soldaten von der "
+"Stufe 1 auf Stufe 2 zu verbessern."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Tabard
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:543
@@ -2136,6 +2235,10 @@ msgid ""
 "Tabards are produced in the weaving mill and used in the temple – together "
 "with food – to improve soldiers’ health from level 0 to level 1."
 msgstr ""
+"Ein Wappenrock und ein leichter Dreizack sind die Grundausrüstung für junge "
+"Soldaten. Wappenröcke werden in der Weberei hergestellt und werden im "
+"Labyrinth – zusammen mit Nahrung – verwendet, um die Lebenspunkte der "
+"Soldaten von Stufe 0 auf Stufe 1 zu erhöhen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Gold Thread
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:552
@@ -2144,6 +2247,8 @@ msgid ""
 "This thread, made of gold by the gold spinning mill, is used for weaving the "
 "exclusive golden tabard in the weaving mill."
 msgstr ""
+"Dieses Garn, das aus Gold in der Goldspinnerei hergestellt wurde, wird zum "
+"Weben der einzigartigen goldenen Wappenröcken in der Weberei verwendet."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Golden Tabard
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:561
@@ -2153,18 +2258,21 @@ msgid ""
 "They are used in the temple – together with food – to improve soldiers’ "
 "health from level 1 to level 2."
 msgstr ""
+"Goldene Wappenröcke werden in der atlantischen Weberei aus Goldgarn "
+"hergestellt. Sie werden im Labyrinth – zusammen mit Nahrung – verwendet, um "
+"die Lebenspunkte der Soldaten von Stufe 1 auf Stufe 2 zu erhöhen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Carrier
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:577
 msgctxt "lutas_atlanteans_worker"
 msgid "Carries items along your roads."
-msgstr ""
+msgstr "Transportiert Waren auf deinen Straßen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Ferry
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:584
 msgctxt "lutas_atlanteans_worker"
 msgid "Ships wares across narrow rivers."
-msgstr ""
+msgstr "Transportiert Waren über schmale Flüsse."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Horse
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:593
@@ -2172,6 +2280,8 @@ msgctxt "lutas_atlanteans_worker"
 msgid ""
 "Horses help to carry items along busy roads. They are reared in a horse farm."
 msgstr ""
+"Pferde helfen dabei, Gegenstände entlang ausgelasteter Straßen zu "
+"transportieren. Sie werden in einer Pferdezucht aufgezogen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Horse Breeder
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:600
@@ -2180,90 +2290,91 @@ msgid ""
 "Breeds the strong Atlantean horses for adding them to the transportation "
 "system."
 msgstr ""
+"Züchtet die starken atlantischen Pferde, die beim Transport der Waren helfen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Stonecutter
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:610
 msgctxt "lutas_atlanteans_worker"
 msgid "Cuts blocks of granite out of rocks in the vicinity."
-msgstr ""
+msgstr "Schneidet Stein aus den Felsen in der Umgebung."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Woodcutter
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:617
 msgctxt "lutas_atlanteans_worker"
 msgid "Fells trees."
-msgstr ""
+msgstr "Fällt Bäume."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Sawyer
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:624
 msgctxt "lutas_atlanteans_worker"
 msgid "Saws logs to produce planks."
-msgstr ""
+msgstr "Zersägt Stämme, um Bretter herzustellen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Forester
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:631
 msgctxt "lutas_atlanteans_worker"
 msgid "Plants trees."
-msgstr ""
+msgstr "Pflanzt Bäume."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Builder
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:638
 msgctxt "lutas_atlanteans_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Arbeitet auf Baustellen, um Gebäude zu bauen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Spider Breeder
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:645
 msgctxt "lutas_atlanteans_worker"
 msgid "Breeds spiders for silk."
-msgstr ""
+msgstr "Züchtet Spinnen um Seide zu gewinnen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Weaver
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:652
 msgctxt "lutas_atlanteans_worker"
 msgid "Produces spidercloth for buildings, ships and soldiers."
-msgstr ""
+msgstr "Stellt Spinnenstoff für Gebäude, Schiffe und Soldaten her."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Shipwright
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:659
 msgctxt "lutas_atlanteans_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Arbeitet in der Werft und baut neue Schiffe."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Fisher
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:669
 msgctxt "lutas_atlanteans_worker"
 msgid "The fisher fishes delicious fish and collects seashels."
-msgstr ""
+msgstr "Der Fischer fischt leckeren Fisch und sammelt Muscheln."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Fish Breeder
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:676
 msgctxt "lutas_atlanteans_worker"
 msgid "Breeds fish."
-msgstr ""
+msgstr "Züchtet Fische."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Hunter
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:683
 msgctxt "lutas_atlanteans_worker"
 msgid "The hunter brings fresh, raw meat to the colonists."
-msgstr ""
+msgstr "Der Jäger bringt gutes Fleisch zu den Siedlern."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Smoker
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:690
 msgctxt "lutas_atlanteans_worker"
 msgid "Smokes meat and fish."
-msgstr ""
+msgstr "Räuchert Fleisch und Fisch."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Farmer
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:697
 msgctxt "lutas_atlanteans_worker"
 msgid "Plants and harvests cornfields."
-msgstr ""
+msgstr "Pflanzt und erntet Mais."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Blackroot Farmer
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:704
 msgctxt "lutas_atlanteans_worker"
 msgid "Plants and harvests blackroot."
-msgstr ""
+msgstr "Pflanzt und erntet Dunkelrüben."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Miller
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:711
@@ -2271,25 +2382,27 @@ msgctxt "lutas_atlanteans_worker"
 msgid ""
 "Grinds blackroots and corn to produce blackroot flour and cornmeal, "
 "respectively."
-msgstr ""
+msgstr "Mahlt Dunkelrüben zu Dunkelrübenmehl und Mais zu Maismehl."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Baker
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:718
 msgctxt "lutas_atlanteans_worker"
 msgid "Bakes bread for workers."
-msgstr ""
+msgstr "Bäckt Brot für Arbeiter."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Geologist
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:728
 msgctxt "lutas_atlanteans_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Sucht Rohstoffe zum Schürfen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Miner
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:735
 msgctxt "lutas_atlanteans_worker"
 msgid "Works deep in the mines to obtain coal, iron, gold or precious stones."
 msgstr ""
+"Arbeitet tief in den Minen, um Kohle, Eisen, Gold oder wertvolles Gestein zu "
+"schürfen."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Charcoal Burner
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:742
@@ -2461,6 +2574,8 @@ msgid ""
 "Precious stones are used in the construction of big buildings. They can be "
 "dug up by a crystal mine. You will also get granite from the mine."
 msgstr ""
+"Wertvolles Gestein wird beim Bauen großer Gebäude benötigt. Dieses kann von "
+"einer Kristallmine gefördert werden. Ebenso fördert diese Mine Stein."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ resource indicator: Stones, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:972
@@ -2495,7 +2610,7 @@ msgstr "Hier wird ein Schiff gebaut."
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Dead Tree
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1032
 msgid "The remains of an old tree."
-msgstr ""
+msgstr "Die Überreste eines alten Baums."
 
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Balsa Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Ironwood Tree
@@ -2515,18 +2630,22 @@ msgstr ""
 msgid ""
 "This tree is only planted by the Amazon tribe but can be harvested for logs."
 msgstr ""
+"Dieser Baum wird nur vom Stamm der Amazonen gepflanzt, er kann trotzdem für "
+"Stämme gefällt werden."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ warehouse: Headquarters
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1128
 msgctxt "lutas_atlanteans_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
+"Die Unterkunft deines Volkes. Hier werden auch deine Waren und Werkzeuge "
+"gelagert."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ warehouse: Headquarters
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1130
 msgctxt "lutas_atlanteans_building"
 msgid "The headquarters is your main building."
-msgstr ""
+msgstr "Das Hauptquartier ist dein Hauptgebäude."
 
 #. TRANSLATORS: Note lore for a Lutas’ Atlanteans’ production site: Headquarters
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1132
@@ -2549,6 +2668,9 @@ msgid ""
 "Your workers and soldiers will find shelter here. Also stores your wares and "
 "tools. It will help you to stabilize your economy."
 msgstr ""
+"Deine Arbeiter und Soldaten finden hier Unterschlupf. Ebenso werden auch "
+"deine Waren und Werkzeuge hier gelagert. Es hilft deine Wirtschaft zu "
+"stabilisieren."
 
 #. TRANSLATORS: Note lore for a Lutas’ Atlanteans’ production site: Warehouse
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1144
@@ -2582,6 +2704,9 @@ msgid ""
 "Similar to the Headquarters a Port can be attacked and destroyed by an "
 "enemy. It is recommendable to send soldiers to defend it."
 msgstr ""
+"Genauso wie das Hauptquartier kann auch ein Hafen von einem Feind "
+"angegriffen und zerstört werden. Es empfiehlt sich ein paar Soldaten zu "
+"seinem Schutz zu senden."
 
 #. TRANSLATORS: Note lore for a Lutas’ Atlanteans’ production site: Port
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1158
@@ -2590,6 +2715,8 @@ msgid ""
 "This is the building where expeditions will be equipped to boldly go and "
 "find new shores."
 msgstr ""
+"Dies ist das Gebäude, in dem Expeditionen ausgerüstet werden, um kühn in See "
+"zu stechen und neue Gestade zu erkunden."
 
 #. TRANSLATORS: Note lore_autor for a Lutas’ Atlanteans’ production site: Port
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1160
@@ -2632,6 +2759,8 @@ msgid ""
 "This building can produce one granite between %1$s and %2$s, depending on "
 "how far the stonecutter has to walk."
 msgstr ""
+"Dieses Gebäude kann ein Stück Stein zwischen %1$s und %2$s herstellen, je "
+"nachdem, wie weit der Steinmetz gehen muss."
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Quarry, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Woodcutter's House, part 2
@@ -2652,6 +2781,7 @@ msgstr ""
 msgctxt "lutas_atlanteans_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"Wenn Steigungen oder Hindernisse im Weg sind, verlängert sich die Zeit."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’s’ production site: Woodcutter's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1188
@@ -2688,6 +2818,8 @@ msgid ""
 "This building can produce one log between %1$s and %2$s, depending on how "
 "far the woodcutter has to walk."
 msgstr ""
+"Dieses Gebäude kann einen Stamm zwischen %1$s und %2$s produzieren, je "
+"nachdem, wie weit der Holzfäller laufen muss."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Forester's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1207
@@ -2702,6 +2834,8 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
+"Das Forsthaus braucht freien Raum innerhalb seines Arbeitsbereichs, um Bäume "
+"zu pflanzen."
 
 #. TRANSLATORS: Note lore for a Lutas’ Atlanteans’ production site: Forester's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1211
@@ -2725,6 +2859,8 @@ msgid ""
 "The forester plants one tree between %1$s and %2$s, depending on how far he "
 "has to walk."
 msgstr ""
+"Der Förster pflanzt einen Baum zwischen %1$s und %2$s, je nachdem, wie weit "
+"er laufen muss."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Fisher's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1229
@@ -2737,6 +2873,7 @@ msgstr ""
 msgctxt "lutas_atlanteans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
 msgstr ""
+"Das Fischerhaus braucht Wasser mit Fischen innerhalb seines Arbeitsbereichs."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Fisher's House, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1234
@@ -2745,12 +2882,14 @@ msgid ""
 "Build a fish breeder’s house close to the fisher’s house to make sure that "
 "you don’t run out of fish."
 msgstr ""
+"Baue ein Fischzüchterhaus in der Nähe eines Fischerhauses, um "
+"sicherzustellen, dass dir der Fisch nicht ausgeht."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Fisher's House, part 3
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1236
 msgctxt "lutas_atlanteans_building"
 msgid "Roads and trees along the shoreline block fishing."
-msgstr ""
+msgstr "Straßen und Bäume entlang der Küste blockieren den Fischfang."
 
 #. TRANSLATORS: Note lore for a Lutas’ Atlanteans’ production site: Fisher's House use some local fise song as you like
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1239
@@ -2786,7 +2925,7 @@ msgstr "Züchtet Fische."
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1259
 msgctxt "lutas_atlanteans_building"
 msgid "The fish breeder needs open access to the coast."
-msgstr ""
+msgstr "Der Fischzüchter braucht offenen Zugang zum Ufer."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Fish Breeder's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1261
@@ -2807,13 +2946,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1273
 msgctxt "building"
 msgid "Hunts animals to produce meat."
-msgstr ""
+msgstr "Jagt Tiere, um Fleisch zu erhalten."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Hunter's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1275
 msgctxt "lutas_atlanteans_building"
 msgid "The hunter’s house needs animals to hunt within the work area."
-msgstr ""
+msgstr "Das Jagdhaus braucht Tiere innerhalb seines Arbeitsbereichs."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Hunter's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1277
@@ -2836,18 +2975,20 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Dieses Gebäude kann ein Stück Fleisch zwischen %1$s und %2$s produzieren, je "
+"nachdem, wie weit der Jäger laufen muss."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Well
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1293
 msgctxt "building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Holt Wasser aus der Tiefe."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Well
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1295
 msgctxt "lutas_atlanteans_building"
 msgid "I hope you have checked this spot with a geologist."
-msgstr ""
+msgstr "Hoffentlich hast du den Platz durch einen Geologen prüfen lassen."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Well
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1297
@@ -2866,7 +3007,7 @@ msgstr ""
 #, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid "The carrier needs %s to get one bucket full of water."
-msgstr ""
+msgstr "Der Träger braucht %s, um einen Eimer Wasser zu holen."
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Well, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1304
@@ -2874,18 +3015,20 @@ msgstr ""
 msgctxt "lutas_atlanteans_building"
 msgid "If the water resource is depleted, the carrier needs %s on average."
 msgstr ""
+"Wenn die Wasserressourcen erschöpft sind, braucht der Träger im Durchschnitt "
+"%s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Gold Spinning Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1312
 msgctxt "lutas_atlanteans_building"
 msgid "Spins gold thread out of gold."
-msgstr ""
+msgstr "Spinnt Gold zu Goldgarn."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Gold Spinning Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1314
 msgctxt "lutas_atlanteans_building"
 msgid "Do not build until you have a steady gold supply."
-msgstr ""
+msgstr "Nicht bauen bevor eine stetige Goldversorgung gesichert ist."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Gold Spinning Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1316
@@ -2922,6 +3065,7 @@ msgstr "Erkundet unbekanntes Gebiet."
 msgctxt "lutas_atlanteans_building"
 msgid "Will need fish and bread to have his meal the Atlantean way."
 msgstr ""
+"Benötigt Fisch und Brot um sein Mahl nach Art der Atlanter zu sich zu nehmen."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site:  Scout's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1331
@@ -2941,7 +3085,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1336
 msgctxt "lutas_atlanteans_building"
 msgid "One exploration trip of the scout takes between %1$s and %2$s."
-msgstr ""
+msgstr "Eine Erkundungsreise des Kundschafters dauert zwischen %1$s und %2$s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Sawmill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1348
@@ -2954,6 +3098,8 @@ msgstr "Zersägt Stämme, um Bretter herzustellen."
 msgctxt "lutas_atlanteans_building"
 msgid "Will need at least four woodcutters for a constant supply of planks."
 msgstr ""
+"Braucht mindestens vier Holzfäller um eine konstante Versorgung mit Stämmen "
+"zu gewährleisten."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site:  Sawmill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1352
@@ -2974,7 +3120,7 @@ msgstr ""
 #, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid "The sawmill needs %s on average to produce one plank."
-msgstr ""
+msgstr "Die Sägemühle benötigt durchschnittlich %s, um ein Brett herzustellen."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Smokery
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1363
@@ -2983,6 +3129,8 @@ msgid ""
 "Smokes meat and fish to feed the scouts and miners and to train soldiers in "
 "the dungeon, labyrinth and temple."
 msgstr ""
+"Räuchert Fleisch und Fisch um Kundschafter und Bergleute zu ernähren. Wird "
+"beim Trainieren der Soldaten in Verlies, Labyrinth und Tempel benötigt."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site:  Smokery
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1365
@@ -3008,6 +3156,12 @@ msgid ""
 "production of one smoked fish takes %3$s and one smoked meat takes %4$s on "
 "average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und alle Arten geräucherter Nahrung "
+"von der Wirtschaft benötigt werden, dauert die Produktion eines "
+"Räucherfischs im Durchschnitt %1$s und die eines Räucherfleischs im "
+"Durchschnitt %2$s. Wenn nur eine Art Nahrung benötigt wird, dauert die "
+"Produktion eines Räucherfischs im Durchschnitt %3$s und die eines "
+"Räucherfleischs im Durchschnitt %4$s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1377
@@ -3015,7 +3169,7 @@ msgctxt "lutas_atlanteans_building"
 msgid ""
 "Grinds blackroots and corn to produce blackroot flour and cornmeal, "
 "respectively."
-msgstr ""
+msgstr "Mahlt Dunkelrüben zu Dunkelrübenmehl und Mais zu Maismehl."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1379
@@ -3024,6 +3178,8 @@ msgid ""
 "When no cornmeal is required, the mill will try to produce blackroot flour "
 "even when there is no demand for it."
 msgstr ""
+"Wenn kein Maismehl benötigt wird, wird die Mühle versuchen Dunkelrübenmehl "
+"zu mahlen, auch wenn hierfür kein Bedarf besteht."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site:  Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1381
@@ -3048,18 +3204,24 @@ msgid ""
 "If only one kind of flour is needed by the economy, its production takes "
 "%2$s on average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und beide Sorten Mehl von der "
+"Wirtschaft benötigt werden, dauert die Produktion jeweils eines Sacks von "
+"jeder Sorte im Durchschnitt %1$s. Wenn nur eine Sorte Mehl benötigt wird, "
+"dauert seine Produktion im Durchschnitt %2$s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Bakery
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1392
 msgctxt "lutas_atlanteans_building"
 msgid "Bakes bread to feed the scouts and miners and to train soldiers."
 msgstr ""
+"Bäckt Brot, das sowohl der Ernährung von Kundschaftern und Bergleuten als "
+"auch der Ausbildung der Soldaten dient."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Bakery
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1394
 msgctxt "lutas_atlanteans_building"
 msgid "Will need cornmeal and blackroot flour."
-msgstr ""
+msgstr "Benötigt Mais- und Dunkelrübenmehl."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site:  Bakery
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1396
@@ -3085,6 +3247,8 @@ msgid ""
 "If all needed wares are delivered in time, this building can produce one "
 "bread in %s on average."
 msgstr ""
+"Wenn alle benötigten Waren rechtzeitig geliefert werden, kann dieses Gebäude "
+"ein Brot in durchschnittlich %s herstellen."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Charcoal Kiln
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1409
@@ -3099,6 +3263,8 @@ msgid ""
 "Build only if you absolutely must produce some coal, or when you have a very "
 "large amount of logs."
 msgstr ""
+"Errichte nur dann eine Köhlerei, wenn du unbedingt Kohle benötigst, oder "
+"wenn Holz im Überfluss vorhanden ist."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Charcoal Kiln
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1413
@@ -3119,7 +3285,7 @@ msgstr ""
 #, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid "The charcoal kiln needs %s on average to produce one coal."
-msgstr ""
+msgstr "Die Köhlerei benötigt durchschnittlich %s, um eine Kohle herzustellen."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Smelting Works
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1424
@@ -3150,12 +3316,17 @@ msgid ""
 "only one kind of metal is needed by the economy, production of one iron "
 "takes %3$s and one gold takes %4$s on average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und alle Metalle von der Wirtschaft "
+"benötigt werden, dauert die Produktion eines Eisens im Durchschnitt %1$s und "
+"ein Barren Gold benötigt im Durchschnitt %2$s. Wenn nur eine Art Metall "
+"benötigt wird, dauert die Produktion eines Eisens im Durchschnitt %3$s und "
+"die eines Goldbarrens im Durchschnitt %4$s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Toolsmithy
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1437
 msgctxt "building"
 msgid "Forges all the tools that your workers need."
-msgstr ""
+msgstr "Stellt alle Werkzeuge her, die deine Arbeiter brauchen."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Toolsmithy
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1439
@@ -3177,6 +3348,10 @@ msgid ""
 "production of one of each tool takes %1$s on average. If only one kind of "
 "tool is needed by the economy, its production takes %2$s on average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und alle Werkzeuge von der "
+"Wirtschaft benötigt werden, dauert die Produktion jeweils eines von allen "
+"Werkzeugen im Durchschnitt %1$s. Wenn nur eines von ihnen benötigt wird, "
+"dauert seine Produktion im Durchschnitt %2$s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Weapon Smithy
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1450
@@ -3185,6 +3360,8 @@ msgid ""
 "Forges tridents to equip the soldiers and to train their attack in the "
 "dungeon."
 msgstr ""
+"Schmiedet Dreizacke, um die Soldaten auszustatten und ihren Angriff im "
+"Verlies auszubilden."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site:  Weapon Smithy
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1452
@@ -3212,6 +3389,12 @@ msgid ""
 "trident takes %2$s and one long trident, one steel trident, one diamond "
 "double trident or one heavy double trident takes %3$s on average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und alle Dreizacke von der "
+"Wirtschaft benötigt werden, dauert die Produktion jeweils eines von allen "
+"Dreizacken im Durchschnitt %1$s. Wenn nur eine Art Dreizack benötigt wird, "
+"dauert die Produktion eines leichten Dreizacks im Durchschnitt %2$s, und ein "
+"langer Dreizack, ein Stahl-Dreizack, ein Diamant-Doppel-Dreizack oder ein "
+"schwerer Doppel-Dreizack dauern im Durchschnitt %3$s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Armor Smithy
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1463
@@ -3238,12 +3421,17 @@ msgid ""
 "one kind of shield is needed by the economy, production of one steel shield "
 "takes %2$s and one advanced shield takes %3$s on average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und beide Arten Schilde von der "
+"Wirtschaft benötigt werden, dauert die Produktion jeweils eines von allen "
+"Schilden im Durchschnitt %1$s. Wenn nur ein Schild benötigt wird, dauert die "
+"Produktion eines Stahlschildes im Durchschnitt %2$s, und ein verbesserter "
+"Schild dauert im Durchschnitt %3$s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Barracks
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1479
 msgctxt "lutas_atlanteans_building"
 msgid "Equips recruits and trains them as soldiers."
-msgstr ""
+msgstr "Bewaffnet Rekruten und bildet sie zu Soldaten aus."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Barracks
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1481
@@ -3265,6 +3453,7 @@ msgstr ""
 msgctxt "lutas_atlanteans_building"
 msgid "The barracks need %s on average to recruit one soldier."
 msgstr ""
+"Die Kaserne benötigt durchschnittlich %s, um einen Soldaten zu rekrutieren."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Horse Farm
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1494
@@ -3273,6 +3462,7 @@ msgid ""
 "Breeds the strong Atlantean horses for adding them to the transportation "
 "system."
 msgstr ""
+"Züchtet die starken atlantischen Pferde, die beim Transport der Waren helfen."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Horse Farm
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1496
@@ -3290,7 +3480,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1505
 msgctxt "lutas_atlanteans_building"
 msgid "Sows and harvests corn."
-msgstr ""
+msgstr "Sät und erntet Mais."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Farm
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1507
@@ -3308,13 +3498,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1511
 msgctxt "lutas_atlanteans_building"
 msgid "The farmer needs %1% on average to sow and harvest a sheaf of corn."
-msgstr ""
+msgstr "Der Bauer braucht für Ernte von Mais durchschnittlich %1%."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Blackroot Farm
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1518
 msgctxt "lutas_atlanteans_building"
 msgid "Sows and harvests blackroot."
-msgstr ""
+msgstr "Sät und erntet Dunkelrüben."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Blackroot Farm
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1520
@@ -3337,12 +3527,13 @@ msgid ""
 "The blackroot farmer needs %1% on average to sow and harvest a bundle of "
 "blackroot."
 msgstr ""
+"Der Dunkelrübenbauer braucht für Ernte von Dunkelrüben durchschnittlich %1%."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Spider Farm
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1532
 msgctxt "building"
 msgid "Breeds spiders for silk."
-msgstr ""
+msgstr "Züchtet Spinnen um Seide zu gewinnen."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Spider Farm
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1534
@@ -3368,6 +3559,8 @@ msgid ""
 "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and "
 "train the soldiers."
 msgstr ""
+"Webt Spinnenstoff für Gebäude und Schiffsegel, und Wappenröcke um die "
+"Soldaten auszustatten und auszubilden."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Weaving Mill
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1548
@@ -3392,6 +3585,11 @@ msgid ""
 "on average. If only one kind of cloth or tabard is needed by the economy, "
 "its production takes %2$s on average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und alle Arten Stoff und alle "
+"Wappenröcke von der Wirtschaft benötigt werden, dauert die Produktion "
+"jeweils eines von allen Wappenröcken und Stoffen im Durchschnitt %1$s. Wenn "
+"nur ein Stoff oder Wappenrock benötigt wird, dauert seine Produktion im "
+"Durchschnitt %2$s."
 
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Iron Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Iron Mine
@@ -3433,6 +3631,8 @@ msgid ""
 "If the food supply is steady, this mine can produce iron ore in %s on "
 "average."
 msgstr ""
+"Wenn die Nahrungsversorgung stabil ist, kann diese Mine Eisenerz in "
+"durchschnittlich %s herstellen."
 
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Coal Mine
@@ -3451,6 +3651,8 @@ msgctxt "lutas_atlanteans_building"
 msgid ""
 "If the food supply is steady, this mine can produce coal in %s on average."
 msgstr ""
+"Wenn die Nahrungsversorgung stabil ist, kann diese Mine Kohle in "
+"durchschnittlich %s herstellen."
 
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Crystal Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
@@ -3459,7 +3661,7 @@ msgstr ""
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "Carves precious (and normal) stones out of the rock in mountain terrain."
-msgstr ""
+msgstr "Schneidet edle (und normale) Steine aus den Felsen der Berge."
 
 #. TRANSLATORS: Lore helptext for an Atlantean production site: Low Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1596
@@ -3487,6 +3689,13 @@ msgid ""
 "economy, production of one granite takes %4$s, one quartz takes %5$s and one "
 "diamond takes %6$s on average."
 msgstr ""
+"Wenn dieses Gebäude voll beliefert wird und alle Bodenschätze von der "
+"Wirtschaft benötigt werden, dauert die Produktion eines Steins im "
+"Durchschnitt %1$s, ein Bergkristall dauert im Durchschnitt %2$s und ein "
+"Diamant dauert im Durchschnitt %3$s. Wenn nur eine Art Bodenschätze benötigt "
+"wird, dauert die Produktion eines Steins im Durchschnitt %4$s, ein "
+"Bergkristall dauert im Durchschnitt %5$s und ein Diamant dauert im "
+"Durchschnitt %6$s."
 
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Gold Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Gold Mine
@@ -3521,6 +3730,8 @@ msgid ""
 "If the food supply is steady, this mine can produce gold ore in %s on "
 "average."
 msgstr ""
+"Wenn die Nahrungsversorgung stabil ist, kann diese Mine Golderz in "
+"durchschnittlich %s herstellen."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1622
@@ -3566,13 +3777,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1685
 msgctxt "lutas_atlanteans_building"
 msgid "Trains soldiers in ‘Attack’."
-msgstr ""
+msgstr "Bildet Kämpfer im „Angriff“ aus."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1687
 msgctxt "lutas_atlanteans_building"
 msgid "Equips the soldiers with all necessary weapons."
-msgstr ""
+msgstr "Stattet die Soldaten mit allen nötigen Waffen aus."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Dungeon
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1690
@@ -3590,13 +3801,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1700
 msgctxt "lutas_atlanteans_building"
 msgid "Trains soldiers in ‘Defense’ and ‘Evade’."
-msgstr ""
+msgstr "Bildet Kämpfer im „Ausweichen“ und „Verteidigung“ aus."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1702
 msgctxt "lutas_atlanteans_building"
 msgid "Equips the soldiers with all necessary weapons and armor parts."
-msgstr ""
+msgstr "Stattet die Soldaten mit allen nötigen Rüstungsgegenständen aus."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Labyrinth
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1705
@@ -3653,7 +3864,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1801
 msgctxt "lutas_atlanteans_building"
 msgid "Garrisons soldiers to expand your territory."
-msgstr ""
+msgstr "Beherbergt Soldaten, um dein Gebiet zu erweitern."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ military site: Guardhouse
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ military site: Guardhall
@@ -3673,6 +3884,10 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a soldier to "
 "send him away."
 msgstr ""
+"Wenn du nur wenige Soldaten hast, die neue Militärgebäude besetzen können, "
+"benutze die Schaltfläche mit dem nach unten zeigenden Pfeil, um die "
+"Kapazität in diesem Gebäude zu verringern. Du kannst auch auf einen Soldaten "
+"klicken, um ihn wegzuschicken (er wird, wenn möglich, ersetzt werden)."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Guardhouse
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1735
@@ -3767,6 +3982,7 @@ msgstr "Baut Fähren."
 msgctxt "building"
 msgid "Needs water nearby. Be aware ferries carry wares only, no workers."
 msgstr ""
+"Benötigt Zugang zum Wasser. Vorsicht: Fähren befördern Waren, keine Arbeiter."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Ferry Yard, part 2
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Shipyard, part 2
@@ -3774,7 +3990,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1848
 msgctxt "building"
 msgid "Roads and trees along the shoreline block access to water."
-msgstr ""
+msgstr "Straßen und Bäume entlang der Küste blockieren den Zugang zum Wasser."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Ferry Yard
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1825
@@ -3797,6 +4013,8 @@ msgid ""
 "This building can produce one ferry between %1$s and %2$s, depending on how "
 "far the shipwright has to walk."
 msgstr ""
+"Der Schiffbauer kann eine Fähre zwischen %1$s und %2$s bauen, je nachdem, "
+"wie weit er laufen muss."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Shipyard
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1843
@@ -3805,6 +4023,8 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
 "between ports."
 msgstr ""
+"Baut Schiffe zur Kolonisierung anderer Länder und zum Warentransport "
+"zwischen den Häfen."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Shipyard, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1846
@@ -3833,18 +4053,20 @@ msgid ""
 "This building can produce one ship between %1$s and %2$s, depending on how "
 "far the shipwright has to walk."
 msgstr ""
+"Der Schiffbauer kann ein Schiff zwischen %1$s und %2$s bauen, je nachdem, "
+"wie weit er laufen muss."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ building: Construction Site
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1871
 msgctxt "building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
-msgstr ""
+msgstr "„Verfluche nicht den Bauarbeiter, dem das Baumaterial fehlt.“"
 
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlanteans’ building: Construction Site
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1873
 msgctxt "building"
 msgid "Proverb widely used for impossible tasks of any kind"
-msgstr ""
+msgstr "Sprichwort, gemeinhin benutzt für unmögliche Aufgaben aller Art"
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ building: Construction Site
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1875
@@ -4403,7 +4625,7 @@ msgstr "Spinnenzange"
 #: addons/lutas_atlanteans.wad/tribes/wares/trident_double/init.lua:8
 msgctxt "ware"
 msgid "Diamond Double Trident"
-msgstr "Diamanten-Doppel-Dreizacks"
+msgstr "Diamant-Doppel-Dreizacks"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/lutas_atlanteans.wad/tribes/workers/armorsmith/init.lua:8
@@ -4596,14 +4818,3 @@ msgstr "Weber"
 msgctxt "lutas_atlanteans_worker"
 msgid "Woodcutter"
 msgstr "Holzfäller"
-
-#~ msgid ""
-#~ "Start the game with just a warehouse and the bare minimum for "
-#~ "bootstrapping an economy. Warning: the AI always and human in most of the "
-#~ "cases can’t successfully start from this. Do not even try, if you are not "
-#~ "prepared for real struggle. A map with good summer or desert terrain and "
-#~ "a lot of space recommended."
-#~ msgstr ""
-#~ "Am Anfang des Spieles steht nur ein Lagerhaus und das absolute Minimum "
-#~ "für den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
-#~ "erfolgreich starten."

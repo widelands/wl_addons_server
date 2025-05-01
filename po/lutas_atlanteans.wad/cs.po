@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-30 03:11+0200\n"
+"POT-Creation-Date: 2025-05-01 03:12+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -1177,13 +1177,12 @@ msgstr "Král cizinec"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:13
-#, fuzzy
 msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
 "an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
-"Začni hru jen s hlavní budovou a velmi málo surovinami pro rozběh "
-"hospodářství. Pozor: UI za těchto podmínek nedokáže úspěšně zahájit hru."
+"Začni hru jen se skladem a nejzákladnějším minimem pro rozběh hospodářství. "
+"Pozor: UI za těchto podmínek nedokáže úspěšně zahájit hru."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 msgid "Be careful"
@@ -1237,21 +1236,20 @@ msgstr "%1$s byl uklizen!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
-#, fuzzy
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] "%1$d položek bylo odstraněno, %2$d položek ponecháno."
-msgstr[1] "%1$d položek bylo odstraněno, %2$d položek ponecháno."
-msgstr[2] "%1$d položek bylo odstraněno, %2$d položek ponecháno."
-msgstr[3] "%1$d položek bylo odstraněno, %2$d položek ponecháno."
+msgstr[0] "%1$d položka byla odstraněna."
+msgstr[1] "%1$d položky byly odstraněny."
+msgstr[2] "%1$d položeky bylo odstraněno."
+msgstr[3] "%1$d položek bylo odstraněno."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%2$d  položka zbývá."
+msgstr[1] "%2$d  položky zbývají."
+msgstr[2] "%2$d  položky zbývá."
+msgstr[3] "%2$d  položek zbývá."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -3773,7 +3771,6 @@ msgstr ""
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1622
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "Only the pure, white stones Diamond and Quartz will enlighten our people. "
@@ -3827,7 +3824,6 @@ msgstr "Cvičí vojáky v útoku."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1687
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid "Equips the soldiers with all necessary weapons."
 msgstr "Poskytuje vojákům všechny potřebné zbraně."
@@ -4897,13 +4893,3 @@ msgstr "Tkadlec"
 msgctxt "lutas_atlanteans_worker"
 msgid "Woodcutter"
 msgstr "Dřevorubec"
-
-#~ msgid ""
-#~ "Start the game with just a warehouse and the bare minimum for "
-#~ "bootstrapping an economy. Warning: the AI always and human in most of the "
-#~ "cases can’t successfully start from this. Do not even try, if you are not "
-#~ "prepared for real struggle. A map with good summer or desert terrain and "
-#~ "a lot of space recommended."
-#~ msgstr ""
-#~ "Začni hru jen se skladem a nejzákladnějším minimem pro rozběh "
-#~ "hospodářství. Pozor: AI za těchto podmínek nedokáže úspěšně zahájit hru."
