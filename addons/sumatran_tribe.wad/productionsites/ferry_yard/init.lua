@@ -64,6 +64,9 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _("working"),
          actions = {
+            -- time of worker: 16.2-41.4 sec
+            -- min. time total: 20 + 16.2 = 36.2 sec
+            -- max. time total: 20 + 41.4 = 61.4 sec
             "sleep=duration:20s",
             "return=skipped unless fleet needs ferry",
             "return=failed unless site has log:2",

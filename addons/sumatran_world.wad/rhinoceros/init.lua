@@ -1,4 +1,4 @@
-push_textdomain("sumatran_world.wad")
+push_textdomain("sumatran_world.wad", true)
 
 local dirname = path.dirname(__file__)
 

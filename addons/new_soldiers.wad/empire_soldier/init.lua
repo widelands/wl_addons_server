@@ -103,7 +103,7 @@ all_levels_emp = {
 
 wl.Descriptions():new_soldier_type {
    name = "empire_soldier",
-   -- TRANSLATORS: This is a worker name used in lists of workers
+   -- TRANSLATORS: This is an Empire worker name used in lists of workers
    descname = pgettext("empire_worker", "Soldier"),
    animation_directory = dirname,
    icon = dirname .. "menu.png",

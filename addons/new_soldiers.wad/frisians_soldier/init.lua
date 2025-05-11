@@ -624,7 +624,7 @@ fri_rookie = {
 
 wl.Descriptions():new_soldier_type {
    name = "frisians_soldier",
-   -- TRANSLATORS: This is a worker name used in lists of workers
+   -- TRANSLATORS: This is a Frisian worker name used in lists of workers
    descname = pgettext ("frisians_worker", "Soldier"),
    icon = dirname .. "menu.png",
    vision_range = 2,

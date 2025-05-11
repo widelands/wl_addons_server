@@ -103,7 +103,7 @@ all_levels_atl = {
 
 wl.Descriptions():new_soldier_type {
    name = "atlanteans_soldier",
-   -- TRANSLATORS: This is a worker name used in lists of workers
+   -- TRANSLATORS: This is an Atlantean worker name used in lists of workers
    descname = pgettext("atlanteans_worker", "Soldier"),
    animation_directory = dirname,
    icon = dirname .. "menu.png",

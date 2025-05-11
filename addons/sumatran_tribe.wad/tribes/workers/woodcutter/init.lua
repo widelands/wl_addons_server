@@ -22,6 +22,11 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:tropical_tree radius:12",
         },
         harvest_tropicalwood = {
+         -- steps from building to rock: 2-15, average 9.45
+         -- min. worker time: 2 * 2 * 1.8 + 10 = 17.2 sec
+         -- max. worker time: 2 * 15 * 1.8 + 10 = 64.0 sec
+         -- avg. worker time: 2 * 9.45 * 1.8 + 10 = 34.0 sec
+         -- some of trees delay woodcutting by 1-1.4 sec (aspen, balsa, ironwood, oak, rubber)
             "findobject=attrib:tropical_tree radius:12",
             "walk=object",
             "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",

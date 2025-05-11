@@ -181,7 +181,8 @@ init = {
                print (player.number..": removed "..removed_wh.." items from warehouse "..idx.." of "..#warehouses.." (tidy warehouse)")
 
                heading = _("%1$s has been cleaned!"):bformat(wh.warehousename)
-               text = _("%1$d items have been removed, %2$d items left."):bformat(removed_wh, invent_wh)
+               -- TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
+               text = _(join_sentences(ngettext("%1$d item has been removed.", "%1$d items have been removed.", removed_wh), ngettext("%2$d item lefts.", "%2$d items left.", invent_wh))):bformat(removed_wh, invent_wh)
                send_to_inbox(player, title, text, {field = wh.fields[1], popup=false, icon = wh.descr.icon_name, heading = heading})
 
             end

@@ -26,7 +26,7 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       space_consumer = true,
-      supports_production_of = { "tropicalwood" },
+--      supports_production_of = { "tropicalwood" },
       basic_amount = 2,
       very_weak_ai_limit = 2,
       weak_ai_limit = 3,
@@ -42,6 +42,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
          descname = _("planting trees"),
          actions = {
+            -- time of worker: 17.2-42.4 sec, average 29.8 sec
+            -- min. time total: 17.2 + 9 = 26.2 sec
+            -- max. time total: 42.4 + 9 = 51.4 sec
+            -- avg. time total: 29.8 + 9 = 38.8 sec
             "callworker=plant_tropical_tree",
             "sleep=duration:9s"
          }

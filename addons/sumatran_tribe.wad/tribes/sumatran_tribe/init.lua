@@ -24,6 +24,7 @@ local init_sumatran = {
         "addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua";
         "addons/sumatran_tribe.wad/scripting/starting_conditions/basic_outpost.lua";
         "addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua";
+        "addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua";
     }
 }
 pop_textdomain()

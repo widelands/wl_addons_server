@@ -42,7 +42,7 @@ wl.Descriptions():new_productionsite_type {
    aihints = {
       prohibited_till = 240,
       space_consumer = true,
-      supports_production_of = { "cassavaleaves" },
+--      supports_production_of = { "cassavaleaves" },
       basic_amount = 4,
       very_weak_ai_limit = 4,
       weak_ai_limit = 5,

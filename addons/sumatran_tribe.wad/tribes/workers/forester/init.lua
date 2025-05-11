@@ -19,6 +19,10 @@ wl.Descriptions():new_worker_type {
             "findspace=size:any radius:6 avoid:field saplingsearches:8"
         },
         plant_palm = {
+         -- steps from building to rock: 2-9, average 5.5
+         -- min. worker time: 2 * 2 * 1.8 + 10 = 17.2 sec
+         -- max. worker time: 2 * 9 * 1.8 + 10 = 42.4 sec
+         -- avg. worker time: 2 * 5.5 * 1.8 + 10 = 29.8 sec
             "findspace=size:any radius:6 avoid:field saplingsearches:8",
             "walk=coords",
             "animate=dig duration:6s",
@@ -28,6 +32,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_tropical_tree = {
+         -- steps from building to rock: 2-9, average 5.5
+         -- min. worker time: 2 * 2 * 1.8 + 10 = 17.2 sec
+         -- max. worker time: 2 * 9 * 1.8 + 10 = 42.4 sec
+         -- avg. worker time: 2 * 5.5 * 1.8 + 10 = 29.8 sec
             "findspace=size:any radius:6 avoid:field saplingsearches:8",
             "walk=coords",
             "animate=dig duration:6s",

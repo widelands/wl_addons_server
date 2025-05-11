@@ -12,6 +12,10 @@ wl.Descriptions():new_worker_type {
 
    programs = {
       hunt_chief = {
+         -- steps from building to rock: 2-17, average 10.75
+         -- min. worker time: 2 * 2 * 1.8 + 1.5 = 8.7 sec
+         -- max. worker time: 2 * 17 * 1.8 + 1.5 = 62.7 sec
+         -- avg. worker time: 2 * 10.75 * 1.8 + 1.5 = 40.2 sec
          "findobject=type:bob radius:14 attrib:eatable",
          "walk=object",
          "animate=idle duration:1s500ms",
@@ -31,6 +35,10 @@ wl.Descriptions():new_worker_type {
          "return"
       },
       hunt = {
+         -- steps from building to rock: 2-15, average 9.45
+         -- min. worker time: 2 * 2 * 1.8 + 1.5 = 8.7 sec
+         -- max. worker time: 2 * 15 * 1.8 + 1.5 = 55.5 sec
+         -- avg. worker time: 2 * 9.45 * 1.8 + 1.5 = 34.5 sec
          "findobject=type:bob radius:12 attrib:eatable",
          "walk=object",
          "animate=idle duration:1s500ms",
@@ -39,6 +47,10 @@ wl.Descriptions():new_worker_type {
          "return"
       },
       fish_chief = {
+         -- steps from building to rock: 2-12, average 7.5
+         -- min. worker time: 2 * 2 * 1.8 + 1 = 8.2 sec
+         -- max. worker time: 2 * 12 * 1.8 + 1 = 44.2 sec
+         -- avg. worker time: 2 * 7.5 * 1.8 + 1 = 27.9 sec
          "findspace=size:any radius:9 resource:resource_fish",
          "walk=coords",
          "playsound=sound/fisher/fisher_throw_net priority:50% allow_multiple",

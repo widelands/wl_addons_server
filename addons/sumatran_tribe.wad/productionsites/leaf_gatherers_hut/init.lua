@@ -49,6 +49,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start gathering palm leaves because ...
          descname = _("gathering palm leaves"),
          actions = {
+            -- time of worker: 14.2-53.8 sec, average 36.2 sec
+            -- min. time total: 14.2 + 9 = 23.2 sec
+            -- max. time total: 53.8 + 9 = 62.8 sec
+            -- avg. time total: 36.2 + 9 = 45.2 sec
             "return=skipped unless economy needs palmleaves",
             "callworker=gather_palm",
             "sleep=duration:9s"

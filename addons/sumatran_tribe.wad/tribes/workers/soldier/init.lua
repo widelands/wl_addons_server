@@ -114,27 +114,27 @@ wl.Descriptions():new_soldier_type {
    -- Battle attributes - initial values and per level increase
     health = {
         max_level = 3,
-        base = 12250,
-        increase_per_level = 3500,
+        base = 12125,
+        increase_per_level = 3925,
         pictures = path.list_files(dirname .. "health_level?.png"),
     },
     evade = {
         max_level = 1,
-        base = 33,
-        increase_per_level = 12,
+        base = 37,
+        increase_per_level = 13,
         pictures = path.list_files(dirname .. "evade_level?.png"),
     },
     defense = {
         max_level = 3,
         base = 0,
-        increase_per_level = 17,
+        increase_per_level = 14,
         pictures = path.list_files(dirname .. "defense_level?.png"),
     },
     attack = {
         max_level = 3,
-        base = 1450,
-        maximum = 1550,
-        increase_per_level = 700,
+        base = 1400,
+        maximum = 1500,
+        increase_per_level = 763,
         pictures = path.list_files(dirname .. "attack_level?.png"),
     },
 

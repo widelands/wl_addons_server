@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 03:11+0100\n"
+"POT-Creation-Date: 2025-05-11 03:11+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -592,11 +592,12 @@ msgstr "Krokodiljaggtkaat"
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:36
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:41
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:57
+#: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:32
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:36
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:48
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:49
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:57
-#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:69
-#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:76
+#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:70
+#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:81
 msgid "hunting"
 msgstr "to jagen"
 
@@ -607,7 +608,8 @@ msgstr "to jagen"
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:47
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:65
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:73
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:55
+#: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:43
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:60
 msgid "hunting crocodile"
 msgstr "Krokodilen to jagen"
 
@@ -626,6 +628,7 @@ msgstr "Fiss to pottjen"
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:66
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:55
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:82
+#: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:51
 msgid "No Crocodiles"
 msgstr "Keene Krokodilen"
 
@@ -635,6 +638,7 @@ msgstr "Keene Krokodilen"
 #: addons/sumatran_tribe.wad/other_tribes/barbarians_crocodile_hunters_hut/init.lua:68
 #: addons/sumatran_tribe.wad/other_tribes/empire_crocodile_hunters_house/init.lua:57
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:84
+#: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:53
 msgid "Out of Game"
 msgstr "Hebb keene Deerten mehr"
 
@@ -745,6 +749,24 @@ msgstr ""
 "De Jäger, de bi deese Jaggthuus warkt, hett keene Krokodilen in sienem "
 "Arbeidsgewest."
 
+#. TRANSLATORS: This is a Lutas’ Atlanteans’ building name used in lists of buildings
+#: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:8
+#, fuzzy
+msgctxt "lutas_atlanteans_building"
+msgid "Crocodile Hunter’s House"
+msgstr "Krokodiljaggthuus"
+
+#. TRANSLATORS: "game" means animals that you can hunt
+#: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:55
+#, fuzzy
+msgctxt "lutas_atlanteans_building"
+msgid ""
+"The hunter working out of this house can’t find any crocodiles in his work "
+"area."
+msgstr ""
+"De Jäger, de bi deese Jaggthuus warkt, hett keene Krokodilen in sienem "
+"Arbeidsgewest."
+
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
 #: addons/sumatran_tribe.wad/postload.lua:9
@@ -760,7 +782,7 @@ msgstr "»%1%«<br>(%2%)"
 #: addons/sumatran_tribe.wad/postload.lua:72
 #: addons/sumatran_tribe.wad/postload.lua:78
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:39
-#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:50
+#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:55
 msgid "felling trees"
 msgstr "Bomen to slagen"
 
@@ -785,6 +807,7 @@ msgstr "Jäger is för de Plaan, een Krokodiljaggthuus to bauen"
 #: addons/sumatran_tribe.wad/postload.lua:220
 #: addons/sumatran_tribe.wad/postload.lua:253
 #: addons/sumatran_tribe.wad/postload.lua:285
+#: addons/sumatran_tribe.wad/postload.lua:366
 msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
@@ -1078,6 +1101,69 @@ msgctxt "amazons_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
 
+#: addons/sumatran_tribe.wad/postload.lua:362
+#, fuzzy
+msgctxt "lutas_atlanteans_building"
+msgid ""
+"Of course hunting crocodiles is a good idea. The efficiency of hunting "
+"should not increase much but the productivity can increase, if there are not "
+"enough animals in the nearby forests."
+msgstr ""
+"Natürelk is dat klook, Krokodilen to jagen. De Nüttelkheid vun de Jaggt word "
+"daardör twaar nich vööl verbetert, aver de Wöörde kann sik verhoogen, wenn "
+"in de Walden umbi nich genoog Deerten sünd."
+
+#. TRANSLATORS: Lore author helptext for an Atlantean production site: Crocodile Hunter’s House
+#: addons/sumatran_tribe.wad/postload.lua:365
+#, fuzzy
+msgctxt "lutas_atlanteans_building"
+msgid "Hunter advocates the idea of building a crocodile hunter's house"
+msgstr "Jäger is för de Plaan, een Krokodiljaggthuus to bauen"
+
+#. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
+#: addons/sumatran_tribe.wad/postload.lua:369
+#, fuzzy
+msgctxt "lutas_atlanteans_building"
+msgid ""
+"This building is useful only when you have a Sumatran opponent and there are "
+"crocodiles coming from his territory into your territory."
+msgstr ""
+"Deeses Huus is blots dann nüttelk, wenn du tegen eenen Sumatraansk Feind "
+"spöölst un Krokodilen ut sienem Gewest in dien Gewest komen."
+
+#. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
+#: addons/sumatran_tribe.wad/postload.lua:371
+#, fuzzy
+msgctxt "lutas_atlanteans_building"
+msgid ""
+"The building has 2 different working areas, the smaller for crocodile "
+"hunting and the larger for game hunting."
+msgstr ""
+"Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is för de "
+"Krokodiljaggt un dat grote tum Jagen vun anner Deerten."
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
+#: addons/sumatran_tribe.wad/postload.lua:375
+#, fuzzy
+msgctxt "lutas_atlanteans_building"
+msgid ""
+"If there is a sufficient amount of crocodiles and other animals, the hunters "
+"need %1$s on average to produce one meat. If there are no crocodiles, the "
+"building operates as a basic hunter's house and the hunters need %2$s on "
+"average to produce one meat."
+msgstr ""
+"Wenn dat genoog Krokodilen un anner Deerten gifft, bruuken de Jägers dör de "
+"Bank %1$s, um een Fleesk to produzeren. Wenn dat keene Krokodilen gifft, "
+"warkt dat Huus as een normaal Jaggthuus un de Jägers bruken dör de Bank "
+"%2$s, um een Fleesk to produzeren."
+
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
+#: addons/sumatran_tribe.wad/postload.lua:377
+#, fuzzy
+msgctxt "lutas_atlanteans_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
+
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
 msgctxt "sumatran_building"
@@ -1095,7 +1181,7 @@ msgstr "Rüstsmee"
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:58
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:45
 #: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:77
-#: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:92
+#: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:98
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:42
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:72
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:80
@@ -1140,7 +1226,7 @@ msgid "No Fields"
 msgstr "Keene Meedjes"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:85
-#: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:71
+#: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:79
 msgid "Out of Fields"
 msgstr "Hebb keene Medjes mehr"
 
@@ -1273,24 +1359,24 @@ msgid "Hunter’s House"
 msgstr "Jaggthuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:63
-#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:83
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:68
+#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:88
 msgid "fishing"
 msgstr "Fisse to fangen"
 
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:79
-#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:92
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:88
+#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:101
 msgid "No Game"
 msgstr "Keene Deerten"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:81
-#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:94
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:90
+#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:103
 msgid "Out of Game or Fish"
 msgstr "Hebb keene Deerten of Fiske mehr"
 
 #. TRANSLATORS: "game" means animals that you can hunt
-#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:83
+#: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:92
 msgctxt "sumatran_building"
 msgid ""
 "The hunter working at this hunter’s house can’t find any game in his work "
@@ -1304,7 +1390,7 @@ msgid "Hunter’s Tent"
 msgstr "Jaggt-Telt"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
-#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:96
+#: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:105
 msgctxt "sumatran_building"
 msgid ""
 "The hunter working at this hunter’s tent can’t find any game in his work "
@@ -1376,19 +1462,19 @@ msgid "gathering palm leaves"
 msgstr "Palmwedels to pottjen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start gathering cassava leaves because ...
-#: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:59
+#: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:63
 msgid "gathering cassava leaves"
 msgstr "Maniokbladen to pottjen"
 
-#: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:68
+#: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:72
 msgid "No Leaves"
 msgstr "Keene Bladen"
 
-#: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:69
+#: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:73
 msgid "Out of Leaves"
 msgstr "Hebb keene Bladen mehr"
 
-#: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:70
+#: addons/sumatran_tribe.wad/productionsites/leaf_gatherers_hut/init.lua:74
 msgctxt "sumatran_building"
 msgid ""
 "The leaf gatherer working at this hut can’t find any leaves in her work "
@@ -1417,15 +1503,15 @@ msgid "planting reed"
 msgstr "Reit to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-#: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:61
+#: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:65
 msgid "harvesting reed"
 msgstr "Reit to arnten"
 
-#: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:70
+#: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:78
 msgid "No Fields or No Water Nearby"
 msgstr "Keene Meedjes of keen Water in de Naberskupp"
 
-#: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:72
+#: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:80
 msgctxt "sumatran_building"
 msgid ""
 "The reed cutter working at this reed yard has no cleared soil to plant new "
@@ -1475,7 +1561,7 @@ msgid "Shipyard"
 msgstr "Warft"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
-#: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:85
+#: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:91
 msgid "constructing a ship"
 msgstr "een Schipp to timmern"
 
@@ -1557,15 +1643,15 @@ msgctxt "sumatran_building"
 msgid "Water Carrier’s Hut"
 msgstr "Waterdrager-Huus"
 
-#: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:52
+#: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:56
 msgid "No Water"
 msgstr "Keen Water"
 
-#: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:53
+#: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:57
 msgid "Out of Water"
 msgstr "Hebb keen Water mehr"
 
-#: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:54
+#: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:58
 msgctxt "sumatran_building"
 msgid ""
 "The water carrier working at this hut can’t find any water in its vicinity."
@@ -1595,15 +1681,15 @@ msgstr "Wienmakeree"
 msgid "making palm wine"
 msgstr "Palmwien to maken"
 
-#: addons/sumatran_tribe.wad/productionsites/winery/init.lua:56
+#: addons/sumatran_tribe.wad/productionsites/winery/init.lua:60
 msgid "No Palm Trees"
 msgstr "Keene Palmbomen"
 
-#: addons/sumatran_tribe.wad/productionsites/winery/init.lua:57
+#: addons/sumatran_tribe.wad/productionsites/winery/init.lua:61
 msgid "Out of Palm Trees"
 msgstr "Hebb keene Palmbomen mehr"
 
-#: addons/sumatran_tribe.wad/productionsites/winery/init.lua:58
+#: addons/sumatran_tribe.wad/productionsites/winery/init.lua:62
 msgctxt "sumatran_building"
 msgid ""
 "The winemaker working at this house can’t find any palm trees in her work "
@@ -1621,24 +1707,24 @@ msgid "Woodcutter’s House"
 msgstr "Boomslagerhuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling palm trees because ...
-#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:58
+#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:67
 msgid "felling palm trees"
 msgstr "Palmen to slagen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling tropical trees because ...
-#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:67
+#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:76
 msgid "felling tropical trees"
 msgstr "Regenwaldbomen to slagen"
 
-#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:77
+#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:86
 msgid "No Palm Trees or No Trees at All"
 msgstr "Keene Palmbomen of överhoopt keene Bomen"
 
-#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:78
+#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:87
 msgid "Out of Trees"
 msgstr "Hebb keene Bomen mehr"
 
-#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:79
+#: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:88
 msgctxt "sumatran_building"
 msgid ""
 "The woodcutter working at this house can’t find any palm trees in his work "
@@ -1742,6 +1828,26 @@ msgstr ""
 "Begünn dat Speel mit dienem Raadhuus un een paar Waren – blots genoog, um "
 "een bietje Warktüüg to produzeren un eene kumplete Weertskupp uptobauen. "
 "Wahrschau: Künstelk Spelers könen daarmit nich good spölen."
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua:11
+msgid "Castaways"
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua:13
+#, fuzzy
+msgid ""
+"Start the game with one ships on the ocean, the bare minimum of ware and few "
+"workers. Warning: the AI can’t successfully start from this. You will need "
+"to find a portspace with direct access to rocks and trees. For unknown maps, "
+"game without fog of war recommended."
+msgstr ""
+"Begünn dat Speel mit nix as eenem Kraamhuus un so minn Waren as würrelk "
+"nödig, um eene Weertskupp uptobauen. Wahrschau: Künstelk Spelers un "
+"mennigmaal of Minsken könen daar nich mit recht mit starten. Versöök dat "
+"nich eenmaal, wenn du nich eenen lepen Kamp willst. Eene Kaart mit goden "
+"Sömmer- of Wüüsten-Landskuppen un mennig Rüümte word anraden."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:11
@@ -1855,9 +1961,19 @@ msgstr "Kraamhuus uprüümt!"
 msgid "%1$s has been cleaned!"
 msgstr "%1$s is uprüümt worden!"
 
-#: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:184
-msgid "%1$d items have been removed, %2$d items left."
-msgstr "%1$d Dingen sünd wegdaan worden, %2$d Dingen blieven."
+#. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:185
+#, fuzzy
+msgid "%1$d item has been removed."
+msgid_plural "%1$d items have been removed."
+msgstr[0] "%1$d Dingen sünd wegdaan worden, %2$d Dingen blieven."
+msgstr[1] "%1$d Dingen sünd wegdaan worden, %2$d Dingen blieven."
+
+#: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:185
+msgid "%2$d item lefts."
+msgid_plural "%2$d items left."
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -1889,40 +2005,40 @@ msgid "Hunting Camp"
 msgstr "Jaggtlager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
-#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:85
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:80
+#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:91
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:83
 msgid "sleeping"
 msgstr "to slapen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:93
+#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:99
 msgctxt "sumatran_building"
 msgid "upgrading warrior attack from level 0 to level 1"
 msgstr "Ridder-Angriff vun Stand 0 to Stand 1 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:110
+#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:116
 msgctxt "sumatran_building"
 msgid "upgrading warrior attack from level 1 to level 2"
 msgstr "Ridder-Angriff vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:127
+#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:133
 msgctxt "sumatran_building"
 msgid "upgrading warrior attack from level 2 to level 3"
 msgstr "Ridder-Angriff vun Stand 2 to Stand 3 to verbetern"
 
 #. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
-#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:157
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:189
+#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:163
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:192
 msgctxt "sumatran_building"
 msgid "No warrior to train!"
 msgstr "Keen Ridder tum Utbilden!"
 
 #. TRANSLATORS: Sumatran training site tooltip when none of the present warriors match the current training program
-#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:159
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:191
+#: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:165
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:194
 msgctxt "sumatran_building"
 msgid "No warrior found for this training level!"
 msgstr "Keen Ridder för deese Lehr funnen!"
@@ -1934,43 +2050,43 @@ msgid "Training Camp"
 msgstr "Övens-Lager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:88
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:91
 msgctxt "sumatran_building"
 msgid "upgrading warrior evade from level 0 to level 1"
 msgstr "Ridder-Utwieken vun Stand 0 up Stand 1 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:102
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:105
 msgctxt "sumatran_building"
 msgid "upgrading warrior health from level 0 to level 1"
 msgstr "Ridder-Gesundheid vun Stand 0 to Stand 1 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:115
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:118
 msgctxt "sumatran_building"
 msgid "upgrading warrior health from level 1 to level 2"
 msgstr "Ridder-Gesundheid vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:128
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:131
 msgctxt "sumatran_building"
 msgid "upgrading warrior health from level 2 to level 3"
 msgstr "Ridder-Gesundheid vun Stand 2 to Stand 3 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:142
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:145
 msgctxt "sumatran_building"
 msgid "upgrading warrior defense from level 0 to level 1"
 msgstr "Ridder-Verteidigung vun Stand 0 to Stand 1 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:156
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:159
 msgctxt "sumatran_building"
 msgid "upgrading warrior defense from level 1 to level 2"
 msgstr "Ridder-Verteidigung vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:170
+#: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:173
 msgctxt "sumatran_building"
 msgid "upgrading warrior defense from level 2 to level 3"
 msgstr "Ridder-Verteidigung vun Stand 2 to Stand 3 to verbetern"
@@ -1992,181 +2108,151 @@ msgid "Ship"
 msgstr "Schipp"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:48
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1666
 msgctxt "shipname"
 msgid "Mutiara"
 msgstr "Mutiara"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:49
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1667
 msgctxt "shipname"
 msgid "Tembakan"
 msgstr "Tembakan"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:50
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1668
 msgctxt "shipname"
 msgid "Ular"
 msgstr "Ular"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:51
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1669
 msgctxt "shipname"
 msgid "Berlian"
 msgstr "Berlian"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:52
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1670
 msgctxt "shipname"
 msgid "Harimau"
 msgstr "Harimau"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:53
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1671
 msgctxt "shipname"
 msgid "Matahari"
 msgstr "Matahari"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:54
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1672
 msgctxt "shipname"
 msgid "Bintang"
 msgstr "Bintang"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:55
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1673
 msgctxt "shipname"
 msgid "Hitam"
 msgstr "Hitam"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:56
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1674
 msgctxt "shipname"
 msgid "Putih"
 msgstr "Putih"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:57
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1675
 msgctxt "shipname"
 msgid "Angsa"
 msgstr "Angsa"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:58
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1676
 msgctxt "shipname"
 msgid "Tiang Tinggi"
 msgstr "Tiang Tinggi"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:59
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1677
 msgctxt "shipname"
 msgid "Harta Karun"
 msgstr "Harta Karun"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:60
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1678
 msgctxt "shipname"
 msgid "Koncah"
 msgstr "Koncah"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:61
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1679
 msgctxt "shipname"
 msgid "Merah"
 msgstr "Merah"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:62
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1680
 msgctxt "shipname"
 msgid "Sinar"
 msgstr "Sinar"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:63
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1681
 msgctxt "shipname"
 msgid "Mawar Emas"
 msgstr "Mawar Emas"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:64
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1682
 msgctxt "shipname"
 msgid "Mahkota"
 msgstr "Mahkota"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:65
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1683
 msgctxt "shipname"
 msgid "Bahtera Baru"
 msgstr "Bahtera Baru"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:66
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1684
 msgctxt "shipname"
 msgid "Ular Laut"
 msgstr "Ular Laut"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:67
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1685
 msgctxt "shipname"
 msgid "Ikan"
 msgstr "Ikan"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:68
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1686
 msgctxt "shipname"
 msgid "Awan Cepat"
 msgstr "Awan Cepat"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:69
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1687
 msgctxt "shipname"
 msgid "Istana Laut"
 msgstr "Istana Laut"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:70
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1688
 msgctxt "shipname"
 msgid "Buaian"
 msgstr "Buaian"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:71
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1689
 msgctxt "shipname"
 msgid "Merpati"
 msgstr "Merpati"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:72
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1690
 msgctxt "shipname"
 msgid "Panah"
 msgstr "Panah"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:73
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1691
 msgctxt "shipname"
 msgid "Lentera"
 msgstr "Lentera"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:74
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1692
 msgctxt "shipname"
 msgid "Paus Pembunuh"
 msgstr "Paus Pembunuh"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:75
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1693
 msgctxt "shipname"
 msgid "Kerang"
 msgstr "Kerang"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:76
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1694
 msgctxt "shipname"
 msgid "Batok Kelapa"
 msgstr "Batok Kelapa"
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:77
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1695
 msgctxt "shipname"
 msgid "Layar Besar"
 msgstr "Layar Besar"
@@ -2339,7 +2425,7 @@ msgid "It is produced out of reed and palm leaves."
 msgstr "'t word ut Reit un Palmwedels produzeert."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Stone
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:156
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:157
 msgctxt "sumatran_ware"
 msgid ""
 "Stone is a basic building material. You also need it for production of "
@@ -2349,7 +2435,7 @@ msgstr ""
 "Sliepstenen to produzeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Sanded Wood
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:167
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:168
 msgctxt "sumatran_ware"
 msgid ""
 "Sanded wood is used for tool and spear production. You will need it to build "
@@ -2359,7 +2445,7 @@ msgstr ""
 "ok, um een Schipp to bauen. ’t word ut Boomstammen maakt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Skin
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:176
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:177
 msgctxt "sumatran_ware"
 msgid ""
 "Crocodile skin is used for production of clothing for your warriors, "
@@ -2369,13 +2455,13 @@ msgstr ""
 "Bespejers."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Water, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:185
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:186
 msgctxt "ware"
 msgid "Water is the essence of life!"
 msgstr "Sünner Water gifft ’t keen Leven!"
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Water, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:187
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:188
 msgctxt "sumatran_ware"
 msgid ""
 "Water is used by the cooks in your kitchens. Cassava plantations and chicken "
@@ -2385,7 +2471,7 @@ msgstr ""
 "Hennentüchtereen bruken ok Water."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cassava Root
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:200
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:201
 msgctxt "sumatran_ware"
 msgid ""
 "Cassava root is cooked in cassava kitchens to prepare starch, the main "
@@ -2395,13 +2481,13 @@ msgstr ""
 "Bigaav för Mahltieden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cassava Leaves, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:210
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:211
 msgctxt "sumatran_ware"
 msgid "Cassava leaves are needed to prepare sauce for your meals."
 msgstr "Maniok-Bladen bruukt man, um Sooß för diene Mahltieden torechttomaken."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Cassava Leaves, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:212
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:213
 msgctxt "sumatran_ware"
 msgid ""
 "Make sure that you leaf gatherers collect all leaves from the harvested "
@@ -2411,19 +2497,19 @@ msgstr ""
 "pottjen. Sünnst muttst du in Stee daarvun Eier bruken."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Starch, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:222
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:223
 msgctxt "sumatran_ware"
 msgid "Starch is the main ingredient used by meal preparation."
 msgstr "Starkde is de Höövd-Bigaav för Mahltieden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Starch, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:224
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:225
 msgctxt "sumatran_ware"
 msgid "It is made out of cassava roots by cooking."
 msgstr "Se word ut Maniok-Wuddels maakt, indeem se kookt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Fish
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:234
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:235
 msgctxt "sumatran_ware"
 msgid ""
 "Fresh fish is cooked in the kitchens and added into meals for your warriors "
@@ -2433,7 +2519,7 @@ msgstr ""
 "Bargwarkskeerls hentogeven."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Meat
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:244
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:245
 msgctxt "sumatran_ware"
 msgid ""
 "Fresh meat is cooked in the kitchens and added into meals for yor warriors, "
@@ -2443,7 +2529,7 @@ msgstr ""
 "Bargwarkskeerls un Lastendragers hentogeven."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Eggs, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:255
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:256
 msgctxt "sumatran_ware"
 msgid ""
 "Eggs are used as a substitute for meat, fish and cassava leaves in the "
@@ -2452,13 +2538,13 @@ msgstr ""
 "Eier worden in Stee vun  Fleesk, Fiss un Maniok-Bladen in de Kökens bruukt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Eggs, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:257
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:258
 msgctxt "sumatran_ware"
 msgid "You need food waste as a food source for chickens to produce eggs."
 msgstr "Du bruukst Spiesenoffall, um de Hennen to föden, wat Eier produzeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Meal
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:267
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:268
 msgctxt "sumatran_ware"
 msgid ""
 "Meal is consumed in mines and training sites. Every new carrier also need "
@@ -2468,7 +2554,7 @@ msgstr ""
 "Lastendrager bruukt ok een Mahl, ehr he up eener Straat warken kann."
 
 #. TRANSLATORS: Note helptext for a Sumatran ware: Meal
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:269
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:270
 msgctxt "sumatran_ware"
 msgid ""
 "Meal is an optimal combination of several food ingredients. These are "
@@ -2480,7 +2566,7 @@ msgstr ""
 "eenigen vun deesen Bigaven bruukt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Food Waste
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:277
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:278
 msgctxt "sumatran_ware"
 msgid "You can feed food waste to your chickens and gain eggs and meat."
 msgstr ""
@@ -2488,7 +2574,7 @@ msgstr ""
 "produzeren."
 
 #. TRANSLATORS: Note helptext for a Sumatran ware: Food Waste
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:279
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:280
 msgctxt "sumatran_ware"
 msgid ""
 "Food waste is produced as a byproduct in your kitchens. Kitchens also start "
@@ -2500,7 +2586,7 @@ msgstr ""
 "se keene Maniok-Bladen of Eiers hebben un Mahltieden bruukt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Palm Wine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:287
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:288
 msgctxt "sumatran_ware"
 msgid ""
 "Palm wine is consumed together with meal in your training sites and in deep "
@@ -2511,7 +2597,7 @@ msgstr ""
 "bruken utwassen Palmbomen in de Naberskupp."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Raw Diamond
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:299
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:300
 msgctxt "sumatran_ware"
 msgid ""
 "Raw diamonds are used to produce whetstones or can be polished and used as a "
@@ -2521,7 +2607,7 @@ msgstr ""
 "slepen un as een düür Baukraam bruukt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Diamond, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:309
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:310
 msgctxt "sumatran_ware"
 msgid ""
 "Diamonds are a very precious building material. These precious stones are "
@@ -2533,13 +2619,13 @@ msgstr ""
 "pottjen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Diamond, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:311
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:312
 msgctxt "sumatran_ware"
 msgid "The production of diamonds is skipped when whetstone is needed."
 msgstr "Edelstenen worden nich produzeert, wenn Sliepstenen bruukt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:322
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:323
 msgctxt "sumatran_ware"
 msgid ""
 "While smelting metals, the fires of the sumatran furnaces are fed with coal."
@@ -2547,7 +2633,7 @@ msgstr ""
 "Dat Füür in sumatraansk Smeltwarken bi’m Smelten vun Metallen verbrannt Köhl."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Coal, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:324
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:325
 msgctxt "sumatran_ware"
 msgid ""
 "It is mined in coal mines or produced out of logs and tropical wood by a "
@@ -2557,7 +2643,7 @@ msgstr ""
 "un Regenwaldholt produzeert."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:335
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:336
 msgctxt "sumatran_ware"
 msgid "Copper ore can be smelted into copper in a furnace."
 msgstr "Koperkluut kann in eener Smelteree to Koper smelt worden."
@@ -2565,9 +2651,9 @@ msgstr "Koperkluut kann in eener Smelteree to Koper smelt worden."
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:337
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:363
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:389
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:338
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:364
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:390
 msgctxt "sumatran_ware"
 msgid "Your miners need meals and in deep mines also palm wine to produce it."
 msgstr ""
@@ -2575,7 +2661,7 @@ msgstr ""
 "um dat to produzeren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:348
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:349
 msgctxt "sumatran_ware"
 msgid ""
 "Copper is needed for armor production. It is a rare building material too."
@@ -2584,32 +2670,32 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:350
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:376
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:351
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:377
 msgctxt "sumatran_ware"
 msgid "It is produced by the furnaces."
 msgstr "’t word vun de Smeltereen produzeert."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:361
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:362
 msgctxt "ware"
 msgid "Iron ore can be smelted into iron in a furnace."
 msgstr "Iesenkluut kann in eener Smelteree to Iesen smelt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:374
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:375
 msgctxt "ware"
 msgid "Iron is needed for tool and weapon production."
 msgstr "Iesen bruukt man, um Warktüüg un Wapens to smeden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:387
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:388
 msgctxt "ware"
 msgid "Gold ore can be smelted into gold in a furnace."
 msgstr "Goldkluut kann in eener Smelteree to Gold smelt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:400
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:401
 msgctxt "ware"
 msgid ""
 "Gold is needed for armor production. It is a rare building material too."
@@ -2617,7 +2703,7 @@ msgstr ""
 "Gold bruukt man, um Wapenrocken to produzeren. ’t is ok een düür Baukraam."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:402
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:403
 msgctxt "sumatran_ware"
 msgid ""
 "Gold is the most valuable of all metals, and it is smelted out of gold ore "
@@ -2627,7 +2713,7 @@ msgstr ""
 "smelt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:416
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:417
 msgctxt "sumatran_ware"
 msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
@@ -2641,30 +2727,30 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran ware: Kitchen Tools, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Fire Tongs, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Buckets, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:418
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:453
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:466
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:479
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:492
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:505
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:419
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:454
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:467
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:480
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:493
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:506
 msgctxt "sumatran_ware"
 msgid "They are produced by tools workshops."
 msgstr "Se worden vun Warktüügsmeden produzeert."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Pick
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:429
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:430
 msgctxt "sumatran_ware"
 msgid "Picks are used by stonecutters and miners."
 msgstr "Pickhacken worden vun de Flintslagers un Bargwarkskeerls bruukt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Shovel
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:440
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:441
 msgctxt "sumatran_ware"
 msgid "The shovel is an essential tool for foresters and farmers."
 msgstr "De Schüppe is een wichtigs Warktüüg för Försters un Buren."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:451
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:452
 msgctxt "sumatran_ware"
 msgid ""
 "The hammer is the most used tool. Geologists, builders, coppersmiths, "
@@ -2674,7 +2760,7 @@ msgstr ""
 "Schippebauers un Handwarkers all bruken eenen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:464
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:465
 msgctxt "sumatran_ware"
 msgid ""
 "The machete is a tool for leaf gatherers, reedcutters and together with "
@@ -2684,19 +2770,19 @@ msgstr ""
 "Emmers ok för Wienmakers."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Kitchen Tools, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:477
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:478
 msgctxt "sumatran_ware"
 msgid "Kitchen tools are used by cooks."
 msgstr "Kochen bruuken Besteck."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Fire Tongs, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:490
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:491
 msgctxt "sumatran_ware"
 msgid "Fire tongs are the tools for smelting ores."
 msgstr "Füürtangen sünd dat Warktüüg, waar man Kluten mit smelt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Buckets, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:503
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:504
 msgctxt "sumatran_ware"
 msgid ""
 "Buckets are used by water carriers and together with a machete by wine "
@@ -2706,7 +2792,7 @@ msgstr ""
 "bruukt."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Whetstone
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:516
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:517
 msgctxt "sumatran_ware"
 msgid "Whetstones are used by craftsmen and are produced in a basic workshop."
 msgstr ""
@@ -2714,26 +2800,26 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Sheet
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:530
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:541
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:531
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:542
 msgctxt "sumatran_ware"
 msgid "Source material for armor production."
 msgstr "Quellmaterial tum Smeden vun Wapenrocken."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Spear
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:551
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:552
 msgctxt "sumatran_ware"
 msgid "Widely used weapon for hunters and warriors."
 msgstr "Vööl bruukt Wapen för Jägers un Ridders."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Jacket
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:560
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:561
 msgctxt "sumatran_ware"
 msgid "A basic piece of clothing for your warriors, hunters and chiefs."
 msgstr "Een eenfaches Kluft-Deel för diene Ridders, Jägers un Basen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Warrior's Dress
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:569
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:570
 msgctxt "sumatran_ware"
 msgid ""
 "The warriors dress is an ideal type clothing for warriors. It is produced in "
@@ -2745,7 +2831,7 @@ msgstr ""
 "um de Gesundheid vun de Ridder up de hoogste Stand to brengen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Shoes
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:578
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:579
 msgctxt "sumatran_ware"
 msgid ""
 "This shoes are produced in a sewing workshop and used in a training camp – "
@@ -2757,7 +2843,7 @@ msgstr ""
 "Bespejers dragen deese Aard vun Schoh ok."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Armor
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:587
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:588
 msgctxt "sumatran_ware"
 msgid ""
 "The copper armor is a basic defense tool for warriors. It is produced in an "
@@ -2769,7 +2855,7 @@ msgstr ""
 "un Palmwien – bruukt, um Ridders in Verteidigung uttobilden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Golden Armor
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:596
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:597
 msgctxt "sumatran_ware"
 msgid ""
 "The golden armor is an improved defense tool for warriors. It is produced in "
@@ -2781,7 +2867,7 @@ msgstr ""
 "un Palmwien – bruukt, um Ridders in Verteidigung uttobilden."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Golden Shield
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:605
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:606
 msgctxt "sumatran_ware"
 msgid ""
 "The golden shield is the most efficient defense tool for warriors. It is "
@@ -2794,174 +2880,174 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:617
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:626
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:618
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:627
 msgctxt "sumatran_worker"
 msgid "Carries items along roads."
 msgstr "Draggt Waren över Straten."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Ferry
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:633
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:634
 msgctxt "sumatran_worker"
 msgid "Ships wares across narrow rivers and straights."
 msgstr "Fährt Waren över smale Stromen un Seegaten."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Recruit
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:640
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:641
 msgctxt "sumatran_worker"
 msgid "Eager to become a soldier and defend his tribe!"
 msgstr "Will radd een Soldat worden un sien Volk verteidigen!"
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Breeder
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:647
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:648
 msgctxt "sumatran_worker"
 msgid "Breeds animals."
 msgstr "Tücht Deerten."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Scout
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:654
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:655
 msgctxt "sumatran_worker"
 msgid "Explores territory of your enemy."
 msgstr "Försket Geweste vun dienem Feind ut."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Jungle Ghost
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:661
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:662
 msgctxt "sumatran_worker"
 msgid "Gives life to the tropical animals and dwells in thermal springs."
 msgstr "Gifft Leven to de Regenwald-Deerten un leevt in de Heten Quellen."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Stonecutter
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:671
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:672
 msgctxt "sumatran_worker"
 msgid "Mines stone."
 msgstr "Boot Steen of."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Woodcutter
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:678
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:679
 msgctxt "sumatran_worker"
 msgid "Fells trees."
 msgstr "Kappt Bomen."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Forester
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:685
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:686
 msgctxt "sumatran_worker"
 msgid "Plants trees."
 msgstr "Plant Bomen."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Reedcutter
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:692
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:693
 msgctxt "sumatran_worker"
 msgid "Grows reed."
 msgstr "Plant Reit."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Leaf Gatherer
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:699
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:700
 msgctxt "sumatran_worker"
 msgid "Collects palm and cassava leaves."
 msgstr "Pottjet Bladen vun Palmen un Maniok."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Shipwright
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:706
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:707
 msgctxt "sumatran_worker"
 msgid "Works at the shipyard and constructs new ships."
 msgstr "Warkt in de Warft un baut neje Schippen."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Builder
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:713
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:714
 msgctxt "sumatran_worker"
 msgid "Works at construction sites to raise new buildings."
 msgstr "Warkt up Bausteden, um neje Husen to beschicken."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Water Carrier
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:723
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:724
 msgctxt "sumatran_worker"
 msgid "Carries water."
 msgstr "Draggt Water."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Hunter
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:732
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:733
 msgctxt "sumatran_worker"
 msgid "Produces meat and fish."
 msgstr "Produzeert Fleesk un Fiss."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Chief Hunter
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:741
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:742
 msgctxt "sumatran_worker"
 msgid "Produces meat, fish and crocodile skin."
 msgstr "Produzeert Fleesk, Fiss un Krokodilhuud."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Farmer
 #. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:748
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:755
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:749
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:756
 msgctxt "sumatran_worker"
 msgid "Grows cassava."
 msgstr "Plant Maniok."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Winemaker
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:762
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:763
 msgctxt "sumatran_worker"
 msgid "Produces palm wine."
 msgstr "Produzeert Palmwien."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Cook
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:769
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:770
 msgctxt "sumatran_worker"
 msgid "Prepares meals."
 msgstr "Maakt Mahltieden torecht."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Geologist
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:779
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:780
 msgctxt "sumatran_worker"
 msgid "Discovers resources for mining."
 msgstr "Finnt Mineraale to Ofboen."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Master Miner
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:786
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:793
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:787
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:794
 msgctxt "sumatran_worker"
 msgid "Mines ore and minerals."
 msgstr "Baut Kluten un Mineraale of."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Smelter
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:800
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:801
 msgctxt "sumatran_worker"
 msgid "Smelts ore."
 msgstr "Smelt Kluten."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Charcoal Burner
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:807
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:808
 msgctxt "sumatran_worker"
 msgid "Burns logs and wood to produce charcoal."
 msgstr "Brannt Holtköhle ut Boomstammen un Holt."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Craftsman
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:814
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:815
 msgctxt "sumatran_worker"
 msgid "Produces sanded wood, whetstones and polished diamonds."
 msgstr "Produzeert Sandtholt, Sliepstenen un slepen Edelstenen."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Experienced Craftsman
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:821
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:822
 msgctxt "sumatran_worker"
 msgid "Produces tools, weapons."
 msgstr "Produzeert Warktüüg un Wapens."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Warrior
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:833
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:834
 msgctxt "sumatran_worker"
 msgid "Defend and Conquer!"
 msgstr "Verteidigen un innehmen!"
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Chief
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:842
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:843
 msgctxt "sumatran_worker"
 msgid "Trains warriors."
 msgstr "Bildt Ridders ut."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Tribal Chief
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:851
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:852
 msgctxt "sumatran_worker"
 msgid ""
 "Trains and recruits warriors. Recruits hunters, new chiefs and carriers too."
@@ -2970,25 +3056,25 @@ msgstr ""
 "Lastendragers an."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Weaver
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:858
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:859
 msgctxt "sumatran_worker"
 msgid "Weaves cloth."
 msgstr "Weevt Stoff."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Dressmaker
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:865
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:866
 msgctxt "sumatran_worker"
 msgid "Dressmaker is an experienced weaver and produces clothing."
 msgstr "De Naihster is een Meister-Wever un produzeert Kluften."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Coppersmith
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:872
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:873
 msgctxt "sumatran_worker"
 msgid "Makes metal sheets for armor production."
 msgstr "Maakt Metallplaten för Wapenrocken."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Armorsmith
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:879
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:880
 msgctxt "sumatran_worker"
 msgid ""
 "Armorsmith is an experienced coppersmith and produces armor for training "
@@ -2999,13 +3085,13 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
 #. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:890
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:897
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:891
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:898
 msgid "The remains of a destroyed building."
 msgstr "Wat vun eenem verneelten Huus över blievt."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Palm Leaves
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:904
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:905
 msgid ""
 "Palm leaves can be picked up by a leaf gatherer and used as building "
 "material and for weaving cloth."
@@ -3014,27 +3100,27 @@ msgstr ""
 "tum Weven vun Stoff bruukt worden."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (tiny)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:911
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:912
 msgid "These cassava plants has just been planted."
 msgstr "Deese Maniokplanten sünd jüüst plant worden."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (small)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:918
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:919
 msgid "These cassava plants are growing."
 msgstr "Deese Maniokplanten wassen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (medium)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:925
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:926
 msgid "These cassava plants are flowering."
 msgstr "Deese Maniokplanten blöömen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (ripe)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:932
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:933
 msgid "These cassava plants are ready for harvesting."
 msgstr "Deese Maniokplanten sünd klaar tum arnten."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Cassava Plants (harvested)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:939
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:940
 msgid ""
 "These cassava plants has been harvested. Your leaf gatherer can pick up some "
 "cassava leaves here."
@@ -3043,42 +3129,42 @@ msgstr ""
 "Maniokbladen halen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:946
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:947
 msgid "This reed field has just been planted."
 msgstr "Deeser Reitacker is jüüst plant worden."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:953
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:954
 msgid "This reed field is growing."
 msgstr "Deeser Reitacker wasst."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:960
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:961
 msgid "This reed field is flowering."
 msgstr "Deeser Reitacker blöömt."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:967
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:968
 msgid "This reed field is ready for harvesting."
 msgstr "Deeser Reitacker is klaar tum arnten."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Rubber Tree Sapling
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:974
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:975
 msgid "This rubber tree has just been planted."
 msgstr "Deeser Gummiboom is jüüst plant worden."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Rubber Tree Pole
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:981
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:982
 msgid "This rubber tree is growing."
 msgstr "Deeser Gummiboom wasst."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Rubber Tree Mature
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:988
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:989
 msgid "This rubber tree is fully grown."
 msgstr "Deeser Gummiboom is utwassen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Rubber Tree Old
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:995
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:996
 msgid ""
 "This rubber tree is ready for harvesting tropical wood by a woodcutter. "
 "Other tribes can harvest it for normal logs or rubber."
@@ -3087,22 +3173,22 @@ msgstr ""
 "Anner Völkers könen daarut normaale Boomstammen of Gummi elasticum maken."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Dipterocarpus (Sapling)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1002
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1003
 msgid "This dipterocarpus tree has just been planted."
 msgstr "Deeser Flögelfrüchtenboom is jüüst plant worden."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Dipterocarpus (Pole)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1009
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1010
 msgid "This dipterocarpus tree is growing."
 msgstr "Deeser Flögelfrüchtenboom wasst."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Dipterocarpus (Mature)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1016
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1017
 msgid "This dipterocarpus tree is fully grown."
 msgstr "Deeser Flögelfrüchtenboom is utwassen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Dipterocarpus (Old)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1023
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1024
 msgid ""
 "This dipterocarpus tree is ready for harvesting tropical wood by a "
 "woodcutter. Other tribes can harvest it for normal logs."
@@ -3111,22 +3197,22 @@ msgstr ""
 "Boomslager. Anner Völkers könen daarut normaale Boomstammen maken."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ironwood Tree (Sapling)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1030
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1031
 msgid "This ironwood tree has just been planted."
 msgstr "Deeser Iesenholtboom is jüüst plant worden."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ironwood Tree (Pole)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1037
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1038
 msgid "This ironwood tree is growing."
 msgstr "Deeser Iesenholtboom wasst."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ironwood Tree (Mature)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1044
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1045
 msgid "This ironwood tree is fully grown."
 msgstr "Deeser Iesenholtboom is utwassen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ironwood Tree (Old)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1051
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1052
 msgid ""
 "This ironwood tree is ready for harvesting tropical wood by a woodcutter. "
 "Other tribes can harvest it for normal logs or ironwood."
@@ -3136,22 +3222,22 @@ msgstr ""
 "maken."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Balsa Tree (Sapling)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1058
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1059
 msgid "This balsa tree has just been planted."
 msgstr "Deeser Balsaboom is jüüst plant worden."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Balsa Tree (Pole)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1065
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1066
 msgid "This balsa tree is growing."
 msgstr "Deeser Balsaboom wasst."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Balsa Tree (Mature)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1072
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1073
 msgid "This balsa tree is fully grown."
 msgstr "Deeser Balsaboom is utwassen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Balsa Tree (Old)
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1079
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1080
 msgid ""
 "This balsa tree is ready for harvesting tropical wood by a woodcutter. Other "
 "tribes can harvest it for normal logs or balsa."
@@ -3160,41 +3246,41 @@ msgstr ""
 "Anner Völkers könen daarut normaale Boomstammen of Balsa maken."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: No resources
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1086
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1087
 msgid "There are no resources in the ground here."
 msgstr "Hier sünd keene Mineraale im Grund."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Water
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1093
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1094
 msgid "There is water in the ground here."
 msgstr "Hier is Water im Grund."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1101
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1145
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1102
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1146
 msgid "Coal veins contain coal that can be dug up by coal mines."
 msgstr "In Köhle-Aders is Köhl, wat vun Köhle-Bargwarken ofboot worden kann."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1103
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1104
 msgid "There is only a little bit of coal here."
 msgstr "Hier is bedröövt minn Köhl."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1112
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1156
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1113
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1157
 msgid "This vein contains iron ore that can be dug up by iron mines."
 msgstr ""
 "In deeser Ader is Iesenkluut, wat vun Iesen-Bargwarken ofboot worden kann."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1114
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1115
 msgid "There is only a little bit of iron ore here."
 msgstr "Hier is bedröövt minn Iesenkluut."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1123
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1167
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1124
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1168
 msgid ""
 "This vein contains copper-gold ore that can be dug up by copper-gold mines."
 msgstr ""
@@ -3202,13 +3288,13 @@ msgstr ""
 "worden kann."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1125
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1126
 msgid "There is only a little bit of copper-gold ore here."
 msgstr "Hier is bedröövt minn Koper-Gold-Kluut."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1134
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1178
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1135
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1179
 msgid ""
 "Stone is a basic building material and can be dug up by a stone mine. You "
 "will also get some raw diamonds from the mine."
@@ -3217,49 +3303,63 @@ msgstr ""
 "worden. Du kriggst ok ruge Edelstenen ut de Bargwark."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1136
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1137
 msgid "There is only a little bit of stone and diamonds here."
 msgstr "Hier sünd bedröövt minn Steen un Edelstenen."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1147
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1148
 msgid "There is a lot of coal here."
 msgstr "Hier is een Bült vun Köhl."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1158
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1159
 msgid "There is a lot of iron ore here."
 msgstr "Hier is een Bült vun Iesenkluut."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1169
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1170
 msgid "There is a lot of copper-gold ore here."
 msgstr "Hier is een Bült vun Koper-Gold-Kluut."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1180
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1181
 msgid "There is a lot of stone and diamonds here."
 msgstr "Hier is een Bült vun Steen un Edelstenen."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ship Under Construction
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1188
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1189
 msgid "A ship is being constructed at this site."
 msgstr "Up deeser Stee word een Schipp baut."
 
+#. TRANSLATORS: Lore helptext for a Sumatran production site: Headquarters
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1201
+msgctxt "sumatran_building"
+msgid ""
+"Oh, you brave northern star, you are protecting and watching over all of our "
+"buildings. All other stars come and go, but you never leave your place."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for a Sumatran production site: Headquarters
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1203
+msgctxt "sumatran_building"
+msgid "Part of tribal equinox prayer"
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran warehouse: Headquarters
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1200
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1205
 msgctxt "sumatran_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr "Brengt diene Lüü unner un verwahrt diene Waren un anner Kraam."
 
 #. TRANSLATORS: Note helptext for a Sumatran warehouse: Headquarters
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1202
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1207
 msgctxt "sumatran_building"
 msgid "The headquarters is your main building."
 msgstr "Dat Raadhuus is dien wichtigstes Huus."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran warehouse: Warehouse
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1209
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1214
 msgctxt "sumatran_building"
 msgid ""
 "Your workers and warriors will find shelter here. Also stores your wares and "
@@ -3268,7 +3368,7 @@ msgstr ""
 "Brengt diene Lüü un Ridders unner un verwahrt diene Waren un anner Kraam."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran warehouse: Port
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1216
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1221
 msgctxt "sumatran_building"
 msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
@@ -3278,7 +3378,7 @@ msgstr ""
 "Ridders unner un verwahrt diene Waren un anner Kraam."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Woodcutter’s House
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1225
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1230
 msgctxt "sumatran_building"
 msgid ""
 "Fells trees in the surrounding area and processes them into logs or tropical "
@@ -3287,7 +3387,7 @@ msgstr ""
 "Kappt Bomen in de Naberskupp un maakt daarut Boomstammen of Regenwaldholt."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Woodcutter’s House
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1227
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1232
 msgctxt "sumatran_building"
 msgid ""
 "The woodcutter recognizes 3 types of trees. Tropical trees (ironwood, balsa "
@@ -3304,14 +3404,69 @@ msgstr ""
 "Boomslager nich Regenwaldbomen un ok Palmbomen ofslaan kann, kann de Wöörde "
 "vum Huus runnergahn."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1235
+msgctxt "sumatran_building"
+msgid ""
+"The woodcutter can produce one log between %1$s and %2$s on average, "
+"depending on how far he has to walk and how many tree types are available. "
+"If there is only one type of trees, if there are two types or tree types, he "
+"needs %3$s, %4$s or %5$s on average to cut down one tree respectively."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s Tent, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Winery, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Shipyard, part 2
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1237
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1256
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1271
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1286
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1301
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1316
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1331
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1346
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1380
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1437
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1647
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1722
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1735
+#, fuzzy
+msgctxt "sumatran_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
+
+#. TRANSLATORS: Lore helptext for a Sumatran production site: Palm Planter’s Hut
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1245
+msgctxt "sumatran_building"
+msgid ""
+"The old legends say that long time ago our tribe lived in a place where only "
+"palm trees were growing. Without palm trees we could never call this place "
+"our home, they have an irreplaceable place in our culture and economy."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for a Sumatran production site: Palm Planter’s Hut
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1247
+msgctxt "sumatran_building"
+msgid "Explanation why foresters living in this houses plant palm trees only"
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Palm Planter’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1234
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1249
 msgctxt "sumatran_building"
 msgid "Plants palm trees in the surrounding area."
 msgstr "Plant Palmen in de Naberskupp."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Palm Planter’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1236
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1251
 msgctxt "sumatran_building"
 msgid ""
 "You need palm trees for logs, palm wine production and palm leaves, which "
@@ -3321,14 +3476,22 @@ msgstr ""
 "Palmwedels, wat vun de Bladenpottjer sammelt worden, wenn een Palmboom "
 "ofkappt word."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1254
+msgctxt "sumatran_building"
+msgid ""
+"The forester plants one palm tree between %1$s and %2$s on average, "
+"depending on how far he has to walk."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Preserver’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1243
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1264
 msgctxt "sumatran_building"
 msgid "Plants tropical trees in the surrounding area."
 msgstr "Plant Regenwaldbomen in de Naberskupp."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Jungle Preserver’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1245
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1266
 msgctxt "sumatran_building"
 msgid ""
 "The tropical trees are source of tropical wood, which is an important "
@@ -3337,26 +3500,42 @@ msgstr ""
 "De Regenwaldbomen sünd de Quell vun Regenwaldholt, wat een wichtig Baukraam "
 "is."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1269
+msgctxt "sumatran_building"
+msgid ""
+"The forester plants one tree between %1$s and %2$s on average, depending on "
+"how far he has to walk."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stonecutter’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1252
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1279
 msgctxt "sumatran_building"
 msgid "Cuts raw pieces of stone out of rocks in the vicinity."
 msgstr "Sleit rugen Steen ut Stenen in de Naberskupp."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Stonecutter’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1254
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1281
 msgctxt "sumatran_building"
 msgid "The stonecutter needs rocks to cut within the work area."
 msgstr "De Flintslager bruukt Stenen tum Slaan in de Arbeidsgewest."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1284
+msgctxt "sumatran_building"
+msgid ""
+"The stonecutter can produce one block of stone between %1$s and %2$s on "
+"average, depending on how far he has to walk."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Water Carrier’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1261
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1294
 msgctxt "sumatran_building"
 msgid "Draws water out of the rivers and lakes."
 msgstr "Hisst Water ut de Stromen un Meren."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Water Carrier’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1263
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1296
 msgctxt "sumatran_building"
 msgid ""
 "Water carriers cannot dig up water from the ground. Roads and trees along "
@@ -3365,8 +3544,16 @@ msgstr ""
 "Waterdragers könen Water nich ut de Eer graven. Straten un Bomen langs de "
 "Küst hinnern dat Hissen vun Water."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1299
+msgctxt "sumatran_building"
+msgid ""
+"The carrier can produce one bucket of water between %1$s and %2$s on "
+"average, depending on how far he has to walk."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Leaf Gatherer’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1270
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1309
 msgctxt "sumatran_building"
 msgid ""
 "Gathers cassava leaves left by farmers and palm leaves left by woodcutters."
@@ -3375,7 +3562,7 @@ msgstr ""
 "vun Boomslagers torügglaten worden."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Leaf Gatherer’s Hut
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1272
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1311
 msgctxt "sumatran_building"
 msgid ""
 "Both cassava and palm leaves are important wares for your economy and "
@@ -3384,14 +3571,22 @@ msgstr ""
 "Maniok-Bladen un Palmwedels sünd beide wichtig Waren för diene Weertskupp. "
 "Wenn se hapern, kriggst du Problemen."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1314
+msgctxt "sumatran_building"
+msgid ""
+"The leaf gatherer can produce one bundle of leaves between %1$s and %2$s on "
+"average, depending on how far she has to walk."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s Tent
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1279
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1324
 msgctxt "building"
 msgid "Hunts animals to produce meat and catches fishes in the waters."
 msgstr "Jaggt Deerten, um Fleesk to produzeren, un fangt Fisse im Water."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s Tent
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1281
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1326
 msgctxt "sumatran_building"
 msgid ""
 "The building has 3 different working areas. Smallest for fishing, larger for "
@@ -3401,8 +3596,18 @@ msgstr ""
 "grotere tum Jagen un dat grootste word vun de Arbeider in deeser Aard vun "
 "Huus nich bruukt."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s Tent, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1329
+msgctxt "sumatran_building"
+msgid ""
+"If the hunter has both game and fishes in his working area, he needs %1$s to "
+"hunt two animals and to catch one fish on average. If there is only one food "
+"source available, he needs %2$s to hunt one animal or %3$s to catch one fish "
+"on average."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s House
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1288
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1339
 msgctxt "building"
 msgid ""
 "Hunts animals to produce meat and catches fishes in the waters. Hunters in "
@@ -3412,7 +3617,7 @@ msgstr ""
 "deesem Huus könen ok Krokodilen för hör Huud un Fleesk jagen."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s House
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1290
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1341
 msgctxt "sumatran_building"
 msgid ""
 "The building has 2 different working areas. Smaller for fishing and the "
@@ -3421,8 +3626,20 @@ msgstr ""
 "Dat Huus hett 2 verschedene Arbeidsgeweste. Dat lütte is tum Fisken un dat "
 "grote tum Jagen."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s House, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1344
+msgctxt "sumatran_building"
+msgid ""
+"If the hunter has game, crocodiles and fishes in his working area, he needs "
+"%1$s to hunt one animal, one crocodile and to catch one fish on average. If "
+"there are only two food sources available, he needs %2$s to hunt one animal "
+"and one crocodile or %3$s to hunt one animal or crocodile and to catch one "
+"fish on average.If there is only one food source available, he needs %4$s to "
+"hunt one animal or one crocodile and %5$s to catch one fish on average."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1297
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1354
 msgctxt "sumatran_building"
 msgid ""
 "Thermal springs make terrain more favorable for tropical trees. This is "
@@ -3436,47 +3653,70 @@ msgstr ""
 "vun Landskuppen umwannelt worden."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1299
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1356
 msgctxt "sumatran_building"
 msgid "Thermal springs need maintenance. That costs you logs, stone and water."
 msgstr ""
 "Hete Quellen mutten alltieden utbetert worden. Dat köst di Boomstammen, "
 "Steen un Water."
 
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1357
+msgctxt "sumatran_building"
+msgid ""
+"The building needs aproximately %1% to improve fertility of every field in "
+"its working area. By doing that it will consume aproximately %2% logs, %3% "
+"buckets of water and %4% blocks of stone."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Scout’s Dwelling
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1306
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1364
 msgctxt "building"
 msgid "Explores unknown territory."
 msgstr "Förskt frömde Geweste ut."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Reed Yard
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1315
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1373
 msgctxt "sumatran_building"
 msgid "Produces reed."
 msgstr "Produzeert Reit."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
 #. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1317
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1628
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1375
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1717
 msgctxt "sumatran_building"
 msgid "Needs water nearby."
 msgstr "Bruukt Water in de Naberskupp."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1378
+msgctxt "sumatran_building"
+msgid ""
+"The reedcutter can produce one bundle of reed between %1$s and %2$s on "
+"average, depending on how far he has to walk."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Basic Workshop
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1324
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1388
 msgctxt "sumatran_building"
 msgid "Produces sandedwood, diamonds and whetstones."
 msgstr "Produzeert Sandtholt, Edelstenen un Sliepstenen."
 
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1389
+msgctxt "sumatran_building"
+msgid ""
+"The craftsman needs %1% to produce sanded wood, %2% to polish one diamond or "
+"%3% to produce whetstones."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tools Workshop
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1331
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1396
 msgctxt "sumatran_building"
 msgid "Forges the tools that your workers need."
 msgstr "Smeedt dat Warktüüg, wat diene Arbeiders bruken."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Tools Workshop
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1333
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1398
 msgctxt "sumatran_building"
 msgid ""
 "Notice that the building needs an experienced worker. If you don’t have any, "
@@ -3487,70 +3727,85 @@ msgstr ""
 "mutt dien Arbeider eerst Erfahrung sammeln, indeem he eenige Tied in eener "
 "Lütten Smee warkt."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1334
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1399
 msgctxt "sumatran_building"
 msgid "The experienced craftsman needs %1% on average to make one tool."
 msgstr "De Meister-Handwarker bruukt dör de Bank %1% um een Warktüüg to maken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Weapons Workshop
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1341
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1406
 msgctxt "sumatran_building"
 msgid "Produces spears for hunters, warriors and hunting camps."
 msgstr "Produzeert Pieken för Jägers, Ridders un Jaggtlagers."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1342
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1407
 msgctxt "sumatran_building"
 msgid "The experienced craftsman needs %1% on average to make one spear."
 msgstr "De Meister-Handwarker bruukt dör de Bank %1% um eene Pieke to maken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Coppersmith’s House
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1349
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1414
 msgctxt "sumatran_building"
 msgid "Produces copper sheets and gold sheets."
 msgstr "Produzeert Koperplaten un Goldplaten."
 
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1415
+msgctxt "sumatran_building"
+msgid ""
+"The coppersmith needs %1% to produce one copper sheet or %2% to produce one "
+"gold sheet."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Armorsmithy
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1356
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1422
 msgctxt "sumatran_building"
 msgid "Produces shields and armor."
 msgstr "Produzeert Schilden un Wapenrocken."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1357
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1423
 msgctxt "sumatran_building"
 msgid "The armorsmith needs %1% on average to make one piece of armor."
 msgstr "De Rüstsmidd bruukt dör de Bank %1% um eenen Wapenrock to maken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Winery
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1364
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1430
 msgctxt "sumatran_building"
 msgid "Produces palm wine."
 msgstr "Produzeert Palmwien."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Winery
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1366
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1432
 msgctxt "sumatran_building"
 msgid "The worker needs old palms around his house."
 msgstr "De Arbeider bruukt olle Palmen um sien Huus."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Winery, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1435
+msgctxt "sumatran_building"
+msgid ""
+"The winemaker can produce one bucket of wine between %1$s and %2$s on "
+"average, depending on how far she has to walk."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Kitchen
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1373
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1445
 msgctxt "sumatran_building"
 msgid "Produces starch."
 msgstr "Produzeert Starkde."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1374
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1446
 msgctxt "sumatran_building"
 msgid "The cook needs %1% on average to cook 3 portions of starch."
 msgstr "De Koch bruukt dör de Bank %1% um 3 Portionen Starkde to koken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Kitchen
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1381
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1453
 msgctxt "sumatran_building"
 msgid "Produces meal."
 msgstr "Produzeert Mahltieden."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Kitchen
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1383
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1455
 msgctxt "sumatran_building"
 msgid ""
 "Make sure you have cassava leaves or eggs on stock while meal is needed. "
@@ -3561,7 +3816,7 @@ msgstr ""
 "nödig sünd. Sünst word dien Koch begünnen, Starkde as Spiesenoffall för "
 "diene Hennentüchtereen ruttosmieten."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1384
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1456
 msgctxt "sumatran_building"
 msgid ""
 "The cook needs %1% on average to prepare two meals. If there is not enough "
@@ -3573,50 +3828,72 @@ msgstr ""
 "Tied 2 Büdels Spiesenoffall rut."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Sewing Workshop
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1391
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1463
 msgctxt "sumatran_building"
 msgid "Produces clothing."
 msgstr "Produzeert Kluften."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1392
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1464
+#, fuzzy
 msgctxt "sumatran_building"
-msgid "The dressmaker needs %1% on average to sew one piece of clothing."
+msgid "The dressmaker needs %1% to sew one piece of clothing."
 msgstr "De Naihster bruukt dör de Bank %1% um eene Kluft to naihen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Furnace
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1399
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1471
 msgctxt "sumatran_building"
 msgid "Smelts ore into iron, copper and gold."
 msgstr "Smelt Kluten to Iesen, Koper un Gold."
 
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1472
+msgctxt "sumatran_building"
+msgid ""
+"The smelter needs %1% to produce one iron ingot, %2% to produce one copper "
+"ingot or %3% to produce one gold bar."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Charcoal Kiln
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1406
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1479
 msgctxt "sumatran_building"
 msgid "Burns logs into charcoal."
 msgstr "Brannt Holtköhle ut Boomstammen."
 
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1480
+#, fuzzy
+msgctxt "sumatran_building"
+msgid "The charcoal burner needs %1% to produce one lump of coal."
+msgstr ""
+"De Bargwarkskeerl bruukt dör de Bank %1% um een Deel Kluut to produzeren."
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1414
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1488
 msgctxt "sumatran_building"
 msgid "Recruits warriors, hunters, chiefs and carriers."
 msgstr "Hüürt Ridders, Jägers, Basen un Lastendragers an."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1416
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1490
 msgctxt "sumatran_building"
 msgid "Equips the recruits with all necessary weapons and clothing."
 msgstr "Rüst de Lehrwichters mit all nödigen Wapen un Kluften ut."
 
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1492
+msgctxt "sumatran_building"
+msgid ""
+"The tribal chief needs %1% to recriut one soldier, to train one hunter or a "
+"new chief and %2% to gain one carrier."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1426
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1436
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1501
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1511
 msgctxt "sumatran_building"
 msgid "Grows cassava for roots and leaves."
 msgstr "Plant Maniok för Wuddels un Bladen."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Cassava Fields
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1428
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1503
 msgctxt "sumatran_building"
 msgid ""
 "The farmer harvest one cassava root from every field. The remained leaves "
@@ -3625,7 +3902,7 @@ msgstr ""
 "De Buur kann vun elkeen Acker eene Maniok-Wuddel arnten. De överblieven "
 "Bladen könen vun eenem Bladenpottjer arnt worden."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1429
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1504
 msgctxt "sumatran_building"
 msgid ""
 "The inexperienced resp. experienced farmer needs %1% resp. %2% on average to "
@@ -3635,7 +3912,7 @@ msgstr ""
 "eene Maniok-Wuddel to produzeren."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Cassava Plantation
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1438
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1513
 msgctxt "sumatran_building"
 msgid ""
 "Thanks to watering, the farmer harvests two roots from every field. "
@@ -3646,19 +3923,19 @@ msgstr ""
 "Tahl vun Bladen ännert sik leider nich un de Bladenpottjer kann blots een "
 "Bünsel Bladen vun elkeen arnt Feld sammeln."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1439
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1514
 msgctxt "sumatran_building"
 msgid "The farmer needs %1% on average to produce one cassava root."
 msgstr "De Buur bruukt dör de Bank %1% um eene Maniok-Wuddel to produzeren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Chicken Farm
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1446
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1521
 msgctxt "sumatran_building"
 msgid "Breeds chickens for eggs and meat."
 msgstr "Tücht Hennen för Eier un Fleesk."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Chicken Farm
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1448
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1523
 msgctxt "sumatran_building"
 msgid ""
 "The production of eggs is divided into two cycles. In first one only eggs "
@@ -3667,25 +3944,25 @@ msgstr ""
 "Dat Produzeren vun Eiers word in twee Delen updeelt. Toeerst worden blots "
 "Eier produzeert, daarna kriggst du Eier un Fleesk."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1449
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1524
 msgctxt "sumatran_building"
 msgid "The breeder needs %1% on average to produce one basket of eggs or meat."
 msgstr ""
 "De Tüchter bruukt dör de Bank %1% um eenen Körv Eier of Fleesk to produzeren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Weaving Mill
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1456
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1531
 msgctxt "sumatran_building"
 msgid "Weaves cloth out of reed and palm leaves."
 msgstr "Weevt Stoff ut Reit un Palmwedels."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1457
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1532
 msgctxt "sumatran_building"
 msgid "The weaver needs %1% on average to make one piece of cloth."
 msgstr "De Wever bruukt dör de Bank %1% um een Deel Stoff to maken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Marsh
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1464
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1539
 msgctxt "sumatran_building"
 msgid ""
 "Home of tropical animals. Source of meat and crocodile skin for your hunters."
@@ -3694,7 +3971,7 @@ msgstr ""
 "Jägers."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Jungle Marsh
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1466
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1541
 msgctxt "sumatran_building"
 msgid ""
 "If animals don’t leave a marsh, you have probably built too many roads "
@@ -3705,19 +3982,19 @@ msgstr ""
 "Fenne baut. Straten verhinnern, dat de Deerten se verlaten könen. Vun elkeen "
 "4 Deerten, wat de Fenne verlaten, is eens een Krokodil."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1467
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1542
 msgctxt "sumatran_building"
 msgid "There is one animal leaving the marsh in %1% on average."
 msgstr "Dör de Bank verlett all %1% een Deert de Fenn."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Coal Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1476
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1551
 msgctxt "sumatran_building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr "Grafft in Bargen Köhle ut de Grund."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Coal Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1478
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1553
 msgctxt "sumatran_building"
 msgid ""
 "This mine can’t be enhanced. You can use it as an alternative to your "
@@ -3727,9 +4004,9 @@ msgstr ""
 "Holtköhl-Brannereen bruken, wenn du genoog Mahltieden of nich genoog Holt "
 "hest."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1479
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1489
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1509
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1554
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1564
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1584
 msgctxt "sumatran_building"
 msgid "The miner needs %1% on average to produce one piece of ore."
 msgstr ""
@@ -3737,14 +4014,14 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1486
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1496
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1561
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1571
 msgctxt "sumatran_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr "Grafft in Bargen Iesenkluut ut de Grund."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Iron Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1488
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1563
 msgctxt "sumatran_building"
 msgid ""
 "In comparison to a deep mine, production of this mine is quicker but more "
@@ -3754,7 +4031,7 @@ msgstr ""
 "dürer."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Iron Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1498
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1573
 msgctxt "sumatran_building"
 msgid ""
 "In comparison to a basic mine, production of this mine is slower but cheaper."
@@ -3762,8 +4039,8 @@ msgstr ""
 "Im Vergliek mit eenem normaalen Bargwark produzeert deeses Bargwark "
 "langsaamer, aver billiger."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1499
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1519
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1574
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1594
 msgctxt "sumatran_building"
 msgid "The miners need %1% on average to produce one piece of ore."
 msgstr ""
@@ -3771,14 +4048,14 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1506
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1516
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1581
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1591
 msgctxt "sumatran_building"
 msgid "Digs copper ore and gold ore out of the ground in mountain terrain."
 msgstr "Grafft in Bargen Koperkluut un Goldkluut ut de Grund."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Copper-Gold Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1508
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1583
 msgctxt "sumatran_building"
 msgid ""
 "In comparison to a deep mine, production of this mine is quicker but more "
@@ -3790,7 +4067,7 @@ msgstr ""
 "Goldkluut produzeren, wenn Goldkluut bruukt word."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Copper-Gold Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1518
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1593
 msgctxt "sumatran_building"
 msgid ""
 "In comparison to a basic mine, production of this mine is slower but "
@@ -3805,14 +4082,14 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1526
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1536
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1601
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1611
 msgctxt "sumatran_building"
 msgid "Digs raw diamonds and stone out of the ground in mountain terrain."
 msgstr "Grafft in Bargen ruge Edelstenen un Steen ut de Grund."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Stone Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1528
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1603
 msgctxt "sumatran_building"
 msgid ""
 "In comparison to a deep mine, production of this mine is quicker but more "
@@ -3823,7 +4100,7 @@ msgstr ""
 "dürer. Dat Bargwark hett twee Warkwiesen; wenn de Weertskupp keene rugen "
 "Edelstenen bruukt, doon sik de Bargwarkskeerls nich um, welke to söken."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1529
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1604
 msgctxt "sumatran_building"
 msgid ""
 "The miner needs %1% on average to produce one piece of stone or raw diamond."
@@ -3832,7 +4109,7 @@ msgstr ""
 "Edelsteen to produzeren."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Stone Mine
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1538
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1613
 msgctxt "sumatran_building"
 msgid ""
 "In comparison to a basic mine, production of this mine is slower. The mine "
@@ -3844,7 +4121,7 @@ msgstr ""
 "Weertskupp keene rugen Edelstenen bruukt, doon sik de Bargwarkskeerls nich "
 "um, welke to söken."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1539
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1614
 msgctxt "sumatran_building"
 msgid ""
 "The miners need %1% on average to produce one piece of stone or raw diamond."
@@ -3853,25 +4130,41 @@ msgstr ""
 "Edelsteen to produzeren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Training Camp, part 1
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1549
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1624
 msgctxt "sumatran_building"
 msgid "Trains warriors in ‘Evade’, ‘Defense’ and ‘Health’."
 msgstr "Lehrt Ridders »Utwieken«, »Verteidigung« un »Gesundheid«."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Training Camp, part 2
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1551
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1626
 msgctxt "sumatran_building"
 msgid "Equips the warriors with all necessary armor parts and weapons."
 msgstr "Rüst de Ridders mit all nödigen Wapen un Wapenrocken ut."
 
+#. TRANSLATORS: Performance helptext for a Sumatran training site: Training Camp, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1630
+#, lua-format
+msgctxt "sumatran_building"
+msgid ""
+"If all needed wares are delivered in time, a training camp can train one "
+"soldier one level in evade, defense or health in %s."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Sumatran training site: Training Camp, part 2
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1632
+#, lua-format
+msgctxt "sumatran_building"
+msgid "Complete training of one soldier takes %s."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Hunting Camp
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1559
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1640
 msgctxt "sumatran_building"
 msgid "Trains warriors in ‘Attack’."
 msgstr "Lehrt Ridders »Angriff«."
 
 #. TRANSLATORS: Note helptext for a Sumatran training site: Hunting Camp
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1561
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1642
 msgctxt "sumatran_building"
 msgid ""
 "The warriors improve their attack abilities by hunting crocodiles. Make sure "
@@ -3880,18 +4173,34 @@ msgstr ""
 "De Ridders verbetern hör Angriffs-Vermögen, indeem se Krokodilen jagen. Wees "
 "wiss, dat dat genoog Urwald-Fennen um dat Huus gifft."
 
+#. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1645
+msgctxt "sumatran_building"
+msgid ""
+"If all needed wares are delivered in time, a hunting camp needs between %1$s "
+"and %2$s to train one soldier one level in attack, depending on how far the "
+"hunter has to walk."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 3
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1649
+#, lua-format
+msgctxt "sumatran_building"
+msgid "Complete training of one soldier takes %s on average."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Guard Post
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Small Sentry
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Big Sentry
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Watchtower
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Fortified Tower
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Fort
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1570
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1579
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1588
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1597
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1606
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1615
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1659
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1668
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1677
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1686
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1695
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1704
 msgctxt "sumatran_building"
 msgid "Garrisons warriors to expand your territory."
 msgstr "Brengt Ridders unner, um dien Gewest to vergrotern."
@@ -3901,11 +4210,11 @@ msgstr "Brengt Ridders unner, um dien Gewest to vergrotern."
 #. TRANSLATORS: Note helptext for a Sumatran military site: Big Sentry
 #. TRANSLATORS: Note helptext for a Sumatran military site: Watchtower
 #. TRANSLATORS: Note helptext for a Sumatran military site: Fort
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1572
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1581
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1590
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1599
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1617
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1661
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1670
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1679
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1688
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1706
 msgctxt "sumatran_building"
 msgid ""
 "If you’re low on warriors to occupy new military sites, use the downward "
@@ -3917,7 +4226,7 @@ msgstr ""
 "eenen Ridder anklicken, um hüm wegtostüren."
 
 #. TRANSLATORS: Note helptext for a Sumatran military site: Fortified Tower
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1608
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1697
 msgctxt "sumatran_building"
 msgid ""
 "This building can be built by enhancing a watchtower or big sentry. "
@@ -3929,13 +4238,21 @@ msgstr ""
 "eenen Boomstamm un een Reit mehr, aver daarför spaarst du een Deel Steen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Ferry Yard
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1626
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1715
 msgctxt "sumatran_building"
 msgid "Builds ferries."
 msgstr "Baut Fähren."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1720
+msgctxt "sumatran_building"
+msgid ""
+"The shipwright can produce one ferry between %1$s and %2$s, depending on how "
+"far he has to walk."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Shipyard
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1635
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1730
 msgctxt "sumatran_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
@@ -3944,38 +4261,46 @@ msgstr ""
 "Baut Schippen, de för tum Gründen vun nejen Dörpen un tum Schippern vun "
 "Waren tüsken Muden bruukt worden."
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Shipyard, part 1
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1733
+msgctxt "sumatran_building"
+msgid ""
+"The shipwright can produce one ship between %1$s and %2$s, depending on how "
+"far he has to walk."
+msgstr ""
+
 #. TRANSLATORS: Lore helptext for a Sumatran building: Construction Site
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1644
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1745
 msgctxt "sumatran_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr "»Schimp nich tegen de Baukeerl, well keen Baukraam hett.«"
 
 #. TRANSLATORS: Lore author helptext for a Sumatran building: Construction Site
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1646
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1747
 msgctxt "sumatran_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr "Seggwies, wat över all Aarden vun unmögelken Upgaven seggt word"
 
 #. TRANSLATORS: Purpose helptext for a Sumatran building: Construction Site
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1648
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1749
 msgctxt "sumatran_building"
 msgid "A new building is being built at this construction site."
 msgstr "An deeser Baustee word een nejes Huus baut."
 
 #. TRANSLATORS: Lore helptext for a Sumatran building: Dismantle Site
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1655
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1756
 msgctxt "sumatran_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr "»Neje Padden kummen ut, wenn du de ollen ok mal plattrietst.«"
 
 #. TRANSLATORS: Lore author helptext for a Sumatran building: Dismantle Site
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1657
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1758
 msgctxt "sumatran_building"
 msgid "Proverb"
 msgstr "Seggwies"
 
 #. TRANSLATORS: Purpose helptext for a Sumatran building: Dismantle Site
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1659
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1760
 msgctxt "sumatran_building"
 msgid ""
 "A building is being dismantled at this dismantle site, returning some of the "
@@ -3985,164 +4310,164 @@ msgstr ""
 "Hier word een Huus plattreten, um eenige Waren torüggtokriegen, de tum Bauen "
 "verwendt wurren."
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1698
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1765
 msgctxt "warehousename"
 msgid "Arigas"
 msgstr "Arigas"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1699
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1766
 msgctxt "warehousename"
 msgid "Soufou"
 msgstr "Soufou"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1700
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1767
 msgctxt "warehousename"
 msgid "Batang"
 msgstr "Batang"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1701
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1768
 msgctxt "warehousename"
 msgid "Priama"
 msgstr "Priama"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1702
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1769
 msgctxt "warehousename"
 msgid "Ticou"
 msgstr "Ticou"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1703
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1770
 msgctxt "warehousename"
 msgid "Padang"
 msgstr "Padang"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1704
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1771
 msgctxt "warehousename"
 msgid "Menincabo"
 msgstr "Menincabo"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1705
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1772
 msgctxt "warehousename"
 msgid "Indrapoura"
 msgstr "Indrapoura"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1706
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1773
 msgctxt "warehousename"
 msgid "Mocomo"
 msgstr "Mocomo"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1707
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1774
 msgctxt "warehousename"
 msgid "Bancoulo"
 msgstr "Bancoulo"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1708
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1775
 msgctxt "warehousename"
 msgid "Panarikan"
 msgstr "Panarikan"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1709
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1776
 msgctxt "warehousename"
 msgid "Sillebar"
 msgstr "Sillebar"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1710
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1777
 msgctxt "warehousename"
 msgid "Lampan"
 msgstr "Lampan"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1711
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1778
 msgctxt "warehousename"
 msgid "Dampin"
 msgstr "Dampin"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1712
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1779
 msgctxt "warehousename"
 msgid "Goudan"
 msgstr "Goudan"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1713
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1780
 msgctxt "warehousename"
 msgid "Palimban"
 msgstr "Palimban"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1714
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1781
 msgctxt "warehousename"
 msgid "Baros"
 msgstr "Baros"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1715
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1782
 msgctxt "warehousename"
 msgid "Jambi"
 msgstr "Jambi"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1716
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1783
 msgctxt "warehousename"
 msgid "Campfer"
 msgstr "Campfer"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1717
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1784
 msgctxt "warehousename"
 msgid "Aru"
 msgstr "Aru"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1718
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1785
 msgctxt "warehousename"
 msgid "Bancalo"
 msgstr "Bancalo"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1719
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1786
 msgctxt "warehousename"
 msgid "Dilly"
 msgstr "Dilly"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1720
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1787
 msgctxt "warehousename"
 msgid "Garo"
 msgstr "Garo"
 
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1721
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1788
 msgctxt "warehousename"
 msgid "Achem"
 msgstr "Achem"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is 1 worker missing
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1726
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1793
 msgctxt "sumatrans"
 msgid "Worker missing"
 msgstr "Arbeider föhlt"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is 1 worker coming
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1728
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1795
 msgctxt "sumatrans"
 msgid "Worker is coming"
 msgstr "Arbeider kummt"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1730
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1797
 msgctxt "sumatrans"
 msgid "Workers missing"
 msgstr "Arbeiders föhlen"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1732
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1799
 msgctxt "sumatrans"
 msgid "Workers are coming"
 msgstr "Arbeiders kummen"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is 1 experienced worker missing
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1734
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1801
 msgctxt "sumatrans"
 msgid "Expert missing"
 msgstr "Meister föhlt"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1736
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1803
 msgctxt "sumatrans"
 msgid "Experts missing"
 msgstr "Meisters föhlen"
 
 #. TRANSLATORS: %1% is the number of sumatran warriors the plural refers to. %2% is the maximum number of warrior slots in the building.
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1750
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1817
 msgctxt "sumatran_soldier"
 msgid "%1% warrior (+%2%)"
 msgid_plural "%1% warriors (+%2%)"
@@ -4150,7 +4475,7 @@ msgstr[0] "%1% Ridder (+%2%)"
 msgstr[1] "%1% Ridders (+%2%)"
 
 #. TRANSLATORS: Number of sumatran warriors stationed at a militarysite.
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1752
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1819
 msgctxt "sumatran_soldier"
 msgid "%1% warrior"
 msgid_plural "%1% warriors"
@@ -4158,7 +4483,7 @@ msgstr[0] "%1% Ridder"
 msgstr[1] "%1% Ridders"
 
 #. TRANSLATORS: %1% is the number of sumatran warriors the plural refers to. %2% are currently open warrior slots in the building. %3% is the maximum number of warrior slots in the building
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1754
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1821
 msgctxt "sumatran_soldier"
 msgid "%1%(+%2%) warrior (+%3%)"
 msgid_plural "%1%(+%2%) warriors (+%3%)"
@@ -4166,7 +4491,7 @@ msgstr[0] "%1%(+%2%) Ridder (+%3%)"
 msgstr[1] "%1%(+%2%) Ridders (+%3%)"
 
 #. TRANSLATORS: %1% is the number of sumatran warriors the plural refers to. %2% are currently open warrior slots in the building.
-#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1756
+#: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1823
 msgctxt "sumatran_soldier"
 msgid "%1%(+%2%) warrior"
 msgid_plural "%1%(+%2%) warriors"

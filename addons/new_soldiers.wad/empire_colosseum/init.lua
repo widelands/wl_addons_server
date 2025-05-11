@@ -9,6 +9,25 @@ wl.Descriptions():new_trainingsite_type {
    icon = dirname .. "menu.png",
    size = "big",
 
+   buildcost = {
+      log = 2,
+      granite = 8,
+      marble = 8, -- 9
+      planks = 6, -- 7
+      marble_column = 6,
+      cloth = 2,
+      gold = 4,
+   },
+   return_on_dismantle = {
+      log = 1,
+      granite = 5,
+      marble = 4, -- 5
+      planks = 3,
+      marble_column = 3,
+      gold = 2,
+   },
+
+
    animation_directory = dirname,
    spritesheets = {
       idle = {
@@ -20,12 +39,12 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    aihints = {
---      trainingsites_max_percent = 40,
-      prohibited_till = 1200,
-      basic_amount = 1,
-      very_weak_ai_limit = 1,
-      weak_ai_limit = 2,
-      normal_ai_limit = 2
+      trainingsites_max_percent = 40,
+      prohibited_till = 900,
+      forced_after = 3900,
+      basic_amount = 2,
+      very_weak_ai_limit = 2,
+--      weak_ai_limit = 2,
    },
 
    working_positions = {

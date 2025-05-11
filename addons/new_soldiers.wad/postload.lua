@@ -16,7 +16,7 @@ end
 -----------------------
 
 wl.Descriptions():modify_unit("tribe", "empire", "add_ware", "shield_wooden", 4, 5, 1, { helptexts = { purpose =
-                  _"This shiel is udsed for defense training."
+                  _"This shield is used for defense training."
                }})
 
 wl.Descriptions():modify_unit("productionsite", "empire_weaponsmithy", "programs", "set", "produce_shield_wooden", {

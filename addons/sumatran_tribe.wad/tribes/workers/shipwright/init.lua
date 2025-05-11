@@ -28,9 +28,12 @@ wl.Descriptions():new_worker_type {
             "findspace=size:swim radius:6",
         },
         buildferry_2 = {
+            -- steps from building to water: 2-9
+            -- min. worker time: 2 * 2 * 1.8 + 9 = 16.2 sec
+            -- max. worker time: 2 * 9 * 1.8 + 9 = 41.4 sec
             "findspace=size:swim radius:6",
             "walk=coords",
-            "animate=idle duration:40s",
+            "animate=idle duration:9s",
             "createbob=sumatran_ferry",
             "return"
         },

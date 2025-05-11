@@ -35,11 +35,12 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _("hunting"),
          actions = {
+            -- avg. time total: 40.2 + 10 + 27.9 + 25 + 40.2 + 10 = 153.3 sec
             "call=hunt",
-            "sleep=duration:15s",
+            "sleep=duration:10s",
             "call=fish",
             "call=hunt_crocodile",
-            "sleep=duration:15s",
+            "sleep=duration:10s",
 --            "return=skipped"
          }
       },
@@ -47,6 +48,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _("hunting"),
          actions = {
+            -- time of worker: 8.7-62.7 sec, average 40.2 sec
+            -- min. time total:  8.7 sec
+            -- max. time total: 62.7 sec
+            -- avg. time total: 40.2 sec
             "callworker=hunt_chief",
          }
       },
@@ -62,8 +67,12 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
          descname = _("fishing"),
          actions = {
+            -- time of worker: 8.2-44.2 sec, average 27.9 sec
+            -- min. time total:  8.2 sec
+            -- max. time total: 44.2 sec
+            -- avg. time total: 27.9 sec
             "callworker=fish_chief on failure skip",
-            "sleep=duration:15s",
+            "sleep=duration:25s",
          }
       },
       encyclopedia = {

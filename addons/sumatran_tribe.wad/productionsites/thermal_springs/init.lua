@@ -36,7 +36,7 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       basic_amount = 3,
-      supports_production_of = { "log", "palmleaves", "palm_wine" },
+--      supports_production_of = { "log", "palmleaves", "palm_wine" },
       forced_after = 420,
       very_weak_ai_limit = 3,
       weak_ai_limit = 4,

@@ -21,6 +21,7 @@ wl.Descriptions():new_worker_type {
 
    programs = {
       hunt = {
+         -- all time calculations in chief hunter file
          "findobject=type:bob radius:12 attrib:eatable",
          "walk=object",
          "animate=idle duration:1s500ms",

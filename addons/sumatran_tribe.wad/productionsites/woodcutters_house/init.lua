@@ -38,6 +38,11 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
          descname = _("felling trees"),
          actions = {
+            -- min. time total: 23.2 + ( 9 + 10 ) / 3 = 29.5 sec
+            -- max. time total: 70.0 + ( 9 + 10 ) / 1 = 89.0 sec
+            -- avg. time total: 40.0 + ( 9 + 10 ) / 1 = 59.0 sec
+            -- avg. time total: 40.0 + ( 9 + 10 ) / 2 = 49.5 sec
+            -- avg. time total: 40.0 + ( 9 + 10 ) / 3 = 46.3 sec
             "call=harvest_palm",
             "call=harvest",
             "call=harvest_tropicalwood",
@@ -49,6 +54,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
          descname = _("felling trees"),
          actions = {
+            -- time of worker: 17.2-64.0 sec, average 34.0 sec
+            -- min. time total: 17.2 + 6 = 23.2 sec
+            -- max. time total: 64.0 + 6 = 70.0 sec
+            -- avg. time total: 34.0 + 6 = 40.0 sec
             "callworker=harvest on failure skip",
             "sleep=duration:6s"
          }

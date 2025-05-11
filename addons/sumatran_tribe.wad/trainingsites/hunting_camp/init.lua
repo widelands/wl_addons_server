@@ -63,9 +63,9 @@ wl.Descriptions():new_trainingsite_type {
       forced_after = 3300,
       trainingsites_max_percent = 40,
       requires_supporters = true,
-      basic_amount = 1,
-      very_weak_ai_limit = 1,
-      weak_ai_limit = 1,
+      basic_amount = 2,
+--      very_weak_ai_limit = 1,
+--      weak_ai_limit = 1,
 --      normal_ai_limit = 1,
    },
 
@@ -80,6 +80,12 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    programs = {
+      -- Calculation of complete training of one soldier:
+      -- each partial training takes additional 6 sec - see TrainingSite::TrainingSite()
+      -- time of worker: 8.7-62.7 sec, average 40.2 sec
+      -- min. time total:  8.7 + 6 + 10 = 24.7 sec
+      -- max. time total: 62.7 + 6 + 10 = 78.7 sec
+      -- avg. time total: 40.2 + 6 + 10 = 56.7 sec, 3 cycles: 170.1 sec
       sleep = {
          -- TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
          descname = _("sleeping"),

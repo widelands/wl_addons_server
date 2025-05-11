@@ -7,7 +7,7 @@ include(dirname .. "../terrain_affinity.lua")
 wl.Descriptions():new_immovable_type{
    name = "rubber_desert_amazons_old",
    descname = _("Rubber Tree Desert (removed)"),
-   species = _("Rubber Tree Desert (removed)"),
+--   species = _("Rubber Tree Desert (removed)"),
    icon = dirname .. "../menu.png",
    size = "small",
    animation_directory = dirname,

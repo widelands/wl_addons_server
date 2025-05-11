@@ -23,7 +23,7 @@ wl.Descriptions():new_productionsite_type {
 
 
    aihints = {
-      supports_production_of = { "log", "palmleaves", "palm_wine" },
+--      supports_production_of = { "log", "palmleaves", "palm_wine" },
       space_consumer = true,
       basic_amount = 4,
       very_weak_ai_limit = 5,
@@ -40,6 +40,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
          descname = _("planting trees"),
          actions = {
+            -- time of worker: 17.2-42.4 sec, average 29.8 sec
+            -- min. time total: 17.2 + 1 = 18.2 sec
+            -- max. time total: 42.4 + 1 = 43.4 sec
+            -- avg. time total: 29.8 + 1 = 30.8 sec
             "callworker=plant_palm",
             "sleep=duration:1s"
          }

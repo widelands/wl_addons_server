@@ -17,6 +17,10 @@ wl.Descriptions():new_worker_type {
 
    programs = {
       bring_water = {
+         -- steps from building to tree: 2-11, mean 6.8
+         -- min. worker time: 2 * 2 * 1.8 + 1 = 8.2 sec
+         -- max. worker time: 2 * 11 * 1.8 + 1 = 40.6 sec
+         -- mean worker time: 2 * 6.8 * 1.8 + 1 = 25.5 sec
          "findspace=size:swim radius:8",
          "walk=coords",
          "animate=freeing duration:1s",

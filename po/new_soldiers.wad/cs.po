@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-27 03:11+0200\n"
+"POT-Creation-Date: 2025-05-11 03:11+0200\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -34,19 +34,19 @@ msgstr ""
 "Noví lépe vyvážení vojáci. Vojáci císařství trénují v koloseu obranu. "
 "Amazonky potřebují zlato i pro první stupeň výcviku obrany."
 
-#. TRANSLATORS: This is a worker name used in lists of workers
+#. TRANSLATORS: This is an Amazon worker name used in lists of workers
 #: addons/new_soldiers.wad/amazons_soldier/init.lua:20
 msgctxt "amazons_worker"
 msgid "Soldier"
 msgstr "Bojovnice"
 
-#. TRANSLATORS: This is a worker name used in lists of workers
+#. TRANSLATORS: This is an Atlantean worker name used in lists of workers
 #: addons/new_soldiers.wad/atlanteans_soldier/init.lua:107
 msgctxt "atlanteans_worker"
 msgid "Soldier"
 msgstr "Voják"
 
-#. TRANSLATORS: This is a worker name used in lists of workers
+#. TRANSLATORS: This is a Barbarian worker name used in lists of workers
 #: addons/new_soldiers.wad/barbarians_soldier/init.lua:107
 msgctxt "barbarians_worker"
 msgid "Soldier"
@@ -59,41 +59,41 @@ msgid "Colosseum"
 msgstr "Koloseum"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:45
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:64
 msgid "sleeping"
 msgstr "podřimování"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:53
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:72
 msgctxt "empire_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr "cvičení úhybu vojáka z úrovně 0 na úroveň 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:66
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:85
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr "cvičení obrany vojáka z úrovně 0 na úroveň 1"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:85
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:104
 msgctxt "empire_building"
 msgid "No soldier to train!"
 msgstr "Nejsou vojáci k výcviku!"
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:87
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:106
 msgctxt "empire_building"
 msgid "No soldier found for this training level!"
 msgstr "Nenalezen voják pro požadovanou úroveň výcviku!"
 
-#. TRANSLATORS: This is a worker name used in lists of workers
+#. TRANSLATORS: This is an Empire worker name used in lists of workers
 #: addons/new_soldiers.wad/empire_soldier/init.lua:107
 msgctxt "empire_worker"
 msgid "Soldier"
 msgstr "Voják"
 
-#. TRANSLATORS: This is a worker name used in lists of workers
+#. TRANSLATORS: This is a Frisian worker name used in lists of workers
 #: addons/new_soldiers.wad/frisians_soldier/init.lua:628
 msgctxt "frisians_worker"
 msgid "Soldier"
@@ -106,7 +106,8 @@ msgid "‘%1%’<br>(%2%)"
 msgstr "‘%1%’<br>(%2%)"
 
 #: addons/new_soldiers.wad/postload.lua:19
-msgid "This shiel is udsed for defense training."
+#, fuzzy
+msgid "This shield is used for defense training."
 msgstr "Tento štít je používán k výcviku obrany."
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden shield because ...

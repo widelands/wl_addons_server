@@ -17,6 +17,10 @@ wl.Descriptions():new_worker_type {
 
    programs = {
       harvest = {
+         -- steps from building to tree: 2-11, mean 6.8
+         -- min. worker time: 2 * 2 * 1.8 + 8 = 15.2 sec
+         -- max. worker time: 2 * 11 * 1.8 + 8 = 47.6 sec
+         -- mean worker time: 2 * 6.8 * 1.8 + 8 = 32.5 sec
          "findobject=attrib:palm_tree radius:8",
          "walk=object",
          "animate=work duration:8s",

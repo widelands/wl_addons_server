@@ -41,6 +41,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _("working"),
          actions = {
+            -- time of worker: 8.2-40.6 sec, mean 25.5 sec
+            -- min. time total: 8.2 + 10 = 18.2 sec
+            -- max. time total: 40.6 + 10 = 50.6 sec
+            -- mean time total: 25.5 + 10 = 35.5 sec
             "sleep=duration:10s",
             "callworker=bring_water",
          }

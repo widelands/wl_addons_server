@@ -60,6 +60,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
          descname = _("producing coal"),
          actions = {
+            -- time: 65 + 21.4 + 3.6 = 90 sec
             "return=skipped unless economy needs coal",
             "consume=log,tropicalwood:5",
             "animate=working duration:1m5s",

@@ -7,7 +7,7 @@ include(dirname .. "../terrain_affinity.lua")
 wl.Descriptions():new_immovable_type{
    name = "ironwood_desert_amazons_old",
    descname = _("Ironwood Tree Desert (removed)"),
-   species = _("Ironwood Tree Desert (removed)"),
+--   species = _("Ironwood Tree Desert (removed)"),
    icon = dirname .. "../menu.png",
    size = "small",
    animation_directory = dirname,

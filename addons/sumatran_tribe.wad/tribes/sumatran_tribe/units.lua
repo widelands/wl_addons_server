@@ -18,7 +18,7 @@ wl.Descriptions():new_tribe {
     name = "sumatrans",
     animation_directory = image_dirname,
     animations = {
-        frontier = { hotspot = {1, 19} },
+        frontier = { hotspot = {9, 24} },
         flag = { hotspot = {14, 38}, fps = 10 },
         pinned_note = { hotspot = {18, 67} },
         bridge_normal_e = { hotspot = {-2, 12} },
@@ -32,11 +32,11 @@ wl.Descriptions():new_tribe {
     bridge_height = 8,
     
     collectors_points_table = {
-        { ware = "gold", points = 2 },
-        { ware = "gold_sheet", points = 2 },
-        { ware = "armor_copper", points = 1 },
-        { ware = "armor_golden", points = 2 },
-        { ware = "shield_golden", points = 1 },
+        { ware = "gold", points = 3 },
+        { ware = "gold_sheet", points = 3 },
+        { ware = "armor_copper", points = 3 },
+        { ware = "armor_golden", points = 6 },
+        { ware = "shield_golden", points = 3 },
         { ware = "diamond", points = 4 },
     },
 
@@ -139,11 +139,12 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 15,
                 preciousness = 3,
                 helptexts = {
-                    purpose = 
+                    purpose = {
                         -- TRANSLATORS: Helptext for a Sumatran ware: Cloth, part 1
                         pgettext("sumatran_ware", "Cloth is needed to build several buildings. Also the dressmakers need cloth for clothing for your warriors."),
                         -- TRANSLATORS: Helptext for a Sumatran ware: Cloth, part 2
                         pgettext("sumatran_ware", "It is produced out of reed and palm leaves."),
+                    }
                 }
             },
             {
@@ -1196,10 +1197,14 @@ wl.Descriptions():new_tribe {
         {
             name = "sumatran_headquarters",
             helptexts = {
+                -- TRANSLATORS: Lore helptext for a Sumatran production site: Headquarters
+                lore = pgettext("sumatran_building", "Oh, you brave northern star, you are protecting and watching over all of our buildings. All other stars come and go, but you never leave your place."),
+                -- TRANSLATORS: Lore author helptext for a Sumatran production site: Headquarters
+                lore_author = pgettext("sumatran_building", "Part of tribal equinox prayer"),
                 -- TRANSLATORS: Purpose helptext for a Sumatran warehouse: Headquarters
                 purpose = pgettext("sumatran_building", "Accommodation for your people. Also stores your wares and tools."),
                 -- TRANSLATORS: Note helptext for a Sumatran warehouse: Headquarters
-                note = pgettext("sumatran_building", "The headquarters is your main building.")
+                note = pgettext("sumatran_building", "The headquarters is your main building."),
             }
         },
         {
@@ -1225,15 +1230,31 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("sumatran_building", "Fells trees in the surrounding area and processes them into logs or tropical wood."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Woodcutter’s House
                 note = pgettext("sumatran_building", "The woodcutter recognizes 3 types of trees. Tropical trees (ironwood, balsa and rubber tree and dipterocarpus), palm trees (5 types of official palms) and all other trees. Trees of the first two groups are cut down only when tropical wood respectively log is needed. If the woodcutter is not able to cut down both tropical and palm trees, the building’s productivity can decrease."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 1
+                   pgettext("sumatran_building", "The woodcutter can produce one log between %1$s and %2$s on average, depending on how far he has to walk and how many tree types are available. If there is only one type of trees, if there are two types or tree types, he needs %3$s, %4$s or %5$s on average to cut down one tree respectively."):bformat(format_seconds(30), format_minutes_seconds(1, 29), format_seconds(59), format_seconds(50), format_seconds(46)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
             name = "sumatran_palm_planters_hut",
             helptexts = {
+                -- TRANSLATORS: Lore helptext for a Sumatran production site: Palm Planter’s Hut
+                lore = pgettext("sumatran_building", "The old legends say that long time ago our tribe lived in a place where only palm trees were growing. Without palm trees we could never call this place our home, they have an irreplaceable place in our culture and economy."),
+                -- TRANSLATORS: Lore author helptext for a Sumatran production site: Palm Planter’s Hut
+                lore_author = pgettext("sumatran_building", "Explanation why foresters living in this houses plant palm trees only"),
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Palm Planter’s Hut
                 purpose = pgettext("sumatran_building", "Plants palm trees in the surrounding area."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Palm Planter’s Hut
                 note = pgettext("sumatran_building", "You need palm trees for logs, palm wine production and palm leaves, which are collected by leaf gather when a palm tree is cut down."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 1
+                   pgettext("sumatran_building", "The forester plants one palm tree between %1$s and %2$s on average, depending on how far he has to walk."):bformat(format_seconds(18), format_seconds(43)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
@@ -1242,7 +1263,13 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Preserver’s Hut
                 purpose = pgettext("sumatran_building", "Plants tropical trees in the surrounding area."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Jungle Preserver’s Hut
-                note = pgettext("sumatran_building", "The tropical trees are source of tropical wood, which is an important building material.")
+                note = pgettext("sumatran_building", "The tropical trees are source of tropical wood, which is an important building material."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 1
+                   pgettext("sumatran_building", "The forester plants one tree between %1$s and %2$s on average, depending on how far he has to walk."):bformat(format_seconds(26), format_seconds(51)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
@@ -1252,6 +1279,12 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("sumatran_building", "Cuts raw pieces of stone out of rocks in the vicinity."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Stonecutter’s Hut
                 note = pgettext("sumatran_building", "The stonecutter needs rocks to cut within the work area."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 1
+                   pgettext("sumatran_building", "The stonecutter can produce one block of stone between %1$s and %2$s on average, depending on how far he has to walk."):bformat(format_seconds(44), format_minutes_seconds(1, 9)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
@@ -1260,7 +1293,13 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Water Carrier’s Hut
                 purpose = pgettext("sumatran_building", "Draws water out of the rivers and lakes."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Water Carrier’s Hut
-                note = pgettext("sumatran_building", "Water carriers cannot dig up water from the ground. Roads and trees along the shoreline block drawing water.")
+                note = pgettext("sumatran_building", "Water carriers cannot dig up water from the ground. Roads and trees along the shoreline block drawing water."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 1
+                   pgettext("sumatran_building", "The carrier can produce one bucket of water between %1$s and %2$s on average, depending on how far he has to walk."):bformat(format_seconds(18), format_seconds(51)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
@@ -1269,7 +1308,13 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Leaf Gatherer’s Hut
                 purpose = pgettext("sumatran_building", "Gathers cassava leaves left by farmers and palm leaves left by woodcutters."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Leaf Gatherer’s Hut
-                note = pgettext("sumatran_building", "Both cassava and palm leaves are important wares for your economy and shortages may cause you trouble.")
+                note = pgettext("sumatran_building", "Both cassava and palm leaves are important wares for your economy and shortages may cause you trouble."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 1
+                   pgettext("sumatran_building", "The leaf gatherer can produce one bundle of leaves between %1$s and %2$s on average, depending on how far she has to walk."):bformat(format_seconds(23), format_minutes_seconds(1, 3)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
@@ -1279,6 +1324,12 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("building", "Hunts animals to produce meat and catches fishes in the waters."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s Tent
                 note = pgettext("sumatran_building", "The building has 3 different working areas. Smallest for fishing, larger for hunting and the largest is not used by the worker in this type of building."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s Tent, part 1
+                   pgettext("sumatran_building", "If the hunter has both game and fishes in his working area, he needs %1$s to hunt two animals and to catch one fish on average. If there is only one food source available, he needs %2$s to hunt one animal or %3$s to catch one fish on average."):bformat(format_minutes_seconds(2, 42), format_seconds(55), format_minutes_seconds(1, 33)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s Tent, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
              }
         },
         {
@@ -1288,6 +1339,12 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("building", "Hunts animals to produce meat and catches fishes in the waters. Hunters in this houses can hunt crocodiles for skin and meat too."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Hunter’s House
                 note = pgettext("sumatran_building", "The building has 2 different working areas. Smaller for fishing and the larger for hunting."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s House, part 1
+                   pgettext("sumatran_building", "If the hunter has game, crocodiles and fishes in his working area, he needs %1$s to hunt one animal, one crocodile and to catch one fish on average. If there are only two food sources available, he needs %2$s to hunt one animal and one crocodile or %3$s to hunt one animal or crocodile and to catch one fish on average.If there is only one food source available, he needs %4$s to hunt one animal or one crocodile and %5$s to catch one fish on average."):bformat(format_minutes_seconds(2, 33), format_minutes_seconds(1, 40), format_minutes_seconds(1, 53), format_minutes(1), format_minutes_seconds(1, 13)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s House, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
@@ -1297,6 +1354,7 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("sumatran_building", "Thermal springs make terrain more favorable for tropical trees. This is useful especially while playing wasteland and winter maps. In the first case to transform mountains is very advantageous, in the second case, all types of terrain can be transformed."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs
                 note = pgettext("sumatran_building", "Thermal springs need maintenance. That costs you logs, stone and water."),
+                performance = pgettext("sumatran_building", "The building needs aproximately %1% to improve fertility of every field in its working area. By doing that it will consume aproximately %2% logs, %3% buckets of water and %4% blocks of stone."):bformat(format_minutes(180), 80, 80, 80)
             }
         },
         {
@@ -1314,14 +1372,21 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Reed Yard
                 purpose = pgettext("sumatran_building", "Produces reed."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
-                note = pgettext("sumatran_building", "Needs water nearby.")
+                note = pgettext("sumatran_building", "Needs water nearby."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 1
+                   pgettext("sumatran_building", "The reedcutter can produce one bundle of reed between %1$s and %2$s on average, depending on how far he has to walk."):bformat(format_seconds(49), format_minutes_seconds(1, 40)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
             name = "sumatran_workshop_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Basic Workshop
-                purpose = pgettext("sumatran_building", "Produces sandedwood, diamonds and whetstones.")
+                purpose = pgettext("sumatran_building", "Produces sandedwood, diamonds and whetstones."),
+                performance = pgettext("sumatran_building", "The craftsman needs %1% to produce sanded wood, %2% to polish one diamond or %3% to produce whetstones."):bformat(format_seconds(20), format_minutes_seconds(1, 12), format_minutes_seconds(1, 7))
             }
         },
         {
@@ -1346,7 +1411,8 @@ wl.Descriptions():new_tribe {
             name = "sumatran_coppersmiths_house",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Coppersmith’s House
-                purpose = pgettext("sumatran_building", "Produces copper sheets and gold sheets.")
+                purpose = pgettext("sumatran_building", "Produces copper sheets and gold sheets."),
+                performance = pgettext("sumatran_building", "The coppersmith needs %1% to produce one copper sheet or %2% to produce one gold sheet."):bformat(format_seconds(15), format_seconds(30))
             }
         },
         {
@@ -1363,7 +1429,13 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Winery
                 purpose = pgettext("sumatran_building", "Produces palm wine."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Winery
-                note = pgettext("sumatran_building", "The worker needs old palms around his house.")
+                note = pgettext("sumatran_building", "The worker needs old palms around his house."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Winery, part 1
+                   pgettext("sumatran_building", "The winemaker can produce one bucket of wine between %1$s and %2$s on average, depending on how far she has to walk."):bformat(format_seconds(44), format_minutes_seconds(1, 17)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Winery, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
@@ -1371,7 +1443,7 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Kitchen
                 purpose = pgettext("sumatran_building", "Produces starch."),
-                performance = pgettext("sumatran_building", "The cook needs %1% on average to cook 3 portions of starch."):bformat(format_seconds(75))
+                performance = pgettext("sumatran_building", "The cook needs %1% on average to cook 3 portions of starch."):bformat(format_minutes_seconds(1, 15))
             }
         },
         {
@@ -1389,21 +1461,23 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Sewing Workshop
                 purpose = pgettext("sumatran_building", "Produces clothing."),
-                performance = pgettext("sumatran_building", "The dressmaker needs %1% on average to sew one piece of clothing."):bformat(format_seconds(55))
+                performance = pgettext("sumatran_building", "The dressmaker needs %1% to sew one piece of clothing."):bformat(format_seconds(55))
             }
         },
         {
             name = "sumatran_furnace",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Furnace
-                purpose = pgettext("sumatran_building", "Smelts ore into iron, copper and gold.")
+                purpose = pgettext("sumatran_building", "Smelts ore into iron, copper and gold."),
+                performance = pgettext("sumatran_building", "The smelter needs %1% to produce one iron ingot, %2% to produce one copper ingot or %3% to produce one gold bar."):bformat(format_seconds(35), format_seconds(30), format_seconds(40))
             }
         },
         {
             name = "sumatran_charcoal_kiln",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Charcoal Kiln
-                purpose = pgettext("sumatran_building", "Burns logs into charcoal.")
+                purpose = pgettext("sumatran_building", "Burns logs into charcoal."),
+                performance = pgettext("sumatran_building", "The charcoal burner needs %1% to produce one lump of coal."):bformat(format_minutes_seconds(1, 30))
             }
         },
         {
@@ -1415,6 +1489,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 2
                     pgettext("sumatran_building", "Equips the recruits with all necessary weapons and clothing.")
                 },
+                performance = pgettext("sumatran_building", "The tribal chief needs %1% to recriut one soldier, to train one hunter or a new chief and %2% to gain one carrier."):bformat(format_seconds(30), format_seconds(20))
             }
         },
 
@@ -1426,7 +1501,7 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("sumatran_building", "Grows cassava for roots and leaves."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Cassava Fields
                 note = pgettext("sumatran_building", "The farmer harvest one cassava root from every field. The remained leaves can be harvested by leaf gatherer."),
-                performance = pgettext("sumatran_building", "The inexperienced resp. experienced farmer needs %1% resp. %2% on average to produce one cassava root."):bformat(format_seconds(115), format_seconds(75)),
+                performance = pgettext("sumatran_building", "The inexperienced resp. experienced farmer needs %1% resp. %2% on average to produce one cassava root."):bformat(format_minutes_seconds(1, 55), format_minutes_seconds(1, 15)),
             }
         },
         {
@@ -1550,6 +1625,12 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Purpose helptext for a Sumatran training site: Training Camp, part 2
                     pgettext("sumatran_building", "Equips the warriors with all necessary armor parts and weapons.")
                 },
+                performance = {
+                    -- TRANSLATORS: Performance helptext for a Sumatran training site: Training Camp, part 1
+                    pgettext("sumatran_building", "If all needed wares are delivered in time, a training camp can train one soldier one level in evade, defense or health in %s."):bformat(format_seconds(36)),
+                    -- TRANSLATORS: Performance helptext for a Sumatran training site: Training Camp, part 2
+                    pgettext("sumatran_building", "Complete training of one soldier takes %s."):bformat(format_minutes_seconds(4, 12))
+                }
             }
         },
         {
@@ -1559,6 +1640,14 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("sumatran_building", "Trains warriors in ‘Attack’."),
                 -- TRANSLATORS: Note helptext for a Sumatran training site: Hunting Camp
                 note = pgettext("sumatran_building", "The warriors improve their attack abilities by hunting crocodiles. Make sure there is enough jungle marshes around the building."),
+                performance = {
+                    -- TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 1
+                    pgettext("sumatran_building", "If all needed wares are delivered in time, a hunting camp needs between %1$s and %2$s to train one soldier one level in attack, depending on how far the hunter has to walk."):bformat(format_seconds(25), format_minutes_seconds(1, 19)),
+                    -- TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 2
+                    pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased."),
+                    -- TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 3
+                    pgettext("sumatran_building", "Complete training of one soldier takes %s on average."):bformat(format_minutes_seconds(2, 50))
+                }
             }
         },
 
@@ -1625,14 +1714,26 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Ferry Yard
                 purpose = pgettext("sumatran_building", "Builds ferries."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
-                note = pgettext("sumatran_building", "Needs water nearby.")
+                note = pgettext("sumatran_building", "Needs water nearby."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 1
+                   pgettext("sumatran_building", "The shipwright can produce one ferry between %1$s and %2$s, depending on how far he has to walk."):bformat(format_seconds(36), format_minutes_seconds(1, 1)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
         {
             name = "sumatran_shipyard",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Shipyard
-                purpose = pgettext("sumatran_building", "Constructs ships that are used for overseas colonization and for shipping wares between ports.")
+                purpose = pgettext("sumatran_building", "Constructs ships that are used for overseas colonization and for shipping wares between ports."),
+                performance = {
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Shipyard, part 1
+                   pgettext("sumatran_building", "The shipwright can produce one ship between %1$s and %2$s, depending on how far he has to walk."):bformat(format_minutes_seconds(17, 54), format_minutes_seconds(25, 3)),
+                   -- TRANSLATORS: Performance helptext for a Sumatran production site: Shipyard, part 2
+                   pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
+                }
             }
         },
 
@@ -1659,40 +1760,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("sumatran_building", "A building is being dismantled at this dismantle site, returning some of the resources that were used during this building’s construction to your tribe’s stores.")
             }
         }
-    },
-    
-    ship_names = {
-        -- Sumatran ship names
-        pgettext("shipname", "Mutiara"), -- pearl
-        pgettext("shipname", "Tembakan"), -- shot
-        pgettext("shipname", "Ular"), -- snake
-        pgettext("shipname", "Berlian"), -- diamond
-        pgettext("shipname", "Harimau"), -- tyger
-        pgettext("shipname", "Matahari"), -- sun
-        pgettext("shipname", "Bintang"), -- star
-        pgettext("shipname", "Hitam"), -- black
-        pgettext("shipname", "Putih"), -- white
-        pgettext("shipname", "Angsa"), -- swan
-        pgettext("shipname", "Tiang Tinggi"), -- high mast
-        pgettext("shipname", "Harta Karun"), -- treasure
-        pgettext("shipname", "Koncah"), -- wavelet
-        pgettext("shipname", "Merah"), -- red
-        pgettext("shipname", "Sinar"), -- beam
-        pgettext("shipname", "Mawar Emas"), -- golden rose
-        pgettext("shipname", "Mahkota"), -- crown
-        pgettext("shipname", "Bahtera Baru"), -- new ark
-        pgettext("shipname", "Ular Laut"), -- sea snake
-        pgettext("shipname", "Ikan"), -- fish
-        pgettext("shipname", "Awan Cepat"), -- fast cloud
-        pgettext("shipname", "Istana Laut"), -- sea castle
-        pgettext("shipname", "Buaian"), -- cradle
-        pgettext("shipname", "Merpati"), -- dove
-        pgettext("shipname", "Panah"), -- arrow
-        pgettext("shipname", "Lentera"), -- lamp
-        pgettext("shipname", "Paus Pembunuh"), -- orca
-        pgettext("shipname", "Kerang"), -- shell
-        pgettext("shipname", "Batok Kelapa"), -- coconut shell
-        pgettext("shipname", "Layar Besar"), -- larg sail
     },
     warehouse_names = { 
         pgettext("warehousename", "Arigas"),
@@ -1786,7 +1853,7 @@ wl.Descriptions():new_tribe {
       fisher = "sumatran_hunters_house",
       fish_meat_replenisher = "sumatran_jungle_marsh",
       well = "sumatran_water_carriers_hut",
-      farm_primary = "sumatran_cassava_fiels",
+      farm_primary = "sumatran_cassava_fields",
       farm_secondary = "sumatran_cassava_plantation",
       bakery = "sumatran_cassava_kitchen",
       brevery = "sumatran_winery",

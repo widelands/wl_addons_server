@@ -16,7 +16,7 @@ all_levels_ama = {
 
 wl.Descriptions():new_soldier_type {
    name = "amazons_soldier",
-   -- TRANSLATORS: This is a worker name used in lists of workers
+   -- TRANSLATORS: This is an Amazon worker name used in lists of workers
    descname = pgettext ("amazons_worker", "Soldier"),
    icon = dirname .. "menu.png",
    vision_range = 2,

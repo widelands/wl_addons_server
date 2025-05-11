@@ -54,9 +54,9 @@ wl.Descriptions():new_trainingsite_type {
    aihints = {
       prohibited_till = 1440,
       forced_after = 3300,
-      basic_amount = 1,
-      very_weak_ai_limit = 1,
-      weak_ai_limit = 1,
+      basic_amount = 2,
+--      very_weak_ai_limit = 1,
+--      weak_ai_limit = 1,
 --      normal_ai_limit = 2,
    },
 
@@ -75,6 +75,9 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    programs = {
+      -- Calculation of complete training of one soldier:
+      -- each partial training takes additional 6 sec
+      -- time total: 7 * 36 = 252 sec
       sleep = {
          -- TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
          descname = _("sleeping"),

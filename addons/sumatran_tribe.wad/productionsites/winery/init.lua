@@ -46,6 +46,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making palm wine beer because ...
          descname = _("making palm wine"),
          actions = {
+            -- time of worker: 15.2-47.6 sec, mean 32.5 sec
+            -- min. time total: 15.2 + 29 = 44.2 sec
+            -- max. time total: 47.6 + 29 = 76.6 sec
+            -- mean time total: 32.5 + 29 = 61.5 sec
             "callworker=harvest",
             "sleep=duration:29s"
          }

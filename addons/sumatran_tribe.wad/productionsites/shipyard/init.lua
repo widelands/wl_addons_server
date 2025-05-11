@@ -76,6 +76,12 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _("working"),
          actions = {
+            -- steps from building to ship: 2-9
+            -- worker time: 6 sec
+            -- number of wares to carry: 4 + 3 + 4 + 3 + 3 = 17
+            -- (see data/tribes/immovables/shipconstruction_atlanteans/init.lua)
+            -- min. time total: 17 * (2 * 2 * 1.8 + 6 + 20 + 30) = 1074.4 sec
+            -- max. time total: 17 * (2 * 9 * 1.8 + 6 + 20 + 30) = 1502.8 sec
             "call=ship on failure fail",
             "call=ship_preparation",
          }
@@ -91,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
       ship_preparation = {
          descname = _("working"),
          actions = {
-            "animate=working duration:35s",
+            "animate=working duration:30s",
          }
       },
    },

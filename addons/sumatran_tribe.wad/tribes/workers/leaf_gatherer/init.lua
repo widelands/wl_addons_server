@@ -17,6 +17,10 @@ wl.Descriptions():new_worker_type {
 
    programs = {
       gather_cassava = {
+         -- steps from building to rock: 2-13, average 8.1
+         -- min. worker time: 2 * 2 * 1.8 + 7 = 14.2 sec
+         -- max. worker time: 2 * 13 * 1.8 + 7 = 53.8 sec
+         -- avg. worker time: 2 * 8.1 * 1.8 + 7 = 36.2 sec
          "findobject=attrib:cassava_leaves radius:10",
          "walk=object",
          "animate=gathering duration:6s",

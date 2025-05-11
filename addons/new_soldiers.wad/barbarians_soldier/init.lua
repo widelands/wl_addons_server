@@ -103,7 +103,7 @@ all_levels_bar = {
 
 wl.Descriptions():new_soldier_type {
    name = "barbarians_soldier",
-   -- TRANSLATORS: This is a worker name used in lists of workers
+   -- TRANSLATORS: This is a Barbarian worker name used in lists of workers
    descname = pgettext("barbarians_worker", "Soldier"),
    icon = dirname .. "menu.png",
    vision_range = 2,

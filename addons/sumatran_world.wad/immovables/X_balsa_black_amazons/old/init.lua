@@ -7,7 +7,7 @@ include(dirname .. "../terrain_affinity.lua")
 wl.Descriptions():new_immovable_type{
    name = "balsa_black_amazons_old",
    descname = _("Balsa Tree Wasteland (removed)"),
-   species = _("Balsa Tree Wasteland (removed)"),
+--   species = _("Balsa Tree Wasteland (removed)"),
    icon = dirname .. "../menu.png",
    size = "small",
    animation_directory = dirname,

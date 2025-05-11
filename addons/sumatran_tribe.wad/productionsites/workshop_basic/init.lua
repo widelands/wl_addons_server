@@ -81,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start sanding wood because ...
          descname = _("sanding wood"),
          actions = {
-            -- time total: 21 sec
+            -- time total: 20 sec
             "return=skipped unless economy needs sandedwood",
             "return=failed unless site has log",
             "consume=log",
@@ -95,7 +95,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start grinding diamond because ...
          descname = _("grinding diamond"),
          actions = {
-            -- time total: 73 sec
+            -- time total: 72 sec
             "return=skipped unless economy needs diamond",
             "return=skipped when economy needs whetstone",
             "return=failed unless site has diamond_raw",
@@ -111,7 +111,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a whetstone because ...
          descname = _("making a whetstone"),
          actions = {
-            -- time total: 68 sec
+            -- time total: 67 sec
             "return=skipped unless economy needs whetstone",
             "consume=stone diamond_raw:2",
             "sleep=duration:1s400ms",

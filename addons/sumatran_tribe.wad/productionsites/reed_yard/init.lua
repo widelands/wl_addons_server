@@ -52,14 +52,22 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
          descname = _("planting reed"),
          actions = {
+            -- time of worker: 17.2-42.4 sec, average 29.8 sec
+            -- min. time total: 17.2 + 8 = 25.2 sec
+            -- max. time total: 42.4 + 8 = 50.4 sec
+            -- avg. time total: 29.8 + 8 = 37.8 sec
             "callworker=plant",
-            "sleep=duration:8s" -- orig sleep=duration:20s but gardener animation was increased by 2sec
+            "sleep=duration:8s" 
          }
       },
       harvest = {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
          descname = _("harvesting reed"),
          actions = {
+            -- time of worker: 21.2-46.4 sec, average 33.8 sec
+            -- min. time total: 21.2 + 3 = 24.2 sec
+            -- max. time total: 46.4 + 3 = 49.4 sec
+            -- avg. time total: 33.8 + 3 = 36.8 sec
             "callworker=harvest",
             "sleep=duration:3s"
          }
