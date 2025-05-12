@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-11 03:11+0200\n"
+"POT-Creation-Date: 2025-05-12 03:11+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -748,21 +748,17 @@ msgstr ""
 
 #. TRANSLATORS: This is a Lutas’ Atlanteans’ building name used in lists of buildings
 #: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:8
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Het Huis van de Krokodillenjager"
+msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:55
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
-"De jager die vanuit dit huis werkt, vindt geen krokodillen in zijn "
-"werkgebied."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
@@ -1104,49 +1100,37 @@ msgstr ""
 "In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
 
 #: addons/sumatran_tribe.wad/postload.lua:362
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "Of course hunting crocodiles is a good idea. The efficiency of hunting "
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
-"Natuurlijk is de jacht op krokodillen een goed idee. De efficiëntie van de "
-"jacht zou niet veel moeten toenemen, maar de productiviteit kan wel toenemen "
-"als er niet genoeg dieren in de nabijgelegen bossen zijn."
 
 #. TRANSLATORS: Lore author helptext for an Atlantean production site: Crocodile Hunter’s House
 #: addons/sumatran_tribe.wad/postload.lua:365
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr "Jager pleit voor het bouwen van een krokodillenjagershuis"
+msgstr ""
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:369
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
-"Dit gebouw is alleen nuttig als je een Sumatraanse tegenstander hebt en er "
-"krokodillen vanuit zijn territorium naar jouw territorium komen."
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:371
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
-"Het gebouw heeft 2 verschillende werkgebieden, het kleinere voor de "
-"krokodillenjacht en het grotere voor de jacht op wild."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:375
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "If there is a sufficient amount of crocodiles and other animals, the hunters "
@@ -1154,18 +1138,12 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
-"Als er voldoende krokodillen en andere dieren zijn, hebben de jagers "
-"gemiddeld %1$s nodig om één vlees te produceren. Als er geen krokodillen "
-"zijn, werkt het gebouw als een basisjagershuis en hebben de jagers gemiddeld "
-"%2$s nodig om één vlees te produceren."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:377
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
-"In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
@@ -1844,18 +1822,12 @@ msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua:13
-#, fuzzy
 msgid ""
 "Start the game with one ships on the ocean, the bare minimum of ware and few "
 "workers. Warning: the AI can’t successfully start from this. You will need "
 "to find a portspace with direct access to rocks and trees. For unknown maps, "
 "game without fog of war recommended."
 msgstr ""
-"Begin het spel met alleen een pakhuis en het absolute minimum om een "
-"economie op te starten. Waarschuwing: de AI en in de meeste gevallen ook "
-"mensen kunnen hier niet succesvol mee beginnen. Waag het niet als je niet "
-"voorbereid bent op een echte strijd. Een kaart met goed zomer- of "
-"woestijnterrein en veel ruimte wordt aanbevolen."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:11
@@ -1974,11 +1946,10 @@ msgstr "%1$s is opgeruimd!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:185
-#, fuzzy
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] "%1$d  items zijn verwijderd, %2$d items over."
-msgstr[1] "%1$d  items zijn verwijderd, %2$d items over."
+msgstr[0] ""
+msgstr[1] ""
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:185
 msgid "%2$d item lefts."
@@ -3464,11 +3435,9 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1647
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1722
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1735
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
-"In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
 
 #. TRANSLATORS: Lore helptext for a Sumatran production site: Palm Planter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1245
@@ -3859,10 +3828,9 @@ msgid "Produces clothing."
 msgstr "Produceert kleding."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1464
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "The dressmaker needs %1% to sew one piece of clothing."
-msgstr "De kleermaker heeft gemiddeld %1% nodig om één kledingstuk te naaien."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Furnace
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1471
@@ -3884,11 +3852,9 @@ msgid "Burns logs into charcoal."
 msgstr "Brandt houtblokken tot houtskool."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1480
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "The charcoal burner needs %1% to produce one lump of coal."
 msgstr ""
-"De mijnwerkers hebben gemiddeld %1% nodig om één stuk erts te produceren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1488
