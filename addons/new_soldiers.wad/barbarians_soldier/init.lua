@@ -120,9 +120,9 @@ wl.Descriptions():new_soldier_type {
    },
    attack = {
       max_level = 5,
-      base = 1500,
-      maximum = 1720,
-      increase_per_level = 698,
+      base = 1530,
+      maximum = 1710,
+      increase_per_level = 696,
       pictures = path.list_files(dirname .. "attack_level?.png"),
    },
    defense = {
