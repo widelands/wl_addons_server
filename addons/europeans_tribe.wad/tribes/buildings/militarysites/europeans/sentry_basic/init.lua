@@ -16,24 +16,36 @@ wl.Descriptions():new_militarysite_type {
       }
     },
     spritesheets = {
-        idle = {
-            fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
-            hotspot = { 39, 40 }
-        },
-        build = {
-            frames = 4,
-            rows = 2,
-            columns = 2,
-            hotspot = { 39, 40 }
-        },
+      idle = {
+         fps = 10,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 39, 40 }
+      },
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 39, 40 }
+      },
     },
     
     size = "small",
     destructible = true,
     
+    enhancement = {
+        name = "europeans_sentry_level_1",
+        enhancement_cost = {
+            brick = 1,
+            grout = 1,
+            marble_column = 1
+        },
+        enhancement_return_on_dismantle = {
+            granite = 1,
+            marble = 1
+        },
+    },
     buildcost = {
         granite = 2,
         planks = 2

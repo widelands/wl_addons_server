@@ -34,16 +34,25 @@ wl.Descriptions():new_militarysite_type {
     size = "medium",
     destructible = true,
     
+    enhancement = {
+        name = "europeans_barrier_level_1",
+        enhancement_cost = {
+            brick = 1,
+            grout = 1,
+            marble_column = 1
+        },
+        enhancement_return_on_dismantle = {
+            granite = 1,
+            marble = 1
+        },
+    },
     buildcost = {
-        brick = 2,
-        grout = 2,
-        planks = 2,
-        marble_column = 2
+        granite = 2,
+        planks = 4
     },
     return_on_dismantle = {
-        scrap_wood = 2,
-        granite = 3,
-        marble = 2
+        scrap_wood = 3,
+        granite = 2
     },
 
     aihints = {

@@ -1,57 +1,65 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- dirname = path.dirname(__file__)
-dirname = "tribes/buildings/militarysites/barbarians/fortress/"
+dirname = "tribes/buildings/militarysites/barbarians/citadel/"
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_castle_basic",
+    name = "europeans_castle_level_1",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Basic Fortress"),
+    descname = pgettext("europeans_building", "Citadel"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
       unoccupied = {
-         hotspot = { 103, 80 }
+         hotspot = { 102, 102 }
       }
     },
-    spritesheets = {
+    spritesheets ={
       idle = {
          fps = 10,
          frames = 20,
          rows = 5,
          columns = 4,
-         hotspot = { 101, 80 }
+         hotspot = { 102, 102 }
       },
       build = {
-         frames = 4,
-         rows = 2,
+         frames = 6,
+         rows = 3,
          columns = 2,
-         hotspot = { 101, 80 }
+         hotspot = { 102, 102 }
       },
     },
+
     size = "big",
     destructible = true,
+    
+    enhancement = {
+        name = "europeans_castle_level_2",
+        enhancement_cost = {
+            brick = 2,
+            grout = 2,
+            marble_column = 4
+        },
+        enhancement_return_on_dismantle = {
+            granite = 2,
+            marble = 4
+        },
+    },
     
     buildcost = {
         brick = 4,
         grout = 4,
-        planks = 4,
-        marble_column = 4
+        planks = 4
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        granite = 4,
-        marble = 4
+        granite = 4
     },
 
-    aihints = {
-        expansion = true,
-        fighting = true,
-        mountain_conqueror = true
-    },
+    aihints = {},
 
-    max_soldiers = 8,
+    max_soldiers = 10,
     vision_range = 16,
     heal_per_second = 200,
     conquers = 12,
