@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-21 03:11+0200\n"
+"POT-Creation-Date: 2025-05-22 03:14+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -23,9 +23,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_tribe.wad/addon:2
-#, fuzzy
 msgid "Europeans Tribe (Basic Economy Addon)"
-msgstr "Europäers-Volk (kumpletes Verwiedern)"
+msgstr "Europäers-Volk (Grundlaag-Weertskupp-Verwiedern)"
 
 #: addons/europeans_tribe.wad/addon:3
 msgid "Provides all current features of the Europeans tribe."
@@ -71,84 +70,73 @@ msgstr "Diene Soldaten hebben de Feinde in eenem Uppass manntjet."
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Outpost"
-msgstr ""
+msgstr "Butenstee"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:59
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your outpost."
-msgstr "Diene Soldaten hebben dien Slött besett."
+msgstr "Diene Soldaten hebben diene Butenstee besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:61
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your outpost discovered an aggressor."
-msgstr "Dien Slött hett Feinde to sehn kregen."
+msgstr "Diene Butenstee hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:63
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your outpost is under attack."
-msgstr "Feinde griepen dien Slött an."
+msgstr "Feinde griepen diene Butenstee an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:65
-#, fuzzy
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the outpost."
-msgstr "De Feinde hebben diene Soldaten in eenem Slött manntjet."
+msgstr "De Feinde hebben diene Soldaten in eener Butenstee manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:67
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the outpost."
-msgstr "Diene Soldaten hebben de Feinde in eenem Slött manntjet."
+msgstr "Diene Soldaten hebben de Feinde in eener Butenstee manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Barrier"
-msgstr "Meister-Bargwarkskeerl"
+msgstr "Groter Uppass"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:47
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
-msgstr "Diene Soldaten hebben dienen Uppass besett."
+msgstr "Diene Soldaten hebben dienen Groten Uppass besett."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:49
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
-msgstr "Dien Uppass hett Feinde to sehn kregen."
+msgstr "Dien Groter Uppass hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:51
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
-msgstr "Feinde griepen dienen Uppass an."
+msgstr "Feinde griepen dienen Groten Uppass an."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:53
-#, fuzzy
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
-msgstr "De Feinde hebben diene Soldaten in eenem Uppass manntjet."
+msgstr "De Feinde hebben diene Soldaten in eenem Groten Uppass manntjet."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:55
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
-msgstr "Diene Soldaten hebben de Feinde in eenem Uppass manntjet."
+msgstr "Diene Soldaten hebben de Feinde in eenem Groten Uppass manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_basic/init.lua:9
@@ -195,91 +183,79 @@ msgstr "Diene Soldaten hebben de Feinde in eenem Slött manntjet."
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Citadel"
-msgstr ""
+msgstr "Kasteel"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Fortress"
-msgstr "Meister-Arbeider"
+msgstr "Grote Schanz"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:65
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your fortress."
-msgstr "Diene Soldaten hebben dienen Uppass besett."
+msgstr "Diene Soldaten hebben diene Schanz besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:67
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your fortress discovered an aggressor."
-msgstr "Dien Uppass hett Feinde to sehn kregen."
+msgstr "Diene Schanz hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:69
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your fortress is under attack."
-msgstr "Feinde griepen dienen Uppass an."
+msgstr "Feinde griepen diene Schanz an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:71
-#, fuzzy
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the fortress."
-msgstr "De Feinde hebben diene Soldaten in eenem Uppass manntjet."
+msgstr "De Feinde hebben diene Soldaten in eener Schanz manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:73
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the fortress."
-msgstr "Diene Soldaten hebben de Feinde in eenem Uppass manntjet."
+msgstr "Diene Soldaten hebben de Feinde in eener Schanz manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr "Grote Saagmöhlen"
+msgstr "Grotes Slött"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:47
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced castle."
-msgstr "Diene Soldaten hebben dien Slött besett."
+msgstr "Diene Soldaten hebben dien Grotes Slött besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:49
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your advanced castle discovered an aggressor."
-msgstr "Dien Slött hett Feinde to sehn kregen."
+msgstr "Dien Grotes Slött hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:51
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your advanced castle is under attack."
-msgstr "Feinde griepen dien Slött an."
+msgstr "Feinde griepen dien Grotes Slött an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:53
-#, fuzzy
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced castle."
-msgstr "De Feinde hebben diene Soldaten in eenem Slött manntjet."
+msgstr "De Feinde hebben diene Soldaten in eenem Groten Slött manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:55
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced castle."
-msgstr "Diene Soldaten hebben de Feinde in eenem Slött manntjet."
+msgstr "Diene Soldaten hebben de Feinde in eenem Groten Slött manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_basic/init.lua:9
@@ -324,45 +300,39 @@ msgstr "Diene Soldaten hebben de Feinde in eener Wahrders-Kamer manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Sentry"
-msgstr "Meister-Bespejer"
+msgstr "Grote Wachters-Kamer"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:47
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your sentry."
-msgstr "Diene Soldaten hebben dien Slött besett."
+msgstr "Diene Soldaten hebben diene Wachters-Kamer besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:49
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
-msgstr "Dien Slött hett Feinde to sehn kregen."
+msgstr "Diene Wachters-Kamer hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:51
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
-msgstr "Feinde griepen dien Slött an."
+msgstr "Feinde griepen diene Wachters-Kamer an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:53
-#, fuzzy
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
-msgstr "De Feinde hebben diene Soldaten in eenem Slött manntjet."
+msgstr "De Feinde hebben diene Soldaten in een Wachters-Kamer manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:55
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
-msgstr "Diene Soldaten hebben de Feinde in eenem Slött manntjet."
+msgstr "Diene Soldaten hebben de Feinde in een Wachters-Kamer manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_mountain/init.lua:9
@@ -408,45 +378,39 @@ msgstr "Diene Soldaten hebben de Feinde in eenem Middelgroten Toorn manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Tower"
-msgstr "Meister-Arbeider"
+msgstr "Groter Toorn"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:53
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced tower."
-msgstr "Diene Soldaten hebben dienen Middelgroten Toorn besett."
+msgstr "Diene Soldaten hebben dienen Groten Toorn besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:55
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your advanced tower discovered an aggressor."
-msgstr "Dien Middelgroter Toorn hett Feinde to sehn kregen."
+msgstr "Dien Groter Toorn hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:57
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your advanced tower is under attack."
-msgstr "Feinde griepen dienen Middelgroten Toorn an."
+msgstr "Feinde griepen dienen Groten Toorn an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:59
-#, fuzzy
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced tower."
-msgstr "De Feinde hebben diene Soldaten in eenem Middelgroten Toorn manntjet."
+msgstr "De Feinde hebben diene Soldaten in eenem Groten Toorn manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:61
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced tower."
-msgstr "Diene Soldaten hebben de Feinde in eenem Middelgroten Toorn manntjet."
+msgstr "Diene Soldaten hebben de Feinde in eenem Groten Toorn manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/charcoal_kiln_advanced/init.lua:9
