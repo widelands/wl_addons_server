@@ -149,7 +149,7 @@ local windows_def = {
    }
 
 -- For version 1.2
-if get_build_id():find("1.2") ~= nil then
+if get_build_id():find("1.2",1, true) ~= nil then
    windows_def = {
       fsmenu = {
          -- red, green, blue, alpha

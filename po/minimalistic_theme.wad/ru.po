@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2025-06-01 03:11+0200\n"
 "PO-Revision-Date: 2021-03-02 22:51+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -25,13 +25,13 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/minimalistic_theme.wad/addon:4
-msgid "Minimalistic Theme"
-msgstr "Аскетичная тема"
-
-#: addons/minimalistic_theme.wad/addon:5
+#: addons/minimalistic_theme.wad/addon:6
 msgid "Minimalistic theme with reduced colors and small window borders."
 msgstr ""
+
+#: addons/minimalistic_theme.wad/addon:9
+msgid "Minimalistic Theme"
+msgstr "Аскетичная тема"
 
 #: screenshots/minimalistic_theme.wad/descriptions:3
 msgid "Reduced Borders since version 1.4"
