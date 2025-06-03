@@ -221,18 +221,27 @@ function remove_object(startx, starty)
     local game = wl.Game()
     local map = game.map
 
-    map:get_field(startx, starty).immovable:remove()
+    if map:get_field(startx, starty).immovable then
+        map:get_field(startx, starty).immovable:remove()
+    end
 end
 
 function destroy_object(startx, starty)
     local game = wl.Game()
     local map = game.map
 
-    map:get_field(startx, starty).immovable:destroy()
+    if map:get_field(startx, starty).immovable then
+        map:get_field(startx, starty).immovable:destroy()
+    end
 end
 
 function force_object(startx, starty, objectname)
-    remove_object(startx, starty)
+    local game = wl.Game()
+    local map = game.map
+    
+    if map:get_field(startx, starty).immovable then
+        remove_object(startx, starty)
+    end
     place_object(startx, starty, objectname)
 end
 
