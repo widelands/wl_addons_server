@@ -208,7 +208,7 @@ function ui_inspector_selection_changed()
 				typename = getmetatable(value).__name
 				value = _("%1$s “%2$s”"):bformat(typename, value.name)
 			end
-			value = ("%1%"):bformat(value)  -- Convert to string
+			value = ("%1%"):bformat(value)  -- Convert to pretty-formatted string
 
 			table.insert(children, {
 				widget      = "box",
@@ -324,10 +324,13 @@ function ui_inspector_selection_changed()
 			"max_height",
 			"no_of_items",
 			"no_of_rows",
+			"no_of_pages",
 			"total",
 			"value",
 			"min_value",
 			"max_value",
+			"current_page",
+			"pagesize",
 			"sort_column",
 			"sort_descending",
 			"title",
