@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-12 03:11+0200\n"
+"POT-Creation-Date: 2025-06-06 03:11+0200\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -27,9 +27,10 @@ msgid "New Soldiers"
 msgstr "Neje Soldaten"
 
 #: addons/new_soldiers.wad/addon:3
+#, fuzzy
 msgid ""
 "New more balanced soldiers. Soldiers of Empire train defence in colosseum. "
-"Amazons need gold for first level of defence training."
+"Amazons need gold for the second level of health training."
 msgstr ""
 "Neje, beter utgleken Soldaten. Rieks-Soldaten lehren im Groten Ring "
 "Verteidigung. Amazoonen bruken Gold för de eersten Verteidigungs-Stand."
@@ -119,13 +120,17 @@ msgstr "eenen Holtschild to maken"
 msgid "working"
 msgstr "to Warken"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/new_soldiers.wad/postload.lua:57
-msgid "making a padded vest"
-msgstr "eene Beslaan West to maken"
+#, fuzzy
+msgid "making a wooden helmet"
+msgstr "eenen Holtschild to maken"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_soldiers.wad/shield_wooden/init.lua:8
 msgctxt "ware"
 msgid "Wooden Shield"
 msgstr "Holtschild"
+
+#~ msgid "making a padded vest"
+#~ msgstr "eene Beslaan West to maken"

@@ -15,7 +15,8 @@ wl.Descriptions():new_productionsite_type {
       granite = 1
    },
    return_on_dismantle = {
-      granite = 1
+      granite = 1,
+      planks = 1,
    },
 
    animation_directory = dirname,
@@ -26,7 +27,9 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 420
+      prohibited_till = 420,
+      forced_after = 2700,
+      basic_amount = 1,
    },
 
    working_positions = {

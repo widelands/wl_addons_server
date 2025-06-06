@@ -17,10 +17,10 @@ wl.Descriptions():new_worker_type {
 
    programs = {
       attract_shells = {
-         -- steps from building to water: 2-19, min+max average 14
+         -- steps from building to water: 2-16, average 10.1
          -- min. worker time: 2 * 2 * 1.8 + 5 = 12.2 sec
-         -- max. worker time: 2 * 13 * 1.8 + 5 = 51.8 sec
-         -- avg. worker time: 2 * 10 * 1.8 + 5 = 41 sec
+         -- max. worker time: 2 * 13 * 1.8 + 5 = 62.6 sec
+         -- avg. worker time: 2 * 10.1 * 1.8 + 5 = 41.3 sec
          "findspace=size:swim radius:13",
          "walk=coords",
          "animate=idle duration:5s",

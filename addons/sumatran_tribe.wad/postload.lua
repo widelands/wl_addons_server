@@ -84,14 +84,14 @@ wl.Descriptions():modify_unit("productionsite", "amazons_woodcutters_hut", "prog
 -- TERRAFORM --
 -- --------- --
 wl.Descriptions():modify_unit("worker", "amazons_jungle_master", "programs", "set", "terraform", {
-         "findspace=size:any radius:8 terraform:amazons",
+         "findspace=size:any radius:7 terraform:amazons",
          "walk=coords",
          "terraform=amazons",
          "return"
       })
 
  wl.Descriptions():modify_unit("worker", "amazons_jungle_master", "programs", "set", "check", {
-          "findspace=size:any radius:8 terraform:amazons",
+          "findspace=size:any radius:7 terraform:amazons",
        })
 
 -- original intention was to create a completely new building with basic carrier as a worker

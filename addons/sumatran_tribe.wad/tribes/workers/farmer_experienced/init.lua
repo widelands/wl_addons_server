@@ -15,6 +15,10 @@ wl.Descriptions():new_worker_type {
          "findspace=size:any radius:3 space",
       },
       plant = {
+         -- steps from building: 2-6, average 3.66
+         -- min. worker time: 2 * 2 * 1.8 + 10 = 17.2 sec
+         -- max. worker time: 2 * 6 * 1.8 + 10 = 31.6 sec
+         -- avg. worker time: 2 * 3.66 * 1.8 + 10 = 23.2 sec
          "findspace=size:any radius:3 space",
          "walk=coords",
          "animate=planting duration:5s",
@@ -23,6 +27,10 @@ wl.Descriptions():new_worker_type {
          "return"
       },
       harvest = {
+         -- steps from building: 2-6, average 3.66
+         -- min. worker time: 2 * 2 * 1.8 + 10 = 17.2 sec
+         -- max. worker time: 2 * 6 * 1.8 + 10 = 31.6 sec
+         -- avg. worker time: 2 * 3.66 * 1.8 + 10 = 23.2 sec
          "findobject=attrib:ripe_cassavaplants radius:3",
          "walk=object",
          "animate=harvesting duration:5s",

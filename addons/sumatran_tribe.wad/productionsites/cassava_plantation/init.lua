@@ -37,6 +37,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _("working"),
          actions = {
+            -- time of experienced worker planting and harvesting : 17.2-31.6 sec, average 23.2 sec
+            -- min. time total: 4 * 17.2 + 50 + 48 = 166.8 sec / 4 = 41.7 sec
+            -- max. time total: 4 * 31.6 + 50 + 48 = 224.4 sec / 4 = 56.1 sec
+            -- avg. time total: 4 * 23.2 + 50 + 48 = 190.8 sec / 4 = 47.7 sec
             "sleep=duration:25s",
             "call=plant_cassava",
             "sleep=duration:25s",

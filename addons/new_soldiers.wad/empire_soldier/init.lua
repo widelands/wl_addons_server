@@ -115,14 +115,14 @@ wl.Descriptions():new_soldier_type {
    health = {
       max_level = 4,
       base = 11025,
-      increase_per_level = 1985,
+      increase_per_level = 2250,
       pictures = path.list_files(dirname .. "health_level?.png"),
    },
    attack = {
       max_level = 4,
-      base = 1548,
-      maximum = 1688,
-      increase_per_level = 945,
+      base = 1522,
+      maximum = 1722,
+      increase_per_level = 869,
       pictures = path.list_files(dirname .. "attack_level?.png"),
    },
    defense = {

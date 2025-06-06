@@ -66,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start felling palm trees because ...
          descname = _("felling palm trees"),
          actions = {
-            "return=skipped unless economy needs log",
+            "return=skipped when not economy needs log and not economy needs palmleaves",
             "callworker=harvest_palm",
             "sleep=duration:6s"
          }

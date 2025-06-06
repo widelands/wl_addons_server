@@ -115,7 +115,7 @@ wl.Descriptions():new_soldier_type {
     health = {
         max_level = 3,
         base = 12125,
-        increase_per_level = 3925,
+        increase_per_level = 3975,
         pictures = path.list_files(dirname .. "health_level?.png"),
     },
     evade = {
@@ -132,8 +132,8 @@ wl.Descriptions():new_soldier_type {
     },
     attack = {
         max_level = 3,
-        base = 1400,
-        maximum = 1500,
+        base = 1380,
+        maximum = 1520,
         increase_per_level = 763,
         pictures = path.list_files(dirname .. "attack_level?.png"),
     },

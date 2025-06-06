@@ -27,10 +27,10 @@ wl.Descriptions():new_carrier_type {
          "return"
       },
       check_spring = {
-         "findspace=size:any radius:8 terraform:amazons",
+         "findspace=size:any radius:7 terraform:amazons",
       },
       terraform_spring = {
-         "findspace=size:any radius:8 terraform:amazons",
+         "findspace=size:any radius:7 terraform:amazons",
          "walk=coords",
          "terraform=amazons",
          "return"

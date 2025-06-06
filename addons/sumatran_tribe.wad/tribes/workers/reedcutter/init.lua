@@ -17,10 +17,10 @@ wl.Descriptions():new_worker_type {
 
    programs = {
       plant = {
-         -- steps from building to rock: 2-9, average 5.5
+         -- steps from building: 2-9, average 5.5
          -- min. worker time: 2 * 2 * 1.8 + 10 = 17.2 sec
-         -- max. worker time: 2 * 9 * 1.8 + 10 = 42,4 sec
-         -- avg. worker time: 2 * 5.5 * 1.8 + 10 = 29,8 sec
+         -- max. worker time: 2 * 9 * 1.8 + 10 = 42.4 sec
+         -- avg. worker time: 2 * 5.5 * 1.8 + 10 = 29.8 sec
          "findspace=size:swim radius:6",
          "walk=coords",
          "animate=planting duration:5s",
@@ -29,10 +29,10 @@ wl.Descriptions():new_worker_type {
          "return"
       },
       harvest = {
-         -- steps from building to rock: 2-9, average 5.5
+         -- steps from building: 2-9, average 5.5
          -- min. worker time: 2 * 2 * 1.8 + 14 = 21.2 sec
-         -- max. worker time: 2 * 9 * 1.8 + 14 = 46,4 sec
-         -- avg. worker time: 2 * 5.5 * 1.8 + 14 = 33,8 sec
+         -- max. worker time: 2 * 9 * 1.8 + 14 = 46.4 sec
+         -- avg. worker time: 2 * 5.5 * 1.8 + 14 = 33.8 sec
          "findobject=attrib:ripe_reed radius:6",
          "walk=object",
          "animate=harvesting duration:10s",

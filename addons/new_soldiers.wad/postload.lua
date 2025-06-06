@@ -52,16 +52,16 @@ wl.Descriptions():modify_unit("productionsite", "empire_weaponsmithy", "programs
 -- Amazons
 -----------------------
 
-wl.Descriptions():modify_unit("productionsite", "amazons_dressmakery", "programs", "set", "produce_vest_padded", {
-         -- TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
-         descname = _("making a padded vest"),
+wl.Descriptions():modify_unit("productionsite", "amazons_dressmakery", "programs", "set", "produce_helmet_wooden", {
+         -- TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
+         descname = _("making a wooden helmet"),
          actions = {
             -- time: 32.4 + 35 + 3.6 = 71 sec
-            "return=skipped unless economy needs vest_padded",
-            "consume=rubber rope:2 gold", -- one rubber replaced with gold
+            "return=skipped unless economy needs helmet_wooden",
+            "consume=ironwood gold", -- one rubber replaced with gold
             "sleep=duration:32s400ms",
             "animate=working duration:35s",
-            "produce=vest_padded"
+            "produce=helmet_wooden"
       }})
 
 

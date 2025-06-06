@@ -55,6 +55,12 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    programs = {
+      -- Calculation of complete training of one soldier:
+      -- each partial training takes additional 6 sec - see TrainingSite::TrainingSite()
+      -- time of worker: 12.7-62.6 sec, average 41.3 sec
+      -- min. time total:  8.7 + 6 = 14.7 sec
+      -- max. time total: 62.6 + 6 = 68.7 sec
+      -- avg. time total: 41.3 + 6 = 47.3 sec, 2 cycles: 94.6 sec
       sleep = {
          -- TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
          descname = _("sleeping"),
