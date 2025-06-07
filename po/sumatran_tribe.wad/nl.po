@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-06-07 03:12+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -2885,10 +2885,9 @@ msgstr "Bronmateriaal voor pantserproductie."
 #. TRANSLATORS: Helptext for a Sumatran ware: Spear
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:555
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2433
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid "Spear is a widely used weapon for hunters and warriors."
-msgstr "Veel gebruikt wapen voor jagers en krijgers."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Jacket
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:564
@@ -3578,7 +3577,6 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Sumatran production site: Woodcutter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1242
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3112
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The woodcutter recognizes 3 types of trees. Tropical trees (ironwood, balsa "
@@ -3588,12 +3586,6 @@ msgid ""
 "is not able to cut down both tropical and palm trees, the building’s "
 "productivity can decrease."
 msgstr ""
-"De houthakker herkent 3 soorten bomen. Tropische bomen (ijzerhout, balsa- en "
-"rubberboom en dipterocarpus), palmbomen (5 soorten officiële palmen) en alle "
-"andere bomen. Bomen uit de eerste twee groepen worden alleen gekapt als er "
-"tropisch hout respectievelijk boomstammen nodig zijn. Als de houthakker niet "
-"in staat is om zowel tropische bomen als palmbomen te kappen, kan de "
-"productiviteit van het gebouw afnemen."
 
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1245
@@ -3878,7 +3870,6 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1365
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3235
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "Thermal springs make terrain more favorable for tropical and palm trees. "
@@ -3886,10 +3877,6 @@ msgid ""
 "first case to transform mountains is very advantageous, in the second case, "
 "all types of terrain can be transformed."
 msgstr ""
-"Thermale bronnen maken het terrein gunstiger voor tropische bomen. Dit is "
-"vooral handig als je wasteland- en winterkaarten speelt. In het eerste geval "
-"is het zeer voordelig om bergen te transformeren, in het tweede geval kunnen "
-"alle soorten terrein worden getransformeerd."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1367

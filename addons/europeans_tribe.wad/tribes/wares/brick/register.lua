@@ -1,3 +1,3 @@
 return {
-   brick = {"__skip_if_exists"},
+    brick = {"__skip_if_exists"},
 }

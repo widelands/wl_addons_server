@@ -1,3 +1,3 @@
 return {
-   europeans_ferry = {"__replace_if_exists"},
+    europeans_ferry = {"__replace_if_exists"},
 }

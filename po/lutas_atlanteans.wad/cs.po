@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-06-07 03:12+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -818,7 +818,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/market/init.lua:8
 msgctxt "lutas_atlanteans_building"
 msgid "Market"
-msgstr ""
+msgstr "Tržnice"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/mill/init.lua:8
@@ -2887,7 +2887,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1171
 msgctxt "lutas_atlanteans_building"
 msgid "A market enables trading with other tribes."
-msgstr ""
+msgstr "Tržnice umožňuje obchodování s dalšími kmeny."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Quarry
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1179
@@ -4043,12 +4043,11 @@ msgstr ""
 #. TRANSLATORS: Lore author helptext for an Atlantean production site: Low Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1608
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3744
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "An impatient trainer can’t wait to receive his first double trident delivery"
 msgstr ""
-"netrpělivý cvičitel se už nemůže dočkat první dodávky dvojitých trojzubců"
+"netrpělivý cvičitel se už nemůže dočkat své první dodávky dvojitých trojzubců"
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Crystal Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
@@ -4209,14 +4208,14 @@ msgstr "vstupní rytina zdravící návštěvníky kobek"
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1705
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3841
-#, fuzzy, lua-format
+#, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "If all needed wares are delivered in time, a dungeon can train one soldier "
 "one level in attack in %s on average."
 msgstr ""
-"Pokud jsou všechny potřebné suroviny doručeny včas, může tato budova vyrobit "
-"chléb v průměru za %s."
+"Pokud jsou všechny potřebné suroviny doručeny včas, mohou kobky vycvičit "
+"jeden stupeň útoku vojáka za %s."
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 2
@@ -4233,7 +4232,7 @@ msgstr ""
 #, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid "Complete training of one soldier takes %s on average."
-msgstr ""
+msgstr "Kompletní výcvik jednoho vojáka zabere v průměru %s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1716
@@ -4271,14 +4270,14 @@ msgstr "atlantský hrdina po svém prvním střetu se skutečným protivníkem"
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1727
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3863
-#, fuzzy, lua-format
+#, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "If all needed wares are delivered in time, a labyrinth can train one soldier "
 "one level in defense or evade in %s on average."
 msgstr ""
-"Pokud jsou všechny potřebné suroviny doručeny včas, může tato budova vyrobit "
-"chléb v průměru za %s."
+"Pokud jsou všechny potřebné suroviny doručeny včas, může labyrint vycvičit "
+"jeden stupeň obrany nebo úhybu vojáka za %s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Temple
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1737
@@ -4324,11 +4323,13 @@ msgid ""
 "%2$s to train one soldier one level in health, depending on how far the "
 "priestess has to walk."
 msgstr ""
+"Pokud jsou všechny potřebné suroviny doručeny včas, potřebuje chrám na "
+"zlepšení jednoho stupně zdraví vojáka %1$s až %2$s, podle toho, jak dlouhou "
+"cestu musí kněžka urazit."
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Temple, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1748
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3884
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-06-07 03:12+0200\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -27,13 +27,12 @@ msgid "New Soldiers"
 msgstr "Noví vojáci"
 
 #: addons/new_soldiers.wad/addon:3
-#, fuzzy
 msgid ""
 "New more balanced soldiers. Soldiers of Empire train defence in colosseum. "
 "Amazons need gold for the second level of health training."
 msgstr ""
 "Noví lépe vyvážení vojáci. Vojáci císařství trénují v koloseu obranu. "
-"Amazonky potřebují zlato i pro první stupeň výcviku obrany."
+"Amazonky potřebují zlato i pro druhý stupeň zlepšení zdraví."
 
 #. TRANSLATORS: This is an Amazon worker name used in lists of workers
 #: addons/new_soldiers.wad/amazons_soldier/init.lua:20
@@ -122,15 +121,11 @@ msgstr "vyrábění"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/new_soldiers.wad/postload.lua:57
-#, fuzzy
 msgid "making a wooden helmet"
-msgstr "vyrábění dřevěného štítu"
+msgstr "vyrábění dřevěné přilby"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_soldiers.wad/shield_wooden/init.lua:8
 msgctxt "ware"
 msgid "Wooden Shield"
 msgstr "Dřevěný štít"
-
-#~ msgid "making a padded vest"
-#~ msgstr "šití vycpané vesty"

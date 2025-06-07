@@ -1,0 +1,32 @@
+push_textdomain("tribes")
+
+-- dirname = path.dirname(__file__)
+dirname = "tribes/buildings/warehouses/atlanteans/headquarters/"
+
+wl.Descriptions():new_warehouse_type {
+   name = "europeans_atlanteans_headquarters",
+   -- TRANSLATORS: This is a building name used in lists of buildings
+   descname = pgettext("atlanteans_building", "Headquarters"),
+   icon = dirname .. "menu.png",
+   size = "big",
+   destructible = false,
+
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 84, 117 },
+      },
+   },
+
+   aihints = {
+      prohibited_till = 21600,
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 1
+   },
+
+   heal_per_second = 220,
+   conquers = 9,
+   max_garrison = 20,
+}
+
+pop_textdomain()

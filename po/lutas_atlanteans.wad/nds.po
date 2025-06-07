@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-06-07 03:12+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -827,7 +827,7 @@ msgstr "De Jäger, de bi deese Jaggthuus warkt, hett keene Deerten tum Jagen."
 #: addons/lutas_atlanteans.wad/productionsites/market/init.lua:8
 msgctxt "lutas_atlanteans_building"
 msgid "Market"
-msgstr ""
+msgstr "Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/mill/init.lua:8
@@ -2921,7 +2921,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1171
 msgctxt "lutas_atlanteans_building"
 msgid "A market enables trading with other tribes."
-msgstr ""
+msgstr "Een Markt lett di mit anner Völkers hanneln."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Quarry
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1179
@@ -4090,7 +4090,6 @@ msgstr ""
 #. TRANSLATORS: Lore author helptext for an Atlantean production site: Low Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1608
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3744
-#, fuzzy
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "An impatient trainer can’t wait to receive his first double trident delivery"
@@ -4257,14 +4256,14 @@ msgstr "Schrieven up de Ingang tu de Gefahrelken Gangen"
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1705
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3841
-#, fuzzy, lua-format
+#, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "If all needed wares are delivered in time, a dungeon can train one soldier "
 "one level in attack in %s on average."
 msgstr ""
-"Wenn alle nödigen Waren to rechter Tied ankomen, produzeert deeses Huus dör "
-"de Bank all %s een Brood."
+"Wenn alle nödigen Waren to rechter Tied ankomen, bilden de Gefahrelke Gangen "
+"dör de Bank in %s eenen Soldaten um eenen Stand in Angriff ut."
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 2
@@ -4281,7 +4280,7 @@ msgstr ""
 #, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid "Complete training of one soldier takes %s on average."
-msgstr ""
+msgstr "Eenen Soldaten kumpleet uttobilden düürt dör de Bank %s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1716
@@ -4318,14 +4317,14 @@ msgstr "Atlantisk Held na de eersten Slacht mit eenem echten Feind"
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1727
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3863
-#, fuzzy, lua-format
+#, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid ""
 "If all needed wares are delivered in time, a labyrinth can train one soldier "
 "one level in defense or evade in %s on average."
 msgstr ""
-"Wenn alle nödigen Waren to rechter Tied ankomen, produzeert deeses Huus dör "
-"de Bank all %s een Brood."
+"Wenn alle nödigen Waren to rechter Tied ankomen, bilden de Dwaalwegen dör de "
+"Bank in %s eenen Soldaten um eenen Stand in Verteidigung of Utwieken ut."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Temple
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1737
@@ -4373,11 +4372,13 @@ msgid ""
 "%2$s to train one soldier one level in health, depending on how far the "
 "priestess has to walk."
 msgstr ""
+"Wenn alle nödigen Waren to rechter Tied ankomen, bildt de Tempel dör de Bank "
+"in %1$s bit %2$s eenen Soldaten um eenen Stand in Gesundheid ut, je nadeem, "
+"wo wied de Preesterske lopen mutt."
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Temple, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1748
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3884
-#, fuzzy
 msgctxt "sumatran_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."

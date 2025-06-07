@@ -1,3 +1,3 @@
 return {
-   planks = {"__skip_if_exists"},
+    planks = {"__skip_if_exists"},
 }

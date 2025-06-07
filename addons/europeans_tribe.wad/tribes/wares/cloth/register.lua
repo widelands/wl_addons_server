@@ -1,3 +1,3 @@
 return {
-   cloth = {"__skip_if_exists"},
+    cloth = {"__skip_if_exists"},
 }

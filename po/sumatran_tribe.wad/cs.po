@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-06-07 03:12+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -1475,7 +1475,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/market/init.lua:8
 msgctxt "sumatran_building"
 msgid "Market"
-msgstr ""
+msgstr "Tržnice"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/palm_planters_hut/init.lua:8
@@ -2862,10 +2862,9 @@ msgstr "Vstupní materiál na výrobu zbroje."
 #. TRANSLATORS: Helptext for a Sumatran ware: Spear
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:555
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2433
-#, fuzzy
 msgctxt "sumatran_ware"
 msgid "Spear is a widely used weapon for hunters and warriors."
-msgstr "Zbraň s širokým využitím pro lovce a bojovníky."
+msgstr "Oštěp je zbraní s širokým využitím pro lovce a bojovníky."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Jacket
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:564
@@ -3538,7 +3537,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1232
 msgctxt "sumatran_building"
 msgid "A market enables trading with other tribes."
-msgstr ""
+msgstr "Tržnice umožňuje obchodování s dalšími kmeny."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Woodcutter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1240
@@ -3553,7 +3552,6 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Sumatran production site: Woodcutter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1242
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3112
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The woodcutter recognizes 3 types of trees. Tropical trees (ironwood, balsa "
@@ -3566,8 +3564,9 @@ msgstr ""
 "Dřevorubci rozeznávají 3 druhy stromů. Tropické stromy (železodřevný strom, "
 "balzovník, kaučukovník a dvojkřídláč), palmy (5 druhů oficiálních palem) a "
 "všechny ostatní stromy. Stromy prvních dvou kategorií jsou káceny pouze "
-"pokud ekonomika potřebuje tropické dřevo, respektive klády. Pokud dřevorubec "
-"nemůže kácet jak tropické stromy tak palmy, jeho produktivita může klesnout."
+"pokud ekonomika potřebuje tropické dřevo, respektive klády nebo palmové "
+"listí. Pokud dřevorubec nemůže kácet jak tropické stromy tak palmy, jeho "
+"produktivita může klesnout."
 
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1245
@@ -3860,7 +3859,6 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1354
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3224
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "If the hunter has game, crocodiles and fishes in his working area, he needs "
@@ -3881,7 +3879,6 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1365
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3235
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "Thermal springs make terrain more favorable for tropical and palm trees. "
@@ -3889,10 +3886,10 @@ msgid ""
 "first case to transform mountains is very advantageous, in the second case, "
 "all types of terrain can be transformed."
 msgstr ""
-"Termální prameny přeměňují terén na terén více výhodný pro tropické stromy. "
-"To je užitečné zejména při hře na pustinných a zimních mapách. V prvním "
-"případě se vyplatí přetvářet zejména horský terén, v druhém případě lze "
-"přeměnit všechny druhy terénu."
+"Termální prameny přeměňují terén na terén více výhodný pro tropické stromy a "
+"palmy. To je užitečné zejména při hře na pustinných a zimních mapách. V "
+"prvním případě se vyplatí přetvářet zejména horský terén, v druhém případě "
+"lze přeměnit všechny druhy terénu."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1367
@@ -3903,6 +3900,9 @@ msgid ""
 "into normal meadows and used for growing palm trees, which are hard to grow "
 "on clearings."
 msgstr ""
+"Při hře na terénech Bílého léta lze přeměnit kvetoucí louky na obyčejné "
+"louky a ty využít pro pěstování palem, které se jinak na pasekách pěstují "
+"velmi obtížně."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs, the first placeholder is "145 min.", the next three "54"
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1370
@@ -3913,7 +3913,6 @@ msgstr "Termální prameny vyžadují údržbu. To tě stojí klády, kámen a v
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1371
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3241
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The building needs approximately %1% to improve fertility of every field in "
@@ -4176,7 +4175,6 @@ msgstr "Vybavuje rekruty všemi potřebnými zbraněmi a oděvy."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1506
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3376
-#, fuzzy
 msgctxt "sumatran_building"
 msgid ""
 "The tribal chief needs %1% to recruit one soldier, to train one hunter or a "

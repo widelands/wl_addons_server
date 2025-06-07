@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-22 03:14+0200\n"
+"POT-Creation-Date: 2025-06-07 03:12+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1924,6 +1924,12 @@ msgstr "Katoenveld (klein)"
 #: addons/europeans_tribe.wad/tribes/immovables/cottonfield/tiny/init.lua:9
 msgid "Cotton Field (tiny)"
 msgstr "Katoenveld (zeer klein)"
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/tribes/immovables/dike/init.lua:8
+msgctxt "immovable"
+msgid "Dike"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/tribes/immovables/pond/dry/init.lua:8
@@ -3870,668 +3876,668 @@ msgid "Start the game with your headquarters only."
 msgstr "Start het spel met alleen je hoofdkwartier."
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:84
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:9
 msgctxt "europeans_ship"
 msgid "Ship"
 msgstr "Schip"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:124
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:49
 msgctxt "shipname"
 msgid "Achlys"
 msgstr "Achlys"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:125
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:50
 msgctxt "shipname"
 msgid "Aether"
 msgstr "Aether"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:126
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:51
 msgctxt "shipname"
 msgid "Aion"
 msgstr "Aion"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:127
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:52
 msgctxt "shipname"
 msgid "Alcyoneus"
 msgstr "Alcyoneus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:128
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:53
 msgctxt "shipname"
 msgid "Aloadae"
 msgstr "Aloadae"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:129
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:54
 msgctxt "shipname"
 msgid "Ananke"
 msgstr "Ananke"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:130
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:55
 msgctxt "shipname"
 msgid "Anax"
 msgstr "Anax"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:131
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:56
 msgctxt "shipname"
 msgid "Antaeus"
 msgstr "Antaeus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:132
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:57
 msgctxt "shipname"
 msgid "Antiphates"
 msgstr "Antiphates"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:133
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:58
 msgctxt "shipname"
 msgid "Anytos"
 msgstr "Anytos"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:134
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:59
 msgctxt "shipname"
 msgid "Aphrodite"
 msgstr "Aphrodite"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:135
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:60
 msgctxt "shipname"
 msgid "Apollo"
 msgstr "Apollo"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:136
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:61
 msgctxt "shipname"
 msgid "Ares"
 msgstr "Ares"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:137
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:62
 msgctxt "shipname"
 msgid "Argus"
 msgstr "Argus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:138
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:63
 msgctxt "shipname"
 msgid "Artemis"
 msgstr "Artemis"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:139
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:64
 msgctxt "shipname"
 msgid "Asteria"
 msgstr "Asteria"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:140
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:65
 msgctxt "shipname"
 msgid "Asterius"
 msgstr "Asterius"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:141
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:66
 msgctxt "shipname"
 msgid "Astraeus"
 msgstr "Astraeus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:142
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:67
 msgctxt "shipname"
 msgid "Athena"
 msgstr "Athena"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:143
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:68
 msgctxt "shipname"
 msgid "Atlas"
 msgstr "Atlas"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:144
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:69
 msgctxt "shipname"
 msgid "Bacchus"
 msgstr "Bacchus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:145
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:70
 msgctxt "shipname"
 msgid "Bellona"
 msgstr "Bellona"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:146
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:71
 msgctxt "shipname"
 msgid "Bona Dea"
 msgstr "Bona Dea"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:147
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:72
 msgctxt "shipname"
 msgid "Cacus"
 msgstr "Cacus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:148
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:73
 msgctxt "shipname"
 msgid "Callisto"
 msgstr "Callisto"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:149
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:74
 msgctxt "shipname"
 msgid "Carmentis"
 msgstr "Carmentis"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:150
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:75
 msgctxt "shipname"
 msgid "Ceres"
 msgstr "Ceres"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:151
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:76
 msgctxt "shipname"
 msgid "Chaos"
 msgstr "Chaos"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:152
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:77
 msgctxt "shipname"
 msgid "Charon"
 msgstr "Charon"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:153
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:78
 msgctxt "shipname"
 msgid "Chronos"
 msgstr "Chronos"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:154
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:79
 msgctxt "shipname"
 msgid "Chthonius"
 msgstr "Chthonius"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:155
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:80
 msgctxt "shipname"
 msgid "Coeus"
 msgstr "Coeus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:156
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:81
 msgctxt "shipname"
 msgid "Crius"
 msgstr "Crius"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:157
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:82
 msgctxt "shipname"
 msgid "Cronus"
 msgstr "Cronus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:158
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:83
 msgctxt "shipname"
 msgid "Cyclopes"
 msgstr "Cyclopes"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:159
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:84
 msgctxt "shipname"
 msgid "Damysus"
 msgstr "Damysus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:160
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:85
 msgctxt "shipname"
 msgid "Demeter"
 msgstr "Demeter"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:161
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:86
 msgctxt "shipname"
 msgid "Diana"
 msgstr "Diana"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:162
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:87
 msgctxt "shipname"
 msgid "Dione"
 msgstr "Dione"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:163
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:88
 msgctxt "shipname"
 msgid "Dionysus"
 msgstr "Dionysus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:164
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:89
 msgctxt "shipname"
 msgid "Enceladus"
 msgstr "Enceladus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:165
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:90
 msgctxt "shipname"
 msgid "Eos"
 msgstr "Eos"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:166
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:91
 msgctxt "shipname"
 msgid "Epimetheus"
 msgstr "Epimetheus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:167
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:92
 msgctxt "shipname"
 msgid "Erebus"
 msgstr "Erebus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:168
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:93
 msgctxt "shipname"
 msgid "Eros"
 msgstr "Eros"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:169
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:94
 msgctxt "shipname"
 msgid "Europa"
 msgstr "Europa"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:170
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:95
 msgctxt "shipname"
 msgid "Falacer"
 msgstr "Falacer"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:171
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:96
 msgctxt "shipname"
 msgid "Fauna"
 msgstr "Fauna"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:172
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:97
 msgctxt "shipname"
 msgid "Flora"
 msgstr "Flora"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:173
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:98
 msgctxt "shipname"
 msgid "Fortuna"
 msgstr "Fortuna"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:174
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:99
 msgctxt "shipname"
 msgid "Freyr"
 msgstr "Freyr"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:175
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:100
 msgctxt "shipname"
 msgid "Furrina"
 msgstr "Furrina"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:176
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:101
 msgctxt "shipname"
 msgid "Gaia"
 msgstr "Gaia"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:177
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:102
 msgctxt "shipname"
 msgid "Ganymede"
 msgstr "Ganymede"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:178
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:103
 msgctxt "shipname"
 msgid "Gegenees"
 msgstr "Gegenees"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:179
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:104
 msgctxt "shipname"
 msgid "Genius"
 msgstr "Genius"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:180
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:105
 msgctxt "shipname"
 msgid "Geryon"
 msgstr "Geryon"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:181
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:106
 msgctxt "shipname"
 msgid "Hades"
 msgstr "Hades"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:182
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:107
 msgctxt "shipname"
 msgid "Helios"
 msgstr "Helios"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:183
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:108
 msgctxt "shipname"
 msgid "Hemera"
 msgstr "Hemera"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:184
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:109
 msgctxt "shipname"
 msgid "Hephaestus"
 msgstr "Hephaestus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:185
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:110
 msgctxt "shipname"
 msgid "Hera"
 msgstr "Hera"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:186
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:111
 msgctxt "shipname"
 msgid "Hermes"
 msgstr "Hermes"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:187
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:112
 msgctxt "shipname"
 msgid "Hestia"
 msgstr "Hestia"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:188
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:113
 msgctxt "shipname"
 msgid "Hyperion"
 msgstr "Hyperion"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:189
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:114
 msgctxt "shipname"
 msgid "Iapetus"
 msgstr "Iapetus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:190
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:115
 msgctxt "shipname"
 msgid "Io"
 msgstr "Io"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:191
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:116
 msgctxt "shipname"
 msgid "Janus"
 msgstr "Janus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:192
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:117
 msgctxt "shipname"
 msgid "Juno"
 msgstr "Juno"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:193
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:118
 msgctxt "shipname"
 msgid "Jupiter"
 msgstr "Jupiter"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:194
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:119
 msgctxt "shipname"
 msgid "Lelantos"
 msgstr "Lelantos"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:195
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:120
 msgctxt "shipname"
 msgid "Leto"
 msgstr "Leto"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:196
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:121
 msgctxt "shipname"
 msgid "Liber"
 msgstr "Liber"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:197
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:122
 msgctxt "shipname"
 msgid "Luna"
 msgstr "Luna"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:198
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:123
 msgctxt "shipname"
 msgid "Mars"
 msgstr "Mars"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:199
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:124
 msgctxt "shipname"
 msgid "Menoetius"
 msgstr "Menoetius"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:200
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:125
 msgctxt "shipname"
 msgid "Mercury"
 msgstr "Mercurius"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:201
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:126
 msgctxt "shipname"
 msgid "Metis"
 msgstr "Metis"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:202
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:127
 msgctxt "shipname"
 msgid "Mimas"
 msgstr "Mimas"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:203
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:128
 msgctxt "shipname"
 msgid "Minerva"
 msgstr "Minerva"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:204
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:129
 msgctxt "shipname"
 msgid "Mnemosyne"
 msgstr "Mnemosyne"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:205
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:130
 msgctxt "shipname"
 msgid "Neptune"
 msgstr "Neptunus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:206
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:131
 msgctxt "shipname"
 msgid "Nesoi"
 msgstr "Nesoi"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:207
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:132
 msgctxt "shipname"
 msgid "Nyx"
 msgstr "Nyx"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:208
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:133
 msgctxt "shipname"
 msgid "Oceanus"
 msgstr "Oceanus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:209
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:134
 msgctxt "shipname"
 msgid "Odin"
 msgstr "Odin"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:210
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:135
 msgctxt "shipname"
 msgid "Orcus"
 msgstr "Orcus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:211
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:136
 msgctxt "shipname"
 msgid "Orion"
 msgstr "Orion"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:212
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:137
 msgctxt "shipname"
 msgid "Ourea"
 msgstr "Ourea"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:213
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:138
 msgctxt "shipname"
 msgid "Palatua"
 msgstr "Palatua"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:214
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:139
 msgctxt "shipname"
 msgid "Pallas"
 msgstr "Pallas"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:215
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:140
 msgctxt "shipname"
 msgid "Persephone"
 msgstr "Persephone"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:216
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:141
 msgctxt "shipname"
 msgid "Perses"
 msgstr "Perses"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:217
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:142
 msgctxt "shipname"
 msgid "Phanes"
 msgstr "Phanes"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:218
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:143
 msgctxt "shipname"
 msgid "Phoebe"
 msgstr "Phoebe"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:219
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:144
 msgctxt "shipname"
 msgid "Picolous"
 msgstr "Picolous"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:220
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:145
 msgctxt "shipname"
 msgid "Pluto"
 msgstr "Pluto"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:221
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:146
 msgctxt "shipname"
 msgid "Polybotes"
 msgstr "Polybotes"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:222
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:147
 msgctxt "shipname"
 msgid "Pomona"
 msgstr "Pomona"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:223
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:148
 msgctxt "shipname"
 msgid "Pontus"
 msgstr "Pontus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:224
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:149
 msgctxt "shipname"
 msgid "Porphyrion"
 msgstr "Porphyrion"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:225
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:150
 msgctxt "shipname"
 msgid "Portunus"
 msgstr "Portunus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:226
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:151
 msgctxt "shipname"
 msgid "Poseidon"
 msgstr "Poseidon"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:227
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:152
 msgctxt "shipname"
 msgid "Prometheus"
 msgstr "Prometheus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:228
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:153
 msgctxt "shipname"
 msgid "Proteus"
 msgstr "Proteus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:229
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:154
 msgctxt "shipname"
 msgid "Quirinus"
 msgstr "Quirinus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:230
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:155
 msgctxt "shipname"
 msgid "Rhea"
 msgstr "Rhea"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:231
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:156
 msgctxt "shipname"
 msgid "Saturn"
 msgstr "Saturnus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:232
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:157
 msgctxt "shipname"
 msgid "Selene"
 msgstr "Selene"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:233
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:158
 msgctxt "shipname"
 msgid "Sol"
 msgstr "Sol"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:234
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:159
 msgctxt "shipname"
 msgid "Styx"
 msgstr "Styx"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:235
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:160
 msgctxt "shipname"
 msgid "Syceus"
 msgstr "Syceus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:236
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:161
 msgctxt "shipname"
 msgid "Talos"
 msgstr "Talos"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:237
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:162
 msgctxt "shipname"
 msgid "Tartarus"
 msgstr "Tartarus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:238
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:163
 msgctxt "shipname"
 msgid "Tellus"
 msgstr "Tellus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:239
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:164
 msgctxt "shipname"
 msgid "Tethys"
 msgstr "Tethys"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:240
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:165
 msgctxt "shipname"
 msgid "Thalassa"
 msgstr "Thalassa"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:241
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:166
 msgctxt "shipname"
 msgid "Theia"
 msgstr "Theia"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:242
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:167
 msgctxt "shipname"
 msgid "Themis"
 msgstr "Themis"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:243
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:168
 msgctxt "shipname"
 msgid "Thoas"
 msgstr "Thoas"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:244
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:169
 msgctxt "shipname"
 msgid "Thor"
 msgstr "Thor"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:245
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:170
 msgctxt "shipname"
 msgid "Titan"
 msgstr "Titan"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:246
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:171
 msgctxt "shipname"
 msgid "Tityos"
 msgstr "Tityos"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:247
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:172
 msgctxt "shipname"
 msgid "Triton"
 msgstr "Triton"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:248
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:173
 msgctxt "shipname"
 msgid "Typhon"
 msgstr "Typhon"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:249
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:174
 msgctxt "shipname"
 msgid "Uranus"
 msgstr "Uranus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:250
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:175
 msgctxt "shipname"
 msgid "Venus"
 msgstr "Venus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:251
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:176
 msgctxt "shipname"
 msgid "Vesta"
 msgstr "Vesta"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:252
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:177
 msgctxt "shipname"
 msgid "Volturnus"
 msgstr "Volturnus"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:253
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:178
 msgctxt "shipname"
 msgid "Vulcan"
 msgstr "Vulcan"
 
-#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:254
+#: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:179
 msgctxt "shipname"
 msgid "Zeus"
 msgstr "Zeus"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_tribe.wad/tribes/wares/armor/init.lua:77
+#: addons/europeans_tribe.wad/tribes/wares/armor/init.lua:8
 msgctxt "ware"
 msgid "Armor"
 msgstr "Harnas"

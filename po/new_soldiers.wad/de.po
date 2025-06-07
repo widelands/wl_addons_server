@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-06-07 03:12+0200\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -118,15 +118,11 @@ msgstr "Das Herstellen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/new_soldiers.wad/postload.lua:57
-#, fuzzy
 msgid "making a wooden helmet"
-msgstr "Das Herstellen eines hölzernen Schilds"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_soldiers.wad/shield_wooden/init.lua:8
 msgctxt "ware"
 msgid "Wooden Shield"
 msgstr "Hölzerner Schild"
-
-#~ msgid "making a padded vest"
-#~ msgstr "Das Herstellen einer gepolsterten Weste"
