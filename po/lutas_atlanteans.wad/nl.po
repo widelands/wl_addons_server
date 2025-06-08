@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 03:12+0200\n"
+"POT-Creation-Date: 2025-06-08 03:12+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -827,7 +827,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/market/init.lua:8
 msgctxt "lutas_atlanteans_building"
 msgid "Market"
-msgstr ""
+msgstr "Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/mill/init.lua:8
@@ -1202,6 +1202,9 @@ msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
 "an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Begin het spel met alleen een magazijn en het absolute minimum om een "
+"economie op gang te brengen. Waarschuwing: de AI kan hier niet succesvol mee "
+"beginnen."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 msgid "Be careful"
@@ -1259,14 +1262,14 @@ msgstr "%1$s is opgeruimd!"
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$d item is verwijderd."
+msgstr[1] "%1$d items zijn verwijderd."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$d item over."
+msgstr[1] "%2$d items over."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -2941,7 +2944,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1171
 msgctxt "lutas_atlanteans_building"
 msgid "A market enables trading with other tribes."
-msgstr ""
+msgstr "Een markt maakt handel met andere stammen mogelijk."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Quarry
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1179
@@ -4120,6 +4123,8 @@ msgctxt "lutas_atlanteans_building"
 msgid ""
 "An impatient trainer can’t wait to receive his first double trident delivery"
 msgstr ""
+"Een ongeduldige trainer kan niet wachten om zijn eerste dubbele "
+"drietandlevering te ontvangen."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Crystal Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
@@ -4203,6 +4208,9 @@ msgid ""
 "Thus, every major building will need them so the inhabitants may worship "
 "Lutas to give them joy."
 msgstr ""
+"Alleen de zuivere, witte Diamanten en Kwarts zullen ons volk verlichten. "
+"Daarom zullen alle belangrijke gebouwen ze nodig hebben, zodat de bewoners "
+"Lutas kunnen aanbidden om hen vreugde te schenken."
 
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlanteans’ production site: Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1635
@@ -4260,7 +4268,7 @@ msgstr "Traint soldaten in 'Aanvallen'."
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3833
 msgctxt "lutas_atlanteans_building"
 msgid "Equips the soldiers with all necessary weapons."
-msgstr ""
+msgstr "Rust de soldaten uit met alle benodigde wapens."
 
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlanteans’ production site: Dungeon
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1700
@@ -4286,6 +4294,8 @@ msgid ""
 "If all needed wares are delivered in time, a dungeon can train one soldier "
 "one level in attack in %s on average."
 msgstr ""
+"Als alle benodigde goederen op tijd worden geleverd, kan een kerker één "
+"soldaat gemiddeld één niveau in aanval trainen in  %s."
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Dungeon, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 2
@@ -4302,7 +4312,7 @@ msgstr ""
 #, lua-format
 msgctxt "lutas_atlanteans_building"
 msgid "Complete training of one soldier takes %s on average."
-msgstr ""
+msgstr "De volledige opleiding van één soldaat duurt gemiddeld %s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ training site: Labyrinth, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1716
@@ -4345,6 +4355,8 @@ msgid ""
 "If all needed wares are delivered in time, a labyrinth can train one soldier "
 "one level in defense or evade in %s on average."
 msgstr ""
+"Als alle benodigde goederen op tijd worden geleverd, kan een labyrint één "
+"soldaat één niveau trainen in verdediging of ontwijken in gemiddeld %s."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Temple
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1737
@@ -4392,6 +4404,9 @@ msgid ""
 "%2$s to train one soldier one level in health, depending on how far the "
 "priestess has to walk."
 msgstr ""
+"Als alle benodigde goederen op tijd worden geleverd, heeft een tempel tussen "
+"%1$s en %2$s nodig om één soldaat één niveau in gezondheid te trainen, "
+"afhankelijk van hoe ver de priesteres moet lopen."
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Temple, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1748
@@ -4399,6 +4414,7 @@ msgstr ""
 msgctxt "sumatran_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ military site: Guardhouse
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ military site: Guardhall
