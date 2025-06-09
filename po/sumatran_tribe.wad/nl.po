@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 03:12+0200\n"
+"POT-Creation-Date: 2025-06-09 03:12+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -734,7 +734,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:8
 msgctxt "frisians_building"
 msgid "Crocodile Hunter’s House"
-msgstr "Het Huis van de Krokodillenjager"
+msgstr "Jachtuis van de Krokodillenjager"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:86
@@ -750,7 +750,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:8
 msgctxt "lutas_atlanteans_building"
 msgid "Crocodile Hunter’s House"
-msgstr ""
+msgstr "Jachthuis van de Krokodillenjager"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:55
@@ -759,6 +759,8 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"De jager die vanuit dit huis werkt, vindt geen krokodillen in zijn "
+"werkgebied."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
@@ -1106,12 +1108,15 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Natuurlijk is de jacht op krokodillen een goed idee. De efficiëntie van de "
+"jacht zou niet veel moeten toenemen, maar de productiviteit kan wel toenemen "
+"als er niet genoeg dieren in de nabijgelegen bossen zijn."
 
 #. TRANSLATORS: Lore author helptext for an Atlantean production site: Crocodile Hunter’s House
 #: addons/sumatran_tribe.wad/postload.lua:365
 msgctxt "lutas_atlanteans_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "Jager pleit voor het bouwen van een krokodillenjagershuis"
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:369
@@ -1120,6 +1125,8 @@ msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
+"Dit gebouw is alleen nuttig als je een Sumatraanse tegenstander hebt en er "
+"krokodillen vanuit zijn territorium naar jouw territorium komen."
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:371
@@ -1128,6 +1135,8 @@ msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
+"Het gebouw heeft 2 verschillende werkgebieden, het kleinere voor de "
+"krokodillenjacht en het grotere voor de jacht op wild."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:375
@@ -1138,12 +1147,17 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Als er voldoende krokodillen en andere dieren zijn, hebben de jagers "
+"gemiddeld %1$s nodig om één vlees te produceren. Als er geen krokodillen "
+"zijn, werkt het gebouw als een basisjagershuis en hebben de jagers gemiddeld "
+"%2$s nodig om één vlees te produceren."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/sumatran_tribe.wad/postload.lua:377
 msgctxt "lutas_atlanteans_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
@@ -1473,7 +1487,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/market/init.lua:8
 msgctxt "sumatran_building"
 msgid "Market"
-msgstr ""
+msgstr "Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/palm_planters_hut/init.lua:8
@@ -1824,7 +1838,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua:11
 msgid "Castaways"
-msgstr ""
+msgstr "Schipbreukelingen"
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua:13
@@ -1834,6 +1848,10 @@ msgid ""
 "to find a portspace with direct access to rocks and trees. For unknown maps, "
 "game without fog of war recommended."
 msgstr ""
+"Begin het spel met één schip op de oceaan, het minimum aan goederen en "
+"weinig arbeiders. Waarschuwing: de AI kan hier niet succesvol mee starten. "
+"Je zult een havenruimte moeten vinden met directe toegang tot rotsen en "
+"bomen. Voor onbekende kaarten wordt een spel zonder oorlogsmist aanbevolen."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:11
@@ -1954,14 +1972,14 @@ msgstr "%1$s is opgeruimd!"
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:185
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$d item is verwijderd."
+msgstr[1] "%1$d items zijn verwijderd."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:185
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$d item over."
+msgstr[1] "%2$d items over."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -2887,7 +2905,7 @@ msgstr "Bronmateriaal voor pantserproductie."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2433
 msgctxt "sumatran_ware"
 msgid "Spear is a widely used weapon for hunters and warriors."
-msgstr ""
+msgstr "Veel gebruikt wapen voor jagers en krijgers."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Crocodile Jacket
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:564
@@ -3513,13 +3531,15 @@ msgid ""
 "Oh, you brave northern star, you are protecting and watching over all of our "
 "buildings. All other stars come and go, but you never leave your place."
 msgstr ""
+"Oh, dappere Poolster, je beschermt en waakt over al onze gebouwen. Alle "
+"andere sterren komen en gaan, maar jij blijft altijd op je plek."
 
 #. TRANSLATORS: Lore author helptext for a Sumatran production site: Headquarters
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1206
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3084
 msgctxt "sumatran_building"
 msgid "Part of tribal equinox prayer"
-msgstr ""
+msgstr "Onderdeel van het stamgebed bij de equinox"
 
 #. TRANSLATORS: Purpose helptext for a Sumatran warehouse: Headquarters
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1208
@@ -3562,7 +3582,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1232
 msgctxt "sumatran_building"
 msgid "A market enables trading with other tribes."
-msgstr ""
+msgstr "Een markt maakt handel met andere stammen mogelijk."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Woodcutter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1240
@@ -3586,6 +3606,12 @@ msgid ""
 "is not able to cut down both tropical and palm trees, the building’s "
 "productivity can decrease."
 msgstr ""
+"De houtvester herkent 3 soorten bomen. Tropische bomen (ijzerhout, "
+"balsahout, rubberboom en dipterocarpus), palmbomen (5 soorten officiële "
+"palmen) en alle andere bomen. Bomen uit de eerste twee groepen worden alleen "
+"gekapt als er tropisch hout, respectievelijk houtblokken of palmbladeren "
+"nodig zijn. Als de houthakker niet in staat is om zowel tropische bomen als "
+"palmbomen te kappen, kan de productiviteit van het gebouw afnemen."
 
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1245
@@ -3597,6 +3623,10 @@ msgid ""
 "If there is only one type of trees, if there are two types or tree types, he "
 "needs %3$s, %4$s or %5$s on average to cut down one tree respectively."
 msgstr ""
+"De houtvester kan gemiddeld één boomstam produceren tussen %1$s en %2$s "
+"afhankelijk van hoe ver hij moet lopen en hoeveel boomsoorten er beschikbaar "
+"zijn. Als er slechts één soort bomen is, als er twee soorten bomen zijn, "
+"heeft hij gemiddeld %3$s, %4$s of %5$s nodig om één boom te kappen."
 
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 2
@@ -3651,6 +3681,7 @@ msgstr ""
 msgctxt "sumatran_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
 
 #. TRANSLATORS: Lore helptext for a Sumatran production site: Palm Planter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1255
@@ -3661,6 +3692,10 @@ msgid ""
 "palm trees were growing. Without palm trees we could never call this place "
 "our home, they have an irreplaceable place in our culture and economy."
 msgstr ""
+"Volgens oude legendes leefde onze stam lang geleden op een plek waar alleen "
+"palmbomen groeiden. Zonder palmbomen zouden we deze plek nooit ons thuis "
+"kunnen noemen, ze nemen een onvervangbare plaats in onze cultuur en economie "
+"in."
 
 #. TRANSLATORS: Lore author helptext for a Sumatran production site: Palm Planter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1257
@@ -3668,6 +3703,8 @@ msgstr ""
 msgctxt "sumatran_building"
 msgid "Explanation why foresters living in this houses plant palm trees only"
 msgstr ""
+"Verklaring waarom boswachters die in deze huizen wonen alleen palmbomen "
+"planten"
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Palm Planter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1259
@@ -3696,6 +3733,8 @@ msgid ""
 "The forester plants one palm tree between %1$s and %2$s on average, "
 "depending on how far he has to walk."
 msgstr ""
+"De boswachter plant gemiddeld één palmboom tussen %1$s en %2$s afhankelijk "
+"van hoe ver hij moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Preserver’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1274
@@ -3723,6 +3762,8 @@ msgid ""
 "The forester plants one tree between %1$s and %2$s on average, depending on "
 "how far he has to walk."
 msgstr ""
+"De boswachter plant gemiddeld één boom tussen %1$s en %2$s, afhankelijk van "
+"hoe ver hij moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stonecutter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1289
@@ -3746,6 +3787,8 @@ msgid ""
 "The stonecutter can produce one block of stone between %1$s and %2$s on "
 "average, depending on how far he has to walk."
 msgstr ""
+"De steenhouwer kan gemiddeld één blok steen produceren tussen %1$s en %2$s, "
+"afhankelijk van hoe ver hij moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Water Carrier’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1304
@@ -3773,6 +3816,8 @@ msgid ""
 "The carrier can produce one bucket of water between %1$s and %2$s on "
 "average, depending on how far he has to walk."
 msgstr ""
+"De drager kan gemiddeld één emmer water produceren tussen%1$s en %2$s, "
+"afhankelijk van hoe ver hij moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Leaf Gatherer’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1319
@@ -3801,6 +3846,8 @@ msgid ""
 "The leaf gatherer can produce one bundle of leaves between %1$s and %2$s on "
 "average, depending on how far she has to walk."
 msgstr ""
+"De bladverzamelaar kan gemiddeld één bundel bladeren produceren tussen %1$s "
+"en %2$s, afhankelijk van hoe ver ze moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s Tent
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1334
@@ -3831,6 +3878,10 @@ msgid ""
 "source available, he needs %2$s to hunt one animal or %3$s to catch one fish "
 "on average."
 msgstr ""
+"Als de jager zowel wild als vis in zijn werkgebied heeft, heeft hij "
+"gemiddeld %1$s nodig om twee dieren te jagen en één vis te vangen. Als er "
+"slechts één voedselbron beschikbaar is, heeft hij gemiddeld %2$s nodig om "
+"één dier te jagen of %3$s om één vis te vangen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Hunter’s House
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1349
@@ -3866,6 +3917,13 @@ msgid ""
 "fish on average. If there is only one food source available, he needs %4$s "
 "to hunt one animal or one crocodile and %5$s to catch one fish on average."
 msgstr ""
+"Als de jager wild, krokodillen en vissen in zijn werkgebied heeft, heeft hij "
+"gemiddeld %1$s nodig om één dier, één krokodil te jagen en één vis te "
+"vangen. Als er slechts twee voedselbronnen beschikbaar zijn, heeft hij "
+"gemiddeld %2$s nodig om één dier en één krokodil te jagen of %3$s om één "
+"dier of krokodil te jagen en één vis te vangen. Als er slechts één "
+"voedselbron beschikbaar is, heeft hij gemiddeld %4$s nodig om één dier of "
+"één krokodil te jagen en %5$s om één vis te vangen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1365
@@ -3877,6 +3935,11 @@ msgid ""
 "first case to transform mountains is very advantageous, in the second case, "
 "all types of terrain can be transformed."
 msgstr ""
+"Thermale bronnen maken het terrein geschikter voor tropische bomen en "
+"palmbomen. Dit is vooral handig bij het spelen van ruigland- en "
+"winterkaarten. In het eerste geval is het zeer voordelig om bergen te "
+"transformeren, in het tweede geval kunnen alle soorten terrein worden "
+"getransformeerd."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Thermal springs, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1367
@@ -3887,6 +3950,9 @@ msgid ""
 "into normal meadows and used for growing palm trees, which are hard to grow "
 "on clearings."
 msgstr ""
+"Tijdens het spelen op White Summer-terreinen kunnen bloeiende weiden worden "
+"omgevormd tot normale weiden en worden gebruikt voor het kweken van "
+"palmbomen, die moeilijk te kweken zijn op open plekken."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs, the first placeholder is "145 min.", the next three "54"
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1370
@@ -3905,6 +3971,9 @@ msgid ""
 "its working area. By doing that it will consume approximately %2% logs, %3% "
 "buckets of water and %4% blocks of stone."
 msgstr ""
+"Het gebouw heeft ongeveer %1% nodig om de vruchtbaarheid van elk veld in "
+"zijn werkgebied te verbeteren. Hiervoor verbruikt het ongeveer %2% "
+"houtblokken, %3% emmers water en %4% stenen blokken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Scout’s Dwelling
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1378
@@ -3940,6 +4009,8 @@ msgid ""
 "The reedcutter can produce one bundle of reed between %1$s and %2$s on "
 "average, depending on how far he has to walk."
 msgstr ""
+"De rietsnijder kan gemiddeld één bundel riet produceren tussen %1$s en %2$s "
+"afhankelijk van hoe ver hij moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Basic Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1402
@@ -3955,6 +4026,8 @@ msgid ""
 "The craftsman needs %1% to produce sanded wood, %2% to polish one diamond or "
 "%3% to produce whetstones."
 msgstr ""
+"De ambachtsman heeft %1% nodig om geschuurd hout te produceren, %2% om één "
+"diamant te polijsten of %3% om wetstenen te produceren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tools Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1410
@@ -4010,6 +4083,8 @@ msgid ""
 "The coppersmith needs %1% to produce one copper sheet or %2% to produce one "
 "gold sheet."
 msgstr ""
+"De kopersmid heeft %1% nodig om één koperen plaat te produceren of %2% om "
+"één gouden plaat te produceren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Armorsmithy
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1436
@@ -4046,6 +4121,8 @@ msgid ""
 "The winemaker can produce one bucket of wine between %1$s and %2$s on "
 "average, depending on how far she has to walk."
 msgstr ""
+"De wijnmaakster kan gemiddeld één emmer wijn produceren tussen %1$s en %2$s "
+"afhankelijk van hoe ver ze moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Kitchen
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1459
@@ -4103,7 +4180,7 @@ msgstr "Produceert kleding."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3348
 msgctxt "sumatran_building"
 msgid "The dressmaker needs %1% to sew one piece of clothing."
-msgstr ""
+msgstr "De kleermaker heeft %1% nodig om één kledingstuk te naaien."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Furnace
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1485
@@ -4119,6 +4196,8 @@ msgid ""
 "The smelter needs %1% to produce one iron ingot, %2% to produce one copper "
 "ingot or %3% to produce one gold bar."
 msgstr ""
+"De smelter heeft %1% nodig om één ijzeren staaf te produceren, %2% om één "
+"koperen staaf te produceren of %3% om één goudstaaf te produceren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Charcoal Kiln
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1493
@@ -4132,6 +4211,7 @@ msgstr "Brandt houtblokken tot houtskool."
 msgctxt "sumatran_building"
 msgid "The charcoal burner needs %1% to produce one lump of coal."
 msgstr ""
+"De houtskoolbrander heeft %1% nodig om één stuk houtskool te produceren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1502
@@ -4154,6 +4234,8 @@ msgid ""
 "The tribal chief needs %1% to recruit one soldier, to train one hunter or a "
 "new chief and %2% to gain one carrier."
 msgstr ""
+"Het stamhoofd heeft %1% nodig om één soldaat te rekruteren, één jager of een "
+"nieuw stamhoofd op te leiden en %2% om één drager te krijgen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
@@ -4466,6 +4548,8 @@ msgid ""
 "If all needed wares are delivered in time, a training camp can train one "
 "soldier one level in evade, defense or health in %s."
 msgstr ""
+"Als alle benodigde goederen op tijd worden geleverd, kan een trainingskamp "
+"één soldaat één niveau trainen in ontwijken, verdedigen of gezondheid in %s."
 
 #. TRANSLATORS: Performance helptext for a Sumatran training site: Training Camp, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1646
@@ -4473,7 +4557,7 @@ msgstr ""
 #, lua-format
 msgctxt "sumatran_building"
 msgid "Complete training of one soldier takes %s."
-msgstr ""
+msgstr "De volledige opleiding van één soldaat duurt %s."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Hunting Camp
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1654
@@ -4502,6 +4586,9 @@ msgid ""
 "and %2$s to train one soldier one level in attack, depending on how far the "
 "hunter has to walk."
 msgstr ""
+"IAls alle benodigde goederen op tijd worden geleverd, heeft een jachtkamp "
+"tussen %1$s en %2$s nodig om één soldaat één niveau in aanval te trainen, "
+"afhankelijk van hoe ver de jager moet lopen."
 
 #. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 3
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1663
@@ -4509,7 +4596,7 @@ msgstr ""
 #, lua-format
 msgctxt "sumatran_building"
 msgid "Complete training of one soldier takes %s on average."
-msgstr ""
+msgstr "De volledige opleiding van één soldaat duurt gemiddeld %s."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Guard Post
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Small Sentry
@@ -4597,6 +4684,8 @@ msgid ""
 "The shipwright can produce one ferry between %1$s and %2$s, depending on how "
 "far he has to walk."
 msgstr ""
+"De scheepsbouwer kan één veerboot bouwen tussen %1$s en %2$s, afhankelijk "
+"van hoe ver hij moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Shipyard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1744
@@ -4617,6 +4706,8 @@ msgid ""
 "The shipwright can produce one ship between %1$s and %2$s, depending on how "
 "far he has to walk."
 msgstr ""
+"De scheepsbouwer kan één schip bouwen tussen %1$s en %2$s, afhankelijk van "
+"hoe ver hij moet lopen."
 
 #. TRANSLATORS: Lore helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1759

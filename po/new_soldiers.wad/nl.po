@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 03:12+0200\n"
+"POT-Creation-Date: 2025-06-09 03:12+0200\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -30,6 +30,9 @@ msgid ""
 "New more balanced soldiers. Soldiers of Empire train defence in colosseum. "
 "Amazons need gold for the second level of health training."
 msgstr ""
+"Nieuwe, meer uitgebalanceerde soldaten. Soldaten van het Rijk trainen hun "
+"verdediging in het colosseum. Amazones hebben goud nodig voor het tweede "
+"niveau van gezondheidstraining."
 
 #. TRANSLATORS: This is an Amazon worker name used in lists of workers
 #: addons/new_soldiers.wad/amazons_soldier/init.lua:20
@@ -104,7 +107,7 @@ msgstr "‘%1%’<br>(%2%)"
 
 #: addons/new_soldiers.wad/postload.lua:19
 msgid "This shield is used for defense training."
-msgstr ""
+msgstr "Dit schild wordt gebruikt voor verdedigingstraining."
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden shield because ...
 #: addons/new_soldiers.wad/postload.lua:24
@@ -119,7 +122,7 @@ msgstr "werkende"
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/new_soldiers.wad/postload.lua:57
 msgid "making a wooden helmet"
-msgstr ""
+msgstr "een houten helm maken"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_soldiers.wad/shield_wooden/init.lua:8
