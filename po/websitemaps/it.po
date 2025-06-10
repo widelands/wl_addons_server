@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2025-05-05 03:11+0200\n"
+"POT-Creation-Date: 2025-06-10 03:11+0200\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
 "it/)\n"
@@ -502,6 +502,10 @@ msgid "Pass It Down 1.0"
 msgstr ""
 
 #: input:8 standard
+msgid "Plateau edited by tothxa"
+msgstr ""
+
+#: input:8 standard
 msgid "Platzmangel_16"
 msgstr ""
 
@@ -804,6 +808,12 @@ msgstr ""
 msgid ""
 "A huge europe map. Blue = Sweden, Red = Italy, Yellow = Spain, Green = "
 "Turkey, Black = Russia, Orange = England, Purple = France, White = Poland"
+msgstr ""
+
+#: input:10 standard
+msgid ""
+"A large island with coastal plains and a forested plateau. Rich in resources "
+"and plenty of flat building space along the coasts."
 msgstr ""
 
 #: input:10 standard
@@ -1723,6 +1733,15 @@ msgstr ""
 #: input:11 standard
 msgid ""
 "The strata in the mountains give clues to the minerals that lie beneath. "
+msgstr ""
+
+#: input:11 standard
+msgid ""
+"This is a large and slow map for long games, best suited for two human "
+"players. If you play against the AI, give it all the advantage you can: use "
+"Trading Outpost starting condition for the AI and some reduced starting "
+"condition for yourself, then play with increased game speed — but it will "
+"still be too easy."
 msgstr ""
 
 #: input:11 standard
@@ -7168,4 +7187,12 @@ msgid ""
 "of the other players and perhaps turn off the Blue Flag player completely. "
 "If you want a \"More Challenging\" game, switch your Headquarters to one of "
 "the sites on the large island and leave the Blue Flag player as AI."
+msgstr ""
+
+#: /tmp/websitemaps_uploader_comments.lua:320
+msgid ""
+"This is the version of [Plateau](https://www.widelands.org/maps/plateau/) "
+"that I tried to edit for inclusion as an [official map](https://codeberg.org/"
+"wl/widelands/pulls/5138), but couldn't get to work well against the AI. And "
+"be prepared for a slow game."
 msgstr ""
