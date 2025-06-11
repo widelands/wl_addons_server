@@ -1,6 +1,6 @@
-dirname = path.dirname(__file__)
+local dirname = path.dirname(__file__)
 
-push_textdomain("tribes")
+push_textdomain("europeans_all.wad", true)
 
 wl.Descriptions():new_immovable_type {
    name = "oatfield_small",

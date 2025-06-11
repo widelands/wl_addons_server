@@ -1,7 +1,7 @@
-push_textdomain("tribes")
+push_textdomain("europeans_all.wad", true)
 
--- dirname = path.dirname(__file__)
-dirname = "campaigns/atl02.wmf/scripting/tribes/atlanteans_trader/"
+-- local dirname = path.dirname(__file__)
+local dirname = "campaigns/atl02.wmf/scripting/tribes/atlanteans_trader/"
 
 wl.Descriptions():new_worker_type {
    name = "atlanteans_trader",

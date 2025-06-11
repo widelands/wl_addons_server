@@ -1,7 +1,7 @@
-push_textdomain("tribes")
+push_textdomain("europeans_all.wad", true)
 
--- dirname = path.dirname(__file__)
-dirname = "tribes/buildings/productionsites/frisians/dikers_house/"
+-- local dirname = path.dirname(__file__)
+local dirname = "tribes/buildings/productionsites/frisians/dikers_house/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_dikers_house",
@@ -63,7 +63,8 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "log", amount = 12 },
         { name = "blackwood", amount = 12 },
-        { name = "ironwood", amount = 12 }
+        { name = "ironwood", amount = 12 },
+        { name = "planks", amount = 12 }
     },
 
     programs = {
@@ -75,12 +76,19 @@ wl.Descriptions():new_productionsite_type {
                 "call=build_dike_with_log",
                 "call=dike_with_log",
                 "call=dike_with_log",
+                "sleep=duration:8s",
                 "call=build_dike_with_blackwood",
                 "call=dike_with_blackwood",
                 "call=dike_with_blackwood",
+                "sleep=duration:8s",
+                "call=build_dike_with_planks",
+                "call=dike_with_planks",
+                "call=dike_with_planks",
+                "sleep=duration:8s",
                 "call=build_dike_with_ironwood",
                 "call=dike_with_ironwood",
-                "call=dike_with_ironwood"
+                "call=dike_with_ironwood",
+                "sleep=duration:8s"
             }
         },
         build_dike_with_blackwood = {
@@ -90,8 +98,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood",
                 "callworker=check_build",
                 "consume=blackwood:4",
-                "callworker=build",
-                "sleep=duration:15s"
+                "callworker=build"
             }
         },
         build_dike_with_ironwood = {
@@ -101,8 +108,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ironwood",
                 "callworker=check_build",
                 "consume=ironwood:4",
-                "callworker=build",
-                "sleep=duration:15s"
+                "callworker=build"
             }
         },
         build_dike_with_log = {
@@ -112,48 +118,60 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs log",
                 "callworker=check_build",
                 "consume=log:4",
-                "callworker=build",
-                "sleep=duration:15s"
+                "callworker=build"
+            }
+        },
+        build_dike_with_planks = {
+            -- TRANSLATORS: Completed/Skipped/Did not start building a dike because ...
+            descname = _("building a dike"),
+            actions = {
+                "return=skipped when economy needs planks",
+                "callworker=check_build",
+                "consume=planks:4",
+                "callworker=build"
             }
         },
         dike_with_blackwood = {
             -- TRANSLATORS: Completed/Skipped/Did not start diking because ...
             descname = _("diking"),
             actions = {
-                "return=skipped when economy needs blackwood",
                 "callworker=check_dike",
                 "consume=blackwood",
-                "callworker=dike",
-                "sleep=duration:15s"
+                "callworker=dike"
             }
         },
         dike_with_ironwood = {
             -- TRANSLATORS: Completed/Skipped/Did not start diking because ...
             descname = _("diking"),
             actions = {
-                "return=skipped when economy needs ironwood",
                 "callworker=check_dike",
                 "consume=ironwood",
-                "callworker=dike",
-                "sleep=duration:15s"
+                "callworker=dike"
             }
         },
         dike_with_log = {
             -- TRANSLATORS: Completed/Skipped/Did not start diking because ...
             descname = _("diking"),
             actions = {
-                "return=skipped when economy needs log",
                 "callworker=check_dike",
                 "consume=log",
-                "callworker=dike",
-                "sleep=duration:15s"
+                "callworker=dike"
+            }
+        },
+        dike_with_planks = {
+            -- TRANSLATORS: Completed/Skipped/Did not start diking because ...
+            descname = _("diking"),
+            actions = {
+                "callworker=check_dike",
+                "consume=planks",
+                "callworker=dike"
             }
         },
         dummy = {
             -- just a dummy program to fix AI
             descname = "dummy program",
             actions = {
-                "produce=gold_dust",
+                "produce=gold_dust gold_ore iron_ore quartz diamond marble granite",
             },
         },
     },

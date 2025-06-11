@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
--- dirname = path.dirname(__file__)
-dirname = "tribes/buildings/militarysites/empire/sentry/"
+-- local dirname = path.dirname(__file__)
+local dirname = "tribes/buildings/militarysites/empire/sentry/"
 
 wl.Descriptions():new_militarysite_type {
     name = "europeans_sentry_level_1",

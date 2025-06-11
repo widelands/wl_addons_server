@@ -1,8 +1,8 @@
 -- This file contains the basic information for the Europeans tribe that is
 -- needed before a game is loaded or the editor has been started.
 
-dirname = path.dirname(__file__)
 push_textdomain("europeans_all.wad", true)
+local dirname = path.dirname(__file__)
 
 local init_europeans = {
     -- Basic information for the Europeans tribe

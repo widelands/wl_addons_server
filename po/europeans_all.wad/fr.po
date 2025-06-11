@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 03:11+0200\n"
+"POT-Creation-Date: 2025-06-11 03:12+0200\n"
 "PO-Revision-Date: 2025-06-06 17:58+0000\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
@@ -1360,7 +1360,7 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/cocoa_farm/init.lua:48
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/corn_farm/init.lua:45
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/cotton_plantation/init.lua:45
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:72
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:73
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/ferry_yard_basic/init.lua:64
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/ferry_yard_level_1/init.lua:52
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/ferry_yard_level_2/init.lua:61
@@ -2447,16 +2447,18 @@ msgid "Diker’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start building a dike because ...
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:88
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:99
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:110
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:96
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:106
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:116
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:126
 msgid "building a dike"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start diking because ...
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:121
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:132
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:143
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:136
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:145
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:154
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:163
 msgid "diking"
 msgstr ""
 
@@ -3508,7 +3510,6 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:53
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:71
 msgid "harvesting ironwood"
 msgstr ""
 
@@ -3516,6 +3517,11 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:62
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_basic/init.lua:55
 msgid "cutting lianas"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:71
+msgid "harvesting log"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)

@@ -1,6 +1,6 @@
-dirname = path.dirname(__file__)
+push_textdomain("europeans_all.wad", true)
 
-push_textdomain("tribes")
+local dirname = path.dirname(__file__)
 
 wl.Descriptions():new_ware_type {
    name = "barley_flour",

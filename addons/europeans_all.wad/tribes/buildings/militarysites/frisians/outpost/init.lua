@@ -1,7 +1,7 @@
-push_textdomain("tribes")
+push_textdomain("europeans_all.wad", true)
 
--- dirname = path.dirname(__file__)
-dirname = "tribes/buildings/militarysites/frisians/outpost/"
+-- local dirname = path.dirname(__file__)
+local dirname = "tribes/buildings/militarysites/frisians/outpost/"
 
 wl.Descriptions():new_militarysite_type {
    name = "europeans_frisians_outpost",

@@ -1,6 +1,6 @@
-push_textdomain("tribes")
+push_textdomain("europeans_all.wad", true)
 
-dirname = path.dirname(__file__)
+local dirname = path.dirname(__file__)
 
 wl.Descriptions():new_immovable_type {
     name = "ryefield_ripe",

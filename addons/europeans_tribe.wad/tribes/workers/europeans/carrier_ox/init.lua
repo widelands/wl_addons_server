@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
--- dirname = path.dirname(__file__)
-dirname = "tribes/workers/barbarians/ox/"
+-- local dirname = path.dirname(__file__)
+local dirname = "tribes/workers/barbarians/ox/"
 
 wl.Descriptions():new_carrier_type {
     name = "europeans_carrier_ox",

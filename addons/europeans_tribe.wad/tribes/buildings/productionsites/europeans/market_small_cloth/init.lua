@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
--- dirname = path.dirname(__file__)
-dirname = "tribes/buildings/warehouses/atlanteans/warehouse/"
+-- local dirname = path.dirname(__file__)
+local dirname = "tribes/buildings/warehouses/atlanteans/warehouse/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_market_cloth",

@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
--- dirname = path.dirname(__file__)
-dirname = "tribes/workers/barbarians/smelter/"
+-- local dirname = path.dirname(__file__)
+local dirname = "tribes/workers/barbarians/smelter/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_worker_basic",
