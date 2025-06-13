@@ -130,6 +130,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Planetae-Numero-Duos-Mk2-wad]
+file_filter            = po/Planetae_Numero_Duos_Mk2.wad/<lang>.po
+source_file            = po/Planetae_Numero_Duos_Mk2.wad/Planetae_Numero_Duos_Mk2.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Planetae-Numero-Duos-wad]
 file_filter            = po/Planetae_Numero_Duos.wad/<lang>.po
 source_file            = po/Planetae_Numero_Duos.wad/Planetae_Numero_Duos.wad.pot
