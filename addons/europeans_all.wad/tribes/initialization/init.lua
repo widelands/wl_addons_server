@@ -15,7 +15,8 @@ local init_europeans = {
     script = dirname .. "units.lua",
 
     starting_conditions = {
-        "addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_human.lua";
+        "addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_with_diker.lua";
+        "addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_with_seafaring.lua";
         "addons/europeans_all.wad/tribes/scripting/starting_conditions/harbors_human.lua";
     }
 }

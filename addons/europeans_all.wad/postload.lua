@@ -301,7 +301,7 @@ wl.Descriptions():modify_unit("worker", "frisians_diker", "programs", "set", "ch
 wl.Descriptions():modify_unit("worker", "frisians_diker", "programs", "set", "build", {
          "findspace=size:swim radius:32 terraform:diking",
          "walk=coords",
-         "animate=work duration:60s",
+         "animate=work duration:30s",
          "plant=attrib:dike",
          "return"
       })
@@ -311,11 +311,11 @@ wl.Descriptions():modify_unit("worker", "frisians_diker", "programs", "set", "ch
 wl.Descriptions():modify_unit("worker", "frisians_diker", "programs", "set", "dike", {
          "findobject=attrib:dike radius:32",
          "walk=object",
-         "animate=work duration:30s",
+         "animate=work duration:10s",
          "callobject=maybe_remove",
-         "animate=work duration:30s",
+         "animate=work duration:10s",
          "terraform=diking",
-         "animate=work duration:30s",
+         "animate=work duration:10s",
          "return"
       })
 

@@ -4320,52 +4320,27 @@ wl.Descriptions():new_tribe {
             name = "europeans_amazons_headquarters",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon warehouse: Headquarters
-                purpose = pgettext("amazons_building", "Accommodation for your people. Also stores your wares and tools."),
+                purpose = pgettext("europeans_building", "Accommodation for your people. Also stores your wares and tools."),
                 -- TRANSLATORS: Note helptext for an Amazon warehouse: Headquarters
-                note = pgettext("amazons_building", "The headquarters is your main building.")
-            }
-        },
-        {
-            name = "europeans_amazons_warehouse",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Amazon warehouse: Warehouse
-                purpose = pgettext("amazons_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools.")
+                note = pgettext("europeans_building", "The headquarters is your main building.")
             }
         },
         {
             name = "europeans_amazons_port",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon warehouse: Port
-                purpose = pgettext("amazons_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
+                purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
                 -- TRANSLATORS: Note helptext for an Amazon warehouse: Port
-                note = pgettext("amazons_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it.")
+                note = pgettext("europeans_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it.")
             }
         },
         {
             name = "europeans_atlanteans_headquarters",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Atlantean warehouse: Headquarters
-                purpose = pgettext("atlanteans_building", "Accommodation for your people. Also stores your wares and tools."),
+                purpose = pgettext("europeans_building", "Accommodation for your people. Also stores your wares and tools."),
                 -- TRANSLATORS: Note helptext for an Atlantean warehouse: Headquarters
-                note = pgettext("atlanteans_building", "The headquarters is your main building."),
-                -- TRANSLATORS: Note lore for an Europeans production site: Headquarters
-                lore = pgettext("atlanteans_building", "We founded this new colony, now go with Satul and do the best you can do for your tribe."),
-                -- TRANSLATORS: Note lore_autor for an Europeans production site: Headquarters
-                lore_author = pgettext("atlanteans_building", "Priest of Satul inaugurating you as leader of the Atleantean tribe")
-
-            }
-        },
-        {
-            name = "europeans_atlanteans_warehouse",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Atlantean warehouse: Warehouse
-                purpose = pgettext("atlanteans_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools. "..
-                          "It will help you to stabilize your economy."),
-                -- TRANSLATORS: Note lore for an Europeans production site: Warehouse
-                lore = pgettext("atlanteans_building", "Maybe you think it’s a boring task to store, count and retrieve all this stuff, "..
-                            "but do you really want your carriers to walk all the way to your Headquarters?"),
-                -- TRANSLATORS: Note lore_autor for an Europeans production site: Headquarters
-                lore_author = pgettext("atlanteans_building", "Head of the warehouse")
+                note = pgettext("europeans_building", "The headquarters is your main building."),
 
             }
         },
@@ -4373,141 +4348,99 @@ wl.Descriptions():new_tribe {
             name = "europeans_atlanteans_port",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Atlantean warehouse: Port
-                purpose = pgettext("atlanteans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
+                purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
                 -- TRANSLATORS: Note helptext for an Atlantean warehouse: Port
-                note = pgettext("atlanteans_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it."),
-                -- TRANSLATORS: Note lore for an Europeans production site: Port
-                lore = pgettext("atlanteans_building", "This is the building where expeditions will be equipped to boldly go and find new shores."),
-                -- TRANSLATORS: Note lore_autor for an Europeans production site: Port
-                lore_author = pgettext("atlanteans_building", "Ostur, the designer of the new Expedition ship class, during the opening of a new Port")
+                note = pgettext("europeans_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it."),
             }
         },
         {
             name = "europeans_barbarians_headquarters",
             helptexts = {
-                -- TRANSLATORS: Lore helptext for a Barbarian warehouse: Headquarters
-                lore = pgettext("barbarians_building", "‘Steep like the slopes of Kal’mavrath, shiny like the most delicate armor and strong like our ancestors, that’s how the headquarters of Chat’Karuth presented itself to us.’"),
-                -- TRANSLATORS: Lore author helptext for a Barbarian warehouse: Headquarters
-                lore_author = pgettext("barbarians_building", "Ballad ‘The Battle of Kal’mavrath’ by Hakhor the Bard"),
                 -- TRANSLATORS: Purpose helptext for a Barbarian warehouse: Headquarters
-                purpose = pgettext("barbarians_building", "Accommodation for your people. Also stores your wares and tools."),
+                purpose = pgettext("europeans_building", "Accommodation for your people. Also stores your wares and tools."),
                 -- TRANSLATORS: Note helptext for a Barbarian warehouse: Headquarters
-                note = pgettext("barbarians_building", "The headquarters is your main building.")
-            }
-        },
-        {
-            name = "europeans_barbarians_warehouse",
-            helptexts = {
-                -- TRANSLATORS: Lore helptext for a Barbarian warehouse: Warehouse
-                lore = pgettext("barbarians_building", "‘Who still owns a warehouse is not yet defeated!’"),
-                -- TRANSLATORS: Lore author helptext for a Barbarian warehouse: Warehouse
-                lore_author = pgettext("barbarians_building", "Berthron, chief military adviser of Chat’Karuth,<br>when they lost the headquarters in the battle around the heights of Kal’Megarath"),
-                -- TRANSLATORS: Purpose helptext for a Barbarian warehouse: Warehouse
-                purpose = pgettext("barbarians_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools.")
+                note = pgettext("europeans_building", "The headquarters is your main building.")
             }
         },
         {
             name = "europeans_barbarians_port",
             helptexts = {
-                -- TRANSLATORS: Lore helptext for a Barbarian warehouse: Port
-                lore = pgettext("barbarians_building", "‘I prefer the planks of a ship to any fortress, no matter how strong it is.’"),
-                -- TRANSLATORS: Lore author helptext for a Barbarian warehouse: Port
-                lore_author = pgettext("barbarians_building", "Captain Thanlas the Elder,<br>Explorer"),
                 -- TRANSLATORS: Purpose helptext for a Barbarian warehouse: Port
-                purpose = pgettext("barbarians_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
+                purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
                 -- TRANSLATORS: Note helptext for an Barbarian warehouse: Port
-                note = pgettext("barbarians_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it.")
+                note = pgettext("europeans_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it.")
             }
         },
         {
             name = "europeans_empire_headquarters",
             helptexts = {
-                lore = latin_lore(
-                    -- TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
-                    --    Adaptation of a classical Latin quote meaning:
-                    --    "All roads lead to Fremil."
-                    _("Omnes viæ ducunt Fremilem."),
-                    -- TRANSLATORS: Lore helptext for an Empire warehouse: Headquarters
-                    --    Translation for the adapted classical Latin quote:
-                    --    "Omnes viæ ducunt Fremilem."
-                    _("All roads lead to Fremil.")
-                ),
-                -- TRANSLATORS: Lore author helptext for an Empire warehouse: Headquarters
-                lore_author = pgettext("empire_building",
-                    "Proverb signifying the glory of the Empire and its capital"
-                ),
                 -- TRANSLATORS: Purpose helptext for an Empire warehouse: Headquarters
-                purpose = pgettext("empire_building", "Accommodation for your people. Also stores your wares and tools."),
+                purpose = pgettext("europeans_building", "Accommodation for your people. Also stores your wares and tools."),
                 -- TRANSLATORS: Note helptext for an Empire warehouse: Headquarters
-                note = pgettext("empire_building", "The headquarters is your main building.")
-            }
-        },
-        {
-            name = "europeans_empire_warehouse",
-            helptexts = {
-                lore = latin_lore(
-                    -- TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
-                    --    Classical Latin quote meaning:
-                    --    "Who gives promptly, gives twice, who gives late, gives nothing."
-                    _("Bis dat, qui cito dat, nil dat, qui munera tardat."),
-                    -- TRANSLATORS: Lore helptext for an Empire warehouse: Warehouse
-                    --    Translation for the classical Latin quote:
-                    --    "Bis dat, qui cito dat, nil dat, qui munera tardat."
-                    _("Who gives promptly, gives twice, who gives late, gives nothing.")
-                ),
-                -- TRANSLATORS: Lore author helptext for an Empire warehouse: Warehouse
-                lore_author = pgettext("empire_building", "Proverb written over the doors of a warehouse"),
-                -- TRANSLATORS: Purpose helptext for an Empire warehouse: Warehouse
-                purpose = pgettext("empire_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools.")
+                note = pgettext("europeans_building", "The headquarters is your main building.")
             }
         },
         {
             name = "europeans_empire_port",
             helptexts = {
-                lore = latin_lore(
-                    -- TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
-                    --    Classical Latin quote meaning:
-                    --    "To sail is necessary."
-                    _("Navigare necesse est."),
-                    -- TRANSLATORS: Lore helptext for an Empire warehouse: Port
-                    --    Translation for the classical Latin quote:
-                    --    "Navigare necesse est."
-                    _("To sail is necessary.")
-                ),
-                -- TRANSLATORS: Lore author helptext for an Empire warehouse: Port
-                lore_author = pgettext("empire_building",
-                    "Admiral Litus Marius Exsiccatus, sending out the fleet to break the naval blockade "..
-                    "during the First Atlantean War"
-                ),
                 -- TRANSLATORS: Purpose helptext for an Empire warehouse: Port
-                purpose = pgettext("empire_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
+                purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
                 -- TRANSLATORS: Note helptext for an Empire warehouse: Port
-                note = pgettext("empire_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it.")
+                note = pgettext("europeans_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it.")
             }
         },
         {
             name = "europeans_frisians_headquarters",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Frisian warehouse: Headquarters
-                purpose = pgettext("frisians_building", "Accommodation for your people. Also stores your wares and tools."),
+                purpose = pgettext("europeans_building", "Accommodation for your people. Also stores your wares and tools."),
                 -- TRANSLATORS: Note helptext for a Frisian warehouse: Headquarters
-                note = pgettext("frisians_building", "The headquarters is your main building.")
-            }
-        },
-        {
-            name = "europeans_frisians_warehouse",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Frisian warehouse: Warehouse
-                purpose = pgettext("frisians_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools.")
+                note = pgettext("europeans_building", "The headquarters is your main building.")
             }
         },
         {
             name = "europeans_frisians_port",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Frisian warehouse: Port
-                purpose = pgettext("frisians_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
+                purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools."),
                 -- TRANSLATORS: Note helptext for a Frisian warehouse: Port
-                note = pgettext("frisians_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it.")
+                note = pgettext("europeans_building", "Similar to the Headquarters a Port can be attacked and destroyed by an enemy. It is recommendable to send soldiers to defend it.")
+            }
+        },
+        -- Markets
+        {
+            name = "europeans_amazons_market",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Amazon market: Market
+                purpose = pgettext("europeans_building", "A market enables trading with other tribes.")
+            }
+        },
+        {
+            name = "europeans_atlanteans_market",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Atlantean market: Market
+                purpose = pgettext("europeans_building", "A market enables trading with other tribes.")
+            }
+        },
+        {
+            name = "europeans_barbarians_market",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Barbarian market: Market
+                purpose = pgettext("europeans_building", "A market enables trading with other tribes.")
+            }
+        },
+        {
+            name = "europeans_empire_market",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Empire market: Market
+                purpose = pgettext("europeans_building", "A market enables trading with other tribes.")
+            }
+        },
+        {
+            name = "europeans_frisians_market",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Frisian market: Market
+                purpose = pgettext("europeans_building", "A market enables trading with other tribes.")
             }
         },
         -- Small
@@ -5315,6 +5248,56 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Breeds strong reindeer for adding them to the transportation system. Also keeps them for their fur, which is turned into armor and cloth."),
             }
         },
+        -- Stores and Trading
+        {
+            name = "europeans_store_animals",
+            helptexts = {
+               -- TRANSLATORS: Purpose helptext for an Europeans production site: Animals Store
+               purpose = pgettext("europeans_building", "Sells animals in exchange for coins.")
+            }
+        },
+        {
+            name = "europeans_store_food",
+            helptexts = {
+               -- TRANSLATORS: Purpose helptext for an Europeans production site: Food Store
+               purpose = pgettext("europeans_building", "Sells food products in exchange for coins.")
+            }
+        },
+        {
+            name = "europeans_store_fur",
+            helptexts = {
+               -- TRANSLATORS: Purpose helptext for an Europeans production site: Fur Store
+               purpose = pgettext("europeans_building", "Sells animal products like fur and leather in exchange for coins.")
+            }
+        },
+        {
+            name = "europeans_store_plants",
+            helptexts = {
+               -- TRANSLATORS: Purpose helptext for an Europeans production site: Plants Store
+               purpose = pgettext("europeans_building", "Sells plant products in exchange for coins.")
+            }
+        },
+        {
+            name = "europeans_store_wood_basic",
+            helptexts = {
+               -- TRANSLATORS: Purpose helptext for an Europeans production site: Basic Wood Store
+               purpose = pgettext("europeans_building", "Sells basic tree products in exchange for coins.")
+            }
+        },
+        {
+            name = "europeans_store_wood_advanced",
+            helptexts = {
+               -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Wood Store
+               purpose = pgettext("europeans_building", "Sells rare tree products in exchange for coins.")
+            }
+        },
+        {
+            name = "europeans_trading_post",
+            helptexts = {
+               -- TRANSLATORS: Purpose helptext for an Europeans production site: Trading Post
+               purpose = pgettext("europeans_building", "Sells coal and metals in exchange for coins.")
+            }
+        },
         -- Terraforming
         {
             name = "europeans_dikers_house",
@@ -5589,21 +5572,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Explores unknown territory."),
             }
         },
-        -- Trading
-        {
-            name = "europeans_atlanteans_trading_post",
-            helptexts = {
-               -- TRANSLATORS: Purpose helptext for an Atlantean market site: Trading post
-               purpose = pgettext("europeans_building", "Allows sharing goods with other players.")
-            }
-        },
-        {
-            name = "europeans_empire_temple_of_vesta",
-            helptexts = {
-               -- TRANSLATORS: Purpose helptext for an Empire market site: Temple of Vesta
-               purpose = pgettext("europeans_building", "Allows sharing goods with other players.")
-            }
-        },
         -- Seafaring
         {
             name = "europeans_ferry_yard_basic",
@@ -5864,63 +5832,63 @@ wl.Descriptions():new_tribe {
             name = "europeans_amazons_patrol_post",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon military site: Patrol Post
-                purpose = pgettext("amazons_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Amazon military site: Patrol Post
-                note = pgettext("amazons_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
             }
         },
         {
             name = "europeans_amazons_treetop_sentry",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon military site: Treetop Sentry
-                purpose = pgettext("amazons_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Amazon military site: Treetop Sentry
-                note = pgettext("amazons_building", "You can only build this building on top of a tree.")
+                note = pgettext("europeans_building", "You can only build this building on top of a tree.")
             }
         },
         {
             name = "europeans_amazons_warriors_dwelling",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon military site: Warriors’ Dwelling
-                purpose = pgettext("amazons_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Amazon military site: Warriors’ Dwelling
-                note = pgettext("amazons_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
             }
         },
         {
             name = "europeans_amazons_tower",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon military site: Tower
-                purpose = pgettext("amazons_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Amazon military site: Tower
-                note = pgettext("amazons_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
             }
         },
         {
             name = "europeans_amazons_observation_tower",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon military site: Observation Tower
-                purpose = pgettext("amazons_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Amazon military site: Observation Tower
-                note = pgettext("amazons_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
             }
         },
         {
             name = "europeans_amazons_fortress",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon military site: Fortress
-                purpose = pgettext("amazons_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Amazon military site: Fortress
-                note = pgettext("amazons_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
             }
         },
         {
             name = "europeans_amazons_fortification",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Amazon military site: Fortification
-                purpose = pgettext("amazons_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Amazon military site: Fortification
-                note = pgettext("amazons_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send her away.")
             }
         },
         -- Atlanteans Military Sites
@@ -5928,40 +5896,40 @@ wl.Descriptions():new_tribe {
             name = "europeans_atlanteans_guardhouse",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhouse
-                purpose = pgettext("atlanteans_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Atlantean military site: Guardhouse
-                note = pgettext("atlanteans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow "..
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow "..
                             "button to decrease the capacity. You can also click on a soldier to send him away."),
                 -- TRANSLATORS: Lore helptext for an Europeans production site: Guardhouse
-                lore = pgettext("atlanteans_building", "Hey soldier, even if this is the smallest of our military buildings you still must not sleep all day!"),
+                lore = pgettext("europeans_building", "Hey soldier, even if this is the smallest of our military buildings you still must not sleep all day!"),
                 -- TRANSLATORS: Lore author helptext for an Europeans production site: Guardhouse
-                lore_author = pgettext("atlanteans_building", "Officer visiting a remote guardhouse")
+                lore_author = pgettext("europeans_building", "Officer visiting a remote guardhouse")
             }
         },
         {
             name = "europeans_atlanteans_guardhall",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhall
-                purpose = pgettext("atlanteans_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Atlantean military site: Guardhall
-                note = pgettext("atlanteans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away."),
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away."),
                 -- TRANSLATORS: Lore helptext for an Europeans production site: Guardhall
-                lore = pgettext("atlanteans_building", "In this hall we praise the fight, Satul will warm us day and night."),
+                lore = pgettext("europeans_building", "In this hall we praise the fight, Satul will warm us day and night."),
                 -- TRANSLATORS: Lore author helptext for an Europeans production site: Guardhall
-                lore_author = pgettext("atlanteans_building", "Scribbling on the wall of a guardhall")
+                lore_author = pgettext("europeans_building", "Scribbling on the wall of a guardhall")
             }
         },
         {
             name = "europeans_atlanteans_tower_small",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Atlantean military site: Small Tower
-                purpose = pgettext("atlanteans_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Atlantean military site: Small Tower
-                note = pgettext("atlanteans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away."),
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away."),
                 -- TRANSLATORS: Lore helptext for an Europeans production site: Small Tower
-                lore = pgettext("atlanteans_building", "With three soldiers we can achieve an optimal balance between military power and building cost."),
+                lore = pgettext("europeans_building", "With three soldiers we can achieve an optimal balance between military power and building cost."),
                 -- TRANSLATORS: Lore author helptext for an Europeans production site: Small Tower
-                lore_author = pgettext("atlanteans_building", "Notes on the building instructions")
+                lore_author = pgettext("europeans_building", "Notes on the building instructions")
 
             }
         },
@@ -5969,13 +5937,13 @@ wl.Descriptions():new_tribe {
             name = "europeans_atlanteans_tower",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Atlantean military site: Tower
-                purpose = pgettext("atlanteans_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Atlantean military site: Tower
-                note = pgettext("atlanteans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away."),
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away."),
                 -- TRANSLATORS: Lore helptext for an Europeans production site: Tower
-                lore = pgettext("atlanteans_building", "All the other tribes envy us for our towers, elegant outside, comfortable inside, still perfect for defense."),
+                lore = pgettext("europeans_building", "All the other tribes envy us for our towers, elegant outside, comfortable inside, still perfect for defense."),
                 -- TRANSLATORS: Lore author helptext for an Europeans production site: Tower
-                lore_author = pgettext("atlanteans_building", "Soldier handing over his duties to a younger one")
+                lore_author = pgettext("europeans_building", "Soldier handing over his duties to a younger one")
 
             }
         },
@@ -5983,15 +5951,15 @@ wl.Descriptions():new_tribe {
             name = "europeans_atlanteans_tower_high",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Atlantean military site: High Tower
-                purpose = pgettext("atlanteans_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Atlantean military site: High Tower
-                note = pgettext("atlanteans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow "..
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow "..
                             "button to decrease the capacity. You can also click on a soldier to send him away."),
                 -- TRANSLATORS: Lore helptext for an Europeans production site: High Tower
-                lore = pgettext("atlanteans_building", "Beware our mighty high towers! From the topmost spot we can see wide into the "..
+                lore = pgettext("europeans_building", "Beware our mighty high towers! From the topmost spot we can see wide into the "..
                             "lands and spot the enemy far away."),
                 -- TRANSLATORS: Lore author helptext for an Europeans production site: High Tower
-                lore_author = pgettext("atlanteans_building", "Soldier showing off a High Tower")
+                lore_author = pgettext("europeans_building", "Soldier showing off a High Tower")
 
             }
         },
@@ -5999,14 +5967,14 @@ wl.Descriptions():new_tribe {
             name = "europeans_atlanteans_castle",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Atlantean military site: Castle
-                purpose = pgettext("atlanteans_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Atlantean military site: Castle
-                note = pgettext("atlanteans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow "..
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow "..
                                      "button to decrease the capacity. You can also click on a soldier to send him away."),
                 -- TRANSLATORS: Lore helptext for an Europeans production site: Castle
-                lore = pgettext("atlanteans_building", "Sometimes even we Atlanteans need to use brute force, but we always play it wisely."),
+                lore = pgettext("europeans_building", "Sometimes even we Atlanteans need to use brute force, but we always play it wisely."),
                 -- TRANSLATORS: Lore author helptext for an Europeans production site: Castle
-                lore_author = pgettext("atlanteans_building", "‘Wisdom of the Fight’ by the warriors’ guild")
+                lore_author = pgettext("europeans_building", "‘Wisdom of the Fight’ by the warriors’ guild")
             }
         },
         -- Barbarians Military Sites
@@ -6014,26 +5982,26 @@ wl.Descriptions():new_tribe {
             name = "europeans_barbarians_sentry",
             helptexts = {
                 -- TRANSLATORS: Lore helptext for a Barbarian military site: Sentry
-                lore = pgettext("barbarians_building", "‘The log cabin was so small that two men could hardly live there. But we were young and carefree. We just relished our freedom and the responsibility as an outpost.’"),
+                lore = pgettext("europeans_building", "‘The log cabin was so small that two men could hardly live there. But we were young and carefree. We just relished our freedom and the responsibility as an outpost.’"),
                 -- TRANSLATORS: Lore author helptext for a Barbarian military site: Sentry
-                lore_author = pgettext("barbarians_building", "Boldreth,<br>about his time as young soldier"),
+                lore_author = pgettext("europeans_building", "Boldreth,<br>about his time as young soldier"),
                 -- TRANSLATORS: Purpose helptext for a Barbarian military site: Sentry
-                purpose = pgettext("barbarians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Barbarian military site: Sentry
-                note = pgettext("barbarians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
             name = "europeans_barbarians_barrier",
             helptexts = {
                 -- TRANSLATORS: Lore helptext for a Barbarian military site: Barrier
-                lore = pgettext("barbarians_building", "‘When we looked down to the valley from our newly established barrier, we felt that the spirit of our fathers was with us.’"),
+                lore = pgettext("europeans_building", "‘When we looked down to the valley from our newly established barrier, we felt that the spirit of our fathers was with us.’"),
                 -- TRANSLATORS: Lore author helptext for a Barbarian military site: Barrier
-                lore_author = pgettext("barbarians_building", "Ballad ‘The Battle of Kal’mavrath’ by Hakhor the Bard"),
+                lore_author = pgettext("europeans_building", "Ballad ‘The Battle of Kal’mavrath’ by Hakhor the Bard"),
                 -- TRANSLATORS: Purpose helptext for a Barbarian military site: Barrier
-                purpose = pgettext("barbarians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Barbarian military site: Barrier
-                note = pgettext("barbarians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
 
@@ -6041,39 +6009,39 @@ wl.Descriptions():new_tribe {
             name = "europeans_barbarians_tower",
             helptexts = {
                 -- TRANSLATORS: Lore helptext for a Barbarian military site: Tower
-                lore = pgettext("barbarians_building", "‘From the height of our tower we could see far into enemy territory. The enemy was well prepared, but we also noticed some weak points in their defense.’"),
+                lore = pgettext("europeans_building", "‘From the height of our tower we could see far into enemy territory. The enemy was well prepared, but we also noticed some weak points in their defense.’"),
                 -- TRANSLATORS: Lore author helptext for a Barbarian military site: Tower
-                lore_author = pgettext("barbarians_building", "Ballad ‘The Battle of Kal’mavrath’ by Hakhor the Bard"),
+                lore_author = pgettext("europeans_building", "Ballad ‘The Battle of Kal’mavrath’ by Hakhor the Bard"),
                 -- TRANSLATORS: Purpose helptext for a Barbarian military site: Tower
-                purpose = pgettext("barbarians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Barbarian military site: Tower
-                note = pgettext("barbarians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
             name = "europeans_barbarians_fortress",
             helptexts = {
                 -- TRANSLATORS: Lore helptext for a Barbarian military site: Fortress
-                lore = pgettext("barbarians_building", "‘This stronghold made from blackwood and stones will be a hard nut to crack for them.’"),
+                lore = pgettext("europeans_building", "‘This stronghold made from blackwood and stones will be a hard nut to crack for them.’"),
                 -- TRANSLATORS: Lore author helptext for a Barbarian military site: Fortress
-                lore_author = pgettext("barbarians_building", "Berthron,<br>chief military adviser of Chat’Karuth"),
+                lore_author = pgettext("europeans_building", "Berthron,<br>chief military adviser of Chat’Karuth"),
                 -- TRANSLATORS: Purpose helptext for a Barbarian military site: Fortress
-                purpose = pgettext("barbarians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Barbarian military site: Fortress
-                note = pgettext("barbarians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
             name = "europeans_barbarians_citadel",
             helptexts = {
                 -- TRANSLATORS: Lore helptext for a Barbarian military site: Citadel
-                lore = pgettext("barbarians_building", "‘The Citadel of Adlen surely is the finest masterpiece of Barbarian craftsmanship. Nothing as strong and big and beautiful has ever been built in such a short time.’"),
+                lore = pgettext("europeans_building", "‘The Citadel of Adlen surely is the finest masterpiece of Barbarian craftsmanship. Nothing as strong and big and beautiful has ever been built in such a short time.’"),
                 -- TRANSLATORS: Lore author helptext for a Barbarian military site: Citadel
-                lore_author = pgettext("barbarians_building", "Colintan, chief planner of the Citadel of Adlen,<br>at its opening ceremony"),
+                lore_author = pgettext("europeans_building", "Colintan, chief planner of the Citadel of Adlen,<br>at its opening ceremony"),
                 -- TRANSLATORS: Purpose helptext for a Barbarian military site: Citadel
-                purpose = pgettext("barbarians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Barbarian military site: Citadel
-                note = pgettext("barbarians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         -- Empire Military Sites
@@ -6091,14 +6059,14 @@ wl.Descriptions():new_tribe {
                     _("An eagle doesn’t catch flies.")
                 ),
                 -- TRANSLATORS: Lore author helptext for an Empire military site: Blockhouse
-                lore_author = pgettext("empire_building",
+                lore_author = pgettext("europeans_building",
                     "General Passerus Claudius Pedestrus on why he didn’t order the destruction of a"..
                     " rebel Blockhouse"
                 ),
                 -- TRANSLATORS: Purpose helptext for an Empire military site: Blockhouse
-                purpose = pgettext("empire_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Empire military site: Blockhouse
-                note = pgettext("empire_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
@@ -6116,13 +6084,13 @@ wl.Descriptions():new_tribe {
                 ),
                 -- TRANSLATORS: Lore author helptext for an Empire production site: Sentry
                 --              (the Limes was the border defence system of fortifications of the Roman Empire)
-                lore_author = pgettext("empire_building",
+                lore_author = pgettext("europeans_building",
                     "Saledus warning Lutius that sentries are not adequate protection for the Limes"
                 ),
                 -- TRANSLATORS: Purpose helptext for an Empire military site: Sentry
-                purpose = pgettext("empire_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Empire military site: Sentry
-                note = pgettext("empire_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
@@ -6141,13 +6109,13 @@ wl.Descriptions():new_tribe {
                       " the river above the camp.")
                 ),
                 -- TRANSLATORS: Lore author helptext for an Empire military site: Outpost
-                lore_author = pgettext("empire_building",
+                lore_author = pgettext("europeans_building",
                     "History of the Empire, Part III, preparation for the battle of Uliginosium"
                 ),
                 -- TRANSLATORS: Purpose helptext for an Empire military site: Outpost
-                purpose = pgettext("empire_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Empire military site: Outpost
-                note = pgettext("empire_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
@@ -6164,14 +6132,14 @@ wl.Descriptions():new_tribe {
                     _("The die is cast!")
                 ),
                 -- TRANSLATORS: Lore author helptext for an Empire military site: Barrier
-                lore_author = pgettext("empire_building",
+                lore_author = pgettext("europeans_building",
                     "Rebel general Certus Ignavus Fidelius upon entering the limits of Fremil to"..
                     " overthrow the government"
                 ),
                 -- TRANSLATORS: Purpose helptext for an Empire military site: Barrier
-                purpose = pgettext("empire_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Empire military site: Barrier
-                note = pgettext("empire_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
@@ -6188,14 +6156,14 @@ wl.Descriptions():new_tribe {
                     _("I came, I saw, I conquered!")
                 ),
                 -- TRANSLATORS: Lore author helptext for an Empire military site: Tower
-                lore_author = pgettext("empire_building",
+                lore_author = pgettext("europeans_building",
                     "General Claudius Cæcus Cessus reporting a quick victory over the Barbarians thanks to "..
                     "the superior vision of a tower"
                 ),
                 -- TRANSLATORS: Purpose helptext for an Empire military site: Tower
-                purpose = pgettext("empire_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Empire military site: Tower
-                note = pgettext("empire_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
@@ -6212,11 +6180,11 @@ wl.Descriptions():new_tribe {
                     _("If you want peace, prepare for war.")
                 ),
                 -- TRANSLATORS: Lore author helptext for an Empire military site: Fortress
-                lore_author = pgettext("empire_building", "Saledus arguing with Amalea"),
+                lore_author = pgettext("europeans_building", "Saledus arguing with Amalea"),
                 -- TRANSLATORS: Purpose helptext for an Empire military site: Fortress
-                purpose = pgettext("empire_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Empire military site: Fortress
-                note = pgettext("empire_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
@@ -6233,13 +6201,13 @@ wl.Descriptions():new_tribe {
                     _("Furthermore, I think that Al’thunran must be destroyed!")
                 ),
                 -- TRANSLATORS: Lore author helptext for an Empire military site: Castle
-                lore_author = pgettext("empire_building",
+                lore_author = pgettext("europeans_building",
                     "Saledus in the Senate, urging final victory over the Barbarians"
                 ),
                 -- TRANSLATORS: Purpose helptext for an Empire military site: Castle
-                purpose = pgettext("empire_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Empire military site: Castle
-                note = pgettext("empire_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         -- Frisian Military Sites
@@ -6247,54 +6215,54 @@ wl.Descriptions():new_tribe {
             name = "europeans_frisians_wooden_tower",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Frisian military site: Wooden Tower
-                purpose = pgettext("frisians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Frisian military site: Wooden Tower
-                note = pgettext("frisians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
             name = "europeans_frisians_wooden_tower_high",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Frisian military site: High Wooden Tower
-                purpose = pgettext("frisians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Frisian military site: High Wooden Tower
-                note = pgettext("frisians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
             name = "europeans_frisians_sentinel",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Frisian military site: Sentinel
-                purpose = pgettext("frisians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Frisian military site: Sentinel
-                note = pgettext("frisians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
             name = "europeans_frisians_outpost",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Frisian military site: Outpost
-                purpose = pgettext("frisians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Frisian military site: Outpost
-                note = pgettext("frisians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
             name = "europeans_frisians_tower",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Frisian military site: Tower
-                purpose = pgettext("frisians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Frisian military site: Tower
-                note = pgettext("frisians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         {
             name = "europeans_frisians_fortress",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Frisian military site: Fortress
-                purpose = pgettext("frisians_building", "Garrisons soldiers to expand your territory."),
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Frisian military site: Fortress
-                note = pgettext("frisians_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
         -- Partially Finished Buildings - these are the same 2 buildings for all tribes

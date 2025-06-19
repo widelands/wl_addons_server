@@ -6,7 +6,7 @@ local dirname = "tribes/buildings/warehouses/amazons/headquarters/"
 wl.Descriptions():new_warehouse_type {
    name = "europeans_amazons_headquarters",
    -- TRANSLATORS: This is a building name used in lists of buildings
-   descname = pgettext ("amazons_building", "Headquarters"),
+   descname = pgettext ("europeans_building", "Headquarters"),
    icon = dirname .. "menu.png",
    size = "big",
    destructible = false,

@@ -48,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
         },
         felling_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-            descname = pgettext("europeans_building", "planting trees"),
+            descname = pgettext("europeans_building", "felling trees"),
             actions = {
                 -- time of worker: 29.2-68.8 sec, min+max average 49 sec
                 -- min. time total: 29.2 + 20 = 49.2 sec

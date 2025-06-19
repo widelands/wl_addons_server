@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-11 03:12+0200\n"
+"POT-Creation-Date: 2025-06-19 03:12+0200\n"
 "PO-Revision-Date: 2025-06-06 17:58+0000\n"
 "Language-Team: Danish (https://app.transifex.com/widelands/teams/35159/da/)\n"
 "Language: da\n"
@@ -29,176 +29,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:8
+#: addons/europeans_all.wad/tribes/buildings/markets/amazons/market/init.lua:9
+#: addons/europeans_all.wad/tribes/buildings/markets/atlanteans/market/init.lua:9
+#: addons/europeans_all.wad/tribes/buildings/markets/barbarians/market/init.lua:9
+#: addons/europeans_all.wad/tribes/buildings/markets/empire/market/init.lua:9
+#: addons/europeans_all.wad/tribes/buildings/markets/frisians/market/init.lua:9
 msgctxt "europeans_building"
-msgid "Food Market"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:62
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:115
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:127
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:139
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:151
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:163
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:175
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:187
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:199
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:211
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:62
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:115
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:127
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:139
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:151
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:163
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:175
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:187
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:199
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:211
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:73
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:126
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:138
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:150
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:162
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:174
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:186
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:198
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:210
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:222
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:63
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:122
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:134
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:146
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:158
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:170
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:182
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:194
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:206
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:218
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:230
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:242
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:254
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:75
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:128
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:140
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:152
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:164
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:176
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:188
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:200
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:212
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:224
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:62
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:115
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:127
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:139
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:151
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:163
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:175
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:187
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:199
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:211
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:74
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:175
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:187
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:199
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:211
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:223
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:235
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:247
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:259
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:271
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:283
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:295
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:307
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:319
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:331
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:343
-#: addons/europeans_all.wad/tribes/buildings/markets/trading_post/init.lua:38
-#: addons/europeans_all.wad/tribes/buildings/markets/trading_post/init.lua:47
-#: addons/europeans_all.wad/tribes/buildings/markets/trading_post/init.lua:59
-#: addons/europeans_all.wad/tribes/buildings/markets/trading_post/init.lua:71
-msgid "trading"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:73
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:73
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:84
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:74
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:86
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:73
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:87
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:118
-msgctxt "europeans_building"
-msgid "trading food for copper coins"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:87
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:87
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:98
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:90
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:100
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:87
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:137
-msgctxt "europeans_building"
-msgid "trading food for silver coins"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_food/init.lua:101
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:101
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:112
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:106
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:114
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:101
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:156
-msgctxt "europeans_building"
-msgid "trading food for gold coins"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/markets/market_big_wood/init.lua:8
-msgctxt "europeans_building"
-msgid "Wood Market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_agricultur/init.lua:9
-msgctxt "europeans_building"
-msgid "Agriculture Market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_cloth/init.lua:9
-msgctxt "europeans_building"
-msgid "Cloth Market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_plant/init.lua:9
-msgctxt "europeans_building"
-msgid "Plant Market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/markets/market_small_stone/init.lua:8
-msgctxt "europeans_building"
-msgid "Mining products Market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/markets/temple_of_vesta/init.lua:8
-msgctxt "europeans_building"
-msgid "Temple of Vesta"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/markets/trading_post/init.lua:8
-msgctxt "europeans_building"
-msgid "Trading Post"
+msgid "Market"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -2556,17 +2393,11 @@ msgid "Basic Foresters Hut"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/foresters_hut_basic/init.lua:88
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/foresters_hut_level_1/init.lua:68
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/foresters_hut_level_2/init.lua:61
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/foresters_hut_level_3/init.lua:63
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/foresters_hut_level_4/init.lua:58
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_basic/init.lua:72
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_1/init.lua:51
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_2/init.lua:52
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_3/init.lua:56
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_4/init.lua:51
 msgctxt "europeans_building"
 msgid "planting trees"
 msgstr ""
@@ -3101,6 +2932,16 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Lumberjack’s Hut"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_basic/init.lua:72
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_1/init.lua:51
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_2/init.lua:52
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_3/init.lua:56
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_4/init.lua:51
+msgctxt "europeans_building"
+msgid "felling trees"
 msgstr ""
 
 #. TRANSLATORS: Short for "No Trees to cut lianas" for clay pits
@@ -3888,6 +3729,159 @@ msgid "Stone Mine Level 6"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:8
+msgctxt "europeans_building"
+msgid "Animal Store"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:62
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:130
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:142
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:154
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:166
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:178
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:190
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:202
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:214
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:226
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:238
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:250
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:262
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:274
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:286
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:298
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:69
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:122
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:134
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:146
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:158
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:170
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:182
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:194
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:206
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:218
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:75
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:128
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:140
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:152
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:164
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:176
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:188
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:200
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:212
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:224
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:74
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:127
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:139
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:151
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:163
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:175
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:187
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:199
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:211
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:223
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:57
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:110
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:122
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:134
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:146
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:158
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:170
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:182
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:194
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:206
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:60
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:113
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:125
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:137
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:149
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:161
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:173
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:185
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:197
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:209
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:39
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:48
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:60
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:72
+msgid "trading"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:73
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:80
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:86
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:85
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:68
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:71
+msgctxt "europeans_building"
+msgid "trading food for copper coins"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:92
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:94
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:100
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:99
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:82
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:85
+msgctxt "europeans_building"
+msgid "trading food for silver coins"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:111
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:108
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:114
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:113
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:96
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:99
+msgctxt "europeans_building"
+msgid "trading food for gold coins"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:9
+msgctxt "europeans_building"
+msgid "Food Store"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:9
+msgctxt "europeans_building"
+msgid "Fur Store"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:9
+msgctxt "europeans_building"
+msgid "Plants Store"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:9
+msgctxt "europeans_building"
+msgid "Advanced Wood Store"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:9
+msgctxt "europeans_building"
+msgid "Basic Wood Store"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/tavern_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Tavern"
@@ -3909,6 +3903,12 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/tavern_level_3/init.lua:9
 msgctxt "europeans_building"
 msgid "Tavern Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:8
+msgctxt "europeans_building"
+msgid "Trading Post"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -4279,92 +4279,22 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/warehouses/amazons/headquarters/init.lua:9
-msgctxt "amazons_building"
+#: addons/europeans_all.wad/tribes/buildings/warehouses/atlanteans/headquarters/init.lua:9
+#: addons/europeans_all.wad/tribes/buildings/warehouses/barbarians/headquarters/init.lua:9
+#: addons/europeans_all.wad/tribes/buildings/warehouses/empire/headquarters/init.lua:9
+#: addons/europeans_all.wad/tribes/buildings/warehouses/frisians/headquarters/init.lua:9
+msgctxt "europeans_building"
 msgid "Headquarters"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/warehouses/amazons/port/init.lua:9
-msgctxt "amazons_building"
-msgid "Port"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/amazons/warehouse/init.lua:9
-msgctxt "amazons_building"
-msgid "Warehouse"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/atlanteans/headquarters/init.lua:9
-msgctxt "atlanteans_building"
-msgid "Headquarters"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/warehouses/atlanteans/port/init.lua:9
-msgctxt "atlanteans_building"
-msgid "Port"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/atlanteans/warehouse/init.lua:9
-msgctxt "atlanteans_building"
-msgid "Warehouse"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/barbarians/headquarters/init.lua:9
-msgctxt "barbarians_building"
-msgid "Headquarters"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/warehouses/barbarians/port/init.lua:9
-msgctxt "barbarians_building"
-msgid "Port"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/barbarians/warehouse/init.lua:9
-msgctxt "barbarians_building"
-msgid "Warehouse"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/empire/headquarters/init.lua:9
-msgctxt "empire_building"
-msgid "Headquarters"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/warehouses/empire/port/init.lua:9
-msgctxt "empire_building"
-msgid "Port"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/empire/warehouse/init.lua:9
-msgctxt "empire_building"
-msgid "Warehouse"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/frisians/headquarters/init.lua:9
-msgctxt "frisians_building"
-msgid "Headquarters"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/warehouses/frisians/port/init.lua:9
-msgctxt "frisians_building"
+msgctxt "europeans_building"
 msgid "Port"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_all.wad/tribes/buildings/warehouses/frisians/warehouse/init.lua:9
-msgctxt "frisians_building"
-msgid "Warehouse"
 msgstr ""
 
 #: addons/europeans_all.wad/tribes/immovables/cottonfield/medium/init.lua:9
@@ -7415,346 +7345,87 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Amazon warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for an Empire warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Headquarters
 #: addons/europeans_all.wad/tribes/initialization/units.lua:4323
-msgctxt "amazons_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4341
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4360
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4378
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4396
+msgctxt "europeans_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Amazon warehouse: Headquarters
+#. TRANSLATORS: Note helptext for an Atlantean warehouse: Headquarters
+#. TRANSLATORS: Note helptext for a Barbarian warehouse: Headquarters
+#. TRANSLATORS: Note helptext for an Empire warehouse: Headquarters
+#. TRANSLATORS: Note helptext for a Frisian warehouse: Headquarters
 #: addons/europeans_all.wad/tribes/initialization/units.lua:4325
-msgctxt "amazons_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4343
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4362
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4380
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4398
+msgctxt "europeans_building"
 msgid "The headquarters is your main building."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Amazon warehouse: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4332
-msgctxt "amazons_building"
-msgid ""
-"Your workers and soldiers will find shelter here. Also stores your wares and "
-"tools."
-msgstr ""
-
 #. TRANSLATORS: Purpose helptext for an Amazon warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4339
-msgctxt "amazons_building"
+#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Port
+#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Port
+#. TRANSLATORS: Purpose helptext for an Empire warehouse: Port
+#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Port
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4332
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4351
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4369
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4387
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4405
+msgctxt "europeans_building"
 msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "soldiers, wares and tools."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Amazon warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4341
-msgctxt "amazons_building"
-msgid ""
-"Similar to the Headquarters a Port can be attacked and destroyed by an "
-"enemy. It is recommendable to send soldiers to defend it."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4348
-msgctxt "atlanteans_building"
-msgid "Accommodation for your people. Also stores your wares and tools."
-msgstr ""
-
-#. TRANSLATORS: Note helptext for an Atlantean warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4350
-msgctxt "atlanteans_building"
-msgid "The headquarters is your main building."
-msgstr ""
-
-#. TRANSLATORS: Note lore for an Europeans production site: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4352
-msgctxt "atlanteans_building"
-msgid ""
-"We founded this new colony, now go with Satul and do the best you can do for "
-"your tribe."
-msgstr ""
-
-#. TRANSLATORS: Note lore_autor for an Europeans production site: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4354
-msgctxt "atlanteans_building"
-msgid "Priest of Satul inaugurating you as leader of the Atleantean tribe"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4362
-msgctxt "atlanteans_building"
-msgid ""
-"Your workers and soldiers will find shelter here. Also stores your wares and "
-"tools. It will help you to stabilize your economy."
-msgstr ""
-
-#. TRANSLATORS: Note lore for an Europeans production site: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4365
-msgctxt "atlanteans_building"
-msgid ""
-"Maybe you think it’s a boring task to store, count and retrieve all this "
-"stuff, but do you really want your carriers to walk all the way to your "
-"Headquarters?"
-msgstr ""
-
-#. TRANSLATORS: Note lore_autor for an Europeans production site: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4368
-msgctxt "atlanteans_building"
-msgid "Head of the warehouse"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4376
-msgctxt "atlanteans_building"
-msgid ""
-"Serves as a base for overseas colonization and trade. Also stores your "
-"soldiers, wares and tools."
-msgstr ""
-
 #. TRANSLATORS: Note helptext for an Atlantean warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4378
-msgctxt "atlanteans_building"
-msgid ""
-"Similar to the Headquarters a Port can be attacked and destroyed by an "
-"enemy. It is recommendable to send soldiers to defend it."
-msgstr ""
-
-#. TRANSLATORS: Note lore for an Europeans production site: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4380
-msgctxt "atlanteans_building"
-msgid ""
-"This is the building where expeditions will be equipped to boldly go and "
-"find new shores."
-msgstr ""
-
-#. TRANSLATORS: Note lore_autor for an Europeans production site: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4382
-msgctxt "atlanteans_building"
-msgid ""
-"Ostur, the designer of the new Expedition ship class, during the opening of "
-"a new Port"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for a Barbarian warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4389
-msgctxt "barbarians_building"
-msgid ""
-"‘Steep like the slopes of Kal’mavrath, shiny like the most delicate armor "
-"and strong like our ancestors, that’s how the headquarters of Chat’Karuth "
-"presented itself to us.’"
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for a Barbarian warehouse: Headquarters
-#. TRANSLATORS: Lore author helptext for a Barbarian military site: Barrier
-#. TRANSLATORS: Lore author helptext for a Barbarian military site: Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4391
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6032
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6046
-msgctxt "barbarians_building"
-msgid "Ballad ‘The Battle of Kal’mavrath’ by Hakhor the Bard"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4393
-msgctxt "barbarians_building"
-msgid "Accommodation for your people. Also stores your wares and tools."
-msgstr ""
-
-#. TRANSLATORS: Note helptext for a Barbarian warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4395
-msgctxt "barbarians_building"
-msgid "The headquarters is your main building."
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for a Barbarian warehouse: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4402
-msgctxt "barbarians_building"
-msgid "‘Who still owns a warehouse is not yet defeated!’"
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for a Barbarian warehouse: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4404
-msgctxt "barbarians_building"
-msgid ""
-"Berthron, chief military adviser of Chat’Karuth,<br>when they lost the "
-"headquarters in the battle around the heights of Kal’Megarath"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4406
-msgctxt "barbarians_building"
-msgid ""
-"Your workers and soldiers will find shelter here. Also stores your wares and "
-"tools."
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for a Barbarian warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4413
-msgctxt "barbarians_building"
-msgid ""
-"‘I prefer the planks of a ship to any fortress, no matter how strong it is.’"
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for a Barbarian warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4415
-msgctxt "barbarians_building"
-msgid "Captain Thanlas the Elder,<br>Explorer"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4417
-msgctxt "barbarians_building"
-msgid ""
-"Serves as a base for overseas colonization and trade. Also stores your "
-"soldiers, wares and tools."
-msgstr ""
-
 #. TRANSLATORS: Note helptext for an Barbarian warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4419
-msgctxt "barbarians_building"
-msgid ""
-"Similar to the Headquarters a Port can be attacked and destroyed by an "
-"enemy. It is recommendable to send soldiers to defend it."
-msgstr ""
-
-#. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
-#. Adaptation of a classical Latin quote meaning:
-#. "All roads lead to Fremil."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4429
-msgid "Omnes viæ ducunt Fremilem."
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Empire warehouse: Headquarters
-#. Translation for the adapted classical Latin quote:
-#. "Omnes viæ ducunt Fremilem."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4433
-msgid "All roads lead to Fremil."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Empire warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4437
-msgctxt "empire_building"
-msgid "Proverb signifying the glory of the Empire and its capital"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Empire warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4440
-msgctxt "empire_building"
-msgid "Accommodation for your people. Also stores your wares and tools."
-msgstr ""
-
-#. TRANSLATORS: Note helptext for an Empire warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4442
-msgctxt "empire_building"
-msgid "The headquarters is your main building."
-msgstr ""
-
-#. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
-#. Classical Latin quote meaning:
-#. "Who gives promptly, gives twice, who gives late, gives nothing."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4452
-msgid "Bis dat, qui cito dat, nil dat, qui munera tardat."
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Empire warehouse: Warehouse
-#. Translation for the classical Latin quote:
-#. "Bis dat, qui cito dat, nil dat, qui munera tardat."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4456
-msgid "Who gives promptly, gives twice, who gives late, gives nothing."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Empire warehouse: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4459
-msgctxt "empire_building"
-msgid "Proverb written over the doors of a warehouse"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Empire warehouse: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4461
-msgctxt "empire_building"
-msgid ""
-"Your workers and soldiers will find shelter here. Also stores your wares and "
-"tools."
-msgstr ""
-
-#. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
-#. Classical Latin quote meaning:
-#. "To sail is necessary."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4471
-msgid "Navigare necesse est."
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Empire warehouse: Port
-#. Translation for the classical Latin quote:
-#. "Navigare necesse est."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4475
-msgid "To sail is necessary."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Empire warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4479
-msgctxt "empire_building"
-msgid ""
-"Admiral Litus Marius Exsiccatus, sending out the fleet to break the naval "
-"blockade during the First Atlantean War"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Empire warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4483
-msgctxt "empire_building"
-msgid ""
-"Serves as a base for overseas colonization and trade. Also stores your "
-"soldiers, wares and tools."
-msgstr ""
-
 #. TRANSLATORS: Note helptext for an Empire warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4485
-msgctxt "empire_building"
-msgid ""
-"Similar to the Headquarters a Port can be attacked and destroyed by an "
-"enemy. It is recommendable to send soldiers to defend it."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4492
-msgctxt "frisians_building"
-msgid "Accommodation for your people. Also stores your wares and tools."
-msgstr ""
-
-#. TRANSLATORS: Note helptext for a Frisian warehouse: Headquarters
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4494
-msgctxt "frisians_building"
-msgid "The headquarters is your main building."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Warehouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4501
-msgctxt "frisians_building"
-msgid ""
-"Your workers and soldiers will find shelter here. Also stores your wares and "
-"tools."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4508
-msgctxt "frisians_building"
-msgid ""
-"Serves as a base for overseas colonization and trade. Also stores your "
-"soldiers, wares and tools."
-msgstr ""
-
 #. TRANSLATORS: Note helptext for a Frisian warehouse: Port
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4510
-msgctxt "frisians_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4334
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4353
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4371
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4389
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4407
+msgctxt "europeans_building"
 msgid ""
 "Similar to the Headquarters a Port can be attacked and destroyed by an "
 "enemy. It is recommendable to send soldiers to defend it."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Amazon market: Market
+#. TRANSLATORS: Purpose helptext for an Atlantean market: Market
+#. TRANSLATORS: Purpose helptext for a Barbarian market: Market
+#. TRANSLATORS: Purpose helptext for an Empire market: Market
+#. TRANSLATORS: Purpose helptext for a Frisian market: Market
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4415
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4422
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4429
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4436
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4443
+msgctxt "europeans_building"
+msgid "A market enables trading with other tribes."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Water Gatherer's Hut
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4518
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4451
 msgctxt "europeans_building"
 msgid "Draws water out of the rivers and lakes."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Water Gatherer's Hut, part 1
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4521
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4454
 msgctxt "europeans_building"
 msgid ""
 "The water gatherer’s hut needs open water within the work area. Your workers "
@@ -7762,18 +7433,18 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Water Gatherer's Hut, part 2
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4523
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4456
 msgctxt "europeans_building"
 msgid "Roads and trees along the shoreline block drawing water."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4531
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4538
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4545
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4552
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4559
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4464
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4471
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4478
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4485
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4492
 msgctxt "europeans_building"
 msgid "Draws water out of the deep."
 msgstr ""
@@ -7783,11 +7454,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4566
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4575
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4584
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4593
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4602
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4499
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4508
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4517
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4526
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4535
 msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
 msgstr ""
@@ -7796,28 +7467,28 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4568
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4577
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4586
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4595
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4501
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4510
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4519
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4528
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Woodcutters House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4604
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4537
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Liana Cutter's Hut
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4611
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4544
 msgctxt "europeans_building"
 msgid "Home of the liana cutter who cuts lianas for making ropes."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Liana Cutter's Hut
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4613
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4546
 msgctxt "europeans_building"
 msgid ""
 "The liana cutter harvests liana from fully matured trees within the work "
@@ -7825,7 +7496,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Rare Tree Cutter's Hut
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4620
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4553
 msgctxt "europeans_building"
 msgid ""
 "Harvests rare trees in the surrounding area. Delivers ironwood, balsa and "
@@ -7835,11 +7506,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4627
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4636
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4645
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4654
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4663
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4560
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4569
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4578
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4587
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4596
 msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
 msgstr ""
@@ -7847,11 +7518,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4629
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4638
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4647
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4656
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4665
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4562
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4571
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4580
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4589
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4598
 msgctxt "europeans_building"
 msgid ""
 "The forester’s house needs free space within the work area to plant the "
@@ -7859,19 +7530,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Rare Tree Plantation
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4672
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4605
 msgctxt "europeans_building"
 msgid "Plants special trees, like balsa, liana, rubber and ironwood."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Rare Tree Plantation
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4674
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4607
 msgctxt "europeans_building"
 msgid "Special trees are planted according to the economy requirements."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gardening Center
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4681
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4614
 msgctxt "europeans_building"
 msgid ""
 "Enhances the fertility of the landscape for trees. Also plants special "
@@ -7879,7 +7550,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Gardening Center
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4683
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4616
 msgctxt "europeans_building"
 msgid ""
 "Only a Jungle Master has the necessary experience to coax more growth from "
@@ -7889,9 +7560,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4690
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4699
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4708
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4623
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4632
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4641
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr ""
@@ -7900,24 +7571,24 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an Europeans production site: Quarry
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4692
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4701
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4710
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4719
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4728
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4625
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4634
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4643
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4652
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4661
 msgctxt "europeans_building"
 msgid "The quarry needs rocks to cut within the work area."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4717
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4726
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4650
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4659
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Clay Pit
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4735
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4668
 msgctxt "building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Clay is "
@@ -7927,11 +7598,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4742
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4751
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4760
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4769
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4778
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4675
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4684
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4693
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4702
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4711
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat and leather."
 msgstr ""
@@ -7939,11 +7610,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4744
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4753
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4762
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4771
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4780
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4677
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4686
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4695
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4704
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4713
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
 msgstr ""
@@ -7951,11 +7622,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4787
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4800
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4813
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4826
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4839
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4720
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4733
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4746
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4759
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4772
 msgctxt "europeans_building"
 msgid "Fishes on the coast or in lakes near the fisher’s house."
 msgstr ""
@@ -7963,11 +7634,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 1
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4790
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4803
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4816
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4829
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4842
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4723
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4736
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4749
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4762
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4775
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
 msgstr ""
@@ -7975,23 +7646,23 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 2
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4792
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4805
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4818
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4831
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4844
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4725
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4738
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4751
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4764
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4777
 msgctxt "europeans_building"
 msgid "Roads and trees along the shoreline block fishing."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Aqua Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4852
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4785
 msgctxt "europeans_building"
 msgid "Breeds fish as food for soldiers and miners."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Aqua Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4854
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4787
 msgctxt "europeans_building"
 msgid ""
 "The aqua farm needs holes in the ground that were dug by a clay pit’s worker "
@@ -7999,13 +7670,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Beekeeper's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4861
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4794
 msgctxt "europeans_building"
 msgid "Keeps bees and lets them swarm over flowering fields to produce honey."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Beekeeper's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4863
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4796
 msgctxt "europeans_building"
 msgid ""
 "Needs medium-sized fields (barley, wheat, reed, corn or blackroot) or bushes "
@@ -8013,13 +7684,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Burner's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4870
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4803
 msgctxt "europeans_building"
 msgid "Burns logs into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Charcoal Burner's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4872
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4805
 msgctxt "europeans_building"
 msgid ""
 "The charcoal burner’s house needs holes in the ground that were dug by a "
@@ -8027,21 +7698,21 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Spinning Mill
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4879
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4812
 msgctxt "europeans_building"
 msgid "Spins gold thread out of gold."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Gold Spinning Mill
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4881
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4814
 msgctxt "europeans_building"
 msgid "Do not build until you have a steady gold supply."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4889
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4898
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4822
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4831
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
 msgstr ""
@@ -8055,150 +7726,150 @@ msgstr ""
 #. TRANSLATORS: Note helptext for Europeans production site: Cocoa Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Corn Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Cotton Plantation
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4891
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4900
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4909
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5181
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5190
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5199
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5208
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5217
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5226
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5235
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5244
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4824
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4833
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4842
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5114
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5123
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5132
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5141
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5150
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5159
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5168
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5177
 msgctxt "europeans_building"
 msgid "This farm needs free space within the work area to plant seeds."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Vineyard
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4907
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4840
 msgctxt "europeans_building"
 msgid "Sows and harvests grape."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Berry Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4916
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4849
 msgctxt "europeans_building"
 msgid "Plants berry bushes in the surrounding area."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Berry Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4918
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4851
 msgctxt "europeans_building"
 msgid ""
 "The berry farm needs free space within the work area to plant the bushes."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4925
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4932
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4939
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4858
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4865
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4872
 msgctxt "europeans_building"
 msgid "Burns scrap_wood into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4946
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4953
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4879
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4886
 msgctxt "europeans_building"
 msgid "Burns scrap_wood or logs into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4960
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4893
 msgctxt "europeans_building"
 msgid "Smelts iron ore into iron."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4967
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4900
 msgctxt "europeans_building"
 msgid "Smelts iron ore into iron and gold dust into gold."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4974
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4981
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4988
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4907
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4914
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4921
 msgctxt "europeans_building"
 msgid "Smelts iron ore into iron and gold dust or gold ore into gold."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Recycling Center
-#: addons/europeans_all.wad/tribes/initialization/units.lua:4995
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4928
 msgctxt "europeans_building"
 msgid "Smelts scrap iron into iron and scrap metal mixed into iron and gold."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Micro Brewery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5002
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4935
 msgctxt "europeans_building"
 msgid "Produces simple barbarians beer out of water and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5009
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4942
 msgctxt "europeans_building"
 msgid "Produces additional barbarians strong beer out of water and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Chocolate Brewery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5016
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4949
 msgctxt "europeans_building"
 msgid "Produces additional amazons chocolate out of water and cacao."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5023
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4956
 msgctxt "europeans_building"
 msgid "Produces empire beer out of water and barley."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Vinery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5030
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4963
 msgctxt "europeans_building"
 msgid "Produces additional wine out of grapes."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5037
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4970
 msgctxt "europeans_building"
 msgid "Produces frisians beer out of water and barley."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Mead Brewery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5044
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4977
 msgctxt "europeans_building"
 msgid "Produces additional mead out of water, honey and barley."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5051
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4984
 msgctxt "europeans_building"
 msgid "Grinds corn and blackroot to produce cornmeal and blackroot_flour."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5058
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4991
 msgctxt "europeans_building"
 msgid "Grinds grain, corn and blackroot to produce various kinds of flour."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5065
+#: addons/europeans_all.wad/tribes/initialization/units.lua:4998
 msgctxt "europeans_building"
 msgid "Produces simple barbarians bread out of water and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Cassava Root Cooker
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5072
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5005
 msgctxt "europeans_building"
 msgid "Produces additional amazons bread out of water and cassavaroot."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5079
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5012
 msgctxt "europeans_building"
 msgid ""
 "Produces additional atlanteans bread out of water, cornmeal and blackroot "
@@ -8206,20 +7877,20 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5086
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5019
 msgctxt "europeans_building"
 msgid "Produces additional empire bread out of water, flour and rye flour."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5093
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5026
 msgctxt "europeans_building"
 msgid ""
 "Produces additional frisians bread out of water, barley flour and oat flour."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Honey Bakery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5100
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5033
 msgctxt "europeans_building"
 msgid ""
 "Produces additional honey bread out of water, barley flour, out flour and "
@@ -8227,8 +7898,8 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smokery
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5107
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5115
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5040
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5048
 msgctxt "europeans_building"
 msgid "Smokes meat and fish."
 msgstr ""
@@ -8236,21 +7907,21 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Food Preserver
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5122
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5129
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5136
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5055
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5062
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5069
 msgctxt "europeans_building"
 msgid "Prepares rations to feed the scouts and miners."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5143
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5076
 msgctxt "europeans_building"
 msgid "Prepares rations to feed the miners."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Inn
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5150
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5083
 msgctxt "europeans_building"
 msgid ""
 "Prepares rations and snacks to feed the miners in the basic and deep mines."
@@ -8259,65 +7930,65 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Big Inn
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Inn
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Drinking Hall
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5157
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5164
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5171
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5090
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5097
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5104
 msgctxt "europeans_building"
 msgid "Prepares rations, snacks and meals to feed all miners."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5179
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5112
 msgctxt "europeans_building"
 msgid "Sows and harvests wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5188
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5121
 msgctxt "europeans_building"
 msgid "Sows and harvests rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5197
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5130
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, oat, rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Blackroot Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5206
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5139
 msgctxt "europeans_building"
 msgid "Sows and harvests blackroot."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Cassava Plantation
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5215
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5148
 msgctxt "europeans_building"
 msgid "Sows and harvests cassava root."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Cocoa Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5224
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5157
 msgctxt "europeans_building"
 msgid "Sows and harvests cocoa beans."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Corn Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Cotton Plantation
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5233
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5242
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5166
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5175
 msgctxt "europeans_building"
 msgid "Sows and harvests corn."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Spider Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5251
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5184
 msgctxt "europeans_building"
 msgid "Breeds spiders for silk."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Building Material Manufactory
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5258
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5191
 msgctxt "europeans_building"
 msgid ""
 "Produces improved materials needed to construct buildings. This includes "
@@ -8325,64 +7996,106 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5265
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5198
 msgctxt "europeans_building"
 msgid "Produces all tools and armor that do not require iron."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Metal Manufactory
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5272
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5205
 msgctxt "europeans_building"
 msgid "Produces all tools, weapons and armor that require iron."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Cattle Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5280
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5213
 msgctxt "europeans_building"
 msgid "Breeds strong oxen for adding them to the transportation system."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Tapir Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5287
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5220
 msgctxt "europeans_building"
 msgid "Breeds tapirs for adding them to the transportation system."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5294
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5227
 msgctxt "europeans_building"
 msgid "Breeds the strong horses for adding them to the transportation system."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5301
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5234
 msgctxt "europeans_building"
 msgid ""
 "Breeds cute and helpful donkeys for adding them to the transportation system."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5308
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5241
 msgctxt "europeans_building"
 msgid "Keeps sheep for their wool."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Reindeer Farm
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5315
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5248
 msgctxt "europeans_building"
 msgid ""
 "Breeds strong reindeer for adding them to the transportation system. Also "
 "keeps them for their fur, which is turned into armor and cloth."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Animals Store
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5256
+msgctxt "europeans_building"
+msgid "Sells animals in exchange for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Food Store
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5263
+msgctxt "europeans_building"
+msgid "Sells food products in exchange for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Fur Store
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5270
+msgctxt "europeans_building"
+msgid "Sells animal products like fur and leather in exchange for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Plants Store
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5277
+msgctxt "europeans_building"
+msgid "Sells plant products in exchange for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Basic Wood Store
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5284
+msgctxt "europeans_building"
+msgid "Sells basic tree products in exchange for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Wood Store
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5291
+msgctxt "europeans_building"
+msgid "Sells rare tree products in exchange for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Trading Post
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5298
+msgctxt "europeans_building"
+msgid "Sells coal and metals in exchange for coins."
+msgstr ""
+
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Diker's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5323
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5306
 msgctxt "europeans_building"
 msgid "Constructs breakwaters nearby to gain new land from the sea."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Diker's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5325
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5308
 msgctxt "europeans_building"
 msgid ""
 "The diker will terraform the land around each breakwater he builds several "
@@ -8398,13 +8111,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Rock Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Rock Mine
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5333
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5340
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5347
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5354
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5361
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5368
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5375
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5316
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5323
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5330
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5337
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5344
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5351
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5358
 msgctxt "europeans_building"
 msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
@@ -8418,14 +8131,14 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5382
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5389
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5396
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5403
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5410
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5417
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5424
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5431
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5365
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5372
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5379
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5386
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5393
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5400
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5407
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5414
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr ""
@@ -8437,14 +8150,14 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5438
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5445
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5452
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5459
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5466
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5473
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5480
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5487
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5421
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5428
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5435
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5442
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5449
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5456
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5463
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5470
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr ""
@@ -8456,21 +8169,21 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5494
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5501
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5508
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5515
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5522
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5529
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5536
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5543
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5477
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5484
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5491
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5498
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5505
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5512
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5519
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5526
 msgctxt "europeans_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
 msgstr ""
 
 #. TRANSLATORS: Special helptext for an Europeans production site: Scout's Hut without road connection
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5551
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5560
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5534
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5543
 msgctxt "europeans_building"
 msgid ""
 "You need to connect this flag to a scout’s hut before you can send a scout "
@@ -8481,18 +8194,18 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5553
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5562
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5571
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5589
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5536
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5545
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5554
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5572
 msgctxt "europeans_building"
 msgid "Explores unknown territory."
 msgstr ""
 
 #. TRANSLATORS: Special helptext for an Europeans production site: Scout's House without road connection
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5569
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5578
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5587
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5552
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5561
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5570
 msgctxt "europeans_building"
 msgid ""
 "You need to connect this flag to a scout’s house before you can send a scout "
@@ -8500,27 +8213,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5580
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5563
 msgctxt "building"
 msgid "Explores unknowneuropeans_buildingterritory."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Atlantean market site: Trading post
-#. TRANSLATORS: Purpose helptext for an Empire market site: Temple of Vesta
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5597
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5604
-msgctxt "europeans_building"
-msgid "Allows sharing goods with other players."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Ferry Yard
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ferry Yard
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5612
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5625
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5638
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5651
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5664
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5580
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5593
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5606
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5619
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5632
 msgctxt "europeans_building"
 msgid "Builds ferries."
 msgstr ""
@@ -8528,11 +8233,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 1
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5615
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5628
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5641
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5654
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5667
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5583
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5596
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5609
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5622
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5635
 msgctxt "europeans_building"
 msgid "Needs water nearby. Be aware ferries carry wares only, no workers."
 msgstr ""
@@ -8542,16 +8247,16 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5617
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5630
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5643
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5656
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5669
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5682
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5695
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5708
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5721
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5734
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5585
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5598
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5611
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5624
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5637
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5650
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5663
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5676
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5689
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5702
 msgctxt "europeans_building"
 msgid "Roads and trees along the shoreline block access to water."
 msgstr ""
@@ -8559,11 +8264,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Shipyard
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Shipyard
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5677
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5690
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5703
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5716
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5729
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5645
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5658
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5671
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5684
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5697
 msgctxt "europeans_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
@@ -8573,29 +8278,29 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 1
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5680
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5693
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5706
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5719
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5732
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5648
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5661
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5674
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5687
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5700
 msgctxt "europeans_building"
 msgid "Needs wide open water nearby."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Big Barracks, part 1
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5744
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5712
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Big Barracks, part 2
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5746
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5714
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts and weapons."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5754
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5722
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’."
 msgstr ""
@@ -8603,11 +8308,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans training site: Barracks
 #. TRANSLATORS: Note helptext for a Europeans training site: Initiation Site
 #. TRANSLATORS: Note helptext for a Europeans training site: Barracks
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5761
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5768
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5775
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5782
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5789
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5729
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5736
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5743
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5750
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5757
 msgctxt "europeans_building"
 msgid "Improves soldiers' ‘Health’ through additional armor."
 msgstr ""
@@ -8617,11 +8322,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans training site: Arena
 #. TRANSLATORS: Note helptext for a Europeans training site: Colosseum
 #. TRANSLATORS: Note helptext for a Europeans training site: Training Arena
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5796
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5803
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5810
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5817
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5824
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5764
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5771
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5778
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5785
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5792
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’ and ‘Defense’."
 msgstr ""
@@ -8631,11 +8336,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans training site: Dungeon
 #. TRANSLATORS: Note helptext for a Europeans training site: Trainingcamp
 #. TRANSLATORS: Note helptext for a Europeans training site: Training Camp
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5831
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5838
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5845
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5852
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5859
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5799
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5806
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5813
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5820
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5827
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Attack’."
 msgstr ""
@@ -8647,14 +8352,62 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Amazon military site: Observation Tower
 #. TRANSLATORS: Purpose helptext for an Amazon military site: Fortress
 #. TRANSLATORS: Purpose helptext for an Amazon military site: Fortification
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5867
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5876
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5885
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5894
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5903
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5912
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5921
-msgctxt "amazons_building"
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhouse
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhall
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Small Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: High Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Castle
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Sentry
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Barrier
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Tower
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Fortress
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Empire military site: Blockhouse
+#. TRANSLATORS: Purpose helptext for an Empire military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Empire military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Empire military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Empire military site: Tower
+#. TRANSLATORS: Purpose helptext for an Empire military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Empire military site: Castle
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Wooden Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: High Wooden Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Sentinel
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Outpost
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Fortress
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5835
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5844
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5853
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5862
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5871
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5880
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5889
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5899
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5913
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5926
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5940
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5954
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5970
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5989
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6002
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6016
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6029
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6042
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6067
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6091
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6116
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6140
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6164
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6185
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6208
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6218
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6227
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6236
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6245
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6254
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6263
+msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr ""
 
@@ -8664,13 +8417,13 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Amazon military site: Observation Tower
 #. TRANSLATORS: Note helptext for an Amazon military site: Fortress
 #. TRANSLATORS: Note helptext for an Amazon military site: Fortification
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5869
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5887
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5896
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5905
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5914
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5923
-msgctxt "amazons_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5837
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5855
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5864
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5873
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5882
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5891
+msgctxt "europeans_building"
 msgid ""
 "If you’re low on soldiers to occupy new military sites, use the downward "
 "arrow button to decrease the capacity. You can also click on a soldier to "
@@ -8678,25 +8431,9 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Amazon military site: Treetop Sentry
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5878
-msgctxt "amazons_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5846
+msgctxt "europeans_building"
 msgid "You can only build this building on top of a tree."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhouse
-#. TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhall
-#. TRANSLATORS: Purpose helptext for an Atlantean military site: Small Tower
-#. TRANSLATORS: Purpose helptext for an Atlantean military site: Tower
-#. TRANSLATORS: Purpose helptext for an Atlantean military site: High Tower
-#. TRANSLATORS: Purpose helptext for an Atlantean military site: Castle
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5931
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5945
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5958
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5972
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5986
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6002
-msgctxt "atlanteans_building"
-msgid "Garrisons soldiers to expand your territory."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Atlantean military site: Guardhouse
@@ -8705,234 +8442,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Atlantean military site: Tower
 #. TRANSLATORS: Note helptext for an Atlantean military site: High Tower
 #. TRANSLATORS: Note helptext for an Atlantean military site: Castle
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5933
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5947
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5960
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5974
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5988
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6004
-msgctxt "atlanteans_building"
-msgid ""
-"If you’re low on soldiers to occupy new military sites, use the downward "
-"arrow button to decrease the capacity. You can also click on a soldier to "
-"send him away."
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Europeans production site: Guardhouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5936
-msgctxt "atlanteans_building"
-msgid ""
-"Hey soldier, even if this is the smallest of our military buildings you "
-"still must not sleep all day!"
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Europeans production site: Guardhouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5938
-msgctxt "atlanteans_building"
-msgid "Officer visiting a remote guardhouse"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Europeans production site: Guardhall
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5949
-msgctxt "atlanteans_building"
-msgid "In this hall we praise the fight, Satul will warm us day and night."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Europeans production site: Guardhall
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5951
-msgctxt "atlanteans_building"
-msgid "Scribbling on the wall of a guardhall"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Europeans production site: Small Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5962
-msgctxt "atlanteans_building"
-msgid ""
-"With three soldiers we can achieve an optimal balance between military power "
-"and building cost."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Europeans production site: Small Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5964
-msgctxt "atlanteans_building"
-msgid "Notes on the building instructions"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Europeans production site: Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5976
-msgctxt "atlanteans_building"
-msgid ""
-"All the other tribes envy us for our towers, elegant outside, comfortable "
-"inside, still perfect for defense."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Europeans production site: Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5978
-msgctxt "atlanteans_building"
-msgid "Soldier handing over his duties to a younger one"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Europeans production site: High Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5991
-msgctxt "atlanteans_building"
-msgid ""
-"Beware our mighty high towers! From the topmost spot we can see wide into "
-"the lands and spot the enemy far away."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Europeans production site: High Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:5994
-msgctxt "atlanteans_building"
-msgid "Soldier showing off a High Tower"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Europeans production site: Castle
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6007
-msgctxt "atlanteans_building"
-msgid ""
-"Sometimes even we Atlanteans need to use brute force, but we always play it "
-"wisely."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Europeans production site: Castle
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6009
-msgctxt "atlanteans_building"
-msgid "‘Wisdom of the Fight’ by the warriors’ guild"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for a Barbarian military site: Sentry
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6017
-msgctxt "barbarians_building"
-msgid ""
-"‘The log cabin was so small that two men could hardly live there. But we "
-"were young and carefree. We just relished our freedom and the responsibility "
-"as an outpost.’"
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for a Barbarian military site: Sentry
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6019
-msgctxt "barbarians_building"
-msgid "Boldreth,<br>about his time as young soldier"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for a Barbarian military site: Sentry
-#. TRANSLATORS: Purpose helptext for a Barbarian military site: Barrier
-#. TRANSLATORS: Purpose helptext for a Barbarian military site: Tower
-#. TRANSLATORS: Purpose helptext for a Barbarian military site: Fortress
-#. TRANSLATORS: Purpose helptext for a Barbarian military site: Citadel
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6021
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6034
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6048
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6061
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6074
-msgctxt "barbarians_building"
-msgid "Garrisons soldiers to expand your territory."
-msgstr ""
-
 #. TRANSLATORS: Note helptext for a Barbarian military site: Sentry
 #. TRANSLATORS: Note helptext for a Barbarian military site: Barrier
 #. TRANSLATORS: Note helptext for a Barbarian military site: Tower
 #. TRANSLATORS: Note helptext for a Barbarian military site: Fortress
 #. TRANSLATORS: Note helptext for a Barbarian military site: Citadel
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6023
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6036
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6050
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6063
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6076
-msgctxt "barbarians_building"
-msgid ""
-"If you’re low on soldiers to occupy new military sites, use the downward "
-"arrow button to decrease the capacity. You can also click on a soldier to "
-"send him away."
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for a Barbarian military site: Barrier
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6030
-msgctxt "barbarians_building"
-msgid ""
-"‘When we looked down to the valley from our newly established barrier, we "
-"felt that the spirit of our fathers was with us.’"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for a Barbarian military site: Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6044
-msgctxt "barbarians_building"
-msgid ""
-"‘From the height of our tower we could see far into enemy territory. The "
-"enemy was well prepared, but we also noticed some weak points in their "
-"defense.’"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for a Barbarian military site: Fortress
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6057
-msgctxt "barbarians_building"
-msgid ""
-"‘This stronghold made from blackwood and stones will be a hard nut to crack "
-"for them.’"
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for a Barbarian military site: Fortress
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6059
-msgctxt "barbarians_building"
-msgid "Berthron,<br>chief military adviser of Chat’Karuth"
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for a Barbarian military site: Citadel
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6070
-msgctxt "barbarians_building"
-msgid ""
-"‘The Citadel of Adlen surely is the finest masterpiece of Barbarian "
-"craftsmanship. Nothing as strong and big and beautiful has ever been built "
-"in such a short time.’"
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for a Barbarian military site: Citadel
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6072
-msgctxt "barbarians_building"
-msgid ""
-"Colintan, chief planner of the Citadel of Adlen,<br>at its opening ceremony"
-msgstr ""
-
-#. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
-#. Classical Latin quote meaning:
-#. "An eagle doesn’t catch flies."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6087
-msgid "Aquila non captat muscas."
-msgstr ""
-
-#. TRANSLATORS: Lore helptext for an Empire military site: Blockhouse
-#. Translation for the classical Latin quote:
-#. "Aquila non captat muscas."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6091
-msgid "An eagle doesn’t catch flies."
-msgstr ""
-
-#. TRANSLATORS: Lore author helptext for an Empire military site: Blockhouse
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6095
-msgctxt "empire_building"
-msgid ""
-"General Passerus Claudius Pedestrus on why he didn’t order the destruction "
-"of a rebel Blockhouse"
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Empire military site: Blockhouse
-#. TRANSLATORS: Purpose helptext for an Empire military site: Sentry
-#. TRANSLATORS: Purpose helptext for an Empire military site: Outpost
-#. TRANSLATORS: Purpose helptext for an Empire military site: Barrier
-#. TRANSLATORS: Purpose helptext for an Empire military site: Tower
-#. TRANSLATORS: Purpose helptext for an Empire military site: Fortress
-#. TRANSLATORS: Purpose helptext for an Empire military site: Castle
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6099
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6123
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6148
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6172
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6196
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6217
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6240
-msgctxt "empire_building"
-msgid "Garrisons soldiers to expand your territory."
-msgstr ""
-
 #. TRANSLATORS: Note helptext for an Empire military site: Blockhouse
 #. TRANSLATORS: Note helptext for an Empire military site: Sentry
 #. TRANSLATORS: Note helptext for an Empire military site: Outpost
@@ -8940,38 +8454,235 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Empire military site: Tower
 #. TRANSLATORS: Note helptext for an Empire military site: Fortress
 #. TRANSLATORS: Note helptext for an Empire military site: Castle
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6101
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6125
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6150
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6174
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6198
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6219
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6242
-msgctxt "empire_building"
+#. TRANSLATORS: Note helptext for a Frisian military site: Wooden Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: High Wooden Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: Sentinel
+#. TRANSLATORS: Note helptext for a Frisian military site: Outpost
+#. TRANSLATORS: Note helptext for a Frisian military site: Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: Fortress
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5901
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5915
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5928
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5942
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5956
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5972
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5991
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6004
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6018
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6031
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6044
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6069
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6093
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6118
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6142
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6166
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6187
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6210
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6220
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6229
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6238
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6247
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6256
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6265
+msgctxt "europeans_building"
 msgid ""
 "If you’re low on soldiers to occupy new military sites, use the downward "
 "arrow button to decrease the capacity. You can also click on a soldier to "
 "send him away."
 msgstr ""
 
+#. TRANSLATORS: Lore helptext for an Europeans production site: Guardhouse
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5904
+msgctxt "europeans_building"
+msgid ""
+"Hey soldier, even if this is the smallest of our military buildings you "
+"still must not sleep all day!"
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Europeans production site: Guardhouse
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5906
+msgctxt "europeans_building"
+msgid "Officer visiting a remote guardhouse"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Europeans production site: Guardhall
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5917
+msgctxt "europeans_building"
+msgid "In this hall we praise the fight, Satul will warm us day and night."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Europeans production site: Guardhall
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5919
+msgctxt "europeans_building"
+msgid "Scribbling on the wall of a guardhall"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Europeans production site: Small Tower
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5930
+msgctxt "europeans_building"
+msgid ""
+"With three soldiers we can achieve an optimal balance between military power "
+"and building cost."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Europeans production site: Small Tower
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5932
+msgctxt "europeans_building"
+msgid "Notes on the building instructions"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Europeans production site: Tower
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5944
+msgctxt "europeans_building"
+msgid ""
+"All the other tribes envy us for our towers, elegant outside, comfortable "
+"inside, still perfect for defense."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Europeans production site: Tower
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5946
+msgctxt "europeans_building"
+msgid "Soldier handing over his duties to a younger one"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Europeans production site: High Tower
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5959
+msgctxt "europeans_building"
+msgid ""
+"Beware our mighty high towers! From the topmost spot we can see wide into "
+"the lands and spot the enemy far away."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Europeans production site: High Tower
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5962
+msgctxt "europeans_building"
+msgid "Soldier showing off a High Tower"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Europeans production site: Castle
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5975
+msgctxt "europeans_building"
+msgid ""
+"Sometimes even we Atlanteans need to use brute force, but we always play it "
+"wisely."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Europeans production site: Castle
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5977
+msgctxt "europeans_building"
+msgid "‘Wisdom of the Fight’ by the warriors’ guild"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for a Barbarian military site: Sentry
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5985
+msgctxt "europeans_building"
+msgid ""
+"‘The log cabin was so small that two men could hardly live there. But we "
+"were young and carefree. We just relished our freedom and the responsibility "
+"as an outpost.’"
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Sentry
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5987
+msgctxt "europeans_building"
+msgid "Boldreth,<br>about his time as young soldier"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for a Barbarian military site: Barrier
+#: addons/europeans_all.wad/tribes/initialization/units.lua:5998
+msgctxt "europeans_building"
+msgid ""
+"‘When we looked down to the valley from our newly established barrier, we "
+"felt that the spirit of our fathers was with us.’"
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Barrier
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Tower
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6000
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6014
+msgctxt "europeans_building"
+msgid "Ballad ‘The Battle of Kal’mavrath’ by Hakhor the Bard"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for a Barbarian military site: Tower
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6012
+msgctxt "europeans_building"
+msgid ""
+"‘From the height of our tower we could see far into enemy territory. The "
+"enemy was well prepared, but we also noticed some weak points in their "
+"defense.’"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for a Barbarian military site: Fortress
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6025
+msgctxt "europeans_building"
+msgid ""
+"‘This stronghold made from blackwood and stones will be a hard nut to crack "
+"for them.’"
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Fortress
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6027
+msgctxt "europeans_building"
+msgid "Berthron,<br>chief military adviser of Chat’Karuth"
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for a Barbarian military site: Citadel
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6038
+msgctxt "europeans_building"
+msgid ""
+"‘The Citadel of Adlen surely is the finest masterpiece of Barbarian "
+"craftsmanship. Nothing as strong and big and beautiful has ever been built "
+"in such a short time.’"
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Citadel
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6040
+msgctxt "europeans_building"
+msgid ""
+"Colintan, chief planner of the Citadel of Adlen,<br>at its opening ceremony"
+msgstr ""
+
+#. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
+#. Classical Latin quote meaning:
+#. "An eagle doesn’t catch flies."
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6055
+msgid "Aquila non captat muscas."
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Empire military site: Blockhouse
+#. Translation for the classical Latin quote:
+#. "Aquila non captat muscas."
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6059
+msgid "An eagle doesn’t catch flies."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Empire military site: Blockhouse
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6063
+msgctxt "europeans_building"
+msgid ""
+"General Passerus Claudius Pedestrus on why he didn’t order the destruction "
+"of a rebel Blockhouse"
+msgstr ""
+
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "Who watches the watchmen?"
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6111
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6079
 msgid "Quis custodiet ipsos custodes?"
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Sentry
 #. Translation for the classical Latin quote:
 #. "Quis custodiet ipsos custodes?"
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6115
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6083
 msgid "Who watches the watchmen?"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Sentry
 #. (the Limes was the border defence system of fortifications of the Roman Empire)
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6120
-msgctxt "empire_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6088
+msgctxt "europeans_building"
 msgid ""
 "Saledus warning Lutius that sentries are not adequate protection for the "
 "Limes"
@@ -8981,7 +8692,7 @@ msgstr ""
 #. Classical Latin quote meaning:
 #. "Two were stationed on the other side of the city than the camp: one over the river, the other by
 #. the river above the camp."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6136
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6104
 msgid ""
 "Binæ contra urbem a castris station erant, una ultra flumen, altera eis "
 "flumen supra castra."
@@ -8990,15 +8701,15 @@ msgstr ""
 #. TRANSLATORS: Lore helptext for an Empire military site: Outpost
 #. Translation for the classical Latin quote:
 #. "Binæ contra urbem a castris station erant, una ultra flumen, altera eis flumen supra castra."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6140
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6108
 msgid ""
 "Two were stationed on the other side of the city than the camp: one over the "
 "river, the other by the river above the camp."
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Empire military site: Outpost
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6145
-msgctxt "empire_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6113
+msgctxt "europeans_building"
 msgid ""
 "History of the Empire, Part III, preparation for the battle of Uliginosium"
 msgstr ""
@@ -9006,20 +8717,20 @@ msgstr ""
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "The die is cast!"
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6160
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6128
 msgid "Alea iacta est!"
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Empire military site: Barrier
 #. Translation for the classical Latin quote:
 #. "Alea iacta est!"
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6164
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6132
 msgid "The die is cast!"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Empire military site: Barrier
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6168
-msgctxt "empire_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6136
+msgctxt "europeans_building"
 msgid ""
 "Rebel general Certus Ignavus Fidelius upon entering the limits of Fremil to "
 "overthrow the government"
@@ -9028,20 +8739,20 @@ msgstr ""
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "I came, I saw, I conquered!"
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6184
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6152
 msgid "Veni, Vidi, Vici!"
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Empire military site: Tower
 #. Translation for the classical Latin quote:
 #. "Veni, Vidi, Vici!"
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6188
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6156
 msgid "I came, I saw, I conquered!"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Empire military site: Tower
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6192
-msgctxt "empire_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6160
+msgctxt "europeans_building"
 msgid ""
 "General Claudius Cæcus Cessus reporting a quick victory over the Barbarians "
 "thanks to the superior vision of a tower"
@@ -9050,110 +8761,75 @@ msgstr ""
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
 #. "If you want peace, prepare for war."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6208
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6176
 msgid "Si vis pacem, para bellum."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Empire production site: Fortress
 #. Translation for the classical Latin quote:
 #. "Si vis pacem, para bellum."
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6212
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6180
 msgid "If you want peace, prepare for war."
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Empire military site: Fortress
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6215
-msgctxt "empire_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6183
+msgctxt "europeans_building"
 msgid "Saledus arguing with Amalea"
 msgstr ""
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Adaptation of a classical Latin quote meaning:
 #. "Furthermore, I think that Al’thunran must be destroyed!"
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6229
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6197
 msgid "Ceterum autem censeo Althunranam esse delendam!"
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Empire military site: Castle
 #. Translation for the adapted classical Latin quote:
 #. "Ceterum autem censeo Althunranam esse delendam!"
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6233
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6201
 msgid "Furthermore, I think that Al’thunran must be destroyed!"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Empire military site: Castle
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6237
-msgctxt "empire_building"
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6205
+msgctxt "europeans_building"
 msgid "Saledus in the Senate, urging final victory over the Barbarians"
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for a Frisian military site: Wooden Tower
-#. TRANSLATORS: Purpose helptext for a Frisian military site: High Wooden Tower
-#. TRANSLATORS: Purpose helptext for a Frisian military site: Sentinel
-#. TRANSLATORS: Purpose helptext for a Frisian military site: Outpost
-#. TRANSLATORS: Purpose helptext for a Frisian military site: Tower
-#. TRANSLATORS: Purpose helptext for a Frisian military site: Fortress
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6250
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6259
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6268
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6277
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6286
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6295
-msgctxt "frisians_building"
-msgid "Garrisons soldiers to expand your territory."
-msgstr ""
-
-#. TRANSLATORS: Note helptext for a Frisian military site: Wooden Tower
-#. TRANSLATORS: Note helptext for a Frisian military site: High Wooden Tower
-#. TRANSLATORS: Note helptext for a Frisian military site: Sentinel
-#. TRANSLATORS: Note helptext for a Frisian military site: Outpost
-#. TRANSLATORS: Note helptext for a Frisian military site: Tower
-#. TRANSLATORS: Note helptext for a Frisian military site: Fortress
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6252
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6261
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6270
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6279
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6288
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6297
-msgctxt "frisians_building"
-msgid ""
-"If you’re low on soldiers to occupy new military sites, use the downward "
-"arrow button to decrease the capacity. You can also click on a soldier to "
-"send him away."
-msgstr ""
-
 #. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6305
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6273
 msgctxt "europeans_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Construction Site
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6307
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6275
 msgctxt "europeans_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Construction Site
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6309
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6277
 msgctxt "europeans_building"
 msgid "A new building is being built at this construction site."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Dismantle Site
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6316
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6284
 msgctxt "europeans_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Dismantle Site
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6318
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6286
 msgctxt "europeans_building"
 msgid "Proverb"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Dismantle Site
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6320
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6288
 msgctxt "europeans_building"
 msgid ""
 "A building is being dismantled at this dismantle site, returning some of the "
@@ -9161,49 +8837,49 @@ msgid ""
 "stores."
 msgstr ""
 
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6326
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6294
 msgctxt "warehousename"
 msgid "Europa"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6332
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6300
 msgctxt "europeans"
 msgid "Worker missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6334
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6302
 msgctxt "europeans"
 msgid "Worker is coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6336
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6304
 msgctxt "europeans"
 msgid "Workers missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6338
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6306
 msgctxt "europeans"
 msgid "Workers are coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6340
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6308
 msgctxt "europeans"
 msgid "Expert missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6342
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6310
 msgctxt "europeans"
 msgid "Experts missing"
 msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6356
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6324
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
@@ -9211,7 +8887,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6358
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6326
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
@@ -9219,7 +8895,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6360
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6328
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
@@ -9227,7 +8903,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
-#: addons/europeans_all.wad/tribes/initialization/units.lua:6362
+#: addons/europeans_all.wad/tribes/initialization/units.lua:6330
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
@@ -9245,13 +8921,27 @@ msgid "Start the game with one port only."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_human.lua:11
-msgid "Headquarters"
+#: addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_with_diker.lua:11
+msgid "Headquarters with Diker"
 msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
-msgid "Start the game with your headquarters only."
+#: addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_with_diker.lua:13
+msgid ""
+"Start the game with your headquarters only. Enables dikers and disables "
+"ports and shipyards."
+msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_with_seafaring.lua:11
+msgid "Headquarters with Seafaring"
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_with_seafaring.lua:13
+msgid ""
+"Start the game with your headquarters only. Enables ports and shipyards and "
+"disables dikers."
 msgstr ""
 
 #. TRANSLATORS: This is the Atlanteans' ship's name used in lists of units

@@ -6,7 +6,7 @@ local dirname = "tribes/buildings/warehouses/barbarians/port/"
 wl.Descriptions():new_warehouse_type {
    name = "europeans_barbarians_port",
    -- TRANSLATORS: This is a building name used in lists of buildings
-   descname = pgettext("barbarians_building", "Port"),
+   descname = pgettext("europeans_building", "Port"),
    icon = dirname .. "menu.png",
    size = "port",
    map_check = {"seafaring"},
