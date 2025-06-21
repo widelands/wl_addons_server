@@ -548,6 +548,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:legacy-names-wad]
+file_filter            = po/legacy_names.wad/<lang>.po
+source_file            = po/legacy_names.wad/legacy_names.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:legacy-terrains-wad]
 file_filter            = po/legacy_terrains.wad/<lang>.po
 source_file            = po/legacy_terrains.wad/legacy_terrains.wad.pot

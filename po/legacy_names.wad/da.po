@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-21 03:12+0200\n"
+"PO-Revision-Date: 2025-06-20 17:14+0000\n"
+"Language-Team: Danish (https://app.transifex.com/widelands/teams/35159/da/)\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/legacy_names.wad/addon:2
+msgid "Legacy Names"
+msgstr ""
+
+#: addons/legacy_names.wad/addon:3
+msgid ""
+"Renames some tribe units as they used to be called in the ancient Widelands "
+"days, and reinstates the Barbarian Stronghold."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Stronghold
+#: addons/legacy_names.wad/postload.lua:6
+msgctxt "barbarians_building"
+msgid "Garrisons soldiers to expand your territory."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for a Barbarian military site: Stronghold
+#: addons/legacy_names.wad/postload.lua:8
+msgctxt "barbarians_building"
+msgid ""
+"If you’re low on soldiers to occupy new military sites, use the downward "
+"arrow button to decrease the capacity. You can also click on a soldier to "
+"send him away."
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:11
+msgid "Trunk"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:12
+msgid "Raw Stone"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:13
+msgid "Thatch Reed"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:15
+msgid "Wood Lance"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:16
+msgid "Lance"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:17
+msgid "Advanced Lance"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:18
+msgid "Heavy Lance"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:19
+msgid "War-Lance"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:21
+msgid "Ferner"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:23
+msgid "Fernery"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:24
+msgid "Donjon"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/legacy_names.wad/stronghold/init.lua:8
+msgctxt "barbarians_building"
+msgid "Stronghold"
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:44
+msgctxt "barbarians_building"
+msgid "Your soldiers have occupied your stronghold."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:46
+msgctxt "barbarians_building"
+msgid "Your stronghold discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:48
+msgctxt "barbarians_building"
+msgid "Your stronghold is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:50
+msgctxt "barbarians_building"
+msgid "The enemy defeated your soldiers at the stronghold."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:52
+msgctxt "barbarians_building"
+msgid "Your soldiers defeated the enemy at the stronghold."
+msgstr ""

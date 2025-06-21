@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Viktor Skachkov <awsswa59@gmail.com>, 2025
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-21 03:12+0200\n"
+"PO-Revision-Date: 2025-06-20 17:14+0000\n"
+"Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2025\n"
+"Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
+"ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: addons/legacy_names.wad/addon:2
+msgid "Legacy Names"
+msgstr "Унаследованные имена"
+
+#: addons/legacy_names.wad/addon:3
+msgid ""
+"Renames some tribe units as they used to be called in the ancient Widelands "
+"days, and reinstates the Barbarian Stronghold."
+msgstr ""
+"Переименовывают некоторые племенные подразделения, как они назывались в "
+"древние времена Widelands, и восстанавливает Варварское Укрепление."
+
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Stronghold
+#: addons/legacy_names.wad/postload.lua:6
+msgctxt "barbarians_building"
+msgid "Garrisons soldiers to expand your territory."
+msgstr "Военное здание занятое солдатами расширяет вашу территорию."
+
+#. TRANSLATORS: Note helptext for a Barbarian military site: Stronghold
+#: addons/legacy_names.wad/postload.lua:8
+msgctxt "barbarians_building"
+msgid ""
+"If you’re low on soldiers to occupy new military sites, use the downward "
+"arrow button to decrease the capacity. You can also click on a soldier to "
+"send him away."
+msgstr ""
+"Если у вас мало солдат для захвата военных зданий, используйте кнопку "
+"\"стрелка вниз\", чтобы уменьшить их численность. Кроме того, можно щёлкнуть "
+"по солдату, чтобы выгнать его."
+
+#: addons/legacy_names.wad/postload.lua:11
+msgid "Trunk"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:12
+msgid "Raw Stone"
+msgstr "Булыжник"
+
+#: addons/legacy_names.wad/postload.lua:13
+msgid "Thatch Reed"
+msgstr "Кровельный тростник"
+
+#: addons/legacy_names.wad/postload.lua:15
+msgid "Wood Lance"
+msgstr "Деревянное копьё"
+
+#: addons/legacy_names.wad/postload.lua:16
+msgid "Lance"
+msgstr "Копьё"
+
+#: addons/legacy_names.wad/postload.lua:17
+msgid "Advanced Lance"
+msgstr "Продвинутое копьё"
+
+#: addons/legacy_names.wad/postload.lua:18
+msgid "Heavy Lance"
+msgstr "Тяжелое копье"
+
+#: addons/legacy_names.wad/postload.lua:19
+msgid "War-Lance"
+msgstr "Военное копьё"
+
+#: addons/legacy_names.wad/postload.lua:21
+msgid "Ferner"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:23
+msgid "Fernery"
+msgstr ""
+
+#: addons/legacy_names.wad/postload.lua:24
+msgid "Donjon"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/legacy_names.wad/stronghold/init.lua:8
+msgctxt "barbarians_building"
+msgid "Stronghold"
+msgstr "Укрепление"
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:44
+msgctxt "barbarians_building"
+msgid "Your soldiers have occupied your stronghold."
+msgstr "Ваши солдаты заняли укрепление."
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:46
+msgctxt "barbarians_building"
+msgid "Your stronghold discovered an aggressor."
+msgstr "Ваше Укрепление обнаружило врага."
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:48
+msgctxt "barbarians_building"
+msgid "Your stronghold is under attack."
+msgstr "Ваше Укрепление атаковано."
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:50
+msgctxt "barbarians_building"
+msgid "The enemy defeated your soldiers at the stronghold."
+msgstr "Враг перебил защитников Укрепления."
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/legacy_names.wad/stronghold/init.lua:52
+msgctxt "barbarians_building"
+msgid "Your soldiers defeated the enemy at the stronghold."
+msgstr "Ваши солдаты разбили врага у Укрепления."
