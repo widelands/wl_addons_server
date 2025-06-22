@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-21 03:12+0200\n"
+"POT-Creation-Date: 2025-06-22 03:12+0200\n"
 "PO-Revision-Date: 2025-06-20 17:14+0000\n"
+"Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +24,21 @@ msgstr ""
 
 #: addons/legacy_names.wad/addon:2
 msgid "Legacy Names"
-msgstr ""
+msgstr "Dříve používaná jména"
 
 #: addons/legacy_names.wad/addon:3
 msgid ""
 "Renames some tribe units as they used to be called in the ancient Widelands "
 "days, and reinstates the Barbarian Stronghold."
 msgstr ""
+"U přejmenovaných objektů vrátí původní jména, která byla použita v dávných "
+"časech Widelands, a znovu umožňuje Barbarům stavět malé pevnosti."
 
 #. TRANSLATORS: Purpose helptext for a Barbarian military site: Stronghold
 #: addons/legacy_names.wad/postload.lua:6
 msgctxt "barbarians_building"
 msgid "Garrisons soldiers to expand your territory."
-msgstr ""
+msgstr "Obsazením budovy svou posádkou rozšiřuješ svá území."
 
 #. TRANSLATORS: Note helptext for a Barbarian military site: Stronghold
 #: addons/legacy_names.wad/postload.lua:8
@@ -42,83 +48,86 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a soldier to "
 "send him away."
 msgstr ""
+"Pokud máš nedostatek vojáků pro obsazení nové vojenské budovy, použij "
+"tlačítko s šipkou dolů pro snížení kapacity. Můžeš také kliknout na ikonu "
+"vojáka a poslat ho tak z budovy pryč."
 
 #: addons/legacy_names.wad/postload.lua:11
 msgid "Trunk"
-msgstr ""
+msgstr "Kmen"
 
 #: addons/legacy_names.wad/postload.lua:12
 msgid "Raw Stone"
-msgstr ""
+msgstr "Surový kámen"
 
 #: addons/legacy_names.wad/postload.lua:13
 msgid "Thatch Reed"
-msgstr ""
+msgstr "Rákosový došek"
 
 #: addons/legacy_names.wad/postload.lua:15
 msgid "Wood Lance"
-msgstr ""
+msgstr "Dřevěné kopí"
 
 #: addons/legacy_names.wad/postload.lua:16
 msgid "Lance"
-msgstr ""
+msgstr "Kopí"
 
 #: addons/legacy_names.wad/postload.lua:17
 msgid "Advanced Lance"
-msgstr ""
+msgstr "Vylepšené kopí"
 
 #: addons/legacy_names.wad/postload.lua:18
 msgid "Heavy Lance"
-msgstr ""
+msgstr "Těžké kopí"
 
 #: addons/legacy_names.wad/postload.lua:19
 msgid "War-Lance"
-msgstr ""
+msgstr "Bojové kopí"
 
 #: addons/legacy_names.wad/postload.lua:21
 msgid "Ferner"
-msgstr ""
+msgstr "Pěstitel"
 
 #: addons/legacy_names.wad/postload.lua:23
 msgid "Fernery"
-msgstr ""
+msgstr "Stéblové trávníky"
 
 #: addons/legacy_names.wad/postload.lua:24
 msgid "Donjon"
-msgstr ""
+msgstr "Donjon"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/legacy_names.wad/stronghold/init.lua:8
 msgctxt "barbarians_building"
 msgid "Stronghold"
-msgstr ""
+msgstr "Malá pevnost"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/legacy_names.wad/stronghold/init.lua:44
 msgctxt "barbarians_building"
 msgid "Your soldiers have occupied your stronghold."
-msgstr ""
+msgstr "Malá pevnost obydlena tvou posádkou."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/legacy_names.wad/stronghold/init.lua:46
 msgctxt "barbarians_building"
 msgid "Your stronghold discovered an aggressor."
-msgstr ""
+msgstr "Malá pevnost objevila nepřítele."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/legacy_names.wad/stronghold/init.lua:48
 msgctxt "barbarians_building"
 msgid "Your stronghold is under attack."
-msgstr ""
+msgstr "Nepřítel napadl tvoji malou pevnost."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/legacy_names.wad/stronghold/init.lua:50
 msgctxt "barbarians_building"
 msgid "The enemy defeated your soldiers at the stronghold."
-msgstr ""
+msgstr "Nepřítel dobyl tvoji malou pevnost."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/legacy_names.wad/stronghold/init.lua:52
 msgctxt "barbarians_building"
 msgid "Your soldiers defeated the enemy at the stronghold."
-msgstr ""
+msgstr "Malá pevnost nepřítele dobyta."

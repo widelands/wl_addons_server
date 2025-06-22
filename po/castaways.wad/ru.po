@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# nskdmitry, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-09 03:10+0200\n"
+"POT-Creation-Date: 2025-06-22 03:11+0200\n"
 "PO-Revision-Date: 2025-04-08 17:14+0000\n"
+"Last-Translator: nskdmitry, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -26,7 +30,7 @@ msgstr ""
 #: addons/castaways.wad/barbarians.lua:11 addons/castaways.wad/empire.lua:11
 #: addons/castaways.wad/frisians.lua:11
 msgid "Castaways"
-msgstr ""
+msgstr "Выжившие"
 
 #: addons/castaways.wad/addon:3
 msgid ""
@@ -34,6 +38,9 @@ msgid ""
 "workers. You will need to find a portspace with direct access to rocks and "
 "trees. For more information, see description."
 msgstr ""
+"Вы начинаете игру посреди океана с единственным кораблём, небольшими "
+"запасами и малым числом работников. Вам нужно найти бухту в непосредственной "
+"близости от скал и деревьев. За подробностями смотрите описание."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/amazons.lua:13
@@ -45,6 +52,11 @@ msgid ""
 "quartz for one tool you will need to start your economy. For unknown maps, "
 "game without fog of war recommended. A higher game speed is also recommended."
 msgstr ""
+"Игра начинается с единственным кораблём посреди океана. Важно: для ИИ эти "
+"условия крайне тяжёлые. Вам нужно найти бухту в непосредственной близости от "
+"скал и деревьев. Вам придется разбирать здания на стройматериалы. Будьте "
+"внимательны: у вас только один источник камня и ровно одна кирка. "
+"Рекомендуется играть на повышенной скорости."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/atlanteans.lua:13
@@ -55,6 +67,10 @@ msgid ""
 "to find a portspace with direct access to rocks and trees. For unknown maps, "
 "game without fog of war recommended."
 msgstr ""
+"Вы начнёте игру посреди океана с одним кораблём, минимум ресурсов и "
+"работников. Важно: это крайне трудные условия для развития ИИ-оппонента. Вам "
+"нужно найти бухту в непосредственной близости от скал и деревьев. На "
+"незнакомых картах рекомендуется отключать туман войны."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/frisians.lua:13
