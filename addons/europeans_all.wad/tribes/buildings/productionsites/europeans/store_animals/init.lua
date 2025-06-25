@@ -20,7 +20,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
 
-    size = "medium",
+    size = "big",
     buildcost = {
         granite = 6,
         planks = 6,

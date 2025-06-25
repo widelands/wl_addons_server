@@ -291,6 +291,12 @@ function set_starting_warecount(player)
             for j, warehouse in ipairs(warehouses) do
                 warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name) + 16) / #warehouses))
             end
+        elseif string.find(worker.name, "soldier") then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_soldiers({0,0,0,0}, ((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
+            end
+        elseif string.find(worker.name, "ferry") then
+            print(worker.name)
         else
             for j, warehouse in ipairs(warehouses) do
                 warehouse:set_workers(worker.name, math.floor((worker_economy:target_quantity(worker.name) + 1) / #warehouses))

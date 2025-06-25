@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 03:12+0200\n"
+"POT-Creation-Date: 2025-06-25 03:12+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -1880,8 +1880,8 @@ msgid ""
 "baker needs for a good bread. Also horse and spider farms need to be "
 "provided with corn."
 msgstr ""
-"Kukuřice se zpracovává ve mlýně na kukuřičnou mouku, kterou potřebuje každý "
-"atlantský pekař k přípravě chleba. Kukuřici potřebují také stáje a pavoučí "
+"Kukuřice se zpracovává ve mlýně na kukuřičnou mouku, kterou potřebuje každá "
+"atlantská pekařka k přípravě chleba. Kukuřici potřebují také stáje a pavoučí "
 "farmy."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Cornmeal
@@ -2172,7 +2172,9 @@ msgstr "Kosy vyrábí nástrojář."
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:2612
 msgctxt "ware"
 msgid "The bread paddle is the tool of the baker, each baker needs one."
-msgstr "Lopata na chléb je nástrojem pekaře, každý pekař ji potřebuje."
+msgstr ""
+"Lopata na chléb je nástrojem pekařů a pekařek, žádný z nich se bez ní "
+"neobejde."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Bread Paddle, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:470
@@ -5288,7 +5290,7 @@ msgstr "Platnéř"
 #: addons/lutas_atlanteans.wad/tribes/workers/baker/init.lua:8
 msgctxt "lutas_atlanteans_worker"
 msgid "Baker"
-msgstr "Pekař"
+msgstr "Pekařka"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/lutas_atlanteans.wad/tribes/workers/blackroot_farmer/init.lua:8

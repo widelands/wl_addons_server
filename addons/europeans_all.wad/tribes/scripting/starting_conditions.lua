@@ -308,7 +308,7 @@ function set_starting_warecount(player)
     for i, worker in ipairs(tribe.workers) do
         if string.find(worker.name, "soldier") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name)) / #warehouses))
+                warehouse:set_soldiers({0,0,0,0}, ((worker_economy:target_quantity(worker.name)) / #warehouses))
             end
         elseif string.find(worker.name, "carrier") then
             for j, warehouse in ipairs(warehouses) do
@@ -330,6 +330,8 @@ function set_starting_warecount(player)
             for j, warehouse in ipairs(warehouses) do
                 warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
             end
+        elseif string.find(worker.name, "ferry") then
+            print(worker.name)
         else
             for j, warehouse in ipairs(warehouses) do
                 warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
