@@ -14,6 +14,9 @@ wl.Descriptions():new_worker_type {
         check_space = {
             "findspace=size:any radius:6 avoid:field",
         },
+        check_tree_space = {
+            "findspace=size:any radius:6 avoid:field saplingsearches:12"
+        },
         check_dig_space = {
             "findspace=size:any radius:6 avoid:field",
         },
@@ -27,6 +30,9 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:field radius:6"
         },
         check_growable_plants = {
+            "findobject=attrib:growable radius:6"
+        },
+        check_growable_trees = {
             "findobject=attrib:growable radius:6"
         },
         check_flower = {
@@ -47,6 +53,28 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:1s",
             "return"
         },
+        watering = {
+            "findobject=attrib:growable radius:6",
+            "walk=object",
+            "animate=water duration:2s",
+            "terraform=diking",
+            "animate=water duration:1s",
+            "terraform=amazons",
+            "callobject=grow",
+            "return"
+        },
+        plant_balsa_tree = {
+            "findspace=size:any radius:6 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=plant duration:1s",
+            "plant=attrib:balsa_tree_sapling",
+            "animate=water duration:1s",
+            "terraform=diking",
+            "animate=water duration:1s",
+            "terraform=amazons",
+            "return"
+        },
         plant_berrybush = {
             "findspace=size:any radius:6 space",
             "walk=coords",
@@ -56,19 +84,35 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_cotton = {
-            "findobject=attrib:pond_water radius:6",
-            "walk=object",
-            "animate=plant duration:1s",
-            "callobject=plant_cotton_in_pond",
-            "animate=plant duration:1s",
-            "return"
-        },
-        plant_grape = {
             "findspace=size:any radius:6 space",
             "walk=coords",
             "animate=planting duration:4s",
-            "plant=attrib:seed_grapes",
+            "plant=attrib:seed_cotton",
             "animate=planting duration:4s",
+            "return"
+        },
+        plant_ironwood_tree = {
+            "findspace=size:any radius:6 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=plant duration:1s",
+            "plant=attrib:ironwood_tree_sapling",
+            "animate=water duration:1s",
+            "terraform=diking",
+            "animate=water duration:1s",
+            "terraform=amazons",
+            "return"
+        },
+        plant_liana_tree = {
+            "findspace=size:any radius:6 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=plant duration:1s",
+            "plant=attrib:liana_tree_sapling",
+            "animate=water duration:1s",
+            "terraform=diking",
+            "animate=water duration:1s",
+            "terraform=amazons",
             "return"
         },
         plant_reed = {
@@ -79,11 +123,35 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:1s",
             "return"
         },
-        watering = {
-            "findobject=attrib:growable radius:6",
+        plant_rubber_tree = {
+            "findspace=size:any radius:6 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=plant duration:1s",
+            "plant=attrib:rubber_tree_sapling",
+            "animate=water duration:1s",
+            "terraform=diking",
+            "animate=water duration:1s",
+            "terraform=amazons",
+            "return"
+        },
+        plant_tree = {
+            "findspace=size:any radius:6 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=plant duration:1s",
+            "plant=attrib:tree_sapling",
+            "animate=water duration:1s",
+            "terraform=diking",
+            "animate=water duration:1s",
+            "terraform=amazons",
+            "return"
+        },
+        bees = {
+            "findobject=attrib:flowering radius:6",
             "walk=object",
-            "animate=water duration:2s",
-            "callobject=grow",
+            "animate=beeswarm duration:6s",
+            "createware=honey",
             "return"
         },
         harvest_berrybush = {
@@ -106,16 +174,6 @@ wl.Descriptions():new_worker_type {
             "createware=cotton",
             "return"
         },
-        harvest_grape = {
-            "findobject=attrib:ripe_grapes radius:6",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvesting duration:4s",
-            "callobject=harvest",
-            "animate=gathering duration:2s",
-            "createware=grape",
-            "return"
-        },
         harvest_reed = {
             "findobject=attrib:ripe_reed radius:6",
             "walk=object",
@@ -124,16 +182,6 @@ wl.Descriptions():new_worker_type {
             "callobject=harvest",
             "animate=gathering duration:1s",
             "createware=reed",
-            "return"
-        },
-        check_flower = {
-            "findobject=attrib:flowering radius:6",
-        },
-        bees = {
-            "findobject=attrib:flowering radius:6",
-            "walk=object",
-            "animate=beeswarm duration:6s",
-            "createware=honey",
             "return"
         },
     },

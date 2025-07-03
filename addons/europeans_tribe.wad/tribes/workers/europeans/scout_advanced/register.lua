@@ -1,3 +1,3 @@
 return {
-    europeans_scout_advanced = {"__replace_if_exists"},
+    europeans_scout_advanced = { "worker", "__replace_if_exists" },
 }

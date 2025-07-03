@@ -172,7 +172,155 @@ wl.Descriptions():new_tribe {
             },
         },
         {
-            -- Building Materials 2 (Stone, Grout and Brick)
+            -- Building Materials 1 (Farming)
+            {
+                name = "reed",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
+                        pgettext("europeans_ware", "Reed is an important building material."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
+                        pgettext("europeans_ware", "It is produced by the reed yard."),
+                    }
+                }
+            },
+            {
+                name = "cotton",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
+                        pgettext("europeans_ware", "Cotton is a raw material used to make clothing."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
+                        pgettext("europeans_ware", "It is produced by normal farms."),
+                    }
+                }
+            },
+            {
+                name = "cloth",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
+                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
+                }
+            },
+            {
+                name = "rubber",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
+                        pgettext("europeans_ware", "Rubber is needed to make improved armor and boots."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
+                        pgettext("europeans_ware", "It is produced in tree nursery or in rubber farm."),
+                    }
+                }
+            },
+            {
+                name = "armor",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool, cotton or reed.")
+                }
+            },
+            {
+                name = "liana",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Liana
+                        pgettext("europeans_ware", "Lianas grow on trees. Very durable ropes are made out of them.")
+                    }
+                }
+            },
+            {
+                name = "rope",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rope
+                        pgettext("europeans_ware", "This rope is made out of lianas. It is used for armor dresses and to construct buildings and ships.")
+                    }
+                }
+            },
+        },
+        {
+            -- Animal economy
+            {
+                name = "honey",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Honey
+                    purpose = pgettext("europeans_ware", "Honey is produced by bees belonging to a farm. It is used to feed animals.")
+                }
+            },
+            {
+                name = "fruit",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Fruit
+                    purpose = pgettext("europeans_ware", "Fruit are berries gathered from berry bushes by a fruit collector. They are used to brew fruit wine.")
+                }
+            },
+            {
+                name = "leather",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
+                }
+            },
+            {
+                name = "fur",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Fur
+                    purpose = pgettext("europeans_ware", "Fur is won from reindeer in a reindeer farm. It is woven into cloth or turned into fur garments for soldiers.")
+                }
+            },
+            {
+                name = "wool",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
+                }
+            },
+            {
+                name = "spider_silk",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Atlantean ware: Spider Silk
+                    purpose = pgettext("atlanteans_ware", "Spider silk is produced by spiders, which are bred by spider farms. It can be processed into spidercloth or tabards in a weaving mill, or used to make tools in the toolsmithy.")
+                }
+            },
+            {
+                name = "spidercloth",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Atlantean ware: Spidercloth
+                    purpose = pgettext("atlanteans_ware", "Spidercloth is made out of spider silk in a weaving mill. It is used in the shipyard. Also some higher developed buildings need spidercloth for their construction.")
+                }
+            },
+        },
+        {
+            -- Building Materials 3 (Stone, Grout and Brick)
             {
                 name = "coal",
                 default_target_quantity = 48,
@@ -256,114 +404,6 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the Europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
                 }
             }
-        },
-        {
-            -- Animal economy
-            {
-                name = "honey",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Honey
-                    purpose = pgettext("europeans_ware", "Honey is produced by bees belonging to a farm. It is used to feed animals.")
-                }
-            },
-            {
-                name = "fruit",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Fruit
-                    purpose = pgettext("europeans_ware", "Fruit are berries gathered from berry bushes by a fruit collector. They are used to brew fruit wine.")
-                }
-            },
-            {
-                name = "grape",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Grape
-                    purpose = pgettext("europeans_ware", "These grapes are the base for a tasty wine. They are harvested in a advanced farm and processed in a winery.")
-                }
-            },
-            {
-                name = "wool",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
-                }
-            },
-            {
-                name = "leather",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
-                }
-            },
-        },
-        {
-            -- Raw Materials for craft (Agricultur)
-            {
-                name = "reed",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
-                        pgettext("europeans_ware", "Reed is an important building material."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
-                        pgettext("europeans_ware", "It is produced by the reed yard."),
-                    }
-                }
-            },
-            {
-                name = "cotton",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
-                        pgettext("europeans_ware", "Cotton is a raw material used to make clothing."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
-                        pgettext("europeans_ware", "It is produced by normal farms."),
-                    }
-                }
-            },
-            {
-                name = "cloth",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
-                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
-                }
-            },
-            {
-                name = "rubber",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
-                        pgettext("europeans_ware", "Rubber is needed to make improved armor and boots."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
-                        pgettext("europeans_ware", "It is produced in tree nursery or in rubber farm."),
-                    }
-                }
-            },
-            {
-                name = "armor",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool, cotton or reed.")
-                }
-            },
         },
         {
             -- Metal Economy and Trading
@@ -507,6 +547,15 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "europeans_carrier_tapir",
+                default_target_quantity = 16,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans worker: Tapir
+                    purpose = pgettext("europeans_worker", "Tapirs help to carry items along busy roads. They are reared in an animal farm.")
+                }
+            },
+            {
                 name = "europeans_carrier_reindeer",
                 default_target_quantity = 16,
                 preciousness = 1,
@@ -603,18 +652,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_terraformer",
-                default_target_quantity = 4,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Plant trees and increases soil fertility.")
-                }
-            }
-        },
-        {
-            -- Agriculture workers
-            {
                 name = "europeans_gardener_basic",
                 default_target_quantity = 1,
                 preciousness = 1,
@@ -633,21 +670,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_hunter_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Hunter
-                    purpose = pgettext("europeans_worker", "The hunter brings ox, leather and wool to the colonists.")
-                }
-            },
-            {
-                name = "europeans_gamekeeper",
+                name = "europeans_diker",
                 default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Gamekeeper
-                    purpose = pgettext("europeans_worker", "The gamekeeper makes sure that the natural population of animals never drops too low.")
+                    -- TRANSLATORS: Purpose helptext for a Europeans worker: Diker
+                    purpose = pgettext("europeans_worker", "Constructs breakwaters to gain new land from the sea.")
                 }
             }
         },
@@ -1324,6 +1352,14 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools.")
             }
         },
+        -- Markets
+        {
+            name = "europeans_market",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Market
+                purpose = pgettext("europeans_building", "A market enables trading with other tribes.")
+            }
+        },
         -- Small
         {
             name = "europeans_lumberjacks_house_basic",
@@ -1335,16 +1371,77 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_lumberjacks_house_advanced",
+            name = "europeans_lumberjacks_house_level_1",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Lumberjack's House
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
                 purpose = pgettext("europeans_building", "Fells trees in the surrounding area and processes them into logs."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Lumberjack's House
+                -- TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+                note = pgettext("europeans_building", "The lumberjack’s hut needs trees to fell within the work area."),
+            }
+        },
+        {
+            name = "europeans_lumberjacks_house_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+                purpose = pgettext("europeans_building", "Fells trees in the surrounding area and processes them into logs."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+                note = pgettext("europeans_building", "The lumberjack’s hut needs trees to fell within the work area."),
+            }
+        },
+        {
+            name = "europeans_lumberjacks_house_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+                purpose = pgettext("europeans_building", "Fells trees in the surrounding area and processes them into logs."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
+                note = pgettext("europeans_building", "The lumberjack’s hut needs trees to fell within the work area."),
+            }
+        },
+        {
+            name = "europeans_lumberjacks_house_level_4",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
+                purpose = pgettext("europeans_building", "Fells trees in the surrounding area and processes them into logs."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Woodcutters House
                 note = pgettext("europeans_building", "The lumberjack’s house needs trees to fell within the work area.")
             }
         },
         {
-            name = "europeans_foresters_hut",
+            name = "europeans_rare_tree_cutters_hut_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Liana Cutter's Hut
+                purpose = pgettext("europeans_building", "Home of the liana cutter who cuts lianas for making ropes."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Liana Cutter's Hut
+                note = pgettext("europeans_building", "The liana cutter harvests liana from fully matured trees within the work area which are not being used as lookouts."),
+            }
+        },
+        {
+            name = "europeans_rare_tree_cutters_hut_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Rare Tree Cutter's Hut
+                purpose = pgettext("europeans_building", "Harvests rare trees in the surrounding area. Delivers ironwood, balsa and rubber."),
+            }
+        },
+        {
+            name = "europeans_foresters_house_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+                purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+                note = pgettext("europeans_building", "The forester’s house needs free space within the work area to plant the trees.")
+            }
+        },
+        {
+            name = "europeans_foresters_house_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+                purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+                note = pgettext("europeans_building", "The forester’s house needs free space within the work area to plant the trees.")
+            }
+        },
+        {
+            name = "europeans_foresters_house_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
                 purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
@@ -1353,24 +1450,39 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_terraformers_house",
+            name = "europeans_foresters_house_level_3",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
-                purpose = pgettext("building", "Plant trees and increases soil fertility.")
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
+                purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Forester's House
+                note = pgettext("europeans_building", "The forester’s house needs free space within the work area to plant the trees.")
             }
         },
         {
-            name = "europeans_farm_small_basic",
+            name = "europeans_foresters_house_level_4",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
-                purpose = pgettext("europeans_building", "Digs up mud from the ground and uses water to turn it into clay. Then plant reed in the holes created.")
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
+                purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Forester's House
+                note = pgettext("europeans_building", "The forester’s house needs free space within the work area to plant the trees.")
             }
         },
         {
-            name = "europeans_farm_small_advanced",
+            name = "europeans_special_tree_plantation",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
-                purpose = pgettext("europeans_building", "Digs up mud from the ground and uses water to turn it into clay. Then plant reed, cotton and rubber trees in the holes created.")
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Rare Tree Plantation
+                purpose = pgettext("europeans_building", "Plants special trees, like balsa, liana, rubber and ironwood."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Rare Tree Plantation
+                note = pgettext("europeans_building", "Special trees are planted according to the economy requirements."),
+            }
+        },
+        {
+            name = "europeans_gardening_center",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Gardening Center
+                purpose = pgettext("europeans_building", "Enhances the fertility of the landscape for trees. Also plants special trees, like balsa, liana, rubber and ironwood."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Gardening Center
+                note = pgettext ("europeans_building", "Only a Jungle Master has the necessary experience to coax more growth from land.")
             }
         },
         {
@@ -1389,22 +1501,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Cuts blocks of granite and marble out of rocks in the vicinity."),
                 -- TRANSLATORS: Note helptext for an Europeans production site: Quarry
                 note = pgettext("europeans_building", "The quarry needs rocks to cut within the work area.")
-            }
-        },
-        {
-            name = "europeans_hunters_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
-                purpose = pgettext("europeans_building", "Hunts animals to produce wool and leather."),
-                -- TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
-                note = pgettext("europeans_building", "The hunter’s hut needs animals to hunt within the work area."),
-            }
-        },
-        {
-            name = "europeans_hunters_house_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
-                purpose = pgettext("europeans_building", "Releases animals into the wild to steady the wool and leather production.")
             }
         },
         {
@@ -1465,17 +1561,39 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_farm_medium_basic",
+            name = "europeans_reed_farm_basic",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Farm
+                -- TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
                 purpose = pgettext("europeans_building", "Sows and harvests reed."),
+                -- TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+                note = pgettext ("europeans_building", "This farm needs free space within the work area to plant seeds.")
             }
         },
         {
-            name = "europeans_farm_medium_advanced",
+            name = "europeans_reed_farm_advanced",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests reed, cotton, grape and fruits."),
+                -- TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
+                purpose = pgettext("europeans_building", "Sows and harvests reed."),
+                -- TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+                note = pgettext ("europeans_building", "This farm needs free space within the work area to plant seeds.")
+            }
+        },
+        {
+            name = "europeans_fruit_farm_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for Europeans production site: Vineyard
+                purpose = pgettext("europeans_building", "Sows and harvests grape."),
+                -- TRANSLATORS: Note helptext for Europeans production site: Vineyard
+                note = pgettext ("europeans_building", "This farm needs free space within the work area to plant seeds.")
+            }
+        },
+        {
+            name = "europeans_fruit_farm_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Berry Farm
+                purpose = pgettext("europeans_building", "Plants berry bushes in the surrounding area."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Berry Farm
+                note = pgettext("europeans_building", "The berry farm needs free space within the work area to plant the bushes."),
             }
         },
         {
@@ -1540,6 +1658,55 @@ wl.Descriptions():new_tribe {
         },
         -- Big
         {
+            name = "europeans_spiderfarm",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Spider Farm
+                purpose = pgettext("europeans_building", "Breeds spiders for silk."),
+            }
+        },
+        {
+            name = "europeans_animal_farm_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Cattle Farm
+                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system."),
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tapir Farm
+                purpose = pgettext("europeans_building", "Breeds tapirs for adding them to the transportation system."),
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
+                purpose = pgettext("europeans_building", "Breeds the strong horses for adding them to the transportation system."),
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
+                purpose = pgettext("europeans_building", "Breeds cute and helpful donkeys for adding them to the transportation system."),
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_4",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
+                purpose = pgettext("europeans_building", "Keeps sheep for their wool.")
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_5",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Reindeer Farm
+                purpose = pgettext("europeans_building", "Breeds strong reindeer for adding them to the transportation system. Also keeps them for their fur, which is turned into armor and cloth."),
+            }
+        },
+        {
             name = "europeans_weaving_mill_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
@@ -1551,6 +1718,15 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
                 purpose = pgettext("europeans_building", "Weaves cloth out of cotton or wool.")
+            }
+        },
+        {
+            name = "europeans_dikers_house",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Diker's House
+                purpose = pgettext("europeans_building", "Constructs breakwaters nearby to gain new land from the sea."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Diker's House
+                note = pgettext("europeans_building", "The diker will terraform the land around each breakwater he builds several times. You can manually remove breakwaters when the land is sufficiently secured to prevent wasting resources; to do so, build a flag, road, or building in the dike’s place.")
             }
         },
         -- Mines
@@ -2009,13 +2185,13 @@ wl.Descriptions():new_tribe {
         building_materials_secondary = "europeans_sawmill_basic",
         building_materials_tertiary = "europeans_stonemasons_house_basic",
         charcoal = "europeans_charcoal_kiln_basic",
-        farm_primary = "europeans_farm_small_basic",
-        farm_secondary = "europeans_farm_medium_basic",
-        farm_tertiary = "europeans_farm_medium_advanced",
+        farm_primary = "europeans_reed_farm_basic",
+        farm_secondary = "europeans_reed_farm_advanced",
+        farm_tertiary = "europeans_gardening_center",
         ferry_yard = "europeans_shipyard_advanced",
-        fish_meat_replenisher = "europeans_hunters_house_advanced",
+        fish_meat_replenisher = "europeans_animal_farm_level_1",
         forester = "europeans_foresters_hut",
-        hunter = "europeans_hunters_house_basic",
+        hunter = "europeans_animal_farm_basic",
         military_small_primary = "europeans_sentry_basic",
         military_small_secondary = "europeans_sentry_level_1",
         military_medium_primary = "europeans_barrier_basic",
@@ -2030,7 +2206,7 @@ wl.Descriptions():new_tribe {
         quarry = "europeans_quarry_basic",
         port = "europeans_port",
         scout = "europeans_scouts_house_basic",
-        second_carrier = "europeans_hunters_house_advanced",
+        second_carrier = "europeans_animal_farm_level_2",
         shipyard = "europeans_shipyard_basic",
         smelting = "europeans_smelting_works_basic",
         training_small = "europeans_trainingscamp_advanced",

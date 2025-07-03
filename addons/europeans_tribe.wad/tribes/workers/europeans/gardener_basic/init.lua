@@ -33,6 +33,9 @@ wl.Descriptions():new_worker_type {
         check_fields = {
             "findobject=attrib:field radius:3"
         },
+        check_flower = {
+            "findobject=attrib:flowering radius:4",
+        },
         dig = {
             "findspace=size:any radius:3 avoid:field",
             "walk=coords",
@@ -46,6 +49,14 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:3s",
             "callobject=fill_pond",
             "animate=water duration:1s",
+            "return"
+        },
+        plant_berrybush = {
+            "findspace=size:any radius:3 space",
+            "walk=coords",
+            "animate=planting duration:4s",
+            "plant=attrib:seed_berrybush",
+            "animate=planting duration:4s",
             "return"
         },
         plant_cotton = {
@@ -64,14 +75,21 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:1s",
             "return"
         },
-        harvest_reed = {
-            "findobject=attrib:ripe_reed radius:3",
+        bees = {
+            "findobject=attrib:flowering radius:4",
+            "walk=object",
+            "animate=beeswarm duration:6s",
+            "createware=honey",
+            "return"
+        },
+        harvest_berrybush = {
+            "findobject=attrib:ripe_bush radius:3",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvesting duration:3s",
+            "animate=harvesting duration:4s",
             "callobject=harvest",
-            "animate=gathering duration:1s",
-            "createware=reed",
+            "animate=gathering duration:2s",
+            "createware=fruit",
             "return"
         },
         harvest_cotton = {
@@ -84,14 +102,14 @@ wl.Descriptions():new_worker_type {
             "createware=cotton",
             "return"
         },
-        check_flower = {
-            "findobject=attrib:flowering radius:4",
-        },
-        bees = {
-            "findobject=attrib:flowering radius:4",
+        harvest_reed = {
+            "findobject=attrib:ripe_reed radius:3",
             "walk=object",
-            "animate=beeswarm duration:6s",
-            "createware=honey",
+            "playsound=sound/farm/scythe priority:70% allow_multiple",
+            "animate=harvesting duration:3s",
+            "callobject=harvest",
+            "animate=gathering duration:1s",
+            "createware=reed",
             "return"
         },
     },

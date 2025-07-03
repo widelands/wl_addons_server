@@ -24,7 +24,8 @@ local init = {
     end
     
     player:forbid_buildings{"europeans_headquarters"}
-
+    player:forbid_buildings{"europeans_dikers_house"}
+    
     launch_expeditions(player, {
         {
             europeans_soldier = 4,

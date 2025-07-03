@@ -1,3 +1,3 @@
 return {
-    europeans_geologist = {"__replace_if_exists"},
+    europeans_geologist = { "worker", "__replace_if_exists" },
 }

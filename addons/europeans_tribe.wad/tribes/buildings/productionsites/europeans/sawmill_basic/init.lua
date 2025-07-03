@@ -60,12 +60,11 @@ wl.Descriptions():new_productionsite_type {
         supports_seafaring = true,
         basic_amount = 2,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 4,
-        normal_ai_limit = 8
+        weak_ai_limit = 4
     },
 
     working_positions = {
-        europeans_worker_basic = 1
+        europeans_worker_basic = 2
     },
 
     inputs = {

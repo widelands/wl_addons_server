@@ -25,6 +25,17 @@ wl.Descriptions():new_worker_type {
             "createware=log",
             "return"
         },
+        harvest_log = {
+            "findobject=attrib:tree radius:16",
+            "walk=object",
+            "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
+            "animate=hacking duration:2s",
+            "playsound=sound/woodcutting/tree_falling priority:100%",
+            "callobject=fall",
+            "animate=idle duration:2s",
+            "createware=log",
+            "return"
+        },
         check_balsa = {
             "findobject=attrib:tree_balsa radius:16",
         },
@@ -49,6 +60,19 @@ wl.Descriptions():new_worker_type {
             "callobject=fall",
             "animate=idle duration:2s",
             "createware=ironwood",
+            "return"
+        },
+        check_liana = {
+            "findobject=attrib:liana_tree radius:16",
+        },
+        harvest_liana = {
+            "findobject=attrib:liana_tree radius:16",
+            "walk=object",
+            "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
+            "animate=hacking duration:2s",
+            "callobject=fall",
+            "animate=idle duration:2s",
+            "createware=liana",
             "return"
         },
         check_rubber = {

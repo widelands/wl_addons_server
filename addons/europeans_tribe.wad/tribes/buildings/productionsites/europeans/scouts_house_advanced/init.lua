@@ -41,7 +41,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "grape", amount = 2 }
+        { name = "fruit", amount = 2 }
     },
 
     programs = {
@@ -50,7 +50,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"scouting",
             actions = {
                 "return=skipped when economy needs snack and not workers need experience",
-                "consume=grape",
+                "consume=fruit",
                 "sleep=duration:15s",
                 "callworker=scout",
                 "sleep=duration:15s",
@@ -64,7 +64,7 @@ wl.Descriptions():new_productionsite_type {
         targeted_scouting = {
             descname = _"scouting",
             actions = {
-                "consume=grape",
+                "consume=fruit",
                 "callworker=targeted_scouting"
             }
         },

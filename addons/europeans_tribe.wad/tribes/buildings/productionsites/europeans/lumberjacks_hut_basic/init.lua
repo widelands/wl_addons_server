@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/lumberjacks_hut/"
@@ -29,14 +29,14 @@ wl.Descriptions():new_productionsite_type {
     
     size = "small",
     enhancement = {
-        name = "europeans_lumberjacks_house_advanced",
+        name = "europeans_lumberjacks_house_level_1",
         enhancement_cost = {
-            brick = 1,
-            grout = 1,
+            ironwood = 1,
+            rope = 1
         },
         enhancement_return_on_dismantle = {
-            granite = 1
-        },
+            ironwood = 1
+        }
     },
     buildcost = {
         granite = 2,
@@ -50,8 +50,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         basic_amount = 2,
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8,
-        normal_ai_limit = 16,
+        weak_ai_limit = 8
     },
 
     working_positions = {
@@ -63,17 +62,18 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "callworker=check_trees",
                 "call=felling_trees",
                 "return=skipped"
             }
         },
         felling_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-            descname = _"felling trees",
+            descname = pgettext("europeans_building", "felling trees"),
             actions = {
+                "return=skipped when economy needs liana and not economy needs log",
                 "return=skipped unless economy needs log or workers need experience",
-                "callworker=harvest_tree"
+                "callworker=harvest_tree",
+                "sleep=duration:20s"
             }
         }
     },

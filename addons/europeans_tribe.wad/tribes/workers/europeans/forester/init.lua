@@ -11,7 +11,7 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     experience = 48,
-    becomes = "europeans_terraformer",
+    becomes = "europeans_gardener_advanced",
     
     buildcost = {
         europeans_carrier = 1
@@ -45,6 +45,15 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:1s",
             "animate=plant duration:1s",
             "plant=attrib:ironwood_tree_sapling",
+            "animate=water duration:1s",
+            "return"
+        },
+        plant_liana_tree = {
+            "findspace=size:any radius:8 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=plant duration:1s",
+            "plant=attrib:liana_tree_sapling",
             "animate=water duration:1s",
             "return"
         },

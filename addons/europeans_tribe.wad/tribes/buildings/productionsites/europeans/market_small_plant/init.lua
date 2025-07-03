@@ -51,7 +51,6 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
-        normal_ai_limit = 1,
         prohibited_till = 3600
     },
 
@@ -65,6 +64,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "gold", amount = 6 },
         { name = "reed", amount = 16 },
+        { name = "liana", amount = 16 },
         { name = "rubber", amount = 16 },
         { name = "cotton", amount = 16 }
     },
@@ -92,6 +92,8 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
                 "call=trade_cotton_copper",
                 "sleep=duration:30s",
+                "call=trade_liana_copper",
+                "sleep=duration:30s",
                 "call=trade_reed_copper"
             }
         },
@@ -106,6 +108,8 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
                 "call=trade_cotton_silver",
                 "sleep=duration:30s",
+                "call=trade_liana_silver",
+                "sleep=duration:30s",
                 "call=trade_reed_silver"
             }
         },
@@ -119,6 +123,8 @@ wl.Descriptions():new_productionsite_type {
                 "call=trade_rubber_gold",
                 "sleep=duration:30s",
                 "call=trade_cotton_gold",
+                "sleep=duration:30s",
+                "call=trade_liana_gold",
                 "sleep=duration:30s",
                 "call=trade_reed_gold"
             }
@@ -154,6 +160,42 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has cotton:8",
                 "return=skipped unless site has gold",
                 "consume=cotton:8 gold",
+                "animate=working duration:20s",
+                "produce=coin_gold:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_liana_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has liana:4",
+                "return=skipped unless site has gold",
+                "consume=liana:4 gold",
+                "animate=working duration:20s",
+                "produce=coin_copper:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_liana_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has liana:6",
+                "return=skipped unless site has gold",
+                "consume=liana:6 gold",
+                "animate=working duration:20s",
+                "produce=coin_silver:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_liana_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has liana:8",
+                "return=skipped unless site has gold",
+                "consume=liana:8 gold",
                 "animate=working duration:20s",
                 "produce=coin_gold:2",
                 "sleep=duration:30s",

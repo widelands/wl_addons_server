@@ -22,6 +22,7 @@ local init = {
         player:allow_workers("all")
     end
           
+    player:forbid_buildings{"europeans_dikers_house"}
     place_initial_port(player, sf)
     set_starting_warecount(player)
     
