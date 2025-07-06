@@ -535,7 +535,7 @@ Ron_of_Nord
 
 sync_safe
 1742613243
-64
+65
 0
 0
 0
@@ -626,7 +626,7 @@ Ron_of_Nord
 
 sync_safe
 1751010685
-13
+14
 0
 0
 0
@@ -985,7 +985,7 @@ Cupper
 
 sync_safe
 1743779454
-32
+33
 0
 0
 0
@@ -1502,7 +1502,7 @@ Teayo
 
 sync_safe
 1688747564
-322
+323
 0
 0
 0
@@ -1859,7 +1859,7 @@ Lawrence
 
 sync_safe
 1749734350
-20
+21
 0
 0
 0
@@ -2287,7 +2287,7 @@ WeirdCatLord
 
 sync_safe
 1674388992
-251
+252
 0
 0
 0
@@ -2457,7 +2457,7 @@ ___
 
 sync_safe
 1751470921
-9
+13
 0
 0
 0
@@ -3568,7 +3568,7 @@ Solstice_s_Return
 
 sync_safe
 1657988804
-902
+903
 0
 0
 0
@@ -3809,7 +3809,7 @@ OIPUN
 
 sync_safe
 1719251296
-540
+543
 0
 0
 0
@@ -4397,7 +4397,7 @@ OIPUN
 
 sync_safe
 1744125815
-45
+47
 0
 0
 0
@@ -4493,7 +4493,7 @@ Nordfriese
 
 sync_safe
 1600000000
-937
+938
 0
 0
 0
@@ -5650,7 +5650,7 @@ MarkMcWire
 
 sync_safe
 1744525216
-42
+43
 0
 0
 0
@@ -6217,7 +6217,7 @@ MarkMcWire
 
 sync_safe
 1749228542
-50
+51
 0
 0
 0
@@ -8699,7 +8699,7 @@ MarkMcWire
 
 sync_safe
 1743251069
-72
+73
 0
 0
 0
@@ -10477,7 +10477,7 @@ MarkMcWire
 
 sync_safe
 1734192332
-553
+555
 1
 0
 0
@@ -14027,7 +14027,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1334
+1338
 0
 0
 0
@@ -15445,7 +15445,7 @@ Nordfriese
 
 sync_safe
 1600000000
-419
+421
 0
 0
 0
@@ -16791,7 +16791,7 @@ matthiakl
 
 sync_safe
 1600000000
-153
+154
 0
 0
 0
@@ -16949,7 +16949,7 @@ OIPUN
 
 sync_safe
 1744531167
-82
+83
 0
 0
 0
@@ -20497,7 +20497,7 @@ OIPUN
 
 sync_safe
 1739211494
-176
+177
 0
 0
 0
@@ -20618,7 +20618,7 @@ kaputtnik
 
 sync_safe
 1614637671
-388
+389
 0
 0
 0
@@ -21288,7 +21288,7 @@ OIPUN
 
 sync_safe
 1745608829
-55
+56
 0
 0
 0
@@ -23294,7 +23294,7 @@ the-x
 
 sync_safe
 1622124029
-497
+498
 0
 0
 0
@@ -23688,7 +23688,7 @@ Nordfriese
 
 sync_safe
 1600000000
-374
+375
 0
 0
 0
@@ -23786,7 +23786,7 @@ OIPUN
 
 sync_safe
 1733507996
-344
+345
 0
 0
 0
@@ -28461,7 +28461,7 @@ OIPUN
 
 sync_safe
 1733507938
-250
+251
 0
 0
 0
@@ -29398,7 +29398,7 @@ OIPUN
 
 sync_safe
 1735910819
-38
+39
 0
 0
 0
@@ -29501,7 +29501,7 @@ desync
 0
 0
 2
-4
+5
 OIPUN
 I've played one game with this add-on. I set the time limit to 90, met first enemy after 75 min and everything went fine. I also removed the desync and replay is working well. I think this add-on should be marked as sync_safe. 10 points
 0.2.0
@@ -29518,6 +29518,10 @@ aDiscoverer
 Answer to @Cupper  When the dialogue is enabled, replays will desync, as the comment on line 4 tells. (There is no possibility to save a user selection so that a replay would pick it up.)  I would prefer to get "sync_save" than to have the dialogue. But it was still not enabled.
 0.2.0
 1750940492
+aDiscoverer
+@Cupper<br>That win condition "autocrat" is not playable is a disadvantage indeed. This did not cross my mind. I plan to fix this.  Thank you for your feedback.
+0.2.0
+1751749483
 0.2.0
 12
 5009
