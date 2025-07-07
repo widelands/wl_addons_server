@@ -467,12 +467,21 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "quartz",
+                default_target_quantity = 32,
+                preciousness = 2,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
+                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used for trading. They are produced in a mine.")
+                }
+            },
+            {
                 name = "diamond",
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Diamond
-                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading.")
+                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used for trading. They are produced in a mine.")
                 }
             }
         },
@@ -1332,13 +1341,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_warehouse",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Warehouse
-                purpose = pgettext("europeans_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools.")
-            }
-        },
-        {
             name = "europeans_port_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
@@ -1361,6 +1363,19 @@ wl.Descriptions():new_tribe {
             }
         },
         -- Small
+        {
+            name = "europeans_water_gatherers_hut",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Water Gatherer's Hut
+                purpose = pgettext("europeans_building", "Draws water out of the rivers and lakes."),
+                note = {
+                    -- TRANSLATORS: Note helptext for an Europeans production site: Water Gatherer's Hut, part 1
+                    pgettext("europeans_building", "The water gatherer’s hut needs open water within the work area. Your workers cannot dig up water from the ground!"),
+                    -- TRANSLATORS: Note helptext for an Europeans production site: Water Gatherer's Hut, part 2
+                    pgettext("europeans_building", "Roads and trees along the shoreline block drawing water."),
+                },
+            }
+        },
         {
             name = "europeans_lumberjacks_house_basic",
             helptexts = {
@@ -1865,31 +1880,38 @@ wl.Descriptions():new_tribe {
         },
         -- Market
         {
-            name = "europeans_market_cloth",
+            name = "europeans_store_cloth",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale processed products for coins.")
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+                purpose = pgettext("europeans_building", "Store building to sale processed products for coins.")
             }
         },
         {
-            name = "europeans_market_plant",
+            name = "europeans_store_fur",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale plant products for coins.")
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+                purpose = pgettext("europeans_building", "Store building to sale animal products for coins.")
             }
         },
         {
-            name = "europeans_market_stone",
+            name = "europeans_store_plant",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Market
-                purpose = pgettext("europeans_building", "Market building to sale mining products for coins.")
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+                purpose = pgettext("europeans_building", "Store building to sale plant products for coins.")
             }
         },
         {
-            name = "europeans_market_wood",
+            name = "europeans_store_stone",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans market: Big Market
-                purpose = pgettext("europeans_building", "Market building to sale wood products for coins.")
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+                purpose = pgettext("europeans_building", "Store building to sale mining products for coins.")
+            }
+        },
+        {
+            name = "europeans_store_wood",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+                purpose = pgettext("europeans_building", "Store building to sale wood products for coins.")
             }
         },
         -- Recruitement and Training Sites
@@ -2211,7 +2233,7 @@ wl.Descriptions():new_tribe {
         smelting = "europeans_smelting_works_basic",
         training_small = "europeans_trainingscamp_advanced",
         training_big = "europeans_trainingscamp_big",
-        warehouse = "europeans_warehouse",
+        warehouse = "europeans_headquarters",
         weaving_mill = "europeans_weaving_mill_basic",
         well = "europeans_well_basic",
         woodcutter = "europeans_lumberjacks_house_basic",

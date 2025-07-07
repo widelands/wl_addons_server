@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/workers/barbarians/smelter/"
+local dirname = "tribes/workers/frisians/carrier/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_worker_basic",
@@ -16,31 +16,52 @@ wl.Descriptions():new_worker_type {
     buildcost = {
         europeans_carrier = 1
     },    
-
-    animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 5, 18 }
+    
+    programs = {
+        fetch_water = {
+            "findspace=size:swim radius:6",
+            "walk=coords",
+            "animate=fetch_water duration:1s",
+            "createware=water",
+            "return"
         }
     },
+
+    animation_directory = dirname,
+    ware_hotspot = {0, 20},
     spritesheets = {
         walk = {
-            fps = 10,
+            fps = 15,
             frames = 10,
-            rows = 4,
-            columns = 3,
+            columns = 5,
+            rows = 2,
             directional = true,
-            hotspot = { 15, 21 }
+            hotspot = {10, 23}
         },
         walkload = {
-            fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
+            fps = 15,
+            frames = 10,
+            columns = 5,
+            rows = 2,
             directional = true,
-            hotspot = { 9, 21 }
+            hotspot = {10, 26}
         },
-    }
+        idle = {
+            fps = 10,
+            frames = 124,
+            columns = 14,
+            rows = 9,
+            hotspot = {17, 18}
+        },
+        fetch_water = {
+            basename = "idle",
+            fps = 10,
+            frames = 124,
+            columns = 14,
+            rows = 9,
+            hotspot = {17, 18}
+        },
+    },
 }
 
 pop_textdomain()

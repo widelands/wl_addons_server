@@ -1,4 +1,4 @@
-push_textdomain("europeans_all.wad", true)
+push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/lumberjacks_hut/"

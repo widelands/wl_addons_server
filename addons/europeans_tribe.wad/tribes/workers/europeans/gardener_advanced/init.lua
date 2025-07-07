@@ -43,6 +43,7 @@ wl.Descriptions():new_worker_type {
             "walk=coords",
             "animate=dig duration:1s",
             "plant=attrib:pond_dry",
+            "animate=dig duration:1s",
             "return"
         },
         fill_pond_dry = {
@@ -56,11 +57,10 @@ wl.Descriptions():new_worker_type {
         watering = {
             "findobject=attrib:growable radius:6",
             "walk=object",
-            "animate=water duration:2s",
-            "terraform=diking",
             "animate=water duration:1s",
             "terraform=amazons",
             "callobject=grow",
+            "terraform=diking",
             "return"
         },
         plant_balsa_tree = {
@@ -69,8 +69,6 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:1s",
             "animate=plant duration:1s",
             "plant=attrib:balsa_tree_sapling",
-            "animate=water duration:1s",
-            "terraform=diking",
             "animate=water duration:1s",
             "terraform=amazons",
             "return"
@@ -98,8 +96,6 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:1s",
             "plant=attrib:ironwood_tree_sapling",
             "animate=water duration:1s",
-            "terraform=diking",
-            "animate=water duration:1s",
             "terraform=amazons",
             "return"
         },
@@ -109,8 +105,6 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:1s",
             "animate=plant duration:1s",
             "plant=attrib:liana_tree_sapling",
-            "animate=water duration:1s",
-            "terraform=diking",
             "animate=water duration:1s",
             "terraform=amazons",
             "return"
@@ -130,8 +124,6 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:1s",
             "plant=attrib:rubber_tree_sapling",
             "animate=water duration:1s",
-            "terraform=diking",
-            "animate=water duration:1s",
             "terraform=amazons",
             "return"
         },
@@ -141,8 +133,6 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:1s",
             "animate=plant duration:1s",
             "plant=attrib:tree_sapling",
-            "animate=water duration:1s",
-            "terraform=diking",
             "animate=water duration:1s",
             "terraform=amazons",
             "return"

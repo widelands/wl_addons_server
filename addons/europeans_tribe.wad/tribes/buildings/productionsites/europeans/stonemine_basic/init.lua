@@ -80,7 +80,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=blackwood",
                 "call=mine_granite",
                 "call=mine_marble",
-                "call=mine_diamond",
+                "call=mine_quartz",
                 "sleep=duration:5s",
                 "consume=blackwood",
                 "call=mine_granite",
@@ -114,6 +114,14 @@ wl.Descriptions():new_productionsite_type {
                 "produce=marble",
             }
         },
+        mine_quartz = {
+            descname = pgettext("europeans_building", "mining quartz"),
+            actions = {
+                "animate=working duration:25s",
+                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
+                "produce=quartz",
+            }
+        },
         mine_diamond = {
             descname = pgettext("europeans_building", "mining diamond"),
             actions = {
@@ -127,7 +135,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=blackwood:3",
-                "produce=granite:4 marble:3 diamond:2",
+                "produce=granite:4 marble:3 quartz diamond",
             }
         },
     },

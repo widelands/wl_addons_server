@@ -1,4 +1,4 @@
-push_textdomain("europeans_all.wad", true)
+push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/gardening_center/"
@@ -219,7 +219,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix AI
             descname = "dummy program",
             actions = {
-                "produce=balsa cotton ironwood liana reed rubber",
+                "produce=balsa cotton ironwood liana reed rubber ore",
             },
         },
     },

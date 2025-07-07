@@ -21,11 +21,22 @@ wl.Descriptions():new_warehouse_type {
     
     size = "big",
     destructible = false,
+    buildcost = {
+        brick = 4,
+        grout = 4,
+        planks = 4,
+        marble_column = 4
+    },
+    return_on_dismantle = {
+        scrap_wood = 4,
+        granite = 3,
+        marble = 3
+    },
     
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 4,
         prohibited_till = 10800
     },
 
