@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-07 03:12+0200\n"
+"POT-Creation-Date: 2025-07-08 03:12+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1473,10 +1473,9 @@ msgstr "Basis Steengroeve"
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/stonemine_level_1/init.lua:108
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/stonemine_level_2/init.lua:108
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/stonemine_level_3/init.lua:89
-#, fuzzy
 msgctxt "europeans_building"
 msgid "mining quartz"
-msgstr "water winnen"
+msgstr ""
 
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/stonemine_basic/init.lua:144
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/stonemine_level_1/init.lua:134
@@ -1544,10 +1543,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Cloth Store"
-msgstr "Textielmarkt"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
@@ -1654,10 +1652,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_plant/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Plant Store"
-msgstr "Plant bomen"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_stone/init.lua:9
@@ -1667,10 +1664,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/stores_small_wood/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Wood Store"
-msgstr "Houtmarkt"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:9
@@ -1727,14 +1723,11 @@ msgid "Out of Water"
 msgstr "Zonder Water"
 
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/water_gatherers_hut/init.lua:58
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The carrier working at this water gatherer’s hut can’t find any water in its "
 "vicinity."
 msgstr ""
-"De waterdrager die bij deze waterput werkt, kan geen water vinden in zijn "
-"put."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/weaving_mill_advanced/init.lua:9
@@ -2834,11 +2827,10 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:484
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These wonderful diamonds are used for trading. They are produced in a mine."
-msgstr "Deze prachtige diamanten worden gebruikt voor de handel."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:501
@@ -3288,21 +3280,17 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Water Gatherer's Hut
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1370
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Draws water out of the rivers and lakes."
-msgstr "Haalt water uit de diepte."
+msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Water Gatherer's Hut, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1373
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The water gatherer’s hut needs open water within the work area. Your workers "
 "cannot dig up water from the ground!"
 msgstr ""
-"Het boswachtershuis heeft vrije ruimte nodig binnen het werkgebied om de "
-"bomen te planten."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Water Gatherer's Hut, part 2
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1375
@@ -3714,38 +3702,33 @@ msgstr "Graaft gouderts uit de grond in bergachtig terrein."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1886
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Store building to sale processed products for coins."
-msgstr "Marktgebouw voor de verkoop van verwerkte producten voor munten."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1893
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Store building to sale animal products for coins."
-msgstr "Markt opbouwen om mijnbouwproducten voor munten te verkopen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1900
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Store building to sale plant products for coins."
-msgstr "Markt opbouwen om mijnbouwproducten voor munten te verkopen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1907
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Store building to sale mining products for coins."
-msgstr "Markt opbouwen om mijnbouwproducten voor munten te verkopen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1914
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Store building to sale wood products for coins."
-msgstr "Marktgebouw voor de verkoop van houtproducten voor munten."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1923
@@ -5211,107 +5194,3 @@ msgstr "Gevorderde Werker"
 msgctxt "europeans_worker"
 msgid "Basic Worker"
 msgstr "Basis Werker"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Plant Market"
-#~ msgstr "Plantenmarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Mining products Market"
-#~ msgstr "Markt voor Mijnbouwproducten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Warehouse"
-#~ msgstr "Magazijn"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Your workers and soldiers will find shelter here. Also stores your wares "
-#~ "and tools."
-#~ msgstr ""
-#~ "Je arbeiders en soldaten vinden hier onderdak. Je kunt er ook je goederen "
-#~ "en gereedschap opslaan."
-
-#~ msgctxt "ware"
-#~ msgid "Armor"
-#~ msgstr "Harnas"
-
-#~ msgctxt "ware"
-#~ msgid "Balsa"
-#~ msgstr "Balsa"
-
-#~ msgctxt "ware"
-#~ msgid "Blackwood"
-#~ msgstr "Zwarthout"
-
-#~ msgctxt "ware"
-#~ msgid "Brick"
-#~ msgstr "Baksteen"
-
-#~ msgctxt "ware"
-#~ msgid "Clay"
-#~ msgstr "Klei"
-
-#~ msgctxt "ware"
-#~ msgid "Cloth"
-#~ msgstr "Doek"
-
-#~ msgctxt "ware"
-#~ msgid "Coal"
-#~ msgstr "Kolen"
-
-#~ msgctxt "ware"
-#~ msgid "Diamond"
-#~ msgstr "Diamant"
-
-#~ msgctxt "ware"
-#~ msgid "Gold"
-#~ msgstr "Goud"
-
-#~ msgctxt "ware"
-#~ msgid "Granite"
-#~ msgstr "Graniet"
-
-#~ msgctxt "ware"
-#~ msgid "Grout"
-#~ msgstr "Mortel"
-
-#~ msgctxt "ware"
-#~ msgid "Honey"
-#~ msgstr "Honing"
-
-#~ msgctxt "ware"
-#~ msgid "Ironwood"
-#~ msgstr "IJzerhoutboom"
-
-#~ msgctxt "ware"
-#~ msgid "Log"
-#~ msgstr "Boomstam"
-
-#~ msgctxt "ware"
-#~ msgid "Marble"
-#~ msgstr "Marmer"
-
-#~ msgctxt "ware"
-#~ msgid "Marble Column"
-#~ msgstr "Marmer Zuil"
-
-#~ msgctxt "ware"
-#~ msgid "Planks"
-#~ msgstr "Planken"
-
-#~ msgctxt "ware"
-#~ msgid "Reed"
-#~ msgstr "Riet"
-
-#~ msgctxt "ware"
-#~ msgid "Rubber"
-#~ msgstr "Rubber"
-
-#~ msgctxt "ware"
-#~ msgid "Water"
-#~ msgstr "Water"
-
-#~ msgctxt "ware"
-#~ msgid "Wool"
-#~ msgstr "Wol"
