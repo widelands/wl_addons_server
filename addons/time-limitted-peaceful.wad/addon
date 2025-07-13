@@ -2,11 +2,10 @@
 
 [global]
 name=_"Time limited peaceful mode"
-description=_""Limits the peaceful mode to 45 minutes.<br>"
-             "Disable the extension to play peacefully for an endless time.<br>"
+description=_""The game is peaceful for 45 minutes.<br>"
              "(For a different time adapt the constant in the code in 'init.lua'.)""
 author="aDiscoverer"
-version="0.2.0"
+version="0.3.0"
 category="script"
 requires=
 min_wl_version=

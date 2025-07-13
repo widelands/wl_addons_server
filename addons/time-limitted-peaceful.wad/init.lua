@@ -4,9 +4,12 @@ local MINUTES_LIMITED = 45
 local SHOW_DIALOGUE = nil -- can be "singleplayer" or "always"
                           -- will desync replays, and network games if not all choose the same
 
-local function end_peaceful_mode_after(minutes)
+local function end_peaceful_mode_after(minutes, was_peaceful)
     if minutes <= 0 then
-        return -- do not change peaceful mode
+        if true == was_peaceful then
+            return  -- do not change peaceful mode
+        end
+        minutes = 0  -- end peaceful mode (as it was not (surely) peaceful at start)
     end
     wake_me(minutes * 60 * 1000) -- from coroutines.lua
     local was_forbidden = 0
@@ -45,7 +48,8 @@ function time_limited_peaceful.set_config()
     run(end_peaceful_mode_after, minutes_limited)
 end
 
-local function is_peaceful_mode()
+local function set_peaceful_mode()
+    local was_peaceful = true
     local players = wl.Game().players
     for _p_idx, player in ipairs(players) do
         if player.team >= 80 then
@@ -54,21 +58,21 @@ local function is_peaceful_mode()
         for _o_ixd, o_plr in ipairs(players) do
             local o_nr = o_plr.number
             if o_nr ~= player.number and not player:is_attack_forbidden(o_nr) then
-                return false
+                player:set_attack_forbidden(o_nr, true)
+                was_peaceful = false
             end
         end
         ::NextPlayer::
     end
-    return true
+    return was_peaceful
 end
 
--- shows a config dialoque (if configured) and starts end_peaceful_mode_after() when selected
+-- shows a config dialogue (if configured) and starts end_peaceful_mode_after() when selected
 local function show_config()
     local mv = wl.ui.MapView()
     local gm = wl.Game()
     if mv.create_child and -- since wl 1.2
-        (gm.type == SHOW_DIALOGUE or SHOW_DIALOGUE == "always") and
-        is_peaceful_mode()
+        (gm.type == SHOW_DIALOGUE or SHOW_DIALOGUE == "always")
     then
         mv:create_child({
             widget = "unique_window",
@@ -93,7 +97,6 @@ local function show_config()
                         widget = "spinbox",
                         name = "minutes_limited",
                         unit_w = 264, -- 124 is min
-                        resizing = "fullsize",
                         value = MINUTES_LIMITED,
                         min = 0,
                         max = 8 * 60,
@@ -119,9 +122,10 @@ local function show_config()
 end
 
 local function init_peaceful_mode()
+    local was_peaceful = set_peaceful_mode()
     if not show_config() then
         -- config dialogue not enabled, start with default time
-        run(end_peaceful_mode_after, MINUTES_LIMITED)
+        run(end_peaceful_mode_after, MINUTES_LIMITED, was_peaceful)
     end
 end
 
