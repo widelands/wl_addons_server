@@ -1,3 +1,3 @@
 return {
-    europeans_sawmill_basic = {"__replace_if_exists"},
+    europeans_sawmill_basic = { "productionsite", "__replace_if_exists" },
 }

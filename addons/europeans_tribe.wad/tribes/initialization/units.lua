@@ -1614,15 +1614,22 @@ wl.Descriptions():new_tribe {
         {
             name = "europeans_sawmill_basic",
             helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
+                purpose = pgettext("europeans_building", "Hardening log to produce blackwood.")
+            }
+        },
+        {
+            name = "europeans_sawmill_level_1",
+            helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
                 purpose = pgettext("europeans_building", "Hardening log to produce blackwood.")
             }
         },
         {
-            name = "europeans_sawmill_advanced",
+            name = "europeans_sawmill_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-                purpose = pgettext("europeans_building", "Hardening log to produce blackwood and saws log to produce planks.")
+                purpose = pgettext("europeans_building", "Hardening log to produce blackwood.")
             }
         },
         {
@@ -1633,7 +1640,28 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_charcoal_kiln_advanced",
+            name = "europeans_charcoal_kiln_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
+                purpose = pgettext("europeans_building", "Burns scrap_wood into charcoal.")
+            }
+        },
+        {
+            name = "europeans_charcoal_kiln_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
+                purpose = pgettext("europeans_building", "Burns scrap_wood into charcoal.")
+            }
+        },
+        {
+            name = "europeans_charcoal_kiln_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
+                purpose = pgettext("europeans_building", "Burns scrap_wood or logs into charcoal.")
+            }
+        },
+        {
+            name = "europeans_charcoal_kiln_level_4",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
                 purpose = pgettext("europeans_building", "Burns scrap_wood or logs into charcoal.")
@@ -1643,17 +1671,26 @@ wl.Descriptions():new_tribe {
             name = "europeans_stonemasons_house_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
-                purpose = pgettext("europeans_building", "Processes clay and granite to make bricks and ‘grout’, a substance that solidifies and so reinforces masonry."),
+                purpose = pgettext("europeans_building", "Processes water and granite to make ‘grout’, a substance that solidifies and so reinforces masonry."),
                 -- TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
-                note = pgettext("europeans_building", "The lime kiln’s output will only go to construction sites that need it. Brick and grout only used by advanced buildings."),
+                note = pgettext("europeans_building", "The lime kiln’s output will only go to construction sites that need it."),
             }
         },
         {
-            name = "europeans_stonemasons_house_advanced",
+            name = "europeans_stonemasons_house_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Brick Kiln
+                purpose = pgettext("europeans_building", "Processes clay and granite to make bricks, a building material for advanced buildings."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Brick Kiln
+                note = pgettext("europeans_building", "The brick kiln’s output will only go to construction sites that need it."),
+            }
+        },
+        {
+            name = "europeans_stonemasons_house_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
-                purpose = pgettext("europeans_building", "Processes clay and granite to make bricks and ‘grout’, a substance that solidifies and so reinforces masonry. Additionally carves marble columns out of marble."),
-                -- TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
+                purpose = pgettext("europeans_building", "Processes clay and granite to make bricks and ‘grout’. Additionally carves marble columns out of marble."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Stonemason's House
                 note = pgettext("europeans_building", "The stonemason’s house's output will only go to construction sites that need it. Marble column only used by advanced buildings."),
             }
         },
@@ -1665,9 +1702,37 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_smelting_works_advanced",
+            name = "europeans_smelting_works_level_1",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+                purpose = pgettext("europeans_building", "Smelts ore into gold.")
+            }
+        },
+        {
+            name = "europeans_smelting_works_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+                purpose = pgettext("europeans_building", "Smelts ore into gold.")
+            }
+        },
+        {
+            name = "europeans_smelting_works_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+                purpose = pgettext("europeans_building", "Smelts ore into gold.")
+            }
+        },
+        {
+            name = "europeans_smelting_works_level_4",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+                purpose = pgettext("europeans_building", "Smelts ore into gold.")
+            }
+        },
+        {
+            name = "europeans_smelting_works_level_5",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Recycling Center
                 purpose = pgettext("europeans_building", "Smelts ore into gold.")
             }
         },
@@ -1729,10 +1794,31 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_weaving_mill_advanced",
+            name = "europeans_weaving_mill_level_1",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves cloth out of cotton or wool.")
+                purpose = pgettext("europeans_building", "Weaves cloth out of cotton and rope out of liana.")
+            }
+        },
+        {
+            name = "europeans_weaving_mill_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
+                purpose = pgettext("europeans_building", "Weaves cloth out of cotton, spidercloth out of spider silk and rope out of liana.")
+            }
+        },
+        {
+            name = "europeans_weaving_mill_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
+                purpose = pgettext("europeans_building", "Weaves cloth out of wool, spidercloth out of spider silk and rope out of liana.")
+            }
+        },
+        {
+            name = "europeans_weaving_mill_level_4",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
+                purpose = pgettext("europeans_building", "Weaves cloth out of cotton or wool, spidercloth out of spider silk and rope out of liana. Additional creates armor for soliders.")
             }
         },
         {

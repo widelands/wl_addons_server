@@ -38,13 +38,13 @@ wl.Descriptions():new_productionsite_type {
    
     size = "medium",
     enhancement = {
-        name = "europeans_sawmill_advanced",
+        name = "europeans_sawmill_level_1",
         enhancement_cost = {
-            brick = 2,
-            grout = 2
+            planks = 3,
+            spidercloth = 3
         },
         enhancement_return_on_dismantle = {
-            granite = 2
+            scrap_wood = 2
         },
     },
     buildcost = {

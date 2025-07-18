@@ -54,12 +54,14 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:1s",
             "return"
         },
-        watering = {
+        watering_fertilizing = {
             "findobject=attrib:growable radius:6",
             "walk=object",
             "animate=water duration:1s",
             "terraform=amazons",
+            "animate=water duration:1s",
             "callobject=grow",
+            "animate=water duration:1s",
             "terraform=diking",
             "return"
         },

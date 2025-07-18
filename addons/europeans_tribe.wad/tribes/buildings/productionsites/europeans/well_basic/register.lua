@@ -1,3 +1,3 @@
 return {
-    europeans_well_basic = {"__replace_if_exists"},
+    europeans_well_basic = { "productionsite", "__replace_if_exists" },
 }

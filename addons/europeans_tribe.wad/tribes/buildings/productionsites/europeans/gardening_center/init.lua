@@ -45,7 +45,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 8 }
+        { name = "water", amount = 8 },
+        { name = "coal", amount = 8 }
     },
 
     programs = {
@@ -55,19 +56,19 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=planting_fields",
                 "sleep=duration:1s",
-                "call=watering",
+                "call=watering_fertilizing",
                 "sleep=duration:1s",
                 "call=planting_trees",
                 "sleep=duration:1s",
-                "call=watering",
+                "call=watering_fertilizing",
                 "sleep=duration:1s",
                 "call=planting_fields",
                 "sleep=duration:1s",
-                "call=watering",
+                "call=watering_fertilizing",
                 "sleep=duration:1s",
                 "call=planting_trees",
                 "sleep=duration:1s",
-                "call=watering",
+                "call=watering_fertilizing",
                 "return=skipped"
             }
         },
@@ -204,15 +205,16 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s"
             },
         },
-        watering = {
-            -- TRANSLATORS: Completed/Skipped/Did not start watering because ...
-            descname = pgettext("europeans_building", "watering fields"),
+        watering_fertilizing = {
+            -- TRANSLATORS: Completed/Skipped/Did not start watering and fertilizing because ...
+            descname = pgettext("europeans_building", "watering and fertilizing fields"),
             actions = {
                 "callworker=check_growable_plants",
                 "return=skipped unless site has water",
-                "consume=water",
+                "return=skipped unless site has coal",
+                "consume=coal water",
                 "sleep=duration:1s",
-                "callworker=watering"
+                "callworker=watering_fertilizing"
             }
         },
         dummy = {

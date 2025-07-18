@@ -70,7 +70,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
-                "return=skipped when economy needs liana and not economy needs log",
                 "return=skipped unless economy needs log or workers need experience",
                 "callworker=harvest_tree",
                 "sleep=duration:20s"

@@ -24,19 +24,21 @@ wl.Descriptions():new_productionsite_type {
     
     size = "big",
     enhancement = {
-        name = "europeans_weaving_mill_advanced",
+        name = "europeans_weaving_mill_level_1",
         enhancement_cost = {
-            brick = 3,
-            grout = 3
+            ironwood = 2,
+            balsa = 2,
+            rope = 2
         },
         enhancement_return_on_dismantle = {
-            granite = 3
+            scrap_wood = 2
         }
     },
     
     buildcost = {
         granite = 4,
-        planks = 4
+        blackwood = 4,
+        reed = 2
     },
     return_on_dismantle = {
         scrap_wood = 3,
@@ -50,14 +52,11 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_worker_basic = 2
+        europeans_worker_basic = 3
     },
 
     inputs = {
-        { name = "reed", amount = 6 },
-        { name = "liana", amount = 6 },
-        { name = "rubber", amount = 4 },
-        { name = "leather", amount = 4 }
+        { name = "reed", amount = 6 }
     },
 
     programs = {
@@ -65,27 +64,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=produce_armor",
-                "sleep=duration:30s",
                 "call=produce_cloth",
-                "sleep=duration:30s",
-                "call=produce_rope",
                 "return=skipped"
-            }
-        },
-        produce_armor = {
-            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
-            descname = pgettext("europeans_building", "tailoring a suit of armor"),
-            actions = {
-                "return=skipped unless economy needs armor or workers need experience",
-                "return=skipped when economy needs reed and not economy needs armor",
-                "return=skipped when economy needs cloth and not economy needs armor",
-                "return=skipped when economy needs rope and not economy needs armor",
-                "return=skipped when economy needs leather and economy needs rubber and not economy needs armor",
-                "consume=reed:3 leather,rubber:2",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:3m",
-                "produce=armor:2"
             }
         },
         produce_cloth = {
@@ -93,29 +73,12 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped unless economy needs cloth or workers need experience",
-                "return=skipped when economy needs reed and not economy needs cloth",
-                "return=skipped when economy needs armor and not economy needs cloth",
-                "return=skipped when economy needs rope and not economy needs cloth",
                 "consume=reed:3",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:2m",
+                "animate=working duration:3m",
                 "produce=cloth:2"
             }
         },
-        produce_rope = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving rope because ...
-            descname = pgettext("europeans_building", "weaving rope"),
-            actions = {
-                "return=skipped unless economy needs rope or workers need experience",
-                "return=skipped when economy needs liana and not economy needs rope",
-                "return=skipped when economy needs cloth and not economy needs rope",
-                "return=skipped when economy needs armor and not economy needs rope",
-                "consume=liana:3",
-                "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:2m",
-                "produce=rope:2"
-            }
-        }
     },
 }
 

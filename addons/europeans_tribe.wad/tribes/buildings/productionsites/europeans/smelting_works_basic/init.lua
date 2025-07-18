@@ -22,21 +22,24 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     enhancement = {
-        name = "europeans_smelting_works_advanced",
+        name = "europeans_smelting_works_level_1",
         enhancement_cost = {
-            brick = 2,
-            grout = 2
+            granite = 2,
+            ironwood = 2,
+            rope = 1
         },
         enhancement_return_on_dismantle = {
-            granite = 2
+            scrap_wood = 2,
+            granite = 1
         }
     },
     buildcost = {
-        granite = 3,
-        planks = 3
+        granite = 2,
+        blackwood = 2,
+        reed = 2
     },
     return_on_dismantle = {
-        scrap_wood = 3,
+        scrap_wood = 2,
         granite = 2
     },
 
@@ -46,12 +49,12 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_worker_basic = 1
+        europeans_worker_basic = 3
     },
 
     inputs = {
-        { name = "coal", amount = 8 },
-        { name = "ore", amount = 8 }
+        { name = "coal", amount = 4 },
+        { name = "ore", amount = 4 }
     },
 
     programs = {
@@ -68,14 +71,14 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting ore"),
             actions = {
                 "return=skipped when economy needs coal and not economy needs gold",
-                "consume=ore:4 coal:4",
+                "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
                 "animate=working duration:2m",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=gold:2",
+                "produce=gold",
                 "animate=working duration:2m",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=gold:2"
+                "produce=gold"
             }
         }
     },

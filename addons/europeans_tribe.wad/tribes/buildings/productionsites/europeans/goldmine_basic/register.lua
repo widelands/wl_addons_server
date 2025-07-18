@@ -1,3 +1,3 @@
 return {
-    europeans_goldmine_basic = {"__replace_if_exists"},
+    europeans_goldmine_basic = { "productionsite", "__replace_if_exists" },
 }

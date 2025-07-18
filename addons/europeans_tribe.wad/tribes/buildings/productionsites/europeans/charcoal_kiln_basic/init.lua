@@ -32,26 +32,30 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     enhancement = {
-        name = "europeans_charcoal_kiln_advanced",
+        name = "europeans_charcoal_kiln_level_1",
         enhancement_cost = {
-            brick = 2,
-            grout = 2
+            granite = 2,
+            ironwood = 2,
+            rope = 1
         },
         enhancement_return_on_dismantle = {
-            granite = 2
-        },
+            scrap_wood = 2,
+            granite = 1
+        }
     },
     buildcost = {
-        granite = 3,
-        planks = 3
+        granite = 2,
+        blackwood = 2,
+        reed = 2
     },
     return_on_dismantle = {
-        scrap_wood = 3,
+        scrap_wood = 2,
         granite = 2
     },
    
     aihints = {
-        basic_amount = 2,
+        prohibited_till = 900,
+        basic_amount = 1,
         very_weak_ai_limit = 2,
         weak_ai_limit = 2
     },

@@ -1,3 +1,3 @@
 return {
-    europeans_trading_post= {"__replace_if_exists"},
+    europeans_trading_post= { "productionsite", "__replace_if_exists" },
 }
