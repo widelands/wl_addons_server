@@ -87,6 +87,13 @@ wl.Descriptions():new_productionsite_type {
             }
         },
     },
+    out_of_resource_notification = {
+        -- Translators: Short for "Out of ..." for a resource
+        title = _("No Fields"),
+        heading = _("Out of Fields"),
+        message = pgettext("europeans_building", "The fruit farmer working at this farm has no cleared soil to plant his berrybushes."),
+        productivity_threshold = 30
+    },
 }
 
 pop_textdomain()

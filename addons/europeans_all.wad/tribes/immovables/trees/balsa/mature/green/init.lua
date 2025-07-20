@@ -15,6 +15,9 @@ wl.Descriptions():new_immovable_type{
       main = {
          "animate=idle duration:1m12s",
          "remove=chance:7.42%",
+         "seed=balsa_sapling proximity:2.72%",
+         "animate=idle duration:30s",
+         "remove=chance:7.42%",
          "grow=balsa_old",
       },
       grow = {

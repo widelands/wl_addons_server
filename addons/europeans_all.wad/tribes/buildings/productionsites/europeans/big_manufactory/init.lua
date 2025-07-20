@@ -1,7 +1,7 @@
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/atlanteans/weaving_mill/"
+local dirname = "tribes/buildings/productionsites/frisians/tailors_shop/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_big_manufactory",
@@ -11,12 +11,24 @@ wl.Descriptions():new_productionsite_type {
     
     animation_directory = dirname,
     animations = {
+        unoccupied = {
+            hotspot = {50, 72}
+        }
+    },
+    spritesheets = {
         idle = {
-            hotspot = { 66, 71 },
+            hotspot = {50, 82},
+            frames = 10,
+            columns = 5,
+            rows = 2,
+            fps = 10
         },
         working = {
-            basename = "idle",
-            hotspot = { 66, 71 },
+            hotspot = {50, 82},
+            frames = 10,
+            columns = 5,
+            rows = 2,
+            fps = 10
         }
     },
     
@@ -26,7 +38,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2,
         blackwood = 2,
         grout = 2,
-        reed = 2,
+        cloth = 2,
         planks = 2,
         brick = 2,
         marble = 2,
@@ -39,7 +51,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 1,
         marble = 1,
         grout = 1,
-        reed = 1,
+        cloth = 1,
         rope = 1,
         brick = 1,
         quartz = 1
@@ -62,15 +74,13 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 8 },
-        { name = "rubber", amount = 8 },
-        { name = "cotton", amount = 8 },
-        { name = "wool", amount = 8 },
+        { name = "cloth", amount = 12 },
+        { name = "spidercloth", amount = 8 },
         { name = "fur", amount = 8 },
         { name = "fur_garment_old", amount = 8 },
+        { name = "rubber", amount = 8 },
         { name = "leather", amount = 8 },
-        { name = "spider_silk", amount = 8 },
-        { name = "rope", amount = 6 },
+        { name = "rope", amount = 8 },
         { name = "blackwood", amount = 6 },
         { name = "balsa", amount = 6 },
         { name = "ironwood", amount = 6 },
@@ -84,18 +94,16 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _("working"),
             actions = {
+                "call=produce_armor",
                 "call=produce_armor_wooden",
                 "call=produce_basket",
                 "call=produce_boots_hero",
                 "call=produce_boots_sturdy",
                 "call=produce_boots_swift",
                 "call=produce_chisel",
-                "call=produce_cloth_fur",
-                "call=produce_cloth_reed",
-                "call=produce_cloth_wool",
                 "call=produce_felling_ax",
                 "call=produce_firestones",
-                "call=produce_fishing_net_reed",
+                "call=produce_fishing_net_cloth",
                 "call=produce_fishing_net_silk",
                 "call=produce_fur_garment",
                 "call=produce_hammer",
@@ -110,7 +118,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_spear_hardened",
                 "call=produce_spear_stone_tipped",
                 "call=produce_spear_wooden",
-                "call=produce_spidercloth",
                 "call=produce_stone_bowl",
                 "call=produce_tabard",
                 "call=produce_tabard_golden",
@@ -119,13 +126,26 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_warriors_coat",
             }
         },
+        produce_armor = {
+            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+            descname = _("tailoring an armor"),
+            actions = {
+                -- time: 20.4 + 20 + 3.6 = 44 sec
+                "return=skipped unless economy needs armor",
+                "consume=cloth",
+                "sleep=duration:20s400ms",
+                "playsound=sound/mill/weaving priority:90%",
+                "animate=working duration:20s",
+                "produce=armor"
+            }
+        },
         produce_armor_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a light wooden armor because ...
             descname = _("making a light wooden armor"),
             actions = {
                 -- time: 32.4 + 35 + 3.6 = 71 sec
                 "return=skipped unless economy needs armor_wooden",
-                "consume=balsa:2 rope cotton",
+                "consume=balsa:2 rope cloth",
                 "sleep=duration:32s400ms",
                 "animate=working duration:35s",
                 "produce=armor_wooden"
@@ -137,7 +157,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 31.567 + 35 + 3.6 = 70.167 sec
                 "return=skipped unless economy needs basket",
-                "consume=reed blackwood",
+                "consume=cloth blackwood rope",
                 "sleep=duration:31s567ms",
                 "animate=working duration:35s",
                 "produce=basket"
@@ -191,45 +211,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=chisel"
             },
         },
-        produce_cloth_fur = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-            descname = _("weaving cloth out of fur"),
-            actions = {
-                -- time total: 25.4 + 20 + 3.6 = 49 sec
-                "return=skipped unless economy needs cloth",
-                "consume=fur,fur_garment_old",
-                "sleep=duration:25s400ms",
-                "animate=working duration:20s",
-                "produce=cloth"
-            },
-        },
-        produce_cloth_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving because ...
-            descname = _("weaving cloth out of reed"),
-            actions = {
-                -- time total: 25.4 + 20 + 3.6 = 49 sec
-                "sleep=duration:25s400ms",
-                "return=skipped unless economy needs cloth",
-                "consume=reed",
-                "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:20s",
-                "produce=cloth"
-            }
-        },
-        produce_cloth_wool = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving because ...
-            descname = _("weaving cloth out of wool"),
-            actions = {
-                -- time total: 20.4 + 15 + 5 + 3.6 = 44 sec
-                "return=skipped unless economy needs cloth",
-                "consume=wool",
-                "sleep=duration:20s400ms",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:15s", -- Unsure of balancing CW
-                "sleep=duration:5s",
-                "produce=cloth"
-            }
-        },
         produce_felling_ax = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
             descname = _("making a felling ax"),
@@ -254,13 +235,13 @@ wl.Descriptions():new_productionsite_type {
                 "produce=firestones"
             },
         },
-        produce_fishing_net_reed = {
+        produce_fishing_net_cloth = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
             descname = _("making a fishing net"),
             actions = {
                 -- time: 31.567 + 35 + 3.6 = 70.167 sec
                 "return=skipped unless economy needs fishing_net",
-                "consume=reed:2",
+                "consume=cloth:2",
                 "sleep=duration:31s567ms",
                 "animate=working duration:35s",
                 "produce=fishing_net"
@@ -272,7 +253,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 32.4 + 35 + 3.6 = 71 sec
                 "return=skipped unless economy needs fishing_net",
-                "consume=spider_silk:2",
+                "consume=spidercloth:2",
                 "sleep=duration:32s400ms",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:35s",
@@ -321,7 +302,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 32.4 + 35 + 3.6 = 71 sec
                 "return=skipped unless economy needs hunting_bow",
-                "consume=blackwood spider_silk",
+                "consume=blackwood rope",
                 "sleep=duration:32s400ms",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:35s",
@@ -382,7 +363,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 32.4 + 35 + 3.6 = 71 sec
                 "return=skipped unless economy needs protector_padded",
-                "consume=cotton:2 rubber:2 rope:2 balsa gold_thread",
+                "consume=cloth:2 rubber:2 rope:2 balsa gold_thread",
                 "sleep=duration:32s400ms",
                 "animate=working duration:35s",
                 "produce=protector_padded"
@@ -436,19 +417,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=spear_wooden"
             },
         },
-        produce_spidercloth = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving spidercloth because ...
-            descname = _("weaving spidercloth"),
-            actions = {
-                -- time: 20.4 + 20 + 3.6 = 44 sec
-                "return=skipped unless economy needs spidercloth",
-                "consume=spider_silk",
-                "sleep=duration:20s400ms",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:20s",
-                "produce=spidercloth"
-            }
-        },
         produce_stone_bowl = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a stone bowl because ...
             descname = _("making a stone bowl"),
@@ -467,7 +435,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 20.4 + 20 + 3.6 = 44 sec
                 "return=skipped unless economy needs tabard",
-                "consume=spider_silk",
+                "consume=spidercloth",
                 "sleep=duration:20s400ms",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:20s",
@@ -480,7 +448,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 20.4 + 20 + 3.6 = 44 sec
                 "return=skipped unless economy needs tabard_golden",
-                "consume=spider_silk gold_thread",
+                "consume=spidercloth gold_thread",
                 "sleep=duration:20s400ms",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:20s",
@@ -493,7 +461,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 32.4 + 35 + 3.6 = 71 sec
                 "return=skipped unless economy needs tunic",
-                "consume=cotton rubber rope",
+                "consume=cloth rubber rope",
                 "sleep=duration:32s400ms",
                 "animate=working duration:35s",
                 "produce=tunic"
@@ -505,7 +473,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 32.4 + 35 + 3.6 = 71 sec
                 "return=skipped unless economy needs vest_padded",
-                "consume=cotton:2 rubber:2 rope:2",
+                "consume=cloth:2 rubber:2 rope:2",
                 "sleep=duration:32s400ms",
                 "animate=working duration:35s",
                 "produce=vest_padded"

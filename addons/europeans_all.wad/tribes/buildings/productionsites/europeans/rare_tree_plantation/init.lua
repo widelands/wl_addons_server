@@ -54,7 +54,11 @@ wl.Descriptions():new_productionsite_type {
     working_positions = {
         amazons_jungle_master = 1
     },
-
+    
+    inputs = {
+        { name = "water", amount = 8 },
+    },
+    
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
@@ -77,6 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 -- max. time: 32.8 + 13 = 45.8 sec
                 -- mean time: 21.784 + 13 = 34.784 sec
                 "return=skipped unless economy needs balsa or economy needs log",
+                "consume=water",
                 "callworker=plant_balsa",
                 "sleep=duration:13s"
             },
@@ -90,6 +95,7 @@ wl.Descriptions():new_productionsite_type {
                 -- max. time: 32.8 + 13 = 45.8 sec
                 -- mean time: 21.784 + 13 = 34.784 sec
                 "return=skipped unless economy needs ironwood or economy needs log",
+                "consume=water",
                 "callworker=plant_ironwood",
                 "sleep=duration:13s"
             },
@@ -103,6 +109,7 @@ wl.Descriptions():new_productionsite_type {
                 -- max. time: 32.8 + 13 = 45.8 sec
                 -- mean time: 21.784 + 13 = 34.784 sec
                 "return=skipped unless economy needs liana or economy needs log",
+                "consume=water",
                 "callworker=plant_liana",
                 "sleep=duration:13s"
             },
@@ -116,6 +123,7 @@ wl.Descriptions():new_productionsite_type {
                 -- max. time: 32.8 + 13 = 45.8 sec
                 -- mean time: 21.784 + 13 = 34.784 sec
                 "return=skipped unless economy needs rubber or economy needs log",
+                "consume=water",
                 "callworker=plant_rubber",
                 "sleep=duration:13s"
             },

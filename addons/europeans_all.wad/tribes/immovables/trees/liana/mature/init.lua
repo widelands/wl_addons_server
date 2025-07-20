@@ -13,11 +13,11 @@ wl.Descriptions():new_immovable_type{
    terrain_affinity = terrain_affinity,
    programs = {
       main = {
-         "animate=idle duration:55s",
-         "remove=chance:3.91%",
-         "seed=liana_wasteland_sapling proximity:11.72%",
+         "animate=idle duration:1m12s",
+         "remove=chance:7.42%",
+         "seed=liana_wasteland_sapling proximity:2.72%",
          "animate=idle duration:30s",
-         "remove=chance:3.91%",
+         "remove=chance:7.42%",
          "grow=liana_wasteland_old",
       },
    },

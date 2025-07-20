@@ -85,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
         -- Translators: Short for "Out of ..." for a resource
         title = _("No Fields"),
         heading = _("Out of Fields"),
-        message = pgettext("europeans_building", "The vine farmer working at this vineyard has no cleared soil to plant his grapevines."),
+        message = pgettext("europeans_building", "The fruit farmer working at this farm has no cleared soil to plant his berrybushes."),
         productivity_threshold = 30
     },
 }
