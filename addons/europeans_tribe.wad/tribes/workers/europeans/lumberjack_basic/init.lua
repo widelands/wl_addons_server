@@ -10,7 +10,7 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
 
-    experience = 48,
+    experience = 96,
     becomes = "europeans_lumberjack_advanced",
     
     buildcost = {
@@ -30,6 +30,20 @@ wl.Descriptions():new_worker_type {
             "callobject=fall",
             "animate=idle duration:6s",
             "createware=log",
+            "return"
+        },
+        check_liana = {
+            "findobject=attrib:liana_tree radius:8",
+        },
+        harvest_liana = {
+            "findobject=attrib:liana_tree radius:8",
+            "walk=object",
+            "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
+            "animate=hack duration:6s",
+            "playsound=sound/woodcutting/tree_falling priority:100%",
+            "callobject=fall",
+            "animate=idle duration:6s",
+            "createware=liana",
             "return"
         },
     },
