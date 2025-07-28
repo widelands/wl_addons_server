@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-20 03:12+0200\n"
+"POT-Creation-Date: 2025-07-28 03:12+0200\n"
 "PO-Revision-Date: 2025-06-06 17:58+0000\n"
 "Language-Team: Slovak (https://app.transifex.com/widelands/teams/35159/sk/)\n"
 "Language: sk\n"
@@ -2902,7 +2902,7 @@ msgctxt "europeans_building"
 msgid "felling trees"
 msgstr ""
 
-#. TRANSLATORS: Short for "No Trees to cut lianas" for clay pits
+#. TRANSLATORS: Short for "No Trees to cut lianas" for rare tree cutters house
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_basic/init.lua:87
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_1/init.lua:73
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/lumberjacks_hut_level_2/init.lua:70
@@ -3301,29 +3301,29 @@ msgctxt "europeans_building"
 msgid "Advanced Rare Tree Cutter’s Hut"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:44
 msgid "harvesting balsa"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:53
 msgid "harvesting ironwood"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start making clay because ...
+#. TRANSLATORS: Completed/Skipped/Did not start cutting liana because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:62
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_basic/init.lua:55
 msgid "cutting lianas"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:71
 msgid "harvesting log"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:80
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:83
 msgid "harvesting rubber"
 msgstr ""
 
@@ -3793,55 +3793,55 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:286
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:298
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:69
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:122
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:134
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:146
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:158
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:170
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:182
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:194
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:206
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:218
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:125
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:137
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:149
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:161
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:173
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:185
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:197
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:209
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:221
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:75
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:128
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:140
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:152
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:164
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:176
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:188
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:200
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:212
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:224
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:131
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:143
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:155
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:167
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:179
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:191
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:203
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:215
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:227
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:74
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:127
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:139
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:151
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:163
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:175
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:187
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:199
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:211
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:223
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:130
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:142
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:154
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:166
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:178
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:190
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:202
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:214
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:226
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:57
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:110
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:122
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:134
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:146
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:158
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:170
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:182
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:194
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:206
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:113
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:125
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:137
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:149
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:161
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:173
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:185
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:197
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:209
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:60
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:113
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:125
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:137
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:149
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:161
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:173
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:185
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:197
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:209
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:116
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:128
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:140
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:152
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:164
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:176
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:188
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:200
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:212
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:39
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:48
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/trading_post/init.lua:60
@@ -3862,22 +3862,22 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:92
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:94
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:100
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:99
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:82
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:85
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:95
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:101
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:100
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:83
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:86
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_animals/init.lua:111
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:108
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:114
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:113
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:96
-#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:99
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_food/init.lua:110
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_fur/init.lua:116
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_plants/init.lua:115
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_advanced/init.lua:98
+#: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/store_wood_basic/init.lua:101
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
 msgstr ""

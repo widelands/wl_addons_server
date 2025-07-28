@@ -1,36 +1,41 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/trainingsites/empire/trainingcamp/"
+local dirname = "tribes/buildings/trainingsites/frisians/training_arena/"
 
 wl.Descriptions():new_trainingsite_type {
-    name = "europeans_trainingscamp_big",
+    name = "europeans_trainingcamp_level_4",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Big Trainingscamp"),
+    descname = pgettext("europeans_building", "Trainingcamp Level 4"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
+    animations = {
+        unoccupied = {
+            hotspot = {83, 71}
+        }
+    },
     spritesheets = {
-      idle = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 88, 113 }
-      },
-      working = {
-         basename = "idle",
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 88, 113 }
-      }
+        idle = {
+            hotspot = {83, 90},
+            frames = 10,
+            columns = 5,
+            rows = 2,
+            fps = 10
+        },
+        working = {
+            hotspot = {83, 90},
+            frames = 10,
+            columns = 5,
+            rows = 2,
+            fps = 10
+        }
     },
     
     size = "big",
     destructible = true,
     
     aihints = {
-        trainingsites_max_percent = 50,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 4,
@@ -43,7 +48,7 @@ wl.Descriptions():new_trainingsite_type {
 
     inputs = {
         { name = "coin_silver", amount = 16 },
-        { name = "coin_gold", amount = 16 }
+        { name = "coin_gold", amount = 32 }
     },
 
     programs = {
@@ -74,15 +79,60 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier health from level 1 to level 2"),
             actions = {
-                "return=skipped unless site has coin_gold:2",
+                "return=skipped unless site has coin_silver:2",
                 "checksoldier=soldier:health level:1",
                 "sleep=duration:15s",
                 "checksoldier=soldier:health level:1",
-                "consume=coin_gold",
+                "consume=coin_silver",
                 "animate=working duration:10s",
-                "consume=coin_gold",
+                "consume=coin_silver",
                 "animate=working duration:10s",
                 "train=soldier:health level:2"
+            }
+        },
+        upgrade_soldier_health_2 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier health from level 2 to level 3"),
+            actions = {
+                "return=skipped unless site has coin_gold:2",
+                "checksoldier=soldier:health level:2",
+                "sleep=duration:15s",
+                "checksoldier=soldier:health level:2",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "train=soldier:health level:3"
+            }
+        },
+        upgrade_soldier_health_3 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier health from level 3 to level 4"),
+            actions = {
+                "return=skipped unless site has coin_gold:2",
+                "checksoldier=soldier:health level:3",
+                "sleep=duration:15s",
+                "checksoldier=soldier:health level:3",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "train=soldier:health level:4"
+            }
+        },
+        upgrade_soldier_health_4 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier health from level 4 to level 5"),
+            actions = {
+                "return=skipped unless site has coin_gold:2",
+                "checksoldier=soldier:health level:4",
+                "sleep=duration:15s",
+                "checksoldier=soldier:health level:4",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "train=soldier:health level:5"
             }
         },
         upgrade_soldier_attack_0 = {
@@ -104,15 +154,60 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier attack from level 1 to level 2"),
             actions = {
-                "return=skipped unless site has coin_gold:2",
+                "return=skipped unless site has coin_silver:2",
                 "checksoldier=soldier:attack level:1",
                 "sleep=duration:15s",
                 "checksoldier=soldier:attack level:1",
-                "consume=coin_gold",
+                "consume=coin_silver",
                 "animate=working duration:10s",
-                "consume=coin_gold",
+                "consume=coin_silver",
                 "animate=working duration:10s",
                 "train=soldier:attack level:2"
+            }
+        },
+        upgrade_soldier_attack_2 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier attack from level 2 to level 3"),
+            actions = {
+                "return=skipped unless site has coin_gold:2",
+                "checksoldier=soldier:attack level:2",
+                "sleep=duration:15s",
+                "checksoldier=soldier:attack level:2",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "train=soldier:attack level:3"
+            }
+        },
+        upgrade_soldier_attack_3 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier attack from level 3 to level 4"),
+            actions = {
+                "return=skipped unless site has coin_gold:2",
+                "checksoldier=soldier:attack level:3",
+                "sleep=duration:15s",
+                "checksoldier=soldier:attack level:3",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "train=soldier:attack level:4"
+            }
+        },
+        upgrade_soldier_attack_4 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier attack from level 4 to level 5"),
+            actions = {
+                "return=skipped unless site has coin_gold:2",
+                "checksoldier=soldier:attack level:4",
+                "sleep=duration:15s",
+                "checksoldier=soldier:attack level:4",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "train=soldier:attack level:5"
             }
         },
         upgrade_soldier_defense_0 = {

@@ -73,6 +73,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_copper",
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
                 "sleep=duration:30s",
@@ -87,6 +88,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for silver coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_silver",
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
                 "sleep=duration:30s",
@@ -101,6 +103,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for gold coins"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs coin_gold",
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",
                 "sleep=duration:30s",

@@ -40,7 +40,7 @@ wl.Descriptions():new_productionsite_type {
             },
         },
         harvest_balsa = {
-            -- TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+            -- TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
             descname = _("harvesting balsa"),
             actions = {
                 "return=skipped unless economy needs balsa",
@@ -49,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
             },
         },
         harvest_ironwood = {
-            -- TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+            -- TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
             descname = _("harvesting ironwood"),
             actions = {
                 "return=skipped unless economy needs ironwood",
@@ -58,7 +58,7 @@ wl.Descriptions():new_productionsite_type {
             },
         },
         harvest_liana = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making clay because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start cutting liana because ...
             descname = _("cutting lianas"),
             actions = {
                 "return=skipped unless economy needs liana",
@@ -67,16 +67,19 @@ wl.Descriptions():new_productionsite_type {
             },
         },
         harvest_log = {
-            -- TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+            -- TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
             descname = _("harvesting log"),
             actions = {
-                "return=skipped unless economy needs log",
+                "return=skipped when economy needs balsa",
+                "return=skipped when economy needs ironwood",
+                "return=skipped when economy needs liana",
+                "return=skipped when economy needs rubber",
                 "callworker=harvest_log",
                 "sleep=duration:12s"
             },
         },
         harvest_rubber = {
-            -- TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+            -- TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
             descname = _("harvesting rubber"),
             actions = {
                 "return=skipped unless economy needs rubber",

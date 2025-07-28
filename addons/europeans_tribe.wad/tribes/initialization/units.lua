@@ -2002,27 +2002,48 @@ wl.Descriptions():new_tribe {
         },
         -- Recruitement and Training Sites
         {
-            name = "europeans_trainingscamp_basic",
+            name = "europeans_big_barracks",
             helptexts = {
                 purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
+                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Big Barracks, part 1
                     pgettext("europeans_building", "Trains recruits to soldiers."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
+                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Big Barracks, part 2
                     pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
                 },
             }
         },
         {
-            name = "europeans_trainingscamp_advanced",
+            name = "europeans_trainingcamp_basic",
             helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Small Training Camp
+                -- TRANSLATORS: Note helptext for a Europeans training site: Training Camp
                 note = pgettext("europeans_building", "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."),
             }
         },
         {
-            name = "europeans_trainingscamp_big",
+            name = "europeans_trainingcamp_level_1",
             helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Big Training Camp
+                -- TRANSLATORS: Note helptext for a Europeans training site: Training Camp
+                note = pgettext("europeans_building", "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."),
+            }
+        },
+        {
+            name = "europeans_trainingcamp_level_2",
+            helptexts = {
+                -- TRANSLATORS: Note helptext for a Europeans training site: Training Camp
+                note = pgettext("europeans_building", "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."),
+            }
+        },
+        {
+            name = "europeans_trainingcamp_level_3",
+            helptexts = {
+                -- TRANSLATORS: Note helptext for a Europeans training site: Training Camp
+                note = pgettext("europeans_building", "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."),
+            }
+        },
+        {
+            name = "europeans_trainingcamp_level_4",
+            helptexts = {
+                -- TRANSLATORS: Note helptext for a Europeans training site: Training Camp
                 note = pgettext("europeans_building", "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."),
             }
         },
@@ -2288,7 +2309,7 @@ wl.Descriptions():new_tribe {
     soldier = "europeans_soldier",
     
     fastplace = {
-        barracks = "europeans_trainingscamp_basic",
+        barracks = "europeans_big_barracks",
         building_materials_primary = "europeans_weaving_mill_basic",
         building_materials_secondary = "europeans_sawmill_basic",
         building_materials_tertiary = "europeans_stonemasons_house_basic",
@@ -2298,7 +2319,7 @@ wl.Descriptions():new_tribe {
         farm_tertiary = "europeans_gardening_center",
         ferry_yard = "europeans_shipyard_advanced",
         fish_meat_replenisher = "europeans_animal_farm_level_1",
-        forester = "europeans_foresters_hut",
+        forester = "europeans_foresters_house_basic",
         hunter = "europeans_animal_farm_basic",
         military_small_primary = "europeans_sentry_basic",
         military_small_secondary = "europeans_sentry_level_1",
@@ -2317,8 +2338,8 @@ wl.Descriptions():new_tribe {
         second_carrier = "europeans_animal_farm_level_2",
         shipyard = "europeans_shipyard_basic",
         smelting = "europeans_smelting_works_basic",
-        training_small = "europeans_trainingscamp_advanced",
-        training_big = "europeans_trainingscamp_big",
+        training_small = "europeans_trainingcamp_basic",
+        training_big = "europeans_trainingcamp_level_4",
         warehouse = "europeans_headquarters",
         weaving_mill = "europeans_weaving_mill_basic",
         well = "europeans_well_basic",

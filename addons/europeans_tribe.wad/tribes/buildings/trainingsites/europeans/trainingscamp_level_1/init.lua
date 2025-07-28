@@ -1,64 +1,49 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/empire/barracks/"
+local dirname = "tribes/buildings/trainingsites/amazons/training_glade/"
 
 wl.Descriptions():new_trainingsite_type {
-    name = "europeans_trainingscamp_advanced",
+    name = "europeans_trainingcamp_level_1",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Advanced Trainingscamp"),
+    descname = pgettext("europeans_building", "Trainingcamp Level 1"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
     animations = {
-      idle = {
-         hotspot = {51, 71}
-      },
-      working = {
-         basename = "idle",
-         hotspot = {51, 71}
-      },
+        idle = {hotspot = {92, 92}},
+        unoccupied = {hotspot = {92, 92}}
     },
-
-    spritesheets = {
-      build = {
-         hotspot = {51, 71},
-         frames = 3,
-         columns = 1,
-         rows = 3
-      }
-    },
+    spritesheets = { working = {
+        hotspot = {92, 92},
+        fps = 15,
+        frames = 30,
+        columns = 6,
+        rows = 5
+    }},
     
     size = "big",
     destructible = true,
-    
     enhancement = {
-        name = "europeans_trainingscamp_big",
+        name = "europeans_trainingcamp_level_2",
         enhancement_cost = {
-            brick = 1,
-            grout = 1,
-            marble_column = 2
+            granite = 3,
+            planks = 3,
+            spidercloth = 2,
+            diamond = 2,
+            gold = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 3,
             granite = 1,
-            marble = 2
-        },
-    },
-    
-    buildcost = {
-        brick = 3,
-        grout = 3,
-        planks = 3,
-        marble_column = 2
-    },
-    return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 4,
-        marble = 2
+            spidercloth = 1,
+            diamond = 1,
+            gold = 1
+        }
     },
 
     aihints = {
-        trainingsites_max_percent = 50,
+        trainingsites_max_percent = 20,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 4,
@@ -70,7 +55,8 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     inputs = {
-        { name = "coin_silver", amount = 16 }
+        { name = "coin_silver", amount = 16 },
+        { name = "coin_gold", amount = 8 }
     },
 
     programs = {
@@ -97,6 +83,21 @@ wl.Descriptions():new_trainingsite_type {
                 "train=soldier:health level:1"
             }
         },
+        upgrade_soldier_health_1 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier health from level 1 to level 2"),
+            actions = {
+                "return=skipped unless site has coin_silver:2",
+                "checksoldier=soldier:health level:1",
+                "sleep=duration:15s",
+                "checksoldier=soldier:health level:1",
+                "consume=coin_silver",
+                "animate=working duration:10s",
+                "consume=coin_silver",
+                "animate=working duration:10s",
+                "train=soldier:health level:2"
+            }
+        },
         upgrade_soldier_attack_0 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier attack from level 0 to level 1"),
@@ -110,6 +111,21 @@ wl.Descriptions():new_trainingsite_type {
                 "consume=coin_silver",
                 "animate=working duration:10s",
                 "train=soldier:attack level:1"
+            }
+        },
+        upgrade_soldier_attack_1 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier attack from level 1 to level 2"),
+            actions = {
+                "return=skipped unless site has coin_silver:2",
+                "checksoldier=soldier:attack level:1",
+                "sleep=duration:15s",
+                "checksoldier=soldier:attack level:1",
+                "consume=coin_silver",
+                "animate=working duration:10s",
+                "consume=coin_silver",
+                "animate=working duration:10s",
+                "train=soldier:attack level:2"
             }
         },
         upgrade_soldier_defense_0 = {
@@ -127,6 +143,21 @@ wl.Descriptions():new_trainingsite_type {
                 "train=soldier:defense level:1"
             }
         },
+        upgrade_soldier_defense_1 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier defense from level 1 to level 2"),
+            actions = {
+                "return=skipped unless site has coin_gold:2",
+                "checksoldier=soldier:defense level:1",
+                "sleep=duration:15s",
+                "checksoldier=soldier:defense level:1",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "train=soldier:defense level:2"
+            }
+        },
         upgrade_soldier_evade_0 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
@@ -140,6 +171,21 @@ wl.Descriptions():new_trainingsite_type {
                 "consume=coin_silver",
                 "animate=working duration:10s",
                 "train=soldier:evade level:1"
+            }
+        },
+        upgrade_soldier_evade_1 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier evade from level 1 to level 2"),
+            actions = {
+                "return=skipped unless site has coin_gold:2",
+                "checksoldier=soldier:evade level:1",
+                "sleep=duration:15s",
+                "checksoldier=soldier:evade level:1",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "consume=coin_gold",
+                "animate=working duration:10s",
+                "train=soldier:evade level:2"
             }
         },
     },

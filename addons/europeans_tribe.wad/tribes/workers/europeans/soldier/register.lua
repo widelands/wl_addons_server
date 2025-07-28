@@ -1,3 +1,3 @@
 return {
-    europeans_soldier = { "worker", "__replace_if_exists" },
+    europeans_soldier = { "soldier", "__replace_if_exists" },
 }

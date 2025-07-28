@@ -1,45 +1,48 @@
 push_textdomain("europeans_tribe.wad", true)
 
--- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/barbarians/barracks/"
+local dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_trainingscamp_basic",
+    name = "europeans_big_barracks",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Basic Trainingscamp"),
+    descname = pgettext("europeans_building", "Big Barracks"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
     animations = {
       idle = {
-         hotspot = {55, 49}
+         hotspot = { 64, 106 }
       },
       working = {
          basename = "idle",
-         hotspot = {55, 49}
-      }
-    },
-    spritesheets = {
-      build = {
-         hotspot = {55, 49},
-         frames = 3,
-         columns = 1,
-         rows = 3
-      }
+         hotspot = { 64, 106 }
+      },
     },
     
     size = "big",
     destructible = true,
-       
     buildcost = {
-        granite = 4,
-        planks = 4,
-        marble_column = 1
+        log = 2,
+        granite = 2,
+        blackwood = 2,
+        grout = 2,
+        reed = 2,
+        planks = 2,
+        brick = 2,
+        marble = 2,
+        rope = 2,
+        spidercloth = 2,
+        quartz = 2
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        granite = 2,
-        marble = 1
+        granite = 1,
+        marble = 1,
+        grout = 1,
+        reed = 1,
+        rope = 1,
+        brick = 1,
+        quartz = 1
     },
 
     aihints = {
@@ -126,6 +129,7 @@ wl.Descriptions():new_productionsite_type {
         },
     },
 }
+
 
 pop_textdomain()
 

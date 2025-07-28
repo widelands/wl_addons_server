@@ -51,7 +51,7 @@ wl.Descriptions():new_productionsite_type {
 
     programs = {
         main = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making clay because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start cutting liana because ...
             descname = _("cutting lianas"),
             actions = {
                 "return=skipped unless economy needs liana",
@@ -61,7 +61,7 @@ wl.Descriptions():new_productionsite_type {
         },
     },
     out_of_resource_notification = {
-        -- TRANSLATORS: Short for "No Trees to cut lianas" for clay pits
+        -- TRANSLATORS: Short for "No Trees to cut lianas" for rare tree cutters house
         title = _("No Trees"),
         heading = _("No Tree to Cut Lianas"),
         message = pgettext ("europeans_building", "The liana cutter working at this site can’t find any tree in her work area. You should consider dismantling or destroying the building or building a jungle preserver’s hut."),

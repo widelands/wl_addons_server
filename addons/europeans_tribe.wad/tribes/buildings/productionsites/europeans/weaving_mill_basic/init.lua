@@ -28,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             ironwood = 2,
             balsa = 2,
-            rope = 2
+            rubber = 2
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2
