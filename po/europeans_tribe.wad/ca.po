@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-28 03:12+0200\n"
+"POT-Creation-Date: 2025-07-29 03:12+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -1327,16 +1327,12 @@ msgid "No Tree to Cut Lianas"
 msgstr ""
 
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_basic/init.lua:66
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The liana cutter working at this site can’t find any liana tree in her work "
 "area. You should consider dismantling or destroying the building or building "
 "a jungle preserver’s hut."
 msgstr ""
-"El llenyataire d'aquesta cabana no pot trobar més arbres a la seva àrea de "
-"treball. Hauríeu de considerar desmantellar-la, destruir-la o construir una "
-"cabana de guarda forestal."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_plantation/init.lua:9
@@ -1965,10 +1961,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_basic/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Trainingcamp"
-msgstr "Camp d'entrenament bàsic"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_basic/init.lua:93
@@ -2041,10 +2036,9 @@ msgstr "No s'ha trobat cap soldat per entrenar aquest nivell."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_1/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trainingcamp Level 1"
-msgstr "Camp d'entrenament gran"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_1/init.lua:88
@@ -2084,72 +2078,63 @@ msgstr "promoure l'evasió del soldat de nivell 1 a nivell 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trainingcamp Level 2"
-msgstr "Camp d'entrenament gran"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:100
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:105
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:95
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 2 to level 3"
-msgstr "promoure la salut del soldat de nivell 1 a nivell 2"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:145
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:165
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:170
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr "promoure l'atac del soldat de nivell 1 a nivell 2"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trainingcamp Level 3"
-msgstr "Camp d'entrenament gran"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:120
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:110
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 3 to level 4"
-msgstr "promoure la salut del soldat de nivell 0 a nivell 1"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:180
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:185
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 3 to level 4"
-msgstr "promoure l'atac del soldat de nivell 0 a nivell 1"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trainingcamp Level 4"
-msgstr "Camp d'entrenament gran"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:125
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 4 to level 5"
-msgstr "promoure la salut del soldat de nivell 0 a nivell 1"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:200
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 4 to level 5"
-msgstr "promoure l'atac del soldat de nivell 0 a nivell 1"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/warehouses/europeans/headquarters/init.lua:9
@@ -5410,19 +5395,3 @@ msgstr "Treballador avançat"
 msgctxt "europeans_worker"
 msgid "Basic Worker"
 msgstr "Treballador bàsic"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Charcoal Kiln"
-#~ msgstr "Kiln de carbó vegetal avançat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Smelting Works"
-#~ msgstr "Forn de metalls avançat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Stonemason’s House"
-#~ msgstr "Taller de la pedra avançat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Weaving Mill"
-#~ msgstr "Taller de teixir avançat"
