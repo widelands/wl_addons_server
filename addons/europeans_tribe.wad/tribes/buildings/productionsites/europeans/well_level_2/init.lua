@@ -31,11 +31,14 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_well_level_3",
         enhancement_cost = {
             brick = 1,
-            grout = 1
+            grout = 1,
+            planks = 1,
+            reed = 1
         },
         enhancement_return_on_dismantle = {
-            granite = 1
-        },
+            scrap_wood = 1,
+            brick = 1
+        }
     },
 
     aihints = {

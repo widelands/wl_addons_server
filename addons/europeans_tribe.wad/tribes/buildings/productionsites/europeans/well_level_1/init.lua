@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/barbarians/well/"
+local dirname = "tribes/buildings/productionsites/atlanteans/well/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_well_level_1",
@@ -11,23 +11,13 @@ wl.Descriptions():new_productionsite_type {
 
     animation_directory = dirname,
     animations = {
-      idle = {
-         hotspot = { 19, 33 },
-      },
-    },
-    spritesheets = {
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 19, 33 }
-      },
-      working = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 19, 33 }
-      },
+        idle = {
+            hotspot = { 36, 42 },
+        },
+        working = {
+            basename = "idle",
+            hotspot = { 36, 42 },
+        },
     },
 
     size = "medium",
@@ -35,11 +25,15 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_well_level_2",
         enhancement_cost = {
             brick = 1,
-            grout = 1
+            grout = 1,
+            planks = 1,
+            marble = 1
         },
         enhancement_return_on_dismantle = {
-            granite = 1
-        },
+            scrap_wood = 1,
+            brick = 1,
+            marble = 1
+        }
     },
 
     aihints = {
