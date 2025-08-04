@@ -561,7 +561,7 @@ Once a thriving island of trading nations, now split by a cataclismic event, new
 Ron_Of_Nord
 Ron_of_Nord
 1751010685
-29
+31
 0
 0.0
 0
@@ -634,7 +634,7 @@ Bluebyte-Settlers-II-Fan-Map
 reworked by hessenfarmer
 hessenfarmer
 1673901188
-511
+512
 0
 0.0
 2
@@ -715,7 +715,7 @@ The legend says: ''When ever one goes down our mountain, he never comes back''. 
 kaputtnik
 kaputtnik
 1679920754
-264
+265
 0
 0.0
 1
@@ -973,7 +973,7 @@ Grand Fantasia ist, wie der Name schon sagt, eine komplett der Fantasie entsprun
 Aalnase
 Aalnase
 1700772630
-192
+193
 0
 0.0
 0
@@ -1299,7 +1299,7 @@ This Addon contains all of my Maps. Some of my Maps are also on the Widelands We
 Teayo
 Teayo
 1688747564
-330
+331
 1
 9.0
 0
@@ -2205,7 +2205,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-841
+843
 3
 9.333333
 0
@@ -2283,7 +2283,7 @@ Maps for the 2021 Tournament
 hessenfarmer
 hessenfarmer
 1619867883
-496
+497
 0
 0.0
 0
@@ -3055,7 +3055,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-919
+920
 3
 9.666667
 1
@@ -3272,7 +3272,7 @@ Upgrade of smelting works and stonemason’s houses makes the Barbarians and Emp
 OIPUN
 OIPUN
 1719251296
-575
+576
 1
 10.0
 9
@@ -3668,7 +3668,7 @@ Basic Outpost
 blind
 blind3rdeye
 1700920458
-331
+332
 2
 10.0
 0
@@ -3824,7 +3824,7 @@ Start the game with one ships on the ocean, the bare minimum of ware and few wor
 OIPUN
 OIPUN
 1744125815
-58
+59
 1
 10.0
 1
@@ -5422,15 +5422,18 @@ MarkMcWire
 0
 0.0
 0
-1.5.4
+1.5.5
 21
-79652
+79910
 script
 0
 0
-3
+6
 addon
 debug.lua
+debug_buildings.lua
+debug_roads.lua
+debug_seafaring.lua
 init.lua
 23
 bg.mo
@@ -5456,10 +5459,13 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-26
-21a8b07b0920fd7d40c4a6d86b8dba68
-5f80474ac75b1e704399efbb893cc1c9
-a10ee4293a25ebf3c49782a6a0fac2eb
+29
+97ff1dc42ef3a73d957bc19c636e75e7
+0cf4afeeeccfb8521c3f001ccbdb064b
+54a053a82234de4203c857c6296520a3
+f356600f34b100367e9e49b81bb442f7
+47bd77806e96ec625c05a3bda7e7fee6
+4437410413c580dbbb0a9cfce8d272a5
 bac9abc1728afa7e9187364b2fc38834
 656dd91a9ccd8a061cf036ab00a7b6b3
 6879ea98ac10306ef6b25c66693c020c
@@ -5490,7 +5496,7 @@ Addon that provides all current features (wares, workers and economy) from all c
 MarkMcWire
 MarkMcWire
 1749228542
-100
+101
 0
 0.0
 0
@@ -12670,7 +12676,7 @@ The first player who has at least 4 fully trained soldiers in his warehouses win
 kaputtnik
 kaputtnik
 1616241721
-298
+299
 3
 10.0
 0
@@ -13023,7 +13029,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-1378
+1382
 6
 9.666667
 0
@@ -13254,7 +13260,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-1273
+1274
 3
 10.0
 0
@@ -14415,7 +14421,7 @@ Increases all worker experience thresholds to 10 times the default value.
 Nordfriese
 Nordfriese
 1600000000
-439
+440
 1
 10.0
 2
@@ -14977,7 +14983,7 @@ Theme with larger fonts.
 Andy Alt
 arch_stanton
 1648329410
-473
+474
 1
 1.0
 2
@@ -15184,7 +15190,7 @@ Theme with larger fonts. This version changes scenario and help fonts too.
 Andy Alt, tothxa
 tothxa
 1735340602
-71
+72
 0
 0.0
 1
@@ -15258,7 +15264,7 @@ Theme with larger fonts. This version changes scenario and help fonts too, but o
 Andy Alt, tothxa
 tothxa
 1682797554
-217
+218
 1
 2.0
 1
@@ -15797,7 +15803,7 @@ Some people already thought that they are nowhere to be found. But here they are
 OIPUN
 OIPUN
 1744531167
-89
+90
 0
 0.0
 0
@@ -19333,7 +19339,7 @@ Contains ''Lake and Forest (edited)'', ''Atlas Range Spring'', ''Cenere di Pompe
 OIPUN
 OIPUN
 1739211494
-193
+194
 0
 0.0
 0
@@ -19657,7 +19663,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-730
+731
 0
 0.0
 0
@@ -22042,7 +22048,7 @@ Dark theme (very loosely) based on kaputtnik's minimalistic theme and adwaita.
 atomikaya
 atomikaya
 1671793402
-386
+387
 1
 10.0
 1
@@ -27063,7 +27069,7 @@ Modifies world for Sumatran tribe. The changes affect Amazons too. Tropical tree
 OIPUN
 OIPUN
 1733507938
-275
+276
 3
 8.666667
 4
@@ -28134,7 +28140,7 @@ This addon needs tropics.wad.
 OIPUN
 OIPUN
 1731948448
-169
+170
 1
 10.0
 1
@@ -28636,7 +28642,7 @@ Make the ‘water’ resource more useful by giving wells a larger radius and a 
 Nordfriese
 Nordfriese
 1600000000
-664
+665
 2
 10.0
 0
@@ -29160,7 +29166,7 @@ Do you sometimes ask yourself: 'Where are my heroes?'. This add-on finds heroes 
 kaputtnik
 kaputtnik
 1708356983
-233
+234
 1
 10.0
 2
@@ -29857,7 +29863,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-583
+585
 2
 8.5
 0
