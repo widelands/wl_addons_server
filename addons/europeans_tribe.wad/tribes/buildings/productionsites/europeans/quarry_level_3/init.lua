@@ -1,50 +1,35 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/barbarians/quarry/"
+local dirname = "tribes/buildings/productionsites/empire/quarry/"
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_quarry_basic",
+    name = "europeans_quarry_level_3",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Basic Quarry"),
+    descname = pgettext("europeans_building", "Quarry Level 3"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-      idle = {
-         hotspot = { 45, 48 },
-      },
-      unoccupied = {
-         hotspot = { 45, 48 },
-      },
-    },
     spritesheets = {
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 45, 48 }
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 40, 57 },
       },
     },
-    
+
     size = "small",
     enhancement = {
-        name = "europeans_quarry_level_1",
+        name = "europeans_quarry_level_4",
         enhancement_cost = {
-            ironwood = 1,
-            balsa = 1,
-            rope = 1
+            brick = 1,
+            grout = 1,
+            reed = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1
+            brick = 1
         }
-    },
-    buildcost = {
-        reed = 2,
-        log = 2
-    },
-    return_on_dismantle = {
-        scrap_wood = 2
     },
 
     aihints = {
@@ -54,7 +39,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_stonecutter_basic = 2
+        europeans_stonecutter_basic = 1,
+        europeans_stonecutter_advanced = 1
     },
 
     programs = {
@@ -72,10 +58,12 @@ wl.Descriptions():new_productionsite_type {
            descname = pgettext("europeans_building", "quarrying"),
             actions = {
                 "call=cut_granite on failure fail",
+                "call=cut_marble on failure fail", -- This will find marble 3 out of 6 times
                 "call=cut_granite on failure fail",
+                "call=cut_marble_quartz on failure fail", -- This will find marble 3 out of 6 times and quartz 2 out of 6 times
                 "call=cut_granite on failure fail",
-                "call=cut_granite on failure fail",
-                "sleep=duration:30s",
+                "call=cut_marble_quartz on failure fail", -- This will find marble 3 out of 6 times and quartz 2 out of 6 times
+                "sleep=duration:15s",
                 "return=skipped"
             }
         },
@@ -87,12 +75,29 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=cut_granite"
             }
         },
+        cut_marble = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+           descname = pgettext("europeans_building", "quarrying marble"),
+            actions = {
+                "return=skipped unless economy needs marble",
+                "callworker=cut_marble"
+            }
+        },
+        cut_marble_quartz = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+           descname = pgettext("europeans_building", "quarrying quartz"),
+            actions = {
+                "return=skipped unless economy needs marble or economy needs quartz",
+                "callworker=cut_marble",
+                "produce=quartz"
+            }
+        },
     },
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource
         title = _"No Rocks",
         heading = _"Out of Rocks",
-        message = pgettext("europeans_building", "The stonecutter working at this quarry can’t find any rocks in his work area. You should consider enhancing it to increase its working area."),
+        message = pgettext("europeans_building", "The stonecutter working at this quarry can’t find any stone in his work area."),
         productivity_threshold = 75
     },
 }

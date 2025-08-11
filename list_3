@@ -535,7 +535,7 @@ Ron_of_Nord
 
 sync_safe
 1742613243
-86
+88
 0
 0
 0
@@ -1651,7 +1651,7 @@ kaputtnik
 
 sync_safe
 1715265495
-320
+322
 0
 0
 0
@@ -2592,7 +2592,7 @@ TRueDesk
 
 sync_safe
 1666686938
-846
+847
 0
 0
 0
@@ -3809,7 +3809,7 @@ OIPUN
 
 sync_safe
 1719251296
-580
+581
 0
 0
 0
@@ -4217,7 +4217,7 @@ blind3rdeye
 
 sync_safe
 1700920458
-334
+335
 0
 0
 0
@@ -4397,7 +4397,7 @@ OIPUN
 
 sync_safe
 1744125815
-60
+61
 0
 0
 0
@@ -5333,7 +5333,7 @@ OIPUN
 
 sync_safe
 1731945923
-54
+55
 0
 0
 0
@@ -6223,7 +6223,7 @@ MarkMcWire
 
 sync_safe
 1749228542
-105
+113
 0
 0
 0
@@ -6235,9 +6235,9 @@ sync_safe
 0
 0
 0
-1.1.0
+1.1.2
 10
-5853820
+5853372
 tribes
 0
 376
@@ -7682,7 +7682,7 @@ ru.mo
 sk.mo
 sv.mo
 1062
-33b9fea3c23f2059164be6cf63a1b6ad
+f03702e50060d832e38f5da1fc693227
 e1444f43518336bd0ce6ae96c2f888af
 0ae953f65245b04555fd1785de9a3e52
 15de996fd83f03d21e452a7d47999d09
@@ -7943,13 +7943,13 @@ a1722c8b622c6e09ad2edb75f0029bcc
 fbfc6ec0de21fc8d90f2c17f1004f2e5
 8dda4a9a322441cba117cbdcd31cb3bf
 a564968a87f4798f3465819c8e126dfe
-4c2456079aec1ab52871b01508169219
+02e9e6a465ddb681ee96954acb3fb6f2
 62c555addeaa107de995735a0e645867
-18401cbb4592b0fdcee10c89ff9f5810
+1020eb51b9c5e88785cb06b4967b972e
 2df463c47c60db5b9781b39d2580aef2
-ae03a4ffc5773bc129226cde380b3244
+858244c426b9e263ae55adcb970c1e3e
 d712c40b32445aa78483036860d0012c
-c4aba8227b616d1c75d6719db4d1dce4
+104c69f0d2c4bf4ec3663fbf1fea6a2d
 b2432b245986211654e8e4313b51ddba
 3652df5a6c610d6839bd4b1a330e18f0
 3f2775d2fab6ee296a3304806d3d74d7
@@ -7969,7 +7969,7 @@ dcaf173e9e495f1b5b3323d109ed69f6
 49ad4d8ebdcab6f5923cc740675dce14
 3df45df5d0a53ab1144ef4473fa833e5
 cab889ec2376ed9065d53624da262972
-b86f2c724ed4d0829a9e1a7dcdf07396
+367da74e619a288491ae3bfa5cb1c3e6
 a872b9b3edc1ec0b5c01abb096ef0474
 e2e9d0f35471f006ca0608bc40ab3e3f
 953b1d45d88f425d22ab68a71d87a4a2
@@ -9762,7 +9762,7 @@ MarkMcWire
 
 sync_safe
 1625854267
-1118
+1120
 0
 0
 0
@@ -10533,7 +10533,7 @@ MarkMcWire
 
 sync_safe
 1734192332
-629
+634
 1
 0
 0
@@ -10557,12 +10557,12 @@ MarkMcWire
 By the way, the comments are not intended to report errors. I think it's unfair to give the add-on only one star just because it contains a small error. In future, please report errors in the forum or on Github with a screenshot. I read them regularly and address your problems.
 2.1.0
 1734729421
-2.6.1
-52
-6275023
+2.6.2
+53
+6285982
 tribes
 0
-314
+317
 tribes
 tribes/buildings
 tribes/buildings/markets
@@ -10625,8 +10625,11 @@ tribes/buildings/productionsites/europeans/lumberjacks_hut_level_1
 tribes/buildings/productionsites/europeans/lumberjacks_hut_level_2
 tribes/buildings/productionsites/europeans/lumberjacks_hut_level_3
 tribes/buildings/productionsites/europeans/lumberjacks_hut_level_4
-tribes/buildings/productionsites/europeans/quarry_advanced
 tribes/buildings/productionsites/europeans/quarry_basic
+tribes/buildings/productionsites/europeans/quarry_level_1
+tribes/buildings/productionsites/europeans/quarry_level_2
+tribes/buildings/productionsites/europeans/quarry_level_3
+tribes/buildings/productionsites/europeans/quarry_level_4
 tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced
 tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_basic
 tribes/buildings/productionsites/europeans/rare_tree_plantation
@@ -10877,7 +10880,7 @@ tribes/workers/europeans/stonecutter_basic
 tribes/workers/europeans/trader
 tribes/workers/europeans/worker_advanced
 tribes/workers/europeans/worker_basic
-1120
+1126
 addon
 tribes/buildings/markets/europeans/market/init.lua
 tribes/buildings/markets/europeans/market/register.lua
@@ -10990,10 +10993,16 @@ tribes/buildings/productionsites/europeans/lumberjacks_hut_level_3/init.lua
 tribes/buildings/productionsites/europeans/lumberjacks_hut_level_3/register.lua
 tribes/buildings/productionsites/europeans/lumberjacks_hut_level_4/init.lua
 tribes/buildings/productionsites/europeans/lumberjacks_hut_level_4/register.lua
-tribes/buildings/productionsites/europeans/quarry_advanced/init.lua
-tribes/buildings/productionsites/europeans/quarry_advanced/register.lua
 tribes/buildings/productionsites/europeans/quarry_basic/init.lua
 tribes/buildings/productionsites/europeans/quarry_basic/register.lua
+tribes/buildings/productionsites/europeans/quarry_level_1/init.lua
+tribes/buildings/productionsites/europeans/quarry_level_1/register.lua
+tribes/buildings/productionsites/europeans/quarry_level_2/init.lua
+tribes/buildings/productionsites/europeans/quarry_level_2/register.lua
+tribes/buildings/productionsites/europeans/quarry_level_3/init.lua
+tribes/buildings/productionsites/europeans/quarry_level_3/register.lua
+tribes/buildings/productionsites/europeans/quarry_level_4/init.lua
+tribes/buildings/productionsites/europeans/quarry_level_4/register.lua
 tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua
 tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/register.lua
 tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_basic/init.lua
@@ -12022,8 +12031,8 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-1143
-a44ed75277bf3152b62d0970f88968aa
+1149
+115a0833977b5186e4fe168bea4adfa2
 6e1aa59310f6d26427ea4dec38f4fee9
 6201aa571350a531a2785bff4ac4da42
 fc15d064a000acb47dd763fd053e9d56
@@ -12125,23 +12134,29 @@ afb0b259099ce5325d36ae6ade6be40e
 d15a5db24c1622db205b052f94d412b9
 fd1c6cb154223ed7cbc2e019aac29e79
 05ab783b0b31816769ae0151f2ab53ad
-20ef2e1b6f50bb0676f2866f0e7dd7f6
+500081f40febd6f4627bbc949334e92d
 a564968a87f4798f3465819c8e126dfe
-fbaf3dad7227a8d493ddb92fde2f7a65
+c9d854df6d078cfb6feb6f1b7682d9a5
 62c555addeaa107de995735a0e645867
-9dfefdceb6720a3ef40164e0333de8b4
+4a645bd6f93fdfa8f27f10d5c10427a8
 2df463c47c60db5b9781b39d2580aef2
-8e8b8e5cc7be3db0a69391506e2f775a
+091c888d145aa2575942b67e50656f36
 d712c40b32445aa78483036860d0012c
-600ce3d568cd50778998370e3058996d
+4af5d3b37731d01f414124ab2e133d2b
 b2432b245986211654e8e4313b51ddba
-0ea28e0eee10978579a596f83433a6b7
-e9069ebb80f2c0128a57da097dfe3aeb
-8d21e89d41d34814fd3383c2abf451a7
+8c1464e63bbd39fe20b24a99cefcc810
 7a6534a2531f9d88b73bbd971deff25d
-ebbace17f6b84f1268758fb7117fb6cc
+178aa13cd36665b5d49b1043eb3d69f0
+ac84923e2988f81f5250b760669ca582
+0445fc219b48189609714708893f2a3d
+550f11d38c86c54c5aa1ef15ab564f21
+81ab30eea2afbf669bbbbfae204bdbb5
+49fa61d8a012c84e1fafa2c4b9c98b9d
+ff73f2ecc846d46319f24d902083fbff
+49ad4d8ebdcab6f5923cc740675dce14
+f23d148a261535fd08091433cd3e2dfe
 cab889ec2376ed9065d53624da262972
-0181945d03ea6c4bdcf38dc69a1c0119
+e4866d604cd9bbd047756b97637ab0ee
 a872b9b3edc1ec0b5c01abb096ef0474
 8c06cb116d0ebbc74e4073f28fb079f2
 953b1d45d88f425d22ab68a71d87a4a2
@@ -12228,15 +12243,15 @@ b6fa08bc288664555cb0fd1d2db6f82b
 954fb510b16d36607b0d9f3d14caa188
 d1cff3e31a013a7f2a1240401ecee475
 332d4db5a1c8892423167c94946c6259
-a439dbd20136127c50b189ffd8ca56e2
+c7b447ba01937cc3d1a0e43ebfbcb348
 8bf4798ab518cd426e3bad726143e5fb
-f39934867128849b58873ef8a8602f7b
+da3fe28b76168a00f61f90a898dffb92
 5274f4a2b23f60787e919fcc0c834538
-a6006570637f9aa6b10044c4788a2e41
+426064eca6ec53ec68fba9e643acfb32
 6798b17416e7ef8ca0e253f0b83d3e2f
-08407591538d6998e4ecda71976a9430
+239d28cc911fb982df8f5c20047c659b
 66df89ee08918f0e5cfc011d46475f7f
-45260ec0db5cbcfe9e91f9b2264fa142
+d28085b0ad9c107aee0759a74cf329bf
 931386439562412c68d83fc6ea142d30
 1bbc7dfc3af1b30f45b6ad012699afa5
 63b9e33120d984c5d004973f80f3e0e8
@@ -12925,7 +12940,7 @@ f6c8a28dd17631108c1ac2aef4b57a1f
 f9535866c7d646605d5bf64a69a93c5c
 ec267012f599bb1ccca75c430bf390a2
 49887d8a8a2758f7fa58838695193c4c
-a15fe670b9eec7ed39876000ca96a684
+6d56e1ab729d3a2793bf290fa0d0e5f9
 6a030aaab2eea83d907b0e666d943e52
 32119cad5fc5f7e3ca0d7b0ccafb6152
 c8cae34d59d9736f0bdf8bcc3d04068d
@@ -13144,7 +13159,7 @@ f196d2a34545ac11189ac9156898f5a5
 a6d93267aa43067d2398e54c2a7bef60
 f893d03454df88a76385d481327ab9d7
 3e44d2445103498b0edcc203d7ff2104
-5da989489e43119fc2277baf8eb95809
+090a11a033b9cbee9d74b1aeaf3692a1
 f8319af9dec27e8393bdd27f39c1865c
 bc0d5178caa26f4a2a3d076a13c2369c
 0662df401d27dc09815551a173395ed5
@@ -13158,8 +13173,8 @@ e236f30d058e20f539e7334bca03b740
 ab4852c383782cba7c71cbe5edfd4cf4
 a91f78ea25bf684fce989fba9390d5bb
 f060652cebae4cb6518687be94e3d187
-454515d39a37d715e4b97bf5f4e18ad1
-de3f8b56258aabbd3277cce6de5ce400
+fbc1498b4828c93c809c43023b3725d3
+20924765e5dfda57e698f40f91ce95e8
 de1d798f0b114a834bd1b31bc8759c4a
 a8fc74bfbd5d5d14a80e98d253fa6db3
 4d66f927d643a92648dcef6d84fab45e
@@ -13665,7 +13680,7 @@ Nordfriese
 
 sync_safe
 1600000000
-830
+831
 0
 0
 0
@@ -14139,7 +14154,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1278
+1279
 0
 0
 0
@@ -15406,7 +15421,7 @@ kaputtnik
 
 sync_safe
 1600000000
-632
+634
 0
 0
 0
@@ -15918,7 +15933,7 @@ arch_stanton
 
 sync_safe
 1648329410
-476
+477
 1
 0
 0
@@ -16139,7 +16154,7 @@ tothxa
 
 sync_safe
 1735340602
-74
+79
 0
 0
 0
@@ -20734,7 +20749,7 @@ Nordfriese
 
 sync_safe
 1600000000
-734
+735
 0
 0
 0
@@ -23475,7 +23490,7 @@ Nordfriese
 
 sync_safe
 1670750534
-154
+155
 0
 0
 0
@@ -28330,7 +28345,7 @@ OIPUN
 
 sync_safe
 1733507938
-280
+281
 0
 0
 0

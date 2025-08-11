@@ -50,6 +50,14 @@ wl.Descriptions():new_productionsite_type {
 
     programs = {
         main = {
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _"working",
+            actions = {
+                "call=cutting_lianas",
+                "return=skipped"
+            }
+        },
+        cutting_lianas = {
             -- TRANSLATORS: Completed/Skipped/Did not start cutting liana because ...
             descname = _("cutting lianas"),
             actions = {

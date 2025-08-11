@@ -1510,7 +1510,34 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_quarry_advanced",
+            name = "europeans_quarry_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+                purpose = pgettext("europeans_building", "Cuts raw pieces of granite out of rocks in the vicinity."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+                note = pgettext("europeans_building", "The quarry needs rocks to cut within the work area."),
+            }
+        },
+        {
+            name = "europeans_quarry_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+                purpose = pgettext("europeans_building", "Cuts raw pieces of granite out of rocks in the vicinity."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Quarry
+                note = pgettext("europeans_building", "The quarry needs rocks to cut within the work area."),
+            }
+        },
+        {
+            name = "europeans_quarry_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
+                purpose = pgettext("europeans_building", "Cuts blocks of granite and marble out of rocks in the vicinity."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Quarry
+                note = pgettext("europeans_building", "The quarry needs rocks to cut within the work area.")
+            }
+        },
+        {
+            name = "europeans_quarry_level_4",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
                 purpose = pgettext("europeans_building", "Cuts blocks of granite and marble out of rocks in the vicinity."),

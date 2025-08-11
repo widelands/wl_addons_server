@@ -1,50 +1,33 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/barbarians/quarry/"
+local dirname = "tribes/buildings/productionsites/atlanteans/quarry/"
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_quarry_basic",
+    name = "europeans_quarry_level_2",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Basic Quarry"),
+    descname = pgettext("europeans_building", "Quarry Level 2"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
     animations = {
-      idle = {
-         hotspot = { 45, 48 },
-      },
-      unoccupied = {
-         hotspot = { 45, 48 },
-      },
-    },
-    spritesheets = {
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 45, 48 }
-      },
+        idle = {
+            hotspot = { 40, 49 },
+        },
     },
     
     size = "small",
     enhancement = {
-        name = "europeans_quarry_level_1",
+        name = "europeans_quarry_level_3",
         enhancement_cost = {
-            ironwood = 1,
-            balsa = 1,
-            rope = 1
+            brick = 1,
+            grout = 1,
+            marble = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1
+            brick = 1,
+            marble = 1
         }
-    },
-    buildcost = {
-        reed = 2,
-        log = 2
-    },
-    return_on_dismantle = {
-        scrap_wood = 2
     },
 
     aihints = {
@@ -54,7 +37,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_stonecutter_basic = 2
+        europeans_stonecutter_basic = 1,
+        europeans_stonecutter_advanced = 1
     },
 
     programs = {
@@ -73,9 +57,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=cut_granite on failure fail",
                 "call=cut_granite on failure fail",
+                "call=cut_marble on failure fail", -- This will find marble 2 out of 5 times
                 "call=cut_granite on failure fail",
-                "call=cut_granite on failure fail",
-                "sleep=duration:30s",
+                "call=cut_marble_quartz on failure fail", -- This will find marble 2 out of 5 times and quartz 1 out of 5 times
+                "sleep=duration:20s",
                 "return=skipped"
             }
         },
@@ -85,6 +70,23 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs granite",
                 "callworker=cut_granite"
+            }
+        },
+        cut_marble = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+           descname = pgettext("europeans_building", "quarrying marble"),
+            actions = {
+                "return=skipped unless economy needs marble",
+                "callworker=cut_marble"
+            }
+        },
+        cut_marble_quartz = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+           descname = pgettext("europeans_building", "quarrying quartz"),
+            actions = {
+                "return=skipped unless economy needs marble or economy needs quartz",
+                "callworker=cut_marble",
+                "produce=quartz"
             }
         },
     },

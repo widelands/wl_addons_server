@@ -55,10 +55,6 @@ wl.Descriptions():new_productionsite_type {
                 -- min. time total: 29.2 + 20 = 49.2 sec
                 -- max. time total: 68.8 + 20 = 88.8 sec
                 -- avg. time total: 49 + 20 = 69 sec
-                "return=skipped when economy needs balsa and not economy needs log",
-                "return=skipped when economy needs ironwood and not economy needs log",
-                "return=skipped when economy needs liana and not economy needs log",
-                "return=skipped when economy needs rubber and not economy needs log",
                 "return=skipped unless economy needs log or workers need experience",
                 "callworker=harvest",
                 "sleep=duration:20s"

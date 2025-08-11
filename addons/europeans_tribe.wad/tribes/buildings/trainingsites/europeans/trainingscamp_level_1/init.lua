@@ -35,7 +35,7 @@ wl.Descriptions():new_trainingsite_type {
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
-            granite = 1,
+            granite = 2,
             spidercloth = 1,
             diamond = 1,
             gold = 1
@@ -45,13 +45,14 @@ wl.Descriptions():new_trainingsite_type {
     aihints = {
         trainingsites_max_percent = 20,
         very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
-        prohibited_till = 3600
+        weak_ai_limit = 1,
+        prohibited_till = 3600,
+        forced_after = 7200
     },
 
     working_positions = {
-        europeans_recruit = 2
+        europeans_worker_basic = 2,
+        europeans_recruit = 1
     },
 
     inputs = {

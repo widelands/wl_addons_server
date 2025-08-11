@@ -45,7 +45,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs balsa",
                 "callworker=harvest_balsa",
-                "sleep=duration:12s"
+                "sleep=duration:15s"
             },
         },
         harvest_ironwood = {
@@ -54,7 +54,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs ironwood",
                 "callworker=harvest_ironwood",
-                "sleep=duration:12s"
+                "sleep=duration:15s"
             },
         },
         harvest_liana = {
@@ -63,7 +63,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs liana",
                 "callworker=harvest_liana",
-                "sleep=duration:30s",
+                "sleep=duration:15s",
             },
         },
         harvest_log = {
@@ -75,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs liana",
                 "return=skipped when economy needs rubber",
                 "callworker=harvest_log",
-                "sleep=duration:12s"
+                "sleep=duration:15s"
             },
         },
         harvest_rubber = {
@@ -84,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs rubber",
                 "callworker=harvest_rubber",
-                "sleep=duration:12s"
+                "sleep=duration:15s"
             },
         },
     },

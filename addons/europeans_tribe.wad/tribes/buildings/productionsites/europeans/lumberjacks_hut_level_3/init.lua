@@ -46,6 +46,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=felling_trees_idle",
                 "call=felling_trees",
                 "return=skipped"
             }
@@ -54,13 +55,18 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
-                "return=skipped when economy needs balsa and not economy needs log",
-                "return=skipped when economy needs ironwood and not economy needs log",
-                "return=skipped when economy needs liana and not economy needs log",
-                "return=skipped when economy needs rubber and not economy needs log",
                 "return=skipped unless economy needs log or workers need experience",
                 "callworker=harvest_tree",
                 "sleep=duration:20s"
+            }
+        },
+        felling_trees_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+            descname = pgettext("europeans_building", "felling trees"),
+            actions = {
+                "return=skipped when economy needs log",
+                "callworker=harvest_tree",
+                "sleep=duration:120s"
             }
         }
     },

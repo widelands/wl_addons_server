@@ -1,33 +1,40 @@
 push_textdomain("europeans_tribe.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/empire/quarry/"
+local dirname = "tribes/buildings/productionsites/frisians/quarry/"
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_quarry_advanced",
+    name = "europeans_quarry_level_4",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Advanced Quarry"),
+    descname = pgettext("europeans_building", "Quarry Level 4"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
+    animations = {
+        unoccupied = {
+            hotspot = {40, 53}
+        }
+    },
     spritesheets = {
-      idle = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 40, 57 },
-      },
+        idle = {
+            hotspot = {40, 71},
+            frames = 10,
+            columns = 5,
+            rows = 2,
+            fps = 10
+        }
     },
 
     size = "small",
 
     aihints = {
+        basic_amount = 1,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 4
+        weak_ai_limit = 2
     },
 
     working_positions = {
-        europeans_stonecutter_advanced = 1
+        europeans_stonecutter_advanced = 2
     },
 
     programs = {
@@ -37,8 +44,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "sleep=duration:10s",
                 "call=quarrying",
-                "sleep=duration:10s",
-                "call=mining",
                 "return=skipped"
             }
         },
@@ -46,28 +51,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
            descname = pgettext("europeans_building", "quarrying"),
             actions = {
-                "callworker=check_rocks",
                 "call=cut_granite on failure fail",
+                "call=cut_marble on failure fail", -- This will find marble 3 out of 6 times
                 "call=cut_granite on failure fail",
-                "call=cut_marble on failure fail", -- This will find marble 2 out of 6 times
+                "call=cut_marble_diamond on failure fail", -- This will find marble 3 out of 6 times and diamond 1 out of 7 times
                 "call=cut_granite on failure fail",
-                "call=cut_granite on failure fail",
-                "call=cut_marble on failure fail", -- This will find marble 2 out of 6 times
-                "sleep=duration:10s",
-                "return=skipped"
-            }
-        },
-        mining = {
-            -- TRANSLATORS: Completed/Skipped/Did not start mining because ...
-            descname = pgettext("europeans_building", "mining"),
-            actions = {
-                "callworker=check_stone",
-                "call=mine_granite on failure fail",
-                "call=mine_granite on failure fail",
-                "call=mine_marble on failure fail", -- This will find marble 2 out of 6 times
-                "call=mine_granite on failure fail",
-                "call=mine_granite on failure fail",
-                "call=mine_marble on failure fail", -- This will find marble 2 out of 6 times
+                "call=cut_marble_quartz on failure fail", -- This will find marble 3 out of 6 times and quartz 1 out of 7 times
                 "sleep=duration:10s",
                 "return=skipped"
             }
@@ -88,22 +77,24 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=cut_marble"
             }
         },
-        mine_granite = {
-            -- TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
-            descname = pgettext("europeans_building", "mining granite"),
+        cut_marble_diamond = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+           descname = pgettext("europeans_building", "quarrying diamond"),
             actions = {
-                "return=skipped unless economy needs granite",
-                "callworker=mine_granite"
+                "return=skipped unless economy needs marble or economy needs diamond",
+                "callworker=cut_marble",
+                "produce=diamond"
             }
         },
-        mine_marble = {
-            -- TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
-            descname = pgettext("europeans_building", "mining marble"),
+        cut_marble_quartz = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+           descname = pgettext("europeans_building", "quarrying quartz"),
             actions = {
-                "return=skipped unless economy needs marble",
-                "callworker=mine_marble"
+                "return=skipped unless economy needs marble or economy needs quartz",
+                "callworker=cut_marble",
+                "produce=quartz"
             }
-        }
+        },
     },
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource
