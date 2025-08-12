@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-11 03:12+0200\n"
+"POT-Creation-Date: 2025-08-12 03:12+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -1279,10 +1279,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_1/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Quarry Level 1"
-msgstr "Pou d'aigua de nivell 1"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_1/init.lua:72
@@ -1295,26 +1294,23 @@ msgstr "tallar marbre"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_2/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Quarry Level 2"
-msgstr "Pou d'aigua de nivell 2"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_2/init.lua:85
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_3/init.lua:88
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_4/init.lua:91
-#, fuzzy
 msgctxt "europeans_building"
 msgid "quarrying quartz"
-msgstr "tallar marbre"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_3/init.lua:9
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Quarry Level 3"
-msgstr "Pou d'aigua de nivell 3"
+msgstr ""
 
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_3/init.lua:100
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_4/init.lua:103
@@ -1333,10 +1329,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/quarry_level_4/init.lua:82
-#, fuzzy
 msgctxt "europeans_building"
 msgid "quarrying diamond"
-msgstr "extraure diamants"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:9
@@ -5459,7 +5454,3 @@ msgstr "Treballador avançat"
 msgctxt "europeans_worker"
 msgid "Basic Worker"
 msgstr "Treballador bàsic"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Quarry"
-#~ msgstr "Pedrera avançada"
