@@ -1,5 +1,5 @@
 2
-106
+107
 1v1_high_level_map_pool.wad
 1v1 High Level Map Pool
 For high level 1v1 Gameplay add the-x addon
@@ -255,7 +255,7 @@ verified
 Aalnase
 Aalnase
 1718728173
-213
+215
 1
 0
 0
@@ -1078,7 +1078,7 @@ Grand Fantasia ist, wie der Name schon sagt, eine komplett der Fantasie entsprun
 Aalnase
 Aalnase
 1700772630
-197
+198
 0
 0
 0
@@ -1597,7 +1597,7 @@ The gods who created this piece of landscape must be crazy. They proove your ski
 kaputtnik
 kaputtnik
 1715265495
-326
+327
 0
 0
 0
@@ -2050,7 +2050,7 @@ Keine Grenzen sind auf dieser Karte gesetzt, ob du ganz im Wald startetest als U
 the-x
 the-x
 1692450525
-225
+226
 2
 0
 0
@@ -2209,7 +2209,7 @@ Ohne Seefahrt kommt man nicht weit.
 Whiskey  Charlie Lima
 WeirdCatLord
 1674388992
-266
+267
 0
 0
 0
@@ -2373,7 +2373,7 @@ No description
 ___
 ___
 1751470921
-37
+38
 0
 0
 0
@@ -2502,7 +2502,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-854
+855
 0
 0
 0
@@ -3604,7 +3604,7 @@ If there is no enemy military building in sight, every new construction site is 
 kaputtnik
 kaputtnik
 1613666291
-351
+352
 0
 0
 0
@@ -3683,7 +3683,7 @@ Upgrade of smelting works and stonemason’s houses makes the Barbarians and Emp
 OIPUN
 OIPUN
 1719251296
-602
+603
 0
 0
 0
@@ -4088,7 +4088,7 @@ Basic Outpost
 blind
 blind3rdeye
 1700920458
-344
+345
 0
 0
 0
@@ -4262,7 +4262,7 @@ Start the game with one ships on the ocean, the bare minimum of ware and few wor
 OIPUN
 OIPUN
 1744125815
-71
+72
 0
 0
 0
@@ -4355,7 +4355,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-962
+963
 0
 0
 0
@@ -4659,6 +4659,39 @@ f96d1e4184ae81b733f779e0257d0726
 0378e611fc8cfcc195bfa80c2b8144f9
 0
 verified
+economy_modifier.wad
+Economy Modifier Addon
+This mod changes the production logic so that buildings only create wares or workers if they are required. Each ware has a predefined target value, which can still be modified during gameplay.
+MarkMcWire
+MarkMcWire
+1756202518
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1.0.0
+0
+36974
+tribes
+0
+0
+2
+addon
+postload.lua
+0
+2
+9e2e4f0128fa33cacf034da8f833fb27
+4985dc04aa2217fac256222db968c9a0
+0
+verified
 editor_add_markers.wad
 Editor: Place markers evenly on the map
 Add immovable markers evenly on the map to have some points of orientation. Uses Snowman for position 0,0 and Column for other positions.
@@ -4752,7 +4785,7 @@ Analysis tool: Compare the resources in the vicinity of player positions with a 
 kaputtnik
 kaputtnik
 1706043656
-184
+185
 0
 0
 0
@@ -4884,7 +4917,7 @@ A plugin for the editor to copy the contents of a map region to another region.
 Nordfriese
 Nordfriese
 1691145323
-116
+117
 0
 0
 0
@@ -5980,19 +6013,24 @@ MarkMcWire
 0
 0
 0
-1.5.5
+1.6.0
 21
-79910
+73996
 script
 0
 0
-6
+11
 addon
 debug.lua
+debug_buildcost.lua
 debug_buildings.lua
+debug_map.lua
+debug_militarysites.lua
 debug_roads.lua
 debug_seafaring.lua
+debug_warehouses.lua
 init.lua
+postload.lua
 23
 bg.mo
 ca.mo
@@ -6017,13 +6055,18 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-29
-97ff1dc42ef3a73d957bc19c636e75e7
-0cf4afeeeccfb8521c3f001ccbdb064b
-54a053a82234de4203c857c6296520a3
-f356600f34b100367e9e49b81bb442f7
-47bd77806e96ec625c05a3bda7e7fee6
-4437410413c580dbbb0a9cfce8d272a5
+34
+c78b52bf190f8500576b79474c5315c7
+ea7cf4ab1e217f8502b68ec34263ccc7
+7dd5d15fe4d97a3b53391a66c28fe5b9
+7f1d5ed3d4abf1d3a2c088b304eacc57
+422c237ca4460c1d53f01eb00e433f9e
+88166a29a86c4470366fe744453b8aae
+ba47ef7c442b16d49b117394d0477767
+4e0a8600b6539c23abb02739ae8bbea6
+aa36e95bc0994eaf9631422f01519183
+ad9aff812b286551e5cce6385efdd59a
+6d5f3d83c7059082148c8f8c615e953f
 bac9abc1728afa7e9187364b2fc38834
 656dd91a9ccd8a061cf036ab00a7b6b3
 6879ea98ac10306ef6b25c66693c020c
@@ -6055,7 +6098,7 @@ Addon that provides all current features (wares, workers and economy) from all c
 MarkMcWire
 MarkMcWire
 1749228542
-138
+139
 0
 0
 0
@@ -9588,7 +9631,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-1126
+1127
 0
 0
 0
@@ -13243,7 +13286,7 @@ The first player who has at least 4 fully trained soldiers in a warship wins the
 kaputtnik
 kaputtnik
 1731074892
-80
+81
 0
 0
 0
@@ -13322,7 +13365,7 @@ The first player who has at least 4 fully trained soldiers in his warehouses win
 kaputtnik
 kaputtnik
 1616241721
-302
+303
 0
 0
 0
@@ -13710,7 +13753,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-1410
+1412
 0
 0
 0
@@ -15122,7 +15165,7 @@ Increases all worker experience thresholds to 10 times the default value.
 Nordfriese
 Nordfriese
 1600000000
-452
+453
 0
 0
 0
@@ -15717,7 +15760,7 @@ Theme with larger fonts.
 Andy Alt
 arch_stanton
 1648329410
-482
+483
 1
 0
 0
@@ -16018,7 +16061,7 @@ Theme with larger fonts. This version changes scenario and help fonts too, but o
 Andy Alt, tothxa
 tothxa
 1682797554
-221
+222
 0
 1
 0
@@ -16103,7 +16146,7 @@ Renames some tribe units as they used to be called in the ancient Widelands days
 Nordfriese
 Nordfriese
 1750439348
-4
+5
 0
 0
 0
@@ -22609,7 +22652,7 @@ Reduce the game speed to 1× whenever a new message arrives in your inbox.
 Nordfriese
 Nordfriese
 1723377908
-151
+153
 0
 0
 0
@@ -22704,7 +22747,7 @@ Keep resource indicators until a mine starts to work in the area. Mines will gra
 tothxa
 tothxa
 1638011892
-326
+327
 0
 0
 0
@@ -22819,7 +22862,7 @@ A headquarters-like starting condition with fewer wares and workers.
 the-x
 the-x
 1622117845
-319
+321
 0
 0
 0
@@ -22908,7 +22951,7 @@ A headquarters-like starting condition with approximately 30% more wares and wor
 the-x
 the-x
 1622124029
-521
+522
 0
 0
 0
@@ -29176,7 +29219,7 @@ This addon needs tropics.wad.
 OIPUN
 OIPUN
 1731948448
-186
+187
 0
 0
 0
@@ -29713,7 +29756,7 @@ Make the ‘water’ resource more useful by giving wells a larger radius and a 
 Nordfriese
 Nordfriese
 1600000000
-676
+678
 0
 0
 0
@@ -30246,7 +30289,7 @@ Do you sometimes ask yourself: 'Where are my heroes?'. This add-on finds heroes 
 kaputtnik
 kaputtnik
 1708356983
-241
+242
 0
 0
 0
@@ -30967,7 +31010,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-593
+594
 0
 0
 0

@@ -12,4 +12,6 @@ include "addons/enhanced_debug_scripts.wad/debug_buildcost.lua"
 include "addons/enhanced_debug_scripts.wad/debug_seafaring.lua"
 include "addons/enhanced_debug_scripts.wad/debug_warehouses.lua"
 
+buildcost_modifier()
+
 pop_textdomain()
