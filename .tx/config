@@ -323,6 +323,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:economy-modifier-wad]
+file_filter            = po/economy_modifier.wad/<lang>.po
+source_file            = po/economy_modifier.wad/economy_modifier.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:editor-add-markers-wad]
 file_filter            = po/editor_add_markers.wad/<lang>.po
 source_file            = po/editor_add_markers.wad/editor_add_markers.wad.pot
