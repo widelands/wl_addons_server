@@ -478,35 +478,46 @@ function transfer_fields(player_number1, player_number2)
     local player1 = player_number1 > 0 and game.players[player_number1] or nil
     local player2 = player_number2 > 0 and game.players[player_number2] or nil
 
-    -- Alle Felder der Karte durchlaufen
+    -- verbotene Typen einmal definieren
+    local blocked_types = {
+        flag = true,
+        roadbase = true,
+        building = true,
+        constructionsite = true,
+        dismantlesite = true,
+        warehouse = true,
+        port = true,
+        militarysite = true,
+        trainingsite = true,
+        productionsite = true,
+    }
+
     for x = 0, map.width - 1 do
         for y = 0, map.height - 1 do
             local field = map:get_field(x, y)
-            
-            -- Skip unveränderliche Felder
-            if not field.immovable then
+            local imm = field.immovable
+
+            -- nur Felder bearbeiten, die nicht geblockt sind
+            if not imm or not blocked_types[imm.descr.type_name] then
                 if player1 and player2 then
-                    -- Felder von player1 an player2 übertragen
                     if field.owner == player1 then
                         player2:conquer(field, 0)
                     end
-                elseif player1 and not player2 then
-                    -- Alle Felder von player1 freigeben
+                elseif player1 then
                     if field.owner == player1 then
                         field.owner = nil
                     end
-                elseif player2 and not player1 then
-                    -- Alle Felder, die nicht player2 gehören, an player2 übertragen
+                elseif player2 then
                     if field.owner and field.owner ~= player2 then
                         player2:conquer(field, 0)
                     end
                 else
-                    -- Beide Spieler = 0 → Felder freigeben
                     field.owner = nil
                 end
             end
         end
     end
 end
+
 
 pop_textdomain()

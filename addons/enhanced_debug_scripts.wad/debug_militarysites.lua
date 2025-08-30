@@ -83,6 +83,50 @@ function force_militarysite(startx, starty, radius, player_number, size, index, 
 end
 
 -- ========================
+--  Militärische Gebäude entfernen
+-- ========================
+local valid_militarysite_types = {
+    militarysite   = true,
+}
+
+-- Reißt alle Militärgebäude in einer Region ab
+function dismantle_all_militarysites_in_region(startx, starty, radius)
+    local game, map = wl.Game(), wl.Game().map
+    for _, f in ipairs(map:get_field(startx, starty):region(radius or 0)) do
+        local b = f.immovable
+        if b and valid_militarysite_types[b.descr.type_name] then b:dismantle(true) end
+    end
+end
+
+-- Reißt alle eroberten Militärgebäude eines Spielers ab
+function dismantle_all_conquered_militarysites(player_number)
+    iterate_players(player_number, function(player)
+
+        -- Menge der Gebäudenamen, die zum Stamm des Spielers gehören
+        local tribe_buildings = {}
+        for _, tb in ipairs(player.tribe.buildings) do
+            tribe_buildings[tb.name] = true
+        end
+
+        -- Alle in der Engine registrierten Militärgebäude durchgehen
+        for _, gameplayer in ipairs(wl.Game().players) do
+            for _, builddesc in ipairs(gameplayer.tribe.buildings) do
+                -- Gebäude dieses Typs, die dem Spieler gehören
+                for _, building in ipairs(player:get_buildings(builddesc.name)) do
+                    -- prüfen, ob es nicht zum Stamm gehört → erobert
+                    if valid_militarysite_types[building.descr.type_name] and not tribe_buildings[building.descr.name] then
+                        print("Dismantling conquered military site: " ..
+                              building.descr.name ..
+                              " (owner=" .. player.number .. ")")
+                        building:dismantle(true)
+                    end
+                end
+            end
+        end
+    end)
+end
+
+-- ========================
 --  Kapazität / Präferenzen setzen
 -- ========================
 function set_militarysite_capacity(startx, starty, capacity)
@@ -94,6 +138,14 @@ function set_militarysite_capacity(startx, starty, capacity)
             building:set_capacity(capacity)
         end
     end
+end
+
+function set_all_militarysites_capacity(player_number, building_name, capacity)
+    apply_to_buildings(player_number or 0, building_name or "all", function(building)
+        if building.descr.type_name == "militarysite" then
+            building.capacity = capacity
+        end
+    end)
 end
 
 function set_militarysite_preference(startx, starty, preference)

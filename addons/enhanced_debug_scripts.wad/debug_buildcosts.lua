@@ -5,11 +5,11 @@ include "addons/enhanced_debug_scripts.wad/debug.lua"
 local tribe_rules = {
     amazons = {
         all = {
-            small  = { log={1,1}, granite={1,1}, ironwood={1,1}, balsa={1,1}, rope={1,1}, rubber={1,1} },
+            small  = { log={1,0}, granite={1,1}, ironwood={1,0}, balsa={1,0}, rope={1,0}, rubber={1,0} },
             mine   = { log={2,1}, granite={2,1}, ironwood={2,1}, balsa={2,1}, rope={2,1}, rubber={2,1} },
             medium = { log={2,1}, granite={2,1}, ironwood={2,1}, balsa={2,1}, rope={2,1}, rubber={2,1} },
-            big    = { log={3,2}, granite={3,2}, ironwood={3,2}, balsa={3,2}, rope={3,2}, rubber={3,2} },
-            port   = { log={3,2}, granite={3,2}, ironwood={3,2}, balsa={3,2}, rope={3,2}, rubber={3,2} },
+            big    = { log={3,1}, granite={3,2}, ironwood={3,1}, balsa={3,1}, rope={3,1}, rubber={3,1} },
+            port   = { log={3,1}, granite={3,2}, ironwood={3,1}, balsa={3,1}, rope={3,1}, rubber={3,1} },
         },
         militarysite = {
             medium = { gold={1,2}, quartz={1,2} },
@@ -18,11 +18,11 @@ local tribe_rules = {
     },
     atlanteans = {
         all = {
-            small  = { log={1,1}, granite={1,1}, planks={1,1}, spidercloth={1,1} },
-            mine   = { log={2,1}, granite={2,1}, planks={2,1}, spidercloth={2,1} },
-            medium = { log={2,1}, granite={2,1}, planks={2,1}, spidercloth={2,1} },
-            big    = { log={3,2}, granite={3,2}, planks={3,2}, spidercloth={3,2} },
-            port   = { log={3,2}, granite={3,2}, planks={3,2}, spidercloth={3,2} },
+            small  = { log={1,0}, granite={1,1}, planks={1,0}, spidercloth={1,0}, quartz={1,1} },
+            mine   = { log={2,1}, granite={2,1}, planks={2,1}, spidercloth={2,1}, quartz={2,1} },
+            medium = { log={2,1}, granite={2,1}, planks={2,1}, spidercloth={2,1}, quartz={2,1} },
+            big    = { log={3,1}, granite={3,2}, planks={3,1}, spidercloth={3,1}, quartz={3,2} },
+            port   = { log={3,1}, granite={3,2}, planks={3,1}, spidercloth={3,1}, quartz={3,2}, diamond={3,2} },
         },
         militarysite = {
             medium = { gold={1,2}, iron={1,2} },
@@ -31,11 +31,11 @@ local tribe_rules = {
     },
     barbarians = {
         all = {
-            small  = { log={1,1}, granite={1,1}, blackwood={1,1}, reed={1,1}, grout={1,1} },
+            small  = { log={1,0}, granite={1,1}, blackwood={1,0}, reed={1,0}, grout={1,1} },
             mine   = { log={2,1}, granite={2,1}, blackwood={2,1}, reed={2,1}, grout={2,1} },
             medium = { log={2,1}, granite={2,1}, blackwood={2,1}, reed={2,1}, grout={2,1} },
-            big    = { log={3,2}, granite={3,2}, blackwood={3,2}, reed={3,2}, grout={3,2} },
-            port   = { log={3,2}, granite={3,2}, blackwood={3,2}, reed={3,2}, grout={3,2} },
+            big    = { log={3,1}, granite={3,2}, blackwood={3,1}, reed={3,1}, grout={3,2} },
+            port   = { log={3,1}, granite={3,2}, blackwood={3,1}, reed={3,1}, grout={3,2} },
         },
         militarysite = {
             medium = { gold={1,2}, iron={1,2} },
@@ -44,11 +44,11 @@ local tribe_rules = {
     },
     empire = {
         all = {
-            small  = { log={1,1}, granite={1,1}, planks={1,1}, cloth={1,1}, marble={1,1} },
+            small  = { log={1,0}, granite={1,1}, planks={1,0}, cloth={1,0}, marble={1,1} },
             mine   = { log={2,1}, granite={2,1}, planks={2,1}, cloth={2,1}, marble={2,1} },
             medium = { log={2,1}, granite={2,1}, planks={2,1}, cloth={2,1}, marble_column={2,1} },
-            big    = { log={3,2}, granite={3,2}, planks={3,2}, cloth={3,2}, marble_column={3,2} },
-            port   = { log={3,2}, granite={3,2}, planks={3,2}, cloth={3,2}, marble_column={3,2} },
+            big    = { log={3,1}, granite={3,2}, planks={3,1}, cloth={3,1}, marble_column={3,2} },
+            port   = { log={3,1}, granite={3,2}, planks={3,1}, cloth={3,1}, marble_column={3,2} },
         },
         militarysite = {
             medium = { gold={1,2}, iron={1,2} },
@@ -57,11 +57,11 @@ local tribe_rules = {
     },
     frisians = {
         all = {
-            small  = { log={1,1}, granite={1,1}, reed={1,1}, brick={1,1} },
-            mine   = { log={2,1}, granite={2,2}, reed={2,1}, brick={2,1} },
-            medium = { log={2,1}, granite={2,1}, reed={2,1}, brick={2,1} },
-            big    = { log={3,2}, granite={3,2}, reed={3,2}, brick={3,2} },
-            port   = { log={3,2}, granite={3,2}, reed={3,2}, brick={3,2} },
+            small  = { log={1,0}, granite={1,1}, reed={1,0}, cloth={1,1}, brick={1,1} },
+            mine   = { log={2,1}, granite={2,1}, reed={2,1}, cloth={2,1}, brick={2,1} },
+            medium = { log={2,1}, granite={2,1}, reed={2,1}, cloth={2,1}, brick={2,1} },
+            big    = { log={3,1}, granite={3,2}, reed={3,1}, cloth={3,2}, brick={3,2} },
+            port   = { log={3,1}, granite={3,2}, reed={3,1}, cloth={3,2}, brick={3,2} },
         },
         militarysite = {
             medium = { gold={1,2}, iron={1,2} },
@@ -107,11 +107,15 @@ function apply_buildcost_ruleset(tribe, ruleset)
                     if category == "all" or building.type_name == category then
                         local size_rules = sizes[building.size]
                         if size_rules then
-                            for ware, amounts in pairs(size_rules) do
+                            for warename, amounts in pairs(size_rules) do
                                 -- skip, wenn das Gebäude die Ware selber produziert
-                                if not contains(building.output_ware_types, ware) then
-                                    d:modify_unit("building", building.name, "buildcost", "set", ware, amounts[1])
-                                    d:modify_unit("building", building.name, "return_on_dismantle", "set", ware, amounts[2])
+                                if not contains(building.output_ware_types, warename) then
+                                    d:modify_unit("building", building.name, "buildcost", "set", warename, amounts[1])
+                                    if amounts[2] > 0 then 
+                                        d:modify_unit("building", building.name, "return_on_dismantle", "set", warename, amounts[2])
+                                    else
+                                        d:modify_unit("building", building.name, "return_on_dismantle", "remove", warename)
+                                    end
                                 end
                             end
                         end

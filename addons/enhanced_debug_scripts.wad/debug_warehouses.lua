@@ -30,8 +30,13 @@ function force_port(startx, starty, radius, player_number, complete)
             local player = (player_number > 0) and game.players[player_number] or field.owner
             if not player then goto continue end
 
-            if (not field.immovable) or (field.immovable.descr.type_name ~= "warehouse") then
-                return force_building(portfield.x, portfield.y, 0, "port", complete)
+            if (field.immovable) and (field.immovable.descr.type_name == "warehouse") then
+                print ("There is already a Port/Warehouse on field: ", portfield.x, portfield.y)
+                return false
+            else
+                print ("New Port", player.tribe.port, "at: ", portfield.x, portfield.y)
+                if field.immovable then field.immovable:remove() end
+                return player:place_building(player.tribe.port, field, not (complete or false), true)
             end
         end
         ::continue::
@@ -42,7 +47,7 @@ end
 function force_headquarters_on_starting_spots(player_number)
     local game = wl.Game()
     local map = game.map
-    iterate_players(game, player_number or 0, function(player)
+    iterate_players(player_number or 0, function(player)
         for _, slot in ipairs(map.player_slots) do
             local sf = slot.starting_field
             if sf.owner == player and field_is_free_for_building(sf) then
@@ -59,7 +64,7 @@ function force_port_random(player_number)
 
     if not (map.allows_seafaring and map.number_of_port_spaces > 0) then return end
 
-    iterate_players(game, player_number or 0, function(player)
+    iterate_players(player_number or 0, function(player)
         if player.tribe.port then
             local random_idx = math.random(map.number_of_port_spaces)
             for i, portfield in pairs(map.port_spaces) do
