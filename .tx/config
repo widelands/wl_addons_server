@@ -90,6 +90,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Hellhole-isles-wad]
+file_filter            = po/Hellhole_isles.wad/<lang>.po
+source_file            = po/Hellhole_isles.wad/Hellhole_isles.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Hills-N-rocks-wad]
 file_filter            = po/Hills_N_rocks.wad/<lang>.po
 source_file            = po/Hills_N_rocks.wad/Hills_N_rocks.wad.pot

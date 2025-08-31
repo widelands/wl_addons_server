@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-28 03:11+0200\n"
+"POT-Creation-Date: 2025-08-31 03:12+0200\n"
 "PO-Revision-Date: 2025-08-27 12:08+0000\n"
+"Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: addons/economy_modifier.wad/addon:2
 msgid "Economy Modifier Addon"
-msgstr ""
+msgstr "Add-on voor Economie-aanpassing"
 
 #: addons/economy_modifier.wad/addon:3
 msgid ""
@@ -27,32 +31,35 @@ msgid ""
 "workers if they are required. Each ware has a predefined target value, which "
 "can still be modified during gameplay."
 msgstr ""
+"Deze mod verandert de productielogica zodat gebouwen alleen goederen of "
+"arbeiders produceren als dat nodig is. Elk product heeft een vooraf bepaalde "
+"streefwaarde, die tijdens het spel nog kan worden aangepast."
 
 #: addons/economy_modifier.wad/postload.lua:262
 msgid "gathering water"
-msgstr ""
+msgstr "water verzamelen"
 
 #: addons/economy_modifier.wad/postload.lua:271
 #: addons/economy_modifier.wad/postload.lua:280
 #: addons/economy_modifier.wad/postload.lua:289
 #: addons/economy_modifier.wad/postload.lua:298
 msgid "mining water"
-msgstr ""
+msgstr "water winnen"
 
 #: addons/economy_modifier.wad/postload.lua:309
 msgid "cutting granite"
-msgstr ""
+msgstr "graniet zagen"
 
 #: addons/economy_modifier.wad/postload.lua:316
 #: addons/economy_modifier.wad/postload.lua:323
 #: addons/economy_modifier.wad/postload.lua:330
 #: addons/economy_modifier.wad/postload.lua:344
 msgid "quarrying granite"
-msgstr ""
+msgstr "graniet delven"
 
 #: addons/economy_modifier.wad/postload.lua:337
 msgid "quarrying marble"
-msgstr ""
+msgstr "marmer delven"
 
 #: addons/economy_modifier.wad/postload.lua:353
 #: addons/economy_modifier.wad/postload.lua:388
@@ -60,19 +67,19 @@ msgstr ""
 #: addons/economy_modifier.wad/postload.lua:416
 #: addons/economy_modifier.wad/postload.lua:430
 msgid "planting trees"
-msgstr ""
+msgstr "bomen planten"
 
 #: addons/economy_modifier.wad/postload.lua:360
 msgid "harvesting balsa"
-msgstr ""
+msgstr "balsa oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:367
 msgid "harvesting ironwood"
-msgstr ""
+msgstr "ijzerhout oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:374
 msgid "harvesting rubber"
-msgstr ""
+msgstr "rubber oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:381
 #: addons/economy_modifier.wad/postload.lua:395
@@ -80,93 +87,93 @@ msgstr ""
 #: addons/economy_modifier.wad/postload.lua:423
 #: addons/economy_modifier.wad/postload.lua:437
 msgid "felling trees"
-msgstr ""
+msgstr "bomen kappen"
 
 #: addons/economy_modifier.wad/postload.lua:446
 msgid "gathering fish"
-msgstr ""
+msgstr "vis verzamelen"
 
 #: addons/economy_modifier.wad/postload.lua:453
 #: addons/economy_modifier.wad/postload.lua:460
 msgid "breeding fish"
-msgstr ""
+msgstr "vis kweken"
 
 #: addons/economy_modifier.wad/postload.lua:467
 #: addons/economy_modifier.wad/postload.lua:474
 #: addons/economy_modifier.wad/postload.lua:481
 #: addons/economy_modifier.wad/postload.lua:488
 msgid "fishing"
-msgstr ""
+msgstr "vissen"
 
 #: addons/economy_modifier.wad/postload.lua:497
 msgid "gathering meat"
-msgstr ""
+msgstr "vlees verzamelen"
 
 #: addons/economy_modifier.wad/postload.lua:504
 msgid "releasing game"
-msgstr ""
+msgstr "wild loslaten"
 
 #: addons/economy_modifier.wad/postload.lua:511
 #: addons/economy_modifier.wad/postload.lua:525
 #: addons/economy_modifier.wad/postload.lua:532
 #: addons/economy_modifier.wad/postload.lua:539
 msgid "hunting"
-msgstr ""
+msgstr "jagen"
 
 #: addons/economy_modifier.wad/postload.lua:518
 msgid "releasing"
-msgstr ""
+msgstr "loslaten"
 
 #: addons/economy_modifier.wad/postload.lua:557
 msgid "making honey"
-msgstr ""
+msgstr "honing maken"
 
 #: addons/economy_modifier.wad/postload.lua:566
 msgid "harvesting cassava"
-msgstr ""
+msgstr "cassave oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:573
 msgid "harvesting cocoa"
-msgstr ""
+msgstr "cacao oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:580
 msgid "harvesting blackroot"
-msgstr ""
+msgstr "helmkruid oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:587
 msgid "harvesting corn"
-msgstr ""
+msgstr "maïs oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:594
 #: addons/economy_modifier.wad/postload.lua:609
 msgid "harvesting wheat"
-msgstr ""
+msgstr "tarwe oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:602
 #: addons/economy_modifier.wad/postload.lua:639
 msgid "harvesting reed"
-msgstr ""
+msgstr "riet oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:616
 msgid "harvesting grapes"
-msgstr ""
+msgstr "druiven oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:623
 msgid "gathering berries"
-msgstr ""
+msgstr "bessen verzamelen"
 
 #: addons/economy_modifier.wad/postload.lua:630
 msgid "harvesting barley"
-msgstr ""
+msgstr "gerst oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:648
 msgid "making a rope"
-msgstr ""
+msgstr "touw maken"
 
 #: addons/economy_modifier.wad/postload.lua:657
 msgid "grinding blackroot"
-msgstr ""
+msgstr "helmkruid malen"
 
 #: addons/economy_modifier.wad/postload.lua:668
 msgid "making wine"
-msgstr ""
+msgstr "wijn maken"
