@@ -1,6 +1,14 @@
 [main]
 host = https://www.transifex.com
 
+[o:widelands:p:widelands-addons:r:16-Kingdoms-wad]
+file_filter            = po/16_Kingdoms.wad/<lang>.po
+source_file            = po/16_Kingdoms.wad/16_Kingdoms.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:1v1-high-level-map-pool-wad]
 file_filter            = po/1v1_high_level_map_pool.wad/<lang>.po
 source_file            = po/1v1_high_level_map_pool.wad/1v1_high_level_map_pool.wad.pot
