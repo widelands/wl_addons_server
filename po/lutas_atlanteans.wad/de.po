@@ -5,15 +5,17 @@
 #
 # Translators:
 # Ondřej Itřech, 2025
+# Iwan Gabovitch, 2025
+# Stephan Lutz <stephan-lutz@gmx.de>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 03:12+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
-"Last-Translator: Ondřej Itřech, 2025\n"
+"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -1187,6 +1189,9 @@ msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
 "an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Am Anfang des Spieles steht nur ein Lagerhaus und das absolute Minimum für "
+"den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
+"erfolgreich starten."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 msgid "Be careful"
@@ -1204,7 +1209,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr ""
+msgstr "Mühsamer Vorposten"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -1703,7 +1708,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:12
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "‘%1%’<br>(%2%)"
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Granite, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:110
@@ -2666,7 +2671,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3084
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3128
 msgid "Coal veins contain coal that can be dug up by coal mines."
-msgstr ""
+msgstr "Kohleadern enthalten Kohle, die von Kohleminen gefördert werden kann."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ resource indicator: Coal, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:942

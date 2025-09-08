@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Juanjo, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
+"Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -38,7 +42,7 @@ msgstr ""
 #: addons/new_soldiers.wad/atlanteans_soldier/init.lua:107
 msgctxt "atlanteans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldat"
 
 #. TRANSLATORS: This is a Barbarian worker name used in lists of workers
 #: addons/new_soldiers.wad/barbarians_soldier/init.lua:107
@@ -55,13 +59,13 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:64
 msgid "sleeping"
-msgstr ""
+msgstr "dormir"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:72
 msgctxt "empire_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "promoure l'evasió del soldat de nivell 0 a nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:85
@@ -97,7 +101,7 @@ msgstr ""
 #: addons/new_soldiers.wad/postload.lua:9
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "«%1%»<br>(%2%)"
 
 #: addons/new_soldiers.wad/postload.lua:19
 msgid "This shield is used for defense training."
@@ -111,7 +115,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/new_soldiers.wad/postload.lua:40
 msgid "working"
-msgstr ""
+msgstr "treballar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/new_soldiers.wad/postload.lua:57

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:14+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -1075,7 +1075,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/workshop_basic/init.lua:72
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:80
 msgid "working"
-msgstr ""
+msgstr "treballar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a copper armor because ...
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:68
@@ -1112,12 +1112,12 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:92
 msgid "No Fields"
-msgstr ""
+msgstr "No hi ha camps"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:93
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:79
 msgid "Out of Fields"
-msgstr ""
+msgstr "Sense camps"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:94
 msgctxt "sumatran_building"
@@ -1225,7 +1225,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/sumatran_tribe.wad/productionsites/furnace/init.lua:89
 msgid "smelting iron"
-msgstr ""
+msgstr "fondre ferro"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting copper because ...
 #: addons/sumatran_tribe.wad/productionsites/furnace/init.lua:103
@@ -1247,7 +1247,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:68
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:88
 msgid "fishing"
-msgstr ""
+msgstr "pescar"
 
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:88
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:101
@@ -1322,7 +1322,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:67
 msgid "preparing a meal"
-msgstr ""
+msgstr "preparar un àpat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start throwing out overflows because ...
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:86
@@ -1415,7 +1415,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:48
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:61
 msgid "scouting"
-msgstr ""
+msgstr "explorar"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/sewing_workshop/init.lua:8
@@ -1448,7 +1448,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:91
 msgid "constructing a ship"
-msgstr ""
+msgstr "construir un vaixell"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:8
@@ -1463,11 +1463,11 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:53
 msgid "No Rocks"
-msgstr ""
+msgstr "No hi ha roques"
 
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:54
 msgid "Out of Rocks"
-msgstr ""
+msgstr "Sense roques"
 
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:55
 msgctxt "sumatran_building"
@@ -1528,11 +1528,11 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:56
 msgid "No Water"
-msgstr ""
+msgstr "No hi ha aigua."
 
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:57
 msgid "Out of Water"
-msgstr ""
+msgstr "Sense aigua"
 
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:58
 msgctxt "sumatran_building"
@@ -1600,7 +1600,7 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:87
 msgid "Out of Trees"
-msgstr ""
+msgstr "Sense arbres"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:88
 msgctxt "sumatran_building"
@@ -1691,7 +1691,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/basic_outpost.lua:11
 msgid "Basic Outpost"
-msgstr ""
+msgstr "Post avançat bàsic"
 
 #. TRANSLATORS: This is the tooltip for the "Basics" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/basic_outpost.lua:13
@@ -1700,11 +1700,14 @@ msgid ""
 "enough to create a few tools to help establish a full economy. Warning: the "
 "AI can’t successfully start from this."
 msgstr ""
+"Comença la partida amb el quarter general i una selecció petita de béns, els "
+"suficients per a crear algunes eines i poder establir una economia completa. "
+"Avís: amb la posició inicial que té, la IA no té èxit."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua:11
 msgid "Castaways"
-msgstr ""
+msgstr "Nàufrags"
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua:13
@@ -1718,7 +1721,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "Descoberta"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:13
@@ -1739,7 +1742,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/headquarters.lua:11
 msgid "Headquarters"
-msgstr ""
+msgstr "Quarter general"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/headquarters.lua:13
@@ -1749,7 +1752,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua:11
 msgid "New World"
-msgstr ""
+msgstr "Un món nou"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua:13
@@ -1784,7 +1787,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr ""
+msgstr "Post de mercaderies en dificultats"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -1792,6 +1795,9 @@ msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Comenceu la partida només amb un quarter general i molts pocs béns per "
+"desenvolupar l'economia. Avís: les IA poden no desenvolupar-se adequadament "
+"si comencen amb aquesta condició inicial."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
@@ -1830,13 +1836,14 @@ msgstr[1] ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
-msgstr ""
+msgstr "Post de mercaderies"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/trading_outpost.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""
+"Si el jugador es queda sense béns importants, en podrà aconseguir aquí."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/village.lua:11
@@ -1858,7 +1865,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:91
 #: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:83
 msgid "sleeping"
-msgstr ""
+msgstr "dormir"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:99
@@ -2275,7 +2282,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2067
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "L'aigua és essencial per a la vida!"
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Water, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:191
@@ -2953,7 +2960,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2772
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2779
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Les restes d'un edifici destruït."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Palm Leaves
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:908
@@ -2999,13 +3006,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:950
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2828
 msgid "This reed field has just been planted."
-msgstr ""
+msgstr "Aquest camp de juncs acaba de plantar-se."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:957
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2835
 msgid "This reed field is growing."
-msgstr ""
+msgstr "El camp de juncs està creixent."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:964
@@ -3017,7 +3024,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:971
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2849
 msgid "This reed field is ready for harvesting."
-msgstr ""
+msgstr "Aquest camp de juncs ja es pot segar."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Rubber Tree Sapling
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:978
@@ -3127,7 +3134,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1090
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2968
 msgid "There are no resources in the ground here."
-msgstr ""
+msgstr "Aquí no hi ha recursos."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Water
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1097
@@ -3142,12 +3149,14 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3027
 msgid "Coal veins contain coal that can be dug up by coal mines."
 msgstr ""
+"Els filons de carbó contenen minerals que es poden extreure amb mines de "
+"carbó."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1107
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2985
 msgid "There is only a little bit of coal here."
-msgstr ""
+msgstr "Aquí només hi ha una mica de carbó."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1116
@@ -3198,7 +3207,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1151
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3029
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Aquí hi ha molt carbó."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1162
@@ -3222,7 +3231,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1192
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3070
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "En aquest lloc es construeix un vaixell."
 
 #. TRANSLATORS: Lore helptext for a Sumatran production site: Headquarters
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1204

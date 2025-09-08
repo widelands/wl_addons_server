@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# LINUX-SAUNA, 2025
+# Atte Timonen, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-20 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
+"Last-Translator: Atte Timonen, 2025\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -136,7 +141,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/3_workers/soldier/init.lua:107
 msgctxt "europeans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Sotilas"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_military_extension.wad/3_workers/trainer_advanced/init.lua:9
@@ -488,7 +493,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:219
 msgctxt "europeans_building"
 msgid "No soldier to train!"
-msgstr ""
+msgstr "Ei sotilaita koulutettavaksi!"
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:153
@@ -593,13 +598,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:72
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
-msgstr ""
+msgstr "Rajalinnakkeesi havaitsi hyökkääjän."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
-msgstr ""
+msgstr "Rajalinnakkeeseesi on hyökätty."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:76
@@ -653,37 +658,37 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Barrier"
-msgstr ""
+msgstr "Edistynyt muuri"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
-msgstr ""
+msgstr "Sotilaasi ovat ottaneet haltuun edistyneen muurisi."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:49
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
-msgstr ""
+msgstr "Edistyneellä muurillasi on havaittu vihollinen."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:51
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
-msgstr ""
+msgstr "Edistynyt muurisi on hyökkäyksen alaisena."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
-msgstr ""
+msgstr "Vihollinen kukisti sotilaasi edistyneellä muurilla."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
-msgstr ""
+msgstr "Sotilaasi kukistivat vihollisen edistyneellä muurilla."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:9
@@ -772,7 +777,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr ""
+msgstr "Edistynyt linna"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:47
@@ -850,31 +855,31 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your sentry."
-msgstr ""
+msgstr "Sotilaasi ovat saapuneet vartiomökillesi."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:49
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
-msgstr ""
+msgstr "Vartiomökkisi havaitsi vastustajan."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:51
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
-msgstr ""
+msgstr "Vartiomökkiisi on hyökätty."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
-msgstr ""
+msgstr "Vihollisen sotilaat päihittivät sotilaasi vartiomökillä."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
-msgstr ""
+msgstr "Sotilaasi päihittivät vihollisen vartiomökillä."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:9
@@ -2301,7 +2306,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2167
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
-msgstr ""
+msgstr "Toimii varuskuntana laajentaen valtakuntasi vaikutusaluetta."
 
 #. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
 #. TRANSLATORS: Note helptext for an Europeans military site: Sentry
@@ -2683,25 +2688,25 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2265
 msgctxt "europeans"
 msgid "Worker missing"
-msgstr ""
+msgstr "Työläinen puuttuu"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2267
 msgctxt "europeans"
 msgid "Worker is coming"
-msgstr ""
+msgstr "Työläinen on matkalla"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2269
 msgctxt "europeans"
 msgid "Workers missing"
-msgstr ""
+msgstr "Työläiset puuttuu"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2271
 msgctxt "europeans"
 msgid "Workers are coming"
-msgstr ""
+msgstr "Työläiset ovat matkalla"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2273

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-20 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -98,7 +98,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/2_wares/ore/init.lua:8
 msgctxt "ware"
 msgid "Ore"
-msgstr ""
+msgstr "Mineral"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_military_extension.wad/2_wares/scrap_metal/init.lua:8
@@ -140,19 +140,19 @@ msgstr ""
 #: addons/europeans_military_extension.wad/3_workers/soldier/init.lua:107
 msgctxt "europeans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldat"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_military_extension.wad/3_workers/trainer_advanced/init.lua:9
 msgctxt "europeans_worker"
 msgid "Advanced Trainer"
-msgstr ""
+msgstr "Entrenador avançat"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_military_extension.wad/3_workers/trainer_basic/init.lua:9
 msgctxt "europeans_worker"
 msgid "Basic Trainer"
-msgstr ""
+msgstr "Entrenador bàsic"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:9
@@ -174,7 +174,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:58
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:78
 msgid "working"
-msgstr ""
+msgstr "treballar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing blackwood for input wares because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:83
@@ -217,7 +217,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_basic/init.lua:107
 msgctxt "europeans_building"
 msgid "forging a wooden spear"
-msgstr ""
+msgstr "forjar una llança de fusta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing basic armor for input wares because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:163
@@ -286,21 +286,21 @@ msgstr ""
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_basic/init.lua:123
 msgctxt "europeans_building"
 msgid "forging a mask"
-msgstr ""
+msgstr "forjar una màscara"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:302
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_advanced/init.lua:143
 msgctxt "europeans_building"
 msgid "forging a steel shield"
-msgstr ""
+msgstr "forjar un escut d'acer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:318
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_advanced/init.lua:159
 msgctxt "europeans_building"
 msgid "forging an advanced shield"
-msgstr ""
+msgstr "forjar un escut avançat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:334
@@ -309,21 +309,21 @@ msgstr ""
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_basic/init.lua:136
 msgctxt "europeans_building"
 msgid "forging an advanced spear"
-msgstr ""
+msgstr "forjar una llança millorada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:351
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_advanced/init.lua:194
 msgctxt "europeans_building"
 msgid "forging a broad ax"
-msgstr ""
+msgstr "forjar una destral ampla"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:368
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_advanced/init.lua:213
 msgctxt "europeans_building"
 msgid "forging a broadsword"
-msgstr ""
+msgstr "forjar un sabre"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_basic/init.lua:9
@@ -347,7 +347,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Forn de metalls avançat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling metal_alloy because ...
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_advanced/init.lua:69
@@ -360,13 +360,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_basic/init.lua:71
 msgctxt "europeans_building"
 msgid "smelting ore"
-msgstr ""
+msgstr "fondre minerals"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/5_productionsites/smelting_works_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Smelting Works"
-msgstr ""
+msgstr "Forn de metalls bàsic"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/5_productionsites/smithy_weapons_advanced/init.lua:9
@@ -405,7 +405,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:106
 #: addons/europeans_military_extension.wad/6_tradingsites/store_big/init.lua:117
 msgid "trading"
-msgstr ""
+msgstr "comerciar"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:9
@@ -418,19 +418,19 @@ msgstr ""
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:86
 msgctxt "europeans_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "reclutar un soldat"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Trainingscamp"
-msgstr ""
+msgstr "Camp d'entrenament bàsic"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Battle Arena"
-msgstr ""
+msgstr "Palestra d'entrenament bàsica"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:85
@@ -438,7 +438,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:77
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:55
 msgid "sleeping"
-msgstr ""
+msgstr "dormir"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:94
@@ -456,7 +456,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:74
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 0 to level 1"
-msgstr ""
+msgstr "promoure la salut del soldat de nivell 0 a nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:113
@@ -465,7 +465,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:109
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr ""
+msgstr "promoure l'atac del soldat de nivell 0 a nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:124
@@ -474,7 +474,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:144
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "promoure la defensa del soldat de nivell 0 a nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:135
@@ -483,7 +483,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:179
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "promoure l'evasió del soldat de nivell 0 a nivell 1"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:151
@@ -492,7 +492,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:219
 msgctxt "europeans_building"
 msgid "No soldier to train!"
-msgstr ""
+msgstr "Sense soldats per entrenar"
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:153
@@ -501,13 +501,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:221
 msgctxt "europeans_building"
 msgid "No soldier found for this training level!"
-msgstr ""
+msgstr "No s'ha trobat cap soldat per entrenar aquest nivell."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Normal Battle Arena"
-msgstr ""
+msgstr "Palestra d'entrenament normal"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:125
@@ -515,7 +515,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:85
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr ""
+msgstr "promoure la salut del soldat de nivell 1 a nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:148
@@ -523,7 +523,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:120
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr ""
+msgstr "promoure l'atac del soldat de nivell 1 a nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:171
@@ -531,7 +531,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:155
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "promoure la defensa del soldat de nivell 1 a nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_1/init.lua:194
@@ -539,41 +539,41 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:190
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "promoure l'evasió del soldat de nivell 1 a nivell 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Battle Arena"
-msgstr ""
+msgstr "Palestra d'entrenament avançada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:119
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:97
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 2 to level 3"
-msgstr ""
+msgstr "promoure la salut del soldat de nivell 2 a nivell 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:154
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:132
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr ""
+msgstr "promoure l'atac del soldat de nivell 2 a nivell 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:189
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:167
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 2 to level 3"
-msgstr ""
+msgstr "promoure la defensa del soldat de nivell 2 a nivell 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:224
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:202
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 2 to level 3"
-msgstr ""
+msgstr "promoure l'evasió del soldat de nivell 2 a nivell 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:9
@@ -591,103 +591,103 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:70
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your barrier."
-msgstr ""
+msgstr "Els soldats han ocupat la vostra caserna."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:72
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
-msgstr ""
+msgstr "La caserna ha vist un agressor."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
-msgstr ""
+msgstr "Estan atacant la caserna."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the barrier."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats de la caserna."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:78
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the barrier."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic a la caserna."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Outpost"
-msgstr ""
+msgstr "Post avançat"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_1/init.lua:59
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your outpost."
-msgstr ""
+msgstr "Els soldats han ocupat el vostre post avançat."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_1/init.lua:61
 msgctxt "europeans_building"
 msgid "Your outpost discovered an aggressor."
-msgstr ""
+msgstr "El post avançat ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_1/init.lua:63
 msgctxt "europeans_building"
 msgid "Your outpost is under attack."
-msgstr ""
+msgstr "Estan atacant el post avançat."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_1/init.lua:65
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the outpost."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats del post avançat."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_1/init.lua:67
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the outpost."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic al post avançat."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Barrier"
-msgstr ""
+msgstr "Caserna avançada"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
-msgstr ""
+msgstr "Els soldats han ocupat la vostra caserna avançada."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:49
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
-msgstr ""
+msgstr "La caserna avançada ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:51
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
-msgstr ""
+msgstr "Estan atacant la caserna avançada."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats de la caserna avançada."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic a la caserna avançada."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:9
@@ -700,35 +700,35 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:70
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your castle."
-msgstr ""
+msgstr "Els soldats han ocupat el vostre castell."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:71
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:72
 msgctxt "europeans_building"
 msgid "Your castle discovered an aggressor."
-msgstr ""
+msgstr "El castell ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:73
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:74
 msgctxt "europeans_building"
 msgid "Your castle is under attack."
-msgstr ""
+msgstr "Estan atacant el castell."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:75
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:76
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the castle."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats del castell."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:77
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:78
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the castle."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic al castell."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:9
@@ -746,67 +746,67 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_2/init.lua:65
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your fortress."
-msgstr ""
+msgstr "Els soldats han ocupat la vostra fortalesa."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_2/init.lua:67
 msgctxt "europeans_building"
 msgid "Your fortress discovered an aggressor."
-msgstr ""
+msgstr "La fortalesa ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_2/init.lua:69
 msgctxt "europeans_building"
 msgid "Your fortress is under attack."
-msgstr ""
+msgstr "Estan atacant la fortalesa."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_2/init.lua:71
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the fortress."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats de la fortalesa."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_2/init.lua:73
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the fortress."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic a la fortalesa."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr ""
+msgstr "Castell avançat"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced castle."
-msgstr ""
+msgstr "Els soldats han ocupat el vostre castell avançat."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:49
 msgctxt "europeans_building"
 msgid "Your advanced castle discovered an aggressor."
-msgstr ""
+msgstr "El castell avançat ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:51
 msgctxt "europeans_building"
 msgid "Your advanced castle is under attack."
-msgstr ""
+msgstr "Estan atacant el vostre castell avançat."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced castle."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats del castell avançat."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced castle."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic al castell avançat."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:9
@@ -818,67 +818,67 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:70
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your guardhouse."
-msgstr ""
+msgstr "Els soldats han ocupat la vostra casa del guaita."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:72
 msgctxt "europeans_building"
 msgid "Your guardhouse discovered an aggressor."
-msgstr ""
+msgstr "La casa del guaita ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your guardhouse is under attack."
-msgstr ""
+msgstr "Estan atacant la casa del guaita."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the guardhouse."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats de la casa del guaita."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:78
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the guardhouse."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic a la casa del guaita."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Sentry"
-msgstr ""
+msgstr "Guarda sentinella avançada"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your sentry."
-msgstr ""
+msgstr "Els soldats han ocupat la vostra guarda sentinella."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:49
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
-msgstr ""
+msgstr "La guarda sentinella ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:51
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
-msgstr ""
+msgstr "Estan atacant la guarda sentinella."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats de la guarda sentinella."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_level_1/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic a la guarda sentinella."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:9
@@ -890,67 +890,67 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:70
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your medium tower."
-msgstr ""
+msgstr "Els soldats han ocupat la vostra torre mitjana."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:72
 msgctxt "europeans_building"
 msgid "Your medium tower discovered an aggressor."
-msgstr ""
+msgstr "La torre mitjana ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your medium tower is under attack."
-msgstr ""
+msgstr "Estan atacant la torre mitjana."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the medium tower."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats de la torre mitjana."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_basic/init.lua:78
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the medium tower."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic a la torre mitjana."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/tower_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Tower"
-msgstr ""
+msgstr "Torre avançada"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_level_1/init.lua:53
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced tower."
-msgstr ""
+msgstr "Els soldats han ocupat la vostra torre avançada."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_level_1/init.lua:55
 msgctxt "europeans_building"
 msgid "Your advanced tower discovered an aggressor."
-msgstr ""
+msgstr "La torre avançada ha vist un agressor."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_level_1/init.lua:57
 msgctxt "europeans_building"
 msgid "Your advanced tower is under attack."
-msgstr ""
+msgstr "Estan atacant la torre avançada."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_level_1/init.lua:59
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced tower."
-msgstr ""
+msgstr "L'enemic ha vençut els soldats de la torre avançada."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_level_1/init.lua:61
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced tower."
-msgstr ""
+msgstr "Els soldats han vençut l'enemic a la torre avançada."
 
 #: addons/europeans_military_extension.wad/addon:2
 msgid "Europeans Tribe (Military Extension)"
@@ -965,7 +965,7 @@ msgstr ""
 
 #: addons/europeans_military_extension.wad/tribes/initialization/init.lua:10
 msgid "Mark McWire"
-msgstr ""
+msgstr "Mark McWire"
 
 #. TRANSLATORS: This is a tribe name
 #: addons/europeans_military_extension.wad/tribes/initialization/init.lua:12
@@ -974,23 +974,23 @@ msgstr ""
 
 #: addons/europeans_military_extension.wad/tribes/initialization/init.lua:13
 msgid "This is the culture of the Europeans."
-msgstr ""
+msgstr "Aquesta és la cultura dels europeus."
 
 #: addons/europeans_military_extension.wad/tribes/initialization/tips.lua:4
 msgid "This is the experimental Europeans tribe."
-msgstr ""
+msgstr "Aquesta és la cultura experimental dels Europeus."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:12
 msgctxt "europeans_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "«%1%»<br>(%2%)"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:111
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "L'aigua és essencial per a la vida!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:113
@@ -1000,6 +1000,8 @@ msgid ""
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
+"Molts edificis i treballadors fan servir aigua: el guarda forestal, les "
+"masoveries, les granges, la fleca i la cerveseria."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:124
@@ -1008,6 +1010,7 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Els troncs són un material de construcció bàsic. Es produeixen talant arbres."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:126
@@ -1016,18 +1019,21 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
+"Els llenyataires europeus talen arbres i els guardes forestals s'encarreguen "
+"de replantar-ne. Els troncs també es fan servir als forns de carbó, a les "
+"drassanes i les serradores."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:137
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Els taulons són un important material de construcció."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:139
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Es produeixen a partir de troncs a la serradora."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:141
@@ -1042,6 +1048,9 @@ msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener (basic sawmill)."
 msgstr ""
+"Aquesta fusta endurida amb foc és tan dura com el ferro i s'usa en diversos "
+"edificis. Es produeix a partir de troncs a l'enduridor de fusta (una "
+"serradora bàsica)."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Balsa
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:161
@@ -1078,6 +1087,8 @@ msgstr ""
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
+"El carbó s'extrau de les mines i es produeix també amb troncs gràcies als "
+"kilns de carbó vegetal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:201
@@ -1086,24 +1097,26 @@ msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
 "coal."
 msgstr ""
+"Els focs dels forns de metalls i tallers dels europeus habitualment "
+"s'alimenten amb carbó."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:212
 msgctxt "europeans_ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "El granit és un material de construcció bàsic."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:214
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr ""
+msgstr "Els europeus produeixen blocs de granit a les pedreres."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:225
 msgctxt "europeans_ware"
 msgid "Grout is a basic building material."
-msgstr ""
+msgstr "La lletada de calç és un material de construcció bàsic."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:227
@@ -1112,12 +1125,14 @@ msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
 "granite and water."
 msgstr ""
+"Els europeus produeixen lletades de calç en forns de calç o als tallers de "
+"pedra amb granit i aigua."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:238
 msgctxt "europeans_ware"
 msgid "Clay is needed to make bricks."
-msgstr ""
+msgstr "L'argila s'usa per fer maons."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:240
@@ -1129,7 +1144,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:251
 msgctxt "europeans_ware"
 msgid "Brick is a basic building material."
-msgstr ""
+msgstr "Els maons són un material de construcció bàsic."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:253
@@ -1138,6 +1153,8 @@ msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
+"Els europeus produeixen maons en forns de calç o als tallers de pedra amb "
+"argila, granit i aigua."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:263
@@ -1147,6 +1164,9 @@ msgid ""
 "in a quarry. Marble is used as a building material and gets chiseled into "
 "marble columns in the stonemason’s house."
 msgstr ""
+"El marbre és una pedra magnífica que s'extreu de les muntanyes o es talla a "
+"les pedreres. El marbre s'usa directament com a material de construcció o bé "
+"després d'obtenir-ne columnes de marbre al taller de la pedra."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:272
@@ -1156,6 +1176,9 @@ msgid ""
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
+"Les columnes de marbre són un element representatiu de la cultura europea. "
+"Es fan servir en quasi tots els edificis avançats. Les columnes es tallen a "
+"partir de blocs de marbre al taller de la pedra."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:284
@@ -1171,6 +1194,8 @@ msgid ""
 "Fruit are berries gathered from berry bushes by a fruit collector. They are "
 "used to brew fruit wine."
 msgstr ""
+"El fruit són petites baies recollides per un recol·lector de baies. S'usen "
+"per fermentar vi de fruites."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Grape
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:302
@@ -1179,6 +1204,8 @@ msgid ""
 "These grapes are the base for a tasty wine. They are harvested in a advanced "
 "farm and processed in a winery."
 msgstr ""
+"Aquest raïm és la base del vi. Es verema en masoveries avançades i es "
+"processa als cellers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:311
@@ -1200,13 +1227,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:333
 msgctxt "europeans_ware"
 msgid "Reed is an important building material."
-msgstr ""
+msgstr "El junc és un material de construcció important."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:335
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
-msgstr ""
+msgstr "Es produeix al camp de juncs."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:346
@@ -1225,6 +1252,8 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
 msgstr ""
+"La tela és necessària per a la construcció d'alguns edificis. Es fabrica amb "
+"juncs."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:368
@@ -1261,6 +1290,8 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
+"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:410
@@ -1317,13 +1348,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:468
 msgctxt "default_ware"
 msgid "Ore is mined in ore mines."
-msgstr ""
+msgstr "El mineral s'extrau de les mines."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:470
 msgctxt "europeans_ware"
 msgid "It is smelted in a smelting works to retrieve all the metals."
-msgstr ""
+msgstr "Es fon als forns de metalls per recuperar els metalls."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:480
@@ -1332,6 +1363,8 @@ msgid ""
 "Discarded weapons and armor can be recycled in an advanced smelting works to "
 "produce new tools, weapon and armor."
 msgstr ""
+"Les armes i armadures fetes malbé es poden reciclar en un forn de metalls "
+"avançat per produir eines, armes i armadures noves."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:490
@@ -1352,6 +1385,7 @@ msgstr ""
 msgctxt "ware"
 msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
 msgstr ""
+"L'or és el metall més valuós. Es fon en forma de lingots a partir de mineral."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:505
@@ -1368,6 +1402,8 @@ msgid ""
 "Copper coins are money made of copper or bronze (copper and tin). Its the "
 "standard barter object."
 msgstr ""
+"Monedes fetes de coure o bronze (coure i estany) que serveixen per a "
+"negociar."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:527
@@ -1458,13 +1494,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:641
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
-msgstr ""
+msgstr "S'usa per reclutar altres treballadors."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:650
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
-msgstr ""
+msgstr "Porta béns pels camins amb les seves mans."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:659
@@ -1484,6 +1520,7 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Carries items along your roads. They are reared in an animal farm."
 msgstr ""
+"Porta coses d'un lloc a l'altre pels camins. Es crien en granges d'animals."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Donkey
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:686
@@ -1492,6 +1529,8 @@ msgid ""
 "Donkeys help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
+"Els ases ajuden a transportar béns en camins molt transitats. Es crien en "
+"granges d'animals."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Horse
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:695
@@ -1500,6 +1539,8 @@ msgid ""
 "Horses help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
+"Els cavalls ajuden a transportar béns en camins molt transitats. Es crien en "
+"granges d'animals."
 
 #. TRANSLATORS: Helptext for a Europeans worker: Reindeer
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:704
@@ -1508,6 +1549,8 @@ msgid ""
 "Reindeers help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
+"Els rens ajuden a transportar béns en camins molt transitats. Es crien en "
+"granges d'animals."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Worker
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:716
@@ -1754,17 +1797,17 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1295
 msgid "This reed field is ready for harvesting."
-msgstr ""
+msgstr "Aquest camp de juncs ja es pot segar."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1302
 msgid "There are no resources in the ground here."
-msgstr ""
+msgstr "Aquí no hi ha recursos."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Water
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1309
 msgid "There is water in the ground here that can be pulled up by a well."
-msgstr ""
+msgstr "Aquí hi ha aigua subterrània que es pot extreure amb un pou."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1317
@@ -2562,7 +2605,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2225
 msgctxt "warehousename"
 msgid "Hungaria"
-msgstr ""
+msgstr "Hongria"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2226
 msgctxt "warehousename"
@@ -2587,7 +2630,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2230
 msgctxt "warehousename"
 msgid "Kosovo"
-msgstr ""
+msgstr "Kosovo"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2231
 msgctxt "warehousename"
@@ -2602,17 +2645,17 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2233
 msgctxt "warehousename"
 msgid "Lithuania"
-msgstr ""
+msgstr "Lituània"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2234
 msgctxt "warehousename"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luxemburg"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2235
 msgctxt "warehousename"
 msgid "Malta"
-msgstr ""
+msgstr "Malta"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2236
 msgctxt "warehousename"
@@ -2622,7 +2665,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2237
 msgctxt "warehousename"
 msgid "Monaco"
-msgstr ""
+msgstr "Mònaco"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2238
 msgctxt "warehousename"
@@ -2647,27 +2690,27 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2242
 msgctxt "warehousename"
 msgid "Poland"
-msgstr ""
+msgstr "Polònia"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2243
 msgctxt "warehousename"
 msgid "Portugal"
-msgstr ""
+msgstr "Portugal"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2244
 msgctxt "warehousename"
 msgid "Romania"
-msgstr ""
+msgstr "Romania"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2245
 msgctxt "warehousename"
 msgid "Russia"
-msgstr ""
+msgstr "Rússia"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2246
 msgctxt "warehousename"
 msgid "San Marino"
-msgstr ""
+msgstr "San Marino"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2247
 msgctxt "warehousename"
@@ -2677,7 +2720,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2248
 msgctxt "warehousename"
 msgid "Scotia"
-msgstr ""
+msgstr "Escòcia"
 
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:2249
 msgctxt "warehousename"

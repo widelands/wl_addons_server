@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# 천영준, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
+"Last-Translator: 천영준, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -35,61 +39,61 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/immovables/resi_coal_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Coal"
-msgstr ""
+msgstr "석탄 조각"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_coal_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr ""
+msgstr "석탄 덩어리"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_gold_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Gold"
-msgstr ""
+msgstr "금 조각"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_gold_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Gold"
-msgstr ""
+msgstr "금 덩어리"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_iron_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Iron"
-msgstr ""
+msgstr "철 조각"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_iron_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Iron"
-msgstr ""
+msgstr "철 덩어리"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_none/init.lua:8
 msgctxt "resource_indicator"
 msgid "No Resources"
-msgstr ""
+msgstr "자원 없음"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_stones_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Crystals"
-msgstr ""
+msgstr "수정 조각"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_stones_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Crystals"
-msgstr ""
+msgstr "수정 덩어리"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_water/init.lua:8
 msgctxt "resource_indicator"
 msgid "Water"
-msgstr ""
+msgstr "물"
 
 #: addons/lutas_atlanteans.wad/immovables/seashell1/init.lua:7
 #: addons/lutas_atlanteans.wad/immovables/seashell2/init.lua:7
@@ -100,7 +104,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/immovables/shipconstruction_lutas_atlanteans/init.lua:8
 msgctxt "immovable"
 msgid "Ship Under Construction"
-msgstr ""
+msgstr "건조중인 선박"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/militarysites/castle/init.lua:8
@@ -348,17 +352,17 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:65
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:87
 msgid "mining coal"
-msgstr ""
+msgstr "석탄 채굴"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:94
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:106
 msgid "No Coal"
-msgstr ""
+msgstr "석탄 없음"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:95
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:107
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "메인 석탄 갱도 고갈"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:97
 msgctxt "lutas_atlanteans_building"
@@ -391,7 +395,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/weaving_mill/init.lua:53
 #: addons/lutas_atlanteans.wad/productionsites/well/init.lua:44
 msgid "working"
-msgstr ""
+msgstr "작업중"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/lutas_atlanteans.wad/mines/crystalmine/init.lua:63
@@ -399,7 +403,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_crystalmine/init.lua:75
 #: addons/lutas_atlanteans.wad/mines/low_crystalmine/init.lua:119
 msgid "mining granite"
-msgstr ""
+msgstr "화강암 채굴"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
 #: addons/lutas_atlanteans.wad/mines/crystalmine/init.lua:79
@@ -407,7 +411,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_crystalmine/init.lua:91
 #: addons/lutas_atlanteans.wad/mines/low_crystalmine/init.lua:127
 msgid "mining quartz"
-msgstr ""
+msgstr "석영 채굴"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining diamonds because ...
 #: addons/lutas_atlanteans.wad/mines/crystalmine/init.lua:95
@@ -415,7 +419,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_crystalmine/init.lua:107
 #: addons/lutas_atlanteans.wad/mines/low_crystalmine/init.lua:135
 msgid "mining diamonds"
-msgstr ""
+msgstr "다이아몬드 채굴"
 
 #: addons/lutas_atlanteans.wad/mines/crystalmine/init.lua:157
 #: addons/lutas_atlanteans.wad/mines/low_crystalmine/init.lua:169
@@ -446,17 +450,17 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_goldmine/init.lua:65
 #: addons/lutas_atlanteans.wad/mines/low_goldmine/init.lua:77
 msgid "mining gold"
-msgstr ""
+msgstr "금 채굴"
 
 #: addons/lutas_atlanteans.wad/mines/goldmine/init.lua:83
 #: addons/lutas_atlanteans.wad/mines/low_goldmine/init.lua:95
 msgid "No Gold"
-msgstr ""
+msgstr "금 없음"
 
 #: addons/lutas_atlanteans.wad/mines/goldmine/init.lua:84
 #: addons/lutas_atlanteans.wad/mines/low_goldmine/init.lua:96
 msgid "Main Gold Vein Exhausted"
-msgstr ""
+msgstr "메인 금광 고갈"
 
 #: addons/lutas_atlanteans.wad/mines/goldmine/init.lua:86
 msgctxt "lutas_atlanteans_building"
@@ -477,17 +481,17 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:65
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:79
 msgid "mining iron"
-msgstr ""
+msgstr "철 채굴"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:86
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:98
 msgid "No Iron"
-msgstr ""
+msgstr "철 없음"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:87
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:99
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "메인 철 광산 고갈"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:89
 msgctxt "lutas_atlanteans_building"
@@ -558,12 +562,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/lutas_atlanteans.wad/productionsites/armorsmithy/init.lua:61
 msgid "forging a steel shield"
-msgstr ""
+msgstr "강철 방패 제작"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/lutas_atlanteans.wad/productionsites/armorsmithy/init.lua:73
 msgid "forging an advanced shield"
-msgstr ""
+msgstr "강화 방패 제작"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/bakery/init.lua:8
@@ -598,7 +602,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:53
 msgid "planting blackroot"
-msgstr ""
+msgstr "생산용 식물 심기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:61
@@ -608,12 +612,12 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:70
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:71
 msgid "No Fields"
-msgstr ""
+msgstr "수확지 없음"
 
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:71
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:72
 msgid "Out of Fields"
-msgstr ""
+msgstr "수확지 부족"
 
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:72
 msgctxt "lutas_atlanteans_building"
@@ -642,7 +646,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:54
 msgid "planting corn"
-msgstr ""
+msgstr "옥수수 심기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:62
@@ -739,7 +743,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start spinning gold because ...
 #: addons/lutas_atlanteans.wad/productionsites/gold_spinning_mill/init.lua:49
 msgid "spinning gold"
-msgstr ""
+msgstr "금 채굴"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/horsefarm/init.lua:8
@@ -816,11 +820,11 @@ msgstr ""
 
 #: addons/lutas_atlanteans.wad/productionsites/quarry/init.lua:49
 msgid "No Rocks"
-msgstr ""
+msgstr "바위 없음"
 
 #: addons/lutas_atlanteans.wad/productionsites/quarry/init.lua:50
 msgid "Out of Rocks"
-msgstr ""
+msgstr "바위 부족"
 
 #: addons/lutas_atlanteans.wad/productionsites/quarry/init.lua:51
 msgctxt "lutas_atlanteans_building"
@@ -837,7 +841,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/lutas_atlanteans.wad/productionsites/sawmill/init.lua:57
 msgid "sawing logs"
-msgstr ""
+msgstr "통나무 베기"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/scouts_house/init.lua:8
@@ -849,7 +853,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/scouts_house/init.lua:52
 #: addons/lutas_atlanteans.wad/productionsites/scouts_house/init.lua:67
 msgid "scouting"
-msgstr ""
+msgstr "정찰"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/shipyard/init.lua:8
@@ -860,7 +864,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/lutas_atlanteans.wad/productionsites/shipyard/init.lua:83
 msgid "constructing a ship"
-msgstr ""
+msgstr "선박 건조"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/smelting_works/init.lua:8
@@ -872,7 +876,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/smelting_works/init.lua:64
 #: addons/lutas_atlanteans.wad/productionsites/smelting_works/init.lua:78
 msgid "smelting iron"
-msgstr ""
+msgstr "철 제련"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/lutas_atlanteans.wad/productionsites/smelting_works/init.lua:92
@@ -888,13 +892,13 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start smoking meat because ...
 #: addons/lutas_atlanteans.wad/productionsites/smokery/init.lua:70
 msgid "smoking meat"
-msgstr ""
+msgstr "고기 훈제"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/lutas_atlanteans.wad/productionsites/smokery/init.lua:83
 #: addons/lutas_atlanteans.wad/productionsites/smokery/init.lua:95
 msgid "smoking fish"
-msgstr ""
+msgstr "생선 훈제"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/spiderfarm/init.lua:8
@@ -956,7 +960,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
 #: addons/lutas_atlanteans.wad/productionsites/toolsmithy/init.lua:189
 msgid "making a saw"
-msgstr ""
+msgstr "톱 제작"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
 #: addons/lutas_atlanteans.wad/productionsites/toolsmithy/init.lua:202
@@ -977,17 +981,17 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a light trident because ...
 #: addons/lutas_atlanteans.wad/productionsites/weaponsmithy/init.lua:67
 msgid "forging a light trident"
-msgstr ""
+msgstr "벼락 삼지창 제작"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a long trident because ...
 #: addons/lutas_atlanteans.wad/productionsites/weaponsmithy/init.lua:82
 msgid "forging a long trident"
-msgstr ""
+msgstr "긴 삼지창 제작"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel trident because ...
 #: addons/lutas_atlanteans.wad/productionsites/weaponsmithy/init.lua:97
 msgid "forging a steel trident"
-msgstr ""
+msgstr "철 삼지창 제작"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a diamond double trident because ...
 #: addons/lutas_atlanteans.wad/productionsites/weaponsmithy/init.lua:112
@@ -997,7 +1001,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a heavy double trident because ...
 #: addons/lutas_atlanteans.wad/productionsites/weaponsmithy/init.lua:128
 msgid "forging a heavy double trident"
-msgstr ""
+msgstr "쌍 특대 삼지창 제작"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/weaving_mill/init.lua:8
@@ -1028,11 +1032,11 @@ msgstr ""
 
 #: addons/lutas_atlanteans.wad/productionsites/well/init.lua:58
 msgid "No Water"
-msgstr ""
+msgstr "물 없음"
 
 #: addons/lutas_atlanteans.wad/productionsites/well/init.lua:59
 msgid "Out of Water"
-msgstr ""
+msgstr "물 부족"
 
 #: addons/lutas_atlanteans.wad/productionsites/well/init.lua:60
 msgctxt "lutas_atlanteans_building"
@@ -1048,15 +1052,15 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/lutas_atlanteans.wad/productionsites/woodcutters_house/init.lua:39
 msgid "felling trees"
-msgstr ""
+msgstr "나무 베기"
 
 #: addons/lutas_atlanteans.wad/productionsites/woodcutters_house/init.lua:52
 msgid "No Trees"
-msgstr ""
+msgstr "나무 없음"
 
 #: addons/lutas_atlanteans.wad/productionsites/woodcutters_house/init.lua:53
 msgid "Out of Trees"
-msgstr ""
+msgstr "나무 부족"
 
 #: addons/lutas_atlanteans.wad/productionsites/woodcutters_house/init.lua:54
 msgctxt "lutas_atlanteans_building"
@@ -1096,7 +1100,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/discovery.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "발견"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/discovery.lua:13
@@ -1117,7 +1121,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/headquarters.lua:11
 msgid "Headquarters"
-msgstr ""
+msgstr "본부"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/headquarters.lua:13
@@ -1127,7 +1131,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/new_world.lua:11
 msgid "New World"
-msgstr ""
+msgstr "신세계"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/new_world.lua:13
@@ -1159,7 +1163,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr ""
+msgstr "교역소"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -1167,6 +1171,8 @@ msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"본부와 같이 주어지는 최소한의 자원만으로 게임을 시작하세요. 경고: AI는 이 조"
+"건으로 성공적으로 시작할 수 없습니다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:13
@@ -1203,13 +1209,13 @@ msgstr[0] ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
-msgstr ""
+msgstr "교역소"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/trading_outpost.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
-msgstr ""
+msgstr "해당 플레이어가 중요 자원이 부족해지면 자원들이 무료로 보충됩니다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/village.lua:11
@@ -1232,7 +1238,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/trainingsites/labyrinth/init.lua:58
 #: addons/lutas_atlanteans.wad/trainingsites/temple/init.lua:66
 msgid "sleeping"
-msgstr ""
+msgstr "휴식"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/lutas_atlanteans.wad/trainingsites/dungeon/init.lua:69
@@ -3008,7 +3014,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3439
 msgctxt "building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "우물에서 물을 길으세요."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlanteans’ production site: Well
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1305

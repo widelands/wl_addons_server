@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alen Ciga, 2025
+# Davide Nicolini <davide97@gmail.com>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-20 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
+"Last-Translator: Davide Nicolini <davide97@gmail.com>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
 "it/)\n"
 "Language: it\n"
@@ -171,7 +176,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:58
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:78
 msgid "working"
-msgstr ""
+msgstr "lavoro"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing blackwood for input wares because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:83
@@ -588,31 +593,31 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:70
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your barrier."
-msgstr ""
+msgstr "I tuoi soldati hanno occupato la tua barriera."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:72
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
-msgstr ""
+msgstr "La tua barriera ha scoperto degli aggressori."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
-msgstr ""
+msgstr "La tua barriera è sotto attacco."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the barrier."
-msgstr ""
+msgstr "I nemici hanno sconfitto i tuoi soldati alla barriera."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_basic/init.lua:78
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the barrier."
-msgstr ""
+msgstr "I tuoi soldati hanno sconfitto i nemici alla barriera."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_1/init.lua:9
@@ -654,7 +659,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Barrier"
-msgstr ""
+msgstr "Barriera Avanzata"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:47
@@ -697,35 +702,35 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:70
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your castle."
-msgstr ""
+msgstr "I tuoi soldati hanno occupato il tuo castello."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:71
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:72
 msgctxt "europeans_building"
 msgid "Your castle discovered an aggressor."
-msgstr ""
+msgstr "Il tuo castello ha scoperto degli aggressori."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:73
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:74
 msgctxt "europeans_building"
 msgid "Your castle is under attack."
-msgstr ""
+msgstr "Il tuo castello è sotto attacco."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:75
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:76
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the castle."
-msgstr ""
+msgstr "I nemici hanno sconfitto i tuoi soldati al castello."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:77
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:78
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the castle."
-msgstr ""
+msgstr "I tuoi soldati hanno sconfitto i nemici al castello."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_1/init.lua:9
@@ -773,7 +778,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr ""
+msgstr "Castello Avanzato"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:47
@@ -917,7 +922,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/tower_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Tower"
-msgstr ""
+msgstr "Torre Avanzata"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/tower_level_1/init.lua:53

@@ -5,15 +5,17 @@
 #
 # Translators:
 # Ondřej Itřech, 2025
+# af24e571988b09e5b46468ac89010e87_d1b4333, 2025
+# Zlopez <michal.konecny@psmail.xyz>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2025-07-15 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:12+0200\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
-"Last-Translator: Ondřej Itřech, 2025\n"
+"Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -282,7 +284,7 @@ msgstr "Eufrat a Tigris"
 
 #: input:8 standard
 msgid "Europa 1.2 with straits of bosporus"
-msgstr ""
+msgstr "Europa 1.2 s průlivem Bospor"
 
 #: input:8 standard
 msgid "Fatal Error : Kernel Panic"
@@ -617,7 +619,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "The Long Way to Tiperary (for 16 players, experimental)"
-msgstr ""
+msgstr "Dlouhá cesta do Tiperary (pro 16 hráčů, testovací)"
 
 #: input:8 standard
 msgid "The River"
@@ -677,7 +679,7 @@ msgstr ""
 
 #: input:8 standard
 msgid "WideGreen"
-msgstr ""
+msgstr "Širá zeleň"
 
 #: input:8 standard
 msgid "Wikinger: Die Fjorde Seefahrer Turnierkarte"
@@ -839,6 +841,7 @@ msgstr ""
 #: input:10 standard
 msgid "Autumn became winter. Some things are frozen, but not the war."
 msgstr ""
+"Podzim se stane zimou. Některé věci jsou zmrzlé, ale válka stále pokračuje."
 
 #: input:10 standard
 msgid ""
@@ -953,6 +956,13 @@ msgid ""
 "expedition is not the only one that strives to gain the fabulous wealth and "
 "everlasting fame."
 msgstr ""
+"Konečně! Dostali jsme se až na daleký jih založili svou základnu, ale vypadá "
+"to, že do Staré Antarktidy je to pořád ještě kus cesty. Říká se, že tato "
+"země je tak bohatá, že její pobřeží je pokryto zlatými balvany. Musíš "
+"pokácet pár stromů a postavit loď, na které budeš moci pokračovat ve své "
+"cestě. Jinak pro tebe žádné drahocenné zlato nezůstane. Mohlo by se také "
+"stát, že nám brzy dojde uhlí. Tvá výprava není jediná, která usiluje o "
+"získání pohádkového bohatství a věčné slávy."
 
 #: input:10 standard
 msgid ""
@@ -961,7 +971,7 @@ msgstr ""
 
 #: input:10 standard
 msgid "Four flowers are struggling for live..."
-msgstr ""
+msgstr "Čtyři květiny bojující o přežití..."
 
 #: input:10 standard
 msgid "Gelände begradigt und Bergwerke optimiert."
@@ -994,6 +1004,10 @@ msgid ""
 "were those that enforced this dramatic change. Continents, oceans and seas "
 "are frozen now, only the volcanic islands seem to be left as habitable land."
 msgstr ""
+"Uprostřed léta série sopečných erupcí přivolala zimu. Slunce se náhle "
+"ztratilo a jediným zdrojem světla a tepla se staly síly, které tuto "
+"dramatickou změnu způsobily. Světadíly, oceány a moře, vše je nyní zamrzlé, "
+"zdá se, že sopečné ostrovy jsou jedinou obyvatelnou oblastí,  která zůstala."
 
 #: input:10 standard
 msgid "Inseln verbunden, Bergwerke und Häfen hinzugefügt."
@@ -1128,7 +1142,7 @@ msgstr ""
 
 #: input:10 standard
 msgid "Ohne Seefahrt kommt man nicht weit."
-msgstr ""
+msgstr "Bez mořeplavby se daleko nedostaneš."
 
 #: input:10 standard
 msgid "One main land with two smaller islands to explore."
@@ -1162,7 +1176,7 @@ msgstr ""
 
 #: input:10 standard
 msgid "Periodic map for 8 players. Enough resources, no seafaring."
-msgstr ""
+msgstr "Opakující se mapa pro 8 hráčů. Dost surovin, žádné lodě."
 
 #: input:10 standard
 msgid ""
@@ -1369,6 +1383,8 @@ msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen."
 msgstr ""
+"Širá zeleň a řeky kam až oko dohlédne. Výpravy z přístavů jsou nezbytnou "
+"podmínkou pro přístup k nepříteli."
 
 #: input:10 standard
 msgid ""
@@ -1450,7 +1466,7 @@ msgstr ""
 
 #: input:11 standard
 msgid "All positions are fully equal! :)"
-msgstr ""
+msgstr "Všechny pozice jsou si rovné! :)"
 
 #: input:11 standard
 msgid ""
@@ -1581,6 +1597,15 @@ msgid ""
 "das anfangs wenige Gold ausgibst. Wenn du das Gold nicht für Häfen ausgibst, "
 "fehlt dir der Zugang zu weiterem Gold für Häfen und Expeditionen zum Gegner."
 msgstr ""
+"Nepřátelé jsou velmi blízko! Co nejrychlejší obsazení vhodných míst pro "
+"přístav se může velmi vyplatit. Dávej si pozor, aby loděnice, respektive "
+"lodě, byly postaveny při správném pobřeží. Po řece se lze dostat od malého "
+"poloostrova s přístavem až k poloostrovu s oranžovou horou, kde je spousta "
+"kovu. Cesta po řece je ale poněkud delší než alternativní cesta k menším "
+"zdrojům kovu. Dobře si proto rozmysli, na výpravu z kterého přístavu "
+"použiješ tu trochu zlata, kterou máš při zahájení hry. Pokud nepoužiješ "
+"zlato na stavbu přístavů, nebudeš mít přístup k dalším zdrojům zlata na "
+"stavbu dalších přístavů a výpravy k nepříteli."
 
 #: input:11 standard
 msgid "Gold is hard to get to."
@@ -1669,7 +1694,7 @@ msgstr ""
 
 #: input:11 standard
 msgid "Start positions are clockwise"
-msgstr ""
+msgstr "Výchozí pozice jsou po směru chodu hodinových ručiček"
 
 #: input:11 standard
 msgid "Teams recommended. Rich in resources. AI is weak on this map."

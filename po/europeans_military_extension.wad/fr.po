@@ -3,13 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# C138, 2025
+# Atanase Albaran, 2025
+# David D, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-20 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
+"Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -170,7 +176,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_advanced/init.lua:58
 #: addons/europeans_military_extension.wad/7_recruitementsites/trainingscamp_basic/init.lua:78
 msgid "working"
-msgstr ""
+msgstr "Actif"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing blackwood for input wares because ...
 #: addons/europeans_military_extension.wad/5_productionsites/manufactory_advanced/init.lua:83
@@ -434,7 +440,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_2/init.lua:77
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_level_3/init.lua:55
 msgid "sleeping"
-msgstr ""
+msgstr "endormi"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
 #: addons/europeans_military_extension.wad/8_trainingsites/battlearena_basic/init.lua:94
@@ -653,37 +659,37 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Barrier"
-msgstr ""
+msgstr "Barrière avancée"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
-msgstr ""
+msgstr "Vos soldats ont occupé votre barrière avancée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:49
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
-msgstr ""
+msgstr "Votre barrière avancée a découvert un agresseur."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:51
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
-msgstr ""
+msgstr "Votre barrière avancée est attaquée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la barrière avancée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_military_extension.wad/9_militarysites/barrier_level_2/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la barrière avancée."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/castle_basic/init.lua:9
@@ -772,37 +778,37 @@ msgstr ""
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:9
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr ""
+msgstr "Château avancé"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced castle."
-msgstr ""
+msgstr "Vos soldats ont occupé votre château avancé."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:49
 msgctxt "europeans_building"
 msgid "Your advanced castle discovered an aggressor."
-msgstr ""
+msgstr "Votre château avancé a découvert un agresseur."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:51
 msgctxt "europeans_building"
 msgid "Your advanced castle is under attack."
-msgstr ""
+msgstr "Votre château avancé est attaqué."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced castle."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats au château avancé."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_military_extension.wad/9_militarysites/castle_level_3/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced castle."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi au château avancé."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_military_extension.wad/9_militarysites/sentry_basic/init.lua:9
@@ -986,7 +992,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:111
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "L'eau est l'essence de la vie !"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:113
@@ -1638,7 +1644,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:966
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:973
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Les restes d'un bâtiment détruit."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:980
@@ -1726,12 +1732,12 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1274
 msgid "This reed field has just been planted."
-msgstr ""
+msgstr "Ce champ de roseaux vient juste d'être planté."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1281
 msgid "This reed field is growing."
-msgstr ""
+msgstr "Ce champ de roseaux est en croissance."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1288
@@ -1741,17 +1747,17 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1295
 msgid "This reed field is ready for harvesting."
-msgstr ""
+msgstr "Ce champ de roseaux est prêt pour la récolte."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1302
 msgid "There are no resources in the ground here."
-msgstr ""
+msgstr "Il n'y a pas de ressources dans le sol ici."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Water
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1309
 msgid "There is water in the ground here that can be pulled up by a well."
-msgstr ""
+msgstr "Il y a de l'eau dans le sol ici. Elle peut être pompée par un puits."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1317
@@ -1822,12 +1828,12 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans immovable: Ship Under Construction
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1404
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "Un navire est en construction dans ce site."
 
 #. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1412
 msgid "The remains of an old tree."
-msgstr ""
+msgstr "Les restes d'un vieil arbre."
 
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
@@ -1849,6 +1855,8 @@ msgstr ""
 msgid ""
 "This tree is only planted by the amazon tribe but can be harvested for logs."
 msgstr ""
+"Cat arbre ne peut être planté que par les Amazones mais peut être abattu par "
+"tous pour son bois."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Headquarters
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1508
@@ -1980,7 +1988,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1628
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Explore un territoire inconnu."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Trading Post
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1635
@@ -2775,7 +2783,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:11
 msgid "Headquarters"
-msgstr ""
+msgstr "Quartiers Généraux"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_military_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13

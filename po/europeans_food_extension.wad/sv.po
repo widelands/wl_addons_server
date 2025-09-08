@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# D M <kamera001dm@gmail.com>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-20 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2025-03-29 14:10+0000\n"
+"Last-Translator: D M <kamera001dm@gmail.com>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -112,31 +116,31 @@ msgstr ""
 #: addons/europeans_food_extension.wad/1_immovables/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Rågfält (skördat)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/ryefield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Rågfält (under tillväxt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/ryefield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "Rågfält (moget)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/ryefield/small/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Rågfält (ungt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/ryefield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Rågfält (nysått)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_extension.wad/1_immovables/wheatfield/harvested/init.lua:8
@@ -178,7 +182,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/2_wares/barley_flour/init.lua:8
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr ""
+msgstr "Kornmjöl"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/beer/init.lua:8
@@ -280,13 +284,13 @@ msgstr ""
 #: addons/europeans_food_extension.wad/2_wares/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Råg"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/rye_flour/init.lua:8
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr ""
+msgstr "Rågmjöl"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/snack/init.lua:8
@@ -360,7 +364,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/5_productionsites_food/tavern_inn_advanced/init.lua:52
 #: addons/europeans_food_extension.wad/5_productionsites_food/tavern_inn_basic/init.lua:60
 msgid "working"
-msgstr ""
+msgstr "arbeta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/animal_farm_advanced/init.lua:73
@@ -536,12 +540,12 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:297
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:260
 msgid "No Fields"
-msgstr ""
+msgstr "Inga fält"
 
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:298
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:261
 msgid "Out of Fields"
-msgstr ""
+msgstr "Slut på fält"
 
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:299
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:262
@@ -1914,7 +1918,7 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
-msgstr ""
+msgstr "Scouter rekognoserar okända områden."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:973
@@ -2526,7 +2530,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2052
 msgctxt "building"
 msgid "Prepares rations to feed the scouts and miners."
-msgstr ""
+msgstr "Lagar matbitar för att mätta spejare och gruvarbetare."
 
 #. TRANSLATORS: Purpose helptext for a production site: Inn
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2059

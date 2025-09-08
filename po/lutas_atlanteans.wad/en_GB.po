@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Andi Chandler <andi@gowling.com>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2025\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
 "teams/35159/en_GB/)\n"
 "Language: en_GB\n"
@@ -354,12 +358,12 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:94
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:106
 msgid "No Coal"
-msgstr ""
+msgstr "No Coal"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:95
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:107
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Main Coal Vein Exhausted"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:97
 msgctxt "lutas_atlanteans_building"
@@ -392,7 +396,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/weaving_mill/init.lua:53
 #: addons/lutas_atlanteans.wad/productionsites/well/init.lua:44
 msgid "working"
-msgstr ""
+msgstr "working"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/lutas_atlanteans.wad/mines/crystalmine/init.lua:63
@@ -483,12 +487,12 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:86
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:98
 msgid "No Iron"
-msgstr ""
+msgstr "No Iron"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:87
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:99
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Main Iron Vein Exhausted"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:89
 msgctxt "lutas_atlanteans_building"
@@ -609,12 +613,12 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:70
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:71
 msgid "No Fields"
-msgstr ""
+msgstr "No Fields"
 
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:71
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:72
 msgid "Out of Fields"
-msgstr ""
+msgstr "Out of Fields"
 
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:72
 msgctxt "lutas_atlanteans_building"
@@ -705,7 +709,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/fishers_house/init.lua:42
 #: addons/lutas_atlanteans.wad/productionsites/fishers_house/init.lua:55
 msgid "fishing"
-msgstr ""
+msgstr "fishing"
 
 #. TRANSLATORS: Completed/Skipped/Did not start collecting seashells because ...
 #: addons/lutas_atlanteans.wad/productionsites/fishers_house/init.lua:67
@@ -1070,7 +1074,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/basic_outpost.lua:11
 msgid "Basic Outpost"
-msgstr ""
+msgstr "Basic Outpost"
 
 #. TRANSLATORS: This is the tooltip for the "Basics" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/basic_outpost.lua:13
@@ -1079,6 +1083,9 @@ msgid ""
 "enough to create a few tools to help establish a full economy. Warning: the "
 "AI can’t successfully start from this."
 msgstr ""
+"Start the game with your headquarters and a small selection of wares - just "
+"enough to create a few tools to help establish a full economy. Warning: the "
+"AI can’t successfully start from this."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/castaways.lua:11
@@ -1172,7 +1179,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:13
 msgid "Tidy Warehouses"
-msgstr ""
+msgstr "Tidy Warehouses"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1181,14 +1188,17 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Start with basic Headquarters. From time to time your workers do "
+"inventories. If there are more than 500 items in any of your warehouses, "
+"workers throw away one-quarter of the stock stored in such a warehouse."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:99
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Warehouse cleaned!"
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:176
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s has been cleaned!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
@@ -1213,6 +1223,7 @@ msgstr ""
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""
+"If this player runs low on important wares, they will be replenished for free"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/village.lua:11

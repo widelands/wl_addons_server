@@ -4,6 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# Stephan Lutz <stephan-lutz@gmx.de>, 2025
+# Iwan Gabovitch, 2025
 # Ondřej Itřech, 2025
 #
 #, fuzzy
@@ -11,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 03:12+0200\n"
+"POT-Creation-Date: 2025-09-08 03:14+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -630,7 +632,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:84
 #: addons/sumatran_tribe.wad/other_tribes/lutas_atlanteans_crocodile_hunters_house/init.lua:53
 msgid "Out of Game"
-msgstr ""
+msgstr "Kein Wild"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:69
@@ -747,7 +749,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:12
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "‘%1%’<br>(%2%)"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/sumatran_tribe.wad/postload.lua:50
@@ -875,6 +877,7 @@ msgstr ""
 msgctxt "empire_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"Wenn Steigungen oder Hindernisse im Weg sind, verlängert sich die Zeit."
 
 #: addons/sumatran_tribe.wad/postload.lua:249
 msgctxt "barbarians_building"
@@ -966,6 +969,7 @@ msgstr ""
 msgctxt "atlanteans_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"Wenn Steigungen oder Hindernisse im Weg sind, verlängert sich die Zeit."
 
 #: addons/sumatran_tribe.wad/postload.lua:314
 msgctxt "amazons_building"
@@ -1063,6 +1067,7 @@ msgstr ""
 msgctxt "lutas_atlanteans_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"Wenn Steigungen oder Hindernisse im Weg sind, verlängert sich die Zeit."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:9
@@ -1263,7 +1268,7 @@ msgstr "Das Fischen"
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:88
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:101
 msgid "No Game"
-msgstr ""
+msgstr "Kein Wild"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:90
@@ -1711,6 +1716,10 @@ msgid ""
 "enough to create a few tools to help establish a full economy. Warning: the "
 "AI can’t successfully start from this."
 msgstr ""
+"Beginne das Spiel mit deinem Hauptquartier und einer kleinen Auswahl an "
+"Waren – gerade genug, um ein paar Werkzeuge herzustellen, die beim Aufbau "
+"einer vollständigen Wirtschaft helfen. Warnung: Die KI kann damit nicht "
+"erfolgreich starten."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/castaways.lua:11
@@ -1747,7 +1756,7 @@ msgstr "Befestigtes Dorf"
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/fortified_village.lua:13
 msgid "Start the game with a fortified military installation"
-msgstr ""
+msgstr "Beginne das Spiel mit einer befestigten Militäranlage"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/headquarters.lua:11
@@ -1767,7 +1776,7 @@ msgstr "Neue Welt"
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua:13
 msgid "Start the game with seven ships full of wares on the ocean"
-msgstr ""
+msgstr "Beginne das Spiel mit sieben Schiffen voller Waren auf dem Ozean"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:11
@@ -1783,6 +1792,9 @@ msgid ""
 "real struggle. A map with good summer or desert terrain and a lot of space "
 "recommended."
 msgstr ""
+"Am Anfang des Spieles steht nur ein Lagerhaus und das absolute Minimum für "
+"den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
+"erfolgreich starten."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 msgid "Be careful"
@@ -1800,7 +1812,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr ""
+msgstr "Mühsamer Vorposten"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -1808,6 +1820,9 @@ msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Am Anfang des Spieles stehen nur ein Hauptquartier und sehr wenige Waren für "
+"den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
+"erfolgreich starten."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
@@ -1875,7 +1890,7 @@ msgstr "Jagdlager"
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:91
 #: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:83
 msgid "sleeping"
-msgstr ""
+msgstr "Das Schlafen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:99
@@ -2292,7 +2307,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2067
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Wasser ist Leben!"
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Water, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:191
@@ -3158,7 +3173,7 @@ msgstr "Hier gibt es Wasser im Boden."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2983
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3027
 msgid "Coal veins contain coal that can be dug up by coal mines."
-msgstr ""
+msgstr "Kohleadern enthalten Kohle, die von Kohleminen gefördert werden kann."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1107
@@ -3388,6 +3403,7 @@ msgstr ""
 msgctxt "sumatran_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
+"Wenn Steigungen oder Hindernisse im Weg sind, verlängert sich die Zeit."
 
 #. TRANSLATORS: Lore helptext for a Sumatran production site: Palm Planter’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1255

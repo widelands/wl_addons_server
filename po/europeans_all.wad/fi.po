@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Atte Timonen, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-11 03:12+0200\n"
+"POT-Creation-Date: 2025-09-08 03:13+0200\n"
 "PO-Revision-Date: 2025-06-06 17:58+0000\n"
+"Last-Translator: Atte Timonen, 2025\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -4155,7 +4159,7 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/buildings/trainingsites/europeans/trainingcamp_level_4/init.lua:186
 msgctxt "europeans_building"
 msgid "No soldier to train!"
-msgstr ""
+msgstr "Ei sotilaita koulutettavaksi!"
 
 #. TRANSLATORS: Europeans training site tooltip when none of the present soldiers match the current training program
 #: addons/europeans_all.wad/tribes/buildings/trainingsites/europeans/barracks_basic/init.lua:111
@@ -8590,7 +8594,7 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/initialization/units.lua:6339
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
-msgstr ""
+msgstr "Toimii varuskuntana laajentaen valtakuntasi vaikutusaluetta."
 
 #. TRANSLATORS: Note helptext for an Amazon military site: Patrol Post
 #. TRANSLATORS: Note helptext for an Amazon military site: Warriors’ Dwelling
@@ -9027,25 +9031,25 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/initialization/units.lua:6376
 msgctxt "europeans"
 msgid "Worker missing"
-msgstr ""
+msgstr "Työläinen puuttuu"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
 #: addons/europeans_all.wad/tribes/initialization/units.lua:6378
 msgctxt "europeans"
 msgid "Worker is coming"
-msgstr ""
+msgstr "Työläinen on matkalla"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_all.wad/tribes/initialization/units.lua:6380
 msgctxt "europeans"
 msgid "Workers missing"
-msgstr ""
+msgstr "Työläiset puuttuu"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/europeans_all.wad/tribes/initialization/units.lua:6382
 msgctxt "europeans"
 msgid "Workers are coming"
-msgstr ""
+msgstr "Työläiset ovat matkalla"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
 #: addons/europeans_all.wad/tribes/initialization/units.lua:6384
@@ -9880,7 +9884,7 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/workers/europeans/soldier/init.lua:107
 msgctxt "europeans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Sotilas"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_all.wad/tribes/workers/europeans/trader/init.lua:9
