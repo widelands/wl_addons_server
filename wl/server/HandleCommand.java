@@ -373,7 +373,7 @@ public class HandleCommand {
 					out.println(c.editTimestamp == null ? 0 : c.editTimestamp);
 					out.println(c.version);
 
-					String[] msg = c.message.split("\n");
+					String[] msg = c.message.split("\r?\n");
 					out.println(msg.length - 1);
 					for (String m : msg) out.println(m);
 				}
@@ -487,7 +487,7 @@ public class HandleCommand {
 				out.println(c.editTimestamp == null ? 0 : c.editTimestamp);
 				out.println(c.version);
 
-				String[] msg = c.message.split("\n");
+				String[] msg = c.message.split("\r?\n");
 				out.println(msg.length - 1);
 				for (String m : msg) out.println(m);
 			}

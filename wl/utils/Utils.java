@@ -525,9 +525,9 @@ public class Utils {
 	public static String escapeAsShellArgument(String str) {
 		if (str == null) return "";
 		str = str.replaceAll("\\\\", "\\\\\\\\");
-		str = str.replaceAll("\t", "\\\\t");
+		str = str.replaceAll("\r?\n", "\\\\n");  // Collapses CRLF into simple newlines
 		str = str.replaceAll("\r", "\\\\r");
-		str = str.replaceAll("\n", "\\\\n");
+		str = str.replaceAll("\t", "\\\\t");
 		str = str.replaceAll("\"", "\\\\\"");
 		return str;
 	}
