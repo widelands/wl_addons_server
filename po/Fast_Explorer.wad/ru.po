@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Viktor Skachkov <awsswa59@gmail.com>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-09-28 03:12+0200\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
+"Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -26,18 +30,21 @@ msgid ""
 "for single player, the other one for multiplayer games. Teams are not "
 "supported."
 msgstr ""
+"Карты для условия победы \"Быстрый исследователь выигрывает\". \"Быстрый "
+"исследователь одиночная игра\" предназначена для одного игрока, другая для "
+"командной игры. Командная игра не поддерживаются."
 
 #: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4
 msgid "Fast_Explorer"
-msgstr ""
+msgstr "Быстрый_исследователь"
 
 #: input:8 standard
 msgid "Fast Explorer MP"
-msgstr ""
+msgstr "Быстрый исследователь командная игра"
 
 #: input:8 standard
 msgid "Fast Explorer SP"
-msgstr ""
+msgstr "Быстрый исследователь одиночная игра"
 
 #: input:10 standard
 msgid ""
@@ -45,6 +52,10 @@ msgid ""
 "with your friends in a multiplayer game. This map contain 5 times the same "
 "island as in the map ''Fast Explorer SP''."
 msgstr ""
+"Используйте эту карту, если вы хотите играть в условие победы \"Быстрый "
+"Исследователь выигрывает\" со своими друзьями в многопользовательской игре. "
+"Эта карта содержит остров в 5 раз больше, чем на карте \"Быстрый "
+"исследователь одиночная игра\"."
 
 #: input:10 standard
 msgid ""
@@ -54,6 +65,12 @@ msgid ""
 "contains only one player and is meant to publish your personal time along "
 "with the replay in the forum topic ''Fast Explorer''!"
 msgstr ""
+"Используйте эту карту вместе с условием победы \"Быстрый исследователь "
+"выигрывает\" и примите участие в \"Турнире Быстрый исследователь\"! Цель "
+"состоит в том, чтобы очень быстро расширить свою территорию и создать 4 "
+"героев, сидящих на военном корабле. Эта карта содержит только одного игрока "
+"и предназначена для публикации вашего личного времени вместе с повтором в "
+"теме форума \"Быстрый исследователь\"!"
 
 #: input:11 standard
 msgid ""
@@ -61,3 +78,6 @@ msgid ""
 "places. Limited resources needs some micromanaging of productionsites and "
 "warehouses."
 msgstr ""
+"Размещайте свои дороги и флаги с умом и размещайте склады на стратегических "
+"местах. Ограниченные ресурсы требуют некоторого микроуправление "
+"производственными площадками и складами."
