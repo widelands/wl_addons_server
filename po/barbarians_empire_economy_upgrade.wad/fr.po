@@ -6,15 +6,16 @@
 # Translators:
 # C138, 2025
 # Atanase Albaran, 2025
+# David D, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 03:12+0200\n"
+"POT-Creation-Date: 2025-10-05 03:12+0200\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
-"Last-Translator: Atanase Albaran, 2025\n"
+"Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +26,7 @@ msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:2
 msgid "Barbarians-Empire Upgrade"
-msgstr ""
+msgstr "Mise à niveau Barbares-Empire"
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:3
 msgid ""
@@ -34,12 +35,17 @@ msgid ""
 "produce 2 pieces of metal. There are few new buildings available and build "
 "costs of some military sites are modified too."
 msgstr ""
+"La mise à niveau des fonderies et des maisons de tailleur de pierre rend les "
+"Barbares et l’Empire plus compétitifs. Avec cette mise à niveau, vous avez "
+"besoin d’un morceau de charbon pour produire 2 pièces de métal. Il y a peu "
+"de nouveaux bâtiments disponibles et les coûts de construction de certains "
+"sites militaires sont également modifiés."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:8
 msgctxt "barbarians_building"
 msgid "Independent Fishing Hut"
-msgstr ""
+msgstr "Cabane de pêche indépendante"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:49
@@ -50,12 +56,12 @@ msgstr "pêche"
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:59
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:59
 msgid "No Fishes"
-msgstr ""
+msgstr "Pas de poissons"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:60
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:60
 msgid "Out of Fishes"
-msgstr ""
+msgstr "Plus de poisson"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:61
 msgctxt "barbarian_building"
@@ -63,12 +69,14 @@ msgid ""
 "The fisher working at this fisher’s hut can’t find any fishes in his work "
 "area."
 msgstr ""
+"Le pêcheur travaillant dans cette cabane de pêcheur ne peut trouver aucun "
+"poisson dans son espace de travail."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:8
 msgctxt "barbarians_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Travaux de fusion avancés"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:70
@@ -83,43 +91,43 @@ msgstr "Actif"
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:131
 msgctxt "barbarians_building"
 msgid "smelting iron"
-msgstr ""
+msgstr "fusion de fer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:100
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:117
 msgctxt "barbarians_building"
 msgid "smelting gold"
-msgstr ""
+msgstr "fusion de l'or"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:8
 msgctxt "barbarians_building_small"
 msgid "Small Weaving Mill"
-msgstr ""
+msgstr "Petite usine de tissage"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:50
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:186
 msgid "weaving"
-msgstr ""
+msgstr "tissage"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:8
 msgctxt "empire_building"
 msgid "Small Farm"
-msgstr ""
+msgstr "Petite ferme"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:51
 msgid "planting"
-msgstr ""
+msgstr "plantation"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:59
 msgid "harvesting"
-msgstr ""
+msgstr "moissonnage"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:68
 msgid "No Fields"
@@ -134,12 +142,14 @@ msgctxt "empire_building"
 msgid ""
 "The farmer working at this small farm has no cleared soil to plant his seeds."
 msgstr ""
+"Le fermier travaillant dans cette petite ferme n’a pas de sol défriché pour "
+"planter ses graines."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:8
 msgctxt "empire_building"
 msgid "Independent Fishing Hut"
-msgstr ""
+msgstr "Cabane de pêche indépendante"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:61
 msgctxt "empire_building"
@@ -147,37 +157,39 @@ msgid ""
 "The fisher working at this fisher’s hut can’t find any fishes in his work "
 "area."
 msgstr ""
+"Le pêcheur travaillant dans cette cabane de pêcheur ne peut trouver aucun "
+"poisson dans son espace de travail."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:8
 msgctxt "empire_building"
 msgid "Small Mill"
-msgstr ""
+msgstr "Petit moulin"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:47
 msgid "grinding wheat"
-msgstr ""
+msgstr "En cours de moudre le blé"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:8
 msgctxt "empire_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Travaux de fusion avancés"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:102
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:150
 msgctxt "empire_building"
 msgid "smelting iron"
-msgstr ""
+msgstr "fusion de fer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:119
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:136
 msgctxt "empire_building"
 msgid "smelting gold"
-msgstr ""
+msgstr "fusion de l'or"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:8
@@ -189,19 +201,19 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:66
 msgctxt "empire_building"
 msgid "sculpting marble columns"
-msgstr ""
+msgstr "sculpte des colonnes de marbre"
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:9
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "\"%1%\"<br>(%2%)"
 
 #. TRANSLATORS: Lore helptext for a Barbarian production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:37
 msgctxt "barbarians_building"
 msgid "‘What do you mean, my fish ain’t fresh?!’"
-msgstr ""
+msgstr "'Que veux-tu dire, mon poisson n’est pas frais ?!'"
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:39
@@ -210,11 +222,13 @@ msgid ""
 "Frequent response of a Barbarian fisherman,<br>often followed by an "
 "enjoyable brawl"
 msgstr ""
+"Réponse fréquente d’un pêcheur barbare, <br> souvent suivie d’une bagarre "
+"agréable"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:40
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:61
 msgid "Fishes on the coast near the fisher’s hut."
-msgstr ""
+msgstr "Poissons sur la côte près de la cabane du pêcheur."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:41
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:62
@@ -223,20 +237,24 @@ msgid ""
 "where an ordinary fisher can't reach. Thanks to his larger reach, you can "
 "get more fishes in total. It is useful only for open water."
 msgstr ""
+"Le pêcheur indépendant travaille lentement mais est capable d’attraper des "
+"poissons dans des endroits qu’un pêcheur ordinaire ne peut pas atteindre. "
+"Grâce à sa plus grande portée, vous pouvez obtenir plus de poissons au "
+"total. Il n’est utile que pour l’eau libre."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 1
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:44
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:65
 msgctxt "empire_building"
 msgid "The fisher needs %1$s on average to catch one fish."
-msgstr ""
+msgstr "Le pêcheur a besoin de %1$s en moyenne pour attraper un poisson."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:46
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:67
 msgctxt "empire_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "En cas de pentes ou d’obstacles sur le chemin, le temps est augmenté."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
@@ -256,7 +274,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:60
 msgctxt "empire_building"
 msgid "Fisherman’s secret to catch more fishes"
-msgstr ""
+msgstr "Le secret du pêcheur pour attraper plus de poissons"
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
@@ -270,7 +288,7 @@ msgstr ""
 #. "Inventas vitam iuvat excoluisse per artes."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:81
 msgid "An innovative lifestyle helps to cultivate through art."
-msgstr ""
+msgstr "Un mode de vie innovant aide à cultiver à travers l’art."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Advanced Stonemason's House
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:83
@@ -280,7 +298,7 @@ msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:84
 msgid "Carves marble columns out of marble."
-msgstr ""
+msgstr "Sculpte des colonnes en marbre à partir de marbre."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:85
 msgid ""
@@ -305,7 +323,7 @@ msgstr ""
 #. "Ad praesens ova cras pullis sunt meliora."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:98
 msgid "Eggs today are better than chickens tomorrow."
-msgstr ""
+msgstr "Les œufs aujourd’hui sont meilleurs que les poulets demain."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Small Farm
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:100
@@ -314,16 +332,20 @@ msgid ""
 "An impatient farmer considers building a small farm while sitting in a "
 "warehouse during marble shortage"
 msgstr ""
+"Un agriculteur impatient envisage de construire une petite ferme tout en "
+"étant assis dans un entrepôt pendant la pénurie de marbre"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:101
 msgid "Sows and harvests wheat."
-msgstr ""
+msgstr "Sème et récolte le blé."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:102
 msgid ""
 "Production of two small farms is approximately equal to production of one "
 "normal farm."
 msgstr ""
+"La production de deux petites fermes est approximativement égale à la "
+"production d’une ferme normale."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
@@ -337,7 +359,7 @@ msgstr ""
 #. "Labor omnia vincit."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:114
 msgid "Work conquers all things."
-msgstr ""
+msgstr "Le travail conquiert toutes choses."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Small Mill
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:116
@@ -346,15 +368,18 @@ msgid ""
 "A miller answering question whether his job wouldn’t be easier if he had a "
 "better mill"
 msgstr ""
+"Un meunier répondant à la question de savoir si son travail ne serait pas "
+"plus facile s’il avait une meilleure usine"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:117
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Moud le blé pour produire de la farine."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:118
 msgctxt "empire_building"
 msgid "The miller needs %1% on average to grind wheat into a sack of flour."
 msgstr ""
+"Le meunier a besoin de %1% en moyenne broyer le blé en un sac de farine."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:163
 msgctxt "barbarians_building"
@@ -362,6 +387,8 @@ msgid ""
 "‘Fine cloth and jewelry mean nothing to a true Barbarian.<br>But a noble "
 "sail in the wind will please his eyes.’"
 msgstr ""
+"'Un tissu fin et des bijoux ne signifient rien pour un vrai barbare. <br> "
+"Mais une voile noble dans le vent plaira à ses yeux.'"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:165
 msgctxt "barbarians_building"
@@ -372,16 +399,20 @@ msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:166
 msgid "Weaves cloth out of reed."
-msgstr ""
+msgstr "Tisse le tissu avec du roseau."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:167
 msgid "This building operates as an ordinary weaving mill only 20% slower."
 msgstr ""
+"Ce bâtiment fonctionne comme un moulin à tisser ordinaire seulement 20% plus "
+"lent."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:168
 msgctxt "barbarians_building"
 msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
 msgstr ""
+"Le tisserand a besoin de %1% en moyenne pour tisser un roseau en un morceau "
+"de vêtement."
 
 #. TRANSLATORS: Lore helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:202
@@ -402,7 +433,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:207
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:226
 msgid "Smelts iron ore into iron and gold ore into gold."
-msgstr ""
+msgstr "Transforme le minerai de fer en fer et le minerai d’or en or."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:208
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:227
@@ -412,6 +443,10 @@ msgid ""
 "smelting works. When there are not 2 pieces of required ore in stock, the "
 "building operates as a basic smelting works."
 msgstr ""
+"Les usines de fusion avancées ont besoin d’un seul morceau de charbon pour "
+"produire 2 lingots de fer ou 2 barres d’or. Le bâtiment produit du fer et de "
+"l’or plus rapidement qu’une fonderie de base. Lorsqu’il n’y a pas 2 pièces "
+"de minerai en stock, le bâtiment fonctionne comme une fonderie de base."
 
 #. TRANSLATORS: Performance helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:210
@@ -436,7 +471,7 @@ msgstr ""
 #. "Bis dat, qui cito dat."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:222
 msgid "Who gives promptly, gives twice."
-msgstr ""
+msgstr "Qui donne rapidement, donne deux fois."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:224
