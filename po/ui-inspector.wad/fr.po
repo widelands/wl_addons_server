@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# David D, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-05 03:11+0200\n"
+"POT-Creation-Date: 2025-10-11 03:13+0200\n"
 "PO-Revision-Date: 2024-10-26 21:10+0000\n"
+"Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +26,7 @@ msgstr ""
 #: addons/ui-inspector.wad/init.lua:16
 #: addons/ui-inspector.wad/show_window.lua:380
 msgid "UI Inspector"
-msgstr ""
+msgstr "Inspecteur UI"
 
 #: addons/ui-inspector.wad/addon:3
 msgid ""
@@ -31,58 +35,67 @@ msgid ""
 "names of panels and mimic existing windows without searching their source "
 "code, and assists with troubleshooting misbehaving plugins."
 msgstr ""
+"Cet utilitaire permet aux concepteurs de modules complémentaires d’inspecter "
+"la structure, la hiérarchie et les propriétés des panneaux et des fenêtres. "
+"Cela vous permet d’obtenir les noms internes des panneaux et de mimer les "
+"fenêtres existantes sans rechercher leur code source, et aide à résoudre les "
+"problèmes liés au mauvais comportement des plugins."
 
 #: addons/ui-inspector.wad/init.lua:8
 msgid "Inspect all open panels"
-msgstr ""
+msgstr "Inspecter tous panneaux ouverts"
 
 #: addons/ui-inspector.wad/show_window.lua:10
 #: addons/ui-inspector.wad/show_window.lua:182
 #: addons/ui-inspector.wad/show_window.lua:209
 msgid "%1$s “%2$s”"
-msgstr ""
+msgstr "%1$s “%2$s”"
 
 #: addons/ui-inspector.wad/show_window.lua:143
 msgid "The panel no longer exists."
-msgstr ""
+msgstr "Le panneau n’existe plus."
 
 #: addons/ui-inspector.wad/show_window.lua:160
 msgid "Copy class name"
-msgstr ""
+msgstr "Copier nom de classe"
 
 #: addons/ui-inspector.wad/show_window.lua:224
 msgid "Copy property name"
-msgstr ""
+msgstr "Copier nom de propriété"
 
 #: addons/ui-inspector.wad/show_window.lua:242
 msgid "%1$s (%2$s):"
-msgstr ""
+msgstr "%1$s (%2$s) :"
 
 #: addons/ui-inspector.wad/show_window.lua:266
 msgid "Copy value"
-msgstr ""
+msgstr "Copier valeur"
 
 #: addons/ui-inspector.wad/show_window.lua:266
 msgid "Go to this item"
-msgstr ""
+msgstr "Aller à cet élément"
 
 #: addons/ui-inspector.wad/show_window.lua:397
 msgid "Filter by name or class"
-msgstr ""
+msgstr "Filtrer par nom ou classe"
 
 #: addons/ui-inspector.wad/show_window.lua:404
 msgid "Clear filter"
-msgstr ""
+msgstr "Vider filtre"
 
 #: addons/ui-inspector.wad/show_window.lua:417
 msgid "Refresh"
-msgstr ""
+msgstr "Rafraîchir"
 
 #: screenshots/ui-inspector.wad/descriptions:3
 msgid ""
 "The Inspector in action: View the hierarchy and properties of current panels."
 msgstr ""
+"L’inspecteur en action : affiche la hiérarchie et les propriétés des "
+"panneaux actuels."
 
 #: screenshots/ui-inspector.wad/descriptions:4
 msgid "Too much clutter? Apply a filter to find a panel by name or type."
 msgstr ""
+"Trop d’encombrement ? Appliquez un filtre pour trouver un panneau par nom ou "
+"type."
