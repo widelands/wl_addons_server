@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-05 03:13+0200\n"
+"POT-Creation-Date: 2025-10-13 03:13+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -654,7 +654,7 @@ msgstr "plantation de maïs"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:62
 msgid "harvesting corn"
-msgstr ""
+msgstr "récolte de maïs"
 
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:73
 msgctxt "lutas_atlanteans_building"
@@ -1178,7 +1178,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:13
 msgid "Tidy Warehouses"
-msgstr ""
+msgstr "Ranger les entrepôts"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1187,14 +1187,18 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Commencez par un siège social de base. De temps en temps, vos travailleurs "
+"font des inventaires. S’il y a plus de 500 articles dans l’un de vos "
+"entrepôts, les travailleurs jettent un quart du stock stocké dans un tel "
+"entrepôt."
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:99
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Entrepôt nettoyé !"
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:176
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s a été nettoyé !"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
@@ -2569,19 +2573,19 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:986
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3130
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Il y a beaucoup de charbon ici."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ resource indicator: Iron, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:997
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3141
 msgid "There is a lot of iron here."
-msgstr ""
+msgstr "Il y a beaucoup de fer ici."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ resource indicator: Gold, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1008
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3152
 msgid "There is a lot of gold here."
-msgstr ""
+msgstr "Il y a beaucoup d'or ici."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ resource indicator: Stones, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1019

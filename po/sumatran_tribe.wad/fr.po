@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-05 03:13+0200\n"
+"POT-Creation-Date: 2025-10-13 03:13+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -591,12 +591,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:49
 msgid "gathering meat"
-msgstr ""
+msgstr "collecte de viande"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:57
 msgid "gathering fish"
-msgstr ""
+msgstr "collecte de poisson"
 
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:65
 #: addons/sumatran_tribe.wad/other_tribes/atlanteans_crocodile_hunters_house/init.lua:51
@@ -1104,7 +1104,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:84
 #: addons/sumatran_tribe.wad/productionsites/cassava_plantation/init.lua:64
 msgid "harvesting cassava"
-msgstr ""
+msgstr "récolte de manioc"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:92
 msgid "No Fields"
@@ -1792,7 +1792,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
 msgid "Tidy Warehouses"
-msgstr ""
+msgstr "Ranger les entrepôts"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1801,14 +1801,18 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Commencez par un siège social de base. De temps en temps, vos travailleurs "
+"font des inventaires. S’il y a plus de 500 articles dans l’un de vos "
+"entrepôts, les travailleurs jettent un quart du stock stocké dans un tel "
+"entrepôt."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:105
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Entrepôt nettoyé !"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:183
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s a été nettoyé !"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:185
@@ -3198,7 +3202,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1151
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:3029
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Il y a beaucoup de charbon ici."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1162

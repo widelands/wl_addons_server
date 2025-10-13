@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# David D, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-04 03:10+0100\n"
+"POT-Creation-Date: 2025-10-13 03:13+0200\n"
 "PO-Revision-Date: 2025-01-03 15:43+0000\n"
+"Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +29,7 @@ msgstr ""
 #: addons/tidy_warehouses.wad/empire.lua:13
 #: addons/tidy_warehouses.wad/frisians.lua:13
 msgid "Tidy Warehouses"
-msgstr ""
+msgstr "Ranger les entrepôts"
 
 #: addons/tidy_warehouses.wad/addon:3
 msgid ""
@@ -34,6 +38,10 @@ msgid ""
 "workers throw away one quarter of stock stored in such a warehouse and let "
 "you know, that they have cleaned your warehouse."
 msgstr ""
+"Commencez par un siège social de base. De temps en temps, vos travailleurs "
+"font des inventaires. S’il y a plus de 500 articles dans l’un de vos "
+"entrepôts, les travailleurs jettent un quart du stock stocké dans un tel "
+"entrepôt et vous informent qu’ils ont nettoyé votre entrepôt."
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/tidy_warehouses.wad/amazons.lua:15
@@ -46,6 +54,10 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Commencez par un siège social de base. De temps en temps, vos travailleurs "
+"font des inventaires. S’il y a plus de 500 articles dans l’un de vos "
+"entrepôts, les travailleurs jettent un quart du stock stocké dans un tel "
+"entrepôt."
 
 #: addons/tidy_warehouses.wad/amazons.lua:96
 #: addons/tidy_warehouses.wad/atlanteans.lua:99
@@ -53,7 +65,7 @@ msgstr ""
 #: addons/tidy_warehouses.wad/empire.lua:96
 #: addons/tidy_warehouses.wad/frisians.lua:111
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Entrepôt nettoyé !"
 
 #: addons/tidy_warehouses.wad/amazons.lua:170
 #: addons/tidy_warehouses.wad/atlanteans.lua:176
@@ -61,7 +73,7 @@ msgstr ""
 #: addons/tidy_warehouses.wad/empire.lua:173
 #: addons/tidy_warehouses.wad/frisians.lua:194
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s a été nettoyé !"
 
 #: addons/tidy_warehouses.wad/amazons.lua:171
 #: addons/tidy_warehouses.wad/atlanteans.lua:177
@@ -69,4 +81,4 @@ msgstr ""
 #: addons/tidy_warehouses.wad/empire.lua:174
 #: addons/tidy_warehouses.wad/frisians.lua:195
 msgid "%1$d items have been removed, %2$d items left."
-msgstr ""
+msgstr " %1$d articles ont été supprimés, %2$d articles restants."
