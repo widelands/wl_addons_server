@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Andi Chandler <andi@gowling.com>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-28 03:12+0200\n"
+"POT-Creation-Date: 2025-10-21 03:12+0200\n"
 "PO-Revision-Date: 2025-09-27 12:24+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2025\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
 "teams/35159/en_GB/)\n"
 "Language: en_GB\n"
@@ -23,65 +27,71 @@ msgid ""
 "This is the story of the rise of Pachiquima, an amazon from a small mountain "
 "village."
 msgstr ""
+"This is the story of the rise of Pachiquima, an Amazon from a small mountain "
+"village."
 
 #: addons/Amazon_campaign.wad/addon:9
 msgid "Amazon_campaign"
-msgstr ""
+msgstr "Amazon_campaign"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:18
 msgid "Medium."
-msgstr ""
+msgstr "Medium."
 
 #: addons/Amazon_campaign.wad/campaigns.lua:30
 msgid "The Rise to Power"
-msgstr ""
+msgstr "The Rise to Power"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:32
 msgid "Introduces the amazons"
-msgstr ""
+msgstr "Introduces the Amazons"
 
 #. TRANSLATORS: A campaign difficulty (easiest of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:37
 msgid "Easy"
-msgstr ""
+msgstr "Easy"
 
 #. TRANSLATORS: A campaign difficulty (medium of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:39
 msgid "Medium"
-msgstr ""
+msgstr "Medium"
 
 #. TRANSLATORS: A campaign difficulty (hardest of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:41
 msgid "Hard"
-msgstr ""
+msgstr "Hard"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:45
 msgid ""
 "This is the story of Pachiquima, an amazon woman from a small mountain "
 "village. We follow her on her journey through life and her rise to power."
 msgstr ""
+"This is the story of Pachiquima, an Amazon woman from a small mountain "
+"village. We follow her on her journey through life and her rise to power."
 
 #: input:8 standard
 msgid "Welcome to the Jungle"
-msgstr ""
+msgstr "Welcome to the Jungle"
 
 #: input:10 standard
 msgid ""
 "The first mission in the Amazon campaign. This will teach you the basics of "
 "their unique economy and start the story of Pachiquima."
 msgstr ""
+"The first mission in the Amazon campaign. This will teach you the basics of "
+"their unique economy and start the story of Pachiquima."
 
 #: input:38 input:50 standard
 msgid "Build the following:"
-msgstr ""
+msgstr "Build the following:"
 
 #: input:60 standard
 msgid "Collect wood from rare trees"
-msgstr ""
+msgstr "Collect wood from rare trees"
 
 #: input:74 standard
 msgid "We need to expand our territory to reach the mines."
-msgstr ""
+msgstr "We need to expand our territory to reach the mines."
 
 #: input:75 standard
 msgid ""
@@ -89,36 +99,41 @@ msgid ""
 "of a tree! This does mean it can only be build on a construction site that "
 "has a tree on it."
 msgstr ""
+"Treetop sentries are unique to the amazons. They can build a building on top "
+"of a tree! This does mean it can only be build on a construction site that "
+"has a tree on it."
 
 #: input:76 standard
 msgid ""
 "A patrol post is the smallest free standing military building of the amazon "
 "tribe. They see and conquer for 1 range larger than a treetop sentry."
 msgstr ""
+"A patrol post is the smallest free standing military building of the Amazon "
+"tribe. They see and conquer for 1 range larger than a treetop sentry."
 
 #: input:77 standard
 msgid "A tower is larger than a patrol post and conquers more area."
-msgstr ""
+msgstr "A tower is larger than a patrol post and conquers more area."
 
 #: input:86 standard
 msgid "Build a stone mine and a gold digger on mountain terrain."
-msgstr ""
+msgstr "Build a stone mine and a gold digger on mountain terrain."
 
 #: input:98 standard
 msgid "Start our food production."
-msgstr ""
+msgstr "Start our food production."
 
 #: input:111 standard
 msgid "Move to the east"
-msgstr ""
+msgstr "Move to the east"
 
 #: input:122 standard
 msgid "Building the warehouse"
-msgstr ""
+msgstr "Building the warehouse"
 
 #: input:131 standard
 msgid "Time to build a ship"
-msgstr ""
+msgstr "Time to build a ship"
 
 #: input:143 standard
 msgid ""
@@ -127,6 +142,10 @@ msgid ""
 "territory. Kapiqori is the head of one such small village, located on a "
 "mountain."
 msgstr ""
+"The Amazons live in villages along the Amazon River. There are many of these "
+"villages, but they are all small in size and scattered across a huge "
+"territory. Kapiqori is the head of one such small village, located on a "
+"mountain."
 
 #: input:144 standard
 msgid ""
@@ -134,6 +153,9 @@ msgid ""
 "is melting, leading to more water flowing down. Although this is good for "
 "the trees, the extra water also causes mudflows."
 msgstr ""
+"Recently, the villagers have been getting worried. Snow around the mountains "
+"is melting, leading to more water flowing down. Although this is good for "
+"the trees, the extra water also causes mudflows."
 
 #: input:145 standard
 msgid ""
@@ -143,6 +165,11 @@ msgid ""
 "Kapiqori believes this is because Ayllu Apu, the protector god of the "
 "mountain, has become enraged."
 msgstr ""
+"Kapiqori is troubled too. On top of the melting snow, the local gold mines "
+"have become too hot to work in. Gold is very important for the amazon tribe. "
+"They believe it's the tears of the sun god Inti and therefor it is sacred. "
+"Kapiqori believes this is because Ayllu Apu, the protector god of the "
+"mountain, has become enraged."
 
 #: input:152 standard
 msgid ""
@@ -151,6 +178,10 @@ msgid ""
 "however, have no knowledge of the workings of a volcano and blame it on the "
 "gods."
 msgstr ""
+"As you can see, the mountain is a volcano, which is becoming more and more "
+"active. This explains the heating mines and the melting snow. The Amazons, "
+"however, have no knowledge of the workings of a volcano and blame it on the "
+"gods."
 
 #: input:159 standard
 msgid ""
@@ -160,6 +191,11 @@ msgid ""
 "happy with this task, she has always wanted to become a warrior and doesn't "
 "care for much else."
 msgstr ""
+"The tribes geologists have found a new place to mine gold further east, "
+"along the amazon river. Kapiqori has decided to send his daughter Pachiquima "
+"to build an outpost and new mines there. Pachiquima herself is not very "
+"happy with this task, she has always wanted to become a warrior and doesn't "
+"care for much else."
 
 #. TRANSLATORS: pachiquima
 #. TRANSLATORS: kapiqori
@@ -173,15 +209,15 @@ msgstr ""
 #. TRANSLATORS: scout
 #: input:249 standard
 msgid "Yes chief, it will take about "
-msgstr ""
+msgstr "Yes chief, it will take about "
 
 #: input:250 standard
 msgid " minutes"
-msgstr ""
+msgstr " minutes"
 
 #: input:251 standard
 msgid " to reach the outpost."
-msgstr ""
+msgstr " to reach the outpost."
 
 #. TRANSLATORS: scout
 #. TRANSLATORS: pachiquima
@@ -199,7 +235,7 @@ msgstr ""
 #. TRANSLATORS: flavor text
 #: input:390 standard
 msgid "You Have Lost"
-msgstr ""
+msgstr "You Have Lost"
 
 #. TRANSLATORS: pachiquima
 #. TRANSLATORS: pachiquima
@@ -208,4 +244,4 @@ msgstr ""
 #. TRANSLATORS: flavor text
 #: input:446 standard
 msgid "Victory"
-msgstr ""
+msgstr "Victory"
