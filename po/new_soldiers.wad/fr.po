@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-11 03:13+0200\n"
+"POT-Creation-Date: 2025-10-26 02:13+0100\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -26,31 +26,34 @@ msgstr ""
 
 #: addons/new_soldiers.wad/addon:2
 msgid "New Soldiers"
-msgstr ""
+msgstr "Nouveaux soldats"
 
 #: addons/new_soldiers.wad/addon:3
 msgid ""
 "New more balanced soldiers. Soldiers of Empire train defence in colosseum. "
 "Amazons need gold for the second level of health training."
 msgstr ""
+"Nouveaux soldats plus équilibrés. Les soldats de l’Empire s’entraînent à la "
+"défense dans le Colisée. Les Amazones ont besoin d’or pour le deuxième "
+"niveau de formation en santé."
 
 #. TRANSLATORS: This is an Amazon worker name used in lists of workers
 #: addons/new_soldiers.wad/amazons_soldier/init.lua:20
 msgctxt "amazons_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldate"
 
 #. TRANSLATORS: This is an Atlantean worker name used in lists of workers
 #: addons/new_soldiers.wad/atlanteans_soldier/init.lua:107
 msgctxt "atlanteans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldat"
 
 #. TRANSLATORS: This is a Barbarian worker name used in lists of workers
 #: addons/new_soldiers.wad/barbarians_soldier/init.lua:107
 msgctxt "barbarians_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldat"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:8
@@ -73,7 +76,7 @@ msgstr "améliore un soldat en esquive du niveau 0 au niveau 1"
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:85
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "améliore un soldat en défense du niveau 0 au niveau 1"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/new_soldiers.wad/empire_colosseum/init.lua:104
@@ -97,7 +100,7 @@ msgstr "Soldat"
 #: addons/new_soldiers.wad/frisians_soldier/init.lua:628
 msgctxt "frisians_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldat"
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/new_soldiers.wad/postload.lua:9
@@ -107,12 +110,12 @@ msgstr "\"%1%\"<br>(%2%)"
 
 #: addons/new_soldiers.wad/postload.lua:19
 msgid "This shield is used for defense training."
-msgstr ""
+msgstr "Ce bouclier est utilisé pour l’entraînement à la défense."
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden shield because ...
 #: addons/new_soldiers.wad/postload.lua:24
 msgid "making a wooden shield"
-msgstr ""
+msgstr "fabriquer un bouclier en bois"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/new_soldiers.wad/postload.lua:40
@@ -122,10 +125,10 @@ msgstr "Actif"
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/new_soldiers.wad/postload.lua:57
 msgid "making a wooden helmet"
-msgstr ""
+msgstr "fabriquer un casque en bois"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_soldiers.wad/shield_wooden/init.lua:8
 msgctxt "ware"
 msgid "Wooden Shield"
-msgstr ""
+msgstr "Bouclier en bois"

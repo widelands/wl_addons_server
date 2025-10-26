@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# David D, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-29 03:10+0100\n"
+"POT-Creation-Date: 2025-10-26 02:14+0100\n"
 "PO-Revision-Date: 2024-02-19 16:34+0000\n"
+"Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -24,29 +28,34 @@ msgid ""
 "heroes in warehouses, military sites and idle warships and displays the "
 "results in your inbox."
 msgstr ""
+"Vous demandez-vous parfois : 'Où sont mes héros ?'. Cette extension trouve "
+"des héros dans les entrepôts, les sites militaires et les navires de guerre "
+"inactifs et affiche les résultats dans votre boîte de réception."
 
 #: addons/where_are_my_heroes.wad/addon:9
 msgid "Game: Where are my heroes?"
-msgstr ""
+msgstr "Jeu : où sont mes héros ?"
 
 #: addons/where_are_my_heroes.wad/find_heroes.lua:26
 msgid "%1$d Hero is sitting here twiddling thumbs."
 msgid_plural "%1$d Heroes are sitting here twiddling thumbs."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1$d héro est assis ici en se tournant les pouces."
+msgstr[1] "%1$d héros sont assis ici en se tournant les pouces."
+msgstr[2] "%1$d héros sont assis ici en se tournant les pouces."
 
 #: addons/where_are_my_heroes.wad/find_heroes.lua:27
 msgid "%1$d Hero"
 msgid_plural "%1$d Heroes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1$d héros"
+msgstr[1] "%1$d héros"
+msgstr[2] "%1$d héros"
 
 #: addons/where_are_my_heroes.wad/init.lua:9
 msgid "Where are my heroes?"
-msgstr ""
+msgstr "Où sont mes héros ?"
 
 #: addons/where_are_my_heroes.wad/init.lua:10
 msgid "For each place containing a hero a message will be send to the inbox."
 msgstr ""
+"Pour chaque lieu contenant un héros, un message sera envoyé à la boîte de "
+"réception."

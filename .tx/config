@@ -81,6 +81,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Challenge-of-Hornstaag-wad]
+file_filter            = po/Challenge_of_Hornstaag.wad/<lang>.po
+source_file            = po/Challenge_of_Hornstaag.wad/Challenge_of_Hornstaag.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Down-the-Mountain-wad]
 file_filter            = po/Down_the_Mountain.wad/<lang>.po
 source_file            = po/Down_the_Mountain.wad/Down_the_Mountain.wad.pot
