@@ -1,0 +1,3 @@
+return {
+   gauls_clay_pit = {"__replace_if_exists"},
+}

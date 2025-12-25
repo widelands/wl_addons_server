@@ -1,0 +1,66 @@
+push_textdomain("gauls.wad", true)
+
+local dirname = path.dirname (__file__)
+
+wl.Descriptions():new_worker_type {
+   name = "gauls_claydigger",
+   -- TRANSLATORS: This is a worker name used in lists of workers
+   descname = pgettext ("gauls_worker", "Clay Digger"),
+   animation_directory = dirname,
+   icon = dirname .. "menu.png",
+   vision_range = 2,
+
+   buildcost = {
+      gauls_carrier = 1,
+      shovel = 1,
+      buckets = 1
+   },
+
+   programs = {
+      dig = {
+         -- steps from building to pond: 2-7
+         -- min. worker time: 2 * 2 * 1.8 + 8 = 15.2 sec
+         -- max. worker time: 2 * 7 * 1.8 + 8 = 33.2 sec
+         "findspace=size:any radius:4",
+         "walk=coords",
+         "animate=dig duration:8s",
+         "plant=attrib:hole",
+         "return"
+      }
+   },
+
+   ware_hotspot = {0, 20},
+
+   spritesheets = {
+      walk = {
+         fps = 15,
+         frames = 10,
+         columns = 5,
+         rows = 2,
+         directional = true,
+         hotspot = {11, 24}
+      },
+      walkload = {
+         fps = 15,
+         frames = 10,
+         columns = 5,
+         rows = 2,
+         directional = true,
+         hotspot = {10, 26}
+      },
+      dig = {
+         fps = 20,
+         frames = 10,
+         columns = 5,
+         rows = 2,
+         hotspot = {15, 20}
+      },
+   },
+   animations = {
+      idle = {
+         hotspot = {8, 23}
+      },
+   },
+}
+
+pop_textdomain()
