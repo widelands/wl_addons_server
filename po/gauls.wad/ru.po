@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Viktor Skachkov <awsswa59@gmail.com>, 2025
 # Yuriy Sokolov <lention@mail.ru>, 2025
 # nskdmitry, 2025
+# Viktor Skachkov <awsswa59@gmail.com>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-26 03:14+0100\n"
+"POT-Creation-Date: 2025-12-27 03:13+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
-"Last-Translator: nskdmitry, 2025\n"
+"Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -40,37 +40,37 @@ msgstr ""
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/flowering/init.lua:10
 msgid "Apple Tree (Flowering)"
-msgstr ""
+msgstr "Яблоня (Цветение)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/fruit/init.lua:10
 msgid "Apple Tree (Fruit)"
-msgstr ""
+msgstr "Яблоня (Фрукт)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/mature/init.lua:10
 msgid "Apple Tree (Mature)"
-msgstr ""
+msgstr "Яблоня (Спелая)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/old/init.lua:10
 msgid "Apple Tree (Old)"
-msgstr ""
+msgstr "Яблоня (Старая)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/old/init.lua:12
 msgid "Apple Tree"
-msgstr ""
+msgstr "Яблоня"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/pole/init.lua:10
 msgid "Apple Tree (Pole)"
-msgstr ""
+msgstr "Яблоня (Средневозрастная)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/sapling/init.lua:10
 msgid "Apple Tree (Sapling)"
-msgstr ""
+msgstr "Яблоня (Молодое)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/cherry_tree/flowering/init.lua:10
@@ -247,7 +247,7 @@ msgstr ""
 #: addons/gauls.wad/militarysites/castle/init.lua:8
 msgctxt "gauls_building"
 msgid "Castle"
-msgstr ""
+msgstr "Замок"
 
 #. TRANSLATORS: Message sent by a Gauls military site
 #: addons/gauls.wad/militarysites/castle/init.lua:71
@@ -319,19 +319,19 @@ msgstr ""
 #: addons/gauls.wad/militarysites/headquarters/init.lua:8
 msgctxt "gauls_building"
 msgid "Headquarters"
-msgstr ""
+msgstr "Штаб"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/port/init.lua:8
 msgctxt "gauls_building"
 msgid "Port"
-msgstr ""
+msgstr "Порт"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/sentry/init.lua:8
 msgctxt "gauls_building"
 msgid "Sentry"
-msgstr ""
+msgstr "Караульная"
 
 #. TRANSLATORS: Message sent by a Gauls military site
 #: addons/gauls.wad/militarysites/sentry/init.lua:59
@@ -367,7 +367,7 @@ msgstr ""
 #: addons/gauls.wad/militarysites/stone_tower/init.lua:8
 msgctxt "gauls_building"
 msgid "Stone Tower"
-msgstr ""
+msgstr "Каменная башня"
 
 #. TRANSLATORS: Message sent by a Gauls military site
 #: addons/gauls.wad/militarysites/stone_tower/init.lua:44
@@ -403,7 +403,7 @@ msgstr ""
 #: addons/gauls.wad/militarysites/stronghold/init.lua:8
 msgctxt "gauls_building"
 msgid "Stronghold"
-msgstr ""
+msgstr "Укрепление"
 
 #. TRANSLATORS: Message sent by a Gauls military site
 #: addons/gauls.wad/militarysites/stronghold/init.lua:61
@@ -439,13 +439,13 @@ msgstr ""
 #: addons/gauls.wad/militarysites/warehouse/init.lua:8
 msgctxt "gauls_building"
 msgid "Warehouse"
-msgstr ""
+msgstr "Склад"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/watchtower/init.lua:8
 msgctxt "gauls_building"
 msgid "Watchtower"
-msgstr ""
+msgstr "Сторожевая башня"
 
 #. TRANSLATORS: Message sent by a Gauls military site
 #: addons/gauls.wad/militarysites/watchtower/init.lua:47
@@ -481,7 +481,7 @@ msgstr ""
 #: addons/gauls.wad/mines/coal_mine/init.lua:8
 msgctxt "gauls_building"
 msgid "Coal Mine"
-msgstr ""
+msgstr "Угольная шахта"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #: addons/gauls.wad/mines/coal_mine/init.lua:65
@@ -561,7 +561,7 @@ msgstr ""
 #: addons/gauls.wad/mines/copper_mine/init.lua:8
 msgctxt "gauls_building"
 msgid "Copper Mine"
-msgstr ""
+msgstr "Медная шахта"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining copper ore because ...
 #: addons/gauls.wad/mines/copper_mine/init.lua:85
@@ -588,7 +588,7 @@ msgstr ""
 #: addons/gauls.wad/mines/iron_mine/init.lua:8
 msgctxt "gauls_building"
 msgid "Iron Mine"
-msgstr ""
+msgstr "Железный рудник"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron ore because ...
 #: addons/gauls.wad/mines/iron_mine/init.lua:71
@@ -707,7 +707,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:8
 msgctxt "gauls_building"
 msgid "Armor Smithy"
-msgstr ""
+msgstr "Кузница Доспехов"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:73
@@ -755,19 +755,19 @@ msgstr ""
 #: addons/gauls.wad/productionsites/bakery/init.lua:8
 msgctxt "gauls_building"
 msgid "Bakery"
-msgstr ""
+msgstr "Пекарня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/gauls.wad/productionsites/bakery/init.lua:66
 msgctxt "gauls_building"
 msgid "baking bread"
-msgstr ""
+msgstr "печет хлеб"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/barracks/init.lua:8
 msgctxt "gauls_building"
 msgid "Barracks"
-msgstr ""
+msgstr "Казармы"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting warrior because ...
 #: addons/gauls.wad/productionsites/barracks/init.lua:65
@@ -918,7 +918,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/fishers_hut/init.lua:8
 msgctxt "gauls_building"
 msgid "Fisher’s Hut"
-msgstr ""
+msgstr "Хижина Рыболова"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/gauls.wad/productionsites/fishers_hut/init.lua:52
@@ -981,7 +981,7 @@ msgstr "плавит золото"
 #: addons/gauls.wad/productionsites/garden/init.lua:8
 msgctxt "gauls_building"
 msgid "Garden"
-msgstr ""
+msgstr "Сад"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grapevines because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:66
@@ -1032,7 +1032,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/kitchen/init.lua:8
 msgctxt "gauls_building"
 msgid "Kitchen"
-msgstr ""
+msgstr "Кухня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
 #: addons/gauls.wad/productionsites/kitchen/init.lua:63
@@ -1055,13 +1055,13 @@ msgstr ""
 #: addons/gauls.wad/productionsites/market/init.lua:8
 msgctxt "gauls_building"
 msgid "Market"
-msgstr ""
+msgstr "Рынок"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/mill/init.lua:8
 msgctxt "gauls_building"
 msgid "Mill"
-msgstr ""
+msgstr "Мельница"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding wheat because ...
 #: addons/gauls.wad/productionsites/mill/init.lua:68
@@ -1072,12 +1072,12 @@ msgstr "молет муку"
 #: addons/gauls.wad/productionsites/orchard/init.lua:8
 msgctxt "gauls_building"
 msgid "Orchard"
-msgstr ""
+msgstr "Фруктовый сад"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting fruit tree because ...
 #: addons/gauls.wad/productionsites/orchard/init.lua:70
 msgid "planting fruit tree"
-msgstr ""
+msgstr "Садит фруктовые деревья"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting juniper because ...
 #: addons/gauls.wad/productionsites/orchard/init.lua:78
@@ -1106,7 +1106,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:8
 msgctxt "gauls_building"
 msgid "Reed Yard"
-msgstr ""
+msgstr "Плантация"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:55
@@ -1133,7 +1133,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/sawmill/init.lua:8
 msgctxt "gauls_building"
 msgid "Sawmill"
-msgstr ""
+msgstr "Лесопилка"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/gauls.wad/productionsites/sawmill/init.lua:62
@@ -1172,7 +1172,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/sheep_farm/init.lua:8
 msgctxt "gauls_building"
 msgid "Sheep Farm"
-msgstr ""
+msgstr "Овцеферма"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
 #: addons/gauls.wad/productionsites/sheep_farm/init.lua:66
@@ -1183,7 +1183,7 @@ msgstr "разводит овец"
 #: addons/gauls.wad/productionsites/shipyard/init.lua:8
 msgctxt "gauls_building"
 msgid "Shipyard"
-msgstr ""
+msgstr "Верфь"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/gauls.wad/productionsites/shipyard/init.lua:85
@@ -1194,7 +1194,7 @@ msgstr "собирает корабль"
 #: addons/gauls.wad/productionsites/smokery/init.lua:8
 msgctxt "gauls_building"
 msgid "Smokery"
-msgstr ""
+msgstr "Коптильня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/gauls.wad/productionsites/smokery/init.lua:75
@@ -1279,7 +1279,7 @@ msgstr "молет"
 #: addons/gauls.wad/productionsites/well/init.lua:8
 msgctxt "gauls_building"
 msgid "Well"
-msgstr ""
+msgstr "Колодец"
 
 #: addons/gauls.wad/productionsites/well/init.lua:70
 msgid "No Water"
@@ -1321,7 +1321,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/workshop/init.lua:8
 msgctxt "gauls_building"
 msgid "Workshop"
-msgstr ""
+msgstr "Мастерская"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:82
@@ -1371,7 +1371,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making fishing net because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:190
 msgid "making fishing net"
-msgstr ""
+msgstr "плетет невод"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making flail because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:202
@@ -1602,7 +1602,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/ship/init.lua:9
 msgctxt "gaulss_ship"
 msgid "Ship"
-msgstr ""
+msgstr "Судно"
 
 #: addons/gauls.wad/tribes/gauls_tribe/ship/init.lua:48
 msgctxt "shipname"
@@ -2015,7 +2015,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:218
 msgctxt "gauls_ware"
 msgid "Wheat is essential for survival."
-msgstr ""
+msgstr "Пшеница необходима для выживания."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:220
@@ -2546,7 +2546,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:820
 msgctxt "gauls_worker"
 msgid "Plants trees."
-msgstr ""
+msgstr "Сажает деревья."
 
 #. TRANSLATORS: Help text for a Gallic worker: Clay Digger
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:827
@@ -2693,7 +2693,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1003
 msgctxt "gauls_worker"
 msgid "Trains and recruits warriors."
-msgstr ""
+msgstr "Тренирует и вербует воинов."
 
 #. TRANSLATORS: Help text for a Gallic worker: Scout
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1010
