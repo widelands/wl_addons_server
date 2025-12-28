@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-27 03:13+0100\n"
+"POT-Creation-Date: 2025-12-28 03:13+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1200,7 +1200,7 @@ msgstr "to naihen"
 #. TRANSLATORS: Completed/Skipped/Did not start sewing tunic because ...
 #: addons/gauls.wad/productionsites/sewing_workshop/init.lua:80
 msgid "sewing tunic"
-msgstr "eenen Umhang to naihen"
+msgstr "eene Kluft to naihen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/sheep_farm/init.lua:8
@@ -1913,24 +1913,34 @@ msgid ""
 "Don’t forget that druids are working only when there are trees nearby. All "
 "buildings occupied by druids need trees in their surroundings."
 msgstr ""
+"Vergeet nich, dat Druiden blots dann warken könen, wenn dat Bomen in de "
+"Naberskupp gifft. All Husen, waar Druiden warken, bruken Bomen in hör "
+"Naberskupp."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:8
 msgid ""
 "The traffic on Gallic roads is heavy. Keep in mind that you will need to "
 "spare some big green building spaces for warehouses."
 msgstr ""
+"Gallisk Straten sünd bannig besig. Vergeet nich, eeniges an groter gröner "
+"Rüümte tum Bauen för Kraamhusen intoplanen."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:12
 msgid ""
 "Ensure that you can produce all building materials before you start growing "
 "your economy."
 msgstr ""
+"Wees wiss, dat du all Aarden vun Baukraam produzeren kannst, ehr du "
+"begünnst, diene Weertskupp to vergrotern."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:16
 msgid ""
 "Reed Yards need open waters to grow reed. If you don’t see any right at the "
 "beginning of a new game, make finding it your priority."
 msgstr ""
+"Reitplantereen bruken open Waters, um Reit antoplanten. Wenn du glieks bi’m "
+"Begünn vun eenem nejen Speel keens hest, wees seker wiss, bannig fix welkes "
+"to finnen."
 
 #. TRANSLATORS: Help text for a Gallic ware: Log, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:92
@@ -1939,6 +1949,8 @@ msgid ""
 "Log is an important basic building material. It is also used for charcoal "
 "production."
 msgstr ""
+"Boomstammen sünd een wichtig Baukraam. Se worden ok bruukt, um Holtköhl to "
+"produzeren."
 
 #. TRANSLATORS: Help text for a Gallic ware: Log, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:94
@@ -1947,6 +1959,8 @@ msgid ""
 "Logs are produced by felling trees. Woodcutters need forester’s houses "
 "nearby to take care of the supply of trees."
 msgstr ""
+"Boomstammen worden produzeert, indeem Bomen umkappt worden. Boomslagers "
+"bruken Försterhusen in de Naberskupp, um up de Boom-Versörgung uptopassen."
 
 #. TRANSLATORS: Help text for a Gallic ware: Granite, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:105
@@ -1955,6 +1969,7 @@ msgid ""
 "Granite is a basic building material. You also need it for production of "
 "bricks."
 msgstr ""
+"Flint is een wichtig Baukraam. Du bruukst ’t ok, um Backstenen to produzeren."
 
 #. TRANSLATORS: Help text for a Gallic ware: Granite, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:107
@@ -1965,6 +1980,10 @@ msgid ""
 "enough rocks in your surroundings. This mine is also the only one that "
 "produces primarily granite while empty."
 msgstr ""
+"’t word vör allem vun Flintslagers produzeert, aver Iesen-Bargwarken un Tinn-"
+"Bargwarken produzeren ok Flint. Vör allem dat lütte Tinn-Bargwark kann di "
+"hülpen, wenn du nich genoog Stenen in diener Naberskupp hest. Deeses "
+"Bargwark is ok dat eenzigst, wat vör allem Flint produzeert, wenn ’t leeg is."
 
 #. TRANSLATORS: Help text for a Gallic ware: Planks, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:118
@@ -1988,7 +2007,7 @@ msgstr "Se worden ok in de Wapensmee bruukt."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:133
 msgctxt "gauls_ware"
 msgid "Clay is made out of water and mud to be turned into bricks."
-msgstr ""
+msgstr "Lehm word ut Water un Klei maakt, um Backstenen daarut to maken."
 
 #. TRANSLATORS: Help text for a Gallic ware: Sanded Wood
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:144
@@ -1997,6 +2016,8 @@ msgid ""
 "Bricks are an important building material. They are made out of a mix of "
 "clay and granite dried in a coal fire."
 msgstr ""
+"Backstenen sünd een wichtig Baukraam. Se worden ut eenem Mengsel vun Lehm un "
+"Flint in eenem Köhlen-Füür brannt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Reed
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:154
@@ -2006,12 +2027,15 @@ msgid ""
 "suited to make roofs waterproof. It is also used to make baskets and fishing "
 "nets."
 msgstr ""
+"Reit word vun Reitplantereen an de Küsten vun Meren un Stromen anplant. Nix "
+"is beter, um Dacken waterdicht to maken. ’t word ok bruukt, um Körven un "
+"Fiskernetten to maken."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wool
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:165
 msgctxt "gauls_ware"
 msgid "Wool is the hair of sheep. Weaving mills use it to make cloth."
-msgstr ""
+msgstr "Wulle is dat Fell vun Schapen. Een Weevstohl maakt daarut Stoff."
 
 #. TRANSLATORS: Help text for a Gallic ware: Cloth
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:176
@@ -2020,6 +2044,8 @@ msgid ""
 "Cloth is needed to build several buildings. It is also consumed in the "
 "sewing workshop, armor smithy and shipyard."
 msgstr ""
+"Eenige Husen bruken Stoff. ’t word ok vun de Naiheree, Panzersmee un Warft "
+"bruukt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Straw
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:186
@@ -2027,6 +2053,8 @@ msgctxt "gauls_ware"
 msgid ""
 "Straw is a by-product of wheat production. You need it for breeding animals."
 msgstr ""
+"Stroh fallt bi’m Produzeren vun Weit mit an. Du bruukst ’t, um Deerten to "
+"tüchten."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat Sheaf
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:194
@@ -2035,6 +2063,8 @@ msgid ""
 "Wheat sheaves are harvested by farmers who sent them to threshing floors to "
 "gain wheat and straw."
 msgstr ""
+"Weitschoven worden vun Buren arnt, well se wieder to Döskedelen stüren, waar "
+"daarut Weit un Stroh wunnen worden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Water, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:203
@@ -2049,12 +2079,15 @@ msgid ""
 "Water is used in multiple buildings. You need it for production of bricks, "
 "for preparation of bread, elixirs and potions and for breeding animals."
 msgstr ""
+"Water word vun mennig Husen bruukt. Du bruukst ’t tum Produzeren vun "
+"Backstenen, um Brood, Elixieren un Drunken torechttomaken un um Deerten to "
+"tüchten."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:218
 msgctxt "gauls_ware"
 msgid "Wheat is essential for survival."
-msgstr ""
+msgstr "Sünner Weit kann man nich överleven."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:220
@@ -2063,6 +2096,8 @@ msgid ""
 "Wheat is produced by threshing floors and turned into flour by mills. Sheep "
 "farms and cattle farms also need to be supplied with wheat."
 msgstr ""
+"Weit word vun Döskedelen produzeert un vun Möhlen to Mehl verarbeidt. "
+"Schaaptüchtereen un Ossentüchtereen mutten ok mit Weit versörgt worden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Flour
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:231
@@ -2071,6 +2106,8 @@ msgid ""
 "Flour is produced by the miller out of wheat and it is needed in the bakery "
 "to produce the tasty bread."
 msgstr ""
+"Mehl word vun de Müller ut Weit maakt un word in Backereen bruukt, um dat "
+"gode Brood to backen."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fruit, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:241
@@ -2079,12 +2116,16 @@ msgid ""
 "Fruit is picked by gardeners in the orchard and used as a substitute of "
 "vegetable by meal preparation."
 msgstr ""
+"Früchten worden vun Gaardners in de Kampen pottjet un könen in Stee vun "
+"Gemüse in Mahltieden bruukt worden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fruit, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:243
 msgctxt "gauls_ware"
 msgid "Druids do also pick some secret fruit ingredients when poaching elixir."
 msgstr ""
+"Druiden pottjen ok wisse geheeme Frücht-Bigaven, wenn se Elixieren "
+"vörbereiden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Vegetable
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:254
@@ -2093,12 +2134,14 @@ msgid ""
 "Vegetable is used by meal preparation. If there is no vegetable in the "
 "kitchen, fruit can be used instead."
 msgstr ""
+"Gemüse word bi’m Torechtmaken vun Mahltieden bruukt. Wenn de Köken keen "
+"Gemüse hett, kann se in Stee daarvun ok Früchten bruken."
 
 #. TRANSLATORS: Help text for a Gallic ware: Herbs, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:265
 msgctxt "gauls_ware"
 msgid "Herbs are irreplaceable by preparation of elixir and potion."
-msgstr ""
+msgstr "Sünner Krüden kann man keene Elixieren un Drunken vörbereiden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Herbs, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:267
@@ -2106,6 +2149,8 @@ msgctxt "gauls_ware"
 msgid ""
 "You need this two types of drinks in deep mines and for warrior training."
 msgstr ""
+"Du bruukst deese twee Aarden vun Dranken in deepen Bargwarken un bi’m Ridder-"
+"Öven."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fish
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:277
@@ -2114,6 +2159,8 @@ msgid ""
 "Fresh fish is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"Frisker Fiss word in de Rökelkamer rökelt un to de Mahltieden för diene "
+"Ridders un Bargwarkskeerls hentogeven."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meat
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:287
@@ -2122,6 +2169,8 @@ msgid ""
 "Fresh meat is smoked in the smokery and added into meals for your warriors, "
 "miners and carriers."
 msgstr ""
+"Friskes Fleesk word in de Rökelkamer rökelt un to de Mahltieden för diene "
+"Ridders, Bargwarkskeerls un Lastendragers hentogeven."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
@@ -2129,7 +2178,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:311
 msgctxt "gauls_ware"
 msgid "Smoked fish or smoked meat is used for meal preparation."
-msgstr ""
+msgstr "Rökelfiss of Rökelfleesk bruukt man, um Mahltieden torechttomaken."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 2
@@ -2137,7 +2186,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:313
 msgctxt "gauls_ware"
 msgid "Can be replaced by milk."
-msgstr ""
+msgstr "Man kann in Stee daarvun ok Melk nehmen."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bread
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:323
@@ -2146,6 +2195,8 @@ msgid ""
 "Bread is used in kitchens to prepare rations and meals. Bread is also "
 "consumed at the training sites (druid’s gatherings)."
 msgstr ""
+"Brood word in Köken bruukt, um Happen un Mahltieden torechttomaken. Brood "
+"word ok in de Övens-Boen (Druidenversammlungen) bruukt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Milk
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:332
@@ -2154,18 +2205,21 @@ msgid ""
 "Milk is used to prepare rations and meals. If there is no milk available, "
 "cook can use smoked fish or smoked meat instead."
 msgstr ""
+"Melk bruukt man bi’m Torechtmaken vun Happen un Mahltieden. Wenn keene Melk "
+"verföögbaar is, kann de Koch in Stee daarvun ok Rökelfiss of Rökelfleesk "
+"bruken."
 
 #. TRANSLATORS: Help text for a Gallic ware: Ration, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:345
 msgctxt "gauls_ware"
 msgid "A small bite to keep miners strong and working."
-msgstr ""
+msgstr "Wat goods, um Bargwarkskeerls stark un tofree to hollen."
 
 #. TRANSLATORS: Help text for a Gallic ware: Ration, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:347
 msgctxt "gauls_ware"
 msgid "The scout also consumes rations on his scouting trips."
-msgstr ""
+msgstr "De Bespejer bruukt ok Happen, wenn he spioneren gaht."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:358
@@ -2175,6 +2229,9 @@ msgid ""
 "fish or smoked meat and it also has to contain fruit or vegetable. It "
 "satisfies the needs of miners in advanced mines."
 msgstr ""
+"Een rechtes Mahl word in de Köken ut Brood un of Melk of Rökelfiss of "
+"Rökelfleesk maakt, un ’t mutt ok Früchten of Gemüse enthollen. ’t gifft de "
+"Bargwarkslüü in deepen Bargwarken allens, wat se bruken."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meal, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:360
@@ -2183,6 +2240,7 @@ msgid ""
 "Meal is also consumed at the training sites (fighting arenas, training "
 "camps)."
 msgstr ""
+"Mahltieden worden ok in de Övens-Boen eten (Fechtringen, Övens-Lagers)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:371
@@ -2190,30 +2248,33 @@ msgctxt "gauls_ware"
 msgid ""
 "While smelting metals, the fires of the Gallic furnaces are fed with coal."
 msgstr ""
+"Dat Füür in gallisk Smeltwarken bi’m Smelten vun Metallen verbrannt Köhl."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:373
 msgctxt "gauls_ware"
 msgid "It is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
+"Köhle word in Köhle-Bargwarken ofboot of in Holtköhl-Brannereen ut "
+"Boomstammen produzeert."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:384
 msgctxt "gauls_ware"
 msgid "Copper ore can be smelted into copper in a furnace."
-msgstr ""
+msgstr "Koperkluut kann in eener Smelteree to Koper smelt worden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:386
 msgctxt "gauls_ware"
 msgid "By adding some tin ore you can obtain bronze."
-msgstr ""
+msgstr "Du kannst wat Tinnkluut hentogeven, um Bronze to produzeren."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:397
 msgctxt "gauls_ware"
 msgid "Copper is a rare building material."
-msgstr ""
+msgstr "Koper is een düür Baukraam."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Iron, part 2
@@ -2221,7 +2282,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:425
 msgctxt "gauls_ware"
 msgid "It is produced by the furnaces."
-msgstr ""
+msgstr "’t word vun de Smeltereen produzeert."
 
 #. TRANSLATORS: Help text for a Gallic ware: Iron Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:410
@@ -2236,6 +2297,8 @@ msgid ""
 "Your miners need rations or meals and in deep mines also potions to produce "
 "it."
 msgstr ""
+"Diene Barkwarkskeerls bruken Happen of Mahltieden un in deepen Bargwarken ok "
+"Drunken, um dat to produzeren."
 
 #. TRANSLATORS: Help text for a Gallic ware: Iron, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:423
@@ -2247,7 +2310,7 @@ msgstr "Iesen bruukt man, um Warktüüg un Wapens to smeden."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:436
 msgctxt "ware"
 msgid "Gold ore can be smelted into gold in the furnace."
-msgstr ""
+msgstr "Goldkluut kann in eener Smelteree to Gold smelt worden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:438
@@ -2256,12 +2319,15 @@ msgid ""
 "It is primarily obtained in the copper-gold mines, but miners in your copper "
 "mines can usually find some too."
 msgstr ""
+"’t word vör allem in de Koper-Gold-Bargwarken ofboot, aver de Bargwarkslüü "
+"in dienen Koper-Bargwarken finnen tomeest ok welkes."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:449
 msgctxt "ware"
 msgid "Gold is needed for golden helmets. It is a rare building material too."
 msgstr ""
+"Gold bruukt man, um Goldene Helmen to produzeren. ’t is ok een düür Baukraam."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:451
@@ -2270,6 +2336,8 @@ msgid ""
 "Gold is the most valuable of all metals and it is smelted out of gold ore in "
 "furnaces."
 msgstr ""
+"Gold is dat düürste vun allen Metallen un word in Smeltereen ut Goldkluut "
+"smelt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tin Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:462
@@ -2277,6 +2345,8 @@ msgctxt "ware"
 msgid ""
 "Tin ore can be smelted together with copper ore into bronze in a furnace."
 msgstr ""
+"Tinnkluut kann in eener Smelteree tosamen mit Koperkluut to Bronze smelt "
+"worden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:464
@@ -2284,6 +2354,8 @@ msgctxt "gauls_ware"
 msgid ""
 "Your miners need rations and in deep mines meals with potion to produce it."
 msgstr ""
+"Diene Barkwarkskeerls bruken Happen un in deepen Bargwarken Mahltieden mit "
+"Drunken, um dat to produzeren."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:475
@@ -2291,12 +2363,13 @@ msgctxt "ware"
 msgid ""
 "Bronze is needed for armor production. It is a rare building material too."
 msgstr ""
+"Bronze bruukt man, um Wapenrocken to produzeren. ’t is ok een düür Baukraam."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:477
 msgctxt "gauls_ware"
 msgid "It is smelted out of copper ore and tin ore in furnaces."
-msgstr ""
+msgstr "’t word in Smeltereen ut Koperkluut un Tinnkluut smelt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Felling Ax, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:491
@@ -2304,6 +2377,8 @@ msgctxt "gauls_ware"
 msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
 msgstr ""
+"De Boomslager-Ext is dat Waarktüüg, waar man Bomen mit ofkappt. De "
+"Boomslager bruukt se."
 
 #. TRANSLATORS: Help text for a Gallic ware: Felling Ax, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Fire Tongs, part 2
@@ -2313,19 +2388,19 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:580
 msgctxt "gauls_ware"
 msgid "They are produced by craftsmen in a workshop."
-msgstr ""
+msgstr "Se worden vun Handwarkers in eener Smee produzeert."
 
 #. TRANSLATORS: Help text for a Gallic ware: Pick
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:504
 msgctxt "gauls_ware"
 msgid "Picks are used by stonecutters and miners."
-msgstr ""
+msgstr "Pickhacken worden vun de Flintslagers un Bargwarkskeerls bruukt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Shovel
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:515
 msgctxt "gauls_ware"
 msgid "The shovel is an essential tool for six types of workers."
-msgstr ""
+msgstr "De Schüppe is een wichtigs Warktüüg för sess Aarden vun Arbeiders."
 
 #. TRANSLATORS: Help text for a Gallic ware: Hammer, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:526
@@ -2334,6 +2409,8 @@ msgid ""
 "The hammer is a widely used tool. Geologists, builders, shipwrights and "
 "craftsmen, they all need hammer."
 msgstr ""
+"De Klöpper is een wichtig Warktüüg. Schattsökers, Baulüü, Schippebauers un "
+"Handwarkers all bruken eenen."
 
 #. TRANSLATORS: Help text for a Gallic ware: Hammer, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Fishing Net, part 2
@@ -2345,37 +2422,39 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:619
 msgctxt "gauls_ware"
 msgid "It is produced by craftsmen in a workshop."
-msgstr ""
+msgstr "’t word vun Handwarkers in eener Smee produzeert."
 
 #. TRANSLATORS: Help text for a Gallic ware: Scythe, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:539
 msgctxt "ware"
 msgid "The scythe is the tool of farmers."
-msgstr ""
+msgstr "Buren bruken Sichten."
 
 #. TRANSLATORS: Help text for a Gallic ware: Scythe, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:541
 msgctxt "gauls_ware"
 msgid "You need it to harvest wheat and reed."
-msgstr ""
+msgstr "Du bruukst se, um Weit un Reit to arnten."
 
 #. TRANSLATORS: Help text for a Gallic ware: Kitchen Tools, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:552
 msgctxt "gauls_ware"
 msgid "Kitchen tools are used by cooks and bakers."
-msgstr ""
+msgstr "Kochen un Backers bruken Besteck."
 
 #. TRANSLATORS: Help text for a Gallic ware: Kitchen Tools, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:554
 msgctxt "gauls_ware"
 msgid "You need them to produce rations, meals, smoked meat or fish and bread."
 msgstr ""
+"Du bruukst se, um Happen, Mahltieden, Rökelfleesk, Rökelfiss un Brood to "
+"produzeren."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fire Tongs, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:565
 msgctxt "gauls_ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Füürtangen sünd dat Warktüüg, waar man Kluten mit smelt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Buckets, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:578
@@ -2384,12 +2463,14 @@ msgid ""
 "Buckets are used by water carriers, breeders and together with a shovel by "
 "clay diggers and brick makers."
 msgstr ""
+"Emmers worden vun Waterdragers un Tüchters un tosamen mit eener Schüppe vun "
+"Lehmgravers un Backsteenbranners bruukt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fishing Net, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:591
 msgctxt "gauls_ware"
 msgid "Fishing net is used by fishers to catch fishes."
-msgstr ""
+msgstr "Fiskers bruken een Fiskernett, um Fisse to fangen."
 
 #. TRANSLATORS: Help text for a Gallic ware: Basket, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:604
@@ -2398,18 +2479,23 @@ msgid ""
 "Basket is used together with a shovel by gardener and together with a flail "
 "by toiler."
 msgstr ""
+"De Körv word tosamen mit eener Schüppe vum Gaardner un tosamen mit eenem "
+"Döskeflegel vum Rieter bruukt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Flail, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:617
 msgctxt "gauls_ware"
 msgid "Flail is used together with basket by toilers in the threshing floor."
 msgstr ""
+"De Döskeflegel word tosamen mit eenem Körv vun de Rieters in de Döskedeel "
+"bruukt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:633
 msgctxt "gauls_ware"
 msgid "Elixir is a magical drink that makes your warriors perform much better."
 msgstr ""
+"Een Elixier is een Zauberdrank, wat diene Ridders bannig machtiger maakt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:635
@@ -2419,13 +2505,16 @@ msgid ""
 "because the druid picks some secret ingredients before its preparation by "
 "himself."
 msgstr ""
+"Wees wiss, dat du för een Elixier würrelk twee Eenheiden Früchten bruukst, "
+"denn de Druide pottjet eenige geheeme Bigaven, ehr he dat Elixier sülvst "
+"torechtmaakt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 3
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:637
 msgctxt "gauls_ware"
 msgid ""
 "It is consumed at the training sites (druid’s gatherings, training camps)."
-msgstr ""
+msgstr "’t word in de Övens-Boen bruukt (Druidenversammlungen, Övens-Lagers)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Potion, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:648
@@ -2434,6 +2523,8 @@ msgid ""
 "Potion is a magical drink that makes your warriors and miners perform much "
 "better."
 msgstr ""
+"Een Drunk is een Zauberdrank, wat diene Ridders un Bargwarkslüü bannig "
+"machtiger maakt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Potion, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:650
@@ -2441,12 +2532,13 @@ msgctxt "gauls_ware"
 msgid ""
 "It is consumed at advanced mines and at the training sites (fighting arenas)."
 msgstr ""
+"’t word in de deepen Bargwarken un in de Övens-Boen bruukt (Fechtringen)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Spear
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:660
 msgctxt "gauls_ware"
 msgid "Spear is a widely used weapon for hunters and new warriors."
-msgstr ""
+msgstr "De Pieke is een vööl bruukt Wapen för Jägers un neje Ridders."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tunic, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:670
@@ -2454,6 +2546,8 @@ msgctxt "gauls_ware"
 msgid ""
 "A basic piece of clothing for your new warriors, trainers, druids and scouts."
 msgstr ""
+"Een eenfaches Kluft-Deel för diene nejen Ridders, Jägers, Druiden un "
+"Bespejers."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tunic, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:672
@@ -2461,12 +2555,14 @@ msgctxt "gauls_ware"
 msgid ""
 "It is also used for defense training under every new chain and bronze armor."
 msgstr ""
+"’t word ok bi’m Verteidigungs-Öven unner elkeen neje Stahl- un Bronze-"
+"Wapenrock bruukt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Short Sword, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:683
 msgctxt "gauls_ware"
 msgid "Short sword is a basic piece of equipment for your new trainers."
-msgstr ""
+msgstr "Een Lüttes Sweert is een eenfaches Wapen för diene nejen Mesters."
 
 #. TRANSLATORS: Help text for a Gallic ware: Short Sword, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:685
@@ -2475,6 +2571,9 @@ msgid ""
 "It is produced in the weapon smithy and used at the training camp – together "
 "with meal and elixir – to train warriors from attack level 0 to level 1."
 msgstr ""
+"’t word in de Wapensmee produzeert un im Övens-Lager – tosammen mit eenem "
+"Mahl un Elixier – bruukt, um Ridders vun Angriff-Stand 0 up Stand 1 "
+"uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Long Sword
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:695
@@ -2484,6 +2583,9 @@ msgid ""
 "together with meal and elixir – to train warriors from attack level 1 to "
 "level 2."
 msgstr ""
+"Dat Lange Sweert word in de Wapensmee produzeert un im Övens-Lager – "
+"tosammen mit eenem Mahl un Elixier – bruukt, um Ridders vun Angriff-Stand 1 "
+"up Stand 2 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Chain Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:704
@@ -2493,6 +2595,9 @@ msgid ""
 "arena – together with meal and tunic – to train warriors from defense level "
 "0 to level 1."
 msgstr ""
+"Deeser slichte Wapenrock word in de Panzersmee produzeert un in de Fechtring "
+"– tosamen mit eenem Mahl un eener Kluft – bruukt, um Ridders vun "
+"Verteidigung-Stand 0 up Stand 1 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:713
@@ -2502,6 +2607,9 @@ msgid ""
 "arena – together with meal and tunic – to train warriors from defense level "
 "1 to level 2."
 msgstr ""
+"Deeser gode Wapenrock word in de Panzersmee produzeert un in de Fechtring – "
+"tosamen mit eenem Mahl un eener Kluft – bruukt, um Ridders vun Verteidigung-"
+"Stand 1 up Stand 2 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Golden Helmet
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:722
@@ -2510,6 +2618,9 @@ msgid ""
 "This helmet is produced in the armor smithy and used at the fighting arena – "
 "together with meal – to train warriors from defense level 2 to level 3."
 msgstr ""
+"Deeser Helm word in de Panzersmee produzeert un in de Fechtring – tosamen "
+"mit eenem Mahl – bruukt, um Ridders vun Verteidigung-Stand 2 up Stand 3 "
+"uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wooden Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:731
@@ -2519,6 +2630,9 @@ msgid ""
 "– together with meal and potion – to train warriors from evade level 0 to "
 "level 1."
 msgstr ""
+"Deeser slichte Schild word in de Smee produzeert un in de Fechtring – "
+"tosamen mit eenem Mahl un eenem Drunk – bruukt, um Ridders vun Utwieken-"
+"Stand 0 up Stand 1 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:740
@@ -2528,6 +2642,9 @@ msgid ""
 "fighting arena – together with meal and potion – to train warriors from "
 "evade level 1 to level 2."
 msgstr ""
+"Deeser gode Schild word in de Panzersmee produzeert un in de Fechtring – "
+"tosamen mit eenem Mahl un eenem Drunk – bruukt, um Ridders vun Utwieken-"
+"Stand 1 up Stand 2 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
@@ -2535,19 +2652,19 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:761
 msgctxt "gauls_worker"
 msgid "Carries items along roads."
-msgstr ""
+msgstr "Draggt Waren över Straten."
 
 #. TRANSLATORS: Help text for a Gallic worker: Ferry
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:768
 msgctxt "gauls_worker"
 msgid "Ships wares across narrow rivers and straights."
-msgstr ""
+msgstr "Fährt Waren över smale Stromen un Seegaten."
 
 #. TRANSLATORS: Help text for a Gallic worker: Water Carrier
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:775
 msgctxt "gauls_worker"
 msgid "Carries water."
-msgstr ""
+msgstr "Draggt Water."
 
 #. TRANSLATORS: Help text for a Gallic worker: Gardener
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:782
@@ -2556,96 +2673,98 @@ msgid ""
 "Groves vegetable and herbs. While experienced, she can also work in the "
 "orchard and plant fruit trees."
 msgstr ""
+"Baut Gemüse un Krüden an. Mit mehr Erfahrung kann de Gaardner ok in de Kamp "
+"warken un Früchtbomen planten."
 
 #. TRANSLATORS: Help text for a Gallic worker: Experienced Gardener
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:789
 msgctxt "gauls_worker"
 msgid "Plants fruit trees and harvests fruit."
-msgstr ""
+msgstr "Plant Früchtbomen un arnt Früchten."
 
 #. TRANSLATORS: Help text for a Gallic worker: Builder
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:796
 msgctxt "gauls_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Warkt up Bausteden, um neje Husen to beschicken."
 
 #. TRANSLATORS: Help text for a Gallic worker: Stonecutter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:806
 msgctxt "gauls_worker"
 msgid "Mines stone."
-msgstr ""
+msgstr "Boot Steen of."
 
 #. TRANSLATORS: Help text for a Gallic worker: Woodcutter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:813
 msgctxt "gauls_worker"
 msgid "Fells trees."
-msgstr ""
+msgstr "Kappt Bomen."
 
 #. TRANSLATORS: Help text for a Gallic worker: Forester
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:820
 msgctxt "gauls_worker"
 msgid "Plants trees."
-msgstr ""
+msgstr "Plant Bomen."
 
 #. TRANSLATORS: Help text for a Gallic worker: Clay Digger
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:827
 msgctxt "gauls_worker"
 msgid "Makes clay out of mud and water."
-msgstr ""
+msgstr "Maakt Lehm ut Klei un Water."
 
 #. TRANSLATORS: Help text for a Gallic worker: Brick Maker
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:834
 msgctxt "gauls_worker"
 msgid "Burns bricks out of clay and granite."
-msgstr ""
+msgstr "Brannt Backstenen ut Lehm un Flint."
 
 #. TRANSLATORS: Help text for a Gallic worker: Breeder
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:841
 msgctxt "gauls_worker"
 msgid "Breeds animals."
-msgstr ""
+msgstr "Tücht Deerten."
 
 #. TRANSLATORS: Help text for a Gallic worker: Shipwright
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:848
 msgctxt "gauls_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Warkt in de Warft un baut neje Schippen."
 
 #. TRANSLATORS: Help text for a Gallic worker: Fisher
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:859
 msgctxt "gauls_worker"
 msgid "Catches fish in the sea."
-msgstr ""
+msgstr "Fangt Fisse in de See."
 
 #. TRANSLATORS: Help text for a Gallic worker: Hunter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:867
 msgctxt "gauls_worker"
 msgid "The hunter brings fresh, raw meat to the colonists."
-msgstr ""
+msgstr "De Jager jaggt friskes, ruges Fleesk för de Lüü."
 
 #. TRANSLATORS: Help text for a Gallic worker: Farmer
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:874
 msgctxt "gauls_worker"
 msgid "Plants fields and harvests wheat sheaves."
-msgstr ""
+msgstr "Plant Ackers un arnt Weitschoven."
 
 #. TRANSLATORS: Help text for a Gallic worker: Toiler
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:881
 msgctxt "gauls_worker"
 msgid "Threshes harvested wheat sheaves to obtain wheat grain."
-msgstr ""
+msgstr "Dösket arnt Weitschoven, um Weitkoorn to winnen."
 
 #. TRANSLATORS: Help text for a Gallic worker: Miller
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:888
 msgctxt "gauls_worker"
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Mahlt Weit to Mehl."
 
 #. TRANSLATORS: Help text for a Gallic worker: Baker
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:895
 msgctxt "gauls_worker"
 msgid "Bakes bread for ration and meal preparation."
-msgstr ""
+msgstr "Backt Brood för Happen un Mahltieden."
 
 #. TRANSLATORS: Help text for a Gallic worker: Cook
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:902
@@ -2654,12 +2773,14 @@ msgid ""
 "Prepares rations and meals for miners and warriors. Cook can also work at "
 "the smokery and smoke meat and fishes."
 msgstr ""
+"Maakt Happen un Mahltieden für Bargwarkslüü un Ridders torecht. De Koch kann "
+"ok in de Rökelkamer warken un Fleesk un Fiss rökeln."
 
 #. TRANSLATORS: Help text for a Gallic worker: Geologist
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:912
 msgctxt "gauls_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Finnt Mineraale to Ofboen."
 
 #. TRANSLATORS: Help text for a Gallic worker: Miner
 #. TRANSLATORS: Help text for a Gallic worker: Master Miner
@@ -2667,31 +2788,31 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:926
 msgctxt "gauls_worker"
 msgid "Mines ore and minerals."
-msgstr ""
+msgstr "Baut Kluten un Mineraale of."
 
 #. TRANSLATORS: Help text for a Gallic worker: Smelter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:933
 msgctxt "gauls_worker"
 msgid "Smelts ore."
-msgstr ""
+msgstr "Smelt Kluten."
 
 #. TRANSLATORS: Help text for a Gallic worker: Charcoal Burner
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:940
 msgctxt "gauls_worker"
 msgid "Burns logs and wood to produce charcoal."
-msgstr ""
+msgstr "Brannt Holtköhle ut Boomstammen un Holt."
 
 #. TRANSLATORS: Help text for a Gallic worker: Weaver
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:947
 msgctxt "gauls_worker"
 msgid "Weaves cloth."
-msgstr ""
+msgstr "Weevt Stoff."
 
 #. TRANSLATORS: Help text for a Gallic worker: Dressmaker
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:954
 msgctxt "gauls_worker"
 msgid "Dressmaker is an experienced weaver and produces tunics."
-msgstr ""
+msgstr "De Naihster is een Meister-Wever un produzeert Kluften."
 
 #. TRANSLATORS: Help text for a Gallic worker: Craftsman
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:964
@@ -2701,24 +2822,26 @@ msgid ""
 "evade training. Craftman can also help the experienced blacksmith in the "
 "armor smithy."
 msgstr ""
+"Produzeert Warktüüg för diene Arbeiders un Holtschilden för de eerste Stand "
+"vum Utwiekens-Öven. De Handwarker hülpt ok de Meistersmidd in de Panzersmee."
 
 #. TRANSLATORS: Help text for a Gallic worker: Blacksmith
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:971
 msgctxt "gauls_worker"
 msgid "Produces armor for the warriors."
-msgstr ""
+msgstr "Produzeert Wapenrocken för de Ridders."
 
 #. TRANSLATORS: Help text for a Gallic worker: Recruit
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:978
 msgctxt "gauls_worker"
 msgid "Eager to become a warrior and defend his tribe!"
-msgstr ""
+msgstr "Will radd een Ridder worden un sien Volk verteidigen!"
 
 #. TRANSLATORS: Help text for a Gallic worker: Warrior
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:987
 msgctxt "gauls_worker"
 msgid "Defend and Conquer!"
-msgstr ""
+msgstr "Verteidigen un innehmen!"
 
 #. TRANSLATORS: Help text for a Gallic worker: Druid
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:995
@@ -2727,18 +2850,20 @@ msgid ""
 "His elixirs improve health of warriors and his potions improve their "
 "training as well as miners’ productivity."
 msgstr ""
+"Siene Elixieren verbetern de Gesundheid vun Ridders un siene Drunken "
+"verbetern hör Öven un ok de Wöörde vun Bargwarkslüü."
 
 #. TRANSLATORS: Help text for a Gallic worker: Trainer
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1003
 msgctxt "gauls_worker"
 msgid "Trains and recruits warriors."
-msgstr ""
+msgstr "Hüürt Ridders an un bildt se ut."
 
 #. TRANSLATORS: Help text for a Gallic worker: Scout
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1010
 msgctxt "gauls_worker"
 msgid "Explores territory of your enemy."
-msgstr ""
+msgstr "Försket Geweste vun dienem Feind ut."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Ashes
 #. TRANSLATORS: Help text for a Gallic immovable: Destroyed Building
@@ -2753,56 +2878,58 @@ msgid ""
 "When clay diggers dig up earth, they leave holes in the ground. These holes "
 "vanish after a while. "
 msgstr ""
+"Wenn Lehmgravers Klei upgraven, blieven Locken mit Water in de Grund torügg. "
+"Deese Locken verswinnen na eeniger Tied."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1042
 msgid "These herbs has just been planted."
-msgstr ""
+msgstr "Deese Krüden sünd jüüst plant worden."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (small)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1049
 msgid "These herbs are growing."
-msgstr ""
+msgstr "Deese Krüden wassen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1056
 msgid "These herbs are flowering."
-msgstr ""
+msgstr "Deese Krüden blöömen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1063
 msgid "These herbs are ready for harvesting."
-msgstr ""
+msgstr "Deese Krüden sünd klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (harvested)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1070
 msgid "These herbs has been harvested."
-msgstr ""
+msgstr "Deese Krüden sünd arnt."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1077
 msgid "These vegetable plants has just been planted."
-msgstr ""
+msgstr "Deese Gemüseplanten sünd jüüst plant worden."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (small)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1084
 msgid "These vegetable plants are growing."
-msgstr ""
+msgstr "Deese Gemüseplanten wassen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1091
 msgid "These vegetable plants are flowering."
-msgstr ""
+msgstr "Deese Gemüseplanten blöömen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1098
 msgid "These vegetable plants are ready for harvesting."
-msgstr ""
+msgstr "Deese Gemüseplanten sünd klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (harvested)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1105
 msgid "This vegetable has been harvested."
-msgstr ""
+msgstr "Deeses Gemüse is arnt."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Wheat Field (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1112
@@ -2849,52 +2976,52 @@ msgstr "Deeser Reitacker is klaar tum arnten."
 #. TRANSLATORS: Help text for a Gallic immovable: Juniper (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1175
 msgid "This juniper has just been planted."
-msgstr ""
+msgstr "Deeser Wacholder is jüüst plant worden."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Juniper (small)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1182
 msgid "This juniper is growing."
-msgstr ""
+msgstr "Deeser Wacholder wasst."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Juniper (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1189
 msgid "This juniper is flowering."
-msgstr ""
+msgstr "Deeser Wacholder blöömt."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Juniper (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1196
 msgid "This juniper is ready for harvesting."
-msgstr ""
+msgstr "Deeser Wacholder is klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1203
 msgid "This raspberry is ready for harvesting."
-msgstr ""
+msgstr "Deese Henntjebeei is klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1210
 msgid "This black currant is ready for harvesting."
-msgstr ""
+msgstr "Deese Kakelbeei is klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1217
 msgid "These strawberries are ready for harvesting."
-msgstr ""
+msgstr "Deese Eerdjebeei is klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1224
 msgid "This desert hackberry is ready for harvesting."
-msgstr ""
+msgstr "Deese Wüüstenbeei is klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1231
 msgid "This red currant is ready for harvesting."
-msgstr ""
+msgstr "Deese Albeei is klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1238
 msgid "These blueberries are ready for harvesting."
-msgstr ""
+msgstr "Deese Bickbeei is klaar tum arnten."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1245
@@ -2905,17 +3032,17 @@ msgstr "Deeser Busk is klaar tum arnten."
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Sapling)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1259
 msgid "This cherry tree has just been planted."
-msgstr ""
+msgstr "Deeser Karsboom is jüüst plant worden."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Pole)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1266
 msgid "This cherry tree is growing."
-msgstr ""
+msgstr "Deeser Karsboom wasst."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Mature)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1273
 msgid "This cherry tree is fully grown."
-msgstr ""
+msgstr "Deeser Karsboom is utwassen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1280
@@ -2923,11 +3050,14 @@ msgid ""
 "This old cherry tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree when a woodcutter is allowed to fell it."
 msgstr ""
+"Deeser olle Karsboom kann vun eenem Boomslager as Boomstamm umkappt worden. "
+"Dat is de eenzigst Tied in de Leven vun deesem Boom, waar de Boomslager ’t "
+"ofkappen dürt."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Flowering)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1287
 msgid "This cherry tree is flowering."
-msgstr ""
+msgstr "Deeser Karsboom blöömt."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Fruit)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1294
@@ -2935,21 +3065,23 @@ msgid ""
 "This cherry tree is full of fruits. Gardeners and druids can pick some fruit "
 "here."
 msgstr ""
+"Deeser Karsboom is vull vun Früchten. Gaardners un Druiden könen hier "
+"Früchten pottjen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Sapling)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1301
 msgid "This apple tree has just been planted."
-msgstr ""
+msgstr "Deeser Appelboom is jüüst plant worden."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Pole)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1308
 msgid "This apple tree is growing."
-msgstr ""
+msgstr "Deeser Appelboom wasst."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Mature)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1315
 msgid "This apple tree is fully grown."
-msgstr ""
+msgstr "Deeser Appelboom is utwassen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1322
@@ -2957,11 +3089,14 @@ msgid ""
 "This old apple tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree when a woodcutter is allowed to fell it."
 msgstr ""
+"Deeser olle Appelboom kann vun eenem Boomslager as Boomstamm umkappt worden. "
+"Dat is de eenzigst Tied in de Leven vun deesem Boom, waar de Boomslager ’t "
+"ofkappen dürt."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Flowering)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1329
 msgid "This apple tree is flowering."
-msgstr ""
+msgstr "Deeser Appelboom blöömt."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Fruit)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1336
@@ -2969,6 +3104,8 @@ msgid ""
 "This apple tree is full of fruits. Gardeners and druids can pick some fruit "
 "here."
 msgstr ""
+"Deeser Appelboom is vull vun Früchten. Gaardners un Druiden könen hier "
+"Früchten pottjen."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: No resources
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1343
@@ -3024,11 +3161,13 @@ msgid ""
 "This vein contains tin ore that can be dug up by tin ore mines. There is "
 "also high ratio of granite in the ground."
 msgstr ""
+"In deeser Ader is Tinnkluut, wat vun Tinn-Bargwarken ofboot worden kann. "
+"Hier is ok mennig Flint in de Grund."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1393
 msgid "There is only a little bit of tin ore and granite here."
-msgstr ""
+msgstr "Hier is bedröövt minn Tinnkluut un Flint."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Coal, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1404
@@ -3048,7 +3187,7 @@ msgstr "Hier is een Bült vun Koper-Gold-Kluut."
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1437
 msgid "There is a lot of tin ore and granite here."
-msgstr ""
+msgstr "Hier is een Bült vun Tinnkluut un Flint."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Ship Under Construction
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1445
@@ -3059,13 +3198,13 @@ msgstr "Up deeser Stee word een Schipp baut."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1457
 msgctxt "gauls_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
-msgstr ""
+msgstr "Brengt diene Lüü unner un verwahrt diene Waren un anner Kraam."
 
 #. TRANSLATORS: Note help text for a Gallic warehouse: Headquarters
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1459
 msgctxt "gauls_building"
 msgid "The headquarters is your main building."
-msgstr ""
+msgstr "Dat Raadhuus is dien wichtigstes Huus."
 
 #. TRANSLATORS: Purpose help text for a Gallic warehouse: Warehouse
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1466
@@ -3074,6 +3213,7 @@ msgid ""
 "Your workers and warriors will find shelter here. Also stores your wares and "
 "tools."
 msgstr ""
+"Brengt diene Lüü un Ridders unner un verwahrt diene Waren un anner Kraam."
 
 #. TRANSLATORS: Purpose help text for a Gallic warehouse: Port
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1473
@@ -3082,12 +3222,14 @@ msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "warriors, wares and tools."
 msgstr ""
+"Deent tum Begünnen vun Hannel un Söken över Seefahrt. Brengt ok diene Lüü un "
+"Ridders unner un verwahrt diene Waren un anner Kraam."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Woodcutter’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1481
 msgctxt "gauls_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
-msgstr ""
+msgstr "Kappt Bomen in de Naberskupp un maakt daarut Boomstammen."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Woodcutter’s House
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 1
@@ -3097,6 +3239,8 @@ msgid ""
 "This building can produce one log between %1$s and %2$s, depending on how "
 "far the lumberjack has to walk."
 msgstr ""
+"Dat Huus bruukt %1$s bit %2$s, um eenen Boomstamm to produzeren, je nadeem, "
+"wo wied de Boomhauer lopen mutt."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 2
@@ -3124,13 +3268,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2069
 msgctxt "gauls_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "Wenn daar Schüünten of Hinners im Weg sünd, düürt dat langer."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Forester’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1496
 msgctxt "gauls_building"
 msgid "Plants trees in the surrounding area."
-msgstr ""
+msgstr "Plant Bomen in de Naberskupp."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Forester’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1498
@@ -3139,6 +3283,8 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
+"Dat Försterhuus bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
+"worden könen."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1501
@@ -3147,6 +3293,8 @@ msgid ""
 "The forester plants one tree between %1$s and %2$s, depending on how far he "
 "has to walk."
 msgstr ""
+"De Förster plant eenen Boom in %1$s bit %2$s, je nadeem, wo wied he lopen "
+"mutt."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Clay Pit
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1511
@@ -3155,6 +3303,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Clay is "
 "used to make bricks."
 msgstr ""
+"Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Lehm bruukt man, um "
+"Backstenen to maken."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Clay Pit, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1514
@@ -3163,18 +3313,20 @@ msgid ""
 "This building can produce one clay between %1$s and %2$s, depending on how "
 "far the clay digger has to walk."
 msgstr ""
+"Dat Huus bruukt %1$s bit %2$s, um een Lehm to produzeren, je nadeem, wo wied "
+"de Lehmgraver lopen mutt."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Stonecutter’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1524
 msgctxt "gauls_building"
 msgid "Cuts blocks of stone out of rocks in the vicinity."
-msgstr ""
+msgstr "Sleit Flint ut Stenen in de Naberskupp."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Stonecutter’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1526
 msgctxt "gauls_building"
 msgid "The stonecutter needs rocks to cut within the work area."
-msgstr ""
+msgstr "De Flintslager bruukt Stenen tum Slaan in de Arbeidsgewest."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Stonecutter’s Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1529
@@ -3183,12 +3335,14 @@ msgid ""
 "The stonecutter can produce one block of granite between %1$s and %2$s on "
 "average, depending on how far he has to walk."
 msgstr ""
+"De Flinthauer produzeert een Deel Flint dör de Bank in %1$s bit %2$s, je "
+"nadeem, wo wied he lopen mutt."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Well
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1539
 msgctxt "gauls_building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Hisst Water ut de Deepde."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Well, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1542
@@ -3196,6 +3350,7 @@ msgstr ""
 msgctxt "gauls_building"
 msgid "The carrier needs %s to get one bucket full of water."
 msgstr ""
+"De Lastendrager bruukt dör de Bank %s um eenen Emmer vull Water to kriegen."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Well, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1544
@@ -3203,24 +3358,25 @@ msgstr ""
 msgctxt "gauls_building"
 msgid "If the water resource is depleted, the carrier needs %s on average."
 msgstr ""
+"Wenn dat Water-Mineraal leeg is, bruukt de Lastendrager dör de Bank %s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Fisher's Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1552
 msgctxt "gauls_building"
 msgid "Fishes on the coast near the fisher’s house."
-msgstr ""
+msgstr "Fisket an de Küst in de Naberskupp vun de Fiskerhuus."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Fisher's Hut, Part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1555
 msgctxt "gauls_building"
 msgid "The fisher’s hut needs water full of fish within the work area."
-msgstr ""
+msgstr "Dat Fisker-Huus bruukt Water mit Fisken in de Arbeidsgewest."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Fisher's Hut, Part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1557
 msgctxt "gauls_building"
 msgid "Roads and trees along the shoreline block fishing."
-msgstr ""
+msgstr "Straten un Bomen up de Küst hinnern ’t Fisken."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Fisher's Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1561
@@ -3229,6 +3385,8 @@ msgid ""
 "This building can produce one fish between %1$s and %2$s, depending on how "
 "far the fisher has to walk."
 msgstr ""
+"Dat Huus bruukt %1$s bit %2$s, um eenen Fiss to produzeren, je nadeem, wo "
+"wied de Fisker lopen mutt."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Hunter’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1571
@@ -3240,7 +3398,7 @@ msgstr "Jaggt Deerten, um Fleesk to produzeren."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1573
 msgctxt "gauls_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
-msgstr ""
+msgstr "De Jaggtkaat bruukt Deerten tum Jagen in de Arbeidsgewest."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Hunter’s Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1576
@@ -3249,6 +3407,8 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Dat Huus bruukt %1$s bit %2$s, um een Fleesk to produzeren, je nadeem, wo "
+"wied de Jäger lopen mutt."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Scout’s Cottage
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1586
@@ -3260,13 +3420,13 @@ msgstr "Förskt frömde Geweste ut."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1589
 msgctxt "gauls_building"
 msgid "One exploration trip of the scout takes between %1$s and %2$s."
-msgstr ""
+msgstr "Een Förskloop vun de Bespejer düürt %1$s bit %2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1601
 msgctxt "gauls_building"
 msgid "Forges the tools that your workers need."
-msgstr ""
+msgstr "Smeedt dat Warktüüg, wat diene Arbeiders bruken."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1603
@@ -3276,19 +3436,23 @@ msgid ""
 "economy, production of one of each item takes %1$s. If only one kind of item "
 "is needed by the economy, its production takes %2$s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen un de Weertskupp all Aarden vun "
+"produzeert Waren bruukt, produzeert dat Huus dör de Bank elkeen Waar in "
+"%1$s. Wenn de Weertskupp blots eene Aard vun Waar bruukt, word se dör de "
+"Bank in %2$s produzeert."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sawmill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1610
 msgctxt "gauls_building"
 msgid "Saws logs to produce planks."
-msgstr ""
+msgstr "Saagt Planken ut Boomstammen."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Sawmill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1612
 #, lua-format
 msgctxt "gauls_building"
 msgid "The sawmill needs %s to produce one plank."
-msgstr ""
+msgstr "De Saagmöhlen bruken %s um eene Plank to produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Brick Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1619
@@ -3297,6 +3461,8 @@ msgid ""
 "Burns bricks using granite and clay, and coal as fuel. Bricks are an "
 "important building material."
 msgstr ""
+"Brannt Backstenen ut Flint un Lehm. Köhle hollt dat Füür heet. Backstenen "
+"sünd een wichtig Baukraam."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Brick Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1622
@@ -3304,12 +3470,13 @@ msgstr ""
 msgctxt "gauls_building"
 msgid "The brick kiln needs %s on average to produce one brick."
 msgstr ""
+"De Backsteenbranneree bruukt dör de Bank %s um eenen Backsteen to produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Reed Yard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1630
 msgctxt "gauls_building"
 msgid "Produces reed."
-msgstr ""
+msgstr "Produzeert Reit."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Reed Yard
 #. TRANSLATORS: Note help text for a Gallic production site: Ferry Yard
@@ -3317,7 +3484,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2050
 msgctxt "gauls_building"
 msgid "Needs water nearby."
-msgstr ""
+msgstr "Bruukt Water in de Naberskupp."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Reed Yard, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1635
@@ -3326,12 +3493,14 @@ msgid ""
 "The farmer can produce one bundle of reed between %1$s and %2$s on average, "
 "depending on how far he has to walk."
 msgstr ""
+"De Buur produzeert een Bünsel Reit dör de Bank in %1$s bit %2$s, je nadeem, "
+"wo wied he lopen mutt."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Furnace
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1645
 msgctxt "gauls_building"
 msgid "Smelts ore into iron, copper, bronze and gold."
-msgstr ""
+msgstr "Smelt Kluten to Iesen, Koper, Bronze un Gold."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Furnace
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1647
@@ -3342,12 +3511,17 @@ msgid ""
 "takes %1$s. If only one kind of metal is needed, it takes %2% to produce one "
 "iron or copper ingot or %3% to produce one bronze or gold bar."
 msgstr ""
+"Wenn alle Waren to rechter Tied ankomen un de Weertskupp all Metallen "
+"bruukt, düürt dat Produzeren vun 6 Delen Iesen, 3 Delen Bronze un 2 Delen "
+"Gold %1$s. Wenn blots eene Aard vun Metall bruukt word, düürt ’t %2%, um een "
+"Deel Iesen of Koper to produzeren, of %3%, um een Deel Bronze of Gold to "
+"produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Garden
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1654
 msgctxt "gauls_building"
 msgid "Grows herbs and vegetable."
-msgstr ""
+msgstr "Baut Krüden un Gemüse an."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Garden
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1657
@@ -3359,12 +3533,17 @@ msgid ""
 "gardener resp. experienced gardener need %3$s resp. %4$s on average to "
 "produce one baskets of vegetable or one bundle of herbs."
 msgstr ""
+"Wenn de Weertskupp all Produkten bruukt, produzeert de Gaardner of "
+"Meistergaardner dör de Bank in %1$s of %2$s twee Körven Gemüse un twee "
+"Bünsels Krüden. Wenn de Weertskupp blots eene Aard vun Produkt bruukt, "
+"produzeert de Gaardner of Meistergaardner dör de Bank in %3$s of %4$s eenen "
+"Körv Gemüse of een Bünsel Krüden."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Orchard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1665
 msgctxt "gauls_building"
 msgid "Plants fruit trees and harvests fruit."
-msgstr ""
+msgstr "Plant Früchtbomen un arnt Früchten."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Orchard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1667
@@ -3374,6 +3553,9 @@ msgid ""
 "and cherry tree. Per two fruit trees, one juniper – which has a form of a "
 "bush – is planted."
 msgstr ""
+"Je na de Klima worden twee Aarden vun Früchtbomen plant – Appelbomen un "
+"Karsbomen. För elkeen twee Früchtbomen word ok een Wacholder – wat een Busk "
+"is – plant."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1670
@@ -3382,6 +3564,8 @@ msgid ""
 "When the orchard has already multiple trees, the gardener can produce one "
 "basket of fruit between %1$s and %2$s, depending on how far she has to walk."
 msgstr ""
+"Wenn de Kamp al eenige Bomen hett, produzeert de Gaardner eenen Körv "
+"Früchten in %1$s bit %2$s, je nadeem, wo wied he lopen mutt."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Purpose help text for a Gallic production site: Threshing Floor
@@ -3389,7 +3573,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1691
 msgctxt "gauls_building"
 msgid "Threshes harvested wheat sheaves to obtain wheat grain."
-msgstr ""
+msgstr "Dösket arnt Weitschoven, um Weitkoorn to winnen."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Note help text for a Gallic production site: Threshing Floor
@@ -3397,7 +3581,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1693
 msgctxt "gauls_building"
 msgid "Straw is collected only when the economy needs straw."
-msgstr ""
+msgstr "Stroh word blot dann pottjet, wenn de Weertskupp Stroh bruukt."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Performance help text for a Gallic production site: Threshing Floor
@@ -3408,42 +3592,44 @@ msgid ""
 "The toiler needs %1$s to produce one basket of wheat or %2$s to produce one "
 "basket of wheat and one bale of straw."
 msgstr ""
+"De Rieter bruukt %1$s um eenen Körv Weit to produzeren of %2$s um eenen Körv "
+"Weit un eenen Ball Stroh to produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1702
 msgctxt "gauls_building"
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Mahlt Weit to Mehl."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1704
 msgctxt "gauls_building"
 msgid "The miller needs %1% to grind wheat into a sack of flour."
-msgstr ""
+msgstr "De Müller bruukt %1% um Weit för eenen Sack Mehl to mahlen."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Bakery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1711
 msgctxt "gauls_building"
 msgid "Bakes bread for ration and meal preparation."
-msgstr ""
+msgstr "Backt Brood för Happen un Mahltieden."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Bakery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1713
 msgctxt "gauls_building"
 msgid "The baker needs %1% on average to bake a loaf of bread."
-msgstr ""
+msgstr "De Backer bruukt dör de Bank %1% um een Brood to backen."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1720
 msgctxt "gauls_building"
 msgid "Prepares rations to feed the scouts and miners."
-msgstr ""
+msgstr "Maakt Happen för Bespejers un Bargwarkskeerls torecht."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1722
 msgctxt "gauls_building"
 msgid "The cook needs %1% on average to prepare one ration."
-msgstr ""
+msgstr "De Koch bruukt dör de Bank %1% um een Happ torechttomaken."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1729
@@ -3452,6 +3638,8 @@ msgid ""
 "Prepares rations for scouts and miners as well as meals to feed the miners "
 "at advanced mines and warriors at the training sites."
 msgstr ""
+"Maakt Happen för Bespejers un Bargwarkslüü un Mahltieden för de Bargwarkslüü "
+"in deepen Bargwarken un Ridders in de Övens-Boen torecht."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1731
@@ -3461,12 +3649,16 @@ msgid ""
 "economy, production of one of each food takes %1$s. If only one kind of food "
 "is needed by the economy, production of one ration or one meal takes %2$s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen un de Weertskupp all Aarden vun Etens "
+"bruukt, produzeert dat Huus elkeen Aard vun Eten in %1$s. Wenn de Weertskupp "
+"blots eene Aard vun Eten bruukt, word dör de Bank een Happ of een Mahl in "
+"%2$s produzeert."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Smokery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1738
 msgctxt "gauls_building"
 msgid "Smokes fish and meat using logs."
-msgstr ""
+msgstr "Rökelt Fiss un Fleesk mit Boomstammen."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Smokery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1740
@@ -3475,12 +3667,14 @@ msgid ""
 "If this building is fully supplied, the cook needs %1% to smoke three fishes "
 "or three pieces of meat."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen, bruukt de Koch %1%, um dree Fisse of "
+"dree Delen Fleesk to rökeln."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1747
 msgctxt "gauls_building"
 msgid "Produces elixirs and potions for your miners and warriors."
-msgstr ""
+msgstr "Produzeert Elixieren un Drunken för diene Bargwarkslüü un Ridders."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1749
@@ -3490,6 +3684,9 @@ msgid ""
 "for potion preparation and fruit trees with fruit for elixir preparation in "
 "his working area."
 msgstr ""
+"De Druide pottjet eenige geheeme Bigaven sülvst. Daarför bruukt he Bomen tum "
+"Torechtmaken vun Drunken un Früchtbomen mit Früchten tum Torechtmaken vun "
+"Elixieren in sienem Arbeidsgewest."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1751
@@ -3499,18 +3696,22 @@ msgid ""
 "economy, production of one of each drink takes %1$s. If only one kind of "
 "drink is needed by the economy, production of one drink takes %2$s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen un de Weertskupp all Aarden vun "
+"Dranken bruukt, produzeert dat Huus elkeen Aard vun Drank in %1$s. Wenn de "
+"Weertskupp blots eene Aard vun Drank bruukt, word een Drank in %2$s "
+"produzeert."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sewing Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1758
 msgctxt "gauls_building"
 msgid "Produces tunics."
-msgstr ""
+msgstr "Produzeert Kluften."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Sewing Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1760
 msgctxt "gauls_building"
 msgid "The dressmaker needs %1% to sew one piece of clothing."
-msgstr ""
+msgstr "De Naihster bruukt %1% um eene Kluft to naihen."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Weapon Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1767
@@ -3519,6 +3720,8 @@ msgid ""
 "Produces spears for hunters and new warriors and swords for trainers and "
 "attack training."
 msgstr ""
+"Produzeert Pieken för Jägers un neje Ridders un Sweerten för Mesters un tum "
+"Angriff-Öven."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Weapon Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1769
@@ -3530,12 +3733,17 @@ msgid ""
 "production of one short sword takes %2$s, one long sword takes %3$s and one "
 "spear takes %4$s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen un de Weertskupp all Aarden vun "
+"Sweerten un Pieken bruukt, produzeert dat Huus twee Pieken, een Lüttes "
+"Sweert un een Langes Sweert in %1$s. Wenn de Weertskupp blots eene Aard vun "
+"Sweert of Pieke bruukt, word een Lüttes Sweert in %2$s, een Langes Sweert in "
+"%3$s un eene Pieke in %4$s produzeert."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Armor Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1776
 msgctxt "gauls_building"
 msgid "Produces shields and armor."
-msgstr ""
+msgstr "Produzeert Schilden un Wapenrocken."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Armor Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1778
@@ -3546,37 +3754,42 @@ msgid ""
 "is needed, production of one bronze shield takes %2$s and production of any "
 "other item takes %3$s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen un de Weertskupp all Aarden vun "
+"Wapenrock bruukt, produzeert dat Huus elkeen Wapenrock in %1$s. Wenn de "
+"Weertskupp blots eene Aard vun Wapenrock bruukt, word een Bronze-Schild in "
+"%2$s produzeert un een vun elkeen anner Wapenrock in %3$s produzeert."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Barracks
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1785
 msgctxt "gauls_building"
 msgid "Equips recruits and trains them as warriors."
-msgstr ""
+msgstr "Rüst Lehrwichter ut un maakt se to Ridders."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Barracks
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1787
 #, lua-format
 msgctxt "gauls_building"
 msgid "The barracks need %s to recruit one warrior."
-msgstr ""
+msgstr "De Kasern bruukt %s um eenen Ridder antohüren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Charcoal Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1794
 msgctxt "gauls_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Brannt Holtköhl ut Boomstammen."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Charcoal Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1796
 msgctxt "gauls_building"
 msgid "The charcoal burner needs %1% to produce one lump of coal."
 msgstr ""
+"De Holtköhlbranner bruukt dör de Bank %1% um een Deel Köhl to produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1805
 msgctxt "gauls_building"
 msgid "Sows wheat and harvests wheat sheaves."
-msgstr ""
+msgstr "Sait Weit un arnt Weitschoven."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1807
@@ -3585,6 +3798,8 @@ msgid ""
 "The farmer sows and harvests one sheaf of wheat between %1$s and %2$s, "
 "depending on how far he has to walk."
 msgstr ""
+"De Buur sait un arnt een Weitschoov in %1$s bit %2$s, je nadeem, wo wied he "
+"lopen mutt."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1814
@@ -3593,6 +3808,8 @@ msgid ""
 "Breeds strong oxen for adding them to the transportation system. Also keeps "
 "cows for their milk and meat."
 msgstr ""
+"Tücht starke Ossen för dat Stratennett. Tücht daarto Kohjen för hör Melk un "
+"Fleesk."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1816
@@ -3601,6 +3818,9 @@ msgid ""
 "Production of meat stops when economy doesn’t need smoked meat, production "
 "of both milk and meat stops when economy doesn’t need milk."
 msgstr ""
+"Dat Produzeren vun Fleesk word anhollt, wenn de Weertskupp keen Rökelfleesk "
+"bruukt; dat Produzeren vun Fleesk un ok Melk word anhollt, wenn de "
+"Weertskupp keene Melk bruukt."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1818
@@ -3612,30 +3832,35 @@ msgid ""
 "one piece of meat takes %3$s and production of 2 jugs of milk only takes "
 "%4$s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen un de Weertskupp all Aarden vun "
+"Produkten bruukt, bruukt dat Huus %1$s, um eenen Oss antohüren un 2 Kannen "
+"Melk un een Deel Fleesk to produzeren. Blots eenen Oss antohüren düürt blots "
+"%2$s; 2 Kannen Melk un een Deel Fleesk to produzeren düürt %3$s; un 2 Kannen "
+"Melk to produzeren düürt blots %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1825
 msgctxt "gauls_building"
 msgid "Keeps sheep for their wool."
-msgstr ""
+msgstr "Tücht Schapen för hör Wull."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1827
 msgctxt "gauls_building"
 msgid "The sheep farm needs %1% to produce one wool."
-msgstr ""
+msgstr "De Schaaptüchteree bruukt %1% um een Ball Wulle to produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Weaving Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1834
 msgctxt "gauls_building"
 msgid "Weaves cloth out of wool."
-msgstr ""
+msgstr "Weevt Stoff ut Wulle."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Weaving Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1836
 msgctxt "gauls_building"
 msgid "The weaver needs %1% to make one piece of cloth."
-msgstr ""
+msgstr "De Wever bruukt %1% um een Deel Stoff to maken."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Coal Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Coal Mine
@@ -3645,13 +3870,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1863
 msgctxt "gauls_building"
 msgid "Digs coal out of the ground in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Köhle ut de Grund."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Coal Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1847
 msgctxt "gauls_building"
 msgid "The miner needs %1% to produce one lump of coal."
-msgstr ""
+msgstr "De Bargwarkskeerl bruukt %1% um een Deel Köhl to produzeren."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Coal Mine
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Coal Mine
@@ -3659,7 +3884,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1865
 msgctxt "gauls_building"
 msgid "The miners need %1% to produce one lump of coal."
-msgstr ""
+msgstr "De Bargwarkslüü bruken %1% um een Deel Köhl to produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Iron Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Iron Mine
@@ -3669,7 +3894,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1890
 msgctxt "gauls_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Iesenkluut ut de Grund."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1874
@@ -3677,6 +3902,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miner needs %1% to produce one piece of ore and one block of granite."
 msgstr ""
+"De Bargwarkskeerl bruukt %1% um een Deel Kluut un een Deel Flint to "
+"produzeren."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1883
@@ -3684,6 +3911,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners needs %1% to produce two pieces of ore and one block of granite."
 msgstr ""
+"De Bargwarkslüü bruken %1% um twee Delen Kluut un een Deel Flint to "
+"produzeren."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1892
@@ -3691,6 +3920,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners need %1% to produce five pieces of ore and two blocks of granite."
 msgstr ""
+"De Bargwarkslüü bruken %1% um fiev Delen Kluut un twee Delen Flint to "
+"produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper-Gold Mine
@@ -3698,13 +3929,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1910
 msgctxt "gauls_building"
 msgid "Digs copper ore and gold ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Koperkluut un Goldkluut ut de Grund."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1901
 msgctxt "gauls_building"
 msgid "While empty, this mine produces copper ore."
-msgstr ""
+msgstr "Wenn leeg, produzeert deeses Bargwark Koperkluut."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1903
@@ -3713,12 +3944,14 @@ msgid ""
 "The miner needs %1% to produce two pieces of copper ore and one piece of "
 "gold ore."
 msgstr ""
+"De Bargwarkskeerl bruukt %1% um twee Delen Koperkluut un een Deel Goldkluut "
+"to produzeren."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper-Gold Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1912
 msgctxt "gauls_building"
 msgid "While empty, this mine produces gold ore."
-msgstr ""
+msgstr "Wenn leeg, produzeert deeses Bargwark Goldkluut."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Copper-Gold Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1914
@@ -3727,6 +3960,8 @@ msgid ""
 "The miners need %1% to produce two pieces of copper ore and two pieces of "
 "gold ore."
 msgstr ""
+"De Bargwarkslüü bruken %1% um twee Delen Koperkluut un twee Delen Goldkluut "
+"to produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Tin Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Deep Tin Mine
@@ -3734,13 +3969,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1932
 msgctxt "gauls_building"
 msgid "Digs tin ore and granite out of the ground in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Tinnkluut un Flint ut de Grund."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1923
 msgctxt "gauls_building"
 msgid "While empty, this mine produces blocks of granite."
-msgstr ""
+msgstr "Wenn leeg, produzeert deeses Bargwark Flint."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1925
@@ -3749,12 +3984,14 @@ msgid ""
 "The miner needs %1% to produce one piece of tin ore and three blocks of "
 "granite."
 msgstr ""
+"De Bargwarkskeerl bruukt %1% um een Deel Tinnkluut un dree Delen Flint to "
+"produzeren."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Deep Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1934
 msgctxt "gauls_building"
 msgid "While empty, this mine produces tin ore."
-msgstr ""
+msgstr "Wenn leeg, produzeert deeses Bargwark Tinnkluut."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1936
@@ -3763,6 +4000,8 @@ msgid ""
 "The miners need %1% to produce three pieces of tin ore and two blocks of "
 "granite."
 msgstr ""
+"De Bargwarkslüü bruken %1% um dree Delen Tinnkluut un twee Delen Flint to "
+"produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Training Camp, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1946
@@ -3784,6 +4023,8 @@ msgid ""
 "If this building is fully supplied, it can train one warrior one level in "
 "attack in %s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen, kann ’t eenen Ridder in %s um eenen "
+"Angriffs-Stand utbilden."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Training Camp, part 2
 #. TRANSLATORS: Performance help text for a Gallic training site: Fighting Arena, part 2
@@ -3808,6 +4049,8 @@ msgid ""
 "If this building is fully supplied, it can train one warrior one level in "
 "defense or evade in %s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen, kann ’t eenen Ridder in %s um eenen "
+"Verteidigungs- of Utwiekens-Stand utbilden."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Druid’s Gathering
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1975
@@ -3819,7 +4062,7 @@ msgstr "Lehrt Ridders »Gesundheid«."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1977
 msgctxt "gauls_building"
 msgid "Keep in mind that every druid needs trees in his working area."
-msgstr ""
+msgstr "Vergeet nich, dat elkeen Druide Bomen in sienem Arbeidsgewest bruukt."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1980
@@ -3829,6 +4072,9 @@ msgid ""
 "needs between %1$s and %2$s to improve one warrior one level in health, "
 "depending on how far the druid has to walk."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen un dat Huus Bomen im Warkgewest hett, "
+"kann ’t eenen Ridder in %1$s bit %2$s um eenen Gesundheids-Stand utbilden, "
+"je nadeem, wo wied de Druide lopen mutt."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1982

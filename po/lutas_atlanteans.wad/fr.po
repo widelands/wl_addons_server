@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-26 02:13+0100\n"
+"POT-Creation-Date: 2025-12-28 03:14+0100\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -844,7 +844,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/lutas_atlanteans.wad/productionsites/sawmill/init.lua:57
 msgid "sawing logs"
-msgstr ""
+msgstr "sciage de bûches"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/scouts_house/init.lua:8
@@ -1112,13 +1112,15 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/discovery.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "Découverte"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/discovery.lua:13
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies"
 msgstr ""
+"Commencez le jeu avec trois navires sur l’océan et seulement une poignée de "
+"fournitures"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/fortified_village.lua:11
@@ -1143,17 +1145,17 @@ msgstr "Démarrer le jeu avec votre quartier-général seulement"
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/new_world.lua:11
 msgid "New World"
-msgstr ""
+msgstr "Nouveau monde"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/new_world.lua:13
 msgid "Start the game with seven ships full of wares on the ocean"
-msgstr ""
+msgstr "Commencez le jeu avec sept navires pleins de marchandises sur l’océan"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:11
 msgid "Poor Hamlet"
-msgstr ""
+msgstr "Pauvre Hamlet"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:13
@@ -1164,18 +1166,20 @@ msgstr ""
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 msgid "Be careful"
-msgstr ""
+msgstr "Soyez prudent(e)"
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 msgid ""
 "You have only one iron for each tool you will need to start your economy. "
 "Make sure no unneeded tool is created."
 msgstr ""
+"Vous n’avez qu’un seul fer pour chaque outil dont vous aurez besoin pour "
+"démarrer votre économie. Assurez-vous qu’aucun outil inutile n’est créé."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr ""
+msgstr "Avant-poste en difficulté"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -1183,6 +1187,9 @@ msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Commencez le jeu avec juste votre siège et très peu de matériel pour "
+"démarrer une économie. Avertissement : l'IA ne peut pas commencer avec "
+"succès à partir de cela."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:13

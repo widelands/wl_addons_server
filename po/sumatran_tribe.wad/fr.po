@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-26 02:14+0100\n"
+"POT-Creation-Date: 2025-12-28 03:14+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -88,25 +88,25 @@ msgstr "Beaucoup de charbon"
 #: addons/sumatran_tribe.wad/immovables/resi_copper_gold_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Copper and Gold Ore"
-msgstr ""
+msgstr "Du minerai de cuivre et d’or"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_copper_gold_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Copper and Gold Ore"
-msgstr ""
+msgstr "Beaucoup de minerai de cuivre et d’or"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_iron_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Iron Ore"
-msgstr ""
+msgstr "Quelque minerai de fer"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_iron_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Iron Ore"
-msgstr ""
+msgstr "Beaucoup de minerai de fer"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_none/init.lua:8
@@ -1646,17 +1646,17 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making buckets because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:118
 msgid "making buckets"
-msgstr ""
+msgstr "fabrication de seaux"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making hammer because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:130
 msgid "making hammer"
-msgstr ""
+msgstr "fabrication de marteau"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:142
 msgid "making kitchen tools"
-msgstr ""
+msgstr "fabrication d'outils de cuisine"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pick because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:154
@@ -1671,7 +1671,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making shovel because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:178
 msgid "making shovel"
-msgstr ""
+msgstr "fabrication d'une pelle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/workshop_weapons/init.lua:8
@@ -1682,7 +1682,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_weapons/init.lua:71
 msgid "making spear"
-msgstr ""
+msgstr "fabrication d'une lance"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/basic_outpost.lua:11
@@ -1723,13 +1723,15 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "Découverte"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:13
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies"
 msgstr ""
+"Commencez le jeu avec trois navires sur l’océan et seulement une poignée de "
+"fournitures"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/fortified_village.lua:11
@@ -1754,17 +1756,17 @@ msgstr "Démarrer le jeu avec votre quartier-général seulement"
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua:11
 msgid "New World"
-msgstr ""
+msgstr "Nouveau monde"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua:13
 msgid "Start the game with seven ships full of wares on the ocean"
-msgstr ""
+msgstr "Commencez le jeu avec sept navires pleins de marchandises sur l’océan"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:11
 msgid "Poor Hamlet"
-msgstr ""
+msgstr "Pauvre Hamlet"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:13
@@ -1778,18 +1780,20 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 msgid "Be careful"
-msgstr ""
+msgstr "Soyez prudent(e)"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 msgid ""
 "You have only one iron for each tool you will need to start your economy. "
 "Make sure no unneeded tool is created."
 msgstr ""
+"Vous n’avez qu’un seul fer pour chaque outil dont vous aurez besoin pour "
+"démarrer votre économie. Assurez-vous qu’aucun outil inutile n’est créé."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr ""
+msgstr "Avant-poste en difficulté"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -1797,6 +1801,9 @@ msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Commencez le jeu avec juste votre siège et très peu de matériel pour "
+"démarrer une économie. Avertissement : l'IA ne peut pas commencer avec "
+"succès à partir de cela."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
@@ -2508,14 +2515,14 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2243
 msgctxt "ware"
 msgid "Iron ore can be smelted into iron in a furnace."
-msgstr ""
+msgstr "Le minerai de fer peut être fondu en fer dans un four."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:378
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2256
 msgctxt "ware"
 msgid "Iron is needed for tool and weapon production."
-msgstr ""
+msgstr "Le fer est nécessaire pour la production d’outils et d’armes."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:391
@@ -4557,13 +4564,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/wares/copper/init.lua:8
 msgctxt "ware"
 msgid "Copper"
-msgstr ""
+msgstr "Cuivre"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/copper_ore/init.lua:8
 msgctxt "ware"
 msgid "Copper Ore"
-msgstr ""
+msgstr "Minerai de cuivre"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/copper_sheet/init.lua:8
