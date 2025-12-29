@@ -52,9 +52,9 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    aihints = {
-      prohibited_till = 1440,
-      forced_after = 3300,
-      basic_amount = 2,
+      prohibited_till = 2340,
+      forced_after = 4500,
+      basic_amount = 1,
 --      very_weak_ai_limit = 1,
 --      weak_ai_limit = 1,
 --      normal_ai_limit = 2,

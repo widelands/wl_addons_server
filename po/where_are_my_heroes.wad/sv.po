@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-29 03:10+0100\n"
+"POT-Creation-Date: 2025-12-29 03:14+0100\n"
 "PO-Revision-Date: 2024-02-19 16:34+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -24,27 +28,32 @@ msgid ""
 "heroes in warehouses, military sites and idle warships and displays the "
 "results in your inbox."
 msgstr ""
+"Frågar du dig ibland: \"Var är mina hjältar?\". Detta tillägg hittar hjältar "
+"i lager, militära anläggningar och oanvända krigsskepp och visar resultaten "
+"i din inkorg."
 
 #: addons/where_are_my_heroes.wad/addon:9
 msgid "Game: Where are my heroes?"
-msgstr ""
+msgstr "Spel: Var är mina hjältar?"
 
 #: addons/where_are_my_heroes.wad/find_heroes.lua:26
 msgid "%1$d Hero is sitting here twiddling thumbs."
 msgid_plural "%1$d Heroes are sitting here twiddling thumbs."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$d hjälte sitter här och vrider tummarna."
+msgstr[1] "%1$d hjältar sitter här och vrider tummarna."
 
 #: addons/where_are_my_heroes.wad/find_heroes.lua:27
 msgid "%1$d Hero"
 msgid_plural "%1$d Heroes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$d hjälte"
+msgstr[1] "%1$d hjältar"
 
 #: addons/where_are_my_heroes.wad/init.lua:9
 msgid "Where are my heroes?"
-msgstr ""
+msgstr "Var är mina hjältar?"
 
 #: addons/where_are_my_heroes.wad/init.lua:10
 msgid "For each place containing a hero a message will be send to the inbox."
 msgstr ""
+"För varje plats som innehåller en hjälte skickas ett meddelande till "
+"inkorgen."

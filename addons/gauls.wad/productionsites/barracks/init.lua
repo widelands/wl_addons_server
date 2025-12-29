@@ -46,7 +46,7 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       basic_amount = 1,
-      prohibited_till = 1520
+      prohibited_till = 1500
    },
 
    working_positions = {

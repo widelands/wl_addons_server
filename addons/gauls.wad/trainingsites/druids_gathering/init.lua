@@ -55,7 +55,8 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    aihints = {
-      prohibited_till = 720,
+--      trainingsites_max_percent = 40,
+      prohibited_till = 1860,
       basic_amount = 1,
       very_weak_ai_limit = 1,
       weak_ai_limit = 1,

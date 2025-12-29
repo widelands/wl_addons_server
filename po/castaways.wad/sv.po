@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-09 03:10+0200\n"
+"POT-Creation-Date: 2025-12-29 03:13+0100\n"
 "PO-Revision-Date: 2025-04-08 17:14+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -24,7 +28,7 @@ msgstr ""
 #: addons/castaways.wad/barbarians.lua:11 addons/castaways.wad/empire.lua:11
 #: addons/castaways.wad/frisians.lua:11
 msgid "Castaways"
-msgstr ""
+msgstr "Castaways"
 
 #: addons/castaways.wad/addon:3
 msgid ""
@@ -32,6 +36,9 @@ msgid ""
 "workers. You will need to find a portspace with direct access to rocks and "
 "trees. For more information, see description."
 msgstr ""
+"Börja spelet med ett skepp på havet, ett minimum av varor och några få "
+"arbetare. Du måste hitta en hamn med direkt tillgång till stenar och träd. "
+"För mer information, se beskrivningen."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/amazons.lua:13
@@ -43,6 +50,12 @@ msgid ""
 "quartz for one tool you will need to start your economy. For unknown maps, "
 "game without fog of war recommended. A higher game speed is also recommended."
 msgstr ""
+"Starta spelet med ett skepp på havet, ett minimum av varor och några få "
+"arbetare. Varning: AI kan inte starta från detta. Du måste hitta en "
+"hamnplats med direkt tillgång till stenar och träd och riva några byggnader "
+"för att spara byggmaterial. Var försiktig, du har bara en kvarts för ett "
+"verktyg som du behöver för att starta din ekonomi. För okända kartor "
+"rekommenderas spel utan dimma. En högre spelhastighet rekommenderas också."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/atlanteans.lua:13
@@ -53,6 +66,10 @@ msgid ""
 "to find a portspace with direct access to rocks and trees. For unknown maps, "
 "game without fog of war recommended."
 msgstr ""
+"Starta spelet med ett skepp på havet, ett minimum av varor och några få "
+"arbetare. Varning: AI kan inte starta från detta. Du måste hitta en hamn med "
+"direkt tillgång till stenar och träd. För okända kartor rekommenderas spel "
+"utan dimma."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/frisians.lua:13
@@ -63,3 +80,8 @@ msgid ""
 "to spare your building material. For unknown maps, game without fog of war "
 "recommended. A higher game speed is also recommended."
 msgstr ""
+"Börja spelet med ett skepp på havet, ett minimum av varor och några få "
+"arbetare. Varning: AI kan inte starta från detta. Du måste hitta en hamn med "
+"direkt tillgång till träd och riva några byggnader för att spara "
+"byggmaterial. För okända kartor rekommenderas spel utan dimma. En högre "
+"spelhastighet rekommenderas också."

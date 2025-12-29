@@ -31,17 +31,18 @@ wl.Descriptions():new_productionsite_type {
    animation_directory = dirname,
    animations = {
       idle = {
-         hotspot = { 58, 50 },
+         hotspot = { 45, 55 },
       },
       working = {
          basename = "idle",
-         hotspot = { 58, 50 },
+         hotspot = { 45, 55 },
       },
    },
 
 
    aihints = {
-      prohibited_till = 400,
+      prohibited_till = 480,
+      basic_amount = 1,
       very_weak_ai_limit = 2,
       weak_ai_limit = 3
    },

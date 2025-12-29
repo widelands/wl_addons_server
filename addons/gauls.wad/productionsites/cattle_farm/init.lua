@@ -35,7 +35,8 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 610,
+      prohibited_till = 600,
+      basic_amount = 1,
    },
 
    working_positions = {
@@ -55,6 +56,7 @@ wl.Descriptions():new_productionsite_type {
          actions = {
             "call=breed_ox",
             "call=produce_milk",
+            "call=breed_ox",
          },
       },
       breed_ox = {

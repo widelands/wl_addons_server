@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2025-12-29 03:14+0100\n"
 "PO-Revision-Date: 2022-12-11 09:24+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -20,25 +24,26 @@ msgstr ""
 
 #: addons/simple_map_generator.wad/addon:2
 msgid "Simple Map Generator"
-msgstr ""
+msgstr "Enkel kartgenerator"
 
 #: addons/simple_map_generator.wad/addon:3
 msgid "A proof-of-concept map generator that generates very, very simple maps."
 msgstr ""
+"En proof-of-concept-kartgenerator som genererar mycket, mycket enkla kartor."
 
 #: addons/simple_map_generator.wad/init.lua:4
 msgid "Initializing map generator…"
-msgstr ""
+msgstr "Initialiserar kartgeneratorn…"
 
 #: addons/simple_map_generator.wad/init.lua:122
 msgid "Generating map… (%1$d / %2$d)"
-msgstr ""
+msgstr "Genererar karta… (%1$d / %2$d)"
 
 #: addons/simple_map_generator.wad/init.lua:193
 msgid "Finalizing map…"
-msgstr ""
+msgstr "Slutför kartan…"
 
 #: addons/simple_map_generator.wad/init.lua:201
 #, lua-format
 msgid "Random Player %u"
-msgstr ""
+msgstr "Slumpmässig spelare %u"

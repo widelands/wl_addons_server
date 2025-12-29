@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2025-12-29 03:14+0100\n"
 "PO-Revision-Date: 2024-01-10 16:15+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -20,15 +24,16 @@ msgstr ""
 
 #: addons/no-stats-till-spied.wad/addon:4
 msgid "No player stats until a scout spied them"
-msgstr ""
+msgstr "Inga spelarstatistik förrän en spejare spionerade på dem"
 
 #: addons/no-stats-till-spied.wad/addon:5
 msgid "It needs a scout to know details about the other players."
 msgstr ""
+"Det behövs en spejare för att få reda på detaljer om de andra spelarna."
 
 #: addons/no-stats-till-spied.wad/init.lua:18
 msgid "No player statistics till spied"
-msgstr ""
+msgstr "Ingen spelarstatistik förrän spionerad"
 
 #: addons/no-stats-till-spied.wad/init.lua:19
 msgid ""
@@ -37,13 +42,16 @@ msgid ""
 "            To know statistics about other players, you need a scout to spy "
 "there."
 msgstr ""
+"Spelare har statistik om sina XXX i sina lager (alla byggnader som lagrar "
+"varor). För att få statistik om andra spelare behöver du en spejare som "
+"spionerar där."
 
 #. TRANSLATORS: %s is the name of a player
 #: addons/no-stats-till-spied.wad/init.lua:67
 #, lua-format
 msgid "A spy has now information about %s. Find it in statistics."
-msgstr ""
+msgstr "En spion har nu information om %s. Hitta den i statistiken."
 
 #: addons/no-stats-till-spied.wad/init.lua:69
 msgid "A spy gives information"
-msgstr ""
+msgstr "En spion ger information"

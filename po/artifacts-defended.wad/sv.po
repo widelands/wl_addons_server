@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-12-29 03:13+0100\n"
 "PO-Revision-Date: 2023-11-25 20:04+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -20,91 +24,98 @@ msgstr ""
 
 #: addons/artifacts-defended.wad/addon:4
 msgid "artifacts, defended"
-msgstr ""
+msgstr "artefakter, försvarade"
 
 #: addons/artifacts-defended.wad/defending.lua:61
 msgid "WARNING"
-msgstr ""
+msgstr "VARNING"
 
 #: addons/artifacts-defended.wad/defending.lua:115
 msgid "to conquer"
-msgstr ""
+msgstr "erövra"
 
 #: addons/artifacts-defended.wad/defending.lua:127
 msgid "Could not adapt the tribe."
-msgstr ""
+msgstr "Kunde inte anpassa stammen."
 
 #: addons/artifacts-defended.wad/defending.lua:143
 msgid "Defending player can not be in a team, remove."
-msgstr ""
+msgstr "Försvarande spelare kan inte vara med i ett lag, ta bort."
 
 #: addons/artifacts-defended.wad/defending.lua:226
 msgid "ERROR placing building"
-msgstr ""
+msgstr "FEL vid placering av byggnad"
 
 #: addons/artifacts-defended.wad/defending.lua:233
 #, lua-format
 msgid "No matching artifact building named %s"
-msgstr ""
+msgstr "Ingen matchande artefaktbyggnad med namnet %s"
 
 #: addons/artifacts-defended.wad/defending.lua:239
 msgid "wrong field found"
-msgstr ""
+msgstr "fel fält hittat"
 
 #: addons/artifacts-defended.wad/defending.lua:269
 #, lua-format
 msgid "The player %s has no artifacts to defend."
-msgstr ""
+msgstr "Spelaren %s har inga artefakter att försvara."
 
 #: addons/artifacts-defended.wad/defending.lua:271
 msgid "No artifacts"
-msgstr ""
+msgstr "Inga artefakter"
 
 #: addons/artifacts-defended.wad/defending.lua:297
 msgid "could not place normal artifact (1x)"
-msgstr ""
+msgstr "kunde inte placera normal artefakt (1x)"
 
 #: addons/artifacts-defended.wad/defending.lua:365
 msgid "Several players configured for defending:"
-msgstr ""
+msgstr "Flera spelare konfigurerade för försvar:"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/artifacts-defended.wad/defending.lua:421
 msgid "This (ai) player will defend the artifacts."
-msgstr ""
+msgstr "Denna (ai) spelare kommer att försvara artefakterna."
 
 #. TRANSLATORS: This is the tooltip for the starting condition
 #: addons/artifacts-defended.wad/defending.lua:423
 msgid "Set the tribe to random for finding out in game what it will be."
 msgstr ""
+"Ställ in stammen på slumpmässig för att ta reda på vad den kommer att bli i "
+"spelet."
 
 #: addons/artifacts-defended.wad/defending.lua:424
 msgid "Only for ai player as nothing can be done."
-msgstr ""
+msgstr "Endast för AI-spelare, eftersom ingenting kan göras."
 
 #: addons/artifacts-defended.wad/defending.lua:425
 msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
 msgstr ""
+"Rekommenderas att ställa in AI på \"tomt\" för att förhindra att soldater "
+"skickas iväg."
 
 #: addons/artifacts-defended.wad/defending.lua:426
 msgid ""
 "On maps with artifacts not reachable by a warrior, some artifacts will not "
 "be conquerable."
 msgstr ""
+"På kartor med artefakter som inte kan nås av en krigare kommer vissa "
+"artefakter inte att kunna erövras."
 
 #: addons/artifacts-defended.wad/defending.lua:436
 #, lua-format
 msgid "Player %s defends artifacts and has aditionally another start position"
 msgstr ""
+"Spelare %s försvarar artefakter och har dessutom en annan startposition"
 
 #: screenshots/artifacts-defended.wad/descriptions:3
 msgid "found artifact"
-msgstr ""
+msgstr "hittad artefakt"
 
 #: screenshots/artifacts-defended.wad/descriptions:4
 msgid "attack artifact"
-msgstr ""
+msgstr "attackartefakt"
 
 #: screenshots/artifacts-defended.wad/descriptions:5
 msgid "conquered artifact"
-msgstr ""
+msgstr "erövrad artefakt"

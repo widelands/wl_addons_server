@@ -62,8 +62,7 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 360,
-      basic_amount = 1,
+      prohibited_till = 840,
       very_weak_ai_limit = 2,
       weak_ai_limit = 2,
       normal_ai_limit = 2,

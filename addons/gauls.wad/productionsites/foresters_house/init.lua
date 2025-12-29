@@ -30,10 +30,10 @@ wl.Descriptions():new_productionsite_type {
    aihints = {
 --      supports_production_of = { "log" },
       space_consumer = true,
-      basic_amount = 4,
+      basic_amount = 5,
       very_weak_ai_limit = 5,
       weak_ai_limit = 6,
-      normal_ai_limit = 7,
+      normal_ai_limit = 8,
    },
 
    working_positions = {

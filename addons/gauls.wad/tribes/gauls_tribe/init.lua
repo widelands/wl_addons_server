@@ -15,11 +15,15 @@ local init_gauls = {
 
     starting_conditions = {
         "addons/gauls.wad/scripting/starting_conditions/headquarters.lua";
+        "addons/gauls.wad/scripting/starting_conditions/fortified_village.lua";
+        "addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua";
+        "addons/gauls.wad/scripting/starting_conditions/village.lua";
         "addons/gauls.wad/scripting/starting_conditions/poor_hamlet.lua";
         "addons/gauls.wad/scripting/starting_conditions/struggling_outpost.lua";
         "addons/gauls.wad/scripting/starting_conditions/discovery.lua";
         "addons/gauls.wad/scripting/starting_conditions/new_world.lua";
         "addons/gauls.wad/scripting/starting_conditions/basic_outpost.lua";
+        "addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua";
         "addons/gauls.wad/scripting/starting_conditions/castaways.lua";
     }
 }

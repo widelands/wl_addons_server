@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-12-29 03:13+0100\n"
 "PO-Revision-Date: 2024-02-27 16:25+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -23,58 +27,61 @@ msgid ""
 "Add immovable markers evenly on the map to have some points of orientation. "
 "Uses Snowman for position 0,0 and Column for other positions."
 msgstr ""
+"Lägg till fasta markörer jämnt fördelade på kartan för att få några "
+"orienteringspunkter. Använd snögubbe för position 0,0 och kolonn för övriga "
+"positioner."
 
 #: addons/editor_add_markers.wad/addon:9
 msgid "Editor: Place markers evenly on the map"
-msgstr ""
+msgstr "Redigerare: Placera markörer jämnt på kartan"
 
 #: addons/editor_add_markers.wad/init.lua:8
 #: addons/editor_add_markers.wad/settings_window.lua:57
 #: addons/editor_add_markers.wad/settings_window.lua:140
 msgid "Place markers"
-msgstr ""
+msgstr "Placera markörer"
 
 #: addons/editor_add_markers.wad/init.lua:9
 msgid "Place markers evenly on the map to get some points of orientation."
-msgstr ""
+msgstr "Placera markörer jämnt på kartan för att få några orienteringspunkter."
 
 #: addons/editor_add_markers.wad/settings_window.lua:17
 msgid "%1$d Fields"
-msgstr ""
+msgstr "%1$d fält"
 
 #: addons/editor_add_markers.wad/settings_window.lua:73
 msgid "Choose the distance between markers:"
-msgstr ""
+msgstr "Välj avståndet mellan markörerna:"
 
 #: addons/editor_add_markers.wad/settings_window.lua:85
 msgid "Horizontally"
-msgstr ""
+msgstr "Horisontellt"
 
 #: addons/editor_add_markers.wad/settings_window.lua:99
 #: addons/editor_add_markers.wad/settings_window.lua:129
 msgid "Choose a distance"
-msgstr ""
+msgstr "Välj ett avstånd"
 
 #: addons/editor_add_markers.wad/settings_window.lua:115
 msgid "Vertically"
-msgstr ""
+msgstr "Vertikalt"
 
 #: addons/editor_add_markers.wad/settings_window.lua:147
 msgid "Undo"
-msgstr ""
+msgstr "Ångra"
 
 #: addons/editor_add_markers.wad/settings_window.lua:154
 msgid "Center position 0,0"
-msgstr ""
+msgstr "Mittposition 0,0"
 
 #: addons/editor_add_markers.wad/settings_window.lua:162
 msgid "Remove all markers"
-msgstr ""
+msgstr "Ta bort alla markörer"
 
 #: addons/editor_add_markers.wad/settings_window.lua:171
 msgid "Hide"
-msgstr ""
+msgstr "Dölj"
 
 #: addons/editor_add_markers.wad/settings_window.lua:172
 msgid "Hide window to keep the settings"
-msgstr ""
+msgstr "Dölj fönstret för att behålla inställningarna"

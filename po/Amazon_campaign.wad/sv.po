@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-28 03:12+0200\n"
+"POT-Creation-Date: 2025-12-29 03:13+0100\n"
 "PO-Revision-Date: 2025-09-27 12:24+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -23,65 +27,70 @@ msgid ""
 "This is the story of the rise of Pachiquima, an amazon from a small mountain "
 "village."
 msgstr ""
+"Detta är berättelsen om Pachiquimas uppgång, en amazon från en liten bergsby."
 
 #: addons/Amazon_campaign.wad/addon:9
 msgid "Amazon_campaign"
-msgstr ""
+msgstr "Amazon_campaign"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:18
 msgid "Medium."
-msgstr ""
+msgstr "Medium."
 
 #: addons/Amazon_campaign.wad/campaigns.lua:30
 msgid "The Rise to Power"
-msgstr ""
+msgstr "Vägen till makten"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:32
 msgid "Introduces the amazons"
-msgstr ""
+msgstr "Introducerar amasonerna"
 
 #. TRANSLATORS: A campaign difficulty (easiest of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:37
 msgid "Easy"
-msgstr ""
+msgstr "Lätt"
 
 #. TRANSLATORS: A campaign difficulty (medium of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:39
 msgid "Medium"
-msgstr ""
+msgstr "Medium"
 
 #. TRANSLATORS: A campaign difficulty (hardest of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:41
 msgid "Hard"
-msgstr ""
+msgstr "Svår"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:45
 msgid ""
 "This is the story of Pachiquima, an amazon woman from a small mountain "
 "village. We follow her on her journey through life and her rise to power."
 msgstr ""
+"Detta är berättelsen om Pachiquima, en amazonkvinna från en liten bergsby. "
+"Vi följer henne på hennes resa genom livet och hennes väg till makten."
 
 #: input:8 standard
 msgid "Welcome to the Jungle"
-msgstr ""
+msgstr "Välkommen till djungeln"
 
 #: input:10 standard
 msgid ""
 "The first mission in the Amazon campaign. This will teach you the basics of "
 "their unique economy and start the story of Pachiquima."
 msgstr ""
+"Det första uppdraget i Amazonas-kampanjen. Här lär du dig grunderna i deras "
+"unika ekonomi och berättelsen om Pachiquima tar sin början."
 
 #: input:38 input:50 standard
 msgid "Build the following:"
-msgstr ""
+msgstr "Bygg följande:"
 
 #: input:60 standard
 msgid "Collect wood from rare trees"
-msgstr ""
+msgstr "Samla ved från sällsynta träd"
 
 #: input:74 standard
 msgid "We need to expand our territory to reach the mines."
-msgstr ""
+msgstr "Vi måste utvidga vårt territorium för att nå gruvorna."
 
 #: input:75 standard
 msgid ""
@@ -89,36 +98,42 @@ msgid ""
 "of a tree! This does mean it can only be build on a construction site that "
 "has a tree on it."
 msgstr ""
+"Trädtoppsvakter är unika för amazonerna. De kan bygga en byggnad på toppen "
+"av ett träd! Detta innebär dock att den endast kan byggas på en byggplats "
+"där det finns ett träd."
 
 #: input:76 standard
 msgid ""
 "A patrol post is the smallest free standing military building of the amazon "
 "tribe. They see and conquer for 1 range larger than a treetop sentry."
 msgstr ""
+"En patrullpost är den minsta fristående militära byggnaden hos "
+"Amazonstammen. De ser och erövrar ett område som är 1 räckvidd större än en "
+"trädtoppsvakt."
 
 #: input:77 standard
 msgid "A tower is larger than a patrol post and conquers more area."
-msgstr ""
+msgstr "Ett torn är större än en patrullpost och täcker ett större område."
 
 #: input:86 standard
 msgid "Build a stone mine and a gold digger on mountain terrain."
-msgstr ""
+msgstr "Bygg en stengruva och en guldgrävare i bergsterräng."
 
 #: input:98 standard
 msgid "Start our food production."
-msgstr ""
+msgstr "Starta vår livsmedelsproduktion."
 
 #: input:111 standard
 msgid "Move to the east"
-msgstr ""
+msgstr "Flytta österut"
 
 #: input:122 standard
 msgid "Building the warehouse"
-msgstr ""
+msgstr "Bygga lagerlokalen"
 
 #: input:131 standard
 msgid "Time to build a ship"
-msgstr ""
+msgstr "Dags att bygga ett skepp"
 
 #: input:143 standard
 msgid ""
@@ -127,6 +142,9 @@ msgid ""
 "territory. Kapiqori is the head of one such small village, located on a "
 "mountain."
 msgstr ""
+"Amazonerna bor i byar längs Amazonfloden. Det finns många sådana byar, men "
+"de är alla små och utspridda över ett enormt område. Kapiqori är ledare för "
+"en sådan liten by, belägen på ett berg."
 
 #: input:144 standard
 msgid ""
@@ -134,6 +152,9 @@ msgid ""
 "is melting, leading to more water flowing down. Although this is good for "
 "the trees, the extra water also causes mudflows."
 msgstr ""
+"På senare tid har byborna börjat oroa sig. Snön runt bergen smälter, vilket "
+"leder till att mer vatten rinner ner. Även om detta är bra för träden, "
+"orsakar det extra vattnet också leraflöden."
 
 #: input:145 standard
 msgid ""
@@ -143,6 +164,11 @@ msgid ""
 "Kapiqori believes this is because Ayllu Apu, the protector god of the "
 "mountain, has become enraged."
 msgstr ""
+"Kapiqori är också bekymrad. Utöver den smältande snön har de lokala "
+"guldgruvorna blivit för heta för att arbeta i. Guld är mycket viktigt för "
+"amazonstammen. De tror att det är solguden Intis tårar och därför är det "
+"heligt. Kapiqori tror att detta beror på att Ayllu Apu, bergets skyddsgud, "
+"har blivit rasande."
 
 #: input:152 standard
 msgid ""
@@ -151,6 +177,9 @@ msgid ""
 "however, have no knowledge of the workings of a volcano and blame it on the "
 "gods."
 msgstr ""
+"Som ni kan se är berget en vulkan som blir allt mer aktiv. Detta förklarar "
+"de uppvärmda gruvorna och den smältande snön. Amazonerna har dock ingen "
+"kunskap om hur en vulkan fungerar och skyller på gudarna."
 
 #: input:159 standard
 msgid ""
@@ -160,6 +189,11 @@ msgid ""
 "happy with this task, she has always wanted to become a warrior and doesn't "
 "care for much else."
 msgstr ""
+"Stamgeologerna har hittat en ny plats att bryta guld längre österut, längs "
+"Amazonfloden. Kapiqori har beslutat att skicka sin dotter Pachiquima för att "
+"bygga en utpost och nya gruvor där. Pachiquima själv är inte särskilt nöjd "
+"med detta uppdrag, hon har alltid velat bli krigare och bryr sig inte om "
+"mycket annat."
 
 #. TRANSLATORS: pachiquima
 #. TRANSLATORS: kapiqori
@@ -173,15 +207,15 @@ msgstr ""
 #. TRANSLATORS: scout
 #: input:249 standard
 msgid "Yes chief, it will take about "
-msgstr ""
+msgstr "Ja, chefen, det kommer att ta ungefär "
 
 #: input:250 standard
 msgid " minutes"
-msgstr ""
+msgstr " minuter"
 
 #: input:251 standard
 msgid " to reach the outpost."
-msgstr ""
+msgstr " för att nå utposten."
 
 #. TRANSLATORS: scout
 #. TRANSLATORS: pachiquima
@@ -199,7 +233,7 @@ msgstr ""
 #. TRANSLATORS: flavor text
 #: input:390 standard
 msgid "You Have Lost"
-msgstr ""
+msgstr "Du har förlorat"
 
 #. TRANSLATORS: pachiquima
 #. TRANSLATORS: pachiquima
@@ -208,4 +242,4 @@ msgstr ""
 #. TRANSLATORS: flavor text
 #: input:446 standard
 msgid "Victory"
-msgstr ""
+msgstr "Seger"

@@ -13,7 +13,7 @@ tips = {
         seconds = 8
     },
     {
-        text = _"Reed Yards need open waters to grow reed. If you don’t see any right at the beginning of a new game, make finding it your priority.",
+        text = _"Reed yards need open waters to grow reed. If you don’t see any right at the beginning of a new game, make finding it your priority.",
         seconds = 9
     },
 }

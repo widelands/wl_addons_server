@@ -47,7 +47,7 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 1740,
+      prohibited_till = 1720,
       needs_water = true,
       very_weak_ai_limit = 1,
       weak_ai_limit = 2,

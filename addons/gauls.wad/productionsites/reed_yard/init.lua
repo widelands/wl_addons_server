@@ -29,12 +29,12 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
---      prohibited_till = 300,
+      forced_after = 300,
       needs_water = true,
       basic_amount = 2,
       very_weak_ai_limit = 3,
       weak_ai_limit = 3,
-      normal_ai_limit = 3,
+      normal_ai_limit = 4,
    },
 
    working_positions = {

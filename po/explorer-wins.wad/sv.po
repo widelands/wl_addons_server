@@ -5,15 +5,16 @@
 #
 # Translators:
 # D M <kamera001dm@gmail.com>, 2023
+# Daniel Nylander <po@danielnylander.se>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2025-12-29 03:14+0100\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
-"Last-Translator: D M <kamera001dm@gmail.com>, 2023\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -24,46 +25,48 @@ msgstr ""
 
 #: addons/explorer-wins.wad/addon:6
 msgid "The player who has explored most of the world wins the game"
-msgstr ""
+msgstr "Den spelare som har utforskat mest av världen vinner spelet"
 
 #: addons/explorer-wins.wad/addon:9
 msgid "explorer wins"
-msgstr ""
+msgstr "utforskaren vinner"
 
 #: addons/explorer-wins.wad/init.lua:19
 msgid "Explorer Wins"
-msgstr ""
+msgstr "Utforskaren vinner"
 
 #: addons/explorer-wins.wad/init.lua:21
 #, lua-format
 msgid "The player who has explored %1d%% of the world wins the game"
-msgstr ""
+msgstr "Den spelare som har utforskat %1d%% of av världen vinner spelet"
 
 #: addons/explorer-wins.wad/init.lua:26
 msgid "% explored"
-msgstr ""
+msgstr "% utforskat"
 
 #: addons/explorer-wins.wad/init.lua:46
 msgid ""
 "There are %1$d fields on the map, but only %2$d are terrestrial, which is "
 "%3$d%%. You need to explore %4$d%%."
 msgstr ""
+"Det finns %1$d fält på kartan, men endast %2$d är landbaserade, vilket är "
+"%3$d%%. Du måste utforska %4$d%%."
 
 #: addons/explorer-wins.wad/init.lua:50
 msgid "Probably not winnable"
-msgstr ""
+msgstr "Förmodligen inte vinnbart"
 
 #: addons/explorer-wins.wad/init.lua:50
 msgid "This map is probably not winnable with %1$s."
-msgstr ""
+msgstr "Denna karta är förmodligen inte vinnbar med %1$s."
 
 #: addons/explorer-wins.wad/init.lua:52
 msgid "Maybe not winnable"
-msgstr ""
+msgstr "Kanske inte möjligt att vinna"
 
 #: addons/explorer-wins.wad/init.lua:52
 msgid "This map is maybe not winnable with %1$s."
-msgstr ""
+msgstr "Denna karta är kanske inte vinnbar med %1$s."
 
 #: addons/explorer-wins.wad/init.lua:69
 msgid "You can explore by expanding, with a scout, with ships, ..."
@@ -71,22 +74,23 @@ msgstr "Du kan utforska genom expansion, med en spejare, med skepp..."
 
 #: addons/explorer-wins.wad/init.lua:94
 msgid "Win condition not compatible with \"No fog of war\""
-msgstr ""
+msgstr "Vinstvillkoret är inte kompatibelt med \"Ingen dimma av krig\"."
 
 #: addons/explorer-wins.wad/init.lua:95
 msgid ""
 "The win condition %1$s can not be played with \"No fog of war\" enabled."
 msgstr ""
+"Vinstvillkoret %1$s kan inte spelas med \"Ingen dimma av krig\" aktiverat."
 
 #: addons/explorer-wins.wad/init.lua:96
 msgid "Continue playing endlessly or restart with fog."
-msgstr ""
+msgstr "Fortsätt spela oändligt eller starta om med dimma."
 
 #: addons/explorer-wins.wad/init.lua:150
 msgid "Player %1$1d has explored %2$1d%%"
-msgstr ""
+msgstr "Spelare %1$1d har utforskat %2$1d%%"
 
 #: addons/explorer-wins.wad/init.lua:152
 #, lua-format
 msgid " (%d fields)"
-msgstr ""
+msgstr " (%d fält)"

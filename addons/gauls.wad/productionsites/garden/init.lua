@@ -33,10 +33,10 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       space_consumer = true,
-      basic_amount = 2,
-      prohibited_till = 490,
-      very_weak_ai_limit = 1,
-      weak_ai_limit = 3
+      basic_amount = 3,
+      prohibited_till = 360,
+      very_weak_ai_limit = 3,
+      weak_ai_limit = 5
 
    },
 
@@ -62,8 +62,8 @@ wl.Descriptions():new_productionsite_type {
          }
       },
       plant_herbs = {
-         -- TRANSLATORS: Completed/Skipped/Did not start planting grapevines because ...
-         descname = _("planting grapevines"),
+         -- TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
+         descname = _("creating a herbs patch"),
          actions = {
             -- average time of unexperienced worker: 24.2 sec
             -- average time of experienced worker: 19.2 sec
@@ -75,16 +75,16 @@ wl.Descriptions():new_productionsite_type {
          }
       },
       harvest_herbs = {
-         -- TRANSLATORS: Completed/Skipped/Did not start harvesting grapevines because ...
-         descname = _("harvesting grapes"),
+         -- TRANSLATORS: Completed/Skipped/Did not start harvesting herbs because ...
+         descname = _("harvesting herbs"),
          actions = {
             -- average time of worker: 17.2 sec
             "callworker=harvest_herbs"
          }
       },
       plant_vegetable = {
-         -- TRANSLATORS: Completed/Skipped/Did not start planting grapevines because ...
-         descname = _("planting grapevines"),
+         -- TRANSLATORS: Completed/Skipped/Did not start creating a vegetable patch because ...
+         descname = _("creating a vegetable patch"),
          actions = {
             -- average time of unexperienced worker: 24.2 sec
             -- average time of experienced worker: 19.2 sec
@@ -96,8 +96,8 @@ wl.Descriptions():new_productionsite_type {
          }
       },
       harvest_vegetable = {
-         -- TRANSLATORS: Completed/Skipped/Did not start harvesting grapevines because ...
-         descname = _("harvesting grapes"),
+         -- TRANSLATORS: Completed/Skipped/Did not start harvesting vegetable because ...
+         descname = _("harvesting vegetable"),
          actions = {
             -- average time of worker: 17.2 sec
             "callworker=harvest_vegetable"
@@ -115,7 +115,7 @@ wl.Descriptions():new_productionsite_type {
       -- Translators: Short for "Out of ..." for a resource
       title = _("No Fields"),
       heading = _("Out of Fields"),
-      message = pgettext("gauls_building", "The gardener working at this garden has no plants to harvest."),
+      message = pgettext("gauls_building", "The gardener working at this garden has not enough space or your economy doesn’t need so many buildings of this type right now."),
       productivity_threshold = 20
    },
 }

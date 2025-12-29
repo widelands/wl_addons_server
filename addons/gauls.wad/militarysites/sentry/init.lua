@@ -42,7 +42,7 @@ wl.Descriptions():new_militarysite_type {
     
 
     aihints = {
-        prohibited_till = 960,
+        prohibited_till = 780,
         basic_amount = 2,
         expansion = true,
         mountain_conqueror = true
@@ -55,15 +55,15 @@ wl.Descriptions():new_militarysite_type {
     prefer_heroes = false,
 
     messages = {
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         occupied = pgettext("gauls_building", "Your warriors have occupied your sentry."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         aggressor = pgettext("gauls_building", "Your sentry discovered an aggressor."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         attack = pgettext("gauls_building", "Your sentry is under attack."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         defeated_enemy = pgettext("gauls_building", "The enemy defeated your warriors at the sentry."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         defeated_you = pgettext("gauls_building", "Your warriors defeated the enemy at the sentry.")
     },
 }

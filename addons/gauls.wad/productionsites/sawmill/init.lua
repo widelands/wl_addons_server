@@ -43,6 +43,7 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
+      forced_after = 540,
       basic_amount = 2,
       very_weak_ai_limit = 2,
       weak_ai_limit = 2

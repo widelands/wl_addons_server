@@ -59,14 +59,11 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    aihints = {
-      prohibited_till = 2400,
-      forced_after = 3300,
-      trainingsites_max_percent = 40,
+      prohibited_till = 1600,
+      forced_after = 3900,
+      trainingsites_max_percent = 50,
       requires_supporters = true,
-      basic_amount = 2,
---      very_weak_ai_limit = 1,
---      weak_ai_limit = 1,
---      normal_ai_limit = 1,
+      basic_amount = 1,
    },
 
    working_positions = {

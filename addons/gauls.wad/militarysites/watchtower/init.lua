@@ -25,14 +25,15 @@ wl.Descriptions():new_militarysite_type {
         cloth = 1
     },
     return_on_dismantle = {
-        granite = 1,
+        log = 1,
+        granite = 2,
         planks = 1,
         cloth = 1
     },
     
     aihints = {
-        prohibited_till = 600,
-        basic_amount = 2,
+        prohibited_till = 1200,
+--        basic_amount = 1,
         fighting = true,
     },
 
@@ -43,15 +44,15 @@ wl.Descriptions():new_militarysite_type {
     prefer_heroes = false,
 
     messages = {
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         occupied = pgettext("gauls_building", "Your warriors have occupied your watchtower."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         aggressor = pgettext("gauls_building", "Your watchtower discovered an aggressor."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         attack = pgettext("gauls_building", "Your watchtower is under attack."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         defeated_enemy = pgettext("gauls_building", "The enemy defeated your warriors at the watchtower."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         defeated_you = pgettext("gauls_building", "Your warriors defeated the enemy at the watchtower.")
     },
 }

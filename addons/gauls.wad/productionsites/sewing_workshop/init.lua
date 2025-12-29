@@ -52,11 +52,11 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 1980,
+      prohibited_till = 1440,
       basic_amount = 1,
       very_weak_ai_limit = 1,
       weak_ai_limit = 1,
-      normal_ai_limit = 1,
+      normal_ai_limit = 2,
    },
 
    working_positions = {

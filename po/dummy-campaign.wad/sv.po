@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2025-12-29 03:13+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -20,41 +24,43 @@ msgstr ""
 
 #: addons/dummy-campaign.wad/addon:2
 msgid "Dummy campaign"
-msgstr ""
+msgstr "Exempelkampanj"
 
 #: addons/dummy-campaign.wad/addon:3
 msgid "A campaign consisting of unbelievable 0 playable levels."
-msgstr ""
+msgstr "En kampanj bestående av otroliga 0 spelbara nivåer."
 
 #. TRANSLATORS: The difficulty level of a campaign
 #: addons/dummy-campaign.wad/campaigns.lua:16
 msgid "Easy."
-msgstr ""
+msgstr "Lätt."
 
 #: addons/dummy-campaign.wad/campaigns.lua:27
 msgid "Dummy"
-msgstr ""
+msgstr "Exempel"
 
 #: addons/dummy-campaign.wad/campaigns.lua:29
 msgid "Dummy campaign."
-msgstr ""
+msgstr "Exempelkampanj."
 
 #: addons/dummy-campaign.wad/campaigns.lua:30
 msgid ""
 "This campaign is not playable. It only demonstrates the campaign-type add-on "
 "feature."
 msgstr ""
+"Denna kampanj är inte spelbar. Den visar endast tilläggsfunktionen för "
+"kampanjtyper."
 
 #: addons/dummy-campaign.wad/example-dummy.wmf/elemental:8
 #: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:12
 msgid "Not yet implemented"
-msgstr ""
+msgstr "Ännu inte implementerad"
 
 #: addons/dummy-campaign.wad/example-dummy.wmf/elemental:10
 msgid "Nobody"
-msgstr ""
+msgstr "Ingen"
 
 #: addons/dummy-campaign.wad/example-dummy.wmf/elemental:12
 #: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:13
 msgid "Sorry, this map is not yet implemented."
-msgstr ""
+msgstr "Tyvärr, denna karta är ännu inte implementerad."

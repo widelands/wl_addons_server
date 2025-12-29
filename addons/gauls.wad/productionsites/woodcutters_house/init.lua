@@ -25,10 +25,10 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       requires_supporters = true,
-      basic_amount = 7,
-      very_weak_ai_limit = 8,
-      weak_ai_limit = 10,
-      normal_ai_limit = 13
+      basic_amount = 5,
+      very_weak_ai_limit = 5,
+      weak_ai_limit = 7,
+      normal_ai_limit = 9
    },
 
    working_positions = {

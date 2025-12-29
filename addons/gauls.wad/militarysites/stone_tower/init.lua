@@ -40,15 +40,15 @@ animation_directory = dirname,
    prefer_heroes = true,
 
    messages = {
-      -- TRANSLATORS: Message sent by a Gauls military site
+      -- TRANSLATORS: Message sent by a Gallic military site
       occupied = pgettext("gauls_building", "Your warriors have occupied your stone tower."),
-      -- TRANSLATORS: Message sent by a Gauls military site
+      -- TRANSLATORS: Message sent by a Gallic military site
       aggressor = pgettext("gauls_building", "Your stone tower discovered an aggressor."),
-      -- TRANSLATORS: Message sent by a Gauls military site
+      -- TRANSLATORS: Message sent by a Gallic military site
       attack = pgettext("gauls_building", "Your stone tower is under attack."),
-      -- TRANSLATORS: Message sent by a Gauls military site
+      -- TRANSLATORS: Message sent by a Gallic military site
       defeated_enemy = pgettext("gauls_building", "The enemy defeated your warriors at the stone tower."),
-      -- TRANSLATORS: Message sent by a Gauls military site
+      -- TRANSLATORS: Message sent by a Gallic military site
       defeated_you = pgettext("gauls_building", "Your warriors defeated the enemy at the stone tower.")
    },
 }

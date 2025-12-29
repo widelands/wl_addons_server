@@ -33,10 +33,10 @@ wl.Descriptions():new_productionsite_type {
    aihints = {
       prohibited_till = 1020,
       requires_supporters = true,
-      basic_amount = 2,
-      very_weak_ai_limit = 2,
-      weak_ai_limit = 3,
-      normal_ai_limit = 4,
+      basic_amount = 3,
+      very_weak_ai_limit = 3,
+      weak_ai_limit = 5,
+      normal_ai_limit = 7,
    },
 
    working_positions = {
@@ -96,7 +96,7 @@ wl.Descriptions():new_productionsite_type {
       -- Translators: Short for "Out of ..." for a resource
       title = _("No Trees"),
       heading = _("Out of Trees or Fruit"),
-      message = pgettext("gauls_building", "The druid working at this house isn’t poaching any drinks. You should consider dismantling or destroying the building or building a forester’s hut or an orchard nearby."),
+      message = pgettext("gauls_building", "The druid working at this house isn’t poaching any drinks. There are no trees, fruit trees or your economy doesn’t need so many buildings of this type right now. You should consider dismantling or destroying the building or building a forester’s hut or an orchard nearby."),
       productivity_threshold = 25
    },
 }

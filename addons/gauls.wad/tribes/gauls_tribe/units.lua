@@ -85,7 +85,7 @@ wl.Descriptions():new_tribe {
             -- 1. Building Materials (Basic)
             {
                 name = "log",
-                preciousness = 10,
+                preciousness = 5,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Log, part 1
@@ -98,7 +98,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "granite",
                 default_target_quantity = 30,
-                preciousness = 4,
+                preciousness = 8,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Granite, part 1
@@ -111,7 +111,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "planks",
                 default_target_quantity = 30,
-                preciousness = 3,
+                preciousness = 40,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Planks, part 1
@@ -126,7 +126,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "clay",
                 default_target_quantity = 30,
-                preciousness = 11,
+                preciousness = 15,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Clay
@@ -137,7 +137,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "brick",
                 default_target_quantity = 18,
-                preciousness = 10,
+                preciousness = 40,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Sanded Wood
@@ -158,7 +158,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "wool",
                 default_target_quantity = 15,
-                preciousness = 3,
+                preciousness = 10,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Wool
@@ -188,7 +188,7 @@ wl.Descriptions():new_tribe {
             },
             {
                name = "wheat_sheaf",
-                preciousness = 30,
+                preciousness = 45,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic ware: Wheat Sheaf
                     purpose = pgettext("gauls_ware", "Wheat sheaves are harvested by farmers who sent them to threshing floors to gain wheat and straw.")
@@ -246,8 +246,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "vegetable",
-                default_target_quantity = 30,
-                preciousness = 8,
+                default_target_quantity = 50,
+                preciousness = 10,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Vegetable
@@ -257,8 +257,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "herbs",
-                default_target_quantity = 30,
-                preciousness = 5,
+                default_target_quantity = 50,
+                preciousness = 10,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Herbs, part 1
@@ -364,7 +364,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "coal",
                 default_target_quantity = 30,
-                preciousness = 5,
+                preciousness = 50,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Coal, part 1
@@ -403,7 +403,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "iron_ore",
                 default_target_quantity = 10,
-                preciousness = 3,
+                preciousness = 40,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Iron Ore, part 1
@@ -455,7 +455,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "tin_ore",
                 default_target_quantity = 5,
-                preciousness = 3,
+                preciousness = 13,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Tin Ore, part 1
@@ -625,8 +625,8 @@ wl.Descriptions():new_tribe {
             -- 5. Weapons, Armour, Warrior training
             {
                 name = "elixir",
-                default_target_quantity = 10,
-                preciousness = 1,
+                default_target_quantity = 20,
+                preciousness = 6,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Elixir, part 1
@@ -640,8 +640,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "potion",
-                default_target_quantity = 10,
-                preciousness = 1,
+                default_target_quantity = 20,
+                preciousness = 6,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Potion, part 1
@@ -755,7 +755,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "gauls_carrier_1",
                 default_target_quantity = 5,
-                preciousness = 2,
+                preciousness = 30,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic worker: Ox
                     purpose = pgettext("gauls_worker", "Carries items along roads.")
@@ -853,7 +853,6 @@ wl.Descriptions():new_tribe {
             -- 3. Collectors and Food Supply
             {
                 name = "gauls_fisher",
-                preciousness = 3,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic worker: Fisher
                     purpose = pgettext("gauls_worker", "Catches fish in the sea.")
@@ -861,7 +860,6 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gauls_hunter",
-                preciousness = 3,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic worker: Hunter
                     purpose = pgettext("gauls_worker", "The hunter brings fresh, raw meat to the colonists.")
@@ -980,8 +978,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gauls_soldier",
-                default_target_quantity = 40,
-                preciousness = 50,
+                default_target_quantity = 20,
+                preciousness = 30,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic worker: Warrior
                     purpose = pgettext("gauls_worker", "Defend and Conquer!")
@@ -989,7 +987,6 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gauls_druid",
-                preciousness = 3,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic worker: Druid
                     purpose = pgettext("gauls_worker", "His elixirs improve health of warriors and his potions improve their training as well as miners’ productivity.")
@@ -997,7 +994,6 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gauls_trainer",
-                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic worker: Trainer
                     purpose = pgettext("gauls_worker", "Trains and recruits warriors.")
@@ -1277,7 +1273,7 @@ wl.Descriptions():new_tribe {
             name = "cherry_tree_old",
             helptexts = {
                 -- TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Old)
-                purpose = _("This old cherry tree can be cut down by a woodcutter for log. This is the only life stage of this tree when a woodcutter is allowed to fell it.")
+                purpose = _("This old cherry tree can be cut down by a woodcutter for log. This is the only life stage of this tree, when a woodcutter is allowed to fell it.")
             }
         },
         {
@@ -1319,7 +1315,7 @@ wl.Descriptions():new_tribe {
             name = "apple_tree_old",
             helptexts = {
                 -- TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Old)
-                purpose = _("This old apple tree can be cut down by a woodcutter for log. This is the only life stage of this tree when a woodcutter is allowed to fell it.")
+                purpose = _("This old apple tree can be cut down by a woodcutter for log. This is the only life stage of this tree, when a woodcutter is allowed to fell it.")
             }
         },
         {
@@ -1388,7 +1384,7 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 purpose = {
                     -- TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 1
-                    _("This vein contains tin ore that can be dug up by tin ore mines. There is also high ratio of granite in the ground."),
+                    _("This vein contains tin ore that can be dug up by tin mines. There is also high ratio of granite in the ground."),
                     -- TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
                     _("There is only a little bit of tin ore and granite here.")
                 }
@@ -1432,7 +1428,7 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 purpose = {
                     -- TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 1
-                    _("This vein contains tin ore that can be dug up by tin ore mines. There is also high ratio of granite in the ground."),
+                    _("This vein contains tin ore that can be dug up by tin mines. There is also high ratio of granite in the ground."),
                     -- TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
                     _("There is a lot of tin ore and granite here.")
                 }
@@ -1482,7 +1478,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Note help text for a Gallic production site: Woodcutter’s House
                 performance = {
                    -- TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 1
-                   pgettext("gauls_building", "This building can produce one log between %1$s and %2$s, depending on how far the lumberjack has to walk."):bformat(format_seconds(37), format_minutes_seconds(1, 24)),
+                   pgettext("gauls_building", "This building can produce one log between %1$s and %2$s, depending on how far the woodcutter has to walk."):bformat(format_seconds(37), format_minutes_seconds(1, 24)),
 
                    -- TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
                    pgettext("gauls_building", "In case of slopes or obstacles in the way, the time is increased.")
@@ -1644,7 +1640,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose help text for a Gallic production site: Furnace
                 purpose = pgettext("gauls_building", "Smelts ore into iron, copper, bronze and gold."),
                 -- TRANSLATORS: Performance help text for a Gallic production site: Furnace
-                performance = pgettext("gauls_building", "If this building is fully supplied and there is a demand for all metals, production of 6 iron ingots, 2 copper ingots, 3 bronze bars and 2 gold bars takes %1$s. If only one kind of metal is needed, it takes %2% to produce one iron or copper ingot or %3% to produce one bronze or gold bar."):bformat(format_minutes_seconds(5, 24), format_seconds(23), format_seconds(28))
+                performance = pgettext("gauls_building", "If this building is fully supplied and there is a demand for all metals, production of 6 iron ingots, 2 copper ingots, 3 bronze bars and 2 gold bars takes %1$s. If only one kind of metal is needed, it takes %2$s to produce one iron or copper ingot or %3$s to produce one bronze or gold bar."):bformat(format_minutes_seconds(5, 24), format_seconds(23), format_seconds(28))
             }
         },
         {

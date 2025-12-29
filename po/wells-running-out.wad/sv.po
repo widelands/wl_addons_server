@@ -5,15 +5,16 @@
 #
 # Translators:
 # D M <kamera001dm@gmail.com>, 2021
+# Daniel Nylander <po@danielnylander.se>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-29 03:10+0100\n"
+"POT-Creation-Date: 2025-12-29 03:14+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
-"Last-Translator: D M <kamera001dm@gmail.com>, 2021\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -36,7 +37,7 @@ msgstr ""
 "Gör vattenresursen mer användbar genom att ge brunnarna en större radie och "
 "en chans på bara 5% att hitta vatten när ytan är tömd. Dessutom kan "
 "barbarernas och frisernas brunnar utökas till djupa brunnar när arbetaren "
-"har tillräcklig erfarenhet. "
+"har tillräcklig erfarenhet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:7
@@ -57,17 +58,19 @@ msgstr "jobba"
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:36
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:36
 msgid "No Water"
-msgstr ""
+msgstr "Inget vatten"
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:37
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:37
 msgid "Out of Water"
-msgstr ""
+msgstr "Slut på vatten"
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:38
 msgctxt "barbarians_building"
 msgid "The carrier working at this deep well can’t find any water in his well."
 msgstr ""
+"Transportören som arbetar vid denna djupa brunn kan inte hitta något vatten "
+"i sin brunn."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/bar_well_keeper/init.lua:7
@@ -85,6 +88,8 @@ msgstr "Djup brunn"
 msgctxt "frisians_building"
 msgid "The carrier working at this deep well can’t find any water in his well."
 msgstr ""
+"Transportören som arbetar vid denna djupa brunn kan inte hitta något vatten "
+"i sin brunn."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/fri_well_keeper/init.lua:7

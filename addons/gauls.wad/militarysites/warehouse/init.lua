@@ -29,12 +29,9 @@ wl.Descriptions():new_warehouse_type {
    },
 
    aihints = {
-       prohibited_till = 900,
+--       prohibited_till = 900,
        forced_after = 1800,
-       basic_amount = 1,
-       very_weak_ai_limit = 4,
-       weak_ai_limit = 6,
---       normal_ai_limit = 8,
+       basic_amount = 3,
    },
 
    heal_per_second = 170,

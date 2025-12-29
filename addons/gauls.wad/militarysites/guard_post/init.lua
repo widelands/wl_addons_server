@@ -57,15 +57,15 @@ wl.Descriptions():new_militarysite_type {
     prefer_heroes = false,
 
     messages = {
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         occupied = pgettext("gauls_building", "Your warrior has occupied your guard post."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         aggressor = pgettext("gauls_building", "Your guard post discovered an aggressor."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         attack = pgettext("gauls_building", "Your guard post is under attack."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         defeated_enemy = pgettext("gauls_building", "The enemy defeated your warrior at the guard post."),
-        -- TRANSLATORS: Message sent by a Gauls military site
+        -- TRANSLATORS: Message sent by a Gallic military site
         defeated_you = pgettext("gauls_building", "Your warriors defeated the enemy at the guard post.")
     },
 }

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-05 03:11+0200\n"
+"POT-Creation-Date: 2025-12-29 03:14+0100\n"
 "PO-Revision-Date: 2024-10-26 21:10+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -22,7 +26,7 @@ msgstr ""
 #: addons/ui-inspector.wad/init.lua:16
 #: addons/ui-inspector.wad/show_window.lua:380
 msgid "UI Inspector"
-msgstr ""
+msgstr "Grafisk gränssnittsinspekterare"
 
 #: addons/ui-inspector.wad/addon:3
 msgid ""
@@ -31,58 +35,66 @@ msgid ""
 "names of panels and mimic existing windows without searching their source "
 "code, and assists with troubleshooting misbehaving plugins."
 msgstr ""
+"Med detta verktyg kan tilläggsutvecklare inspektera strukturen, hierarkin "
+"och egenskaperna hos paneler och fönster. Detta gör det möjligt att få fram "
+"de interna namnen på paneler och efterlikna befintliga fönster utan att "
+"behöva söka i källkoden, samt hjälper till med felsökning av insticksmoduler "
+"som inte fungerar som de ska."
 
 #: addons/ui-inspector.wad/init.lua:8
 msgid "Inspect all open panels"
-msgstr ""
+msgstr "Inspektera alla öppna paneler"
 
 #: addons/ui-inspector.wad/show_window.lua:10
 #: addons/ui-inspector.wad/show_window.lua:182
 #: addons/ui-inspector.wad/show_window.lua:209
 msgid "%1$s “%2$s”"
-msgstr ""
+msgstr "%1$s ”%2$s”"
 
 #: addons/ui-inspector.wad/show_window.lua:143
 msgid "The panel no longer exists."
-msgstr ""
+msgstr "Panelen finns inte längre."
 
 #: addons/ui-inspector.wad/show_window.lua:160
 msgid "Copy class name"
-msgstr ""
+msgstr "Kopiera klassnamn"
 
 #: addons/ui-inspector.wad/show_window.lua:224
 msgid "Copy property name"
-msgstr ""
+msgstr "Kopiera egendomsnamn"
 
 #: addons/ui-inspector.wad/show_window.lua:242
 msgid "%1$s (%2$s):"
-msgstr ""
+msgstr "%1$s (%2$s):"
 
 #: addons/ui-inspector.wad/show_window.lua:266
 msgid "Copy value"
-msgstr ""
+msgstr "Kopiera värde"
 
 #: addons/ui-inspector.wad/show_window.lua:266
 msgid "Go to this item"
-msgstr ""
+msgstr "Gå till detta objekt"
 
 #: addons/ui-inspector.wad/show_window.lua:397
 msgid "Filter by name or class"
-msgstr ""
+msgstr "Filtrera efter namn eller klass"
 
 #: addons/ui-inspector.wad/show_window.lua:404
 msgid "Clear filter"
-msgstr ""
+msgstr "Töm filter"
 
 #: addons/ui-inspector.wad/show_window.lua:417
 msgid "Refresh"
-msgstr ""
+msgstr "Uppdatera"
 
 #: screenshots/ui-inspector.wad/descriptions:3
 msgid ""
 "The Inspector in action: View the hierarchy and properties of current panels."
 msgstr ""
+"Inspekteraren igång: Visa hierarkin och egenskaperna för aktuella paneler."
 
 #: screenshots/ui-inspector.wad/descriptions:4
 msgid "Too much clutter? Apply a filter to find a panel by name or type."
 msgstr ""
+"För mycket röra? Använd ett filter för att hitta en panel efter namn eller "
+"typ."

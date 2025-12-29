@@ -43,14 +43,10 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
---      prohibited_till = 120,
---      forced_after = 60,
---      supports_production_of = { "meat" },
---      requires_supporters = true,
-      basic_amount = 2,
+      prohibited_till = 840,
       very_weak_ai_limit = 2,
-      weak_ai_limit = 3,
-      normal_ai_limit = 3,
+      weak_ai_limit = 2,
+      normal_ai_limit = 2,
    },
 
    working_positions = {
