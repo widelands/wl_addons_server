@@ -138,7 +138,7 @@ public class TransifexIntegration {
 					    poFile.getName().substring(0, poFile.getName().length() - 3);
 					final String outFile = "i18n/" + poDir.getName() + "/" + lang + ".mo";
 
-					Utils.bash("msgmerge", poFile.getAbsolutePath(),
+					Utils.bash("msgmerge", "--no-fuzzy-matching", poFile.getAbsolutePath(),
 					           new File(poDir, poDir.getName() + ".pot").getAbsolutePath(), "-o",
 					           poFile.getAbsolutePath());
 					new File("i18n", poDir.getName()).mkdirs();
