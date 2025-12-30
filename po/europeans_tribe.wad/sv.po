@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -518,7 +518,7 @@ msgstr "producerar päls"
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/animal_farm_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Tapir Farm"
-msgstr "Tapir Farm"
+msgstr "Tapirfarm"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding tapir because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/animal_farm_level_1/init.lua:78
@@ -827,7 +827,7 @@ msgstr "planterar träd"
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/foresters_hut_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Foresters Hut Level 1"
-msgstr "Skogvaktarstuga Nivå 1"
+msgstr "Skogvaktarstuga nivå 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/foresters_hut_level_2/init.lua:9
@@ -1997,7 +1997,7 @@ msgstr "Stor brunn"
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/yard_ships_advanced/init.lua:9
 msgctxt "europeans_building"
 msgid "Combined Ferry- and Shipyard"
-msgstr "Kombinerad färja och varv"
+msgstr "Kombinerad färja- och skeppsvarv"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/yard_ships_advanced/init.lua:79
@@ -2423,7 +2423,7 @@ msgstr "Damm med vatten"
 #: addons/europeans_tribe.wad/tribes/immovables/reedfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (medium)"
-msgstr "Reed Field (medelstor)"
+msgstr "Vassfält (medelstort)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/tribes/immovables/reedfield/ripe/init.lua:8
@@ -2435,13 +2435,13 @@ msgstr "Vassfält (moget)"
 #: addons/europeans_tribe.wad/tribes/immovables/reedfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (small)"
-msgstr "Reed Field (litet)"
+msgstr "Vassfält (litet)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/tribes/immovables/reedfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (tiny)"
-msgstr "Reed Field (liten)"
+msgstr "Vassfält (mycket litet)"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/tribes/immovables/resi_coal_1/init.lua:8
@@ -2720,7 +2720,7 @@ msgid ""
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
 "Europeiska skogsarbetare fäller träden; skogsvaktare sköter om tillgången på "
-"träd. Stockarna används också av kolugnen, varvet och sågverket."
+"träd. Stockarna används också av kolugnen, skeppsvarvet och sågverket."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:121
@@ -2796,7 +2796,7 @@ msgstr "Vass är ett viktigt byggmaterial."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:185
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
-msgstr "Den produceras av vassgården."
+msgstr "Den produceras av vassodlingen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:196
@@ -2922,8 +2922,9 @@ msgid ""
 "shipyard. Also some higher developed buildings need spidercloth for their "
 "construction."
 msgstr ""
-"Spindelväv tillverkas av spindeltråd i en vävfabrik. Den används i varvet. "
-"Även vissa mer avancerade byggnader behöver spindelväv för sin konstruktion."
+"Spindelväv tillverkas av spindeltråd i en vävfabrik. Den används i "
+"skeppsvarvet. Även vissa mer avancerade byggnader behöver spindelväv för sin "
+"konstruktion."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:331
@@ -2949,7 +2950,7 @@ msgstr "Granit är ett grundläggande byggmaterial."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:346
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr "The Europeans producerar granitblock i stenbrott."
+msgstr "Européerna producerar granitblock i stenbrott."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:357
@@ -3175,7 +3176,7 @@ msgstr "Allmän arbetare utan särskilda färdigheter."
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:612
 msgctxt "europeans_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ferry
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:621
@@ -4421,7 +4422,7 @@ msgstr "Norge"
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2272
 msgctxt "warehousename"
 msgid "North Macedonia"
-msgstr "Nord Makedonien"
+msgstr "Nordmakedonien"
 
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2273
 msgctxt "warehousename"
@@ -4615,7 +4616,7 @@ msgid ""
 "ports and shipyards."
 msgstr ""
 "Starta spelet med endast ditt högkvarter. Aktiverar dikes och inaktiverar "
-"hamnar och varv."
+"hamnar och skeppsvarv."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/tribes/scripting/starting_conditions/headquarters_with_seafaring.lua:11
@@ -4628,8 +4629,8 @@ msgid ""
 "Start the game with your headquarters only. Enables ports and shipyards and "
 "disables dikers."
 msgstr ""
-"Starta spelet med endast ditt högkvarter. Aktiverar hamnar och varv och "
-"inaktiverar dikesbyggare."
+"Starta spelet med endast ditt högkvarter. Aktiverar hamnar och skeppsvarv "
+"och inaktiverar dikesbyggare."
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/tribes/ships/europeans/init.lua:9

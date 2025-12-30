@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -34,6 +34,9 @@ msgid ""
 "new graphics is available. AI is still weak, for a stronger opponent, please "
 "choose fortified village or use AI of other tribes."
 msgstr ""
+"Toto rozšíření přidá nový kmen Galů. Užívá grafiku jiných kmenů, než bude k "
+"dispozici grafika nová. AI je stále slabé, pro silnějšího protivníka zvol "
+"prosím opevněnpu vesnici, nebo AI jiných kmenů."
 
 #. TRANSLATORS:  This is a Gallic fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/flowering/init.lua:10
@@ -255,7 +258,6 @@ msgstr "Hrad obydlen tvou posádkou."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:73
-#, fuzzy
 msgctxt "gauls_building"
 msgid "Your castle discovered an aggressor."
 msgstr "Hrad objevil nepřítele."
@@ -268,17 +270,15 @@ msgstr "Nepřítel napadl tvůj hrad."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:77
-#, fuzzy
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the castle."
-msgstr "Nepřítel dobyl tvoji strážnici."
+msgstr "Nepřítel dobyl tvůj hrad."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:79
-#, fuzzy
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the castle."
-msgstr "Strážnice nepřítele dobyta."
+msgstr "Hrad nepřítele dobyt."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/guard_post/init.lua:8
@@ -892,7 +892,6 @@ msgid "Out of Trees or Fruit"
 msgstr "Chybí stromy nebo ovoce"
 
 #: addons/gauls.wad/productionsites/druids_house/init.lua:99
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "The druid working at this house isn’t poaching any drinks. There are no "
@@ -900,8 +899,10 @@ msgid ""
 "type right now. You should consider dismantling or destroying the building "
 "or building a forester’s hut or an orchard nearby."
 msgstr ""
-"Druid pracující v tomto domku nevaří žádné nápoje. Zvaž rozebrání, nebo "
-"zničení budovy, nebo stavbu domku lesníka, nebo sadu poblíž budovy."
+"Druid pracující v tomto domku nevaří žádné nápoje. Buďto nejsou v okolí "
+"žádné stromy, ovocné stromy, nebo tvé hospodářství právě nepotřebuje tolik "
+"budov tohoto typu. Zvaž rozebrání, nebo zničení budovy, nebo stavbu domku "
+"lesníka, nebo sadu poblíž budovy."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/farm/init.lua:8
@@ -1015,26 +1016,23 @@ msgstr "Zahrada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:66
-#, fuzzy
 msgid "creating a herbs patch"
-msgstr "chystání malé svačiny"
+msgstr "dělání bylinného záhonku"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting herbs because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:79
-#, fuzzy
 msgid "harvesting herbs"
-msgstr "sklízení pšenice"
+msgstr "sklízení bylin"
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a vegetable patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:87
 msgid "creating a vegetable patch"
-msgstr ""
+msgstr "dělání zeleninového záhonku"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting vegetable because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:100
-#, fuzzy
 msgid "harvesting vegetable"
-msgstr "sklízení rákosu"
+msgstr "sklízení zeleniny"
 
 #: addons/gauls.wad/productionsites/garden/init.lua:118
 msgctxt "gauls_building"
@@ -1042,6 +1040,8 @@ msgid ""
 "The gardener working at this garden has not enough space or your economy "
 "doesn’t need so many buildings of this type right now."
 msgstr ""
+"Zahradník pracující na této zahradě nemádost místa, nebo tvé hospodářství "
+"právě nepotřebuje tolik budov tohoto typu."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/hunters_hut/init.lua:8
@@ -1222,7 +1222,7 @@ msgstr "Ovčinec"
 #. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
 #: addons/gauls.wad/productionsites/sheep_farm/init.lua:67
 msgid "breeding sheep"
-msgstr "chov ovcí"
+msgstr "chování ovcí"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/shipyard/init.lua:8
@@ -1478,13 +1478,12 @@ msgstr "Zahaj hru s třemi loděmi uprostřed oceánu a hrstkou zboží"
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:11
 msgid "Fortified Village"
-msgstr ""
+msgstr "Opevněná vesnice"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:13
-#, fuzzy
 msgid "Start the game with a fortified military installation"
-msgstr "Začni hru pouze s hlavní budovou"
+msgstr "Začít hru s obsazenými vojenskými budovami"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/headquarters.lua:11
@@ -1550,9 +1549,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:13
-#, fuzzy
 msgid "Tidy Warehouses"
-msgstr "Sklad"
+msgstr "Uklizené sklady"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1561,56 +1559,55 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Zahaj hru s běžnou hlavní budovou. Tví pracovníci dělají čas od času "
+"inventury. Pokud je v některém z tvých skladů více než 500 položek, "
+"pracovníci vyhodí z daného skladu čtvrtinu skladových zásob."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:111
-#, fuzzy
 msgid "Warehouse cleaned!"
-msgstr "Sklad"
+msgstr "Sklad je uklizen!"
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:199
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s byl uklizen!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
-#, fuzzy
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] "Toto pole bylo sklizeno."
-msgstr[1] "Toto pole bylo sklizeno."
-msgstr[2] "Toto pole bylo sklizeno."
-msgstr[3] "Toto pole bylo sklizeno."
+msgstr[0] "%1$d položka byla odstraněna."
+msgstr[1] "%1$d položky byly odstraněny."
+msgstr[2] "%1$d položeky bylo odstraněno."
+msgstr[3] "%1$d položek bylo odstraněno."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%2$d  položka zbývá."
+msgstr[1] "%2$d  položky zbývají."
+msgstr[2] "%2$d  položky zbývá."
+msgstr[3] "%2$d  položek zbývá."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:11
-#, fuzzy
 msgid "Trading Outpost"
-msgstr "Provinční osada"
+msgstr "Obchodní stanice"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
-msgstr ""
+msgstr "Pokud hráči dochází důležité suroviny, jsou zdarma doplněny"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:11
 msgid "Village"
-msgstr ""
+msgstr "Vesnice"
 
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:13
-#, fuzzy
 msgid "Start the game with a peaceful village"
-msgstr "Začni hru pouze s hlavní budovou"
+msgstr "Zahaj hru s mírumilovnou vesnicí"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:8
@@ -2022,6 +2019,8 @@ msgid ""
 "Reed yards need open waters to grow reed. If you don’t see any right at the "
 "beginning of a new game, make finding it your priority."
 msgstr ""
+"Rákosová pole potřebují k pěstování rákosu otevřenou vodu. Pokud žádnou "
+"nevidíš hned při zahájení nové hry, udělej z jejího nalezení svou prioritu."
 
 #. TRANSLATORS: Help text for a Gallic ware: Log, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:92
@@ -2040,6 +2039,8 @@ msgid ""
 "Logs are produced by felling trees. Woodcutters need forester’s houses "
 "nearby to take care of the supply of trees."
 msgstr ""
+"Klády lze získat kácením stromů. Dřevorubci potřebují  ve své blízkosti "
+"domky lesníků, kteří zaručí dostatek stromů."
 
 #. TRANSLATORS: Help text for a Gallic ware: Granite, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:105
@@ -2048,6 +2049,7 @@ msgid ""
 "Granite is a basic building material. You also need it for production of "
 "bricks."
 msgstr ""
+"Kámen je základním stavebním materiálem. Také je potřeba na výrobu cihel."
 
 #. TRANSLATORS: Help text for a Gallic ware: Granite, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:107
@@ -2063,25 +2065,25 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:118
 msgctxt "gauls_ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Prkna jsou důležitým stavebním materiálem."
 
 #. TRANSLATORS: Help text for a Gallic ware: Planks, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:120
 msgctxt "gauls_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Vyrábí se z klád na pile."
 
 #. TRANSLATORS: Help text for a Gallic ware: Planks, part 3
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:122
 msgctxt "gauls_ware"
 msgid "They are also used by the weaponsmithy."
-msgstr ""
+msgstr "Jsou také využívány ve zbrojířství."
 
 #. TRANSLATORS: Help text for a Gallic ware: Clay
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:133
 msgctxt "gauls_ware"
 msgid "Clay is made out of water and mud to be turned into bricks."
-msgstr ""
+msgstr "Cihlářská hlína se mísí z vody a hlíny a vyrábí se z ní cihly."
 
 #. TRANSLATORS: Help text for a Gallic ware: Sanded Wood
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:144
@@ -2090,6 +2092,8 @@ msgid ""
 "Bricks are an important building material. They are made out of a mix of "
 "clay and granite dried in a coal fire."
 msgstr ""
+"Cihly jsou důležitým stavebním materiálem. Vyrábí se ze směsi cihlářské "
+"hlíny a žuly za pomoci ohně z uhlí."
 
 #. TRANSLATORS: Help text for a Gallic ware: Reed
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:154
@@ -2099,12 +2103,15 @@ msgid ""
 "suited to make roofs waterproof. It is also used to make baskets and fishing "
 "nets."
 msgstr ""
+"Rákos je pěstován na březích jezer a řek pomocí rákosových polí. Nic se "
+"nehodí lépe na pokrytí dešti odolných střech. Také se z něj vyrábí koše a "
+"rybářské sítě."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wool
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:165
 msgctxt "gauls_ware"
 msgid "Wool is the hair of sheep. Weaving mills use it to make cloth."
-msgstr ""
+msgstr "Vlna je ovčí srst. Tkalcovny z ní vyrábí látku."
 
 #. TRANSLATORS: Help text for a Gallic ware: Cloth
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:176
@@ -2147,7 +2154,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:218
 msgctxt "gauls_ware"
 msgid "Wheat is essential for survival."
-msgstr ""
+msgstr "Pšenice je nezbytná k přežití."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:220
@@ -2156,6 +2163,8 @@ msgid ""
 "Wheat is produced by threshing floors and turned into flour by mills. Sheep "
 "farms and cattle farms also need to be supplied with wheat."
 msgstr ""
+"Pšenici produkují mlaty a mele se na mouku v mlýnech. Ovčince a kravíny také "
+"potřebují dodávky pšenice. "
 
 #. TRANSLATORS: Help text for a Gallic ware: Flour
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:231
@@ -3012,13 +3021,10 @@ msgstr "Toto je plně vzrostlá třešeň."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1276
-#, fuzzy
 msgid ""
 "This old cherry tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
 msgstr ""
-"Tuto starou třešeň může dřevorubec pokácet na kládu. Toto je jediná životní "
-"fáze tohoto stromu, kdy je dřevorubci dovoleno ho pokácet."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Flowering)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1283
@@ -3051,13 +3057,10 @@ msgstr "Toto je plně vzrostlá jabloň."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1318
-#, fuzzy
 msgid ""
 "This old apple tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
 msgstr ""
-"Tuto starou jabloň může dřevorubec pokácet na kládu. Toto je jediná životní "
-"fáze tohoto stromu, kdy je dřevorubci dovoleno ho pokácet."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Flowering)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1325
@@ -3123,13 +3126,10 @@ msgstr "Zde se dá najít něco málo měděnozlaté rudy."
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1387
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1431
-#, fuzzy
 msgid ""
 "This vein contains tin ore that can be dug up by tin mines. There is also "
 "high ratio of granite in the ground."
 msgstr ""
-"Tato žíla obsahuje cínovou rudu, kterou lze vytěřit pomocí cínových dolů. "
-"Tato země je také bohatá na žulu."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1389
@@ -3203,14 +3203,11 @@ msgstr "Kácí stromy v okolí a zpracovává je na klády."
 #. TRANSLATORS: Note help text for a Gallic production site: Woodcutter’s House
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1481
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "This building can produce one log between %1$s and %2$s, depending on how "
 "far the woodcutter has to walk."
 msgstr ""
-"Tato budova může vyprodukovat jednu kládu za %1$s až %2$s, záleží na tom, "
-"jak dlouhou cestu musí dřevorubec urazit."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 2
@@ -3409,9 +3406,9 @@ msgid ""
 "economy, production of one of each item takes %1$s. If only one kind of item "
 "is needed by the economy, its production takes %2$s."
 msgstr ""
-"Pokud je budova dobře zásobována a hospodářství potřebuje všechny vyrobky, "
-"pak zabere zhotovení od každého po jednom výrobku v průměru %1$s. Pokud se "
-"nedostává pouze jednoho druhu výrobku, trvá jeho výroba v průměru %2$s."
+"Pokud je budova dobře zásobována a hospodářství potřebuje všechny výrobky, "
+"pak zabere zhotovení od každého po jednom výrobku %1$s. Pokud se nedostává "
+"pouze jednoho druhu výrobku, trvá jeho výroba %2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sawmill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1606
@@ -3475,7 +3472,6 @@ msgstr "Taví a slévá rudu na železo, měď, bronz a zlato."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Furnace
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1643
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "If this building is fully supplied and there is a demand for all metals, "
@@ -3483,9 +3479,6 @@ msgid ""
 "takes %1$s. If only one kind of metal is needed, it takes %2$s to produce "
 "one iron or copper ingot or %3$s to produce one bronze or gold bar."
 msgstr ""
-"Pokud je budova dobře zásobována a hospodářství potřebuje všechny vyrobky, "
-"pak zabere zhotovení od každého po jednom výrobku v průměru %1$s. Pokud se "
-"nedostává pouze jednoho druhu výrobku, trvá jeho výroba v průměru %2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Garden
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1650
@@ -3518,6 +3511,8 @@ msgid ""
 "and cherry tree. Per two fruit trees, one juniper – which has a form of a "
 "bush – is planted."
 msgstr ""
+"Podle podnebí jsou vysazovány dva různé ovocné stromy: jabloň a třešeň. Na "
+"dva ovocné stromy připadá výsadba jednoho jalovce, který má charakter keře."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1666
@@ -3526,6 +3521,8 @@ msgid ""
 "When the orchard has already multiple trees, the gardener can produce one "
 "basket of fruit between %1$s and %2$s, depending on how far she has to walk."
 msgstr ""
+"Pokud má sad již vícero stromů, pak může zahradnice natrhat koš ovoce za "
+"%1$s až %2$s, záleží na tom, jak dlouhou cestu musí urazit."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Purpose help text for a Gallic production site: Threshing Floor
@@ -3571,7 +3568,7 @@ msgstr "Mlynář potřebuje %1% na to, aby semlel pšenici na jeden pytel mouky.
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1707
 msgctxt "gauls_building"
 msgid "Bakes bread for ration and meal preparation."
-msgstr ""
+msgstr "Peče chléb pro přípravu malých svačin a jídel."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Bakery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1709
@@ -3584,12 +3581,14 @@ msgstr "Pekař potřebuje na upečení chleba v průměru %1%."
 msgctxt "gauls_building"
 msgid "Prepares rations to feed the scouts and miners."
 msgstr ""
+"Připravují se zde malé svačiny, které slouží za potravu průzkumníkům a "
+"horníkům."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1718
 msgctxt "gauls_building"
 msgid "The cook needs %1% on average to prepare one ration."
-msgstr ""
+msgstr "Kuchař potřebuje na přípravu jedné malé svačiny v průměru %1%."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1725
@@ -3598,6 +3597,8 @@ msgid ""
 "Prepares rations for scouts and miners as well as meals to feed the miners "
 "at advanced mines and warriors at the training sites."
 msgstr ""
+"Připravuje malé svačiny pro průzkumníky a horníky, stejně jako jídla k "
+"nasycení horníků v pokročilých dolech a bojovníků na cvičištích."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1727
@@ -3607,12 +3608,15 @@ msgid ""
 "economy, production of one of each food takes %1$s. If only one kind of food "
 "is needed by the economy, production of one ration or one meal takes %2$s."
 msgstr ""
+"Pokud je budova dobře zásobována a hospodářství potřebuje oba druhy jídel, "
+"pak zabere výroba od každého po jednom %1$s. Pokud se nedostává pouze "
+"jednoho druhu jídla, pak trvá výroba jedné malé svačiny, nebo jídla %2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Smokery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1734
 msgctxt "gauls_building"
 msgid "Smokes fish and meat using logs."
-msgstr ""
+msgstr "Udí ryby a maso za pomoci klád."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Smokery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1736
@@ -3621,12 +3625,14 @@ msgid ""
 "If this building is fully supplied, the cook needs %1% to smoke three fishes "
 "or three pieces of meat."
 msgstr ""
+"Pokud jsou všechny potřebné suroviny doručeny včas, potřebuje kuchař k "
+"vyuzení tří ryb, nebo tří kusů masa %1%."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1743
 msgctxt "gauls_building"
 msgid "Produces elixirs and potions for your miners and warriors."
-msgstr ""
+msgstr "Vyrábí elixíry a lektvary pro tvé horníky a bojovníky."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1745
@@ -3636,6 +3642,8 @@ msgid ""
 "for potion preparation and fruit trees with fruit for elixir preparation in "
 "his working area."
 msgstr ""
+"Protože druid si trhá určité tajné přísady sám, potřebuje ve své pracovní "
+"oblasti pro výrobu lektvarů stromy a pro výrobu elixíru stromy s ovocem."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1747
@@ -3645,18 +3653,21 @@ msgid ""
 "economy, production of one of each drink takes %1$s. If only one kind of "
 "drink is needed by the economy, production of one drink takes %2$s."
 msgstr ""
+"Pokud je budova dobře zásobována a hospodářství potřebuje oba druhy nápojů, "
+"pak zabere výroba od každého po jednom nápoji %1$s. Pokud se nedostává pouze "
+"jednoho druhu nápoje, trvá jeho výroba %2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sewing Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1754
 msgctxt "gauls_building"
 msgid "Produces tunics."
-msgstr ""
+msgstr "Šije haleny"
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Sewing Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1756
 msgctxt "gauls_building"
 msgid "The dressmaker needs %1% to sew one piece of clothing."
-msgstr ""
+msgstr "Švadlena potřebuje na výrobu jednoho oděvu %1%."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Weapon Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1763
@@ -3665,6 +3676,8 @@ msgid ""
 "Produces spears for hunters and new warriors and swords for trainers and "
 "attack training."
 msgstr ""
+"Vyrábí oštěpy pro lovce a nové bojovníky a meče pro cvičitele a na tréning "
+"útoku."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Weapon Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1765
@@ -3676,12 +3689,17 @@ msgid ""
 "production of one short sword takes %2$s, one long sword takes %3$s and one "
 "spear takes %4$s."
 msgstr ""
+"Pokud je budova dobře zásobována a hospodářství potřebuje oba druhy mečů i "
+"oštěpy, pak výroba dvou oštěpů, jednoho krátkého a jednoho dlouhého meče "
+"trvá %1$s. Pokud je potřeba pouze jeden druh meče, nebo oštěp, pak výroba "
+"krátkého meče zabere %2$s, výroba dlouhého meče zabere%3$s a výroba oštěpu "
+"trvá %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Armor Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1772
 msgctxt "gauls_building"
 msgid "Produces shields and armor."
-msgstr ""
+msgstr "Vyrábí štíty a zbroj."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Armor Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1774
@@ -3692,37 +3710,41 @@ msgid ""
 "is needed, production of one bronze shield takes %2$s and production of any "
 "other item takes %3$s."
 msgstr ""
+"Pokud je budova dobře zásobována a hospodářství potřebuje všechny druhy "
+"zbroje, pak zabere zhotovení od každého výrobku po jednom kusu v průměru "
+"%1$s. Pokud se nedostává pouze jednoho druhu výrobku, trvá výroba bronzového "
+"štítu %2$s a výroba všech ostatních výrobků %3$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Barracks
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1781
 msgctxt "gauls_building"
 msgid "Equips recruits and trains them as warriors."
-msgstr ""
+msgstr "Vybavuje rekruty a cvičí je na bojovníky."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Barracks
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1783
 #, lua-format
 msgctxt "gauls_building"
 msgid "The barracks need %s to recruit one warrior."
-msgstr ""
+msgstr "Kasárna potřebují %s na nábor jednoho bojovníka."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Charcoal Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1790
 msgctxt "gauls_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Pálí dřevo z klád na dřevěné uhlí."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Charcoal Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1792
 msgctxt "gauls_building"
 msgid "The charcoal burner needs %1% to produce one lump of coal."
-msgstr ""
+msgstr "Uhlíř potřebuje na výrobu jednoho kusu uhlí %1%."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1801
 msgctxt "gauls_building"
 msgid "Sows wheat and harvests wheat sheaves."
-msgstr ""
+msgstr "Seje a sklízí otepi pšenice."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1803
@@ -3731,6 +3753,8 @@ msgid ""
 "The farmer sows and harvests one sheaf of wheat between %1$s and %2$s, "
 "depending on how far he has to walk."
 msgstr ""
+"Sedlák zaseje a sklidí jednu otep pšenice za %1$s až %2$s, záleží na tom, "
+"jak dlouhou cestu musí urazit."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1810
@@ -3739,6 +3763,8 @@ msgid ""
 "Breeds strong oxen for adding them to the transportation system. Also keeps "
 "cows for their milk and meat."
 msgstr ""
+"Chová silné voly pro posílení přepravní sítě. Také chová krávy na mléko a na "
+"maso."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1812
@@ -3747,6 +3773,8 @@ msgid ""
 "Production of meat stops when economy doesn’t need smoked meat, production "
 "of both milk and meat stops when economy doesn’t need milk."
 msgstr ""
+"Produkce masa se zastaví, pokud hospodářství nepotřebuje uzené maso, "
+"produkce masa i mléka se zastaví, pokud hospodářství nepotřebuje mléko."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1814
@@ -3758,30 +3786,34 @@ msgid ""
 "one piece of meat takes %3$s and production of 2 jugs of milk only takes "
 "%4$s."
 msgstr ""
+"Pokud je budova dobře zásobována a hospodářství potřebuje všechny produkty, "
+"pak zabere chov jednoho vola, produkce 2 džbánů mléka a jednoho kusu masa "
+"%1$s. Chov jednoho vola samostatně zabere %2$s, produkce 2 džbánů mléka a "
+"kusu masa zabere %3$s a produkce pouze dvou džbánů mléka trvá %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1821
 msgctxt "gauls_building"
 msgid "Keeps sheep for their wool."
-msgstr ""
+msgstr "Chová ovce pro jejich vlnu."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1823
 msgctxt "gauls_building"
 msgid "The sheep farm needs %1% to produce one wool."
-msgstr ""
+msgstr "Ovčinec potřebuje na vyprodukování jednoho balíku vlny %1%. "
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Weaving Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1830
 msgctxt "gauls_building"
 msgid "Weaves cloth out of wool."
-msgstr ""
+msgstr "Tká látku z ovčí vlny."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Weaving Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1832
 msgctxt "gauls_building"
 msgid "The weaver needs %1% to make one piece of cloth."
-msgstr ""
+msgstr "Tkadlena potřebuje na utkání jednoho kusu látky %1%."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Coal Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Coal Mine
@@ -3791,13 +3823,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1859
 msgctxt "gauls_building"
 msgid "Digs coal out of the ground in mountain terrain."
-msgstr ""
+msgstr "Doluje uhlí v horském terénu."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Coal Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1843
 msgctxt "gauls_building"
 msgid "The miner needs %1% to produce one lump of coal."
-msgstr ""
+msgstr "Horník potřebuje %1% k tomu, aby vytěžil jednu hroudu uhlí. "
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Coal Mine
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Coal Mine
@@ -3805,7 +3837,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1861
 msgctxt "gauls_building"
 msgid "The miners need %1% to produce one lump of coal."
-msgstr ""
+msgstr "Horníci potřebují %1% k tomu, aby vytěžili jednu hroudu uhlí. "
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Iron Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Iron Mine
@@ -3815,7 +3847,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1886
 msgctxt "gauls_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Těží železnou rudu v horském terénu."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1870
@@ -3823,6 +3855,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miner needs %1% to produce one piece of ore and one block of granite."
 msgstr ""
+"Horník potřebuje %1% k tomu, aby vytěžili jeden kus železné rudy a jeden "
+"žulový kvádr. "
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1879
@@ -3830,6 +3864,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners needs %1% to produce two pieces of ore and one block of granite."
 msgstr ""
+"Horníci potřebují %1% k tomu, aby vytěžili dva kusy železné rudy a jeden "
+"žulový kvádr. "
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1888
@@ -3837,6 +3873,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners need %1% to produce five pieces of ore and two blocks of granite."
 msgstr ""
+"Horníci potřebují %1% k tomu, aby vytěžili pět kusů železné rudy a dva "
+"žulové kvádry. "
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper-Gold Mine
@@ -3844,13 +3882,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1906
 msgctxt "gauls_building"
 msgid "Digs copper ore and gold ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Těží měděnou a zlatou rudu v horském terénu."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1897
 msgctxt "gauls_building"
 msgid "While empty, this mine produces copper ore."
-msgstr ""
+msgstr "Pokud je tento důl prázdný, těží měděnou rudu."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1899
@@ -3859,12 +3897,14 @@ msgid ""
 "The miner needs %1% to produce two pieces of copper ore and one piece of "
 "gold ore."
 msgstr ""
+"Horníki potřebuje %1% k tomu, aby vytěžil dva kusy měděné rudy a jeden kus "
+"zlaté rudy. "
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper-Gold Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1908
 msgctxt "gauls_building"
 msgid "While empty, this mine produces gold ore."
-msgstr ""
+msgstr "Pokud je tento důl prázdný, těží zlatou rudu."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Copper-Gold Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1910
@@ -3873,6 +3913,8 @@ msgid ""
 "The miners need %1% to produce two pieces of copper ore and two pieces of "
 "gold ore."
 msgstr ""
+"Horníci potřebují %1% k tomu, aby vytěžili dva kusy měděné rudy a dva kusy "
+"zlaté rudy. "
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Tin Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Deep Tin Mine
@@ -3880,13 +3922,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1928
 msgctxt "gauls_building"
 msgid "Digs tin ore and granite out of the ground in mountain terrain."
-msgstr ""
+msgstr "Těží cínovou rudu a žulu v horském terénu."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1919
 msgctxt "gauls_building"
 msgid "While empty, this mine produces blocks of granite."
-msgstr ""
+msgstr "Pokud je tento důl prázdný, těží žulové kvádry."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1921
@@ -3895,12 +3937,14 @@ msgid ""
 "The miner needs %1% to produce one piece of tin ore and three blocks of "
 "granite."
 msgstr ""
+"Horník potřebuje %1% k tomu, aby vytěžil jeden kus cínové rudy a tři žulové "
+"kvádry. "
 
 #. TRANSLATORS: Note help text for a Gallic production site: Deep Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1930
 msgctxt "gauls_building"
 msgid "While empty, this mine produces tin ore."
-msgstr ""
+msgstr "Pokud je tento důl prázdný, těží cínovou rudu."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1932
@@ -3909,18 +3953,20 @@ msgid ""
 "The miners need %1% to produce three pieces of tin ore and two blocks of "
 "granite."
 msgstr ""
+"Horníci potřebují %1% k tomu, aby vytěžili tři kusy cínové rudy a dva žulové "
+"kvádry. "
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Training Camp, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1942
 msgctxt "gauls_building"
 msgid "Trains warriors in ‘Attack’."
-msgstr ""
+msgstr "Cvičí bojovníky v útoku."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Training Camp, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1944
 msgctxt "gauls_building"
 msgid "Equips the warriors with all necessary weapons."
-msgstr ""
+msgstr "Poskytuje bojovníkům všechny potřebné zbraně."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Training Camp, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1948
@@ -3930,6 +3976,8 @@ msgid ""
 "If this building is fully supplied, it can train one warrior one level in "
 "attack in %s."
 msgstr ""
+"Pokud jsou všechny potřebné suroviny doručeny včas, může vycvičit jeden "
+"stupeň útoku bojovníka za %s."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Training Camp, part 2
 #. TRANSLATORS: Performance help text for a Gallic training site: Fighting Arena, part 2
@@ -3938,13 +3986,13 @@ msgstr ""
 #, lua-format
 msgctxt "gauls_building"
 msgid "Complete training of one warrior takes %s."
-msgstr ""
+msgstr "Kompletní výcvik jednoho bojovníka zabere %s."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Fighting Arena
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1958
 msgctxt "gauls_building"
 msgid "Trains warriors in ‘Defense’ and ‘Evade’."
-msgstr ""
+msgstr "Cvičí bojovníky v obraně a úhybu."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Fighting Arena, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1961
@@ -3954,18 +4002,20 @@ msgid ""
 "If this building is fully supplied, it can train one warrior one level in "
 "defense or evade in %s."
 msgstr ""
+"Pokud jsou všechny potřebné suroviny doručeny včas, může vycvičit jeden "
+"stupeň obrany nebo úhybu bojovníka za %s."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Druid’s Gathering
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1971
 msgctxt "gauls_building"
 msgid "Improves warrior’s health."
-msgstr ""
+msgstr "Zlepšuje zdraví bojovníků."
 
 #. TRANSLATORS: Note help text for a Gallic training site: Druid’s Gathering
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1973
 msgctxt "gauls_building"
 msgid "Keep in mind that every druid needs trees in his working area."
-msgstr ""
+msgstr "Pamatuj, že každý druid potřebuje ve své pracovní oblasti stromy."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1976
@@ -3975,13 +4025,16 @@ msgid ""
 "needs between %1$s and %2$s to improve one warrior one level in health, "
 "depending on how far the druid has to walk."
 msgstr ""
+"Pokud jsou všechny potřebné suroviny doručeny včas a v okolí budovy jsou "
+"stromy, zabere zlepšení zdraví bojovníka o jeden stupeň mezi %1$s až %2$s, "
+"podle toho, jak dlouhou cestu musí druid urazit."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1978
 #, lua-format
 msgctxt "gauls_building"
 msgid "Complete training of one warrior takes %s on average."
-msgstr ""
+msgstr "Kompletní výcvik jednoho bojovníka zabere v průměru %s."
 
 #. TRANSLATORS: Purpose help text for a Gallic military site: Guard Post
 #. TRANSLATORS: Purpose help text for a Gallic military site: Watchtower
@@ -3997,7 +4050,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2033
 msgctxt "gauls_building"
 msgid "Garrisons warriors to expand your territory."
-msgstr ""
+msgstr "Obsazením budovy svou posádkou rozšiřuješ svá území."
 
 #. TRANSLATORS: Note help text for a Gallic military site: Watchtower
 #. TRANSLATORS: Note help text for a Gallic military site: Sentry
@@ -4013,6 +4066,9 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a warrior to "
 "send him away."
 msgstr ""
+"Pokud máš nedostatek bojovníků pro obsazení nové vojenské budovy, použij "
+"tlačítko s šipkou dolů pro snížení kapacity. Můžeš také kliknout na ikonu "
+"bojovníka a poslat ho tak z budovy pryč."
 
 #. TRANSLATORS: Note help text for a Gallic military site: Stone Tower
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2017
@@ -4027,7 +4083,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2044
 msgctxt "gauls_building"
 msgid "Builds ferries."
-msgstr ""
+msgstr "Staví přívozy."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Ferry Yard
 #. TRANSLATORS: Performance help text for a Gallic production site: Ferry Yard, part 1
@@ -4037,6 +4093,8 @@ msgid ""
 "The shipwright can produce one ferry between %1$s and %2$s, depending on how "
 "far he has to walk."
 msgstr ""
+"Loďař může postavit jednu přívoz za %1$s až %2$s, záleží na tom, jak dlouhou "
+"cestu musí urazit."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Shipyard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2060
@@ -4045,6 +4103,8 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
 "wares between ports."
 msgstr ""
+"Staví lodě, které se užívají k osídlování zámořských území a pro transport "
+"zboží mezi přístavy."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Shipyard, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2063
@@ -4053,6 +4113,8 @@ msgid ""
 "The shipwright can produce one ship between %1$s and %2$s, depending on how "
 "far he has to walk."
 msgstr ""
+"Loďař může postavit jednu loď za %1$s až %2$s, záleží na tom, jak dlouhou "
+"cestu musí urazit."
 
 #. TRANSLATORS: Lore help text for a Gallic building: Construction Site
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2075

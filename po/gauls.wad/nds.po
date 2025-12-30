@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -28,14 +28,15 @@ msgid "Gauls"
 msgstr "Gallier"
 
 #: addons/gauls.wad/addon:3
-#, fuzzy
 msgid ""
 "This add-on adds a new Gallic tribe. It uses graphics of other tribes, until "
 "new graphics is available. AI is still weak, for a stronger opponent, please "
 "choose fortified village or use AI of other tribes."
 msgstr ""
 "Deeses Verwiedern föögt een nejes Gallisk Volk hento. ’t bruukt Billers vun "
-"anner Völkers bit neje Billers maakt worden sünd."
+"anner Völkers bit neje Billers maakt worden sünd. Kkünstelk Spelers sünd "
+"noch swack, för eenen machtigeren Gegner köör bidde Schanzendörp ut of bruuk "
+"anner Völkers för de künstelk Spelers."
 
 #. TRANSLATORS:  This is a Gallic fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/flowering/init.lua:10
@@ -257,7 +258,6 @@ msgstr "Diene Ridders hebben dien Slött besett."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:73
-#, fuzzy
 msgctxt "gauls_building"
 msgid "Your castle discovered an aggressor."
 msgstr "Dien Slött hett Feinde to sehn kregen."
@@ -270,14 +270,12 @@ msgstr "Feinde griepen dien Slött an."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:77
-#, fuzzy
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the castle."
 msgstr "De Feinde hebben diene Ridders in eenem Slött manntjet."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:79
-#, fuzzy
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the castle."
 msgstr "Diene Ridders hebben de Feinde in eenem Slött manntjet."
@@ -899,7 +897,6 @@ msgid "Out of Trees or Fruit"
 msgstr "Hebb keene Bomen of Früchten mehr"
 
 #: addons/gauls.wad/productionsites/druids_house/init.lua:99
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "The druid working at this house isn’t poaching any drinks. There are no "
@@ -907,9 +904,10 @@ msgid ""
 "type right now. You should consider dismantling or destroying the building "
 "or building a forester’s hut or an orchard nearby."
 msgstr ""
-"De Druide dat warkt bi deesem Huus kann keene Drunken maken. Överlegg di, of "
-"du dat Huus plattrieten of ofbrannen willst, of bau eene Försterkaat of een "
-"Kamp."
+"De Druide dat warkt bi deesem Huus kann keene Drunken maken. Dat gifft keene "
+"Bomen of Früchtbomen of diene Weertskupp bruukt jüüst nu nich so völe Husen "
+"vun deeser Aard. Överlegg di, of du dat Huus plattrieten of ofbrannen "
+"willst, of bau eene Försterkaat of een Kamp."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/farm/init.lua:8
@@ -1022,26 +1020,23 @@ msgstr "Gaarn"
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:66
-#, fuzzy
 msgid "creating a herbs patch"
-msgstr "eenen Happ torechttomaken"
+msgstr "een Krüdenbedd to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting herbs because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:79
-#, fuzzy
 msgid "harvesting herbs"
-msgstr "Weit to arnten"
+msgstr "Krüden to arnten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a vegetable patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:87
 msgid "creating a vegetable patch"
-msgstr ""
+msgstr "een Gemüsebedd to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting vegetable because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:100
-#, fuzzy
 msgid "harvesting vegetable"
-msgstr "Wiendruven to arnten"
+msgstr "Gemüse to arnten"
 
 #: addons/gauls.wad/productionsites/garden/init.lua:118
 msgctxt "gauls_building"
@@ -1049,6 +1044,8 @@ msgid ""
 "The gardener working at this garden has not enough space or your economy "
 "doesn’t need so many buildings of this type right now."
 msgstr ""
+"De Gaardner dat warkt bi deesem Gaarn hett nich genoog Rüümte of diene "
+"Weertskupp bruukt jüüst nu nich so völe Husen vun deeser Aard."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/hunters_hut/init.lua:8
@@ -1488,13 +1485,12 @@ msgstr "Begünn dat Speel mit dree Schippen up de See un blot een bietje Kraam"
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:11
 msgid "Fortified Village"
-msgstr ""
+msgstr "Schanzendörp"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:13
-#, fuzzy
 msgid "Start the game with a fortified military installation"
-msgstr "Begünn dat Speel mit nix as dien Raadhuus"
+msgstr "Begünn dat Speel mit mennig Soldateree-Anlagen"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/headquarters.lua:11
@@ -1560,9 +1556,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:13
-#, fuzzy
 msgid "Tidy Warehouses"
-msgstr "Kraamhuus"
+msgstr "Kraamhusen uprümen"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1571,52 +1566,54 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Begünn mit eenem slichten Raadhuus. Of un an doon diene Arbeiders "
+"Bestandsupnahmen. Wenn mehr as 500 Dingen in elkeen vun dienem Kraamhusen "
+"sünd, smieten de Arbeiders een Veerdel vun de Bestand in sülk eenem "
+"Kraamhuus weg."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:111
-#, fuzzy
 msgid "Warehouse cleaned!"
-msgstr "Kraamhuus"
+msgstr "Kraamhuus uprüümt!"
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:199
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s is uprüümt worden!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
-#, fuzzy
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] "Deeser Acker is arnt."
-msgstr[1] "Deeser Acker is arnt."
+msgstr[0] "%1$d Ding is wegdaan worden."
+msgstr[1] "%1$d Dingen sünd wegdaan worden."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$d Ding blievt."
+msgstr[1] "%2$d Dingen blieven."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:11
-#, fuzzy
 msgid "Trading Outpost"
-msgstr "Bedröövte Butenstee"
+msgstr "Hannelsposten"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""
+"Wenn de Speler nich mehr vööl vun wichtigen Waren hett, kriggt he welke för "
+"umsünst"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:11
 msgid "Village"
-msgstr ""
+msgstr "Dörp"
 
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:13
-#, fuzzy
 msgid "Start the game with a peaceful village"
-msgstr "Begünn dat Speel mit nix as dien Raadhuus"
+msgstr "Begünn dat Speel mit eenem freedsamen Dörp"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:8
@@ -2025,7 +2022,6 @@ msgstr ""
 "begünnst, diene Weertskupp to vergrotern."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:16
-#, fuzzy
 msgid ""
 "Reed yards need open waters to grow reed. If you don’t see any right at the "
 "beginning of a new game, make finding it your priority."
@@ -3138,7 +3134,6 @@ msgstr "Deeser Karsboom is utwassen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1276
-#, fuzzy
 msgid ""
 "This old cherry tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
@@ -3178,7 +3173,6 @@ msgstr "Deeser Appelboom is utwassen."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1318
-#, fuzzy
 msgid ""
 "This old apple tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
@@ -3251,7 +3245,6 @@ msgstr "Hier is bedröövt minn Koper-Gold-Kluut."
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1387
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1431
-#, fuzzy
 msgid ""
 "This vein contains tin ore that can be dug up by tin mines. There is also "
 "high ratio of granite in the ground."
@@ -3329,14 +3322,13 @@ msgstr "Kappt Bomen in de Naberskupp un maakt daarut Boomstammen."
 #. TRANSLATORS: Note help text for a Gallic production site: Woodcutter’s House
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1481
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "This building can produce one log between %1$s and %2$s, depending on how "
 "far the woodcutter has to walk."
 msgstr ""
 "Dat Huus bruukt %1$s bit %2$s, um eenen Boomstamm to produzeren, je nadeem, "
-"wo wied de Boomhauer lopen mutt."
+"wo wied de Boomslager lopen mutt."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 2
@@ -3600,7 +3592,6 @@ msgstr "Smelt Kluten to Iesen, Koper, Bronze un Gold."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Furnace
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1643
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "If this building is fully supplied and there is a demand for all metals, "
@@ -3610,9 +3601,9 @@ msgid ""
 msgstr ""
 "Wenn alle Waren to rechter Tied ankomen un de Weertskupp all Metallen "
 "bruukt, düürt dat Produzeren vun 6 Delen Iesen, 3 Delen Bronze un 2 Delen "
-"Gold %1$s. Wenn blots eene Aard vun Metall bruukt word, düürt ’t %2%, um een "
-"Deel Iesen of Koper to produzeren, of %3%, um een Deel Bronze of Gold to "
-"produzeren."
+"Gold %1$s. Wenn blots eene Aard vun Metall bruukt word, düürt ’t %2$s, um "
+"een Deel Iesen of Koper to produzeren, of %3$s, um een Deel Bronze of Gold "
+"to produzeren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Garden
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1650
@@ -5023,11 +5014,3 @@ msgstr "Wever"
 msgctxt "gauls_worker"
 msgid "Woodcutter"
 msgstr "Boomslager"
-
-#~ msgid "planting grapevines"
-#~ msgstr "Wien to planten"
-
-#~ msgctxt "gauls_building"
-#~ msgid "The gardener working at this garden has no plants to harvest."
-#~ msgstr ""
-#~ "De Gaardner dat warkt bi deesem Gaarn hett keene Planten tum Arnten."

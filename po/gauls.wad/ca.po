@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Juanjo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -983,9 +983,8 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:66
-#, fuzzy
 msgid "creating a herbs patch"
-msgstr "preparar una ració"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting herbs because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:79
@@ -1524,11 +1523,10 @@ msgstr ""
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
-#, fuzzy
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] "Ja s'ha fet la collita d'aquest camp."
-msgstr[1] "Ja s'ha fet la collita d'aquest camp."
+msgstr[0] ""
+msgstr[1] ""
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
 msgid "%2$d item lefts."
@@ -1538,15 +1536,15 @@ msgstr[1] ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:11
-#, fuzzy
 msgid "Trading Outpost"
-msgstr "Post de mercaderies en dificultats"
+msgstr "Post de mercaderies"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""
+"Si el jugador es queda sense béns importants, en podrà aconseguir aquí."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:11

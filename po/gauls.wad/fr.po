@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# C138, 2025
 # Atanase Albaran, 2025
+# C138, 2025
 # David D, 2025
 #
 #, fuzzy
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -30,15 +30,11 @@ msgid "Gauls"
 msgstr "Gaulois"
 
 #: addons/gauls.wad/addon:3
-#, fuzzy
 msgid ""
 "This add-on adds a new Gallic tribe. It uses graphics of other tribes, until "
 "new graphics is available. AI is still weak, for a stronger opponent, please "
 "choose fortified village or use AI of other tribes."
 msgstr ""
-"Cette extension ajoute une nouvelle tribu gauloise. Elle utilise des "
-"graphismes d’autres tribus, jusqu’à ce que de nouveaux graphismes soient "
-"disponibles."
 
 #. TRANSLATORS:  This is a Gallic fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/flowering/init.lua:10
@@ -260,10 +256,9 @@ msgstr "Vos guerriers ont occupé votre château."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:73
-#, fuzzy
 msgctxt "gauls_building"
 msgid "Your castle discovered an aggressor."
-msgstr "Vos guerriers ont découvert un assaillant."
+msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:75
@@ -273,17 +268,15 @@ msgstr "Votre château est attaqué."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:77
-#, fuzzy
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the castle."
-msgstr "L'ennemi a vaincu vos guerriers au château."
+msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:79
-#, fuzzy
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the castle."
-msgstr "Vos guerriers ont vaincu l'ennemi au château."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/guard_post/init.lua:8
@@ -1004,15 +997,13 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:66
-#, fuzzy
 msgid "creating a herbs patch"
-msgstr "préparation d'une ration"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting herbs because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:79
-#, fuzzy
 msgid "harvesting herbs"
-msgstr "récolte de blé"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a vegetable patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:87
@@ -1021,9 +1012,8 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting vegetable because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:100
-#, fuzzy
 msgid "harvesting vegetable"
-msgstr "récolte de raisin"
+msgstr ""
 
 #: addons/gauls.wad/productionsites/garden/init.lua:118
 msgctxt "gauls_building"
@@ -1472,9 +1462,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:13
-#, fuzzy
 msgid "Start the game with a fortified military installation"
-msgstr "Démarrer le jeu avec votre quartier-général seulement"
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/headquarters.lua:11
@@ -1541,9 +1530,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:13
-#, fuzzy
 msgid "Tidy Warehouses"
-msgstr "Entrepôt"
+msgstr "Ranger les entrepôts"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1552,15 +1540,18 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Commencez par un siège social de base. De temps en temps, vos travailleurs "
+"font des inventaires. S’il y a plus de 500 articles dans l’un de vos "
+"entrepôts, les travailleurs jettent un quart du stock stocké dans un tel "
+"entrepôt."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:111
-#, fuzzy
 msgid "Warehouse cleaned!"
-msgstr "Entrepôt"
+msgstr "Entrepôt nettoyé !"
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:199
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s a été nettoyé !"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
@@ -1579,15 +1570,16 @@ msgstr[2] ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:11
-#, fuzzy
 msgid "Trading Outpost"
-msgstr "Avant-poste en difficulté"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""
+"Si ce joueur manque de marchandises importantes, elles seront "
+"réapprovisionnées gratuitement"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:11
@@ -1596,9 +1588,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:13
-#, fuzzy
 msgid "Start the game with a peaceful village"
-msgstr "Démarrer le jeu avec votre quartier-général seulement"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:8
@@ -4884,6 +4875,3 @@ msgstr "Tisserand"
 msgctxt "gauls_worker"
 msgid "Woodcutter"
 msgstr "Bûcheron"
-
-#~ msgid "planting grapevines"
-#~ msgstr "plante des vignes"

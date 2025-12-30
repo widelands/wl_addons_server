@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:13+0100\n"
 "PO-Revision-Date: 2025-06-06 17:58+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -627,7 +627,7 @@ msgstr "Dina soldater besegrade fienden vid fästningen."
 #: addons/europeans_all.wad/tribes/buildings/militarysites/barbarians/sentry/init.lua:9
 msgctxt "barbarians_building"
 msgid "Sentry"
-msgstr "Sentry"
+msgstr "Vaktpost"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_all.wad/tribes/buildings/militarysites/barbarians/sentry/init.lua:55
@@ -879,7 +879,7 @@ msgstr "Dina soldater besegrade fienden vid utposten."
 #: addons/europeans_all.wad/tribes/buildings/militarysites/empire/sentry/init.lua:9
 msgctxt "empire_building"
 msgid "Sentry"
-msgstr "Sentry"
+msgstr "Vaktpost"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_all.wad/tribes/buildings/militarysites/empire/sentry/init.lua:46
@@ -1310,7 +1310,7 @@ msgstr "producerar päls"
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/animal_farm_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Tapir Farm"
-msgstr "Tapir Farm"
+msgstr "Tapirfarm"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding tapir because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/animal_farm_level_1/init.lua:78
@@ -2401,7 +2401,7 @@ msgstr "planterar träd"
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/foresters_hut_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Foresters Hut Level 1"
-msgstr "Skogvaktarstuga Nivå 1"
+msgstr "Skogvaktarstuga nivå 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/foresters_hut_level_2/init.lua:9
@@ -2778,7 +2778,7 @@ msgstr "Jägarstuga nivå 4"
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/inn_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Inn"
-msgstr "Basic Inn"
+msgstr "Enkelt värdshus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/inn_basic/init.lua:81
@@ -3443,7 +3443,7 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/reed_farm_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Reed Yard"
-msgstr "Grundläggande Reed Yard"
+msgstr "Grundläggande vassodling"
 
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/reed_farm_basic/init.lua:82
 msgctxt "europeans_building"
@@ -3536,7 +3536,7 @@ msgstr "Scoutens hus nivå 4"
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/shipyard_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Shipyard"
-msgstr "Grundläggande varv"
+msgstr "Grundläggande skeppsvarv"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/shipyard_basic/init.lua:96
@@ -3551,25 +3551,25 @@ msgstr "bygga ett skepp"
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/shipyard_level_1/init.lua:9
 msgctxt "europeans_building"
 msgid "Shipyard Level 1"
-msgstr "Varvsnivå 1"
+msgstr "Skeppsvarv nivå 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/shipyard_level_2/init.lua:9
 msgctxt "europeans_building"
 msgid "Shipyard Level 2"
-msgstr "Varvsnivå 2"
+msgstr "Skeppsvarv nivå 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/shipyard_level_3/init.lua:9
 msgctxt "europeans_building"
 msgid "Shipyard Level 3"
-msgstr "Varvsnivå 3"
+msgstr "Skeppsvarv nivå 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/shipyard_level_4/init.lua:9
 msgctxt "europeans_building"
 msgid "Shipyard Level 4"
-msgstr "Varvsnivå 4"
+msgstr "Skeppsvarv nivå 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_all.wad/tribes/buildings/productionsites/europeans/smelting_works_basic/init.lua:9
@@ -4967,8 +4967,9 @@ msgid ""
 "shipyard. Also some higher developed buildings need spidercloth for their "
 "construction."
 msgstr ""
-"Spindelväv tillverkas av spindeltråd i en vävfabrik. Den används i varvet. "
-"Även vissa mer avancerade byggnader behöver spindelväv för sin konstruktion."
+"Spindelväv tillverkas av spindeltråd i en vävfabrik. Den används i "
+"skeppsvarvet. Även vissa mer avancerade byggnader behöver spindelväv för sin "
+"konstruktion."
 
 #. TRANSLATORS: Helptext for an Empire ware: Water, part 1
 #: addons/europeans_all.wad/tribes/initialization/units.lua:290
@@ -6475,31 +6476,31 @@ msgstr "Arbetar på byggarbetsplatser för att uppföra nya byggnader."
 #: addons/europeans_all.wad/tribes/initialization/units.lua:1779
 msgctxt "barbarians_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Helptext for an Amazon worker: Shipwright
 #: addons/europeans_all.wad/tribes/initialization/units.lua:1788
 msgctxt "amazons_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Helptext for an Atlantean worker: Shipwright
 #: addons/europeans_all.wad/tribes/initialization/units.lua:1797
 msgctxt "atlanteans_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Helptext for an Empire worker: Shipwright
 #: addons/europeans_all.wad/tribes/initialization/units.lua:1806
 msgctxt "empire_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Helptext for a Frisian worker: Shipwright
 #: addons/europeans_all.wad/tribes/initialization/units.lua:1815
 msgctxt "frisians_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Helptext for a Europeans worker: Geologist
 #: addons/europeans_all.wad/tribes/initialization/units.lua:1827
@@ -7394,8 +7395,8 @@ msgid ""
 "This balsa tree is ready for harvesting balsa wood by a master woodcutter. "
 "Other tribes can harvest it for normal logs."
 msgstr ""
-"Detta balsaträd är redo att skördas av en mästerskurare. Andra stammar kan "
-"skörda det för vanliga stockar."
+"Detta balsaträd är redo att skördas av en mästerskogshuggare. Andra stammar "
+"kan skörda det för vanliga stockar."
 
 #. TRANSLATORS: Helptext for a Frisian immovable: One of the berry bushes
 #: addons/europeans_all.wad/tribes/initialization/units.lua:3214
@@ -7606,8 +7607,8 @@ msgid ""
 "This ironwood tree is ready for harvesting ironwood by a master woodcutter. "
 "Other tribes can harvest it for normal logs."
 msgstr ""
-"Detta järnträd är redo att skördas av en mästerskurare. Andra stammar kan "
-"skörda det för vanliga stockar."
+"Detta järnträd är redo att skördas av en mästerskogshuggare. Andra stammar "
+"kan skörda det för vanliga stockar."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_all.wad/tribes/initialization/units.lua:3837
@@ -7720,8 +7721,8 @@ msgid ""
 "This rubber tree is ready for harvesting rubber by a master woodcutter. "
 "Other tribes can harvest it for normal logs."
 msgstr ""
-"Detta gummiträd är redo att skördas av en mästerskurare. Andra stammar kan "
-"skörda det för vanliga stockar."
+"Detta gummiträd är redo att skördas av en mästerskogshuggare. Andra stammar "
+"kan skörda det för vanliga stockar."
 
 #. TRANSLATORS: Helptext for an Empire resource indicator: No resources
 #: addons/europeans_all.wad/tribes/initialization/units.lua:4089
@@ -9250,7 +9251,7 @@ msgstr ""
 #: addons/europeans_all.wad/tribes/initialization/units.lua:6053
 msgctxt "europeans_building"
 msgid "‘Wisdom of the Fight’ by the warriors’ guild"
-msgstr "\"Kampens visdom\" av krigargillet"
+msgstr "\"Kampens visdom\" av krigarnas skrå"
 
 #. TRANSLATORS: Lore helptext for a Barbarian military site: Sentry
 #: addons/europeans_all.wad/tribes/initialization/units.lua:6061
@@ -9639,7 +9640,7 @@ msgid ""
 "ports and shipyards."
 msgstr ""
 "Starta spelet med endast ditt högkvarter. Aktiverar dikes och inaktiverar "
-"hamnar och varv."
+"hamnar och skeppsvarv."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_all.wad/tribes/scripting/starting_conditions/headquarters_with_seafaring.lua:11
@@ -9652,8 +9653,8 @@ msgid ""
 "Start the game with your headquarters only. Enables ports and shipyards and "
 "disables dikers."
 msgstr ""
-"Starta spelet med endast ditt högkvarter. Aktiverar hamnar och varv och "
-"inaktiverar dikesbyggare."
+"Starta spelet med endast ditt högkvarter. Aktiverar hamnar och skeppsvarv "
+"och inaktiverar dikesbyggare."
 
 #. TRANSLATORS: This is the Atlanteans' ship's name used in lists of units
 #: addons/europeans_all.wad/tribes/ships/europeans/init.lua:9

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:13+0100\n"
+"POT-Creation-Date: 2025-12-30 03:13+0100\n"
 "PO-Revision-Date: 2021-10-06 10:02+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -60,7 +60,8 @@ msgstr "Transportkvitto"
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
 msgid ""
 "Four shovels for removing the swamps have been collected at the warehouse."
-msgstr "Fyra spadar för att rensa bort träsket har samlats in på lagret."
+msgstr ""
+"Fyra spadar för att rensa bort träsket har samlats in i lagerbyggnaden."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:219
@@ -72,7 +73,8 @@ msgid ""
 "Four more shovels for removing the swamps have been collected at the "
 "warehouse."
 msgstr ""
-"Ytterligare fyra spadar för att ta bort träsken har samlats in på lagret."
+"Ytterligare fyra spadar för att ta bort träsken har samlats in i "
+"lagerbyggnaden."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:7
 msgid "Defeat Törver"
@@ -120,11 +122,11 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:34
 msgid "Build warehouse"
-msgstr "Bygg lager"
+msgstr "Bygg lagerbyggnad"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:36
 msgid "Build a Warehouse near the Pirate Sentry"
-msgstr "Bygg ett lager nära piratvaktposten"
+msgstr "Bygg en lagerbyggnad nära piratvaktposten"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:37
 msgid ""
@@ -132,7 +134,7 @@ msgid ""
 "will need it as a basis for further exploration. Furthermore we could use it "
 "to store some gold that we will mine from the surrounding hills."
 msgstr ""
-"Bygg ett lager nära den erövrade piratvakten vid bäcken. Vi kommer att "
+"Bygg en lagerbyggnad nära den erövrade piratvakten vid bäcken. Vi kommer att "
 "behöva det som bas för vidare utforskning. Dessutom kan vi använda det för "
 "att förvara guld som vi kommer att bryta i de omgivande bergen."
 
@@ -144,7 +146,7 @@ msgstr "Ta med spadar"
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:45
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:54
 msgid "Bring Four Shovels to the new Warehouse"
-msgstr "Ta med fyra spadar till det nya lagret"
+msgstr "Ta med fyra spadar till den nya lagerbyggnaden"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:46
 msgid "They will be handed out to some volunteers for drying up the swamps."
@@ -432,9 +434,9 @@ msgid ""
 "this area. There is a good building spot only three steps away from the "
 "sentry."
 msgstr ""
-"Med vår framgångsrika expansion i detta område bör vi överväga att bygga ett "
-"lager direkt sydväst om vakten för att ytterligare utforska detta område. "
-"Det finns en bra byggplats bara tre steg från vakten."
+"Med vår framgångsrika expansion i detta område bör vi överväga att bygga en "
+"lagerbyggnad direkt sydväst om vakten för att ytterligare utforska detta "
+"område. Det finns en bra byggplats bara tre steg från vakten."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:79
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:86
@@ -450,8 +452,8 @@ msgid ""
 msgstr ""
 "Sire, regnperioden har skapat träsk längs bäcken i öster och vi kan inte "
 "passera dem. De måste avlägsnas innan vi kan fortsätta. Om du tar med "
-"tillräckligt med spadar till det nya lagret kommer frivilliga att ta bort "
-"träsken."
+"tillräckligt med spadar till den nya lagerbyggnaden kommer frivilliga att ta "
+"bort träsken."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:87
 msgid ""
@@ -461,7 +463,7 @@ msgid ""
 msgstr ""
 "Herr, alla spadar har delats ut, men om vi fortsätter i denna takt kommer vi "
 "inte att ha rensat bort träsken innan nästa regnperiod. Om ni tar med fler "
-"spadar till det nya lagret kommer fler frivilliga att delta."
+"spadar till den nya lagerbyggnaden kommer fler frivilliga att delta."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:94
 msgid ""
@@ -517,7 +519,7 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:118
 msgid "Ability to build shipyards"
-msgstr "Förmåga att bygga varv"
+msgstr "Förmåga att bygga skeppsvarv"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:119
 msgid ""
@@ -527,7 +529,7 @@ msgid ""
 msgstr ""
 "Ers höghet, efter långa studier och forskning har våra vise män äntligen "
 "lyckats dechiffrera det märkliga språket i Törvers beskrivningar som vi "
-"hittade i hans högkvarter. Från och med nu kan vi bygga varv."
+"hittade i hans högkvarter. Från och med nu kan vi bygga skeppsvarv."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:124
 msgid "Our scout has been captured"

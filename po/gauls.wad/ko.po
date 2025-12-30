@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: 천영준, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -982,9 +982,8 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:66
-#, fuzzy
 msgid "creating a herbs patch"
-msgstr "배급 준비"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting herbs because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:79
@@ -1530,7 +1529,6 @@ msgstr[0] ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:11
-#, fuzzy
 msgid "Trading Outpost"
 msgstr "교역소"
 
@@ -1538,7 +1536,7 @@ msgstr "교역소"
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
-msgstr ""
+msgstr "해당 플레이어가 중요 자원이 부족해지면 자원들이 무료로 보충됩니다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:11

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -29,14 +29,14 @@ msgid "Gauls"
 msgstr "Galler"
 
 #: addons/gauls.wad/addon:3
-#, fuzzy
 msgid ""
 "This add-on adds a new Gallic tribe. It uses graphics of other tribes, until "
 "new graphics is available. AI is still weak, for a stronger opponent, please "
 "choose fortified village or use AI of other tribes."
 msgstr ""
 "Detta tillägg lägger till en ny gallisk stam. Det använder grafik från andra "
-"stammar tills ny grafik blir tillgänglig."
+"stammar tills ny grafik blir tillgänglig. AI är fortfarande svag, för en "
+"starkare motståndare, välj befäst by eller använd AI från andra stammar."
 
 #. TRANSLATORS:  This is a Gallic fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/flowering/init.lua:10
@@ -258,10 +258,9 @@ msgstr "Dina krigare har ockuperat ditt slott."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:73
-#, fuzzy
 msgctxt "gauls_building"
 msgid "Your castle discovered an aggressor."
-msgstr "Ditt slott har upptäckt en angripare."
+msgstr "Ditt slott upptäckte en angripare."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:75
@@ -271,14 +270,12 @@ msgstr "Ditt slott är under attack."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:77
-#, fuzzy
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the castle."
 msgstr "Fienden besegrade dina krigare vid slottet."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:79
-#, fuzzy
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the castle."
 msgstr "Dina krigare besegrade fienden vid slottet."
@@ -335,7 +332,7 @@ msgstr "Port"
 #: addons/gauls.wad/militarysites/sentry/init.lua:8
 msgctxt "gauls_building"
 msgid "Sentry"
-msgstr "Sentry"
+msgstr "Vaktpost"
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/sentry/init.lua:59
@@ -443,7 +440,7 @@ msgstr "Dina krigare besegrade fienden vid fästningen."
 #: addons/gauls.wad/militarysites/warehouse/init.lua:8
 msgctxt "gauls_building"
 msgid "Warehouse"
-msgstr "Lager"
+msgstr "Lagerbyggnad"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/watchtower/init.lua:8
@@ -900,7 +897,6 @@ msgid "Out of Trees or Fruit"
 msgstr "Slut på träd eller frukt"
 
 #: addons/gauls.wad/productionsites/druids_house/init.lua:99
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "The druid working at this house isn’t poaching any drinks. There are no "
@@ -908,9 +904,10 @@ msgid ""
 "type right now. You should consider dismantling or destroying the building "
 "or building a forester’s hut or an orchard nearby."
 msgstr ""
-"Druiden som arbetar i detta hus stjäl inga drycker. Du bör överväga att riva "
-"eller förstöra byggnaden eller bygga en skogsvaktarstuga eller en "
-"fruktträdgård i närheten."
+"Druiden som arbetar i detta hus stjäl inga drycker. Det finns inga träd, "
+"fruktträd eller så behöver din ekonomi inte så många byggnader av denna typ "
+"just nu. Du bör överväga att riva eller förstöra byggnaden eller bygga en "
+"skogsvaktarstuga eller en fruktträdgård i närheten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/farm/init.lua:8
@@ -1024,26 +1021,23 @@ msgstr "Trädgård"
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:66
-#, fuzzy
 msgid "creating a herbs patch"
-msgstr "förbereda en ransoneringsportion"
+msgstr "skapar en örtagård"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting herbs because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:79
-#, fuzzy
 msgid "harvesting herbs"
-msgstr "skördar vete"
+msgstr "skördar örter"
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a vegetable patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:87
 msgid "creating a vegetable patch"
-msgstr ""
+msgstr "skapar en grönsaksodling"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting vegetable because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:100
-#, fuzzy
 msgid "harvesting vegetable"
-msgstr "skörda druvor"
+msgstr "skördar grönsaker"
 
 #: addons/gauls.wad/productionsites/garden/init.lua:118
 msgctxt "gauls_building"
@@ -1051,6 +1045,9 @@ msgid ""
 "The gardener working at this garden has not enough space or your economy "
 "doesn’t need so many buildings of this type right now."
 msgstr ""
+"Trädgårdsmästaren som arbetar i denna trädgård har inte tillräckligt med "
+"utrymme eller så behöver din ekonomi inte så många byggnader av denna typ "
+"just nu."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/hunters_hut/init.lua:8
@@ -1162,7 +1159,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:8
 msgctxt "gauls_building"
 msgid "Reed Yard"
-msgstr "Reed Yard"
+msgstr "Vassodling"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:55
@@ -1241,7 +1238,7 @@ msgstr "fårskötsel"
 #: addons/gauls.wad/productionsites/shipyard/init.lua:8
 msgctxt "gauls_building"
 msgid "Shipyard"
-msgstr "Varv"
+msgstr "Skeppsvarv"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/gauls.wad/productionsites/shipyard/init.lua:85
@@ -1497,13 +1494,12 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:11
 msgid "Fortified Village"
-msgstr ""
+msgstr "Befäst by"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:13
-#, fuzzy
 msgid "Start the game with a fortified military installation"
-msgstr "Starta spelet med endast ditt högkvarter"
+msgstr "Starta spelet med en befäst militär anläggning"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/headquarters.lua:11
@@ -1537,9 +1533,9 @@ msgid ""
 "an economy. Your starting position should be close to water. Warning: The AI "
 "can’t successfully start from this."
 msgstr ""
-"Starta spelet med bara ett lager och det absolut nödvändigaste för att få "
-"igång ekonomin. Din startposition bör vara nära vatten. Varning: AI kan inte "
-"starta framgångsrikt från detta."
+"Starta spelet med bara en lagerbyggnad och det absolut nödvändigaste för att "
+"få igång ekonomin. Din startposition bör vara nära vatten. Varning: AI kan "
+"inte starta framgångsrikt från detta."
 
 #: addons/gauls.wad/scripting/starting_conditions/poor_hamlet.lua:50
 msgid "Be careful"
@@ -1569,9 +1565,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:13
-#, fuzzy
 msgid "Tidy Warehouses"
-msgstr "Lager"
+msgstr "Rena lagerbyggnader"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1580,52 +1575,53 @@ msgid ""
 "inventories. If there is more than 500 items in any of your warehouses, "
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
+"Börja med ett enkelt högkvarter. Dina anställda gör regelbundet "
+"inventeringar. Om det finns mer än 500 artiklar i något av dina "
+"lagerbyggnader kastar de bort en fjärdedel av lagret i den lagerbyggnaden."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:111
-#, fuzzy
 msgid "Warehouse cleaned!"
-msgstr "Lager"
+msgstr "Lagerbyggnaden städad!"
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:199
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s har städats!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
-#, fuzzy
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] "Denna åker har skördats."
-msgstr[1] "Denna åker har skördats."
+msgstr[0] "%1$d objekt har tagits bort."
+msgstr[1] "%1$d objekt har tagits bort."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$d artikel kvar."
+msgstr[1] "%2$d artiklar kvar."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:11
-#, fuzzy
 msgid "Trading Outpost"
-msgstr "Kämpande utpost"
+msgstr "Handelsutpost"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/trading_outpost.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""
+"Om denna spelare börjar få slut på viktiga varor kommer de att fyllas på "
+"gratis"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:11
 msgid "Village"
-msgstr ""
+msgstr "By"
 
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:13
-#, fuzzy
 msgid "Start the game with a peaceful village"
-msgstr "Starta spelet med endast ditt högkvarter"
+msgstr "Starta spelet med en fredlig by"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:8
@@ -2022,7 +2018,7 @@ msgid ""
 "spare some big green building spaces for warehouses."
 msgstr ""
 "Trafiken på de galliska vägarna är tät. Tänk på att du kommer att behöva "
-"avsätta stora gröna byggnadsytor för lagerlokaler."
+"avsätta stora gröna byggnadsytor för lagerbyggnader."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:12
 msgid ""
@@ -2033,13 +2029,12 @@ msgstr ""
 "ekonomi."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:16
-#, fuzzy
 msgid ""
 "Reed yards need open waters to grow reed. If you don’t see any right at the "
 "beginning of a new game, make finding it your priority."
 msgstr ""
-"Vassodlingar behöver öppet vatten för att odla vass. Om du inte ser någon "
-"vid början av ett nytt spel, gör det till din prioritet att hitta en."
+"Vassodlingar behöver öppet vatten för att odla vass. Om du inte ser någon i "
+"början av ett nytt spel, gör det till din prioritet att hitta en."
 
 #. TRANSLATORS: Help text for a Gallic ware: Log, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:92
@@ -2146,7 +2141,7 @@ msgid ""
 "sewing workshop, armor smithy and shipyard."
 msgstr ""
 "Tyg behövs för att bygga flera byggnader. Det används också i "
-"sömnadsverkstaden, vapensmedjan och varvet."
+"sömnadsverkstaden, vapensmedjan och skeppsvarvet."
 
 #. TRANSLATORS: Help text for a Gallic ware: Straw
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:186
@@ -2471,7 +2466,7 @@ msgctxt "gauls_ware"
 msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
 msgstr ""
-"Fällningsyxan är ett verktyg för att fälla träd och används av skogsarbetare."
+"Fällningsyxan är ett verktyg för att fälla träd och används av skogshuggare."
 
 #. TRANSLATORS: Help text for a Gallic ware: Felling Ax, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Fire Tongs, part 2
@@ -2821,7 +2816,7 @@ msgstr "Avelsdjur."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:848
 msgctxt "gauls_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Help text for a Gallic worker: Fisher
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:858
@@ -3140,7 +3135,6 @@ msgstr "Detta körsbärsträd är fullvuxet."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1276
-#, fuzzy
 msgid ""
 "This old cherry tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
@@ -3180,7 +3174,6 @@ msgstr "Detta äppelträd är fullvuxet."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1318
-#, fuzzy
 msgid ""
 "This old apple tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
@@ -3250,13 +3243,12 @@ msgstr "Det finns bara en liten mängd koppar-guldmalm här."
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1387
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1431
-#, fuzzy
 msgid ""
 "This vein contains tin ore that can be dug up by tin mines. There is also "
 "high ratio of granite in the ground."
 msgstr ""
-"Denna ådra innehåller tennmalm som kan brytas i tennmalmsgruvor. Det finns "
-"också en hög andel granit i marken."
+"Denna ådra innehåller tennmalm som kan brytas i tenngruvor. Det finns också "
+"en hög andel granit i marken."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1389
@@ -3329,7 +3321,6 @@ msgstr "Fäller träd i omgivningen och bearbetar dem till stockar."
 #. TRANSLATORS: Note help text for a Gallic production site: Woodcutter’s House
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1481
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "This building can produce one log between %1$s and %2$s, depending on how "
@@ -3596,7 +3587,6 @@ msgstr "Smälter malm till järn, koppar, brons och guld."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Furnace
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1643
-#, fuzzy
 msgctxt "gauls_building"
 msgid ""
 "If this building is fully supplied and there is a demand for all metals, "
@@ -3605,9 +3595,9 @@ msgid ""
 "one iron or copper ingot or %3$s to produce one bronze or gold bar."
 msgstr ""
 "Om denna byggnad är fullt försörjd och det finns en efterfrågan på alla "
-"metaller, tar det %1$s att producera 6 järnbarrer, 2 kopparbarrer, 3 "
+"metaller, tar det %1$s att producera 6 järnstänger, 2 kopparstänger, 3 "
 "bronsstänger och 2 guldstänger. Om endast en sorts metall behövs, tar det "
-"%2% att producera en järn- eller kopparbarr eller %3% att producera en "
+"%2$s att producera en järn- eller kopparstång eller %3$s att producera en "
 "brons- eller guldstång."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Garden
@@ -5015,12 +5005,4 @@ msgstr "Vävare"
 #: addons/gauls.wad/tribes/workers/woodcutter/init.lua:8
 msgctxt "gauls_worker"
 msgid "Woodcutter"
-msgstr "Träskärare"
-
-#~ msgid "planting grapevines"
-#~ msgstr "plantera vinrankor"
-
-#~ msgctxt "gauls_building"
-#~ msgid "The gardener working at this garden has no plants to harvest."
-#~ msgstr ""
-#~ "Trädgårdsmästaren som arbetar i denna trädgård har inga växter att skörda."
+msgstr "Skogshuggare"

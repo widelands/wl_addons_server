@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -265,7 +265,7 @@ msgstr "Port"
 #: addons/sumatran_tribe.wad/militarysites/sentry_big/init.lua:8
 msgctxt "sumatran_building"
 msgid "Big Sentry"
-msgstr "Stora Sentry"
+msgstr "Stor vaktpost"
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_big/init.lua:59
@@ -337,7 +337,7 @@ msgstr "Dina krigare besegrade fienden vid vakten."
 #: addons/sumatran_tribe.wad/militarysites/warehouse/init.lua:8
 msgctxt "sumatran_building"
 msgid "Tribal Warehouse"
-msgstr "Stamlagret"
+msgstr "Stammens lagerbyggnad"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/watchtower/init.lua:8
@@ -1497,7 +1497,7 @@ msgstr "Palmplanterarens hydda"
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:8
 msgctxt "sumatran_building"
 msgid "Reed Yard"
-msgstr "Reed Yard"
+msgstr "Vassodling"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:53
@@ -1560,7 +1560,7 @@ msgstr "tillverkning av krokodilskskor"
 #: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:8
 msgctxt "sumatran_building"
 msgid "Shipyard"
-msgstr "Varv"
+msgstr "Skeppsvarv"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:91
@@ -1907,8 +1907,8 @@ msgid ""
 "real struggle. A map with good summer or desert terrain and a lot of space "
 "recommended."
 msgstr ""
-"Starta spelet med bara ett lager och det absolut nödvändigaste för att få "
-"igång ekonomin. Varning: AI:n och i de flesta fall även människor klarar "
+"Starta spelet med bara en lagerbyggnad och det absolut nödvändigaste för att "
+"få igång ekonomin. Varning: AI:n och i de flesta fall även människor klarar "
 "inte av att starta från detta. Försök inte ens om du inte är beredd på en "
 "riktig kamp. En karta med bra sommar- eller ökenterräng och mycket utrymme "
 "rekommenderas."
@@ -1942,7 +1942,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:13
 msgid "Tidy Warehouses"
-msgstr "Snygga lagerlokaler"
+msgstr "Rena lagerbyggnader"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1952,12 +1952,12 @@ msgid ""
 "workers throw away one quarter of stock stored in such a warehouse."
 msgstr ""
 "Börja med ett enkelt högkvarter. Dina anställda gör regelbundet "
-"inventeringar. Om det finns mer än 500 artiklar i något av dina lager kastar "
-"de bort en fjärdedel av lagret i det lagret."
+"inventeringar. Om det finns mer än 500 artiklar i något av dina "
+"lagerbyggnader kastar de bort en fjärdedel av lagret i den lagerbyggnaden."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:105
 msgid "Warehouse cleaned!"
-msgstr "Lageret städat!"
+msgstr "Lagerbyggnaden städad!"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:183
 msgid "%1$s has been cleaned!"
@@ -2766,7 +2766,7 @@ msgctxt "sumatran_ware"
 msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
 msgstr ""
-"Fällningsyxan är ett verktyg för att fälla träd och används av skogsarbetare."
+"Fällningsyxan är ett verktyg för att fälla träd och används av skogshuggare."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 2
@@ -3042,7 +3042,7 @@ msgstr "Samlar palm- och kassavablad."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:2588
 msgctxt "sumatran_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Helptext for a Sumatran worker: Builder
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:717
@@ -3798,7 +3798,7 @@ msgid ""
 "Gathers cassava leaves left by farmers and palm leaves left by woodcutters."
 msgstr ""
 "Samlar in kassava-blad som lämnats kvar av bönder och palmblad som lämnats "
-"kvar av skogsarbetare."
+"kvar av skogshuggare."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Leaf Gatherer’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1321
@@ -4167,8 +4167,8 @@ msgid ""
 "The smelter needs %1% to produce one iron ingot, %2% to produce one copper "
 "ingot or %3% to produce one gold bar."
 msgstr ""
-"Smältverket behöver %1% för att producera en järnbarre, %2% för att "
-"producera en kopparbarre eller %3% för att producera en guldtacka."
+"Smältverket behöver %1% för att producera en järnstång, %2% för att "
+"producera en kopparstång eller %3% för att producera en guldtacka."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Charcoal Kiln
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1493
@@ -5289,4 +5289,4 @@ msgstr "Vinmakare"
 #: addons/sumatran_tribe.wad/tribes/workers/woodcutter/init.lua:8
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
-msgstr "Träskärare"
+msgstr "Skogshuggare"

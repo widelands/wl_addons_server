@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"POT-Creation-Date: 2025-12-30 03:14+0100\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -344,7 +344,7 @@ msgstr "Dina soldater besegrade fienden vid det lilla tornet."
 #: addons/lutas_atlanteans.wad/militarysites/warehouse/init.lua:8
 msgctxt "lutas_atlanteans_building"
 msgid "Warehouse"
-msgstr "Lager"
+msgstr "Lagerbyggnad"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:8
@@ -902,7 +902,7 @@ msgstr "speja"
 #: addons/lutas_atlanteans.wad/productionsites/shipyard/init.lua:8
 msgctxt "lutas_atlanteans_building"
 msgid "Shipyard"
-msgstr "Varv"
+msgstr "Skeppsvarv"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/lutas_atlanteans.wad/productionsites/shipyard/init.lua:83
@@ -1237,7 +1237,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:13
 msgid "Tidy Warehouses"
-msgstr "Snygga lagerlokaler"
+msgstr "Rena lagerlokaler"
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:15
@@ -1252,7 +1252,7 @@ msgstr ""
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:99
 msgid "Warehouse cleaned!"
-msgstr "Lageret städat!"
+msgstr "Lagerbyggnad städad!"
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:176
 msgid "%1$s has been cleaned!"
@@ -1789,7 +1789,7 @@ msgid ""
 "The weapon smithy and the shipyard also use planks to produce the different "
 "tridents and mighty ships."
 msgstr ""
-"Vapensmeden och varvet använder också plankor för att tillverka olika "
+"Vapensmeden och skeppsvarvet använder också plankor för att tillverka olika "
 "treuddiga spjut och mäktiga skepp."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Spider Silk
@@ -1814,8 +1814,9 @@ msgid ""
 "shipyard. Also some higher developed buildings need spidercloth for their "
 "construction."
 msgstr ""
-"Spindelväv tillverkas av spindeltråd i en vävfabrik. Den används i varvet. "
-"Även vissa mer avancerade byggnader behöver spindelväv för sin konstruktion."
+"Spindelväv tillverkas av spindeltråd i en vävfabrik. Den används i "
+"skeppsvarvet. Även vissa mer avancerade byggnader behöver spindelväv för sin "
+"konstruktion."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ ware: Fish
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:169
@@ -2425,7 +2426,7 @@ msgstr "Tillverkar spindelväv för byggnader, skepp och soldater."
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:2806
 msgctxt "lutas_atlanteans_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr "Arbetar på varvet och bygger nya skepp."
+msgstr "Arbetar på skeppsvarvet och bygger nya skepp."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlanteans’ worker: Fisher
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:672
@@ -2872,7 +2873,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3294
 msgctxt "lutas_atlanteans_building"
 msgid "Head of the warehouse"
-msgstr "Lagerchef"
+msgstr "Chef för lagerbyggnad"
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ warehouse: Port
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1157
@@ -3088,7 +3089,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3362
 msgctxt "lutas_atlanteans_building"
 msgid "Prophecy of the foresters’ guild"
-msgstr "Skogsvaktarnas gilles profetia"
+msgstr "Profetian för skogsvaktarnas skrå"
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Forester's House, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1229
@@ -3151,7 +3152,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3390
 msgctxt "lutas_atlanteans_building"
 msgid "A song from the fishers’ guild"
-msgstr "En sång från fiskargillet"
+msgstr "En sång från fiskarnas skrå"
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Fisher's House, part 1
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1257
@@ -3545,7 +3546,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3546
 msgctxt "lutas_atlanteans_building"
 msgid "Head of the bakers’ guild"
-msgstr "Ordförande för bagargillet"
+msgstr "Ordförande för bagarnas skrå"
 
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlanteans’ production site: Bakery
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1412
@@ -4541,7 +4542,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:3974
 msgctxt "lutas_atlanteans_building"
 msgid "‘Wisdom of the Fight’ by the warriors’ guild"
-msgstr "\"Kampens visdom\" av krigargillet"
+msgstr "\"Kampens visdom\" av krigarnas skrå"
 
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlanteans’ production site: Ferry Yard
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1847
@@ -5500,4 +5501,4 @@ msgstr "Vävare"
 #: addons/lutas_atlanteans.wad/tribes/workers/woodcutter/init.lua:8
 msgctxt "lutas_atlanteans_worker"
 msgid "Woodcutter"
-msgstr "Träskärare"
+msgstr "Skogshuggare"
