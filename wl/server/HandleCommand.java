@@ -281,7 +281,7 @@ public class HandleCommand {
 	 */
 	private void handleCmdInfo() throws Exception {
 		// Args: name
-		checkCommandVersion(3);
+		checkCommandVersion(4);
 		ServerUtils.checkNrArgs(cmd, 1);
 
 		if (checkCmd1IsMap()) {
