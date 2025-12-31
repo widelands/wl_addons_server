@@ -119,7 +119,7 @@ public enum Command {
 	 * <code>CMD_LIST [2+: control]</code>
 	 *
 	 * <p>
-	 * Supported command versions: 1-3 (default: 4/1, 5/2)
+	 * Supported command versions: 1-4 (default: 4/1, 5/2)
 	 *
 	 * <p>
 	 * List all available add-on names.

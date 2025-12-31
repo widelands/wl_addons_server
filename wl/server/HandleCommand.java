@@ -208,7 +208,7 @@ public class HandleCommand {
 	 */
 	private void handleCmdList() throws Exception {
 		// Args: [2+: control]
-		checkCommandVersion(3);
+		checkCommandVersion(4);
 		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 0 : 1);
 
 		final boolean versionCheck =
