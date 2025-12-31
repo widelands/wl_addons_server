@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-30 03:14+0100\n"
+"POT-Creation-Date: 2025-12-31 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -2060,6 +2060,10 @@ msgid ""
 "enough rocks in your surroundings. This mine is also the only one that "
 "produces primarily granite while empty."
 msgstr ""
+"Jeho hlavním zdrojem jsou kameníci, ale produkují ho v určitém množství i "
+"železorudné a cínové doly. Obzvláště obyčejný cínový důl může velmi pomoci, "
+"pokud v tvém okolí není dostatek skal. Zmíněný typ dolu je také jediným "
+"dolem, který těží převážně granit, pokud je prázdný."
 
 #. TRANSLATORS: Help text for a Gallic ware: Planks, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:118
@@ -2120,6 +2124,8 @@ msgid ""
 "Cloth is needed to build several buildings. It is also consumed in the "
 "sewing workshop, armor smithy and shipyard."
 msgstr ""
+"Látka je potřeba ke stavbě několika budov. Spotřebovávají ji šicí dílny, "
+"platnéřství a loděnice."
 
 #. TRANSLATORS: Help text for a Gallic ware: Straw
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:186
@@ -2127,6 +2133,8 @@ msgctxt "gauls_ware"
 msgid ""
 "Straw is a by-product of wheat production. You need it for breeding animals."
 msgstr ""
+"Sláma vzniká jako vedlejší produkt při pěstování pšenice. Potřebuješ ji k "
+"chovu zvířat."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat Sheaf
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:194
@@ -2135,6 +2143,8 @@ msgid ""
 "Wheat sheaves are harvested by farmers who sent them to threshing floors to "
 "gain wheat and straw."
 msgstr ""
+"Otepi pšenice sklízí sedláci a posílají je na mlaty, aby z nich získali "
+"pšenici a slámu. "
 
 #. TRANSLATORS: Help text for a Gallic ware: Water, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:203
@@ -2149,6 +2159,8 @@ msgid ""
 "Water is used in multiple buildings. You need it for production of bricks, "
 "for preparation of bread, elixirs and potions and for breeding animals."
 msgstr ""
+"Voda je potřeba hned v několika budovách. Potřebuješ ji k výrobě cihel, "
+"přípravě chleba, elixírů a lektvarů a k chovu zvířat."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:218
@@ -2173,6 +2185,8 @@ msgid ""
 "Flour is produced by the miller out of wheat and it is needed in the bakery "
 "to produce the tasty bread."
 msgstr ""
+"Mouka je mleta mlynářem z pšenice a je jí třeba v pekárně k pečení chutného "
+"chleba."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fruit, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:241
@@ -2181,12 +2195,14 @@ msgid ""
 "Fruit is picked by gardeners in the orchard and used as a substitute of "
 "vegetable by meal preparation."
 msgstr ""
+"Ovoce je sbíráno zahradnicemi v sadech a slouží jako náhrada za zeleninu při "
+"přípravě jídla."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fruit, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:243
 msgctxt "gauls_ware"
 msgid "Druids do also pick some secret fruit ingredients when poaching elixir."
-msgstr ""
+msgstr "Druidové také sbírají tajné přísady z ovoce když vaří elixír."
 
 #. TRANSLATORS: Help text for a Gallic ware: Vegetable
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:254
@@ -2195,12 +2211,14 @@ msgid ""
 "Vegetable is used by meal preparation. If there is no vegetable in the "
 "kitchen, fruit can be used instead."
 msgstr ""
+"Zelenina slouží k přípravě jídel. Pokud v kuchyni není zelenina, může být "
+"nahrazena i ovocem."
 
 #. TRANSLATORS: Help text for a Gallic ware: Herbs, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:265
 msgctxt "gauls_ware"
 msgid "Herbs are irreplaceable by preparation of elixir and potion."
-msgstr ""
+msgstr "Byliny jsou nenahraditelnou přísadou pro přípravu elixírů a lektvarů. "
 
 #. TRANSLATORS: Help text for a Gallic ware: Herbs, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:267
@@ -2208,6 +2226,7 @@ msgctxt "gauls_ware"
 msgid ""
 "You need this two types of drinks in deep mines and for warrior training."
 msgstr ""
+"Oba typy nápojů potřebuješ pro své hluboké doly a k tréninku bojovníků."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fish
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:277
@@ -2216,6 +2235,8 @@ msgid ""
 "Fresh fish is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"Čerstvé ryby jsou uzeny v udírně a přidávány do jídel pro tvé bojovníky a "
+"horníky."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meat
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:287
@@ -2224,6 +2245,8 @@ msgid ""
 "Fresh meat is smoked in the smokery and added into meals for your warriors, "
 "miners and carriers."
 msgstr ""
+"Čerstvé maso je uzeno v udírně a přidáváno do jídel pro tvé bojovníky a "
+"horníky."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
@@ -2231,7 +2254,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:311
 msgctxt "gauls_ware"
 msgid "Smoked fish or smoked meat is used for meal preparation."
-msgstr ""
+msgstr "Z uzené ryby a uzeného masa se přípravují jídla."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 2
@@ -2239,7 +2262,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:313
 msgctxt "gauls_ware"
 msgid "Can be replaced by milk."
-msgstr ""
+msgstr "Může být nahrazeno mlékem."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bread
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:323
@@ -2248,6 +2271,8 @@ msgid ""
 "Bread is used in kitchens to prepare rations and meals. Bread is also "
 "consumed at the training sites (druid’s gatherings)."
 msgstr ""
+"Z chleba se v kuchyních připravují svačiny a jídla. Chléb je také "
+"spotřebováván na cvičištích (druidská rada)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Milk
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:332
@@ -2256,18 +2281,21 @@ msgid ""
 "Milk is used to prepare rations and meals. If there is no milk available, "
 "cook can use smoked fish or smoked meat instead."
 msgstr ""
+"Mléko je součástí svačin a jídel. Pokud není mléko k dispozici, může místo "
+"něj kuchař použít uzenou rybu, nebo uzené maso."
 
 #. TRANSLATORS: Help text for a Gallic ware: Ration, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:345
 msgctxt "gauls_ware"
 msgid "A small bite to keep miners strong and working."
-msgstr ""
+msgstr "Malé sousto, které udrží pracující horníky při síle."
 
 #. TRANSLATORS: Help text for a Gallic ware: Ration, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:347
 msgctxt "gauls_ware"
 msgid "The scout also consumes rations on his scouting trips."
 msgstr ""
+"Průzkumník také potřebuje malé svačiny, aby se mohl vydávat na průzkum."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:358
@@ -2277,6 +2305,9 @@ msgid ""
 "fish or smoked meat and it also has to contain fruit or vegetable. It "
 "satisfies the needs of miners in advanced mines."
 msgstr ""
+"Opravdové jídlo se připravuje v kuchyni z chleba a buďto mléka, nebo uzené "
+"ryby, nebo uzeného masa a také obsahuje ovoce, nebo zeleninu. Uspokojí "
+"požadavky horníků v hlubokých dolech."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meal, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:360
@@ -2291,31 +2322,31 @@ msgstr ""
 msgctxt "gauls_ware"
 msgid ""
 "While smelting metals, the fires of the Gallic furnaces are fed with coal."
-msgstr ""
+msgstr "Ohně galských pecí jsou při slévání kovů udržovány uhlím."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:373
 msgctxt "gauls_ware"
 msgid "It is mined in coal mines or produced out of logs by a charcoal kiln."
-msgstr ""
+msgstr "Těží se v uhelných dole nebo se vyrábí z klád v milíři."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:384
 msgctxt "gauls_ware"
 msgid "Copper ore can be smelted into copper in a furnace."
-msgstr ""
+msgstr "Měděnou rudu lze v huti přetavit na měď."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:386
 msgctxt "gauls_ware"
 msgid "By adding some tin ore you can obtain bronze."
-msgstr ""
+msgstr "Přidáním trochy cínové rudy lze získat bronz."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:397
 msgctxt "gauls_ware"
 msgid "Copper is a rare building material."
-msgstr ""
+msgstr "Měď je málo využívaným stavebním materiálem."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Iron, part 2
@@ -2323,7 +2354,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:425
 msgctxt "gauls_ware"
 msgid "It is produced by the furnaces."
-msgstr ""
+msgstr "Je vyráběna v hutích."
 
 #. TRANSLATORS: Help text for a Gallic ware: Iron Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:410
@@ -2338,6 +2369,8 @@ msgid ""
 "Your miners need rations or meals and in deep mines also potions to produce "
 "it."
 msgstr ""
+"Aby ji horníci mohli těžit potřebují malé svačiny, nebo jídlo a v hlubokých "
+"dolech také lektvary."
 
 #. TRANSLATORS: Help text for a Gallic ware: Iron, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:423
@@ -2349,7 +2382,7 @@ msgstr "Železo je potřeba na výrobu nástrojů a zbraní."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:436
 msgctxt "ware"
 msgid "Gold ore can be smelted into gold in the furnace."
-msgstr ""
+msgstr "Zlatou rudu lze v huti přetavit na zlato."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:438
@@ -2358,12 +2391,16 @@ msgid ""
 "It is primarily obtained in the copper-gold mines, but miners in your copper "
 "mines can usually find some too."
 msgstr ""
+"Jejím hlavním zdrojem jsou měděnozlaté doly, ale i horníci v měděných dolech "
+"nějakou obvykle najdou."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:449
 msgctxt "ware"
 msgid "Gold is needed for golden helmets. It is a rare building material too."
 msgstr ""
+"Zlato je potřeba na výrobu zlatých přileb. Slouží také jako vzácný stavební "
+"materiál."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:451
@@ -2372,13 +2409,15 @@ msgid ""
 "Gold is the most valuable of all metals and it is smelted out of gold ore in "
 "furnaces."
 msgstr ""
+"Zlato je nejcennějším ze všech kovů a je získáváno tavením zlaté rudy v "
+"hutích."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tin Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:462
 msgctxt "ware"
 msgid ""
 "Tin ore can be smelted together with copper ore into bronze in a furnace."
-msgstr ""
+msgstr "Cínovou rudu lze společně s rudou měděnou přetavit v huti na bronz."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:464
@@ -2386,6 +2425,8 @@ msgctxt "gauls_ware"
 msgid ""
 "Your miners need rations and in deep mines meals with potion to produce it."
 msgstr ""
+"Aby ji horníci mohli těžit potřebují malé svačiny a v hlubokých dolech jídlo "
+"a lektvary."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:475
@@ -2393,19 +2434,21 @@ msgctxt "ware"
 msgid ""
 "Bronze is needed for armor production. It is a rare building material too."
 msgstr ""
+"Bronzu je potřeba na výrobu zbroje. Slouží také jako vzácný stavební "
+"materiál."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:477
 msgctxt "gauls_ware"
 msgid "It is smelted out of copper ore and tin ore in furnaces."
-msgstr ""
+msgstr "Je sléván v hutích z měděné a cínové rudy."
 
 #. TRANSLATORS: Help text for a Gallic ware: Felling Ax, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:491
 msgctxt "gauls_ware"
 msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
-msgstr ""
+msgstr "Těžební sekera je nástroj na kácení stromů a používají ji dřevorubci."
 
 #. TRANSLATORS: Help text for a Gallic ware: Felling Ax, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Fire Tongs, part 2
@@ -2415,19 +2458,19 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:580
 msgctxt "gauls_ware"
 msgid "They are produced by craftsmen in a workshop."
-msgstr ""
+msgstr "Jsou vyráběny řemeslníkem v dílně."
 
 #. TRANSLATORS: Help text for a Gallic ware: Pick
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:504
 msgctxt "gauls_ware"
 msgid "Picks are used by stonecutters and miners."
-msgstr ""
+msgstr "Krumpáče používají kameníci a horníci."
 
 #. TRANSLATORS: Help text for a Gallic ware: Shovel
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:515
 msgctxt "gauls_ware"
 msgid "The shovel is an essential tool for six types of workers."
-msgstr ""
+msgstr "Lopata je nezbytným nástrojem pro šest druhů pracovníků."
 
 #. TRANSLATORS: Help text for a Gallic ware: Hammer, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:526
@@ -2436,6 +2479,8 @@ msgid ""
 "The hammer is a widely used tool. Geologists, builders, shipwrights and "
 "craftsmen, they all need hammer."
 msgstr ""
+"Kladivo je široce používaným nástrojem. Geologové, stavaři, loďaři a "
+"řemeslníci, ti všichni ho potřebují."
 
 #. TRANSLATORS: Help text for a Gallic ware: Hammer, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Fishing Net, part 2
@@ -2447,37 +2492,39 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:619
 msgctxt "gauls_ware"
 msgid "It is produced by craftsmen in a workshop."
-msgstr ""
+msgstr "Vyrábí se v dílně."
 
 #. TRANSLATORS: Help text for a Gallic ware: Scythe, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:539
 msgctxt "ware"
 msgid "The scythe is the tool of farmers."
-msgstr ""
+msgstr "Kosa je nástrojem sedláků."
 
 #. TRANSLATORS: Help text for a Gallic ware: Scythe, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:541
 msgctxt "gauls_ware"
 msgid "You need it to harvest wheat and reed."
-msgstr ""
+msgstr "Potřebuješ ji k sklizni pšenice a rákosu."
 
 #. TRANSLATORS: Help text for a Gallic ware: Kitchen Tools, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:552
 msgctxt "gauls_ware"
 msgid "Kitchen tools are used by cooks and bakers."
-msgstr ""
+msgstr "Kuchyňské náčiní používají kuchaři a pekaři."
 
 #. TRANSLATORS: Help text for a Gallic ware: Kitchen Tools, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:554
 msgctxt "gauls_ware"
 msgid "You need them to produce rations, meals, smoked meat or fish and bread."
 msgstr ""
+"Je potřeba k přípravě malých svačin, jídel, uzeného masa, uzených ryb a "
+"chleba."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fire Tongs, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:565
 msgctxt "gauls_ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Kovářské kleště jsou nástrojem používaným při tavení rudy."
 
 #. TRANSLATORS: Help text for a Gallic ware: Buckets, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:578
@@ -2486,12 +2533,14 @@ msgid ""
 "Buckets are used by water carriers, breeders and together with a shovel by "
 "clay diggers and brick makers."
 msgstr ""
+"Kýble jsou používány nosiči vody, chovateli a společně s lopatou kopáči "
+"hlíny a cihláři."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fishing Net, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:591
 msgctxt "gauls_ware"
 msgid "Fishing net is used by fishers to catch fishes."
-msgstr ""
+msgstr "Rybářskou síť používají rybáři k chytání ryb."
 
 #. TRANSLATORS: Help text for a Gallic ware: Basket, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:604
@@ -2500,18 +2549,20 @@ msgid ""
 "Basket is used together with a shovel by gardener and together with a flail "
 "by toiler."
 msgstr ""
+"Koš používájí společně s lopatou zahradnice a společně s cepem nádeníci."
 
 #. TRANSLATORS: Help text for a Gallic ware: Flail, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:617
 msgctxt "gauls_ware"
 msgid "Flail is used together with basket by toilers in the threshing floor."
-msgstr ""
+msgstr "Cep používájí společně s košem nádeníci na mlatech."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:633
 msgctxt "gauls_ware"
 msgid "Elixir is a magical drink that makes your warriors perform much better."
 msgstr ""
+"Elixír je magický nápoj, díky kterému jsou tví bojovníci daleko výkonnější."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:635
@@ -2521,13 +2572,15 @@ msgid ""
 "because the druid picks some secret ingredients before its preparation by "
 "himself."
 msgstr ""
+"Dávej pozor na to, že k přípravě elixíru potřebuješ ve skutečnosti dvě dávky "
+"ovoce, protože druid si sbírá před jeho přípravou nějaké tajné přísady sám."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 3
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:637
 msgctxt "gauls_ware"
 msgid ""
 "It is consumed at the training sites (druid’s gatherings, training camps)."
-msgstr ""
+msgstr "Pije se na cvičištích (druidská rada a výcvikový tábor)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Potion, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:648
@@ -2536,6 +2589,8 @@ msgid ""
 "Potion is a magical drink that makes your warriors and miners perform much "
 "better."
 msgstr ""
+"Lektvar je magický nápoj, díky kterému jsou tví bojovníci a horníci daleko "
+"výkonnější."
 
 #. TRANSLATORS: Help text for a Gallic ware: Potion, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:650
@@ -2548,7 +2603,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:660
 msgctxt "gauls_ware"
 msgid "Spear is a widely used weapon for hunters and new warriors."
-msgstr ""
+msgstr "Oštěp je zbraní s širokým využitím pro lovce a nové bojovníky."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tunic, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:670
@@ -2556,6 +2611,8 @@ msgctxt "gauls_ware"
 msgid ""
 "A basic piece of clothing for your new warriors, trainers, druids and scouts."
 msgstr ""
+"Základní druh oblečení pro tvé nové bojovníky, cvičitele, druidy a "
+"průzkumníky."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tunic, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:672
@@ -2563,12 +2620,14 @@ msgctxt "gauls_ware"
 msgid ""
 "It is also used for defense training under every new chain and bronze armor."
 msgstr ""
+"Je potřeba také při tréninku obrany pod každou novou kroužkovou a bronzovou "
+"zbroj."
 
 #. TRANSLATORS: Help text for a Gallic ware: Short Sword, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:683
 msgctxt "gauls_ware"
 msgid "Short sword is a basic piece of equipment for your new trainers."
-msgstr ""
+msgstr "Krátký meč je základní výbavou nových cvičitelů."
 
 #. TRANSLATORS: Help text for a Gallic ware: Short Sword, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:685
@@ -2577,6 +2636,8 @@ msgid ""
 "It is produced in the weapon smithy and used at the training camp – together "
 "with meal and elixir – to train warriors from attack level 0 to level 1."
 msgstr ""
+"Vyrábí se ve zbrojířství a používá se ve výcvikovém táboře – spolu s jídlem "
+"a elixírem – k výcviku útoku bojovníků z úrovně 0 na úroveň 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Long Sword
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:695
@@ -2586,6 +2647,8 @@ msgid ""
 "together with meal and elixir – to train warriors from attack level 1 to "
 "level 2."
 msgstr ""
+"Dlouhý meč se vyrábí ve zbrojířství a používá se ve výcvikovém táboře – "
+"spolu s jídlem a elixírem – k výcviku útoku bojovníků z úrovně 1 na úroveň 2."
 
 #. TRANSLATORS: Help text for a Gallic ware: Chain Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:704
@@ -2630,6 +2693,9 @@ msgid ""
 "fighting arena – together with meal and potion – to train warriors from "
 "evade level 1 to level 2."
 msgstr ""
+"Tento pokročilý druh štítu se vyrábí v platnéřství a používá se v aréně – "
+"spolu s jídlem a lektvarem – k výcviku úhybu bojovníků z úrovně 1 na úroveň "
+"2."
 
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
@@ -2658,18 +2724,20 @@ msgid ""
 "Groves vegetable and herbs. While experienced, she can also work in the "
 "orchard and plant fruit trees."
 msgstr ""
+"Pěstuje zeleninu a byliny. Pokud má již nějaké zkušenosti, může také "
+"pracovat v sadu a vysazovat ovocné stromy."
 
 #. TRANSLATORS: Help text for a Gallic worker: Experienced Gardener
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:789
 msgctxt "gauls_worker"
 msgid "Plants fruit trees and harvests fruit."
-msgstr ""
+msgstr "Vysazuje ovocné stromy a sklízí ovoce."
 
 #. TRANSLATORS: Help text for a Gallic worker: Builder
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:796
 msgctxt "gauls_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Pracuje na staveništích a staví nové budovy."
 
 #. TRANSLATORS: Help text for a Gallic worker: Stonecutter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:806
@@ -2693,13 +2761,13 @@ msgstr "Vysazuje stromy."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:827
 msgctxt "gauls_worker"
 msgid "Makes clay out of mud and water."
-msgstr ""
+msgstr "Mísí cihlářskou hlínu z bláta a vody."
 
 #. TRANSLATORS: Help text for a Gallic worker: Brick Maker
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:834
 msgctxt "gauls_worker"
 msgid "Burns bricks out of clay and granite."
-msgstr ""
+msgstr "Pálí cihly z cihlářské hlíny a žuly."
 
 #. TRANSLATORS: Help text for a Gallic worker: Breeder
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:841
@@ -2735,7 +2803,7 @@ msgstr "Osévá pole a sklízí otepi pšenice."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:879
 msgctxt "gauls_worker"
 msgid "Threshes harvested wheat sheaves to obtain wheat grain."
-msgstr ""
+msgstr "Mlátí sklizené otepi pšenice a získává tak pšeničné zrno."
 
 #. TRANSLATORS: Help text for a Gallic worker: Miller
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:886
@@ -2747,7 +2815,7 @@ msgstr "Mele pšenici na mouku."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:893
 msgctxt "gauls_worker"
 msgid "Bakes bread for ration and meal preparation."
-msgstr ""
+msgstr "Peče chléb pro přípravu malých svačin a jídel."
 
 #. TRANSLATORS: Help text for a Gallic worker: Cook
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:900
@@ -2756,12 +2824,14 @@ msgid ""
 "Prepares rations and meals for miners and warriors. Cook can also work at "
 "the smokery and smoke meat and fishes."
 msgstr ""
+"Připravuje malé svačiny a jídla pro horníky a bojovníky. Kuchař může také "
+"pracovat v udírně a udit maso a ryby."
 
 #. TRANSLATORS: Help text for a Gallic worker: Geologist
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:910
 msgctxt "gauls_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Dělá průzkumné práce zdrojů pro těžbu."
 
 #. TRANSLATORS: Help text for a Gallic worker: Miner
 #. TRANSLATORS: Help text for a Gallic worker: Master Miner
@@ -2769,7 +2839,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:924
 msgctxt "gauls_worker"
 msgid "Mines ore and minerals."
-msgstr ""
+msgstr "Těží rudu a minerály."
 
 #. TRANSLATORS: Help text for a Gallic worker: Smelter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:931
@@ -2793,7 +2863,7 @@ msgstr "Tká látku."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:952
 msgctxt "gauls_worker"
 msgid "Dressmaker is an experienced weaver and produces tunics."
-msgstr ""
+msgstr "Švadlena je zkušená tkadlena a šije haleny."
 
 #. TRANSLATORS: Help text for a Gallic worker: Craftsman
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:962
@@ -2803,6 +2873,8 @@ msgid ""
 "evade training. Craftman can also help the experienced blacksmith in the "
 "armor smithy."
 msgstr ""
+"Vyrábí nástroje pro tvé pracovníky a dřevěné štíty pro výcvik prvního stupně "
+"úhybu. Řemeslník může také vypomáhat zkušenému kováři v platnéřství."
 
 #. TRANSLATORS: Help text for a Gallic worker: Blacksmith
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:969
@@ -2829,6 +2901,8 @@ msgid ""
 "His elixirs improve health of warriors and his potions improve their "
 "training as well as miners’ productivity."
 msgstr ""
+"Jeho elixíry zlepšují zdraví bojovníků a jeho lektvary napomáhají jejich "
+"výcviku a také produktivitě horníků."
 
 #. TRANSLATORS: Help text for a Gallic worker: Trainer
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:999
@@ -2855,56 +2929,58 @@ msgid ""
 "When clay diggers dig up earth, they leave holes in the ground. These holes "
 "vanish after a while. "
 msgstr ""
+"Když kopáči těží hlínu, zanechávají za sebou jámy v zemi. Tyto jámy po "
+"nějakém čase zmizí."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1038
 msgid "These herbs has just been planted."
-msgstr ""
+msgstr "Tyto byliny byly právě vysety."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (small)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1045
 msgid "These herbs are growing."
-msgstr ""
+msgstr "Tyto byliny rostou."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1052
 msgid "These herbs are flowering."
-msgstr ""
+msgstr "Tyto byliny právě kvetou."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1059
 msgid "These herbs are ready for harvesting."
-msgstr ""
+msgstr "Tyto byliny jsou připraveny ke sklizni."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (harvested)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1066
 msgid "These herbs has been harvested."
-msgstr ""
+msgstr "Tyto byliny byly sklizeny."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1073
 msgid "These vegetable plants has just been planted."
-msgstr ""
+msgstr "Toto je právě vysázená zelenina."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (small)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1080
 msgid "These vegetable plants are growing."
-msgstr ""
+msgstr "Tato zelenina roste."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1087
 msgid "These vegetable plants are flowering."
-msgstr ""
+msgstr "Tato zelenina kvete."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1094
 msgid "These vegetable plants are ready for harvesting."
-msgstr ""
+msgstr "Tato zelenina je připravena ke sklizni."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (harvested)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1101
 msgid "This vegetable has been harvested."
-msgstr ""
+msgstr "Tato zelenina byla sklizena."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Wheat Field (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1108
@@ -3025,6 +3101,8 @@ msgid ""
 "This old cherry tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
 msgstr ""
+"Tuto starou třešeň může dřevorubec pokácet na kládu. Toto je jediná životní "
+"fáze tohoto stromu, kdy je dřevorubci dovoleno ho pokácet."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Flowering)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1283
@@ -3061,6 +3139,8 @@ msgid ""
 "This old apple tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
 msgstr ""
+"Tuto starou jabloň může dřevorubec pokácet na kládu. Toto je jediná životní "
+"fáze tohoto stromu, kdy je dřevorubci dovoleno ho pokácet."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Flowering)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1325
@@ -3130,6 +3210,8 @@ msgid ""
 "This vein contains tin ore that can be dug up by tin mines. There is also "
 "high ratio of granite in the ground."
 msgstr ""
+"Tato žíla obsahuje cínovou rudu, kterou lze vytěřit pomocí cínových dolů. "
+"Tato země je také bohatá na žulu."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1389
@@ -3208,6 +3290,8 @@ msgid ""
 "This building can produce one log between %1$s and %2$s, depending on how "
 "far the woodcutter has to walk."
 msgstr ""
+"Tato budova může vyprodukovat jednu kládu za %1$s až %2$s, záleží na tom, "
+"jak dlouhou cestu musí dřevorubec urazit."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 2
@@ -3479,6 +3563,11 @@ msgid ""
 "takes %1$s. If only one kind of metal is needed, it takes %2$s to produce "
 "one iron or copper ingot or %3$s to produce one bronze or gold bar."
 msgstr ""
+"Pokud je budova dobře zásobována a hospodářství potřebuje všechny druhy "
+"kovu, pak zabere výroba 6 železných prutů, 2 měděných prutů, 3 bronzových "
+"cihel a 2 zlatých cihel %1$s. Pokud je třeba pouze jednoho druhu kovu, pak "
+"zabere výroba železného nebo měděného prutu %2$s a výroba zlaté nebo "
+"bronzové cihly %3$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Garden
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1650
@@ -3496,6 +3585,11 @@ msgid ""
 "gardener resp. experienced gardener need %3$s resp. %4$s on average to "
 "produce one baskets of vegetable or one bundle of herbs."
 msgstr ""
+"Pokud se hospodářství nedostává všech produktů, pak potřebuje zahradnice, "
+"resp. zkušená zahradnice k získání dvou košů zeleniny a dvou svazků bylin v "
+"průměru %1$s, resp. %2$s. Pokud se nedostává pouze jednoho produktu, pak "
+"zahradnice, resp. zkušená zahradnice potřebuje k získání koše zeleniny, nebo "
+"svazku bylin v průměru %3$s, resp. %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Orchard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1661
