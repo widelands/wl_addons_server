@@ -450,7 +450,7 @@ public class HandleCommand {
 			out.println(mapFile.length());
 			out.println(uploadTimestamp);
 			if (commandVersion >= 4) {
-				out.println(uploadTimestamp);  // Edit timestmamp
+				out.println(uploadTimestamp);  // Edit timestamp
 			}
 			out.println(sqlMain.rs.getLong("nr_downloads"));
 
