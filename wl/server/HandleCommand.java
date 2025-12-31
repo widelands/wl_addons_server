@@ -208,7 +208,7 @@ public class HandleCommand {
 	 */
 	private void handleCmdList() throws Exception {
 		// Args: [2+: control]
-		checkCommandVersion(3);
+		checkCommandVersion(4);
 		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 0 : 1);
 
 		final boolean versionCheck =
@@ -281,7 +281,7 @@ public class HandleCommand {
 	 */
 	private void handleCmdInfo() throws Exception {
 		// Args: name
-		checkCommandVersion(3);
+		checkCommandVersion(4);
 		ServerUtils.checkNrArgs(cmd, 1);
 
 		if (checkCmd1IsMap()) {
@@ -344,6 +344,9 @@ public class HandleCommand {
 
 				out.println(Utils.filesize(new File("addons", cmd[1])));
 				out.println(sqlMain.rs.getLong("timestamp"));
+				if (commandVersion >= 4) {
+					out.println(sqlMain.rs.getLong("edit_timestamp"));
+				}
 				out.println(sqlMain.rs.getLong("downloads"));
 
 				for (long v : Utils.getVotes(addOnID)) out.println(v);
@@ -413,6 +416,7 @@ public class HandleCommand {
 			final String hint = sqlMain.rs.getString("hint");
 			final String uploader_comment = sqlMain.rs.getString("uploader_comment");
 			final String author = sqlMain.rs.getString("author");
+			final long uploadTimestamp = sqlMain.rs.getLong("timestamp");
 
 			final File minimapFile =
 			    new File(Utils.config("website_maps_path"), sqlMain.rs.getString("minimap"));
@@ -444,7 +448,10 @@ public class HandleCommand {
 			out.println("0");     // number of screenshots
 
 			out.println(mapFile.length());
-			out.println(sqlMain.rs.getLong("timestamp"));
+			out.println(uploadTimestamp);
+			if (commandVersion >= 4) {
+				out.println(uploadTimestamp);  // Edit timestamp
+			}
 			out.println(sqlMain.rs.getLong("nr_downloads"));
 
 			int[] votes = new int[10];
