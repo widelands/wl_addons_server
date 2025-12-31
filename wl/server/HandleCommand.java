@@ -416,6 +416,7 @@ public class HandleCommand {
 			final String hint = sqlMain.rs.getString("hint");
 			final String uploader_comment = sqlMain.rs.getString("uploader_comment");
 			final String author = sqlMain.rs.getString("author");
+			final long uploadTimestamp = sqlMain.rs.getLong("timestamp");
 
 			final File minimapFile =
 			    new File(Utils.config("website_maps_path"), sqlMain.rs.getString("minimap"));
@@ -447,7 +448,10 @@ public class HandleCommand {
 			out.println("0");     // number of screenshots
 
 			out.println(mapFile.length());
-			out.println(sqlMain.rs.getLong("timestamp"));
+			out.println(uploadTimestamp);
+			if (commandVersion >= 4) {
+				out.println(uploadTimestamp);  // Edit timestmamp
+			}
 			out.println(sqlMain.rs.getLong("nr_downloads"));
 
 			int[] votes = new int[10];
