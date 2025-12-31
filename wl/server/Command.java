@@ -159,7 +159,7 @@ public enum Command {
 	 * <code>CMD_INFO name</code>
 	 *
 	 * <p>
-	 * Supported command versions: 1-3 (default: 4/1, 5/2)
+	 * Supported command versions: 1-4 (default: 4/1, 5/2)
 	 *
 	 * <p>
 	 * Returns detailed info about a specific addon or in CV3+ a map.
@@ -196,6 +196,7 @@ public enum Command {
 	 *  <li> for each screenshot: name, <code>\n</code>, localized description, <code>\n</code>
 	 *  <li> total filesize, <code>\n</code>
 	 *  <li> upload timestamp, <code>\n</code>
+	 *  <li> CV 4+: edit timestamp, <code>\n</code>
 	 *  <li> download count, <code>\n</code>
 	 *  <li> number of 1 votes, <code>\n</code>
 	 *  <li> ...

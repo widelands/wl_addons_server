@@ -344,6 +344,9 @@ public class HandleCommand {
 
 				out.println(Utils.filesize(new File("addons", cmd[1])));
 				out.println(sqlMain.rs.getLong("timestamp"));
+				if (commandVersion >= 4) {
+					out.println(sqlMain.rs.getLong("edit_timestamp"));
+				}
 				out.println(sqlMain.rs.getLong("downloads"));
 
 				for (long v : Utils.getVotes(addOnID)) out.println(v);
