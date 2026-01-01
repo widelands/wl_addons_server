@@ -119,7 +119,7 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Help text for a Gallic ware: Planks, part 2
                         pgettext("gauls_ware", "They are produced out of logs by the sawmill."),
                         -- TRANSLATORS: Help text for a Gallic ware: Planks, part 3
-                        pgettext("gauls_ware", "They are also used by the weaponsmithy."),
+                        pgettext("gauls_ware", "They are also used by the weapon smithy."),
                     }
                 }
             },
@@ -280,11 +280,12 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "meat",
+                default_target_quantity = 40,
                 preciousness = 5,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Help text for a Gallic ware: Meat
-                        pgettext("gauls_ware", "Fresh meat is smoked in the smokery and added into meals for your warriors, miners and carriers."),
+                        pgettext("gauls_ware", "Fresh meat is smoked in the smokery and added into meals for your warriors and miners."),
                     }
                 }
             },
@@ -357,7 +358,7 @@ wl.Descriptions():new_tribe {
                     	-- TRANSLATORS: Help text for a Gallic ware: Meal, part 1
                         pgettext("gauls_ware", "A proper meal is made in the kitchen out of bread and either milk or smoked fish or smoked meat and it also has to contain fruit or vegetable. It satisfies the needs of miners in advanced mines."),
                     	-- TRANSLATORS: Help text for a Gallic ware: Meal, part 2
-                        pgettext("gauls_ware", "Meal is also consumed at the training sites (fighting arenas, training camps)."),
+                        pgettext("gauls_ware", "Meal is also consumed at the training sites (arenas, training camps)."),
                     }
                 }
             },
@@ -487,10 +488,8 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Help text for a Gallic ware: Felling Ax, part 1
+                        -- TRANSLATORS: Help text for a Gallic ware: Felling Ax
                         pgettext("gauls_ware", "The felling ax is the tool to cut down trees and is used by woodcutters."),
-                        -- TRANSLATORS: Help text for a Gallic ware: Felling Ax, part 2
-                        pgettext("gauls_ware", "They are produced by craftsmen in a workshop.")
                     }
                 }
             },
@@ -522,10 +521,8 @@ wl.Descriptions():new_tribe {
                 preciousness = 10,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Help text for a Gallic ware: Hammer, part 1
+                        -- TRANSLATORS: Help text for a Gallic ware: Hammer
                         pgettext("gauls_ware", "The hammer is a widely used tool. Geologists, builders, shipwrights and craftsmen, they all need hammer."),
-                        -- TRANSLATORS: Help text for a Gallic ware: Hammer, part 2
-                        pgettext("gauls_ware", "It is produced by craftsmen in a workshop.")
                     }
                 }
             },
@@ -561,10 +558,8 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Help text for a Gallic ware: Fire Tongs, part 1
+                        -- TRANSLATORS: Help text for a Gallic ware: Fire Tongs
                         pgettext("gauls_ware", "Fire tongs are the tools for smelting ores."),
-                        -- TRANSLATORS: Help text for a Gallic ware: Fire Tongs, part 2
-                        pgettext("gauls_ware", "They are produced by craftsmen in a workshop.")
                     }
                 }
             },
@@ -574,10 +569,8 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Help text for a Gallic ware: Buckets, part 1
+                        -- TRANSLATORS: Help text for a Gallic ware: Buckets
                         pgettext("gauls_ware", "Buckets are used by water carriers, breeders and together with a shovel by clay diggers and brick makers."),
-                        -- TRANSLATORS: Help text for a Gallic ware: Buckets, part 2
-                        pgettext("gauls_ware", "They are produced by craftsmen in a workshop.")
                     }
                 }
             },
@@ -587,10 +580,8 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Help text for a Gallic ware: Fishing Net, part 1
+                        -- TRANSLATORS: Help text for a Gallic ware: Fishing Net
                         pgettext("gauls_ware", "Fishing net is used by fishers to catch fishes."),
-                        -- TRANSLATORS: Help text for a Gallic ware: Fishing Net, part 2
-                        pgettext("gauls_ware", "It is produced by craftsmen in a workshop.")
                     }
                 }
             },
@@ -600,10 +591,8 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Help text for a Gallic ware: Basket, part 1
+                        -- TRANSLATORS: Help text for a Gallic ware: Basket
                         pgettext("gauls_ware", "Basket is used together with a shovel by gardener and together with a flail by toiler."),
-                        -- TRANSLATORS: Help text for a Gallic ware: Basket, part 2
-                        pgettext("gauls_ware", "It is produced by craftsmen in a workshop.")
                     }
                 }
             },
@@ -613,10 +602,8 @@ wl.Descriptions():new_tribe {
                 preciousness = 10,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Help text for a Gallic ware: Flail, part 1
+                        -- TRANSLATORS: Help text for a Gallic ware: Flail
                         pgettext("gauls_ware", "Flail is used together with basket by toilers in the threshing floor."), 
-                        -- TRANSLATORS: Help text for a Gallic ware: Flail, part 2
-                        pgettext("gauls_ware", "It is produced by craftsmen in a workshop.")
                     }
                 }
             }
@@ -647,7 +634,7 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Help text for a Gallic ware: Potion, part 1
                         pgettext("gauls_ware", "Potion is a magical drink that makes your warriors and miners perform much better."),
                         -- TRANSLATORS: Help text for a Gallic ware: Potion, part 2
-                        pgettext("gauls_ware", "It is consumed at advanced mines and at the training sites (fighting arenas)."),
+                        pgettext("gauls_ware", "It is consumed at advanced mines and at the training sites (arenas)."),
                     }
                 }
             },
@@ -701,7 +688,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic ware: Chain Armor
-                    purpose = pgettext("gauls_ware", "This basic armor is produced in the armor smithy and used at the fighting arena – together with meal and tunic – to train warriors from defense level 0 to level 1.")
+                    purpose = pgettext("gauls_ware", "This basic armor is produced in the armor smithy and used at the arena – together with meal and tunic – to train warriors from defense level 0 to level 1.")
                 }
             },
             {
@@ -710,7 +697,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic ware: Bronze Armor
-                    purpose = pgettext("gauls_ware", "This advanced armor is produced in the armor smithy and used at the fighting arena – together with meal and tunic – to train warriors from defense level 1 to level 2.")
+                    purpose = pgettext("gauls_ware", "This advanced armor is produced in the armor smithy and used at the arena – together with meal and tunic – to train warriors from defense level 1 to level 2.")
                 }
             },
             {
@@ -719,7 +706,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic ware: Golden Helmet
-                    purpose = pgettext("gauls_ware", "This helmet is produced in the armor smithy and used at the fighting arena – together with meal – to train warriors from defense level 2 to level 3.")
+                    purpose = pgettext("gauls_ware", "This helmet is produced in the armor smithy and used at the arena – together with meal – to train warriors from defense level 2 to level 3.")
                 }
             },
             {
@@ -728,7 +715,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic ware: Wooden Shield
-                    purpose = pgettext("gauls_ware", "This basic shield is produced in the workshop and used at the fighting arena – together with meal and potion – to train warriors from evade level 0 to level 1.")
+                    purpose = pgettext("gauls_ware", "This basic shield is produced in the workshop and used at the arena – together with meal and potion – to train warriors from evade level 0 to level 1.")
                 }
             },
             {
@@ -737,7 +724,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic ware: Bronze Shield
-                    purpose = pgettext("gauls_ware", "This advanced shield is produced in the armor smithy and used at the fighting arena – together with meal and potion – to train warriors from evade level 1 to level 2.")
+                    purpose = pgettext("gauls_ware", "This advanced shield is produced in the armor smithy and used at the arena – together with meal and potion – to train warriors from evade level 1 to level 2.")
                 }
             },
         }
@@ -778,14 +765,14 @@ wl.Descriptions():new_tribe {
             {
                 name = "gauls_gardener",
                 helptexts = {
-                    -- TRANSLATORS: Help text for a Gallic worker: Gardener
+                    -- TRANSLATORS: Help text for a Gallic female worker: Gardener
                     purpose = pgettext("gauls_worker", "Groves vegetable and herbs. While experienced, she can also work in the orchard and plant fruit trees.")
                 }
             },
             {
                 name = "gauls_gardener_experienced",
                 helptexts = {
-                    -- TRANSLATORS: Help text for a Gallic worker: Experienced Gardener
+                    -- TRANSLATORS: Help text for a Gallic female worker: Experienced Gardener
                     purpose = pgettext("gauls_worker", "Plants fruit trees and harvests fruit.")
                 }
             },
@@ -941,14 +928,14 @@ wl.Descriptions():new_tribe {
             {
                 name = "gauls_weaver",
                 helptexts = {
-                    -- TRANSLATORS: Help text for a Gallic worker: Weaver
+                    -- TRANSLATORS: Help text for a Gallic female worker: Weaver
                     purpose = pgettext("gauls_worker", "Weaves cloth.")
                 }
             },
             {
                 name = "gauls_dressmaker",
                 helptexts = {
-                    -- TRANSLATORS: Help text for a Gallic worker: Dressmaker
+                    -- TRANSLATORS: Help text for a Gallic female worker: Dressmaker
                     purpose = pgettext("gauls_worker", "Dressmaker is an experienced weaver and produces tunics.")
                 }
             },
@@ -1649,7 +1636,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose help text for a Gallic production site: Garden
                 purpose = pgettext("gauls_building", "Grows herbs and vegetable."),
                 performance = {
-                   -- TRANSLATORS: Performance help text for a Gallic production site: Garden
+                   -- TRANSLATORS: Performance help text for a Gallic production site: Garden, the gardener is a female
                    pgettext("gauls_building", "If all products are needed by the economy, the gardener resp. experienced gardener need %1$s resp. %2$s on average to produce two baskets of vegetable and two bundles of herbs. If only one product is needed by the economy, the gardener resp. experienced gardener need %3$s resp. %4$s on average to produce one baskets of vegetable or one bundle of herbs."):bformat(format_minutes_seconds(3, 2), format_minutes_seconds(2, 42), format_seconds(45), format_seconds(40)),
                 }
             }
@@ -1662,7 +1649,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Note help text for a Gallic production site: Orchard
                 note = pgettext("gauls_building", "According to the climate, two different fruit trees are planted – apple tree and cherry tree. Per two fruit trees, one juniper – which has a form of a bush – is planted."),
                 performance = {
-                   -- TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 1
+                   -- TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 1, the gardener is a female
                    pgettext("gauls_building", "When the orchard has already multiple trees, the gardener can produce one basket of fruit between %1$s and %2$s, depending on how far she has to walk."):bformat(format_seconds(39), format_minutes_seconds(1, 19)),
                    -- TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 2
                    pgettext("gauls_building", "In case of slopes or obstacles in the way, the time is increased.")
@@ -1748,11 +1735,20 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "gauls_weaving_mill",
+            helptexts = {
+                -- TRANSLATORS: Purpose help text for a Gallic production site: Weaving Mill
+                purpose = pgettext("gauls_building", "Weaves cloth out of wool."),
+                -- TRANSLATORS: Performance help text for a Gallic production site: Weaving Mill, the weaver is a female
+                performance = pgettext("gauls_building", "The weaver needs %1% to make one piece of cloth."):bformat(format_seconds(54))
+            }
+        },
+        {
             name = "gauls_sewing_workshop",
             helptexts = {
                 -- TRANSLATORS: Purpose help text for a Gallic production site: Sewing Workshop
                 purpose = pgettext("gauls_building", "Produces tunics."),
-                -- TRANSLATORS: Performance help text for a Gallic production site: Sewing Workshop
+                -- TRANSLATORS: Performance help text for a Gallic production site: Sewing Workshop, the dressmaker is a female
                 performance = pgettext("gauls_building", "The dressmaker needs %1% to sew one piece of clothing."):bformat(format_seconds(55))
             }
         },
@@ -1809,9 +1805,9 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose help text for a Gallic production site: Cattle Farm
                 purpose = pgettext("gauls_building", "Breeds strong oxen for adding them to the transportation system. Also keeps cows for their milk and meat."),
                 -- TRANSLATORS: Note help text for a Gallic production site: Cattle Farm
-                note = pgettext("gauls_building", "Production of meat stops when economy doesn’t need smoked meat, production of both milk and meat stops when economy doesn’t need milk."),
+                note = pgettext("gauls_building", "Production of meat stops when economy doesn’t need meat or smoked meat, production of both milk and meat stops when economy doesn’t need milk."),
                 -- TRANSLATORS: Performance help text for a Gallic production site: Cattle Farm
-                performance = pgettext("gauls_building", "If this building is fully supplied and the economy needs all products, breeding of one ox, production of 2 jugs of milk and one piece of meat takes %1$s. Production of one ox only takes %2$s, production of 2 jugs of milk and one piece of meat takes %3$s and production of 2 jugs of milk only takes %4$s."):bformat(format_minutes_seconds(1, 36), format_seconds(30), format_minutes_seconds(1, 6), format_seconds(52))
+                performance = pgettext("gauls_building", "If this building is fully supplied and the economy needs all products, breeding of two oxen, production of 2 jugs of milk and one piece of meat takes %1$s. Production of one ox only takes %2$s, production of 2 jugs of milk and one piece of meat takes %3$s and production of 2 jugs of milk only takes %4$s."):bformat(format_minutes_seconds(2, 06), format_seconds(30), format_minutes_seconds(1, 6), format_seconds(52))
             }
         },
         {
@@ -1821,15 +1817,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("gauls_building", "Keeps sheep for their wool."),
                 -- TRANSLATORS: Performance help text for a Gallic production site: Sheep Farm
                 performance = pgettext("gauls_building", "The sheep farm needs %1% to produce one wool."):bformat(format_seconds(59))
-            }
-        },
-        {
-            name = "gauls_weaving_mill",
-            helptexts = {
-                -- TRANSLATORS: Purpose help text for a Gallic production site: Weaving Mill
-                purpose = pgettext("gauls_building", "Weaves cloth out of wool."),
-                -- TRANSLATORS: Performance help text for a Gallic production site: Weaving Mill
-                performance = pgettext("gauls_building", "The weaver needs %1% to make one piece of cloth."):bformat(format_seconds(54))
             }
         },
 
@@ -1876,7 +1863,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose help text for a Gallic production site: Iron Mine
                 purpose = pgettext("gauls_building", "Digs iron ore out of the ground in mountain terrain."),
                 -- TRANSLATORS: Performance help text for a Gallic production site: Iron Mine
-                performance = pgettext("gauls_building", "The miners needs %1% to produce two pieces of ore and one block of granite."):bformat(format_minutes(1))
+                performance = pgettext("gauls_building", "The miners need %1% to produce two pieces of ore and one block of granite."):bformat(format_minutes(1))
             }
         },
         {
@@ -1954,12 +1941,12 @@ wl.Descriptions():new_tribe {
         {
             name = "gauls_fighting_arena",
             helptexts = {
-                -- TRANSLATORS: Purpose help text for a Gallic training site: Fighting Arena
+                -- TRANSLATORS: Purpose help text for a Gallic training site: Arena
                 purpose = pgettext("gauls_building", "Trains warriors in ‘Defense’ and ‘Evade’."),
                 performance = {
-                    -- TRANSLATORS: Performance help text for a Gallic training site: Fighting Arena, part 1
+                    -- TRANSLATORS: Performance help text for a Gallic training site: Arena, part 1
                     pgettext("gauls_building", "If this building is fully supplied, it can train one warrior one level in defense or evade in %s."):bformat(format_seconds(36)),
-                    -- TRANSLATORS: Performance help text for a Gallic training site: Fighting Arena, part 2
+                    -- TRANSLATORS: Performance help text for a Gallic training site: Arena, part 2
                     pgettext("gauls_building", "Complete training of one warrior takes %s."):bformat(format_minutes(3))
                 }
             }
@@ -2014,7 +2001,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose help text for a Gallic military site: Stone Tower
                 purpose = pgettext("gauls_building", "Garrisons warriors to expand your territory."),
                 -- TRANSLATORS: Note help text for a Gallic military site: Stone Tower
-                note = pgettext("gauls_building", "This building can be built by enhancing a watchtower or big sentry. Enhancement of big sentry costs you one log and one reed more but you save one block of stone instead.")
+                note = pgettext("gauls_building", "This building can be built by enhancing a sentry.")
             }
         },
         {

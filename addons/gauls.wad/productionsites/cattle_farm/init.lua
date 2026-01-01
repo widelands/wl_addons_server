@@ -85,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
             "animate=working duration:15s", 
             "produce=milk",
             "animate=working duration:15s", 
-            "return=completed unless economy needs smoked_meat",
+            "return=completed unless economy needs meat and unless economy needs smoked_meat",
             "produce=meat",
             "sleep=duration:10s"
          }

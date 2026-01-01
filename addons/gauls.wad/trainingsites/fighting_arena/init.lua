@@ -5,7 +5,7 @@ local dirname = path.dirname(__file__)
 wl.Descriptions():new_trainingsite_type {
    name = "gauls_fighting_arena",
    -- TRANSLATORS: This is a Gauls building name used in lists of buildings
-   descname = pgettext("gauls_building", "Fighting Arena"),
+   descname = pgettext("gauls_building", "Arena"),
    icon = dirname .. "menu.png",
    size = "big",
 

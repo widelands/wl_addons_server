@@ -7,16 +7,16 @@ wl.Descriptions():new_productionsite_type {
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("gauls_building_small", "Weaving Mill"),
    icon = dirname .. "menu.png",
-   size = "big",
+   size = "medium",
 
    buildcost = {
-      granite = 2,
+      granite = 1,
       planks = 2,
       brick = 2,
       reed = 2
    },
    return_on_dismantle = {
-      granite = 2,
+      granite = 1,
       planks = 1,
       brick = 1
    },
@@ -24,13 +24,13 @@ wl.Descriptions():new_productionsite_type {
    animation_directory = dirname,
    animations = {
       idle = {
-         hotspot = { 36, 74 },
+         hotspot = { 32, 64 },
       },
       build = {
-         hotspot = { 36, 74 },
+         hotspot = { 32, 64 },
       },
       working = {
-         hotspot = { 36, 74 },
+         hotspot = { 32, 64 },
       },
    },
 

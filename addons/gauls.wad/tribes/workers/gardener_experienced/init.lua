@@ -4,7 +4,7 @@ local dirname = path.dirname(__file__)
 
 wl.Descriptions():new_worker_type {
    name = "gauls_gardener_experienced",
-   -- TRANSLATORS: This is a worker name used in lists of workers
+   -- TRANSLATORS: This is a worker name used in lists of workers, please use a female form
    descname = pgettext("gauls_worker", "Experienced Gardener"),
    animation_directory = dirname,
    icon = dirname .. "menu.png",
