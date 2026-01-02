@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Benedikt Straub <benedikt-straub@web.de>, 2025
+# Benedikt Straub <benedikt-straub@web.de>, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-01 03:13+0100\n"
+"POT-Creation-Date: 2026-01-02 03:15+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
-"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2026\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
 "nds/)\n"
 "Language: nds\n"
@@ -1667,7 +1667,7 @@ msgstr "Keen Ridder för deese Lehr funnen!"
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:8
 msgctxt "gauls_building"
 msgid "Arena"
-msgstr ""
+msgstr "Ring"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:92
@@ -2089,7 +2089,7 @@ msgstr "Se worden in de Saagmöhlen ut Boomstammen produzeert."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:122
 msgctxt "gauls_ware"
 msgid "They are also used by the weapon smithy."
-msgstr ""
+msgstr "Se worden ok in de Wapensmee bruukt."
 
 #. TRANSLATORS: Help text for a Gallic ware: Clay
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:133
@@ -2257,6 +2257,8 @@ msgid ""
 "Fresh meat is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"Friskes Fleesk word in de Rökelkamer rökelt un to de Mahltieden för diene "
+"Ridders un Bargwarkskeerls hentogeven."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
@@ -2323,7 +2325,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:361
 msgctxt "gauls_ware"
 msgid "Meal is also consumed at the training sites (arenas, training camps)."
-msgstr ""
+msgstr "Mahltieden worden ok in de Övens-Boen eten (Ringen, Övens-Lagers)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:372
@@ -2591,7 +2593,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:637
 msgctxt "gauls_ware"
 msgid "It is consumed at advanced mines and at the training sites (arenas)."
-msgstr ""
+msgstr "’t word in de deepen Bargwarken un in de Övens-Boen bruukt (Ringen)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Spear
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:647
@@ -2654,6 +2656,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 0 to "
 "level 1."
 msgstr ""
+"Deeser slichte Wapenrock word in de Panzersmee produzeert un in de Ring – "
+"tosamen mit eenem Mahl un eener Kluft – bruukt, um Ridders vun Verteidigung-"
+"Stand 0 up Stand 1 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:700
@@ -2663,6 +2668,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 1 to "
 "level 2."
 msgstr ""
+"Deeser gode Wapenrock word in de Panzersmee produzeert un in de Ring – "
+"tosamen mit eenem Mahl un eener Kluft – bruukt, um Ridders vun Verteidigung-"
+"Stand 1 up Stand 2 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Golden Helmet
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:709
@@ -2671,6 +2679,9 @@ msgid ""
 "This helmet is produced in the armor smithy and used at the arena – together "
 "with meal – to train warriors from defense level 2 to level 3."
 msgstr ""
+"Deeser Helm word in de Panzersmee produzeert un in de Ring – tosamen mit "
+"eenem Mahl – bruukt, um Ridders vun Verteidigung-Stand 2 up Stand 3 "
+"uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wooden Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:718
@@ -2680,6 +2691,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 0 to "
 "level 1."
 msgstr ""
+"Deeser slichte Schild word in de Smee produzeert un in de Ring – tosamen mit "
+"eenem Mahl un eenem Drunk – bruukt, um Ridders vun Utwieken-Stand 0 up Stand "
+"1 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:727
@@ -2689,6 +2703,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 1 to "
 "level 2."
 msgstr ""
+"Deeser gode Schild word in de Panzersmee produzeert un in de Ring – tosamen "
+"mit eenem Mahl un eenem Drunk – bruukt, um Ridders vun Utwieken-Stand 1 up "
+"Stand 2 uttobilden."
 
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
@@ -3874,6 +3891,9 @@ msgid ""
 "Production of meat stops when economy doesn’t need meat or smoked meat, "
 "production of both milk and meat stops when economy doesn’t need milk."
 msgstr ""
+"Dat Produzeren vun Fleesk word anhollt, wenn de Weertskupp keen Fleesk of "
+"Rökelfleesk bruukt; dat Produzeren vun Fleesk un ok Melk word anhollt, wenn "
+"de Weertskupp keene Melk bruukt."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1810
@@ -3885,6 +3905,11 @@ msgid ""
 "milk and one piece of meat takes %3$s and production of 2 jugs of milk only "
 "takes %4$s."
 msgstr ""
+"Wenn all Waren to rechter Tied ankomen un de Weertskupp all Aarden vun "
+"Produkten bruukt, bruukt dat Huus %1$s, um twee Osses antohüren un 2 Kannen "
+"Melk un een Deel Fleesk to produzeren. Blots eenen Oss antohüren düürt blots "
+"%2$s; 2 Kannen Melk un een Deel Fleesk to produzeren düürt %3$s; un 2 Kannen "
+"Melk to produzeren düürt blots %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1817
@@ -3947,6 +3972,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners need %1% to produce two pieces of ore and one block of granite."
 msgstr ""
+"De Bargwarkslüü bruken %1% um twee Delen Kluut un een Deel Flint to "
+"produzeren."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1875
@@ -4155,7 +4182,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2004
 msgctxt "gauls_building"
 msgid "This building can be built by enhancing a sentry."
-msgstr ""
+msgstr "Deeses Huus kann vun eener Wachters-Kamer utbaut worden."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Ferry Yard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2031
@@ -4954,132 +4981,3 @@ msgstr "Wever"
 msgctxt "gauls_worker"
 msgid "Woodcutter"
 msgstr "Boomslager"
-
-#~ msgctxt "gauls_building"
-#~ msgid "Fighting Arena"
-#~ msgstr "Fechtring"
-
-#~ msgctxt "gauls_ware"
-#~ msgid "They are also used by the weaponsmithy."
-#~ msgstr "Se worden ok in de Wapensmee bruukt."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "Fresh meat is smoked in the smokery and added into meals for your "
-#~ "warriors, miners and carriers."
-#~ msgstr ""
-#~ "Friskes Fleesk word in de Rökelkamer rökelt un to de Mahltieden för diene "
-#~ "Ridders, Bargwarkskeerls un Lastendragers hentogeven."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "Meal is also consumed at the training sites (fighting arenas, training "
-#~ "camps)."
-#~ msgstr ""
-#~ "Mahltieden worden ok in de Övens-Boen eten (Fechtringen, Övens-Lagers)."
-
-#~ msgctxt "gauls_ware"
-#~ msgid "They are produced by craftsmen in a workshop."
-#~ msgstr "Se worden vun Handwarkers in eener Smee produzeert."
-
-#~ msgctxt "gauls_ware"
-#~ msgid "It is produced by craftsmen in a workshop."
-#~ msgstr "’t word vun Handwarkers in eener Smee produzeert."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "It is consumed at advanced mines and at the training sites (fighting "
-#~ "arenas)."
-#~ msgstr ""
-#~ "’t word in de deepen Bargwarken un in de Övens-Boen bruukt (Fechtringen)."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "This basic armor is produced in the armor smithy and used at the fighting "
-#~ "arena – together with meal and tunic – to train warriors from defense "
-#~ "level 0 to level 1."
-#~ msgstr ""
-#~ "Deeser slichte Wapenrock word in de Panzersmee produzeert un in de "
-#~ "Fechtring – tosamen mit eenem Mahl un eener Kluft – bruukt, um Ridders "
-#~ "vun Verteidigung-Stand 0 up Stand 1 uttobilden."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "This advanced armor is produced in the armor smithy and used at the "
-#~ "fighting arena – together with meal and tunic – to train warriors from "
-#~ "defense level 1 to level 2."
-#~ msgstr ""
-#~ "Deeser gode Wapenrock word in de Panzersmee produzeert un in de Fechtring "
-#~ "– tosamen mit eenem Mahl un eener Kluft – bruukt, um Ridders vun "
-#~ "Verteidigung-Stand 1 up Stand 2 uttobilden."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "This helmet is produced in the armor smithy and used at the fighting "
-#~ "arena – together with meal – to train warriors from defense level 2 to "
-#~ "level 3."
-#~ msgstr ""
-#~ "Deeser Helm word in de Panzersmee produzeert un in de Fechtring – tosamen "
-#~ "mit eenem Mahl – bruukt, um Ridders vun Verteidigung-Stand 2 up Stand 3 "
-#~ "uttobilden."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "This basic shield is produced in the workshop and used at the fighting "
-#~ "arena – together with meal and potion – to train warriors from evade "
-#~ "level 0 to level 1."
-#~ msgstr ""
-#~ "Deeser slichte Schild word in de Smee produzeert un in de Fechtring – "
-#~ "tosamen mit eenem Mahl un eenem Drunk – bruukt, um Ridders vun Utwieken-"
-#~ "Stand 0 up Stand 1 uttobilden."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "This advanced shield is produced in the armor smithy and used at the "
-#~ "fighting arena – together with meal and potion – to train warriors from "
-#~ "evade level 1 to level 2."
-#~ msgstr ""
-#~ "Deeser gode Schild word in de Panzersmee produzeert un in de Fechtring – "
-#~ "tosamen mit eenem Mahl un eenem Drunk – bruukt, um Ridders vun Utwieken-"
-#~ "Stand 1 up Stand 2 uttobilden."
-
-#~ msgctxt "gauls_building"
-#~ msgid ""
-#~ "Production of meat stops when economy doesn’t need smoked meat, "
-#~ "production of both milk and meat stops when economy doesn’t need milk."
-#~ msgstr ""
-#~ "Dat Produzeren vun Fleesk word anhollt, wenn de Weertskupp keen "
-#~ "Rökelfleesk bruukt; dat Produzeren vun Fleesk un ok Melk word anhollt, "
-#~ "wenn de Weertskupp keene Melk bruukt."
-
-#~ msgctxt "gauls_building"
-#~ msgid ""
-#~ "If this building is fully supplied and the economy needs all products, "
-#~ "breeding of one ox, production of 2 jugs of milk and one piece of meat "
-#~ "takes %1$s. Production of one ox only takes %2$s, production of 2 jugs of "
-#~ "milk and one piece of meat takes %3$s and production of 2 jugs of milk "
-#~ "only takes %4$s."
-#~ msgstr ""
-#~ "Wenn all Waren to rechter Tied ankomen un de Weertskupp all Aarden vun "
-#~ "Produkten bruukt, bruukt dat Huus %1$s, um eenen Oss antohüren un 2 "
-#~ "Kannen Melk un een Deel Fleesk to produzeren. Blots eenen Oss antohüren "
-#~ "düürt blots %2$s; 2 Kannen Melk un een Deel Fleesk to produzeren düürt "
-#~ "%3$s; un 2 Kannen Melk to produzeren düürt blots %4$s."
-
-#~ msgctxt "gauls_building"
-#~ msgid ""
-#~ "The miners needs %1% to produce two pieces of ore and one block of "
-#~ "granite."
-#~ msgstr ""
-#~ "De Bargwarkslüü bruken %1% um twee Delen Kluut un een Deel Flint to "
-#~ "produzeren."
-
-#~ msgctxt "gauls_building"
-#~ msgid ""
-#~ "This building can be built by enhancing a watchtower or big sentry. "
-#~ "Enhancement of big sentry costs you one log and one reed more but you "
-#~ "save one block of stone instead."
-#~ msgstr ""
-#~ "Deeses Huus kann baut worden, indeem een Wachtoorn of eene Grote Wachters-"
-#~ "Kamer utbaut wordn. Dat Utbauen vun eener Groten Wachters-Kamer köst di "
-#~ "eenen Boomstamm un een Reit mehr, aver daarför spaarst du een Deel Steen."

@@ -5,16 +5,16 @@
 #
 # Translators:
 # Zlopez <michal.konecny@psmail.xyz>, 2025
-# Ondřej Itřech, 2025
+# Ondřej Itřech, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-01 03:13+0100\n"
+"POT-Creation-Date: 2026-01-02 03:15+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
-"Last-Translator: Ondřej Itřech, 2025\n"
+"Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -1661,7 +1661,7 @@ msgstr "Nenalezen bojovník pro požadovanou úroveň výcviku!"
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:8
 msgctxt "gauls_building"
 msgid "Arena"
-msgstr ""
+msgstr "Aréna"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:92
@@ -2081,7 +2081,7 @@ msgstr "Vyrábí se z klád na pile."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:122
 msgctxt "gauls_ware"
 msgid "They are also used by the weapon smithy."
-msgstr ""
+msgstr "Jsou také využívány ve zbrojířství."
 
 #. TRANSLATORS: Help text for a Gallic ware: Clay
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:133
@@ -2245,6 +2245,8 @@ msgid ""
 "Fresh meat is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"Čerstvé maso je uzeno v udírně a přidáváno do jídel pro tvé bojovníky a "
+"horníky."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
@@ -2311,7 +2313,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:361
 msgctxt "gauls_ware"
 msgid "Meal is also consumed at the training sites (arenas, training camps)."
-msgstr ""
+msgstr "Jídlo se také konzumuje na cvičištích (arény, výcvikové tábory)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:372
@@ -2570,7 +2572,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:637
 msgctxt "gauls_ware"
 msgid "It is consumed at advanced mines and at the training sites (arenas)."
-msgstr ""
+msgstr "Pije se v pokročilých dolech a na cvičištích (arény)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Spear
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:647
@@ -2631,6 +2633,8 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 0 to "
 "level 1."
 msgstr ""
+"Tato základní zbroj se vyrábí v platnéřství a používá se v aréně – spolu s "
+"jídlem a halenou – k výcviku obrany bojovníků z úrovně 0 na úroveň 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:700
@@ -2640,6 +2644,8 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 1 to "
 "level 2."
 msgstr ""
+"Tato pokročilá zbroj se vyrábí v platnéřství a používá se v aréně – spolu s "
+"jídlem a halenou – k výcviku obrany bojovníků z úrovně 1 na úroveň 2."
 
 #. TRANSLATORS: Help text for a Gallic ware: Golden Helmet
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:709
@@ -2648,6 +2654,8 @@ msgid ""
 "This helmet is produced in the armor smithy and used at the arena – together "
 "with meal – to train warriors from defense level 2 to level 3."
 msgstr ""
+"Tato helma se vyrábí v platnéřství a používá se v aréně – spolu s jídlem – k "
+"výcviku obrany bojovníků z úrovně 2 na úroveň 3."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wooden Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:718
@@ -2657,6 +2665,8 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 0 to "
 "level 1."
 msgstr ""
+"Tento základní druh štítu se vyrábí v dílně a používá se v aréně – spolu s "
+"jídlem a lektvarem – k výcviku úhybu bojovníků z úrovně 0 na úroveň 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:727
@@ -2666,6 +2676,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 1 to "
 "level 2."
 msgstr ""
+"Tento pokročilý druh štítu se vyrábí v platnéřství a používá se v aréně – "
+"spolu s jídlem a lektvarem – k výcviku úhybu bojovníků z úrovně 1 na úroveň "
+"2."
 
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
@@ -3849,6 +3862,8 @@ msgid ""
 "Production of meat stops when economy doesn’t need meat or smoked meat, "
 "production of both milk and meat stops when economy doesn’t need milk."
 msgstr ""
+"Produkce masa se zastaví, pokud hospodářství nepotřebuje maso nebo uzené "
+"maso, produkce masa i mléka se zastaví, pokud hospodářství nepotřebuje mléko."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1810
@@ -3860,6 +3875,10 @@ msgid ""
 "milk and one piece of meat takes %3$s and production of 2 jugs of milk only "
 "takes %4$s."
 msgstr ""
+"Pokud je budova dobře zásobována a hospodářství potřebuje všechny produkty, "
+"pak zabere chov dvou volů, produkce 2 džbánů mléka a jednoho kusu masa %1$s. "
+"Chov jednoho vola samostatně zabere %2$s, produkce 2 džbánů mléka a kusu "
+"masa zabere %3$s a produkce pouze dvou džbánů mléka trvá %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1817
@@ -3922,6 +3941,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners need %1% to produce two pieces of ore and one block of granite."
 msgstr ""
+"Horníci potřebují %1% k tomu, aby vytěžili dva kusy rudy a jeden žulový "
+"kvádr. "
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1875
@@ -4130,7 +4151,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2004
 msgctxt "gauls_building"
 msgid "This building can be built by enhancing a sentry."
-msgstr ""
+msgstr "Tato budova může být postavena vylepšením strážnice."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Ferry Yard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2031
@@ -4939,67 +4960,3 @@ msgstr "Tkadlena"
 msgctxt "gauls_worker"
 msgid "Woodcutter"
 msgstr "Dřevorubec"
-
-#~ msgctxt "gauls_building"
-#~ msgid "Fighting Arena"
-#~ msgstr "Zápasnická aréna"
-
-#~ msgctxt "gauls_ware"
-#~ msgid "They are also used by the weaponsmithy."
-#~ msgstr "Jsou také využívány ve zbrojířství."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "Fresh meat is smoked in the smokery and added into meals for your "
-#~ "warriors, miners and carriers."
-#~ msgstr ""
-#~ "Čerstvé maso je uzeno v udírně a přidáváno do jídel pro tvé bojovníky a "
-#~ "horníky."
-
-#~ msgctxt "gauls_ware"
-#~ msgid "They are produced by craftsmen in a workshop."
-#~ msgstr "Jsou vyráběny řemeslníkem v dílně."
-
-#~ msgctxt "gauls_ware"
-#~ msgid "It is produced by craftsmen in a workshop."
-#~ msgstr "Vyrábí se v dílně."
-
-#~ msgctxt "gauls_ware"
-#~ msgid ""
-#~ "This advanced shield is produced in the armor smithy and used at the "
-#~ "fighting arena – together with meal and potion – to train warriors from "
-#~ "evade level 1 to level 2."
-#~ msgstr ""
-#~ "Tento pokročilý druh štítu se vyrábí v platnéřství a používá se v aréně – "
-#~ "spolu s jídlem a lektvarem – k výcviku úhybu bojovníků z úrovně 1 na "
-#~ "úroveň 2."
-
-#~ msgctxt "gauls_building"
-#~ msgid ""
-#~ "Production of meat stops when economy doesn’t need smoked meat, "
-#~ "production of both milk and meat stops when economy doesn’t need milk."
-#~ msgstr ""
-#~ "Produkce masa se zastaví, pokud hospodářství nepotřebuje uzené maso, "
-#~ "produkce masa i mléka se zastaví, pokud hospodářství nepotřebuje mléko."
-
-#~ msgctxt "gauls_building"
-#~ msgid ""
-#~ "If this building is fully supplied and the economy needs all products, "
-#~ "breeding of one ox, production of 2 jugs of milk and one piece of meat "
-#~ "takes %1$s. Production of one ox only takes %2$s, production of 2 jugs of "
-#~ "milk and one piece of meat takes %3$s and production of 2 jugs of milk "
-#~ "only takes %4$s."
-#~ msgstr ""
-#~ "Pokud je budova dobře zásobována a hospodářství potřebuje všechny "
-#~ "produkty, pak zabere chov jednoho vola, produkce 2 džbánů mléka a jednoho "
-#~ "kusu masa %1$s. Chov jednoho vola samostatně zabere %2$s, produkce 2 "
-#~ "džbánů mléka a kusu masa zabere %3$s a produkce pouze dvou džbánů mléka "
-#~ "trvá %4$s."
-
-#~ msgctxt "gauls_building"
-#~ msgid ""
-#~ "The miners needs %1% to produce two pieces of ore and one block of "
-#~ "granite."
-#~ msgstr ""
-#~ "Horníci potřebují %1% k tomu, aby vytěžili dva kusy železné rudy a jeden "
-#~ "žulový kvádr. "

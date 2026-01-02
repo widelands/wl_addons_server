@@ -8,16 +8,16 @@
 # Matze Niemand, 2025
 # Iwan Gabovitch, 2025
 # Stephan Lutz <stephan-lutz@gmx.de>, 2025
-# Ondřej Itřech, 2025
+# Ondřej Itřech, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-01 03:13+0100\n"
+"POT-Creation-Date: 2026-01-02 03:15+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
-"Last-Translator: Ondřej Itřech, 2025\n"
+"Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -754,22 +754,22 @@ msgstr "Das Herstellen"
 #. TRANSLATORS: Completed/Skipped/Did not start making chain armor because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:83
 msgid "making chain armor"
-msgstr ""
+msgstr "Das Herstellen eines Kettenhemds"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making bronze armor because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:96
 msgid "making bronze armor"
-msgstr ""
+msgstr "Das Schmieden einer Bronzerüstung"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making golden helmet because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:109
 msgid "making golden helmet"
-msgstr ""
+msgstr "Das Schmieden eines goldenen Helms"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making bronze shield because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:122
 msgid "making bronze shield"
-msgstr ""
+msgstr "Das Schmieden eines Bronzen Schilds"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/bakery/init.lua:8
@@ -793,7 +793,7 @@ msgstr "Kaserne"
 #: addons/gauls.wad/productionsites/barracks/init.lua:65
 msgctxt "gauls_building"
 msgid "recruiting warrior"
-msgstr ""
+msgstr "Das Rekrutieren von Kämpfer"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/brick_kiln/init.lua:8
@@ -816,13 +816,13 @@ msgstr "Rinderzucht"
 #: addons/gauls.wad/productionsites/cattle_farm/init.lua:64
 msgctxt "gauls_building"
 msgid "rearing cattle"
-msgstr ""
+msgstr "Das Züchten eines Ochsen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing milk because ...
 #: addons/gauls.wad/productionsites/cattle_farm/init.lua:77
 msgctxt "gauls_building"
 msgid "producing milk"
-msgstr ""
+msgstr "Das Herstellen von Milch"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/charcoal_kiln/init.lua:8
@@ -886,7 +886,7 @@ msgstr "Keine Bäume"
 
 #: addons/gauls.wad/productionsites/druids_house/init.lua:98
 msgid "Out of Trees or Fruit"
-msgstr ""
+msgstr "Keine Bäume oder kein Frucht"
 
 #: addons/gauls.wad/productionsites/druids_house/init.lua:99
 msgctxt "gauls_building"
@@ -1122,11 +1122,11 @@ msgstr ""
 
 #: addons/gauls.wad/productionsites/orchard/init.lua:98
 msgid "No Fruit"
-msgstr ""
+msgstr "Kein Frucht"
 
 #: addons/gauls.wad/productionsites/orchard/init.lua:99
 msgid "Out of Fruit"
-msgstr ""
+msgstr "Es gibt kein Frucht"
 
 #: addons/gauls.wad/productionsites/orchard/init.lua:100
 msgctxt "gauls_building"
@@ -1151,7 +1151,7 @@ msgstr "Das Ernten von Reet"
 
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:80
 msgid "No Fields or No Water Nearby"
-msgstr ""
+msgstr "Keine Felder oder kein offenes Gewässer in der Nähe"
 
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:82
 msgctxt "gauls_building"
@@ -1192,12 +1192,12 @@ msgstr "Nähwerkstatt"
 #. TRANSLATORS: Completed/Skipped/Did not start sewing because ...
 #: addons/gauls.wad/productionsites/sewing_workshop/init.lua:73
 msgid "sewing"
-msgstr ""
+msgstr "Das Nähen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing tunic because ...
 #: addons/gauls.wad/productionsites/sewing_workshop/init.lua:80
 msgid "sewing tunic"
-msgstr ""
+msgstr "Das Schneidern einer Tunika"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/sheep_farm/init.lua:8
@@ -1208,7 +1208,7 @@ msgstr "Schäferei"
 #. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
 #: addons/gauls.wad/productionsites/sheep_farm/init.lua:67
 msgid "breeding sheep"
-msgstr ""
+msgstr "Das Züchten von Schafen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/shipyard/init.lua:8
@@ -1261,6 +1261,8 @@ msgctxt "gauls_building"
 msgid ""
 "The stonecutter working at this house can’t find any rocks in his work area."
 msgstr ""
+"Der Steinmetz in diesem Haus kann keine Felsen in seinem Arbeitsbereich "
+"finden."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/threshing_floor/init.lua:8
@@ -1288,12 +1290,12 @@ msgstr "Das Herstellen eines Speers"
 #. TRANSLATORS: Completed/Skipped/Did not start making short sword because ...
 #: addons/gauls.wad/productionsites/weaponsmithy/init.lua:95
 msgid "making short sword"
-msgstr ""
+msgstr "Das Schmieden eines Kurzschwertes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making long sword because ...
 #: addons/gauls.wad/productionsites/weaponsmithy/init.lua:108
 msgid "making long sword"
-msgstr ""
+msgstr "Das Schmieden eines Langschwertes"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/weaving_mill/init.lua:8
@@ -1640,7 +1642,7 @@ msgstr "Kein Kämpfer für diese Ausbildungsstufe gefunden!"
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:8
 msgctxt "gauls_building"
 msgid "Arena"
-msgstr ""
+msgstr "Arena"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:92
@@ -3237,14 +3239,14 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1522
 msgctxt "gauls_building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Holt Wasser aus der Tiefe."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Well, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1525
 #, lua-format
 msgctxt "gauls_building"
 msgid "The carrier needs %s to get one bucket full of water."
-msgstr ""
+msgstr "Der Träger braucht %s, um einen Eimer Wasser zu holen."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Well, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1527
@@ -3252,6 +3254,8 @@ msgstr ""
 msgctxt "gauls_building"
 msgid "If the water resource is depleted, the carrier needs %s on average."
 msgstr ""
+"Wenn die Wasserressourcen erschöpft sind, braucht der Träger im Durchschnitt "
+"%s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Fisher's Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1535
@@ -4727,11 +4731,3 @@ msgstr "Weberin"
 msgctxt "gauls_worker"
 msgid "Woodcutter"
 msgstr "Holzfäller"
-
-#~ msgctxt "gauls_building"
-#~ msgid "Fighting Arena"
-#~ msgstr "Arena"
-
-#~ msgctxt "gauls_ware"
-#~ msgid "They are also used by the weaponsmithy."
-#~ msgstr "Sie werden auch in der Waffenschmiede benötigt."
