@@ -5,16 +5,16 @@
 #
 # Translators:
 # D M <kamera001dm@gmail.com>, 2025
-# Daniel Nylander <po@danielnylander.se>, 2025
+# Daniel Nylander <po@danielnylander.se>, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-02 03:15+0100\n"
+"POT-Creation-Date: 2026-01-04 03:13+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -1675,7 +1675,7 @@ msgstr "Ingen krigare hittades för denna träningsnivå!"
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:8
 msgctxt "gauls_building"
 msgid "Arena"
-msgstr ""
+msgstr "Arena"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:92
@@ -2096,7 +2096,7 @@ msgstr "De tillverkas av stockar i sågverket."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:122
 msgctxt "gauls_ware"
 msgid "They are also used by the weapon smithy."
-msgstr ""
+msgstr "De används också av vapensmeden."
 
 #. TRANSLATORS: Help text for a Gallic ware: Clay
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:133
@@ -2263,6 +2263,8 @@ msgid ""
 "Fresh meat is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"Färskt kött röks i rökeriet och läggs till i måltiderna för dina krigare och "
+"gruvarbetare."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
@@ -2328,7 +2330,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:361
 msgctxt "gauls_ware"
 msgid "Meal is also consumed at the training sites (arenas, training camps)."
-msgstr ""
+msgstr "Måltider intas även på träningsplatserna (arenor, träningsläger)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:372
@@ -2592,7 +2594,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:637
 msgctxt "gauls_ware"
 msgid "It is consumed at advanced mines and at the training sites (arenas)."
-msgstr ""
+msgstr "Den konsumeras i avancerade gruvor och på träningsplatser (arenor)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Spear
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:647
@@ -2655,6 +2657,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 0 to "
 "level 1."
 msgstr ""
+"Denna grundläggande rustning tillverkas i rustningssmedjan och används på "
+"arenan – tillsammans med måltid och tunika – för att träna krigare från "
+"försvarsnivå 0 till nivå 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:700
@@ -2664,6 +2669,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 1 to "
 "level 2."
 msgstr ""
+"Denna avancerade rustning tillverkas i rustningssmedjan och används i arenan "
+"– tillsammans med måltid och tunika – för att träna krigare från "
+"försvarsnivå 1 till nivå 2."
 
 #. TRANSLATORS: Help text for a Gallic ware: Golden Helmet
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:709
@@ -2672,6 +2680,9 @@ msgid ""
 "This helmet is produced in the armor smithy and used at the arena – together "
 "with meal – to train warriors from defense level 2 to level 3."
 msgstr ""
+"Denna hjälm tillverkas i rustningssmedjan och används på arenan – "
+"tillsammans med måltider – för att träna krigare från försvarsnivå 2 till "
+"nivå 3."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wooden Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:718
@@ -2681,6 +2692,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 0 to "
 "level 1."
 msgstr ""
+"Denna grundläggande sköld tillverkas i verkstaden och används på arenan – "
+"tillsammans med mat och dryck – för att träna krigare från undvikande nivå 0 "
+"till nivå 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:727
@@ -2690,6 +2704,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 1 to "
 "level 2."
 msgstr ""
+"Denna avancerade sköld tillverkas i rustningssmedjan och används i arenan – "
+"tillsammans med mat och dryck – för att träna krigare från undvikandenivå 1 "
+"till nivå 2."
 
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
@@ -3868,6 +3885,9 @@ msgid ""
 "Production of meat stops when economy doesn’t need meat or smoked meat, "
 "production of both milk and meat stops when economy doesn’t need milk."
 msgstr ""
+"Produktionen av kött stoppas när ekonomin inte behöver kött eller rökt kött, "
+"och produktionen av både mjölk och kött stoppas när ekonomin inte behöver "
+"mjölk."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1810
@@ -3879,6 +3899,11 @@ msgid ""
 "milk and one piece of meat takes %3$s and production of 2 jugs of milk only "
 "takes %4$s."
 msgstr ""
+"Om denna byggnad är fullt försörjd och ekonomin behöver alla produkter, "
+"kostar uppfödningen av två oxar, produktionen av två kannor mjölk och en bit "
+"kött %1$. Produktionen av en oxe kostar endast %2$, produktionen av två "
+"kannor mjölk och en bit kött kostar %3$ och produktionen av två kannor mjölk "
+"kostar endast %4$."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1817
@@ -3940,6 +3965,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners need %1% to produce two pieces of ore and one block of granite."
 msgstr ""
+"Gruvarbetarna behöver %1% för att producera två malmstycken och en "
+"granitblock."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1875
@@ -4148,7 +4175,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2004
 msgctxt "gauls_building"
 msgid "This building can be built by enhancing a sentry."
-msgstr ""
+msgstr "Denna byggnad kan byggas genom att uppgradera en vaktpost."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Ferry Yard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2031
