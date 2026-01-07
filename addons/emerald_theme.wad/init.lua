@@ -51,9 +51,9 @@ local wui_heading_space_after = 2 * wui_text_padding
 local wui_heading_color = {209, 209, 209}
 
 local h1_font_size = 17
-local h2_font_size = 13
-local h3_font_size = 12
-local h4_font_size = 11
+local h2_font_size = 14
+local h3_font_size = 13
+local h4_font_size = 12
 local p_font_size = 11
 
 local unknown_font_color = {209, 45, 45}
@@ -700,6 +700,7 @@ return {
          color = light_emerald,
          face = "serif",
          size = 16,
+         shadow = true,
       },
       -- Game and Map info panels
       fsmenu_info_panel_heading = {
@@ -842,7 +843,7 @@ return {
       wui_message_heading = {
          color = white,
          face = wui_font_face,
-         size = 18,
+         size = 15,
          bold = true,
          shadow = true
       },
@@ -850,6 +851,8 @@ return {
          color = light_emerald, --change
          face = wui_font_face,
          size = 12,
+         bold=true,
+         shadow=true,
       },
       wui_window_title = {
          color = fs_font_color,
@@ -880,6 +883,7 @@ return {
          face = unknown_font_face,
          size = unknown_font_size,
          bold = true,
+         shadow = true
       }
    },
 
@@ -924,6 +928,7 @@ return {
             color = {240, 170, 50},
             face = fs_font_face,
             size = 24,
+            shadow = true
          },
          space_before = fs_heading_space_before_big,
          space_after = fs_heading_space_after,
@@ -934,6 +939,7 @@ return {
             face = fs_font_face,
             size = h1_font_size,
             bold = true,
+            shadow = true
          },
          space_before = fs_heading_space_before_big,
          space_after = fs_heading_space_after,
@@ -944,6 +950,7 @@ return {
             face = fs_font_face,
             size = h2_font_size,
             bold = true,
+            shadow = true
          },
          space_before = fs_heading_space_before_big,
          space_after = fs_heading_space_after,
@@ -953,6 +960,7 @@ return {
             color = fs_heading_color,
             face = fs_font_face,
             size = h3_font_size,
+            shadow = true
          },
          space_before = fs_heading_space_before_small,
          space_after = fs_heading_space_after,
@@ -962,7 +970,7 @@ return {
             color = fs_heading_color,
             face = fs_font_face,
             size = h4_font_size,
-            italic = true,
+            shadow = true
          },
          space_before = fs_text_space_before,
          space_after = fs_text_space_after,
@@ -986,6 +994,7 @@ return {
          space_before = 3 * wui_text_padding,
          space_after = 0,
          valign = "center",
+         shadow = true
       },
       wui_heading_1 = {
          font = {
@@ -993,6 +1002,7 @@ return {
             face = wui_font_face,
             size = h1_font_size,
             bold = true,
+            shadow = true
          },
          space_before = wui_heading_space_before_big,
          space_after = wui_heading_space_after,
@@ -1003,6 +1013,7 @@ return {
             face = wui_font_face,
             size = h2_font_size,
             bold = true,
+            shadow = true
          },
          space_before = wui_heading_space_before_big,
          space_after = wui_heading_space_after,
@@ -1012,6 +1023,7 @@ return {
             color = wui_heading_color,
             face = wui_font_face,
             size = h3_font_size,
+            shadow = true
          },
          space_before = wui_heading_space_before_small,
          space_after = wui_heading_space_after,
@@ -1021,7 +1033,7 @@ return {
             color = wui_heading_color,
             face = wui_font_face,
             size = h4_font_size,
-            italic = true,
+            shadow = true
          },
          space_before = wui_text_space_before,
          space_after = wui_text_space_after,
