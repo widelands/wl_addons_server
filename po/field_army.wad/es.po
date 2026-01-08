@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-08 03:14+0100\n"
+"PO-Revision-Date: 2026-01-07 09:47+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/widelands/teams/35159/"
+"es/)\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: addons/field_army.wad/addon:2 addons/field_army.wad/init.lua:31
+#: addons/field_army.wad/init.lua:32
+msgid "Field Army"
+msgstr ""
+
+#: addons/field_army.wad/addon:3
+msgid ""
+"First player, who has an army, which is in strength equivalent to the "
+"selected number of fully trained heroes, stationed in military sites of his "
+"own tribe, wins the game."
+msgstr ""
+
+#: addons/field_army.wad/init.lua:43
+msgid ""
+"First player, who has an army, which is in strength equivalent to "
+"approximately %1% fully trained hero, stationed in military sites of his own "
+"tribe, wins the game. One hero has a value of approximately 11 new untrained "
+"soldiers (or points)."
+msgid_plural ""
+"First player, who has an army, which is in strength equivalent to "
+"approximately %1% fully trained heroes, stationed in military sites of his "
+"own tribe, wins the game. One hero has a value of approximately 11 new "
+"untrained soldiers (or points)."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: addons/field_army.wad/init.lua:125 addons/field_army.wad/init.lua:127
+#: addons/field_army.wad/init.lua:131 addons/field_army.wad/init.lua:136
+msgid "%1$d point"
+msgid_plural "%1$d points"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. TRANSLATORS: "Player x: y points"
+#: addons/field_army.wad/init.lua:125
+msgid "%1%: %2%"
+msgstr ""
+
+#. TRANSLATORS: "Player x has reached y points."
+#: addons/field_army.wad/init.lua:127
+msgid "%1% has reached %2%."
+msgstr ""
+
+#: addons/field_army.wad/init.lua:129
+msgid "%1$d point!"
+msgid_plural "%1$d points!"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. TRANSLATORS: "You have reached x points."
+#: addons/field_army.wad/init.lua:131
+msgid "You have reached %1%."
+msgstr ""
+
+#: addons/field_army.wad/init.lua:133
+msgid "Player points:"
+msgstr ""
+
+#. TRANSLATORS: "Player x has y out of z points"
+#: addons/field_army.wad/init.lua:136
+msgid "%1% has %2% out of %3%"
+msgstr ""
+
+#. TRANSLATORS: "Player x: y points"
+#: addons/field_army.wad/init.lua:164
+msgid "%1%: %2% point"
+msgid_plural "%1%: %2% points"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: addons/field_army.wad/init.lua:205
+msgid "%1% defeated."
+msgstr ""
+
+#: addons/field_army.wad/init.lua:205
+msgid "%1% player remains."
+msgid_plural "%1% players remain."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""

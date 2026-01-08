@@ -499,6 +499,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:field-army-wad]
+file_filter            = po/field_army.wad/<lang>.po
+source_file            = po/field_army.wad/field_army.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:first-heroes-win-wad]
 file_filter            = po/first_heroes_win.wad/<lang>.po
 source_file            = po/first_heroes_win.wad/first_heroes_win.wad.pot

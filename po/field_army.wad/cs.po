@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# af24e571988b09e5b46468ac89010e87_d1b4333, 2026
+# Ondřej Itřech, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-08 03:14+0100\n"
+"PO-Revision-Date: 2026-01-07 09:47+0000\n"
+"Last-Translator: Ondřej Itřech, 2026\n"
+"Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: addons/field_army.wad/addon:2 addons/field_army.wad/init.lua:31
+#: addons/field_army.wad/init.lua:32
+msgid "Field Army"
+msgstr "Polní vojsko"
+
+#: addons/field_army.wad/addon:3
+msgid ""
+"First player, who has an army, which is in strength equivalent to the "
+"selected number of fully trained heroes, stationed in military sites of his "
+"own tribe, wins the game."
+msgstr ""
+"První hráč, kterému se podaří umístit do vojenských budov svého vlastního "
+"kmene armádu, která se svou silou vyrovná síle zvoleného množství plně "
+"vycvičených vojáků, vyhraje."
+
+#: addons/field_army.wad/init.lua:43
+msgid ""
+"First player, who has an army, which is in strength equivalent to "
+"approximately %1% fully trained hero, stationed in military sites of his own "
+"tribe, wins the game. One hero has a value of approximately 11 new untrained "
+"soldiers (or points)."
+msgid_plural ""
+"First player, who has an army, which is in strength equivalent to "
+"approximately %1% fully trained heroes, stationed in military sites of his "
+"own tribe, wins the game. One hero has a value of approximately 11 new "
+"untrained soldiers (or points)."
+msgstr[0] ""
+"První hráč, kterému se podaří umístit do vojenských budov svého vlastního "
+"kmene armádu, která se svou silou vyrovná síle %1% plně vycvičeného hrdiny, "
+"vyhraje. Jeden hrdina má přibližně stejnou hodnotu jako 11 nových "
+"necvičených vojáku (nebo bodů)."
+msgstr[1] ""
+"První hráč, kterému se podaří umístit do vojenských budov svého vlastního "
+"kmene armádu, která se svou silou vyrovná síle %1% plně vycvičených hrdinů, "
+"vyhraje. Jeden hrdina má přibližně stejnou hodnotu jako 11 nových "
+"necvičených vojáku (nebo bodů)."
+msgstr[2] ""
+"První hráč, kterému se podaří umístit do vojenských budov svého vlastního "
+"kmene armádu, která se svou silou vyrovná síle %1% plně vycvičeného hrdiny, "
+"vyhraje. Jeden hrdina má přibližně stejnou hodnotu jako 11 nových "
+"necvičených vojáku (nebo bodů)."
+msgstr[3] ""
+"První hráč, kterému se podaří umístit do vojenských budov svého vlastního "
+"kmene armádu, která se svou silou vyrovná síle %1% plně vycvičených hrdinů, "
+"vyhraje. Jeden hrdina má přibližně stejnou hodnotu jako 11 nových "
+"necvičených vojáku (nebo bodů)."
+
+#: addons/field_army.wad/init.lua:125 addons/field_army.wad/init.lua:127
+#: addons/field_army.wad/init.lua:131 addons/field_army.wad/init.lua:136
+msgid "%1$d point"
+msgid_plural "%1$d points"
+msgstr[0] "%1$d bod"
+msgstr[1] "%1$d body"
+msgstr[2] "%1$d bodu"
+msgstr[3] "%1$d bodů"
+
+#. TRANSLATORS: "Player x: y points"
+#: addons/field_army.wad/init.lua:125
+msgid "%1%: %2%"
+msgstr "%1%: %2%"
+
+#. TRANSLATORS: "Player x has reached y points."
+#: addons/field_army.wad/init.lua:127
+msgid "%1% has reached %2%."
+msgstr "%1% dosáhl %2%."
+
+#: addons/field_army.wad/init.lua:129
+msgid "%1$d point!"
+msgid_plural "%1$d points!"
+msgstr[0] "%1$d bod!"
+msgstr[1] "%1$d body!"
+msgstr[2] "%1$d bodu!"
+msgstr[3] "%1$d bodů!"
+
+#. TRANSLATORS: "You have reached x points."
+#: addons/field_army.wad/init.lua:131
+msgid "You have reached %1%."
+msgstr "Máš %1%."
+
+#: addons/field_army.wad/init.lua:133
+msgid "Player points:"
+msgstr "Body hráčů:"
+
+#. TRANSLATORS: "Player x has y out of z points"
+#: addons/field_army.wad/init.lua:136
+msgid "%1% has %2% out of %3%"
+msgstr "%1% má %2% z %3%"
+
+#. TRANSLATORS: "Player x: y points"
+#: addons/field_army.wad/init.lua:164
+msgid "%1%: %2% point"
+msgid_plural "%1%: %2% points"
+msgstr[0] "%1%: %2% bod"
+msgstr[1] "%1%: %2% body"
+msgstr[2] "%1%: %2% bodu"
+msgstr[3] "%1%: %2% bodů"
+
+#: addons/field_army.wad/init.lua:205
+msgid "%1% defeated."
+msgstr "%1% prohrává."
+
+#: addons/field_army.wad/init.lua:205
+msgid "%1% player remains."
+msgid_plural "%1% players remain."
+msgstr[0] "Zbývá %1% hráč."
+msgstr[1] "Zbývají %1% hráči."
+msgstr[2] "Zbývá %1% hráče."
+msgstr[3] "Zbývá %1% hráčů."
