@@ -11,7 +11,7 @@ wl.Descriptions():new_militarysite_type {
     animation_directory = dirname,
     animations = {
       idle = {
-         hotspot = { 28, 97 },
+         hotspot = { 34, 108 },
       }
     },
     
@@ -20,25 +20,24 @@ wl.Descriptions():new_militarysite_type {
     
     buildcost = {
         log = 2,
-        granite = 2,
+        granite = 1,
         planks = 2,
         cloth = 1
     },
     return_on_dismantle = {
         log = 1,
-        granite = 2,
+        granite = 1,
         planks = 1,
         cloth = 1
     },
     
     aihints = {
         prohibited_till = 1200,
---        basic_amount = 1,
         fighting = true,
     },
 
     max_soldiers = 3,
-    vision_range = 13,
+    vision_range = 15,
     heal_per_second = 120,
     conquers = 6,
     prefer_heroes = false,

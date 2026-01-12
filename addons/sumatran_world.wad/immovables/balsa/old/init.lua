@@ -8,7 +8,7 @@ wl.Descriptions():new_immovable_type{
    name = "balsa_amazons_old",
    descname = _("Balsa Tree (Old)"),
    species = _("Balsa Tree"),
-   icon = dirname .. "../menu.png",
+   icon = dirname .. "menu.png",
    size = "small",
    animation_directory = dirname,
    terrain_affinity = terrain_affinity,

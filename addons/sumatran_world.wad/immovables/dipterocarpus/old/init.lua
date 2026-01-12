@@ -8,7 +8,7 @@ wl.Descriptions():new_immovable_type{
    name = "dipterocarpus_old",
    descname = _("Dipterocarpus (Old)"),
    species = _("Dipterocarpus"),
-   icon = dirname .. "../menu.png",
+   icon = dirname .. "menu.png",
    size = "small",
    animation_directory = dirname,
    terrain_affinity = terrain_affinity,

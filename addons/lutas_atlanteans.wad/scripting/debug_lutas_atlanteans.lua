@@ -1,21 +1,21 @@
 -- =======================================================================
---           Test script for debugging Lutas’ Atlanteans tribe
+--           Test script for debugging Lutas’ Atlantean tribe
 -- =======================================================================
 
 include "addons/lutas_atlanteans.wad/scripting/starting_conditions.lua"
 
 push_textdomain("lutas_atlanteans.wad", true)
 
--- following functions are only for debugging Lutas' Atlanteans tribe --
+-- following functions are only for debugging Lutas' Atlantean tribe --
 function allow_militarysites(player_number)
     local game = wl.Game()
     local player = game.players[player_number]
     local tribe = player.tribe
 
     if tribe.name == "lutas_atlanteans" then
-        player:allow_buildings{"lutas_atlanteans_guardhouse", "lutas_atlanteans_tower_small"}
-        player:allow_buildings{"lutas_atlanteans_tower", "lutas_atlanteans_tower_high", "lutas_atlanteans_guardhall"}
-        player:allow_buildings{"lutas_atlanteans_castle"}
+        player:allow_buildings{"lutas_atlanteans_guard", "lutas_atlanteans_tower_low"}
+        player:allow_buildings{"lutas_atlanteans_tower_round", "lutas_atlanteans_tower_cone_shaped", "lutas_atlanteans_guardhall_big"}
+        player:allow_buildings{"lutas_atlanteans_diamond_castle"}
     end
 end
 
@@ -25,9 +25,9 @@ function forbid_militarysites(player_number)
     local tribe = player.tribe
     
     if tribe.name == "lutas_atlanteans" then
-        player:forbid_buildings{"lutas_atlanteans_guardhouse", "lutas_atlanteans_tower_small"}
-        player:forbid_buildings{"lutas_atlanteans_tower", "lutas_atlanteans_tower_high", "lutas_atlanteans_guardhall"}
-        player:forbid_buildings{"lutas_atlanteans_castle"}
+        player:forbid_buildings{"lutas_atlanteans_guard", "lutas_atlanteans_tower_low"}
+        player:forbid_buildings{"lutas_atlanteans_tower_round", "lutas_atlanteans_tower_cone_shaped", "lutas_atlanteans_guardhall_big"}
+        player:forbid_buildings{"lutas_atlanteans_diamond_castle"}
     end
 end
 
@@ -122,7 +122,7 @@ function allow_advanced_buildings(player_number)
     if tribe.name == "lutas_atlanteans" then
         player:allow_buildings{"lutas_atlanteans_crystalmine", "lutas_atlanteans_coalmine"}
         player:allow_buildings{"lutas_atlanteans_ironmine", "lutas_atlanteans_goldmine"}
-        player:allow_buildings{"lutas_atlanteans_tower_high"}
+        player:allow_buildings{"lutas_atlanteans_tower_cone_shaped"}
     end
 end
 
@@ -134,7 +134,7 @@ function forbid_advanced_buildings(player_number)
     if tribe.name == "lutas_atlanteans" then
         player:forbid_buildings{"lutas_atlanteans_crystalmine", "lutas_atlanteans_coalmine"}
         player:forbid_buildings{"lutas_atlanteans_ironmine", "lutas_atlanteans_goldmine"}
-        player:forbid_buildings{"lutas_atlanteans_tower_high"}
+        player:forbid_buildings{"lutas_atlanteans_tower_cone_shaped"}
     end
 end
 

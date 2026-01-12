@@ -17,7 +17,7 @@ wl.Descriptions():new_immovable_type{
          "grow=ironwood_amazons_mature",
       },
    },
-   icon = dirname .. "../menu.png",
+   icon = dirname .. "menu.png",
    animation_directory = dirname,
    spritesheets = { idle = {
    basename = "ironwood_pole",

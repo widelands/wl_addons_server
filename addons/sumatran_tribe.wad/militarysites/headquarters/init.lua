@@ -11,14 +11,10 @@ wl.Descriptions():new_warehouse_type {
    destructible = false,
 
    animation_directory = dirname,
-   spritesheets = {
+   animations = {
       idle = {
-         fps = 10,
-         frames = 20,
-         rows = 5,
-         columns = 4,
-         hotspot = { 90, 96 }
-      },
+         hotspot = { 109, 148 }
+      }
    },
 
    aihints = {},

@@ -10,6 +10,7 @@ local init_gauls = {
     -- TRANSLATORS: This is a tribe name
     descname = _"Gauls",
     tooltip = _"A Celtic tribe.",
+    addon = "gauls.wad",
     icon = dirname .. "images/icon.png",
     script = dirname .. "units.lua",
 

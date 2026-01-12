@@ -366,9 +366,9 @@ function change_idle_stopped_buildings(player, productivity_percent)
 end
 
 function set_hero_advanced_militarysites(player)
-    local ms3 = player:get_buildings("lutas_atlanteans_guardhall")
-    local mt3 = player:get_buildings("lutas_atlanteans_tower_high")
-    local mf3 = player:get_buildings("lutas_atlanteans_castle")
+    local ms3 = player:get_buildings("lutas_atlanteans_guardhall_big")
+    local mt3 = player:get_buildings("lutas_atlanteans_tower_cone_shaped")
+    local mf3 = player:get_buildings("lutas_atlanteans_diamond_castle")
     
     for i, building in ipairs(mf3) do
         building.soldier_preference = "any"

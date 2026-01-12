@@ -7,7 +7,7 @@ include(dirname .. "../terrain_affinity.lua")
 wl.Descriptions():new_immovable_type{
    name = "dipterocarpus_mature",
    descname = _("Dipterocarpus (Mature)"),
-   icon = dirname .. "../menu.png",
+   icon = dirname .. "menu.png",
    size = "small",
    animation_directory = dirname,
    terrain_affinity = terrain_affinity,

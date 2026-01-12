@@ -28,6 +28,7 @@ wl.Descriptions():new_militarysite_type {
       name = "gauls_stronghold",
       enhancement_cost = {
          granite = 3,
+         planks = 1,
          bronze = 1,
          copper = 1,
          gold = 1
@@ -61,7 +62,7 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 8,
-    vision_range = 14,
+    vision_range = 15,
     heal_per_second = 200,
     conquers = 11,
     prefer_heroes = true,

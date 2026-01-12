@@ -23,7 +23,7 @@ init = {
          plr:allow_workers("all")
       end
 
-      local h = plr:place_building("lutas_atlanteans_castle", sf, false, true)
+      local h = plr:place_building("lutas_atlanteans_diamond_castle", sf, false, true)
       h:set_soldiers{[{0,0,0,0}] = 12}
 
       place_building_in_region(plr, "lutas_atlanteans_warehouse", sf:region(7), {
@@ -31,11 +31,11 @@ init = {
             diamond = 7,
             iron_ore = 5,
             quartz = 8,
-            granite = 50,
+            granite = 42,
             spider_silk = 9,
-            log = 13,
+            log = 33,
             gold_thread = 6,
-            planks = 45,
+            planks = 33,
             spidercloth = 5,
             blackroot = 5,
             blackroot_flour = 12,

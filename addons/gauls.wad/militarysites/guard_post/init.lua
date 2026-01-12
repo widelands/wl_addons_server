@@ -9,26 +9,11 @@ wl.Descriptions():new_militarysite_type {
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-   animations = {
-      unoccupied = {
-         hotspot = { 39, 40 }
-      }
-   },
-   spritesheets = {
+    animations = {
       idle = {
-         fps = 10,
-         frames = 20,
-         rows = 5,
-         columns = 4,
-         hotspot = { 39, 40 }
-      },
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 39, 40 }
-      },
-   },
+         hotspot = { 34, 54 },
+      }
+    },
     
     size = "small",
     destructible = true,
@@ -43,6 +28,20 @@ wl.Descriptions():new_militarysite_type {
         reed = 1
     },
     
+   enhancement = {
+      name = "gauls_watchtower",
+      enhancement_cost = {
+         log = 1,
+         granite = 1,
+         planks = 1,
+         cloth = 1
+      },
+      enhancement_return_on_dismantle = {
+         granite = 1,
+         cloth = 1
+      }
+   },
+
     aihints = {
         expansion = true,
         very_weak_ai_limit = 8,
@@ -52,7 +51,7 @@ wl.Descriptions():new_militarysite_type {
 
     max_soldiers = 1,
     vision_range = 10,
-    heal_per_second = 60,
+    heal_per_second = 100,
     conquers = 6,
     prefer_heroes = false,
 

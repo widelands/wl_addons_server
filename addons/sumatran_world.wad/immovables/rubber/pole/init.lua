@@ -21,7 +21,7 @@ wl.Descriptions():new_immovable_type{
          "grow=rubber_amazons_mature",
       },
    },
-   icon = dirname .. "../menu.png",
+   icon = dirname .. "menu.png",
    animation_directory = dirname,
    spritesheets = { idle = {
    basename = "rubber_pole",

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-01 03:13+0100\n"
+"POT-Creation-Date: 2026-01-12 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Language-Team: Danish (https://app.transifex.com/widelands/teams/35159/da/)\n"
 "Language: da\n"
@@ -242,31 +242,31 @@ msgid "Castle"
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/castle/init.lua:71
+#: addons/gauls.wad/militarysites/castle/init.lua:72
 msgctxt "gauls_building"
 msgid "Your warriors have occupied your castle."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/castle/init.lua:73
+#: addons/gauls.wad/militarysites/castle/init.lua:74
 msgctxt "gauls_building"
 msgid "Your castle discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/castle/init.lua:75
+#: addons/gauls.wad/militarysites/castle/init.lua:76
 msgctxt "gauls_building"
 msgid "Your castle is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/castle/init.lua:77
+#: addons/gauls.wad/militarysites/castle/init.lua:78
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the castle."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/castle/init.lua:79
+#: addons/gauls.wad/militarysites/castle/init.lua:80
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the castle."
 msgstr ""
@@ -278,31 +278,31 @@ msgid "Guard Post"
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/guard_post/init.lua:61
+#: addons/gauls.wad/militarysites/guard_post/init.lua:60
 msgctxt "gauls_building"
 msgid "Your warrior has occupied your guard post."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/guard_post/init.lua:63
+#: addons/gauls.wad/militarysites/guard_post/init.lua:62
 msgctxt "gauls_building"
 msgid "Your guard post discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/guard_post/init.lua:65
+#: addons/gauls.wad/militarysites/guard_post/init.lua:64
 msgctxt "gauls_building"
 msgid "Your guard post is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/guard_post/init.lua:67
+#: addons/gauls.wad/militarysites/guard_post/init.lua:66
 msgctxt "gauls_building"
 msgid "The enemy defeated your warrior at the guard post."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/guard_post/init.lua:69
+#: addons/gauls.wad/militarysites/guard_post/init.lua:68
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the guard post."
 msgstr ""
@@ -440,31 +440,31 @@ msgid "Watchtower"
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/watchtower/init.lua:48
+#: addons/gauls.wad/militarysites/watchtower/init.lua:47
 msgctxt "gauls_building"
 msgid "Your warriors have occupied your watchtower."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/watchtower/init.lua:50
+#: addons/gauls.wad/militarysites/watchtower/init.lua:49
 msgctxt "gauls_building"
 msgid "Your watchtower discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/watchtower/init.lua:52
+#: addons/gauls.wad/militarysites/watchtower/init.lua:51
 msgctxt "gauls_building"
 msgid "Your watchtower is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/watchtower/init.lua:54
+#: addons/gauls.wad/militarysites/watchtower/init.lua:53
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the watchtower."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Gallic military site
-#: addons/gauls.wad/militarysites/watchtower/init.lua:56
+#: addons/gauls.wad/militarysites/watchtower/init.lua:55
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the watchtower."
 msgstr ""
@@ -695,6 +695,82 @@ msgctxt "gauls_building"
 msgid "A market enables trading with other tribes."
 msgstr ""
 
+#: addons/gauls.wad/postload.lua:46
+msgctxt "gauls_building"
+msgid ""
+"Of course hunting crocodiles is a good idea. The efficiency of hunting "
+"should not increase much but the productivity can increase, if there are not "
+"enough animals in the nearby forests."
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for a Gallic production site: Crocodile Hunter’s Hut
+#: addons/gauls.wad/postload.lua:49
+msgctxt "gauls_building"
+msgid "Hunter advocates the idea of building a crocodile hunter's house"
+msgstr ""
+
+#: addons/gauls.wad/postload.lua:50
+msgid ""
+"Hunts animals to produce meat. Hunters working at this house can hunt "
+"crocodiles too."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
+#: addons/gauls.wad/postload.lua:53
+msgctxt "gauls_building"
+msgid ""
+"This building is useful only when you have a Sumatran opponent and there are "
+"crocodiles coming from his territory into your territory."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
+#: addons/gauls.wad/postload.lua:55
+msgctxt "gauls_building"
+msgid ""
+"The building has 2 different working areas, the smaller for crocodile "
+"hunting and the larger for game hunting."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
+#: addons/gauls.wad/postload.lua:59
+msgctxt "gauls_building"
+msgid ""
+"If there is a sufficient amount of crocodiles and other animals, the hunters "
+"need %1$s on average to produce one meat. If there are no crocodiles, the "
+"building operates as a basic hunter's hut and the hunters need %2$s on "
+"average to produce one meat."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Clay Pit, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Stonecutter’s Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Fisher's Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Hunter’s Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Scout’s Cottage, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Reed Yard, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 2
+#. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 3
+#. TRANSLATORS: Performance help text for a Gallic production site: Ferry Yard, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Shipyard, part 2
+#: addons/gauls.wad/postload.lua:61
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1471
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1486
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1499
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1514
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1546
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1561
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1574
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1620
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1655
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1967
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:2039
+#: addons/gauls.wad/tribes/gauls_tribe/units.lua:2052
+msgctxt "gauls_building"
+msgid "In case of slopes or obstacles in the way, the time is increased."
+msgstr ""
+
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:8
 msgctxt "gauls_building"
@@ -833,6 +909,42 @@ msgid ""
 "The clay digger working at this clay pit can’t find any level ground in his "
 "work area. Consider dismantling this clay pit and rebuilding it somewhere "
 "else."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:8
+msgctxt "gauls_building"
+msgid "Crocodile Hunter’s Hut"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
+#: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:47
+#: addons/gauls.wad/productionsites/hunters_hut/init.lua:59
+#: addons/gauls.wad/productionsites/hunters_hut/init.lua:68
+msgid "hunting"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
+#: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:60
+msgid "hunting crocodile"
+msgstr ""
+
+#: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:68
+msgid "No Crocodiles"
+msgstr ""
+
+#. TRANSLATORS: "Game" means animals that you can hunt
+#: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:70
+#: addons/gauls.wad/productionsites/hunters_hut/init.lua:82
+msgid "Out of Game"
+msgstr ""
+
+#. TRANSLATORS: "game" means animals that you can hunt
+#: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:72
+msgctxt "gauls_building"
+msgid ""
+"The hunter working out of this house can’t find any crocodiles in his work "
+"area."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1009,19 +1121,8 @@ msgctxt "gauls_building"
 msgid "Hunter’s Hut"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
-#: addons/gauls.wad/productionsites/hunters_hut/init.lua:59
-#: addons/gauls.wad/productionsites/hunters_hut/init.lua:68
-msgid "hunting"
-msgstr ""
-
 #: addons/gauls.wad/productionsites/hunters_hut/init.lua:80
 msgid "No Game"
-msgstr ""
-
-#. TRANSLATORS: "Game" means animals that you can hunt
-#: addons/gauls.wad/productionsites/hunters_hut/init.lua:82
-msgid "Out of Game"
 msgstr ""
 
 #. TRANSLATORS: "Game" means animals that you can hunt
@@ -3085,34 +3186,6 @@ msgctxt "gauls_building"
 msgid ""
 "This building can produce one log between %1$s and %2$s, depending on how "
 "far the woodcutter has to walk."
-msgstr ""
-
-#. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Clay Pit, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Stonecutter’s Hut, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Fisher's Hut, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Hunter’s Hut, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Scout’s Cottage, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Reed Yard, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 2
-#. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 3
-#. TRANSLATORS: Performance help text for a Gallic production site: Ferry Yard, part 2
-#. TRANSLATORS: Performance help text for a Gallic production site: Shipyard, part 2
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1471
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1486
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1499
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1514
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1546
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1561
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1574
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1620
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1655
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:1967
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:2039
-#: addons/gauls.wad/tribes/gauls_tribe/units.lua:2052
-msgctxt "gauls_building"
-msgid "In case of slopes or obstacles in the way, the time is increased."
 msgstr ""
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Forester’s Hut

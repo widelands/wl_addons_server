@@ -22,7 +22,7 @@ wl.Descriptions():new_immovable_type{
          "remove=",
       },
    },
-   icon = dirname .. "../menu.png",
+   icon = dirname .. "menu.png",
    animation_directory = dirname,
    spritesheets = {
    idle = {

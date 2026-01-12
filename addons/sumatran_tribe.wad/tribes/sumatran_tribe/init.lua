@@ -10,6 +10,7 @@ local init_sumatran = {
     -- TRANSLATORS: This is a tribe name
     descname = _"Sumatrans",
     tooltip = _"A crocodiles hunting tribe living on a tropical island named Sumatra.",
+    addon = "sumatran_tribe.wad",
     icon = dirname .. "images/icon.png",
     script = dirname .. "units.lua",
 

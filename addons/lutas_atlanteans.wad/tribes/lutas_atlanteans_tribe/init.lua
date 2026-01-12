@@ -10,6 +10,7 @@ local init_lutas_atlanteans = {
     -- TRANSLATORS: This is a tribe name
     descname = _"Lutas’ Atlanteans",
     tooltip = _"This tribe is known from the oldest tales. The sons and daughters of Atlantis.",
+    addon = "lutas_atlanteans.wad",
     icon = dirname .. "images/icon.png",
     script = dirname .. "units.lua",
 

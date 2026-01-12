@@ -102,7 +102,7 @@ init = {
          inputs = {}
       })
 
-      place_building_in_region(player, "lutas_atlanteans_tower", sf:region(13), {
+      place_building_in_region(player, "lutas_atlanteans_tower_round", sf:region(13), {
          soldiers = {
             [{0,0,0,0}] = 1,
          },
