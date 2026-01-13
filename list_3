@@ -444,7 +444,7 @@ DyingSettler
 
 sync_safe
 1758974165
-127
+128
 0
 0
 0
@@ -454,7 +454,7 @@ sync_safe
 0
 0
 0
-0
+1
 0
 1.0.0
 5
@@ -705,7 +705,7 @@ Ron_of_Nord
 
 sync_safe
 1759984876
-77
+78
 0
 0
 0
@@ -794,7 +794,7 @@ Ron_of_Nord
 
 sync_safe
 1742613243
-162
+163
 0
 0
 0
@@ -1063,7 +1063,7 @@ Ron_of_Nord
 
 sync_safe
 1761368466
-60
+61
 0
 0
 0
@@ -1333,7 +1333,7 @@ Cupper
 
 sync_safe
 1743779454
-74
+75
 0
 0
 0
@@ -1658,7 +1658,7 @@ Ron_of_Nord
 
 sync_safe
 1740895619
-99
+100
 0
 0
 0
@@ -2110,7 +2110,7 @@ kaputtnik
 
 sync_safe
 1715265495
-409
+410
 0
 0
 0
@@ -2318,7 +2318,7 @@ Lawrence
 
 sync_safe
 1749734350
-71
+72
 0
 0
 0
@@ -2916,7 +2916,7 @@ ___
 
 sync_safe
 1751470921
-81
+82
 0
 0
 0
@@ -3517,7 +3517,7 @@ auktionadmin
 
 sync_safe
 1680190966
-516
+517
 0
 0
 0
@@ -4186,7 +4186,7 @@ kaputtnik
 
 desync
 1613666291
-381
+382
 0
 0
 0
@@ -4766,7 +4766,7 @@ Mr_Reibekuchen
 
 sync_safe
 1647247922
-440
+442
 0
 0
 0
@@ -6786,7 +6786,7 @@ MarkMcWire
 
 sync_safe
 1749228542
-265
+266
 0
 0
 0
@@ -9318,7 +9318,7 @@ MarkMcWire
 
 sync_safe
 1743251069
-84
+85
 0
 0
 0
@@ -11096,7 +11096,7 @@ MarkMcWire
 
 sync_safe
 1734192332
-794
+796
 2
 0
 0
@@ -14070,14 +14070,14 @@ a3c79438f08f9bb16d39b21a5a2f2648
 verified
 field_army.wad
 Field Army
-First player, who has an army, which is in strength equivalent to the selected number of fully trained heroes, stationed in military sites of his own tribe, wins the game.
+The first player to station an army equivalent in strength to the selected number of fully trained heroes in his tribe’s military sites wins the game.
 OIPUN
 OIPUN
 1.2
 
 sync_safe
 1767738179
-4
+6
 0
 0
 0
@@ -14093,9 +14093,9 @@ Cupper
 <font size=18>Well done, OIPUN!</font>  This addon gives WL another gameplay.  'time'-selected field-points: everyone can adust goal-points by himself.   great!      <font size=18>10 points!</font>      Fun-fact: min. 15minutes, MAX 512hours   :-))  (I'll never test this before)
 1.0.1
 1767881044
-1.0.1
-1
-17454
+1.0.2
+2
+17723
 win_condition
 0
 0
@@ -14128,14 +14128,14 @@ ru.mo
 sk.mo
 sv.mo
 26
-d0ed56cab8f5848542c135a73986e447
+43b1f8cb37e4bc71a3052d6498934d90
 3366933c0273c2c8722ef287845c4fd2
-84caf5a795c95d00777b723f57d5859e
+acf209867f00f94fd8153e914eb0b4c7
 aa77b204bef18d02774e8d78b0d6435a
 b098c7b2f60448fb1b4bb4bd9b32cf27
-1676ed2e2c16e3c116e1a23308988738
+f2983035f8447f50f6b37214eccaeeec
 167f577e875b9079c5ad6b7ade244837
-6fd0171982101d20d39ecd63d028d754
+f7b27ee6ffccbe12946eb119c57dcd7e
 d2ec5567de3994b9e5c9f99079d94a6e
 a826cbfe98908c1950ff9fbc42ad14f5
 009fc8c734a5db7179d442d93349e2a9
@@ -14146,14 +14146,14 @@ a826cbfe98908c1950ff9fbc42ad14f5
 6ee87b92520a8fc80e2870f205edcf28
 9ebcc7b7aa6706f6362d88d282e0c8ed
 24be4a804e2295f922d9dbffb7e7afa5
-358c4a34eddc395e3fc53ac1367ea686
+abd068ffa8150ad07ba6d6bda960c36f
 43a35ebd6ea2ffb70e970cffe39fddfb
 f079189acc82354ba8c9c50c1df28a0a
 cbeb57c28cf02c15bae187cceef13071
 1d9236aee3a846ca28f7ebf5e1125f53
 868dfb3943e82e55d54fa7715bd896b9
 0845b7bb839361b18dc17251b53378ff
-05ba2a9c294f4a0bc94f648d62bbffef
+306a2d04ddf10eccbdb0460668ece8f9
 0
 verified
 first_heroes_win.wad
@@ -14805,7 +14805,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1496
+1497
 0
 0
 0
@@ -15980,7 +15980,7 @@ OIPUN
 
 sync_safe
 1766614957
-43
+48
 0
 0
 0
@@ -15997,7 +15997,7 @@ In the version 1.0.1, AI is not working yet. The tribe is playable just for huma
 1.0.1
 1766745354
 1.0.4
-9
+10
 18397986
 tribes
 0
@@ -21182,8 +21182,8 @@ ecf9a3a77f316e2c2639cefeb1417ab3
 b94e049b209d919dfa8ec612c700a5f8
 6cb1f566536c54f240bc43f810386b90
 4a46e29aa21cfd1ea97c7e966821f7ec
-6e086a5a2731d98c1f60e4c0d7aea9c6
-feb07bfc24d3df61183730e502b990bc
+c4b3e43732e44f65ddea1e7bcd597990
+aee76d4490bcdf8db29712bd7a4eb626
 ae95227ed62aa003a22d30df38ee48e2
 611c0cc24fb9ea4b8720dcf2b1132eda
 6b0ab204ced94821194cb5d7889ab83b
@@ -21196,14 +21196,14 @@ b8dd27276bbabc47fe9926510beca45e
 bc3c6e2f7f96cce8f2db872a7592733b
 9e23c91db9839fc8fcb0e4e94afd431e
 dd028ce6913fc0787faaa15deabb0247
-e9c078dbbd22e8a38beac882ca5ac98f
-c023652f09d6cb1ac1196f8d05a60fba
+2d072f97b34e18d7e67ec39be9dd5260
+f4109f2c54e038e35fc794218fbdd0b4
 0387e6fb79126feec260ff695faaaa95
 5563aac3725756e70f62dbb94f953cea
 11a7aa23eacc4d91be451cdd64170423
 991ae3837375fce4717c7851cd5a0300
 655f2667d4185db22640412975251e85
-9315afaa92cfff94d85ab435318456a3
+dcc43414f2759d5e28fdf09c7d01ae18
 0
 verified
 higher-experience.wad
@@ -21819,7 +21819,7 @@ arch_stanton
 
 sync_safe
 1648329410
-544
+545
 1
 0
 0
@@ -22040,7 +22040,7 @@ tothxa
 
 sync_safe
 1735340602
-162
+163
 0
 0
 0
@@ -22126,7 +22126,7 @@ tothxa
 
 sync_safe
 1682797554
-282
+283
 0
 1
 0
@@ -22719,7 +22719,7 @@ OIPUN
 
 sync_safe
 1744531167
-162
+166
 0
 0
 0
@@ -22732,7 +22732,7 @@ sync_safe
 0
 0
 2.0.1
-26
+27
 12382311
 tribes
 0
@@ -26257,10 +26257,10 @@ e71772faa88c62a7e5d4fbbd1c968ec1
 469836306977b3067398b03b7820d252
 f53ed7e0757ab4df202a364abb3dc0f6
 59bacca50ea527911be78d1819f09bae
-5695e6be408ba7636c994a00e7c25bb5
-c7698750cad535befd83a01de1e0fc33
+d114109c793757a297ec63b50c548317
+50f11e0a1e2139bad3f5abbcbd5879d1
 d4d16afe262b1a7aecec283262506468
-fec645f70efc8ef3bbfc37144bb1f6a8
+92f77cf0dcf30fcc764ea889fe791b34
 a01aa4af6108a52e96e768f804de011a
 68edc22c54ff53e8171729d6766667ae
 7dbc983373854b78ae5071add10b0029
@@ -26271,14 +26271,14 @@ a01aa4af6108a52e96e768f804de011a
 3a807595ad611b281eee9b18dffc47f6
 d0f1a511e37ddb0a8f2e7b330cceda4a
 71db8c8a8854438792ac561658b4bf41
-da826a072efe17131b8f361501debbe5
-22d84055378c84fd6d46f3261fc28732
+e5d1bea97b8a392650fc2f4787c14f74
+bac477708fb03e20a2ab20ec01956b52
 339973e6affbed433f192a5ef9e96e7d
 c434283ed4b41cf600ea1e84bcd29ef4
 76d7e9885f0f11c1716863757f046791
 fbe37cd9cb129948f580bcd56c806cb5
 e47df90e54f9a243ebf12bed72ba0f8c
-2defc59895a9d361ff34b654c2178173
+b8bec281df9845fb6d90ddd99a144671
 0
 verified
 maps_for_1.2.wad
@@ -28779,7 +28779,7 @@ Nordfriese
 
 sync_safe
 1723377908
-203
+204
 0
 0
 0
@@ -28995,7 +28995,7 @@ the-x
 
 sync_safe
 1622117845
-360
+361
 0
 0
 0
@@ -29087,7 +29087,7 @@ the-x
 
 sync_safe
 1622124029
-599
+601
 0
 0
 0
@@ -29175,7 +29175,7 @@ atomikaya
 
 sync_safe
 1671793402
-478
+479
 0
 0
 0
@@ -29579,7 +29579,7 @@ OIPUN
 
 sync_safe
 1733507996
-512
+517
 0
 0
 0
@@ -29612,7 +29612,7 @@ New version, a bug is corrected.
 2.0.2
 1740125189
 2.0.6
-46
+47
 16932769
 tribes
 1
@@ -34211,7 +34211,7 @@ ecf9a3a77f316e2c2639cefeb1417ab3
 6cb1f566536c54f240bc43f810386b90
 8b0f600090bf26e334fc6ea2f0849c06
 0b07f1fe03bfff69b29346b5293db145
-12803ad4d792dd1b12750ad512f2cf8a
+10c2572d73bb4970c9307df8dce9b4cb
 26aed6f205d8d2a4b7008bc81aa94058
 fa33b1f1cb58311fd0822c3c1d2d0ddd
 309d24249c067af8c306c077b12a7115
@@ -34224,7 +34224,7 @@ fa33b1f1cb58311fd0822c3c1d2d0ddd
 518f3ab44f568b2b90a9d9a4bde01a7c
 c4f7a7e78b02274802fb4349df232f7c
 93cc091124cf8d8aee2d4a7e580119d4
-cb674a8cce21a91b0638fc3a6f02a838
+defa041748c2544ce64886d0adb7984f
 f9ef19e5073957a595ab4d5381fa7b1c
 d6aa9f444b78ff960c0ff26868d8d8d8
 eb9196a44a3ed7e6b050a5d7d03f73c3
@@ -34243,7 +34243,7 @@ OIPUN
 
 sync_safe
 1733507938
-421
+427
 0
 0
 0
@@ -35937,7 +35937,7 @@ Nordfriese
 
 sync_safe
 1729976726
-27
+28
 0
 0
 0
@@ -36025,7 +36025,7 @@ Nordfriese
 
 sync_safe
 1600000000
-798
+799
 0
 0
 0

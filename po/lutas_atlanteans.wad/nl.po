@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Alex Rijckaert, 2025
+# Alex Rijckaert, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 03:15+0100\n"
+"POT-Creation-Date: 2026-01-13 03:14+0100\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
-"Last-Translator: Alex Rijckaert, 2025\n"
+"Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -592,18 +592,23 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Natuurlijk is de jacht op krokodillen een goed idee. De efficiëntie van de "
+"jacht zou niet veel moeten toenemen, maar de productiviteit kan wel toenemen "
+"als er niet genoeg dieren in de nabijgelegen bossen zijn."
 
 #. TRANSLATORS: Lore author helptext for an Atlantean production site: Crocodile Hunter’s House
 #: addons/lutas_atlanteans.wad/postload.lua:49
 msgctxt "lutas_atlanteans_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "Jager pleit voor het bouwen van een krokodillenjagershuis"
 
 #: addons/lutas_atlanteans.wad/postload.lua:50
 msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
+"Jaagt op dieren om vlees te produceren. Jagers die in dit huis werken, "
+"kunnen ook op krokodillen jagen."
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/lutas_atlanteans.wad/postload.lua:53
@@ -612,6 +617,8 @@ msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
+"Dit gebouw is alleen nuttig als je een Sumatraanse tegenstander hebt en er "
+"krokodillen vanuit zijn territorium naar jouw territorium komen."
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #: addons/lutas_atlanteans.wad/postload.lua:55
@@ -620,6 +627,8 @@ msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
+"Het gebouw heeft 2 verschillende werkgebieden, het kleinere voor de "
+"krokodillenjacht en het grotere voor de jacht op wild."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/lutas_atlanteans.wad/postload.lua:59
@@ -630,6 +639,10 @@ msgid ""
 "building operates as a basic hunter's house and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Als er voldoende krokodillen en andere dieren zijn, hebben de jagers "
+"gemiddeld %1$s nodig om één vlees te produceren. Als er geen krokodillen "
+"zijn, werkt het gebouw als een basisjagershuis en hebben de jagers gemiddeld "
+"%2$s nodig om één vlees te produceren."
 
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Quarry, part 2
@@ -746,7 +759,7 @@ msgstr "kolen produceren"
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:8
 msgctxt "lutas_atlanteans_building"
 msgid "Crocodile Hunter’s House"
-msgstr ""
+msgstr "Jachthuis van de Krokodillenjager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:32
@@ -757,11 +770,11 @@ msgstr "jagen"
 #. TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:43
 msgid "hunting crocodile"
-msgstr ""
+msgstr "krokodillenjacht"
 
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:51
 msgid "No Crocodiles"
-msgstr ""
+msgstr "Geen Krokodillen"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:53
@@ -776,6 +789,8 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"De jager die vanuit dit huis werkt, vindt geen krokodillen in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:8
@@ -5101,124 +5116,3 @@ msgstr "Wever"
 msgctxt "lutas_atlanteans_worker"
 msgid "Woodcutter"
 msgstr "Houtvester"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Castle"
-#~ msgstr "Kasteel"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Guardhall"
-#~ msgstr "Wachtlokaal"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Guardhouse"
-#~ msgstr "Wachtershuis"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your soldiers have occupied your guardhouse."
-#~ msgstr "Je soldaten hebben uw wachtershuis bezet."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your guardhouse discovered an aggressor."
-#~ msgstr "Je wachtershuis heeft een aanvaller ontdekt."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your guardhouse is under attack."
-#~ msgstr "Je wachtershuis wordt aangevallen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "The enemy defeated your soldiers at the guardhouse."
-#~ msgstr "De vijand heeft je soldaten bij de het wachtershuis verslagen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your soldiers defeated the enemy at the guardhouse."
-#~ msgstr "Je soldaten hebben de vijand bij het wachtershuis verslagen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Tower"
-#~ msgstr "Toren"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your soldiers have occupied your tower."
-#~ msgstr "Je soldaten hebben je toren bezet."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your tower discovered an aggressor."
-#~ msgstr "Je toren heeft een aanvaller ontdekt."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your tower is under attack."
-#~ msgstr "Je toren wordt aangevallen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "The enemy defeated your soldiers at the tower."
-#~ msgstr "De vijand heeft je soldaten bij de toren verslagen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your soldiers defeated the enemy at the tower."
-#~ msgstr "Je soldaten hebben de vijand bij de toren verslagen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "High Tower"
-#~ msgstr "Hoge Toren"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your soldiers have occupied your high tower."
-#~ msgstr "Je soldaten hebben je hoge toren bezet."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your high tower discovered an aggressor."
-#~ msgstr "Je hoge toren heeft een aanvaller ontdekt."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your high tower is under attack."
-#~ msgstr "Je hoge toren wordt aangevallen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "The enemy defeated your soldiers at the high tower."
-#~ msgstr "De vijand heeft je soldaten bij de hoge toren verslagen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your soldiers defeated the enemy at the high tower."
-#~ msgstr "Je soldaten hebben de vijand bij de hoge toren verslagen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Small Tower"
-#~ msgstr "Kleine Toren"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your soldiers have occupied your small tower."
-#~ msgstr "Je soldaten hebben je kleine toren bezet."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your small tower discovered an aggressor."
-#~ msgstr "Je kleine toren heeft een aanvaller ontdekt."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your small tower is under attack."
-#~ msgstr "Je kleine toren wordt aangevallen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "The enemy defeated your soldiers at the small tower."
-#~ msgstr "De vijand heeft je soldaten bij de kleine toren verslagen."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Your soldiers defeated the enemy at the small tower."
-#~ msgstr "Je soldaten hebben de vijand bij de kleine toren verslagen."
-
-#~ msgctxt "sumatran_building"
-#~ msgid "In case of slopes or obstacles in the way, the time is increased."
-#~ msgstr ""
-#~ "In het geval van hellingen of obstakels in de weg, wordt de tijd verlengd."
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Officer visiting a remote guardhouse"
-#~ msgstr "Een officier bezoekt een afgelegen wachthuis"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Scribbling on the wall of a guardhall"
-#~ msgstr "Krabbelen op de muur van een wachthuis"
-
-#~ msgctxt "lutas_atlanteans_building"
-#~ msgid "Soldier showing off a High Tower"
-#~ msgstr "Soldaat pronkt met een Hoge Toren"

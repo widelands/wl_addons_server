@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 03:14+0100\n"
+"POT-Creation-Date: 2026-01-13 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -730,18 +730,22 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Samozřejmě že lov krokodýlů je dobrý nápad. Výkonnost lovení se příliš "
+"nezlepší, ale může stoupnout produktivita, pokud v okolních lesích nebude "
+"dostatek zvěře."
 
 #. TRANSLATORS: Lore author helptext for a Gallic production site: Crocodile Hunter’s Hut
 #: addons/gauls.wad/postload.lua:49
 msgctxt "gauls_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "lovec obhajuje záměr postavit domek lovce krokodýlů"
 
 #: addons/gauls.wad/postload.lua:50
 msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
+"Loví zvěř na maso. Lovci pracující v tomto domku mohou také lovit krokodýly."
 
 #. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
 #: addons/gauls.wad/postload.lua:53
@@ -750,6 +754,8 @@ msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
+"Tato budova je užitečná, pouze pokud máš za protivníka Sumatřany a z jejich "
+"území na tvé území přichází krokodýli."
 
 #. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #: addons/gauls.wad/postload.lua:55
@@ -758,6 +764,8 @@ msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
+"Budova má 2 různé pracovní oblasti. Menší pro lovení krokodýlů a větší pro "
+"lov zvěře."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
 #: addons/gauls.wad/postload.lua:59
@@ -768,6 +776,10 @@ msgid ""
 "building operates as a basic hunter's hut and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Pokud je dostatek krokodýlů a jiné zvěře, lovci potřebují na získání jednoho "
+"kusu masa v průměru %1$s. Pokud nejsou krokodýli, budova funguje jako "
+"obyčejná chata lovce a lovci potřebují na získání jednoho kusu masa v "
+"průměru %2$s."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
@@ -947,7 +959,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:8
 msgctxt "gauls_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr ""
+msgstr "Chata lovce krokodýlů"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:47
@@ -959,11 +971,11 @@ msgstr "lovení"
 #. TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:60
 msgid "hunting crocodile"
-msgstr ""
+msgstr "lovení krokodýla"
 
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:68
 msgid "No Crocodiles"
-msgstr ""
+msgstr "Žádní krokodýli"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:70
@@ -978,6 +990,7 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"Lovec pracující v tomto domku nemůže ve svém okolí najít žádné krokodýly."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/druids_house/init.lua:8

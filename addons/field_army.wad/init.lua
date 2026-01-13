@@ -24,23 +24,25 @@ push_textdomain(textdomain, true)
 
 local wc_name = "Field Army"
 local wc_version = 1
-local wc_desc = "First player, who has an army, which is in strength equivalent to the selected number of fully trained heroes, stationed in military sites of his own tribe, wins the game. THIS STARTING CONDITION IS NOT LIMITED BY TIME! WITH EVERY 5 MINUTES YOU SELECT 1 HERO. One hero has a value of approximately 11 new untrained soldiers (or points)."
+local wc_desc = "The first player to station an army equivalent in strength to the selected number of fully trained heroes in his tribe’s military sites wins the game. THIS STARTING CONDITION IS NOT LIMITED BY TIME! WITH EVERY 5 MINUTES YOU SELECT 1 HERO. One hero has a value of approximately 11 new untrained soldiers (or points)."
 local wc_field_army = "Field Army"
 -- This needs to be exactly like wc_name, but localized, because wc_name
 -- will be used as the key to fetch the translation in C++
 local wc_descname = _("Field Army")
 local wc_field_army_i18n = _("Field Army")
+local wc_desc_i18n = _("The first player to station an army equivalent in strength to the selected number of fully trained heroes in his tribe’s military sites wins the game. THIS STARTING CONDITION IS NOT LIMITED BY TIME! WITH EVERY 5 MINUTES YOU SELECT 1 HERO. One hero has a value of approximately 11 new untrained soldiers (or points).")
 
 local r = {
    name = wc_name,
    description = wc_desc,
+   addon = "field_army.wad",
    configurable_time = true,
    peaceful_mode_allowed = true,
    textdomain = textdomain,
    func = function()
       local game = wl.Game()
       local A_STRENGTH = math.floor(game.win_condition_duration/5 * 11) -- point limit for winning the game
-      local wc_desc1 = _(ngettext("First player, who has an army, which is in strength equivalent to approximately %1% fully trained hero, stationed in military sites of his own tribe, wins the game. One hero has a value of approximately 11 new untrained soldiers (or points).", "First player, who has an army, which is in strength equivalent to approximately %1% fully trained heroes, stationed in military sites of his own tribe, wins the game. One hero has a value of approximately 11 new untrained soldiers (or points).",math.floor(A_STRENGTH/11)):bformat(math.floor(A_STRENGTH/11)))
+      local wc_desc1 = _(ngettext("The first player to station an army equivalent in strength to %1% fully trained hero in his tribe’s military sites wins the game. One hero has a value of approximately 11 new untrained soldiers (or points).", "The first player to station an army equivalent in strength to %1% fully trained heroes in his tribe’s military sites wins the game. One hero has a value of approximately 11 new untrained soldiers (or points).",math.floor(A_STRENGTH/11)):bformat(math.floor(A_STRENGTH/11)))
       local milest_d = 0 -- point interval, in which is the player informed about reached points
       if A_STRENGTH < 115 then
       	milest_d = 25
