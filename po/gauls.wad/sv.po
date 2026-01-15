@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 03:14+0100\n"
+"POT-Creation-Date: 2026-01-15 03:15+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -735,12 +735,15 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Naturligtvis är det en bra idé att jaga krokodiler. Jaktens effektivitet bör "
+"inte öka särskilt mycket, men produktiviteten kan öka om det inte finns "
+"tillräckligt med djur i de närliggande skogarna."
 
 #. TRANSLATORS: Lore author helptext for a Gallic production site: Crocodile Hunter’s Hut
 #: addons/gauls.wad/postload.lua:49
 msgctxt "gauls_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "Hunter förespråkar idén att bygga ett krokodiljägarhus."
 
 #: addons/gauls.wad/postload.lua:50
 msgid ""
@@ -757,6 +760,8 @@ msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
+"Denna byggnad är endast användbar när du har en motståndare från Sumatra och "
+"det finns krokodiler som kommer från hans territorium in i ditt territorium."
 
 #. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #: addons/gauls.wad/postload.lua:55
@@ -765,6 +770,8 @@ msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
+"Byggnaden har två olika arbetsområden, det mindre för krokodiljakt och det "
+"större för viltjakt."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
 #: addons/gauls.wad/postload.lua:59
@@ -775,6 +782,10 @@ msgid ""
 "building operates as a basic hunter's hut and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Om det finns tillräckligt med krokodiler och andra djur behöver jägarna i "
+"genomsnitt %1$s för att producera ett kött. Om det inte finns några "
+"krokodiler fungerar byggnaden som en enkel jaktstuga och jägarna behöver i "
+"genomsnitt %2$s för att producera ett kött."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
@@ -984,6 +995,8 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"Jägaren som arbetar från detta hus kan inte hitta några krokodiler i sitt "
+"arbetsområde."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/druids_house/init.lua:8
