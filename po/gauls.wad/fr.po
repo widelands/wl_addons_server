@@ -6,16 +6,16 @@
 # Translators:
 # Atanase Albaran, 2025
 # C138, 2025
-# David D, 2025
+# David D, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 03:14+0100\n"
+"POT-Creation-Date: 2026-01-17 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
-"Last-Translator: David D, 2025\n"
+"Last-Translator: David D, 2026\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -493,13 +493,13 @@ msgstr "mine du charbon"
 #: addons/gauls.wad/mines/coal_mine_deep/init.lua:91
 #: addons/gauls.wad/mines/coal_mine_small/init.lua:100
 msgid "No Coal"
-msgstr ""
+msgstr "Pas de charbon"
 
 #: addons/gauls.wad/mines/coal_mine/init.lua:97
 #: addons/gauls.wad/mines/coal_mine_deep/init.lua:92
 #: addons/gauls.wad/mines/coal_mine_small/init.lua:101
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de charbon épuisée"
 
 #: addons/gauls.wad/mines/coal_mine/init.lua:99
 msgctxt "gauls_building"
@@ -545,15 +545,15 @@ msgstr "Mine de cuivre et d'or"
 #. TRANSLATORS: Completed/Skipped/Did not start mining copper-gold ore because ...
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:58
 msgid "mining copper-gold ore"
-msgstr ""
+msgstr "minage de minerai de cuivre-or"
 
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:81
 msgid "No Copper-Gold Ore"
-msgstr ""
+msgstr "Pas de minerai de cuivre-or"
 
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:82
 msgid "Copper-Gold Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de cuivre-or épuisée"
 
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:84
 msgctxt "gauls_building"
@@ -562,25 +562,29 @@ msgid ""
 "returns on investment. This mine can’t be enhanced any further, so you "
 "should consider dismantling or destroying it."
 msgstr ""
+"La veine principale de cette mine de cuivre-or est épuisée. Attendez-vous à "
+"des rendements sur investissement fortement diminués. Cette mine ne peut pas "
+"être améliorée davantage, donc vous devriez envisager de la démanteler ou de "
+"la détruire."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/copper_mine/init.lua:8
 msgctxt "gauls_building"
 msgid "Copper Mine"
-msgstr ""
+msgstr "Mine de cuivre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining copper ore because ...
 #: addons/gauls.wad/mines/copper_mine/init.lua:85
 msgid "mining copper ore"
-msgstr ""
+msgstr "minage de minerai de cuivre"
 
 #: addons/gauls.wad/mines/copper_mine/init.lua:105
 msgid "No Copper Ore"
-msgstr ""
+msgstr "Pas de minerai de cuivre"
 
 #: addons/gauls.wad/mines/copper_mine/init.lua:106
 msgid "Main Copper Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de cuivre épuisée"
 
 #: addons/gauls.wad/mines/copper_mine/init.lua:108
 msgctxt "gauls_building"
@@ -604,16 +608,16 @@ msgstr "Mine de fer"
 #: addons/gauls.wad/mines/iron_mine_deep/init.lua:57
 #: addons/gauls.wad/mines/iron_mine_small/init.lua:80
 msgid "mining iron ore"
-msgstr ""
+msgstr "minage de minerai de fer"
 
 #: addons/gauls.wad/mines/iron_mine/init.lua:92
 #: addons/gauls.wad/mines/iron_mine_small/init.lua:98
 msgid "No Iron Ore"
-msgstr ""
+msgstr "Pas de minerai de fer"
 
 #: addons/gauls.wad/mines/iron_mine/init.lua:93
 msgid "Iron Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de fer épuisée"
 
 #: addons/gauls.wad/mines/iron_mine/init.lua:95
 #: addons/gauls.wad/mines/iron_mine_small/init.lua:101
@@ -622,21 +626,24 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"La veine principale de cette mine de fer est épuisée. Attendez-vous à des "
+"rendements sur investissement fortement diminués. Vous devriez envisager de "
+"l’améliorer, de la démanteler ou de la détruire."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/iron_mine_deep/init.lua:8
 msgctxt "gauls_building"
 msgid "Deep Iron Mine"
-msgstr ""
+msgstr "Mine de fer profonde"
 
 #: addons/gauls.wad/mines/iron_mine_deep/init.lua:90
 msgid "No Iron"
-msgstr ""
+msgstr "Pas de fer"
 
 #: addons/gauls.wad/mines/iron_mine_deep/init.lua:91
 #: addons/gauls.wad/mines/iron_mine_small/init.lua:99
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de fer épuisée"
 
 #: addons/gauls.wad/mines/iron_mine_deep/init.lua:93
 msgctxt "gauls_building"
@@ -645,33 +652,37 @@ msgid ""
 "on investment. This mine can’t be enhanced any further, so you should "
 "consider dismantling or destroying it."
 msgstr ""
+"La veine principale de cette mine de fer est épuisée. Attendez-vous à des "
+"rendements sur investissement fortement diminués. Cette mine ne peut pas "
+"être améliorée davantage, donc vous devriez envisager de la démanteler ou de "
+"la détruire."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/iron_mine_small/init.lua:8
 msgctxt "gauls_building"
 msgid "Small Iron Mine"
-msgstr ""
+msgstr "Petite mine de fer"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/tin_mine/init.lua:8
 msgctxt "gauls_building"
 msgid "Tin Mine"
-msgstr ""
+msgstr "Mine d'étain"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining tin ore because ...
 #: addons/gauls.wad/mines/tin_mine/init.lua:82
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:59
 msgid "mining tin ore"
-msgstr ""
+msgstr "minage de l'étain"
 
 #: addons/gauls.wad/mines/tin_mine/init.lua:106
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:86
 msgid "No Tin Ore"
-msgstr ""
+msgstr "Pas de minerai d’étain"
 
 #: addons/gauls.wad/mines/tin_mine/init.lua:107
 msgid "Main Tin Ore Vein Exhausted"
-msgstr ""
+msgstr "Veine principale d'étain épuisée"
 
 #: addons/gauls.wad/mines/tin_mine/init.lua:109
 msgctxt "gauls_building"
@@ -679,16 +690,19 @@ msgid ""
 "This tin mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"La veine principale de cette mine d'étain est épuisée. Attendez-vous à des "
+"rendements sur investissement fortement diminués. Vous devriez envisager de "
+"l’améliorer, de la démanteler ou de la détruire."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:8
 msgctxt "gauls_building"
 msgid "Deep Tin Mine"
-msgstr ""
+msgstr "Mine d'étain profonde"
 
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:87
 msgid "Tin Vein Exhausted"
-msgstr ""
+msgstr "Veine principale d'étain épuisée"
 
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:89
 msgctxt "gauls_building"
@@ -697,6 +711,10 @@ msgid ""
 "returns on investment. This mine can’t be enhanced any further, so you "
 "should consider dismantling or destroying it."
 msgstr ""
+"La veine principale de cette mine profonde d'étain est épuisée. Attendez-"
+"vous à des rendements sur investissement fortement diminués. Cette mine ne "
+"peut pas être améliorée davantage, donc vous devriez envisager de la "
+"démanteler ou de la détruire."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
@@ -710,7 +728,7 @@ msgstr "\"%1%\"<br>(%2%)"
 #: addons/gauls.wad/postload.lua:23
 msgctxt "gauls_building"
 msgid "A market enables trading with other tribes."
-msgstr ""
+msgstr "Un marché permet le commerce avec d’autres tribus."
 
 #: addons/gauls.wad/postload.lua:46
 msgctxt "gauls_building"
@@ -719,18 +737,23 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Bien sûr, chasser les crocodiles est une bonne idée. L’efficacité de la "
+"chasse ne devrait pas beaucoup augmenter mais la productivité peut "
+"augmenter, s’il n’y a pas assez d’animaux dans les forêts à proximité."
 
 #. TRANSLATORS: Lore author helptext for a Gallic production site: Crocodile Hunter’s Hut
 #: addons/gauls.wad/postload.lua:49
 msgctxt "gauls_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "Chasseur prône l’idée de construire une maison de chasseur crocodile"
 
 #: addons/gauls.wad/postload.lua:50
 msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
+"Chasse les animaux pour produire de la viande. Les chasseurs qui travaillent "
+"dans cette maison peuvent aussi chasser les crocodiles."
 
 #. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
 #: addons/gauls.wad/postload.lua:53
@@ -739,6 +762,8 @@ msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
+"Ce bâtiment n’est utile que lorsque vous avez un adversaire Sumatran et "
+"qu’il y a des crocodiles venant de son territoire sur votre territoire."
 
 #. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #: addons/gauls.wad/postload.lua:55
@@ -747,6 +772,8 @@ msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
+"Le bâtiment dispose de deux zones de travail différentes, la plus petite "
+"pour la chasse aux crocodiles et la plus grande pour la chasse au gibier."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
 #: addons/gauls.wad/postload.lua:59
@@ -786,7 +813,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2052
 msgctxt "gauls_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "En cas de pentes ou d’obstacles sur le chemin, le temps est augmenté."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:8
@@ -819,22 +846,22 @@ msgstr "Actif"
 #. TRANSLATORS: Completed/Skipped/Did not start making chain armor because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:83
 msgid "making chain armor"
-msgstr ""
+msgstr "fabrication cotte de maille"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making bronze armor because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:96
 msgid "making bronze armor"
-msgstr ""
+msgstr "fabrication armure de bronze"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making golden helmet because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:109
 msgid "making golden helmet"
-msgstr ""
+msgstr "fabrication casque doré"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making bronze shield because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:122
 msgid "making bronze shield"
-msgstr ""
+msgstr "fabrication bouclier de bronze"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/bakery/init.lua:8
@@ -864,18 +891,18 @@ msgstr "recrutement d'un soldat"
 #: addons/gauls.wad/productionsites/brick_kiln/init.lua:8
 msgctxt "gauls_building"
 msgid "Brick Kiln"
-msgstr ""
+msgstr "Four à briques"
 
 #. TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
 #: addons/gauls.wad/productionsites/brick_kiln/init.lua:69
 msgid "burning bricks"
-msgstr ""
+msgstr "cuisson briques"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/cattle_farm/init.lua:8
 msgctxt "gauls_building"
 msgid "Cattle Farm"
-msgstr ""
+msgstr "Ferme d'élevage"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/gauls.wad/productionsites/cattle_farm/init.lua:64
@@ -887,7 +914,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/cattle_farm/init.lua:77
 msgctxt "gauls_building"
 msgid "producing milk"
-msgstr ""
+msgstr "production lait"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/charcoal_kiln/init.lua:8
@@ -898,7 +925,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/gauls.wad/productionsites/charcoal_kiln/init.lua:65
 msgid "producing coal"
-msgstr ""
+msgstr "production charbon"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/clay_pit/init.lua:8

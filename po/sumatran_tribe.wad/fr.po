@@ -6,16 +6,16 @@
 # Translators:
 # C138, 2025
 # Atanase Albaran, 2025
-# David D, 2025
+# David D, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 03:15+0100\n"
+"POT-Creation-Date: 2026-01-17 03:14+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
-"Last-Translator: David D, 2025\n"
+"Last-Translator: David D, 2026\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -388,11 +388,11 @@ msgstr "mine du charbon"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:83
 msgid "No Coal"
-msgstr ""
+msgstr "Pas de charbon"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:84
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de charbon épuisée"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:86
 msgctxt "sumatran_building"
@@ -425,7 +425,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/mines/copper_gold_mine/init.lua:134
 #: addons/sumatran_tribe.wad/mines/deep_copper_gold_mine/init.lua:125
 msgid "No Copper-Gold Ore"
-msgstr ""
+msgstr "Pas de minerai de cuivre-or"
 
 #: addons/sumatran_tribe.wad/mines/copper_gold_mine/init.lua:135
 msgid "Main Copper-Gold Vein Exhausted"
@@ -447,7 +447,7 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/mines/deep_copper_gold_mine/init.lua:126
 msgid "Copper-Gold Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de cuivre-or épuisée"
 
 #: addons/sumatran_tribe.wad/mines/deep_copper_gold_mine/init.lua:128
 msgctxt "sumatran_building"
@@ -467,16 +467,16 @@ msgstr ""
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:59
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:81
 msgid "mining iron ore"
-msgstr ""
+msgstr "minage de minerai de fer"
 
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:80
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:99
 msgid "No Iron Ore"
-msgstr ""
+msgstr "Pas de minerai de fer"
 
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:81
 msgid "Iron Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de fer épuisée"
 
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:83
 msgctxt "sumatran_building"
@@ -531,7 +531,7 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:100
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de fer épuisée"
 
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:102
 msgctxt "sumatran_building"
@@ -758,6 +758,8 @@ msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
+"Chasse les animaux pour produire de la viande. Les chasseurs qui travaillent "
+"dans cette maison peuvent aussi chasser les crocodiles."
 
 #. TRANSLATORS: Note helptext for a Frisian production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:195
@@ -1107,7 +1109,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/sumatran_tribe.wad/productionsites/charcoal_kiln/init.lua:61
 msgid "producing coal"
-msgstr ""
+msgstr "production charbon"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/chicken_farm/init.lua:8

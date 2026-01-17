@@ -6,16 +6,16 @@
 # Translators:
 # C138, 2025
 # Atanase Albaran, 2025
-# David D, 2025
+# David D, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 03:15+0100\n"
+"POT-Creation-Date: 2026-01-17 03:14+0100\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
-"Last-Translator: David D, 2025\n"
+"Last-Translator: David D, 2026\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -360,12 +360,12 @@ msgstr "mine du charbon"
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:94
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:106
 msgid "No Coal"
-msgstr ""
+msgstr "Pas de charbon"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:95
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:107
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de charbon épuisée"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:97
 msgctxt "lutas_atlanteans_building"
@@ -489,12 +489,12 @@ msgstr "mine du fer"
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:86
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:98
 msgid "No Iron"
-msgstr ""
+msgstr "Pas de fer"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:87
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:99
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Veine principale de fer épuisée"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:89
 msgctxt "lutas_atlanteans_building"
@@ -581,6 +581,8 @@ msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
+"Chasse les animaux pour produire de la viande. Les chasseurs qui travaillent "
+"dans cette maison peuvent aussi chasser les crocodiles."
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/lutas_atlanteans.wad/postload.lua:53
@@ -714,7 +716,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/lutas_atlanteans.wad/productionsites/charcoal_kiln/init.lua:53
 msgid "producing coal"
-msgstr ""
+msgstr "production charbon"
 
 #. TRANSLATORS: This is a Lutas’ Atlanteans’ building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:8
