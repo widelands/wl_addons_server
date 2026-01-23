@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-04 03:10+0100\n"
+"POT-Creation-Date: 2026-01-23 03:14+0100\n"
 "PO-Revision-Date: 2025-01-03 15:43+0000\n"
 "Language-Team: Portuguese (https://app.transifex.com/widelands/teams/35159/"
 "pt/)\n"
@@ -30,10 +30,10 @@ msgstr ""
 
 #: addons/tidy_warehouses.wad/addon:3
 msgid ""
-"Start with a basic Headquarter. From time to time your workers do "
-"inventories. If there is more than 500 items in any of your warehouses, "
-"workers throw away one quarter of stock stored in such a warehouse and let "
-"you know, that they have cleaned your warehouse."
+"Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From "
+"time to time your workers do inventories. If there is more than 500 items in "
+"any of your warehouses, workers throw away one quarter of stock stored in "
+"such a warehouse and let you know, that they have cleaned your warehouse."
 msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
@@ -43,31 +43,47 @@ msgstr ""
 #: addons/tidy_warehouses.wad/empire.lua:15
 #: addons/tidy_warehouses.wad/frisians.lua:15
 msgid ""
-"Start with a basic Headquarter. From time to time your workers do "
-"inventories. If there is more than 500 items in any of your warehouses, "
-"workers throw away one quarter of stock stored in such a warehouse."
+"Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From "
+"time to time your workers do inventories. If there is more than 500 items in "
+"any of your warehouses, workers throw away one quarter of stock stored in "
+"such a warehouse."
 msgstr ""
 
-#: addons/tidy_warehouses.wad/amazons.lua:96
-#: addons/tidy_warehouses.wad/atlanteans.lua:99
-#: addons/tidy_warehouses.wad/barbarians.lua:90
-#: addons/tidy_warehouses.wad/empire.lua:96
-#: addons/tidy_warehouses.wad/frisians.lua:111
+#: addons/tidy_warehouses.wad/amazons.lua:99
+#: addons/tidy_warehouses.wad/atlanteans.lua:108
+#: addons/tidy_warehouses.wad/barbarians.lua:99
+#: addons/tidy_warehouses.wad/empire.lua:108
+#: addons/tidy_warehouses.wad/frisians.lua:113
 msgid "Warehouse cleaned!"
 msgstr ""
 
-#: addons/tidy_warehouses.wad/amazons.lua:170
-#: addons/tidy_warehouses.wad/atlanteans.lua:176
-#: addons/tidy_warehouses.wad/barbarians.lua:163
-#: addons/tidy_warehouses.wad/empire.lua:173
-#: addons/tidy_warehouses.wad/frisians.lua:194
+#: addons/tidy_warehouses.wad/amazons.lua:136
+#: addons/tidy_warehouses.wad/atlanteans.lua:145
+#: addons/tidy_warehouses.wad/barbarians.lua:136
+#: addons/tidy_warehouses.wad/empire.lua:145
+#: addons/tidy_warehouses.wad/frisians.lua:150
 msgid "%1$s has been cleaned!"
 msgstr ""
 
-#: addons/tidy_warehouses.wad/amazons.lua:171
-#: addons/tidy_warehouses.wad/atlanteans.lua:177
-#: addons/tidy_warehouses.wad/barbarians.lua:164
-#: addons/tidy_warehouses.wad/empire.lua:174
-#: addons/tidy_warehouses.wad/frisians.lua:195
-msgid "%1$d items have been removed, %2$d items left."
-msgstr ""
+#. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
+#: addons/tidy_warehouses.wad/amazons.lua:138
+#: addons/tidy_warehouses.wad/atlanteans.lua:147
+#: addons/tidy_warehouses.wad/barbarians.lua:138
+#: addons/tidy_warehouses.wad/empire.lua:147
+#: addons/tidy_warehouses.wad/frisians.lua:152
+msgid "%1$d item has been removed."
+msgid_plural "%1$d items have been removed."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: addons/tidy_warehouses.wad/amazons.lua:138
+#: addons/tidy_warehouses.wad/atlanteans.lua:147
+#: addons/tidy_warehouses.wad/barbarians.lua:138
+#: addons/tidy_warehouses.wad/empire.lua:147
+#: addons/tidy_warehouses.wad/frisians.lua:152
+msgid "%2$d item lefts."
+msgid_plural "%2$d items left."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""

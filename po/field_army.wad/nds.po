@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 03:14+0100\n"
+"POT-Creation-Date: 2026-01-23 03:14+0100\n"
 "PO-Revision-Date: 2026-01-07 09:47+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2026\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -30,13 +30,15 @@ msgstr "Feld-Soldateree"
 #: addons/field_army.wad/addon:3
 msgid ""
 "The first player to station an army equivalent in strength to the selected "
-"number of fully trained heroes in his tribe’s military sites wins the game."
+"number of fully trained heroes in his tribe’s military sites wins the game. "
+"Combination with More Expensive Soldiers add-on recommended."
 msgstr ""
 "De eerste Speler, well eene Soldateree, wat in Starkde gliek to de utköört "
 "Tahl vun kumpleet utbildt Helden is, in Soldateree-Boen vun sienem eegenen "
-"Volk unnerbrocht hett, winnt dat Speel."
+"Volk unnerbrocht hett, winnt dat Speel. ’t word anraden, dat tosamen mit de "
+"Verwiedern Dürere Soldaten to bruken."
 
-#: addons/field_army.wad/init.lua:33
+#: addons/field_army.wad/init.lua:27
 msgid ""
 "The first player to station an army equivalent in strength to the selected "
 "number of fully trained heroes in his tribe’s military sites wins the game. "
@@ -70,55 +72,55 @@ msgstr[1] ""
 "hett, winnt dat Speel. Een Held is umslags 11 neje Soldaten sünner all Öven "
 "(of Punkten) weert."
 
-#: addons/field_army.wad/init.lua:127 addons/field_army.wad/init.lua:129
-#: addons/field_army.wad/init.lua:133 addons/field_army.wad/init.lua:138
+#: addons/field_army.wad/init.lua:128 addons/field_army.wad/init.lua:130
+#: addons/field_army.wad/init.lua:134 addons/field_army.wad/init.lua:139
 msgid "%1$d point"
 msgid_plural "%1$d points"
 msgstr[0] "%1$d Punkt"
 msgstr[1] "%1$d Punkten"
 
 #. TRANSLATORS: "Player x: y points"
-#: addons/field_army.wad/init.lua:127
+#: addons/field_army.wad/init.lua:128
 msgid "%1%: %2%"
 msgstr "%1%: %2%"
 
 #. TRANSLATORS: "Player x has reached y points."
-#: addons/field_army.wad/init.lua:129
+#: addons/field_army.wad/init.lua:130
 msgid "%1% has reached %2%."
 msgstr "%1% hett %2%."
 
-#: addons/field_army.wad/init.lua:131
+#: addons/field_army.wad/init.lua:132
 msgid "%1$d point!"
 msgid_plural "%1$d points!"
 msgstr[0] "%1$d Punkt!"
 msgstr[1] "%1$d Punkten!"
 
 #. TRANSLATORS: "You have reached x points."
-#: addons/field_army.wad/init.lua:133
+#: addons/field_army.wad/init.lua:134
 msgid "You have reached %1%."
 msgstr "Du hest %1%."
 
-#: addons/field_army.wad/init.lua:135
+#: addons/field_army.wad/init.lua:136
 msgid "Player points:"
 msgstr "Speler-Punkten:"
 
 #. TRANSLATORS: "Player x has y out of z points"
-#: addons/field_army.wad/init.lua:138
+#: addons/field_army.wad/init.lua:139
 msgid "%1% has %2% out of %3%"
 msgstr "%1% hett %2% vun %3%"
 
 #. TRANSLATORS: "Player x: y points"
-#: addons/field_army.wad/init.lua:166
+#: addons/field_army.wad/init.lua:167
 msgid "%1%: %2% point"
 msgid_plural "%1%: %2% points"
 msgstr[0] "%1%: %2% Punkt"
 msgstr[1] "%1%: %2% Punkten"
 
-#: addons/field_army.wad/init.lua:207
+#: addons/field_army.wad/init.lua:208
 msgid "%1% defeated."
 msgstr "%1% manntjet."
 
-#: addons/field_army.wad/init.lua:207
+#: addons/field_army.wad/init.lua:208
 msgid "%1% player remains."
 msgid_plural "%1% players remain."
 msgstr[0] "%1% Speler verblievt."

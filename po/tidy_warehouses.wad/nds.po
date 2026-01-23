@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Benedikt Straub <benedikt-straub@web.de>, 2025
+# Benedikt Straub <benedikt-straub@web.de>, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-04 03:10+0100\n"
+"POT-Creation-Date: 2026-01-23 03:14+0100\n"
 "PO-Revision-Date: 2025-01-03 15:43+0000\n"
-"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2026\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
 "nds/)\n"
 "Language: nds\n"
@@ -33,15 +33,16 @@ msgstr "Kraamhusen uprümen"
 
 #: addons/tidy_warehouses.wad/addon:3
 msgid ""
-"Start with a basic Headquarter. From time to time your workers do "
-"inventories. If there is more than 500 items in any of your warehouses, "
-"workers throw away one quarter of stock stored in such a warehouse and let "
-"you know, that they have cleaned your warehouse."
+"Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From "
+"time to time your workers do inventories. If there is more than 500 items in "
+"any of your warehouses, workers throw away one quarter of stock stored in "
+"such a warehouse and let you know, that they have cleaned your warehouse."
 msgstr ""
-"Begünn mit eenem slichten Raadhuus. Of un an doon diene Arbeiders "
-"Bestandsupnahmen. Wenn mehr as 500 Dingen in elkeen vun dienem Kraamhusen "
-"sünd, smieten de Arbeiders een Veerdel vun de Bestand in sülk eenem "
-"Kraamhuus weg un laten di weten, dat se dien Kraamhuus uprüümt hebben.."
+"Begünn mit 360 Waren, 50 Arbeiders un 40 Soldaten in dienem Raadhuus. Of un "
+"an doon diene Arbeiders Bestandsupnahmen. Wenn mehr as 500 Dingen in elkeen "
+"vun dienem Kraamhusen sünd, smieten de Arbeiders een Veerdel vun de Bestand "
+"in sülk eenem Kraamhuus weg un laten di weten, dat se dien Kraamhuus uprüümt "
+"hebben."
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/tidy_warehouses.wad/amazons.lua:15
@@ -50,35 +51,49 @@ msgstr ""
 #: addons/tidy_warehouses.wad/empire.lua:15
 #: addons/tidy_warehouses.wad/frisians.lua:15
 msgid ""
-"Start with a basic Headquarter. From time to time your workers do "
-"inventories. If there is more than 500 items in any of your warehouses, "
-"workers throw away one quarter of stock stored in such a warehouse."
+"Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From "
+"time to time your workers do inventories. If there is more than 500 items in "
+"any of your warehouses, workers throw away one quarter of stock stored in "
+"such a warehouse."
 msgstr ""
-"Begünn mit eenem slichten Raadhuus. Of un an doon diene Arbeiders "
-"Bestandsupnahmen. Wenn mehr as 500 Dingen in elkeen vun dienem Kraamhusen "
-"sünd, smieten de Arbeiders een Veerdel vun de Bestand in sülk eenem "
-"Kraamhuus weg."
+"Begünn mit 360 Waren, 50 Arbeiders un 40 Soldaten in dienem Raadhuus. Of un "
+"an doon diene Arbeiders Bestandsupnahmen. Wenn mehr as 500 Dingen in elkeen "
+"vun dienem Kraamhusen sünd, smieten de Arbeiders een Veerdel vun de Bestand "
+"in sülk eenem Kraamhuus weg."
 
-#: addons/tidy_warehouses.wad/amazons.lua:96
-#: addons/tidy_warehouses.wad/atlanteans.lua:99
-#: addons/tidy_warehouses.wad/barbarians.lua:90
-#: addons/tidy_warehouses.wad/empire.lua:96
-#: addons/tidy_warehouses.wad/frisians.lua:111
+#: addons/tidy_warehouses.wad/amazons.lua:99
+#: addons/tidy_warehouses.wad/atlanteans.lua:108
+#: addons/tidy_warehouses.wad/barbarians.lua:99
+#: addons/tidy_warehouses.wad/empire.lua:108
+#: addons/tidy_warehouses.wad/frisians.lua:113
 msgid "Warehouse cleaned!"
 msgstr "Kraamhuus uprüümt!"
 
-#: addons/tidy_warehouses.wad/amazons.lua:170
-#: addons/tidy_warehouses.wad/atlanteans.lua:176
-#: addons/tidy_warehouses.wad/barbarians.lua:163
-#: addons/tidy_warehouses.wad/empire.lua:173
-#: addons/tidy_warehouses.wad/frisians.lua:194
+#: addons/tidy_warehouses.wad/amazons.lua:136
+#: addons/tidy_warehouses.wad/atlanteans.lua:145
+#: addons/tidy_warehouses.wad/barbarians.lua:136
+#: addons/tidy_warehouses.wad/empire.lua:145
+#: addons/tidy_warehouses.wad/frisians.lua:150
 msgid "%1$s has been cleaned!"
 msgstr "%1$s is uprüümt worden!"
 
-#: addons/tidy_warehouses.wad/amazons.lua:171
-#: addons/tidy_warehouses.wad/atlanteans.lua:177
-#: addons/tidy_warehouses.wad/barbarians.lua:164
-#: addons/tidy_warehouses.wad/empire.lua:174
-#: addons/tidy_warehouses.wad/frisians.lua:195
-msgid "%1$d items have been removed, %2$d items left."
-msgstr "%1$d Dingen sünd wegdaan worden, %2$d Dingen blieven."
+#. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
+#: addons/tidy_warehouses.wad/amazons.lua:138
+#: addons/tidy_warehouses.wad/atlanteans.lua:147
+#: addons/tidy_warehouses.wad/barbarians.lua:138
+#: addons/tidy_warehouses.wad/empire.lua:147
+#: addons/tidy_warehouses.wad/frisians.lua:152
+msgid "%1$d item has been removed."
+msgid_plural "%1$d items have been removed."
+msgstr[0] "%1$d Ding is wegdaan worden."
+msgstr[1] "%1$d Dingen sünd wegdaan worden."
+
+#: addons/tidy_warehouses.wad/amazons.lua:138
+#: addons/tidy_warehouses.wad/atlanteans.lua:147
+#: addons/tidy_warehouses.wad/barbarians.lua:138
+#: addons/tidy_warehouses.wad/empire.lua:147
+#: addons/tidy_warehouses.wad/frisians.lua:152
+msgid "%2$d item lefts."
+msgid_plural "%2$d items left."
+msgstr[0] "%2$d Ding blievt."
+msgstr[1] "%2$d Dingen blieven."

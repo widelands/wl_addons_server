@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Ondřej Itřech, 2025
+# Ondřej Itřech, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 03:10+0100\n"
+"POT-Creation-Date: 2026-01-23 03:14+0100\n"
 "PO-Revision-Date: 2025-01-03 15:43+0000\n"
-"Last-Translator: Ondřej Itřech, 2025\n"
+"Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -33,15 +33,11 @@ msgstr "Uklizené sklady"
 
 #: addons/tidy_warehouses.wad/addon:3
 msgid ""
-"Start with a basic Headquarter. From time to time your workers do "
-"inventories. If there is more than 500 items in any of your warehouses, "
-"workers throw away one quarter of stock stored in such a warehouse and let "
-"you know, that they have cleaned your warehouse."
+"Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From "
+"time to time your workers do inventories. If there is more than 500 items in "
+"any of your warehouses, workers throw away one quarter of stock stored in "
+"such a warehouse and let you know, that they have cleaned your warehouse."
 msgstr ""
-"Zahaj hru s běžnou hlavní budovou. Tví pracovníci dělají čas od času "
-"inventury. Pokud je v některém z tvých skladů více než 500 položek, "
-"pracovníci vyhodí z daného skladu čtvrtinu skladových zásob a dají ti vědět, "
-"že uklidili tvůj skad."
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/tidy_warehouses.wad/amazons.lua:15
@@ -50,34 +46,49 @@ msgstr ""
 #: addons/tidy_warehouses.wad/empire.lua:15
 #: addons/tidy_warehouses.wad/frisians.lua:15
 msgid ""
-"Start with a basic Headquarter. From time to time your workers do "
-"inventories. If there is more than 500 items in any of your warehouses, "
-"workers throw away one quarter of stock stored in such a warehouse."
+"Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From "
+"time to time your workers do inventories. If there is more than 500 items in "
+"any of your warehouses, workers throw away one quarter of stock stored in "
+"such a warehouse."
 msgstr ""
-"Zahaj hru s běžnou hlavní budovou. Tví pracovníci dělají čas od času "
-"inventury. Pokud je v některém z tvých skladů více než 500 položek, "
-"pracovníci vyhodí z daného skladu čtvrtinu skladových zásob."
 
-#: addons/tidy_warehouses.wad/amazons.lua:96
-#: addons/tidy_warehouses.wad/atlanteans.lua:99
-#: addons/tidy_warehouses.wad/barbarians.lua:90
-#: addons/tidy_warehouses.wad/empire.lua:96
-#: addons/tidy_warehouses.wad/frisians.lua:111
+#: addons/tidy_warehouses.wad/amazons.lua:99
+#: addons/tidy_warehouses.wad/atlanteans.lua:108
+#: addons/tidy_warehouses.wad/barbarians.lua:99
+#: addons/tidy_warehouses.wad/empire.lua:108
+#: addons/tidy_warehouses.wad/frisians.lua:113
 msgid "Warehouse cleaned!"
 msgstr "Sklad je uklizen!"
 
-#: addons/tidy_warehouses.wad/amazons.lua:170
-#: addons/tidy_warehouses.wad/atlanteans.lua:176
-#: addons/tidy_warehouses.wad/barbarians.lua:163
-#: addons/tidy_warehouses.wad/empire.lua:173
-#: addons/tidy_warehouses.wad/frisians.lua:194
+#: addons/tidy_warehouses.wad/amazons.lua:136
+#: addons/tidy_warehouses.wad/atlanteans.lua:145
+#: addons/tidy_warehouses.wad/barbarians.lua:136
+#: addons/tidy_warehouses.wad/empire.lua:145
+#: addons/tidy_warehouses.wad/frisians.lua:150
 msgid "%1$s has been cleaned!"
 msgstr "%1$s byl uklizen!"
 
-#: addons/tidy_warehouses.wad/amazons.lua:171
-#: addons/tidy_warehouses.wad/atlanteans.lua:177
-#: addons/tidy_warehouses.wad/barbarians.lua:164
-#: addons/tidy_warehouses.wad/empire.lua:174
-#: addons/tidy_warehouses.wad/frisians.lua:195
-msgid "%1$d items have been removed, %2$d items left."
-msgstr "%1$d položek bylo odstraněno, %2$d položek ponecháno."
+#. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
+#: addons/tidy_warehouses.wad/amazons.lua:138
+#: addons/tidy_warehouses.wad/atlanteans.lua:147
+#: addons/tidy_warehouses.wad/barbarians.lua:138
+#: addons/tidy_warehouses.wad/empire.lua:147
+#: addons/tidy_warehouses.wad/frisians.lua:152
+msgid "%1$d item has been removed."
+msgid_plural "%1$d items have been removed."
+msgstr[0] "%1$d položka byla odstraněna."
+msgstr[1] "%1$d položky byly odstraněny."
+msgstr[2] "%1$d položeky bylo odstraněno."
+msgstr[3] "%1$d položek bylo odstraněno."
+
+#: addons/tidy_warehouses.wad/amazons.lua:138
+#: addons/tidy_warehouses.wad/atlanteans.lua:147
+#: addons/tidy_warehouses.wad/barbarians.lua:138
+#: addons/tidy_warehouses.wad/empire.lua:147
+#: addons/tidy_warehouses.wad/frisians.lua:152
+msgid "%2$d item lefts."
+msgid_plural "%2$d items left."
+msgstr[0] "%2$d  položka zbývá."
+msgstr[1] "%2$d  položky zbývají."
+msgstr[2] "%2$d  položky zbývá."
+msgstr[3] "%2$d  položek zbývá."

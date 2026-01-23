@@ -12,8 +12,7 @@ init = {
    -- TRANSLATORS: This is the name of a starting condition
    descname = _("Tidy Warehouses"),
    -- TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
-   tooltip = _("Start with a basic Headquarter. From time to time your workers do inventories. If there is more than 500 items in any of your warehouses, workers throw away one quarter of stock stored in such a warehouse."),
--- If there is more than 100 workers in a warehouse, one quarter of workers in such a warehouse will leave you. (not implemented)
+   tooltip = _("Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From time to time your workers do inventories. If there is more than 500 items in any of your warehouses, workers throw away one quarter of stock stored in such a warehouse."),
    func = function(player, shared_in_start)
 
       local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -27,60 +26,65 @@ init = {
       wares = {
          diamond = 7,
          iron_ore = 5,
-         quartz = 9,
-         granite = 50,
+         quartz = 8,
+         granite = 58,
          spider_silk = 9,
-         log = 20,
+         log = 42,
          coal = 12,
          gold = 4,
-         gold_thread = 6,
-         iron = 8,
-         planks = 45,
+         gold_thread = 4,
+         iron = 12,
+         planks = 33,
          spidercloth = 5,
-         blackroot = 5,
-         blackroot_flour = 12,
+         blackroot = 6,
+         blackroot_flour = 9,
          atlanteans_bread = 8,
-         corn = 5,
-         cornmeal = 12,
-         fish = 3,
-         meat = 3,
-         smoked_fish = 6,
-         smoked_meat = 6,
-         water = 12,
+         corn = 7,
+         cornmeal = 13,
+         fish = 6,
+         meat = 11,
+         smoked_fish = 3,
+         smoked_meat = 3,
+         water = 33,
          bread_paddle = 2,
          buckets = 2,
          fire_tongs = 2,
-         fishing_net = 4,
-         hammer = 11,
+         fishing_net = 2,
+         hammer = 10,
          hunting_bow = 1,
          milking_tongs = 2,
-         hook_pole = 2,
+         hook_pole = 1,
          pick = 8,
-         saw = 9,
+         saw = 11,
          scythe = 4,
-         shovel = 9,
-         tabard = 5,
-         trident_light = 5,
+         shovel = 10,
+         tabard = 1,
+         trident_light = 6,
       },
       workers = {
          atlanteans_armorsmith = 1,
          atlanteans_blackroot_farmer = 1,
+         atlanteans_horsebreeder = 1,
          atlanteans_builder = 10,
          atlanteans_charcoal_burner = 1,
-         atlanteans_carrier = 40,
+         atlanteans_carrier = 30,
          atlanteans_fishbreeder = 1,
+         atlanteans_fisher = 1,
+         atlanteans_hunter = 1,
+         atlanteans_miller = 2,
          atlanteans_geologist = 4,
          atlanteans_miner = 4,
          atlanteans_sawyer = 1,
+         atlanteans_weaver = 1,
          atlanteans_stonecutter = 2,
          atlanteans_toolsmith = 2,
          atlanteans_trainer = 3,
          atlanteans_weaponsmith = 1,
          atlanteans_woodcutter = 3,
-         atlanteans_horse = 5,
+         atlanteans_horse = 10,
       },
       soldiers = {
-         [{0,0,0,0}] = 35,
+         [{0,0,0,0}] = 40,
       }
       })
 
@@ -90,6 +94,11 @@ init = {
          if (building.type_name == "warehouse") then
             table.insert(warehouse_types, building.name)
          end
+      end
+      -- Get all ware sorts
+      local ware_types = {}
+      for i, ware in ipairs(wl.Game():get_tribe_description(player.tribe_name).wares) do
+         table.insert(ware_types, ware.name)
       end
 
       -- idx index of a warehouse used to 'rotate' warehouses
@@ -117,68 +126,31 @@ init = {
             end
 
             local wh = warehouses[idx]
-            invent_wh = wh:get_wares("log") + wh:get_wares("granite") + wh:get_wares("planks") + wh:get_wares("spider_silk") + wh:get_wares("spidercloth") + wh:get_wares("fish") + wh:get_wares("smoked_fish") + wh:get_wares("meat") + wh:get_wares("smoked_meat") + wh:get_wares("water") + wh:get_wares("corn") + wh:get_wares("cornmeal") + wh:get_wares("blackroot") + wh:get_wares("blackroot_flour") + wh:get_wares("atlanteans_bread") + wh:get_wares("quartz") + wh:get_wares("diamond") + wh:get_wares("coal") + wh:get_wares("iron_ore") + wh:get_wares("iron") + wh:get_wares("gold_ore") + wh:get_wares("gold") + wh:get_wares("scythe") + wh:get_wares("pick") + wh:get_wares("saw") + wh:get_wares("shovel") + wh:get_wares("hammer") + wh:get_wares("milking_tongs") + wh:get_wares("fishing_net") + wh:get_wares("buckets") + wh:get_wares("hunting_bow") + wh:get_wares("hook_pole") + wh:get_wares("bread_paddle") + wh:get_wares("fire_tongs") + wh:get_wares("trident_light") + wh:get_wares("trident_long") + wh:get_wares("trident_steel") + wh:get_wares("trident_double") + wh:get_wares("trident_heavy_double") + wh:get_wares("shield_steel") + wh:get_wares("shield_advanced") + wh:get_wares("tabard") + wh:get_wares("gold_thread") + wh:get_wares("tabard_golden")
-
-            if invent_wh > 500 then
-               wh:set_wares("log", math.ceil(wh:get_wares("log") * 3 / 4))
-               wh:set_wares("granite", math.ceil(wh:get_wares("granite") * 3 / 4))
-               wh:set_wares("planks", math.ceil(wh:get_wares("planks") * 3 / 4))
-               wh:set_wares("spider_silk", math.ceil(wh:get_wares("spider_silk") * 3 / 4))
-               wh:set_wares("spidercloth", math.ceil(wh:get_wares("spidercloth") * 3 / 4))
-               wh:set_wares("fish", math.ceil(wh:get_wares("fish") * 3 / 4))
-               wh:set_wares("smoked_fish", math.ceil(wh:get_wares("smoked_fish") * 3 / 4))
-               wh:set_wares("meat", math.ceil(wh:get_wares("meat") * 3 / 4))
-               wh:set_wares("smoked_meat", math.ceil(wh:get_wares("smoked_meat") * 3 / 4))
-               wh:set_wares("water", math.ceil(wh:get_wares("water") * 3 / 4))
-               wh:set_wares("corn", math.ceil(wh:get_wares("corn") * 3 / 4))
-               wh:set_wares("cornmeal", math.ceil(wh:get_wares("cornmeal") * 3 / 4))
-               wh:set_wares("blackroot", math.ceil(wh:get_wares("blackroot") * 3 / 4))
-               wh:set_wares("blackroot_flour", math.ceil(wh:get_wares("blackroot_flour") * 3 / 4))
-               wh:set_wares("atlanteans_bread", math.ceil(wh:get_wares("atlanteans_bread") * 3 / 4))
-               wh:set_wares("quartz", math.ceil(wh:get_wares("quartz") * 3 / 4))
-               wh:set_wares("diamond", math.ceil(wh:get_wares("diamond") * 3 / 4))
-               wh:set_wares("coal", math.ceil(wh:get_wares("coal") * 3 / 4))
-               wh:set_wares("iron_ore", math.ceil(wh:get_wares("iron_ore") * 3 / 4))
-               wh:set_wares("iron", math.ceil(wh:get_wares("iron") * 3 / 4))
-               wh:set_wares("gold_ore", math.ceil(wh:get_wares("gold_ore") * 3 / 4))
-               wh:set_wares("gold", math.ceil(wh:get_wares("gold") * 3 / 4))
-               wh:set_wares("scythe", math.ceil(wh:get_wares("scythe") * 3 / 4))
-               wh:set_wares("pick", math.ceil(wh:get_wares("pick") * 3 / 4))
-               wh:set_wares("saw", math.ceil(wh:get_wares("saw") * 3 / 4))
-               wh:set_wares("shovel", math.ceil(wh:get_wares("shovel") * 3 / 4))
-               wh:set_wares("hammer", math.ceil(wh:get_wares("hammer") * 3 / 4))
-               wh:set_wares("milking_tongs", math.ceil(wh:get_wares("milking_tongs") * 3 / 4))
-               wh:set_wares("fishing_net", math.ceil(wh:get_wares("fishing_net") * 3 / 4))
-               wh:set_wares("buckets", math.ceil(wh:get_wares("buckets") * 3 / 4))
-               wh:set_wares("hunting_bow", math.ceil(wh:get_wares("hunting_bow") * 3 / 4))
-               wh:set_wares("hook_pole", math.ceil(wh:get_wares("hook_pole") * 3 / 4))
-               wh:set_wares("bread_paddle", math.ceil(wh:get_wares("bread_paddle") * 3 / 4))
-               wh:set_wares("fire_tongs", math.ceil(wh:get_wares("fire_tongs") * 3 / 4))
-               wh:set_wares("trident_light", math.ceil(wh:get_wares("trident_light") * 3 / 4))
-               wh:set_wares("trident_long", math.ceil(wh:get_wares("trident_long") * 3 / 4))
-               wh:set_wares("trident_steel", math.ceil(wh:get_wares("trident_steel") * 3 / 4))
-               wh:set_wares("trident_double", math.ceil(wh:get_wares("trident_double") * 3 / 4))
-               wh:set_wares("trident_heavy_double", math.ceil(wh:get_wares("trident_heavy_double") * 3 / 4))
-               wh:set_wares("shield_steel", math.ceil(wh:get_wares("shield_steel") * 3 / 4))
-               wh:set_wares("shield_advanced", math.ceil(wh:get_wares("shield_advanced") * 3 / 4))
-               wh:set_wares("tabard", math.ceil(wh:get_wares("tabard") * 3 / 4))
-               wh:set_wares("gold_thread", math.ceil(wh:get_wares("gold_thread") * 3 / 4))
-               wh:set_wares("tabard_golden", math.ceil(wh:get_wares("tabard_golden") * 3 / 4))
+            for i, ware_type in ipairs(ware_types) do
+               invent_wh = invent_wh + wh:get_wares(ware_type)
             end
 
-            removed_wh = invent_wh - (wh:get_wares("log") + wh:get_wares("granite") + wh:get_wares("planks") + wh:get_wares("spider_silk") + wh:get_wares("spidercloth") + wh:get_wares("fish") + wh:get_wares("smoked_fish") + wh:get_wares("meat") + wh:get_wares("smoked_meat") + wh:get_wares("water") + wh:get_wares("corn") + wh:get_wares("cornmeal") + wh:get_wares("blackroot") + wh:get_wares("blackroot_flour") + wh:get_wares("atlanteans_bread") + wh:get_wares("quartz") + wh:get_wares("diamond") + wh:get_wares("coal") + wh:get_wares("iron_ore") + wh:get_wares("iron") + wh:get_wares("gold_ore") + wh:get_wares("gold") + wh:get_wares("scythe") + wh:get_wares("pick") + wh:get_wares("saw") + wh:get_wares("shovel") + wh:get_wares("hammer") + wh:get_wares("milking_tongs") + wh:get_wares("fishing_net") + wh:get_wares("buckets") + wh:get_wares("hunting_bow") + wh:get_wares("hook_pole") + wh:get_wares("bread_paddle") + wh:get_wares("fire_tongs") + wh:get_wares("trident_light") + wh:get_wares("trident_long") + wh:get_wares("trident_steel") + wh:get_wares("trident_double") + wh:get_wares("trident_heavy_double") + wh:get_wares("shield_steel") + wh:get_wares("shield_advanced") + wh:get_wares("tabard") + wh:get_wares("gold_thread") + wh:get_wares("tabard_golden"))
-
-            invent_wh = invent_wh - removed_wh
+            if invent_wh > 500 then
+               for i, ware_type in ipairs(ware_types) do
+                  wh:set_wares(ware_type, math.ceil(wh:get_wares(ware_type) * 3 / 4))
+                  removed_wh = removed_wh + wh:get_wares(ware_type)
+               end
+               removed_wh = invent_wh - removed_wh
+               invent_wh = invent_wh - removed_wh
+            end
 
             if (removed_wh > 50) then
                print (player.number..": removed "..removed_wh.." items from warehouse "..idx.." of "..#warehouses.." (tidy warehouse)")
 
                heading = _("%1$s has been cleaned!"):bformat(wh.warehousename)
-               text = _("%1$d items have been removed, %2$d items left."):bformat(removed_wh, invent_wh)
+               -- TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
+               text = _(join_sentences(ngettext("%1$d item has been removed.", "%1$d items have been removed.", removed_wh), ngettext("%2$d item lefts.", "%2$d items left.", invent_wh))):bformat(removed_wh, invent_wh)
                send_to_inbox(player, title, text, {field = wh.fields[1], popup=false, icon = wh.descr.icon_name, heading = heading})
 
             end
 
+            invent_wh = 0
+            removed_wh = 0
             idx = idx + 1
 
       end
@@ -187,4 +159,3 @@ end
 }
 pop_textdomain()
 return init
-
