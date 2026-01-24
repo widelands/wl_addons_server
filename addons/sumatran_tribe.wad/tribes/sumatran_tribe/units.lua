@@ -148,13 +148,13 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "stone",
+                name = "granite",
                 default_target_quantity = 30,
                 preciousness = 4,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for a Sumatran ware: Stone
-                        pgettext("sumatran_ware", "Stone is a basic building material. You also need it for production of diamonds and whetstones."),
+                        -- TRANSLATORS: Helptext for a Sumatran ware: Granite
+                        pgettext("sumatran_ware", "Granite is a basic building material. You also need it for production of diamonds and whetstones."),
                     }
                 }
             },
@@ -544,7 +544,7 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "sumatran_spear",
+                name = "spear",
                 default_target_quantity = 10,
                 preciousness = 5,
                 helptexts = {
@@ -554,7 +554,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "crocodile_jacket",
-                default_target_quantity = 10,
+                default_target_quantity = 5,
                 preciousness = 5,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran ware: Crocodile Jacket
@@ -827,7 +827,7 @@ wl.Descriptions():new_tribe {
             -- 5. Training, Clothing
             {
                 name = "sumatran_soldier",
-                default_target_quantity = 40,
+                default_target_quantity = 10,
                 preciousness = 200,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Sumatran worker: Warrior
@@ -1134,7 +1134,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 1
                     _("Stone is a basic building material and can be dug up by a stone mine. You will also get some raw diamonds from the mine."),
                     -- TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
-                    _("There is only a little bit of stone and diamonds here.")
+                    _("There is only a little bit of granite and diamonds here.")
                 }
             }
         },
@@ -1178,7 +1178,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 1
                     _("Stone is a basic building material and can be dug up by a stone mine. You will also get some raw diamonds from the mine."),
                     -- TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
-                    _("There is a lot of stone and diamonds here.")
+                    _("There is a lot of granite and diamonds here.")
                 }
             }
         },
@@ -1280,7 +1280,7 @@ wl.Descriptions():new_tribe {
                 note = pgettext("sumatran_building", "The stonecutter needs rocks to cut within the work area."),
                 performance = {
                    -- TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 1
-                   pgettext("sumatran_building", "The stonecutter can produce one block of stone between %1$s and %2$s on average, depending on how far he has to walk."):bformat(format_seconds(44), format_minutes_seconds(1, 9)),
+                   pgettext("sumatran_building", "The stonecutter can produce one block of granite between %1$s and %2$s on average, depending on how far he has to walk."):bformat(format_seconds(44), format_minutes_seconds(1, 9)),
                    -- TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 2
                    pgettext("sumatran_building", "In case of slopes or obstacles in the way, the time is increased.")
                 }
@@ -1356,8 +1356,8 @@ wl.Descriptions():new_tribe {
                    pgettext("sumatran_building", "While playing on White Summer terrains, flowering meadows can be transformed into normal meadows and used for growing palm trees, which are hard to grow on clearings.")
                 },
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Thermal springs, the first placeholder is "145 min.", the next three "54"
-                note = pgettext("sumatran_building", "Thermal springs need maintenance. That costs you logs, stone and water."),
-                performance = pgettext("sumatran_building", "The building needs approximately %1% to improve fertility of every field in its working area. By doing that it will consume approximately %2% logs, %3% buckets of water and %4% blocks of stone."):bformat(format_minutes(145), 54, 54, 54)
+                note = pgettext("sumatran_building", "Thermal springs need maintenance. That costs you logs, granite and water."),
+                performance = pgettext("sumatran_building", "The building needs approximately %1% to improve fertility of every field in its working area. By doing that it will consume approximately %2% logs, %3% buckets of water and %4% blocks of granite."):bformat(format_minutes(145), 54, 54, 54)
             }
         },
         {
@@ -1536,13 +1536,13 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "sumatran_jungle_marsh",
+            name = "sumatran_tropical_swamp",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Sumatran production site: Jungle Marsh
-                purpose = pgettext("sumatran_building", "Home of tropical animals. Source of meat and crocodile skin for your hunters."),
-                -- TRANSLATORS: Note helptext for a Sumatran production site: Jungle Marsh
-                note = pgettext("sumatran_building", "If animals don’t leave a marsh, you have probably built too many roads around the marsh. Roads can block the way for animals to leave. Out of 4 animals leaving the marsh, there is one crocodile."),
-                performance = pgettext("sumatran_building", "There is one animal leaving the marsh in %1% on average."):bformat(format_seconds(43))
+                -- TRANSLATORS: Purpose helptext for a Sumatran production site: Tropical Swamp
+                purpose = pgettext("sumatran_building", "Home to tropical animals. Source of meat and crocodile skin for your hunters."),
+                -- TRANSLATORS: Note helptext for a Sumatran production site: Tropical Swamp
+                note = pgettext("sumatran_building", "If animals don’t leave a swamp, you have probably built too many roads around the swamp. Roads can block the way for animals to leave. Out of 4 animals leaving the swamp, there is one crocodile. When economy doesn’t need meat, the ratio is 2 animals to one crocodile."),
+                performance = pgettext("sumatran_building", "If your economy needs meat, there is one animal leaving the swamp in %1% on average. Otherwise it takes %2%."):bformat(format_seconds(43), format_seconds(53))
             }
         },
 
@@ -1601,20 +1601,20 @@ wl.Descriptions():new_tribe {
             name = "sumatran_stone_mine",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
-                purpose = pgettext("sumatran_building", "Digs raw diamonds and stone out of the ground in mountain terrain."),
+                purpose = pgettext("sumatran_building", "Digs raw diamonds and granite out of the ground in mountain terrain."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Stone Mine
                 note = pgettext("sumatran_building", "In comparison to a deep mine, production of this mine is quicker but more expensive. The mine has two programs. When economy doesn’t need raw diamonds, the miners don’t bother by searching them."),
-                performance = pgettext("sumatran_building", "The miner needs %1% on average to produce one piece of stone or raw diamond."):bformat(format_seconds(25))
+                performance = pgettext("sumatran_building", "The miner needs %1% on average to produce one piece of granite or raw diamond."):bformat(format_seconds(25))
             }
         },
         {
             name = "sumatran_deep_stone_mine",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
-                purpose = pgettext("sumatran_building", "Digs raw diamonds and stone out of the ground in mountain terrain."),
+                purpose = pgettext("sumatran_building", "Digs raw diamonds and granite out of the ground in mountain terrain."),
                 -- TRANSLATORS: Note helptext for a Sumatran production site: Deep Stone Mine
                 note = pgettext("sumatran_building", "In comparison to a basic mine, production of this mine is slower. The mine has two programs. When economy doesn’t need raw diamonds, the miners don’t bother by searching them."),
-                performance = pgettext("sumatran_building", "The miners need %1% on average to produce one piece of stone or raw diamond."):bformat(format_seconds(35))
+                performance = pgettext("sumatran_building", "The miners need %1% on average to produce one piece of granite or raw diamond."):bformat(format_seconds(35))
             }
         },
 
@@ -1642,7 +1642,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran training site: Hunting Camp
                 purpose = pgettext("sumatran_building", "Trains warriors in ‘Attack’."),
                 -- TRANSLATORS: Note helptext for a Sumatran training site: Hunting Camp
-                note = pgettext("sumatran_building", "The warriors improve their attack abilities by hunting crocodiles. Make sure there is enough jungle marshes around the building."),
+                note = pgettext("sumatran_building", "The warriors improve their attack abilities by hunting crocodiles. Make sure there is enough tropical swamps around the building."),
                 performance = {
                     -- TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 1
                     pgettext("sumatran_building", "If all needed wares are delivered in time, a hunting camp needs between %1$s and %2$s to train one soldier one level in attack, depending on how far the hunter has to walk."):bformat(format_seconds(25), format_minutes_seconds(1, 19)),
@@ -1697,7 +1697,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for a Sumatran military site: Fortified Tower
                 purpose = pgettext("sumatran_building", "Garrisons warriors to expand your territory."),
                 -- TRANSLATORS: Note helptext for a Sumatran military site: Fortified Tower
-                note = pgettext("sumatran_building", "This building can be built by enhancing a watchtower or big sentry. Enhancement of big sentry costs you one log and one reed more but you save one block of stone instead.")
+                note = pgettext("sumatran_building", "This building can be built by enhancing a watchtower or big sentry. Enhancement of big sentry costs you one log and one reed more but you save one block of granite instead.")
             }
         },
         {
@@ -1854,7 +1854,7 @@ wl.Descriptions():new_tribe {
       building_materials_tertiary = "sumatran_reed_yard",
       hunter = "sumatran_hunters_house",
       fisher = "sumatran_hunters_tent",
-      fish_meat_replenisher = "sumatran_jungle_marsh",
+      fish_meat_replenisher = "sumatran_tropical_swamp",
       well = "sumatran_water_carriers_hut",
       farm_primary = "sumatran_cassava_fields",
       farm_secondary = "sumatran_cassava_plantation",

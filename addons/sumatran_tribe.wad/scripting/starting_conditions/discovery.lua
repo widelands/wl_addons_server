@@ -29,7 +29,7 @@ init = {
       {
          log = 4,
          palmleaves = 3,
-         stone = 1,
+         granite = 1,
          diamond = 1,
          copper = 1,
          iron = 1,

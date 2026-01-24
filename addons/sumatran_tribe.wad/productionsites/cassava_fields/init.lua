@@ -12,25 +12,25 @@ wl.Descriptions():new_productionsite_type {
    enhancement = {
       name = "sumatran_cassava_plantation",
       enhancement_cost = {
-         stone = 1,
+         granite = 1,
          tropicalwood = 1,
          palmleaves = 1,
       },
       enhancement_return_on_dismantle = {
-         stone = 1,
+         granite = 1,
          tropicalwood = 1
       }
    },
 
    buildcost = {
       log = 1,
-      stone = 2,
+      granite = 2,
       tropicalwood = 1,
       palmleaves = 1,
       reed = 2
    },
    return_on_dismantle = {
-      stone = 1,
+      granite = 1,
       reed = 1
    },
 

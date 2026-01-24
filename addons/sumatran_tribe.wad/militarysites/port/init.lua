@@ -19,7 +19,7 @@ wl.Descriptions():new_warehouse_type {
     map_check = {"seafaring"},
     
     buildcost = {
-        stone = 5,
+        granite = 5,
         tropicalwood = 4,
         reed = 3,
         cloth = 3,
@@ -28,7 +28,7 @@ wl.Descriptions():new_warehouse_type {
         gold = 2
     },
     return_on_dismantle = {
-        stone = 3,
+        granite = 3,
         tropicalwood = 2,
         cloth = 2,
         diamond = 1,

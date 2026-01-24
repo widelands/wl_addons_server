@@ -51,7 +51,7 @@ init = {
       player:send_to_inbox(_("Be careful"), _("You have only one iron for each tool you will need to start your economy. Make sure no unneeded tool is created."))
       pop_textdomain()
 
-      check_trees_rocks_poor_hamlet(player, sf, "sumatran_warehouse", {stone = 1}, {log = 4})
+      check_trees_rocks_poor_hamlet(player, sf, "sumatran_warehouse", {granite = 1}, {log = 4})
    end
 }
 pop_textdomain()

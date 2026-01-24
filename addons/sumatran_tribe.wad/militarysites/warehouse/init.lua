@@ -10,14 +10,14 @@ wl.Descriptions():new_warehouse_type {
    size = "big",
 
     buildcost = {
-        stone = 3,
+        granite = 3,
         tropicalwood = 3,
         cloth = 2,
         diamond = 3,
         reed = 1
     },
     return_on_dismantle = {
-        stone = 2,
+        granite = 2,
         tropicalwood = 1,
         cloth = 1,
         diamond = 2,

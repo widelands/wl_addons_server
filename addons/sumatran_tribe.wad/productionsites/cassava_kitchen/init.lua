@@ -13,7 +13,7 @@ wl.Descriptions():new_productionsite_type {
       name = "sumatran_kitchen",
       enhancement_cost = {
          log = 1,
-         stone = 1,
+         granite = 1,
          tropicalwood = 1,
          palmleaves = 1
       },
@@ -25,13 +25,13 @@ wl.Descriptions():new_productionsite_type {
 
    buildcost = {
       log = 1,
-      stone = 1,
+      granite = 1,
       tropicalwood = 1,
       palmleaves = 1,
       reed = 2
    },
    return_on_dismantle = {
-      stone = 1,
+      granite = 1,
       reed = 1
    },
 

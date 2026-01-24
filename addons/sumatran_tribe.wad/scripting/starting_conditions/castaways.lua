@@ -28,7 +28,6 @@ init = {
    launch_expeditions(player, {
       {
          log = 3,
---         diamond = 1,
          sumatran_woodcutter = 1,
          sumatran_forester = 1,
          sumatran_leaf_gatherer = 1,

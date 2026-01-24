@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-13 03:14+0100\n"
+"POT-Creation-Date: 2026-01-24 03:14+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -734,12 +734,16 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Natuurlijk is het jagen op krokodillen een goed idee. De efficiëntie van de "
+"jacht zal waarschijnlijk niet veel toenemen, maar de productiviteit kan wel "
+"stijgen als er niet genoeg dieren in de nabijgelegen bossen zijn."
 
 #. TRANSLATORS: Lore author helptext for a Gallic production site: Crocodile Hunter’s Hut
 #: addons/gauls.wad/postload.lua:49
 msgctxt "gauls_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
 msgstr ""
+"Jager pleit voor het idee om een huis voor krokodillenjagers te bouwen."
 
 #: addons/gauls.wad/postload.lua:50
 msgid ""
@@ -756,6 +760,8 @@ msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
+"Dit gebouw is alleen nuttig als je een tegenstander uit Sumatra hebt en er "
+"krokodillen vanuit zijn grondgebied naar jouw grondgebied komen."
 
 #. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #: addons/gauls.wad/postload.lua:55
@@ -764,6 +770,8 @@ msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
+"Het gebouw heeft twee verschillende werkruimtes: de kleinere voor de jacht "
+"op krokodillen en de grotere voor de jacht op wild."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
 #: addons/gauls.wad/postload.lua:59
@@ -774,6 +782,10 @@ msgid ""
 "building operates as a basic hunter's hut and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Als er voldoende krokodillen en andere dieren zijn, hebben de jagers "
+"gemiddeld %1$s nodig om één stuk vlees te produceren. Als er geen "
+"krokodillen zijn, functioneert het gebouw als een eenvoudige jagershut en "
+"hebben de jagers gemiddeld %2$s nodig om één stuk vlees te produceren."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
@@ -953,7 +965,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:8
 msgctxt "gauls_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr ""
+msgstr "Hut van de krokodillenjager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:47
@@ -984,6 +996,8 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"De jager die vanuit dit huis werkt, vindt geen krokodillen in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/druids_house/init.lua:8
@@ -1781,7 +1795,7 @@ msgstr "Geen krijger gevonden voor dit trainingsniveau!"
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:8
 msgctxt "gauls_building"
 msgid "Arena"
-msgstr ""
+msgstr "Arena"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:92
@@ -2203,7 +2217,7 @@ msgstr "Ze worden door de zagerij gemaakt van boomstammen."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:122
 msgctxt "gauls_ware"
 msgid "They are also used by the weapon smithy."
-msgstr ""
+msgstr "Ze worden ook gebruikt door de wapensmederij."
 
 #. TRANSLATORS: Help text for a Gallic ware: Clay
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:133
@@ -2372,6 +2386,8 @@ msgid ""
 "Fresh meat is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"Vers vlees wordt gerookt in de rokerij en toegevoegd aan maaltijden voor je "
+"krijgers en mijnwerkers."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
@@ -2442,6 +2458,8 @@ msgstr ""
 msgctxt "gauls_ware"
 msgid "Meal is also consumed at the training sites (arenas, training camps)."
 msgstr ""
+"Maaltijden worden ook genuttigd op de trainingslocaties (arena's, "
+"trainingskampen)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:372
@@ -2714,6 +2732,8 @@ msgstr ""
 msgctxt "gauls_ware"
 msgid "It is consumed at advanced mines and at the training sites (arenas)."
 msgstr ""
+"Het wordt geconsumeerd in geavanceerde mijnen en op de trainingslocaties "
+"(arena's)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Spear
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:647
@@ -2776,6 +2796,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 0 to "
 "level 1."
 msgstr ""
+"Dit basis pantser wordt geproduceerd in de pantsersmederij en gebruikt in de "
+"arena – samen met maaltijd en tuniek – om krijgers te trainen van "
+"verdedigingsniveau 0 tot niveau 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:700
@@ -2785,6 +2808,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 1 to "
 "level 2."
 msgstr ""
+"Dit geavanceerde pantser wordt geproduceerd in de pantsersmederij en "
+"gebruikt in de arena – samen met maaltijd en tuniek – om krijgers te trainen "
+"van verdedigingsniveau 1 naar niveau 2."
 
 #. TRANSLATORS: Help text for a Gallic ware: Golden Helmet
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:709
@@ -2793,6 +2819,9 @@ msgid ""
 "This helmet is produced in the armor smithy and used at the arena – together "
 "with meal – to train warriors from defense level 2 to level 3."
 msgstr ""
+"Deze helm wordt geproduceerd in de wapensmidse en gebruikt in de arena – "
+"samen met maaltijden – om krijgers te trainen van verdedigingsniveau 2 naar "
+"niveau 3."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wooden Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:718
@@ -2802,6 +2831,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 0 to "
 "level 1."
 msgstr ""
+"Dit basisschild wordt in de werkplaats geproduceerd en gebruikt in de arena "
+"– samen met maaltijden en drankjes – om krijgers te trainen van "
+"ontwijkingsniveau 0 tot niveau 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:727
@@ -2811,6 +2843,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 1 to "
 "level 2."
 msgstr ""
+"Dit geavanceerde schild wordt geproduceerd in de wapensmidse en gebruikt in "
+"de arena – samen met maaltijden en drankjes – om krijgers te trainen van "
+"ontwijkingsniveau 1 naar niveau 2."
 
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
@@ -3970,6 +4005,9 @@ msgid ""
 "Production of meat stops when economy doesn’t need meat or smoked meat, "
 "production of both milk and meat stops when economy doesn’t need milk."
 msgstr ""
+"De productie van vlees stopt wanneer de economie geen behoefte heeft aan "
+"vlees of gerookt vlees, en de productie van zowel melk als vlees stopt "
+"wanneer de economie geen behoefte heeft aan melk."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1810
@@ -3981,6 +4019,11 @@ msgid ""
 "milk and one piece of meat takes %3$s and production of 2 jugs of milk only "
 "takes %4$s."
 msgstr ""
+"Als dit gebouw volledig bevoorraad is en de economie alle producten nodig "
+"heeft, kost het fokken van twee ossen, de productie van twee kannen melk en "
+"één stuk vlees %1$s. De productie van één os kost slechts %2$s, de productie "
+"van twee kannen melk en één stuk vlees kost %3$s en de productie van twee "
+"kannen melk kost slechts %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1817
@@ -4043,6 +4086,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners need %1% to produce two pieces of ore and one block of granite."
 msgstr ""
+"De mijnwerkers hebben %1% nodig om twee stukken erts en één blok graniet te "
+"produceren."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1875
@@ -4252,7 +4297,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2004
 msgctxt "gauls_building"
 msgid "This building can be built by enhancing a sentry."
-msgstr ""
+msgstr "Dit gebouw kan worden gebouwd door een wachtpost te verbeteren."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Ferry Yard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2031

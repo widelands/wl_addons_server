@@ -23,12 +23,12 @@ wl.Descriptions():new_productionsite_type {
 
    buildcost = {
       log = 1,
-      stone = 3,
+      granite = 3,
       palmleaves = 1,
       reed = 2
    },
    return_on_dismantle = {
-      stone = 2,
+      granite = 2,
       reed = 1
    },
 

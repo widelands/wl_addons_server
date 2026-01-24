@@ -21,7 +21,7 @@ tips = {
         seconds = 8
     },
     {
-        text = _"Hunting camps need jungle marshes nearby because warriors hunt crocodiles to improve their attack ability.",
+        text = _"Hunting camps need tropical swamps nearby because warriors hunt crocodiles to improve their attack ability.",
         seconds = 7
     },
     {

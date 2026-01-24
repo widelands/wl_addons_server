@@ -13,11 +13,11 @@ wl.Descriptions():new_militarysite_type {
     
     buildcost = {
         log = 1,
-        stone = 1,
+        granite = 1,
         palmleaves = 1
     },
     return_on_dismantle = {
-        stone = 1
+        granite = 1
     },
 
     animation_directory = dirname,

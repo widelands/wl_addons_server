@@ -24,7 +24,7 @@ init = {
          wares = {
             log = 60,
             reed = 30,
-            stone = 40,
+            granite = 40,
             water = 5,
             tropicalwood = 20,
             sandedwood = 5,
@@ -45,7 +45,7 @@ init = {
             gold = 4,
             diamond_raw = 3,
             diamond = 5,
-            sumatran_spear = 4,
+            spear = 4,
             pick = 4,
             felling_ax = 3,
             shovel = 6,
@@ -92,9 +92,9 @@ init = {
          inputs = { iron = 5, sandedwood = 5 }
       })
       place_building_in_region(player, "sumatran_workshop_basic", sf:region(10), {
-         inputs = { log = 8, diamond_raw = 2, stone = 4 }
+         inputs = { log = 8, diamond_raw = 2, granite = 4 }
       })
-      place_building_in_region(player, "sumatran_jungle_marsh", sf:region(13))
+      place_building_in_region(player, "sumatran_tropical_swamp", sf:region(13))
       place_building_in_region(player, "sumatran_hunters_house", sf:region(8))
       place_building_in_region(player, "sumatran_fortified_tower", sf:region(13), {
          soldiers = {
@@ -152,8 +152,8 @@ init = {
             wh:set_wares("palmleaves", wh:get_wares("palmleaves") + 6)
             added = added + 1
          end
-         if player:get_wares("stone") < 30 + #warehouses * 10 then
-            wh:set_wares("stone", wh:get_wares("stone") +  10 + #warehouses * 2)
+         if player:get_wares("granite") < 30 + #warehouses * 10 then
+            wh:set_wares("granite", wh:get_wares("granite") +  10 + #warehouses * 2)
             added = added + 1
          end
          if player:get_wares("coal") < 40 + #warehouses * 10 then

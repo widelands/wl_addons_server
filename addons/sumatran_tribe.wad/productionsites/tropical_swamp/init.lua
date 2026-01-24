@@ -3,19 +3,19 @@ push_textdomain("sumatran_tribe.wad", true)
 local dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-   name = "sumatran_jungle_marsh",
+   name = "sumatran_tropical_swamp",
    -- TRANSLATORS: This is a building name used in lists of buildings
-   descname = pgettext("sumatran_building", "Jungle Marsh"),
+   descname = pgettext("sumatran_building", "Tropical Swamp"),
    icon = dirname .. "menu.png",
    size = "big",
 
    buildcost = {
-      stone = 4,
+      granite = 4,
       tropicalwood = 4,
       reed = 2
    },
    return_on_dismantle = {
-      stone = 2,
+      granite = 2,
       tropicalwood = 1
    },
 
@@ -50,21 +50,29 @@ wl.Descriptions():new_productionsite_type {
          descname = _("working"),
          actions = {
             "callworker=release",
-            "sleep=duration:43s",
+            "sleep=duration:54s",
             "callworker=release_crocodile",
-            "sleep=duration:43s",
+            "sleep=duration:54s",
             "callworker=release",
-            "sleep=duration:43s",
+            "sleep=duration:54s",
+            "call=release",
+         },
+      },
+      release = {
+         -- TRANSLATORS: Completed/Skipped/Did not start giving home to more animals because ...
+         descname = _("giving home to more animals"),
+         actions = {
+            "return=skipped unless economy needs meat",
             "callworker=release",
-            "sleep=duration:43s"
-         }
+            "sleep=duration:10s",
+         },
       },
    },
    out_of_resource_notification = {
       -- Translators: Short for "Out of ..." for a resource
       title = _("No Space"),
-      heading = _("Animals do not leave this marsh"),
-      message = pgettext ("sumatran_building", "There is not enough space around this marsh for animals to leave."),
+      heading = _("Animals do not leave this swamp"),
+      message = pgettext ("sumatran_building", "There is not enough space around this swamp for animals to leave."),
       productivity_threshold = 10
    },
 }

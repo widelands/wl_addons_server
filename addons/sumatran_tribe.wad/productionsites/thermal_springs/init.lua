@@ -10,11 +10,11 @@ wl.Descriptions():new_productionsite_type {
    size = "small",
 
    buildcost = {
-      stone = 4,
+      granite = 4,
       tropicalwood = 2,
    },
    return_on_dismantle = {
-      stone = 2,
+      granite = 2,
       tropicalwood = 1,
    },
 
@@ -49,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
 
    inputs = {
       { name = "log", amount = 4 },
-      { name = "stone", amount = 4 },
+      { name = "granite", amount = 4 },
       { name = "water", amount = 4 },
    },
 
@@ -59,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
          descname = _("enhancing the fertility of land"),
          actions = {
             "callworker=check_spring",
-            "consume=log stone water",
+            "consume=log granite water",
             "call=terraform",
             "call=terraform",
             "call=terraform",

@@ -11,7 +11,7 @@ wl.Descriptions():new_productionsite_type {
    map_check = {"waterways"},
 
    buildcost = {
-      stone = 2,
+      granite = 2,
       tropicalwood = 2,
       palmleaves = 1,
       reed = 1,
@@ -20,7 +20,7 @@ wl.Descriptions():new_productionsite_type {
    },
    return_on_dismantle = {
       cloth = 1,
-      stone = 1,
+      granite = 1,
       tropicalwood = 2,
       diamond = 1
    },

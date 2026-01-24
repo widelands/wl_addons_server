@@ -57,7 +57,7 @@ function allow_trainingssites(player_number)
     local tribe = player.tribe
 
     if tribe.name == "sumatrans" then
-        player:allow_buildings{"sumatran_training_camp", "sumatran_hunting_camp"} -- , "sumatran_hunting_camp"}
+        player:allow_buildings{"sumatran_training_camp", "sumatran_hunting_camp"} 
     end
 end
 
@@ -67,7 +67,7 @@ function forbid_trainingssites(player_number)
     local tribe = player.tribe
     
     if tribe.name == "sumatrans" then
-        player:forbid_buildings{"sumatran_training_camp", "sumatran_hunting_camp"} -- , "sumatran_hunting_camp"}
+        player:forbid_buildings{"sumatran_training_camp", "sumatran_hunting_camp"} 
 
     end
 end
@@ -83,7 +83,7 @@ function allow_normal_buildings(player_number)
         player:allow_buildings{"sumatran_hunters_tent", "sumatran_scouts_dwelling", "sumatran_thermal_springs" }
         player:allow_buildings{"sumatran_reed_yard", "sumatran_workshop_basic", "sumatran_sewing_workshop", "sumatran_furnace" }
         player:allow_buildings{"sumatran_coppersmiths_house", "sumatran_winery", "sumatran_cassava_kithen", "sumatran_charcoal_kiln"}
-        player:allow_buildings{"sumatran_cassava_fields", "sumatran_chicken_farm", "sumatran_weaving_mill", "sumatran_jungle_marsh"}
+        player:allow_buildings{"sumatran_cassava_fields", "sumatran_chicken_farm", "sumatran_weaving_mill", "sumatran_tropical_swamp"}
         player:allow_buildings{"sumatran_ferry_yard", "sumatran_shipyard"}
 --        player:allow_buildings{sumatran_tribal_gathering, "sumatran_training_camp", "sumatran_hunting_camp"}
     end
@@ -100,7 +100,7 @@ function forbid_normal_buildings(player_number)
         player:forbid_buildings{"sumatran_hunters_tent", "sumatran_scouts_dwelling", "sumatran_thermal_springs" }
         player:forbid_buildings{"sumatran_reed_yard", "sumatran_workshop_basic", "sumatran_sewing_workshop", "sumatran_furnace" }
         player:forbid_buildings{"sumatran_coppersmiths_house", "sumatran_winery", "sumatran_cassava_kithen", "sumatran_charcoal_kiln"}
-        player:forbid_buildings{"sumatran_cassava_fields", "sumatran_chicken_farm", "sumatran_weaving_mill", "sumatran_jungle_marsh"}
+        player:forbid_buildings{"sumatran_cassava_fields", "sumatran_chicken_farm", "sumatran_weaving_mill", "sumatran_tropical_swamp"}
         player:forbid_buildings{"sumatran_ferry_yard", "sumatran_shipyard"}
 --        player:forbid_buildings{sumatran_tribal_gathering, "sumatran_training_camp", "sumatran_hunting_camp"}
     end

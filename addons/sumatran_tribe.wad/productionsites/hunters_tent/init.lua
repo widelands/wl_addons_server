@@ -13,11 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "sumatran_hunters_house",
         enhancement_cost = {
             log = 1,
-            stone = 2,
+            granite = 2,
             palmleaves = 1
         },
         enhancement_return_on_dismantle = {
-            stone = 1,
+            granite = 1,
             palmleaves = 1
         },
     },

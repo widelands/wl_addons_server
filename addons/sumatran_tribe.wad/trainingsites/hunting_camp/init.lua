@@ -11,7 +11,7 @@ wl.Descriptions():new_trainingsite_type {
 
    buildcost = {
       log = 1,
-      stone = 3,
+      granite = 3,
       tropicalwood = 2,
       palmleaves = 2,
       reed = 2,
@@ -21,7 +21,7 @@ wl.Descriptions():new_trainingsite_type {
       gold = 1
    },
    return_on_dismantle = {
-      stone = 1,
+      granite = 1,
       tropicalwood = 1,
       cloth = 1,
       diamond = 2,
@@ -74,7 +74,7 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    inputs = {
-      { name = "sumatran_spear", amount = 5 },
+      { name = "spear", amount = 5 },
       { name = "meal", amount = 5 },
       { name = "palm_wine", amount = 10 }
    },
@@ -99,11 +99,11 @@ wl.Descriptions():new_trainingsite_type {
          descname = pgettext("sumatran_building", "upgrading warrior attack from level 0 to level 1"),
          actions = {
             "checksoldier=soldier:attack level:0", -- Fails when aren't any warriors of level 0 attack
-            "return=failed unless site has sumatran_spear",
+            "return=failed unless site has spear",
             "return=failed unless site has meal",
             "return=failed unless site has palm_wine",
             "callworker=check_chief_crocodile on failure fail",
-            "consume=sumatran_spear meal palm_wine",
+            "consume=spear meal palm_wine",
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:0", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:1",
@@ -116,11 +116,11 @@ wl.Descriptions():new_trainingsite_type {
          descname = pgettext("sumatran_building", "upgrading warrior attack from level 1 to level 2"),
          actions = {
             "checksoldier=soldier:attack level:1",
-            "return=failed unless site has sumatran_spear",
+            "return=failed unless site has spear",
             "return=failed unless site has meal",
             "return=failed unless site has palm_wine:2",
             "callworker=check_chief_crocodile on failure fail",
-            "consume=sumatran_spear meal palm_wine:2",
+            "consume=spear meal palm_wine:2",
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:1", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:2",
@@ -133,11 +133,11 @@ wl.Descriptions():new_trainingsite_type {
          descname = pgettext("sumatran_building", "upgrading warrior attack from level 2 to level 3"),
          actions = {
             "checksoldier=soldier:attack level:2",
-            "return=failed unless site has sumatran_spear",
+            "return=failed unless site has spear",
             "return=failed unless site has meal",
             "return=failed unless site has palm_wine:2",
             "callworker=check_chief_crocodile on failure fail",
-            "consume=sumatran_spear meal palm_wine:2",
+            "consume=spear meal palm_wine:2",
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:2", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:3",
@@ -149,7 +149,7 @@ wl.Descriptions():new_trainingsite_type {
          -- just a dummy program to fix encyclopedia
          descname = "encyclopedia",
          actions = {
-            "consume=sumatran_spear meal palm_wine:2",
+            "consume=spear meal palm_wine:2",
             "produce=meat crocodile_skin",
          }
       },

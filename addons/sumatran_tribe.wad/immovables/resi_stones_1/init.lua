@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_immovable_type {
     name = "sumatran_resi_stones_1",
     -- TRANSLATORS: This is a resource name used in lists of resources
-    descname = pgettext("resource_indicator", "Some Stone and Diamonds"),
+    descname = pgettext("resource_indicator", "Some Granite and Diamonds"),
     icon = dirname .. "stone_few.png",
     programs = {
         main = {

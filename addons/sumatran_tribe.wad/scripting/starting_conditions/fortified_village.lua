@@ -30,7 +30,7 @@ init = {
          wares = {
             log = 60,
             reed = 30,
-            stone = 40,
+            granite = 40,
             water = 5,
             tropicalwood = 20,
             sandedwood = 5,
@@ -51,7 +51,7 @@ init = {
             gold = 4,
             diamond_raw = 3,
             diamond = 5,
-            sumatran_spear = 4,
+            spear = 4,
             pick = 4,
             felling_ax = 3,
             shovel = 6,
@@ -96,7 +96,7 @@ init = {
          inputs = { meal = 5, palm_wine = 10 }
       })
       place_building_in_region(plr, "sumatran_workshop_basic", sf:region(12), {
-         inputs = { log = 4, diamond_raw = 2, stone = 4 },
+         inputs = { log = 4, diamond_raw = 2, granite = 4 },
       })
       place_building_in_region(plr, "sumatran_workshop_tools", sf:region(12), {
          inputs = { iron = 5, sandedwood = 5 },
@@ -107,7 +107,7 @@ init = {
       place_building_in_region(plr, "sumatran_furnace", sf:region(12), {
          inputs = { coal = 3, iron_ore = 3, copper_ore = 3 },
       })
-      place_building_in_region(plr, "sumatran_jungle_marsh", sf:region(13))
+      place_building_in_region(plr, "sumatran_tropical_swamp", sf:region(13))
       place_building_in_region(plr, "sumatran_hunters_house", sf:region(12))
    end
 }

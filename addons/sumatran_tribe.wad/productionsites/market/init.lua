@@ -13,14 +13,14 @@ wl.Descriptions():new_market_type {
    buildcost = {
       log = 3,
       tropicalwood = 3,
-      stone = 4,
+      granite = 4,
       diamond = 1,
       cloth = 3,
    },
    return_on_dismantle = {
       log = 2,
       tropicalwood = 1,
-      stone = 2,
+      granite = 2,
       cloth = 1,
    },
 

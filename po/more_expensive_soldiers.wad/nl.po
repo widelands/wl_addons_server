@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 03:14+0100\n"
+"POT-Creation-Date: 2026-01-24 03:14+0100\n"
 "PO-Revision-Date: 2026-01-22 22:11+0000\n"
 "Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: addons/more_expensive_soldiers.wad/addon:2
 msgid "More Expensive Soldiers"
-msgstr ""
+msgstr "Meer dure soldaten"
 
 #: addons/more_expensive_soldiers.wad/addon:3
 msgid ""
@@ -31,18 +31,21 @@ msgid ""
 "training. Barracks work more slowly. This add-on should be always under all "
 "used tribe add-ons on the list of add-ons."
 msgstr ""
+"Maakt nieuwe soldaten duurder en geeft daarmee meer waarde aan de training. "
+"Kazernes werken langzamer. Deze add-on moet altijd onder alle gebruikte stam-"
+"add-ons op de lijst met add-ons staan."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/more_expensive_soldiers.wad/barbarians_dressmaker/init.lua:8
 msgctxt "barbarians_worker"
 msgid "Dressmaker"
-msgstr ""
+msgstr "Kledingmaker"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/more_expensive_soldiers.wad/barbarians_sewing_workshop/init.lua:8
 msgctxt "barbarians_building"
 msgid "Sewing Workshop"
-msgstr ""
+msgstr "Naaiatelier"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: addons/more_expensive_soldiers.wad/barbarians_sewing_workshop/init.lua:54
@@ -56,23 +59,23 @@ msgstr "Dit schild wordt gebruikt voor verdedigingstraining."
 
 #: addons/more_expensive_soldiers.wad/postload.lua:18
 msgid "Produces clothing for your soldiers."
-msgstr ""
+msgstr "Produceert kleding voor je soldaten."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sewing Workshop
 #: addons/more_expensive_soldiers.wad/postload.lua:26
 msgctxt "gauls_building"
 msgid "Produces clothing for your soldiers."
-msgstr ""
+msgstr "Produceert kleding voor je soldaten."
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:31
 msgid "rearing cattle"
-msgstr ""
+msgstr "veeteelt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:43
 msgid "producing fur"
-msgstr ""
+msgstr "vacht produceren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:55
@@ -83,7 +86,7 @@ msgstr "werkende"
 #: addons/more_expensive_soldiers.wad/postload.lua:67
 msgctxt "barbarians_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "soldaat rekruteren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an ax because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:80
@@ -95,14 +98,14 @@ msgstr "een masker smeden"
 #: addons/more_expensive_soldiers.wad/postload.lua:127
 msgctxt "empire_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "soldaat rekruteren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:151
 #: addons/more_expensive_soldiers.wad/postload.lua:258
 msgctxt "atlanteans_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "soldaat rekruteren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:162
@@ -120,13 +123,13 @@ msgstr "een lichte drietand smeden"
 #: addons/more_expensive_soldiers.wad/postload.lua:199
 msgctxt "frisians_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "soldaat rekruteren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:222
 msgctxt "amazons_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "soldaat rekruteren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden spear because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:234

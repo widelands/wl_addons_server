@@ -59,8 +59,8 @@ wl.Descriptions():new_productionsite_type {
          descname = _("mining stone"),
          actions = {
             -- "return=skipped" causes 10 sec delay
-            -- need diamond: 24 + 4 * (23 + 3.6)106.4 + 10 = 140.4 sec (diamond stone:4) 35s/item
-            -- doesn't need: 24 + 3 * (20 + 3.6)70.8 + 10 = 104.8 sec (stone:4) 35s/item
+            -- need diamond: 24 + 4 * (23 + 3.6)106.4 + 10 = 140.4 sec (diamond granite:3) 35s/item
+            -- doesn't need: 24 + 3 * (20 + 3.6)70.8 + 10 = 104.8 sec (granite:3) 35s/item
             "call=mine_diamond",
             "call=mine_stone",
             "sleep=duration:24s",
@@ -78,31 +78,31 @@ wl.Descriptions():new_productionsite_type {
             "produce=diamond_raw",
             "animate=working duration:23s",
             "mine=resource_stones radius:2 yield:100% when_empty:15% experience_on_fail:10%",
-            "produce=stone",
+            "produce=granite",
             "animate=working duration:23s",
             "mine=resource_stones radius:2 yield:100% when_empty:15% experience_on_fail:10%",
-            "produce=stone",
+            "produce=granite",
             "animate=working duration:23s",
             "mine=resource_stones radius:2 yield:100% when_empty:15% experience_on_fail:10%",
-            "produce=stone",
+            "produce=granite",
          }
       },
       mine_stone = {
          -- TRANSLATORS: Completed/Skipped/Did not start mining stone because ...
          descname = _("mining stone"),
          actions = {
-            "return=skipped unless economy needs stone",
+            "return=skipped unless economy needs granite",
             "return=skipped when economy needs diamond_raw",
             "consume=meal palm_wine",
             "animate=working duration:20s",
             "mine=resource_stones radius:2 yield:100% when_empty:15% experience_on_fail:10%",
-            "produce=stone",
+            "produce=granite",
             "animate=working duration:20s",
             "mine=resource_stones radius:2 yield:100% when_empty:15% experience_on_fail:10%",
-            "produce=stone",
+            "produce=granite",
             "animate=working duration:20s",
             "mine=resource_stones radius:2 yield:100% when_empty:15% experience_on_fail:10%",
-            "produce=stone",
+            "produce=granite",
          }
       },
       encyclopedia = {
@@ -110,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
          descname = "encyclopedia",
          actions = {
             "consume=meal palm_wine",
-            "produce=stone:3",
+            "produce=granite:3",
          }
       },
    },

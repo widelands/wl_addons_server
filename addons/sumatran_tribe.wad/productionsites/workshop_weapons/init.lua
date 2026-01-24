@@ -11,13 +11,13 @@ wl.Descriptions():new_productionsite_type {
 
    buildcost = {
       log = 2,
-      stone = 3,
+      granite = 3,
       tropicalwood = 3,
       palmleaves = 1,
       reed = 3
    },
    return_on_dismantle = {
-      stone = 2,
+      granite = 2,
       tropicalwood = 2,
       reed = 1
    },
@@ -71,14 +71,14 @@ wl.Descriptions():new_productionsite_type {
          descname = _("making spear"),
          actions = {
             -- time total: 15 + 3.6 + 6.4 = 25 sec
-            "return=skipped unless economy needs sumatran_spear",
+            "return=skipped unless economy needs spear",
             "return=failed unless site has sandedwood",
             "return=failed unless site has iron",
             "consume=sandedwood iron",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
             "animate=working duration:15s",
             "playsound=sound/smiths/sharpening priority:90%",
-            "produce=sumatran_spear",
+            "produce=spear",
             "sleep=duration:6s400ms",
          }
       },

@@ -28,15 +28,15 @@ wl.Descriptions():new_militarysite_type {
     destructible = true,
     
     buildcost = {
-        stone = 8,
+        granite = 8,
         tropicalwood = 6,
         reed = 2,
         cloth = 2,
         diamond = 4,
-        copper = 2
+        copper = 1
     },
     return_on_dismantle = {
-        stone = 4,
+        granite = 4,
         tropicalwood = 2,
         cloth = 1,
         diamond = 2,

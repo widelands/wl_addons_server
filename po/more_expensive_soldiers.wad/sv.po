@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 03:14+0100\n"
+"POT-Creation-Date: 2026-01-24 03:14+0100\n"
 "PO-Revision-Date: 2026-01-22 22:11+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: addons/more_expensive_soldiers.wad/addon:2
 msgid "More Expensive Soldiers"
-msgstr ""
+msgstr "Dyrare soldater"
 
 #: addons/more_expensive_soldiers.wad/addon:3
 msgid ""
@@ -33,18 +33,21 @@ msgid ""
 "training. Barracks work more slowly. This add-on should be always under all "
 "used tribe add-ons on the list of add-ons."
 msgstr ""
+"Gör nya soldater dyrare och ger därmed träningen större värde. Kasernerna "
+"arbetar långsammare. Detta tillägg bör alltid ligga under alla använda "
+"stamtillägg på listan över tillägg."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/more_expensive_soldiers.wad/barbarians_dressmaker/init.lua:8
 msgctxt "barbarians_worker"
 msgid "Dressmaker"
-msgstr ""
+msgstr "Sömmerska"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/more_expensive_soldiers.wad/barbarians_sewing_workshop/init.lua:8
 msgctxt "barbarians_building"
 msgid "Sewing Workshop"
-msgstr ""
+msgstr "Sömnadsverkstad"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: addons/more_expensive_soldiers.wad/barbarians_sewing_workshop/init.lua:54
@@ -58,23 +61,23 @@ msgstr "Denna sköld används för försvarsträning."
 
 #: addons/more_expensive_soldiers.wad/postload.lua:18
 msgid "Produces clothing for your soldiers."
-msgstr ""
+msgstr "Tillverkar kläder för dina soldater."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sewing Workshop
 #: addons/more_expensive_soldiers.wad/postload.lua:26
 msgctxt "gauls_building"
 msgid "Produces clothing for your soldiers."
-msgstr ""
+msgstr "Tillverkar kläder för dina soldater."
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:31
 msgid "rearing cattle"
-msgstr ""
+msgstr "uppfödning av boskap"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:43
 msgid "producing fur"
-msgstr ""
+msgstr "producera päls"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:55
@@ -85,26 +88,26 @@ msgstr "arbetar"
 #: addons/more_expensive_soldiers.wad/postload.lua:67
 msgctxt "barbarians_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "rekrytera soldat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an ax because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:80
 #: addons/more_expensive_soldiers.wad/postload.lua:96
 msgid "forging an ax"
-msgstr "smida en yxa"
+msgstr "smider en yxa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:127
 msgctxt "empire_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "rekrytera soldat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:151
 #: addons/more_expensive_soldiers.wad/postload.lua:258
 msgctxt "atlanteans_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "rekrytera soldat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:162
@@ -122,13 +125,13 @@ msgstr "smida en lätt treudd"
 #: addons/more_expensive_soldiers.wad/postload.lua:199
 msgctxt "frisians_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "rekrytera soldat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:222
 msgctxt "amazons_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "rekrytera soldat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden spear because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:234

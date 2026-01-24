@@ -41,7 +41,7 @@ init = {
       {
          tropicalwood = 1,
          palmleaves = 2,
-         stone = 1,
+         granite = 1,
          log = 3,
          sumatran_woodcutter = 1,
          sumatran_forester = 1,
@@ -66,7 +66,7 @@ init = {
          log = 3,
          iron = 1,
          palmleaves = 2,
-         stone = 1,
+         granite = 1,
          diamond = 1,
          copper = 1,
          sumatran_woodcutter = 1,
@@ -77,7 +77,7 @@ init = {
       {
          tropicalwood = 1,
          palmleaves = 2,
-         stone = 1,
+         granite = 1,
          log = 3,
          iron = 1,
          sumatran_woodcutter = 1,
@@ -89,7 +89,7 @@ init = {
       {
          log = 3,
          palmleaves = 2,
-         stone = 1,
+         granite = 1,
          reed = 1,
          sumatran_hunter = 1,
          sumatran_cook = 1,

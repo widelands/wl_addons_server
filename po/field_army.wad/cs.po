@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 03:14+0100\n"
+"POT-Creation-Date: 2026-01-24 03:14+0100\n"
 "PO-Revision-Date: 2026-01-07 09:47+0000\n"
 "Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -34,6 +34,10 @@ msgid ""
 "number of fully trained heroes in his tribe’s military sites wins the game. "
 "Combination with More Expensive Soldiers add-on recommended."
 msgstr ""
+"První hráč, kterému se podaří umístit do vojenských budov svého vlastního "
+"kmene armádu, která se svou silou vyrovná síle zvoleného množství plně "
+"vycvičených vojáků, vyhraje. Doporučuje se kombinovat s rozšířením Dražší "
+"vojáci."
 
 #: addons/field_army.wad/init.lua:27
 msgid ""
@@ -96,7 +100,7 @@ msgstr "%1%: %2%"
 #. TRANSLATORS: "Player x has reached y points."
 #: addons/field_army.wad/init.lua:130
 msgid "%1% has reached %2%."
-msgstr "%1% dosáhl %2%."
+msgstr "%1% má %2%."
 
 #: addons/field_army.wad/init.lua:132
 msgid "%1$d point!"

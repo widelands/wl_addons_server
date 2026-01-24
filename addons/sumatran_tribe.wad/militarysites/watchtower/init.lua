@@ -21,9 +21,9 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "sumatran_fortified_tower",
         enhancement_cost = {
-            stone = 1,
-            tropicalwood = 1,
-            diamond = 2,
+            granite = 1,
+            tropicalwood = 2,
+            diamond = 1,
         },
         enhancement_return_on_dismantle = {
             tropicalwood = 1,
@@ -31,14 +31,14 @@ wl.Descriptions():new_militarysite_type {
         },
     },
     buildcost = {
-        stone = 4,
-        tropicalwood = 3,
+        granite = 4,
+        tropicalwood = 1,
         reed = 1,
         cloth = 1
     },
     return_on_dismantle = {
-        stone = 2,
-        tropicalwood = 2
+        granite = 2,
+        tropicalwood = 1
     },
     
     aihints = {
@@ -49,8 +49,8 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 3,
-    vision_range = 13,
-    heal_per_second = 120,
+    vision_range = 14,
+    heal_per_second = 150,
     conquers = 8,
     prefer_heroes = true,
 

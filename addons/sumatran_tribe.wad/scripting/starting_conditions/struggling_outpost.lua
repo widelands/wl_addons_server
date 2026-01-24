@@ -23,7 +23,7 @@ init = {
    hq = prefilled_buildings(player, { "sumatran_headquarters", sf.x, sf.y,
       wares = {
          log = 10,
-         stone = 24,
+         granite = 24,
          diamond = 1,
          copper = 1,
       },

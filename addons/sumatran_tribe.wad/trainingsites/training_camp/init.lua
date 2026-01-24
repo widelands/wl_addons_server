@@ -11,7 +11,7 @@ wl.Descriptions():new_trainingsite_type {
 
    buildcost = {
       log = 1,
-      stone = 3,
+      granite = 3,
       tropicalwood = 2,
       palmleaves = 2,
       reed = 2,
@@ -21,7 +21,7 @@ wl.Descriptions():new_trainingsite_type {
       gold = 1
    },
    return_on_dismantle = {
-      stone = 1,
+      granite = 1,
       tropicalwood = 1,
       cloth = 1,
       diamond = 2,

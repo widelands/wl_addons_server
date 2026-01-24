@@ -13,21 +13,21 @@ wl.Descriptions():new_productionsite_type {
       name = "sumatran_workshop_tools",
       enhancement_cost = {
          log = 1,
-         stone = 1,
+         granite = 1,
       },
       enhancement_return_on_dismantle = {
-         stone = 1
+         granite = 1
       }
    },
 
    buildcost = {
       log = 1,
-      stone = 2,
+      granite = 2,
       palmleaves = 1,
       reed = 2
    },
    return_on_dismantle = {
-      stone = 1,
+      granite = 1,
       reed = 1
    },
 
@@ -63,7 +63,7 @@ wl.Descriptions():new_productionsite_type {
    inputs = {
       { name = "log", amount = 8 },
       { name = "diamond_raw", amount = 8 },
-      { name = "stone", amount = 4 }
+      { name = "granite", amount = 4 }
    },
 
    programs = {
@@ -99,8 +99,8 @@ wl.Descriptions():new_productionsite_type {
             "return=skipped unless economy needs diamond",
             "return=skipped when economy needs whetstone",
             "return=failed unless site has diamond_raw",
-            "return=failed unless site has stone",
-            "consume=diamond_raw stone",
+            "return=failed unless site has granite",
+            "consume=diamond_raw granite",
             "sleep=duration:1s400ms",
             "animate=working duration:58s",
             "produce=diamond",
@@ -113,7 +113,7 @@ wl.Descriptions():new_productionsite_type {
          actions = {
             -- time total: 67 sec
             "return=skipped unless economy needs whetstone",
-            "consume=stone diamond_raw:2",
+            "consume=granite diamond_raw:2",
             "sleep=duration:1s400ms",
             "animate=working duration:53s",
             "produce=whetstone",

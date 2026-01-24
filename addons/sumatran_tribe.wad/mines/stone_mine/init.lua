@@ -81,8 +81,8 @@ wl.Descriptions():new_productionsite_type {
          descname = _("mining stone"),
          actions = {
             -- "return=skipped" causes 10 sec delay
-            -- need diamond: 3 + 3 * (17 + 3.6)61.8 + 10 = 74.8 sec (diamond stone:2) 25s/item
-            -- doesn't need: 3 + 2 * (15 + 3.6)37.2 + 10 = 50.2 sec (stone:2) 25s/item
+            -- need diamond: 3 + 3 * (17 + 3.6)61.8 + 10 = 74.8 sec (diamond granite:2) 25s/item
+            -- doesn't need: 3 + 2 * (15 + 3.6)37.2 + 10 = 50.2 sec (granite:2) 25s/item
             "call=mine_diamond",
             "call=mine_stone",
             "sleep=duration:3s",
@@ -100,25 +100,25 @@ wl.Descriptions():new_productionsite_type {
             "produce=diamond_raw",
             "animate=working duration:17s",
             "mine=resource_stones radius:2 yield:50% when_empty:10% experience_on_fail:2%",
-            "produce=stone",
+            "produce=granite",
             "animate=working duration:17s",
             "mine=resource_stones radius:2 yield:50% when_empty:10% experience_on_fail:2%",
-            "produce=stone",
+            "produce=granite",
          }
       },
       mine_stone = {
          -- TRANSLATORS: Completed/Skipped/Did not start mining stone because ...
          descname = _("mining stone"),
          actions = {
-            "return=skipped unless economy needs stone",
+            "return=skipped unless economy needs granite",
             "return=skipped when economy needs diamond_raw",
             "consume=meal",
             "animate=working duration:15s",
             "mine=resource_stones radius:2 yield:50% when_empty:5% experience_on_fail:2%",
-            "produce=stone",
+            "produce=granite",
             "animate=working duration:15s",
             "mine=resource_stones radius:2 yield:50% when_empty:5% experience_on_fail:2%",
-            "produce=stone",
+            "produce=granite",
          }
       },
       encyclopedia = {
@@ -126,7 +126,7 @@ wl.Descriptions():new_productionsite_type {
          descname = "encyclopedia",
          actions = {
             "consume=meal",
-            "produce=stone:2",
+            "produce=granite:2",
          }
       },
    },

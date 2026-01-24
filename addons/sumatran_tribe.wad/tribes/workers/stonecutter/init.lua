@@ -25,7 +25,7 @@ wl.Descriptions():new_worker_type {
          "walk=object",
          "animate=hacking duration:18s500ms",
          "callobject=shrink",
-         "createware=stone",
+         "createware=granite",
          "return"
       }
    },
