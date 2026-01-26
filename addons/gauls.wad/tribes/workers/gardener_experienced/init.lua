@@ -41,22 +41,22 @@ wl.Descriptions():new_worker_type {
         },
         plant_herbs = {
          -- steps from building: 2-5, average 11.2
-         -- avg. worker time: 11.2 + 8 = 19.2 sec
+         -- avg. worker time: 11.2 + 6 = 17.2 sec
          "findspace=size:any radius:2 space",
          "walk=coords",
-         "animate=dig duration:5s",
+         "animate=dig duration:4s",
          "plant=attrib:seed_herbs",
-         "animate=gathering duration:3s",
+         "animate=gathering duration:2s",
          "return"
       },
       plant_vegetable = {
          -- steps from building: 2-5, average 11.2
-         -- avg. worker time: 11.2 + 8 = 19.2 sec
+         -- avg. worker time: 11.2 + 6 = 17.2 sec
          "findspace=size:any radius:2 space",
          "walk=coords",
-         "animate=dig duration:5s",
+         "animate=dig duration:4s",
          "plant=attrib:seed_vegetable",
-         "animate=gathering duration:3s",
+         "animate=gathering duration:2s",
          "return"
       },
       gather_fruit = {
@@ -66,9 +66,9 @@ wl.Descriptions():new_worker_type {
          -- avg. worker time: 2 * 5.5 * 1.8 + 6 = 25.8 sec
          "findobject=attrib:ripe_bush radius:6",
          "walk=object",
-         "animate=gathering duration:5s",
+         "animate=gathering duration:4s",
          "callobject=harvest",
-         "animate=gathering duration:1s",
+         "animate=gathering duration:2s",
          "createware=fruit",
          "return"
       },
@@ -77,9 +77,9 @@ wl.Descriptions():new_worker_type {
          -- avg. worker time: 11.2 + 6 = 17.2 sec
          "findobject=attrib:ripe_herbs radius:2",
          "walk=object",
-         "animate=gathering duration:5s",
+         "animate=gathering duration:4s",
          "callobject=harvest",
-         "animate=gathering duration:1s",
+         "animate=gathering duration:2s",
          "createware=herbs",
          "return"
       },
@@ -88,9 +88,9 @@ wl.Descriptions():new_worker_type {
          -- avg. worker time: 11.2 + 6 = 17.2 sec
          "findobject=attrib:ripe_vegetable radius:2",
          "walk=object",
-         "animate=gathering duration:5s",
+         "animate=gathering duration:4s",
          "callobject=harvest",
-         "animate=gathering duration:1s",
+         "animate=gathering duration:2s",
          "createware=vegetable",
          "return"
       }

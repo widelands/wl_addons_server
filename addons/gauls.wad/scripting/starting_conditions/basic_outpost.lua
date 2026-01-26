@@ -22,13 +22,13 @@ init = {
 
    prefilled_buildings(player, { "gauls_headquarters", sf.x, sf.y,
       wares = {
-         log = 32,
+         log = 22,
          planks = 6,
-         granite = 25,
-         brick = 6,
+         granite = 12,
+         brick = 9,
          reed = 4,
          iron = 4,
-         iron_ore = 5,
+         iron_ore = 4,
          coal = 6,
       },
       workers = {

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 03:14+0100\n"
+"POT-Creation-Date: 2026-01-26 03:14+0100\n"
 "PO-Revision-Date: 2025-01-03 15:43+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -38,6 +38,10 @@ msgid ""
 "any of your warehouses, workers throw away one quarter of stock stored in "
 "such a warehouse and let you know, that they have cleaned your warehouse."
 msgstr ""
+"Börja med 360 varor, 50 arbetare och 40 soldater i ditt högkvarter. Dina "
+"arbetare gör regelbundet inventeringar. Om det finns mer än 500 varor i "
+"något av dina lager kastar arbetarna bort en fjärdedel av lagret i det "
+"lagret och meddelar dig att de har rensat ditt lager."
 
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/tidy_warehouses.wad/amazons.lua:15
@@ -51,6 +55,9 @@ msgid ""
 "any of your warehouses, workers throw away one quarter of stock stored in "
 "such a warehouse."
 msgstr ""
+"Börja med 360 varor, 50 arbetare och 40 soldater i ditt högkvarter. Dina "
+"arbetare gör inventeringar då och då. Om det finns mer än 500 varor i något "
+"av dina lager kastar arbetarna bort en fjärdedel av lagret i det lagret."
 
 #: addons/tidy_warehouses.wad/amazons.lua:99
 #: addons/tidy_warehouses.wad/atlanteans.lua:108

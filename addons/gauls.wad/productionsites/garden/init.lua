@@ -49,8 +49,8 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _("working"),
          actions = {
-            -- unexperienced: 4 * (24.2 + 4 + 17.2) = 181.6 sec (45.4)
-            -- experienced: 4 * (19.2 + 4 + 17.2) = 161.6 sec (40.4)
+            -- unexperienced: 4 * (20.2 + 4 + 17.2) = 165.6 sec (41.4)
+            -- experienced: 4 * (17.2 + 4 + 17.2) = 153.6 sec (38.4)
             "call=plant_vegetable",
             "call=plant_herbs",
             "call=plant_vegetable",
@@ -65,10 +65,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
          descname = _("creating a herbs patch"),
          actions = {
-            -- average time of unexperienced worker: 24.2 sec
-            -- average time of experienced worker: 19.2 sec
-            -- unexperienced: 24.2 + 4 = 28.2 sec
-            -- experienced: 19.2 + 4 = 23.2 sec
+            -- average time of unexperienced worker: 20.2 sec
+            -- average time of experienced worker: 17.2 sec
+            -- unexperienced: 20.2 + 4 = 24.2 sec
+            -- experienced: 17.2 + 4 = 21.2 sec
             "return=skipped unless economy needs herbs",
             "callworker=plant_herbs",
             "sleep=duration:4s"
@@ -86,10 +86,10 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start creating a vegetable patch because ...
          descname = _("creating a vegetable patch"),
          actions = {
-            -- average time of unexperienced worker: 24.2 sec
-            -- average time of experienced worker: 19.2 sec
-            -- unexperienced: 24.2 + 4 = 28.2 sec
-            -- experienced: 19.2 + 4 = 23.2 sec
+            -- average time of unexperienced worker: 20.2 sec
+            -- average time of experienced worker: 17.2 sec
+            -- unexperienced: 20.2 + 4 = 24.2 sec
+            -- experienced: 17.2 + 4 = 21.2 sec
             "return=skipped unless economy needs vegetable",
             "callworker=plant_vegetable",
             "sleep=duration:4s"

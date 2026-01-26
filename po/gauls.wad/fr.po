@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 03:14+0100\n"
+"POT-Creation-Date: 2026-01-26 03:13+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: David D, 2026\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -1417,9 +1417,9 @@ msgstr "fabrication d'une épée longue"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/weaving_mill/init.lua:8
-msgctxt "gauls_building_small"
+msgctxt "gauls_building"
 msgid "Weaving Mill"
-msgstr "Usine de tissage"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #: addons/gauls.wad/productionsites/weaving_mill/init.lua:53
@@ -1664,32 +1664,29 @@ msgstr "Ranger les entrepôts"
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:15
 msgid ""
-"Start with a basic Headquarter. From time to time your workers do "
-"inventories. If there is more than 500 items in any of your warehouses, "
-"workers throw away one quarter of stock stored in such a warehouse."
+"Start with 360 items, 50 workers and 40 soldiers in your Headquarters. From "
+"time to time your workers do inventories. If there is more than 500 items in "
+"any of your warehouses, workers throw away one quarter of stock stored in "
+"such a warehouse."
 msgstr ""
-"Commencez par un siège social de base. De temps en temps, vos travailleurs "
-"font des inventaires. S’il y a plus de 500 articles dans l’un de vos "
-"entrepôts, les travailleurs jettent un quart du stock stocké dans un tel "
-"entrepôt."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:111
 msgid "Warehouse cleaned!"
 msgstr "Entrepôt nettoyé !"
 
-#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:199
+#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:148
 msgid "%1$s has been cleaned!"
 msgstr "%1$s a été nettoyé !"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
-#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
+#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:150
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
+#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:150
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
 msgstr[0] ""
@@ -4926,3 +4923,17 @@ msgstr "Tisserand"
 msgctxt "gauls_worker"
 msgid "Woodcutter"
 msgstr "Bûcheron"
+
+#~ msgctxt "gauls_building_small"
+#~ msgid "Weaving Mill"
+#~ msgstr "Usine de tissage"
+
+#~ msgid ""
+#~ "Start with a basic Headquarter. From time to time your workers do "
+#~ "inventories. If there is more than 500 items in any of your warehouses, "
+#~ "workers throw away one quarter of stock stored in such a warehouse."
+#~ msgstr ""
+#~ "Commencez par un siège social de base. De temps en temps, vos "
+#~ "travailleurs font des inventaires. S’il y a plus de 500 articles dans "
+#~ "l’un de vos entrepôts, les travailleurs jettent un quart du stock stocké "
+#~ "dans un tel entrepôt."

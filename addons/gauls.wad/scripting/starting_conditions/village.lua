@@ -23,55 +23,50 @@ init = {
 
    hq = prefilled_buildings(plr, { "gauls_headquarters", sf.x, sf.y,
       wares = {
-            log = 59,
-            reed = 42,
-            granite = 33,
-            water = 6,
-            brick = 21,
-            planks = 23,
+            log = 33,
+            reed = 40,
+            granite = 40,
+            brick = 33,
+            planks = 33,
             cloth = 5,
-            clay = 2,
-            straw = 1,
-            wool = 3,
-            smoked_meat = 2,
+            wheat = 7,
+            wool = 9,
+            smoked_meat = 3,
             smoked_fish = 3,
-            fish = 1,
             barbarians_bread = 8,
             meal = 4,
-            milk = 2,
-            ration = 12,
-            coal = 12,
+            ration = 11,
+            coal = 10,
             copper = 2,
             iron_ore = 5,
-            iron = 11,
+            iron = 7,
             gold_ore = 1,
             gold = 2,
+            tin_ore = 3,
             bronze = 2,
-            spear = 4,
-            pick = 6,
+            spear = 5,
+            pick = 8,
             felling_ax = 4,
-            shovel = 5,
-            hammer = 10,
-            scythe = 4,
+            shovel = 10,
+            hammer = 14,
+            scythe = 5,
             fire_tongs = 2,
             kitchen_tools = 4,
             buckets = 3,
             flail = 1,
             fishing_net = 2,
             basket = 2,
-            elixir = 4,
-            tunic = 5
+            elixir = 6,
+            potion = 1,
+            tunic = 5,
         },
         workers = {
             gauls_geologist = 4,
-            gauls_carrier = 40,
+            gauls_carrier = 30,
             gauls_carrier_1 = 10,
-            gauls_builder = 10,
-            gauls_miner = 2,
-            gauls_miner_master = 2,
-            gauls_woodcutter = 3,
-            gauls_forester = 4,
-            gauls_water_carrier = 2,
+            gauls_builder = 8,
+            gauls_miner = 4,
+            gauls_woodcutter = 2,
             gauls_hunter = 1,
             gauls_farmer = 3,
             gauls_toiler = 1,
@@ -80,29 +75,24 @@ init = {
             gauls_smelter = 1,
             gauls_breeder = 1,
             gauls_gardener = 2,
-            gauls_craftsman = 1,
-            gauls_blacksmith = 1,
             gauls_stonecutter = 2,
             gauls_claydigger = 2,
-            gauls_brickmaker = 1,
             gauls_druid = 3,
-            gauls_trainer = 2,
-      },
+            gauls_trainer = 1,
+         },
+         -- Max health: 3, Max attack: 2, Max defense: 3, Max evade: 2
          soldiers = {
             [{0,0,0,0}] = 5,
          }
       })
-      place_building_in_region(plr, "gauls_cattle_farm", sf:region(11), {
-         inputs = { wheat = 8, water = 8, straw = 8}
+      place_building_in_region(plr, "gauls_workshop", sf:region(6), {
+         inputs = { iron = 6, log = 6, reed = 2 }
       })
-      place_building_in_region(plr, "gauls_workshop", sf:region(8), {
-         inputs = { iron = 6, log = 6, planks = 4, reed = 6 }
+      place_building_in_region(plr, "gauls_sawmill", sf:region(8), {
+         inputs = { log = 3 }
       })
-      place_building_in_region(plr, "gauls_sawmill", sf:region(10), {
-         inputs = { log = 8 }
-      })
-      place_building_in_region(plr, "gauls_brick_kiln", sf:region(11), {
-         inputs = { coal = 3, clay = 3, granite = 3 },
+      place_building_in_region(plr, "gauls_brick_kiln", sf:region(8), {
+         inputs = { coal = 2, clay = 6, granite = 2 },
       })
    end
 }

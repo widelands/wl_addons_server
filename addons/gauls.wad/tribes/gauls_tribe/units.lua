@@ -965,7 +965,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gauls_soldier",
-                default_target_quantity = 20,
+                default_target_quantity = 10,
                 preciousness = 30,
                 helptexts = {
                     -- TRANSLATORS: Help text for a Gallic worker: Warrior
@@ -1637,7 +1637,7 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("gauls_building", "Grows herbs and vegetable."),
                 performance = {
                    -- TRANSLATORS: Performance help text for a Gallic production site: Garden, the gardener is a female
-                   pgettext("gauls_building", "If all products are needed by the economy, the gardener resp. experienced gardener need %1$s resp. %2$s on average to produce two baskets of vegetable and two bundles of herbs. If only one product is needed by the economy, the gardener resp. experienced gardener need %3$s resp. %4$s on average to produce one baskets of vegetable or one bundle of herbs."):bformat(format_minutes_seconds(3, 2), format_minutes_seconds(2, 42), format_seconds(45), format_seconds(40)),
+                   pgettext("gauls_building", "If all products are needed by the economy, the gardener resp. experienced gardener need %1$s resp. %2$s on average to produce two baskets of vegetable and two bundles of herbs. If only one product is needed by the economy, the gardener resp. experienced gardener need %3$s resp. %4$s on average to produce one baskets of vegetable or one bundle of herbs."):bformat(format_minutes_seconds(2, 46), format_minutes_seconds(2, 34), format_seconds(41), format_seconds(38)),
                 }
             }
         },

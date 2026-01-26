@@ -90,6 +90,14 @@ wl.Descriptions():new_productionsite_type {
             "sleep=duration:10s"
          }
       },
+      encyclopedia = {
+         -- just a dummy program to fix encyclopedia
+         descname = "encyclopedia",
+         actions = {
+            "consume=wheat water straw",
+            "produce=milk:2",
+         }
+      },
    },
 }
 

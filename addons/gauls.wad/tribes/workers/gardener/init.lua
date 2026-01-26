@@ -22,22 +22,22 @@ wl.Descriptions():new_worker_type {
    programs = {
       plant_herbs = {
          -- steps from building: 2-5, average 11.2
-         -- avg. worker time: 11.2 + 13 = 24.2 sec
+         -- avg. worker time: 11.2 + 9 = 20.2 sec
          "findspace=size:any radius:2 space",
          "walk=coords",
-         "animate=dig duration:8s",
+         "animate=dig duration:6s",
          "plant=attrib:seed_herbs",
-         "animate=gathering duration:5s",
+         "animate=gathering duration:3s",
          "return"
       },
       plant_vegetable = {
          -- steps from building: 2-5, average 11.2
-         -- avg. worker time: 11.2 + 13 = 24.2 sec
+         -- avg. worker time: 11.2 + 9 = 20.2 sec
          "findspace=size:any radius:2 space",
          "walk=coords",
-         "animate=dig duration:8s",
+         "animate=dig duration:6s",
          "plant=attrib:seed_vegetable",
-         "animate=gathering duration:5s",
+         "animate=gathering duration:3s",
          "return"
       },
       harvest_herbs = {
@@ -45,9 +45,9 @@ wl.Descriptions():new_worker_type {
          -- avg. worker time: 11.2 + 6 = 17.2 sec
          "findobject=attrib:ripe_herbs radius:2",
          "walk=object",
-         "animate=gathering duration:5s",
+         "animate=gathering duration:4s",
          "callobject=harvest",
-         "animate=gathering duration:1s",
+         "animate=gathering duration:2s",
          "createware=herbs",
          "return"
       },
@@ -56,9 +56,9 @@ wl.Descriptions():new_worker_type {
          -- avg. worker time: 11.2 + 6 = 17.2 sec
          "findobject=attrib:ripe_vegetable radius:2",
          "walk=object",
-         "animate=gathering duration:5s",
+         "animate=gathering duration:4s",
          "callobject=harvest",
-         "animate=gathering duration:1s",
+         "animate=gathering duration:2s",
          "createware=vegetable",
          "return"
       }

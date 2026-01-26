@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 03:14+0100\n"
+"POT-Creation-Date: 2026-01-26 03:13+0100\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Language-Team: Slovak (https://app.transifex.com/widelands/teams/35159/sk/)\n"
 "Language: sk\n"
@@ -1371,7 +1371,7 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/weaving_mill/init.lua:8
-msgctxt "gauls_building_small"
+msgctxt "gauls_building"
 msgid "Weaving Mill"
 msgstr ""
 
@@ -1599,21 +1599,22 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Tidy Warehouses" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:15
 msgid ""
-"Start with a basic Headquarter. From time to time your workers do "
-"inventories. If there is more than 500 items in any of your warehouses, "
-"workers throw away one quarter of stock stored in such a warehouse."
+"Start with 360 items, 50 workers and 40 soldiers in your Headquarters. From "
+"time to time your workers do inventories. If there is more than 500 items in "
+"any of your warehouses, workers throw away one quarter of stock stored in "
+"such a warehouse."
 msgstr ""
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:111
 msgid "Warehouse cleaned!"
 msgstr ""
 
-#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:199
+#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:148
 msgid "%1$s has been cleaned!"
 msgstr ""
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
-#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
+#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:150
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
 msgstr[0] ""
@@ -1621,7 +1622,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:201
+#: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:150
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
 msgstr[0] ""
