@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 03:14+0100\n"
+"POT-Creation-Date: 2026-01-27 03:14+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -126,13 +126,13 @@ msgstr "Žádné suroviny"
 #: addons/sumatran_tribe.wad/immovables/resi_stones_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Granite and Diamonds"
-msgstr ""
+msgstr "Něco málo žuly a diamantů"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_stones_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Granite and Diamonds"
-msgstr ""
+msgstr "Hodně žuly a diamantů"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_water/init.lua:8
@@ -1546,12 +1546,12 @@ msgstr "přijetí lovce"
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:8
 msgctxt "sumatran_building"
 msgid "Tropical Swamp"
-msgstr ""
+msgstr "Tropický močál"
 
 #. TRANSLATORS: Completed/Skipped/Did not start giving home to more animals because ...
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:63
 msgid "giving home to more animals"
-msgstr ""
+msgstr "poskytování domova zvěři"
 
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:73
 msgid "No Space"
@@ -1559,12 +1559,14 @@ msgstr "Není místo"
 
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:74
 msgid "Animals do not leave this swamp"
-msgstr ""
+msgstr "Zvěř neopouští tento močál"
 
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:75
 msgctxt "sumatran_building"
 msgid "There is not enough space around this swamp for animals to leave."
 msgstr ""
+"V okolí tohoto močálu není dostatek místa pro to, aby ho zvěř měla kudy "
+"opouštět."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:8
@@ -1874,6 +1876,10 @@ msgid ""
 "any of your warehouses, workers throw away one quarter of stock stored in "
 "such a warehouse."
 msgstr ""
+"Zahaj hru s 360 kusy zboží, 50 pracovníky a 40 vojáky ve své hlavní budově. "
+"Tví pracovníci dělají čas od času inventury. Pokud je v některém z tvých "
+"skladů více než 500 položek, pracovníci vyhodí z daného skladu čtvrtinu "
+"skladových zásob."
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:108
 msgid "Warehouse cleaned!"
@@ -2223,6 +2229,8 @@ msgid ""
 "Hunting camps need tropical swamps nearby because warriors hunt crocodiles "
 "to improve their attack ability."
 msgstr ""
+"Lovecké tábory potřebují ve svém okolí tropické močály, protože bojovníci "
+"pro zlepšení svých útočných dovedností loví krokodýly."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/tips.lua:28
 msgid ""
@@ -2345,6 +2353,8 @@ msgid ""
 "Granite is a basic building material. You also need it for production of "
 "diamonds and whetstones."
 msgstr ""
+"Žula je základním stavebním materiálem. Také je potřeba na výrobu diamantů a "
+"brousků."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Sanded Wood
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:168
@@ -3209,7 +3219,7 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1137
 msgid "There is only a little bit of granite and diamonds here."
-msgstr ""
+msgstr "Zde se dá najít něco málo žuly a diamantů."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1148
@@ -3229,7 +3239,7 @@ msgstr "Zde je velké ložisko měděnozlaté rudy."
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1181
 msgid "There is a lot of granite and diamonds here."
-msgstr ""
+msgstr "Zde je velké ložisko žuly a diamantů."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ship Under Construction
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1189
@@ -3445,6 +3455,8 @@ msgid ""
 "The stonecutter can produce one block of granite between %1$s and %2$s on "
 "average, depending on how far he has to walk."
 msgstr ""
+"Kameník může získat jeden kvádr žuly za %1$s až %2$s, záleží na tom, jak "
+"dlouhou cestu musí urazit."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Water Carrier’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1293
@@ -3600,7 +3612,7 @@ msgstr ""
 msgctxt "sumatran_building"
 msgid ""
 "Thermal springs need maintenance. That costs you logs, granite and water."
-msgstr ""
+msgstr "Termální prameny vyžadují údržbu. To tě stojí klády, žulu a vodu."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1360
 msgctxt "sumatran_building"
@@ -3609,6 +3621,9 @@ msgid ""
 "its working area. By doing that it will consume approximately %2% logs, %3% "
 "buckets of water and %4% blocks of granite."
 msgstr ""
+"Budova potřebuje přibližně %1% na zlepšení úrodnosti každého dílu země ve "
+"své pracovní oblasti. Spotřebuje při tom přibližně %2% klád, %3% kýblů vody "
+"a %4% kvádrů žuly."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Scout’s Dwelling
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1367
@@ -3918,7 +3933,7 @@ msgstr "Tkadlena potřebuje na utkání jednoho kusu látky v průměru %1%."
 msgctxt "sumatran_building"
 msgid ""
 "Home to tropical animals. Source of meat and crocodile skin for your hunters."
-msgstr ""
+msgstr "Domov tropických zvířat. Zdroj masa a krokodýlí kůže pro tvé lovce."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Tropical Swamp
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1544
@@ -3929,6 +3944,10 @@ msgid ""
 "animals leaving the swamp, there is one crocodile. When economy doesn’t need "
 "meat, the ratio is 2 animals to one crocodile."
 msgstr ""
+"Pokud zvěř neopouští močál, pak je kolem pravděpodobně postaveno příliš "
+"mnoho cest. Cesty mohou bránit zvířatům v opouštění močálu. Ze 4 zvířat, "
+"která močál opustí, je jeden krokodýl. Pokud hospodářství nepotřebuje maso, "
+"poměr se změní na 2 zvířata na jednoho krokodýla."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1545
 msgctxt "sumatran_building"
@@ -3936,6 +3955,8 @@ msgid ""
 "If your economy needs meat, there is one animal leaving the swamp in %1% on "
 "average. Otherwise it takes %2%."
 msgstr ""
+"Pokud tvé hospodářství nepoptává maso, pak opustí močál jedno zvíře za v "
+"průměru %1%. Jinak zvěř potřebuje %2%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Coal Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1554
@@ -4033,7 +4054,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1614
 msgctxt "sumatran_building"
 msgid "Digs raw diamonds and granite out of the ground in mountain terrain."
-msgstr ""
+msgstr "Těží surové diamanty a žulu v horském terénu."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1606
@@ -4053,6 +4074,8 @@ msgid ""
 "The miner needs %1% on average to produce one piece of granite or raw "
 "diamond."
 msgstr ""
+"Horník potřebuje na získání jednoho kvádru žuly, nebo jednoho surového "
+"diamantu v průměru %1%."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1616
@@ -4072,6 +4095,8 @@ msgid ""
 "The miners need %1% on average to produce one piece of granite or raw "
 "diamond."
 msgstr ""
+"Horníci potřebují na získání jednoho kvádru žuly, nebo jednoho surového "
+"diamantu v průměru %1%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Training Camp, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1627
@@ -4116,6 +4141,8 @@ msgid ""
 "The warriors improve their attack abilities by hunting crocodiles. Make sure "
 "there is enough tropical swamps around the building."
 msgstr ""
+"Bojovníci zlepšují své útočné dovednosti lovem krokodýlů. Zajisti, aby v "
+"okolí budovy byl dostatek tropických močálů."
 
 #. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1648
@@ -4180,6 +4207,9 @@ msgid ""
 "Enhancement of big sentry costs you one log and one reed more but you save "
 "one block of granite instead."
 msgstr ""
+"Tuto budovu lze postavit vylepšením hlídkovací věže, nebo velké strážnice. "
+"Vylepšení z velké strážnice je o kládu a rákos dražší, ale za to ušetří "
+"jeden kvádr žuly."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Ferry Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1718
