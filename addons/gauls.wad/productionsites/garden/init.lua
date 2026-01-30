@@ -24,10 +24,10 @@ wl.Descriptions():new_productionsite_type {
    animation_directory = dirname,
    animations = {
       idle = {
-         hotspot = { 59, 65 },
+         hotspot = { 44, 54 },
       },
       unoccupied = {
-         hotspot = { 59, 65 },
+         hotspot = { 44, 54 },
       },
    },
 

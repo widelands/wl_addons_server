@@ -16,12 +16,9 @@ wl.Descriptions():new_immovable_type {
    },
 
    animation_directory = dirname,
-   spritesheets = {
+   animations = {
       idle = {
-         hotspot = {10, 9},
-         frames = 4,
-         columns = 2,
-         rows = 2,
+         hotspot = {24, 29},
       }
    }
 }

@@ -33,8 +33,8 @@ init = {
             shovel = 1, -- forester
             scythe = 1, -- farmer
             iron = 5, -- claydigger, brickmaker, charcoalburner, smelter
-            iron_ore = 4, -- geologist, miner, miller, baker, cook (one involved in iron
-                          -- because furnace doesn’t allow smelting one iron ore
+            iron_ore = 4, -- geologist, miner, miller, baker, cook (one added directly as iron
+                          -- because furnace doesn’t allow smelting one pice of iron ore
          },
         workers = {
          },

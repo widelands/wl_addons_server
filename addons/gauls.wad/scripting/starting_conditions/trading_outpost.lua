@@ -133,40 +133,40 @@ init = {
          local wh = warehouses[idx]
          local added = 0
 
-         if player:get_wares("water") < 40 + #warehouses * 10 then
+         if player:get_wares("water") < 40 + #warehouses * 5 then
             wh:set_wares("water", wh:get_wares("water") + 20 + #warehouses * 2)
             added = added + 1
          end
-         if player:get_wares("log") < 40 + #warehouses * 10 then
-            wh:set_wares("log", wh:get_wares("log") + 20 + #warehouses)
+         if player:get_wares("log") < 40 + #warehouses * 5 then
+            wh:set_wares("log", wh:get_wares("log") + 10 + #warehouses * 3)
             added = added + 1
          end
-         if player:get_wares("brick") < 10 + #warehouses * 3 then
-            wh:set_wares("brick", wh:get_wares("brick") +  5 + #warehouses * 2)
+         if player:get_wares("brick") < 10 + #warehouses * 5 then
+            wh:set_wares("brick", wh:get_wares("brick") + 6)
             added = added + 1
          end
-         if player:get_wares("reed") < 20 + #warehouses * 10 then
-            wh:set_wares("reed", wh:get_wares("reed") +  10 + #warehouses * 2)
+         if player:get_wares("reed") < 20 + #warehouses * 5 then
+            wh:set_wares("reed", wh:get_wares("reed") + 5 + #warehouses)
             added = added + 1
          end
-         if player:get_wares("granite") < 20 + #warehouses * 10 then
-            wh:set_wares("granite", wh:get_wares("granite") +  10 + #warehouses * 2)
+         if player:get_wares("granite") < 40 + #warehouses * 5 then
+            wh:set_wares("granite", wh:get_wares("granite") + 10 + #warehouses * 2)
             added = added + 1
          end
          if player:get_wares("wheat") < 40 + #warehouses * 5 then
-            wh:set_wares("wheat", wh:get_wares("wheat") + 20 + #warehouses * 2)
+            wh:set_wares("wheat", wh:get_wares("wheat") + 10 + #warehouses * 2)
             added = added + 1
          end
          if wh:get_wares("fish") < 40 + #warehouses * 5 then
-            wh:set_wares("fish", wh:get_wares("fish") + 15)
+            wh:set_wares("fish", wh:get_wares("fish") + 8)
             added = added + 1
          end
-         if player:get_wares("coal") < 20 + #warehouses * 10 then
-            wh:set_wares("coal", wh:get_wares("coal") + 20 + #warehouses * 2)
+         if player:get_wares("coal") < 50 + #warehouses * 5 then
+            wh:set_wares("coal", wh:get_wares("coal") + 5 + #warehouses * 3)
             added = added + 1
          end
-         if player:get_wares("iron_ore") < 20 + #warehouses * 10 then
-            wh:set_wares("iron_ore", wh:get_wares("iron_ore") + 10 + #warehouses)
+         if player:get_wares("iron_ore") < 30 + #warehouses * 5 then
+            wh:set_wares("iron_ore", wh:get_wares("iron_ore") + 5 + #warehouses * 2)
             added = added + 1
          end
          if player:get_wares("copper_ore") < 10 + #warehouses * 5 then
@@ -181,8 +181,8 @@ init = {
             wh:set_wares("gold", wh:get_wares("gold") + 2)
             added = added + 1
          end
-         if player:get_wares("elixir") < 20 + #warehouses * 2 then
-            wh:set_wares("elixir", wh:get_wares("elixir") + 10 + #warehouses * 3)
+         if player:get_wares("elixir") < 20 then
+            wh:set_wares("elixir", wh:get_wares("elixir") + 8 + #warehouses)
             added = added + 1
          end
 
