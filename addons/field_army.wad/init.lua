@@ -40,8 +40,8 @@ local r = {
    peaceful_mode_allowed = true,
    func = function()
       local game = wl.Game()
-      local A_STRENGTH = math.floor(game.win_condition_duration/5 * 11) -- point limit for winning the game
       push_textdomain(textdomain, true)
+      local A_STRENGTH = math.floor(game.win_condition_duration/5 * 11) -- point limit for winning the game
       local wc_desc1 = ngettext("The first player to station an army equivalent in strength to %1% fully trained hero in his tribe’s military sites wins the game. One hero has a value of approximately 11 new untrained soldiers (or points).", "The first player to station an army equivalent in strength to %1% fully trained heroes in his tribe’s military sites wins the game. One hero has a value of approximately 11 new untrained soldiers (or points).",math.floor(A_STRENGTH/11)):bformat(math.floor(A_STRENGTH/11))
       pop_textdomain()
       local milest_d = 0 -- point interval, in which is the player informed about reached points
@@ -110,7 +110,7 @@ local r = {
 
       -- Install statistics hook
       hooks.custom_statistic = {
-         name = wc_field_army,
+         name = wc_field_army_i18n,
          pic = "images/wui/buildings/prefer_heroes.png",
          calculator = function(p)
             return plr_data[p.number].army_str
@@ -205,7 +205,9 @@ local r = {
 
                -- Inform about players who lost
                for o, lost in pairs(plr_lost) do
+                  push_textdomain(textdomain, true)
                   send_to_inbox(plr, _("%1% defeated."):bformat(lost), li(_(ngettext("%1% player remains.", "%1% players remain.",#plrs):bformat(#plrs))), {popup=true})
+                  pop_textdomain()
                end
 
                -- Check all military sites for soldiers and calculate strength
