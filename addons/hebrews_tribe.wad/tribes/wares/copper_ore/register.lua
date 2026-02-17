@@ -1,0 +1,1 @@
+return { copper_ore = {} }

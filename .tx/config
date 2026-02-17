@@ -89,6 +89,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Coastal-Mountainsides-wad]
+file_filter            = po/Coastal_Mountainsides.wad/<lang>.po
+source_file            = po/Coastal_Mountainsides.wad/Coastal_Mountainsides.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Down-the-Mountain-wad]
 file_filter            = po/Down_the_Mountain.wad/<lang>.po
 source_file            = po/Down_the_Mountain.wad/Down_the_Mountain.wad.pot
