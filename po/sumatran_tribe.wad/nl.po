@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 03:14+0100\n"
+"POT-Creation-Date: 2026-02-18 03:14+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -126,13 +126,13 @@ msgstr "Geen Grondstoffen"
 #: addons/sumatran_tribe.wad/immovables/resi_stones_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Granite and Diamonds"
-msgstr ""
+msgstr "Wat Graniet en Diamanten"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_stones_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Granite and Diamonds"
-msgstr ""
+msgstr "Veel Graniet en Diamanten"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_water/init.lua:8
@@ -1562,12 +1562,12 @@ msgstr "jager aanwerven"
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:8
 msgctxt "sumatran_building"
 msgid "Tropical Swamp"
-msgstr ""
+msgstr "Tropisch Moeras"
 
 #. TRANSLATORS: Completed/Skipped/Did not start giving home to more animals because ...
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:63
 msgid "giving home to more animals"
-msgstr ""
+msgstr "een thuis bieden aan meer dieren"
 
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:73
 msgid "No Space"
@@ -1575,12 +1575,12 @@ msgstr "Geen Ruimte"
 
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:74
 msgid "Animals do not leave this swamp"
-msgstr ""
+msgstr "Dieren verlaten dit moeras niet."
 
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:75
 msgctxt "sumatran_building"
 msgid "There is not enough space around this swamp for animals to leave."
-msgstr ""
+msgstr "Er is niet genoeg ruimte rond dit moeras voor dieren om te vertrekken."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:8
@@ -2248,6 +2248,8 @@ msgid ""
 "Hunting camps need tropical swamps nearby because warriors hunt crocodiles "
 "to improve their attack ability."
 msgstr ""
+"Jachtkampen hebben tropische moerassen in de buurt nodig omdat krijgers op "
+"krokodillen jagen om hun aanvalsvermogen te verbeteren."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/tips.lua:28
 msgid ""
@@ -2376,6 +2378,8 @@ msgid ""
 "Granite is a basic building material. You also need it for production of "
 "diamonds and whetstones."
 msgstr ""
+"Graniet is een basisbouwmateriaal. Je hebt het ook nodig voor de productie "
+"van diamanten en wetstenen."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Sanded Wood
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:168
@@ -3259,7 +3263,7 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1137
 msgid "There is only a little bit of granite and diamonds here."
-msgstr ""
+msgstr "Er is hier maar een klein beetje graniet en diamanten."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Coal, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1148
@@ -3279,7 +3283,7 @@ msgstr "Er is hier veel koper-gouderts."
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Stones, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1181
 msgid "There is a lot of granite and diamonds here."
-msgstr ""
+msgstr "Er is hier veel graniet en diamanten."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ship Under Construction
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1189
@@ -3499,6 +3503,8 @@ msgid ""
 "The stonecutter can produce one block of granite between %1$s and %2$s on "
 "average, depending on how far he has to walk."
 msgstr ""
+"De steenhouwer kan gemiddeld één blok steen produceren tussen %1$s en %2$s , "
+"afhankelijk van hoe ver hij moet lopen."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Water Carrier’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1293
@@ -3656,6 +3662,8 @@ msgctxt "sumatran_building"
 msgid ""
 "Thermal springs need maintenance. That costs you logs, granite and water."
 msgstr ""
+"Thermale bronnen hebben onderhoud nodig. Dat kost je houtblokken, graniet en "
+"water."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1360
 msgctxt "sumatran_building"
@@ -3664,6 +3672,9 @@ msgid ""
 "its working area. By doing that it will consume approximately %2% logs, %3% "
 "buckets of water and %4% blocks of granite."
 msgstr ""
+"Het gebouw heeft ongeveer %1% nodig om de vruchtbaarheid van elk veld in "
+"zijn werkgebied te verbeteren. Hiervoor verbruikt het ongeveer %2% "
+"houtblokken, %3% emmers water en %4% graniet blokken."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Scout’s Dwelling
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1367
@@ -3977,6 +3988,8 @@ msgctxt "sumatran_building"
 msgid ""
 "Home to tropical animals. Source of meat and crocodile skin for your hunters."
 msgstr ""
+"Leefgebied van tropische dieren. Bron van vlees en krokodillenhuiden voor uw "
+"jagers."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Tropical Swamp
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1544
@@ -3987,6 +4000,11 @@ msgid ""
 "animals leaving the swamp, there is one crocodile. When economy doesn’t need "
 "meat, the ratio is 2 animals to one crocodile."
 msgstr ""
+"Als dieren het moeras niet verlaten, heb je waarschijnlijk te veel wegen "
+"rondom het moeras aangelegd. Wegen kunnen dieren beletten het moeras te "
+"verlaten. Van de vier dieren die het moeras verlaten, is er één krokodil. "
+"Als de economie geen vlees nodig heeft, is de verhouding twee dieren op één "
+"krokodil."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1545
 msgctxt "sumatran_building"
@@ -3994,6 +4012,8 @@ msgid ""
 "If your economy needs meat, there is one animal leaving the swamp in %1% on "
 "average. Otherwise it takes %2%."
 msgstr ""
+"Als je economie vlees nodig heeft, verlaat er gemiddeld één dier per %1% het "
+"moeras. Anders kost het %2%."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Coal Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1554
@@ -4093,7 +4113,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1614
 msgctxt "sumatran_building"
 msgid "Digs raw diamonds and granite out of the ground in mountain terrain."
-msgstr ""
+msgstr "Graaft ruwe diamanten en graniet uit de grond in bergachtig terrein."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1606
@@ -4113,6 +4133,8 @@ msgid ""
 "The miner needs %1% on average to produce one piece of granite or raw "
 "diamond."
 msgstr ""
+"De mijnwerker heeft gemiddeld %1% nodig om één stuk graniet of ruwe diamant "
+"te produceren."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1616
@@ -4132,6 +4154,8 @@ msgid ""
 "The miners need %1% on average to produce one piece of granite or raw "
 "diamond."
 msgstr ""
+"De mijnwerkers hebben gemiddeld %1% nodig om één stuk graniet of ruwe "
+"diamant te produceren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Training Camp, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1627
@@ -4176,6 +4200,8 @@ msgid ""
 "The warriors improve their attack abilities by hunting crocodiles. Make sure "
 "there is enough tropical swamps around the building."
 msgstr ""
+"De krijgers verbeteren hun aanvalsvaardigheden door op krokodillen te jagen. "
+"Zorg ervoor dat er voldoende tropische moerassen rondom het gebouw zijn."
 
 #. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1648
@@ -4240,6 +4266,9 @@ msgid ""
 "Enhancement of big sentry costs you one log and one reed more but you save "
 "one block of granite instead."
 msgstr ""
+"Dit gebouw kan worden gebouwd door een wachttoren of grote wachtpost te "
+"verbeteren. Het verbeteren van een grote wachtpost kost je één blok hout en "
+"één riet meer, maar je bespaart één blok graniet."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Ferry Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1718
