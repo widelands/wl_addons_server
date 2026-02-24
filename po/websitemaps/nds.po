@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-02-23 03:14+0100\n"
+"POT-Creation-Date: 2026-02-24 03:14+0100\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2026\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -601,6 +601,10 @@ msgid "Skull Island"
 msgstr "Dodenkopp-Insel"
 
 #: input:8 standard
+msgid "Snail"
+msgstr ""
+
+#: input:8 standard
 msgid "Southern Archipelago Mark ii"
 msgstr "Süüd-Archipel Utgaav II"
 
@@ -963,6 +967,10 @@ msgid ""
 "Die hellgrünen Pfade führen zu insgesamt drei Hafenbauplätzen auf der "
 "Starthalbinsel. Manchmal muss das Land bis zum Ufer eingenommen werden, "
 "damit der Hafenbauplatz sichtbar wird."
+msgstr ""
+
+#: input:10 standard
+msgid "Dies ist eine Karte mit dem Thema Schnecke"
 msgstr ""
 
 #: input:10 standard
@@ -1685,6 +1693,10 @@ msgstr ""
 "Klottjen sünd mögelk, geel un blau sallen tegenanner spölen. Wenn du alleen "
 "spöölst, kann dat passeren, dat diene Feinde överhoopt keene Söken "
 "utstafferen un lever eenen Landweg kören."
+
+#: input:11 standard
+msgid "Die Karte ist gebalanced"
+msgstr ""
 
 #: input:11 standard
 msgid ""
@@ -7352,7 +7364,9 @@ msgstr ""
 #: /tmp/websitemaps_uploader_comments.lua:315
 msgid ""
 "I've already updated the map here: https://www.widelands.org/maps/coastal-"
-"mountainsides-v11/"
+"mountainsides-v11/\n"
+"\n"
+"So, do NOT comment or vote on this old version."
 msgstr ""
 
 #: /tmp/websitemaps_uploader_comments.lua:316

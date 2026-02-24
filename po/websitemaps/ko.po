@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-02-22 03:13+0100\n"
+"POT-Creation-Date: 2026-02-24 03:14+0100\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
 "Last-Translator: 천영준, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -579,6 +579,10 @@ msgid "Skull Island"
 msgstr ""
 
 #: input:8 standard
+msgid "Snail"
+msgstr ""
+
+#: input:8 standard
 msgid "Southern Archipelago Mark ii"
 msgstr ""
 
@@ -904,6 +908,10 @@ msgid ""
 "Die hellgrünen Pfade führen zu insgesamt drei Hafenbauplätzen auf der "
 "Starthalbinsel. Manchmal muss das Land bis zum Ufer eingenommen werden, "
 "damit der Hafenbauplatz sichtbar wird."
+msgstr ""
+
+#: input:10 standard
+msgid "Dies ist eine Karte mit dem Thema Schnecke"
 msgstr ""
 
 #: input:10 standard
@@ -1500,6 +1508,10 @@ msgstr ""
 "지배 군주 모드가 권장되지만 평화 모드의 플레이에도 적합합니다. 2개의 팀이 가"
 "능하며, 노란색과 파란색은 서로 적대 관계입니다. 싱글 플레이시 상대편이 탐험"
 "을 하지 않고 바로 진입하는 것을 고려해야 합니다."
+
+#: input:11 standard
+msgid "Die Karte ist gebalanced"
+msgstr ""
 
 #: input:11 standard
 msgid ""
@@ -6999,7 +7011,9 @@ msgstr ""
 #: /tmp/websitemaps_uploader_comments.lua:315
 msgid ""
 "I've already updated the map here: https://www.widelands.org/maps/coastal-"
-"mountainsides-v11/"
+"mountainsides-v11/\n"
+"\n"
+"So, do NOT comment or vote on this old version."
 msgstr ""
 
 #: /tmp/websitemaps_uploader_comments.lua:316

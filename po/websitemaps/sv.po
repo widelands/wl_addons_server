@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-02-23 03:14+0100\n"
+"POT-Creation-Date: 2026-02-24 03:14+0100\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -604,6 +604,10 @@ msgid "Skull Island"
 msgstr "Skull Island"
 
 #: input:8 standard
+msgid "Snail"
+msgstr ""
+
+#: input:8 standard
 msgid "Southern Archipelago Mark ii"
 msgstr "Södra skärgården Mark ii"
 
@@ -983,6 +987,10 @@ msgstr ""
 "De ljusgröna stigarna leder till totalt tre hamnbyggnadsplatser på "
 "starthalvön. Ibland måste marken intas ända fram till stranden för att "
 "hamnbyggnadsplatsen ska bli synlig."
+
+#: input:10 standard
+msgid "Dies ist eine Karte mit dem Thema Schnecke"
+msgstr ""
 
 #: input:10 standard
 msgid ""
@@ -1769,6 +1777,10 @@ msgstr ""
 "spelläge. 2 lag är möjligt, gul och blå bör spela mot varandra. I "
 "enspelarläge får du räkna med att det finns en risk att dina motståndare "
 "inte startar någon expedition alls utan istället väljer att ta landvägen."
+
+#: input:11 standard
+msgid "Die Karte ist gebalanced"
+msgstr ""
 
 #: input:11 standard
 msgid ""
@@ -9323,7 +9335,9 @@ msgstr ""
 #: /tmp/websitemaps_uploader_comments.lua:315
 msgid ""
 "I've already updated the map here: https://www.widelands.org/maps/coastal-"
-"mountainsides-v11/"
+"mountainsides-v11/\n"
+"\n"
+"So, do NOT comment or vote on this old version."
 msgstr ""
 
 #: /tmp/websitemaps_uploader_comments.lua:316
