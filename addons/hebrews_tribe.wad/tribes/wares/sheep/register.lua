@@ -1,3 +1,3 @@
 return {
-   sheep2 = {},
+   sheep2 = { "__skip_if_exists" },
 }

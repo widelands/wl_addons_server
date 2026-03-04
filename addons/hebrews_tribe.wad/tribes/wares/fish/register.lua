@@ -1,3 +1,3 @@
 return {
-   fish = {},
+   fish = { "__skip_if_exists" },
 }

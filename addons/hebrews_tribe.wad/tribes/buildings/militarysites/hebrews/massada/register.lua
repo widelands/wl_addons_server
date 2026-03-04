@@ -1,3 +1,3 @@
 return {
-   hebrews_massada = {},
+   hebrews_massada = { "__skip_if_exists" },
 }

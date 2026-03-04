@@ -78,7 +78,7 @@ wl.Descriptions():new_productionsite_type {
          descname = _("making a menorah"),
          actions = {
             "return=skipped unless economy needs menorah",
-            "consume=gold_ore:2",
+            "consume=gold_ore:3",
             "sleep=duration:15s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
             "animate=working duration:30s",

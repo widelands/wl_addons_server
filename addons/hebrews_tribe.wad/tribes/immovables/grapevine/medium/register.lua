@@ -1,3 +1,3 @@
 return {
-   grapevine_medium = { "field", "flowering" },
+   grapevine_medium = { "__skip_if_exists", "field", "flowering" },
 }

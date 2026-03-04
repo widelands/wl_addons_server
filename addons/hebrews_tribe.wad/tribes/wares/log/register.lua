@@ -1,3 +1,3 @@
 return {
-   log = {},
+   log = { "__skip_if_exists" },
 }

@@ -1,3 +1,3 @@
 return {
-   ashes = {},
+   ashes = { "__skip_if_exists" },
 }

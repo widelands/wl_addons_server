@@ -1,1 +1,1 @@
-return { hebrews_recruit = {} }
+return { hebrews_recruit = { "__skip_if_exists" } }

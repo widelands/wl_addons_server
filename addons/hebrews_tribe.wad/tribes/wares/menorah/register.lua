@@ -1,3 +1,3 @@
 return {
-   menorah = {},
+   menorah = { "__skip_if_exists" },
 }

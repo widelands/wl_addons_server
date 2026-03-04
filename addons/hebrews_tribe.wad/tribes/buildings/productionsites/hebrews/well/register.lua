@@ -1,3 +1,3 @@
 return {
-   hebrews_well = {},
+   hebrews_well = { "__skip_if_exists" },
 }

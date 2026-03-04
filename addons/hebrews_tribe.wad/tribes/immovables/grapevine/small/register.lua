@@ -1,3 +1,3 @@
 return {
-   grapevine_small = { "field" },
+   grapevine_small = { "__skip_if_exists", "field" },
 }

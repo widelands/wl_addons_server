@@ -1,3 +1,3 @@
 return {
-   zizit = {},
+   zizit = { "__skip_if_exists" },
 }

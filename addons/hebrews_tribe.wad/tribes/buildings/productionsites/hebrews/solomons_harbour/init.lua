@@ -33,6 +33,7 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
+      needs_water = true,
       prohibited_till = 1800,
       very_weak_ai_limit = 0,
       weak_ai_limit = 1
@@ -53,10 +54,9 @@ wl.Descriptions():new_productionsite_type {
          actions = {
             "return=skipped unless economy needs log",
             "consume=menorah",
-            "sleep=duration:45s",
-            "playsound=sound/hammering/hammering priority:50%",
-            "sleep=duration:30s",
-            "produce=log:2"
+            "callworker=trade_wood",
+            "sleep=duration:10s",
+            "callworker=trade_wood",
          }
       },
    },

@@ -46,6 +46,7 @@ wl.Descriptions():new_productionsite_type {
    inputs = {
       { name = "cloth", amount = 6 },
       { name = "zizit", amount = 8 },
+      { name = "gold_leaf", amount = 2 },
    },
 
    programs = {
@@ -89,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
          actions = {
             -- time: 32.4 + 35 + 3.6 = 71 sec
             "return=skipped unless economy needs tallit",
-            "consume=cloth:2 zizit:4",
+            "consume=cloth:2 zizit:4 gold_leaf",
             "sleep=duration:32s400ms",
             "animate=working duration:35s",
             "produce=tallit"

@@ -42,7 +42,6 @@ wl.Descriptions():new_productionsite_type {
    },
 
    inputs = {
-      { name = "water", amount = 6 }
    },
 
    programs = {
@@ -58,7 +57,6 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting olive trees because ...
          descname = _("planting olive trees"),
          actions = {
-            "consume=water",
             "callworker=plant_olives",
             "sleep=duration:5s"
          }

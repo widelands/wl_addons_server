@@ -1,3 +1,3 @@
 return {
-   olivetree_medium = {},
+   olivetree_medium = { "__skip_if_exists" },
 }

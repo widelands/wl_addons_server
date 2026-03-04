@@ -1,3 +1,3 @@
 return {
-   hebrews_talmid_chacham = {},
+   hebrews_talmid_chacham = { "__skip_if_exists" },
 }

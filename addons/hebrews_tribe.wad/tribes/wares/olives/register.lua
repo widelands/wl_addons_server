@@ -1,3 +1,3 @@
 return {
-   olives = {},
+   olives = { "__skip_if_exists" },
 }

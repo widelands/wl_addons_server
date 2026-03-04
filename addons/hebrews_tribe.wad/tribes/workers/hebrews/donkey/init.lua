@@ -21,6 +21,13 @@ wl.Descriptions():new_carrier_type {
          "callobject=shrink",
          "createware=granite",
          "return"
+      },
+      trade_wood = {
+         "findspace=size:swim radius:6",
+         "walk=coords",
+         "animate=idle duration:20s",
+         "createware=log",
+         "return"
       }
    },
 

@@ -1,3 +1,3 @@
 return {
-   copper = {},
+   copper = { "__skip_if_exists" },
 }

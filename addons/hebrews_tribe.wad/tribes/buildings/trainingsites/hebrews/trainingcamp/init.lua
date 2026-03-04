@@ -28,9 +28,10 @@ wl.Descriptions():new_trainingsite_type {
    },
 
    aihints = {
-      prohibited_till = 1500,
-      very_weak_ai_limit = 0,
-      weak_ai_limit = 1
+      trainingsites_max_percent = 100,
+      prohibited_till = 900,
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 2
    },
 
    working_positions = {
@@ -39,12 +40,12 @@ wl.Descriptions():new_trainingsite_type {
 
    inputs = {
       { name = "fish", amount = 6 },
-      { name = "meat", amount = 6 },
+      { name = "meat", amount = 12 },
       { name = "bread_hebrews", amount = 10 },
       { name = "slingshot", amount = 4 },
       { name = "dagger", amount = 4 },
       { name = "tunic", amount = 4 },
-      { name = "zizit", amount = 4 },
+      { name = "tallit_katan", amount = 4 },
       { name = "tefilin", amount = 4 },
       { name = "tallit", amount = 4 },
       { name = "menorah", amount = 4 },
@@ -113,12 +114,12 @@ wl.Descriptions():new_trainingsite_type {
          descname = pgettext("hebrews_building", "upgrading soldier evade from level 0 to level 1"),
          actions = {
             "checksoldier=soldier:evade level:0",
-            "return=failed unless site has zizit",
+            "return=failed unless site has tallit_katan",
             "return=failed unless site has bread_hebrews",
-            "return=failed unless site has fish,meat",
+            "return=failed unless site has meat:2",
             "sleep=duration:30s",
             "checksoldier=soldier:evade level:0",
-            "consume=zizit bread_hebrews fish,meat",
+            "consume=tallit_katan bread_hebrews meat:2",
             "train=soldier:evade level:1"
          }
       },
@@ -129,9 +130,10 @@ wl.Descriptions():new_trainingsite_type {
             "return=failed unless site has tefilin",
             "return=failed unless site has bread_hebrews",
             "return=failed unless site has wine",
+            "return=failed unless site has meat:2",
             "sleep=duration:30s",
             "checksoldier=soldier:evade level:1",
-            "consume=tefilin bread_hebrews wine",
+            "consume=tefilin bread_hebrews wine meat:2",
             "train=soldier:evade level:2"
          }
       },
@@ -142,9 +144,10 @@ wl.Descriptions():new_trainingsite_type {
             "return=failed unless site has tallit",
             "return=failed unless site has bread_hebrews",
             "return=failed unless site has wine",
+            "return=failed unless site has meat:2",
             "sleep=duration:30s",
             "checksoldier=soldier:evade level:2",
-            "consume=tallit bread_hebrews wine",
+            "consume=tallit bread_hebrews wine meat:2",
             "train=soldier:evade level:3"
          }
       },
@@ -155,9 +158,10 @@ wl.Descriptions():new_trainingsite_type {
             "return=failed unless site has menorah",
             "return=failed unless site has bread_hebrews:2",
             "return=failed unless site has wine",
+            "return=failed unless site has meat:2",
             "sleep=duration:30s",
             "checksoldier=soldier:evade level:3",
-            "consume=menorah bread_hebrews:2 wine",
+            "consume=menorah bread_hebrews:2 wine meat:2",
             "train=soldier:evade level:4"
          }
       },

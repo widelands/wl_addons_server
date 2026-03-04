@@ -1,3 +1,3 @@
 return {
-   wheatfield_harvested = { "field" },
+   wheatfield_harvested = { "__skip_if_exists", "field" },
 }

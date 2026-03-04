@@ -1,3 +1,3 @@
 return {
-   hebrews_quarry = {},
+   hebrews_quarry = { "__skip_if_exists" },
 }

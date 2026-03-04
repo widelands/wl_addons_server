@@ -1,3 +1,3 @@
 return {
-   tunic = {},
+   tunic = { "__skip_if_exists" },
 }

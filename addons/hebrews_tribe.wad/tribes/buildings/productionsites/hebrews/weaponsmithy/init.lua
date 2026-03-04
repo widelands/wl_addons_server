@@ -45,6 +45,7 @@ wl.Descriptions():new_productionsite_type {
       { name = "granite", amount = 8 },
       { name = "copper", amount = 8 },
       { name = "yarn", amount = 8 },
+      { name = "gold_leaf", amount = 4 },
    },
 
    programs = {
@@ -76,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
          descname = _("forging a dagger"),
          actions = {
             "return=skipped unless economy needs dagger",
-            "consume=fur copper",
+            "consume=fur copper gold_leaf",
             "sleep=duration:32s400ms",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
             "sleep=duration:36s",

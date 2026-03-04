@@ -1,3 +1,3 @@
 return {
-   clay = {},
+   clay = { "__skip_if_exists" },
 }

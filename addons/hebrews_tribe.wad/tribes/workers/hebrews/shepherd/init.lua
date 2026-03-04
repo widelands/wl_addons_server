@@ -25,7 +25,7 @@ wl.Descriptions():new_worker_type {
          "return"
       },
       hunt = {
-         "findobject=type:bob radius:13 attrib:kosher",
+         "findobject=type:bob radius:13 name:sheep",
          "walk=object",
          "animate=idle duration:1s",
          "removeobject",
@@ -33,7 +33,7 @@ wl.Descriptions():new_worker_type {
          "return"
       },
       sheer = {
-         "findobject=type:bob radius:13 attrib:kosher",
+         "findobject=type:bob radius:13 name:sheep",
          "walk=object",
          "animate=idle duration:1s",
          "createware=wool",

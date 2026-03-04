@@ -1,3 +1,3 @@
 return {
-   hebrews_geologist = {},
+   hebrews_geologist = { "__skip_if_exists" },
 }

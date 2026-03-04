@@ -1,3 +1,3 @@
 return {
-   hebrews_donkey = {},
+   hebrews_donkey = { "__skip_if_exists" },
 }

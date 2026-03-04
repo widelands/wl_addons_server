@@ -1,1 +1,1 @@
-return { hebrews_goldmine = {} }
+return { hebrews_goldmine = { "__skip_if_exists" } }

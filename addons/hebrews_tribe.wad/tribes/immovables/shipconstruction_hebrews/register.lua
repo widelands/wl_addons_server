@@ -1,3 +1,3 @@
 return {
-   hebrews_shipconstruction = { "hebrews_shipconstruction" },
+   hebrews_shipconstruction = { "__skip_if_exists", "hebrews_shipconstruction" },
 }

@@ -1,3 +1,3 @@
 return {
-   gold_ore = {},
+   gold_ore = { "__skip_if_exists" },
 }

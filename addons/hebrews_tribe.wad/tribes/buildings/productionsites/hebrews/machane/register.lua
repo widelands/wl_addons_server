@@ -1,3 +1,3 @@
 return {
-   hebrews_machane = {},
+   hebrews_machane = { "__skip_if_exists" },
 }

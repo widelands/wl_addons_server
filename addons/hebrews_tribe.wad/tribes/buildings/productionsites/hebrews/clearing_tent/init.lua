@@ -29,7 +29,6 @@ wl.Descriptions():new_productionsite_type {
    },
 
    aihints = {
-      basic_amount = 1,
       prohibited_till = 800,
       very_weak_ai_limit = 1,
       weak_ai_limit = 2,
@@ -44,6 +43,7 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start clearing trees because ...
          descname = _("clearing trees"),
          actions = {
+            "return=skipped unless economy needs log",
             "callworker=clear",
             "sleep=duration:20s"
          }

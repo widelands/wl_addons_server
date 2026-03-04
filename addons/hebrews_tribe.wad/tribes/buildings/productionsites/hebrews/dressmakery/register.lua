@@ -1,3 +1,3 @@
 return {
-   hebrews_dressmakery = {},
+   hebrews_dressmakery = { "__skip_if_exists" },
 }

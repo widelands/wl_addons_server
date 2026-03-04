@@ -1,3 +1,3 @@
 return {
-   destroyed_building = {},
+   destroyed_building = { "__skip_if_exists" },
 }

@@ -1,3 +1,3 @@
 return {
-   branch = {},
+   branch = { "__skip_if_exists" },
 }

@@ -30,7 +30,7 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       basic_amount = 2,
-      prohibited_till = 450,
+      forced_after = 60,
       very_weak_ai_limit = 1,
       weak_ai_limit = 3,
    },

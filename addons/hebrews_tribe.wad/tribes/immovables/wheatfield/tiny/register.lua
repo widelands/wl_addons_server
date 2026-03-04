@@ -1,3 +1,3 @@
 return {
-   wheatfield_tiny = { "field", "seed_wheat" },
+   wheatfield_tiny = { "__skip_if_exists", "field", "seed_wheat" },
 }

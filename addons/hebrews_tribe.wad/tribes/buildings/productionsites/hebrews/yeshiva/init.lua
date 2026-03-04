@@ -33,7 +33,7 @@ wl.Descriptions():new_productionsite_type {
 
    aihints = {
       basic_amount = 1,
-      prohibited_till = 900,
+      forced_after = 480,
       very_weak_ai_limit = 1,
       weak_ai_limit = 2
    },
@@ -43,13 +43,12 @@ wl.Descriptions():new_productionsite_type {
    },
 
    inputs = {
-      { name = "zizit", amount = 4 },
       { name = "tallit_katan", amount = 4 },
       { name = "tefilin", amount = 4 },
       { name = "tallit", amount = 4 },
-      { name = "hebrews_carrier", amount = 4 },
-      { name = "hebrews_talmid", amount = 4 },
-      { name = "hebrews_talmid_chacham", amount = 4 },
+      { name = "hebrews_carrier", amount = 1 },
+      { name = "hebrews_talmid", amount = 1 },
+      { name = "hebrews_talmid_chacham", amount = 1 },
    },
 
    programs = {
@@ -69,7 +68,7 @@ wl.Descriptions():new_productionsite_type {
          descname = pgettext("hebrews_building", "educating Talmid"),
          actions = {
             "return=skipped unless economy needs hebrews_talmid",
-            "consume=zizit tallit_katan hebrews_carrier",
+            "consume=tallit_katan hebrews_carrier",
             "sleep=duration:45s",
             "recruit=hebrews_talmid"
          }
