@@ -18,6 +18,26 @@ settings_window:get_child("whole_map_hint").text=rt(
                                           p(note3)
                                           )
 
+-- Player colors are taken from src/graphic/playercolor.h and converted to hex
+local pl_colors = {
+   "4169FF",  -- Royal Blue
+   "FF2900",  -- Red
+   "FFE800",  -- Yellow
+   "3BDF03",  -- Green
+   "808080",  -- Gray
+   "FFAC00",  -- Orange
+   "D700DA",  -- Purple
+   "FFFFFF",  -- White
+   "0078FF",  -- Sky Blue
+   "680028",  -- Dark Red
+   "786C00",  -- Dark Yellow
+   "007000",  -- Dark Green
+   "FF78A0",  -- Rose
+   "943800",  -- Brown
+   "600054",  -- Dark Purple
+   "C0C0C0",  -- Silver
+}
+
 -- Restrict the spinbox max value for plr_radius to the half of smallest map dimension
 settings_window:get_child("plr_radius"):set_interval(2, (map.width < map.height and map.width or map.height) // 2)
 
@@ -102,7 +122,7 @@ function players()
 
          progress_window:get_child("progress_title").text = _("Analysing %1$d map fields for player %2$s"):bformat(#fields, pl_slot.name)
                               -- TRANSLATORS: Placeholder is a number
-         richtext = richtext .. h2(_("Vicinity of Player %1$d"):bformat(i)) -- Not players name!
+         richtext = richtext .. h2(font("color="..pl_colors[i], _("Vicinity of Player %1$d"):bformat(i))) -- Not players name!
 
          results = analyse_plr_pos(pl_slot)
          table.insert(all_players, results)
