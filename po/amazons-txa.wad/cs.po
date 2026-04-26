@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Ondřej Itřech, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 03:13+0200\n"
+"PO-Revision-Date: 2026-04-25 19:35+0000\n"
+"Last-Translator: Ondřej Itřech, 2026\n"
+"Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: addons/amazons-txa.wad/addon:2
+msgid "Harder Amazons"
+msgstr ""
+
+#: addons/amazons-txa.wad/addon:3
+msgid ""
+"This is the add-on version of the Amazon changes proposed in the balancing "
+"PR."
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/amazons-txa.wad/charcoal_master/init.lua:8
+msgctxt "amazons_worker"
+msgid "Charcoal Master"
+msgstr ""
+
+#: addons/amazons-txa.wad/postload.lua:14
+msgctxt "amazons_worker"
+msgid "Burns rare trees to produce charcoal more efficiently."
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Amazon production site: Rare Tree Kiln
+#: addons/amazons-txa.wad/postload.lua:24
+msgctxt "amazons_building"
+msgid ""
+"‘You think you've mastered the art of burning charcoal. But the best "
+"charcoal is that which can only be made from rubber when placed in the "
+"hottest fire of ironwood. What you've learnt so far, my girl, is barely "
+"enough to start learning how to ignite ironwood. You have to start slowly, "
+"with the gentle flames of a balsa fire…’"
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Amazon production site: Rare Tree Kiln
+#: addons/amazons-txa.wad/postload.lua:26
+msgctxt "amazons_building"
+msgid "Mistress Blackwood, teaching an apprentice"
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Amazon production site: Rare Tree Kiln
+#: addons/amazons-txa.wad/postload.lua:28
+msgctxt "amazons_building"
+msgid "Burns rare trees into charcoal."
+msgstr ""
+
+#. TRANSLATORS: Performance helptext for an Amazon production site: Rare Tree Kiln
+#: addons/amazons-txa.wad/postload.lua:30
+#, lua-format
+msgctxt "amazons_building"
+msgid ""
+"If fully supplied, the rare tree kiln needs %s on average to produce one "
+"lump of coal."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start producing charcoal because ...
+#: addons/amazons-txa.wad/programs/charcoal_kiln.lua:6
+#: addons/amazons-txa.wad/rare_tree_kiln/init.lua:43
+msgid "producing charcoal"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start producing a light wooden armor because ...
+#: addons/amazons-txa.wad/programs/dressmakery.lua:6
+msgid "making a light wooden armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
+#: addons/amazons-txa.wad/programs/dressmakery.lua:18
+msgid "making a wooden helmet"
+msgstr "vyrábění dřevěné přilby"
+
+#. TRANSLATORS: Completed/Skipped/Did not start making sturdy boots because ...
+#: addons/amazons-txa.wad/programs/dressmakery.lua:30
+msgid "making sturdy boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
+#: addons/amazons-txa.wad/programs/dressmakery.lua:42
+msgid "making swift boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making hero boots because ...
+#: addons/amazons-txa.wad/programs/dressmakery.lua:54
+msgid "making hero boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:6
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:24
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:37
+msgid "working"
+msgstr "vyrábění"
+
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting balsa because ...
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:49
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:73
+msgid "harvesting balsa"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:57
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:85
+msgid "harvesting rubber"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting ironwood because ...
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:65
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:97
+msgid "harvesting ironwood"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:10
+msgid "sleeping"
+msgstr "podřimování"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:18
+msgctxt "amazons_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:32
+msgctxt "amazons_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:47
+msgctxt "amazons_building"
+msgid "upgrading soldier evade from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:62
+msgctxt "amazons_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:76
+msgctxt "amazons_building"
+msgid "upgrading soldier health from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:91
+msgctxt "amazons_building"
+msgid "upgrading soldier health from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:106
+msgctxt "amazons_building"
+msgid "upgrading soldier defense from level 0 to level 1"
+msgstr "cvičení obrany bojovnice z úrovně 0 na úroveň 1"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/amazons-txa.wad/programs/training_glade.lua:121
+msgctxt "amazons_building"
+msgid "upgrading soldier defense from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/amazons-txa.wad/rare_tree_kiln/init.lua:8
+msgctxt "amazons_building"
+msgid "Rare Tree Kiln"
+msgstr ""

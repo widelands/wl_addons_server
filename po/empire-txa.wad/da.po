@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 03:13+0200\n"
+"PO-Revision-Date: 2026-04-25 19:34+0000\n"
+"Language-Team: Danish (https://app.transifex.com/widelands/teams/35159/da/)\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/empire-txa.wad/addon:6
+msgid ""
+"This is the add-on version of the Empire changes proposed in the balancing "
+"PRs."
+msgstr ""
+
+#: addons/empire-txa.wad/addon:8 addons/empire-txa.wad/postload.lua:13
+msgid "Easier Empire"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: addons/empire-txa.wad/programs/marblemine.lua:6
+#: addons/empire-txa.wad/programs/quarry.lua:6
+msgid "working"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
+#: addons/empire-txa.wad/programs/marblemine.lua:18
+#: addons/empire-txa.wad/programs/marblemine.lua:45
+#: addons/empire-txa.wad/programs/marblemine_deep.lua:18
+#: addons/empire-txa.wad/programs/marblemine_deep.lua:47
+msgid "mining granite"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#: addons/empire-txa.wad/programs/marblemine.lua:32
+#: addons/empire-txa.wad/programs/marblemine.lua:53
+#: addons/empire-txa.wad/programs/marblemine_deep.lua:6
+#: addons/empire-txa.wad/programs/marblemine_deep.lua:33
+#: addons/empire-txa.wad/programs/marblemine_deep.lua:55
+msgid "mining marble"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+#: addons/empire-txa.wad/programs/piggery.lua:6
+msgid "raising pigs"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
+#: addons/empire-txa.wad/programs/stonemason.lua:6
+msgid "sculpting a marble column"
+msgstr ""
