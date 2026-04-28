@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 03:13+0200\n"
+"POT-Creation-Date: 2026-04-28 03:13+0200\n"
 "PO-Revision-Date: 2026-04-25 19:35+0000\n"
 "Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -23,24 +23,26 @@ msgstr ""
 
 #: addons/amazons-txa.wad/addon:2
 msgid "Harder Amazons"
-msgstr ""
+msgstr "Stoerdere Amazones"
 
 #: addons/amazons-txa.wad/addon:3
 msgid ""
 "This is the add-on version of the Amazon changes proposed in the balancing "
 "PR."
 msgstr ""
+"Dit is de aanvullende versie van de wijzigingen voor Amazon die in de PR "
+"voor het evenwicht zijn voorgesteld."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/amazons-txa.wad/charcoal_master/init.lua:8
 msgctxt "amazons_worker"
 msgid "Charcoal Master"
-msgstr ""
+msgstr "Houtskoolmeester"
 
 #: addons/amazons-txa.wad/postload.lua:14
 msgctxt "amazons_worker"
 msgid "Burns rare trees to produce charcoal more efficiently."
-msgstr ""
+msgstr "Verbrandt zeldzame bomen om efficiënter houtskool te produceren."
 
 #. TRANSLATORS: Lore helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:24
@@ -52,18 +54,24 @@ msgid ""
 "enough to start learning how to ignite ironwood. You have to start slowly, "
 "with the gentle flames of a balsa fire…’"
 msgstr ""
+"‘Je denkt dat je de kunst van het houtskool branden onder de knie hebt. Maar "
+"de beste houtskool is die welke alleen uit rubber kan worden gemaakt wanneer "
+"deze in het heetste vuur van ijzerhout wordt gelegd. Wat je tot nu toe hebt "
+"geleerd, mijn meisje, is nauwelijks genoeg om te leren hoe je ijzerhout moet "
+"aansteken. Je moet langzaam beginnen, met de zachte vlammen van een "
+"balsahoutvuur…’"
 
 #. TRANSLATORS: Lore author helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:26
 msgctxt "amazons_building"
 msgid "Mistress Blackwood, teaching an apprentice"
-msgstr ""
+msgstr "Meesteres Blackwood geeft les aan een leerling"
 
 #. TRANSLATORS: Purpose helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:28
 msgctxt "amazons_building"
 msgid "Burns rare trees into charcoal."
-msgstr ""
+msgstr "Verbrandt zeldzame bomen tot houtskool."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:30
@@ -73,12 +81,14 @@ msgid ""
 "If fully supplied, the rare tree kiln needs %s on average to produce one "
 "lump of coal."
 msgstr ""
+"Als de voorraad volledig is, heeft de zeldzame houtoven gemiddeld %s nodig "
+"om één stuk steenkool te produceren."
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing charcoal because ...
 #: addons/amazons-txa.wad/programs/charcoal_kiln.lua:6
 #: addons/amazons-txa.wad/rare_tree_kiln/init.lua:43
 msgid "producing charcoal"
-msgstr ""
+msgstr "houtskool produceren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing a light wooden armor because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:6
@@ -139,37 +149,37 @@ msgstr "slapen"
 #: addons/amazons-txa.wad/programs/training_glade.lua:18
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "soldaat ontwijking upgraden van niveau 0 naar niveau 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:32
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "soldaat ontwijking upgraden van niveau 1 naar niveau 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:47
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 2 to level 3"
-msgstr ""
+msgstr "soldaat ontwijking upgraden van niveau 2 naar niveau 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:62
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 0 to level 1"
-msgstr ""
+msgstr "leven van soldaten upgraden van niveau 0 naar niveau 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:76
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr ""
+msgstr "gezondheid van soldaat upgraden van niveau 1 naar niveau 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:91
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 2 to level 3"
-msgstr ""
+msgstr "gezondheid van soldaat upgraden van niveau 2 naar niveau 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:106
@@ -181,10 +191,10 @@ msgstr "soldaat verdediging upgraden van niveau 0 naar niveau 1"
 #: addons/amazons-txa.wad/programs/training_glade.lua:121
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "soldaat verdediging upgraden van niveau 1 naar niveau 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/amazons-txa.wad/rare_tree_kiln/init.lua:8
 msgctxt "amazons_building"
 msgid "Rare Tree Kiln"
-msgstr ""
+msgstr "Zeldzame Boom Oven"
