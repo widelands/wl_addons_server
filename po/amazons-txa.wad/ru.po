@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 03:13+0200\n"
+"POT-Creation-Date: 2026-05-24 03:14+0200\n"
 "PO-Revision-Date: 2026-04-25 19:35+0000\n"
 "Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -25,7 +25,7 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/amazons-txa.wad/addon:2
+#: addons/amazons-txa.wad/addon:2 addons/amazons-txa.wad/postload.lua:11
 msgid "Harder Amazons"
 msgstr ""
 
@@ -41,13 +41,13 @@ msgctxt "amazons_worker"
 msgid "Charcoal Master"
 msgstr ""
 
-#: addons/amazons-txa.wad/postload.lua:14
+#: addons/amazons-txa.wad/postload.lua:16
 msgctxt "amazons_worker"
 msgid "Burns rare trees to produce charcoal more efficiently."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Amazon production site: Rare Tree Kiln
-#: addons/amazons-txa.wad/postload.lua:24
+#: addons/amazons-txa.wad/postload.lua:26
 msgctxt "amazons_building"
 msgid ""
 "‘You think you've mastered the art of burning charcoal. But the best "
@@ -58,19 +58,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Amazon production site: Rare Tree Kiln
-#: addons/amazons-txa.wad/postload.lua:26
+#: addons/amazons-txa.wad/postload.lua:28
 msgctxt "amazons_building"
 msgid "Mistress Blackwood, teaching an apprentice"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Amazon production site: Rare Tree Kiln
-#: addons/amazons-txa.wad/postload.lua:28
+#: addons/amazons-txa.wad/postload.lua:30
 msgctxt "amazons_building"
 msgid "Burns rare trees into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Rare Tree Kiln
-#: addons/amazons-txa.wad/postload.lua:30
+#: addons/amazons-txa.wad/postload.lua:32
 #, lua-format
 msgctxt "amazons_building"
 msgid ""

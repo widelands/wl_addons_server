@@ -8,6 +8,8 @@ local function set_programs(site, programs)
    end
 end
 
+descriptions:modify_unit("tribe", "amazons", "descname", _("Harder Amazons"))
+
 -- Charcoal
 descriptions:modify_unit("tribe", "amazons", "add_worker", "amazons_charcoal_master", 4, nil, nil, {
    helptexts = {
