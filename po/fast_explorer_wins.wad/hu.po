@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Tóth András <txa-dev@posteo.hu>, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"POT-Creation-Date: 2026-05-25 03:15+0200\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
+"Last-Translator: Tóth András <txa-dev@posteo.hu>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
 "hu/)\n"
 "Language: hu\n"
@@ -49,7 +53,7 @@ msgstr ""
 #. TRANSLATORS: A time string hh:mm:ss like 10:03:55
 #: addons/fast_explorer_wins.wad/init.lua:167
 msgid "%1$02d:%2$02d:%3$02d"
-msgstr ""
+msgstr "%1$02d:%2$02d:%3$02d"
 
 #: addons/fast_explorer_wins.wad/init.lua:170
 msgid "Game Over!"

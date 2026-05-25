@@ -1,0 +1,388 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 03:16+0200\n"
+"PO-Revision-Date: 2026-05-24 08:16+0000\n"
+"Language-Team: Portuguese (https://app.transifex.com/widelands/teams/35159/"
+"pt/)\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
+
+#: addons/win_cond_military_influence.wad/addon:2
+#: addons/win_cond_military_influence.wad/functions.lua:621
+#: addons/win_cond_military_influence.wad/functions.lua:660
+msgid "Military Influence"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/addon:3
+msgid ""
+"Conquer as much as you can and train as many and strong soldiers as you can "
+"in the set time."
+msgstr ""
+
+#. TRANSLATORS: Gametime as hours:minutes, e.g. 2:30
+#: addons/win_cond_military_influence.wad/functions.lua:154
+msgid "%1$d:%2$02d:%3$02d"
+msgstr ""
+
+#. TRANSLATORS: first placeholder is player name, second is game time, third is tribe
+#: addons/win_cond_military_influence.wad/functions.lua:158
+msgid "Military Influence Score for %1$s at %2$s with %3$s:"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:165
+msgid "Area info"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:166
+msgid "Area score: "
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:169
+#, lua-format
+msgid "Total area: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:170
+#, lua-format
+msgid "Area controlled by military buildings: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:171
+#, lua-format
+msgid "Conquerable map area: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:172
+#, lua-format
+msgid "Player owns %.1f%% of the conquerable map area"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:173
+#, lua-format
+msgid "Number of military buildings: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:175
+msgid "Soldiers info"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:176
+msgid "Soldiers score: "
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:179
+#, lua-format
+msgid "Soldiers statistics score: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:180
+#, lua-format
+msgid "Total effective strength of guards: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:181
+#, lua-format
+msgid "Total number of soldiers: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:182
+#, lua-format
+msgid "Soldiers in buildings: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:183
+#, lua-format
+msgid "Soldiers on roads and ships: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:184
+#, lua-format
+msgid "Number of heroes: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:185
+#, lua-format
+msgid "Sum of all soldier levels: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:186
+#, lua-format
+msgid "Total number of guards: %d"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:187
+#, lua-format
+msgid "%.1f%% of available positions"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:188
+#, lua-format
+msgid "Average strength of garrisons: %.1f%%"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:197
+msgid "Calculation method"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:198
+msgid "The final score is a weighted geometric mean of four scores:"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:199
+msgid "the total owned area"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:200
+msgid "the sum of conquer areas of military sites"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:201
+msgid "the total soldier statistics score"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:202
+msgid "the total effective strength of soldiers in military sites"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:203
+msgid ""
+"The areas are counted with half weight. That means that first the area score "
+"is calculated as the square root of the product of the two partial area "
+"scores, then the final score is the third root of the product of the area "
+"score and the two partial soldier scores."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:207
+msgid ""
+"The soldier statistics assigns a score to each soldier between 1 and 20 "
+"depending on the sum of training levels, using a quadratic formula. Please "
+"note that soldiers on roads and ships are not counted in the calculation "
+"because of technical limitations."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:210
+msgid ""
+"The theoretical effective strength is calculated from the actual battle "
+"values:"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:212
+msgid "strength = a * h / (1 - d / 100) / (1 - e / 100) / 10000000"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:213
+msgid "(a: average attack, h: health, d: defense, e: evade)"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:223
+msgid ""
+"The effective strength of the soldiers is different for each tribe. It is "
+"between around 2.7 for rookies and around 30 for heroes for the official "
+"tribes."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:227
+#, lua-format
+msgid "Effective strength of soldiers of the %s tribe:"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:230
+#, lua-format
+msgid "Rookie: %.2f"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:231
+#, lua-format
+msgid "Hero: %.2f"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:241
+msgid "Rationale"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:242
+msgid ""
+"The total area and the soldier statistics are meant to be the same as the "
+"corresponding values in the general statistics, with the mentioned "
+"limitation of the soldier score. The military site scores are meant to "
+"measure the actual military strength in case of battles."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:246
+msgid ""
+"Using the geometric mean of the two partial area scores means that guarded "
+"areas are worth more than unguarded areas, and new buildings that expand "
+"your territory are worth more than ones in already guarded areas. Similarly, "
+"soldiers in military sites are worth more than ones in warehouses."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:250
+msgid ""
+"Two kinds of soldier points are used because the effective strength makes "
+"comparison between different tribes more realistic, but the soldier "
+"statistics rewards training more."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:253
+msgid ""
+"The area score gets less weight than the soldier score because it is usually "
+"much easier, faster and cheaper to expand your territory than to train your "
+"soldiers, but it is the strength of your army that decides battles in the "
+"end, so a strong army can easily take large territories from a weak one."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:260
+msgid "Buildings"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:261
+msgid "Military site"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:262
+msgid "Max. soldiers"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:263
+msgid "Max. soldier strength"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:264
+msgid "Conquer area"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:265
+msgid "Conquer area / soldier"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:266
+msgid "Max. strength / conquer area"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:267
+msgid "Score with all heroes"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:268
+msgid "Score / hero"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:269
+msgid "Score with all rookies"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:270
+msgid "Score / rookie"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:314
+msgid "Background information"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:315
+msgid "Soldiers"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:317
+#, lua-format
+msgid "Rookie is %.1f%% of hero"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:318
+#, lua-format
+msgid "Hero is %.1f times as strong as rookie"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:321
+msgid ""
+"(The building scores are only indicative of the potential strength of each "
+"building itself, they are not directly related to the scoring of the win "
+"condition.)"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:346
+msgid "Score Info"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:356
+msgid "Score"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:385
+msgid "Background Info"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:399
+msgid "Help"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:479
+msgid "The End is Near!"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:543
+msgid "Side quest: Conquer the whole map area"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:545
+msgid ""
+"Conquer the whole area of the map as fast as you can. It only counts if you "
+"guard it too: the sum of the conquer areas of military sites has to be 120% "
+"of the owned area."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:548
+msgid "Map conquered"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:549
+msgid "Congratulations! You have conquered the whole map."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:585
+msgid "Side quest: Train heroes"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:586
+#, lua-format
+msgid "Train %d heroes as fast as you can."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:587
+msgid "Heroes trained"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:588
+#, lua-format
+msgid "Congratulations! You have trained %d heroes."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:663
+#, lua-format
+msgid ""
+"Expand your territory, train your soldiers, and guard your territory with "
+"military sites filled with heroes. You have to do all of them to get a "
+"really good score. Highest score after %s wins."
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/functions.lua:670
+msgid "Final Score"
+msgstr ""
+
+#: addons/win_cond_military_influence.wad/init.lua:8
+msgid ""
+"Conquer as much land as you can and train as many and strong soldiers as you "
+"can in the set time."
+msgstr ""

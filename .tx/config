@@ -106,6 +106,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Escher-Goose-less-Fish-wad]
+file_filter            = po/Escher_Goose_less_Fish.wad/<lang>.po
+source_file            = po/Escher_Goose_less_Fish.wad/Escher_Goose_less_Fish.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Fast-Explorer-wad]
 file_filter            = po/Fast_Explorer.wad/<lang>.po
 source_file            = po/Fast_Explorer.wad/Fast_Explorer.wad.pot
@@ -906,6 +914,22 @@ file_filter            = po/white_summer.wad/<lang>.po
 source_file            = po/white_summer.wad/white_summer.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:win-cond-mil-inf-ui-wad]
+file_filter            = po/win_cond_mil_inf_ui.wad/<lang>.po
+source_file            = po/win_cond_mil_inf_ui.wad/win_cond_mil_inf_ui.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:win-cond-military-influence-wad]
+file_filter            = po/win_cond_military_influence.wad/<lang>.po
+source_file            = po/win_cond_military_influence.wad/win_cond_military_influence.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 

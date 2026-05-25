@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Tóth András <txa-dev@posteo.hu>, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-24 03:14+0200\n"
+"POT-Creation-Date: 2026-05-25 03:14+0200\n"
 "PO-Revision-Date: 2026-04-25 19:35+0000\n"
+"Last-Translator: Tóth András <txa-dev@posteo.hu>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
 "hu/)\n"
 "Language: hu\n"
@@ -20,24 +24,26 @@ msgstr ""
 
 #: addons/amazons-txa.wad/addon:2 addons/amazons-txa.wad/postload.lua:11
 msgid "Harder Amazons"
-msgstr ""
+msgstr "Nehezített Amazonok"
 
 #: addons/amazons-txa.wad/addon:3
 msgid ""
 "This is the add-on version of the Amazon changes proposed in the balancing "
 "PR."
 msgstr ""
+"Az amazonokra vonatkozó erőegyensúly-kiegyenlítési változtatási javaslatok "
+"bővítmény formájában."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/amazons-txa.wad/charcoal_master/init.lua:8
 msgctxt "amazons_worker"
 msgid "Charcoal Master"
-msgstr ""
+msgstr "Faszénmester"
 
 #: addons/amazons-txa.wad/postload.lua:16
 msgctxt "amazons_worker"
 msgid "Burns rare trees to produce charcoal more efficiently."
-msgstr ""
+msgstr "Ritkafákból állít elő faszenet a faszénégetőnél gyorsabban."
 
 #. TRANSLATORS: Lore helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:26
@@ -49,18 +55,23 @@ msgid ""
 "enough to start learning how to ignite ironwood. You have to start slowly, "
 "with the gentle flames of a balsa fire…’"
 msgstr ""
+"„Azt hiszed mindent tudsz a faszénégetésről? Hiszen még csak most jön a "
+"neheze! Mert a legjobb faszénhez bizony a gumit kell megperzselni a vasfa "
+"mindennél forróbb tüzében. Amit eddig tanultál, te lány, az épphogy elég "
+"arra, hogy elkezdhesd megtanulni, hogyan gyújtsd be a vasfát. Lassan kell "
+"kezdened, a balza lágy lángjaival…”"
 
 #. TRANSLATORS: Lore author helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:28
 msgctxt "amazons_building"
 msgid "Mistress Blackwood, teaching an apprentice"
-msgstr ""
+msgstr "Fakorom anyó egy növendéket oktatva"
 
 #. TRANSLATORS: Purpose helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:30
 msgctxt "amazons_building"
 msgid "Burns rare trees into charcoal."
-msgstr ""
+msgstr "Ritkafákból állít elő faszenet a faszénégetőnél gyorsabban."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:32
@@ -70,118 +81,120 @@ msgid ""
 "If fully supplied, the rare tree kiln needs %s on average to produce one "
 "lump of coal."
 msgstr ""
+"Ha az ellátása folyamatos, a ritkafa égető átlagosan %s alatt éget ki egy "
+"adag faszenet."
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing charcoal because ...
 #: addons/amazons-txa.wad/programs/charcoal_kiln.lua:6
 #: addons/amazons-txa.wad/rare_tree_kiln/init.lua:43
 msgid "producing charcoal"
-msgstr ""
+msgstr "Faszén égetése"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing a light wooden armor because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:6
 msgid "making a light wooden armor"
-msgstr ""
+msgstr "Könnyű fapáncél készítése"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:18
 msgid "making a wooden helmet"
-msgstr ""
+msgstr "Fa sisak készítése"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making sturdy boots because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:30
 msgid "making sturdy boots"
-msgstr ""
+msgstr "Erős csizma készítése"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:42
 msgid "making swift boots"
-msgstr ""
+msgstr "Gyors csizma készítése"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making hero boots because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:54
 msgid "making hero boots"
-msgstr ""
+msgstr "Hősi csizma készítése"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:6
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:24
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:37
 msgid "working"
-msgstr ""
+msgstr "A munka"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting balsa because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:49
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:73
 msgid "harvesting balsa"
-msgstr ""
+msgstr "Balzafa betakarítása"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:57
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:85
 msgid "harvesting rubber"
-msgstr ""
+msgstr "Gumi betakarítása"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting ironwood because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:65
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:97
 msgid "harvesting ironwood"
-msgstr ""
+msgstr "Vasfa betakarítása"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:10
 msgid "sleeping"
-msgstr ""
+msgstr "Pihenés"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:18
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "Katona kitérésének fejlesztése 0-sról 1-es szintre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:32
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "Katona kitérésének fejlesztése 1-esről 2-es szintre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:47
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 2 to level 3"
-msgstr ""
+msgstr "Katona kitérésének fejlesztése 2-esről 3-as szintre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:62
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 0 to level 1"
-msgstr ""
+msgstr "Katona életerejének fejlesztése 0-sról 1-es szintre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:76
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr ""
+msgstr "Katona életerejének fejlesztése 1-esről 2-es szintre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:91
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 2 to level 3"
-msgstr ""
+msgstr "Katona életerejének fejlesztése 2-esről 3-as szintre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:106
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "Katona védelmének fejlesztése 0-sról 1-es szintre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:121
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "Katona védelmének fejlesztése 1-esről 2-es szintre"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/amazons-txa.wad/rare_tree_kiln/init.lua:8
 msgctxt "amazons_building"
 msgid "Rare Tree Kiln"
-msgstr ""
+msgstr "Ritkafa égető"

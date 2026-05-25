@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Tóth András <txa-dev@posteo.hu>, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 03:13+0200\n"
+"POT-Creation-Date: 2026-05-25 03:14+0200\n"
 "PO-Revision-Date: 2026-04-25 19:34+0000\n"
+"Last-Translator: Tóth András <txa-dev@posteo.hu>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
 "hu/)\n"
 "Language: hu\n"
@@ -23,16 +27,18 @@ msgid ""
 "This is the add-on version of the Empire changes proposed in the balancing "
 "PRs."
 msgstr ""
+"A Birodalomra vonatkozó erőegyensúly-kiegyenlítési változtatási javaslatok "
+"bővítmény formájában."
 
 #: addons/empire-txa.wad/addon:8 addons/empire-txa.wad/postload.lua:13
 msgid "Easier Empire"
-msgstr ""
+msgstr "Könnyített Birodalom"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/empire-txa.wad/programs/marblemine.lua:6
 #: addons/empire-txa.wad/programs/quarry.lua:6
 msgid "working"
-msgstr ""
+msgstr "A munka"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/empire-txa.wad/programs/marblemine.lua:18
@@ -40,7 +46,7 @@ msgstr ""
 #: addons/empire-txa.wad/programs/marblemine_deep.lua:18
 #: addons/empire-txa.wad/programs/marblemine_deep.lua:47
 msgid "mining granite"
-msgstr ""
+msgstr "Gránit bányászása"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #: addons/empire-txa.wad/programs/marblemine.lua:32
@@ -49,14 +55,14 @@ msgstr ""
 #: addons/empire-txa.wad/programs/marblemine_deep.lua:33
 #: addons/empire-txa.wad/programs/marblemine_deep.lua:55
 msgid "mining marble"
-msgstr ""
+msgstr "Márvány bányászása"
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
 #: addons/empire-txa.wad/programs/piggery.lua:6
 msgid "raising pigs"
-msgstr ""
+msgstr "Sertések nevelése"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
 #: addons/empire-txa.wad/programs/stonemason.lua:6
 msgid "sculpting a marble column"
-msgstr ""
+msgstr "Márványoszlop faragása"
