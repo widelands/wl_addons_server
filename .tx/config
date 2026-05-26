@@ -1,6 +1,14 @@
 [main]
 host = https://www.transifex.com
 
+[o:widelands:p:widelands-addons:r:16-Kingdoms---Sea-wad]
+file_filter            = po/16_Kingdoms___Sea.wad/<lang>.po
+source_file            = po/16_Kingdoms___Sea.wad/16_Kingdoms___Sea.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:16-Kingdoms-wad]
 file_filter            = po/16_Kingdoms.wad/<lang>.po
 source_file            = po/16_Kingdoms.wad/16_Kingdoms.wad.pot
@@ -20,6 +28,22 @@ keep_translations      = false
 [o:widelands:p:widelands-addons:r:8-Islands-wad]
 file_filter            = po/8_Islands.wad/<lang>.po
 source_file            = po/8_Islands.wad/8_Islands.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Accurate-Europe-1-3-wad]
+file_filter            = po/Accurate_Europe_1_3.wad/<lang>.po
+source_file            = po/Accurate_Europe_1_3.wad/Accurate_Europe_1_3.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Accurate-Europe-1-4-wad]
+file_filter            = po/Accurate_Europe_1_4.wad/<lang>.po
+source_file            = po/Accurate_Europe_1_4.wad/Accurate_Europe_1_4.wad.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
@@ -60,6 +84,14 @@ keep_translations      = false
 [o:widelands:p:widelands-addons:r:Atau-Natu-wad]
 file_filter            = po/Atau_Natu.wad/<lang>.po
 source_file            = po/Atau_Natu.wad/Atau_Natu.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Australia-v2-1-wad]
+file_filter            = po/Australia_v2_1.wad/<lang>.po
+source_file            = po/Australia_v2_1.wad/Australia_v2_1.wad.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
@@ -173,6 +205,14 @@ keep_translations      = false
 [o:widelands:p:widelands-addons:r:Let-the-Naval-warfare-begin-wad]
 file_filter            = po/Let_the_Naval_warfare_begin.wad/<lang>.po
 source_file            = po/Let_the_Naval_warfare_begin.wad/Let_the_Naval_warfare_begin.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Lost-Islands-1-1-wad]
+file_filter            = po/Lost_Islands_1_1.wad/<lang>.po
+source_file            = po/Lost_Islands_1_1.wad/Lost_Islands_1_1.wad.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
