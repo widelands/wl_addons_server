@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 03:16+0200\n"
+"POT-Creation-Date: 2026-05-28 03:16+0200\n"
 "PO-Revision-Date: 2026-05-24 08:16+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2026\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -33,6 +33,8 @@ msgid ""
 "Conquer as much as you can and train as many and strong soldiers as you can "
 "in the set time."
 msgstr ""
+"Nimm so vööl Land in, as du kannst, un bill so völe un so machtige Soldaten "
+"ut, as du in de vörgeven Tied kannst."
 
 #. TRANSLATORS: Gametime as hours:minutes, e.g. 2:30
 #: addons/win_cond_military_influence.wad/functions.lua:154
@@ -142,22 +144,23 @@ msgstr "Berekens-Aard"
 #: addons/win_cond_military_influence.wad/functions.lua:198
 msgid "The final score is a weighted geometric mean of four scores:"
 msgstr ""
+"De Weerttahl up Enn is een gewichtet geometrisk Middel ut veer Weerttahlen:"
 
 #: addons/win_cond_military_influence.wad/functions.lua:199
 msgid "the total owned area"
-msgstr ""
+msgstr "dat eegen Gewest all tosamen"
 
 #: addons/win_cond_military_influence.wad/functions.lua:200
 msgid "the sum of conquer areas of military sites"
-msgstr ""
+msgstr "de Summ ut de Innehmens-Gewesten vun Soldateree-Boen"
 
 #: addons/win_cond_military_influence.wad/functions.lua:201
 msgid "the total soldier statistics score"
-msgstr ""
+msgstr "de Weerttahl vun Tahlen över Soldaten all tosamen"
 
 #: addons/win_cond_military_influence.wad/functions.lua:202
 msgid "the total effective strength of soldiers in military sites"
-msgstr ""
+msgstr "de echte Macht vun Soldaten in Soldateree-Boen all tosamen"
 
 #: addons/win_cond_military_influence.wad/functions.lua:203
 msgid ""
@@ -166,6 +169,11 @@ msgid ""
 "scores, then the final score is the third root of the product of the area "
 "score and the two partial soldier scores."
 msgstr ""
+"De Gewesten worden mit halven Gewicht tellt. Dat heet, dat toeerst de Gewest-"
+"Weerttahl as de Quadraatwuddel ut de Produkt von de twee deelwiesen Gewest-"
+"Weerttahlen berekent word, un dann is de Weerttahl up Enn de darde Wuddel ut "
+"de Produkt vun de Gewest-Weerttahl un de twee deelwiesen Soldaten-"
+"Weerttahlen."
 
 #: addons/win_cond_military_influence.wad/functions.lua:207
 msgid ""
@@ -174,20 +182,24 @@ msgid ""
 "note that soldiers on roads and ships are not counted in the calculation "
 "because of technical limitations."
 msgstr ""
+"De Tahlen över Soldaten geven elkeen Soldat eene Weerttahl tüsken 1 un 20, "
+"je nadeem wo völe Övens-Stufen he hett, mit eenem quadraatisk Bereknen. "
+"Bidde wees wiss, dat Soldaten up Straten un Schippen in de Bereknen um "
+"technisk Minnerserens nich mittellt worden."
 
 #: addons/win_cond_military_influence.wad/functions.lua:210
 msgid ""
 "The theoretical effective strength is calculated from the actual battle "
 "values:"
-msgstr ""
+msgstr "De theoretiske echte Macht word vun de echten Slacht-Weerten berekent:"
 
 #: addons/win_cond_military_influence.wad/functions.lua:212
 msgid "strength = a * h / (1 - d / 100) / (1 - e / 100) / 10000000"
-msgstr ""
+msgstr "Macht = a * g / (1 - v / 100) / (1 - u / 100) / 10000000"
 
 #: addons/win_cond_military_influence.wad/functions.lua:213
 msgid "(a: average attack, h: health, d: defense, e: evade)"
-msgstr ""
+msgstr "(a: Angriep dör de Bank, g: Gesundheid, v: Verteidigung, u: Utwieken)"
 
 #: addons/win_cond_military_influence.wad/functions.lua:223
 msgid ""
@@ -195,11 +207,13 @@ msgid ""
 "between around 2.7 for rookies and around 30 for heroes for the official "
 "tribes."
 msgstr ""
+"De echte Macht vun de Soldaten is för elkeen Volk anners. Dat is tüsken umbi "
+"2,7 för Snöttbaarten un umbi 30 för Helden vun de offiziellen Völkern."
 
 #: addons/win_cond_military_influence.wad/functions.lua:227
 #, lua-format
 msgid "Effective strength of soldiers of the %s tribe:"
-msgstr ""
+msgstr "Echte Macht vun Soldaten vum Volk »%s«:"
 
 #: addons/win_cond_military_influence.wad/functions.lua:230
 #, lua-format
@@ -213,7 +227,7 @@ msgstr "Held: %.2f"
 
 #: addons/win_cond_military_influence.wad/functions.lua:241
 msgid "Rationale"
-msgstr ""
+msgstr "Begründen"
 
 #: addons/win_cond_military_influence.wad/functions.lua:242
 msgid ""
@@ -222,6 +236,10 @@ msgid ""
 "limitation of the soldier score. The military site scores are meant to "
 "measure the actual military strength in case of battles."
 msgstr ""
+"Dat Gewest all tosamen un de Tahlen över Soldaten sallen de sülven Weerten "
+"as in de Tahlen över Allgemeens wesen, mit de benöömt Minnerseren för de "
+"Soldaten-Weerttahl. De Weerttahlen över Soldateree-Boen sallen de echte "
+"Soldateree-Macht in Slachten meten."
 
 #: addons/win_cond_military_influence.wad/functions.lua:246
 msgid ""
@@ -230,6 +248,10 @@ msgid ""
 "your territory are worth more than ones in already guarded areas. Similarly, "
 "soldiers in military sites are worth more than ones in warehouses."
 msgstr ""
+"Dat geometrisk Middel ut de twee deelwies Gewest-Weerttahlen maakt, dat "
+"bewacht Geweste mehr weert sünd as unbewachte, un dat neje Husen, wat dien "
+"Gewest vergrotern, mehr weert sünd as sülke in Gewesten, wat al bewacht "
+"worden. Liekso sünd Soldaten in Soldateree-Boen mehr weert as in Kraamhusen."
 
 #: addons/win_cond_military_influence.wad/functions.lua:250
 msgid ""
@@ -237,6 +259,9 @@ msgid ""
 "comparison between different tribes more realistic, but the soldier "
 "statistics rewards training more."
 msgstr ""
+"Twee Aarden vun Soldaten-Punkten worden bruukt, um dat de echte Macht dat "
+"Verglieken tüsken Völkern sinniger maakt, aver de Tahlen över Soldaten "
+"belohnen Öven mehr."
 
 #: addons/win_cond_military_influence.wad/functions.lua:253
 msgid ""
@@ -245,6 +270,11 @@ msgid ""
 "soldiers, but it is the strength of your army that decides battles in the "
 "end, so a strong army can easily take large territories from a weak one."
 msgstr ""
+"De Gewesten-Weerttahl kriggt minner Gewicht as de Soldaten-Weerttahl, denn "
+"’t is meesttieden bannig lichter, fixer un billiger, dien Gewest to "
+"vergrotern, as diene Soldaten uttobillen; aver uplest is dat de Starkde vun "
+"diener Soldateree, wat Slachten utmaakt, also kann eene machtige Soldateree "
+"eener swacken licht grote Gewesten wegnehmen."
 
 #: addons/win_cond_military_influence.wad/functions.lua:260
 msgid "Buildings"
@@ -256,23 +286,23 @@ msgstr "Soldateree-Boo"
 
 #: addons/win_cond_military_influence.wad/functions.lua:262
 msgid "Max. soldiers"
-msgstr ""
+msgstr "Hoogste Tahl vun Soldaten"
 
 #: addons/win_cond_military_influence.wad/functions.lua:263
 msgid "Max. soldier strength"
-msgstr ""
+msgstr "Hoogste Soldaten-Macht"
 
 #: addons/win_cond_military_influence.wad/functions.lua:264
 msgid "Conquer area"
-msgstr ""
+msgstr "Innehmens-Gewest"
 
 #: addons/win_cond_military_influence.wad/functions.lua:265
 msgid "Conquer area / soldier"
-msgstr ""
+msgstr "Innehmens-Gewest / Soldat"
 
 #: addons/win_cond_military_influence.wad/functions.lua:266
 msgid "Max. strength / conquer area"
-msgstr ""
+msgstr "Hoogste Macht / Innehmens-Gewest"
 
 #: addons/win_cond_military_influence.wad/functions.lua:267
 msgid "Score with all heroes"
@@ -301,12 +331,12 @@ msgstr "Soldaten"
 #: addons/win_cond_military_influence.wad/functions.lua:317
 #, lua-format
 msgid "Rookie is %.1f%% of hero"
-msgstr ""
+msgstr "Snöttbaart is %.1f%% vum Helden"
 
 #: addons/win_cond_military_influence.wad/functions.lua:318
 #, lua-format
 msgid "Hero is %.1f times as strong as rookie"
-msgstr ""
+msgstr "Held is %.1f Maal so stark as een Snöttbaart"
 
 #: addons/win_cond_military_influence.wad/functions.lua:321
 msgid ""
@@ -314,6 +344,9 @@ msgid ""
 "building itself, they are not directly related to the scoring of the win "
 "condition.)"
 msgstr ""
+"(De Weerttahlen vun Husen wiesen blots de mögelke Macht vun de Huus sülvst, "
+"se gahn nich sülvst in’t Bereknen vun de Weerttahlen in de Upgaav tum Winnen "
+"in.)"
 
 #: addons/win_cond_military_influence.wad/functions.lua:346
 msgid "Score Info"
@@ -345,6 +378,9 @@ msgid ""
 "guard it too: the sum of the conquer areas of military sites has to be 120% "
 "of the owned area."
 msgstr ""
+"Nimm so fix as du kannst dat hele Kaart-Gewest in. Dat tellt blots, wenn du "
+"’t ok schüttst: De Summ vun de Innehmens-Gewesten vun Soldateree-Boen mutt "
+"120% vun de eegen Kuntrei bedragen."
 
 #: addons/win_cond_military_influence.wad/functions.lua:548
 msgid "Map conquered"
@@ -379,6 +415,9 @@ msgid ""
 "military sites filled with heroes. You have to do all of them to get a "
 "really good score. Highest score after %s wins."
 msgstr ""
+"Vergroter dien Gewest, bill diene Soldaten ut, un schütt dien Gewest mit "
+"Soldateree-Boen vull mit Helden. Du muttst all deese Dingen doon, um eene "
+"würrelk gode Weerttahl to kriegen. De hoogste Weerttahl na %s winnt."
 
 #: addons/win_cond_military_influence.wad/functions.lua:670
 msgid "Final Score"
@@ -389,3 +428,5 @@ msgid ""
 "Conquer as much land as you can and train as many and strong soldiers as you "
 "can in the set time."
 msgstr ""
+"Nimm so vööl Land in, as du kannst, un bill so völe un so machtige Soldaten "
+"ut, as du in de vörgeven Tied kannst."

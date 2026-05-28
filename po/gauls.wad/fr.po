@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-19 03:16+0200\n"
+"POT-Creation-Date: 2026-05-28 03:16+0200\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: David D, 2026\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -1415,13 +1415,13 @@ msgstr ""
 #: addons/gauls.wad/productionsites/threshing_floor/init.lua:8
 msgctxt "gauls_building"
 msgid "Threshing Floor"
-msgstr ""
+msgstr "Aire de battage"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/threshing_floor_small/init.lua:8
 msgctxt "gauls_building"
 msgid "Small Threshing Floor"
-msgstr ""
+msgstr "Petite aire de battage"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/weaponsmithy/init.lua:8
@@ -1718,9 +1718,9 @@ msgstr "%1$s a été nettoyé !"
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:150
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1$d article a été supprimé."
+msgstr[1] " %1$d articles ont été supprimés."
+msgstr[2] " %1$d articles ont été supprimés."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:150
 msgid "%2$d item lefts."
@@ -2403,6 +2403,8 @@ msgid ""
 "Fresh meat is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"La viande fraîche est fumée dans le fumoir et ajoutée aux repas pour vos "
+"guerriers et mineurs."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
@@ -2752,6 +2754,8 @@ msgstr ""
 msgctxt "gauls_ware"
 msgid "It is consumed at advanced mines and at the training sites (arenas)."
 msgstr ""
+"Elle est consommée dans les mines avancées et sur les sites d’entraînement "
+"(arènes)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Spear
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:647
@@ -2816,6 +2820,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 0 to "
 "level 1."
 msgstr ""
+"Cette armure de base est produite dans la forge d’armures et utilisée dans "
+"l’arène – avec le repas et la tunique – pour entraîner les guerriers du "
+"niveau de défense 0 au niveau 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:700
@@ -2825,6 +2832,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 1 to "
 "level 2."
 msgstr ""
+"Cette armure avancée est produite dans la forge d’armures et utilisée dans "
+"l’arène – avec le repas et la tunique – pour entraîner les guerriers du "
+"niveau de défense 1 au niveau 2."
 
 #. TRANSLATORS: Help text for a Gallic ware: Golden Helmet
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:709
@@ -2833,6 +2843,8 @@ msgid ""
 "This helmet is produced in the armor smithy and used at the arena – together "
 "with meal – to train warriors from defense level 2 to level 3."
 msgstr ""
+"Ce casque est produit dans la forge d’armure et utilisé dans l’arène – avec "
+"le repas – pour entraîner les guerriers du niveau de défense 2 au niveau 3."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wooden Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:718
@@ -2842,6 +2854,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 0 to "
 "level 1."
 msgstr ""
+"Ce bouclier de base est produit dans l’atelier et utilisé dans l’arène – "
+"avec le repas et la potion – pour entraîner les guerriers du niveau "
+"d’évasion 0 au niveau 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:727
@@ -2851,6 +2866,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 1 to "
 "level 2."
 msgstr ""
+"Ce bouclier avancé est produit dans la forge d’armure et utilisé dans "
+"l’arène – avec le repas et la potion – pour entraîner les guerriers du "
+"niveau d'esquive 1 au niveau 2."
 
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
@@ -3510,19 +3528,21 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1535
 msgctxt "gauls_building"
 msgid "Fishes on the coast near the fisher’s house."
-msgstr ""
+msgstr "Poissons sur la côte près de la cabane du pêcheur."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Fisher's Hut, Part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1538
 msgctxt "gauls_building"
 msgid "The fisher’s hut needs water full of fish within the work area."
 msgstr ""
+"La cabane de pêche a besoin d'un point d'eau rempli de poissons dans son "
+"périmètre de travail."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Fisher's Hut, Part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1540
 msgctxt "gauls_building"
 msgid "Roads and trees along the shoreline block fishing."
-msgstr ""
+msgstr "Routes et les arbres le long du rivage bloquent la pêche."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Fisher's Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1544
@@ -3543,6 +3563,8 @@ msgstr "Chasse les animaux pour produire de la viande."
 msgctxt "gauls_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
 msgstr ""
+"La cabane du chasseur a besoin d'animaux à chasser dans son périmètre de "
+"travail."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Hunter’s Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1559
@@ -3551,6 +3573,8 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Ce bâtiment peut produire une viande entre %1$s et %2$s, selon la distance "
+"que le chasseur doit parcourir."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Scout’s Cottage
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1569
