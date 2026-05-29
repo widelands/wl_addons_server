@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 03:16+0200\n"
+"POT-Creation-Date: 2026-05-29 03:16+0200\n"
 "PO-Revision-Date: 2026-05-24 08:16+0000\n"
 "Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -25,138 +25,140 @@ msgstr ""
 #: addons/win_cond_military_influence.wad/functions.lua:621
 #: addons/win_cond_military_influence.wad/functions.lua:660
 msgid "Military Influence"
-msgstr ""
+msgstr "Militaire Invloed"
 
 #: addons/win_cond_military_influence.wad/addon:3
 msgid ""
 "Conquer as much as you can and train as many and strong soldiers as you can "
 "in the set time."
 msgstr ""
+"Verover zoveel mogelijk gebieden en train zoveel mogelijk sterke soldaten "
+"binnen de gestelde tijd."
 
 #. TRANSLATORS: Gametime as hours:minutes, e.g. 2:30
 #: addons/win_cond_military_influence.wad/functions.lua:154
 msgid "%1$d:%2$02d:%3$02d"
-msgstr ""
+msgstr "%1$d:%2$02d:%3$02d"
 
 #. TRANSLATORS: first placeholder is player name, second is game time, third is tribe
 #: addons/win_cond_military_influence.wad/functions.lua:158
 msgid "Military Influence Score for %1$s at %2$s with %3$s:"
-msgstr ""
+msgstr "Militaire Invloedsscore voor %1$s bij %2$s met %3$s:"
 
 #: addons/win_cond_military_influence.wad/functions.lua:165
 msgid "Area info"
-msgstr ""
+msgstr "Gebied info"
 
 #: addons/win_cond_military_influence.wad/functions.lua:166
 msgid "Area score: "
-msgstr ""
+msgstr "Gebied score: "
 
 #: addons/win_cond_military_influence.wad/functions.lua:169
 #, lua-format
 msgid "Total area: %d"
-msgstr ""
+msgstr "Totaal gebied: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:170
 #, lua-format
 msgid "Area controlled by military buildings: %d"
-msgstr ""
+msgstr "Gebied dat wordt beheerst door militaire gebouwen: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:171
 #, lua-format
 msgid "Conquerable map area: %d"
-msgstr ""
+msgstr "Veroverbaar kaartgebied: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:172
 #, lua-format
 msgid "Player owns %.1f%% of the conquerable map area"
-msgstr ""
+msgstr "Speler bezit %.1f%% van het veroverbare kaartgebied"
 
 #: addons/win_cond_military_influence.wad/functions.lua:173
 #, lua-format
 msgid "Number of military buildings: %d"
-msgstr ""
+msgstr "Aantal militaire gebouwen: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:175
 msgid "Soldiers info"
-msgstr ""
+msgstr "Soldateninfo"
 
 #: addons/win_cond_military_influence.wad/functions.lua:176
 msgid "Soldiers score: "
-msgstr ""
+msgstr "Soldaten score: "
 
 #: addons/win_cond_military_influence.wad/functions.lua:179
 #, lua-format
 msgid "Soldiers statistics score: %d"
-msgstr ""
+msgstr "Score Soldatenstatistieken: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:180
 #, lua-format
 msgid "Total effective strength of guards: %d"
-msgstr ""
+msgstr "Totale effectieve sterkte van de bewakers: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:181
 #, lua-format
 msgid "Total number of soldiers: %d"
-msgstr ""
+msgstr "Totaal aantal soldaten: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:182
 #, lua-format
 msgid "Soldiers in buildings: %d"
-msgstr ""
+msgstr "Soldaten in gebouwen: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:183
 #, lua-format
 msgid "Soldiers on roads and ships: %d"
-msgstr ""
+msgstr "Soldaten op wegen en schepen: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:184
 #, lua-format
 msgid "Number of heroes: %d"
-msgstr ""
+msgstr "Aantal helden: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:185
 #, lua-format
 msgid "Sum of all soldier levels: %d"
-msgstr ""
+msgstr "Som van alle soldatenniveaus: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:186
 #, lua-format
 msgid "Total number of guards: %d"
-msgstr ""
+msgstr "Totaal aantal bewakers: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:187
 #, lua-format
 msgid "%.1f%% of available positions"
-msgstr ""
+msgstr "%.1f%% beschikbare plaatsen"
 
 #: addons/win_cond_military_influence.wad/functions.lua:188
 #, lua-format
 msgid "Average strength of garrisons: %.1f%%"
-msgstr ""
+msgstr "Gemiddelde sterkte van garnizoenen: %.1f%%"
 
 #: addons/win_cond_military_influence.wad/functions.lua:197
 msgid "Calculation method"
-msgstr ""
+msgstr "Berekeningsmethode"
 
 #: addons/win_cond_military_influence.wad/functions.lua:198
 msgid "The final score is a weighted geometric mean of four scores:"
-msgstr ""
+msgstr "De eindscore is een gewogen geometrisch gemiddelde van vier scores:"
 
 #: addons/win_cond_military_influence.wad/functions.lua:199
 msgid "the total owned area"
-msgstr ""
+msgstr "de totale eigendomsoppervlakte"
 
 #: addons/win_cond_military_influence.wad/functions.lua:200
 msgid "the sum of conquer areas of military sites"
-msgstr ""
+msgstr "de som van de veroverde oppervlakten van militaire locaties"
 
 #: addons/win_cond_military_influence.wad/functions.lua:201
 msgid "the total soldier statistics score"
-msgstr ""
+msgstr "de totale score voor soldatenstatistieken"
 
 #: addons/win_cond_military_influence.wad/functions.lua:202
 msgid "the total effective strength of soldiers in military sites"
-msgstr ""
+msgstr "het totale aantal actieve militairen op militaire locaties"
 
 #: addons/win_cond_military_influence.wad/functions.lua:203
 msgid ""
@@ -165,6 +167,10 @@ msgid ""
 "scores, then the final score is the third root of the product of the area "
 "score and the two partial soldier scores."
 msgstr ""
+"De gebieden worden met een half gewicht meegeteld. Dat betekent dat eerst de "
+"gebiedsscore wordt berekend als de vierkantswortel van het product van de "
+"twee deel-gebiedscores, en dat de eindscore vervolgens de kubiekwortel is "
+"van het product van de gebiedscore en de twee deel-soldatenscores."
 
 #: addons/win_cond_military_influence.wad/functions.lua:207
 msgid ""
@@ -173,20 +179,27 @@ msgid ""
 "note that soldiers on roads and ships are not counted in the calculation "
 "because of technical limitations."
 msgstr ""
+"De soldatenstatistieken kennen aan elke soldaat een score toe tussen 1 en "
+"20, afhankelijk van de som van de trainingsniveaus, waarbij gebruik wordt "
+"gemaakt van een kwadratische formule. Houd er rekening mee dat soldaten op "
+"wegen en schepen vanwege technische beperkingen niet in de berekening worden "
+"meegenomen."
 
 #: addons/win_cond_military_influence.wad/functions.lua:210
 msgid ""
 "The theoretical effective strength is calculated from the actual battle "
 "values:"
 msgstr ""
+"De theoretische effectieve sterkte wordt berekend op basis van de werkelijke "
+"gevechtswaarden:"
 
 #: addons/win_cond_military_influence.wad/functions.lua:212
 msgid "strength = a * h / (1 - d / 100) / (1 - e / 100) / 10000000"
-msgstr ""
+msgstr "sterkte = a * h / (1 - d / 100) / (1 - e / 100) / 10000000"
 
 #: addons/win_cond_military_influence.wad/functions.lua:213
 msgid "(a: average attack, h: health, d: defense, e: evade)"
-msgstr ""
+msgstr "(a: gemiddelde aanval, h: gezondheid, d: verdediging, e: ontwijken)"
 
 #: addons/win_cond_military_influence.wad/functions.lua:223
 msgid ""
@@ -194,25 +207,28 @@ msgid ""
 "between around 2.7 for rookies and around 30 for heroes for the official "
 "tribes."
 msgstr ""
+"De effectieve sterkte van de soldaten verschilt per stam. Bij de officiële "
+"stammen varieert deze van ongeveer 2,7 voor rekruten tot ongeveer 30 voor "
+"helden."
 
 #: addons/win_cond_military_influence.wad/functions.lua:227
 #, lua-format
 msgid "Effective strength of soldiers of the %s tribe:"
-msgstr ""
+msgstr "Effectieve sterkte van de soldaten van de %s stam:"
 
 #: addons/win_cond_military_influence.wad/functions.lua:230
 #, lua-format
 msgid "Rookie: %.2f"
-msgstr ""
+msgstr "Nieuweling: %.2f"
 
 #: addons/win_cond_military_influence.wad/functions.lua:231
 #, lua-format
 msgid "Hero: %.2f"
-msgstr ""
+msgstr "Held: %.2f"
 
 #: addons/win_cond_military_influence.wad/functions.lua:241
 msgid "Rationale"
-msgstr ""
+msgstr "Motivering"
 
 #: addons/win_cond_military_influence.wad/functions.lua:242
 msgid ""
@@ -221,6 +237,11 @@ msgid ""
 "limitation of the soldier score. The military site scores are meant to "
 "measure the actual military strength in case of battles."
 msgstr ""
+"Het totale gebied en de soldatenstatistieken zijn bedoeld om overeen te "
+"komen met de overeenkomstige waarden in de algemene statistieken, met de "
+"genoemde beperking wat betreft de soldatenscore. De scores van de militaire "
+"locaties zijn bedoeld om de daadwerkelijke militaire sterkte bij gevechten "
+"te meten."
 
 #: addons/win_cond_military_influence.wad/functions.lua:246
 msgid ""
@@ -229,6 +250,11 @@ msgid ""
 "your territory are worth more than ones in already guarded areas. Similarly, "
 "soldiers in military sites are worth more than ones in warehouses."
 msgstr ""
+"Door het rekenkundig gemiddelde van de twee scores voor deelgebieden te "
+"gebruiken, worden bewaakte gebieden zwaarder gewogen dan onbewaakte "
+"gebieden, en zijn nieuwe gebouwen die je grondgebied uitbreiden meer waard "
+"dan gebouwen in reeds bewaakte gebieden. Op dezelfde manier zijn soldaten op "
+"militaire locaties meer waard dan soldaten in pakhuizen."
 
 #: addons/win_cond_military_influence.wad/functions.lua:250
 msgid ""
@@ -236,6 +262,9 @@ msgid ""
 "comparison between different tribes more realistic, but the soldier "
 "statistics rewards training more."
 msgstr ""
+"Er worden twee soorten soldaatpunten gebruikt omdat de effectieve sterkte "
+"een realistischere vergelijking tussen verschillende stammen mogelijk maakt, "
+"terwijl de soldatenstatistieken training meer belonen."
 
 #: addons/win_cond_military_influence.wad/functions.lua:253
 msgid ""
@@ -244,6 +273,11 @@ msgid ""
 "soldiers, but it is the strength of your army that decides battles in the "
 "end, so a strong army can easily take large territories from a weak one."
 msgstr ""
+"De gebiedsscore krijgt minder gewicht dan de soldatenscore, omdat het "
+"doorgaans veel gemakkelijker, sneller en goedkoper is om je grondgebied uit "
+"te breiden dan om je soldaten te trainen, maar uiteindelijk is het de kracht "
+"van je leger die de strijd beslist, dus een sterk leger kan gemakkelijk "
+"grote gebieden veroveren op een zwak leger."
 
 #: addons/win_cond_military_influence.wad/functions.lua:260
 msgid "Buildings"
@@ -251,61 +285,61 @@ msgstr "Gebouwen"
 
 #: addons/win_cond_military_influence.wad/functions.lua:261
 msgid "Military site"
-msgstr ""
+msgstr "Miltitaire site"
 
 #: addons/win_cond_military_influence.wad/functions.lua:262
 msgid "Max. soldiers"
-msgstr ""
+msgstr "Max. soldaten"
 
 #: addons/win_cond_military_influence.wad/functions.lua:263
 msgid "Max. soldier strength"
-msgstr ""
+msgstr "Max. soldatenkracht"
 
 #: addons/win_cond_military_influence.wad/functions.lua:264
 msgid "Conquer area"
-msgstr ""
+msgstr "Veroveringsgebied"
 
 #: addons/win_cond_military_influence.wad/functions.lua:265
 msgid "Conquer area / soldier"
-msgstr ""
+msgstr "Veroveringsgebied / soldaat"
 
 #: addons/win_cond_military_influence.wad/functions.lua:266
 msgid "Max. strength / conquer area"
-msgstr ""
+msgstr "Max. sterkte / veroveringsgebied"
 
 #: addons/win_cond_military_influence.wad/functions.lua:267
 msgid "Score with all heroes"
-msgstr ""
+msgstr "Score met alle helden"
 
 #: addons/win_cond_military_influence.wad/functions.lua:268
 msgid "Score / hero"
-msgstr ""
+msgstr "Score / held"
 
 #: addons/win_cond_military_influence.wad/functions.lua:269
 msgid "Score with all rookies"
-msgstr ""
+msgstr "Score met alle nieuwkomers"
 
 #: addons/win_cond_military_influence.wad/functions.lua:270
 msgid "Score / rookie"
-msgstr ""
+msgstr "Score / nieuwkomer"
 
 #: addons/win_cond_military_influence.wad/functions.lua:314
 msgid "Background information"
-msgstr ""
+msgstr "Achtergrondinformatie"
 
 #: addons/win_cond_military_influence.wad/functions.lua:315
 msgid "Soldiers"
-msgstr ""
+msgstr "Soldaten"
 
 #: addons/win_cond_military_influence.wad/functions.lua:317
 #, lua-format
 msgid "Rookie is %.1f%% of hero"
-msgstr ""
+msgstr "De nieuweling is %.1f%% van de held"
 
 #: addons/win_cond_military_influence.wad/functions.lua:318
 #, lua-format
 msgid "Hero is %.1f times as strong as rookie"
-msgstr ""
+msgstr "De held is %.1f keer zo sterk als de nieuweling"
 
 #: addons/win_cond_military_influence.wad/functions.lua:321
 msgid ""
@@ -313,30 +347,33 @@ msgid ""
 "building itself, they are not directly related to the scoring of the win "
 "condition.)"
 msgstr ""
+"(De scores van de gebouwen geven slechts een indicatie van de potentiële "
+"sterkte van elk gebouw op zich; ze houden geen direct verband met de score "
+"voor de overwinningsvoorwaarde.)"
 
 #: addons/win_cond_military_influence.wad/functions.lua:346
 msgid "Score Info"
-msgstr ""
+msgstr "Score Info"
 
 #: addons/win_cond_military_influence.wad/functions.lua:356
 msgid "Score"
-msgstr ""
+msgstr "Score"
 
 #: addons/win_cond_military_influence.wad/functions.lua:385
 msgid "Background Info"
-msgstr ""
+msgstr "Achtergrondinformatie"
 
 #: addons/win_cond_military_influence.wad/functions.lua:399
 msgid "Help"
-msgstr ""
+msgstr "Help"
 
 #: addons/win_cond_military_influence.wad/functions.lua:479
 msgid "The End is Near!"
-msgstr ""
+msgstr "Het Einde is Nabij!"
 
 #: addons/win_cond_military_influence.wad/functions.lua:543
 msgid "Side quest: Conquer the whole map area"
-msgstr ""
+msgstr "Nevenmissie: Verover het hele kaartgebied"
 
 #: addons/win_cond_military_influence.wad/functions.lua:545
 msgid ""
@@ -344,32 +381,35 @@ msgid ""
 "guard it too: the sum of the conquer areas of military sites has to be 120% "
 "of the owned area."
 msgstr ""
+"Verover zo snel mogelijk het hele gebied op de kaart. Het telt alleen mee "
+"als je het ook verdedigt: de som van de veroverde oppervlakte van militaire "
+"locaties moet 120% bedragen van het gebied dat je in bezit hebt."
 
 #: addons/win_cond_military_influence.wad/functions.lua:548
 msgid "Map conquered"
-msgstr ""
+msgstr "Kaart veroverd"
 
 #: addons/win_cond_military_influence.wad/functions.lua:549
 msgid "Congratulations! You have conquered the whole map."
-msgstr ""
+msgstr "Gefeliciteerd! Je hebt de hele kaart veroverd."
 
 #: addons/win_cond_military_influence.wad/functions.lua:585
 msgid "Side quest: Train heroes"
-msgstr ""
+msgstr "Nevenmissie: Helden trainen"
 
 #: addons/win_cond_military_influence.wad/functions.lua:586
 #, lua-format
 msgid "Train %d heroes as fast as you can."
-msgstr ""
+msgstr "Train zo snel mogelijk %d helden."
 
 #: addons/win_cond_military_influence.wad/functions.lua:587
 msgid "Heroes trained"
-msgstr ""
+msgstr "Helden getraind"
 
 #: addons/win_cond_military_influence.wad/functions.lua:588
 #, lua-format
 msgid "Congratulations! You have trained %d heroes."
-msgstr ""
+msgstr "Gefeliciteerd! Je hebt %d helden getraind."
 
 #: addons/win_cond_military_influence.wad/functions.lua:663
 #, lua-format
@@ -378,13 +418,18 @@ msgid ""
 "military sites filled with heroes. You have to do all of them to get a "
 "really good score. Highest score after %s wins."
 msgstr ""
+"Breid je grondgebied uit, train je soldaten en verdedig je grondgebied met "
+"militaire bases vol helden. Je moet ze allemaal voltooien om een hele hoge "
+"score te halen. De speler met de hoogste score na %s wint."
 
 #: addons/win_cond_military_influence.wad/functions.lua:670
 msgid "Final Score"
-msgstr ""
+msgstr "Eindscore"
 
 #: addons/win_cond_military_influence.wad/init.lua:8
 msgid ""
 "Conquer as much land as you can and train as many and strong soldiers as you "
 "can in the set time."
 msgstr ""
+"Verover zoveel mogelijk grondgebied en train zoveel mogelijk sterke soldaten "
+"binnen de gestelde tijd."
