@@ -6,16 +6,16 @@
 # Translators:
 # C138, 2025
 # Atanase Albaran, 2025
-# David D, 2025
+# David D, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-05 03:12+0200\n"
+"POT-Creation-Date: 2026-05-30 03:15+0200\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
-"Last-Translator: David D, 2025\n"
+"Last-Translator: David D, 2026\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -195,7 +195,7 @@ msgstr "fusion de l'or"
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:8
 msgctxt "empire_building"
 msgid "Advanced Stonemason’s House"
-msgstr ""
+msgstr "Maison tailleur de pierres avancée"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:66
@@ -268,7 +268,7 @@ msgstr ""
 #. "Festina lente."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:58
 msgid "Make haste slowly."
-msgstr ""
+msgstr "Hâtez-vous lentement."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:60
@@ -294,7 +294,7 @@ msgstr "Un mode de vie innovant aide à cultiver à travers l’art."
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:83
 msgctxt "empire_building"
 msgid "Motto of the Stonemasons’ Guild"
-msgstr ""
+msgstr "Devise de la corporation des tailleurs de pierre"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:84
 msgid "Carves marble columns out of marble."
@@ -305,11 +305,16 @@ msgid ""
 "Advanced stonemason's house needs less marble to produce one marble column. "
 "To produce one bulk of 3 columns, 4 pieces of marble are needed."
 msgstr ""
+"La maison du tailleur de pierre avancée a besoin de moins de marbre pour "
+"produire une colonne de marbre. Pour produire un volume de 3 colonnes, 4 "
+"morceaux de marbre sont nécessaires."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:86
 msgctxt "empire_building"
 msgid "The stonemason needs %1% on average to carve one marble column."
 msgstr ""
+"Le tailleur de pierre a besoin en moyenne de%1% pour sculpter une colonne de "
+"marbre."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
@@ -396,6 +401,8 @@ msgid ""
 "Khantarakh, ‘The Modern Barbarian Economy’,<br>9ᵗʰ cowhide ‘Seafaring and "
 "Conquest’"
 msgstr ""
+"Khantarakh, « L’économie barbare moderne », <br> 9e expédition « maritime et "
+"conquête »"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:166
 msgid "Weaves cloth out of reed."
@@ -421,12 +428,15 @@ msgid ""
 "‘From inferior looking rubble they form shiny gold and gleaming iron.<br>The "
 "smelters are real magicians among our craftsmen.’"
 msgstr ""
+"« De gravats d’apparence inférieure, ils forment de l’or brillant et du fer "
+"étincelant. <br> Les fonderies sont de véritables magiciennes parmi nos "
+"artisans. »"
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:205
 msgctxt "barbarians_building"
 msgid "Chat’Karuth<br>at the 5ᵗʰ conference of master craftsmen"
-msgstr ""
+msgstr "Chat’Karuth <br> à la 5ème conférence des maîtres artisans"
 
 #. TRANSLATORS: Purpose helptext for a Barbarian production site: Advanced Smelting Works
 #. TRANSLATORS: Purpose helptext for an Empire production site: Advanced Smelting Works
@@ -458,6 +468,11 @@ msgid ""
 "ingot takes %2$s on average and production of one gold bar takes %3$s on "
 "average."
 msgstr ""
+"Si ce bâtiment est entièrement approvisionné et que tous les métaux sont "
+"nécessaires à l’économie, la production de quatre lingots de fer et de deux "
+"barres d’or prend en moyenne %1$s. Si un seul type de métal est nécessaire à "
+"l’économie, la production d’un lingot de fer prend en moyenne %2$s et la "
+"production d’une barre d’or prend en moyenne %3$s."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
@@ -480,6 +495,8 @@ msgid ""
 "An old proverb which was, by invention of Advanced Smelting Works, proven to "
 "be correct"
 msgstr ""
+"Un vieux proverbe qui, par l’invention de l'usine de fusion avancée, s’est "
+"avéré correct"
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:229
@@ -491,3 +508,8 @@ msgid ""
 "ingot takes %2$s on average and production of one gold bar takes %3$s on "
 "average."
 msgstr ""
+"Si ce bâtiment est entièrement approvisionné et que tous les métaux sont "
+"nécessaires à l’économie, la production de quatre lingots de fer et de deux "
+"barres d’or prend en moyenne %1$s. Si un seul type de métal est nécessaire à "
+"l’économie, la production d’un lingot de fer prend en moyenne %2$s et la "
+"production d’une barre d’or prend en moyenne %3$s."
