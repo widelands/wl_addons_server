@@ -1,12 +1,12 @@
-# Automatically created by Widelands 1.1 Release
+# Automatically created by the Widelands Add-Ons Server.
 
 [global]
-name=_"Time limited peaceful mode"
-description=_""The game is peaceful for 45 minutes.<br>"
-             "(For a different time adapt the constant in the code in 'init.lua'.)""
 author="aDiscoverer"
-version="0.3.0"
 category="script"
-requires=
-min_wl_version=
+description=_"The game is peaceful for 45 minutes.<br><br>(For a different time adapt the constant in the code in 'init.lua'.)"
 max_wl_version=
+min_wl_version=
+name=_"Time limited peaceful mode"
+requires=
+sync_safe="true"
+version="0.3.0"

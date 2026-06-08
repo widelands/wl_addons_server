@@ -1,6 +1,14 @@
 [main]
 host = https://www.transifex.com
 
+[o:widelands:p:widelands-addons:r:-C-Atlantis-wad]
+file_filter            = po/_C_Atlantis.wad/<lang>.po
+source_file            = po/_C_Atlantis.wad/_C_Atlantis.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:16-Kingdoms---Sea-wad]
 file_filter            = po/16_Kingdoms___Sea.wad/<lang>.po
 source_file            = po/16_Kingdoms___Sea.wad/16_Kingdoms___Sea.wad.pot
@@ -154,6 +162,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Fjords-between-wooded-mountains-wad]
+file_filter            = po/Fjords_between_wooded_mountains.wad/<lang>.po
+source_file            = po/Fjords_between_wooded_mountains.wad/Fjords_between_wooded_mountains.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Flower-Power-wad]
 file_filter            = po/Flower_Power.wad/<lang>.po
 source_file            = po/Flower_Power.wad/Flower_Power.wad.pot
@@ -186,9 +202,25 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:HexagonHeights-8-wad]
+file_filter            = po/HexagonHeights_8.wad/<lang>.po
+source_file            = po/HexagonHeights_8.wad/HexagonHeights_8.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Hills-N-rocks-wad]
 file_filter            = po/Hills_N_rocks.wad/<lang>.po
 source_file            = po/Hills_N_rocks.wad/Hills_N_rocks.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Island-World-8-wad]
+file_filter            = po/Island-World_8.wad/<lang>.po
+source_file            = po/Island-World_8.wad/Island-World_8.wad.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
@@ -210,6 +242,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Long--long-way-v3-wad]
+file_filter            = po/Long__long_way_v3.wad/<lang>.po
+source_file            = po/Long__long_way_v3.wad/Long__long_way_v3.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Lost-Islands-1-1-wad]
 file_filter            = po/Lost_Islands_1_1.wad/<lang>.po
 source_file            = po/Lost_Islands_1_1.wad/Lost_Islands_1_1.wad.pot
@@ -226,6 +266,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Massada-wad]
+file_filter            = po/Massada.wad/<lang>.po
+source_file            = po/Massada.wad/Massada.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Mountain-Labyrinth-wad]
 file_filter            = po/Mountain_Labyrinth.wad/<lang>.po
 source_file            = po/Mountain_Labyrinth.wad/Mountain_Labyrinth.wad.pot
@@ -234,9 +282,33 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Mountains---Seas-wad]
+file_filter            = po/Mountains___Seas.wad/<lang>.po
+source_file            = po/Mountains___Seas.wad/Mountains___Seas.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Naval-Tournament-23-Maps-wad]
 file_filter            = po/Naval_Tournament_23_Maps.wad/<lang>.po
 source_file            = po/Naval_Tournament_23_Maps.wad/Naval_Tournament_23_Maps.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Obstacles-8-wad]
+file_filter            = po/Obstacles_8.wad/<lang>.po
+source_file            = po/Obstacles_8.wad/Obstacles_8.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:One-World---Two-Oceans-wad]
+file_filter            = po/One_World_-_Two_Oceans.wad/<lang>.po
+source_file            = po/One_World_-_Two_Oceans.wad/One_World_-_Two_Oceans.wad.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
@@ -255,6 +327,30 @@ file_filter            = po/SP_Scenario_Along_the_River.wad/<lang>.po
 source_file            = po/SP_Scenario_Along_the_River.wad/SP_Scenario_Along_the_River.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Seafarer-8-wad]
+file_filter            = po/Seafarer_8.wad/<lang>.po
+source_file            = po/Seafarer_8.wad/Seafarer_8.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:SoG-wad]
+file_filter            = po/SoG.wad/<lang>.po
+source_file            = po/SoG.wad/SoG.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Spirallo-6-wad]
+file_filter            = po/Spirallo_6.wad/<lang>.po
+source_file            = po/Spirallo_6.wad/Spirallo_6.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
@@ -322,6 +418,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Volcania-final-wad]
+file_filter            = po/Volcania_final.wad/<lang>.po
+source_file            = po/Volcania_final.wad/Volcania_final.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:WideGreen-wad]
 file_filter            = po/WideGreen.wad/<lang>.po
 source_file            = po/WideGreen.wad/WideGreen.wad.pot
@@ -334,6 +438,14 @@ keep_translations      = false
 [o:widelands:p:widelands-addons:r:Wikinger--Die-Fjorde-Seefahrer-Turnierkarte-wad]
 file_filter            = po/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad/<lang>.po
 source_file            = po/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:Zipper-16-wad]
+file_filter            = po/Zipper_16.wad/<lang>.po
+source_file            = po/Zipper_16.wad/Zipper_16.wad.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
@@ -772,6 +884,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:no-closed-sea-routes-wad]
+file_filter            = po/no_closed_sea_routes.wad/<lang>.po
+source_file            = po/no_closed_sea_routes.wad/no_closed_sea_routes.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:no-default-resources-wad]
 file_filter            = po/no_default_resources.wad/<lang>.po
 source_file            = po/no_default_resources.wad/no_default_resources.wad.pot
@@ -799,6 +919,14 @@ keep_translations      = false
 [o:widelands:p:widelands-addons:r:notify-speed-wad]
 file_filter            = po/notify-speed.wad/<lang>.po
 source_file            = po/notify-speed.wad/notify-speed.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:only-a-few-ponds-in-the-desert-wad]
+file_filter            = po/only_a_few_ponds_in_the_desert.wad/<lang>.po
+source_file            = po/only_a_few_ponds_in_the_desert.wad/only_a_few_ponds_in_the_desert.wad.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
@@ -841,6 +969,14 @@ file_filter            = po/simple_map_generator.wad/<lang>.po
 source_file            = po/simple_map_generator.wad/simple_map_generator.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:strange-wad]
+file_filter            = po/strange.wad/<lang>.po
+source_file            = po/strange.wad/strange.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 

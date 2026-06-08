@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-13 03:12+0200\n"
+"POT-Creation-Date: 2026-06-08 03:18+0200\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
@@ -18,7 +18,13 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
 
-#: addons/time-limitted-peaceful.wad/addon:4
+#: addons/time-limitted-peaceful.wad/addon:6
+msgid ""
+"The game is peaceful for 45 minutes.<br><br>(For a different time adapt the "
+"constant in the code in 'init.lua'.)"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/addon:9
 msgid "Time limited peaceful mode"
 msgstr ""
 
