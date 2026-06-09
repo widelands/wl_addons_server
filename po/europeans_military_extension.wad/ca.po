@@ -5,15 +5,16 @@
 #
 # Translators:
 # Juanjo, 2025
+# Júlia Rosell Saldaña, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 03:13+0200\n"
+"POT-Creation-Date: 2026-06-09 03:18+0200\n"
 "PO-Revision-Date: 2024-12-15 09:30+0000\n"
-"Last-Translator: Juanjo, 2025\n"
+"Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -1080,7 +1081,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:185
 msgctxt "europeans_ware"
 msgid "It can be processed into charcoal in charcoal kilns."
-msgstr ""
+msgstr "Es pot processar en carbó vegetal en forns de carbó vegetal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:199
@@ -1410,12 +1411,16 @@ msgstr ""
 msgctxt "ware"
 msgid "Silver coins are money made of silver. Its a valuable barter object."
 msgstr ""
+"Les monedes de plata són diners fets amb plata. És un objecte d'intercanvi "
+"valuós."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:538
 msgctxt "ware"
 msgid "Gold coins are money made of gold. Its most valuable barter object."
 msgstr ""
+"Les monedes d'or són diners fets d'or. El seu objecte d'intercanvi més "
+"valuós."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:548
@@ -1793,6 +1798,7 @@ msgstr "El camp de juncs està creixent."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1288
 msgid "This reed field is flowering. Honey can be produced from it."
 msgstr ""
+"Aquest camp de canyes està florint. A partir d'ella es pot produir mel."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1295
@@ -2035,13 +2041,14 @@ msgstr "Talla blocs de granit i marbre de les roques properes."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1605
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat and leather."
-msgstr ""
+msgstr "Caça animals per produir carn i cuir."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1607
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
 msgstr ""
+"La cabana del caçador necessita animals per caçar dins de la zona de treball."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1614
@@ -2080,7 +2087,7 @@ msgstr "Extrau aigua del sòl."
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1678
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
-msgstr ""
+msgstr "Sembra i collita canya."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1685
@@ -2092,7 +2099,7 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1692
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood."
-msgstr ""
+msgstr "Tronc d'enduriment per produir fusta negra."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1699
@@ -2104,13 +2111,13 @@ msgstr ""
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1706
 msgctxt "europeans_building"
 msgid "Burns scrap_wood into charcoal."
-msgstr ""
+msgstr "Crema scrap_wood en carbó vegetal."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1713
 msgctxt "europeans_building"
 msgid "Burns scrap_wood or logs into charcoal."
-msgstr ""
+msgstr "Crema fusta de ferralla o troncs en carbó vegetal."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_military_extension.wad/tribes/initialization/units.lua:1720
@@ -2230,6 +2237,8 @@ msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
 "mountain terrain."
 msgstr ""
+"Excava granit, marbre i altres minerals valuosos del sòl en terrenys de "
+"muntanya."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine

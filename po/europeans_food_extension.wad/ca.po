@@ -5,15 +5,16 @@
 #
 # Translators:
 # Juanjo, 2025
+# Júlia Rosell Saldaña, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 03:13+0200\n"
+"POT-Creation-Date: 2026-06-09 03:18+0200\n"
 "PO-Revision-Date: 2025-03-29 14:10+0000\n"
-"Last-Translator: Juanjo, 2025\n"
+"Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -581,12 +582,12 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:79
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:75
 msgid "No Fish"
-msgstr ""
+msgstr "Sense peix"
 
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:80
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:76
 msgid "Out of Fish"
-msgstr ""
+msgstr "Fora de Peix"
 
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:81
 msgctxt "empire_building"
@@ -613,6 +614,9 @@ msgid ""
 "area. Remember that you can enhance the building. An advanced fishbreeder "
 "can release more fish into the waters."
 msgstr ""
+"El pescador que treballa a la cabana d'aquest pescador no pot trobar cap "
+"peix a la seva zona de treball. Recordeu que podeu millorar l'edifici. Un "
+"criador de peixos avançat pot alliberar més peixos a les aigües."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:9
@@ -635,13 +639,13 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:79
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:79
 msgid "No Game"
-msgstr ""
+msgstr "Sense Joc"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:81
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:81
 msgid "Out of Game"
-msgstr ""
+msgstr "Fora de Joc"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:83
@@ -655,7 +659,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:9
 msgctxt "europeans_building"
 msgid "Basic Hunter’s Hut"
-msgstr ""
+msgstr "Cabana bàsica del caçador"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:68
@@ -670,6 +674,9 @@ msgid ""
 "area. Remember that you can enhance the building. An advanced gamekeeper can "
 "release more game into the wild."
 msgstr ""
+"El caçador que treballa fora de la cabana d'aquest caçador no pot trobar cap "
+"caça a la seva zona de treball. Recordeu que podeu millorar l'edifici. Un "
+"guardacaça avançat pot llançar més joc a la natura."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/coalmine_basic/init.lua:9
@@ -1219,21 +1226,21 @@ msgstr "comerciar"
 #: addons/europeans_food_extension.wad/6_tradingsites/market_small_agricultur/init.lua:84
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
-msgstr ""
+msgstr "intercanviant aliments per monedes de coure"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_food_extension.wad/6_tradingsites/market_big_food/init.lua:87
 #: addons/europeans_food_extension.wad/6_tradingsites/market_small_agricultur/init.lua:98
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
-msgstr ""
+msgstr "intercanviar aliments per monedes de plata"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_food_extension.wad/6_tradingsites/market_big_food/init.lua:101
 #: addons/europeans_food_extension.wad/6_tradingsites/market_small_agricultur/init.lua:112
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
-msgstr ""
+msgstr "intercanviar aliments per monedes d'or"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_extension.wad/6_tradingsites/market_small_agricultur/init.lua:9
@@ -1368,7 +1375,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:169
 msgctxt "europeans_ware"
 msgid "It can be processed into charcoal in charcoal kilns."
-msgstr ""
+msgstr "Es pot processar en carbó vegetal en forns de carbó vegetal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:183
@@ -1647,6 +1654,8 @@ msgid ""
 "A small bite to keep miners strong and working. The scout also consumes "
 "rations on his scouting trips."
 msgstr ""
+"Una petita mossegada per mantenir els miners forts i treballant. L'escolta "
+"també consumeix racions en els seus viatges d'escolta."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Ration, part 2
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:474
@@ -1782,12 +1791,16 @@ msgstr ""
 msgctxt "ware"
 msgid "Silver coins are money made of silver. Its a valuable barter object."
 msgstr ""
+"Les monedes de plata són diners fets amb plata. És un objecte d'intercanvi "
+"valuós."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:632
 msgctxt "ware"
 msgid "Gold coins are money made of gold. Its most valuable barter object."
 msgstr ""
+"Les monedes d'or són diners fets d'or. El seu objecte d'intercanvi més "
+"valuós."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:642
@@ -2167,6 +2180,7 @@ msgstr "El camp de juncs està creixent."
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1429
 msgid "This reed field is flowering. Honey can be produced from it."
 msgstr ""
+"Aquest camp de canyes està florint. A partir d'ella es pot produir mel."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1436
@@ -2409,13 +2423,14 @@ msgstr "Talla blocs de granit i marbre de les roques properes."
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1816
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat and leather."
-msgstr ""
+msgstr "Caça animals per produir carn i cuir."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1818
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
 msgstr ""
+"La cabana del caçador necessita animals per caçar dins de la zona de treball."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Hunters House
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1825
@@ -2428,19 +2443,21 @@ msgstr ""
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1832
 msgctxt "europeans_building"
 msgid "Fishes on the coast or in lakes near the fisher’s house."
-msgstr ""
+msgstr "Peixos a la costa o als llacs propers a la casa del pescador."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 1
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1835
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
 msgstr ""
+"La casa del pescador necessita aigua plena de peixos dins de la zona de "
+"treball."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's House, part 2
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1837
 msgctxt "europeans_building"
 msgid "Roads and trees along the shoreline block fishing."
-msgstr ""
+msgstr "Els camins i els arbres al llarg de la costa bloqueja la pesca."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Fishers House
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1845
@@ -2490,7 +2507,7 @@ msgstr "Extrau aigua del sòl."
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1915
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
-msgstr ""
+msgstr "Sembra i collita canya."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1922
@@ -2514,7 +2531,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1943
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood."
-msgstr ""
+msgstr "Tronc d'enduriment per produir fusta negra."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1950
@@ -2526,13 +2543,13 @@ msgstr ""
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1957
 msgctxt "europeans_building"
 msgid "Burns scrap_wood into charcoal."
-msgstr ""
+msgstr "Crema scrap_wood en carbó vegetal."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1964
 msgctxt "europeans_building"
 msgid "Burns scrap_wood or logs into charcoal."
-msgstr ""
+msgstr "Crema fusta de ferralla o troncs en carbó vegetal."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1971
@@ -2685,6 +2702,8 @@ msgid ""
 "Digs granite, marble and other valuable minerals out of the ground in "
 "mountain terrain."
 msgstr ""
+"Excava granit, marbre i altres minerals valuosos del sòl en terrenys de "
+"muntanya."
 
 #. TRANSLATORS: Purpose helptext for production site: Granite Mine
 #. TRANSLATORS: Purpose helptext for production site: Marble Mine

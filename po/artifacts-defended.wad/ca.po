@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Júlia Rosell Saldaña, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2026-06-09 03:18+0200\n"
 "PO-Revision-Date: 2023-11-25 20:04+0000\n"
+"Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -20,7 +24,7 @@ msgstr ""
 
 #: addons/artifacts-defended.wad/addon:4
 msgid "artifacts, defended"
-msgstr ""
+msgstr "artefactes, defensats"
 
 #: addons/artifacts-defended.wad/defending.lua:61
 msgid "WARNING"
@@ -28,83 +32,88 @@ msgstr ""
 
 #: addons/artifacts-defended.wad/defending.lua:115
 msgid "to conquer"
-msgstr ""
+msgstr "per conquerir"
 
 #: addons/artifacts-defended.wad/defending.lua:127
 msgid "Could not adapt the tribe."
-msgstr ""
+msgstr "No s'ha pogut adaptar la tribu."
 
 #: addons/artifacts-defended.wad/defending.lua:143
 msgid "Defending player can not be in a team, remove."
-msgstr ""
+msgstr "El jugador defensor no pot estar en un equip, eliminar."
 
 #: addons/artifacts-defended.wad/defending.lua:226
 msgid "ERROR placing building"
-msgstr ""
+msgstr "ERROR en col·locar l'edifici"
 
 #: addons/artifacts-defended.wad/defending.lua:233
 #, lua-format
 msgid "No matching artifact building named %s"
-msgstr ""
+msgstr "No hi ha cap edifici d'artefacte coincident anomenat %s"
 
 #: addons/artifacts-defended.wad/defending.lua:239
 msgid "wrong field found"
-msgstr ""
+msgstr "S'ha trobat un camp incorrecte"
 
 #: addons/artifacts-defended.wad/defending.lua:269
 #, lua-format
 msgid "The player %s has no artifacts to defend."
-msgstr ""
+msgstr "El jugador %s no té artefactes per defensar."
 
 #: addons/artifacts-defended.wad/defending.lua:271
 msgid "No artifacts"
-msgstr ""
+msgstr "Sense artefactes"
 
 #: addons/artifacts-defended.wad/defending.lua:297
 msgid "could not place normal artifact (1x)"
-msgstr ""
+msgstr "no s'ha pogut col·locar l'artefacte normal (1x)"
 
 #: addons/artifacts-defended.wad/defending.lua:365
 msgid "Several players configured for defending:"
-msgstr ""
+msgstr "Diversos jugadors configurats per defensar:"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/artifacts-defended.wad/defending.lua:421
 msgid "This (ai) player will defend the artifacts."
-msgstr ""
+msgstr "Aquest jugador (ai) defensarà els artefactes."
 
 #. TRANSLATORS: This is the tooltip for the starting condition
 #: addons/artifacts-defended.wad/defending.lua:423
 msgid "Set the tribe to random for finding out in game what it will be."
-msgstr ""
+msgstr "Estableix la tribu a l'atzar per saber en el joc què serà."
 
 #: addons/artifacts-defended.wad/defending.lua:424
 msgid "Only for ai player as nothing can be done."
-msgstr ""
+msgstr "Només per al jugador ai ja que no es pot fer res."
 
 #: addons/artifacts-defended.wad/defending.lua:425
 msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
 msgstr ""
+"Es recomana configurar la IA en \"buida\" per evitar que els soldats siguin "
+"expulsats."
 
 #: addons/artifacts-defended.wad/defending.lua:426
 msgid ""
 "On maps with artifacts not reachable by a warrior, some artifacts will not "
 "be conquerable."
 msgstr ""
+"Als mapes amb artefactes no accessibles per un guerrer, alguns artefactes no "
+"seran conquistables."
 
 #: addons/artifacts-defended.wad/defending.lua:436
 #, lua-format
 msgid "Player %s defends artifacts and has aditionally another start position"
 msgstr ""
+"El jugador %s defensa els artefactes i té, a més, una altra posició inicial"
 
 #: screenshots/artifacts-defended.wad/descriptions:3
 msgid "found artifact"
-msgstr ""
+msgstr "artefacte trobat"
 
 #: screenshots/artifacts-defended.wad/descriptions:4
 msgid "attack artifact"
-msgstr ""
+msgstr "artefacte d'atac"
 
 #: screenshots/artifacts-defended.wad/descriptions:5
 msgid "conquered artifact"
-msgstr ""
+msgstr "artefacte conquerit"

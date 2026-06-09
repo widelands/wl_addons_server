@@ -5,15 +5,16 @@
 #
 # Translators:
 # Juanjo, 2026
+# Júlia Rosell Saldaña, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-24 03:14+0200\n"
+"POT-Creation-Date: 2026-06-09 03:18+0200\n"
 "PO-Revision-Date: 2026-04-25 19:35+0000\n"
-"Last-Translator: Juanjo, 2026\n"
+"Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -31,6 +32,8 @@ msgid ""
 "This is the add-on version of the Amazon changes proposed in the balancing "
 "PR."
 msgstr ""
+"Aquesta és la versió complementària dels canvis Amazon proposats al PR "
+"d'equilibri."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/amazons-txa.wad/charcoal_master/init.lua:8
@@ -41,7 +44,7 @@ msgstr ""
 #: addons/amazons-txa.wad/postload.lua:16
 msgctxt "amazons_worker"
 msgid "Burns rare trees to produce charcoal more efficiently."
-msgstr ""
+msgstr "Crema arbres rars per produir carbó vegetal de manera més eficient."
 
 #. TRANSLATORS: Lore helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:26
@@ -53,18 +56,23 @@ msgid ""
 "enough to start learning how to ignite ironwood. You have to start slowly, "
 "with the gentle flames of a balsa fire…’"
 msgstr ""
+"\"Creus que has dominat l'art de cremar carbó vegetal. Però el millor carbó "
+"vegetal és el que només es pot fer amb cautxú quan es col·loca al foc més "
+"calent de la fusta de ferro. El que has après fins ara, nena, amb prou "
+"feines és suficient per començar a aprendre a encendre fusta de ferro. Has "
+"de començar a poc a poc, amb les suaus flames d'un foc de balsa...'"
 
 #. TRANSLATORS: Lore author helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:28
 msgctxt "amazons_building"
 msgid "Mistress Blackwood, teaching an apprentice"
-msgstr ""
+msgstr "Mistress Blackwood, ensenyant a un aprenent"
 
 #. TRANSLATORS: Purpose helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:30
 msgctxt "amazons_building"
 msgid "Burns rare trees into charcoal."
-msgstr ""
+msgstr "Crema arbres rars en carbó vegetal."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:32
@@ -74,37 +82,39 @@ msgid ""
 "If fully supplied, the rare tree kiln needs %s on average to produce one "
 "lump of coal."
 msgstr ""
+"Si està totalment subministrat, el forn d'arbres rars necessita %s de "
+"mitjana per produir un tros de carbó."
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing charcoal because ...
 #: addons/amazons-txa.wad/programs/charcoal_kiln.lua:6
 #: addons/amazons-txa.wad/rare_tree_kiln/init.lua:43
 msgid "producing charcoal"
-msgstr ""
+msgstr "produint carbó vegetal"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing a light wooden armor because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:6
 msgid "making a light wooden armor"
-msgstr ""
+msgstr "fent una armadura lleugera de fusta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:18
 msgid "making a wooden helmet"
-msgstr ""
+msgstr "fent un casc de fusta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making sturdy boots because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:30
 msgid "making sturdy boots"
-msgstr ""
+msgstr "fent botes resistents"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:42
 msgid "making swift boots"
-msgstr ""
+msgstr "fent botes ràpides"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making hero boots because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:54
 msgid "making hero boots"
-msgstr ""
+msgstr "fent botes d'heroi"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:6
@@ -117,19 +127,19 @@ msgstr "treballar"
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:49
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:73
 msgid "harvesting balsa"
-msgstr ""
+msgstr "collir balsa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:57
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:85
 msgid "harvesting rubber"
-msgstr ""
+msgstr "collir cautxú"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting ironwood because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:65
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:97
 msgid "harvesting ironwood"
-msgstr ""
+msgstr "collir fusta de ferro"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:10
@@ -140,52 +150,52 @@ msgstr "dormir"
 #: addons/amazons-txa.wad/programs/training_glade.lua:18
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "Millora de l'evasió del soldat del nivell 0 al nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:32
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "Millorar l'evasió del soldat del nivell 1 al nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:47
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 2 to level 3"
-msgstr ""
+msgstr "Millora de l'evasió del soldat del nivell 2 al nivell 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:62
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 0 to level 1"
-msgstr ""
+msgstr "millorant la salut dels soldats del nivell 0 al nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:76
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr ""
+msgstr "millorant la salut dels soldats del nivell 1 al nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:91
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 2 to level 3"
-msgstr ""
+msgstr "millorant la salut dels soldats del nivell 2 al nivell 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:106
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "millorant la defensa dels soldats del nivell 0 al nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:121
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "millorant la defensa dels soldats del nivell 1 al nivell 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/amazons-txa.wad/rare_tree_kiln/init.lua:8
 msgctxt "amazons_building"
 msgid "Rare Tree Kiln"
-msgstr ""
+msgstr "Forn d'arbres rars"

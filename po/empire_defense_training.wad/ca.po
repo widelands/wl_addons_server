@@ -5,15 +5,16 @@
 #
 # Translators:
 # Juanjo, 2025
+# Júlia Rosell Saldaña, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 03:12+0200\n"
+"POT-Creation-Date: 2026-06-09 03:18+0200\n"
 "PO-Revision-Date: 2025-04-16 20:23+0000\n"
-"Last-Translator: Juanjo, 2025\n"
+"Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -24,7 +25,7 @@ msgstr ""
 
 #: addons/empire_defense_training.wad/addon:2
 msgid "Empire Defense Training"
-msgstr ""
+msgstr "Entrenament de Defensa de l'Imperi"
 
 #: addons/empire_defense_training.wad/addon:3
 msgid ""
@@ -32,12 +33,19 @@ msgid ""
 "additonal shields and modification of arena and colosseum. Plus additional "
 "buildcost modifications proposed by tothxa."
 msgstr ""
+"Aquest complement afegeix un entrenament de defensa a la tribu de l'Imperi. "
+"Això inclou escuts addicionals i modificacions de l'arena i el coliseu. A "
+"més de modificacions addicionals de cost de construcció proposades per "
+"tothxa."
 
 #: addons/empire_defense_training.wad/postload.lua:6
 msgid ""
 "This steel shield is produced in the armor smithy and used in the arena – "
 "together with food – to train soldiers from defense level 0 to level 1."
 msgstr ""
+"Aquest escut d'acer es produeix a la ferreria d'armadures i s'utilitza a "
+"l'arena, juntament amb el menjar, per entrenar soldats des del nivell de "
+"defensa 0 fins al nivell 1."
 
 #: addons/empire_defense_training.wad/postload.lua:9
 msgid ""
@@ -45,24 +53,34 @@ msgid ""
 "produced in the armor smithy and used in the colosseum – together with food "
 "– to train soldiers from defense level 1 to level 2."
 msgstr ""
+"Aquests escuts avançats són utilitzats pels millors soldats de l'Imperi. Es "
+"produeixen a la ferreria d'armadures i s'utilitzen al coliseu, juntament amb "
+"el menjar, per entrenar soldats des del nivell de defensa 1 fins al nivell 2."
 
 #: addons/empire_defense_training.wad/postload.lua:13
 msgid ""
 "Wheat is produced by farms and used by mills and breweries. Donkey farms, "
 "sheep farms and piggeries also need to be supplied with wheat."
 msgstr ""
+"El blat és produït per granges i utilitzat per molins i cerveseries. També "
+"s'han de proveir de blat les granges d'ases, les granges d'ovelles i els "
+"porqueris."
 
 #: addons/empire_defense_training.wad/postload.lua:16
 msgid ""
 "These grapes are the base for a tasty wine. They are harvested in a vineyard "
 "and processed in a winery."
 msgstr ""
+"Aquests raïms són la base d'un vi saborós. Es cullen en una vinya i es "
+"processen en un celler."
 
 #: addons/empire_defense_training.wad/postload.lua:19
 msgid ""
 "This tasty wine is drunk by the miners working the marble and gold mines. It "
 "is produced in a winery."
 msgstr ""
+"Aquest vi saborós el beuen els miners que treballen les mines de marbre i "
+"or. S'elabora en un celler."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:8
@@ -118,7 +136,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/bakery/init.lua:65
 msgctxt "empire_building"
 msgid "baking bread"
-msgstr ""
+msgstr "coure el pa"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/brewery/init.lua:8
@@ -129,7 +147,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/brewery/init.lua:59
 msgid "brewing beer"
-msgstr ""
+msgstr "fer cervesa"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:8
@@ -145,7 +163,7 @@ msgstr "plantar blat"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:64
 msgid "harvesting wheat"
-msgstr ""
+msgstr "collir blat"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:74
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:75
@@ -161,6 +179,8 @@ msgstr "Sense camps"
 msgctxt "empire_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
 msgstr ""
+"El pagès que treballa en aquesta granja no té terra netejada per plantar les "
+"seves llavors."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/piggery/init.lua:8
@@ -182,13 +202,13 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/sheepfarm/init.lua:59
 msgid "breeding sheep"
-msgstr ""
+msgstr "cria d'ovelles"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/stonemasons_house/init.lua:8
 msgctxt "empire_building"
 msgid "Stonemason’s House"
-msgstr ""
+msgstr "Casa del picapedrer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/stonemasons_house/init.lua:57
@@ -204,12 +224,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting grapevines because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:57
 msgid "planting grapevines"
-msgstr ""
+msgstr "plantar vinyes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grapevines because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:65
 msgid "harvesting grapes"
-msgstr ""
+msgstr "collir raïm"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:77
 msgctxt "empire_building"
@@ -217,6 +237,8 @@ msgid ""
 "The vine farmer working at this vineyard has no cleared soil to plant his "
 "grapevines."
 msgstr ""
+"El viticultor que treballa en aquesta vinya no té terra aclarida per plantar "
+"la seva vinya."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:8
@@ -258,7 +280,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaving_mill/init.lua:65
 msgid "weaving"
-msgstr ""
+msgstr "teixir"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/winery/init.lua:8
@@ -295,21 +317,21 @@ msgstr "promoure l'evasió del soldat de nivell 0 a nivell 1"
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:84
 msgctxt "empire_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "millorant la defensa dels soldats del nivell 0 al nivell 1"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:128
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:117
 msgctxt "empire_building"
 msgid "No soldier to train!"
-msgstr ""
+msgstr "Cap soldat per entrenar!"
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:130
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:119
 msgctxt "empire_building"
 msgid "No soldier found for this training level!"
-msgstr ""
+msgstr "No s'ha trobat cap soldat per a aquest nivell d'entrenament!"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:8
@@ -327,7 +349,7 @@ msgstr "promoure l'evasió del soldat de nivell 1 a nivell 2"
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:98
 msgctxt "empire_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "millorant la defensa dels soldats del nivell 1 al nivell 2"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/empire_defense_training.wad/tribes/workers/empire/soldier/init.lua:107

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Júlia Rosell Saldaña, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 03:13+0100\n"
+"POT-Creation-Date: 2026-06-09 03:18+0200\n"
 "PO-Revision-Date: 2026-01-07 09:47+0000\n"
+"Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -29,6 +33,10 @@ msgid ""
 "number of fully trained heroes in his tribe’s military sites wins the game. "
 "Combination with More Expensive Soldiers add-on recommended."
 msgstr ""
+"El primer jugador que estaciona un exèrcit equivalent en força al nombre "
+"seleccionat d'herois totalment entrenats als llocs militars de la seva tribu "
+"guanya el joc. Es recomana la combinació amb el complement de Soldats més "
+"cars."
 
 #: addons/field_army.wad/init.lua:27
 msgid ""
@@ -38,6 +46,11 @@ msgid ""
 "SELECT 1 HERO. One hero has a value of approximately 11 new untrained "
 "soldiers (or points)."
 msgstr ""
+"El primer jugador que estaciona un exèrcit equivalent en força al nombre "
+"seleccionat d'herois totalment entrenats als llocs militars de la seva tribu "
+"guanya el joc. AQUESTA CONDICIÓ D'INICIA NO ES LIMITA pel TEMPS! CADA 5 "
+"MINUTS SELECCIONES 1 HEROI. Un heroi té un valor d'aproximadament 11 soldats "
+"(o punts) nous sense entrenar."
 
 #: addons/field_army.wad/init.lua:45
 msgid ""
@@ -66,7 +79,7 @@ msgstr ""
 #. TRANSLATORS: "Player x has reached y points."
 #: addons/field_army.wad/init.lua:130
 msgid "%1% has reached %2%."
-msgstr ""
+msgstr "%1% ha arribat al %2%."
 
 #: addons/field_army.wad/init.lua:132
 msgid "%1$d point!"
@@ -77,16 +90,16 @@ msgstr[1] ""
 #. TRANSLATORS: "You have reached x points."
 #: addons/field_army.wad/init.lua:134
 msgid "You have reached %1%."
-msgstr ""
+msgstr "Heu arribat al %1%."
 
 #: addons/field_army.wad/init.lua:136
 msgid "Player points:"
-msgstr ""
+msgstr "Punts del jugador:"
 
 #. TRANSLATORS: "Player x has y out of z points"
 #: addons/field_army.wad/init.lua:139
 msgid "%1% has %2% out of %3%"
-msgstr ""
+msgstr "%1% té %2% de %3%"
 
 #. TRANSLATORS: "Player x: y points"
 #: addons/field_army.wad/init.lua:167
@@ -97,7 +110,7 @@ msgstr[1] ""
 
 #: addons/field_army.wad/init.lua:209
 msgid "%1% defeated."
-msgstr ""
+msgstr "%1% derrotat."
 
 #: addons/field_army.wad/init.lua:209
 msgid "%1% player remains."

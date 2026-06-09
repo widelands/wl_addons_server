@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Júlia Rosell Saldaña, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"POT-Creation-Date: 2026-06-09 03:18+0200\n"
 "PO-Revision-Date: 2024-01-29 07:15+0000\n"
+"Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -27,33 +31,39 @@ msgid ""
 "Adjust height for the whole map or apply heights to mountainous terrains "
 "automatically"
 msgstr ""
+"Ajusteu l'alçada per a tot el mapa o apliqueu altures als terrenys "
+"muntanyosos automàticament"
 
 #. TRANSLATORS: Short for "set height to:"
 #: addons/editor_height_tools.wad/auto_height.lua:15
 msgid "Set to:"
-msgstr ""
+msgstr "Estableix a:"
 
 #. TRANSLATORS: Short for "lower height by"
 #: addons/editor_height_tools.wad/auto_height.lua:18
 msgid "Lower by:"
-msgstr ""
+msgstr "Baixa per:"
 
 #. TRANSLATORS: Short for "elevate height by"
 #: addons/editor_height_tools.wad/auto_height.lua:21
 msgid "Elevate by:"
-msgstr ""
+msgstr "Elevar per:"
 
 #: addons/editor_height_tools.wad/auto_height.lua:42
 msgid ""
 "A coordinate can't be read.\n"
 "Make sure you have entered a valid coordinate in form of 20,34"
 msgstr ""
+"No es pot llegir una coordenada.\n"
+"Assegureu-vos que heu introduït una coordenada vàlida en forma de 20,34"
 
 #: addons/editor_height_tools.wad/auto_height.lua:49
 msgid ""
 "The coordinates exceeds the map height or width!\n"
 "Please enter valid coordinates!"
 msgstr ""
+"Les coordenades superen l'alçada o l'amplada del mapa!\n"
+"Introduïu les coordenades vàlides!"
 
 #: addons/editor_height_tools.wad/auto_height.lua:277
 msgid "Warning"
@@ -67,6 +77,11 @@ msgid ""
 "Click 'Cancel' to define a smaller area. Before clicking OK be sure to save "
 "the map!"
 msgstr ""
+"Això canviarà l'alçada de %1$d camps! Aproximadament això dura més de %2$d "
+"segons.\n"
+"L'editor no reacciona per aquesta vegada.\n"
+"Feu clic a \"Cancel·la\" per definir una àrea més petita. Abans de fer clic "
+"a D'acord, assegureu-vos de desar el mapa!"
 
 #: addons/editor_height_tools.wad/error_window.lua:7
 msgid "Error"
@@ -75,7 +90,7 @@ msgstr ""
 #: addons/editor_height_tools.wad/error_window.lua:28
 #: addons/editor_height_tools.wad/settings_window.lua:291
 msgid "OK"
-msgstr ""
+msgstr "D'acord"
 
 #: addons/editor_height_tools.wad/init.lua:12
 msgid "Height Tools"
@@ -86,34 +101,36 @@ msgid ""
 "Set height for the whole map or apply heights to mountainous terrains "
 "automatically"
 msgstr ""
+"Estableix l'alçada per a tot el mapa o apliqueu altures als terrenys "
+"muntanyosos automàticament"
 
 #: addons/editor_height_tools.wad/settings_window.lua:14
 msgid "Choose an option"
-msgstr ""
+msgstr "Trieu una opció"
 
 #: addons/editor_height_tools.wad/settings_window.lua:28
 msgid "Adjust height of all fields"
-msgstr ""
+msgstr "Ajusteu l'alçada de tots els camps"
 
 #: addons/editor_height_tools.wad/settings_window.lua:43
 msgid "Set all fields to value"
-msgstr ""
+msgstr "Estableix tots els camps en valor"
 
 #: addons/editor_height_tools.wad/settings_window.lua:47
 msgid "Lower all fields by value"
-msgstr ""
+msgstr "Baixeu tots els camps per valor"
 
 #: addons/editor_height_tools.wad/settings_window.lua:51
 msgid "Elevate all fields by value"
-msgstr ""
+msgstr "Eleva tots els camps per valor"
 
 #: addons/editor_height_tools.wad/settings_window.lua:63
 msgid "Set to: "
-msgstr ""
+msgstr "Estableix a:"
 
 #: addons/editor_height_tools.wad/settings_window.lua:70
 msgid "Value for all fields"
-msgstr ""
+msgstr "Valor per a tots els camps"
 
 #: addons/editor_height_tools.wad/settings_window.lua:86
 msgid "Adjust Height"
@@ -121,7 +138,7 @@ msgstr ""
 
 #: addons/editor_height_tools.wad/settings_window.lua:96
 msgid "Apply random heights to mountain terrains"
-msgstr ""
+msgstr "Aplicar altures aleatòries als terrenys de muntanya"
 
 #: addons/editor_height_tools.wad/settings_window.lua:104
 msgid ""
@@ -130,6 +147,10 @@ msgid ""
 "hexagonal area, like when using a big tool size, by entering the coordinates "
 "of the center and a radius."
 msgstr ""
+"Definiu una àrea rectangular introduint les coordenades de la cantonada "
+"superior esquerra i les coordenades de la cantonada inferior dreta del "
+"rectangle. O definiu una àrea hexagonal, com quan utilitzeu una mida d'eina "
+"gran, introduint les coordenades del centre i un radi."
 
 #: addons/editor_height_tools.wad/settings_window.lua:105
 msgid ""
@@ -137,6 +158,9 @@ msgid ""
 "right side, e.g.: (20,&nbsp;52,&nbsp;10). The values represents (x-"
 "coordinate,&nbsp;&nbsp;y-coordinate,&nbsp;height)"
 msgstr ""
+"Els valors de les coordenades es poden trobar al panell del menú principal a "
+"la dreta, per exemple: (20,&nbsp;52,&nbsp;10). Els valors representen "
+"(coordenada x,&nbsp;&nbsp;coordenada y,&nbsp;alçada)"
 
 #: addons/editor_height_tools.wad/settings_window.lua:111
 msgid "Global Options"
@@ -144,19 +168,19 @@ msgstr ""
 
 #: addons/editor_height_tools.wad/settings_window.lua:125
 msgid "Max. Height:"
-msgstr ""
+msgstr "Màx. Alçada:"
 
 #: addons/editor_height_tools.wad/settings_window.lua:126
 msgid "Restrict the height to this maximum height."
-msgstr ""
+msgstr "Limiteu l'alçada a aquesta alçada màxima."
 
 #: addons/editor_height_tools.wad/settings_window.lua:135
 msgid "Place sign"
-msgstr ""
+msgstr "Senyal de lloc"
 
 #: addons/editor_height_tools.wad/settings_window.lua:136
 msgid "Place a column at given coordinates"
-msgstr ""
+msgstr "Col·loca una columna a les coordenades donades"
 
 #: addons/editor_height_tools.wad/settings_window.lua:147
 msgid "Hexagonal Area"
@@ -164,21 +188,21 @@ msgstr ""
 
 #: addons/editor_height_tools.wad/settings_window.lua:163
 msgid "Coordinates of the center field of the hexagonal area, e.g.: 20,35"
-msgstr ""
+msgstr "Coordenades del camp central de l'àrea hexagonal, p. ex.: 20,35"
 
 #: addons/editor_height_tools.wad/settings_window.lua:171
 #: addons/editor_height_tools.wad/settings_window.lua:242
 #: addons/editor_height_tools.wad/settings_window.lua:271
 msgid "Enter coordinates in form of x, y"
-msgstr ""
+msgstr "Introduïu les coordenades en forma de x, y"
 
 #: addons/editor_height_tools.wad/settings_window.lua:192
 msgid "Choose a value for the radius"
-msgstr ""
+msgstr "Trieu un valor per al radi"
 
 #: addons/editor_height_tools.wad/settings_window.lua:210
 msgid "Random Hexagonal Mountains"
-msgstr ""
+msgstr "Muntanyes hexagonals aleatòries"
 
 #: addons/editor_height_tools.wad/settings_window.lua:218
 msgid "Rectangular Area"
@@ -187,35 +211,41 @@ msgstr ""
 #: addons/editor_height_tools.wad/settings_window.lua:234
 msgid "Coordinates of the top left corner of the rectangle, e.g.: 10,20"
 msgstr ""
+"Coordenades de la cantonada superior esquerra del rectangle, p. ex.: 10,20"
 
 #: addons/editor_height_tools.wad/settings_window.lua:263
 msgid "Coordinates of the bottom right corner of the rectangle, e.g.: 20,35"
 msgstr ""
+"Coordenades de la cantonada inferior dreta del rectangle, p. ex.: 20,35"
 
 #: addons/editor_height_tools.wad/settings_window.lua:282
 msgid "Random Rectangular Mountains"
-msgstr ""
+msgstr "Muntanyes rectangulars aleatòries"
 
 #: screenshots/editor_height_tools.wad/descriptions:3
 msgid "Design your flat map and add some mountain terrains"
-msgstr ""
+msgstr "Dissenya el teu mapa pla i afegeix alguns terrenys de muntanya"
 
 #: screenshots/editor_height_tools.wad/descriptions:4
 msgid "Open the height tools, define a rectangular area and click on "
-msgstr ""
+msgstr "Obriu les eines d'alçada, definiu una àrea rectangular i feu clic a"
 
 #: screenshots/editor_height_tools.wad/descriptions:5
 msgid "Two signs are placed representing the given coordinates"
-msgstr ""
+msgstr "Es col·loquen dos signes que representen les coordenades donades"
 
 #: screenshots/editor_height_tools.wad/descriptions:6
 msgid ""
 "The created mountain on the left doesn't look good? Enter the coordinates of "
 "the center and click on "
 msgstr ""
+"La muntanya creada a l'esquerra no es veu bé? Introduïu les coordenades del "
+"centre i feu clic a"
 
 #: screenshots/editor_height_tools.wad/descriptions:7
 msgid ""
 "You could also modify a mountain. Enter the coordinates of the new center "
 "and click on "
 msgstr ""
+"També pots modificar una muntanya. Introduïu les coordenades del nou centre "
+"i feu clic a"

@@ -5,15 +5,16 @@
 #
 # Translators:
 # Juanjo, 2026
+# Júlia Rosell Saldaña, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 03:13+0100\n"
+"POT-Creation-Date: 2026-06-09 03:19+0200\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
-"Last-Translator: Juanjo, 2026\n"
+"Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -33,26 +34,30 @@ msgid ""
 "new graphics is available. AI is still weak, for a stronger opponent, please "
 "choose fortified village or use AI of other tribes."
 msgstr ""
+"Aquest complement afegeix una nova tribu gal·la. Utilitza gràfics d'altres "
+"tribus, fins que hi hagi nous gràfics disponibles. La IA encara és feble, "
+"per a un oponent més fort, si us plau, trieu un poble fortificat o utilitzeu "
+"IA d'altres tribus."
 
 #. TRANSLATORS:  This is a Gallic fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/flowering/init.lua:10
 msgid "Apple Tree (Flowering)"
-msgstr ""
+msgstr "Pomera (floració)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/fruit/init.lua:10
 msgid "Apple Tree (Fruit)"
-msgstr ""
+msgstr "Pomera (fruita)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/mature/init.lua:10
 msgid "Apple Tree (Mature)"
-msgstr ""
+msgstr "Pomera (Madura)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/old/init.lua:10
 msgid "Apple Tree (Old)"
-msgstr ""
+msgstr "Pomera (vell)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/old/init.lua:12
@@ -62,32 +67,32 @@ msgstr ""
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/pole/init.lua:10
 msgid "Apple Tree (Pole)"
-msgstr ""
+msgstr "Pomera (pal)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/apple_tree/sapling/init.lua:10
 msgid "Apple Tree (Sapling)"
-msgstr ""
+msgstr "Pomera (plantell)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/cherry_tree/flowering/init.lua:10
 msgid "Cherry Tree (Flowering)"
-msgstr ""
+msgstr "Cirerer (floració)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/cherry_tree/fruit/init.lua:10
 msgid "Cherry Tree (Fruit)"
-msgstr ""
+msgstr "Cirerer (fruits)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/cherry_tree/mature/init.lua:10
 msgid "Cherry Tree (Mature)"
-msgstr ""
+msgstr "Cirerer (Madur)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/cherry_tree/old/init.lua:10
 msgid "Cherry Tree (Old)"
-msgstr ""
+msgstr "Cirerer (vell)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/cherry_tree/old/init.lua:12
@@ -97,42 +102,42 @@ msgstr ""
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/cherry_tree/pole/init.lua:10
 msgid "Cherry Tree (Pole)"
-msgstr ""
+msgstr "Cirerer (pal)"
 
 #. TRANSLATORS:  This is a Gauls fruit tree.
 #: addons/gauls.wad/immovables/cherry_tree/sapling/init.lua:10
 msgid "Cherry Tree (Sapling)"
-msgstr ""
+msgstr "cirerer (planet)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/herbs/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Herbs (harvested)"
-msgstr ""
+msgstr "Herbes (collides)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/herbs/medium/init.lua:8
 msgctxt "immovable"
 msgid "Herbs (medium)"
-msgstr ""
+msgstr "Herbes (mitjanes)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/herbs/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Herbs (ripe)"
-msgstr ""
+msgstr "Herbes (madures)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/herbs/small/init.lua:8
 msgctxt "immovable"
 msgid "Herbs (small)"
-msgstr ""
+msgstr "Herbes (petites)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/herbs/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Herbs (tiny)"
-msgstr ""
+msgstr "Herbes (petites)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/hole/init.lua:8
@@ -160,13 +165,13 @@ msgstr "Un muntó de carbó"
 #: addons/gauls.wad/immovables/resi_copper_gold_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Copper and Gold Ore"
-msgstr ""
+msgstr "Una mica de coure i mineral d'or"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/gauls.wad/immovables/resi_copper_gold_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Copper and Gold Ore"
-msgstr ""
+msgstr "Molta mena de coure i or"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/gauls.wad/immovables/resi_iron_1/init.lua:8
@@ -190,13 +195,13 @@ msgstr "Sense recursos"
 #: addons/gauls.wad/immovables/resi_stones_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Tin Ore"
-msgstr ""
+msgstr "Una mica de mineral de llauna"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/gauls.wad/immovables/resi_stones_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Tin Ore"
-msgstr ""
+msgstr "Un munt de mineral de llauna"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/gauls.wad/immovables/resi_water/init.lua:8
@@ -214,31 +219,31 @@ msgstr "Vaixell en construcció"
 #: addons/gauls.wad/immovables/vegetable/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Vegetable (harvested)"
-msgstr ""
+msgstr "Verdura (collida)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/vegetable/medium/init.lua:8
 msgctxt "immovable"
 msgid "Vegetable (medium)"
-msgstr ""
+msgstr "Verdura (mitjana)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/vegetable/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Vegetable (ripe)"
-msgstr ""
+msgstr "Verdura (madura)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/vegetable/small/init.lua:8
 msgctxt "immovable"
 msgid "Vegetable (small)"
-msgstr ""
+msgstr "Verdura (petita)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/gauls.wad/immovables/vegetable/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Vegetable (tiny)"
-msgstr ""
+msgstr "Verdura (petita)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/castle/init.lua:8
@@ -250,31 +255,31 @@ msgstr ""
 #: addons/gauls.wad/militarysites/castle/init.lua:72
 msgctxt "gauls_building"
 msgid "Your warriors have occupied your castle."
-msgstr ""
+msgstr "Els teus guerrers han ocupat el teu castell."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:74
 msgctxt "gauls_building"
 msgid "Your castle discovered an aggressor."
-msgstr ""
+msgstr "El teu castell va descobrir un agressor."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:76
 msgctxt "gauls_building"
 msgid "Your castle is under attack."
-msgstr ""
+msgstr "El teu castell està sota atac."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:78
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the castle."
-msgstr ""
+msgstr "L'enemic va derrotar els teus guerrers al castell."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/castle/init.lua:80
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the castle."
-msgstr ""
+msgstr "Els teus guerrers van derrotar l'enemic al castell."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/guard_post/init.lua:8
@@ -286,31 +291,31 @@ msgstr ""
 #: addons/gauls.wad/militarysites/guard_post/init.lua:60
 msgctxt "gauls_building"
 msgid "Your warrior has occupied your guard post."
-msgstr ""
+msgstr "El teu guerrer ha ocupat el teu lloc de guàrdia."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/guard_post/init.lua:62
 msgctxt "gauls_building"
 msgid "Your guard post discovered an aggressor."
-msgstr ""
+msgstr "El teu lloc de guàrdia va descobrir un agressor."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/guard_post/init.lua:64
 msgctxt "gauls_building"
 msgid "Your guard post is under attack."
-msgstr ""
+msgstr "El teu lloc de guàrdia està sota atac."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/guard_post/init.lua:66
 msgctxt "gauls_building"
 msgid "The enemy defeated your warrior at the guard post."
-msgstr ""
+msgstr "L'enemic va derrotar el teu guerrer al lloc de guàrdia."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/guard_post/init.lua:68
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the guard post."
-msgstr ""
+msgstr "Els teus guerrers van derrotar l'enemic al lloc de guàrdia."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/headquarters/init.lua:8
@@ -334,31 +339,31 @@ msgstr ""
 #: addons/gauls.wad/militarysites/sentry/init.lua:59
 msgctxt "gauls_building"
 msgid "Your warriors have occupied your sentry."
-msgstr ""
+msgstr "Els teus guerrers han ocupat el teu sentinella."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/sentry/init.lua:61
 msgctxt "gauls_building"
 msgid "Your sentry discovered an aggressor."
-msgstr ""
+msgstr "El teu sentinella va descobrir un agressor."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/sentry/init.lua:63
 msgctxt "gauls_building"
 msgid "Your sentry is under attack."
-msgstr ""
+msgstr "El teu sentinella està sota atac."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/sentry/init.lua:65
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the sentry."
-msgstr ""
+msgstr "L'enemic va derrotar als teus guerrers al sentinella."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/sentry/init.lua:67
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the sentry."
-msgstr ""
+msgstr "Els teus guerrers van derrotar l'enemic al sentinella."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/stone_tower/init.lua:8
@@ -370,31 +375,31 @@ msgstr ""
 #: addons/gauls.wad/militarysites/stone_tower/init.lua:44
 msgctxt "gauls_building"
 msgid "Your warriors have occupied your stone tower."
-msgstr ""
+msgstr "Els teus guerrers han ocupat la teva torre de pedra."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/stone_tower/init.lua:46
 msgctxt "gauls_building"
 msgid "Your stone tower discovered an aggressor."
-msgstr ""
+msgstr "La teva torre de pedra va descobrir un agressor."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/stone_tower/init.lua:48
 msgctxt "gauls_building"
 msgid "Your stone tower is under attack."
-msgstr ""
+msgstr "La teva torre de pedra està sota atac."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/stone_tower/init.lua:50
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the stone tower."
-msgstr ""
+msgstr "L'enemic va derrotar els teus guerrers a la torre de pedra."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/stone_tower/init.lua:52
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the stone tower."
-msgstr ""
+msgstr "Els teus guerrers van derrotar l'enemic a la torre de pedra."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/stronghold/init.lua:8
@@ -406,31 +411,31 @@ msgstr ""
 #: addons/gauls.wad/militarysites/stronghold/init.lua:61
 msgctxt "gauls_building"
 msgid "Your warriors have occupied your stronghold."
-msgstr ""
+msgstr "Els teus guerrers han ocupat la teva fortalesa."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/stronghold/init.lua:63
 msgctxt "gauls_building"
 msgid "Your stronghold discovered an aggressor."
-msgstr ""
+msgstr "La teva fortalesa va descobrir un agressor."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/stronghold/init.lua:65
 msgctxt "gauls_building"
 msgid "Your stronghold is under attack."
-msgstr ""
+msgstr "La teva fortalesa està sota atac."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/stronghold/init.lua:67
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the stronghold."
-msgstr ""
+msgstr "L'enemic va derrotar els teus guerrers a la fortalesa."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/stronghold/init.lua:69
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the stronghold."
-msgstr ""
+msgstr "Els teus guerrers van derrotar l'enemic a la fortalesa."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/militarysites/warehouse/init.lua:8
@@ -448,31 +453,31 @@ msgstr ""
 #: addons/gauls.wad/militarysites/watchtower/init.lua:47
 msgctxt "gauls_building"
 msgid "Your warriors have occupied your watchtower."
-msgstr ""
+msgstr "Els teus guerrers han ocupat la teva torre de guaita."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/watchtower/init.lua:49
 msgctxt "gauls_building"
 msgid "Your watchtower discovered an aggressor."
-msgstr ""
+msgstr "La teva talaia va descobrir un agressor."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/watchtower/init.lua:51
 msgctxt "gauls_building"
 msgid "Your watchtower is under attack."
-msgstr ""
+msgstr "La teva torre de vigilància està sota atac."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/watchtower/init.lua:53
 msgctxt "gauls_building"
 msgid "The enemy defeated your warriors at the watchtower."
-msgstr ""
+msgstr "L'enemic va derrotar els teus guerrers a la torre de vigilància."
 
 #. TRANSLATORS: Message sent by a Gallic military site
 #: addons/gauls.wad/militarysites/watchtower/init.lua:55
 msgctxt "gauls_building"
 msgid "Your warriors defeated the enemy at the watchtower."
-msgstr ""
+msgstr "Els teus guerrers van derrotar l'enemic a la torre de vigilància."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/coal_mine/init.lua:8
@@ -505,12 +510,15 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"La vena principal d'aquesta mina de carbó està esgotada. Espereu un "
+"rendiment molt reduït de la inversió. Hauríeu de considerar millorar-lo, "
+"desmuntar-lo o destruir-lo."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/coal_mine_deep/init.lua:8
 msgctxt "gauls_building"
 msgid "Deep Coal Mine"
-msgstr ""
+msgstr "Mina de carbó profunda"
 
 #: addons/gauls.wad/mines/coal_mine_deep/init.lua:94
 #: addons/gauls.wad/mines/coal_mine_small/init.lua:103
@@ -520,12 +528,15 @@ msgid ""
 "on investment. This mine can’t be enhanced any further, so you should "
 "consider dismantling or destroying it."
 msgstr ""
+"La vena principal d'aquesta mina de carbó està esgotada. Espereu un "
+"rendiment molt reduït de la inversió. Aquesta mina no es pot millorar més, "
+"així que hauríeu de plantejar-vos desmuntar-la o destruir-la."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/coal_mine_small/init.lua:8
 msgctxt "gauls_building"
 msgid "Small Coal Mine"
-msgstr ""
+msgstr "Petita Mina de Carbó"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:8
@@ -536,15 +547,15 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start mining copper-gold ore because ...
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:58
 msgid "mining copper-gold ore"
-msgstr ""
+msgstr "extracció de mineral de coure-or"
 
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:81
 msgid "No Copper-Gold Ore"
-msgstr ""
+msgstr "Sense mineral de coure-or"
 
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:82
 msgid "Copper-Gold Vein Exhausted"
-msgstr ""
+msgstr "Vena de coure-or esgotada"
 
 #: addons/gauls.wad/mines/copper_gold_mine/init.lua:84
 msgctxt "gauls_building"
@@ -553,6 +564,9 @@ msgid ""
 "returns on investment. This mine can’t be enhanced any further, so you "
 "should consider dismantling or destroying it."
 msgstr ""
+"La vena principal d'aquesta mina de coure-or està esgotada. Espereu un "
+"rendiment molt reduït de la inversió. Aquesta mina no es pot millorar més, "
+"així que hauríeu de plantejar-vos desmuntar-la o destruir-la."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/copper_mine/init.lua:8
@@ -563,15 +577,15 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start mining copper ore because ...
 #: addons/gauls.wad/mines/copper_mine/init.lua:85
 msgid "mining copper ore"
-msgstr ""
+msgstr "extracció de mineral de coure"
 
 #: addons/gauls.wad/mines/copper_mine/init.lua:105
 msgid "No Copper Ore"
-msgstr ""
+msgstr "Sense mineral de coure"
 
 #: addons/gauls.wad/mines/copper_mine/init.lua:106
 msgid "Main Copper Vein Exhausted"
-msgstr ""
+msgstr "Vena principal de coure esgotada"
 
 #: addons/gauls.wad/mines/copper_mine/init.lua:108
 msgctxt "gauls_building"
@@ -580,6 +594,9 @@ msgid ""
 "returns on investment. You should consider enhancing, dismantling or "
 "destroying it."
 msgstr ""
+"La vena principal d'aquesta mina de coure està esgotada. Espereu un "
+"rendiment molt reduït de la inversió. Hauríeu de considerar millorar-lo, "
+"desmuntar-lo o destruir-lo."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/iron_mine/init.lua:8
@@ -597,11 +614,11 @@ msgstr "extraure mineral de ferro"
 #: addons/gauls.wad/mines/iron_mine/init.lua:92
 #: addons/gauls.wad/mines/iron_mine_small/init.lua:98
 msgid "No Iron Ore"
-msgstr ""
+msgstr "Sense mineral de ferro"
 
 #: addons/gauls.wad/mines/iron_mine/init.lua:93
 msgid "Iron Vein Exhausted"
-msgstr ""
+msgstr "Vena de ferro esgotada"
 
 #: addons/gauls.wad/mines/iron_mine/init.lua:95
 #: addons/gauls.wad/mines/iron_mine_small/init.lua:101
@@ -610,12 +627,15 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"La vena principal d'aquesta mina de ferro està esgotada. Espereu un "
+"rendiment molt reduït de la inversió. Hauríeu de considerar millorar-lo, "
+"desmuntar-lo o destruir-lo."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/iron_mine_deep/init.lua:8
 msgctxt "gauls_building"
 msgid "Deep Iron Mine"
-msgstr ""
+msgstr "Mina de Ferro Profunda"
 
 #: addons/gauls.wad/mines/iron_mine_deep/init.lua:90
 msgid "No Iron"
@@ -633,12 +653,15 @@ msgid ""
 "on investment. This mine can’t be enhanced any further, so you should "
 "consider dismantling or destroying it."
 msgstr ""
+"La vena principal d'aquesta mina de ferro està esgotada. Espereu un "
+"rendiment molt reduït de la inversió. Aquesta mina no es pot millorar més, "
+"així que hauríeu de plantejar-vos desmuntar-la o destruir-la."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/iron_mine_small/init.lua:8
 msgctxt "gauls_building"
 msgid "Small Iron Mine"
-msgstr ""
+msgstr "Petita Mina de Ferro"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/tin_mine/init.lua:8
@@ -650,16 +673,16 @@ msgstr ""
 #: addons/gauls.wad/mines/tin_mine/init.lua:82
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:59
 msgid "mining tin ore"
-msgstr ""
+msgstr "extracció de mineral d'estany"
 
 #: addons/gauls.wad/mines/tin_mine/init.lua:106
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:86
 msgid "No Tin Ore"
-msgstr ""
+msgstr "Sense mineral d'estany"
 
 #: addons/gauls.wad/mines/tin_mine/init.lua:107
 msgid "Main Tin Ore Vein Exhausted"
-msgstr ""
+msgstr "Vena principal de mineral d'estany esgotada"
 
 #: addons/gauls.wad/mines/tin_mine/init.lua:109
 msgctxt "gauls_building"
@@ -667,16 +690,19 @@ msgid ""
 "This tin mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"La vena principal d'aquesta mina de llauna està esgotada. Espereu un "
+"rendiment molt reduït de la inversió. Hauríeu de considerar millorar-lo, "
+"desmuntar-lo o destruir-lo."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:8
 msgctxt "gauls_building"
 msgid "Deep Tin Mine"
-msgstr ""
+msgstr "Mina de llauna profunda"
 
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:87
 msgid "Tin Vein Exhausted"
-msgstr ""
+msgstr "Vena de llauna esgotada"
 
 #: addons/gauls.wad/mines/tin_mine_deep/init.lua:89
 msgctxt "gauls_building"
@@ -685,6 +711,9 @@ msgid ""
 "returns on investment. This mine can’t be enhanced any further, so you "
 "should consider dismantling or destroying it."
 msgstr ""
+"La vena principal d'aquesta profunda mina d'estany està esgotada. Espereu un "
+"rendiment molt reduït de la inversió. Aquesta mina no es pot millorar més, "
+"així que hauríeu de plantejar-vos desmuntar-la o destruir-la."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
@@ -698,7 +727,7 @@ msgstr "«%1%»<br>(%2%)"
 #: addons/gauls.wad/postload.lua:23
 msgctxt "gauls_building"
 msgid "A market enables trading with other tribes."
-msgstr ""
+msgstr "Un mercat permet comerciar amb altres tribus."
 
 #: addons/gauls.wad/postload.lua:46
 msgctxt "gauls_building"
@@ -707,18 +736,23 @@ msgid ""
 "should not increase much but the productivity can increase, if there are not "
 "enough animals in the nearby forests."
 msgstr ""
+"Per descomptat, caçar cocodrils és una bona idea. L'eficiència de la caça no "
+"hauria d'augmentar molt però la productivitat pot augmentar, si no hi ha "
+"prou animals als boscos propers."
 
 #. TRANSLATORS: Lore author helptext for a Gallic production site: Crocodile Hunter’s Hut
 #: addons/gauls.wad/postload.lua:49
 msgctxt "gauls_building"
 msgid "Hunter advocates the idea of building a crocodile hunter's house"
-msgstr ""
+msgstr "Hunter defensa la idea de construir la casa d'un caçador de cocodrils"
 
 #: addons/gauls.wad/postload.lua:50
 msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
+"Caça animals per produir carn. Els caçadors que treballen en aquesta casa "
+"també poden caçar cocodrils."
 
 #. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
 #: addons/gauls.wad/postload.lua:53
@@ -727,6 +761,8 @@ msgid ""
 "This building is useful only when you have a Sumatran opponent and there are "
 "crocodiles coming from his territory into your territory."
 msgstr ""
+"Aquest edifici només és útil quan tens un oponent de Sumatra i hi ha "
+"cocodrils que vénen del seu territori al teu territori."
 
 #. TRANSLATORS: Note helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #: addons/gauls.wad/postload.lua:55
@@ -735,6 +771,8 @@ msgid ""
 "The building has 2 different working areas, the smaller for crocodile "
 "hunting and the larger for game hunting."
 msgstr ""
+"L'edifici té 2 zones de treball diferents, la més petita per a la caça de "
+"cocodrils i la més gran per a la caça."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 1
 #: addons/gauls.wad/postload.lua:59
@@ -745,6 +783,10 @@ msgid ""
 "building operates as a basic hunter's hut and the hunters need %2$s on "
 "average to produce one meat."
 msgstr ""
+"Si hi ha una quantitat suficient de cocodrils i altres animals, els caçadors "
+"necessiten de mitjana %1$s per produir una carn. Si no hi ha cocodrils, "
+"l'edifici funciona com a cabana bàsica de caçadors i els caçadors necessiten "
+"de mitjana %2$s per produir una carn."
 
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
@@ -774,7 +816,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2052
 msgctxt "gauls_building"
 msgid "In case of slopes or obstacles in the way, the time is increased."
-msgstr ""
+msgstr "En cas de pendents o obstacles en el camí, el temps s'incrementa."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:8
@@ -807,22 +849,22 @@ msgstr "treballar"
 #. TRANSLATORS: Completed/Skipped/Did not start making chain armor because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:83
 msgid "making chain armor"
-msgstr ""
+msgstr "fent armadures de cadena"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making bronze armor because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:96
 msgid "making bronze armor"
-msgstr ""
+msgstr "fent armadures de bronze"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making golden helmet because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:109
 msgid "making golden helmet"
-msgstr ""
+msgstr "fent casc d'or"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making bronze shield because ...
 #: addons/gauls.wad/productionsites/armorsmithy/init.lua:122
 msgid "making bronze shield"
-msgstr ""
+msgstr "fent un escut de bronze"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/bakery/init.lua:8
@@ -834,7 +876,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/bakery/init.lua:66
 msgctxt "gauls_building"
 msgid "baking bread"
-msgstr ""
+msgstr "coure el pa"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/barracks/init.lua:8
@@ -846,7 +888,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/barracks/init.lua:65
 msgctxt "gauls_building"
 msgid "recruiting warrior"
-msgstr ""
+msgstr "reclutament de guerrers"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/brick_kiln/init.lua:8
@@ -857,7 +899,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
 #: addons/gauls.wad/productionsites/brick_kiln/init.lua:69
 msgid "burning bricks"
-msgstr ""
+msgstr "maons cremant"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/cattle_farm/init.lua:8
@@ -869,13 +911,13 @@ msgstr ""
 #: addons/gauls.wad/productionsites/cattle_farm/init.lua:64
 msgctxt "gauls_building"
 msgid "rearing cattle"
-msgstr ""
+msgstr "cria de bestiar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing milk because ...
 #: addons/gauls.wad/productionsites/cattle_farm/init.lua:77
 msgctxt "gauls_building"
 msgid "producing milk"
-msgstr ""
+msgstr "produint llet"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/charcoal_kiln/init.lua:8
@@ -886,7 +928,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/gauls.wad/productionsites/charcoal_kiln/init.lua:65
 msgid "producing coal"
-msgstr ""
+msgstr "produint carbó"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/clay_pit/init.lua:8
@@ -897,16 +939,16 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making clay because ...
 #: addons/gauls.wad/productionsites/clay_pit/init.lua:69
 msgid "making clay"
-msgstr ""
+msgstr "fent fang"
 
 #. TRANSLATORS: Short for "No Level Ground" for clay pits
 #: addons/gauls.wad/productionsites/clay_pit/init.lua:86
 msgid "No Ground"
-msgstr ""
+msgstr "Sense Terra"
 
 #: addons/gauls.wad/productionsites/clay_pit/init.lua:87
 msgid "No Level Ground"
-msgstr ""
+msgstr "Terreny sense nivell"
 
 #: addons/gauls.wad/productionsites/clay_pit/init.lua:88
 msgctxt "gauls_building"
@@ -915,12 +957,15 @@ msgid ""
 "work area. Consider dismantling this clay pit and rebuilding it somewhere "
 "else."
 msgstr ""
+"L'excavador d'argila que treballa en aquesta fossa d'argila no pot trobar "
+"cap terreny pla a la seva àrea de treball. Penseu en desmuntar aquesta fossa "
+"d'argila i reconstruir-la en un altre lloc."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:8
 msgctxt "gauls_building"
 msgid "Crocodile Hunter’s Hut"
-msgstr ""
+msgstr "Cabana del caçador de cocodrils"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:47
@@ -936,13 +981,13 @@ msgstr "caçar cocodrils"
 
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:68
 msgid "No Crocodiles"
-msgstr ""
+msgstr "Sense cocodrils"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:70
 #: addons/gauls.wad/productionsites/hunters_hut/init.lua:82
 msgid "Out of Game"
-msgstr ""
+msgstr "Fora de Joc"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/gauls.wad/productionsites/crocodile_hunters_hut/init.lua:72
@@ -951,22 +996,24 @@ msgid ""
 "The hunter working out of this house can’t find any crocodiles in his work "
 "area."
 msgstr ""
+"El caçador que treballa fora d'aquesta casa no pot trobar cap cocodril a la "
+"seva zona de treball."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/druids_house/init.lua:8
 msgctxt "gauls_building"
 msgid "Druid’s House"
-msgstr ""
+msgstr "Casa del Druida"
 
 #. TRANSLATORS: Completed/Skipped/Did not start cooking an elixir because ...
 #: addons/gauls.wad/productionsites/druids_house/init.lua:64
 msgid "cooking an elixir"
-msgstr ""
+msgstr "cuinant un elixir"
 
 #. TRANSLATORS: Completed/Skipped/Did not start cooking a potion because ...
 #: addons/gauls.wad/productionsites/druids_house/init.lua:80
 msgid "cooking a potion"
-msgstr ""
+msgstr "cuinant una poció"
 
 #: addons/gauls.wad/productionsites/druids_house/init.lua:97
 #: addons/gauls.wad/productionsites/woodcutters_house/init.lua:54
@@ -975,7 +1022,7 @@ msgstr "No hi ha arbres"
 
 #: addons/gauls.wad/productionsites/druids_house/init.lua:98
 msgid "Out of Trees or Fruit"
-msgstr ""
+msgstr "Fora d'arbres o fruites"
 
 #: addons/gauls.wad/productionsites/druids_house/init.lua:99
 msgctxt "gauls_building"
@@ -985,6 +1032,10 @@ msgid ""
 "type right now. You should consider dismantling or destroying the building "
 "or building a forester’s hut or an orchard nearby."
 msgstr ""
+"El druida que treballa en aquesta casa no busca cap beguda furtiva. No hi ha "
+"arbres, arbres fruiters o la teva economia no necessita tants edificis "
+"d'aquest tipus ara mateix. Hauríeu de plantejar-vos desmuntar o destruir "
+"l'edifici o construir una cabana forestal o un hort a prop."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/farm/init.lua:8
@@ -1000,7 +1051,7 @@ msgstr "plantar blat"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/gauls.wad/productionsites/farm/init.lua:65
 msgid "harvesting wheat"
-msgstr ""
+msgstr "collir blat"
 
 #: addons/gauls.wad/productionsites/farm/init.lua:74
 #: addons/gauls.wad/productionsites/garden/init.lua:116
@@ -1017,6 +1068,8 @@ msgstr "Sense camps"
 msgctxt "gauls_building"
 msgid "The farmer working at this farm has no cleared soil to grow wheat."
 msgstr ""
+"El pagès que treballa en aquesta finca no té terra netejada per cultivar "
+"blat."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/ferry_yard/init.lua:8
@@ -1028,7 +1081,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/fishers_hut/init.lua:8
 msgctxt "gauls_building"
 msgid "Fisher’s Hut"
-msgstr ""
+msgstr "Cabana del Pescador"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/gauls.wad/productionsites/fishers_hut/init.lua:53
@@ -1037,11 +1090,11 @@ msgstr "pescar"
 
 #: addons/gauls.wad/productionsites/fishers_hut/init.lua:66
 msgid "No Fish"
-msgstr ""
+msgstr "Sense peix"
 
 #: addons/gauls.wad/productionsites/fishers_hut/init.lua:67
 msgid "Out of Fish"
-msgstr ""
+msgstr "Fora de Peix"
 
 #: addons/gauls.wad/productionsites/fishers_hut/init.lua:68
 msgctxt "gauls_building"
@@ -1049,17 +1102,19 @@ msgid ""
 "The fisher working out of this fisher’s hut can’t find any fish in his work "
 "area."
 msgstr ""
+"El pescador que treballa a la cabana d'aquest pescador no pot trobar cap "
+"peix a la seva zona de treball."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/foresters_house/init.lua:8
 msgctxt "gauls_building"
 msgid "Forester’s House"
-msgstr ""
+msgstr "Casa del Forester"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
 #: addons/gauls.wad/productionsites/foresters_house/init.lua:46
 msgid "planting trees"
-msgstr ""
+msgstr "plantar arbres"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/furnace/init.lua:8
@@ -1075,17 +1130,17 @@ msgstr "fondre ferro"
 #. TRANSLATORS: Completed/Skipped/Did not start smelting copper because ...
 #: addons/gauls.wad/productionsites/furnace/init.lua:100
 msgid "smelting copper"
-msgstr ""
+msgstr "fosa de coure"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting bronze because ...
 #: addons/gauls.wad/productionsites/furnace/init.lua:114
 msgid "smelting bronze"
-msgstr ""
+msgstr "fosa de bronze"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/gauls.wad/productionsites/furnace/init.lua:128
 msgid "smelting gold"
-msgstr ""
+msgstr "fosa d'or"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/garden/init.lua:8
@@ -1096,22 +1151,22 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start creating a herbs patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:66
 msgid "creating a herbs patch"
-msgstr ""
+msgstr "creant un pegat d'herbes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting herbs because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:79
 msgid "harvesting herbs"
-msgstr ""
+msgstr "collir herbes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start creating a vegetable patch because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:87
 msgid "creating a vegetable patch"
-msgstr ""
+msgstr "creant un hort"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting vegetable because ...
 #: addons/gauls.wad/productionsites/garden/init.lua:100
 msgid "harvesting vegetable"
-msgstr ""
+msgstr "collir vegetals"
 
 #: addons/gauls.wad/productionsites/garden/init.lua:118
 msgctxt "gauls_building"
@@ -1119,16 +1174,18 @@ msgid ""
 "The gardener working at this garden has not enough space or your economy "
 "doesn’t need so many buildings of this type right now."
 msgstr ""
+"El jardiner que treballa en aquest jardí no té prou espai o la vostra "
+"economia no necessita tants edificis d'aquest tipus en aquest moment."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/hunters_hut/init.lua:8
 msgctxt "gauls_building"
 msgid "Hunter’s Hut"
-msgstr ""
+msgstr "Cabana del Caçador"
 
 #: addons/gauls.wad/productionsites/hunters_hut/init.lua:80
 msgid "No Game"
-msgstr ""
+msgstr "Sense Joc"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/gauls.wad/productionsites/hunters_hut/init.lua:84
@@ -1136,6 +1193,8 @@ msgctxt "gauls_building"
 msgid ""
 "The hunter working at this hunter’s hut can’t find any game in his work area."
 msgstr ""
+"El caçador que treballa a la cabana d'aquest caçador no pot trobar cap caça "
+"a la seva zona de treball."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/kitchen/init.lua:8
@@ -1175,7 +1234,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start grinding wheat because ...
 #: addons/gauls.wad/productionsites/mill/init.lua:69
 msgid "grinding wheat"
-msgstr ""
+msgstr "moler blat"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/orchard/init.lua:8
@@ -1186,30 +1245,30 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting fruit tree because ...
 #: addons/gauls.wad/productionsites/orchard/init.lua:70
 msgid "planting fruit tree"
-msgstr ""
+msgstr "plantar arbres fruiters"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting juniper because ...
 #: addons/gauls.wad/productionsites/orchard/init.lua:78
 msgid "planting juniper"
-msgstr ""
+msgstr "plantar ginebre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting fruit because ...
 #: addons/gauls.wad/productionsites/orchard/init.lua:86
 msgid "harvesting fruit"
-msgstr ""
+msgstr "collir fruita"
 
 #: addons/gauls.wad/productionsites/orchard/init.lua:98
 msgid "No Fruit"
-msgstr ""
+msgstr "Sense fruita"
 
 #: addons/gauls.wad/productionsites/orchard/init.lua:99
 msgid "Out of Fruit"
-msgstr ""
+msgstr "Sense fruita"
 
 #: addons/gauls.wad/productionsites/orchard/init.lua:100
 msgctxt "gauls_building"
 msgid "The gardener working at this orchard has no cleared soil to plant."
-msgstr ""
+msgstr "El jardiner que treballa en aquest hort no té terra neta per plantar."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:8
@@ -1220,16 +1279,16 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:55
 msgid "planting reed"
-msgstr ""
+msgstr "plantar canya"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:67
 msgid "harvesting reed"
-msgstr ""
+msgstr "canya de recol·lecció"
 
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:80
 msgid "No Fields or No Water Nearby"
-msgstr ""
+msgstr "Sense camps ni aigua a prop"
 
 #: addons/gauls.wad/productionsites/reed_yard/init.lua:82
 msgctxt "gauls_building"
@@ -1237,6 +1296,8 @@ msgid ""
 "The reed cutter working at this reed yard has no cleared soil to plant new "
 "plants."
 msgstr ""
+"El tallador de canyes que treballa en aquest pati de canyes no té terra "
+"netejada per plantar noves plantes."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/sawmill/init.lua:8
@@ -1253,7 +1314,7 @@ msgstr "serrar troncs"
 #: addons/gauls.wad/productionsites/scouts_cottage/init.lua:8
 msgctxt "gauls_building"
 msgid "Scout’s Cottage"
-msgstr ""
+msgstr "Casa de l'escolta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/gauls.wad/productionsites/scouts_cottage/init.lua:58
@@ -1270,12 +1331,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start sewing because ...
 #: addons/gauls.wad/productionsites/sewing_workshop/init.lua:73
 msgid "sewing"
-msgstr ""
+msgstr "cosir"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing tunic because ...
 #: addons/gauls.wad/productionsites/sewing_workshop/init.lua:80
 msgid "sewing tunic"
-msgstr ""
+msgstr "cosir túnica"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/sheep_farm/init.lua:8
@@ -1286,7 +1347,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
 #: addons/gauls.wad/productionsites/sheep_farm/init.lua:67
 msgid "breeding sheep"
-msgstr ""
+msgstr "cria d'ovelles"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/shipyard/init.lua:8
@@ -1319,12 +1380,12 @@ msgstr "fumar carn"
 #: addons/gauls.wad/productionsites/stonecutters_hut/init.lua:8
 msgctxt "gauls_building"
 msgid "Stonecutter’s Hut"
-msgstr ""
+msgstr "Cabana del picapedrer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying stone because ...
 #: addons/gauls.wad/productionsites/stonecutters_hut/init.lua:53
 msgid "quarrying stone"
-msgstr ""
+msgstr "pedra de pedrera"
 
 #: addons/gauls.wad/productionsites/stonecutters_hut/init.lua:66
 msgid "No Rocks"
@@ -1339,6 +1400,8 @@ msgctxt "gauls_building"
 msgid ""
 "The stonecutter working at this house can’t find any rocks in his work area."
 msgstr ""
+"El picapedrer que treballa en aquesta casa no troba cap roca a la seva zona "
+"de treball."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/threshing_floor/init.lua:8
@@ -1350,7 +1413,7 @@ msgstr ""
 #: addons/gauls.wad/productionsites/threshing_floor_small/init.lua:8
 msgctxt "gauls_building"
 msgid "Small Threshing Floor"
-msgstr ""
+msgstr "Era petita"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/weaponsmithy/init.lua:8
@@ -1361,17 +1424,17 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making spear because ...
 #: addons/gauls.wad/productionsites/weaponsmithy/init.lua:80
 msgid "making spear"
-msgstr ""
+msgstr "fent llança"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making short sword because ...
 #: addons/gauls.wad/productionsites/weaponsmithy/init.lua:95
 msgid "making short sword"
-msgstr ""
+msgstr "fent una espasa curta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making long sword because ...
 #: addons/gauls.wad/productionsites/weaponsmithy/init.lua:108
 msgid "making long sword"
-msgstr ""
+msgstr "fent una espasa llarga"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/weaving_mill/init.lua:8
@@ -1382,7 +1445,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #: addons/gauls.wad/productionsites/weaving_mill/init.lua:53
 msgid "weaving"
-msgstr ""
+msgstr "teixir"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/well/init.lua:8
@@ -1401,13 +1464,13 @@ msgstr "Sense aigua"
 #: addons/gauls.wad/productionsites/well/init.lua:73
 msgctxt "gauls_building"
 msgid "The carrier working at this well can’t find any water in his well."
-msgstr ""
+msgstr "El transportista que treballa en aquest pou no troba aigua al seu pou."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/woodcutters_house/init.lua:8
 msgctxt "gauls_building"
 msgid "Woodcutter’s House"
-msgstr ""
+msgstr "Casa del llenyataire"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/gauls.wad/productionsites/woodcutters_house/init.lua:41
@@ -1425,6 +1488,9 @@ msgid ""
 "You should consider dismantling or destroying the building or building a "
 "forester’s house nearby."
 msgstr ""
+"El llenyataire que treballa en aquesta casa no troba cap arbre a la seva "
+"zona de treball. Hauríeu de plantejar-vos desmuntar o destruir l'edifici o "
+"construir una casa forestal a prop."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/productionsites/workshop/init.lua:8
@@ -1435,62 +1501,62 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:82
 msgid "making fire tongs"
-msgstr ""
+msgstr "fent pinces de foc"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making felling ax because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:94
 msgid "making felling ax"
-msgstr ""
+msgstr "fent destral de tala"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making buckets because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:106
 msgid "making buckets"
-msgstr ""
+msgstr "fent galledes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making basket because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:118
 msgid "making basket"
-msgstr ""
+msgstr "fent cistella"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making hammer because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:130
 msgid "making hammer"
-msgstr ""
+msgstr "fent martell"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:142
 msgid "making kitchen tools"
-msgstr ""
+msgstr "fabricació d'eines de cuina"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pick because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:154
 msgid "making pick"
-msgstr ""
+msgstr "fent la selecció"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making scythe because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:166
 msgid "making scythe"
-msgstr ""
+msgstr "fent dalla"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making shovel because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:178
 msgid "making shovel"
-msgstr ""
+msgstr "fent pala"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making fishing net because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:190
 msgid "making fishing net"
-msgstr ""
+msgstr "fent xarxa de pesca"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making flail because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:202
 msgid "making flail"
-msgstr ""
+msgstr "fent flaix"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making wooden shield because ...
 #: addons/gauls.wad/productionsites/workshop/init.lua:214
 msgid "making wooden shield"
-msgstr ""
+msgstr "fent un escut de fusta"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/basic_outpost.lua:11
@@ -1521,6 +1587,10 @@ msgid ""
 "to find a portspace with direct access to rocks and trees. For unknown maps, "
 "game without fog of war recommended."
 msgstr ""
+"Comença el joc amb un vaixell a l'oceà, el mínim de mercaderies i pocs "
+"treballadors. Avís: la IA no pot començar amb èxit a partir d'això. Haureu "
+"de trobar un espai portuari amb accés directe a roques i arbres. Per a mapes "
+"desconeguts, es recomana el joc sense boira de guerra."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/discovery.lua:11
@@ -1532,6 +1602,8 @@ msgstr "Descoberta"
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies"
 msgstr ""
+"Comença el joc amb tres vaixells a l'oceà i només un grapat de "
+"subministraments"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:11
@@ -1541,7 +1613,7 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/fortified_village.lua:13
 msgid "Start the game with a fortified military installation"
-msgstr ""
+msgstr "Comença el joc amb una instal·lació militar fortificada"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/headquarters.lua:11
@@ -1551,7 +1623,7 @@ msgstr "Quarter general"
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/headquarters.lua:13
 msgid "Start the game with your headquarters only"
-msgstr ""
+msgstr "Comença el joc només amb la teva seu"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/new_world.lua:11
@@ -1561,7 +1633,7 @@ msgstr "Un món nou"
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/new_world.lua:13
 msgid "Start the game with seven ships full of wares on the ocean"
-msgstr ""
+msgstr "Comença el joc amb set vaixells plens de mercaderies a l'oceà"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/poor_hamlet.lua:11
@@ -1575,16 +1647,21 @@ msgid ""
 "an economy. Your starting position should be close to water. Warning: The AI "
 "can’t successfully start from this."
 msgstr ""
+"Comença el joc amb només un magatzem i el mínim necessari per iniciar una "
+"economia. La vostra posició inicial ha d'estar prop de l'aigua. Avís: la IA "
+"no pot començar amb èxit a partir d'això."
 
 #: addons/gauls.wad/scripting/starting_conditions/poor_hamlet.lua:50
 msgid "Be careful"
-msgstr ""
+msgstr "Aneu amb compte"
 
 #: addons/gauls.wad/scripting/starting_conditions/poor_hamlet.lua:50
 msgid ""
 "You have only one iron for each tool you will need to start your economy. "
 "Make sure no unneeded tool is created."
 msgstr ""
+"Només teniu una planxa per a cada eina que necessitareu per iniciar la "
+"vostra economia. Assegureu-vos que no es creï cap eina innecessària."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/gauls.wad/scripting/starting_conditions/struggling_outpost.lua:11
@@ -1614,14 +1691,18 @@ msgid ""
 "any of your warehouses, workers throw away one quarter of stock stored in "
 "such a warehouse."
 msgstr ""
+"Comenceu amb 360 articles, 50 treballadors i 40 soldats al vostre quarter "
+"general. De tant en tant, els vostres treballadors fan inventaris. Si hi ha "
+"més de 500 articles en algun dels vostres magatzems, els treballadors "
+"llencen una quarta part de l'estoc emmagatzemat en aquest magatzem."
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:111
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Magatzem netejat!"
 
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:148
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s s'ha netejat!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/gauls.wad/scripting/starting_conditions/tidy_warehouses.lua:150
@@ -1656,7 +1737,7 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/gauls.wad/scripting/starting_conditions/village.lua:13
 msgid "Start the game with a peaceful village"
-msgstr ""
+msgstr "Comença el joc amb un poble tranquil"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:8
@@ -1675,19 +1756,19 @@ msgstr "dormir"
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:94
 msgctxt "gauls_building"
 msgid "upgrading warrior health from level 0 to level 1"
-msgstr ""
+msgstr "millorant la salut del guerrer del nivell 0 al nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:110
 msgctxt "gauls_building"
 msgid "upgrading warrior health from level 1 to level 2"
-msgstr ""
+msgstr "millorant la salut del guerrer del nivell 1 al nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:125
 msgctxt "gauls_building"
 msgid "upgrading warrior health from level 2 to level 3"
-msgstr ""
+msgstr "millorant la salut del guerrer del nivell 2 al nivell 3"
 
 #. TRANSLATORS: Gauls training site tooltip when it has no warrior assigned
 #. TRANSLATORS: Gauls training site tooltip when it has no warriors assigned
@@ -1696,7 +1777,7 @@ msgstr ""
 #: addons/gauls.wad/trainingsites/training_camp/init.lua:127
 msgctxt "gauls_building"
 msgid "No warrior to train!"
-msgstr ""
+msgstr "Cap guerrer per entrenar!"
 
 #. TRANSLATORS: Gauls training site tooltip when none of the present warriors match the current training program
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:147
@@ -1704,7 +1785,7 @@ msgstr ""
 #: addons/gauls.wad/trainingsites/training_camp/init.lua:129
 msgctxt "gauls_building"
 msgid "No warrior found for this training level!"
-msgstr ""
+msgstr "No s'ha trobat cap guerrer per a aquest nivell d'entrenament!"
 
 #. TRANSLATORS: This is a Gauls building name used in lists of buildings
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:8
@@ -1716,31 +1797,31 @@ msgstr ""
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:92
 msgctxt "gauls_building"
 msgid "upgrading warrior evade from level 0 to level 1"
-msgstr ""
+msgstr "millorant l'evasió del guerrer del nivell 0 al nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:106
 msgctxt "gauls_building"
 msgid "upgrading warrior evade from level 1 to level 2"
-msgstr ""
+msgstr "millorant l'evasió del guerrer del nivell 1 al nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:120
 msgctxt "gauls_building"
 msgid "upgrading warrior defense from level 0 to level 1"
-msgstr ""
+msgstr "millorant la defensa del guerrer del nivell 0 al nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:134
 msgctxt "gauls_building"
 msgid "upgrading warrior defense from level 1 to level 2"
-msgstr ""
+msgstr "millorant la defensa del guerrer del nivell 1 al nivell 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:148
 msgctxt "gauls_building"
 msgid "upgrading warrior defense from level 2 to level 3"
-msgstr ""
+msgstr "millorant la defensa del guerrer del nivell 2 al nivell 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/gauls.wad/trainingsites/training_camp/init.lua:8
@@ -1752,13 +1833,13 @@ msgstr ""
 #: addons/gauls.wad/trainingsites/training_camp/init.lua:94
 msgctxt "gauls_building"
 msgid "upgrading warrior attack from level 0 to level 1"
-msgstr ""
+msgstr "millorant l'atac del guerrer del nivell 0 al nivell 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/gauls.wad/trainingsites/training_camp/init.lua:108
 msgctxt "gauls_building"
 msgid "upgrading warrior attack from level 1 to level 2"
-msgstr ""
+msgstr "millorant l'atac del guerrer del nivell 1 al nivell 2"
 
 #: addons/gauls.wad/tribes/gauls_tribe/init.lua:9
 msgid "OIPUN"
@@ -1766,7 +1847,7 @@ msgstr ""
 
 #: addons/gauls.wad/tribes/gauls_tribe/init.lua:12
 msgid "A Celtic tribe."
-msgstr ""
+msgstr "Una tribu celta."
 
 #. TRANSLATORS: This is the gauls ship’s name used in lists of units
 #: addons/gauls.wad/tribes/gauls_tribe/ship/init.lua:9
@@ -2044,24 +2125,33 @@ msgid ""
 "Don’t forget that druids are working only when there are trees nearby. All "
 "buildings occupied by druids need trees in their surroundings."
 msgstr ""
+"No oblideu que els druides només treballen quan hi ha arbres a prop. Tots "
+"els edificis ocupats per druides necessiten arbres al seu entorn."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:8
 msgid ""
 "The traffic on Gallic roads is heavy. Keep in mind that you will need to "
 "spare some big green building spaces for warehouses."
 msgstr ""
+"El trànsit a les carreteres gales és intens. Tingueu en compte que haureu de "
+"estalviar grans espais verds per als magatzems."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:12
 msgid ""
 "Ensure that you can produce all building materials before you start growing "
 "your economy."
 msgstr ""
+"Assegureu-vos que podeu produir tots els materials de construcció abans de "
+"començar a fer créixer la vostra economia."
 
 #: addons/gauls.wad/tribes/gauls_tribe/tips.lua:16
 msgid ""
 "Reed yards need open waters to grow reed. If you don’t see any right at the "
 "beginning of a new game, make finding it your priority."
 msgstr ""
+"Els jardins de canyes necessiten aigües obertes per créixer canyes. Si no "
+"veus cap dret al començament d'un joc nou, fes de trobar-lo la teva "
+"prioritat."
 
 #. TRANSLATORS: Help text for a Gallic ware: Log, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:92
@@ -2070,6 +2160,8 @@ msgid ""
 "Log is an important basic building material. It is also used for charcoal "
 "production."
 msgstr ""
+"El tronc és un material bàsic de construcció important. També s'utilitza per "
+"a la producció de carbó vegetal."
 
 #. TRANSLATORS: Help text for a Gallic ware: Log, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:94
@@ -2078,6 +2170,9 @@ msgid ""
 "Logs are produced by felling trees. Woodcutters need forester’s houses "
 "nearby to take care of the supply of trees."
 msgstr ""
+"Els troncs es produeixen mitjançant la tala d'arbres. Els llenyataires "
+"necessiten cases forestals properes per fer-se càrrec del subministrament "
+"d'arbres."
 
 #. TRANSLATORS: Help text for a Gallic ware: Granite, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:105
@@ -2086,6 +2181,8 @@ msgid ""
 "Granite is a basic building material. You also need it for production of "
 "bricks."
 msgstr ""
+"El granit és un material bàsic de construcció. També el necessiteu per a la "
+"producció de maons."
 
 #. TRANSLATORS: Help text for a Gallic ware: Granite, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:107
@@ -2096,30 +2193,34 @@ msgid ""
 "enough rocks in your surroundings. This mine is also the only one that "
 "produces primarily granite while empty."
 msgstr ""
+"El produeixen principalment els picapedrers, però les mines de ferro i les "
+"mines d'estany també en produeixen. La mina de llauna, especialment bàsica, "
+"us pot ajudar, quan no hi ha prou roques al vostre entorn. Aquesta mina "
+"també és l'única que produeix principalment granit mentre està buida."
 
 #. TRANSLATORS: Help text for a Gallic ware: Planks, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:118
 msgctxt "gauls_ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Els taulons són un material de construcció important."
 
 #. TRANSLATORS: Help text for a Gallic ware: Planks, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:120
 msgctxt "gauls_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Són produïts a partir de troncs per la serradora."
 
 #. TRANSLATORS: Help text for a Gallic ware: Planks, part 3
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:122
 msgctxt "gauls_ware"
 msgid "They are also used by the weapon smithy."
-msgstr ""
+msgstr "També són utilitzats per la ferreria d'armes."
 
 #. TRANSLATORS: Help text for a Gallic ware: Clay
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:133
 msgctxt "gauls_ware"
 msgid "Clay is made out of water and mud to be turned into bricks."
-msgstr ""
+msgstr "L'argila es fa d'aigua i fang per convertir-la en maons."
 
 #. TRANSLATORS: Help text for a Gallic ware: Sanded Wood
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:144
@@ -2128,6 +2229,8 @@ msgid ""
 "Bricks are an important building material. They are made out of a mix of "
 "clay and granite dried in a coal fire."
 msgstr ""
+"Els maons són un material de construcció important. Estan fets d'una barreja "
+"d'argila i granit assecats al foc de carbó."
 
 #. TRANSLATORS: Help text for a Gallic ware: Reed
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:154
@@ -2137,12 +2240,16 @@ msgid ""
 "suited to make roofs waterproof. It is also used to make baskets and fishing "
 "nets."
 msgstr ""
+"El canyís es conrea a les vores de llacs i rius amb canyes. No hi ha res més "
+"adequat per fer que les cobertes siguin impermeables. També s'utilitza per "
+"fer cistelles i xarxes de pesca."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wool
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:165
 msgctxt "gauls_ware"
 msgid "Wool is the hair of sheep. Weaving mills use it to make cloth."
 msgstr ""
+"La llana és el pèl de les ovelles. Els teixits l'utilitzen per fer draps."
 
 #. TRANSLATORS: Help text for a Gallic ware: Cloth
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:176
@@ -2151,6 +2258,8 @@ msgid ""
 "Cloth is needed to build several buildings. It is also consumed in the "
 "sewing workshop, armor smithy and shipyard."
 msgstr ""
+"Es necessita tela per construir diversos edificis. També es consumeix al "
+"taller de costura, ferreria i drassana."
 
 #. TRANSLATORS: Help text for a Gallic ware: Straw
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:186
@@ -2158,6 +2267,8 @@ msgctxt "gauls_ware"
 msgid ""
 "Straw is a by-product of wheat production. You need it for breeding animals."
 msgstr ""
+"La palla és un subproducte de la producció de blat. El necessites per a la "
+"cria d'animals."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat Sheaf
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:194
@@ -2166,6 +2277,8 @@ msgid ""
 "Wheat sheaves are harvested by farmers who sent them to threshing floors to "
 "gain wheat and straw."
 msgstr ""
+"Les garbes de blat són collides pels pagesos que les enviaven a les eras per "
+"obtenir blat i palla."
 
 #. TRANSLATORS: Help text for a Gallic ware: Water, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:203
@@ -2180,12 +2293,15 @@ msgid ""
 "Water is used in multiple buildings. You need it for production of bricks, "
 "for preparation of bread, elixirs and potions and for breeding animals."
 msgstr ""
+"L'aigua s'utilitza en diversos edificis. El necessiteu per a la producció de "
+"maons, per a la preparació de pa, elixirs i pocions i per a la cria "
+"d'animals."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:218
 msgctxt "gauls_ware"
 msgid "Wheat is essential for survival."
-msgstr ""
+msgstr "El blat és essencial per a la supervivència."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wheat, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:220
@@ -2194,6 +2310,8 @@ msgid ""
 "Wheat is produced by threshing floors and turned into flour by mills. Sheep "
 "farms and cattle farms also need to be supplied with wheat."
 msgstr ""
+"El blat es produeix a les eras i es converteix en farina pels molins. Les "
+"granges d'ovelles i de bestiar també s'han de proveir de blat."
 
 #. TRANSLATORS: Help text for a Gallic ware: Flour
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:231
@@ -2202,6 +2320,8 @@ msgid ""
 "Flour is produced by the miller out of wheat and it is needed in the bakery "
 "to produce the tasty bread."
 msgstr ""
+"La farina és produïda pel moliner amb blat i és necessària a la fleca per "
+"produir el saborós pa."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fruit, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:241
@@ -2210,12 +2330,16 @@ msgid ""
 "Fruit is picked by gardeners in the orchard and used as a substitute of "
 "vegetable by meal preparation."
 msgstr ""
+"Els jardiners recullen la fruita a l'hort i s'utilitzen com a substitut de "
+"la verdura en la preparació dels àpats."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fruit, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:243
 msgctxt "gauls_ware"
 msgid "Druids do also pick some secret fruit ingredients when poaching elixir."
 msgstr ""
+"Els druides també escullen alguns ingredients de fruita secreta quan escapen "
+"elixir."
 
 #. TRANSLATORS: Help text for a Gallic ware: Vegetable
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:254
@@ -2224,12 +2348,15 @@ msgid ""
 "Vegetable is used by meal preparation. If there is no vegetable in the "
 "kitchen, fruit can be used instead."
 msgstr ""
+"La verdura s'utilitza per a la preparació dels àpats. Si no hi ha verdura a "
+"la cuina, es pot utilitzar fruita."
 
 #. TRANSLATORS: Help text for a Gallic ware: Herbs, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:265
 msgctxt "gauls_ware"
 msgid "Herbs are irreplaceable by preparation of elixir and potion."
 msgstr ""
+"Les herbes són insubstituïbles mitjançant la preparació d'elixir i poció."
 
 #. TRANSLATORS: Help text for a Gallic ware: Herbs, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:267
@@ -2237,6 +2364,8 @@ msgctxt "gauls_ware"
 msgid ""
 "You need this two types of drinks in deep mines and for warrior training."
 msgstr ""
+"Necessiteu aquests dos tipus de begudes a les mines profundes i per a "
+"l'entrenament de guerrers."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fish
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:277
@@ -2245,6 +2374,8 @@ msgid ""
 "Fresh fish is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"El peix fresc es fuma al fumat i s'afegeix als àpats dels vostres guerrers i "
+"miners."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meat
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:288
@@ -2253,6 +2384,8 @@ msgid ""
 "Fresh meat is smoked in the smokery and added into meals for your warriors "
 "and miners."
 msgstr ""
+"La carn fresca es fuma al fumador i s'afegeix als àpats dels vostres "
+"guerrers i miners."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
@@ -2261,6 +2394,7 @@ msgstr ""
 msgctxt "gauls_ware"
 msgid "Smoked fish or smoked meat is used for meal preparation."
 msgstr ""
+"El peix fumat o la carn fumada s'utilitza per a la preparació dels àpats."
 
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 2
@@ -2268,7 +2402,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:314
 msgctxt "gauls_ware"
 msgid "Can be replaced by milk."
-msgstr ""
+msgstr "Es pot substituir per llet."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bread
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:324
@@ -2277,6 +2411,8 @@ msgid ""
 "Bread is used in kitchens to prepare rations and meals. Bread is also "
 "consumed at the training sites (druid’s gatherings)."
 msgstr ""
+"El pa s'utilitza a les cuines per preparar racions i menjars. El pa també es "
+"consumeix als llocs d'entrenament (les reunions de druides)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Milk
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:333
@@ -2285,18 +2421,20 @@ msgid ""
 "Milk is used to prepare rations and meals. If there is no milk available, "
 "cook can use smoked fish or smoked meat instead."
 msgstr ""
+"La llet s'utilitza per preparar racions i menjars. Si no hi ha llet "
+"disponible, el cuiner pot utilitzar peix fumat o carn fumada."
 
 #. TRANSLATORS: Help text for a Gallic ware: Ration, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:346
 msgctxt "gauls_ware"
 msgid "A small bite to keep miners strong and working."
-msgstr ""
+msgstr "Una petita mossegada per mantenir els miners forts i treballant."
 
 #. TRANSLATORS: Help text for a Gallic ware: Ration, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:348
 msgctxt "gauls_ware"
 msgid "The scout also consumes rations on his scouting trips."
-msgstr ""
+msgstr "L'escolta també consumeix racions en els seus viatges d'escolta."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:359
@@ -2306,12 +2444,17 @@ msgid ""
 "fish or smoked meat and it also has to contain fruit or vegetable. It "
 "satisfies the needs of miners in advanced mines."
 msgstr ""
+"A la cuina es fa un àpat adequat amb pa i llet o peix fumat o carn fumada i "
+"també ha de contenir fruita o verdura. Satisfer les necessitats dels miners "
+"de les mines avançades."
 
 #. TRANSLATORS: Help text for a Gallic ware: Meal, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:361
 msgctxt "gauls_ware"
 msgid "Meal is also consumed at the training sites (arenas, training camps)."
 msgstr ""
+"El menjar també es consumeix als llocs d'entrenament (arenes, camps "
+"d'entrenament)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:372
@@ -2319,30 +2462,33 @@ msgctxt "gauls_ware"
 msgid ""
 "While smelting metals, the fires of the Gallic furnaces are fed with coal."
 msgstr ""
+"Mentre es fonen metalls, els focs dels forns gals s'alimenten amb carbó."
 
 #. TRANSLATORS: Help text for a Gallic ware: Coal, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:374
 msgctxt "gauls_ware"
 msgid "It is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
+"S'extreu a les mines de carbó o es produeix a partir de troncs mitjançant un "
+"forn de carbó vegetal."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:385
 msgctxt "gauls_ware"
 msgid "Copper ore can be smelted into copper in a furnace."
-msgstr ""
+msgstr "El mineral de coure es pot fondre en coure en un forn."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:387
 msgctxt "gauls_ware"
 msgid "By adding some tin ore you can obtain bronze."
-msgstr ""
+msgstr "Afegint una mica de mineral d'estany es pot obtenir bronze."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:398
 msgctxt "gauls_ware"
 msgid "Copper is a rare building material."
-msgstr ""
+msgstr "El coure és un material de construcció rar."
 
 #. TRANSLATORS: Help text for a Gallic ware: Copper, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Iron, part 2
@@ -2350,13 +2496,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:426
 msgctxt "gauls_ware"
 msgid "It is produced by the furnaces."
-msgstr ""
+msgstr "Es produeix pels forns."
 
 #. TRANSLATORS: Help text for a Gallic ware: Iron Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:411
 msgctxt "ware"
 msgid "Iron ore can be smelted into iron in a furnace."
-msgstr ""
+msgstr "El mineral de ferro es pot fondre en ferro en un forn."
 
 #. TRANSLATORS: Help text for a Gallic ware: Iron Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:413
@@ -2365,18 +2511,20 @@ msgid ""
 "Your miners need rations or meals and in deep mines also potions to produce "
 "it."
 msgstr ""
+"Els vostres miners necessiten racions o menjars i a les mines profundes "
+"també pocions per produir-lo."
 
 #. TRANSLATORS: Help text for a Gallic ware: Iron, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:424
 msgctxt "ware"
 msgid "Iron is needed for tool and weapon production."
-msgstr ""
+msgstr "El ferro és necessari per a la producció d'eines i armes."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:437
 msgctxt "ware"
 msgid "Gold ore can be smelted into gold in the furnace."
-msgstr ""
+msgstr "El mineral d'or es pot fondre en or al forn."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:439
@@ -2385,12 +2533,16 @@ msgid ""
 "It is primarily obtained in the copper-gold mines, but miners in your copper "
 "mines can usually find some too."
 msgstr ""
+"S'obté principalment a les mines de coure-or, però els miners de les vostres "
+"mines de coure també en poden trobar."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:450
 msgctxt "ware"
 msgid "Gold is needed for golden helmets. It is a rare building material too."
 msgstr ""
+"L'or és necessari per als cascos daurats. També és un material de "
+"construcció rar."
 
 #. TRANSLATORS: Help text for a Gallic ware: Gold, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:452
@@ -2399,6 +2551,8 @@ msgid ""
 "Gold is the most valuable of all metals and it is smelted out of gold ore in "
 "furnaces."
 msgstr ""
+"L'or és el més valuós de tots els metalls i es fon amb mineral d'or als "
+"forns."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tin Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:463
@@ -2406,6 +2560,8 @@ msgctxt "ware"
 msgid ""
 "Tin ore can be smelted together with copper ore into bronze in a furnace."
 msgstr ""
+"El mineral d'estany es pot fondre juntament amb el mineral de coure en "
+"bronze en un forn."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:465
@@ -2413,6 +2569,8 @@ msgctxt "gauls_ware"
 msgid ""
 "Your miners need rations and in deep mines meals with potion to produce it."
 msgstr ""
+"Els teus miners necessiten racions i a les mines profundes àpats amb poció "
+"per produir-lo."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:476
@@ -2420,12 +2578,14 @@ msgctxt "ware"
 msgid ""
 "Bronze is needed for armor production. It is a rare building material too."
 msgstr ""
+"El bronze és necessari per a la producció d'armadures. També és un material "
+"de construcció rar."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:478
 msgctxt "gauls_ware"
 msgid "It is smelted out of copper ore and tin ore in furnaces."
-msgstr ""
+msgstr "Es fon amb mineral de coure i mineral d'estany en forns."
 
 #. TRANSLATORS: Help text for a Gallic ware: Felling Ax
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:492
@@ -2433,18 +2593,20 @@ msgctxt "gauls_ware"
 msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
 msgstr ""
+"La destral de tala és l'eina per talar arbres i la fan servir els "
+"llenyataires."
 
 #. TRANSLATORS: Help text for a Gallic ware: Pick
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:503
 msgctxt "gauls_ware"
 msgid "Picks are used by stonecutters and miners."
-msgstr ""
+msgstr "Els pics són utilitzats pels picapedrers i els miners."
 
 #. TRANSLATORS: Help text for a Gallic ware: Shovel
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:514
 msgctxt "gauls_ware"
 msgid "The shovel is an essential tool for six types of workers."
-msgstr ""
+msgstr "La pala és una eina essencial per a sis tipus de treballadors."
 
 #. TRANSLATORS: Help text for a Gallic ware: Hammer
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:525
@@ -2453,36 +2615,38 @@ msgid ""
 "The hammer is a widely used tool. Geologists, builders, shipwrights and "
 "craftsmen, they all need hammer."
 msgstr ""
+"El martell és una eina molt utilitzada. Geòlegs, constructors, naviliers i "
+"artesans, tots necessiten martell."
 
 #. TRANSLATORS: Help text for a Gallic ware: Scythe, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:536
 msgctxt "ware"
 msgid "The scythe is the tool of farmers."
-msgstr ""
+msgstr "La dalla és l'eina dels pagesos."
 
 #. TRANSLATORS: Help text for a Gallic ware: Scythe, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:538
 msgctxt "gauls_ware"
 msgid "You need it to harvest wheat and reed."
-msgstr ""
+msgstr "El necessites per collir blat i canya."
 
 #. TRANSLATORS: Help text for a Gallic ware: Kitchen Tools, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:549
 msgctxt "gauls_ware"
 msgid "Kitchen tools are used by cooks and bakers."
-msgstr ""
+msgstr "Les eines de cuina són utilitzades pels cuiners i els forners."
 
 #. TRANSLATORS: Help text for a Gallic ware: Kitchen Tools, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:551
 msgctxt "gauls_ware"
 msgid "You need them to produce rations, meals, smoked meat or fish and bread."
-msgstr ""
+msgstr "Necessites per produir racions, menjars, carn fumada o peix i pa."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fire Tongs
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:562
 msgctxt "gauls_ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Les pinces de foc són les eines per a la fosa de minerals."
 
 #. TRANSLATORS: Help text for a Gallic ware: Buckets
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:573
@@ -2491,12 +2655,14 @@ msgid ""
 "Buckets are used by water carriers, breeders and together with a shovel by "
 "clay diggers and brick makers."
 msgstr ""
+"Els cubs són utilitzats pels transportistes d'aigua, els criadors i "
+"juntament amb una pala els excavadors de fang i els fabricants de maons."
 
 #. TRANSLATORS: Help text for a Gallic ware: Fishing Net
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:584
 msgctxt "gauls_ware"
 msgid "Fishing net is used by fishers to catch fishes."
-msgstr ""
+msgstr "La xarxa de pesca és utilitzada pels pescadors per capturar peixos."
 
 #. TRANSLATORS: Help text for a Gallic ware: Basket
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:595
@@ -2505,18 +2671,23 @@ msgid ""
 "Basket is used together with a shovel by gardener and together with a flail "
 "by toiler."
 msgstr ""
+"La cistella s'utilitza juntament amb una pala pel jardiner i juntament amb "
+"un martinet pel treballador."
 
 #. TRANSLATORS: Help text for a Gallic ware: Flail
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:606
 msgctxt "gauls_ware"
 msgid "Flail is used together with basket by toilers in the threshing floor."
 msgstr ""
+"Els treballadors de l'era utilitzen el martell juntament amb la cistella."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:620
 msgctxt "gauls_ware"
 msgid "Elixir is a magical drink that makes your warriors perform much better."
 msgstr ""
+"Elixir és una beguda màgica que fa que els teus guerrers funcionin molt "
+"millor."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:622
@@ -2526,6 +2697,9 @@ msgid ""
 "because the druid picks some secret ingredients before its preparation by "
 "himself."
 msgstr ""
+"Tingueu en compte que per a la preparació d'elixir necessiteu dues dosis de "
+"fruita perquè el druida tria alguns ingredients secrets abans de preparar-lo "
+"ell mateix."
 
 #. TRANSLATORS: Help text for a Gallic ware: Elixir, part 3
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:624
@@ -2533,6 +2707,8 @@ msgctxt "gauls_ware"
 msgid ""
 "It is consumed at the training sites (druid’s gatherings, training camps)."
 msgstr ""
+"Es consumeix als llocs d'entrenament (reunions de druides, camps "
+"d'entrenament)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Potion, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:635
@@ -2541,18 +2717,21 @@ msgid ""
 "Potion is a magical drink that makes your warriors and miners perform much "
 "better."
 msgstr ""
+"La poció és una beguda màgica que fa que els teus guerrers i miners "
+"funcionin molt millor."
 
 #. TRANSLATORS: Help text for a Gallic ware: Potion, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:637
 msgctxt "gauls_ware"
 msgid "It is consumed at advanced mines and at the training sites (arenas)."
-msgstr ""
+msgstr "Es consumeix a les mines avançades i als llocs d'entrenament (arenes)."
 
 #. TRANSLATORS: Help text for a Gallic ware: Spear
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:647
 msgctxt "gauls_ware"
 msgid "Spear is a widely used weapon for hunters and new warriors."
 msgstr ""
+"La llança és una arma molt utilitzada per als caçadors i els nous guerrers."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tunic, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:657
@@ -2560,6 +2739,8 @@ msgctxt "gauls_ware"
 msgid ""
 "A basic piece of clothing for your new warriors, trainers, druids and scouts."
 msgstr ""
+"Una peça de roba bàsica per als teus nous guerrers, entrenadors, druides i "
+"exploradors."
 
 #. TRANSLATORS: Help text for a Gallic ware: Tunic, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:659
@@ -2567,12 +2748,14 @@ msgctxt "gauls_ware"
 msgid ""
 "It is also used for defense training under every new chain and bronze armor."
 msgstr ""
+"També s'utilitza per a l'entrenament de defensa sota cada cadena nova i "
+"armadura de bronze."
 
 #. TRANSLATORS: Help text for a Gallic ware: Short Sword, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:670
 msgctxt "gauls_ware"
 msgid "Short sword is a basic piece of equipment for your new trainers."
-msgstr ""
+msgstr "L'espasa curta és un equip bàsic per als teus nous entrenadors."
 
 #. TRANSLATORS: Help text for a Gallic ware: Short Sword, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:672
@@ -2581,6 +2764,9 @@ msgid ""
 "It is produced in the weapon smithy and used at the training camp – together "
 "with meal and elixir – to train warriors from attack level 0 to level 1."
 msgstr ""
+"Es produeix a la ferreria d'armes i s'utilitza al camp d'entrenament, "
+"juntament amb menjar i elixir, per entrenar guerrers des del nivell d'atac 0 "
+"fins al nivell 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Long Sword
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:682
@@ -2590,6 +2776,9 @@ msgid ""
 "together with meal and elixir – to train warriors from attack level 1 to "
 "level 2."
 msgstr ""
+"L'espasa llarga es produeix a la ferreria d'armes i s'utilitza al camp "
+"d'entrenament, juntament amb menjar i elixir, per entrenar guerrers des del "
+"nivell d'atac 1 fins al nivell 2."
 
 #. TRANSLATORS: Help text for a Gallic ware: Chain Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:691
@@ -2599,6 +2788,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 0 to "
 "level 1."
 msgstr ""
+"Aquesta armadura bàsica es produeix a la ferreria d'armadures i s'utilitza a "
+"l'arena, juntament amb menjar i túnica, per entrenar guerrers des del nivell "
+"de defensa 0 fins al nivell 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Armor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:700
@@ -2608,6 +2800,9 @@ msgid ""
 "together with meal and tunic – to train warriors from defense level 1 to "
 "level 2."
 msgstr ""
+"Aquesta armadura avançada es produeix a la ferreria d'armadures i s'utilitza "
+"a l'arena, juntament amb menjar i túnica, per entrenar guerrers des del "
+"nivell de defensa 1 fins al nivell 2."
 
 #. TRANSLATORS: Help text for a Gallic ware: Golden Helmet
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:709
@@ -2616,6 +2811,9 @@ msgid ""
 "This helmet is produced in the armor smithy and used at the arena – together "
 "with meal – to train warriors from defense level 2 to level 3."
 msgstr ""
+"Aquest casc es produeix a la ferreria d'armadures i s'utilitza a l'arena, "
+"juntament amb el menjar, per entrenar guerrers des del nivell de defensa 2 "
+"fins al nivell 3."
 
 #. TRANSLATORS: Help text for a Gallic ware: Wooden Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:718
@@ -2625,6 +2823,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 0 to "
 "level 1."
 msgstr ""
+"Aquest escut bàsic es produeix al taller i s'utilitza a l'arena, juntament "
+"amb menjar i poció, per entrenar guerrers des del nivell d'evasió 0 fins al "
+"nivell 1."
 
 #. TRANSLATORS: Help text for a Gallic ware: Bronze Shield
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:727
@@ -2634,6 +2835,9 @@ msgid ""
 "together with meal and potion – to train warriors from evade level 1 to "
 "level 2."
 msgstr ""
+"Aquest escut avançat es produeix a la ferreria d'armadures i s'utilitza a "
+"l'arena, juntament amb menjar i poció, per entrenar guerrers des del nivell "
+"d'evasió 1 fins al nivell 2."
 
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
@@ -2641,19 +2845,19 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:748
 msgctxt "gauls_worker"
 msgid "Carries items along roads."
-msgstr ""
+msgstr "Porta objectes per les carreteres."
 
 #. TRANSLATORS: Help text for a Gallic worker: Ferry
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:755
 msgctxt "gauls_worker"
 msgid "Ships wares across narrow rivers and straights."
-msgstr ""
+msgstr "Envia mercaderies a través de rius estrets i rectes."
 
 #. TRANSLATORS: Help text for a Gallic worker: Water Carrier
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:762
 msgctxt "gauls_worker"
 msgid "Carries water."
-msgstr ""
+msgstr "Porta aigua."
 
 #. TRANSLATORS: Help text for a Gallic female worker: Gardener
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:769
@@ -2662,96 +2866,98 @@ msgid ""
 "Groves vegetable and herbs. While experienced, she can also work in the "
 "orchard and plant fruit trees."
 msgstr ""
+"Arbres de verdures i herbes. Encara que té experiència, també pot treballar "
+"a l'hort i plantar arbres fruiters."
 
 #. TRANSLATORS: Help text for a Gallic female worker: Experienced Gardener
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:776
 msgctxt "gauls_worker"
 msgid "Plants fruit trees and harvests fruit."
-msgstr ""
+msgstr "Planta arbres fruiters i recull fruita."
 
 #. TRANSLATORS: Help text for a Gallic worker: Builder
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:783
 msgctxt "gauls_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Treballs en obres per aixecar nous edificis."
 
 #. TRANSLATORS: Help text for a Gallic worker: Stonecutter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:793
 msgctxt "gauls_worker"
 msgid "Mines stone."
-msgstr ""
+msgstr "Mines de pedra."
 
 #. TRANSLATORS: Help text for a Gallic worker: Woodcutter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:800
 msgctxt "gauls_worker"
 msgid "Fells trees."
-msgstr ""
+msgstr "Talla arbres."
 
 #. TRANSLATORS: Help text for a Gallic worker: Forester
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:807
 msgctxt "gauls_worker"
 msgid "Plants trees."
-msgstr ""
+msgstr "Planta arbres."
 
 #. TRANSLATORS: Help text for a Gallic worker: Clay Digger
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:814
 msgctxt "gauls_worker"
 msgid "Makes clay out of mud and water."
-msgstr ""
+msgstr "Fa argila amb fang i aigua."
 
 #. TRANSLATORS: Help text for a Gallic worker: Brick Maker
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:821
 msgctxt "gauls_worker"
 msgid "Burns bricks out of clay and granite."
-msgstr ""
+msgstr "Crema maons d'argila i granit."
 
 #. TRANSLATORS: Help text for a Gallic worker: Breeder
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:828
 msgctxt "gauls_worker"
 msgid "Breeds animals."
-msgstr ""
+msgstr "Cria animals."
 
 #. TRANSLATORS: Help text for a Gallic worker: Shipwright
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:835
 msgctxt "gauls_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Treballa a la drassana i construeix nous vaixells."
 
 #. TRANSLATORS: Help text for a Gallic worker: Fisher
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:845
 msgctxt "gauls_worker"
 msgid "Catches fish in the sea."
-msgstr ""
+msgstr "Agafa peixos al mar."
 
 #. TRANSLATORS: Help text for a Gallic worker: Hunter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:852
 msgctxt "gauls_worker"
 msgid "The hunter brings fresh, raw meat to the colonists."
-msgstr ""
+msgstr "El caçador porta carn fresca i crua als colons."
 
 #. TRANSLATORS: Help text for a Gallic worker: Farmer
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:859
 msgctxt "gauls_worker"
 msgid "Plants fields and harvests wheat sheaves."
-msgstr ""
+msgstr "Planta camps i cull garbes de blat."
 
 #. TRANSLATORS: Help text for a Gallic worker: Toiler
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:866
 msgctxt "gauls_worker"
 msgid "Threshes harvested wheat sheaves to obtain wheat grain."
-msgstr ""
+msgstr "Trilla garbes de blat collides per obtenir gra de blat."
 
 #. TRANSLATORS: Help text for a Gallic worker: Miller
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:873
 msgctxt "gauls_worker"
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Mòlta blat per produir farina."
 
 #. TRANSLATORS: Help text for a Gallic worker: Baker
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:880
 msgctxt "gauls_worker"
 msgid "Bakes bread for ration and meal preparation."
-msgstr ""
+msgstr "Enforna el pa per a la ració i la preparació dels àpats."
 
 #. TRANSLATORS: Help text for a Gallic worker: Cook
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:887
@@ -2760,12 +2966,14 @@ msgid ""
 "Prepares rations and meals for miners and warriors. Cook can also work at "
 "the smokery and smoke meat and fishes."
 msgstr ""
+"Prepara racions i menjars per a miners i guerrers. El cuiner també pot "
+"treballar al fumat i fumar carn i peixos."
 
 #. TRANSLATORS: Help text for a Gallic worker: Geologist
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:897
 msgctxt "gauls_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Descobreix recursos per a la mineria."
 
 #. TRANSLATORS: Help text for a Gallic worker: Miner
 #. TRANSLATORS: Help text for a Gallic worker: Master Miner
@@ -2773,31 +2981,31 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:911
 msgctxt "gauls_worker"
 msgid "Mines ore and minerals."
-msgstr ""
+msgstr "Explotació de minerals i minerals."
 
 #. TRANSLATORS: Help text for a Gallic worker: Smelter
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:918
 msgctxt "gauls_worker"
 msgid "Smelts ore."
-msgstr ""
+msgstr "Fona mineral."
 
 #. TRANSLATORS: Help text for a Gallic worker: Charcoal Burner
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:925
 msgctxt "gauls_worker"
 msgid "Burns logs and wood to produce charcoal."
-msgstr ""
+msgstr "Crema troncs i llenya per produir carbó vegetal."
 
 #. TRANSLATORS: Help text for a Gallic female worker: Weaver
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:932
 msgctxt "gauls_worker"
 msgid "Weaves cloth."
-msgstr ""
+msgstr "Teixeix tela."
 
 #. TRANSLATORS: Help text for a Gallic female worker: Dressmaker
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:939
 msgctxt "gauls_worker"
 msgid "Dressmaker is an experienced weaver and produces tunics."
-msgstr ""
+msgstr "La modista és una teixidora experimentada i produeix túniques."
 
 #. TRANSLATORS: Help text for a Gallic worker: Craftsman
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:949
@@ -2807,24 +3015,27 @@ msgid ""
 "evade training. Craftman can also help the experienced blacksmith in the "
 "armor smithy."
 msgstr ""
+"Produeix eines per als vostres treballadors i escuts de fusta per al primer "
+"nivell de formació d'evasió. Craftman també pot ajudar el ferrer "
+"experimentat a la ferreria d'armadures."
 
 #. TRANSLATORS: Help text for a Gallic worker: Blacksmith
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:956
 msgctxt "gauls_worker"
 msgid "Produces armor for the warriors."
-msgstr ""
+msgstr "Produeix armadures per als guerrers."
 
 #. TRANSLATORS: Help text for a Gallic worker: Recruit
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:963
 msgctxt "gauls_worker"
 msgid "Eager to become a warrior and defend his tribe!"
-msgstr ""
+msgstr "Amb ganes de convertir-se en un guerrer i defensar la seva tribu!"
 
 #. TRANSLATORS: Help text for a Gallic worker: Warrior
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:972
 msgctxt "gauls_worker"
 msgid "Defend and Conquer!"
-msgstr ""
+msgstr "Defensa i venç!"
 
 #. TRANSLATORS: Help text for a Gallic worker: Druid
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:979
@@ -2833,18 +3044,20 @@ msgid ""
 "His elixirs improve health of warriors and his potions improve their "
 "training as well as miners’ productivity."
 msgstr ""
+"Els seus elixirs milloren la salut dels guerrers i les seves pocions "
+"milloren el seu entrenament i la productivitat dels miners."
 
 #. TRANSLATORS: Help text for a Gallic worker: Trainer
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:986
 msgctxt "gauls_worker"
 msgid "Trains and recruits warriors."
-msgstr ""
+msgstr "Entrena i recluta guerrers."
 
 #. TRANSLATORS: Help text for a Gallic worker: Scout
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:993
 msgctxt "gauls_worker"
 msgid "Explores territory of your enemy."
-msgstr ""
+msgstr "Explora el territori del teu enemic."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Ashes
 #. TRANSLATORS: Help text for a Gallic immovable: Destroyed Building
@@ -2859,56 +3072,58 @@ msgid ""
 "When clay diggers dig up earth, they leave holes in the ground. These holes "
 "vanish after a while. "
 msgstr ""
+"Quan els excavadors d'argila caven terra, deixen forats a la terra. Aquests "
+"forats desapareixen al cap d'un temps."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1025
 msgid "These herbs has just been planted."
-msgstr ""
+msgstr "Aquestes herbes s'acaben de plantar."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (small)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1032
 msgid "These herbs are growing."
-msgstr ""
+msgstr "Aquestes herbes estan creixent."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1039
 msgid "These herbs are flowering."
-msgstr ""
+msgstr "Aquestes herbes estan florint."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1046
 msgid "These herbs are ready for harvesting."
-msgstr ""
+msgstr "Aquestes herbes estan a punt per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Herbs (harvested)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1053
 msgid "These herbs has been harvested."
-msgstr ""
+msgstr "Aquestes herbes han estat collides."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1060
 msgid "These vegetable plants has just been planted."
-msgstr ""
+msgstr "Aquestes plantes d'hortalisses s'acaben de plantar."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (small)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1067
 msgid "These vegetable plants are growing."
-msgstr ""
+msgstr "Aquestes plantes vegetals estan creixent."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1074
 msgid "These vegetable plants are flowering."
-msgstr ""
+msgstr "Aquestes plantes vegetals estan florint."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1081
 msgid "These vegetable plants are ready for harvesting."
-msgstr ""
+msgstr "Aquestes plantes vegetals estan llestes per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Vegetable (harvested)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1088
 msgid "This vegetable has been harvested."
-msgstr ""
+msgstr "Aquesta verdura ha estat collida."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Wheat Field (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1095
@@ -2945,7 +3160,7 @@ msgstr "El camp de juncs està creixent."
 #. TRANSLATORS: Help text for a Gallic immovable: Reed Field (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1144
 msgid "This reed field is flowering."
-msgstr ""
+msgstr "Aquest camp de canyes està florint."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Reed Field (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1151
@@ -2955,52 +3170,52 @@ msgstr "Aquest camp de juncs ja es pot segar."
 #. TRANSLATORS: Help text for a Gallic immovable: Juniper (tiny)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1158
 msgid "This juniper has just been planted."
-msgstr ""
+msgstr "Aquest ginebre acaba de ser plantat."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Juniper (small)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1165
 msgid "This juniper is growing."
-msgstr ""
+msgstr "Aquest ginebre està creixent."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Juniper (medium)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1172
 msgid "This juniper is flowering."
-msgstr ""
+msgstr "Aquest ginebre està florint."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Juniper (ripe)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1179
 msgid "This juniper is ready for harvesting."
-msgstr ""
+msgstr "Aquest ginebre està llest per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1186
 msgid "This raspberry is ready for harvesting."
-msgstr ""
+msgstr "Aquest gerd està llest per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1193
 msgid "This black currant is ready for harvesting."
-msgstr ""
+msgstr "Aquesta grosella negra està llesta per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1200
 msgid "These strawberries are ready for harvesting."
-msgstr ""
+msgstr "Aquestes maduixes estan llestes per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1207
 msgid "This desert hackberry is ready for harvesting."
-msgstr ""
+msgstr "Aquesta llenya del desert està llesta per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1214
 msgid "This red currant is ready for harvesting."
-msgstr ""
+msgstr "Aquesta grosella vermella està llesta per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1221
 msgid "These blueberries are ready for harvesting."
-msgstr ""
+msgstr "Aquests nabius estan preparats per a la collita."
 
 #. TRANSLATORS: Help text for a Gallic immovable: One of the berry bushes
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1228
@@ -3011,17 +3226,17 @@ msgstr "L'arbust ja es pot recol·lectar."
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Sapling)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1242
 msgid "This cherry tree has just been planted."
-msgstr ""
+msgstr "Aquest cirerer s'acaba de plantar."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Pole)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1249
 msgid "This cherry tree is growing."
-msgstr ""
+msgstr "Aquest cirerer està creixent."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Mature)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1256
 msgid "This cherry tree is fully grown."
-msgstr ""
+msgstr "Aquest cirerer ja ha crescut."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1263
@@ -3029,11 +3244,13 @@ msgid ""
 "This old cherry tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
 msgstr ""
+"Aquest vell cirerer pot ser tallat per un llenyataire per a troncs. Aquesta "
+"és l'única etapa de vida d'aquest arbre, quan un llenyataire pot tallar-lo."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Flowering)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1270
 msgid "This cherry tree is flowering."
-msgstr ""
+msgstr "Aquest cirerer està florint."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Cherry Tree (Fruit)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1277
@@ -3041,21 +3258,23 @@ msgid ""
 "This cherry tree is full of fruits. Gardeners and druids can pick some fruit "
 "here."
 msgstr ""
+"Aquest cirerer està ple de fruits. Els jardiners i els druides poden "
+"recollir fruita aquí."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Sapling)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1284
 msgid "This apple tree has just been planted."
-msgstr ""
+msgstr "Aquesta pomera acaba de ser plantada."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Pole)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1291
 msgid "This apple tree is growing."
-msgstr ""
+msgstr "Aquesta pomera està creixent."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Mature)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1298
 msgid "This apple tree is fully grown."
-msgstr ""
+msgstr "Aquesta pomera ja ha crescut."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Old)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1305
@@ -3063,11 +3282,13 @@ msgid ""
 "This old apple tree can be cut down by a woodcutter for log. This is the "
 "only life stage of this tree, when a woodcutter is allowed to fell it."
 msgstr ""
+"Aquest vell pomer pot ser tallat per un llenyataire per a troncs. Aquesta és "
+"l'única etapa de vida d'aquest arbre, quan un llenyataire pot tallar-lo."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Flowering)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1312
 msgid "This apple tree is flowering."
-msgstr ""
+msgstr "Aquesta pomera està florint."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Apple Tree (Fruit)
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1319
@@ -3075,6 +3296,8 @@ msgid ""
 "This apple tree is full of fruits. Gardeners and druids can pick some fruit "
 "here."
 msgstr ""
+"Aquest pomer està ple de fruits. Els jardiners i els druides poden recollir "
+"fruita aquí."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: No resources
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1326
@@ -3084,7 +3307,7 @@ msgstr "Aquí no hi ha recursos."
 #. TRANSLATORS: Help text for a Gallic resource indicator: Water
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1333
 msgid "There is water in the ground here."
-msgstr ""
+msgstr "Aquí hi ha aigua a la terra."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Coal, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1341
@@ -3104,11 +3327,12 @@ msgstr "Aquí només hi ha una mica de carbó."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1396
 msgid "This vein contains iron ore that can be dug up by iron mines."
 msgstr ""
+"Aquesta vena conté mineral de ferro que pot ser excavat per mines de ferro."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Iron, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1354
 msgid "There is only a little bit of iron ore here."
-msgstr ""
+msgstr "Aquí només hi ha una mica de mineral de ferro."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Copper-Gold, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1363
@@ -3116,11 +3340,13 @@ msgstr ""
 msgid ""
 "This vein contains copper-gold ore that can be dug up by copper-gold mines."
 msgstr ""
+"Aquesta vena conté mineral de coure-or que pot ser excavat per mines de "
+"coure-or."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Copper-Gold, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1365
 msgid "There is only a little bit of copper-gold ore here."
-msgstr ""
+msgstr "Aquí només hi ha una mica de mineral de coure i or."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1374
@@ -3129,11 +3355,13 @@ msgid ""
 "This vein contains tin ore that can be dug up by tin mines. There is also "
 "high ratio of granite in the ground."
 msgstr ""
+"Aquesta vena conté mineral d'estany que pot ser excavat per les mines "
+"d'estany. També hi ha una gran proporció de granit al sòl."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1376
 msgid "There is only a little bit of tin ore and granite here."
-msgstr ""
+msgstr "Aquí només hi ha una mica de mineral d'estany i granit."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Coal, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1387
@@ -3143,17 +3371,17 @@ msgstr "Aquí hi ha molt carbó."
 #. TRANSLATORS: Help text for a Gallic resource indicator: Iron, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1398
 msgid "There is a lot of iron ore here."
-msgstr ""
+msgstr "Aquí hi ha molt mineral de ferro."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Copper-Gold, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1409
 msgid "There is a lot of copper-gold ore here."
-msgstr ""
+msgstr "Aquí hi ha molt mineral de coure-or."
 
 #. TRANSLATORS: Help text for a Gallic resource indicator: Tin Ore, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1420
 msgid "There is a lot of tin ore and granite here."
-msgstr ""
+msgstr "Aquí hi ha molt mineral d'estany i granit."
 
 #. TRANSLATORS: Help text for a Gallic immovable: Ship Under Construction
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1428
@@ -3165,12 +3393,14 @@ msgstr "En aquest lloc es construeix un vaixell."
 msgctxt "gauls_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
+"Allotjament per a la teva gent. També emmagatzema les teves mercaderies i "
+"eines."
 
 #. TRANSLATORS: Note help text for a Gallic warehouse: Headquarters
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1442
 msgctxt "gauls_building"
 msgid "The headquarters is your main building."
-msgstr ""
+msgstr "La seu és el vostre edifici principal."
 
 #. TRANSLATORS: Purpose help text for a Gallic warehouse: Warehouse
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1449
@@ -3179,6 +3409,8 @@ msgid ""
 "Your workers and warriors will find shelter here. Also stores your wares and "
 "tools."
 msgstr ""
+"Els vostres treballadors i guerrers trobaran refugi aquí. També emmagatzema "
+"les teves mercaderies i eines."
 
 #. TRANSLATORS: Purpose help text for a Gallic warehouse: Port
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1456
@@ -3187,12 +3419,14 @@ msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "warriors, wares and tools."
 msgstr ""
+"Serveix com a base per a la colonització i el comerç a l'estranger. També "
+"emmagatzema els teus guerrers, mercaderies i eines."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Woodcutter’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1464
 msgctxt "gauls_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
-msgstr ""
+msgstr "Tala arbres dels voltants i els transforma en troncs."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Woodcutter’s House
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 1
@@ -3202,12 +3436,14 @@ msgid ""
 "This building can produce one log between %1$s and %2$s, depending on how "
 "far the woodcutter has to walk."
 msgstr ""
+"Aquest edifici pot produir un registre entre %1$s i %2$s, depenent de la "
+"distància que hagi de caminar el llenyataire."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Forester’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1479
 msgctxt "gauls_building"
 msgid "Plants trees in the surrounding area."
-msgstr ""
+msgstr "Planta arbres als voltants."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Forester’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1481
@@ -3216,6 +3452,8 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
+"La casa del forestal necessita espai lliure dins de la zona de treball per "
+"plantar els arbres."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1484
@@ -3224,6 +3462,8 @@ msgid ""
 "The forester plants one tree between %1$s and %2$s, depending on how far he "
 "has to walk."
 msgstr ""
+"El forestal planta un arbre entre %1$s i %2$s, depenent de la distància que "
+"hagi de caminar."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Clay Pit
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1494
@@ -3232,6 +3472,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Clay is "
 "used to make bricks."
 msgstr ""
+"Excava fang del terra i utilitza aigua per convertir-lo en argila. L'argila "
+"s'utilitza per fer maons."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Clay Pit, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1497
@@ -3240,18 +3482,20 @@ msgid ""
 "This building can produce one clay between %1$s and %2$s, depending on how "
 "far the clay digger has to walk."
 msgstr ""
+"Aquest edifici pot produir una argila entre %1$s i %2$s, depenent de la "
+"distància que hagi de caminar l'excavador d'argila."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Stonecutter’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1507
 msgctxt "gauls_building"
 msgid "Cuts blocks of stone out of rocks in the vicinity."
-msgstr ""
+msgstr "Talla blocs de pedra de les roques dels voltants."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Stonecutter’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1509
 msgctxt "gauls_building"
 msgid "The stonecutter needs rocks to cut within the work area."
-msgstr ""
+msgstr "El picapedrer necessita pedres per tallar dins de la zona de treball."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Stonecutter’s Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1512
@@ -3260,12 +3504,14 @@ msgid ""
 "The stonecutter can produce one block of granite between %1$s and %2$s on "
 "average, depending on how far he has to walk."
 msgstr ""
+"El picapedrer pot produir un bloc de granit entre %1$s i %2$s de mitjana, "
+"depenent de la distància que hagi de caminar."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Well
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1522
 msgctxt "gauls_building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Treu aigua de les profunditats."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Well, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1525
@@ -3273,6 +3519,7 @@ msgstr ""
 msgctxt "gauls_building"
 msgid "The carrier needs %s to get one bucket full of water."
 msgstr ""
+"El transportista necessita %s per aconseguir una galleda plena d'aigua."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Well, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1527
@@ -3280,24 +3527,27 @@ msgstr ""
 msgctxt "gauls_building"
 msgid "If the water resource is depleted, the carrier needs %s on average."
 msgstr ""
+"Si el recurs hídric s'esgota, el transportista necessita %s de mitjana."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Fisher's Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1535
 msgctxt "gauls_building"
 msgid "Fishes on the coast near the fisher’s house."
-msgstr ""
+msgstr "Peixos a la costa prop de la casa del pescador."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Fisher's Hut, Part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1538
 msgctxt "gauls_building"
 msgid "The fisher’s hut needs water full of fish within the work area."
 msgstr ""
+"La barraca del pescador necessita aigua plena de peixos dins de la zona de "
+"treball."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Fisher's Hut, Part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1540
 msgctxt "gauls_building"
 msgid "Roads and trees along the shoreline block fishing."
-msgstr ""
+msgstr "Els camins i els arbres al llarg de la costa bloqueja la pesca."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Fisher's Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1544
@@ -3306,18 +3556,21 @@ msgid ""
 "This building can produce one fish between %1$s and %2$s, depending on how "
 "far the fisher has to walk."
 msgstr ""
+"Aquest edifici pot produir un peix entre %1$s i %2$s, depenent de la "
+"distància que hagi de caminar el pescador."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Hunter’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1554
 msgctxt "building"
 msgid "Hunts animals to produce meat."
-msgstr ""
+msgstr "Caça animals per produir carn."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Hunter’s Hut
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1556
 msgctxt "gauls_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
 msgstr ""
+"La cabana del caçador necessita animals per caçar dins de la zona de treball."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Hunter’s Hut, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1559
@@ -3326,6 +3579,8 @@ msgid ""
 "This building can produce one meat between %1$s and %2$s, depending on how "
 "far the hunter has to walk."
 msgstr ""
+"Aquest edifici pot produir una carn entre %1$s i %2$s, depenent de la "
+"distància que hagi de caminar el caçador."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Scout’s Cottage
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1569
@@ -3337,13 +3592,13 @@ msgstr "Explora territoris desconeguts."
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1572
 msgctxt "gauls_building"
 msgid "One exploration trip of the scout takes between %1$s and %2$s."
-msgstr ""
+msgstr "Un viatge d'exploració de l'escolta dura entre %1$s i %2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1584
 msgctxt "gauls_building"
 msgid "Forges the tools that your workers need."
-msgstr ""
+msgstr "Forja les eines que necessiten els vostres treballadors."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1586
@@ -3353,19 +3608,23 @@ msgid ""
 "economy, production of one of each item takes %1$s. If only one kind of item "
 "is needed by the economy, its production takes %2$s."
 msgstr ""
+"Si aquest edifici està totalment proveït i tots els articles produïts són "
+"necessaris per l'economia, la producció d'un de cada article triga %1$s. Si "
+"l'economia només necessita un tipus d'article, la seva producció requereix "
+"%2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sawmill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1593
 msgctxt "gauls_building"
 msgid "Saws logs to produce planks."
-msgstr ""
+msgstr "Serra troncs per produir taulons."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Sawmill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1595
 #, lua-format
 msgctxt "gauls_building"
 msgid "The sawmill needs %s to produce one plank."
-msgstr ""
+msgstr "La serradora necessita %s per produir un tauló."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Brick Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1602
@@ -3374,19 +3633,21 @@ msgid ""
 "Burns bricks using granite and clay, and coal as fuel. Bricks are an "
 "important building material."
 msgstr ""
+"Crema maons utilitzant granit i argila, i carbó com a combustible. Els maons "
+"són un material de construcció important."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Brick Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1605
 #, lua-format
 msgctxt "gauls_building"
 msgid "The brick kiln needs %s on average to produce one brick."
-msgstr ""
+msgstr "El forn de maó necessita %s de mitjana per produir un maó."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Reed Yard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1613
 msgctxt "gauls_building"
 msgid "Produces reed."
-msgstr ""
+msgstr "Produeix canya."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Reed Yard
 #. TRANSLATORS: Note help text for a Gallic production site: Ferry Yard
@@ -3394,7 +3655,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2033
 msgctxt "gauls_building"
 msgid "Needs water nearby."
-msgstr ""
+msgstr "Necessita aigua a prop."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Reed Yard, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1618
@@ -3403,12 +3664,14 @@ msgid ""
 "The farmer can produce one bundle of reed between %1$s and %2$s on average, "
 "depending on how far he has to walk."
 msgstr ""
+"L'agricultor pot produir un paquet de canya entre %1$s i %2$s de mitjana, "
+"depenent de la distància que hagi de caminar."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Furnace
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1628
 msgctxt "gauls_building"
 msgid "Smelts ore into iron, copper, bronze and gold."
-msgstr ""
+msgstr "Fona el mineral en ferro, coure, bronze i or."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Furnace
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1630
@@ -3419,12 +3682,17 @@ msgid ""
 "takes %1$s. If only one kind of metal is needed, it takes %2$s to produce "
 "one iron or copper ingot or %3$s to produce one bronze or gold bar."
 msgstr ""
+"Si aquest edifici està totalment proveït i hi ha una demanda de tots els "
+"metalls, la producció de 6 lingots de ferro, 2 lingots de coure, 3 lingots "
+"de bronze i 2 lingots d'or necessitarà %1$s. Si només es necessita un tipus "
+"de metall, es necessita %2$s per produir un lingot de ferro o coure o %3$s "
+"per produir una barra de bronze o d'or."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Garden
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1637
 msgctxt "gauls_building"
 msgid "Grows herbs and vegetable."
-msgstr ""
+msgstr "Cultiva herbes i verdures."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Garden, the gardener is a female
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1640
@@ -3436,12 +3704,17 @@ msgid ""
 "gardener resp. experienced gardener need %3$s resp. %4$s on average to "
 "produce one baskets of vegetable or one bundle of herbs."
 msgstr ""
+"Si l'economia necessita tots els productes, el jardiner resp. un jardiner "
+"experimentat necessita %1$s resp. %2$s de mitjana per produir dues cistelles "
+"de verdures i dos paquets d'herbes. Si l'economia només necessita un "
+"producte, el jardiner resp. un jardiner experimentat necessita %3$s resp. "
+"%4$s de mitjana per produir una cistella de verdures o un paquet d'herbes."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Orchard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1648
 msgctxt "gauls_building"
 msgid "Plants fruit trees and harvests fruit."
-msgstr ""
+msgstr "Planta arbres fruiters i recull fruita."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Orchard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1650
@@ -3451,6 +3724,8 @@ msgid ""
 "and cherry tree. Per two fruit trees, one juniper – which has a form of a "
 "bush – is planted."
 msgstr ""
+"Segons el clima, es planten dos arbres fruiters diferents: pomer i cirerer. "
+"Per dos arbres fruiters, es planta un ginebre, que té una forma d'arbust."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 1, the gardener is a female
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1653
@@ -3459,6 +3734,8 @@ msgid ""
 "When the orchard has already multiple trees, the gardener can produce one "
 "basket of fruit between %1$s and %2$s, depending on how far she has to walk."
 msgstr ""
+"Quan l'hort ja té diversos arbres, el jardiner pot produir una cistella de "
+"fruita entre %1$s i %2$s, depenent de la distància que hagi de caminar."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Purpose help text for a Gallic production site: Threshing Floor
@@ -3466,7 +3743,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1674
 msgctxt "gauls_building"
 msgid "Threshes harvested wheat sheaves to obtain wheat grain."
-msgstr ""
+msgstr "Trilla garbes de blat collides per obtenir gra de blat."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Note help text for a Gallic production site: Threshing Floor
@@ -3474,7 +3751,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1676
 msgctxt "gauls_building"
 msgid "Straw is collected only when the economy needs straw."
-msgstr ""
+msgstr "La palla només es recull quan l'economia necessita palla."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Performance help text for a Gallic production site: Threshing Floor
@@ -3485,42 +3762,44 @@ msgid ""
 "The toiler needs %1$s to produce one basket of wheat or %2$s to produce one "
 "basket of wheat and one bale of straw."
 msgstr ""
+"El treballador necessita %1$s per produir una cistella de blat o %2$s per "
+"produir una cistella de blat i una bala de palla."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1685
 msgctxt "gauls_building"
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Mòlta blat per produir farina."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1687
 msgctxt "gauls_building"
 msgid "The miller needs %1% to grind wheat into a sack of flour."
-msgstr ""
+msgstr "El moliner necessita un 1% per moldre el blat en un sac de farina."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Bakery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1694
 msgctxt "gauls_building"
 msgid "Bakes bread for ration and meal preparation."
-msgstr ""
+msgstr "Enforna el pa per a la ració i la preparació dels àpats."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Bakery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1696
 msgctxt "gauls_building"
 msgid "The baker needs %1% on average to bake a loaf of bread."
-msgstr ""
+msgstr "El forner necessita un 1% de mitjana per coure una barra de pa."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1703
 msgctxt "gauls_building"
 msgid "Prepares rations to feed the scouts and miners."
-msgstr ""
+msgstr "Prepara racions per alimentar els exploradors i miners."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1705
 msgctxt "gauls_building"
 msgid "The cook needs %1% on average to prepare one ration."
-msgstr ""
+msgstr "El cuiner necessita un 1% de mitjana per preparar una ració."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1712
@@ -3529,6 +3808,8 @@ msgid ""
 "Prepares rations for scouts and miners as well as meals to feed the miners "
 "at advanced mines and warriors at the training sites."
 msgstr ""
+"Prepara racions per a exploradors i miners, així com menjars per alimentar "
+"els miners a les mines avançades i els guerrers als llocs d'entrenament."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Kitchen
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1714
@@ -3538,12 +3819,16 @@ msgid ""
 "economy, production of one of each food takes %1$s. If only one kind of food "
 "is needed by the economy, production of one ration or one meal takes %2$s."
 msgstr ""
+"Si aquest edifici està completament proveït i l'economia necessita tot tipus "
+"d'aliments, la producció d'un de cada aliment necessita %1$s. Si l'economia "
+"només necessita un tipus d'aliment, la producció d'una ració o un àpat "
+"requereix %2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Smokery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1721
 msgctxt "gauls_building"
 msgid "Smokes fish and meat using logs."
-msgstr ""
+msgstr "Fuma peix i carn amb troncs."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Smokery
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1723
@@ -3552,12 +3837,14 @@ msgid ""
 "If this building is fully supplied, the cook needs %1% to smoke three fishes "
 "or three pieces of meat."
 msgstr ""
+"Si aquest edifici està totalment proveït, el cuiner necessita un %1% per "
+"fumar tres peixos o tres trossos de carn."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1730
 msgctxt "gauls_building"
 msgid "Produces elixirs and potions for your miners and warriors."
-msgstr ""
+msgstr "Produeix elixirs i pocions per als teus miners i guerrers."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1732
@@ -3567,6 +3854,9 @@ msgid ""
 "for potion preparation and fruit trees with fruit for elixir preparation in "
 "his working area."
 msgstr ""
+"Com que el druida escull alguns ingredients secrets per si mateix, necessita "
+"arbres per a la preparació de pocions i arbres fruiters amb fruites per a la "
+"preparació d'elixirs a la seva àrea de treball."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Druid’s House
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1734
@@ -3576,30 +3866,33 @@ msgid ""
 "economy, production of one of each drink takes %1$s. If only one kind of "
 "drink is needed by the economy, production of one drink takes %2$s."
 msgstr ""
+"Si aquest edifici està completament proveït i l'economia necessita tota mena "
+"de begudes, la producció d'una de cada beguda requereix %1$s. Si l'economia "
+"només necessita un tipus de beguda, la producció d'una beguda necessita %2$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Weaving Mill
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1741
 msgctxt "gauls_building"
 msgid "Weaves cloth out of wool."
-msgstr ""
+msgstr "Teixeix tela amb llana."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Weaving Mill, the weaver is a female
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1743
 msgctxt "gauls_building"
 msgid "The weaver needs %1% to make one piece of cloth."
-msgstr ""
+msgstr "El teixidor necessita %1% per fer una peça de tela."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sewing Workshop
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1750
 msgctxt "gauls_building"
 msgid "Produces tunics."
-msgstr ""
+msgstr "Produeix túniques."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Sewing Workshop, the dressmaker is a female
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1752
 msgctxt "gauls_building"
 msgid "The dressmaker needs %1% to sew one piece of clothing."
-msgstr ""
+msgstr "La modista necessita %1% per cosir una peça de roba."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Weapon Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1759
@@ -3608,6 +3901,8 @@ msgid ""
 "Produces spears for hunters and new warriors and swords for trainers and "
 "attack training."
 msgstr ""
+"Produeix llances per a caçadors i nous guerrers i espases per a entrenadors "
+"i entrenaments d'atac."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Weapon Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1761
@@ -3619,12 +3914,17 @@ msgid ""
 "production of one short sword takes %2$s, one long sword takes %3$s and one "
 "spear takes %4$s."
 msgstr ""
+"Si aquest edifici està completament proveït i l'economia necessita tant "
+"espases com llança, la producció de dues llances, una espasa curta i una "
+"espasa llarga necessitarà %1$s. Si l'economia només necessita un tipus "
+"d'espasa o llança, la producció d'una espasa curta necessita %2$s, una "
+"espasa llarga necessita %3$s i una llança necessita %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Armor Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1768
 msgctxt "gauls_building"
 msgid "Produces shields and armor."
-msgstr ""
+msgstr "Produeix escuts i armadures."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Armor Smithy
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1770
@@ -3635,37 +3935,41 @@ msgid ""
 "is needed, production of one bronze shield takes %2$s and production of any "
 "other item takes %3$s."
 msgstr ""
+"Si aquest edifici està completament proveït i hi ha una demanda de tots els "
+"tipus d'armadura, la producció d'un de cada element requereix %1$s. Si només "
+"es necessita un tipus d'armadura, la producció d'un escut de bronze "
+"requereix %2$s i la producció de qualsevol altre element requereix %3$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Barracks
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1777
 msgctxt "gauls_building"
 msgid "Equips recruits and trains them as warriors."
-msgstr ""
+msgstr "Equipa els reclutes i els entrena com a guerrers."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Barracks
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1779
 #, lua-format
 msgctxt "gauls_building"
 msgid "The barracks need %s to recruit one warrior."
-msgstr ""
+msgstr "Les barraques necessiten %s per reclutar un guerrer."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Charcoal Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1786
 msgctxt "gauls_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Crema troncs en carbó vegetal."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Charcoal Kiln
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1788
 msgctxt "gauls_building"
 msgid "The charcoal burner needs %1% to produce one lump of coal."
-msgstr ""
+msgstr "El cremador de carbó necessita un 1% per produir un tros de carbó."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1797
 msgctxt "gauls_building"
 msgid "Sows wheat and harvests wheat sheaves."
-msgstr ""
+msgstr "Sembra blat i cull garbes de blat."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1799
@@ -3674,6 +3978,8 @@ msgid ""
 "The farmer sows and harvests one sheaf of wheat between %1$s and %2$s, "
 "depending on how far he has to walk."
 msgstr ""
+"L'agricultor sembra i cull una grapa de blat entre %1$s i %2$s, depenent de "
+"la distància que hagi de caminar."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1806
@@ -3682,6 +3988,8 @@ msgid ""
 "Breeds strong oxen for adding them to the transportation system. Also keeps "
 "cows for their milk and meat."
 msgstr ""
+"Cria bous forts per afegir-los al sistema de transport. També manté vaques "
+"per a la seva llet i carn."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1808
@@ -3690,6 +3998,9 @@ msgid ""
 "Production of meat stops when economy doesn’t need meat or smoked meat, "
 "production of both milk and meat stops when economy doesn’t need milk."
 msgstr ""
+"La producció de carn s'atura quan l'economia no necessita carn o carn "
+"fumada, la producció tant de llet com de carn s'atura quan l'economia no "
+"necessita llet."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Cattle Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1810
@@ -3701,18 +4012,23 @@ msgid ""
 "milk and one piece of meat takes %3$s and production of 2 jugs of milk only "
 "takes %4$s."
 msgstr ""
+"Si aquest edifici està totalment proveït i l'economia necessita tots els "
+"productes, la cria de dos bous, la producció de 2 gerres de llet i un tros "
+"de carn requereix %1$s. La producció d'un bou només necessita %2$s, la "
+"producció de 2 gerres de llet i un tros de carn requereix %3$s i la "
+"producció de 2 gerres de llet només requereix %4$s."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1817
 msgctxt "gauls_building"
 msgid "Keeps sheep for their wool."
-msgstr ""
+msgstr "Guarda ovelles per a la seva llana."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Sheep Farm
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1819
 msgctxt "gauls_building"
 msgid "The sheep farm needs %1% to produce one wool."
-msgstr ""
+msgstr "La granja d'ovelles necessita un 1% per produir una llana."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Coal Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Coal Mine
@@ -3722,13 +4038,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1846
 msgctxt "gauls_building"
 msgid "Digs coal out of the ground in mountain terrain."
-msgstr ""
+msgstr "Excava carbó del sòl en terrenys de muntanya."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Coal Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1830
 msgctxt "gauls_building"
 msgid "The miner needs %1% to produce one lump of coal."
-msgstr ""
+msgstr "El miner necessita un 1% per produir un tros de carbó."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Coal Mine
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Coal Mine
@@ -3736,7 +4052,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1848
 msgctxt "gauls_building"
 msgid "The miners need %1% to produce one lump of coal."
-msgstr ""
+msgstr "Els miners necessiten un 1% per produir un tros de carbó."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Iron Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Iron Mine
@@ -3746,7 +4062,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1873
 msgctxt "gauls_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Excava mineral de ferro del sòl en terrenys de muntanya."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1857
@@ -3754,6 +4070,7 @@ msgctxt "gauls_building"
 msgid ""
 "The miner needs %1% to produce one piece of ore and one block of granite."
 msgstr ""
+"El miner necessita un 1% per produir una peça de mineral i un bloc de granit."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1866
@@ -3761,6 +4078,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners need %1% to produce two pieces of ore and one block of granite."
 msgstr ""
+"Els miners necessiten un 1% per produir dues peces de mineral i un bloc de "
+"granit."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Iron Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1875
@@ -3768,6 +4087,8 @@ msgctxt "gauls_building"
 msgid ""
 "The miners need %1% to produce five pieces of ore and two blocks of granite."
 msgstr ""
+"Els miners necessiten un 1% per produir cinc peces de mineral i dos blocs de "
+"granit."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper-Gold Mine
@@ -3776,12 +4097,13 @@ msgstr ""
 msgctxt "gauls_building"
 msgid "Digs copper ore and gold ore out of the ground in mountain terrain."
 msgstr ""
+"Excava mineral de coure i mineral d'or del sòl en terrenys de muntanya."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1884
 msgctxt "gauls_building"
 msgid "While empty, this mine produces copper ore."
-msgstr ""
+msgstr "Mentre està buida, aquesta mina produeix mineral de coure."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1886
@@ -3790,12 +4112,14 @@ msgid ""
 "The miner needs %1% to produce two pieces of copper ore and one piece of "
 "gold ore."
 msgstr ""
+"El miner necessita un 1% per produir dues peces de mineral de coure i una "
+"peça de mineral d'or."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Copper-Gold Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1895
 msgctxt "gauls_building"
 msgid "While empty, this mine produces gold ore."
-msgstr ""
+msgstr "Mentre està buida, aquesta mina produeix mineral d'or."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Copper-Gold Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1897
@@ -3804,6 +4128,8 @@ msgid ""
 "The miners need %1% to produce two pieces of copper ore and two pieces of "
 "gold ore."
 msgstr ""
+"Els miners necessiten un 1% per produir dues peces de mineral de coure i "
+"dues peces de mineral d'or."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Tin Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Deep Tin Mine
@@ -3811,13 +4137,13 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1915
 msgctxt "gauls_building"
 msgid "Digs tin ore and granite out of the ground in mountain terrain."
-msgstr ""
+msgstr "Excava mineral d'estany i granit del sòl en terrenys de muntanya."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1906
 msgctxt "gauls_building"
 msgid "While empty, this mine produces blocks of granite."
-msgstr ""
+msgstr "Mentre està buida, aquesta mina produeix blocs de granit."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1908
@@ -3826,12 +4152,14 @@ msgid ""
 "The miner needs %1% to produce one piece of tin ore and three blocks of "
 "granite."
 msgstr ""
+"El miner necessita un 1% per produir una peça de mineral d'estany i tres "
+"blocs de granit."
 
 #. TRANSLATORS: Note help text for a Gallic production site: Deep Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1917
 msgctxt "gauls_building"
 msgid "While empty, this mine produces tin ore."
-msgstr ""
+msgstr "Mentre està buida, aquesta mina produeix mineral d'estany."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Tin Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1919
@@ -3840,18 +4168,20 @@ msgid ""
 "The miners need %1% to produce three pieces of tin ore and two blocks of "
 "granite."
 msgstr ""
+"Els miners necessiten un 1% per produir tres peces de mineral d'estany i dos "
+"blocs de granit."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Training Camp, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1929
 msgctxt "gauls_building"
 msgid "Trains warriors in ‘Attack’."
-msgstr ""
+msgstr "Entrena guerrers a \"Atac\"."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Training Camp, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1931
 msgctxt "gauls_building"
 msgid "Equips the warriors with all necessary weapons."
-msgstr ""
+msgstr "Equipa els guerrers amb totes les armes necessàries."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Training Camp, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1935
@@ -3861,6 +4191,8 @@ msgid ""
 "If this building is fully supplied, it can train one warrior one level in "
 "attack in %s."
 msgstr ""
+"Si aquest edifici està completament proveït, pot entrenar un guerrer d'un "
+"nivell en atac a %s."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Training Camp, part 2
 #. TRANSLATORS: Performance help text for a Gallic training site: Arena, part 2
@@ -3869,13 +4201,13 @@ msgstr ""
 #, lua-format
 msgctxt "gauls_building"
 msgid "Complete training of one warrior takes %s."
-msgstr ""
+msgstr "L'entrenament complet d'un guerrer requereix %s."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Arena
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1945
 msgctxt "gauls_building"
 msgid "Trains warriors in ‘Defense’ and ‘Evade’."
-msgstr ""
+msgstr "Entrena guerrers a \"Defensa\" i \"Evadir\"."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Arena, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1948
@@ -3885,18 +4217,21 @@ msgid ""
 "If this building is fully supplied, it can train one warrior one level in "
 "defense or evade in %s."
 msgstr ""
+"Si aquest edifici està completament proveït, pot entrenar un guerrer un "
+"nivell en defensa o evadir-se a %s."
 
 #. TRANSLATORS: Purpose help text for a Gallic training site: Druid’s Gathering
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1958
 msgctxt "gauls_building"
 msgid "Improves warrior’s health."
-msgstr ""
+msgstr "Millora la salut del guerrer."
 
 #. TRANSLATORS: Note help text for a Gallic training site: Druid’s Gathering
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1960
 msgctxt "gauls_building"
 msgid "Keep in mind that every druid needs trees in his working area."
 msgstr ""
+"Tingueu en compte que cada druida necessita arbres a la seva zona de treball."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1963
@@ -3906,13 +4241,16 @@ msgid ""
 "needs between %1$s and %2$s to improve one warrior one level in health, "
 "depending on how far the druid has to walk."
 msgstr ""
+"Si aquest edifici està completament proveït i té arbres a la seva àrea de "
+"treball, necessitarà entre %1$s i %2$s per millorar un guerrer un nivell de "
+"salut, depenent de la distància que hagi de caminar el druida."
 
 #. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 2
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1965
 #, lua-format
 msgctxt "gauls_building"
 msgid "Complete training of one warrior takes %s on average."
-msgstr ""
+msgstr "L'entrenament complet d'un guerrer requereix %s de mitjana."
 
 #. TRANSLATORS: Purpose help text for a Gallic military site: Guard Post
 #. TRANSLATORS: Purpose help text for a Gallic military site: Watchtower
@@ -3928,7 +4266,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2020
 msgctxt "gauls_building"
 msgid "Garrisons warriors to expand your territory."
-msgstr ""
+msgstr "Guarnicions guerrers per expandir el teu territori."
 
 #. TRANSLATORS: Note help text for a Gallic military site: Watchtower
 #. TRANSLATORS: Note help text for a Gallic military site: Sentry
@@ -3944,18 +4282,21 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a warrior to "
 "send him away."
 msgstr ""
+"Si teniu pocs guerrers per ocupar nous llocs militars, feu servir el botó de "
+"fletxa cap avall per reduir la capacitat. També pots fer clic a un guerrer "
+"per enviar-lo."
 
 #. TRANSLATORS: Note help text for a Gallic military site: Stone Tower
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2004
 msgctxt "gauls_building"
 msgid "This building can be built by enhancing a sentry."
-msgstr ""
+msgstr "Aquest edifici es pot construir millorant una sentinella."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Ferry Yard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2031
 msgctxt "gauls_building"
 msgid "Builds ferries."
-msgstr ""
+msgstr "Construeix ferris."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Ferry Yard
 #. TRANSLATORS: Performance help text for a Gallic production site: Ferry Yard, part 1
@@ -3965,6 +4306,8 @@ msgid ""
 "The shipwright can produce one ferry between %1$s and %2$s, depending on how "
 "far he has to walk."
 msgstr ""
+"L'armador pot produir un ferri entre %1$s i %2$s, depenent de la distància "
+"que hagi de caminar."
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Shipyard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2047
@@ -3973,6 +4316,8 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
 "wares between ports."
 msgstr ""
+"Construeix vaixells que s'utilitzen per a la colonització a l'estranger i "
+"per enviar mercaderies entre ports."
 
 #. TRANSLATORS: Performance help text for a Gallic production site: Shipyard, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2050
@@ -3981,30 +4326,33 @@ msgid ""
 "The shipwright can produce one ship between %1$s and %2$s, depending on how "
 "far he has to walk."
 msgstr ""
+"L'armador pot produir un vaixell entre %1$s i %2$s, depenent de la distància "
+"que hagi de caminar."
 
 #. TRANSLATORS: Lore help text for a Gallic building: Construction Site
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2062
 msgctxt "gauls_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
-msgstr ""
+msgstr "\"No insulteu el constructor que no té materials de construcció\"."
 
 #. TRANSLATORS: Lore author help text for a Gallic building: Construction Site
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2064
 msgctxt "gauls_building"
 msgid "Proverb widely used for impossible tasks of any kind"
-msgstr ""
+msgstr "Proverbi molt utilitzat per a tasques impossibles de qualsevol tipus"
 
 #. TRANSLATORS: Purpose help text for a Gallic building: Construction Site
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2066
 msgctxt "gauls_building"
 msgid "A new building is being built at this construction site."
-msgstr ""
+msgstr "En aquesta obra s'està construint un nou edifici."
 
 #. TRANSLATORS: Lore help text for a Gallic building: Dismantle Site
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2073
 msgctxt "gauls_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
+"\"Nous camins apareixeran quan estiguis disposat a enderrocar els vells\"."
 
 #. TRANSLATORS: Lore author help text for a Gallic building: Dismantle Site
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2075
@@ -4020,6 +4368,9 @@ msgid ""
 "resources that were used during this building’s construction to your tribe’s "
 "stores."
 msgstr ""
+"S'està desmantellant un edifici en aquest lloc de desmantellament, retornant "
+"alguns dels recursos que es van utilitzar durant la construcció d'aquest "
+"edifici a les botigues de la teva tribu."
 
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2082
 msgctxt "warehousename"
@@ -4365,37 +4716,37 @@ msgstr ""
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2154
 msgctxt "gauls"
 msgid "Worker missing"
-msgstr ""
+msgstr "Treballador desaparegut"
 
 #. TRANSLATORS: Productivity label on a Gallic building if there is 1 worker coming
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2156
 msgctxt "gauls"
 msgid "Worker is coming"
-msgstr ""
+msgstr "Arriba el treballador"
 
 #. TRANSLATORS: Productivity label on a Gallic building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2158
 msgctxt "gauls"
 msgid "Workers missing"
-msgstr ""
+msgstr "Treballadors desapareguts"
 
 #. TRANSLATORS: Productivity label on a Gallic building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2160
 msgctxt "gauls"
 msgid "Workers are coming"
-msgstr ""
+msgstr "Arriben els treballadors"
 
 #. TRANSLATORS: Productivity label on a Gallic building if there is 1 experienced worker missing
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2162
 msgctxt "gauls"
 msgid "Expert missing"
-msgstr ""
+msgstr "Falta un expert"
 
 #. TRANSLATORS: Productivity label on a Gallic building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2164
 msgctxt "gauls"
 msgid "Experts missing"
-msgstr ""
+msgstr "Desapareguts experts"
 
 #. TRANSLATORS: %1% is the number of gauls warriors the plural refers to. %2% is the maximum number of warrior slots in the building.
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2178
@@ -4673,7 +5024,7 @@ msgstr ""
 #: addons/gauls.wad/tribes/workers/ox/init.lua:8
 msgctxt "gauls_worker"
 msgid "Ox"
-msgstr ""
+msgstr "Bou"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/gauls.wad/tribes/workers/recruit/init.lua:8
