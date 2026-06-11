@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-31 03:12+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2025-02-16 14:14+0000\n"
 "Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,11 +24,11 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/Twisted_Paths_.wad/addon:4 input:8 standard
+#: addons/Twisted_Paths_.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Twisted Paths "
 msgstr "Извилистые пути"
 
-#: addons/Twisted_Paths_.wad/addon:5 input:10 standard
+#: addons/Twisted_Paths_.wad/addon:5 input:6 input:10 standard
 msgid ""
 "You face twisted paths here,all clogged with rock and trees so a quick kill "
 "strategy probably wont work.Startup mines don't have much and the quickest "
@@ -40,6 +40,6 @@ msgstr ""
 "старте шахт не так уж много, и самый быстрый способ улучшить шахты - это "
 "исследование и расширение, но будьте осторожны, ваш враг тоже делает это."
 
-#: addons/Twisted_Paths_.wad/dirnames:4
+#: addons/Twisted_Paths_.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Дополнение: карты"

@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 03:17+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
 "Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Fast_Explorer.wad/addon:6
+#: addons/Fast_Explorer.wad/addon:6 input:6 standard
 msgid ""
 "Maps for the ''Fast Explorer wins'' win condition. ''Fast Explorer SP'' is "
 "for single player, the other one for multiplayer games. Teams are not "
@@ -32,19 +32,12 @@ msgstr ""
 "SP'' és per a un sol jugador, l'altre per a jocs multijugador. Els equips no "
 "són compatibles."
 
-#: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4
+#: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4 input:9
+#: standard input:4
 msgid "Fast_Explorer"
 msgstr ""
 
-#: input:8 standard
-msgid "Fast Explorer MP"
-msgstr ""
-
-#: input:8 standard
-msgid "Fast Explorer SP"
-msgstr ""
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Use this map if you want to play the win condition ''Fast Explorer Wins'' "
 "with your friends in a multiplayer game. This map contain 5 times the same "
@@ -54,7 +47,7 @@ msgstr ""
 "Explorer Wins'' amb els vostres amics en un joc multijugador. Aquest mapa "
 "conté 5 vegades la mateixa illa que al mapa ''Fast Explorer SP''."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Use this map together with the win condition ''Fast explorer wins'' and take "
 "part on the ''Fast Explorer Torurnament''! The goal is to expand your "
@@ -69,7 +62,7 @@ msgstr ""
 "pensat per publicar el vostre temps personal juntament amb la reproducció al "
 "tema del fòrum ''Fast Explorer''!"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Place your roads and flags wisely and place warehouses on strategically "
 "places. Limited resources needs some micromanaging of productionsites and "
@@ -78,3 +71,11 @@ msgstr ""
 "Col·loqueu les vostres carreteres i banderes amb prudència i col·loqueu els "
 "magatzems en llocs estratègics. Els recursos limitats necessiten una mica de "
 "microgestió de llocs de producció i magatzems."
+
+#: input:8 input:10 standard
+msgid "Fast Explorer MP"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Fast Explorer SP"
+msgstr ""

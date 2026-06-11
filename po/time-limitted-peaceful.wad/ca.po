@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 03:18+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
 "Last-Translator: Juanjo, 2024\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,34 +22,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/time-limitted-peaceful.wad/addon:6
+#: addons/time-limitted-peaceful.wad/addon:6 input:6 standard
 msgid ""
 "The game is peaceful for 45 minutes.<br><br>(For a different time adapt the "
 "constant in the code in 'init.lua'.)"
 msgstr ""
 
-#: addons/time-limitted-peaceful.wad/addon:9
+#: addons/time-limitted-peaceful.wad/addon:9 input:9 standard
 msgid "Time limited peaceful mode"
 msgstr "Mode pacífic limitat"
 
-#: addons/time-limitted-peaceful.wad/init.lua:32
+#: addons/time-limitted-peaceful.wad/init.lua:32 standard input:32
 msgid "Peaceful mode ends now"
 msgstr "El mode pacífic ha acabat."
 
-#: addons/time-limitted-peaceful.wad/init.lua:33
+#: addons/time-limitted-peaceful.wad/init.lua:33 standard input:33
 msgid "All players can attack each other. (Team mates excluded of course.)"
 msgstr ""
 "A partir d'ara, tots els jugadors es poden atacar (excepte entre companys "
 "d'equip, òbviament)."
 
-#: addons/time-limitted-peaceful.wad/init.lua:81
+#: addons/time-limitted-peaceful.wad/init.lua:81 standard input:81
 msgid "win condition config"
 msgstr "configuració de la condició de victòria"
 
-#: addons/time-limitted-peaceful.wad/init.lua:92
+#: addons/time-limitted-peaceful.wad/init.lua:92 standard input:92
 msgid "Peaceful mode for ..."
 msgstr "Mode pacífic durant..."
 
-#: addons/time-limitted-peaceful.wad/init.lua:93
+#: addons/time-limitted-peaceful.wad/init.lua:93 standard input:93
 msgid "Duration of peaceful mode"
 msgstr "Durada del mode pacífic"

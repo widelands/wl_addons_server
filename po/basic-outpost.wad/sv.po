@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:13+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-11-25 14:32+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -27,7 +27,7 @@ msgstr ""
 #: addons/basic-outpost.wad/atlanteans.lua:11
 #: addons/basic-outpost.wad/barbarians.lua:11
 #: addons/basic-outpost.wad/empire.lua:11
-#: addons/basic-outpost.wad/frisians.lua:11
+#: addons/basic-outpost.wad/frisians.lua:11 input:9 input:11 standard
 msgid "Basic Outpost"
 msgstr "Enkel utpost"
 
@@ -36,7 +36,7 @@ msgstr "Enkel utpost"
 #: addons/basic-outpost.wad/atlanteans.lua:13
 #: addons/basic-outpost.wad/barbarians.lua:13
 #: addons/basic-outpost.wad/empire.lua:13
-#: addons/basic-outpost.wad/frisians.lua:13
+#: addons/basic-outpost.wad/frisians.lua:13 input:13 standard
 msgid ""
 "Start the game with your headquarters and a small selection of wares - just "
 "enough to create a few tools to help establish a full economy. Warning: the "
@@ -45,3 +45,14 @@ msgstr ""
 "Starta spelet med ditt högkvarter och ett litet urval av varor – precis "
 "tillräckligt för att skapa några verktyg som hjälper dig att etablera en "
 "fullständig ekonomi. Varning: AI kan inte starta framgångsrikt från detta."
+
+#: input:6 standard
+msgid ""
+"A low wares starting condition. Like a 'struggling outpost' but with enough "
+"extra resources to make some tools, so that getting established is faster "
+"and more flexible. Suitable for reasonably balanced low wares starts, or "
+"handicap starts vs full outpost.<br> <br>Here is a basic tip for Basic "
+"Outpost: You only start with a small amount of iron for new tools. So click "
+"on a flag to change the economy targets of all tools to zero. Otherwise "
+"you'll be wasting iron on tools you don't need."
+msgstr ""

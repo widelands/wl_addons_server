@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 03:14+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2026-01-22 22:11+0000\n"
 "Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -22,11 +22,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/more_expensive_soldiers.wad/addon:2
+#: addons/more_expensive_soldiers.wad/addon:2 input:8 standard
 msgid "More Expensive Soldiers"
 msgstr ""
 
-#: addons/more_expensive_soldiers.wad/addon:3
+#: addons/more_expensive_soldiers.wad/addon:3 input:6 standard
 msgid ""
 "Makes new soldiers more expensive and by doing that gives more value to the "
 "training. Barracks work more slowly. This add-on should be always under all "
@@ -34,124 +34,132 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/more_expensive_soldiers.wad/barbarians_dressmaker/init.lua:8
+#: addons/more_expensive_soldiers.wad/barbarians_dressmaker/init.lua:8 input:8
+#: standard
 msgctxt "barbarians_worker"
 msgid "Dressmaker"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/more_expensive_soldiers.wad/barbarians_sewing_workshop/init.lua:8
+#: input:8 standard
 msgctxt "barbarians_building"
 msgid "Sewing Workshop"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: addons/more_expensive_soldiers.wad/barbarians_sewing_workshop/init.lua:54
+#: input:54 standard
 msgid "sewing fur garment"
 msgstr "Das Nähen von Fellgewändern"
 
 #: addons/more_expensive_soldiers.wad/postload.lua:12
-#: addons/more_expensive_soldiers.wad/postload.lua:15
+#: addons/more_expensive_soldiers.wad/postload.lua:15 standard input:12
+#: input:15
 msgid "This shield is used for defense training."
 msgstr ""
 
-#: addons/more_expensive_soldiers.wad/postload.lua:18
+#: addons/more_expensive_soldiers.wad/postload.lua:18 standard input:18
 msgid "Produces clothing for your soldiers."
 msgstr ""
 
 #. TRANSLATORS: Purpose help text for a Gallic production site: Sewing Workshop
-#: addons/more_expensive_soldiers.wad/postload.lua:26
+#: addons/more_expensive_soldiers.wad/postload.lua:26 standard input:26
 msgctxt "gauls_building"
 msgid "Produces clothing for your soldiers."
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:31
+#: addons/more_expensive_soldiers.wad/postload.lua:31 standard input:31
 msgid "rearing cattle"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:43
+#: addons/more_expensive_soldiers.wad/postload.lua:43 standard input:43
 msgid "producing fur"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:55
+#: addons/more_expensive_soldiers.wad/postload.lua:55 standard input:55
 msgid "working"
 msgstr "Das Herstellen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:67
+#: addons/more_expensive_soldiers.wad/postload.lua:67 standard input:67
 msgctxt "barbarians_building"
 msgid "recruiting soldier"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an ax because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:80
-#: addons/more_expensive_soldiers.wad/postload.lua:96
+#: addons/more_expensive_soldiers.wad/postload.lua:96 standard input:80
+#: input:96
 msgid "forging an ax"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:127
+#: addons/more_expensive_soldiers.wad/postload.lua:127 standard input:127
 msgctxt "empire_building"
 msgid "recruiting soldier"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:151
-#: addons/more_expensive_soldiers.wad/postload.lua:258
+#: addons/more_expensive_soldiers.wad/postload.lua:258 standard input:151
+#: input:258
 msgctxt "atlanteans_building"
 msgid "recruiting soldier"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:162
-#: addons/more_expensive_soldiers.wad/postload.lua:269
+#: addons/more_expensive_soldiers.wad/postload.lua:269 standard input:162
+#: input:269
 msgid "tailoring a tabard"
 msgstr "Das Schneidern eines Wappenrocks"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a light trident because ...
 #: addons/more_expensive_soldiers.wad/postload.lua:174
-#: addons/more_expensive_soldiers.wad/postload.lua:281
+#: addons/more_expensive_soldiers.wad/postload.lua:281 standard input:174
+#: input:281
 msgid "forging a light trident"
 msgstr "Das Schmieden eines leichten Dreizacks"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:199
+#: addons/more_expensive_soldiers.wad/postload.lua:199 standard input:199
 msgctxt "frisians_building"
 msgid "recruiting soldier"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:222
+#: addons/more_expensive_soldiers.wad/postload.lua:222 standard input:222
 msgctxt "amazons_building"
 msgid "recruiting soldier"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden spear because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:234
+#: addons/more_expensive_soldiers.wad/postload.lua:234 standard input:234
 msgid "making a wooden spear"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:295
+#: addons/more_expensive_soldiers.wad/postload.lua:295 standard input:295
 msgctxt "lutas_atlanteans_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr "Das Verbessern der Lebenspunkte eines Soldaten von Stufe 0 auf 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting warrior because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:318
+#: addons/more_expensive_soldiers.wad/postload.lua:318 standard input:318
 msgid "recruiting warrior"
 msgstr "Das Rekrutieren von Kämpfer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing crocodile jacket because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:329
+#: addons/more_expensive_soldiers.wad/postload.lua:329 standard input:329
 msgid "sewing crocodile jacket"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting warrior because ...
-#: addons/more_expensive_soldiers.wad/postload.lua:355
+#: addons/more_expensive_soldiers.wad/postload.lua:355 standard input:355
 msgctxt "gauls_building"
 msgid "recruiting warrior"
 msgstr "Das Rekrutieren von Kämpfer"

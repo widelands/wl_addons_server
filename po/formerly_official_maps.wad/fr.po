@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-05 03:12+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -24,10 +24,12 @@ msgstr ""
 "1000000 == 0 ? 1 : 2;\n"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Elven_Forests.wmf/elemental:8
+#: input:9 standard
 msgid "Elven Forests"
 msgstr "Forêts elfiques"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Elven_Forests.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "The breath-taking beauty of these emerald lands has lured many tribes into "
 "an attempt to take them for themselves."
@@ -36,6 +38,7 @@ msgstr ""
 "nombreuses tribus dans une tentative de les prendre pour elles-mêmes."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Europa.wmf/elemental:8
+#: input:9 standard
 msgid "Europa 1.2"
 msgstr "Europe 1.2"
 
@@ -49,10 +52,12 @@ msgstr ""
 "France, Blanc = Pologne"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Impact.wmf/elemental:9
+#: input:8 standard
 msgid "Impact"
 msgstr "Impact"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Impact.wmf/elemental:11
+#: input:5 standard
 msgid ""
 "After an impact of an Asteroid and the following harsh winter, three Isles "
 "are connected by Ice and stone, setting an end to the peaceful coexistence "
@@ -63,10 +68,12 @@ msgstr ""
 "pacifique de trois tribus."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:8
+#: input:9 standard
 msgid "The Ancient Sun of Fire"
 msgstr "L'ancien soleil de feu"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "For hundreds of years, this island was kept as a sanctuary of the Gods. No "
 "human ever ventured to set a foot on it. But now that a tribe had finally "
@@ -80,14 +87,17 @@ msgstr ""
 "sillage."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:11
+#: input:6 standard
 msgid "Start positions are clockwise"
 msgstr "Les positions de départ sont dans le sens des aiguilles d'une montre"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Twinkling_Waves.wmf/elemental:8
+#: input:9 standard
 msgid "Twinkling Waves"
 msgstr "Vagues scintillantes"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Twinkling_Waves.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "Many beautiful, green islands await the ones brave enough to pass the "
 "thousand waves, twinkling in the sun."
@@ -96,6 +106,7 @@ msgstr ""
 "passer les mille vagues, scintillant au soleil."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Twinkling_Waves.wmf/elemental:11
+#: input:6 standard
 msgid ""
 "Take care not to build your ships in the lagoons. They cannot pass through "
 "the reefs to the main ocean, where your ports are located."
@@ -105,10 +116,12 @@ msgstr ""
 "ports."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Volcanic_Winter.wmf/elemental:8
+#: input:9 standard
 msgid "Volcanic Winter"
 msgstr "Hiver volcanique"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Volcanic_Winter.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "In the middle of summer, a series of volcanic eruptions drew the winter in. "
 "Suddenly, the sun seemed to be gone and the only light and heat sources left "
@@ -122,11 +135,11 @@ msgstr ""
 "seules les îles volcaniques semblent être laissées comme terres habitables."
 
 #: addons/formerly_official_maps.wad/addon:2
-#: addons/formerly_official_maps.wad/dirnames:2
+#: addons/formerly_official_maps.wad/dirnames:2 input:7 standard input:4
 msgid "Formerly Official Maps"
 msgstr "Anciennes cartes officielles"
 
-#: addons/formerly_official_maps.wad/addon:3
+#: addons/formerly_official_maps.wad/addon:3 input:6 standard
 msgid ""
 "This map set contains all maps that were shipped with the official game at "
 "some time but since removed from the map pool."
@@ -135,6 +148,12 @@ msgstr ""
 "le jeu officiel à un moment donné, mais qui ont depuis été retirées du pool "
 "de cartes."
 
-#: addons/formerly_official_maps.wad/addon:4
+#: addons/formerly_official_maps.wad/addon:4 input:4 standard
 msgid "The Widelands Development Team"
 msgstr "L'équipe de développement Widelands"
+
+#: input:5 standard
+msgid ""
+"A huge Europe map. Blue=Sweden, Red=Italy, Yellow=Spain, Green=Turkey, "
+"Black=Russia, Orange=England, Purple=France, White=Poland"
+msgstr ""

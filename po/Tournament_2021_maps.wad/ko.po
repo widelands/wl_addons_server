@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2021-05-01 11:43+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -22,12 +22,14 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: Coal.wmf/elemental:8
-#: addons/Tournament_2021_maps.wad/Tournament_2021/Last_Survivors_No
+#: addons/Tournament_2021_maps.wad/Tournament_2021/Last_Survivors_No input:10
+#: standard
 msgid "Last Survivors (no coal)"
 msgstr "마지막 생존자 (석탄 없음)"
 
 #: Coal.wmf/elemental:10
-#: addons/Tournament_2021_maps.wad/Tournament_2021/Last_Survivors_No
+#: addons/Tournament_2021_maps.wad/Tournament_2021/Last_Survivors_No input:6
+#: standard
 msgid ""
 "Four tribes fighting for dominance in a stark area. Resources are scattered "
 "all over the map."
@@ -36,36 +38,44 @@ msgstr ""
 "있습니다."
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/Char_Wars.wmf/elemental:8
+#: input:10 standard
 msgid "Char Wars – The Empire Burns Coal"
 msgstr "황제들의 전쟁 – 석탄을 태우는 왕국"
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/Char_Wars.wmf/elemental:10
+#: input:6 standard
 msgid "Autumn became winter. Some things are frozen, but not the war."
 msgstr "가을이 겨울이 되었다. 몇몇은 얼어버렸지만, 전쟁만큼은 아니었다."
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/Char_Wars.wmf/elemental:11
+#: input:7 standard
 msgid "Start positions are clockwise"
 msgstr "시작 위치는 시계방향입니다"
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/CoalCleanCycles.wmf/elemental:8
+#: input:10 standard
 msgid "Coal Clean Cycles"
 msgstr "석탄 재활용 순환"
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/CoalCleanCycles.wmf/elemental:10
+#: input:6 standard
 msgid "Periodic map for 8 players. Enough resources, no seafaring."
 msgstr ""
 "8명의 플레이어에게 지도가 주어집니다. 자원은 충분하고, 항해는 허용되지 않습니"
 "다."
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/CoalCleanCycles.wmf/elemental:11
+#: input:7 standard
 msgid "All positions are fully equal! :)"
 msgstr "모든 위치는 동등합니다! :)"
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/Colonies_noCoal.wmf/elemental:8
+#: input:10 standard
 msgid "Colonies (no coal)"
 msgstr "식민지 (석탄 없음)"
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/Colonies_noCoal.wmf/elemental:10
+#: input:6 standard
 msgid ""
 "Four leaders begun their journey on a small island. They try to escape using "
 "long rivers. Who will win the battles? Who will win the war?"
@@ -74,10 +84,12 @@ msgstr ""
 "고 합니다. 누가 전투에서 승리할까요? 누가 이 전쟁의 승자가 될까요?"
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/Cross_8_No_Coal.wmf/elemental:8
+#: input:10 standard
 msgid "Cross 8 (no coal)"
 msgstr "Cross 8 (석탄 없음)"
 
 #: addons/Tournament_2021_maps.wad/Tournament_2021/Cross_8_No_Coal.wmf/elemental:10
+#: input:6 standard
 msgid ""
 "A single convoluted continent; with the starting positions near the centre. "
 msgstr "하나의 통합된 대륙; 시작 위치는 중앙 근방입니다."
@@ -95,14 +107,23 @@ msgstr ""
 "습니다 - 전체 지도의 동, 서, 남, 북 방향의 바깥부의 중심. 상대편의 연결부를 "
 "파괴하고, 요새를 지어서 상대편의 연결을 끊으면 승리합니다."
 
-#: addons/Tournament_2021_maps.wad/addon:4
+#: addons/Tournament_2021_maps.wad/addon:4 input:9 standard
 msgid "Tournament 2021 Maps"
 msgstr "토너먼트 2021 맵"
 
-#: addons/Tournament_2021_maps.wad/addon:5
+#: addons/Tournament_2021_maps.wad/addon:5 input:6 standard
 msgid "Maps for the 2021 Tournament"
 msgstr "토너먼트 2021 공식 맵"
 
-#: addons/Tournament_2021_maps.wad/dirnames:4
+#: addons/Tournament_2021_maps.wad/dirnames:4 standard input:4
 msgid "Tournament 2021"
 msgstr "토너먼트 2021"
+
+#: input:7 standard
+msgid ""
+"Head away from the centre. I suggest victory condition=territorial lord (or "
+"Autocrat).  The map is made up of 4 large land masses, connected at the "
+"outer edge - at the middle of the North, South, West & East edges of the "
+"map. Beat the opposition to the 'connectors', and build a fortress etc, to "
+"block the other side's access, and you win."
+msgstr ""

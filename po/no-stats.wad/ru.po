@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2024-01-10 16:14+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,10 +24,10 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/no-stats.wad/addon:6
+#: addons/no-stats.wad/addon:6 input:6 standard
 msgid "Increases fog of war by not showing statistics about the other players."
 msgstr "Увеличивает туман войны, не показывая статистику об остальных игроках."
 
-#: addons/no-stats.wad/addon:9
+#: addons/no-stats.wad/addon:9 input:9 standard
 msgid "no player stats"
 msgstr "нет статистики по игрокам"

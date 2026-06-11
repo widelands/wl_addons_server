@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-13 03:10+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:18+0200\n"
 "PO-Revision-Date: 2021-07-11 03:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2025\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -21,11 +21,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/europeans_map_modified.wad/addon:2
+#: addons/europeans_map_modified.wad/addon:2 input:7 standard
 msgid "Two modified Europeans maps"
 msgstr "Zwei modifizierte Europakarten"
 
-#: addons/europeans_map_modified.wad/addon:3
+#: addons/europeans_map_modified.wad/addon:3 input:6 standard
 msgid ""
 "Adds a modified map version of Europa. Renaming the player positions to "
 "ancient tribes and adding more walkable connections to islands. Thx "
@@ -35,9 +35,19 @@ msgstr ""
 "Spielerpositionen nach antiken Stämmen und fügt mehr begehbare Verbindungen "
 "zwischen Inseln hinzu. Danke an Holloweye für die originale Karte."
 
-#: input:8 standard
+#: input:6 standard
+msgid ""
+"A huge Europe map. Blue=Frisians, Red=Amazons, Yellow=Vikings, "
+"Green=Ottomans, Black=Slavs, Orange=Romans, Purple=Germans, White=Greeks"
+msgstr ""
+
+#: input:8 input:10 standard
 msgid "Europa 1.2 modified with additional land bridges"
 msgstr "Europa 1.2 modifiziert mit zusätzlichen Landbrücken"
+
+#: input:8 standard input:10
+msgid "Europa 1.2 modified with additional sea straits"
+msgstr "Europa 1.2 modifiziert mit zusätzlichen Seewegen"
 
 #: input:10 standard
 msgid ""
@@ -48,11 +58,7 @@ msgstr ""
 "Grün = Ottomanen, Schwarz = Slawen, Orange = Römer, Lila = Germanen, Weiß = "
 "Griechen"
 
-#: standard input:8
-msgid "Europa 1.2 modified with additional sea straits"
-msgstr "Europa 1.2 modifiziert mit zusätzlichen Seewegen"
-
-#: standard input:10
+#: input:10 standard
 msgid ""
 "A huge Europe map. Blue = Frisians, Red = Amazons, Yellow = Vkings, Green = "
 "Ottomans, Black = Slavs, Orange = Romans, Purple = Germans, White = Greeks"
@@ -60,3 +66,9 @@ msgstr ""
 "Eine große Europa Karte. Blau = Friesen, Rot = Amazonen, Gelb = Wikinger, "
 "Grün = Ottomanen, Schwarz = Slawen, Orange = Römer, Lila = Germanen, Weiß = "
 "Griechen"
+
+#: standard input:6
+msgid ""
+"A huge Europe map. Blue=Frisians, Red=Amazons, Yellow=Vkings, "
+"Green=Ottomans, Black=Slavs, Orange=Romans, Purple=Germans, White=Greeks"
+msgstr ""

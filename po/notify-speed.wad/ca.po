@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 03:19+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2024-08-11 12:06+0000\n"
 "Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,26 +22,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/notify-speed.wad/addon:2
+#: addons/notify-speed.wad/addon:2 input:9 standard
 msgid "Speed Down on Notify"
 msgstr "Redueix la velocitat a la notificació"
 
-#: addons/notify-speed.wad/addon:3
+#: addons/notify-speed.wad/addon:3 input:6 standard
 msgid ""
 "Reduce the game speed to 1× whenever a new message arrives in your inbox."
 msgstr ""
 "Redueix la velocitat del joc a 1x cada vegada que arribi un missatge nou a "
 "la teva safata d'entrada."
 
-#: addons/notify-speed.wad/init.lua:15
+#: addons/notify-speed.wad/init.lua:15 input:15 standard
 msgid "Speed Down on Notify Disabled"
 msgstr "Redueix la velocitat en notificar desactivat"
 
-#: addons/notify-speed.wad/init.lua:15
+#: addons/notify-speed.wad/init.lua:15 input:15 standard
 msgid "Speed Down on Notify Enabled"
 msgstr "Redueix la velocitat amb la notificació activada"
 
-#: addons/notify-speed.wad/init.lua:17
+#: addons/notify-speed.wad/init.lua:17 input:17 standard
 msgid ""
 "The game will from now on be sped down to 1× speed whenever a new inbox "
 "message arrives. You can disable ‘Speed Down on Notify’ mode by using the "
@@ -52,7 +52,7 @@ msgstr ""
 "\"Redueix la velocitat en notificar\" tornant a utilitzar el botó de la "
 "barra d'eines."
 
-#: addons/notify-speed.wad/init.lua:18
+#: addons/notify-speed.wad/init.lua:18 input:18 standard
 msgid ""
 "The game will no longer be sped down when a new inbox message arrives. You "
 "can re-enable ‘Speed Down on Notify’ mode by using the toolbar button again."
@@ -62,10 +62,11 @@ msgstr ""
 "a utilitzar el botó de la barra d'eines."
 
 #: addons/notify-speed.wad/init.lua:41 addons/notify-speed.wad/shortcuts.lua:6
+#: input:41 standard input:6
 msgid "Toggle ‘Speed Down on Notify’ Mode"
 msgstr "Commuta el mode \"Redueix la velocitat en notificar\"."
 
-#: addons/notify-speed.wad/init.lua:42
+#: addons/notify-speed.wad/init.lua:42 input:42 standard
 msgid ""
 "Toggle whether to speed the game down when a new notification is received."
 msgstr "Commuta si vols accelerar el joc quan es rebi una notificació nova."

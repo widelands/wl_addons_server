@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-26 03:15+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2026-05-25 08:48+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>, 2026\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
@@ -22,10 +22,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Accurate_Europe_1_3.wad/addon:4 input:8 standard
+#: addons/Accurate_Europe_1_3.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Accurate Europe 1.3"
 msgstr ""
 
-#: addons/Accurate_Europe_1_3.wad/dirnames:4
+#: addons/Accurate_Europe_1_3.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Add-On Maps"
+
+#: input:6 standard
+msgid ""
+"Warning: This map is provided as an experimental preview. Although it is "
+"better in many ways than Europa 1.2 that it replaces, it probably still has "
+"bugs. Furthermore, it is a very large map with more player positions than "
+"generally recommended, so it has high hardware requirements.  — <br> <br> "
+"<br>A map for roleplaying historical empires.  <br>– This map of Europe aims "
+"to be as accurate as practically possible in Widelands.  <br>– EASY: Ottoman "
+"Empire, Sweden, Russian Empire, Carthage  <br>– MEDIUM: French Empire, "
+"British Empire, Spain, German Empire, Roman Empire  <br>– HARD: Egypt, "
+"Poland, Greece"
+msgstr ""
+
+#: input:7 standard
+msgid ""
+"The wide rivers are navigable to create a ”trade network”.  <br>All players "
+"have their own challenges, but are relatively balanced to be playable:  "
+"<br>– British Empire: create sustainable colonies  <br>– Russian Empire: "
+"Very large distances …"
+msgstr ""

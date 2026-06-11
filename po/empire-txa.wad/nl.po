@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 03:13+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2026-04-25 19:34+0000\n"
 "Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/empire-txa.wad/addon:6
+#: addons/empire-txa.wad/addon:6 input:6 standard
 msgid ""
 "This is the add-on version of the Empire changes proposed in the balancing "
 "PRs."
@@ -29,13 +29,14 @@ msgstr ""
 "Dit is de aanvullende versie van de wijzigingen voor Empire die in de PR’s "
 "voor de balansaanpassingen zijn voorgesteld."
 
-#: addons/empire-txa.wad/addon:8 addons/empire-txa.wad/postload.lua:13
+#: addons/empire-txa.wad/addon:8 addons/empire-txa.wad/postload.lua:13 input:8
+#: input:13 standard
 msgid "Easier Empire"
 msgstr "Easier Empire"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/empire-txa.wad/programs/marblemine.lua:6
-#: addons/empire-txa.wad/programs/quarry.lua:6
+#: addons/empire-txa.wad/programs/quarry.lua:6 input:6 standard
 msgid "working"
 msgstr "werkende"
 
@@ -43,7 +44,8 @@ msgstr "werkende"
 #: addons/empire-txa.wad/programs/marblemine.lua:18
 #: addons/empire-txa.wad/programs/marblemine.lua:45
 #: addons/empire-txa.wad/programs/marblemine_deep.lua:18
-#: addons/empire-txa.wad/programs/marblemine_deep.lua:47
+#: addons/empire-txa.wad/programs/marblemine_deep.lua:47 input:18 input:45
+#: input:47 standard
 msgid "mining granite"
 msgstr "graniet delven"
 
@@ -52,16 +54,17 @@ msgstr "graniet delven"
 #: addons/empire-txa.wad/programs/marblemine.lua:53
 #: addons/empire-txa.wad/programs/marblemine_deep.lua:6
 #: addons/empire-txa.wad/programs/marblemine_deep.lua:33
-#: addons/empire-txa.wad/programs/marblemine_deep.lua:55
+#: addons/empire-txa.wad/programs/marblemine_deep.lua:55 input:6 input:32
+#: input:33 input:53 input:55 standard
 msgid "mining marble"
 msgstr "marmer delven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-#: addons/empire-txa.wad/programs/piggery.lua:6
+#: addons/empire-txa.wad/programs/piggery.lua:6 input:6 standard
 msgid "raising pigs"
 msgstr "varkens houden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
-#: addons/empire-txa.wad/programs/stonemason.lua:6
+#: addons/empire-txa.wad/programs/stonemason.lua:6 standard input:6
 msgid "sculpting a marble column"
 msgstr "een marmeren zuil beeldhouwen"

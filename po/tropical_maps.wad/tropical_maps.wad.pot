@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:8
+#: input:10 standard
 msgid "Tropical Mauritius"
 msgstr ""
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:10
+#: input:6 standard
 msgid ""
 "There are rather rocky hills than mountains on this tropical island. But we "
 "still should find some ores for our economy."
 msgstr ""
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:11
+#: input:7 standard
 msgid ""
 "The map is balanced for 2 or 4  players. Orange player (Grand Bay) and grey "
 "player (The City of Light) are optional. The first one has not enough "
@@ -35,22 +38,26 @@ msgid ""
 msgstr ""
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:8
+#: input:10 standard
 msgid "Tropical Sumatra"
 msgstr ""
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:10
+#: input:6 standard
 msgid "Two big tropical islands rich in resources"
 msgstr ""
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:11
+#: input:7 standard
 msgid ""
 "Map is optimal for 4 or 6 players. Other starting positions are optional."
 msgstr ""
 
-#: addons/tropical_maps.wad/addon:4 addons/tropical_maps.wad/dirnames:4
+#: addons/tropical_maps.wad/addon:4 addons/tropical_maps.wad/dirnames:4 input:9
+#: standard standard input:4
 msgid "Tropical Maps"
 msgstr ""
 
-#: addons/tropical_maps.wad/addon:5
+#: addons/tropical_maps.wad/addon:5 input:6 standard
 msgid "This addon needs tropics.wad."
 msgstr ""

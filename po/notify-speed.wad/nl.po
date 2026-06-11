@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2024-08-11 12:06+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -21,26 +21,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/notify-speed.wad/addon:2
+#: addons/notify-speed.wad/addon:2 input:9 standard
 msgid "Speed Down on Notify"
 msgstr "Tempo verlagen bij een melding"
 
-#: addons/notify-speed.wad/addon:3
+#: addons/notify-speed.wad/addon:3 input:6 standard
 msgid ""
 "Reduce the game speed to 1× whenever a new message arrives in your inbox."
 msgstr ""
 "Verminder de spelsnelheid tot 1× wanneer er een nieuw bericht in je inbox "
 "binnenkomt."
 
-#: addons/notify-speed.wad/init.lua:15
+#: addons/notify-speed.wad/init.lua:15 input:15 standard
 msgid "Speed Down on Notify Disabled"
 msgstr "Snelheid omlaag bij melding uitgeschakeld"
 
-#: addons/notify-speed.wad/init.lua:15
+#: addons/notify-speed.wad/init.lua:15 input:15 standard
 msgid "Speed Down on Notify Enabled"
 msgstr "Snelheid omlaag bij melding ingeschakeld"
 
-#: addons/notify-speed.wad/init.lua:17
+#: addons/notify-speed.wad/init.lua:17 input:17 standard
 msgid ""
 "The game will from now on be sped down to 1× speed whenever a new inbox "
 "message arrives. You can disable ‘Speed Down on Notify’ mode by using the "
@@ -50,7 +50,7 @@ msgstr ""
 "inboxbericht binnenkomt. Je kunt de modus 'Snelheid omlaag bij melding' weer "
 "uitschakelen met de knop op de werkbalk."
 
-#: addons/notify-speed.wad/init.lua:18
+#: addons/notify-speed.wad/init.lua:18 input:18 standard
 msgid ""
 "The game will no longer be sped down when a new inbox message arrives. You "
 "can re-enable ‘Speed Down on Notify’ mode by using the toolbar button again."
@@ -60,10 +60,11 @@ msgstr ""
 "de knop op de werkbalk."
 
 #: addons/notify-speed.wad/init.lua:41 addons/notify-speed.wad/shortcuts.lua:6
+#: input:41 standard input:6
 msgid "Toggle ‘Speed Down on Notify’ Mode"
 msgstr "Modus 'Snelheid omlaag bij melding' wisselen"
 
-#: addons/notify-speed.wad/init.lua:42
+#: addons/notify-speed.wad/init.lua:42 input:42 standard
 msgid ""
 "Toggle whether to speed the game down when a new notification is received."
 msgstr ""

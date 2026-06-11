@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2022-03-27 09:46+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,14 +24,14 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/larger_font_theme.wad/addon:6
+#: addons/larger_font_theme.wad/addon:6 input:6 standard
 msgid "Theme with larger fonts."
 msgstr "Тема с более крупными шрифтами."
 
-#: addons/larger_font_theme.wad/addon:9
+#: addons/larger_font_theme.wad/addon:9 input:9 standard
 msgid "Larger Font Theme"
 msgstr "Тема с крупным шрифтом"
 
-#: screenshots/larger_font_theme.wad/descriptions:3
+#: input:3 screenshots/larger_font_theme.wad/descriptions:3 standard
 msgid "Main Menu example of larger fonts"
 msgstr "Пример Главного меню с увеличенным шрифтом"

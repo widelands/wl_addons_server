@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-05-27 14:11+0000\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/widelands/"
 "teams/35159/pt_BR/)\n"
@@ -22,11 +22,11 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/royal.wad/addon:2 addons/royal.wad/atlanteans.lua:11
 #: addons/royal.wad/barbarians.lua:11 addons/royal.wad/empire.lua:11
-#: addons/royal.wad/frisians.lua:11
+#: addons/royal.wad/frisians.lua:11 input:7 input:11 standard
 msgid "Royal"
 msgstr ""
 
-#: addons/royal.wad/addon:3
+#: addons/royal.wad/addon:3 input:6 standard
 msgid ""
 "A headquarters-like starting condition with approximately 30% more wares and "
 "workers."
@@ -34,7 +34,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Royal" starting condition
 #: addons/royal.wad/atlanteans.lua:13 addons/royal.wad/barbarians.lua:13
-#: addons/royal.wad/empire.lua:13 addons/royal.wad/frisians.lua:13
+#: addons/royal.wad/empire.lua:13 addons/royal.wad/frisians.lua:13 input:13
+#: standard
 msgid ""
 "Start the game with just your headquarters and a large number of wares and "
 "workers"

@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-24 03:14+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2026-04-25 19:35+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>, 2026\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
@@ -23,28 +23,29 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/amazons-txa.wad/addon:2 addons/amazons-txa.wad/postload.lua:11
+#: input:8 input:11 standard
 msgid "Harder Amazons"
 msgstr ""
 
-#: addons/amazons-txa.wad/addon:3
+#: addons/amazons-txa.wad/addon:3 input:6 standard
 msgid ""
 "This is the add-on version of the Amazon changes proposed in the balancing "
 "PR."
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/amazons-txa.wad/charcoal_master/init.lua:8
+#: addons/amazons-txa.wad/charcoal_master/init.lua:8 input:8 standard
 msgctxt "amazons_worker"
 msgid "Charcoal Master"
 msgstr ""
 
-#: addons/amazons-txa.wad/postload.lua:16
+#: addons/amazons-txa.wad/postload.lua:16 input:16 standard
 msgctxt "amazons_worker"
 msgid "Burns rare trees to produce charcoal more efficiently."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Amazon production site: Rare Tree Kiln
-#: addons/amazons-txa.wad/postload.lua:26
+#: addons/amazons-txa.wad/postload.lua:26 input:26 standard
 msgctxt "amazons_building"
 msgid ""
 "‘You think you've mastered the art of burning charcoal. But the best "
@@ -55,19 +56,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Amazon production site: Rare Tree Kiln
-#: addons/amazons-txa.wad/postload.lua:28
+#: addons/amazons-txa.wad/postload.lua:28 input:28 standard
 msgctxt "amazons_building"
 msgid "Mistress Blackwood, teaching an apprentice"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Amazon production site: Rare Tree Kiln
-#: addons/amazons-txa.wad/postload.lua:30
+#: addons/amazons-txa.wad/postload.lua:30 input:30 standard
 msgctxt "amazons_building"
 msgid "Burns rare trees into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Rare Tree Kiln
-#: addons/amazons-txa.wad/postload.lua:32
+#: addons/amazons-txa.wad/postload.lua:32 input:32 standard
 #, lua-format
 msgctxt "amazons_building"
 msgid ""
@@ -77,115 +78,119 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing charcoal because ...
 #: addons/amazons-txa.wad/programs/charcoal_kiln.lua:6
-#: addons/amazons-txa.wad/rare_tree_kiln/init.lua:43
+#: addons/amazons-txa.wad/rare_tree_kiln/init.lua:43 input:6 input:43 standard
 msgid "producing charcoal"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing a light wooden armor because ...
-#: addons/amazons-txa.wad/programs/dressmakery.lua:6
+#: addons/amazons-txa.wad/programs/dressmakery.lua:6 input:6 standard
 msgid "making a light wooden armor"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
-#: addons/amazons-txa.wad/programs/dressmakery.lua:18
+#: addons/amazons-txa.wad/programs/dressmakery.lua:18 input:18 standard
 msgid "making a wooden helmet"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making sturdy boots because ...
-#: addons/amazons-txa.wad/programs/dressmakery.lua:30
+#: addons/amazons-txa.wad/programs/dressmakery.lua:30 input:30 standard
 msgid "making sturdy boots"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
-#: addons/amazons-txa.wad/programs/dressmakery.lua:42
+#: addons/amazons-txa.wad/programs/dressmakery.lua:42 input:42 standard
 msgid "making swift boots"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making hero boots because ...
-#: addons/amazons-txa.wad/programs/dressmakery.lua:54
+#: addons/amazons-txa.wad/programs/dressmakery.lua:54 input:54 standard
 msgid "making hero boots"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:6
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:24
-#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:37
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:37 input:6 input:24
+#: input:37 standard
 msgid "working"
 msgstr "working"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting balsa because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:49
-#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:73
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:73 input:49 input:73
+#: standard
 msgid "harvesting balsa"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:57
-#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:85
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:85 input:57 input:85
+#: standard
 msgid "harvesting rubber"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting ironwood because ...
 #: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:65
-#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:97
+#: addons/amazons-txa.wad/programs/rare_tree_cutter.lua:97 input:65 input:97
+#: standard
 msgid "harvesting ironwood"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:10
+#: addons/amazons-txa.wad/programs/training_glade.lua:10 input:10 standard
 msgid "sleeping"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:18
+#: addons/amazons-txa.wad/programs/training_glade.lua:18 input:18 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:32
+#: addons/amazons-txa.wad/programs/training_glade.lua:32 input:32 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:47
+#: addons/amazons-txa.wad/programs/training_glade.lua:47 input:47 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 2 to level 3"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:62
+#: addons/amazons-txa.wad/programs/training_glade.lua:62 input:62 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:76
+#: addons/amazons-txa.wad/programs/training_glade.lua:76 input:76 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:91
+#: addons/amazons-txa.wad/programs/training_glade.lua:91 input:91 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 2 to level 3"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:106
+#: addons/amazons-txa.wad/programs/training_glade.lua:106 input:106 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/amazons-txa.wad/programs/training_glade.lua:121
+#: addons/amazons-txa.wad/programs/training_glade.lua:121 input:121 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/amazons-txa.wad/rare_tree_kiln/init.lua:8
+#: addons/amazons-txa.wad/rare_tree_kiln/init.lua:8 input:8 standard
 msgctxt "amazons_building"
 msgid "Rare Tree Kiln"
 msgstr ""

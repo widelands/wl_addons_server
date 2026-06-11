@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-07-07 18:30+0000\n"
 "Language-Team: Polish (https://app.transifex.com/widelands/teams/35159/pl/)\n"
 "Language: pl\n"
@@ -19,102 +19,38 @@ msgstr ""
 "(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: addons/Maps_from_Teayo.wad/addon:6
+#: addons/Maps_from_Teayo.wad/addon:6 input:6 standard
 msgid ""
 "This Addon contains all of my Maps. Some of my Maps are also on the "
 "Widelands Website Maps archive aviable. Maps Total : 25 , Major Maps : 9 , "
 "Variant Maps : 15 , Major Maps with Variant Maps : 5"
 msgstr ""
 
-#: addons/Maps_from_Teayo.wad/addon:9
+#: addons/Maps_from_Teayo.wad/addon:9 input:9 standard
 msgid "Maps_from_Teayo"
 msgstr ""
 
-#: addons/Maps_from_Teayo.wad/dirnames:4
+#: addons/Maps_from_Teayo.wad/dirnames:4 standard input:4
 msgid "Teayo's Karten"
 msgstr ""
 
-#: input:8 standard
-msgid "Circle Island"
+#: input:3 screenshots/Maps_from_Teayo.wad/descriptions:3 standard
+msgid "A Overview of the Map Circle Island in Editor"
 msgstr ""
 
-#: input:8 standard
-msgid "Far small islands"
+#: input:4 screenshots/Maps_from_Teayo.wad/descriptions:4 standard
+msgid "A Overview of the Map Lack of Space in Editor"
 msgstr ""
 
-#: input:8 standard
-msgid "Lack of Space 08-64"
+#: input:5 screenshots/Maps_from_Teayo.wad/descriptions:5 standard
+msgid "A Overview of the Map Lack of Space 2 in Editor"
 msgstr ""
 
-#: input:8 standard
-msgid "Lack of Space 16-96"
+#: input:6 screenshots/Maps_from_Teayo.wad/descriptions:6 standard
+msgid "A Overview of the Map Rectangle Valley Variant 1 in Editor"
 msgstr ""
 
-#: input:8 standard
-msgid "Ozean Raster Vorlage"
-msgstr ""
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 1"
-msgstr ""
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 2"
-msgstr ""
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 3"
-msgstr ""
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 4"
-msgstr ""
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 5"
-msgstr ""
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 6"
-msgstr ""
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 7"
-msgstr ""
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 8"
-msgstr ""
-
-#: input:8 standard
-msgid "Rhombus Valley"
-msgstr ""
-
-#: input:8 standard
-msgid "Square Valley"
-msgstr ""
-
-#: input:8 standard
-msgid "Tichupane - Desert"
-msgstr ""
-
-#: input:8 standard
-msgid "Tichupane - Summer"
-msgstr ""
-
-#: input:8 standard
-msgid "Tichupane - Wasteland"
-msgstr ""
-
-#: input:8 standard
-msgid "Tichupane - Winter"
-msgstr ""
-
-#: input:8 standard
-msgid "Triangle Volcano Island"
-msgstr ""
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A circular island with a large mountain in the middle. Eight valleys run "
 "through the edges of the mountain. Large stone deposits are in the valleys. "
@@ -122,7 +58,7 @@ msgid ""
 "lot of wildlife. Harbors can be built on the island's beach."
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A multiplayer map designed for short rounds. Whoever builds the best economy "
 "fastest has the best chance of conquering the whole island. Artifacts are "
@@ -135,7 +71,7 @@ msgid ""
 "Title, Description and Hint from german into english. ] ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A symmetrical green square valley surrounded by resource-rich mountains. Two "
 "small forests and rock formations are present in balanced quantities at the "
@@ -151,7 +87,7 @@ msgid ""
 "Title, Description and Hint from german into english. ] ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A very small, symmetrical valley with adequate forest, rock formations, "
 "fish, and ore resources. The map is designed for multiplayer. Designed for "
@@ -163,7 +99,7 @@ msgid ""
 "german into english. ] ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Eight islands in the middle of the ocean. Each island has six harbor "
 "building sites, one harbor building site in each corner of the island. All "
@@ -174,14 +110,14 @@ msgid ""
 "offers sufficient building space."
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Eine Vorlage Karte ohne Spieler und mit Raster auf einen Ozean. Eine gute "
 "Grundlage um eine symetrische, ausgewogene Karte darauf aufbauend zu "
 "erstellen."
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Fight against seven other opponents with minimal resources and minimal "
 "building space. All resources are sufficiently available at the start. This "
@@ -193,7 +129,7 @@ msgid ""
 "Rocks. ] ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Fight against seven other opponents with minimal resources and minimal "
 "building space. All resources are sufficiently available at the start. This "
@@ -204,7 +140,7 @@ msgid ""
 "english. ] ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "It is a heavily forested island with a volcanic mountain in the middle. Rock "
 "formations are scattered everywhere. Near the starting positions there is a "
@@ -216,7 +152,7 @@ msgid ""
 "german into english. Remastered the Fish-Resources and Heigth Layer. ] ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 1 : [ Difficultly : Very easy , Special : None ] , A map for normal "
 "rounds. Water and mountains are right next to the starting position. There "
@@ -234,7 +170,7 @@ msgid ""
 "Description and Hint from german into english. ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 2 : [ Difficultly : Easy , Special : No Animals and Fishes ] , A map "
 "for normal rounds. Water and mountains are right next to the starting "
@@ -252,7 +188,7 @@ msgid ""
 "Translated the Map Title, Description and Hint from german into english. ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 3 : [ Difficultly : Medium , Special : No Trees and Rocks ] , A map "
 "for normal rounds. Water and mountains are right next to the starting "
@@ -270,7 +206,7 @@ msgid ""
 "Translated the Map Title, Description and Hint from german into english. ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 4 : [ Difficultly : Medium , Special : No Coal ] , A map for normal "
 "rounds. Water and mountains are right next to the starting position. There "
@@ -288,7 +224,7 @@ msgid ""
 "Description and Hint from german into english. ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 5 : [ Difficultly : Hard , Special : No Trees, Rocks, Animals and "
 "Fishes ] , A map for normal rounds. Water and mountains are right next to "
@@ -306,7 +242,7 @@ msgid ""
 "Translated the Map Title, Description and Hint from german into english. ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 6 : [ Difficultly : Very hard , Special : No Trees, Rocks, Coal, "
 "Animals and Fishes ] , A map for normal rounds. Water and mountains are "
@@ -325,7 +261,7 @@ msgid ""
 "Hint from german into english. ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 7 : [ Difficultly : Medium , Special : No Gold, Iron and Coal ] , A "
 "map for normal rounds. Water and mountains are right next to the starting "
@@ -343,7 +279,7 @@ msgid ""
 "Translated the Map Title, Description and Hint from german into english. ]"
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 8 : [ Difficultly : Brutal , Special : No Trees, Rocks, Animals, "
 "Fishes, Gold, Iron and Coal ] , A map for normal rounds. Water and mountains "
@@ -362,7 +298,11 @@ msgid ""
 "Hint from german into english. ]"
 msgstr ""
 
-#: input:11 standard
+#: input:7 screenshots/Maps_from_Teayo.wad/descriptions:7 standard
+msgid "A Overview of the Map Rectangle Valley Variant 8 in Editor"
+msgstr ""
+
+#: input:7 input:11 standard
 msgid ""
 "Ports : 54 (6 per Island, 1 per Island Corner) , Artifacts : 1 (Center "
 "Island) , Mountain Resources : Many 5/5 , Trees : Many 5/5 , Rocks : Medium "
@@ -371,7 +311,7 @@ msgid ""
 "Medium 3/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Many 4/5 , "
 "Trees : Few 2/5 , Rocks : Medium 3/5 , Animals : Few 2/5 , Fishes : Many 4/5 "
@@ -379,7 +319,7 @@ msgid ""
 "Big building Places : Many 4/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Many 4/5 , "
 "Trees : Few 2/5 , Rocks : Medium 3/5 , Animals : Few 2/5 , Fishes : Medium "
@@ -387,7 +327,7 @@ msgid ""
 "3/5 , Big building Places : Many 4/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Many 5/5 , "
 "Trees : Few 1/5 , Rocks : Many 4/5 , Animals : Medium 3/5 , Fishes : Many "
@@ -395,7 +335,7 @@ msgid ""
 "1/5 , Big building Places : Many 4/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Medium 3/5 , "
 "Trees : Many 4/5 , Rocks : Medium 3/5 , Animals : Medium 3/5 , Fishes : Many "
@@ -403,7 +343,7 @@ msgid ""
 "1/5 , Big building Places : Many 4/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 (But only Stone) , Trees : None , Rocks : "
@@ -411,7 +351,7 @@ msgid ""
 "Height steepness : Low 1/5 , Big building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 (But without coal) , Trees : Many 5/5 , "
@@ -420,7 +360,7 @@ msgid ""
 "Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 (But without coal) , Trees : None , Rocks : "
@@ -428,7 +368,7 @@ msgid ""
 "Height steepness : Low 1/5 , Big building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 , Trees : Many 5/5 , Rocks : Many 5/5 , "
@@ -437,7 +377,7 @@ msgid ""
 "5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 , Trees : Many 5/5 , Rocks : Many 5/5 , "
@@ -445,7 +385,7 @@ msgid ""
 "steepness : Low 1/5 , Big building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 , Trees : None , Rocks : None , Animals : Many "
@@ -453,7 +393,7 @@ msgid ""
 "Height steepness : Low 1/5 , Big building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 , Trees : None , Rocks : None , Animals : "
@@ -461,7 +401,7 @@ msgid ""
 "steepness : Low 1/5 , Big building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : Many 5/5 (But without Gold, Iron and Coal) , Trees : "
@@ -470,7 +410,7 @@ msgid ""
 "Big building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Medium 15 (5 per Player) , Artifacts : Many 15 (5 per Player) , "
 "Mountain Resources : High 4/5 , Trees : Many 4/5 , Rocks : Medium 3/5 , "
@@ -479,7 +419,7 @@ msgid ""
 "Medium 3/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : 5 (Centered) , Mountain Resources : High 4/5 , "
 "Trees : High 4/5 , Rocks : Medium 3/5 , Animals : Medium 3/5 , Fish : High "
@@ -487,7 +427,7 @@ msgid ""
 "1/5 , Big building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : Few 3 (1 per Player) , Mountain Resources : Few "
 "2/5 , Trees : Medium 3/5 , Rocks : Few 2/5 , Animals : Few 2/5 , Fish : "
@@ -495,7 +435,7 @@ msgid ""
 "Low 1/5 , Big building Places : Many 4/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : None , Mountain Resources : High 5/5 , Trees : "
 "Few 1/5 , Rocks : Few 2/5 , Animals : Medium 3/5 , Fish : Medium 3/5 (4 per "
@@ -503,7 +443,7 @@ msgid ""
 "building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : None , Mountain Resources : High 5/5 , Trees : "
 "Medium 3/5 , Rocks : Few 2/5 , Animals : Few 2/5 , Fish : High 5/5 (10 per "
@@ -511,7 +451,7 @@ msgid ""
 "building Places : Many 5/5"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : None , Mountain Ressources : High 4/5 , Trees : "
 "Many 5/5 , Rocks : Medium 3/5 , Animals : Few 2/5 , Fish : Few 2/5 (5 per "
@@ -519,54 +459,114 @@ msgid ""
 "building Places : Many 5/5"
 msgstr ""
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:3
-msgid "A Overview of the Map Circle Island in Editor"
-msgstr ""
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:4
-msgid "A Overview of the Map Lack of Space in Editor"
-msgstr ""
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:5
-msgid "A Overview of the Map Lack of Space 2 in Editor"
-msgstr ""
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:6
-msgid "A Overview of the Map Rectangle Valley Variant 1 in Editor"
-msgstr ""
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:7
-msgid "A Overview of the Map Rectangle Valley Variant 8 in Editor"
-msgstr ""
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:8
+#: input:8 screenshots/Maps_from_Teayo.wad/descriptions:8 standard
 msgid "A Overview of the Map Rhombus Valley in Editor"
 msgstr ""
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:9
+#: input:8 input:10 standard
+msgid "Circle Island"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Far small islands"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Lack of Space 08-64"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Lack of Space 16-96"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Ozean Raster Vorlage"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 1"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 2"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 3"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 4"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 5"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 6"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 7"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 8"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Rhombus Valley"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Square Valley"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Tichupane - Desert"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Tichupane - Summer"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Tichupane - Wasteland"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Tichupane - Winter"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Triangle Volcano Island"
+msgstr ""
+
+#: input:9 screenshots/Maps_from_Teayo.wad/descriptions:9 standard
 msgid "A Overview of the Map Square Valley in Editor"
 msgstr ""
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:10
+#: input:10 screenshots/Maps_from_Teayo.wad/descriptions:10 standard
 msgid "A Overview of the Map Triangle Volcano Island in Editor"
 msgstr ""
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:11
+#: input:11 screenshots/Maps_from_Teayo.wad/descriptions:11 standard
 msgid "A Overview of the Map Tichupane - Summer in Editor"
 msgstr ""
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:12
+#: input:12 screenshots/Maps_from_Teayo.wad/descriptions:12 standard
 msgid "A Overview of the Map Tichupane - Winter in Editor"
 msgstr ""
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:13
+#: input:13 screenshots/Maps_from_Teayo.wad/descriptions:13 standard
 msgid "A Overview of the Map Tichupane - Wasteland in Editor"
 msgstr ""
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:14
+#: input:14 screenshots/Maps_from_Teayo.wad/descriptions:14 standard
 msgid "A Overview of the Map Tichupane - Desert in Editor"
 msgstr ""
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:15
+#: input:15 screenshots/Maps_from_Teayo.wad/descriptions:15 standard
 msgid "A Overview of the Islands from the Map"
 msgstr ""

@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-01-23 13:07+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,11 +24,11 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/Artifacts_race.wad/addon:4 input:8 standard
+#: addons/Artifacts_race.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Artifacts race"
 msgstr "Погоня за артефактами."
 
-#: addons/Artifacts_race.wad/addon:5 input:10 standard
+#: addons/Artifacts_race.wad/addon:5 input:6 input:10 standard
 msgid ""
 "Face to face artifacts run! You will see your enemy most of the time and "
 "only the one who expands faster will win the game. Prepare yourself also for "
@@ -38,10 +38,10 @@ msgstr ""
 "видимости, и только тот, кто расширится быстрее, выиграет игру. "
 "Приготовьтесь к решающей схватке."
 
-#: addons/Artifacts_race.wad/dirnames:4
+#: addons/Artifacts_race.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Дополнение: карты"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid "This map is best suited for wincondition ''Artifacts''."
 msgstr "Эта карта лучше всего подходит для условия победы \"Артефакты\"."

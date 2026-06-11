@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:13+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-03-30 18:07+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/WideGreen.wad/addon:6
+#: addons/WideGreen.wad/addon:6 input:6 standard
 msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen. Gegner sind ganz nahe! Es kann "
@@ -46,12 +46,12 @@ msgstr ""
 "spenderar guldet på hamnar saknar du tillgång till ytterligare guld för "
 "hamnar och expeditioner till motståndaren."
 
-#: addons/WideGreen.wad/addon:9 addons/WideGreen.wad/dirnames:4 input:8
-#: standard
+#: addons/WideGreen.wad/addon:9 addons/WideGreen.wad/dirnames:4 input:8 input:9
+#: input:10 standard input:4
 msgid "WideGreen"
 msgstr "WideGreen"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen."
@@ -59,7 +59,7 @@ msgstr ""
 "Grönt och floder så långt ögat når. Expeditioner i hamnar är ett måste för "
 "att överhuvudtaget kunna nå motståndaren."
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Gegner sind ganz nahe! Es kann sich sehr lohnen möglichst schnell bestimmte "
 "Hafenbauplätze zu kontrollieren. Achte darauf, dass die Werften und die "

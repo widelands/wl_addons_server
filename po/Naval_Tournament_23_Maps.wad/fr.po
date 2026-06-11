@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-07-24 20:43+0000\n"
 "Last-Translator: David D, 2024\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -22,31 +22,19 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
 
-#: addons/Naval_Tournament_23_Maps.wad/addon:6
+#: addons/Naval_Tournament_23_Maps.wad/addon:6 input:6 standard
 msgid "Maps for the Naval Tournament 23"
 msgstr "Cartes pour le Tournoi Naval 23"
 
-#: addons/Naval_Tournament_23_Maps.wad/addon:9
+#: addons/Naval_Tournament_23_Maps.wad/addon:9 input:9 standard
 msgid "Naval Tournament 23 Maps"
 msgstr "Cartes du tournoi naval 23"
 
-#: addons/Naval_Tournament_23_Maps.wad/dirnames:4
+#: addons/Naval_Tournament_23_Maps.wad/dirnames:4 standard input:4
 msgid "Naval Tournament 23"
 msgstr "Tournoi naval 23"
 
-#: input:8 standard
-msgid "Naval Ice wars"
-msgstr "Guerres de glace navales"
-
-#: input:8 standard
-msgid "Plateau (Naval Warfare)"
-msgstr "Plateau (guerre navale)"
-
-#: input:8 standard
-msgid "Together We’re Strong (naval invasion)"
-msgstr "Ensemble, nous sommes forts (invasion navale)"
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A large island with coastal plains and a forested plateau. Rich in resources "
 "and plenty of flat building space along the coasts."
@@ -54,13 +42,13 @@ msgstr ""
 "Une grande île avec des plaines côtières et un plateau boisé. Riche en "
 "ressources et nombreux espaces de construction plats le long des côtes."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid "Autumn became winter. Some things are frozen, but not the war."
 msgstr ""
 "L'automne est devenu l'hiver. Certaines choses sont gelées, mais pas la "
 "guerre."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "The four mighty harbors of the Craw Islands have been trading their goods "
 "among each other for ages. All of them needed resources that they could not "
@@ -83,7 +71,7 @@ msgstr ""
 "les premiers combats entre les ports ne brisent la vie paisible qui dure "
 "depuis si longtemps…"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Added a river seggregating the 2 halfs of the start island to enforce naval "
 "warfare."
@@ -91,6 +79,18 @@ msgstr ""
 "Ajout d'une rivière séparant les 2 moitiés de l'île de départ pour renforcer "
 "la guerre navale."
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid "Start positions are clockwise"
 msgstr "Les positions de départ sont dans le sens des aiguilles d'une montre"
+
+#: input:8 input:10 standard
+msgid "Naval Ice wars"
+msgstr "Guerres de glace navales"
+
+#: input:8 input:10 standard
+msgid "Plateau (Naval Warfare)"
+msgstr "Plateau (guerre navale)"
+
+#: input:8 input:10 standard
+msgid "Together We’re Strong (naval invasion)"
+msgstr "Ensemble, nous sommes forts (invasion navale)"

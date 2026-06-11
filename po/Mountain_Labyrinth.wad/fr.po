@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-13 03:12+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2024-05-09 14:55+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -23,12 +23,12 @@ msgstr ""
 "1000000 == 0 ? 1 : 2;\n"
 
 #: addons/Mountain_Labyrinth.wad/AddOn_Maps/Mountain_Labyrinth.wmf/elemental:8
-#: addons/Mountain_Labyrinth.wad/addon:9
+#: addons/Mountain_Labyrinth.wad/addon:9 input:9 input:10 standard
 msgid "Mountain Labyrinth"
 msgstr "Labyrinthe de montagne"
 
 #: addons/Mountain_Labyrinth.wad/AddOn_Maps/Mountain_Labyrinth.wmf/elemental:10
-#: addons/Mountain_Labyrinth.wad/addon:6
+#: addons/Mountain_Labyrinth.wad/addon:6 input:6 standard
 msgid ""
 "The gods who created this piece of landscape must be crazy. They proove your "
 "skills in naval warefare and managing a big economy with long transportation "
@@ -40,6 +40,7 @@ msgstr ""
 "rendre fou dans ce labyrinthe de montagnes."
 
 #: addons/Mountain_Labyrinth.wad/AddOn_Maps/Mountain_Labyrinth.wmf/elemental:11
+#: input:7 standard
 msgid ""
 "Enabling Naval warefare is recommended. You have to sail the sea and build "
 "probably a lot of ports and shipyards until you reach your opponent. You "
@@ -54,6 +55,6 @@ msgstr ""
 "forcer le constructeur naval à construire des navires sur la côte souhaitée. "
 "L’IA ne fonctionne pas très bien sur cette carte. "
 
-#: addons/Mountain_Labyrinth.wad/dirnames:4
+#: addons/Mountain_Labyrinth.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Cartes complémentaires"

@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-26 02:13+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2022-12-11 09:24+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -22,29 +22,29 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
 
-#: addons/simple_map_generator.wad/addon:2
+#: addons/simple_map_generator.wad/addon:2 input:9 standard
 msgid "Simple Map Generator"
 msgstr "Générateur de cartes simples"
 
-#: addons/simple_map_generator.wad/addon:3
+#: addons/simple_map_generator.wad/addon:3 input:6 standard
 msgid "A proof-of-concept map generator that generates very, very simple maps."
 msgstr ""
 "Un générateur de cartes de preuve de concept qui génère des cartes très, "
 "très simples."
 
-#: addons/simple_map_generator.wad/init.lua:4
+#: addons/simple_map_generator.wad/init.lua:4 standard input:4
 msgid "Initializing map generator…"
 msgstr "Initialisation générateur carte..."
 
-#: addons/simple_map_generator.wad/init.lua:122
+#: addons/simple_map_generator.wad/init.lua:122 standard input:122
 msgid "Generating map… (%1$d / %2$d)"
 msgstr "Génération carte… (%1$d / %2$d)"
 
-#: addons/simple_map_generator.wad/init.lua:193
+#: addons/simple_map_generator.wad/init.lua:193 standard input:193
 msgid "Finalizing map…"
 msgstr "Finalisation carte..."
 
-#: addons/simple_map_generator.wad/init.lua:201
+#: addons/simple_map_generator.wad/init.lua:201 standard input:201
 #, lua-format
 msgid "Random Player %u"
 msgstr "Joueur aléatoire %u"

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 03:16+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2026-06-07 21:54+0000\n"
 "Language-Team: Gaelic, Scottish (https://app.transifex.com/widelands/"
 "teams/35159/gd/)\n"
@@ -19,14 +19,14 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
 
-#: addons/SoG.wad/addon:4 input:8 standard
+#: addons/SoG.wad/addon:4 input:8 input:9 input:10 standard
 msgid "SoG"
 msgstr ""
 
-#: addons/SoG.wad/addon:5 input:10 standard
+#: addons/SoG.wad/addon:5 input:6 input:10 standard
 msgid "a small map for you to practice with"
 msgstr ""
 
-#: addons/SoG.wad/dirnames:4
+#: addons/SoG.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr ""

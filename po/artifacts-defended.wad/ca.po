@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 03:18+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-11-25 20:04+0000\n"
 "Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,77 +22,77 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/artifacts-defended.wad/addon:4
+#: addons/artifacts-defended.wad/addon:4 input:9 standard
 msgid "artifacts, defended"
 msgstr "artefactes, defensats"
 
-#: addons/artifacts-defended.wad/defending.lua:61
+#: addons/artifacts-defended.wad/defending.lua:61 input:61 standard
 msgid "WARNING"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:115
+#: addons/artifacts-defended.wad/defending.lua:115 input:115 standard
 msgid "to conquer"
 msgstr "per conquerir"
 
-#: addons/artifacts-defended.wad/defending.lua:127
+#: addons/artifacts-defended.wad/defending.lua:127 input:127 standard
 msgid "Could not adapt the tribe."
 msgstr "No s'ha pogut adaptar la tribu."
 
-#: addons/artifacts-defended.wad/defending.lua:143
+#: addons/artifacts-defended.wad/defending.lua:143 input:143 standard
 msgid "Defending player can not be in a team, remove."
 msgstr "El jugador defensor no pot estar en un equip, eliminar."
 
-#: addons/artifacts-defended.wad/defending.lua:226
+#: addons/artifacts-defended.wad/defending.lua:226 input:226 standard
 msgid "ERROR placing building"
 msgstr "ERROR en col·locar l'edifici"
 
-#: addons/artifacts-defended.wad/defending.lua:233
+#: addons/artifacts-defended.wad/defending.lua:233 input:233 standard
 #, lua-format
 msgid "No matching artifact building named %s"
 msgstr "No hi ha cap edifici d'artefacte coincident anomenat %s"
 
-#: addons/artifacts-defended.wad/defending.lua:239
+#: addons/artifacts-defended.wad/defending.lua:239 input:239 standard
 msgid "wrong field found"
 msgstr "S'ha trobat un camp incorrecte"
 
-#: addons/artifacts-defended.wad/defending.lua:269
+#: addons/artifacts-defended.wad/defending.lua:269 input:269 standard
 #, lua-format
 msgid "The player %s has no artifacts to defend."
 msgstr "El jugador %s no té artefactes per defensar."
 
-#: addons/artifacts-defended.wad/defending.lua:271
+#: addons/artifacts-defended.wad/defending.lua:271 input:271 standard
 msgid "No artifacts"
 msgstr "Sense artefactes"
 
-#: addons/artifacts-defended.wad/defending.lua:297
+#: addons/artifacts-defended.wad/defending.lua:297 input:297 standard
 msgid "could not place normal artifact (1x)"
 msgstr "no s'ha pogut col·locar l'artefacte normal (1x)"
 
-#: addons/artifacts-defended.wad/defending.lua:365
+#: addons/artifacts-defended.wad/defending.lua:365 input:365 standard
 msgid "Several players configured for defending:"
 msgstr "Diversos jugadors configurats per defensar:"
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/artifacts-defended.wad/defending.lua:421
+#: addons/artifacts-defended.wad/defending.lua:421 input:421 standard
 msgid "This (ai) player will defend the artifacts."
 msgstr "Aquest jugador (ai) defensarà els artefactes."
 
 #. TRANSLATORS: This is the tooltip for the starting condition
-#: addons/artifacts-defended.wad/defending.lua:423
+#: addons/artifacts-defended.wad/defending.lua:423 input:423 standard
 msgid "Set the tribe to random for finding out in game what it will be."
 msgstr "Estableix la tribu a l'atzar per saber en el joc què serà."
 
-#: addons/artifacts-defended.wad/defending.lua:424
+#: addons/artifacts-defended.wad/defending.lua:424 input:424 standard
 msgid "Only for ai player as nothing can be done."
 msgstr "Només per al jugador ai ja que no es pot fer res."
 
-#: addons/artifacts-defended.wad/defending.lua:425
+#: addons/artifacts-defended.wad/defending.lua:425 input:425 standard
 msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
 msgstr ""
 "Es recomana configurar la IA en \"buida\" per evitar que els soldats siguin "
 "expulsats."
 
-#: addons/artifacts-defended.wad/defending.lua:426
+#: addons/artifacts-defended.wad/defending.lua:426 input:426 standard
 msgid ""
 "On maps with artifacts not reachable by a warrior, some artifacts will not "
 "be conquerable."
@@ -100,20 +100,27 @@ msgstr ""
 "Als mapes amb artefactes no accessibles per un guerrer, alguns artefactes no "
 "seran conquistables."
 
-#: addons/artifacts-defended.wad/defending.lua:436
+#: addons/artifacts-defended.wad/defending.lua:436 input:436 standard
 #, lua-format
 msgid "Player %s defends artifacts and has aditionally another start position"
 msgstr ""
 "El jugador %s defensa els artefactes i té, a més, una altra posició inicial"
 
-#: screenshots/artifacts-defended.wad/descriptions:3
+#: input:3 screenshots/artifacts-defended.wad/descriptions:3 standard
 msgid "found artifact"
 msgstr "artefacte trobat"
 
-#: screenshots/artifacts-defended.wad/descriptions:4
+#: input:4 screenshots/artifacts-defended.wad/descriptions:4 standard
 msgid "attack artifact"
 msgstr "artefacte d'atac"
 
-#: screenshots/artifacts-defended.wad/descriptions:5
+#: input:5 screenshots/artifacts-defended.wad/descriptions:5 standard
 msgid "conquered artifact"
 msgstr "artefacte conquerit"
+
+#: input:6 standard
+msgid ""
+"Allows to select an ai player to defend the artifacts.<br><br>Still in "
+"testing phase, basically works.<br><br><br><br>Idea from sheckley666 in the "
+"suggestions forum of widelands."
+msgstr ""

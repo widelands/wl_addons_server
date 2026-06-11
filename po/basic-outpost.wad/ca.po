@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-11-25 14:32+0000\n"
 "Last-Translator: Juanjo, 2024\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -27,7 +27,7 @@ msgstr ""
 #: addons/basic-outpost.wad/atlanteans.lua:11
 #: addons/basic-outpost.wad/barbarians.lua:11
 #: addons/basic-outpost.wad/empire.lua:11
-#: addons/basic-outpost.wad/frisians.lua:11
+#: addons/basic-outpost.wad/frisians.lua:11 input:9 input:11 standard
 msgid "Basic Outpost"
 msgstr "Post avançat bàsic"
 
@@ -36,7 +36,7 @@ msgstr "Post avançat bàsic"
 #: addons/basic-outpost.wad/atlanteans.lua:13
 #: addons/basic-outpost.wad/barbarians.lua:13
 #: addons/basic-outpost.wad/empire.lua:13
-#: addons/basic-outpost.wad/frisians.lua:13
+#: addons/basic-outpost.wad/frisians.lua:13 input:13 standard
 msgid ""
 "Start the game with your headquarters and a small selection of wares - just "
 "enough to create a few tools to help establish a full economy. Warning: the "
@@ -45,3 +45,14 @@ msgstr ""
 "Comença la partida amb el quarter general i una selecció petita de béns, els "
 "suficients per a crear algunes eines i poder establir una economia completa. "
 "Avís: amb la posició inicial que té, la IA no té èxit."
+
+#: input:6 standard
+msgid ""
+"A low wares starting condition. Like a 'struggling outpost' but with enough "
+"extra resources to make some tools, so that getting established is faster "
+"and more flexible. Suitable for reasonably balanced low wares starts, or "
+"handicap starts vs full outpost.<br> <br>Here is a basic tip for Basic "
+"Outpost: You only start with a small amount of iron for new tools. So click "
+"on a flag to change the economy targets of all tools to zero. Otherwise "
+"you'll be wasting iron on tools you don't need."
+msgstr ""

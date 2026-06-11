@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-28 03:12+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
 "Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,7 +24,7 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/Fast_Explorer.wad/addon:6
+#: addons/Fast_Explorer.wad/addon:6 input:6 standard
 msgid ""
 "Maps for the ''Fast Explorer wins'' win condition. ''Fast Explorer SP'' is "
 "for single player, the other one for multiplayer games. Teams are not "
@@ -34,19 +34,12 @@ msgstr ""
 "исследователь одиночная игра\" предназначена для одного игрока, другая для "
 "командной игры. Командная игра не поддерживаются."
 
-#: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4
+#: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4 input:9
+#: standard input:4
 msgid "Fast_Explorer"
 msgstr "Быстрый_исследователь"
 
-#: input:8 standard
-msgid "Fast Explorer MP"
-msgstr "Быстрый исследователь командная игра"
-
-#: input:8 standard
-msgid "Fast Explorer SP"
-msgstr "Быстрый исследователь одиночная игра"
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Use this map if you want to play the win condition ''Fast Explorer Wins'' "
 "with your friends in a multiplayer game. This map contain 5 times the same "
@@ -57,7 +50,7 @@ msgstr ""
 "Эта карта содержит остров в 5 раз больше, чем на карте \"Быстрый "
 "исследователь одиночная игра\"."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Use this map together with the win condition ''Fast explorer wins'' and take "
 "part on the ''Fast Explorer Torurnament''! The goal is to expand your "
@@ -72,7 +65,7 @@ msgstr ""
 "и предназначена для публикации вашего личного времени вместе с повтором в "
 "теме форума \"Быстрый исследователь\"!"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Place your roads and flags wisely and place warehouses on strategically "
 "places. Limited resources needs some micromanaging of productionsites and "
@@ -81,3 +74,11 @@ msgstr ""
 "Размещайте свои дороги и флаги с умом и размещайте склады на стратегических "
 "местах. Ограниченные ресурсы требуют некоторого микроуправление "
 "производственными площадками и складами."
+
+#: input:8 input:10 standard
+msgid "Fast Explorer MP"
+msgstr "Быстрый исследователь командная игра"
+
+#: input:8 input:10 standard
+msgid "Fast Explorer SP"
+msgstr "Быстрый исследователь одиночная игра"

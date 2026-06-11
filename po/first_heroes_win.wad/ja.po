@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-03-20 17:12+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/widelands/teams/35159/"
 "ja/)\n"
@@ -19,16 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: addons/first_heroes_win.wad/addon:2 addons/first_heroes_win.wad/init.lua:32
+#: input:9 standard input:32
 msgid "First Heroes Win"
 msgstr ""
 
-#: addons/first_heroes_win.wad/addon:3
+#: addons/first_heroes_win.wad/addon:3 input:6 standard
 msgid ""
 "The first player who has at least 4 fully trained soldiers in his warehouses "
 "wins the game. Teams are not supported yet."
 msgstr ""
 
-#: addons/first_heroes_win.wad/init.lua:35
+#: addons/first_heroes_win.wad/init.lua:35 standard input:35
 msgid ""
 "The player who has at least %1% fully trained soldier in his warehouses wins "
 "the game."
@@ -37,38 +38,38 @@ msgid_plural ""
 "wins the game."
 msgstr[0] ""
 
-#: addons/first_heroes_win.wad/init.lua:41
+#: addons/first_heroes_win.wad/init.lua:41 standard input:41
 msgid "Number of heroes"
 msgstr ""
 
-#: addons/first_heroes_win.wad/init.lua:98
+#: addons/first_heroes_win.wad/init.lua:98 standard input:98
 msgid "Hero created!"
 msgstr ""
 
-#: addons/first_heroes_win.wad/init.lua:99
+#: addons/first_heroes_win.wad/init.lua:99 standard input:99
 msgid "%1% has created a hero!"
 msgstr ""
 
-#: addons/first_heroes_win.wad/init.lua:101
+#: addons/first_heroes_win.wad/init.lua:101 standard input:101
 msgid "You have a new Hero!"
 msgstr ""
 
-#: addons/first_heroes_win.wad/init.lua:103
+#: addons/first_heroes_win.wad/init.lua:103 standard input:103
 msgid "Hero Statistics:"
 msgstr ""
 
 #. TRANSLATORS: "Player x has y Heroes"
-#: addons/first_heroes_win.wad/init.lua:106
+#: addons/first_heroes_win.wad/init.lua:106 standard input:106
 msgid "%1% has %2%"
 msgstr ""
 
-#: addons/first_heroes_win.wad/init.lua:106
+#: addons/first_heroes_win.wad/init.lua:106 standard input:106
 msgid "%1% hero"
 msgid_plural "%1% heroes"
 msgstr[0] ""
 
 #. TRANSLATORS: This is an item in a list in the form "Player Name: 3 heroes"
-#: addons/first_heroes_win.wad/init.lua:119
+#: addons/first_heroes_win.wad/init.lua:119 standard input:119
 msgid "%1%: %2% hero"
 msgid_plural "%1%: %2% heroes"
 msgstr[0] ""

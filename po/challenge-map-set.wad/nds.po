@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-28 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -23,10 +23,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/The_Great_Escape.wmf/elemental:8
+#: input:9 standard
 msgid "The Great Escape"
 msgstr "Dat grote Utnaihen"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/The_Great_Escape.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "can you survive without resources surrounded by six hostile forces? can you "
 "outproduce seven opponents when you have every possible disadvantage?  "
@@ -48,10 +50,12 @@ msgstr ""
 "wenn du unbannig good büst – of du di doodmaken willst."
 
 #: addons/challenge-map-set.wad/Challenge_Maps/concentric_rings.wmf/elemental:8
+#: input:9 standard
 msgid "concentric rings"
 msgstr "Kreisen in Kreisen"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/concentric_rings.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "A map for solo challenge. You start from the middle, and you gradually fight "
 "your way outside. At every ring you will find a new enemy, each stronger "
@@ -68,10 +72,12 @@ msgstr ""
 "feindelken Raadhusen."
 
 #: addons/challenge-map-set.wad/Challenge_Maps/dust_in_the_wind.wmf/elemental:8
+#: input:9 standard
 msgid "dust in the wind"
 msgstr "Stoff im Wind"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/dust_in_the_wind.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "You are surrounded by six enemies with more space and resources than you. "
 "land offers you no opportunities, so you must build your empire among "
@@ -84,6 +90,7 @@ msgstr ""
 "eene gode Weertskupp upbauen?"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/dust_in_the_wind.wmf/elemental:11
+#: input:6 standard
 msgid ""
 "This is an excercice in building an economy over long distances, not at "
 "finding small islands in a large ocean like needles in a haystack. For that "
@@ -98,10 +105,12 @@ msgstr ""
 "bruukst."
 
 #: addons/challenge-map-set.wad/Challenge_Maps/to_make_the_desert_bloom.wmf/elemental:8
+#: input:9 standard
 msgid "to make the desert bloom"
 msgstr "De Wüüst blömen laten"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/to_make_the_desert_bloom.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "The stories say that once our tribe lived in the fertile land to the west, "
 "where plants and crops grow and one does not need to dig deeply to  find "
@@ -132,6 +141,7 @@ msgstr ""
 "Anföhrer uplest komen?"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/to_make_the_desert_bloom.wmf/elemental:11
+#: input:6 standard
 msgid ""
 "- This is a solo challenge map, with the blue player strongly "
 "disadvantaged.  - There is no coal in the desert; you have to sustain "
@@ -145,11 +155,11 @@ msgstr ""
 "slimmste hier. – Folg de Water! Placken vun früchtbaar Land wiesen Stromen "
 "unner de Eer; folg daar lang un du finnst de Oasen."
 
-#: addons/challenge-map-set.wad/addon:2
+#: addons/challenge-map-set.wad/addon:2 input:7 standard
 msgid "Challenge Maps Set"
 msgstr "Rutfödderungs-Kaarten"
 
-#: addons/challenge-map-set.wad/addon:3
+#: addons/challenge-map-set.wad/addon:3 input:6 standard
 msgid ""
 "A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained "
 "maps: Dust in the Wind, To Make the Desert Bloom, The Great Escape, "
@@ -162,6 +172,6 @@ msgstr ""
 "finnen, alleen mit Narem Dörp tegen sess of mehr künstelk Spelers in eener "
 "Klottje mit Hannelspostens to spölen."
 
-#: addons/challenge-map-set.wad/dirnames:2
+#: addons/challenge-map-set.wad/dirnames:2 standard input:4
 msgid "Challenge Maps"
 msgstr "Rutfödderungs-Kaarten"

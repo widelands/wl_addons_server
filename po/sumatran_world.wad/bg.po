@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-11 03:11+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2024-12-06 18:41+0000\n"
 "Language-Team: Bulgarian (https://app.transifex.com/widelands/teams/35159/"
 "bg/)\n"
@@ -18,264 +18,317 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/sumatran_world.wad/addon:2
+#: addons/sumatran_world.wad/addon:2 input:8 standard
 msgid "Sumatran World"
 msgstr ""
 
-#: addons/sumatran_world.wad/addon:3
+#: addons/sumatran_world.wad/addon:3 input:6 standard
 msgid ""
 "Modifies world for Sumatran tribe. The changes affect Amazons too. Tropical "
 "trees do not grow on winter terrains. You need to transform the terrain by "
 "using terraform. This add-on should be used together with sumatran_tribe.wad."
 msgstr ""
 
-#: addons/sumatran_world.wad/crocodile/init.lua:7
+#: addons/sumatran_world.wad/crocodile/init.lua:7 input:7 standard
 msgid "Crocodile"
 msgstr ""
 
 #. TRANSLATORS: A category in the editor for placing animals on the map.
 #: addons/sumatran_world.wad/editor.lua:8
-#: addons/sumatran_world.wad/editor.lua:39
+#: addons/sumatran_world.wad/editor.lua:39 input:8 input:39 standard
 msgid "Sumatra"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_balsa_black_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Balsa Tree Wasteland (removed)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_balsa_desert_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Balsa Tree Desert (removed)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_balsa_winter_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Balsa Tree Winter (removed)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_ironwood_black_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Ironwood T. Wasteland (removed)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_ironwood_desert_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Ironwood Tree Desert (removed)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_ironwood_winter_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Ironwood Tree Winter (removed)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_rubber_black_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Rubber Tree Wasteland (removed)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_rubber_desert_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Rubber Tree Desert (removed)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/X_rubber_winter_amazons/old/init.lua:9
+#: input:9 standard
 msgid "Rubber Tree Winter (removed)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/balsa/mature/init.lua:10
+#: addons/sumatran_world.wad/immovables/balsa/mature/init.lua:10 input:10
+#: standard
 msgid "Balsa Tree (Mature)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/balsa/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/balsa/old/init.lua:9 input:9 standard
 msgid "Balsa Tree (Old)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/balsa/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/balsa/old/init.lua:10 input:10 standard
 msgid "Balsa Tree"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/balsa/pole/init.lua:10
+#: addons/sumatran_world.wad/immovables/balsa/pole/init.lua:10 input:10
+#: standard
 msgid "Balsa Tree (Pole)"
 msgstr ""
 
 #. TRANSLATORS: This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/balsa/sapling/init.lua:10
+#: addons/sumatran_world.wad/immovables/balsa/sapling/init.lua:10 input:10
+#: standard
 msgid "Balsa Tree (Sapling)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/dipterocarpus/mature/init.lua:9
+#: addons/sumatran_world.wad/immovables/dipterocarpus/mature/init.lua:9 input:9
+#: standard
 msgid "Dipterocarpus (Mature)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/dipterocarpus/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/dipterocarpus/old/init.lua:9 input:9
+#: standard
 msgid "Dipterocarpus (Old)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/dipterocarpus/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/dipterocarpus/old/init.lua:10 input:10
+#: standard
 msgid "Dipterocarpus"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/dipterocarpus/pole/init.lua:9
+#: addons/sumatran_world.wad/immovables/dipterocarpus/pole/init.lua:9 input:9
+#: standard
 msgid "Dipterocarpus (Pole)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/dipterocarpus/sapling/init.lua:9
+#: input:9 standard
 msgid "Dipterocarpus (Sapling)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/ironwood/mature/init.lua:10
+#: addons/sumatran_world.wad/immovables/ironwood/mature/init.lua:10 input:10
+#: standard
 msgid "Ironwood Tree (Mature)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/ironwood/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/ironwood/old/init.lua:10 input:10
+#: standard
 msgid "Ironwood Tree (Old)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/ironwood/old/init.lua:12
+#: addons/sumatran_world.wad/immovables/ironwood/old/init.lua:12 input:12
+#: standard
 msgid "Ironwood Tree"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/ironwood/pole/init.lua:10
+#: addons/sumatran_world.wad/immovables/ironwood/pole/init.lua:10 input:10
+#: standard
 msgid "Ironwood Tree (Pole)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/ironwood/sapling/init.lua:10
+#: addons/sumatran_world.wad/immovables/ironwood/sapling/init.lua:10 input:10
+#: standard
 msgid "Ironwood Tree (Sapling)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_borassus/mature/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_borassus/mature/init.lua:9 input:9
+#: standard
 msgid "Borassus Palm (Mature)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_borassus/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_borassus/old/init.lua:9 input:9
+#: standard
 msgid "Borassus Palm (Old)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_borassus/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/palm_borassus/old/init.lua:10 input:10
+#: standard
 msgid "Borassus Palm"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_borassus/pole/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_borassus/pole/init.lua:9 input:9
+#: standard
 msgid "Borassus Palm (Pole)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/palm_borassus/sapling/init.lua:9
+#: input:9 standard
 msgid "Borassus Palm (Sapling)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_coconut/mature/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_coconut/mature/init.lua:9 input:9
+#: standard
 msgid "Coconut Palm (Mature)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_coconut/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_coconut/old/init.lua:9 input:9
+#: standard
 msgid "Coconut Palm (Old)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_coconut/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/palm_coconut/old/init.lua:10 input:10
+#: standard
 msgid "Coconut Palm"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_coconut/pole/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_coconut/pole/init.lua:9 input:9
+#: standard
 msgid "Coconut Palm (Pole)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_coconut/sapling/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_coconut/sapling/init.lua:9 input:9
+#: standard
 msgid "Coconut Palm (Sapling)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_date/mature/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_date/mature/init.lua:9 input:9
+#: standard
 msgid "Date Palm (Mature)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_date/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_date/old/init.lua:9 input:9
+#: standard
 msgid "Date Palm (Old)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_date/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/palm_date/old/init.lua:10 input:10
+#: standard
 msgid "Date Palm"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_date/pole/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_date/pole/init.lua:9 input:9
+#: standard
 msgid "Date Palm (Pole)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_date/sapling/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_date/sapling/init.lua:9 input:9
+#: standard
 msgid "Date Palm (Sapling)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_oil/mature/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_oil/mature/init.lua:9 input:9
+#: standard
 msgid "Oil Palm (Mature)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_oil/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_oil/old/init.lua:9 input:9
+#: standard
 msgid "Oil Palm (Old)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_oil/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/palm_oil/old/init.lua:10 input:10
+#: standard
 msgid "Oil Palm"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_oil/pole/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_oil/pole/init.lua:9 input:9
+#: standard
 msgid "Oil Palm (Pole)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_oil/sapling/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_oil/sapling/init.lua:9 input:9
+#: standard
 msgid "Oil Palm (Sapling)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/palm_roystonea/mature/init.lua:9
+#: input:9 standard
 msgid "Roystonea regia Palm (Mature)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_roystonea/old/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_roystonea/old/init.lua:9 input:9
+#: standard
 msgid "Roystonea regia Palm (Old)"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_roystonea/old/init.lua:10
+#: addons/sumatran_world.wad/immovables/palm_roystonea/old/init.lua:10 input:10
+#: standard
 msgid "Roystonea regia Palm"
 msgstr ""
 
-#: addons/sumatran_world.wad/immovables/palm_roystonea/pole/init.lua:9
+#: addons/sumatran_world.wad/immovables/palm_roystonea/pole/init.lua:9 input:9
+#: standard
 msgid "Roystonea regia Palm (Pole)"
 msgstr ""
 
 #: addons/sumatran_world.wad/immovables/palm_roystonea/sapling/init.lua:9
+#: input:9 standard
 msgid "Roystonea regia Palm (Sapling)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/rubber/mature/init.lua:10
+#: addons/sumatran_world.wad/immovables/rubber/mature/init.lua:10 input:10
+#: standard
 msgid "Rubber Tree (Mature)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/rubber/old/init.lua:11
+#: addons/sumatran_world.wad/immovables/rubber/old/init.lua:11 input:11
+#: standard
 msgid "Rubber Tree (Old)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/rubber/old/init.lua:13
+#: addons/sumatran_world.wad/immovables/rubber/old/init.lua:13 input:13
+#: standard
 msgid "Rubber Tree"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/rubber/pole/init.lua:10
+#: addons/sumatran_world.wad/immovables/rubber/pole/init.lua:10 input:10
+#: standard
 msgid "Rubber Tree (Pole)"
 msgstr ""
 
 #. TRANSLATORS:  This is an Amazon rare tree.
-#: addons/sumatran_world.wad/immovables/rubber/sapling/init.lua:10
+#: addons/sumatran_world.wad/immovables/rubber/sapling/init.lua:10 input:10
+#: standard
 msgid "Rubber Tree (Sapling)"
 msgstr ""
 
-#: addons/sumatran_world.wad/rhinoceros/init.lua:7
+#: addons/sumatran_world.wad/rhinoceros/init.lua:7 input:7 standard
 msgid "Rhinoceros"
 msgstr ""
 
-#: addons/sumatran_world.wad/terrains/ashes1/init.lua:5
+#: addons/sumatran_world.wad/terrains/ashes1/init.lua:5 input:5 standard
 msgid "Ashes 1"
 msgstr ""
 
-#: addons/sumatran_world.wad/terrains/mountainmeadow/init.lua:5
+#: addons/sumatran_world.wad/terrains/mountainmeadow/init.lua:5 input:5
+#: standard
 msgid "Mountain Meadow"
 msgstr ""

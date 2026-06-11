@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-28 03:12+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2021-06-05 18:17+0000\n"
 "Language-Team: Gaelic, Scottish (https://app.transifex.com/widelands/"
 "teams/35159/gd/)\n"
@@ -20,188 +20,201 @@ msgstr ""
 "(n > 2 && n < 20) ? 2 : 3;\n"
 
 #: addons/white_summer.wad/addon:2 addons/white_summer.wad/editor.lua:7
-#: addons/white_summer.wad/editor.lua:38
+#: addons/white_summer.wad/editor.lua:38 input:7 input:8 input:38 standard
 msgid "White Summer"
 msgstr ""
 
-#: addons/white_summer.wad/addon:3
+#: addons/white_summer.wad/addon:3 input:6 standard
 msgid ""
 "Contains flowering meadows, clearings, dolomites, wet beach, green and muddy "
 "water. New birch."
 msgstr ""
 
-#: addons/white_summer.wad/immovables/birch/mature/init.lua:9
+#: addons/white_summer.wad/immovables/birch/mature/init.lua:9 input:9 standard
 msgid "Birch (Mature)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/birch/old/init.lua:9
+#: addons/white_summer.wad/immovables/birch/old/init.lua:9 input:9 standard
 msgid "Birch (Old)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/birch/old/init.lua:10
+#: addons/white_summer.wad/immovables/birch/old/init.lua:10 input:10 standard
 msgid "Birch"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/birch/pole/init.lua:9
+#: addons/white_summer.wad/immovables/birch/pole/init.lua:9 input:9 standard
 msgid "Birch (Pole)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/birch/sapling/init.lua:9
+#: addons/white_summer.wad/immovables/birch/sapling/init.lua:9 input:9 standard
 msgid "Birch (Sapling)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/linden/mature/init.lua:9
+#: addons/white_summer.wad/immovables/linden/mature/init.lua:9 input:9 standard
 msgid "Linden (Mature)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/linden/old/init.lua:9
+#: addons/white_summer.wad/immovables/linden/old/init.lua:9 input:9 standard
 msgid "Linden (Old)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/linden/old/init.lua:10
+#: addons/white_summer.wad/immovables/linden/old/init.lua:10 input:10 standard
 msgid "Linden"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/linden/pole/init.lua:9
+#: addons/white_summer.wad/immovables/linden/pole/init.lua:9 input:9 standard
 msgid "Linden (Pole)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/linden/sapling/init.lua:9
+#: addons/white_summer.wad/immovables/linden/sapling/init.lua:9 input:9
+#: standard
 msgid "Linden (Sapling)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/pine/mature/init.lua:9
+#: addons/white_summer.wad/immovables/pine/mature/init.lua:9 input:9 standard
 msgid "Pine (Mature)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/pine/old/init.lua:10
+#: addons/white_summer.wad/immovables/pine/old/init.lua:10 input:10 standard
 msgid "Pine (Old)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/pine/old/init.lua:11
+#: addons/white_summer.wad/immovables/pine/old/init.lua:11 input:11 standard
 msgid "Pine"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/pine/pole/init.lua:9
+#: addons/white_summer.wad/immovables/pine/pole/init.lua:9 input:9 standard
 msgid "Pine (Pole)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/pine/sapling/init.lua:9
+#: addons/white_summer.wad/immovables/pine/sapling/init.lua:9 input:9 standard
 msgid "Pine (Sapling)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/red_maple/mature/init.lua:9
+#: addons/white_summer.wad/immovables/red_maple/mature/init.lua:9 input:9
+#: standard
 msgid "Red Maple (Mature)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/red_maple/old/init.lua:9
+#: addons/white_summer.wad/immovables/red_maple/old/init.lua:9 input:9 standard
 msgid "Red Maple (Old)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/red_maple/old/init.lua:10
+#: addons/white_summer.wad/immovables/red_maple/old/init.lua:10 input:10
+#: standard
 msgid "Red Maple"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/red_maple/pole/init.lua:9
+#: addons/white_summer.wad/immovables/red_maple/pole/init.lua:9 input:9
+#: standard
 msgid "Red Maple (Pole)"
 msgstr ""
 
-#: addons/white_summer.wad/immovables/red_maple/sapling/init.lua:9
+#: addons/white_summer.wad/immovables/red_maple/sapling/init.lua:9 input:9
+#: standard
 msgid "Red Maple (Sapling)"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/clearing1/init.lua:10
+#: addons/white_summer.wad/terrains/clearing1/init.lua:10 input:10 standard
 msgid "Clearing 1"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/clearing1b/init.lua:10
+#: addons/white_summer.wad/terrains/clearing1b/init.lua:10 input:10 standard
 msgid "Clearing 1b"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/clearing2/init.lua:10
+#: addons/white_summer.wad/terrains/clearing2/init.lua:10 input:10 standard
 msgid "Clearing 2"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/clearing2b/init.lua:10
+#: addons/white_summer.wad/terrains/clearing2b/init.lua:10 input:10 standard
 msgid "Clearing 2b"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/clearing3/init.lua:10
+#: addons/white_summer.wad/terrains/clearing3/init.lua:10 input:10 standard
 msgid "Clearing 3"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/dolomites1/init.lua:10
+#: addons/white_summer.wad/terrains/dolomites1/init.lua:10 input:10 standard
 msgid "Dolomites 1"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/dolomites2/init.lua:10
+#: addons/white_summer.wad/terrains/dolomites2/init.lua:10 input:10 standard
 msgid "Dolomites 2"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/dolomites_meadow/init.lua:10
+#: addons/white_summer.wad/terrains/dolomites_meadow/init.lua:10 input:10
+#: standard
 msgid "Dolomites Meadow"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/flowering_meadow1/init.lua:10
+#: addons/white_summer.wad/terrains/flowering_meadow1/init.lua:10 input:10
+#: standard
 msgid "Flowering Meadow 1"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/flowering_meadow2/init.lua:10
+#: addons/white_summer.wad/terrains/flowering_meadow2/init.lua:10 input:10
+#: standard
 msgid "Flowering Meadow 2"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/flowering_meadow3/init.lua:10
+#: addons/white_summer.wad/terrains/flowering_meadow3/init.lua:10 input:10
+#: standard
 msgid "Flowering Meadow 3"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/flowering_meadow4/init.lua:10
+#: addons/white_summer.wad/terrains/flowering_meadow4/init.lua:10 input:10
+#: standard
 msgid "Flowering Meadow 4"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/forested_dolomites1/init.lua:10
+#: addons/white_summer.wad/terrains/forested_dolomites1/init.lua:10 input:10
+#: standard
 msgid "Forested Dolomites 1"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/forested_dolomites2/init.lua:10
+#: addons/white_summer.wad/terrains/forested_dolomites2/init.lua:10 input:10
+#: standard
 msgid "Forested Dolomites 2"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/forested_dolomites3/init.lua:11
+#: addons/white_summer.wad/terrains/forested_dolomites3/init.lua:11 input:11
+#: standard
 msgid "Forested Dolomites 3"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/green_water1/init.lua:10
+#: addons/white_summer.wad/terrains/green_water1/init.lua:10 input:10 standard
 msgid "Green Water 1"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/green_water2/init.lua:10
+#: addons/white_summer.wad/terrains/green_water2/init.lua:10 input:10 standard
 msgid "Green Water 2"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/green_water3/init.lua:10
+#: addons/white_summer.wad/terrains/green_water3/init.lua:10 input:10 standard
 msgid "Green Water 3"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/muddy_water/init.lua:10
+#: addons/white_summer.wad/terrains/muddy_water/init.lua:10 input:10 standard
 msgid "Muddy Water"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/wet_beach/init.lua:10
+#: addons/white_summer.wad/terrains/wet_beach/init.lua:10 input:10 standard
 msgid "Wet Beach"
 msgstr ""
 
-#: addons/white_summer.wad/terrains/wet_beach2/init.lua:10
+#: addons/white_summer.wad/terrains/wet_beach2/init.lua:10 input:10 standard
 msgid "Wet Beach 2"
 msgstr ""
 
-#: screenshots/white_summer.wad/descriptions:1
+#: input:3 screenshots/white_summer.wad/descriptions:1 standard
 msgid "White Summer (1)"
 msgstr ""
 
-#: screenshots/white_summer.wad/descriptions:2
+#: input:4 screenshots/white_summer.wad/descriptions:2 standard
 msgid "White Summer (2)"
 msgstr ""
 
-#: screenshots/white_summer.wad/descriptions:3
+#: input:5 screenshots/white_summer.wad/descriptions:3 standard
 msgid "White Summer (3)"
 msgstr ""

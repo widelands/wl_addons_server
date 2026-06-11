@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 03:18+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2026-06-07 22:00+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>, 2026\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
@@ -22,10 +22,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/no_closed_sea_routes.wad/addon:4 input:8 standard
+#: addons/no_closed_sea_routes.wad/addon:4 input:8 input:9 input:10 standard
 msgid "no closed sea routes"
 msgstr ""
 
-#: addons/no_closed_sea_routes.wad/dirnames:4
+#: addons/no_closed_sea_routes.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Add-On Maps"
+
+#: input:6 standard
+msgid ""
+"You will need to pull out all the stops to defeat all your opponents, both "
+"on land and at sea. <br> <br>Version: 1.0"
+msgstr ""

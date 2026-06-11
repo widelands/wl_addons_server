@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 03:12+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2025-08-30 12:49+0000\n"
 "Last-Translator: Samuele Battarra, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
@@ -23,15 +23,27 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: addons/Hellhole_isles.wad/addon:4 input:8 standard
+#: addons/Hellhole_isles.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Hellhole isles"
 msgstr ""
 
-#: addons/Hellhole_isles.wad/dirnames:4
+#: addons/Hellhole_isles.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Mappe add-on"
 
-#: input:13 standard
+#: input:6 standard
+msgid ""
+"Surreal valley deep below sea level, steep slopes full of minerals and "
+"fertile lands waiting down below - who wouldn't be tempted by such sights? "
+"Especially because you've mistakenly decided to settle onto such a desert "
+"peninsula. While working your path to the depths, the small fertile atolls "
+"might look economically smart opportunities too. But down there might not be "
+"all serenity as you've spotted some other ships and settlements - is it "
+"again time to fight for the riches? <br> <br>The map is designed for "
+"multiplayer use and may not work that well with computer opponents."
+msgstr ""
+
+#: input:7 input:13 standard
 msgid ""
 "The starting locations have no connection to the valley in the middle. "
 "Players must use ships to find alternative paths down there."

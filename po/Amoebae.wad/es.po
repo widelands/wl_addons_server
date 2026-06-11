@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-11-30 17:49+0000\n"
 "Last-Translator: Juan Miguel Bernal González, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/widelands/teams/35159/"
@@ -23,19 +23,23 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: addons/Amoebae.wad/addon:4 input:8 standard
+#: addons/Amoebae.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Amoebae"
 msgstr "Ameba"
 
-#: addons/Amoebae.wad/addon:5 input:10 standard
+#: addons/Amoebae.wad/addon:5 input:6 input:10 standard
 msgid "You are an Amoebae, expand and conquer all other Amoebae... "
 msgstr "Eres una Ameba, expande y conquista todas las demás Amebas..."
 
-#: addons/Amoebae.wad/dirnames:4
+#: addons/Amoebae.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Mapas del Complemento"
 
-#: input:11 standard
+#: input:3 screenshots/Amoebae.wad/descriptions:3 standard
+msgid "Minimap with player positions"
+msgstr "Minimapa con las posiciones de los jugadores."
+
+#: input:7 input:11 standard
 msgid ""
 "Be aware that you are surrounded with enemies. Disable diplomacy for an "
 "easier game, enable it for a more challenging game. Additionally you can "
@@ -47,7 +51,3 @@ msgstr ""
 "definir la dificultad jugando contra diferentes equipos de IA. Aunque "
 "algunos jugadores tienen más espacio al principio, consideraría este mapa "
 "equilibrado."
-
-#: screenshots/Amoebae.wad/descriptions:3
-msgid "Minimap with player positions"
-msgstr "Minimapa con las posiciones de los jugadores."

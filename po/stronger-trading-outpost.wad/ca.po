@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,11 +22,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/stronger-trading-outpost.wad/addon:2
+#: addons/stronger-trading-outpost.wad/addon:2 input:7 standard
 msgid "Stronger Trading Outpost"
 msgstr "Post de mercaderies avançat més fort"
 
-#: addons/stronger-trading-outpost.wad/addon:3
+#: addons/stronger-trading-outpost.wad/addon:3 input:6 standard
 msgid ""
 "Enhanced Trading Outpost starting conditions for all official tribes. "
 "Intended to give AIs a stronger start."
@@ -34,7 +34,7 @@ msgstr ""
 "Afegeix condicions inicials amb un post de mercaderies millorat. Permet als "
 "jugadors d'IA una posició inicial més forta."
 
-#: addons/stronger-trading-outpost.wad/addon:4
+#: addons/stronger-trading-outpost.wad/addon:4 input:4 standard
 msgid "Nordfriese & the-x"
 msgstr "Nordfriese i the-x"
 
@@ -43,7 +43,7 @@ msgstr "Nordfriese i the-x"
 #: addons/stronger-trading-outpost.wad/atlanteans.lua:11
 #: addons/stronger-trading-outpost.wad/barbarians.lua:11
 #: addons/stronger-trading-outpost.wad/empire.lua:11
-#: addons/stronger-trading-outpost.wad/frisians.lua:11
+#: addons/stronger-trading-outpost.wad/frisians.lua:11 input:11 standard
 msgid "AI Trading Outpost"
 msgstr "Post de mercaderies avançat per les IA"
 
@@ -52,7 +52,7 @@ msgstr "Post de mercaderies avançat per les IA"
 #: addons/stronger-trading-outpost.wad/atlanteans.lua:13
 #: addons/stronger-trading-outpost.wad/barbarians.lua:13
 #: addons/stronger-trading-outpost.wad/empire.lua:13
-#: addons/stronger-trading-outpost.wad/frisians.lua:13
+#: addons/stronger-trading-outpost.wad/frisians.lua:13 input:13 standard
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""

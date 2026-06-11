@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-07-19 18:08+0000\n"
 "Language-Team: Polish (https://app.transifex.com/widelands/teams/35159/pl/)\n"
 "Language: pl\n"
@@ -19,37 +19,37 @@ msgstr ""
 "(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: addons/editor_swap_terrains.wad/addon:2
+#: addons/editor_swap_terrains.wad/addon:2 input:9 standard
 msgid "Editor: Swap Terrains"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/addon:3
+#: addons/editor_swap_terrains.wad/addon:3 input:6 standard
 msgid ""
 "A plugin for the editor to easily replace or swap two terrain types globally."
 msgstr ""
 
 #: addons/editor_swap_terrains.wad/init.lua:8
-#: addons/editor_swap_terrains.wad/show_window.lua:24
+#: addons/editor_swap_terrains.wad/show_window.lua:24 input:8 standard input:24
 msgid "Swap Terrains"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/init.lua:9
+#: addons/editor_swap_terrains.wad/init.lua:9 input:9 standard
 msgid "Globally exchange two terrains with each other"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:77
+#: addons/editor_swap_terrains.wad/show_window.lua:77 standard input:77
 msgid "Replace"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:78
+#: addons/editor_swap_terrains.wad/show_window.lua:78 standard input:78
 msgid ""
 "Globally replace all occurrences of the left terrain with the right terrain"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:90
+#: addons/editor_swap_terrains.wad/show_window.lua:90 standard input:90
 msgid "Swap"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:91
+#: addons/editor_swap_terrains.wad/show_window.lua:91 standard input:91
 msgid "Globally swap the two selected terrains"
 msgstr ""

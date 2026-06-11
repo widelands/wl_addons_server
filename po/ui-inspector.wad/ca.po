@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 03:19+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2024-10-26 21:10+0000\n"
 "Last-Translator: Júlia Rosell Saldaña, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -24,11 +24,12 @@ msgstr ""
 
 #: addons/ui-inspector.wad/addon:2 addons/ui-inspector.wad/init.lua:7
 #: addons/ui-inspector.wad/init.lua:16
-#: addons/ui-inspector.wad/show_window.lua:380
+#: addons/ui-inspector.wad/show_window.lua:380 input:7 input:9 input:16
+#: standard input:380
 msgid "UI Inspector"
 msgstr "Inspector d'IU"
 
-#: addons/ui-inspector.wad/addon:3
+#: addons/ui-inspector.wad/addon:3 input:6 standard
 msgid ""
 "This utility allows add-on designers to inspect the structure, hierarchy, "
 "and properties of panels and windows. This allows you to obtain the internal "
@@ -41,60 +42,61 @@ msgstr ""
 "existents sense cercar el seu codi font, i ajuda a resoldre problemes de "
 "connectors que es comporten malament."
 
-#: addons/ui-inspector.wad/init.lua:8
+#: addons/ui-inspector.wad/init.lua:8 input:8 standard
 msgid "Inspect all open panels"
 msgstr "Inspeccioneu tots els panells oberts"
 
 #: addons/ui-inspector.wad/show_window.lua:10
 #: addons/ui-inspector.wad/show_window.lua:182
-#: addons/ui-inspector.wad/show_window.lua:209
+#: addons/ui-inspector.wad/show_window.lua:209 standard input:10 input:182
+#: input:209
 msgid "%1$s “%2$s”"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:143
+#: addons/ui-inspector.wad/show_window.lua:143 standard input:143
 msgid "The panel no longer exists."
 msgstr "El panell ja no existeix."
 
-#: addons/ui-inspector.wad/show_window.lua:160
+#: addons/ui-inspector.wad/show_window.lua:160 standard input:160
 msgid "Copy class name"
 msgstr "Copia el nom de la classe"
 
-#: addons/ui-inspector.wad/show_window.lua:224
+#: addons/ui-inspector.wad/show_window.lua:224 standard input:224
 msgid "Copy property name"
 msgstr "Copia el nom de la propietat"
 
-#: addons/ui-inspector.wad/show_window.lua:242
+#: addons/ui-inspector.wad/show_window.lua:242 standard input:242
 msgid "%1$s (%2$s):"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:266
+#: addons/ui-inspector.wad/show_window.lua:266 standard input:266
 msgid "Copy value"
 msgstr "Copia el valor"
 
-#: addons/ui-inspector.wad/show_window.lua:266
+#: addons/ui-inspector.wad/show_window.lua:266 standard input:266
 msgid "Go to this item"
 msgstr "Aneu a aquest element"
 
-#: addons/ui-inspector.wad/show_window.lua:397
+#: addons/ui-inspector.wad/show_window.lua:397 standard input:397
 msgid "Filter by name or class"
 msgstr "Filtra per nom o classe"
 
-#: addons/ui-inspector.wad/show_window.lua:404
+#: addons/ui-inspector.wad/show_window.lua:404 standard input:404
 msgid "Clear filter"
 msgstr "Esborra el filtre"
 
-#: addons/ui-inspector.wad/show_window.lua:417
+#: addons/ui-inspector.wad/show_window.lua:417 standard input:417
 msgid "Refresh"
 msgstr ""
 
-#: screenshots/ui-inspector.wad/descriptions:3
+#: input:3 screenshots/ui-inspector.wad/descriptions:3 standard
 msgid ""
 "The Inspector in action: View the hierarchy and properties of current panels."
 msgstr ""
 "L'inspector en acció: visualitza la jerarquia i les propietats dels panells "
 "actuals."
 
-#: screenshots/ui-inspector.wad/descriptions:4
+#: input:4 screenshots/ui-inspector.wad/descriptions:4 standard
 msgid "Too much clutter? Apply a filter to find a panel by name or type."
 msgstr ""
 "Massa desordre? Apliqueu un filtre per trobar un panell per nom o tipus."

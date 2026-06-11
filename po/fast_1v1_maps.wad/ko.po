@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-05-24 13:07+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -21,11 +21,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: addons/fast_1v1_maps.wad/addon:4
+#: addons/fast_1v1_maps.wad/addon:4 input:9 standard
 msgid "Fast 1v1 Maps"
 msgstr "빠른 1v1 대전"
 
-#: addons/fast_1v1_maps.wad/addon:5
+#: addons/fast_1v1_maps.wad/addon:5 input:6 standard
 msgid ""
 "1v1 Maps for strategically interesting gameplay. Requires the add-on “the-"
 "x’s ‘Tournament’ Mode”."
@@ -33,18 +33,20 @@ msgstr ""
 "전략적인 게임플레이를 위한 1v1 전용 맵. 확장팩 “the-x의 ‘토너먼트’ 모드” 필"
 "요."
 
-#: addons/fast_1v1_maps.wad/dirnames:4
+#: addons/fast_1v1_maps.wad/dirnames:4 input:4 standard
 msgid "the-x’s Fast 1v1 Tournament Maps"
 msgstr "the-x의 빠른 1v1 대전 토너먼트 맵"
 
-#: addons/fast_1v1_maps.wad/maps/Economy1.1.wmf/elemental:8
+#: addons/fast_1v1_maps.wad/maps/Economy1.1.wmf/elemental:8 input:9 standard
 msgid "Economy 1.1"
 msgstr "경제 1.1"
 
 #: addons/fast_1v1_maps.wad/maps/Fraenkischer_Wald_fast_1v1_map.wmf/elemental:8
+#: input:10 standard
 msgid "Fränkischer Wald - 1v1"
 msgstr "Fränkischer Wald - 1v1"
 
-#: addons/fast_1v1_maps.wad/maps/Sidestar_Romanum.wmf/elemental:8
+#: addons/fast_1v1_maps.wad/maps/Sidestar_Romanum.wmf/elemental:8 standard
+#: input:10
 msgid "Sidestar Romanum"
 msgstr "사이드스타 로마눔"

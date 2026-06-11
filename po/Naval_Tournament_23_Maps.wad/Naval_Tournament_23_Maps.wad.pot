@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,41 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: addons/Naval_Tournament_23_Maps.wad/addon:6
+#: addons/Naval_Tournament_23_Maps.wad/addon:6 input:6 standard
 msgid "Maps for the Naval Tournament 23"
 msgstr ""
 
-#: addons/Naval_Tournament_23_Maps.wad/addon:9
+#: addons/Naval_Tournament_23_Maps.wad/addon:9 input:9 standard
 msgid "Naval Tournament 23 Maps"
 msgstr ""
 
-#: addons/Naval_Tournament_23_Maps.wad/dirnames:4
+#: addons/Naval_Tournament_23_Maps.wad/dirnames:4 standard input:4
 msgid "Naval Tournament 23"
 msgstr ""
 
-#: input:8 standard
-msgid "Naval Ice wars"
-msgstr ""
-
-#: input:8 standard
-msgid "Plateau (Naval Warfare)"
-msgstr ""
-
-#: input:8 standard
-msgid "Together We’re Strong (naval invasion)"
-msgstr ""
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A large island with coastal plains and a forested plateau. Rich in resources "
 "and plenty of flat building space along the coasts."
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid "Autumn became winter. Some things are frozen, but not the war."
 msgstr ""
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "The four mighty harbors of the Craw Islands have been trading their goods "
 "among each other for ages. All of them needed resources that they could not "
@@ -64,12 +52,24 @@ msgid ""
 "shatter the peaceful life that has lasted for so long…"
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Added a river seggregating the 2 halfs of the start island to enforce naval "
 "warfare."
 msgstr ""
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid "Start positions are clockwise"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Naval Ice wars"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Plateau (Naval Warfare)"
+msgstr ""
+
+#: input:8 input:10 standard
+msgid "Together We’re Strong (naval invasion)"
 msgstr ""

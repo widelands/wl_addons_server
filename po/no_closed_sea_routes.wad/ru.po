@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 03:18+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2026-06-07 22:00+0000\n"
 "Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,10 +24,16 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/no_closed_sea_routes.wad/addon:4 input:8 standard
+#: addons/no_closed_sea_routes.wad/addon:4 input:8 input:9 input:10 standard
 msgid "no closed sea routes"
 msgstr ""
 
-#: addons/no_closed_sea_routes.wad/dirnames:4
+#: addons/no_closed_sea_routes.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Дополнение: карты"
+
+#: input:6 standard
+msgid ""
+"You will need to pull out all the stops to defeat all your opponents, both "
+"on land and at sea. <br> <br>Version: 1.0"
+msgstr ""

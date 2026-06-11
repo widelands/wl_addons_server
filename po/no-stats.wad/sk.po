@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2024-01-10 16:14+0000\n"
 "Language-Team: Slovak (https://app.transifex.com/widelands/teams/35159/sk/)\n"
 "Language: sk\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
 ">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: addons/no-stats.wad/addon:6
+#: addons/no-stats.wad/addon:6 input:6 standard
 msgid "Increases fog of war by not showing statistics about the other players."
 msgstr ""
 
-#: addons/no-stats.wad/addon:9
+#: addons/no-stats.wad/addon:9 input:9 standard
 msgid "no player stats"
 msgstr ""

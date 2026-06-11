@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-05-24 13:07+0000\n"
 "Last-Translator: Juanjo, 2021\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,11 +22,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/fast_1v1_maps.wad/addon:4
+#: addons/fast_1v1_maps.wad/addon:4 input:9 standard
 msgid "Fast 1v1 Maps"
 msgstr "Mapes ràpids 1 vs 1"
 
-#: addons/fast_1v1_maps.wad/addon:5
+#: addons/fast_1v1_maps.wad/addon:5 input:6 standard
 msgid ""
 "1v1 Maps for strategically interesting gameplay. Requires the add-on “the-"
 "x’s ‘Tournament’ Mode”."
@@ -34,18 +34,20 @@ msgstr ""
 "Mapes 1 vs 1 amb estratègies interessants per a les partides. Necessita el "
 "complement  «Mode de torneig d'en the-x»."
 
-#: addons/fast_1v1_maps.wad/dirnames:4
+#: addons/fast_1v1_maps.wad/dirnames:4 input:4 standard
 msgid "the-x’s Fast 1v1 Tournament Maps"
 msgstr "Els mapes de torneig ràpids 1 vs 1 d'en the-x"
 
-#: addons/fast_1v1_maps.wad/maps/Economy1.1.wmf/elemental:8
+#: addons/fast_1v1_maps.wad/maps/Economy1.1.wmf/elemental:8 input:9 standard
 msgid "Economy 1.1"
 msgstr "Economia 1.1"
 
 #: addons/fast_1v1_maps.wad/maps/Fraenkischer_Wald_fast_1v1_map.wmf/elemental:8
+#: input:10 standard
 msgid "Fränkischer Wald - 1v1"
 msgstr "Fränkischer Wald – 1 vs 1"
 
-#: addons/fast_1v1_maps.wad/maps/Sidestar_Romanum.wmf/elemental:8
+#: addons/fast_1v1_maps.wad/maps/Sidestar_Romanum.wmf/elemental:8 standard
+#: input:10
 msgid "Sidestar Romanum"
 msgstr "Sidestar Romanum"

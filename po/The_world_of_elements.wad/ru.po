@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2022-10-25 08:48+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,20 +24,16 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/The_world_of_elements.wad/addon:6
+#: addons/The_world_of_elements.wad/addon:6 input:6 standard
 msgid "This map-addon ads the map ''World of elements"
 msgstr "Эта карта-аддон добавляет карту \"Мир стихий\""
 
 #: addons/The_world_of_elements.wad/addon:9
-#: addons/The_world_of_elements.wad/dirnames:4
+#: addons/The_world_of_elements.wad/dirnames:4 input:9 standard input:4
 msgid "The_world_of_elements"
 msgstr "Мир_стихий"
 
-#: input:8 standard
-msgid "The world of elements"
-msgstr "Мир стихий"
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "This game is a kind of challenge. It is intended for one player. You should "
 "play the Wiesdengugr who owns a territory in a desolate desert. Thou shalt "
@@ -51,6 +47,10 @@ msgstr ""
 "несколько областей с одним противником в каждой, а в конце - финальный босс "
 "пришельцев, и за ним приходит свобода."
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid "Warning: This map needs Addons!!! "
 msgstr "Внимание: Эта карта нуждается в дополнениях!!!"
+
+#: input:8 input:10 standard
+msgid "The world of elements"
+msgstr "Мир стихий"

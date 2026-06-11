@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 03:16+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2026-06-07 22:02+0000\n"
 "Language-Team: Bulgarian (https://app.transifex.com/widelands/teams/35159/"
 "bg/)\n"
@@ -18,10 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Spirallo_6.wad/addon:4 input:8 standard
+#: addons/Spirallo_6.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Spirallo.6"
 msgstr ""
 
-#: addons/Spirallo_6.wad/dirnames:4
+#: addons/Spirallo_6.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
+msgstr ""
+
+#: input:6 standard
+msgid ""
+"Don't go round in circles—you'll drive yourself crazy. <br> <br>Version: 0.9"
 msgstr ""

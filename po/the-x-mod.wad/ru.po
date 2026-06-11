@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2021-05-23 11:14+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -25,11 +25,11 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/the-x-mod.wad/addon:2
+#: addons/the-x-mod.wad/addon:2 input:7 standard
 msgid "the-x’s ‘Tournament’ Mode"
 msgstr "the-x’s ‘Tournament’ Mode"
 
-#: addons/the-x-mod.wad/addon:3
+#: addons/the-x-mod.wad/addon:3 input:6 standard
 msgid ""
 "A tournament mode for Widelands, or: The mode that guarantees games of less "
 "than two hours. The early game is eased and building processes are sped up; "
@@ -53,13 +53,15 @@ msgstr ""
 #: addons/the-x-mod.wad/empire/productionsites.lua:65
 #: addons/the-x-mod.wad/empire/productionsites.lua:73
 #: addons/the-x-mod.wad/frisians/productionsites.lua:8
-#: addons/the-x-mod.wad/frisians/productionsites.lua:16
+#: addons/the-x-mod.wad/frisians/productionsites.lua:16 input:8 input:16
+#: input:65 input:73 input:131 input:139 input:234 input:242 standard
 msgid "scouting"
 msgstr "разведывает"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:157
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:168
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:168 input:157 input:168
+#: standard
 msgid "smoking fish"
 msgstr "коптит рыбу"
 
@@ -84,47 +86,50 @@ msgstr "коптит рыбу"
 #: addons/the-x-mod.wad/empire/productionsites.lua:331
 #: addons/the-x-mod.wad/frisians/productionsites.lua:36
 #: addons/the-x-mod.wad/frisians/productionsites.lua:60
-#: addons/the-x-mod.wad/frisians/productionsites.lua:112
+#: addons/the-x-mod.wad/frisians/productionsites.lua:112 input:36 input:60
+#: input:112 input:122 input:175 input:179 input:211 input:258 input:294
+#: input:321 input:331 input:369 input:408 input:454 input:471 input:499
+#: input:542 input:590 input:615 input:662 input:771 standard
 msgid "working"
 msgstr "работает"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:189
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:189 input:189 standard
 msgid "forging a steel shield"
 msgstr "кует стальной щит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:200
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:200 input:200 standard
 msgid "forging an advanced shield"
 msgstr "кует Улучшенный щит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a light trident because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:224
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:224 input:224 standard
 msgid "forging a light trident"
 msgstr "кует Лёгкий Трезубец"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a long trident because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:238
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:238 input:238 standard
 msgid "forging a long trident"
 msgstr "кует длинный трезубец"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel trident because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:252
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:252 input:252 standard
 msgid "forging a steel trident"
 msgstr "кует стальной трезубец"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a double trident because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:266
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:266 input:266 standard
 msgid "forging a double trident"
 msgstr "кует сдвоенный трезубец"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a heavy double trident because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:280
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:280 input:280 standard
 msgid "forging a heavy double trident"
 msgstr "кует тяжелый сдвоенный трезубец"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:309
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:309 input:309 standard
 msgid "making a saw"
 msgstr "делает пилу"
 
@@ -132,39 +137,41 @@ msgstr "делает пилу"
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:343
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:356
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:516
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:529
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:529 input:343 input:356
+#: input:516 input:529 standard
 msgid "smelting iron"
 msgstr "плавит железо"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:382
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:382 input:382 standard
 msgid "felling trees"
 msgstr "валит деревья"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:392
-#: addons/the-x-mod.wad/empire/productionsites.lua:97
+#: addons/the-x-mod.wad/empire/productionsites.lua:97 input:97 input:392
+#: standard
 msgid "sawing logs"
 msgstr "пилит брёвна"
 
 #. TRANSLATORS: Completed/Skipped/Did not start spinning gold because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:418
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:418 input:418 standard
 msgid "spinning gold"
 msgstr "прядёт золото"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:434
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:434 input:434 standard
 msgctxt "atlanteans_building"
 msgid "baking bread"
 msgstr "печет хлеб"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:446
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:446 input:446 standard
 msgid "planting corn"
 msgstr "садит кукурузу"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
-#: addons/the-x-mod.wad/atlanteans/productionsites.lua:463
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:463 input:463 standard
 msgid "planting blackroot"
 msgstr "садит козелец"
 
@@ -174,65 +181,66 @@ msgstr "садит козелец"
 #: addons/the-x-mod.wad/barbarians/trainingsites.lua:66
 #: addons/the-x-mod.wad/empire/trainingsites.lua:95
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:23
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:116
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:116 input:23 input:27
+#: input:66 input:88 input:95 input:116 standard
 msgid "sleeping"
 msgstr "спит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading soldier attack from level 0 to level 1 because ...
-#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:33
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:33 input:33 standard
 msgctxt "atlanteans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading soldier attack from level 2 to level 3 because ...
-#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:44
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:44 input:44 standard
 msgctxt "atlanteans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr "повышает уровень урона солдата с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading soldier attack from level 3 to level 4 because ...
-#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:55
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:55 input:55 standard
 msgctxt "atlanteans_building"
 msgid "upgrading soldier attack from level 3 to level 4"
 msgstr "повышает уровень урона солдата с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:94
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:94 input:94 standard
 msgctxt "atlanteans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr "повышает уровень защиты солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:108
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:108 input:108 standard
 msgctxt "atlanteans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
 msgstr "повышает уровень защиты солдата с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:122
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:122 input:122 standard
 msgctxt "atlanteans_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr "повышает уровень здоровья солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:135
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:135 input:135 standard
 msgctxt "atlanteans_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr "повышает уровень уклонения солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:148
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:148 input:148 standard
 msgctxt "atlanteans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr "повышает уровень уклонения солдата с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:252
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:252 input:252 standard
 msgid "hardening wood"
 msgstr "обжигает дерево"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:265
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:265 input:265 standard
 msgctxt "barbarians_building"
 msgid "baking pitta bread"
 msgstr "печет лепешку"
@@ -245,12 +253,13 @@ msgstr "печет лепешку"
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:325
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:334
 #: addons/the-x-mod.wad/empire/productionsites.lua:342
-#: addons/the-x-mod.wad/empire/productionsites.lua:359
+#: addons/the-x-mod.wad/empire/productionsites.lua:359 input:279 input:288
+#: input:301 input:310 input:325 input:334 input:342 input:359 standard
 msgid "mining coal"
 msgstr "добывает уголь"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:351
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:351 input:351 standard
 msgid "mining gold"
 msgstr "добывает золото"
 
@@ -258,12 +267,13 @@ msgstr "добывает золото"
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:372
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:384
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:396
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:440
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:440 input:372 input:384
+#: input:396 input:440 standard
 msgid "preparing a snack"
 msgstr "готовит закуску"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:428
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:428 input:428 standard
 msgid "preparing a ration"
 msgstr "готовит Паёк"
 
@@ -272,324 +282,332 @@ msgstr "готовит Паёк"
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:464
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:475
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:487
-#: addons/the-x-mod.wad/empire/productionsites.lua:110
+#: addons/the-x-mod.wad/empire/productionsites.lua:110 input:110 input:452
+#: input:464 input:475 input:487 standard
 msgid "preparing a meal"
 msgstr "готовит обед"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:554
-#: addons/the-x-mod.wad/empire/productionsites.lua:131
+#: addons/the-x-mod.wad/empire/productionsites.lua:131 input:131 input:554
+#: standard
 msgid "forging a helmet"
 msgstr "кует шлем"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:566
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:566 input:566 standard
 msgid "forging a mask"
 msgstr "кует маску"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a warhelm because ...
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:578
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:578 input:578 standard
 msgid "forging a warhelm"
 msgstr "кует Боевой Шлем"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:603
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:603 input:603 standard
 msgid "making a felling ax"
 msgstr "делает топор дровосека"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a sharp ax because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:634
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:673
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:673 input:634 input:673
+#: standard
 msgid "forging a sharp ax"
 msgstr "кует острый топор"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:648
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:687
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:687 input:648 input:687
+#: standard
 msgid "forging a broad ax"
 msgstr "кует Секиру"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a bronze ax because ...
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:701
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:701 input:701 standard
 msgid "forging a bronze ax"
 msgstr "кует бронзовый топор"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a battle ax because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:715
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:743
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:743 input:715 input:743
+#: standard
 msgid "forging a battle ax"
 msgstr "кует боевой топор"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a warrior’s ax because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:729
-#: addons/the-x-mod.wad/barbarians/productionsites.lua:757
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:757 input:729 input:757
+#: standard
 msgid "forging a warrior’s ax"
 msgstr "кует Топор воина"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:16
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:16 input:16 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr "повышает уровень уклонения солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:30
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:30 input:30 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr "повышает уровень уклонения солдата с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:72
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:72 input:72 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:84
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:84 input:84 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 1 to level 2"
 msgstr "повышает уровень урона солдат с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:97
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:97 input:97 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr "повышает уровень урона солдат с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:111
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:111 input:111 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 3 to level 4"
 msgstr "повышает уровень урона солдата с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:125
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:125 input:125 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 4 to level 5"
 msgstr "повышает уровень урона солдат с 4 до 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:139
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:139 input:139 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr "повышает уровень здоровья солдат с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:152
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:152 input:152 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr "повышает уровень здоровья солдат с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/barbarians/trainingsites.lua:165
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:165 input:165 standard
 msgctxt "barbarians_building"
 msgid "upgrading soldier health from level 2 to level 3"
 msgstr "повышает уровень здоровья солдат с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:51
+#: addons/the-x-mod.wad/empire/productionsites.lua:51 input:51 standard
 msgid "raising pigs"
 msgstr "растит свиней"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:83
+#: addons/the-x-mod.wad/empire/productionsites.lua:83 input:83 standard
 msgid "sculpting a marble column"
 msgstr "вытачивает мраморную колону"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of armor because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:142
+#: addons/the-x-mod.wad/empire/productionsites.lua:142 input:142 standard
 msgid "forging a suit of armor"
 msgstr "кует доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:153
+#: addons/the-x-mod.wad/empire/productionsites.lua:153 input:153 standard
 msgid "forging a suit of chain armor"
 msgstr "кует кольчужные доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:164
+#: addons/the-x-mod.wad/empire/productionsites.lua:164 input:164 standard
 msgid "forging a suit of gilded armor"
 msgstr "кует позолоченные доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:188
+#: addons/the-x-mod.wad/empire/productionsites.lua:188 input:188 standard
 msgid "forging a wooden spear"
 msgstr "изготавливает Деревянное копьё"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a spear because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:202
+#: addons/the-x-mod.wad/empire/productionsites.lua:202 input:202 standard
 msgid "forging a spear"
 msgstr "изготавливает копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:216
+#: addons/the-x-mod.wad/empire/productionsites.lua:216 input:216 standard
 msgid "forging an advanced spear"
 msgstr "кует Улучшенное копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a heavy spear because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:230
+#: addons/the-x-mod.wad/empire/productionsites.lua:230 input:230 standard
 msgid "forging a heavy spear"
 msgstr "кует Тяжелое копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a war spear because ...
-#: addons/the-x-mod.wad/empire/productionsites.lua:244
+#: addons/the-x-mod.wad/empire/productionsites.lua:244 input:244 standard
 msgid "forging a war spear"
 msgstr "кует Боевое копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/the-x-mod.wad/empire/productionsites.lua:270
-#: addons/the-x-mod.wad/empire/productionsites.lua:287
+#: addons/the-x-mod.wad/empire/productionsites.lua:287 input:270 input:287
+#: standard
 msgid "mining granite"
 msgstr "добывает гранит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #: addons/the-x-mod.wad/empire/productionsites.lua:278
-#: addons/the-x-mod.wad/empire/productionsites.lua:301
+#: addons/the-x-mod.wad/empire/productionsites.lua:301 input:278 input:301
+#: standard
 msgid "mining marble"
 msgstr "добывает мрамор"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/empire/trainingsites.lua:21
-#: addons/the-x-mod.wad/empire/trainingsites.lua:45
+#: addons/the-x-mod.wad/empire/trainingsites.lua:45 input:21 input:45 standard
 msgctxt "empire_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr "повышает уровень уклонения солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:57
+#: addons/the-x-mod.wad/empire/trainingsites.lua:57 input:57 standard
 msgctxt "empire_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr "повышает уровень уклонения солдата с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:103
+#: addons/the-x-mod.wad/empire/trainingsites.lua:103 input:103 standard
 msgctxt "empire_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:116
+#: addons/the-x-mod.wad/empire/trainingsites.lua:116 input:116 standard
 msgctxt "empire_building"
 msgid "upgrading soldier attack from level 1 to level 2"
 msgstr "повышает уровень урона солдат с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:129
+#: addons/the-x-mod.wad/empire/trainingsites.lua:129 input:129 standard
 msgctxt "empire_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr "повышает уровень урона солдат с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:142
+#: addons/the-x-mod.wad/empire/trainingsites.lua:142 input:142 standard
 msgctxt "empire_building"
 msgid "upgrading soldier attack from level 3 to level 4"
 msgstr "повышает уровень урона солдата с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:155
+#: addons/the-x-mod.wad/empire/trainingsites.lua:155 input:155 standard
 msgctxt "empire_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr "повышает уровень здоровья солдат с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:168
+#: addons/the-x-mod.wad/empire/trainingsites.lua:168 input:168 standard
 msgctxt "empire_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr "повышает уровень здоровья солдат с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:181
+#: addons/the-x-mod.wad/empire/trainingsites.lua:181 input:181 standard
 msgctxt "empire_building"
 msgid "upgrading soldier health from level 2 to level 3"
 msgstr "повышает уровень здоровья солдат с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/empire/trainingsites.lua:194
+#: addons/the-x-mod.wad/empire/trainingsites.lua:194 input:194 standard
 msgctxt "empire_building"
 msgid "upgrading soldier health from level 3 to level 4"
 msgstr "повышает уровень здоровья солдат с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing golden fur garment because ...
-#: addons/the-x-mod.wad/frisians/productionsites.lua:25
+#: addons/the-x-mod.wad/frisians/productionsites.lua:25 input:25 standard
 msgid "sewing golden fur garment"
 msgstr "шьет комплект позолоченной меховой одежды"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a long sword because ...
-#: addons/the-x-mod.wad/frisians/productionsites.lua:46
+#: addons/the-x-mod.wad/frisians/productionsites.lua:46 input:46 standard
 msgid "forging a long sword"
 msgstr "кует длинный меч"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
-#: addons/the-x-mod.wad/frisians/productionsites.lua:73
+#: addons/the-x-mod.wad/frisians/productionsites.lua:73 input:73 standard
 msgid "forging a broadsword"
 msgstr "кует Тесак"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a double-edged sword because ...
-#: addons/the-x-mod.wad/frisians/productionsites.lua:87
+#: addons/the-x-mod.wad/frisians/productionsites.lua:87 input:87 standard
 msgid "forging a double-edged sword"
 msgstr "кует обоюдоострый меч"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a golden helmet because ...
-#: addons/the-x-mod.wad/frisians/productionsites.lua:101
+#: addons/the-x-mod.wad/frisians/productionsites.lua:101 input:101 standard
 msgid "forging a golden helmet"
 msgstr "кует золотой шлем"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:31
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:31 input:31 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:46
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:46 input:46 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 1 to level 2"
 msgstr "повышает уровень урона солдат с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:61
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:61 input:61 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr "повышает уровень урона солдат с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:77
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:77 input:77 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr "повышает уровень здоровья солдат с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:91
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:91 input:91 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr "повышает уровень защиты солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:124
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:124 input:124 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 3 to level 4"
 msgstr "повышает уровень урона солдата с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:139
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:139 input:139 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 4 to level 5"
 msgstr "повышает уровень урона солдат с 4 до 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:155
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:155 input:155 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 5 to level 6"
 msgstr "повышает уровень урона солдат с 5 до 6"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:172
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:172 input:172 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier defense from level 1 to level 2"
 msgstr "повышает уровень защиты солдата с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/the-x-mod.wad/frisians/trainingsites.lua:188
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:188 input:188 standard
 msgctxt "frisians_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr "повышает уровень здоровья солдат с 1 до 2"

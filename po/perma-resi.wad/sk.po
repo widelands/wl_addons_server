@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-11-27 12:40+0000\n"
 "Language-Team: Slovak (https://app.transifex.com/widelands/teams/35159/sk/)\n"
 "Language: sk\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
 ">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: addons/perma-resi.wad/addon:2
+#: addons/perma-resi.wad/addon:2 input:8 standard
 msgid "Permanent Resource Indicators"
 msgstr ""
 
-#: addons/perma-resi.wad/addon:3
+#: addons/perma-resi.wad/addon:3 input:6 standard
 msgid ""
 "Keep resource indicators until a mine starts to work in the area. Mines will "
 "gradually, but randomly remove matching indicators."
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:24
+#: addons/perma-resi.wad/postload.lua:24 input:24 standard
 msgid "working"
 msgstr ""
 
@@ -39,7 +39,8 @@ msgstr ""
 #: addons/perma-resi.wad/postload.lua:271
 #: addons/perma-resi.wad/postload.lua:280
 #: addons/perma-resi.wad/postload.lua:373
-#: addons/perma-resi.wad/postload.lua:385
+#: addons/perma-resi.wad/postload.lua:385 input:42 input:111 input:170
+#: input:182 input:191 input:271 input:280 input:373 input:385 standard
 msgid "mining gold"
 msgstr ""
 
@@ -48,7 +49,8 @@ msgstr ""
 #: addons/perma-resi.wad/postload.lua:309
 #: addons/perma-resi.wad/postload.lua:327
 #: addons/perma-resi.wad/postload.lua:414
-#: addons/perma-resi.wad/postload.lua:423
+#: addons/perma-resi.wad/postload.lua:423 input:55 input:82 input:202 input:309
+#: input:327 input:414 input:423 standard
 msgid "mining granite"
 msgstr ""
 
@@ -58,15 +60,16 @@ msgstr ""
 #: addons/perma-resi.wad/postload.lua:252
 #: addons/perma-resi.wad/postload.lua:261
 #: addons/perma-resi.wad/postload.lua:354
-#: addons/perma-resi.wad/postload.lua:363
+#: addons/perma-resi.wad/postload.lua:363 input:71 input:141 input:150
+#: input:159 input:252 input:261 input:354 input:363 standard
 msgid "mining coal"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:91
+#: addons/perma-resi.wad/postload.lua:91 input:91 standard
 msgid "mining quartz"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:100
+#: addons/perma-resi.wad/postload.lua:100 input:100 standard
 msgid "mining diamonds"
 msgstr ""
 
@@ -77,12 +80,13 @@ msgstr ""
 #: addons/perma-resi.wad/postload.lua:290
 #: addons/perma-resi.wad/postload.lua:299
 #: addons/perma-resi.wad/postload.lua:395
-#: addons/perma-resi.wad/postload.lua:404
+#: addons/perma-resi.wad/postload.lua:404 input:121 input:213 input:225
+#: input:234 input:290 input:299 input:395 input:404 standard
 msgid "mining iron"
 msgstr ""
 
 #: addons/perma-resi.wad/postload.lua:318
-#: addons/perma-resi.wad/postload.lua:336
+#: addons/perma-resi.wad/postload.lua:336 input:318 input:336 standard
 msgid "mining marble"
 msgstr ""
 
@@ -91,7 +95,7 @@ msgstr ""
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:10
 #: addons/perma-resi.wad/resi/barbarians/init.lua:10
 #: addons/perma-resi.wad/resi/empire/init.lua:10
-#: addons/perma-resi.wad/resi/frisians/init.lua:10
+#: addons/perma-resi.wad/resi/frisians/init.lua:10 input:10 standard
 msgctxt "resource_indicator"
 msgid "No Resources"
 msgstr ""
@@ -101,7 +105,8 @@ msgstr ""
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:76
 #: addons/perma-resi.wad/resi/barbarians/init.lua:67
 #: addons/perma-resi.wad/resi/empire/init.lua:67
-#: addons/perma-resi.wad/resi/frisians/init.lua:76
+#: addons/perma-resi.wad/resi/frisians/init.lua:76 input:25 input:67 input:76
+#: standard
 msgctxt "resource_indicator"
 msgid "Some Gold"
 msgstr ""
@@ -109,7 +114,8 @@ msgstr ""
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/perma-resi.wad/resi/amazons/init.lua:40
 #: addons/perma-resi.wad/resi/barbarians/init.lua:105
-#: addons/perma-resi.wad/resi/frisians/init.lua:120
+#: addons/perma-resi.wad/resi/frisians/init.lua:120 input:40 input:105
+#: input:120 standard
 msgctxt "resource_indicator"
 msgid "Some Granite"
 msgstr ""
@@ -119,7 +125,8 @@ msgstr ""
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:164
 #: addons/perma-resi.wad/resi/barbarians/init.lua:143
 #: addons/perma-resi.wad/resi/empire/init.lua:143
-#: addons/perma-resi.wad/resi/frisians/init.lua:164
+#: addons/perma-resi.wad/resi/frisians/init.lua:164 input:55 input:143
+#: input:164 standard
 msgctxt "resource_indicator"
 msgid "A Lot of Gold"
 msgstr ""
@@ -127,7 +134,8 @@ msgstr ""
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/perma-resi.wad/resi/amazons/init.lua:70
 #: addons/perma-resi.wad/resi/barbarians/init.lua:181
-#: addons/perma-resi.wad/resi/frisians/init.lua:208
+#: addons/perma-resi.wad/resi/frisians/init.lua:208 input:70 input:181
+#: input:208 standard
 msgctxt "resource_indicator"
 msgid "A Lot of Granite"
 msgstr ""
@@ -136,7 +144,7 @@ msgstr ""
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:32
 #: addons/perma-resi.wad/resi/barbarians/init.lua:29
 #: addons/perma-resi.wad/resi/empire/init.lua:29
-#: addons/perma-resi.wad/resi/frisians/init.lua:32
+#: addons/perma-resi.wad/resi/frisians/init.lua:32 input:29 input:32 standard
 msgctxt "resource_indicator"
 msgid "Water"
 msgstr ""
@@ -145,7 +153,7 @@ msgstr ""
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:54
 #: addons/perma-resi.wad/resi/barbarians/init.lua:48
 #: addons/perma-resi.wad/resi/empire/init.lua:48
-#: addons/perma-resi.wad/resi/frisians/init.lua:54
+#: addons/perma-resi.wad/resi/frisians/init.lua:54 input:48 input:54 standard
 msgctxt "resource_indicator"
 msgid "Some Coal"
 msgstr ""
@@ -154,13 +162,13 @@ msgstr ""
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:98
 #: addons/perma-resi.wad/resi/barbarians/init.lua:86
 #: addons/perma-resi.wad/resi/empire/init.lua:86
-#: addons/perma-resi.wad/resi/frisians/init.lua:98
+#: addons/perma-resi.wad/resi/frisians/init.lua:98 input:86 input:98 standard
 msgctxt "resource_indicator"
 msgid "Some Iron"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/perma-resi.wad/resi/atlanteans/init.lua:120
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:120 input:120 standard
 msgctxt "resource_indicator"
 msgid "Some Crystals"
 msgstr ""
@@ -169,7 +177,8 @@ msgstr ""
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:142
 #: addons/perma-resi.wad/resi/barbarians/init.lua:124
 #: addons/perma-resi.wad/resi/empire/init.lua:124
-#: addons/perma-resi.wad/resi/frisians/init.lua:142
+#: addons/perma-resi.wad/resi/frisians/init.lua:142 input:124 input:142
+#: standard
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
 msgstr ""
@@ -178,25 +187,26 @@ msgstr ""
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:186
 #: addons/perma-resi.wad/resi/barbarians/init.lua:162
 #: addons/perma-resi.wad/resi/empire/init.lua:162
-#: addons/perma-resi.wad/resi/frisians/init.lua:186
+#: addons/perma-resi.wad/resi/frisians/init.lua:186 input:162 input:186
+#: standard
 msgctxt "resource_indicator"
 msgid "A Lot of Iron"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/perma-resi.wad/resi/atlanteans/init.lua:208
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:208 input:208 standard
 msgctxt "resource_indicator"
 msgid "A Lot of Crystals"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/perma-resi.wad/resi/empire/init.lua:105
+#: addons/perma-resi.wad/resi/empire/init.lua:105 input:105 standard
 msgctxt "resource_indicator"
 msgid "Some Marble"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/perma-resi.wad/resi/empire/init.lua:181
+#: addons/perma-resi.wad/resi/empire/init.lua:181 input:181 standard
 msgctxt "resource_indicator"
 msgid "A Lot of Marble"
 msgstr ""

@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-30 03:13+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Fast_Explorer.wad/addon:6
+#: addons/Fast_Explorer.wad/addon:6 input:6 standard
 msgid ""
 "Maps for the ''Fast Explorer wins'' win condition. ''Fast Explorer SP'' is "
 "for single player, the other one for multiplayer games. Teams are not "
@@ -31,19 +31,12 @@ msgstr ""
 "Kartor för vinstvillkoret ''Fast Explorer wins''. ''Fast Explorer SP'' är "
 "för enkelspelare, den andra för flerspelarlägen. Lag stöds inte."
 
-#: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4
+#: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4 input:9
+#: standard input:4
 msgid "Fast_Explorer"
 msgstr "Fast_Explorer"
 
-#: input:8 standard
-msgid "Fast Explorer MP"
-msgstr "Fast Explorer MP"
-
-#: input:8 standard
-msgid "Fast Explorer SP"
-msgstr "Fast Explorer SP"
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Use this map if you want to play the win condition ''Fast Explorer Wins'' "
 "with your friends in a multiplayer game. This map contain 5 times the same "
@@ -53,7 +46,7 @@ msgstr ""
 "Wins'' med dina vänner i ett flerspelarspel. Denna karta innehåller fem "
 "gånger samma ö som i kartan ''Fast Explorer SP''."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Use this map together with the win condition ''Fast explorer wins'' and take "
 "part on the ''Fast Explorer Torurnament''! The goal is to expand your "
@@ -67,7 +60,7 @@ msgstr ""
 "Denna karta innehåller endast en spelare och är avsedd för att publicera din "
 "personliga tid tillsammans med reprisen i forumtråden ''Snabb utforskare''!"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Place your roads and flags wisely and place warehouses on strategically "
 "places. Limited resources needs some micromanaging of productionsites and "
@@ -76,3 +69,11 @@ msgstr ""
 "Placera dina vägar och flaggor klokt och placera lagerbyggnader på "
 "strategiska platser. Begränsade resurser kräver viss detaljstyrning av "
 "produktionsanläggningar och lagerbyggnader."
+
+#: input:8 input:10 standard
+msgid "Fast Explorer MP"
+msgstr "Fast Explorer MP"
+
+#: input:8 input:10 standard
+msgid "Fast Explorer SP"
+msgstr "Fast Explorer SP"

@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2022-03-14 08:53+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -26,11 +26,11 @@ msgstr ""
 #: addons/boss-village.wad/atlanteans.lua:11
 #: addons/boss-village.wad/barbarians.lua:11
 #: addons/boss-village.wad/empire.lua:11
-#: addons/boss-village.wad/frisians.lua:11
+#: addons/boss-village.wad/frisians.lua:11 input:9 input:11 standard
 msgid "Boss Village"
 msgstr "보스 마을"
 
-#: addons/boss-village.wad/addon:5
+#: addons/boss-village.wad/addon:5 input:6 standard
 msgid "No description"
 msgstr "설명 없음"
 
@@ -39,6 +39,6 @@ msgstr "설명 없음"
 #: addons/boss-village.wad/atlanteans.lua:13
 #: addons/boss-village.wad/barbarians.lua:13
 #: addons/boss-village.wad/empire.lua:13
-#: addons/boss-village.wad/frisians.lua:13
+#: addons/boss-village.wad/frisians.lua:13 input:13 standard
 msgid "Start the game with a village and many strong soldiers"
 msgstr "마을의 강력한 병사들과 함께 게임을 시작하세요"

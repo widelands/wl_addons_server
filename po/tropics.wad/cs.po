@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2021-05-29 21:09+0000\n"
 "Last-Translator: Ondřej Itřech, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -24,11 +24,12 @@ msgstr ""
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
-#: addons/tropics.wad/addon:2 addons/tropics.wad/editor.lua:8
+#: addons/tropics.wad/addon:2 addons/tropics.wad/editor.lua:8 input:7 input:8
+#: standard
 msgid "Tropics"
 msgstr "Tropy"
 
-#: addons/tropics.wad/addon:3
+#: addons/tropics.wad/addon:3 input:6 standard
 msgid ""
 "Terrains and (alpha) trees for tropical areas. Someday in future this add-on "
 "might contain more and better trees, and other stuff. The terrains DON'T "
@@ -39,228 +40,233 @@ msgstr ""
 "stromy Amazonek nebo zušlechťování ... zatím."
 
 #. TRANSLATORS: A category in the editor for placing immovables on the map.
-#: addons/tropics.wad/editor.lua:37
+#: addons/tropics.wad/editor.lua:37 input:37 standard
 msgid "Tropical Trees"
 msgstr "Tropické stromy"
 
-#: addons/tropics.wad/immovables/trees/corymbia/init.lua:14
+#: addons/tropics.wad/immovables/trees/corymbia/init.lua:14 input:14 standard
 msgid "Corymbia (Sapling)"
 msgstr "Korymbie (sazenice)"
 
-#: addons/tropics.wad/immovables/trees/corymbia/init.lua:39
+#: addons/tropics.wad/immovables/trees/corymbia/init.lua:39 input:39 standard
 msgid "Corymbia (Pole)"
 msgstr "Korymbie (stromek)"
 
-#: addons/tropics.wad/immovables/trees/corymbia/init.lua:65
+#: addons/tropics.wad/immovables/trees/corymbia/init.lua:65 input:65 standard
 msgid "Corymbia (Mature)"
 msgstr "Korymbie (vzrostlá)"
 
-#: addons/tropics.wad/immovables/trees/corymbia/init.lua:91
+#: addons/tropics.wad/immovables/trees/corymbia/init.lua:91 input:91 standard
 msgid "Corymbia (Old)"
 msgstr "Korymbie (stará)"
 
-#: addons/tropics.wad/immovables/trees/corymbia/init.lua:92
+#: addons/tropics.wad/immovables/trees/corymbia/init.lua:92 input:92 standard
 msgid "Corymbia"
 msgstr "Korymbie"
 
-#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:14
+#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:14 input:14 standard
 msgid "Ebonytree (Sapling)"
 msgstr "Ebenovník (sazenice)"
 
-#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:39
+#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:39 input:39 standard
 msgid "Ebonytree (Pole)"
 msgstr "Ebenovník (stromek)"
 
-#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:65
+#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:65 input:65 standard
 msgid "Ebonytree (Mature)"
 msgstr "Ebenovník (vzrostlý)"
 
-#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:90
+#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:90 input:90 standard
 msgid "Ebonytree (Old)"
 msgstr "Ebenovník (starý)"
 
-#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:91
+#: addons/tropics.wad/immovables/trees/ebonytree/init.lua:91 input:91 standard
 msgid "Ebonytree"
 msgstr "Ebenovník"
 
-#: addons/tropics.wad/immovables/trees/kapok/init.lua:14
+#: addons/tropics.wad/immovables/trees/kapok/init.lua:14 input:14 standard
 msgid "Kapok (Sapling)"
 msgstr "Kapok (sazenice)"
 
-#: addons/tropics.wad/immovables/trees/kapok/init.lua:39
+#: addons/tropics.wad/immovables/trees/kapok/init.lua:39 input:39 standard
 msgid "Kapok (Pole)"
 msgstr "Kapok (stromek)"
 
-#: addons/tropics.wad/immovables/trees/kapok/init.lua:65
+#: addons/tropics.wad/immovables/trees/kapok/init.lua:65 input:65 standard
 msgid "Kapok (Mature)"
 msgstr "Kapok (vzrostlý)"
 
-#: addons/tropics.wad/immovables/trees/kapok/init.lua:91
+#: addons/tropics.wad/immovables/trees/kapok/init.lua:91 input:91 standard
 msgid "Kapok (Old)"
 msgstr "Kapok (starý)"
 
-#: addons/tropics.wad/immovables/trees/kapok/init.lua:92
+#: addons/tropics.wad/immovables/trees/kapok/init.lua:92 input:92 standard
 msgid "Kapok Tree"
 msgstr "Kapok"
 
-#: addons/tropics.wad/immovables/trees/lapacho/init.lua:14
+#: addons/tropics.wad/immovables/trees/lapacho/init.lua:14 input:14 standard
 msgid "Lapacho (Sapling)"
 msgstr "Lapacho (sazenice)"
 
-#: addons/tropics.wad/immovables/trees/lapacho/init.lua:39
+#: addons/tropics.wad/immovables/trees/lapacho/init.lua:39 input:39 standard
 msgid "Lapacho (Pole)"
 msgstr "Lapacho (stromek)"
 
-#: addons/tropics.wad/immovables/trees/lapacho/init.lua:65
+#: addons/tropics.wad/immovables/trees/lapacho/init.lua:65 input:65 standard
 msgid "Lapacho (Mature)"
 msgstr "Lapacho (vzrostlý)"
 
-#: addons/tropics.wad/immovables/trees/lapacho/init.lua:92
+#: addons/tropics.wad/immovables/trees/lapacho/init.lua:92 input:92 standard
 msgid "Lapacho (Old)"
 msgstr "Lapacho (starý)"
 
-#: addons/tropics.wad/immovables/trees/lapacho/init.lua:93
+#: addons/tropics.wad/immovables/trees/lapacho/init.lua:93 input:93 standard
 msgid "Lapacho"
 msgstr "Lapacho"
 
-#: addons/tropics.wad/immovables/trees/mangrove/init.lua:14
+#: addons/tropics.wad/immovables/trees/mangrove/init.lua:14 input:14 standard
 msgid "Mangrove (Sapling)"
 msgstr "Mangrovy (sazenice)"
 
-#: addons/tropics.wad/immovables/trees/mangrove/init.lua:39
+#: addons/tropics.wad/immovables/trees/mangrove/init.lua:39 input:39 standard
 msgid "Mangrove (Pole)"
 msgstr "Mangrovy (stromek)"
 
-#: addons/tropics.wad/immovables/trees/mangrove/init.lua:65
+#: addons/tropics.wad/immovables/trees/mangrove/init.lua:65 input:65 standard
 msgid "Mangrove (Mature)"
 msgstr "Mangrovy (vzrostlé)"
 
-#: addons/tropics.wad/immovables/trees/mangrove/init.lua:96
+#: addons/tropics.wad/immovables/trees/mangrove/init.lua:96 input:96 standard
 msgid "Mangrove (Old)"
 msgstr "Mangrovy (staré)"
 
-#: addons/tropics.wad/immovables/trees/mangrove/init.lua:97
+#: addons/tropics.wad/immovables/trees/mangrove/init.lua:97 input:97 standard
 msgid "Mangrove"
 msgstr "Mangrovy"
 
-#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:14
+#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:14 input:14 standard
 msgid "Peach Palm (Sapling)"
 msgstr "Broskvová palma (sazenice)"
 
-#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:39
+#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:39 input:39 standard
 msgid "Peach Palm (Pole)"
 msgstr "Broskvová palma (stromek)"
 
-#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:65
+#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:65 input:65 standard
 msgid "Peach Palm (Mature)"
 msgstr "Broskvová palma (vzrostlá)"
 
-#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:90
+#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:90 input:90 standard
 msgid "Peach Palm (Old)"
 msgstr "Broskvová palma (stará)"
 
-#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:91
+#: addons/tropics.wad/immovables/trees/peachpalm/init.lua:91 input:91 standard
 msgid "Peach Palm"
 msgstr "Broskvová palma"
 
-#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:14
+#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:14 input:14
+#: standard
 msgid "Syargus Palm (Sapling)"
 msgstr "Královská palma (sazenice)"
 
-#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:39
+#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:39 input:39
+#: standard
 msgid "Syargus Palm (Pole)"
 msgstr "Královská palma (stromek)"
 
-#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:65
+#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:65 input:65
+#: standard
 msgid "Syargus Palm (Mature)"
 msgstr "Královská palma (vzrostlá)"
 
-#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:90
+#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:90 input:90
+#: standard
 msgid "Syargus Palm (Old)"
 msgstr "Královská palma (stará)"
 
-#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:91
+#: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:91 input:91
+#: standard
 msgid "Syargus Palm"
 msgstr "Královská palma"
 
-#: addons/tropics.wad/terrains/init.lua:10
+#: addons/tropics.wad/terrains/init.lua:10 input:10 standard
 msgid "Wet Soil 1"
 msgstr "Vlhká půda 1"
 
-#: addons/tropics.wad/terrains/init.lua:23
+#: addons/tropics.wad/terrains/init.lua:23 input:23 standard
 msgid "Wet Soil 2"
 msgstr "Vlhká půda 2"
 
-#: addons/tropics.wad/terrains/init.lua:36
+#: addons/tropics.wad/terrains/init.lua:36 input:36 standard
 msgid "Muddy Soil 1"
 msgstr "Bahnitá půda 1"
 
-#: addons/tropics.wad/terrains/init.lua:49
+#: addons/tropics.wad/terrains/init.lua:49 input:49 standard
 msgid "Muddy Soil 2"
 msgstr "Bahnitá půda 2"
 
-#: addons/tropics.wad/terrains/init.lua:62
+#: addons/tropics.wad/terrains/init.lua:62 input:62 standard
 msgid "Rocky Soil 1"
 msgstr "Kamenná půda 1"
 
-#: addons/tropics.wad/terrains/init.lua:75
+#: addons/tropics.wad/terrains/init.lua:75 input:75 standard
 msgid "Rocky Soil 2"
 msgstr "Kamenná půda 2"
 
-#: addons/tropics.wad/terrains/init.lua:89
+#: addons/tropics.wad/terrains/init.lua:89 input:89 standard
 msgid "Forested Mountain 1"
 msgstr "Zalesněná hora 1"
 
-#: addons/tropics.wad/terrains/init.lua:102
+#: addons/tropics.wad/terrains/init.lua:102 input:102 standard
 msgid "Forested Mountain 2"
 msgstr "Zalesněná hora 2"
 
-#: addons/tropics.wad/terrains/init.lua:115
+#: addons/tropics.wad/terrains/init.lua:115 input:115 standard
 msgid "Forested Mountain 3"
 msgstr "Zalesněná hora 3"
 
-#: addons/tropics.wad/terrains/init.lua:128
+#: addons/tropics.wad/terrains/init.lua:128 input:128 standard
 msgid "Mountain 1"
 msgstr "Hora 1"
 
-#: addons/tropics.wad/terrains/init.lua:142
+#: addons/tropics.wad/terrains/init.lua:142 input:142 standard
 msgid "Mountain 2"
 msgstr "Hora 2"
 
-#: addons/tropics.wad/terrains/init.lua:156
+#: addons/tropics.wad/terrains/init.lua:156 input:156 standard
 msgid "Mountain 3"
 msgstr "Hora 3"
 
-#: addons/tropics.wad/terrains/init.lua:171
+#: addons/tropics.wad/terrains/init.lua:171 input:171 standard
 msgid "Beach"
 msgstr "Pláž"
 
-#: addons/tropics.wad/terrains/init.lua:184
+#: addons/tropics.wad/terrains/init.lua:184 input:184 standard
 msgid "Tropical Fen 1"
 msgstr "Tropická bažina 1"
 
-#: addons/tropics.wad/terrains/init.lua:197
+#: addons/tropics.wad/terrains/init.lua:197 input:197 standard
 msgid "Tropical Fen 2"
 msgstr "Tropická bažina 2"
 
-#: addons/tropics.wad/terrains/init.lua:210
+#: addons/tropics.wad/terrains/init.lua:210 input:210 standard
 msgid "Tropical Swamp"
 msgstr "Tropická bažina"
 
-#: addons/tropics.wad/terrains/init.lua:225
+#: addons/tropics.wad/terrains/init.lua:225 input:225 standard
 msgid "Tropical Water"
 msgstr "Tropická voda"
 
-#: addons/tropics.wad/terrains/init.lua:239
+#: addons/tropics.wad/terrains/init.lua:239 input:239 standard
 msgid "Muddy river water"
 msgstr "Bahnitá říční voda"
 
-#: screenshots/tropics.wad/descriptions:1
+#: input:3 screenshots/tropics.wad/descriptions:1 standard
 msgid ""
 "The “new world” in the editor. One with the terrains and trees tools shown…"
 msgstr ""
 
-#: screenshots/tropics.wad/descriptions:2
+#: input:4 screenshots/tropics.wad/descriptions:2 standard
 msgid ""
 "…and the second with hidden immovables and animals, and without the tools to "
 "better show the terrains on the map."

@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:13+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-11-30 17:49+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -23,19 +23,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Amoebae.wad/addon:4 input:8 standard
+#: addons/Amoebae.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Amoebae"
 msgstr "Amöba"
 
-#: addons/Amoebae.wad/addon:5 input:10 standard
+#: addons/Amoebae.wad/addon:5 input:6 input:10 standard
 msgid "You are an Amoebae, expand and conquer all other Amoebae... "
 msgstr "Du är en amöba, expandera och erövra alla andra amöbor... "
 
-#: addons/Amoebae.wad/dirnames:4
+#: addons/Amoebae.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Tilläggskartor"
 
-#: input:11 standard
+#: input:3 screenshots/Amoebae.wad/descriptions:3 standard
+msgid "Minimap with player positions"
+msgstr "Minikarta med spelarnas positioner"
+
+#: input:7 input:11 standard
 msgid ""
 "Be aware that you are surrounded with enemies. Disable diplomacy for an "
 "easier game, enable it for a more challenging game. Additionally you can "
@@ -47,7 +51,3 @@ msgstr ""
 "definiera svårighetsgraden genom att spela mot olika AI-lag. Även om vissa "
 "spelare har mer utrymme i början skulle jag betrakta denna karta som "
 "balanserad."
-
-#: screenshots/Amoebae.wad/descriptions:3
-msgid "Minimap with player positions"
-msgstr "Minikarta med spelarnas positioner"

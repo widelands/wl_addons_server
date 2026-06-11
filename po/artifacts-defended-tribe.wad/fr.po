@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-11-25 20:05+0000\n"
 "Last-Translator: David D, 2024\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
 
-#: addons/artifacts-defended-tribe.wad/addon:6
+#: addons/artifacts-defended-tribe.wad/addon:6 input:6 standard
 msgid ""
 "Tribe's buildings for the start condition 'artifacts "
 "defended'<br><br><br><br>Has no use without the start condition."
@@ -30,6 +30,6 @@ msgstr ""
 "Les bâtiments de la tribu pour la condition de départ « artefacts défendus » "
 "<br><br><br><br> N'ont aucune utilité sans la condition de départ."
 
-#: addons/artifacts-defended-tribe.wad/addon:9
+#: addons/artifacts-defended-tribe.wad/addon:9 input:9 standard
 msgid "artifacts defended, tribe"
 msgstr "artefacts défendus, tribu"

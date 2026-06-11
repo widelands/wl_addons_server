@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 03:14+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2025-01-03 15:43+0000\n"
 "Language-Team: Portuguese (https://app.transifex.com/widelands/teams/35159/"
 "pt/)\n"
@@ -24,11 +24,11 @@ msgstr ""
 #: addons/tidy_warehouses.wad/atlanteans.lua:13
 #: addons/tidy_warehouses.wad/barbarians.lua:13
 #: addons/tidy_warehouses.wad/empire.lua:13
-#: addons/tidy_warehouses.wad/frisians.lua:13
+#: addons/tidy_warehouses.wad/frisians.lua:13 input:8 input:13 standard
 msgid "Tidy Warehouses"
 msgstr ""
 
-#: addons/tidy_warehouses.wad/addon:3
+#: addons/tidy_warehouses.wad/addon:3 input:6 standard
 msgid ""
 "Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From "
 "time to time your workers do inventories. If there is more than 500 items in "
@@ -41,7 +41,7 @@ msgstr ""
 #: addons/tidy_warehouses.wad/atlanteans.lua:15
 #: addons/tidy_warehouses.wad/barbarians.lua:15
 #: addons/tidy_warehouses.wad/empire.lua:15
-#: addons/tidy_warehouses.wad/frisians.lua:15
+#: addons/tidy_warehouses.wad/frisians.lua:15 input:15 standard
 msgid ""
 "Start with 360 items, 50 workers and 40 soldiers in your Headquarter. From "
 "time to time your workers do inventories. If there is more than 500 items in "
@@ -53,7 +53,8 @@ msgstr ""
 #: addons/tidy_warehouses.wad/atlanteans.lua:108
 #: addons/tidy_warehouses.wad/barbarians.lua:99
 #: addons/tidy_warehouses.wad/empire.lua:108
-#: addons/tidy_warehouses.wad/frisians.lua:113
+#: addons/tidy_warehouses.wad/frisians.lua:113 input:99 input:108 standard
+#: input:113
 msgid "Warehouse cleaned!"
 msgstr ""
 
@@ -61,7 +62,8 @@ msgstr ""
 #: addons/tidy_warehouses.wad/atlanteans.lua:145
 #: addons/tidy_warehouses.wad/barbarians.lua:136
 #: addons/tidy_warehouses.wad/empire.lua:145
-#: addons/tidy_warehouses.wad/frisians.lua:150
+#: addons/tidy_warehouses.wad/frisians.lua:150 input:136 input:145 standard
+#: input:150
 msgid "%1$s has been cleaned!"
 msgstr ""
 
@@ -70,7 +72,8 @@ msgstr ""
 #: addons/tidy_warehouses.wad/atlanteans.lua:147
 #: addons/tidy_warehouses.wad/barbarians.lua:138
 #: addons/tidy_warehouses.wad/empire.lua:147
-#: addons/tidy_warehouses.wad/frisians.lua:152
+#: addons/tidy_warehouses.wad/frisians.lua:152 input:138 input:147 standard
+#: input:152
 msgid "%1$d item has been removed."
 msgid_plural "%1$d items have been removed."
 msgstr[0] ""
@@ -81,7 +84,8 @@ msgstr[2] ""
 #: addons/tidy_warehouses.wad/atlanteans.lua:147
 #: addons/tidy_warehouses.wad/barbarians.lua:138
 #: addons/tidy_warehouses.wad/empire.lua:147
-#: addons/tidy_warehouses.wad/frisians.lua:152
+#: addons/tidy_warehouses.wad/frisians.lua:152 input:138 input:147 standard
+#: input:152
 msgid "%2$d item lefts."
 msgid_plural "%2$d items left."
 msgstr[0] ""

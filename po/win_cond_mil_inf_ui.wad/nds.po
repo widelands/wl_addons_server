@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 03:16+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2026-05-24 08:17+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2026\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -22,21 +22,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/win_cond_mil_inf_ui.wad/addon:2
+#: addons/win_cond_mil_inf_ui.wad/addon:2 input:8 standard
 msgid "Military Influence Info"
 msgstr "Soldateree-Belangen-Informatioon"
 
-#: addons/win_cond_mil_inf_ui.wad/addon:3
+#: addons/win_cond_mil_inf_ui.wad/addon:3 input:6 standard
 msgid ""
 "Show detailed scoring information for the Military Influence win condition."
 msgstr ""
 "Akkeraate Weerttahl-Informatioon för de Upgaav tum Winnen »Soldateree-"
 "Belangen« wiesen."
 
-#: addons/win_cond_mil_inf_ui.wad/init.lua:26
+#: addons/win_cond_mil_inf_ui.wad/init.lua:26 input:26 standard
 msgid "Show info on score calculation"
 msgstr "Informatioon bi Weerttahl-Bereknen wiesen"
 
-#: addons/win_cond_mil_inf_ui.wad/shortcuts.lua:6
+#: addons/win_cond_mil_inf_ui.wad/shortcuts.lua:6 standard input:6
 msgid "Score info"
 msgstr "Weerttahl-Informatioon"

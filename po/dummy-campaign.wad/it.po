@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
 "it/)\n"
@@ -19,43 +19,45 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: addons/dummy-campaign.wad/addon:2
+#: addons/dummy-campaign.wad/addon:2 input:7 standard
 msgid "Dummy campaign"
 msgstr ""
 
-#: addons/dummy-campaign.wad/addon:3
+#: addons/dummy-campaign.wad/addon:3 input:6 standard
 msgid "A campaign consisting of unbelievable 0 playable levels."
 msgstr ""
 
 #. TRANSLATORS: The difficulty level of a campaign
-#: addons/dummy-campaign.wad/campaigns.lua:16
+#: addons/dummy-campaign.wad/campaigns.lua:16 input:16 standard
 msgid "Easy."
 msgstr ""
 
-#: addons/dummy-campaign.wad/campaigns.lua:27
+#: addons/dummy-campaign.wad/campaigns.lua:27 input:27 standard
 msgid "Dummy"
 msgstr ""
 
-#: addons/dummy-campaign.wad/campaigns.lua:29
+#: addons/dummy-campaign.wad/campaigns.lua:29 input:29 standard
 msgid "Dummy campaign."
 msgstr ""
 
-#: addons/dummy-campaign.wad/campaigns.lua:30
+#: addons/dummy-campaign.wad/campaigns.lua:30 input:30 standard
 msgid ""
 "This campaign is not playable. It only demonstrates the campaign-type add-on "
 "feature."
 msgstr ""
 
 #: addons/dummy-campaign.wad/example-dummy.wmf/elemental:8
-#: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:12
+#: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:12 input:9
+#: standard input:12
 msgid "Not yet implemented"
 msgstr ""
 
-#: addons/dummy-campaign.wad/example-dummy.wmf/elemental:10
+#: addons/dummy-campaign.wad/example-dummy.wmf/elemental:10 input:4 standard
 msgid "Nobody"
 msgstr ""
 
 #: addons/dummy-campaign.wad/example-dummy.wmf/elemental:12
-#: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:13
+#: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:13 input:5
+#: standard input:13
 msgid "Sorry, this map is not yet implemented."
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: addons/stronger-trading-outpost.wad/addon:2
+#: addons/stronger-trading-outpost.wad/addon:2 input:7 standard
 msgid "Stronger Trading Outpost"
 msgstr ""
 
-#: addons/stronger-trading-outpost.wad/addon:3
+#: addons/stronger-trading-outpost.wad/addon:3 input:6 standard
 msgid ""
 "Enhanced Trading Outpost starting conditions for all official tribes. "
 "Intended to give AIs a stronger start."
 msgstr ""
 
-#: addons/stronger-trading-outpost.wad/addon:4
+#: addons/stronger-trading-outpost.wad/addon:4 input:4 standard
 msgid "Nordfriese & the-x"
 msgstr ""
 
@@ -36,7 +36,8 @@ msgstr ""
 #: addons/stronger-trading-outpost.wad/atlanteans.lua:11
 #: addons/stronger-trading-outpost.wad/barbarians.lua:11
 #: addons/stronger-trading-outpost.wad/empire.lua:11
-#: addons/stronger-trading-outpost.wad/frisians.lua:11
+#: addons/stronger-trading-outpost.wad/frisians.lua:11 input:11 standard
+#: standard input:11
 msgid "AI Trading Outpost"
 msgstr ""
 
@@ -45,7 +46,8 @@ msgstr ""
 #: addons/stronger-trading-outpost.wad/atlanteans.lua:13
 #: addons/stronger-trading-outpost.wad/barbarians.lua:13
 #: addons/stronger-trading-outpost.wad/empire.lua:13
-#: addons/stronger-trading-outpost.wad/frisians.lua:13
+#: addons/stronger-trading-outpost.wad/frisians.lua:13 input:13 standard
+#: standard input:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""

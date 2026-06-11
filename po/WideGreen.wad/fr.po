@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-03-30 18:07+0000\n"
 "Last-Translator: C138, 2023\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
 
-#: addons/WideGreen.wad/addon:6
+#: addons/WideGreen.wad/addon:6 input:6 standard
 msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen. Gegner sind ganz nahe! Es kann "
@@ -47,12 +47,12 @@ msgstr ""
 "dépensez pas l'or sur les ports, vous n'aurez pas accès à plus d'or pour les "
 "ports et les expéditions vers l'ennemi."
 
-#: addons/WideGreen.wad/addon:9 addons/WideGreen.wad/dirnames:4 input:8
-#: standard
+#: addons/WideGreen.wad/addon:9 addons/WideGreen.wad/dirnames:4 input:8 input:9
+#: input:10 standard input:4
 msgid "WideGreen"
 msgstr "WideGreen"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen."
@@ -60,7 +60,7 @@ msgstr ""
 "De la verdure et des rivières à perte de vue. Les expéditions dans les ports "
 "sont indispensables pour atteindre l'ennemi."
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Gegner sind ganz nahe! Es kann sich sehr lohnen möglichst schnell bestimmte "
 "Hafenbauplätze zu kontrollieren. Achte darauf, dass die Werften und die "

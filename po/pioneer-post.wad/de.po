@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-05-27 12:27+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -25,11 +25,11 @@ msgstr ""
 #: addons/pioneer-post.wad/addon:2 addons/pioneer-post.wad/atlanteans.lua:11
 #: addons/pioneer-post.wad/barbarians.lua:11
 #: addons/pioneer-post.wad/empire.lua:11
-#: addons/pioneer-post.wad/frisians.lua:11
+#: addons/pioneer-post.wad/frisians.lua:11 input:7 input:11 standard
 msgid "Pioneer Post"
 msgstr "Pionierposten"
 
-#: addons/pioneer-post.wad/addon:3
+#: addons/pioneer-post.wad/addon:3 input:6 standard
 msgid "A headquarters-like starting condition with fewer wares and workers."
 msgstr ""
 "Eine Startbedingung ähnlich dem Hauptquartier mit weniger Waren und "
@@ -39,7 +39,7 @@ msgstr ""
 #: addons/pioneer-post.wad/atlanteans.lua:13
 #: addons/pioneer-post.wad/barbarians.lua:13
 #: addons/pioneer-post.wad/empire.lua:13
-#: addons/pioneer-post.wad/frisians.lua:13
+#: addons/pioneer-post.wad/frisians.lua:13 input:13 standard
 msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy"

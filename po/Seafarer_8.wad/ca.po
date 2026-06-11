@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 03:16+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2026-06-07 21:57+0000\n"
 "Last-Translator: Juanjo, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,10 +22,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Seafarer_8.wad/addon:4 input:8 standard
+#: addons/Seafarer_8.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Seafarer.8"
 msgstr ""
 
-#: addons/Seafarer_8.wad/dirnames:4
+#: addons/Seafarer_8.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Mapes del complement"
+
+#: input:6 standard
+msgid ""
+"Seafarers world with 8 players (Blue, Black) with Red (Yellow, Green) "
+"(Purple, White) <br> <br>Version 1.0"
+msgstr ""

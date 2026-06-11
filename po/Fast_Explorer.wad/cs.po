@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-31 03:09+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: addons/Fast_Explorer.wad/addon:6
+#: addons/Fast_Explorer.wad/addon:6 input:6 standard
 msgid ""
 "Maps for the ''Fast Explorer wins'' win condition. ''Fast Explorer SP'' is "
 "for single player, the other one for multiplayer games. Teams are not "
@@ -32,19 +32,12 @@ msgstr ""
 "objevitel SP\" je pro jednoho hráče, druhá je určena pro multiplayer. Týmy "
 "nejsou podporovány."
 
-#: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4
+#: addons/Fast_Explorer.wad/addon:9 addons/Fast_Explorer.wad/dirnames:4 input:9
+#: standard input:4
 msgid "Fast_Explorer"
 msgstr "Rychlý objevitel"
 
-#: input:8 standard
-msgid "Fast Explorer MP"
-msgstr "Rychlý objevitel MP"
-
-#: input:8 standard
-msgid "Fast Explorer SP"
-msgstr "Rychlý objevitel SP"
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Use this map if you want to play the win condition ''Fast Explorer Wins'' "
 "with your friends in a multiplayer game. This map contain 5 times the same "
@@ -54,7 +47,7 @@ msgstr ""
 "objevitel vyhrává\". Mapa sestává z 5-ti stejných \"Rychlý objevitel SP\" "
 "ostrovů."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Use this map together with the win condition ''Fast explorer wins'' and take "
 "part on the ''Fast Explorer Torurnament''! The goal is to expand your "
@@ -68,7 +61,7 @@ msgstr ""
 "jednoho hráče a je určena pro uveřejnění dosaženého času a záznamu hry na "
 "Widelands fóru ve vlákně \"Rychlý objevitel\"."
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Place your roads and flags wisely and place warehouses on strategically "
 "places. Limited resources needs some micromanaging of productionsites and "
@@ -77,3 +70,11 @@ msgstr ""
 "Buduj cesty a umisťuj vlajky s rozmyslem. Stav sklady na strategicky "
 "důležitých místech. Z důvodu omezených surovin bude třeba pracovat s "
 "ekonomickým nastavením a prioritami u výrobních budov a skladů."
+
+#: input:8 input:10 standard
+msgid "Fast Explorer MP"
+msgstr "Rychlý objevitel MP"
+
+#: input:8 input:10 standard
+msgid "Fast Explorer SP"
+msgstr "Rychlý objevitel SP"

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 03:18+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2026-06-07 21:53+0000\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/widelands/"
 "teams/35159/pt_BR/)\n"
@@ -19,14 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
 
-#: addons/only_a_few_ponds_in_the_desert.wad/addon:4 input:8 standard
+#: addons/only_a_few_ponds_in_the_desert.wad/addon:4 input:8 input:9 input:10
+#: standard
 msgid "only a few ponds in the desert"
 msgstr ""
 
-#: addons/only_a_few_ponds_in_the_desert.wad/dirnames:4
+#: addons/only_a_few_ponds_in_the_desert.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr ""
 
-#: input:13 standard
+#: input:6 standard
+msgid ""
+"Hebrews surrounded by Romans who have only barbarians left as enemies. <br> "
+"<br>Version: 1.09"
+msgstr ""
+
+#: input:7 input:13 standard
 msgid "The barbarians in the northeast are allied; follow the caravan route."
 msgstr ""

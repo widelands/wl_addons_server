@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-30 03:14+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-03-20 17:12+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -23,10 +23,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/first_heroes_win.wad/addon:2 addons/first_heroes_win.wad/init.lua:32
+#: input:9 standard input:32
 msgid "First Heroes Win"
 msgstr "Första hjältarna vinner"
 
-#: addons/first_heroes_win.wad/addon:3
+#: addons/first_heroes_win.wad/addon:3 input:6 standard
 msgid ""
 "The first player who has at least 4 fully trained soldiers in his warehouses "
 "wins the game. Teams are not supported yet."
@@ -34,7 +35,7 @@ msgstr ""
 "Den första spelaren som har minst 4 fullt utbildade soldater i sina "
 "lagerbyggnader vinner spelet. Lag stöds ännu inte."
 
-#: addons/first_heroes_win.wad/init.lua:35
+#: addons/first_heroes_win.wad/init.lua:35 standard input:35
 msgid ""
 "The player who has at least %1% fully trained soldier in his warehouses wins "
 "the game."
@@ -48,39 +49,39 @@ msgstr[1] ""
 "Den spelare som har minst %1% fullt utbildade soldater i sina lagerbyggnader "
 "vinner spelet."
 
-#: addons/first_heroes_win.wad/init.lua:41
+#: addons/first_heroes_win.wad/init.lua:41 standard input:41
 msgid "Number of heroes"
 msgstr "Antal hjältar"
 
-#: addons/first_heroes_win.wad/init.lua:98
+#: addons/first_heroes_win.wad/init.lua:98 standard input:98
 msgid "Hero created!"
 msgstr "Hjälte skapad!"
 
-#: addons/first_heroes_win.wad/init.lua:99
+#: addons/first_heroes_win.wad/init.lua:99 standard input:99
 msgid "%1% has created a hero!"
 msgstr "%1% har skapat en hjälte!"
 
-#: addons/first_heroes_win.wad/init.lua:101
+#: addons/first_heroes_win.wad/init.lua:101 standard input:101
 msgid "You have a new Hero!"
 msgstr "Du har en ny hjälte!"
 
-#: addons/first_heroes_win.wad/init.lua:103
+#: addons/first_heroes_win.wad/init.lua:103 standard input:103
 msgid "Hero Statistics:"
 msgstr "Hjältestatistik:"
 
 #. TRANSLATORS: "Player x has y Heroes"
-#: addons/first_heroes_win.wad/init.lua:106
+#: addons/first_heroes_win.wad/init.lua:106 standard input:106
 msgid "%1% has %2%"
 msgstr "%1% har %2%"
 
-#: addons/first_heroes_win.wad/init.lua:106
+#: addons/first_heroes_win.wad/init.lua:106 standard input:106
 msgid "%1% hero"
 msgid_plural "%1% heroes"
 msgstr[0] "%1% hjälte"
 msgstr[1] "%1% hjältar"
 
 #. TRANSLATORS: This is an item in a list in the form "Player Name: 3 heroes"
-#: addons/first_heroes_win.wad/init.lua:119
+#: addons/first_heroes_win.wad/init.lua:119 standard input:119
 msgid "%1%: %2% hero"
 msgid_plural "%1%: %2% heroes"
 msgstr[0] "%1%: %2% hjälte"

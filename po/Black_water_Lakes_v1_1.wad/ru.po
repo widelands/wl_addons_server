@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 03:17+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2025-06-27 07:57+0000\n"
 "Last-Translator: Viktor Skachkov <awsswa59@gmail.com>, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,11 +24,11 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/Black_water_Lakes_v1_1.wad/addon:4 input:8 standard
+#: addons/Black_water_Lakes_v1_1.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Black water Lakes v1.1"
 msgstr "Озера Черной воды v1.1"
 
-#: addons/Black_water_Lakes_v1_1.wad/addon:5 input:10 standard
+#: addons/Black_water_Lakes_v1_1.wad/addon:5 input:6 input:10 standard
 msgid ""
 "Once a thriving island of trading nations, now split by a cataclismic event, "
 "new tribes have arrived. Will they trade or fight?"
@@ -36,10 +36,10 @@ msgstr ""
 "Когда-то процветающий остров торговой нации теперь разделен катастрофой, "
 "появились новые племена. Они будут торговать или драться?"
 
-#: addons/Black_water_Lakes_v1_1.wad/dirnames:4
+#: addons/Black_water_Lakes_v1_1.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Дополнение: карты"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid "Challenge rating: Hard. Build ships, take ports."
 msgstr "Рейтинг: Жесткий. Стройте корабли, захватите порты."

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 03:16+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2026-05-24 08:17+0000\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
 "it/)\n"
@@ -19,19 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: addons/win_cond_mil_inf_ui.wad/addon:2
+#: addons/win_cond_mil_inf_ui.wad/addon:2 input:8 standard
 msgid "Military Influence Info"
 msgstr ""
 
-#: addons/win_cond_mil_inf_ui.wad/addon:3
+#: addons/win_cond_mil_inf_ui.wad/addon:3 input:6 standard
 msgid ""
 "Show detailed scoring information for the Military Influence win condition."
 msgstr ""
 
-#: addons/win_cond_mil_inf_ui.wad/init.lua:26
+#: addons/win_cond_mil_inf_ui.wad/init.lua:26 input:26 standard
 msgid "Show info on score calculation"
 msgstr ""
 
-#: addons/win_cond_mil_inf_ui.wad/shortcuts.lua:6
+#: addons/win_cond_mil_inf_ui.wad/shortcuts.lua:6 standard input:6
 msgid "Score info"
 msgstr ""

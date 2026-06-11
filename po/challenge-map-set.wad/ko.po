@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -22,10 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/The_Great_Escape.wmf/elemental:8
+#: input:9 standard
 msgid "The Great Escape"
 msgstr "대탈주"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/The_Great_Escape.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "can you survive without resources surrounded by six hostile forces? can you "
 "outproduce seven opponents when you have every possible disadvantage?  "
@@ -44,10 +46,12 @@ msgstr ""
 "을 나타냅니다. 정말 자신있거나 죽고 싶은 사람만 도전하십시오."
 
 #: addons/challenge-map-set.wad/Challenge_Maps/concentric_rings.wmf/elemental:8
+#: input:9 standard
 msgid "concentric rings"
 msgstr "동심원의 고리"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/concentric_rings.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "A map for solo challenge. You start from the middle, and you gradually fight "
 "your way outside. At every ring you will find a new enemy, each stronger "
@@ -62,10 +66,12 @@ msgstr ""
 "이 필요합니다. 항구는 적군 본부 아래에 위치해 있습니다."
 
 #: addons/challenge-map-set.wad/Challenge_Maps/dust_in_the_wind.wmf/elemental:8
+#: input:9 standard
 msgid "dust in the wind"
 msgstr "바람의 먼지"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/dust_in_the_wind.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "You are surrounded by six enemies with more space and resources than you. "
 "land offers you no opportunities, so you must build your empire among "
@@ -77,6 +83,7 @@ msgstr ""
 "조건 하에 경제를 부흥시킬 수 있습니까?"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/dust_in_the_wind.wmf/elemental:11
+#: input:6 standard
 msgid ""
 "This is an excercice in building an economy over long distances, not at "
 "finding small islands in a large ocean like needles in a haystack. For that "
@@ -90,10 +97,12 @@ msgstr ""
 "영 처리가 되어 있습니다."
 
 #: addons/challenge-map-set.wad/Challenge_Maps/to_make_the_desert_bloom.wmf/elemental:8
+#: input:9 standard
 msgid "to make the desert bloom"
 msgstr "사막의 번영"
 
 #: addons/challenge-map-set.wad/Challenge_Maps/to_make_the_desert_bloom.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "The stories say that once our tribe lived in the fertile land to the west, "
 "where plants and crops grow and one does not need to dig deeply to  find "
@@ -119,6 +128,7 @@ msgstr ""
 "말이죠! 과연 그런 지도자가 나타났을까요? "
 
 #: addons/challenge-map-set.wad/Challenge_Maps/to_make_the_desert_bloom.wmf/elemental:11
+#: input:6 standard
 msgid ""
 "- This is a solo challenge map, with the blue player strongly "
 "disadvantaged.  - There is no coal in the desert; you have to sustain "
@@ -131,11 +141,11 @@ msgstr ""
 "야 합니다. 이것이 도전입니다. -물을 따라가세요! 비옥한 땅을 지하수를 의미합니"
 "다; 오아시스를 향해 따라가세요."
 
-#: addons/challenge-map-set.wad/addon:2
+#: addons/challenge-map-set.wad/addon:2 input:7 standard
 msgid "Challenge Maps Set"
 msgstr "챌린지 맵 세트"
 
-#: addons/challenge-map-set.wad/addon:3
+#: addons/challenge-map-set.wad/addon:3 input:6 standard
 msgid ""
 "A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained "
 "maps: Dust in the Wind, To Make the Desert Bloom, The Great Escape, "
@@ -145,6 +155,6 @@ msgstr ""
 "챌린지 맵 세트. 포함된 맵: 바람의 먼지, 사막의 번영, 대탈주, 동심원의 고리. "
 "최소한의 방어구로 6명 이상의 AI와 대결할 수 있는 숙련된 플레이어에게 추천."
 
-#: addons/challenge-map-set.wad/dirnames:2
+#: addons/challenge-map-set.wad/dirnames:2 standard input:4
 msgid "Challenge Maps"
 msgstr "챌린지 맵"

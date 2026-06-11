@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-11 03:13+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2024-11-18 17:55+0000\n"
 "Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -23,10 +23,12 @@ msgstr ""
 "1000000 == 0 ? 1 : 2;\n"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:8
+#: input:10 standard
 msgid "Tropical Mauritius"
 msgstr "Île Maurice tropicale"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:10
+#: input:6 standard
 msgid ""
 "There are rather rocky hills than mountains on this tropical island. But we "
 "still should find some ores for our economy."
@@ -36,6 +38,7 @@ msgstr ""
 "économie."
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:11
+#: input:7 standard
 msgid ""
 "The map is balanced for 2 or 4  players. Orange player (Grand Bay) and grey "
 "player (The City of Light) are optional. The first one has not enough "
@@ -46,24 +49,28 @@ msgstr ""
 "assez de ressources près de sa base, le second est au milieu de la carte."
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:8
+#: input:10 standard
 msgid "Tropical Sumatra"
 msgstr "Sumatra tropical"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:10
+#: input:6 standard
 msgid "Two big tropical islands rich in resources"
 msgstr "Deux grandes îles tropicales riches en ressources"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:11
+#: input:7 standard
 msgid ""
 "Map is optimal for 4 or 6 players. Other starting positions are optional."
 msgstr ""
 "La carte est optimale pour 4 ou 6 joueurs. D’autres positions de départ sont "
 "facultatives."
 
-#: addons/tropical_maps.wad/addon:4 addons/tropical_maps.wad/dirnames:4
+#: addons/tropical_maps.wad/addon:4 addons/tropical_maps.wad/dirnames:4 input:9
+#: standard input:4
 msgid "Tropical Maps"
 msgstr "Cartes tropicales"
 
-#: addons/tropical_maps.wad/addon:5
+#: addons/tropical_maps.wad/addon:5 input:6 standard
 msgid "This addon needs tropics.wad."
 msgstr "Cet addon a besoin de tropics.wad."

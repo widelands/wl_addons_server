@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:14+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2024-11-18 17:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -23,10 +23,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:8
+#: input:10 standard
 msgid "Tropical Mauritius"
 msgstr "Tropiska Mauritius"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:10
+#: input:6 standard
 msgid ""
 "There are rather rocky hills than mountains on this tropical island. But we "
 "still should find some ores for our economy."
@@ -35,6 +37,7 @@ msgstr ""
 "ändå hitta några malmer för vår ekonomi."
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_mauritius.wmf/elemental:11
+#: input:7 standard
 msgid ""
 "The map is balanced for 2 or 4  players. Orange player (Grand Bay) and grey "
 "player (The City of Light) are optional. The first one has not enough "
@@ -46,23 +49,27 @@ msgstr ""
 "kartan."
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:8
+#: input:10 standard
 msgid "Tropical Sumatra"
 msgstr "Tropiska Sumatra"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:10
+#: input:6 standard
 msgid "Two big tropical islands rich in resources"
 msgstr "Två stora tropiska öar rika på resurser"
 
 #: addons/tropical_maps.wad/Tropical_Maps/tropical_sumatra.wmf/elemental:11
+#: input:7 standard
 msgid ""
 "Map is optimal for 4 or 6 players. Other starting positions are optional."
 msgstr ""
 "Kartan är optimal för 4 eller 6 spelare. Andra startpositioner är valfria."
 
-#: addons/tropical_maps.wad/addon:4 addons/tropical_maps.wad/dirnames:4
+#: addons/tropical_maps.wad/addon:4 addons/tropical_maps.wad/dirnames:4 input:9
+#: standard input:4
 msgid "Tropical Maps"
 msgstr "Tropiska kartor"
 
-#: addons/tropical_maps.wad/addon:5
+#: addons/tropical_maps.wad/addon:5 input:6 standard
 msgid "This addon needs tropics.wad."
 msgstr "Detta tillägg kräver tropics.wad."

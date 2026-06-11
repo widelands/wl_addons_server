@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-06 03:11+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2025-04-25 19:29+0000\n"
 "Language-Team: Polish (https://app.transifex.com/widelands/teams/35159/pl/)\n"
 "Language: pl\n"
@@ -19,108 +19,108 @@ msgstr ""
 "(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: addons/new_soldiers.wad/addon:2
+#: addons/new_soldiers.wad/addon:2 input:8 standard
 msgid "New Soldiers"
 msgstr ""
 
-#: addons/new_soldiers.wad/addon:3
+#: addons/new_soldiers.wad/addon:3 input:6 standard
 msgid ""
 "New more balanced soldiers. Soldiers of Empire train defence in colosseum. "
 "Amazons need gold for the second level of health training."
 msgstr ""
 
 #. TRANSLATORS: This is an Amazon worker name used in lists of workers
-#: addons/new_soldiers.wad/amazons_soldier/init.lua:20
+#: addons/new_soldiers.wad/amazons_soldier/init.lua:20 input:20 standard
 msgctxt "amazons_worker"
 msgid "Soldier"
 msgstr ""
 
 #. TRANSLATORS: This is an Atlantean worker name used in lists of workers
-#: addons/new_soldiers.wad/atlanteans_soldier/init.lua:107
+#: addons/new_soldiers.wad/atlanteans_soldier/init.lua:107 input:107 standard
 msgctxt "atlanteans_worker"
 msgid "Soldier"
 msgstr ""
 
 #. TRANSLATORS: This is a Barbarian worker name used in lists of workers
-#: addons/new_soldiers.wad/barbarians_soldier/init.lua:107
+#: addons/new_soldiers.wad/barbarians_soldier/init.lua:107 input:107 standard
 msgctxt "barbarians_worker"
 msgid "Soldier"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:8
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:8 input:8 standard
 msgctxt "empire_building"
 msgid "Colosseum"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:64
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:64 input:64 standard
 msgid "sleeping"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:72
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:72 input:72 standard
 msgctxt "empire_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:85
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:85 input:85 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:104
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:104 input:104 standard
 msgctxt "empire_building"
 msgid "No soldier to train!"
 msgstr ""
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
-#: addons/new_soldiers.wad/empire_colosseum/init.lua:106
+#: addons/new_soldiers.wad/empire_colosseum/init.lua:106 input:106 standard
 msgctxt "empire_building"
 msgid "No soldier found for this training level!"
 msgstr ""
 
 #. TRANSLATORS: This is an Empire worker name used in lists of workers
-#: addons/new_soldiers.wad/empire_soldier/init.lua:107
+#: addons/new_soldiers.wad/empire_soldier/init.lua:107 input:107 standard
 msgctxt "empire_worker"
 msgid "Soldier"
 msgstr ""
 
 #. TRANSLATORS: This is a Frisian worker name used in lists of workers
-#: addons/new_soldiers.wad/frisians_soldier/init.lua:628
+#: addons/new_soldiers.wad/frisians_soldier/init.lua:628 input:628 standard
 msgctxt "frisians_worker"
 msgid "Soldier"
 msgstr ""
 
 #. TRANSLATORS: Format string for a latin quote and its translation
-#: addons/new_soldiers.wad/postload.lua:9
+#: addons/new_soldiers.wad/postload.lua:9 input:9 standard
 msgctxt "empire_lore"
 msgid "‘%1%’<br>(%2%)"
 msgstr ""
 
-#: addons/new_soldiers.wad/postload.lua:19
+#: addons/new_soldiers.wad/postload.lua:19 input:19 standard
 msgid "This shield is used for defense training."
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden shield because ...
-#: addons/new_soldiers.wad/postload.lua:24
+#: addons/new_soldiers.wad/postload.lua:24 input:24 standard
 msgid "making a wooden shield"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
-#: addons/new_soldiers.wad/postload.lua:40
+#: addons/new_soldiers.wad/postload.lua:40 input:40 standard
 msgid "working"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
-#: addons/new_soldiers.wad/postload.lua:57
+#: addons/new_soldiers.wad/postload.lua:57 input:57 standard
 msgid "making a wooden helmet"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/new_soldiers.wad/shield_wooden/init.lua:8
+#: addons/new_soldiers.wad/shield_wooden/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Wooden Shield"
 msgstr ""

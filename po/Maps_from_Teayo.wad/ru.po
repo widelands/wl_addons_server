@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-07-07 18:30+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,7 +24,7 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/Maps_from_Teayo.wad/addon:6
+#: addons/Maps_from_Teayo.wad/addon:6 input:6 standard
 msgid ""
 "This Addon contains all of my Maps. Some of my Maps are also on the "
 "Widelands Website Maps archive aviable. Maps Total : 25 , Major Maps : 9 , "
@@ -34,95 +34,31 @@ msgstr ""
 "архиве карт веб-сайта Widelands. Всего карт : 25 , Основных карт : 9 , "
 "Вариантных карт : 15 , Основных карт с вариантными картами : 5"
 
-#: addons/Maps_from_Teayo.wad/addon:9
+#: addons/Maps_from_Teayo.wad/addon:9 input:9 standard
 msgid "Maps_from_Teayo"
 msgstr "Maps_from_Teayo"
 
-#: addons/Maps_from_Teayo.wad/dirnames:4
+#: addons/Maps_from_Teayo.wad/dirnames:4 standard input:4
 msgid "Teayo's Karten"
 msgstr "Карты Teayo"
 
-#: input:8 standard
-msgid "Circle Island"
-msgstr "Круглый остров"
+#: input:3 screenshots/Maps_from_Teayo.wad/descriptions:3 standard
+msgid "A Overview of the Map Circle Island in Editor"
+msgstr "Обзор карты \"Круглый остров\" в редакторе"
 
-#: input:8 standard
-msgid "Far small islands"
-msgstr "Далекие островки"
+#: input:4 screenshots/Maps_from_Teayo.wad/descriptions:4 standard
+msgid "A Overview of the Map Lack of Space in Editor"
+msgstr "Обзор карты \"Мало места\" в редакторе"
 
-#: input:8 standard
-msgid "Lack of Space 08-64"
-msgstr "Мало места 08-64"
+#: input:5 screenshots/Maps_from_Teayo.wad/descriptions:5 standard
+msgid "A Overview of the Map Lack of Space 2 in Editor"
+msgstr "Обзор карты \"Мало места 2\" в редакторе"
 
-#: input:8 standard
-msgid "Lack of Space 16-96"
-msgstr "Мало места 16-96"
+#: input:6 screenshots/Maps_from_Teayo.wad/descriptions:6 standard
+msgid "A Overview of the Map Rectangle Valley Variant 1 in Editor"
+msgstr "Обзор карты \"Прямоугольная долина - Вариант 1\" в редакторе"
 
-#: input:8 standard
-msgid "Ozean Raster Vorlage"
-msgstr "Ozean Raster Vorlage"
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 1"
-msgstr "Прямоугольная долина - Вариант 1"
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 2"
-msgstr "Прямоугольная долина - Вариант 2"
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 3"
-msgstr "Прямоугольная долина - Вариант 3"
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 4"
-msgstr "Прямоугольная долина - Вариант 4"
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 5"
-msgstr "Прямоугольная долина - Вариант 5"
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 6"
-msgstr "Прямоугольная долина - Вариант 6"
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 7"
-msgstr "Прямоугольная долина - Вариант 7"
-
-#: input:8 standard
-msgid "Rectangle Valley - Variant 8"
-msgstr "Прямоугольная долина - Вариант 8"
-
-#: input:8 standard
-msgid "Rhombus Valley"
-msgstr "Ромбовидная долина"
-
-#: input:8 standard
-msgid "Square Valley"
-msgstr "Квадратная долина"
-
-#: input:8 standard
-msgid "Tichupane - Desert"
-msgstr "Tichupane - Пустыня"
-
-#: input:8 standard
-msgid "Tichupane - Summer"
-msgstr "Tichupane - Лето"
-
-#: input:8 standard
-msgid "Tichupane - Wasteland"
-msgstr "Tichupane - Пустошь"
-
-#: input:8 standard
-msgid "Tichupane - Winter"
-msgstr "Tichupane - Зима"
-
-#: input:8 standard
-msgid "Triangle Volcano Island"
-msgstr "Треугольный вулканический остров"
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A circular island with a large mountain in the middle. Eight valleys run "
 "through the edges of the mountain. Large stone deposits are in the valleys. "
@@ -133,7 +69,7 @@ msgstr ""
 "долин. В долинах находятся крупные залежи камня. Всю остальную площадь "
 "острова покрывает редкий лес. Много животных. Гавани можно строить на пляжах."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A multiplayer map designed for short rounds. Whoever builds the best economy "
 "fastest has the best chance of conquering the whole island. Artifacts are "
@@ -156,7 +92,7 @@ msgstr ""
 "карты : Переведено название карты, описание и подсказки с немецкого на "
 "английский. ] ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A symmetrical green square valley surrounded by resource-rich mountains. Two "
 "small forests and rock formations are present in balanced quantities at the "
@@ -185,7 +121,7 @@ msgstr ""
 "Widelands версии 1.2 , Редактирование карты : Переведено название карты, "
 "описание и подсказки с немецкого на английский. ] ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A very small, symmetrical valley with adequate forest, rock formations, "
 "fish, and ore resources. The map is designed for multiplayer. Designed for "
@@ -206,7 +142,7 @@ msgstr ""
 "карты : Переведено название карты, описание и подсказки с немецкого на "
 "английский. ] ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Eight islands in the middle of the ocean. Each island has six harbor "
 "building sites, one harbor building site in each corner of the island. All "
@@ -225,7 +161,7 @@ msgstr ""
 "достаточно велик и, следовательно, предлагает достаточное пространство для "
 "застройки."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Eine Vorlage Karte ohne Spieler und mit Raster auf einen Ozean. Eine gute "
 "Grundlage um eine symetrische, ausgewogene Karte darauf aufbauend zu "
@@ -234,7 +170,7 @@ msgstr ""
 "Шаблон карты без игрока и с сеткой на океан. Хорошая основа для создания "
 "симметричной, сбалансированной карты, построенной на ее основе."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Fight against seven other opponents with minimal resources and minimal "
 "building space. All resources are sufficiently available at the start. This "
@@ -255,7 +191,7 @@ msgstr ""
 "английский. Изменено количество ресурсов, расположение и количество деревьев "
 "и скал. ] ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Fight against seven other opponents with minimal resources and minimal "
 "building space. All resources are sufficiently available at the start. This "
@@ -274,7 +210,7 @@ msgstr ""
 "карты : Переведено название карты, описание и подсказки с немецкого на "
 "английский. ] ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "It is a heavily forested island with a volcanic mountain in the middle. Rock "
 "formations are scattered everywhere. Near the starting positions there is a "
@@ -294,7 +230,7 @@ msgstr ""
 "1.2 , Карта-Редактирование : Переведено название карты, описание и подсказки "
 "с немецкого на английский. Переработаны рыбные ресурсы и уровень высоты. ] ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 1 : [ Difficultly : Very easy , Special : None ] , A map for normal "
 "rounds. Water and mountains are right next to the starting position. There "
@@ -326,7 +262,7 @@ msgstr ""
 "2023-07-06 , Widelands версии 1.2 , Редактирование карты : Переведено "
 "название карты, описание и подсказки с немецкого на английский. ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 2 : [ Difficultly : Easy , Special : No Animals and Fishes ] , A map "
 "for normal rounds. Water and mountains are right next to the starting "
@@ -359,7 +295,7 @@ msgstr ""
 "Редактирование карты : Переведено название карты, описание и подсказки с "
 "немецкого на английский. ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 3 : [ Difficultly : Medium , Special : No Trees and Rocks ] , A map "
 "for normal rounds. Water and mountains are right next to the starting "
@@ -392,7 +328,7 @@ msgstr ""
 "Редактирование карты : Переведено название карты, описание и подсказки с "
 "немецкого на английский. ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 4 : [ Difficultly : Medium , Special : No Coal ] , A map for normal "
 "rounds. Water and mountains are right next to the starting position. There "
@@ -424,7 +360,7 @@ msgstr ""
 "2023-07-06 , Widelands версии 1.2 , Редактирование карты : Переведено "
 "название карты, описание и подсказки с немецкого на английский. ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 5 : [ Difficultly : Hard , Special : No Trees, Rocks, Animals and "
 "Fishes ] , A map for normal rounds. Water and mountains are right next to "
@@ -457,7 +393,7 @@ msgstr ""
 "Редактирование карты : Переведено название карты, описание и подсказки с "
 "немецкого на английский. ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 6 : [ Difficultly : Very hard , Special : No Trees, Rocks, Coal, "
 "Animals and Fishes ] , A map for normal rounds. Water and mountains are "
@@ -491,7 +427,7 @@ msgstr ""
 "Редактирование карты : Переведено название карты, описание и подсказки с "
 "немецкого на английский. ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 7 : [ Difficultly : Medium , Special : No Gold, Iron and Coal ] , A "
 "map for normal rounds. Water and mountains are right next to the starting "
@@ -523,7 +459,7 @@ msgstr ""
 "редактирование : 2023-07-06 , Widelands версии 1.2 , Редактирование карты : "
 "Переведено название карты, описание и подсказки с немецкого на английский. ]"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Variant 8 : [ Difficultly : Brutal , Special : No Trees, Rocks, Animals, "
 "Fishes, Gold, Iron and Coal ] , A map for normal rounds. Water and mountains "
@@ -557,7 +493,11 @@ msgstr ""
 "Редактирование карты : Переведено название карты, описание и подсказки с "
 "немецкого на английский. ]"
 
-#: input:11 standard
+#: input:7 screenshots/Maps_from_Teayo.wad/descriptions:7 standard
+msgid "A Overview of the Map Rectangle Valley Variant 8 in Editor"
+msgstr "Обзор карты \"Прямоугольная долина - Вариант 8\" в редакторе"
+
+#: input:7 input:11 standard
 msgid ""
 "Ports : 54 (6 per Island, 1 per Island Corner) , Artifacts : 1 (Center "
 "Island) , Mountain Resources : Many 5/5 , Trees : Many 5/5 , Rocks : Medium "
@@ -571,7 +511,7 @@ msgstr ""
 "Максимальная длина пути парома : Нет , Крутизна высоты: Средняя 3/5, Места "
 "для больших зданий: Средняя 3/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Many 4/5 , "
 "Trees : Few 2/5 , Rocks : Medium 3/5 , Animals : Few 2/5 , Fishes : Many 4/5 "
@@ -583,7 +523,7 @@ msgstr ""
 "много 4/5 (по 3 на точку) , Максимальная длина паромного пути : Нет , "
 "Крутизна высоты : Низкая 1/5 , Места для больших зданий : Много 4/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Many 4/5 , "
 "Trees : Few 2/5 , Rocks : Medium 3/5 , Animals : Few 2/5 , Fishes : Medium "
@@ -595,7 +535,7 @@ msgstr ""
 "Средние 4/5 (по 2 на очко) , Максимальная длина паромного пути : Нет , "
 "Крутизна высоты : Средняя 3/5 , Места для больших зданий : Много 4/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Many 5/5 , "
 "Trees : Few 1/5 , Rocks : Many 4/5 , Animals : Medium 3/5 , Fishes : Many "
@@ -607,7 +547,7 @@ msgstr ""
 "много 4/5 (по 3 на очко) , Максимальная длина паромного пути : Нет , "
 "Крутизна высоты : Низкая 1/5 , Места для больших зданий : Много 4/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Medium 3/5 , "
 "Trees : Many 4/5 , Rocks : Medium 3/5 , Animals : Medium 3/5 , Fishes : Many "
@@ -619,7 +559,7 @@ msgstr ""
 "много 4/5 (по 3 на очко) , Длина пути на пароме : Нет , Крутизна высоты : "
 "Низкая 1/5 , Места для больших зданий : Много 4/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 (But only Stone) , Trees : None , Rocks : "
@@ -631,7 +571,7 @@ msgstr ""
 "нет , Животные : Нет , Рыбы : нет , Максимальная длина пути переправы : 20 "
 "полей , Крутизна высоты : Низкая 1/5 , Места для больших зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 (But without coal) , Trees : Many 5/5 , "
@@ -645,7 +585,7 @@ msgstr ""
 "Максимальная длина пути парома : 20 Полей , Крутизна высоты : Низкая 1/5 , "
 "Места для больших зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 (But without coal) , Trees : None , Rocks : "
@@ -657,7 +597,7 @@ msgstr ""
 "Животные : Нет , Рыбы : нет , Максимальная длина пути переправы : 20 полей , "
 "Крутизна высоты : Низкая 1/5 , Места для больших зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 , Trees : Many 5/5 , Rocks : Many 5/5 , "
@@ -671,7 +611,7 @@ msgstr ""
 "пути переправы : 20 полей , Крутизна высоты : Низкая 1/5 , Места для больших "
 "зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 , Trees : Many 5/5 , Rocks : Many 5/5 , "
@@ -683,7 +623,7 @@ msgstr ""
 "Животные : Нет , Рыба : нет , Максимальная длина пути переправы : 20 полей , "
 "Крутизна высоты : Низкая 1/5 , Места для больших зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 , Trees : None , Rocks : None , Animals : Many "
@@ -696,7 +636,7 @@ msgstr ""
 "переправы : 20 полей , Крутизна высоты : Низкая 1/5 , Места для больших "
 "зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : High 5/5 , Trees : None , Rocks : None , Animals : "
@@ -708,7 +648,7 @@ msgstr ""
 "нет , Рыбы : нет , Максимальная длина пути переправы : 20 полей , Крутизна "
 "высоты : Низкая 1/5 , Места для больших зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Many 20+ , Artifacts : Medium 6 (2 per Player, 2 Centered) , "
 "Mountain Resources : Many 5/5 (But without Gold, Iron and Coal) , Trees : "
@@ -722,7 +662,7 @@ msgstr ""
 "очко) , макс. Длина паромного пути : 20 полей , Крутизна высоты : Низкая "
 "1/5 , Места для больших зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : Medium 15 (5 per Player) , Artifacts : Many 15 (5 per Player) , "
 "Mountain Resources : High 4/5 , Trees : Many 4/5 , Rocks : Medium 3/5 , "
@@ -736,7 +676,7 @@ msgstr ""
 "Максимальная длина пути переправы : 10 полей , Высота крутизна : Средняя "
 "3/5, места для больших зданий : Средняя 3/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : 5 (Centered) , Mountain Resources : High 4/5 , "
 "Trees : High 4/5 , Rocks : Medium 3/5 , Animals : Medium 3/5 , Fish : High "
@@ -748,7 +688,7 @@ msgstr ""
 "Рыбы : Высокие 4/5 (по 6 на точку) , Максимальная длина паромного пути : "
 "Нет , Крутизна высоты : Низкая 1/5 , Места для больших зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : Few 3 (1 per Player) , Mountain Resources : Few "
 "2/5 , Trees : Medium 3/5 , Rocks : Few 2/5 , Animals : Few 2/5 , Fish : "
@@ -761,7 +701,7 @@ msgstr ""
 "переправы : Нет , Крутизна высоты : Низкая 1/5 , Большое здание Мест : Много "
 "4/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : None , Mountain Resources : High 5/5 , Trees : "
 "Few 1/5 , Rocks : Few 2/5 , Animals : Medium 3/5 , Fish : Medium 3/5 (4 per "
@@ -773,7 +713,7 @@ msgstr ""
 "(по 4 на очко) , Максимальная длина паромного пути : Нет , Крутизна высоты : "
 "Низкая 1/5 , Места для больших зданий : Много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : None , Mountain Resources : High 5/5 , Trees : "
 "Medium 3/5 , Rocks : Few 2/5 , Animals : Few 2/5 , Fish : High 5/5 (10 per "
@@ -785,7 +725,7 @@ msgstr ""
 "(по 10 на очко) , Максимальная длина паромного пути : Нет , Крутизна "
 "высоты : Низкая 1/5 , Места для больших зданий : много 5/5"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Ports : None , Artifacts : None , Mountain Ressources : High 4/5 , Trees : "
 "Many 5/5 , Rocks : Medium 3/5 , Animals : Few 2/5 , Fish : Few 2/5 (5 per "
@@ -797,54 +737,114 @@ msgstr ""
 "5 на точку) , Максимальная длина паромного пути : Нет , Крутизна высоты : "
 "Нет , Места для больших зданий : Много 5/5"
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:3
-msgid "A Overview of the Map Circle Island in Editor"
-msgstr "Обзор карты \"Круглый остров\" в редакторе"
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:4
-msgid "A Overview of the Map Lack of Space in Editor"
-msgstr "Обзор карты \"Мало места\" в редакторе"
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:5
-msgid "A Overview of the Map Lack of Space 2 in Editor"
-msgstr "Обзор карты \"Мало места 2\" в редакторе"
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:6
-msgid "A Overview of the Map Rectangle Valley Variant 1 in Editor"
-msgstr "Обзор карты \"Прямоугольная долина - Вариант 1\" в редакторе"
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:7
-msgid "A Overview of the Map Rectangle Valley Variant 8 in Editor"
-msgstr "Обзор карты \"Прямоугольная долина - Вариант 8\" в редакторе"
-
-#: screenshots/Maps_from_Teayo.wad/descriptions:8
+#: input:8 screenshots/Maps_from_Teayo.wad/descriptions:8 standard
 msgid "A Overview of the Map Rhombus Valley in Editor"
 msgstr "Обзор карты \"Ромбовидная долина\" в редакторе"
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:9
+#: input:8 input:10 standard
+msgid "Circle Island"
+msgstr "Круглый остров"
+
+#: input:8 input:10 standard
+msgid "Far small islands"
+msgstr "Далекие островки"
+
+#: input:8 input:10 standard
+msgid "Lack of Space 08-64"
+msgstr "Мало места 08-64"
+
+#: input:8 input:10 standard
+msgid "Lack of Space 16-96"
+msgstr "Мало места 16-96"
+
+#: input:8 input:10 standard
+msgid "Ozean Raster Vorlage"
+msgstr "Ozean Raster Vorlage"
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 1"
+msgstr "Прямоугольная долина - Вариант 1"
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 2"
+msgstr "Прямоугольная долина - Вариант 2"
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 3"
+msgstr "Прямоугольная долина - Вариант 3"
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 4"
+msgstr "Прямоугольная долина - Вариант 4"
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 5"
+msgstr "Прямоугольная долина - Вариант 5"
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 6"
+msgstr "Прямоугольная долина - Вариант 6"
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 7"
+msgstr "Прямоугольная долина - Вариант 7"
+
+#: input:8 input:10 standard
+msgid "Rectangle Valley - Variant 8"
+msgstr "Прямоугольная долина - Вариант 8"
+
+#: input:8 input:10 standard
+msgid "Rhombus Valley"
+msgstr "Ромбовидная долина"
+
+#: input:8 input:10 standard
+msgid "Square Valley"
+msgstr "Квадратная долина"
+
+#: input:8 input:10 standard
+msgid "Tichupane - Desert"
+msgstr "Tichupane - Пустыня"
+
+#: input:8 input:10 standard
+msgid "Tichupane - Summer"
+msgstr "Tichupane - Лето"
+
+#: input:8 input:10 standard
+msgid "Tichupane - Wasteland"
+msgstr "Tichupane - Пустошь"
+
+#: input:8 input:10 standard
+msgid "Tichupane - Winter"
+msgstr "Tichupane - Зима"
+
+#: input:8 input:10 standard
+msgid "Triangle Volcano Island"
+msgstr "Треугольный вулканический остров"
+
+#: input:9 screenshots/Maps_from_Teayo.wad/descriptions:9 standard
 msgid "A Overview of the Map Square Valley in Editor"
 msgstr "Обзор карты \"Квадратная долина\" в редакторе"
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:10
+#: input:10 screenshots/Maps_from_Teayo.wad/descriptions:10 standard
 msgid "A Overview of the Map Triangle Volcano Island in Editor"
 msgstr "Обзор карты \"Треугольный вулканический остров\" в редакторе"
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:11
+#: input:11 screenshots/Maps_from_Teayo.wad/descriptions:11 standard
 msgid "A Overview of the Map Tichupane - Summer in Editor"
 msgstr "Обзор карты \"Tichupane - Лето\" в редакторе"
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:12
+#: input:12 screenshots/Maps_from_Teayo.wad/descriptions:12 standard
 msgid "A Overview of the Map Tichupane - Winter in Editor"
 msgstr "Обзор карты \"Tichupane - Зима\" в редакторе"
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:13
+#: input:13 screenshots/Maps_from_Teayo.wad/descriptions:13 standard
 msgid "A Overview of the Map Tichupane - Wasteland in Editor"
 msgstr "Обзор карты \"Tichupane - Пустошь\" в редакторе"
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:14
+#: input:14 screenshots/Maps_from_Teayo.wad/descriptions:14 standard
 msgid "A Overview of the Map Tichupane - Desert in Editor"
 msgstr "Обзор карты \"Tichupane - Пустыня\" в редакторе"
 
-#: screenshots/Maps_from_Teayo.wad/descriptions:15
+#: input:15 screenshots/Maps_from_Teayo.wad/descriptions:15 standard
 msgid "A Overview of the Islands from the Map"
 msgstr "Обзор островов на карте"

@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-19 03:12+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -24,10 +24,12 @@ msgstr ""
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Elven_Forests.wmf/elemental:8
+#: input:9 standard
 msgid "Elven Forests"
 msgstr "Elfí les"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Elven_Forests.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "The breath-taking beauty of these emerald lands has lured many tribes into "
 "an attempt to take them for themselves."
@@ -36,6 +38,7 @@ msgstr ""
 "že se pokusily zabrat si je pro sebe."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Europa.wmf/elemental:8
+#: input:9 standard
 msgid "Europa 1.2"
 msgstr "Evropa 1.2"
 
@@ -49,10 +52,12 @@ msgstr ""
 "Polsko"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Impact.wmf/elemental:9
+#: input:8 standard
 msgid "Impact"
 msgstr "Srážka"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Impact.wmf/elemental:11
+#: input:5 standard
 msgid ""
 "After an impact of an Asteroid and the following harsh winter, three Isles "
 "are connected by Ice and stone, setting an end to the peaceful coexistence "
@@ -62,10 +67,12 @@ msgstr ""
 "kamením předznamenávají konec pokojnému soužití tří kmenů."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:8
+#: input:9 standard
 msgid "The Ancient Sun of Fire"
 msgstr "Pradávné ohnivé slunce"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "For hundreds of years, this island was kept as a sanctuary of the Gods. No "
 "human ever ventured to set a foot on it. But now that a tribe had finally "
@@ -77,14 +84,17 @@ msgstr ""
 "usadil na jeho pobřeží, a mnoho dalších následovalo jeho příkladu."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:11
+#: input:6 standard
 msgid "Start positions are clockwise"
 msgstr "Výchozí pozice jsou po směru chodu hodinových ručiček."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Twinkling_Waves.wmf/elemental:8
+#: input:9 standard
 msgid "Twinkling Waves"
 msgstr "Třpytivé vlny"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Twinkling_Waves.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "Many beautiful, green islands await the ones brave enough to pass the "
 "thousand waves, twinkling in the sun."
@@ -93,6 +103,7 @@ msgstr ""
 "tisícem v záři slunce se třpytících vln."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Twinkling_Waves.wmf/elemental:11
+#: input:6 standard
 msgid ""
 "Take care not to build your ships in the lagoons. They cannot pass through "
 "the reefs to the main ocean, where your ports are located."
@@ -101,10 +112,12 @@ msgstr ""
 "by se přes útesy do hlavního oceánu, kde se nachází přístavy."
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Volcanic_Winter.wmf/elemental:8
+#: input:9 standard
 msgid "Volcanic Winter"
 msgstr "Sopečná zima"
 
 #: addons/formerly_official_maps.wad/Formerly_Official_Maps/Volcanic_Winter.wmf/elemental:10
+#: input:5 standard
 msgid ""
 "In the middle of summer, a series of volcanic eruptions drew the winter in. "
 "Suddenly, the sun seemed to be gone and the only light and heat sources left "
@@ -117,11 +130,11 @@ msgstr ""
 "zdá se, že sopečné ostrovy jsou jedinou obyvatelnou oblastí,  která zůstala."
 
 #: addons/formerly_official_maps.wad/addon:2
-#: addons/formerly_official_maps.wad/dirnames:2
+#: addons/formerly_official_maps.wad/dirnames:2 input:7 standard input:4
 msgid "Formerly Official Maps"
 msgstr "Vyřazené oficiální mapy"
 
-#: addons/formerly_official_maps.wad/addon:3
+#: addons/formerly_official_maps.wad/addon:3 input:6 standard
 msgid ""
 "This map set contains all maps that were shipped with the official game at "
 "some time but since removed from the map pool."
@@ -129,6 +142,12 @@ msgstr ""
 "Tento soubor map obsahuje všechny mapy, které byly dříve publikovány jako "
 "oficiální, ale z nabídky map aktuálního vydání hry již byly vyřazeny."
 
-#: addons/formerly_official_maps.wad/addon:4
+#: addons/formerly_official_maps.wad/addon:4 input:4 standard
 msgid "The Widelands Development Team"
 msgstr "Tým vývojářů Widelands"
+
+#: input:5 standard
+msgid ""
+"A huge Europe map. Blue=Sweden, Red=Italy, Yellow=Spain, Green=Turkey, "
+"Black=Russia, Orange=England, Purple=France, White=Poland"
+msgstr ""

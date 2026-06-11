@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 03:13+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2025-02-16 14:14+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -23,11 +23,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Twisted_Paths_.wad/addon:4 input:8 standard
+#: addons/Twisted_Paths_.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Twisted Paths "
 msgstr "Slingrande stigar "
 
-#: addons/Twisted_Paths_.wad/addon:5 input:10 standard
+#: addons/Twisted_Paths_.wad/addon:5 input:6 input:10 standard
 msgid ""
 "You face twisted paths here,all clogged with rock and trees so a quick kill "
 "strategy probably wont work.Startup mines don't have much and the quickest "
@@ -39,6 +39,6 @@ msgstr ""
 "har inte mycket att erbjuda och det snabbaste sättet att få bättre gruvor är "
 "att utforska och expandera, men var försiktig, din fiende gör samma sak."
 
-#: addons/Twisted_Paths_.wad/dirnames:4
+#: addons/Twisted_Paths_.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Tilläggskartor"

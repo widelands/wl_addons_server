@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2021-02-18 19:31+0000\n"
 "Language-Team: Gaelic, Scottish (https://app.transifex.com/widelands/"
 "teams/35159/gd/)\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
 
-#: addons/auto_soldiers_cs.wad/addon:2
+#: addons/auto_soldiers_cs.wad/addon:2 input:7 standard
 msgid "Automatic Soldier Setting for Military Construction Sites"
 msgstr ""
 
-#: addons/auto_soldiers_cs.wad/addon:3
+#: addons/auto_soldiers_cs.wad/addon:3 input:6 standard
 msgid ""
 "If there is no enemy military building in sight, every new construction site "
 "is set to prefer rookies and reduce the capacity to 1. If there are enemy "

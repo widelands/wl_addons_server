@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2021-10-06 10:02+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -27,10 +27,12 @@ msgstr ""
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/elemental:8
+#: input:10 standard
 msgid "Along The River"
 msgstr "Пойма великой реки"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/elemental:10
+#: input:6 standard
 msgid ""
 "It is the land where the sun is hardly seen during the winter and where "
 "spring floods away any reminiscence of the past. Strange tensions have grown "
@@ -49,6 +51,7 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/functions.lua:60
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/functions.lua:62
+#: input:60 input:62 standard
 msgid "%1% unit of %2% has been brought to your ‘%3%’ building."
 msgid_plural "%1% units of %2% have been brought to your ‘%3%’ building."
 msgstr[0] "%1% единица %2% была доставлена в ваше ‘%3%’ здание."
@@ -58,46 +61,56 @@ msgstr[3] "%1% единиц %2% было доставлено в вашестр�
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/functions.lua:60
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/functions.lua:62
+#: input:60 input:62 standard
 msgid "Transport"
 msgstr "Транспорт"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
+#: input:210 standard
 msgid ""
 "Four shovels for removing the swamps have been collected at the warehouse."
 msgstr "На складе есть 4 лопаты, они понадобятся для осушения болот."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:219
+#: input:210 input:219 standard
 msgid "Shovels"
 msgstr "Лопаты"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:219
+#: input:219 standard
 msgid ""
 "Four more shovels for removing the swamps have been collected at the "
 "warehouse."
 msgstr "Свыше четырёх лопат со склада понадобятся вам для осушения болот."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:7
+#: input:7 standard
 msgid "Defeat Törver"
 msgstr "Победите Тёрвера"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:9
+#: input:9 standard
 msgid "Defeat the Armies of Törver"
 msgstr "Победите войска Тёрвера"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:10
+#: input:10 standard
 msgid "Törver is the enemy in the north, who is fighting under the red banner."
 msgstr "С севера нам угрожает Тёрвер, сражающий под красный знаменем."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:16
+#: input:16 standard
 msgid "Build a port"
 msgstr "Постройте порт"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:18
+#: input:18 standard
 msgid "Build a Port in the North"
 msgstr "Постройте порт на Севере"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:19
+#: input:19 standard
 msgid ""
 "We should build a port in Törver’s former land to be ready to send an "
 "expedition as soon as we found out how to build ships."
@@ -106,14 +119,17 @@ msgstr ""
 "отправить экспедицию, как только узнаем, как строить корабли."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:25
+#: input:25 standard
 msgid "Conquer pirate sentry"
 msgstr "Захватите пиратский пост"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:27
+#: input:27 standard
 msgid "Conquer the Pirate Sentry"
 msgstr "Захватить пиратскую караульную"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:28
+#: input:28 standard
 msgid ""
 "Conquer the pirate sentry near the brook to the east. Hopefully we will find "
 "out what happened to the gold in this area."
@@ -122,14 +138,17 @@ msgstr ""
 "куда делось местное золото."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:34
+#: input:34 standard
 msgid "Build warehouse"
 msgstr "Постройте склад"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:36
+#: input:36 standard
 msgid "Build a Warehouse near the Pirate Sentry"
 msgstr "Постройте склад рядом с Пиратской караульной"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:37
+#: input:37 standard
 msgid ""
 "Build a warehouse close to the conquered pirate sentry near the brook. We "
 "will need it as a basis for further exploration. Furthermore we could use it "
@@ -142,19 +161,23 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:43
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:52
+#: input:43 input:52 standard
 msgid "Bring shovels"
 msgstr "Несёт лопаты"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:45
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:54
+#: input:45 input:54 standard
 msgid "Bring Four Shovels to the new Warehouse"
 msgstr "Принесите четыре лопаты на новый склад"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:46
+#: input:46 standard
 msgid "They will be handed out to some volunteers for drying up the swamps."
 msgstr "Они понадобятся для осушения болот нашими добровольцами."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:55
+#: input:55 standard
 msgid ""
 "They will be handed out to additional volunteers for drying up the swamps."
 msgstr ""
@@ -162,14 +185,17 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:61
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:93
+#: input:61 input:93 standard
 msgid "Defeat the pirates"
 msgstr "Разгром пиратов"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:63
+#: input:63 standard
 msgid "Defeat the Pirates"
 msgstr "Разгромите пиратов"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:64
+#: input:64 standard
 msgid ""
 "Free our neighbourhood from the pirate menace. The pirates are fighting "
 "under the grey banner."
@@ -178,26 +204,32 @@ msgstr ""
 "знамёнами."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:70
+#: input:70 standard
 msgid "Free our scout from the pirates"
 msgstr "Выручите разведчика из пиратского плена"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:72
+#: input:72 standard
 msgid "Conquer the Stronghold on the Island"
 msgstr "Завоюйте Укрепление на острове"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:73
+#: input:73 standard
 msgid "This is where the scout is held captive."
 msgstr "Здесь разведчик был схвачен."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:79
+#: input:79 standard
 msgid "Defeat Hjalmar"
 msgstr "Победите Хьялмара"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:81
+#: input:81 standard
 msgid "Defeat the Armies of Hjalmar"
 msgstr "Победите войска Хьялмара"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:82
+#: input:82 standard
 msgid ""
 "Hjalmar is the enemy north of the former pirates, who is fighting under the "
 "green banner."
@@ -206,14 +238,17 @@ msgstr ""
 "знаменем."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:88
+#: input:88 standard
 msgid "Defeat Runar"
 msgstr "Победите Рунара"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:90
+#: input:90 standard
 msgid "Defeat the Armies of Runar"
 msgstr "Победите войска Рунара"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:91
+#: input:91 standard
 msgid ""
 "Runar is the enemy south-east of the former pirates, who is fighting under "
 "the yellow banner."
@@ -240,18 +275,24 @@ msgstr ""
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:138
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:147
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:156
+#: input:10 input:26 input:34 input:45 input:51 input:60 input:69 input:78
+#: input:85 input:92 input:99 input:105 input:111 input:117 input:123 input:132
+#: input:138 input:147 input:156 standard
 msgid "Your Advisor"
 msgstr "Ваш советник"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:11
+#: input:11 standard
 msgid "Along the River"
 msgstr "Пойма великой реки"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:12
+#: input:12 standard
 msgid "Sire, let me inform you about the surrounding tribes."
 msgstr "Сир, позвольте сообщить вам об окрестных племенах."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:14
+#: input:14 standard
 msgid ""
 "From the north we are endangered by a belligerent tribe, led by warlord "
 "Törver, that is rapidly building up its armies. They may soon have become "
@@ -262,6 +303,7 @@ msgstr ""
 "нас."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:16
+#: input:16 standard
 msgid ""
 "A large area to the north-east is agonized by a wild horde of unfettered "
 "pirates, led by their insane Arvid. Their presence blocks our ways to other "
@@ -271,6 +313,7 @@ msgstr ""
 "пиратов, возглавляемых Арвидом. Они перекрывают нам путь до других племён."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:18
+#: input:18 standard
 msgid ""
 "Over the river lies the prosperous land of the mysterious king Runar. We "
 "have been in war with him before the pirates occupied the eastern area. His "
@@ -281,6 +324,7 @@ msgstr ""
 "сила основана на его обширной промышленности и больших армиях."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:20
+#: input:20 standard
 msgid ""
 "The area beyond the pirates belongs to a developed tribe led by their mighty "
 "chieftain Hjalmar. They have had a long time of preparement to build up "
@@ -291,6 +335,7 @@ msgstr ""
 "на подготовку, чтобы создать свои сдерживающие армии."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:22
+#: input:22 standard
 msgid ""
 "The situation looks quite perilous and my advice is that we direct our "
 "efforts towards building up a strong army."
@@ -299,10 +344,12 @@ msgstr ""
 "создание сильной армии."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:27
+#: input:27 standard
 msgid "Our northern enemy"
 msgstr "Наш северный враг"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:28
+#: input:28 standard
 msgid ""
 "Sire, although our soldiers would face any enemy without the slightest fear, "
 "our rival in the north is still stronger than all our armies combined. We "
@@ -313,6 +360,7 @@ msgstr ""
 "должны избегать конфликта до тех пор, пока не сможем победить их."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:30
+#: input:30 standard
 msgid ""
 "Be patient and recognize that a strong army is indispensable in this "
 "situation. Törver has a very bad reputation."
@@ -321,10 +369,12 @@ msgstr ""
 "незаменима. У Тёрвера скверная репутация."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:35
+#: input:35 standard
 msgid "Peril from the north"
 msgstr "Угроза с севера"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:36
+#: input:36 standard
 msgid ""
 "Sire, we received an alarming message from one of our explorers. Törver is "
 "expanding his front line and approaching our territory."
@@ -333,6 +383,7 @@ msgstr ""
 "Тёрвер расширяет линию фронта и приближается к нашей территории."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:38
+#: input:38 standard
 msgid ""
 "We cannot avoid attacking their armies forever. If we manage to conquer our "
 "northern enemy, we will enlarge our territory and find more resources to "
@@ -343,6 +394,7 @@ msgstr ""
 "для усиления наших армий."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:40
+#: input:40 standard
 msgid ""
 "We can then also use their access to the lake in order to explore more land."
 msgstr ""
@@ -350,10 +402,12 @@ msgstr ""
 "больше земель."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:46
+#: input:46 standard
 msgid "On the good way"
 msgstr "На правильном пути"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:47
+#: input:47 standard
 msgid ""
 "Sire, the battle with Törver progresses gloriously and we have already "
 "beaten the strongest part of his army. But this enemy will not be defeated "
@@ -365,10 +419,12 @@ msgstr ""
 "призвал группу закаленных наемников."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:52
+#: input:52 standard
 msgid "The great lake"
 msgstr "Великое озеро"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:53
+#: input:53 standard
 msgid ""
 "Sire, now that we have conquered the land of Törver, we can make use of "
 "their excellent access to the adjacent great lake. A port in the north will "
@@ -379,6 +435,7 @@ msgstr ""
 "больше возможностей для контактов с другими племенами."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:55
+#: input:55 standard
 msgid ""
 "In Törver’s headquarters we found papers describing the construction of "
 "ships. Unfortunately, the texts are written in a language that is unknown to "
@@ -389,10 +446,12 @@ msgstr ""
 "мудрецы попытаются перевести эти описания."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:61
+#: input:61 standard
 msgid "Searching for gold"
 msgstr "Поиска золота"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:62
+#: input:62 standard
 msgid ""
 "Sire, our men have located an isolated enemy pirate sentry. The abandoned "
 "huts indicate that there is gold nearby."
@@ -401,6 +460,7 @@ msgstr ""
 "хижины указывают на то, что поблизости есть золото."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:64
+#: input:64 standard
 msgid ""
 "We should however be careful if we want to conquer the sentry. There can be "
 "more enemy buildings that are still out of sight, and the pirates are known "
@@ -413,10 +473,12 @@ msgstr ""
 "сильное военное присутствие, прежде чем мы продолжим."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:70
+#: input:70 standard
 msgid "Found a treasure"
 msgstr "Найдено сокровище"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:71
+#: input:71 standard
 msgid ""
 "Sire, we have found 25 units of gold ore inside the pirate sentry. They may "
 "have been looted from the gold diggers’ huts nearby. This gold ore will be "
@@ -427,6 +489,7 @@ msgstr ""
 "будет доставлена в нашу штаб-квартиру."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:73
+#: input:73 standard
 msgid ""
 "With our successful expansion into this area we should consider building a "
 "warehouse to the direct southwest of the sentry in order to further explore "
@@ -440,10 +503,12 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:79
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:86
+#: input:79 input:86 standard
 msgid "Removing the swamps"
 msgstr "Осушение болот"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:80
+#: input:80 standard
 msgid ""
 "Sire, the wet season has created swamps along the brook to the east and we "
 "are unable to pass through them. They have to be removed before we can "
@@ -455,6 +520,7 @@ msgstr ""
 "принесете достаточно лопат на новый склад, то добровольцы осушат болота."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:87
+#: input:87 standard
 msgid ""
 "Sire, all shovels have been handed out but if we continue at this pace than "
 "we will not have removed the swamps before the next wet season. If you bring "
@@ -465,6 +531,7 @@ msgstr ""
 "новый склад, к вам присоединится больше добровольцев."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:94
+#: input:94 standard
 msgid ""
 "Sire, now that we have access to the pirates’ hideout, we should conquer it "
 "and finish them off. Maybe there are even more treasures hidden in their "
@@ -475,10 +542,12 @@ msgstr ""
 "сокровищ."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:100
+#: input:100 standard
 msgid "The pirates were defeated."
 msgstr "Пираты уничтожены."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:101
+#: input:101 standard
 msgid ""
 "Sire, we have defeated the pirates. They have hidden some gold in their last "
 "bastion which is now being transferred to our headquarters."
@@ -487,10 +556,12 @@ msgstr ""
 "припрятанного золота, его сейчас переносят в наш штаб."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:106
+#: input:106 standard
 msgid "Pirates are regrouping"
 msgstr "Пираты перегруппировались"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:107
+#: input:107 standard
 msgid ""
 "Sire, as a result of our attacks on the pirates they have started to regroup "
 "with pirates from other tribes. They could regain much of their previously "
@@ -503,10 +574,12 @@ msgstr ""
 "лицом столь мощного врага."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:112
+#: input:112 standard
 msgid "Pirates on the run"
 msgstr "Пираты на марше"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:113
+#: input:113 standard
 msgid ""
 "Sire, thanks to our successful efforts to drive out the pirates, lots of "
 "them have fled and moved away in small boats. It is unknown in which "
@@ -517,10 +590,12 @@ msgstr ""
 "убежали."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:118
+#: input:118 standard
 msgid "Ability to build shipyards"
 msgstr "Способность строить верфи"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:119
+#: input:119 standard
 msgid ""
 "Sire, after long study and research our wise men have finally managed to "
 "decipher the strange language in Törver’s descriptions that we had found in "
@@ -531,10 +606,12 @@ msgstr ""
 "Отныне мы можем строить верфи."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:124
+#: input:124 standard
 msgid "Our scout has been captured"
 msgstr "Наш разведчик схвачен"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:125
+#: input:125 standard
 msgid ""
 "Sire, one of our scouts has been captured by the pirates and brought to "
 "their island. He is the only person who knows the way through the swamps "
@@ -544,6 +621,7 @@ msgstr ""
 "Между тем он единственный, кто знает, как добраться до Хьялмара через болота."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:127
+#: input:127 standard
 msgid ""
 "According to our fishermen he is locked up in the stronghold on the island. "
 "We should use the knowledge about shipbuilding that we took from Törver to "
@@ -554,10 +632,12 @@ msgstr ""
 "корабли и атаковать их позиции."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:133
+#: input:133 standard
 msgid "Island conquered"
 msgstr "Остров завоёван"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:134
+#: input:134 standard
 msgid ""
 "Sire, our soldiers have conquered the island and managed to free the scout. "
 "It turns out that the pirates have left a large amount of gold, beer, and "
@@ -568,16 +648,19 @@ msgstr ""
 "оружия."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:139
+#: input:139 standard
 msgid "The scout returns"
 msgstr "Разведчик вернулся"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:140
+#: input:140 standard
 msgid ""
 "Sire, our scout has returned to our territory, and he has shown us the road "
 "through the swamps towards Hjalmar."
 msgstr "Сэр, наш разведчик снова с нами и покажет гать до Хьялмара."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:142
+#: input:142 standard
 msgid ""
 "He noticed that we can also move along the other side of the mountain, in "
 "case we might fail here, but it will be much more difficult to do."
@@ -586,10 +669,12 @@ msgstr ""
 "потерпим неудачу здесь, но сделать это будет гораздо сложнее."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:148
+#: input:148 standard
 msgid "The last frontier"
 msgstr "Последний рубеж"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:149
+#: input:149 standard
 msgid ""
 "Sire, we have almost defeated all armies and we are now approaching our "
 "final enemy. They have been expecting us for a long time and will be "
@@ -600,20 +685,24 @@ msgstr ""
 "своей жизни."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:151
+#: input:151 standard
 msgid "Make sure that our armies are at full strength and then act decisively."
 msgstr ""
 "Убедитесь, что наши армии находятся в полной боевой готовности, а затем "
 "действуйте решительно."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:157
+#: input:157 standard
 msgid "Victory!"
 msgstr "Победа!"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:158
+#: input:158 standard
 msgid "Sire, my congratulations!"
 msgstr "Мои поздравления, сир!"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:160
+#: input:160 standard
 msgid ""
 "You have completed all goals and defeated all our enemies. You have not only "
 "conquered our rivalling tribes, but you have also captured the hearts of "
@@ -623,10 +712,11 @@ msgstr ""
 "соседние племена, но и любящие сердца вашего народа."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:162
+#: input:162 standard
 msgid "Your name will be remembered forever."
 msgstr "Ваше имя мы будем помнить вечно."
 
-#: addons/SP_Scenario_Along_the_River.wad/addon:6
+#: addons/SP_Scenario_Along_the_River.wad/addon:6 input:6 standard
 msgid ""
 "Provides the scenario ''Along the River''.  This scenario was converted to "
 "be playable again with Widelands 1.0. It will be provided officially with "
@@ -635,10 +725,10 @@ msgstr ""
 "Включает сценарий \"Пойма великой реки\". Этот сценарий был исправлен для "
 "использования в Widelands 1.0. Он будет официально включён в Widelands 1.1."
 
-#: addons/SP_Scenario_Along_the_River.wad/addon:9
+#: addons/SP_Scenario_Along_the_River.wad/addon:9 input:9 standard
 msgid "SP_Scenario_Along_the_River"
 msgstr "SP_Scenario_Along_the_River"
 
-#: addons/SP_Scenario_Along_the_River.wad/dirnames:4
+#: addons/SP_Scenario_Along_the_River.wad/dirnames:4 standard input:4
 msgid "Singleplayer Scenarios"
 msgstr "Одиночные сценарии"

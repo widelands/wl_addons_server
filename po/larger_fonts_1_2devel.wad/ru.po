@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2023-04-29 19:56+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,11 +24,11 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/larger_fonts_1_2devel.wad/addon:4
+#: addons/larger_fonts_1_2devel.wad/addon:4 input:9 standard
 msgid "Larger Font Theme for Widelands 1.2~devel"
 msgstr "Тема с увеличенным шрифтом для Widelands 1.2~devel"
 
-#: addons/larger_fonts_1_2devel.wad/addon:5
+#: addons/larger_fonts_1_2devel.wad/addon:5 input:6 standard
 msgid ""
 "Theme with larger fonts. This version changes scenario and help fonts too, "
 "but only works with the latest development versions of Widelands."
@@ -36,6 +36,6 @@ msgstr ""
 "Тема с более крупными шрифтами. Эта версия также изменяет шрифты сценария и "
 "подсказок, но работает только с последними версиями Widelands."
 
-#: screenshots/larger_fonts_1_2devel.wad/descriptions:3
+#: input:3 screenshots/larger_fonts_1_2devel.wad/descriptions:3 standard
 msgid "In-game"
 msgstr "Внутриигровой"

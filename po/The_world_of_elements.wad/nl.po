@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2022-10-25 08:48+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -21,20 +21,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/The_world_of_elements.wad/addon:6
+#: addons/The_world_of_elements.wad/addon:6 input:6 standard
 msgid "This map-addon ads the map ''World of elements"
 msgstr "Deze kaartaanvulling voegt de kaart ''Wereld van elementen"
 
 #: addons/The_world_of_elements.wad/addon:9
-#: addons/The_world_of_elements.wad/dirnames:4
+#: addons/The_world_of_elements.wad/dirnames:4 input:9 standard input:4
 msgid "The_world_of_elements"
 msgstr "The_world_of_elements"
 
-#: input:8 standard
-msgid "The world of elements"
-msgstr "De wereld van elementen"
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "This game is a kind of challenge. It is intended for one player. You should "
 "play the Wiesdengugr who owns a territory in a desolate desert. Thou shalt "
@@ -48,6 +44,10 @@ msgstr ""
 "gebieden met elk één tegenstander op u en aan het eind de uiteindelijke "
 "eindbaas Ailien en achter hem komt de vrijheid."
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid "Warning: This map needs Addons!!! "
 msgstr "Waarschuwing: Deze kaart heeft Uitbreidingen nodig! "
+
+#: input:8 input:10 standard
+msgid "The world of elements"
+msgstr "De wereld van elementen"

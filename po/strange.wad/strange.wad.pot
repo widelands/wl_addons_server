@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 03:18+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: addons/strange.wad/addon:4 input:8 standard
+#: addons/strange.wad/addon:4 input:8 input:9 input:10 standard
 msgid "strange"
 msgstr ""
 
-#: addons/strange.wad/dirnames:4
+#: addons/strange.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr ""
 
-#: input:13 standard
+#: input:6 standard
+msgid "Crisp and dry, Frisian-style <br> <br>Verion: 1.0"
+msgstr ""
+
+#: input:7 input:13 standard
 msgid ""
 "Blue, Green, Orange, and White versus Red, Yellow, Black, and Purple—plus "
 "partners—continuing at number 8 on the list."

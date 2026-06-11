@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 03:13+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2026-01-07 09:47+0000\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
 "teams/35159/en_GB/)\n"
@@ -19,18 +19,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/field_army.wad/addon:2 addons/field_army.wad/init.lua:31
-#: addons/field_army.wad/init.lua:32
+#: addons/field_army.wad/init.lua:32 input:9 standard input:31 input:32
 msgid "Field Army"
 msgstr ""
 
-#: addons/field_army.wad/addon:3
+#: addons/field_army.wad/addon:3 input:6 standard
 msgid ""
 "The first player to station an army equivalent in strength to the selected "
 "number of fully trained heroes in his tribe’s military sites wins the game. "
 "Combination with More Expensive Soldiers add-on recommended."
 msgstr ""
 
-#: addons/field_army.wad/init.lua:27
+#: addons/field_army.wad/init.lua:27 standard input:27
 msgid ""
 "The first player to station an army equivalent in strength to the selected "
 "number of fully trained heroes in his tribe’s military sites wins the game. "
@@ -39,7 +39,7 @@ msgid ""
 "soldiers (or points)."
 msgstr ""
 
-#: addons/field_army.wad/init.lua:45
+#: addons/field_army.wad/init.lua:45 standard input:45
 msgid ""
 "The first player to station an army equivalent in strength to %1% fully "
 "trained hero in his tribe’s military sites wins the game. One hero has a "
@@ -53,53 +53,54 @@ msgstr[1] ""
 
 #: addons/field_army.wad/init.lua:128 addons/field_army.wad/init.lua:130
 #: addons/field_army.wad/init.lua:134 addons/field_army.wad/init.lua:139
+#: standard input:128 input:130 input:134 input:139
 msgid "%1$d point"
 msgid_plural "%1$d points"
 msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: "Player x: y points"
-#: addons/field_army.wad/init.lua:128
+#: addons/field_army.wad/init.lua:128 standard input:128
 msgid "%1%: %2%"
 msgstr ""
 
 #. TRANSLATORS: "Player x has reached y points."
-#: addons/field_army.wad/init.lua:130
+#: addons/field_army.wad/init.lua:130 standard input:130
 msgid "%1% has reached %2%."
 msgstr ""
 
-#: addons/field_army.wad/init.lua:132
+#: addons/field_army.wad/init.lua:132 standard input:132
 msgid "%1$d point!"
 msgid_plural "%1$d points!"
 msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: "You have reached x points."
-#: addons/field_army.wad/init.lua:134
+#: addons/field_army.wad/init.lua:134 standard input:134
 msgid "You have reached %1%."
 msgstr ""
 
-#: addons/field_army.wad/init.lua:136
+#: addons/field_army.wad/init.lua:136 standard input:136
 msgid "Player points:"
 msgstr ""
 
 #. TRANSLATORS: "Player x has y out of z points"
-#: addons/field_army.wad/init.lua:139
+#: addons/field_army.wad/init.lua:139 standard input:139
 msgid "%1% has %2% out of %3%"
 msgstr ""
 
 #. TRANSLATORS: "Player x: y points"
-#: addons/field_army.wad/init.lua:167
+#: addons/field_army.wad/init.lua:167 standard input:167
 msgid "%1%: %2% point"
 msgid_plural "%1%: %2% points"
 msgstr[0] ""
 msgstr[1] ""
 
-#: addons/field_army.wad/init.lua:209
+#: addons/field_army.wad/init.lua:209 standard input:209
 msgid "%1% defeated."
 msgstr ""
 
-#: addons/field_army.wad/init.lua:209
+#: addons/field_army.wad/init.lua:209 standard input:209
 msgid "%1% player remains."
 msgid_plural "%1% players remain."
 msgstr[0] ""

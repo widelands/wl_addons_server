@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2023-01-28 12:25+0000\n"
 "Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -23,11 +23,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/intelligent_teamplay_maps.wad/addon:4
-#: addons/intelligent_teamplay_maps.wad/dirnames:4
+#: addons/intelligent_teamplay_maps.wad/dirnames:4 input:4 input:9 standard
 msgid "Intelligent Teamplay Maps"
 msgstr "Mapes de joc per equips intel·ligents"
 
-#: addons/intelligent_teamplay_maps.wad/addon:5
+#: addons/intelligent_teamplay_maps.wad/addon:5 input:6 standard
 msgid ""
 "Requires efficient Teamplay and the the-x Tournament Mod. Interesting maps "
 "with a lot of strategical decisions; resources are set intelligently and you "
@@ -40,11 +40,13 @@ msgstr ""
 "d'or per a establir una economia sòlida. Els mapes són en 3D i us podreu "
 "trobar a cada vora."
 
-#: addons/intelligent_teamplay_maps.wad/itm/InfinitheX.wmf/elemental:8
+#: addons/intelligent_teamplay_maps.wad/itm/InfinitheX.wmf/elemental:8 input:10
+#: standard
 msgid "InfinitheX"
 msgstr "InfinitX"
 
-#: addons/intelligent_teamplay_maps.wad/itm/InfinitheX.wmf/elemental:10
+#: addons/intelligent_teamplay_maps.wad/itm/InfinitheX.wmf/elemental:10 input:6
+#: standard
 msgid ""
 "Keine Grenzen sind auf dieser Karte gesetzt, ob du ganz im Wald startetest "
 "als Urwaldvolk oder im Gebirge oder im Lande der Dunklen  -  Teams:  1-8 die "
@@ -60,51 +62,61 @@ msgstr ""
 "- - - - - - - - - - - \n"
 "Si sou 4, jugueu la carta com a 4 mariners."
 
-#: addons/intelligent_teamplay_maps.wad/itm/InfinitheX.wmf/elemental:11
+#: addons/intelligent_teamplay_maps.wad/itm/InfinitheX.wmf/elemental:11 input:7
+#: standard
 msgid ""
 "Rohstoffe sind mit Bedacht gesetzt, es gibt aber immer mehrere Möglichkeiten"
 msgstr ""
 "Cal fer servir les matèries primeres amb cura i hi ha sempre diverses "
 "opcions per triar què fer."
 
-#: addons/intelligent_teamplay_maps.wad/itm/Pro_4.wmf/elemental:8
+#: addons/intelligent_teamplay_maps.wad/itm/Pro_4.wmf/elemental:8 input:10
+#: standard
 msgid "Pro 4"
 msgstr "Pro4"
 
-#: addons/intelligent_teamplay_maps.wad/itm/Pro_4.wmf/elemental:10
+#: addons/intelligent_teamplay_maps.wad/itm/Pro_4.wmf/elemental:10 input:6
+#: standard
 msgid "Blue and Red"
 msgstr "Blau i roig"
 
-#: addons/intelligent_teamplay_maps.wad/itm/Rome.wmf/elemental:8
+#: addons/intelligent_teamplay_maps.wad/itm/Rome.wmf/elemental:8 input:9
+#: standard
 msgid "Rome"
 msgstr "Roma"
 
 #: addons/intelligent_teamplay_maps.wad/itm/Rome.wmf/elemental:10
 #: addons/intelligent_teamplay_maps.wad/itm/Yellow_Submarine.wmf/elemental:10
 #: addons/intelligent_teamplay_maps.wad/itm/die_finnische_Seenplatte.wmf/elemental:10
+#: input:5 input:6 standard
 msgid "Keine Beschreibung vorhanden"
 msgstr "No hi ha descripció disponible."
 
-#: addons/intelligent_teamplay_maps.wad/itm/Saturn.wmf/elemental:8
+#: addons/intelligent_teamplay_maps.wad/itm/Saturn.wmf/elemental:8 input:10
+#: standard
 msgid "Saturn"
 msgstr "Saturn"
 
-#: addons/intelligent_teamplay_maps.wad/itm/Saturn.wmf/elemental:10
+#: addons/intelligent_teamplay_maps.wad/itm/Saturn.wmf/elemental:10 input:6
+#: standard
 msgid "Zu zwölft den Saturn Besiedelm"
 msgstr "Els dotze de Saturn"
 
-#: addons/intelligent_teamplay_maps.wad/itm/Saturn.wmf/elemental:11
+#: addons/intelligent_teamplay_maps.wad/itm/Saturn.wmf/elemental:11 input:7
+#: standard
 msgid ""
 "1,2,3,4,5 und 6 gegen 7,8,9,10,11,12  kann aber auch 4v4 oder 2v2 gespielt "
 "werden"
 msgstr ""
 "1, 2, 3, 4, 5 i 6 contra 7, 8,9, 10, 11 i 12. També es pot jugar 4v4 o 2v2."
 
-#: addons/intelligent_teamplay_maps.wad/itm/Tripolis.wmf/elemental:8
+#: addons/intelligent_teamplay_maps.wad/itm/Tripolis.wmf/elemental:8 input:10
+#: standard
 msgid "Tripolis"
 msgstr "Trípoli"
 
-#: addons/intelligent_teamplay_maps.wad/itm/Tripolis.wmf/elemental:10
+#: addons/intelligent_teamplay_maps.wad/itm/Tripolis.wmf/elemental:10 input:6
+#: standard
 msgid ""
 "Willkommen im alten Ägypten  Tripolis erfordert strategisches Geschick und "
 "ein gutes Team, das zusammenarbeitet ;-) konzepted by the-x mir allerlei "
@@ -119,16 +131,19 @@ msgstr ""
 "conquistarà l'antic Egipte? 1,2,3 contra 4,5,6, però també es pot jugar en "
 "qualsevol combinació de parelles."
 
-#: addons/intelligent_teamplay_maps.wad/itm/Tripolis.wmf/elemental:11
+#: addons/intelligent_teamplay_maps.wad/itm/Tripolis.wmf/elemental:11 input:7
+#: standard
 msgid "1,2,3 gegen 4,5,6 aber auch in beliebigen anderen Paarungen spielbar."
 msgstr ""
 "1,2,3 contra 4,5,6 però també es pot jugar en qualsevol altra combinació de "
 "parelles."
 
 #: addons/intelligent_teamplay_maps.wad/itm/Yellow_Submarine.wmf/elemental:8
+#: input:10 standard
 msgid "Yellow Submarine"
 msgstr "Submarí groc"
 
 #: addons/intelligent_teamplay_maps.wad/itm/die_finnische_Seenplatte.wmf/elemental:8
+#: standard input:10
 msgid "Die finnische Seenplatte"
 msgstr "La terra dels llacs finlandesos"

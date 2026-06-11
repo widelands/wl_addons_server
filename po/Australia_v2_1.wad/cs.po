@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-26 03:15+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2026-05-25 08:50+0000\n"
 "Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -22,15 +22,25 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: addons/Australia_v2_1.wad/addon:4 input:8 standard
+#: addons/Australia_v2_1.wad/addon:4 input:8 input:9 input:10 standard
 msgid "Australia v2.1"
 msgstr ""
 
-#: addons/Australia_v2_1.wad/dirnames:4
+#: addons/Australia_v2_1.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Rozšíření mapy"
 
-#: input:14 standard
+#: input:6 standard
+msgid ""
+"The British imperium transported huge amounts of criminals to a new "
+"continent soon after it was found at 17th. century. The imperial ships "
+"abandoned you and all the other criminals it has to this barren, strange new "
+"world. Your heroic decision is to bring order to the rows of the criminals "
+"and to create your own prosperous country full of life. <br> "
+"<br>------------- <br>seaport update"
+msgstr ""
+
+#: input:7 input:14 standard
 msgid ""
 "This is an improved version of the original map I created at around 2013. "
 "Lots of changes and balancing have been done to make this map work properly "

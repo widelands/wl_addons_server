@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-07-24 20:43+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -22,31 +22,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Naval_Tournament_23_Maps.wad/addon:6
+#: addons/Naval_Tournament_23_Maps.wad/addon:6 input:6 standard
 msgid "Maps for the Naval Tournament 23"
 msgstr "Karten für das Seefahrt-Turnier 23"
 
-#: addons/Naval_Tournament_23_Maps.wad/addon:9
+#: addons/Naval_Tournament_23_Maps.wad/addon:9 input:9 standard
 msgid "Naval Tournament 23 Maps"
 msgstr "Seefahrt-Turnier 23 Karten"
 
-#: addons/Naval_Tournament_23_Maps.wad/dirnames:4
+#: addons/Naval_Tournament_23_Maps.wad/dirnames:4 standard input:4
 msgid "Naval Tournament 23"
 msgstr "Seefahrt-Turnier 23"
 
-#: input:8 standard
-msgid "Naval Ice wars"
-msgstr "Seefahrt-Eiskriege"
-
-#: input:8 standard
-msgid "Plateau (Naval Warfare)"
-msgstr "Plateau (Seekampf)"
-
-#: input:8 standard
-msgid "Together We’re Strong (naval invasion)"
-msgstr "Zusammen sind wir stark (Seeinvasion)"
-
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "A large island with coastal plains and a forested plateau. Rich in resources "
 "and plenty of flat building space along the coasts."
@@ -54,12 +42,12 @@ msgstr ""
 "Eine große Insel mit Küstenebenen und einem bewaldeten Plateau. Sie ist "
 "reich an Rohstoffen und bietet viel Platz zum Bauen an den Küsten."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid "Autumn became winter. Some things are frozen, but not the war."
 msgstr ""
 "Herbst wurde zu Winter. Einige Dinge sind gefroren, aber nicht der Krieg."
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "The four mighty harbors of the Craw Islands have been trading their goods "
 "among each other for ages. All of them needed resources that they could not "
@@ -82,7 +70,7 @@ msgstr ""
 "sein, bis die ersten Kämpfe zwischen den Häfen das friedliche Leben "
 "zerstört, das so lange auf den Inseln vorgeherrscht hatte …"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Added a river seggregating the 2 halfs of the start island to enforce naval "
 "warfare."
@@ -90,6 +78,18 @@ msgstr ""
 "Ein Fluss, der beide Hälften der Startinsel trennt, wurde hinzugefügt, um "
 "Seekriegsführung zu erzwingen."
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid "Start positions are clockwise"
 msgstr "Die Ausgangspositionen sind im Uhrzeigersinn verteilt."
+
+#: input:8 input:10 standard
+msgid "Naval Ice wars"
+msgstr "Seefahrt-Eiskriege"
+
+#: input:8 input:10 standard
+msgid "Plateau (Naval Warfare)"
+msgstr "Plateau (Seekampf)"
+
+#: input:8 input:10 standard
+msgid "Together We’re Strong (naval invasion)"
+msgstr "Zusammen sind wir stark (Seeinvasion)"

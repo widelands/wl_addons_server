@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-16 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2023-03-30 18:07+0000\n"
 "Last-Translator: Ondřej Itřech, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: addons/WideGreen.wad/addon:6
+#: addons/WideGreen.wad/addon:6 input:6 standard
 msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen. Gegner sind ganz nahe! Es kann "
@@ -47,12 +47,12 @@ msgstr ""
 "přístup k dalším zdrojům zlata na stavbu dalších přístavů a výpravy k "
 "nepříteli."
 
-#: addons/WideGreen.wad/addon:9 addons/WideGreen.wad/dirnames:4 input:8
-#: standard
+#: addons/WideGreen.wad/addon:9 addons/WideGreen.wad/dirnames:4 input:8 input:9
+#: input:10 standard input:4
 msgid "WideGreen"
 msgstr "Širá zeleň"
 
-#: input:10 standard
+#: input:6 input:10 standard
 msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen."
@@ -60,7 +60,7 @@ msgstr ""
 "Širá zeleň a řeky kam až oko dohlédne. Výpravy z přístavů jsou nezbytnou "
 "podmínkou pro přístup k nepříteli."
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid ""
 "Gegner sind ganz nahe! Es kann sich sehr lohnen möglichst schnell bestimmte "
 "Hafenbauplätze zu kontrollieren. Achte darauf, dass die Werften und die "

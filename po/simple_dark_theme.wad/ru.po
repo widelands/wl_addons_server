@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2022-12-23 11:20+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,7 +24,7 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/simple_dark_theme.wad/addon:6
+#: addons/simple_dark_theme.wad/addon:6 input:6 standard
 msgid ""
 "Dark theme (very loosely) based on kaputtnik's minimalistic theme and "
 "adwaita."
@@ -32,26 +32,26 @@ msgstr ""
 "Темная тема основанная (очень вольно), на минималистичных темах kaputnik и "
 "adwaita."
 
-#: addons/simple_dark_theme.wad/addon:9
+#: addons/simple_dark_theme.wad/addon:9 input:9 standard
 msgid "Simple Dark Theme"
 msgstr "Простая Темная тема"
 
-#: screenshots/simple_dark_theme.wad/descriptions:3
+#: input:3 screenshots/simple_dark_theme.wad/descriptions:3 standard
 msgid "Main menu"
 msgstr "Главное Меню"
 
-#: screenshots/simple_dark_theme.wad/descriptions:4
+#: input:4 screenshots/simple_dark_theme.wad/descriptions:4 standard
 msgid "Options window"
 msgstr "Окно настроек"
 
-#: screenshots/simple_dark_theme.wad/descriptions:5
+#: input:5 screenshots/simple_dark_theme.wad/descriptions:5 standard
 msgid "Map loading"
 msgstr "загрузка карты"
 
-#: screenshots/simple_dark_theme.wad/descriptions:6
+#: input:6 screenshots/simple_dark_theme.wad/descriptions:6 standard
 msgid "In-game UI"
 msgstr "Игровой интерфейс"
 
-#: screenshots/simple_dark_theme.wad/descriptions:7
+#: input:7 screenshots/simple_dark_theme.wad/descriptions:7 standard
 msgid "Add-ons window"
 msgstr "Окно дополнений"

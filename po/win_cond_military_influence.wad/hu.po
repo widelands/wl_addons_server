@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 03:16+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2026-05-24 08:16+0000\n"
 "Last-Translator: Tóth András <txa-dev@posteo.hu>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
@@ -24,11 +24,12 @@ msgstr ""
 
 #: addons/win_cond_military_influence.wad/addon:2
 #: addons/win_cond_military_influence.wad/functions.lua:621
-#: addons/win_cond_military_influence.wad/functions.lua:660
+#: addons/win_cond_military_influence.wad/functions.lua:660 input:8 input:621
+#: input:660 standard
 msgid "Military Influence"
 msgstr "Katonai befolyás"
 
-#: addons/win_cond_military_influence.wad/addon:3
+#: addons/win_cond_military_influence.wad/addon:3 input:6 standard
 msgid ""
 "Conquer as much as you can and train as many and strong soldiers as you can "
 "in the set time."
@@ -37,132 +38,132 @@ msgstr ""
 "hadsereget a megadott idő alatt!"
 
 #. TRANSLATORS: Gametime as hours:minutes, e.g. 2:30
-#: addons/win_cond_military_influence.wad/functions.lua:154
+#: addons/win_cond_military_influence.wad/functions.lua:154 input:154 standard
 msgid "%1$d:%2$02d:%3$02d"
 msgstr "%1$d:%2$02d:%3$02d"
 
 #. TRANSLATORS: first placeholder is player name, second is game time, third is tribe
-#: addons/win_cond_military_influence.wad/functions.lua:158
+#: addons/win_cond_military_influence.wad/functions.lua:158 input:158 standard
 msgid "Military Influence Score for %1$s at %2$s with %3$s:"
 msgstr "%1$s katonai befolyás pontszáma %2$s-kor %3$s törzzsel:"
 
-#: addons/win_cond_military_influence.wad/functions.lua:165
+#: addons/win_cond_military_influence.wad/functions.lua:165 input:165 standard
 msgid "Area info"
 msgstr "Terület adatok"
 
-#: addons/win_cond_military_influence.wad/functions.lua:166
+#: addons/win_cond_military_influence.wad/functions.lua:166 input:166 standard
 msgid "Area score: "
 msgstr "Terület pontszám:"
 
-#: addons/win_cond_military_influence.wad/functions.lua:169
+#: addons/win_cond_military_influence.wad/functions.lua:169 input:169 standard
 #, lua-format
 msgid "Total area: %d"
 msgstr "Teljes terület: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:170
+#: addons/win_cond_military_influence.wad/functions.lua:170 input:170 standard
 #, lua-format
 msgid "Area controlled by military buildings: %d"
 msgstr "A katonai épületek által ellenőrzött terület: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:171
+#: addons/win_cond_military_influence.wad/functions.lua:171 input:171 standard
 #, lua-format
 msgid "Conquerable map area: %d"
 msgstr "A térkép elérhető területe: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:172
+#: addons/win_cond_military_influence.wad/functions.lua:172 input:172 standard
 #, lua-format
 msgid "Player owns %.1f%% of the conquerable map area"
 msgstr "A játékos az elérhető terület %.1f%%-át birtokolja."
 
-#: addons/win_cond_military_influence.wad/functions.lua:173
+#: addons/win_cond_military_influence.wad/functions.lua:173 input:173 standard
 #, lua-format
 msgid "Number of military buildings: %d"
 msgstr "Katonai épületek száma: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:175
+#: addons/win_cond_military_influence.wad/functions.lua:175 input:175 standard
 msgid "Soldiers info"
 msgstr "Hadsereg adatok"
 
-#: addons/win_cond_military_influence.wad/functions.lua:176
+#: addons/win_cond_military_influence.wad/functions.lua:176 input:176 standard
 msgid "Soldiers score: "
 msgstr "Hadsereg pontszám:"
 
-#: addons/win_cond_military_influence.wad/functions.lua:179
+#: addons/win_cond_military_influence.wad/functions.lua:179 input:179 standard
 #, lua-format
 msgid "Soldiers statistics score: %d"
 msgstr "Haderő statisztika pontok: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:180
+#: addons/win_cond_military_influence.wad/functions.lua:180 input:180 standard
 #, lua-format
 msgid "Total effective strength of guards: %d"
 msgstr "Az őrök összesített eredő ereje: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:181
+#: addons/win_cond_military_influence.wad/functions.lua:181 input:181 standard
 #, lua-format
 msgid "Total number of soldiers: %d"
 msgstr "Katonák száma: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:182
+#: addons/win_cond_military_influence.wad/functions.lua:182 input:182 standard
 #, lua-format
 msgid "Soldiers in buildings: %d"
 msgstr "Katonák az épületekben: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:183
+#: addons/win_cond_military_influence.wad/functions.lua:183 input:183 standard
 #, lua-format
 msgid "Soldiers on roads and ships: %d"
 msgstr "Katonák az utakon és a hajókon: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:184
+#: addons/win_cond_military_influence.wad/functions.lua:184 input:184 standard
 #, lua-format
 msgid "Number of heroes: %d"
 msgstr "Hősök száma: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:185
+#: addons/win_cond_military_influence.wad/functions.lua:185 input:185 standard
 #, lua-format
 msgid "Sum of all soldier levels: %d"
 msgstr "Képzési szintek összesített száma: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:186
+#: addons/win_cond_military_influence.wad/functions.lua:186 input:186 standard
 #, lua-format
 msgid "Total number of guards: %d"
 msgstr "Őrök száma: %d"
 
-#: addons/win_cond_military_influence.wad/functions.lua:187
+#: addons/win_cond_military_influence.wad/functions.lua:187 input:187 standard
 #, lua-format
 msgid "%.1f%% of available positions"
 msgstr "A katonai épületek helyeinek %.1f%%-a"
 
-#: addons/win_cond_military_influence.wad/functions.lua:188
+#: addons/win_cond_military_influence.wad/functions.lua:188 input:188 standard
 #, lua-format
 msgid "Average strength of garrisons: %.1f%%"
 msgstr "A helyőrségek átlagos ereje: %.1f%%"
 
-#: addons/win_cond_military_influence.wad/functions.lua:197
+#: addons/win_cond_military_influence.wad/functions.lua:197 input:197 standard
 msgid "Calculation method"
 msgstr "A pontszámítás módja"
 
-#: addons/win_cond_military_influence.wad/functions.lua:198
+#: addons/win_cond_military_influence.wad/functions.lua:198 input:198 standard
 msgid "The final score is a weighted geometric mean of four scores:"
 msgstr "A végső pontszám négy részpontszám súlyozott mértani közepe:"
 
-#: addons/win_cond_military_influence.wad/functions.lua:199
+#: addons/win_cond_military_influence.wad/functions.lua:199 input:199 standard
 msgid "the total owned area"
 msgstr "a teljes elfoglalt terület"
 
-#: addons/win_cond_military_influence.wad/functions.lua:200
+#: addons/win_cond_military_influence.wad/functions.lua:200 input:200 standard
 msgid "the sum of conquer areas of military sites"
 msgstr ""
 "az egyes katonai épületek által ellenőrzött területek méreteinek összege"
 
-#: addons/win_cond_military_influence.wad/functions.lua:201
+#: addons/win_cond_military_influence.wad/functions.lua:201 input:201 standard
 msgid "the total soldier statistics score"
 msgstr "a haderő statisztika pontszáma"
 
-#: addons/win_cond_military_influence.wad/functions.lua:202
+#: addons/win_cond_military_influence.wad/functions.lua:202 input:202 standard
 msgid "the total effective strength of soldiers in military sites"
 msgstr "a katonai épületekben elhelyezett katonák eredő erejének összege"
 
-#: addons/win_cond_military_influence.wad/functions.lua:203
+#: addons/win_cond_military_influence.wad/functions.lua:203 input:203 standard
 msgid ""
 "The areas are counted with half weight. That means that first the area score "
 "is calculated as the square root of the product of the two partial area "
@@ -174,7 +175,7 @@ msgstr ""
 "négyzetgyöke. Ezután a végső pontszám a terület pontszám és a két haderő "
 "részpontszám szorzatának a köbgyöke."
 
-#: addons/win_cond_military_influence.wad/functions.lua:207
+#: addons/win_cond_military_influence.wad/functions.lua:207 input:207 standard
 msgid ""
 "The soldier statistics assigns a score to each soldier between 1 and 20 "
 "depending on the sum of training levels, using a quadratic formula. Please "
@@ -186,7 +187,7 @@ msgstr ""
 "játékot irányító Lua parancsfájl nem tudja figyelembe venni az utakon és "
 "hajókon tartózkodó katonákat."
 
-#: addons/win_cond_military_influence.wad/functions.lua:210
+#: addons/win_cond_military_influence.wad/functions.lua:210 input:210 standard
 msgid ""
 "The theoretical effective strength is calculated from the actual battle "
 "values:"
@@ -194,15 +195,15 @@ msgstr ""
 "Egy katona elméleti eredő erejét a csatában alkalmazott számítás adataiból "
 "számoljuk:"
 
-#: addons/win_cond_military_influence.wad/functions.lua:212
+#: addons/win_cond_military_influence.wad/functions.lua:212 input:212 standard
 msgid "strength = a * h / (1 - d / 100) / (1 - e / 100) / 10000000"
 msgstr "eredő erő = t * é / (1 - v / 100) / (1 - k / 100) / 10'000'000"
 
-#: addons/win_cond_military_influence.wad/functions.lua:213
+#: addons/win_cond_military_influence.wad/functions.lua:213 input:213 standard
 msgid "(a: average attack, h: health, d: defense, e: evade)"
 msgstr "(t: átlagos támadás, é: életerő, v: védelem, k: kitérés)"
 
-#: addons/win_cond_military_influence.wad/functions.lua:223
+#: addons/win_cond_military_influence.wad/functions.lua:223 input:223 standard
 msgid ""
 "The effective strength of the soldiers is different for each tribe. It is "
 "between around 2.7 for rookies and around 30 for heroes for the official "
@@ -211,26 +212,26 @@ msgstr ""
 "Minden törzs katonáinak más az ereje. A hivatalos törzseknél az újoncok "
 "ereje átlagosan kb. 2,7, a hősöké átlagosan kb. 30."
 
-#: addons/win_cond_military_influence.wad/functions.lua:227
+#: addons/win_cond_military_influence.wad/functions.lua:227 input:227 standard
 #, lua-format
 msgid "Effective strength of soldiers of the %s tribe:"
 msgstr "A %s törzs katonáinak eredő ereje:"
 
-#: addons/win_cond_military_influence.wad/functions.lua:230
+#: addons/win_cond_military_influence.wad/functions.lua:230 input:230 standard
 #, lua-format
 msgid "Rookie: %.2f"
 msgstr "Újonc: %.2f"
 
-#: addons/win_cond_military_influence.wad/functions.lua:231
+#: addons/win_cond_military_influence.wad/functions.lua:231 input:231 standard
 #, lua-format
 msgid "Hero: %.2f"
 msgstr "Hős: %.2f"
 
-#: addons/win_cond_military_influence.wad/functions.lua:241
+#: addons/win_cond_military_influence.wad/functions.lua:241 input:241 standard
 msgid "Rationale"
 msgstr "Magyarázat"
 
-#: addons/win_cond_military_influence.wad/functions.lua:242
+#: addons/win_cond_military_influence.wad/functions.lua:242 input:242 standard
 msgid ""
 "The total area and the soldier statistics are meant to be the same as the "
 "corresponding values in the general statistics, with the mentioned "
@@ -242,7 +243,7 @@ msgstr ""
 "katonai épületekből származó pontszámok pedig azt próbálják mérni, hogy "
 "valós csaták esetén milyen erős lenne a játékos hadserege."
 
-#: addons/win_cond_military_influence.wad/functions.lua:246
+#: addons/win_cond_military_influence.wad/functions.lua:246 input:246 standard
 msgid ""
 "Using the geometric mean of the two partial area scores means that guarded "
 "areas are worth more than unguarded areas, and new buildings that expand "
@@ -255,7 +256,7 @@ msgstr ""
 "területen épül. Ehhez hasonlóan, a katonai épületekben elhelyezett katonák "
 "többet számítanak, mint azok, akik a raktárakban várakoznak."
 
-#: addons/win_cond_military_influence.wad/functions.lua:250
+#: addons/win_cond_military_influence.wad/functions.lua:250 input:250 standard
 msgid ""
 "Two kinds of soldier points are used because the effective strength makes "
 "comparison between different tribes more realistic, but the soldier "
@@ -265,7 +266,7 @@ msgstr ""
 "megmutatja a valós különbségeket a törzsek és a képzési szintek között, a "
 "haderő statisztika viszont erősebben díjazza a képzési szintek számát."
 
-#: addons/win_cond_military_influence.wad/functions.lua:253
+#: addons/win_cond_military_influence.wad/functions.lua:253 input:253 standard
 msgid ""
 "The area score gets less weight than the soldier score because it is usually "
 "much easier, faster and cheaper to expand your territory than to train your "
@@ -278,69 +279,69 @@ msgstr ""
 "dönti el, vagyis egy erős hadsereg könnyedén elhódítja a nagy területet a "
 "gyengétől."
 
-#: addons/win_cond_military_influence.wad/functions.lua:260
+#: addons/win_cond_military_influence.wad/functions.lua:260 input:260 standard
 msgid "Buildings"
 msgstr "Katonai épületek"
 
-#: addons/win_cond_military_influence.wad/functions.lua:261
+#: addons/win_cond_military_influence.wad/functions.lua:261 input:261 standard
 msgid "Military site"
 msgstr "Név"
 
-#: addons/win_cond_military_influence.wad/functions.lua:262
+#: addons/win_cond_military_influence.wad/functions.lua:262 input:262 standard
 msgid "Max. soldiers"
 msgstr "Max. őrök"
 
-#: addons/win_cond_military_influence.wad/functions.lua:263
+#: addons/win_cond_military_influence.wad/functions.lua:263 input:263 standard
 msgid "Max. soldier strength"
 msgstr "Max. erő"
 
-#: addons/win_cond_military_influence.wad/functions.lua:264
+#: addons/win_cond_military_influence.wad/functions.lua:264 input:264 standard
 msgid "Conquer area"
 msgstr "Őrzött terület"
 
-#: addons/win_cond_military_influence.wad/functions.lua:265
+#: addons/win_cond_military_influence.wad/functions.lua:265 input:265 standard
 msgid "Conquer area / soldier"
 msgstr "Terület / katona"
 
-#: addons/win_cond_military_influence.wad/functions.lua:266
+#: addons/win_cond_military_influence.wad/functions.lua:266 input:266 standard
 msgid "Max. strength / conquer area"
 msgstr "Max. erő / terület"
 
-#: addons/win_cond_military_influence.wad/functions.lua:267
+#: addons/win_cond_military_influence.wad/functions.lua:267 input:267 standard
 msgid "Score with all heroes"
 msgstr "Pontszám hősökkel tele"
 
-#: addons/win_cond_military_influence.wad/functions.lua:268
+#: addons/win_cond_military_influence.wad/functions.lua:268 input:268 standard
 msgid "Score / hero"
 msgstr "Pontszám / hős"
 
-#: addons/win_cond_military_influence.wad/functions.lua:269
+#: addons/win_cond_military_influence.wad/functions.lua:269 input:269 standard
 msgid "Score with all rookies"
 msgstr "Pontszám újoncokkal tele"
 
-#: addons/win_cond_military_influence.wad/functions.lua:270
+#: addons/win_cond_military_influence.wad/functions.lua:270 input:270 standard
 msgid "Score / rookie"
 msgstr "Pontszám / újonc"
 
-#: addons/win_cond_military_influence.wad/functions.lua:314
+#: addons/win_cond_military_influence.wad/functions.lua:314 input:314 standard
 msgid "Background information"
 msgstr "Háttérinformációk"
 
-#: addons/win_cond_military_influence.wad/functions.lua:315
+#: addons/win_cond_military_influence.wad/functions.lua:315 input:315 standard
 msgid "Soldiers"
 msgstr "Katonák"
 
-#: addons/win_cond_military_influence.wad/functions.lua:317
+#: addons/win_cond_military_influence.wad/functions.lua:317 input:317 standard
 #, lua-format
 msgid "Rookie is %.1f%% of hero"
 msgstr "Egy újonc egy hős %.1f%%-a"
 
-#: addons/win_cond_military_influence.wad/functions.lua:318
+#: addons/win_cond_military_influence.wad/functions.lua:318 input:318 standard
 #, lua-format
 msgid "Hero is %.1f times as strong as rookie"
 msgstr "Egy hős %.1f-szor olyan erős, mint egy újonc"
 
-#: addons/win_cond_military_influence.wad/functions.lua:321
+#: addons/win_cond_military_influence.wad/functions.lua:321 input:321 standard
 msgid ""
 "(The building scores are only indicative of the potential strength of each "
 "building itself, they are not directly related to the scoring of the win "
@@ -349,31 +350,31 @@ msgstr ""
 "(Az épület pontszámok nem vethetők össze a játékmód pontszámaival, csak az "
 "épületek általános összehasonlítását segítik.)"
 
-#: addons/win_cond_military_influence.wad/functions.lua:346
+#: addons/win_cond_military_influence.wad/functions.lua:346 input:346 standard
 msgid "Score Info"
 msgstr "Pontszámítás és súgó"
 
-#: addons/win_cond_military_influence.wad/functions.lua:356
+#: addons/win_cond_military_influence.wad/functions.lua:356 input:356 standard
 msgid "Score"
 msgstr "Pontszám"
 
-#: addons/win_cond_military_influence.wad/functions.lua:385
+#: addons/win_cond_military_influence.wad/functions.lua:385 input:385 standard
 msgid "Background Info"
 msgstr "Háttérinformációk"
 
-#: addons/win_cond_military_influence.wad/functions.lua:399
+#: addons/win_cond_military_influence.wad/functions.lua:399 input:399 standard
 msgid "Help"
 msgstr "Súgó"
 
-#: addons/win_cond_military_influence.wad/functions.lua:479
+#: addons/win_cond_military_influence.wad/functions.lua:479 input:479 standard
 msgid "The End is Near!"
 msgstr "Közel a vég!"
 
-#: addons/win_cond_military_influence.wad/functions.lua:543
+#: addons/win_cond_military_influence.wad/functions.lua:543 input:543 standard
 msgid "Side quest: Conquer the whole map area"
 msgstr "Mellékszál: Foglald el a teljes térképet!"
 
-#: addons/win_cond_military_influence.wad/functions.lua:545
+#: addons/win_cond_military_influence.wad/functions.lua:545 input:545 standard
 msgid ""
 "Conquer the whole area of the map as fast as you can. It only counts if you "
 "guard it too: the sum of the conquer areas of military sites has to be 120% "
@@ -383,33 +384,33 @@ msgstr ""
 "csak akkor számít, ha őrzöd is: a katonai épületeid által ellenőrzött "
 "területek összgének is legalább a teljes terület 120%-ának kell lennie!"
 
-#: addons/win_cond_military_influence.wad/functions.lua:548
+#: addons/win_cond_military_influence.wad/functions.lua:548 input:548 standard
 msgid "Map conquered"
 msgstr "A térkép elfoglalva"
 
-#: addons/win_cond_military_influence.wad/functions.lua:549
+#: addons/win_cond_military_influence.wad/functions.lua:549 input:549 standard
 msgid "Congratulations! You have conquered the whole map."
 msgstr "Gratulálunk! Elfoglaltad a térkép teljes elérhető területét."
 
-#: addons/win_cond_military_influence.wad/functions.lua:585
+#: addons/win_cond_military_influence.wad/functions.lua:585 input:585 standard
 msgid "Side quest: Train heroes"
 msgstr "Mellékszál: Képezz hősöket!"
 
-#: addons/win_cond_military_influence.wad/functions.lua:586
+#: addons/win_cond_military_influence.wad/functions.lua:586 input:586 standard
 #, lua-format
 msgid "Train %d heroes as fast as you can."
 msgstr "Képezz ki %d hőst amilyen gyorsan csak tudsz!"
 
-#: addons/win_cond_military_influence.wad/functions.lua:587
+#: addons/win_cond_military_influence.wad/functions.lua:587 input:587 standard
 msgid "Heroes trained"
 msgstr "Hősök kiképezve"
 
-#: addons/win_cond_military_influence.wad/functions.lua:588
+#: addons/win_cond_military_influence.wad/functions.lua:588 input:588 standard
 #, lua-format
 msgid "Congratulations! You have trained %d heroes."
 msgstr "Gratulálunk! Már %d hősöd van."
 
-#: addons/win_cond_military_influence.wad/functions.lua:663
+#: addons/win_cond_military_influence.wad/functions.lua:663 input:663 standard
 #, lua-format
 msgid ""
 "Expand your territory, train your soldiers, and guard your territory with "
@@ -420,11 +421,11 @@ msgstr ""
 "teli épületekkel! Mindegyiket teljesítened kell ahhoz, hogy igazán jó "
 "pontszámot érhess el. %s után a legmagasabb pontszám nyer."
 
-#: addons/win_cond_military_influence.wad/functions.lua:670
+#: addons/win_cond_military_influence.wad/functions.lua:670 input:670 standard
 msgid "Final Score"
 msgstr "Végső pontszám"
 
-#: addons/win_cond_military_influence.wad/init.lua:8
+#: addons/win_cond_military_influence.wad/init.lua:8 standard input:8
 msgid ""
 "Conquer as much land as you can and train as many and strong soldiers as you "
 "can in the set time."

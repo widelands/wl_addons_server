@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:12+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:19+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -24,81 +24,82 @@ msgstr ""
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/foreign_planet.wad/addon:2 addons/foreign_planet.wad/editor.lua:8
+#: input:7 input:8 standard
 msgid "Foreign Planet"
 msgstr "Frömde Welt"
 
-#: addons/foreign_planet.wad/addon:3
+#: addons/foreign_planet.wad/addon:3 input:6 standard
 msgid "A strange new world."
 msgstr "Eene komiske neje Welt."
 
-#: addons/foreign_planet.wad/terrains/beach/init.lua:10
+#: addons/foreign_planet.wad/terrains/beach/init.lua:10 input:10 standard
 msgid "Beach"
 msgstr "Strand"
 
-#: addons/foreign_planet.wad/terrains/dust1/init.lua:10
+#: addons/foreign_planet.wad/terrains/dust1/init.lua:10 input:10 standard
 msgid "Dust 1"
 msgstr "Stoff 1"
 
-#: addons/foreign_planet.wad/terrains/dust2/init.lua:10
+#: addons/foreign_planet.wad/terrains/dust2/init.lua:10 input:10 standard
 msgid "Dust 2"
 msgstr "Stoff 2"
 
-#: addons/foreign_planet.wad/terrains/mountain1/init.lua:10
+#: addons/foreign_planet.wad/terrains/mountain1/init.lua:10 input:10 standard
 msgid "Mountain 1"
 msgstr "Barg 1"
 
-#: addons/foreign_planet.wad/terrains/mountain2/init.lua:10
+#: addons/foreign_planet.wad/terrains/mountain2/init.lua:10 input:10 standard
 msgid "Mountain 2"
 msgstr "Barg 2"
 
-#: addons/foreign_planet.wad/terrains/mountain3/init.lua:10
+#: addons/foreign_planet.wad/terrains/mountain3/init.lua:10 input:10 standard
 msgid "Mountain 3"
 msgstr "Barg 3"
 
-#: addons/foreign_planet.wad/terrains/rocks1/init.lua:10
+#: addons/foreign_planet.wad/terrains/rocks1/init.lua:10 input:10 standard
 msgid "Rocks 1"
 msgstr "Stenen 1"
 
-#: addons/foreign_planet.wad/terrains/rocks2/init.lua:10
+#: addons/foreign_planet.wad/terrains/rocks2/init.lua:10 input:10 standard
 msgid "Rocks 2"
 msgstr "Stenen 2"
 
-#: addons/foreign_planet.wad/terrains/rocks3/init.lua:10
+#: addons/foreign_planet.wad/terrains/rocks3/init.lua:10 input:10 standard
 msgid "Rocks 3"
 msgstr "Stenen 3"
 
-#: addons/foreign_planet.wad/terrains/rocks4/init.lua:10
+#: addons/foreign_planet.wad/terrains/rocks4/init.lua:10 input:10 standard
 msgid "Rocks 4"
 msgstr "Stenen 4"
 
-#: addons/foreign_planet.wad/terrains/rocks5/init.lua:10
+#: addons/foreign_planet.wad/terrains/rocks5/init.lua:10 input:10 standard
 msgid "Rocks 5"
 msgstr "Stenen 5"
 
-#: addons/foreign_planet.wad/terrains/rocks6/init.lua:10
+#: addons/foreign_planet.wad/terrains/rocks6/init.lua:10 input:10 standard
 msgid "Rocks 6"
 msgstr "Stenen 6"
 
-#: addons/foreign_planet.wad/terrains/water1/init.lua:10
+#: addons/foreign_planet.wad/terrains/water1/init.lua:10 input:10 standard
 msgid "Water 1"
 msgstr "Water 1"
 
-#: addons/foreign_planet.wad/terrains/water2/init.lua:10
+#: addons/foreign_planet.wad/terrains/water2/init.lua:10 input:10 standard
 msgid "Water 2"
 msgstr "Water 2"
 
-#: screenshots/foreign_planet.wad/descriptions:1
+#: input:3 screenshots/foreign_planet.wad/descriptions:1 standard
 msgid "A map with the Foreign Planet add-on."
 msgstr "Eene Kaart mit de Frömde-Welt-Verwiedern."
 
-#: screenshots/foreign_planet.wad/descriptions:2
+#: input:4 screenshots/foreign_planet.wad/descriptions:2 standard
 msgid "Test: Mountains"
 msgstr "Test: Bargen"
 
-#: screenshots/foreign_planet.wad/descriptions:3
+#: input:5 screenshots/foreign_planet.wad/descriptions:3 standard
 msgid "Test: A lake"
 msgstr "Test: Een Meer"
 
-#: screenshots/foreign_planet.wad/descriptions:4
+#: input:6 screenshots/foreign_planet.wad/descriptions:4 standard
 msgid "Test: Normal terrain"
 msgstr "Test: Normaale Landskuppen"

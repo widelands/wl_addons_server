@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-22 03:11+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2024-04-06 18:05+0000\n"
 "Last-Translator: Juanjo, 2024\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,11 +22,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Let_the_Naval_warfare_begin.wad/addon:4 input:8 standard
+#: addons/Let_the_Naval_warfare_begin.wad/addon:4 input:8 input:9 input:10
+#: standard
 msgid "Let the Naval warfare begin"
 msgstr "Que comencin les batalles navals!"
 
-#: addons/Let_the_Naval_warfare_begin.wad/addon:5 input:10 standard
+#: addons/Let_the_Naval_warfare_begin.wad/addon:5 input:6 input:10 standard
 msgid ""
 "Each player occupies his own island.  Naval warfare required to conquer "
 "other player islands."
@@ -34,10 +35,10 @@ msgstr ""
 "Cada jugador ocupa la seva illa. Caldrà fer guerres navals per a conquerir "
 "les illes d'altres jugadors."
 
-#: addons/Let_the_Naval_warfare_begin.wad/dirnames:4
+#: addons/Let_the_Naval_warfare_begin.wad/dirnames:4 standard input:4
 msgid "Add-On Maps"
 msgstr "Mapes del complement"
 
-#: input:11 standard
+#: input:7 input:11 standard
 msgid "Use your gold to explore other islands."
 msgstr "Feu servir l'or per a explorar altres illes."

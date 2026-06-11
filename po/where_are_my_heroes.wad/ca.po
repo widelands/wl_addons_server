@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-29 03:10+0100\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:20+0200\n"
 "PO-Revision-Date: 2024-02-19 16:34+0000\n"
 "Last-Translator: Juanjo, 2024\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/where_are_my_heroes.wad/addon:6
+#: addons/where_are_my_heroes.wad/addon:6 input:6 standard
 msgid ""
 "Do you sometimes ask yourself: 'Where are my heroes?'. This add-on finds "
 "heroes in warehouses, military sites and idle warships and displays the "
@@ -32,27 +32,27 @@ msgstr ""
 "herois als magatzems, llocs militars i vaixells de guerra inactius i mostra "
 "els resultats a la safata d'entrada. "
 
-#: addons/where_are_my_heroes.wad/addon:9
+#: addons/where_are_my_heroes.wad/addon:9 input:9 standard
 msgid "Game: Where are my heroes?"
 msgstr "Partida: On són els meus herois?"
 
-#: addons/where_are_my_heroes.wad/find_heroes.lua:26
+#: addons/where_are_my_heroes.wad/find_heroes.lua:26 input:26 standard
 msgid "%1$d Hero is sitting here twiddling thumbs."
 msgid_plural "%1$d Heroes are sitting here twiddling thumbs."
 msgstr[0] "Aquí hi ha %1$d heroi que es rasca la panxa."
 msgstr[1] "Aquí hi ha %1$d herois que es rasquen la panxa."
 
-#: addons/where_are_my_heroes.wad/find_heroes.lua:27
+#: addons/where_are_my_heroes.wad/find_heroes.lua:27 input:27 standard
 msgid "%1$d Hero"
 msgid_plural "%1$d Heroes"
 msgstr[0] "%1$d heroi"
 msgstr[1] "%1$d herois"
 
-#: addons/where_are_my_heroes.wad/init.lua:9
+#: addons/where_are_my_heroes.wad/init.lua:9 standard input:9
 msgid "Where are my heroes?"
 msgstr "On són els meus herois?"
 
-#: addons/where_are_my_heroes.wad/init.lua:10
+#: addons/where_are_my_heroes.wad/init.lua:10 standard input:10
 msgid "For each place containing a hero a message will be send to the inbox."
 msgstr ""
 "S'enviarà un missatge a la safata d'entrada per cada lloc que contingui un "

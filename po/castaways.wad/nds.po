@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-09 03:10+0200\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-06-11 03:17+0200\n"
 "PO-Revision-Date: 2025-04-08 17:14+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -26,11 +26,11 @@ msgstr ""
 #: addons/castaways.wad/addon:2 addons/castaways.wad/amazons.lua:11
 #: addons/castaways.wad/atlanteans.lua:11
 #: addons/castaways.wad/barbarians.lua:11 addons/castaways.wad/empire.lua:11
-#: addons/castaways.wad/frisians.lua:11
+#: addons/castaways.wad/frisians.lua:11 input:9 input:11 standard
 msgid "Castaways"
 msgstr "Schippbröök"
 
-#: addons/castaways.wad/addon:3
+#: addons/castaways.wad/addon:3 input:6 standard
 msgid ""
 "Start the game with one ships on the ocean, the bare minimum of ware and few "
 "workers. You will need to find a portspace with direct access to rocks and "
@@ -41,7 +41,7 @@ msgstr ""
 "Stenen un Bomen hest. Kiek de Beschrieven för mehr Informatioonen an."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
-#: addons/castaways.wad/amazons.lua:13
+#: addons/castaways.wad/amazons.lua:13 input:13 standard
 msgid ""
 "Start the game with one ships on the ocean, the bare minimum of ware and few "
 "workers. Warning: the AI can’t successfully start from this. You will need "
@@ -61,6 +61,7 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
 #: addons/castaways.wad/atlanteans.lua:13
 #: addons/castaways.wad/barbarians.lua:13 addons/castaways.wad/empire.lua:13
+#: input:13 standard
 msgid ""
 "Start the game with one ships on the ocean, the bare minimum of ware and few "
 "workers. Warning: the AI can’t successfully start from this. You will need "
@@ -73,7 +74,7 @@ msgstr ""
 "Bomen hest. För unbekannte Kaarten word anraden, de Kriegsnevel uttoknipsen."
 
 #. TRANSLATORS: This is the tooltip for the "Castaways" starting condition
-#: addons/castaways.wad/frisians.lua:13
+#: addons/castaways.wad/frisians.lua:13 standard input:13
 msgid ""
 "Start the game with one ships on the ocean, the bare minimum of ware and few "
 "workers. Warning: the AI can’t successfully start from this. You will need "
