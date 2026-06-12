@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:17+0200\n"
+"POT-Creation-Date: 2026-06-12 03:18+0200\n"
 "PO-Revision-Date: 2024-01-29 07:15+0000\n"
 "Language-Team: Danish (https://app.transifex.com/widelands/teams/35159/da/)\n"
 "Language: da\n"
@@ -72,8 +72,8 @@ msgid "Error"
 msgstr ""
 
 #: addons/editor_height_tools.wad/error_window.lua:28
-#: addons/editor_height_tools.wad/settings_window.lua:291 input:28 standard
-#: input:291
+#: addons/editor_height_tools.wad/settings_window.lua:291 input:28 input:291
+#: standard
 msgid "OK"
 msgstr ""
 
@@ -87,43 +87,43 @@ msgid ""
 "automatically"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:14 standard input:14
+#: addons/editor_height_tools.wad/settings_window.lua:14 input:14 standard
 msgid "Choose an option"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:28 standard input:28
+#: addons/editor_height_tools.wad/settings_window.lua:28 input:28 standard
 msgid "Adjust height of all fields"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:43 standard input:43
+#: addons/editor_height_tools.wad/settings_window.lua:43 input:43 standard
 msgid "Set all fields to value"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:47 standard input:47
+#: addons/editor_height_tools.wad/settings_window.lua:47 input:47 standard
 msgid "Lower all fields by value"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:51 standard input:51
+#: addons/editor_height_tools.wad/settings_window.lua:51 input:51 standard
 msgid "Elevate all fields by value"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:63 standard input:63
+#: addons/editor_height_tools.wad/settings_window.lua:63 input:63 standard
 msgid "Set to: "
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:70 standard input:70
+#: addons/editor_height_tools.wad/settings_window.lua:70 input:70 standard
 msgid "Value for all fields"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:86 standard input:86
+#: addons/editor_height_tools.wad/settings_window.lua:86 input:86 standard
 msgid "Adjust Height"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:96 standard input:96
+#: addons/editor_height_tools.wad/settings_window.lua:96 input:96 standard
 msgid "Apply random heights to mountain terrains"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:104 standard input:104
+#: addons/editor_height_tools.wad/settings_window.lua:104 input:104 standard
 msgid ""
 "Define a rectangular area by entering the coordinates of the top left corner "
 "and the coordinates of the bottom right corner of the rectangle. Or define a "
@@ -131,69 +131,69 @@ msgid ""
 "of the center and a radius."
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:105 standard input:105
+#: addons/editor_height_tools.wad/settings_window.lua:105 input:105 standard
 msgid ""
 "The values for the coordinates can be found in the main menu panel on the "
 "right side, e.g.: (20,&nbsp;52,&nbsp;10). The values represents (x-"
 "coordinate,&nbsp;&nbsp;y-coordinate,&nbsp;height)"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:111 standard input:111
+#: addons/editor_height_tools.wad/settings_window.lua:111 input:111 standard
 msgid "Global Options"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:125 standard input:125
+#: addons/editor_height_tools.wad/settings_window.lua:125 input:125 standard
 msgid "Max. Height:"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:126 standard input:126
+#: addons/editor_height_tools.wad/settings_window.lua:126 input:126 standard
 msgid "Restrict the height to this maximum height."
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:135 standard input:135
+#: addons/editor_height_tools.wad/settings_window.lua:135 input:135 standard
 msgid "Place sign"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:136 standard input:136
+#: addons/editor_height_tools.wad/settings_window.lua:136 input:136 standard
 msgid "Place a column at given coordinates"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:147 standard input:147
+#: addons/editor_height_tools.wad/settings_window.lua:147 input:147 standard
 msgid "Hexagonal Area"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:163 standard input:163
+#: addons/editor_height_tools.wad/settings_window.lua:163 input:163 standard
 msgid "Coordinates of the center field of the hexagonal area, e.g.: 20,35"
 msgstr ""
 
 #: addons/editor_height_tools.wad/settings_window.lua:171
 #: addons/editor_height_tools.wad/settings_window.lua:242
-#: addons/editor_height_tools.wad/settings_window.lua:271 standard input:171
-#: input:242 input:271
+#: addons/editor_height_tools.wad/settings_window.lua:271 input:171 input:242
+#: input:271 standard
 msgid "Enter coordinates in form of x, y"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:192 standard input:192
+#: addons/editor_height_tools.wad/settings_window.lua:192 input:192 standard
 msgid "Choose a value for the radius"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:210 standard input:210
+#: addons/editor_height_tools.wad/settings_window.lua:210 input:210 standard
 msgid "Random Hexagonal Mountains"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:218 standard input:218
+#: addons/editor_height_tools.wad/settings_window.lua:218 input:218 standard
 msgid "Rectangular Area"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:234 standard input:234
+#: addons/editor_height_tools.wad/settings_window.lua:234 input:234 standard
 msgid "Coordinates of the top left corner of the rectangle, e.g.: 10,20"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:263 standard input:263
+#: addons/editor_height_tools.wad/settings_window.lua:263 input:263 standard
 msgid "Coordinates of the bottom right corner of the rectangle, e.g.: 20,35"
 msgstr ""
 
-#: addons/editor_height_tools.wad/settings_window.lua:282 standard input:282
+#: addons/editor_height_tools.wad/settings_window.lua:282 input:282 standard
 msgid "Random Rectangular Mountains"
 msgstr ""
 

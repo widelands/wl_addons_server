@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:17+0200\n"
+"POT-Creation-Date: 2026-06-12 03:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid ""
 msgstr ""
 
 #: addons/editor_swap_terrains.wad/init.lua:8
-#: addons/editor_swap_terrains.wad/show_window.lua:24 input:8 standard
+#: addons/editor_swap_terrains.wad/show_window.lua:24 input:8 input:24 standard
 #: standard input:24
 msgid "Swap Terrains"
 msgstr ""
@@ -36,19 +36,23 @@ msgstr ""
 msgid "Globally exchange two terrains with each other"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:77 standard input:77
+#: addons/editor_swap_terrains.wad/show_window.lua:77 input:77 standard
+#: standard input:77
 msgid "Replace"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:78 standard input:78
+#: addons/editor_swap_terrains.wad/show_window.lua:78 input:78 standard
+#: standard input:78
 msgid ""
 "Globally replace all occurrences of the left terrain with the right terrain"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:90 standard input:90
+#: addons/editor_swap_terrains.wad/show_window.lua:90 input:90 standard
+#: standard input:90
 msgid "Swap"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:91 standard input:91
+#: addons/editor_swap_terrains.wad/show_window.lua:91 input:91 standard
+#: standard input:91
 msgid "Globally swap the two selected terrains"
 msgstr ""

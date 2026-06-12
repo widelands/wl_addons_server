@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:20+0200\n"
+"POT-Creation-Date: 2026-06-12 03:21+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -48,8 +48,8 @@ msgstr "깊은 우물"
 #: addons/wells-running-out.wad/postload.lua:9
 #: addons/wells-running-out.wad/postload.lua:20
 #: addons/wells-running-out.wad/postload.lua:41
-#: addons/wells-running-out.wad/postload.lua:76 input:25 standard input:9
-#: input:20 input:41 input:76
+#: addons/wells-running-out.wad/postload.lua:76 input:9 input:20 input:25
+#: input:41 input:76 standard
 msgid "working"
 msgstr "작업"
 
@@ -93,40 +93,40 @@ msgstr "우물 일꾼"
 
 #. TRANSLATORS: Purpose helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:33
-#: addons/wells-running-out.wad/postload.lua:68 standard input:33 input:68
+#: addons/wells-running-out.wad/postload.lua:68 input:33 input:68 standard
 msgctxt "building"
 msgid "Draws water out of the deep."
 msgstr "우물에서 물을 길으세요."
 
 #: addons/wells-running-out.wad/postload.lua:35
-#: addons/wells-running-out.wad/postload.lua:70 standard input:35 input:70
+#: addons/wells-running-out.wad/postload.lua:70 input:35 input:70 standard
 #, lua-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d초"
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
-#: addons/wells-running-out.wad/postload.lua:35 standard input:35
+#: addons/wells-running-out.wad/postload.lua:35 input:35 standard
 #, lua-format
 msgctxt "frisians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
 msgstr "깊은 우물은 한 양동이의 물을 생산하는 데 평균 %s초가 걸립니다."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
-#: addons/wells-running-out.wad/postload.lua:39 standard input:39
+#: addons/wells-running-out.wad/postload.lua:39 input:39 standard
 msgctxt "frisians_worker"
 msgid "Operates the deep wells."
 msgstr "우물을 작동시킨다."
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
-#: addons/wells-running-out.wad/postload.lua:70 standard input:70
+#: addons/wells-running-out.wad/postload.lua:70 input:70 standard
 #, lua-format
 msgctxt "barbarians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
 msgstr "깊은 우물은 한 양동이의 물을 생산하는 데 평균 %s초가 걸립니다."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
-#: addons/wells-running-out.wad/postload.lua:74 standard input:74
+#: addons/wells-running-out.wad/postload.lua:74 input:74 standard
 msgctxt "barbarians_worker"
 msgid "Operates the deep wells."
 msgstr "우물을 작동시킨다."

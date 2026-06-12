@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:19+0200\n"
+"POT-Creation-Date: 2026-06-12 03:20+0200\n"
 "PO-Revision-Date: 2022-12-11 09:24+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -33,19 +33,19 @@ msgid "A proof-of-concept map generator that generates very, very simple maps."
 msgstr ""
 "Заготовка генератора карт, который генерирует очень, очень простые карты."
 
-#: addons/simple_map_generator.wad/init.lua:4 standard input:4
+#: addons/simple_map_generator.wad/init.lua:4 input:4 standard
 msgid "Initializing map generator…"
 msgstr "Инициализация генератора карт…"
 
-#: addons/simple_map_generator.wad/init.lua:122 standard input:122
+#: addons/simple_map_generator.wad/init.lua:122 input:122 standard
 msgid "Generating map… (%1$d / %2$d)"
 msgstr "Создание карты… (%1$d / %2$d)"
 
-#: addons/simple_map_generator.wad/init.lua:193 standard input:193
+#: addons/simple_map_generator.wad/init.lua:193 input:193 standard
 msgid "Finalizing map…"
 msgstr "Доработка карты…"
 
-#: addons/simple_map_generator.wad/init.lua:201 standard input:201
+#: addons/simple_map_generator.wad/init.lua:201 input:201 standard
 #, lua-format
 msgid "Random Player %u"
 msgstr "Случайный игрок %u"

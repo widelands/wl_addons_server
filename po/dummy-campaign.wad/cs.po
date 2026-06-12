@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:17+0200\n"
+"POT-Creation-Date: 2026-06-12 03:18+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: af24e571988b09e5b46468ac89010e87_d1b4333, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -51,7 +51,7 @@ msgstr "Tato kampaň není určena ke hře. Jde o ukázku rozšíření typu kam
 
 #: addons/dummy-campaign.wad/example-dummy.wmf/elemental:8
 #: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:12 input:9
-#: standard input:12
+#: input:12 standard
 msgid "Not yet implemented"
 msgstr "Zatím nedokončeno"
 
@@ -61,6 +61,6 @@ msgstr "Nikdo"
 
 #: addons/dummy-campaign.wad/example-dummy.wmf/elemental:12
 #: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:13 input:5
-#: standard input:13
+#: input:13 standard
 msgid "Sorry, this map is not yet implemented."
 msgstr "Je nám líto, ale tato mapa zatím nebyla dokončena."

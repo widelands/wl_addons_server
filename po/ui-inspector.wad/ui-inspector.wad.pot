@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:20+0200\n"
+"POT-Creation-Date: 2026-06-12 03:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: addons/ui-inspector.wad/addon:2 addons/ui-inspector.wad/init.lua:7
 #: addons/ui-inspector.wad/init.lua:16
 #: addons/ui-inspector.wad/show_window.lua:380 input:7 input:9 input:16
-#: standard standard input:380
+#: input:380 standard standard input:380
 msgid "UI Inspector"
 msgstr ""
 
@@ -38,44 +38,53 @@ msgstr ""
 
 #: addons/ui-inspector.wad/show_window.lua:10
 #: addons/ui-inspector.wad/show_window.lua:182
-#: addons/ui-inspector.wad/show_window.lua:209 standard input:10
-#: standard input:182 standard input:209
+#: addons/ui-inspector.wad/show_window.lua:209 input:10 input:182 input:209
+#: standard standard input:10 standard input:182 standard input:209
 msgid "%1$s “%2$s”"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:143 standard input:143
+#: addons/ui-inspector.wad/show_window.lua:143 input:143 standard
+#: standard input:143
 msgid "The panel no longer exists."
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:160 standard input:160
+#: addons/ui-inspector.wad/show_window.lua:160 input:160 standard
+#: standard input:160
 msgid "Copy class name"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:224 standard input:224
+#: addons/ui-inspector.wad/show_window.lua:224 input:224 standard
+#: standard input:224
 msgid "Copy property name"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:242 standard input:242
+#: addons/ui-inspector.wad/show_window.lua:242 input:242 standard
+#: standard input:242
 msgid "%1$s (%2$s):"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:266 standard input:266
+#: addons/ui-inspector.wad/show_window.lua:266 input:266 standard
+#: standard input:266
 msgid "Copy value"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:266 standard input:266
+#: addons/ui-inspector.wad/show_window.lua:266 input:266 standard
+#: standard input:266
 msgid "Go to this item"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:397 standard input:397
+#: addons/ui-inspector.wad/show_window.lua:397 input:397 standard
+#: standard input:397
 msgid "Filter by name or class"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:404 standard input:404
+#: addons/ui-inspector.wad/show_window.lua:404 input:404 standard
+#: standard input:404
 msgid "Clear filter"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:417 standard input:417
+#: addons/ui-inspector.wad/show_window.lua:417 input:417 standard
+#: standard input:417
 msgid "Refresh"
 msgstr ""
 

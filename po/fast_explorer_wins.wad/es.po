@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:19+0200\n"
+"POT-Creation-Date: 2026-06-12 03:20+0200\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
 "Language-Team: Spanish (https://app.transifex.com/widelands/teams/35159/"
 "es/)\n"
@@ -28,111 +28,111 @@ msgid ""
 msgstr ""
 
 #: addons/fast_explorer_wins.wad/addon:9
-#: addons/fast_explorer_wins.wad/init.lua:17 input:9 standard input:17
+#: addons/fast_explorer_wins.wad/init.lua:17 input:9 input:17 standard
 msgid "Fast Explorer Wins"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:19 standard input:19
+#: addons/fast_explorer_wins.wad/init.lua:19 input:19 standard
 msgid ""
 "The player who has at least 4 fully trained soldiers in a warship wins the "
 "game."
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:23 standard input:23
+#: addons/fast_explorer_wins.wad/init.lua:23 input:23 standard
 msgid "Number of heroes"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:158 standard input:158
+#: addons/fast_explorer_wins.wad/init.lua:158 input:158 standard
 msgctxt "sign indicating no time value"
 msgid "-"
 msgstr ""
 
 #. TRANSLATORS: A time string hh:mm:ss like 10:03:55
-#: addons/fast_explorer_wins.wad/init.lua:167 standard input:167
+#: addons/fast_explorer_wins.wad/init.lua:167 input:167 standard
 msgid "%1$02d:%2$02d:%3$02d"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:170 standard input:170
+#: addons/fast_explorer_wins.wad/init.lua:170 input:170 standard
 msgid "Game Over!"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:171 standard input:171
+#: addons/fast_explorer_wins.wad/init.lua:171 input:171 standard
 msgid "Time: %1$s (hh:mm:ss)"
 msgstr ""
 
 #. TRANSLATORS: Header of table column Playername
-#: addons/fast_explorer_wins.wad/init.lua:188 standard input:188
+#: addons/fast_explorer_wins.wad/init.lua:188 input:188 standard
 msgid "Player"
 msgstr ""
 
 #. TRANSLATORS: Header of table column Tribename
-#: addons/fast_explorer_wins.wad/init.lua:190 standard input:190
+#: addons/fast_explorer_wins.wad/init.lua:190 input:190 standard
 msgid "Tribe"
 msgstr ""
 
 #. TRANSLATORS: Header of table column the time a ship was created
-#: addons/fast_explorer_wins.wad/init.lua:192 standard input:192
+#: addons/fast_explorer_wins.wad/init.lua:192 input:192 standard
 msgid "Ship at"
 msgstr ""
 
 #. TRANSLATORS: Header of table column of times heroes were created
-#: addons/fast_explorer_wins.wad/init.lua:194 standard input:194
+#: addons/fast_explorer_wins.wad/init.lua:194 input:194 standard
 msgid "Heroes at"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:246 standard input:246
+#: addons/fast_explorer_wins.wad/init.lua:246 input:246 standard
 msgid "Widelands Version: %1$s"
 msgstr ""
 
 #. TRANSLATORS: Placeholder is "this topic in the Widelands forum"
-#: addons/fast_explorer_wins.wad/init.lua:249 standard input:249
+#: addons/fast_explorer_wins.wad/init.lua:249 input:249 standard
 msgid "Please make a screenshot by pressing %1$s and post it in %2$s"
 msgstr ""
 
 #. TRANSLATORS: Will be inserted into "... and post it in %2$s"
-#: addons/fast_explorer_wins.wad/init.lua:251 standard input:251
+#: addons/fast_explorer_wins.wad/init.lua:251 input:251 standard
 msgid "this topic in the Widelands forum"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:270 standard input:270
+#: addons/fast_explorer_wins.wad/init.lua:270 input:270 standard
 msgid "Ship created!"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:271 standard input:271
+#: addons/fast_explorer_wins.wad/init.lua:271 input:271 standard
 msgid "%1$s has created a ship!"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:273 standard input:273
+#: addons/fast_explorer_wins.wad/init.lua:273 input:273 standard
 msgid "Hero created!"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:274 standard input:274
+#: addons/fast_explorer_wins.wad/init.lua:274 input:274 standard
 msgid "%1$s has created a hero!"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:278 standard input:278
+#: addons/fast_explorer_wins.wad/init.lua:278 input:278 standard
 msgid "You have a new ship!"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:280 standard input:280
+#: addons/fast_explorer_wins.wad/init.lua:280 input:280 standard
 msgid "You have a new hero!"
 msgstr ""
 
-#: addons/fast_explorer_wins.wad/init.lua:284 standard input:284
+#: addons/fast_explorer_wins.wad/init.lua:284 input:284 standard
 msgid "Statistics:"
 msgstr ""
 
 #. TRANSLATORS: "Player: Name of player"
-#: addons/fast_explorer_wins.wad/init.lua:288 standard input:288
+#: addons/fast_explorer_wins.wad/init.lua:288 input:288 standard
 msgid "Player: %1$s"
 msgstr ""
 
 #. TRANSLATORS: "Heroes: Amount of heroes"
-#: addons/fast_explorer_wins.wad/init.lua:290 standard input:290
+#: addons/fast_explorer_wins.wad/init.lua:290 input:290 standard
 msgid "Heroes: %1$d "
 msgstr ""
 
 #. TRANSLATORS: "Ships: Amount of ships"
-#: addons/fast_explorer_wins.wad/init.lua:294 standard input:294
+#: addons/fast_explorer_wins.wad/init.lua:294 input:294 standard
 msgid "Ships: %1$d"
 msgstr ""

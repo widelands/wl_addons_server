@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:17+0200\n"
+"POT-Creation-Date: 2026-06-12 03:18+0200\n"
 "PO-Revision-Date: 2021-05-01 11:43+0000\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/Tournament_2021_win_condition.wad/addon:4
-#: addons/Tournament_2021_win_condition.wad/init.lua:32 input:9 standard
-#: input:32
+#: addons/Tournament_2021_win_condition.wad/init.lua:32 input:9 input:32
+#: standard
 msgid "Tournament 2021 Win Condition"
 msgstr ""
 
@@ -30,7 +30,7 @@ msgid ""
 "from mountains"
 msgstr ""
 
-#: addons/Tournament_2021_win_condition.wad/init.lua:35 standard input:35
+#: addons/Tournament_2021_win_condition.wad/init.lua:35 input:35 standard
 msgid ""
 "The player who has at least %1% fully trained soldier in his warehouses wins "
 "the game."
@@ -40,39 +40,39 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: addons/Tournament_2021_win_condition.wad/init.lua:41 standard input:41
+#: addons/Tournament_2021_win_condition.wad/init.lua:41 input:41 standard
 msgid "Number of heroes"
 msgstr ""
 
-#: addons/Tournament_2021_win_condition.wad/init.lua:98 standard input:98
+#: addons/Tournament_2021_win_condition.wad/init.lua:98 input:98 standard
 msgid "Hero created!"
 msgstr ""
 
-#: addons/Tournament_2021_win_condition.wad/init.lua:99 standard input:99
+#: addons/Tournament_2021_win_condition.wad/init.lua:99 input:99 standard
 msgid "%1% has created a hero!"
 msgstr ""
 
-#: addons/Tournament_2021_win_condition.wad/init.lua:101 standard input:101
+#: addons/Tournament_2021_win_condition.wad/init.lua:101 input:101 standard
 msgid "You have a new Hero!"
 msgstr ""
 
-#: addons/Tournament_2021_win_condition.wad/init.lua:103 standard input:103
+#: addons/Tournament_2021_win_condition.wad/init.lua:103 input:103 standard
 msgid "Hero Statistics:"
 msgstr ""
 
 #. TRANSLATORS: "Player x has y Heroes"
-#: addons/Tournament_2021_win_condition.wad/init.lua:106 standard input:106
+#: addons/Tournament_2021_win_condition.wad/init.lua:106 input:106 standard
 msgid "%1% has %2%"
 msgstr ""
 
-#: addons/Tournament_2021_win_condition.wad/init.lua:106 standard input:106
+#: addons/Tournament_2021_win_condition.wad/init.lua:106 input:106 standard
 msgid "%1% hero"
 msgid_plural "%1% heroes"
 msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: This is an item in a list in the form "Player Name: 3 heroes"
-#: addons/Tournament_2021_win_condition.wad/init.lua:119 standard input:119
+#: addons/Tournament_2021_win_condition.wad/init.lua:119 input:119 standard
 msgid "%1%: %2% hero"
 msgid_plural "%1%: %2% heroes"
 msgstr[0] ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:17+0200\n"
+"POT-Creation-Date: 2026-06-12 03:18+0200\n"
 "PO-Revision-Date: 2025-08-27 12:08+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -35,31 +35,31 @@ msgstr ""
 "arbeiders produceren als dat nodig is. Elk product heeft een vooraf bepaalde "
 "streefwaarde, die tijdens het spel nog kan worden aangepast."
 
-#: addons/economy_modifier.wad/postload.lua:262 standard input:262
+#: addons/economy_modifier.wad/postload.lua:262 input:262 standard
 msgid "gathering water"
 msgstr "water verzamelen"
 
 #: addons/economy_modifier.wad/postload.lua:271
 #: addons/economy_modifier.wad/postload.lua:280
 #: addons/economy_modifier.wad/postload.lua:289
-#: addons/economy_modifier.wad/postload.lua:298 standard input:271 input:280
-#: input:289 input:298
+#: addons/economy_modifier.wad/postload.lua:298 input:271 input:280 input:289
+#: input:298 standard
 msgid "mining water"
 msgstr "water winnen"
 
-#: addons/economy_modifier.wad/postload.lua:309 standard input:309
+#: addons/economy_modifier.wad/postload.lua:309 input:309 standard
 msgid "cutting granite"
 msgstr "graniet zagen"
 
 #: addons/economy_modifier.wad/postload.lua:316
 #: addons/economy_modifier.wad/postload.lua:323
 #: addons/economy_modifier.wad/postload.lua:330
-#: addons/economy_modifier.wad/postload.lua:344 standard input:316 input:323
-#: input:330 input:344
+#: addons/economy_modifier.wad/postload.lua:344 input:316 input:323 input:330
+#: input:344 standard
 msgid "quarrying granite"
 msgstr "graniet delven"
 
-#: addons/economy_modifier.wad/postload.lua:337 standard input:337
+#: addons/economy_modifier.wad/postload.lua:337 input:337 standard
 msgid "quarrying marble"
 msgstr "marmer delven"
 
@@ -67,20 +67,20 @@ msgstr "marmer delven"
 #: addons/economy_modifier.wad/postload.lua:388
 #: addons/economy_modifier.wad/postload.lua:409
 #: addons/economy_modifier.wad/postload.lua:416
-#: addons/economy_modifier.wad/postload.lua:430 standard input:353 input:388
-#: input:409 input:416 input:430
+#: addons/economy_modifier.wad/postload.lua:430 input:353 input:388 input:409
+#: input:416 input:430 standard
 msgid "planting trees"
 msgstr "bomen planten"
 
-#: addons/economy_modifier.wad/postload.lua:360 standard input:360
+#: addons/economy_modifier.wad/postload.lua:360 input:360 standard
 msgid "harvesting balsa"
 msgstr "balsa oogsten"
 
-#: addons/economy_modifier.wad/postload.lua:367 standard input:367
+#: addons/economy_modifier.wad/postload.lua:367 input:367 standard
 msgid "harvesting ironwood"
 msgstr "ijzerhout oogsten"
 
-#: addons/economy_modifier.wad/postload.lua:374 standard input:374
+#: addons/economy_modifier.wad/postload.lua:374 input:374 standard
 msgid "harvesting rubber"
 msgstr "rubber oogsten"
 
@@ -88,98 +88,98 @@ msgstr "rubber oogsten"
 #: addons/economy_modifier.wad/postload.lua:395
 #: addons/economy_modifier.wad/postload.lua:402
 #: addons/economy_modifier.wad/postload.lua:423
-#: addons/economy_modifier.wad/postload.lua:437 standard input:381 input:395
-#: input:402 input:423 input:437
+#: addons/economy_modifier.wad/postload.lua:437 input:381 input:395 input:402
+#: input:423 input:437 standard
 msgid "felling trees"
 msgstr "bomen kappen"
 
-#: addons/economy_modifier.wad/postload.lua:446 standard input:446
+#: addons/economy_modifier.wad/postload.lua:446 input:446 standard
 msgid "gathering fish"
 msgstr "vis verzamelen"
 
 #: addons/economy_modifier.wad/postload.lua:453
-#: addons/economy_modifier.wad/postload.lua:460 standard input:453 input:460
+#: addons/economy_modifier.wad/postload.lua:460 input:453 input:460 standard
 msgid "breeding fish"
 msgstr "vis kweken"
 
 #: addons/economy_modifier.wad/postload.lua:467
 #: addons/economy_modifier.wad/postload.lua:474
 #: addons/economy_modifier.wad/postload.lua:481
-#: addons/economy_modifier.wad/postload.lua:488 standard input:467 input:474
-#: input:481 input:488
+#: addons/economy_modifier.wad/postload.lua:488 input:467 input:474 input:481
+#: input:488 standard
 msgid "fishing"
 msgstr "vissen"
 
-#: addons/economy_modifier.wad/postload.lua:497 standard input:497
+#: addons/economy_modifier.wad/postload.lua:497 input:497 standard
 msgid "gathering meat"
 msgstr "vlees verzamelen"
 
-#: addons/economy_modifier.wad/postload.lua:504 standard input:504
+#: addons/economy_modifier.wad/postload.lua:504 input:504 standard
 msgid "releasing game"
 msgstr "wild loslaten"
 
 #: addons/economy_modifier.wad/postload.lua:511
 #: addons/economy_modifier.wad/postload.lua:525
 #: addons/economy_modifier.wad/postload.lua:532
-#: addons/economy_modifier.wad/postload.lua:539 standard input:511 input:525
-#: input:532 input:539
+#: addons/economy_modifier.wad/postload.lua:539 input:511 input:525 input:532
+#: input:539 standard
 msgid "hunting"
 msgstr "jagen"
 
-#: addons/economy_modifier.wad/postload.lua:518 standard input:518
+#: addons/economy_modifier.wad/postload.lua:518 input:518 standard
 msgid "releasing"
 msgstr "loslaten"
 
-#: addons/economy_modifier.wad/postload.lua:557 standard input:557
+#: addons/economy_modifier.wad/postload.lua:557 input:557 standard
 msgid "making honey"
 msgstr "honing maken"
 
-#: addons/economy_modifier.wad/postload.lua:566 standard input:566
+#: addons/economy_modifier.wad/postload.lua:566 input:566 standard
 msgid "harvesting cassava"
 msgstr "cassave oogsten"
 
-#: addons/economy_modifier.wad/postload.lua:573 standard input:573
+#: addons/economy_modifier.wad/postload.lua:573 input:573 standard
 msgid "harvesting cocoa"
 msgstr "cacao oogsten"
 
-#: addons/economy_modifier.wad/postload.lua:580 standard input:580
+#: addons/economy_modifier.wad/postload.lua:580 input:580 standard
 msgid "harvesting blackroot"
 msgstr "helmkruid oogsten"
 
-#: addons/economy_modifier.wad/postload.lua:587 standard input:587
+#: addons/economy_modifier.wad/postload.lua:587 input:587 standard
 msgid "harvesting corn"
 msgstr "maïs oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:594
-#: addons/economy_modifier.wad/postload.lua:609 standard input:594 input:609
+#: addons/economy_modifier.wad/postload.lua:609 input:594 input:609 standard
 msgid "harvesting wheat"
 msgstr "tarwe oogsten"
 
 #: addons/economy_modifier.wad/postload.lua:602
-#: addons/economy_modifier.wad/postload.lua:639 standard input:602 input:639
+#: addons/economy_modifier.wad/postload.lua:639 input:602 input:639 standard
 msgid "harvesting reed"
 msgstr "riet oogsten"
 
-#: addons/economy_modifier.wad/postload.lua:616 standard input:616
+#: addons/economy_modifier.wad/postload.lua:616 input:616 standard
 msgid "harvesting grapes"
 msgstr "druiven oogsten"
 
-#: addons/economy_modifier.wad/postload.lua:623 standard input:623
+#: addons/economy_modifier.wad/postload.lua:623 input:623 standard
 msgid "gathering berries"
 msgstr "bessen verzamelen"
 
-#: addons/economy_modifier.wad/postload.lua:630 standard input:630
+#: addons/economy_modifier.wad/postload.lua:630 input:630 standard
 msgid "harvesting barley"
 msgstr "gerst oogsten"
 
-#: addons/economy_modifier.wad/postload.lua:648 standard input:648
+#: addons/economy_modifier.wad/postload.lua:648 input:648 standard
 msgid "making a rope"
 msgstr "touw maken"
 
-#: addons/economy_modifier.wad/postload.lua:657 standard input:657
+#: addons/economy_modifier.wad/postload.lua:657 input:657 standard
 msgid "grinding blackroot"
 msgstr "helmkruid malen"
 
-#: addons/economy_modifier.wad/postload.lua:668 standard input:668
+#: addons/economy_modifier.wad/postload.lua:668 input:668 standard
 msgid "making wine"
 msgstr "wijn maken"

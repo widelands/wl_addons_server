@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:19+0200\n"
+"POT-Creation-Date: 2026-06-12 03:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,13 @@ msgstr ""
 msgid "It needs a scout to know details about the other players."
 msgstr ""
 
-#: addons/no-stats-till-spied.wad/init.lua:18 standard input:18
+#: addons/no-stats-till-spied.wad/init.lua:18 input:18 standard
+#: standard input:18
 msgid "No player statistics till spied"
 msgstr ""
 
-#: addons/no-stats-till-spied.wad/init.lua:19 standard input:19
+#: addons/no-stats-till-spied.wad/init.lua:19 input:19 standard
+#: standard input:19
 msgid ""
 "Players have statistics about their XXX in their warehouses (all buildings "
 "storing wares).\n"
@@ -38,11 +40,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: %s is the name of a player
-#: addons/no-stats-till-spied.wad/init.lua:67 standard input:67
+#: addons/no-stats-till-spied.wad/init.lua:67 input:67 standard
+#: standard input:67
 #, lua-format
 msgid "A spy has now information about %s. Find it in statistics."
 msgstr ""
 
-#: addons/no-stats-till-spied.wad/init.lua:69 standard input:69
+#: addons/no-stats-till-spied.wad/init.lua:69 input:69 standard
+#: standard input:69
 msgid "A spy gives information"
 msgstr ""

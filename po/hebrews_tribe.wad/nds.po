@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:19+0200\n"
+"POT-Creation-Date: 2026-06-12 03:20+0200\n"
 "PO-Revision-Date: 2026-02-17 08:07+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2026\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -152,6 +152,8 @@ msgstr "Twiegpottjerkaat"
 msgid "collecting branches"
 msgstr "Twiegen to pottjen"
 
+#. TRANSLATORS: Short for "No Tree to Collect Branches" for a resource
+#. TRANSLATORS: Short for "No Trees" for a resource
 #. TRANSLATORS: Short for "No Tree to Collect Branches" for a resource
 #. TRANSLATORS: Short for "No Trees" for a resource
 #. TRANSLATORS: Short for "No Tree to Collect Branches" for a resource
@@ -1639,6 +1641,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Hebrew immovable: Destroyed Building
 #. TRANSLATORS: Helptext for a Hebrew immovable: Ashes
 #. TRANSLATORS: Helptext for a Hebrew immovable: Destroyed Building
+#. TRANSLATORS: Helptext for a Hebrew immovable: Ashes
+#. TRANSLATORS: Helptext for a Hebrew immovable: Destroyed Building
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:627
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:634 input:627 input:634
 #: standard
@@ -1749,6 +1753,9 @@ msgstr "Wat vun eenem ollen Boom över blievt."
 #. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Balsa Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Ironwood Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Rubber Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Balsa Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Ironwood Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Rubber Tree
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:771
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:778
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:785
@@ -1818,6 +1825,8 @@ msgstr "»De Tabernakel was de Wunnplaats vun de Herrn mitten in sien Lüüd.«"
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Beater's Workshop
 #. TRANSLATORS: Lore author helptext for a Hebrew warehouse: Headquarters
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Beater's Workshop
+#. TRANSLATORS: Lore author helptext for a Hebrew warehouse: Headquarters
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Beater's Workshop
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:918
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1175 input:918 input:1175
 #: standard
@@ -1825,6 +1834,8 @@ msgctxt "hebrews_building"
 msgid "Book of Exodus"
 msgstr "Buch Exodus"
 
+#. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters Tent
 #. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters
 #. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters Tent
 #. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters
@@ -1878,6 +1889,12 @@ msgctxt "hebrews_building"
 msgid "'King Solomon built a fleet of ships at Ezion-Geber.'"
 msgstr "»König Salomo bouwt en Flott vun Schippens in Ezion-Geber.«"
 
+#. TRANSLATORS: Lore author helptext for a Hebrew warehouse: Port
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Quarry
+#. TRANSLATORS: Lore author helptext for a Hebrew building: Market
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Solomon's Harbour
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Granite Mine
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Shipyard
 #. TRANSLATORS: Lore author helptext for a Hebrew warehouse: Port
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Quarry
 #. TRANSLATORS: Lore author helptext for a Hebrew building: Market
@@ -2009,6 +2026,10 @@ msgstr "»Denn Israel sang diese Lied: Spring up, o Brunn!«"
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Zizijot Maker's Hut
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Scout's Hut
 #. TRANSLATORS: Lore author helptext for a Hebrew military site: Small Tent
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Well
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Zizijot Maker's Hut
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Scout's Hut
+#. TRANSLATORS: Lore author helptext for a Hebrew military site: Small Tent
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1003
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1071
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1083
@@ -2079,6 +2100,12 @@ msgstr "»Kom, laten us Ziegel maken un se grondlich brennen.«"
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Donkey Farm
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Mine
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Vineyard
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Brick Kiln
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Butchery
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Dressmakery
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Donkey Farm
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Mine
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Vineyard
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1038
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1120
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1153
@@ -2111,6 +2138,9 @@ msgstr "»Maak de Weg frie för de Lüüd; bouw de Heerweg up, entferne de Steen
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Clearing Tent
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Workshop
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Weaponsmithy
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Clearing Tent
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Workshop
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Weaponsmithy
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1049
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1186
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1208 input:1049 input:1186
@@ -2133,6 +2163,9 @@ msgctxt "hebrews_building"
 msgid "'She puts her hands to the distaff, and her hands hold the spindle.'"
 msgstr "»Se legt har Hänn to de Spindel, un har Hänn holt de Spindel.«"
 
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Spinning Mill
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Weaving Mill
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Farm
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Spinning Mill
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Weaving Mill
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Farm
@@ -2353,6 +2386,9 @@ msgid ""
 msgstr ""
 "»Un du schall se up de Türpfählen vun din Huus un up din Tor schreiven.«"
 
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Sofer's Workshop
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Copper Mine
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Deep Gold Mine
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Sofer's Workshop
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Copper Mine
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Deep Gold Mine
@@ -2597,6 +2633,8 @@ msgstr "Grafft in Bargen Goldkluut ut de Grund."
 #. TRANSLATORS: Performance helptext for a Hebrew production site: Deep Gold Mine
 #. TRANSLATORS: Performance helptext for a Hebrew production site: Gold Mine
 #. TRANSLATORS: Performance helptext for a Hebrew production site: Deep Gold Mine
+#. TRANSLATORS: Performance helptext for a Hebrew production site: Gold Mine
+#. TRANSLATORS: Performance helptext for a Hebrew production site: Deep Gold Mine
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1328
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1341 input:1328 input:1341
 #: standard
@@ -2746,6 +2784,8 @@ msgstr "»Wie good sind dien Zelte, o Jakob, dien Wunnplaatsen, o Israel!«"
 #. TRANSLATORS: Purpose helptext for a Hebrew military site: Massada
 #. TRANSLATORS: Purpose helptext for a Hebrew military site: Small Tent
 #. TRANSLATORS: Purpose helptext for a Hebrew military site: Massada
+#. TRANSLATORS: Purpose helptext for a Hebrew military site: Small Tent
+#. TRANSLATORS: Purpose helptext for a Hebrew military site: Massada
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1412
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1425 input:1412 input:1425
 #: standard
@@ -2753,6 +2793,8 @@ msgctxt "hebrews_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr "Brengt Soldaten unner, um dien Gewest to vergrotern."
 
+#. TRANSLATORS: Note helptext for a Hebrew military site: Small Tent
+#. TRANSLATORS: Note helptext for a Hebrew military site: Massada
 #. TRANSLATORS: Note helptext for a Hebrew military site: Small Tent
 #. TRANSLATORS: Note helptext for a Hebrew military site: Massada
 #. TRANSLATORS: Note helptext for a Hebrew military site: Small Tent
@@ -3251,6 +3293,8 @@ msgstr "Weitacker (ganz lütt)"
 #. TRANSLATORS: Purpose helptext for a building - it hasn't been written yet.
 #. TRANSLATORS: Lore helptext for a building - it hasn't been written yet.
 #. TRANSLATORS: Purpose helptext for a building - it hasn't been written yet.
+#. TRANSLATORS: Lore helptext for a building - it hasn't been written yet.
+#. TRANSLATORS: Purpose helptext for a building - it hasn't been written yet.
 #: addons/hebrews_tribe.wad/tribes/scripting/help/building_help.lua:240
 #: addons/hebrews_tribe.wad/tribes/scripting/help/building_help.lua:318
 #: input:240 input:318 standard
@@ -3540,6 +3584,8 @@ msgstr "Produzeerte Waar:"
 msgid "Wares produced:"
 msgstr "Produzeerte Waren:"
 
+#. TRANSLATORS: Ware Encyclopedia: 1 special worker or soldier recruited by a productionsite
+#. TRANSLATORS: Worker Encyclopedia: More than 1 worker recruited by a productionsite
 #. TRANSLATORS: Ware Encyclopedia: 1 special worker or soldier recruited by a productionsite
 #. TRANSLATORS: Worker Encyclopedia: More than 1 worker recruited by a productionsite
 #. TRANSLATORS: Ware Encyclopedia: 1 special worker or soldier recruited by a productionsite
@@ -3894,6 +3940,8 @@ msgstr "Een Speler"
 msgid "Multiplayer"
 msgstr "Mennig Spelers"
 
+#. TRANSLATORS: Ware Encyclopedia: A building producing a ware
+#. TRANSLATORS: Worker Encyclopedia: A building recruiting a worker
 #. TRANSLATORS: Ware Encyclopedia: A building producing a ware
 #. TRANSLATORS: Worker Encyclopedia: A building recruiting a worker
 #. TRANSLATORS: Ware Encyclopedia: A building producing a ware

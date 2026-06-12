@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR "Widelands Development Team"
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-11 03:19+0200\n"
+"POT-Creation-Date: 2026-06-12 03:20+0200\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -30,20 +30,20 @@ msgstr "De Speler, well dat Meeste vun de Welt utförskt hett, winnt dat Speel"
 msgid "explorer wins"
 msgstr "Utförsker winnt"
 
-#: addons/explorer-wins.wad/init.lua:19 standard input:19
+#: addons/explorer-wins.wad/init.lua:19 input:19 standard
 msgid "Explorer Wins"
 msgstr "Utförsker winnt"
 
-#: addons/explorer-wins.wad/init.lua:21 standard input:21
+#: addons/explorer-wins.wad/init.lua:21 input:21 standard
 #, lua-format
 msgid "The player who has explored %1d%% of the world wins the game"
 msgstr "De Speler, well %1d%% vun de Welt utförskt hett, winnt dat Speel"
 
-#: addons/explorer-wins.wad/init.lua:26 standard input:26
+#: addons/explorer-wins.wad/init.lua:26 input:26 standard
 msgid "% explored"
 msgstr "% utförskt"
 
-#: addons/explorer-wins.wad/init.lua:46 standard input:46
+#: addons/explorer-wins.wad/init.lua:46 input:46 standard
 msgid ""
 "There are %1$d fields on the map, but only %2$d are terrestrial, which is "
 "%3$d%%. You need to explore %4$d%%."
@@ -51,48 +51,48 @@ msgstr ""
 "’t gifft %1$d Felden up de Kaart, aver blots %2$d sünd up Land. Dat is %3$d%"
 "%. Du muttst %4$d%% utförsken."
 
-#: addons/explorer-wins.wad/init.lua:50 standard input:50
+#: addons/explorer-wins.wad/init.lua:50 input:50 standard
 msgid "Probably not winnable"
 msgstr "Nich tum Winnen"
 
-#: addons/explorer-wins.wad/init.lua:50 standard input:50
+#: addons/explorer-wins.wad/init.lua:50 input:50 standard
 msgid "This map is probably not winnable with %1$s."
 msgstr "Up deeser Kaart kann man mit %1$s nich winnen."
 
-#: addons/explorer-wins.wad/init.lua:52 standard input:52
+#: addons/explorer-wins.wad/init.lua:52 input:52 standard
 msgid "Maybe not winnable"
 msgstr "Villicht nich tum Winnen"
 
-#: addons/explorer-wins.wad/init.lua:52 standard input:52
+#: addons/explorer-wins.wad/init.lua:52 input:52 standard
 msgid "This map is maybe not winnable with %1$s."
 msgstr "Up deeser Kaart kann man mit %1$s villicht nich winnen."
 
-#: addons/explorer-wins.wad/init.lua:69 standard input:69
+#: addons/explorer-wins.wad/init.lua:69 input:69 standard
 msgid "You can explore by expanding, with a scout, with ships, ..."
 msgstr ""
 "Du kannst utförsken, indeem du verwiederst, Bespejers bruukst, of mit "
 "Schippen, …"
 
-#: addons/explorer-wins.wad/init.lua:94 standard input:94
+#: addons/explorer-wins.wad/init.lua:94 input:94 standard
 msgid "Win condition not compatible with \"No fog of war\""
 msgstr "Upgaav tum Winnen verdraggt sik nich mit »Keen Kriegsnevel«."
 
-#: addons/explorer-wins.wad/init.lua:95 standard input:95
+#: addons/explorer-wins.wad/init.lua:95 input:95 standard
 msgid ""
 "The win condition %1$s can not be played with \"No fog of war\" enabled."
 msgstr ""
 "De Upgaav tum Winnen »%1$s« kann nich spöölt worden, wenn de Kriegsnevel "
 "utknipst is."
 
-#: addons/explorer-wins.wad/init.lua:96 standard input:96
+#: addons/explorer-wins.wad/init.lua:96 input:96 standard
 msgid "Continue playing endlessly or restart with fog."
 msgstr "Spööl sünner Enn wieder of start mit Nevel neei."
 
-#: addons/explorer-wins.wad/init.lua:150 standard input:150
+#: addons/explorer-wins.wad/init.lua:150 input:150 standard
 msgid "Player %1$1d has explored %2$1d%%"
 msgstr "Speler %1$1d hett %2$1d%% utförskt"
 
-#: addons/explorer-wins.wad/init.lua:152 standard input:152
+#: addons/explorer-wins.wad/init.lua:152 input:152 standard
 #, lua-format
 msgid " (%d fields)"
 msgstr " (%d Felden)"
