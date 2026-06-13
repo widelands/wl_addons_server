@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:20+0200\n"
+"POT-Creation-Date: 2026-06-13 03:19+0200\n"
 "PO-Revision-Date: 2025-12-25 19:42+0000\n"
 "Last-Translator: Leonardo Fontana <scuola.rovato@gmail.com>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
@@ -707,6 +707,8 @@ msgstr ""
 #. TRANSLATORS: Format string for a Latin quote and its translation
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
+#. TRANSLATORS: Format string for a latin quote and its translation
+#. TRANSLATORS: Format string for a Latin quote and its translation
 #: addons/gauls.wad/postload.lua:10
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:12 input:10 input:12 standard
 msgctxt "empire_lore"
@@ -765,6 +767,19 @@ msgid ""
 "average to produce one meat."
 msgstr ""
 
+#. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Clay Pit, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Stonecutter’s Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Fisher's Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Hunter’s Hut, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Scout’s Cottage, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Reed Yard, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Orchard, part 2
+#. TRANSLATORS: Performance help text for a Gallic training site: Druid’s Gathering, part 3
+#. TRANSLATORS: Performance help text for a Gallic production site: Ferry Yard, part 2
+#. TRANSLATORS: Performance help text for a Gallic production site: Shipyard, part 2
 #. TRANSLATORS: Performance helptext for a Gallic production site: Crocodile Hunter’s Hut, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Woodcutter’s House, part 2
 #. TRANSLATORS: Performance help text for a Gallic production site: Forester’s Hut, part 2
@@ -1796,6 +1811,8 @@ msgstr ""
 #. TRANSLATORS: Gauls training site tooltip when it has no warriors assigned
 #. TRANSLATORS: Gauls training site tooltip when it has no warrior assigned
 #. TRANSLATORS: Gauls training site tooltip when it has no warriors assigned
+#. TRANSLATORS: Gauls training site tooltip when it has no warrior assigned
+#. TRANSLATORS: Gauls training site tooltip when it has no warriors assigned
 #: addons/gauls.wad/trainingsites/druids_gathering/init.lua:145
 #: addons/gauls.wad/trainingsites/fighting_arena/init.lua:166
 #: addons/gauls.wad/trainingsites/training_camp/init.lua:127 input:127
@@ -2371,6 +2388,8 @@ msgstr ""
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
+#. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 1
+#. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 1
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:299
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:312 input:299 input:312
 #: standard
@@ -2378,6 +2397,8 @@ msgctxt "gauls_ware"
 msgid "Smoked fish or smoked meat is used for meal preparation."
 msgstr ""
 
+#. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 2
+#. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Meat, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Smoked Fish, part 2
@@ -2465,6 +2486,8 @@ msgctxt "gauls_ware"
 msgid "Copper is a rare building material."
 msgstr ""
 
+#. TRANSLATORS: Help text for a Gallic ware: Copper, part 2
+#. TRANSLATORS: Help text for a Gallic ware: Iron, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Copper, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Iron, part 2
 #. TRANSLATORS: Help text for a Gallic ware: Copper, part 2
@@ -2767,6 +2790,8 @@ msgstr ""
 #. TRANSLATORS: Help text for a Gallic worker: Ox
 #. TRANSLATORS: Help text for a Gallic worker: Carrier
 #. TRANSLATORS: Help text for a Gallic worker: Ox
+#. TRANSLATORS: Help text for a Gallic worker: Carrier
+#. TRANSLATORS: Help text for a Gallic worker: Ox
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:739
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:748 input:739 input:748
 #: standard
@@ -2904,6 +2929,8 @@ msgstr ""
 #. TRANSLATORS: Help text for a Gallic worker: Master Miner
 #. TRANSLATORS: Help text for a Gallic worker: Miner
 #. TRANSLATORS: Help text for a Gallic worker: Master Miner
+#. TRANSLATORS: Help text for a Gallic worker: Miner
+#. TRANSLATORS: Help text for a Gallic worker: Master Miner
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:904
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:911 input:904 input:911
 #: standard
@@ -2988,6 +3015,8 @@ msgstr ""
 #. TRANSLATORS: Help text for a Gallic immovable: Destroyed Building
 #. TRANSLATORS: Help text for a Gallic immovable: Ashes
 #. TRANSLATORS: Help text for a Gallic immovable: Destroyed Building
+#. TRANSLATORS: Help text for a Gallic immovable: Ashes
+#. TRANSLATORS: Help text for a Gallic immovable: Destroyed Building
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1004
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1011 input:1004 input:1011
 #: standard
@@ -3056,6 +3085,8 @@ msgstr ""
 msgid "This field has just been planted."
 msgstr ""
 
+#. TRANSLATORS: Help text for a Gallic immovable: Wheat Field (small)
+#. TRANSLATORS: Help text for a Gallic immovable: Wheat Field (medium)
 #. TRANSLATORS: Help text for a Gallic immovable: Wheat Field (small)
 #. TRANSLATORS: Help text for a Gallic immovable: Wheat Field (medium)
 #. TRANSLATORS: Help text for a Gallic immovable: Wheat Field (small)
@@ -3543,6 +3574,8 @@ msgstr ""
 #. TRANSLATORS: Note help text for a Gallic production site: Ferry Yard
 #. TRANSLATORS: Note help text for a Gallic production site: Reed Yard
 #. TRANSLATORS: Note help text for a Gallic production site: Ferry Yard
+#. TRANSLATORS: Note help text for a Gallic production site: Reed Yard
+#. TRANSLATORS: Note help text for a Gallic production site: Ferry Yard
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1615
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:2033 input:1615 input:2033
 #: standard
@@ -3620,6 +3653,8 @@ msgstr ""
 #. TRANSLATORS: Purpose help text for a Gallic production site: Threshing Floor
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Purpose help text for a Gallic production site: Threshing Floor
+#. TRANSLATORS: Purpose help text for a Gallic production site: Small Threshing Floor
+#. TRANSLATORS: Purpose help text for a Gallic production site: Threshing Floor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1663
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1674 input:1663 input:1674
 #: standard
@@ -3633,6 +3668,8 @@ msgstr ""
 #. TRANSLATORS: Note help text for a Gallic production site: Threshing Floor
 #. TRANSLATORS: Note help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Note help text for a Gallic production site: Threshing Floor
+#. TRANSLATORS: Note help text for a Gallic production site: Small Threshing Floor
+#. TRANSLATORS: Note help text for a Gallic production site: Threshing Floor
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1665
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1676 input:1665 input:1676
 #: standard
@@ -3640,6 +3677,8 @@ msgctxt "gauls_building"
 msgid "Straw is collected only when the economy needs straw."
 msgstr ""
 
+#. TRANSLATORS: Performance help text for a Gallic production site: Small Threshing Floor
+#. TRANSLATORS: Performance help text for a Gallic production site: Threshing Floor
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Threshing Floor
 #. TRANSLATORS: Performance help text for a Gallic production site: Threshing Floor
 #. TRANSLATORS: Performance help text for a Gallic production site: Small Threshing Floor
@@ -3892,6 +3931,9 @@ msgstr ""
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Coal Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Coal Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Deep Coal Mine
+#. TRANSLATORS: Purpose help text for a Gallic production site: Small Coal Mine
+#. TRANSLATORS: Purpose help text for a Gallic production site: Coal Mine
+#. TRANSLATORS: Purpose help text for a Gallic production site: Deep Coal Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1828
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1837
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1846 input:1828 input:1837
@@ -3912,6 +3954,8 @@ msgstr ""
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Coal Mine
 #. TRANSLATORS: Performance help text for a Gallic production site: Coal Mine
 #. TRANSLATORS: Performance help text for a Gallic production site: Deep Coal Mine
+#. TRANSLATORS: Performance help text for a Gallic production site: Coal Mine
+#. TRANSLATORS: Performance help text for a Gallic production site: Deep Coal Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1839
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1848 input:1839 input:1848
 #: standard
@@ -3919,6 +3963,9 @@ msgctxt "gauls_building"
 msgid "The miners need %1% to produce one lump of coal."
 msgstr ""
 
+#. TRANSLATORS: Purpose help text for a Gallic production site: Small Iron Mine
+#. TRANSLATORS: Purpose help text for a Gallic production site: Iron Mine
+#. TRANSLATORS: Purpose help text for a Gallic production site: Deep Iron Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Small Iron Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Iron Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Deep Iron Mine
@@ -3963,6 +4010,8 @@ msgstr ""
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper-Gold Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Copper-Gold Mine
+#. TRANSLATORS: Purpose help text for a Gallic production site: Copper Mine
+#. TRANSLATORS: Purpose help text for a Gallic production site: Copper-Gold Mine
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1882
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1893 input:1882 input:1893
 #: standard
@@ -3998,6 +4047,8 @@ msgid ""
 "gold ore."
 msgstr ""
 
+#. TRANSLATORS: Purpose help text for a Gallic production site: Tin Mine
+#. TRANSLATORS: Purpose help text for a Gallic production site: Deep Tin Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Tin Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Deep Tin Mine
 #. TRANSLATORS: Purpose help text for a Gallic production site: Tin Mine
@@ -4060,6 +4111,8 @@ msgid ""
 "attack in %s."
 msgstr ""
 
+#. TRANSLATORS: Performance help text for a Gallic training site: Training Camp, part 2
+#. TRANSLATORS: Performance help text for a Gallic training site: Arena, part 2
 #. TRANSLATORS: Performance help text for a Gallic training site: Training Camp, part 2
 #. TRANSLATORS: Performance help text for a Gallic training site: Arena, part 2
 #. TRANSLATORS: Performance help text for a Gallic training site: Training Camp, part 2
@@ -4135,6 +4188,12 @@ msgstr ""
 #. TRANSLATORS: Purpose help text for a Gallic military site: Stone Tower
 #. TRANSLATORS: Purpose help text for a Gallic military site: Castle
 #. TRANSLATORS: Purpose help text for a Gallic military site: Stronghold
+#. TRANSLATORS: Purpose help text for a Gallic military site: Guard Post
+#. TRANSLATORS: Purpose help text for a Gallic military site: Watchtower
+#. TRANSLATORS: Purpose help text for a Gallic military site: Sentry
+#. TRANSLATORS: Purpose help text for a Gallic military site: Stone Tower
+#. TRANSLATORS: Purpose help text for a Gallic military site: Castle
+#. TRANSLATORS: Purpose help text for a Gallic military site: Stronghold
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1977
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1984
 #: addons/gauls.wad/tribes/gauls_tribe/units.lua:1993
@@ -4146,6 +4205,10 @@ msgctxt "gauls_building"
 msgid "Garrisons warriors to expand your territory."
 msgstr ""
 
+#. TRANSLATORS: Note help text for a Gallic military site: Watchtower
+#. TRANSLATORS: Note help text for a Gallic military site: Sentry
+#. TRANSLATORS: Note help text for a Gallic military site: Castle
+#. TRANSLATORS: Note help text for a Gallic military site: Stronghold
 #. TRANSLATORS: Note help text for a Gallic military site: Watchtower
 #. TRANSLATORS: Note help text for a Gallic military site: Sentry
 #. TRANSLATORS: Note help text for a Gallic military site: Castle
