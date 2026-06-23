@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-22 03:20+0200\n"
+"POT-Creation-Date: 2026-06-23 03:21+0200\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -750,6 +750,11 @@ msgctxt "europeans_building"
 msgid "Basic Coal Mine"
 msgstr "Köhle-Bargwark"
 
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
@@ -2065,6 +2070,10 @@ msgstr "Stoff-Laden"
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skidiamondpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skidiamondpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:57
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:113
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:125
@@ -2330,6 +2339,8 @@ msgctxt "europeans_building"
 msgid "mining water"
 msgstr "Water oftoboen"
 
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
@@ -3055,6 +3066,8 @@ msgstr "Balsaboom"
 msgid "Balsa Tree (Pole)"
 msgstr "Balsaboom (Jung)"
 
+#. TRANSLATORS:  This is an Amazon rare tree.
+#. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
 #. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
@@ -3929,6 +3942,8 @@ msgstr "Verteidigen un innehmen!"
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:796
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:803 input:796
 #: input:803 standard
@@ -4236,6 +4251,11 @@ msgstr "Wat vun eenem ollen Boom över blievt."
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1249
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1256
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1263
@@ -4384,6 +4404,11 @@ msgstr "Straten un Bomen up de Küst hinnern ’t Halen vun Water."
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1383
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1392
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1401
@@ -4394,6 +4419,10 @@ msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
 msgstr "Kappt Bomen in de Naberskupp un maakt daarut Boomstammen."
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
@@ -4539,6 +4568,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1444
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1453
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1462
@@ -4549,6 +4581,9 @@ msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
 msgstr "Plant Bomen in de Naberskupp."
 
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
@@ -4670,6 +4705,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1507
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1516
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1525 input:1507
@@ -4678,6 +4715,10 @@ msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr "Sleit Flint ut Stenen in de Naberskupp."
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
@@ -4780,6 +4821,8 @@ msgstr "Sleit Flint un Marmel ut Stenen in de Naberskupp."
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1552
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1559 input:1552
 #: input:1559 standard
@@ -4825,6 +4868,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1574
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1581
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1588
@@ -4835,6 +4880,8 @@ msgctxt "europeans_building"
 msgid "Draws water out of the deep."
 msgstr "Hisst Water ut de Deepde."
 
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
@@ -4912,6 +4959,9 @@ msgstr "Sait un arnt Reit."
 #. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Vineyard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Vineyard
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1611
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1620
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1629 input:1611
@@ -4946,6 +4996,8 @@ msgstr ""
 "De Buskenplanteree bruukt freje Rüümte in de Arbeidsgewest, waar Busken "
 "plant worden könen."
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
@@ -5057,6 +5109,11 @@ msgstr ""
 "Waren vun eenem Steenbickerhuus gahen blot to Bausteden, de se bruken. "
 "Marmelpielers worden blot von groten Husen bruukt."
 
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Recycling Center
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
@@ -5314,6 +5371,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Marble Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#. TRANSLATORS: Purpose helptext for production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1865
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1872
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1879
@@ -5325,6 +5386,11 @@ msgid ""
 "mountain terrain."
 msgstr "Grafft in Bargen Flint, Marmel un anner düre Mineraale ut de Grund."
 
+#. TRANSLATORS: Purpose helptext for production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
@@ -5475,6 +5541,11 @@ msgstr "Grafft in Bargen Köhle ut de Grund."
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1928
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1935
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1942
@@ -5485,6 +5556,11 @@ msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr "Grafft in Bargen Iesenkluut ut de Grund."
 
+#. TRANSLATORS: Purpose helptext for production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
@@ -5664,6 +5740,8 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2083
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2092 input:2083
 #: input:2092 standard
@@ -5678,6 +5756,15 @@ msgctxt "europeans_building"
 msgid "Constructs ships and additional ferries."
 msgstr "Baut Schippen un daarto Fähren."
 
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
@@ -5822,6 +5909,14 @@ msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr "Brengt Soldaten unner, um dien Gewest to vergrotern."
 
+#. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Tower
+#. TRANSLATORS: Note helptext for an Europeans military site: Castle
+#. TRANSLATORS: Note helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
 #. TRANSLATORS: Note helptext for an Europeans military site: Sentry
 #. TRANSLATORS: Note helptext for an Europeans military site: Barrier
