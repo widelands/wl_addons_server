@@ -169,6 +169,7 @@ public class Buildcats {
 			dir = new File("po", addon.getName());
 			dir.mkdir();
 			out = dir.getPath() + "/" + addon.getName() + ".pot";
+			new File(out).createNewFile();
 			doRunXgettext(addon.getPath() + "/addon", out);
 			recurse(out, new File("screenshots", addon.getName()), false);
 			recurse(out, addon, false);
