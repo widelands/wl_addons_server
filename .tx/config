@@ -162,6 +162,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Fjords-between-wooded-mountains-1-1-wad]
+file_filter            = po/Fjords_between_wooded_mountains_1_1.wad/<lang>.po
+source_file            = po/Fjords_between_wooded_mountains_1_1.wad/Fjords_between_wooded_mountains_1_1.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Fjords-between-wooded-mountains-wad]
 file_filter            = po/Fjords_between_wooded_mountains.wad/<lang>.po
 source_file            = po/Fjords_between_wooded_mountains.wad/Fjords_between_wooded_mountains.wad.pot
