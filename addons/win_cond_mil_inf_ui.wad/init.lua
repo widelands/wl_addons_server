@@ -43,7 +43,7 @@ end
 
 if string.len(wlver) == 3 and wlver + 0.0 >= 1.4 then
    wl.ui.MapView():add_plugin_timer(
-      "register_military_influence_()", 1000, "setup_military_influence_info", 1
+      "register_military_influence_info_()", 1000, "setup_military_influence_info", 1
    )
 else
    -- version 1.3 (or older, which is not guaranteed to work)
