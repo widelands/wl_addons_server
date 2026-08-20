@@ -4972,7 +4972,7 @@ TRueDesk
 
 sync_safe
 1666686938
-1029
+1030
 0
 0
 0
@@ -5950,7 +5950,7 @@ tothxa
 
 sync_safe
 1777142785
-40
+41
 0
 0
 0
@@ -6590,7 +6590,7 @@ Solstice_s_Return
 
 sync_safe
 1657988804
-1149
+1150
 0
 0
 0
@@ -6831,7 +6831,7 @@ OIPUN
 
 sync_safe
 1719251296
-1019
+1021
 0
 0
 0
@@ -7515,7 +7515,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1151
+1152
 0
 0
 0
@@ -7831,7 +7831,7 @@ MarkMcWire
 
 sync_safe
 1756202518
-106
+107
 0
 0
 0
@@ -8869,7 +8869,7 @@ MarkMcWire
 
 sync_safe
 1744525216
-164
+165
 0
 0
 0
@@ -9452,7 +9452,7 @@ MarkMcWire
 
 sync_safe
 1749228542
-395
+396
 0
 0
 0
@@ -16913,7 +16913,7 @@ Nordfriese
 
 sync_safe
 1600000000
-873
+874
 0
 0
 0
@@ -16997,7 +16997,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1083
+1086
 0
 0
 0
@@ -17228,7 +17228,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1812
+1814
 0
 0
 0
@@ -17475,7 +17475,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1748
+1749
 0
 0
 0
@@ -18650,7 +18650,7 @@ OIPUN
 
 sync_safe
 1766614957
-274
+275
 0
 0
 0
@@ -27643,7 +27643,7 @@ Nordfriese
 
 sync_safe
 1600000000
-690
+692
 0
 0
 0
@@ -28468,7 +28468,7 @@ tothxa
 
 sync_safe
 1735340602
-280
+281
 0
 0
 0
@@ -29147,7 +29147,7 @@ OIPUN
 
 sync_safe
 1744531167
-250
+251
 0
 0
 0
@@ -32718,7 +32718,7 @@ OIPUN
 
 sync_safe
 1739211494
-361
+362
 0
 0
 0
@@ -33173,7 +33173,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1064
+1065
 0
 0
 0
@@ -33914,7 +33914,7 @@ OIPUN
 
 sync_safe
 1745608829
-308
+310
 0
 0
 0
@@ -35697,7 +35697,7 @@ Nordfriese
 
 sync_safe
 1723377908
-289
+290
 0
 0
 0
@@ -43629,7 +43629,7 @@ kaputtnik
 
 sync_safe
 1708356983
-364
+365
 0
 0
 0
@@ -44644,11 +44644,15 @@ sync_safe
 0
 0
 1
-1
+2
 Cupper
 <font size=18>Well done,txa</font><br>Excelent wincon, 10 points.<br>That must been a lot of work, including the side-quests.  Destroying the enemies is needless 2 win. Makes WL more peaceful.
 0.9
 1779818588
+Cupper
+Hi,<br>Somewhere in your addon must sit a bug.<br>With WL 1.3.1 the game starts normal, but later (diffent time) there's a co-routine-error.<br>Newer WL versions shows the same error but at end of gameloading, before I can start playing.<br><br>That's the info from stdout:   nil value (field)<br><br>[00:06:52.598 real] ERROR: ##############################<br>[00:06:52.598 real] ERROR:   FATAL EXCEPTION: [C:/projects/widelands/src/scripting/lua_errors.cc:21] [C:/projects/widelands/src/scripting/lua_errors.cc:21] [string "addons/win_cond_military_influence.wad/functi..."]:116: attempt to perform arithmetic on a nil value (field '?')<br>[00:06:52.598 real] ERROR: ##############################<br>[00:06:52.598 real] ERROR:   Please report this problem to help us improve Widelands.<br>[00:06:52.598 real] ERROR:   You will find related messages in the standard output (stdout.txt on Windows).<br>[00:06:52.598 real] ERROR:   You are using version 1.4~git27301 (a727165@HEAD) Release.<br>[00:06:52.598 real] ERROR:   Please add this information to your report.  <font size=18><font italic=true>I will clear this message soon, before it's permanent</font></font>
+0.9
+1787185291
 0.9
 4
 29703
