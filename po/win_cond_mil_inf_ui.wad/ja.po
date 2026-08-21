@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:21+0200\n"
+"POT-Creation-Date: 2026-08-21 03:24+0200\n"
 "PO-Revision-Date: 2026-05-24 08:17+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/widelands/teams/35159/"
 "ja/)\n"
@@ -27,10 +27,14 @@ msgid ""
 "Show detailed scoring information for the Military Influence win condition."
 msgstr ""
 
-#: addons/win_cond_mil_inf_ui.wad/init.lua:26 input:26 standard
+#: addons/win_cond_mil_inf_ui.wad/init.lua:26 input:26 input:29 standard
 msgid "Show info on score calculation"
 msgstr ""
 
 #: addons/win_cond_mil_inf_ui.wad/shortcuts.lua:6 input:6 standard
 msgid "Score info"
+msgstr ""
+
+#: input:13 standard
+msgid "Not set"
 msgstr ""

@@ -707,7 +707,7 @@ DyingSettler
 
 sync_safe
 1758974165
-350
+352
 0
 0
 0
@@ -1899,7 +1899,7 @@ helmut
 
 sync_safe
 1780859540
-30
+31
 0
 0
 0
@@ -2607,7 +2607,7 @@ helmut
 
 sync_safe
 1780860632
-27
+28
 0
 0
 0
@@ -3431,7 +3431,7 @@ helmut
 
 sync_safe
 1780855977
-28
+29
 0
 0
 0
@@ -3729,7 +3729,7 @@ helmut
 
 sync_safe
 1780854634
-24
+25
 0
 0
 0
@@ -7419,7 +7419,7 @@ OIPUN
 
 sync_safe
 1744125815
-258
+259
 0
 0
 0
@@ -8142,7 +8142,7 @@ Nordfriese
 
 sync_safe
 1691145323
-175
+176
 0
 0
 0
@@ -8242,7 +8242,7 @@ kaputtnik
 
 sync_safe
 1706093867
-134
+135
 0
 0
 0
@@ -8351,7 +8351,7 @@ Nordfriese
 
 sync_safe
 1689789945
-205
+206
 0
 0
 0
@@ -17228,7 +17228,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1814
+1815
 0
 0
 0
@@ -18650,7 +18650,7 @@ OIPUN
 
 sync_safe
 1766614957
-275
+276
 0
 0
 0
@@ -23875,7 +23875,7 @@ carli2
 
 sync_safe
 1771292281
-173
+175
 0
 0
 0
@@ -27735,7 +27735,7 @@ kaputtnik
 
 sync_safe
 1600000000
-882
+883
 0
 0
 0
@@ -32926,7 +32926,7 @@ kaputtnik
 
 sync_safe
 1614637671
-513
+514
 0
 0
 0
@@ -33173,7 +33173,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1065
+1066
 0
 0
 0
@@ -33577,7 +33577,7 @@ OIPUN
 
 sync_safe
 1615637480
-1123
+1124
 0
 0
 0
@@ -36094,7 +36094,7 @@ the-x
 
 sync_safe
 1622124029
-729
+730
 0
 0
 0
@@ -44544,7 +44544,7 @@ tothxa
 
 sync_safe
 1779579235
-17
+18
 0
 0
 0
@@ -44555,10 +44555,18 @@ sync_safe
 0
 0
 0
-0
-0.9.1
+2
+tothxa
+V1.0 finally works right in all cases. See comments in init.lua for the hurdles I had to cross to make it so.
+1.0
+1787215978
+tothxa
+Famous last words...<br><br>There's a corner case: loading a replay directly from another still has the win condition of the old one when the script is run.<br><br>I will upload v1.1 after the grace period to fix it, with the small drawback that the timer will keep running in v1.3 in reloaded games too.
+1.0
+1787218443
+1.0
 3
-5085
+6415
 ui_plugin
 1
 win_cond_military_influence.wad
@@ -44594,10 +44602,10 @@ ru.mo
 sk.mo
 sv.mo
 28
-3656218b89a6d153557998398fd71b2b
+50c79b5ba5cb001b8ebaed4ef32f1ae7
 cec4912890fb4a266992c43192502e7c
 3a98fa7a9d03ef7271939ce82672d2e9
-a140d3d308e01ed026133c5121038e32
+fc1dfca3dfbbd9ce95d892b12f7cff06
 9bdc5d040eac6bfeeacecf4304daff87
 79d9dc26e035b642d1b9fdbb80cfbc80
 2bc9c0d2498b0217eb9d86f19a6457fe
@@ -44644,15 +44652,11 @@ sync_safe
 0
 0
 1
-2
+1
 Cupper
 <font size=18>Well done,txa</font><br>Excelent wincon, 10 points.<br>That must been a lot of work, including the side-quests.  Destroying the enemies is needless 2 win. Makes WL more peaceful.
 0.9
 1779818588
-Cupper
-Hi,<br>Somewhere in your addon must sit a bug.<br>With WL 1.3.1 the game starts normal, but later (diffent time) there's a co-routine-error.<br>Newer WL versions shows the same error but at end of gameloading, before I can start playing.<br><br>That's the info from stdout:   nil value (field)<br><br>[00:06:52.598 real] ERROR: ##############################<br>[00:06:52.598 real] ERROR:   FATAL EXCEPTION: [C:/projects/widelands/src/scripting/lua_errors.cc:21] [C:/projects/widelands/src/scripting/lua_errors.cc:21] [string "addons/win_cond_military_influence.wad/functi..."]:116: attempt to perform arithmetic on a nil value (field '?')<br>[00:06:52.598 real] ERROR: ##############################<br>[00:06:52.598 real] ERROR:   Please report this problem to help us improve Widelands.<br>[00:06:52.598 real] ERROR:   You will find related messages in the standard output (stdout.txt on Windows).<br>[00:06:52.598 real] ERROR:   You are using version 1.4~git27301 (a727165@HEAD) Release.<br>[00:06:52.598 real] ERROR:   Please add this information to your report.  <font size=18><font italic=true>I will clear this message soon, before it's permanent</font></font>
-0.9
-1787185291
 0.9
 4
 29703
