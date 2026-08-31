@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:18+0200\n"
+"POT-Creation-Date: 2026-08-31 03:19+0200\n"
 "PO-Revision-Date: 2024-02-27 16:25+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -26,14 +30,14 @@ msgstr ""
 
 #: addons/editor_add_markers.wad/addon:9 input:9 standard
 msgid "Editor: Place markers evenly on the map"
-msgstr ""
+msgstr "Editori: laita merkintöjä tasaisesti kartalle"
 
 #: addons/editor_add_markers.wad/init.lua:8
 #: addons/editor_add_markers.wad/settings_window.lua:57
 #: addons/editor_add_markers.wad/settings_window.lua:140 input:8 input:57
 #: input:140 standard
 msgid "Place markers"
-msgstr ""
+msgstr "Laita merkinnät"
 
 #: addons/editor_add_markers.wad/init.lua:9 input:9 standard
 msgid "Place markers evenly on the map to get some points of orientation."
@@ -45,37 +49,37 @@ msgstr ""
 
 #: addons/editor_add_markers.wad/settings_window.lua:73 input:73 standard
 msgid "Choose the distance between markers:"
-msgstr ""
+msgstr "Valitse merkintöjen välimatka:"
 
 #: addons/editor_add_markers.wad/settings_window.lua:85 input:85 standard
 msgid "Horizontally"
-msgstr ""
+msgstr "Vaakasuunnassa"
 
 #: addons/editor_add_markers.wad/settings_window.lua:99
 #: addons/editor_add_markers.wad/settings_window.lua:129 input:99 input:129
 #: standard
 msgid "Choose a distance"
-msgstr ""
+msgstr "Valitse välimatka"
 
 #: addons/editor_add_markers.wad/settings_window.lua:115 input:115 standard
 msgid "Vertically"
-msgstr ""
+msgstr "Pystysuunnassa"
 
 #: addons/editor_add_markers.wad/settings_window.lua:147 input:147 standard
 msgid "Undo"
-msgstr ""
+msgstr "Peru"
 
 #: addons/editor_add_markers.wad/settings_window.lua:154 input:154 standard
 msgid "Center position 0,0"
-msgstr ""
+msgstr "Keskitä sijainti 0,0"
 
 #: addons/editor_add_markers.wad/settings_window.lua:162 input:162 standard
 msgid "Remove all markers"
-msgstr ""
+msgstr "Poista kaikki merkinnät"
 
 #: addons/editor_add_markers.wad/settings_window.lua:171 input:171 standard
 msgid "Hide"
-msgstr ""
+msgstr "Piilota"
 
 #: addons/editor_add_markers.wad/settings_window.lua:172 input:172 standard
 msgid "Hide window to keep the settings"

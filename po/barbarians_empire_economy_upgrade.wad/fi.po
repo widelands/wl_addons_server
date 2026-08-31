@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-08-30 03:19+0200\n"
+"POT-Creation-Date: 2026-08-31 03:19+0200\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -20,7 +24,7 @@ msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:2 input:8 standard
 msgid "Barbarians-Empire Upgrade"
-msgstr ""
+msgstr "Barbaarivaltakunta-päivitys"
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:3 input:6 standard
 msgid ""
@@ -35,26 +39,26 @@ msgstr ""
 #: input:8 standard
 msgctxt "barbarians_building"
 msgid "Independent Fishing Hut"
-msgstr ""
+msgstr "Itsenäinen kalastusmaja"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:49
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:49
 #: input:49 standard
 msgid "fishing"
-msgstr ""
+msgstr "kalastus"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:59
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:59
 #: input:59 standard
 msgid "No Fishes"
-msgstr ""
+msgstr "Ei kaloja"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:60
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:60
 #: input:60 standard
 msgid "Out of Fishes"
-msgstr ""
+msgstr "Kalat loppu"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:61
 #: input:61 standard
@@ -69,7 +73,7 @@ msgstr ""
 #: input:8 standard
 msgctxt "barbarians_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Edistynyt sulatus toimii"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:70
@@ -78,7 +82,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:56
 #: input:43 input:56 input:70 input:89 standard
 msgid "working"
-msgstr ""
+msgstr "työskentelee"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:83
@@ -86,7 +90,7 @@ msgstr ""
 #: input:83 input:131 standard
 msgctxt "barbarians_building"
 msgid "smelting iron"
-msgstr ""
+msgstr "raudan sulatus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:100
@@ -94,15 +98,17 @@ msgstr ""
 #: input:100 input:117 standard
 msgctxt "barbarians_building"
 msgid "smelting gold"
-msgstr ""
+msgstr "kullan sulatus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:8
 #: input:8 standard
 msgctxt "barbarians_building_small"
 msgid "Small Weaving Mill"
-msgstr ""
+msgstr "Pieni kutomo"
 
+#. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
@@ -281,36 +287,36 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:186 input:50
 #: input:186 standard
 msgid "weaving"
-msgstr ""
+msgstr "kutoaa"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:8
 #: input:8 standard
 msgctxt "empire_building"
 msgid "Small Farm"
-msgstr ""
+msgstr "Pieni maatila"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:51
 #: input:51 standard
 msgid "planting"
-msgstr ""
+msgstr "istuttaa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:59
 #: input:59 standard
 msgid "harvesting"
-msgstr ""
+msgstr "korjaa"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:68
 #: input:68 standard
 msgid "No Fields"
-msgstr ""
+msgstr "Ei peltoja"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:69
 #: input:69 standard
 msgid "Out of Fields"
-msgstr ""
+msgstr "Pellot loppu"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:70
 #: input:70 standard
@@ -324,7 +330,7 @@ msgstr ""
 #: input:8 standard
 msgctxt "empire_building"
 msgid "Independent Fishing Hut"
-msgstr ""
+msgstr "Itsenäinen kalastusmaja"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:61
 #: input:61 standard
@@ -339,20 +345,20 @@ msgstr ""
 #: input:8 standard
 msgctxt "empire_building"
 msgid "Small Mill"
-msgstr ""
+msgstr "Pieni mylly"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:47
 #: input:47 standard
 msgid "grinding wheat"
-msgstr ""
+msgstr "viljan jauhaminen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:8
 #: input:8 standard
 msgctxt "empire_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Edistynyt sulatus toimii"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:102
@@ -360,7 +366,7 @@ msgstr ""
 #: input:102 input:150 standard
 msgctxt "empire_building"
 msgid "smelting iron"
-msgstr ""
+msgstr "raudan sulatus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:119
@@ -368,21 +374,21 @@ msgstr ""
 #: input:119 input:136 standard
 msgctxt "empire_building"
 msgid "smelting gold"
-msgstr ""
+msgstr "kullan sulatus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:8
 #: input:8 standard
 msgctxt "empire_building"
 msgid "Advanced Stonemason’s House"
-msgstr ""
+msgstr "Edistynyt kivenhakkaajan talo"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:66
 #: input:66 standard
 msgctxt "empire_building"
 msgid "sculpting marble columns"
-msgstr ""
+msgstr "marmoripylväiden veistäminen"
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:9 input:9 standard
@@ -395,7 +401,7 @@ msgstr ""
 #: standard
 msgctxt "barbarians_building"
 msgid "‘What do you mean, my fish ain’t fresh?!’"
-msgstr ""
+msgstr "'Miten niin kalani ei ole tuoretta?!'"
 
 #. TRANSLATORS: Lore author helptext for a Barbarian production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:39 input:39
@@ -405,12 +411,14 @@ msgid ""
 "Frequent response of a Barbarian fisherman,<br>often followed by an "
 "enjoyable brawl"
 msgstr ""
+"Säännöllinen vastaus barbaarikalastajalta, <br> nautittava tappelu on usein "
+"seurauksena"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:40
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:61 input:40
 #: input:61 standard
 msgid "Fishes on the coast near the fisher’s hut."
-msgstr ""
+msgstr "Kaloja rannikolla lähellä kalastusmajaa."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:41
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:62 input:41
@@ -427,7 +435,7 @@ msgstr ""
 #: input:65 standard
 msgctxt "empire_building"
 msgid "The fisher needs %1$s on average to catch one fish."
-msgstr ""
+msgstr "Kalastaja tarvitsee %1$s keskimäärin napatakseen kalan."
 
 #. TRANSLATORS: Performance helptext for an Empire production site: Independent Fishing Hut, part 2
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:46
@@ -451,14 +459,14 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:58 input:58
 #: standard
 msgid "Make haste slowly."
-msgstr ""
+msgstr "Kiirehdi hitaasti."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Independent Fishing Hut
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:60 input:60
 #: standard
 msgctxt "empire_building"
 msgid "Fisherman’s secret to catch more fishes"
-msgstr ""
+msgstr "Kalastajan salaisuus napata lisää kaloja"
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
@@ -481,7 +489,7 @@ msgstr ""
 #: standard
 msgctxt "empire_building"
 msgid "Motto of the Stonemasons’ Guild"
-msgstr ""
+msgstr "Kivenhakkaajien killan motto"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:84 input:84
 #: standard
@@ -499,7 +507,7 @@ msgstr ""
 #: standard
 msgctxt "empire_building"
 msgid "The stonemason needs %1% on average to carve one marble column."
-msgstr ""
+msgstr "Kivenhakkaaja tarvitsee %1% keskimäärin veistääkseen marmoripylvään."
 
 #. TRANSLATORS: DO NOT TRANSLATE, but you may transliterate into non-latin fonts.
 #. Classical Latin quote meaning:
@@ -515,7 +523,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:98 input:98
 #: standard
 msgid "Eggs today are better than chickens tomorrow."
-msgstr ""
+msgstr "Tämän päivän munat ovat parempia kuin huomispäivän kanat."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Small Farm
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:100 input:100
@@ -529,7 +537,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:101 input:101
 #: standard
 msgid "Sows and harvests wheat."
-msgstr ""
+msgstr "Kylvää ja korjaa viljaa."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:102 input:102
 #: standard
@@ -552,7 +560,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:114 input:114
 #: standard
 msgid "Work conquers all things."
-msgstr ""
+msgstr "Työ valtaa kaiken."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Small Mill
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:116 input:116
@@ -566,13 +574,13 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:117 input:117
 #: standard
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Tuottaa jauhoja jauhamalla viljaa."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:118 input:118
 #: standard
 msgctxt "empire_building"
 msgid "The miller needs %1% on average to grind wheat into a sack of flour."
-msgstr ""
+msgstr "Mylläri tarvitsee %1% keskimäärin jauhaakseen viljaa jauhosäkiksi."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:163 input:163
 #: standard
@@ -593,18 +601,18 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:166 input:166
 #: standard
 msgid "Weaves cloth out of reed."
-msgstr ""
+msgstr "Kutoo kangasta ruo'osta."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:167 input:167
 #: standard
 msgid "This building operates as an ordinary weaving mill only 20% slower."
-msgstr ""
+msgstr "Tämä rakennus toimii kuin tavallinen kutomo, vain 20 % hitaammin."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:168 input:168
 #: standard
 msgctxt "barbarians_building"
 msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
-msgstr ""
+msgstr "Kutoja tarvitsee %1% keskimäärin kutoakseen ruo'osta kangasta."
 
 #. TRANSLATORS: Lore helptext for a Barbarian production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:202 input:202
@@ -796,11 +804,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Empire production site: Advanced Smelting Works
 #. TRANSLATORS: Purpose helptext for a Barbarian production site: Advanced Smelting Works
 #. TRANSLATORS: Purpose helptext for an Empire production site: Advanced Smelting Works
+#. TRANSLATORS: Purpose helptext for a Barbarian production site: Advanced Smelting Works
+#. TRANSLATORS: Purpose helptext for an Empire production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:207
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:226 input:207
 #: input:226 standard
 msgid "Smelts iron ore into iron and gold ore into gold."
-msgstr ""
+msgstr "Sulattaa rautamalmista rautaa ja kultamalmista kultaa."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:208
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:227 input:208
@@ -838,7 +848,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:222 input:222
 #: standard
 msgid "Who gives promptly, gives twice."
-msgstr ""
+msgstr "Joka antaa heti, antaa kaksin verroin."
 
 #. TRANSLATORS: Lore author helptext for an Empire production site: Advanced Smelting Works
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:224 input:224

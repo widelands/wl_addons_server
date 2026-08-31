@@ -5,15 +5,16 @@
 #
 # Translators:
 # Atte Timonen, 2025
+# Jaakko Muilu, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-08-30 03:26+0200\n"
+"POT-Creation-Date: 2026-08-31 03:25+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
-"Last-Translator: Atte Timonen, 2025\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -83,45 +84,45 @@ msgstr ""
 #: addons/sumatran_tribe.wad/immovables/resi_coal_1/init.lua:8 input:8 standard
 msgctxt "resource_indicator"
 msgid "Some Coal"
-msgstr ""
+msgstr "Vähän hiiltä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_coal_2/init.lua:8 input:8 standard
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr ""
+msgstr "Paljon hiiltä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_copper_gold_1/init.lua:8 input:8
 #: standard
 msgctxt "resource_indicator"
 msgid "Some Copper and Gold Ore"
-msgstr ""
+msgstr "Vähän kupari- ja kultamalmia"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_copper_gold_2/init.lua:8 input:8
 #: standard
 msgctxt "resource_indicator"
 msgid "A Lot of Copper and Gold Ore"
-msgstr ""
+msgstr "Paljon kupari- ja kultamalmia"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_iron_1/init.lua:8 input:8 standard
 msgctxt "resource_indicator"
 msgid "Some Iron Ore"
-msgstr ""
+msgstr "Vähän rautamalmia"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_iron_2/init.lua:8 input:8 standard
 msgctxt "resource_indicator"
 msgid "A Lot of Iron Ore"
-msgstr ""
+msgstr "Paljon rautamalmia"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_none/init.lua:8 input:8 standard
 msgctxt "resource_indicator"
 msgid "No Resources"
-msgstr ""
+msgstr "Ei resursseja"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_stones_1/init.lua:8 input:8
@@ -141,14 +142,14 @@ msgstr ""
 #: addons/sumatran_tribe.wad/immovables/resi_water/init.lua:8 input:8 standard
 msgctxt "resource_indicator"
 msgid "Water"
-msgstr ""
+msgstr "Vettä"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/sumatran_tribe.wad/immovables/shipconstruction_sumatran/init.lua:8
 #: input:8 standard
 msgctxt "immovable"
 msgid "Ship Under Construction"
-msgstr ""
+msgstr "Laiva rakenteilla"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/fort/init.lua:8 input:8 standard
@@ -425,15 +426,15 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:66 input:66 standard
 msgid "mining coal"
-msgstr ""
+msgstr "hiilikaivos"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:83 input:83 standard
 msgid "No Coal"
-msgstr ""
+msgstr "Ei hiiltä"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:84 input:84 standard
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Hiilen pääsuoni ehtyi"
 
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:86 input:86 standard
 msgctxt "sumatran_building"
@@ -517,17 +518,17 @@ msgstr ""
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:81 input:59 input:81
 #: standard
 msgid "mining iron ore"
-msgstr ""
+msgstr "rautamalmin louhinta"
 
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:80
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:99 input:80 input:99
 #: standard
 msgid "No Iron Ore"
-msgstr ""
+msgstr "Ei rautamalmia"
 
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:81 input:81 standard
 msgid "Iron Vein Exhausted"
-msgstr ""
+msgstr "Rautasuoni ehtyi"
 
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:83 input:83 standard
 msgctxt "sumatran_building"
@@ -587,7 +588,7 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:100 input:100 standard
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Raudan pääsuoni ehtyi"
 
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:102 input:102 standard
 msgctxt "sumatran_building"
@@ -635,7 +636,7 @@ msgstr ""
 #: input:32 input:36 input:41 input:47 input:49 input:57 input:70 input:81
 #: standard
 msgid "hunting"
-msgstr ""
+msgstr "metsästys"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:41
@@ -647,7 +648,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:60 input:41
 #: input:43 input:47 input:58 input:60 input:65 input:73 standard
 msgid "hunting crocodile"
-msgstr ""
+msgstr "krokotiilin metsästys"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:49
@@ -668,7 +669,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:82
 #: input:51 input:55 input:65 input:66 input:82 standard
 msgid "No Crocodiles"
-msgstr ""
+msgstr "Ei krokotiileja"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:67
@@ -678,7 +679,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/other_tribes/frisians_crocodile_hunters_house/init.lua:84
 #: input:53 input:57 input:67 input:68 input:84 standard
 msgid "Out of Game"
-msgstr ""
+msgstr "Riista loppu"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/other_tribes/amazons_crocodile_hunters_hut/init.lua:69
@@ -963,6 +964,8 @@ msgstr ""
 #. TRANSLATORS: Format string for a Latin quote and its translation
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
+#. TRANSLATORS: Format string for a latin quote and its translation
+#. TRANSLATORS: Format string for a Latin quote and its translation
 #: addons/sumatran_tribe.wad/postload.lua:9
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:12 input:9
 #: input:12 standard
@@ -986,7 +989,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:55
 #: input:39 input:55 input:63 input:73 input:79 input:85 input:91 standard
 msgid "felling trees"
-msgstr ""
+msgstr "puunkaato"
 
 #: addons/sumatran_tribe.wad/postload.lua:188 input:188 standard
 msgctxt "frisians_building"
@@ -1011,6 +1014,8 @@ msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
+"Metsästä eläimiä lihantuotantoa varten. Tässä talossa työskentelevät "
+"metsästäjät voivat metsästää myös krokotiileja."
 
 #. TRANSLATORS: Note helptext for a Frisian production site: Crocodile Hunter’s House, part 1
 #: addons/sumatran_tribe.wad/postload.lua:195 input:195 standard
@@ -1271,7 +1276,7 @@ msgstr ""
 #: input:38 input:42 input:45 input:50 input:57 input:58 input:59 input:65
 #: input:66 input:72 input:77 input:79 input:80 input:98 standard
 msgid "working"
-msgstr ""
+msgstr "työskentelee"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a copper armor because ...
 #: addons/sumatran_tribe.wad/productionsites/armorsmithy/init.lua:68 input:68
@@ -1315,13 +1320,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:92
 #: input:92 standard
 msgid "No Fields"
-msgstr ""
+msgstr "Ei peltoja"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:93
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:79 input:79
 #: input:93 standard
 msgid "Out of Fields"
-msgstr ""
+msgstr "Pellot loppu"
 
 #: addons/sumatran_tribe.wad/productionsites/cassava_fields/init.lua:94
 #: input:94 standard
@@ -1448,19 +1453,19 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/furnace/init.lua:89 input:89
 #: standard
 msgid "smelting iron"
-msgstr ""
+msgstr "raudan sulatus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting copper because ...
 #: addons/sumatran_tribe.wad/productionsites/furnace/init.lua:103 input:103
 #: standard
 msgid "smelting copper"
-msgstr ""
+msgstr "kuparin sulatus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/sumatran_tribe.wad/productionsites/furnace/init.lua:117 input:117
 #: standard
 msgid "smelting gold"
-msgstr ""
+msgstr "kullan sulatus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:8 input:8
@@ -1474,13 +1479,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:88 input:68
 #: input:88 standard
 msgid "fishing"
-msgstr ""
+msgstr "kalastus"
 
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:88
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:101 input:88
 #: input:101 standard
 msgid "No Game"
-msgstr ""
+msgstr "Ei riistaa"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:90
@@ -1526,7 +1531,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/palm_planters_hut/init.lua:41
 #: input:41 input:43 standard
 msgid "planting trees"
-msgstr ""
+msgstr "puiden istutus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:8 input:8
@@ -1539,7 +1544,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:67 input:67
 #: standard
 msgid "preparing a meal"
-msgstr ""
+msgstr "aterian valmistus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start throwing out overflows because ...
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:86 input:86
@@ -1648,7 +1653,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:61
 #: input:48 input:61 standard
 msgid "scouting"
-msgstr ""
+msgstr "tiedustella"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/sewing_workshop/init.lua:8 input:8
@@ -1687,7 +1692,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/shipyard/init.lua:91 input:91
 #: standard
 msgid "constructing a ship"
-msgstr ""
+msgstr "laivanrakennus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:8
@@ -1705,12 +1710,12 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:53
 #: input:53 standard
 msgid "No Rocks"
-msgstr ""
+msgstr "Ei kiveä"
 
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:54
 #: input:54 standard
 msgid "Out of Rocks"
-msgstr ""
+msgstr "Kivet loppu"
 
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:55
 #: input:55 standard
@@ -1811,12 +1816,12 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:56
 #: input:56 standard
 msgid "No Water"
-msgstr ""
+msgstr "Ei vettä"
 
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:57
 #: input:57 standard
 msgid "Out of Water"
-msgstr ""
+msgstr "Vesi loppu"
 
 #: addons/sumatran_tribe.wad/productionsites/water_carriers_hut/init.lua:58
 #: input:58 standard
@@ -1896,7 +1901,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:87
 #: input:87 standard
 msgid "Out of Trees"
-msgstr ""
+msgstr "Puut loppu"
 
 #: addons/sumatran_tribe.wad/productionsites/woodcutters_house/init.lua:88
 #: input:88 standard
@@ -1949,31 +1954,31 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:106
 #: input:106 standard
 msgid "making felling ax"
-msgstr ""
+msgstr "kaatokirveen valmistus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making buckets because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:118
 #: input:118 standard
 msgid "making buckets"
-msgstr ""
+msgstr "ämpäreiden valmistus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making hammer because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:130
 #: input:130 standard
 msgid "making hammer"
-msgstr ""
+msgstr "vasaran valmistus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:142
 #: input:142 standard
 msgid "making kitchen tools"
-msgstr ""
+msgstr "keittiövälineiden valmistus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pick because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:154
 #: input:154 standard
 msgid "making pick"
-msgstr ""
+msgstr "hakun valmistus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making machete because ...
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:166
@@ -1985,7 +1990,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/workshop_tools/init.lua:178
 #: input:178 standard
 msgid "making shovel"
-msgstr ""
+msgstr "lapion valmistus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/workshop_weapons/init.lua:8
@@ -1998,7 +2003,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/workshop_weapons/init.lua:71
 #: input:71 standard
 msgid "making spear"
-msgstr ""
+msgstr "keihään valmistus"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/basic_outpost.lua:11
@@ -2035,7 +2040,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:11
 #: input:11 standard
 msgid "Discovery"
-msgstr ""
+msgstr "Löydös"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/discovery.lua:13
@@ -2060,7 +2065,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/headquarters.lua:11
 #: input:11 standard
 msgid "Headquarters"
-msgstr ""
+msgstr "Päämajat"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/headquarters.lua:13
@@ -2072,7 +2077,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua:11
 #: input:11 standard
 msgid "New World"
-msgstr ""
+msgstr "Uusi maailma"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/new_world.lua:13
@@ -2084,7 +2089,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:11
 #: input:11 standard
 msgid "Poor Hamlet"
-msgstr ""
+msgstr "Köyhä kylä"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:13
@@ -2100,7 +2105,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 #: input:51 standard
 msgid "Be careful"
-msgstr ""
+msgstr "Varo"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:51
 #: input:51 standard
@@ -2144,12 +2149,12 @@ msgstr ""
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:108
 #: input:108 standard
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Varasto puhdistettu!"
 
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:145
 #: input:145 standard
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s on puhdistettu!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/tidy_warehouses.lua:147
@@ -2183,13 +2188,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/village.lua:11
 #: input:11 standard
 msgid "Village"
-msgstr ""
+msgstr "Kylä"
 
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/sumatran_tribe.wad/scripting/starting_conditions/village.lua:13
 #: input:13 standard
 msgid "Start the game with a peaceful village"
-msgstr ""
+msgstr "Aloita peli rauhallisella kylällä"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:8 input:8
@@ -2203,7 +2208,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:83 input:83
 #: input:91 standard
 msgid "sleeping"
-msgstr ""
+msgstr "nukkumassa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:99 input:99
@@ -2226,6 +2231,8 @@ msgctxt "sumatran_building"
 msgid "upgrading warrior attack from level 2 to level 3"
 msgstr ""
 
+#. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
+#. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
@@ -2843,7 +2850,7 @@ msgstr ""
 #: standard
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Vesi on elämälle tärkeää!"
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Water, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:188 input:188
@@ -3022,6 +3029,9 @@ msgctxt "sumatran_ware"
 msgid "Copper ore can be smelted into copper in a furnace."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 2
@@ -3473,6 +3483,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:351
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:377 input:351
 #: input:377 standard
@@ -3485,14 +3497,14 @@ msgstr ""
 #: standard
 msgctxt "ware"
 msgid "Iron ore can be smelted into iron in a furnace."
-msgstr ""
+msgstr "Rautamalmia voidaan sulattaa raudaksi sulattamossa."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:375 input:375
 #: standard
 msgctxt "ware"
 msgid "Iron is needed for tool and weapon production."
-msgstr ""
+msgstr "Rautaa tarvitaan työkalujen ja aseiden tuotantoon."
 
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:388 input:388
@@ -3526,6 +3538,12 @@ msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Kitchen Tools, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Fire Tongs, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Buckets, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 2
@@ -4295,6 +4313,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Sheet
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper Sheet
+#. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:531
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:542 input:531
 #: input:542 standard
@@ -4366,6 +4386,8 @@ msgid ""
 "and palm wine – to train warriors in defense."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
+#. TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
@@ -4826,6 +4848,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
 #. TRANSLATORS: Helptext for a Sumatran worker: Farmer
 #. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
+#. TRANSLATORS: Helptext for a Sumatran worker: Farmer
+#. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:749
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:756 input:749
 #: input:756 standard
@@ -4854,6 +4878,8 @@ msgctxt "sumatran_worker"
 msgid "Discovers resources for mining."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran worker: Miner
+#. TRANSLATORS: Helptext for a Sumatran worker: Master Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Master Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Miner
@@ -5289,11 +5315,13 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
 #. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
+#. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
+#. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:891
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:898 input:891
 #: input:898 standard
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Tuhoutuneen laivan jäännöksiä."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Palm Leaves
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:905 input:905
@@ -5534,13 +5562,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1148 input:1148
 #: standard
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Täällä on paljon hiiltä."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1159 input:1159
 #: standard
 msgid "There is a lot of iron ore here."
-msgstr ""
+msgstr "Täällä on paljon rautamalmia."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Copper-Gold, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1170 input:1170
@@ -5558,7 +5586,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1189 input:1189
 #: standard
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "Laivaa rakennetaan tässä paikassa."
 
 #. TRANSLATORS: Lore helptext for a Sumatran production site: Headquarters
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1201 input:1201
@@ -5641,6 +5669,18 @@ msgid ""
 "needs %3$s, %4$s or %5$s on average to cut down one tree respectively."
 msgstr ""
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s Tent, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Winery, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Shipyard, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 2
@@ -6946,7 +6986,7 @@ msgstr ""
 #: standard
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Tutkii tuntematonta aluetta."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Reed Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1376 input:1376
@@ -6955,6 +6995,8 @@ msgctxt "sumatran_building"
 msgid "Produces reed."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
+#. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
 #. TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
 #. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
 #. TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
@@ -7523,6 +7565,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1504
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1514 input:1504
 #: input:1514 standard
@@ -7649,6 +7693,8 @@ msgctxt "sumatran_building"
 msgid "The miner needs %1% on average to produce one piece of ore."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
@@ -8028,6 +8074,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1584
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1594 input:1584
 #: input:1594 standard
@@ -8056,6 +8104,8 @@ msgid ""
 "needed."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
@@ -8339,6 +8389,12 @@ msgctxt "sumatran_building"
 msgid "Complete training of one soldier takes %s on average."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Guard Post
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Small Sentry
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Big Sentry
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Watchtower
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Fortified Tower
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Fort
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Guard Post
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Small Sentry
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Big Sentry
@@ -9307,6 +9363,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Sumatran military site: Big Sentry
 #. TRANSLATORS: Note helptext for a Sumatran military site: Watchtower
 #. TRANSLATORS: Note helptext for a Sumatran military site: Fort
+#. TRANSLATORS: Note helptext for a Sumatran military site: Guard Post
+#. TRANSLATORS: Note helptext for a Sumatran military site: Small Sentry
+#. TRANSLATORS: Note helptext for a Sumatran military site: Big Sentry
+#. TRANSLATORS: Note helptext for a Sumatran military site: Watchtower
+#. TRANSLATORS: Note helptext for a Sumatran military site: Fort
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1664
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1673
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1682
@@ -9656,14 +9717,14 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/wares/copper/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Copper"
-msgstr ""
+msgstr "Kupari"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/copper_ore/init.lua:8 input:8
 #: standard
 msgctxt "ware"
 msgid "Copper Ore"
-msgstr ""
+msgstr "Kuparimalmi"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/copper_sheet/init.lua:8 input:8

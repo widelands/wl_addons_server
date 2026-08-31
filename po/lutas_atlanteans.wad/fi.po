@@ -5,15 +5,16 @@
 #
 # Translators:
 # Atte Timonen, 2025
+# Jaakko Muilu, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-08-30 03:25+0200\n"
+"POT-Creation-Date: 2026-08-31 03:24+0200\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
-"Last-Translator: Atte Timonen, 2025\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -42,14 +43,14 @@ msgstr ""
 #: standard
 msgctxt "resource_indicator"
 msgid "Some Coal"
-msgstr ""
+msgstr "Vähän hiiltä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_coal_2/init.lua:8 input:8
 #: standard
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr ""
+msgstr "Paljon hiiltä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_gold_1/init.lua:8 input:8
@@ -83,7 +84,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/immovables/resi_none/init.lua:8 input:8 standard
 msgctxt "resource_indicator"
 msgid "No Resources"
-msgstr ""
+msgstr "Ei resursseja"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/lutas_atlanteans.wad/immovables/resi_stones_1/init.lua:8 input:8
@@ -104,7 +105,7 @@ msgstr ""
 #: standard
 msgctxt "resource_indicator"
 msgid "Water"
-msgstr ""
+msgstr "Vettä"
 
 #: addons/lutas_atlanteans.wad/immovables/seashell1/init.lua:7
 #: addons/lutas_atlanteans.wad/immovables/seashell2/init.lua:7 input:7 standard
@@ -116,7 +117,7 @@ msgstr ""
 #: input:8 standard
 msgctxt "immovable"
 msgid "Ship Under Construction"
-msgstr ""
+msgstr "Laiva rakenteilla"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/militarysites/diamond_castle/init.lua:8 input:8
@@ -402,19 +403,19 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:87 input:53 input:65
 #: input:75 input:87 standard
 msgid "mining coal"
-msgstr ""
+msgstr "hiilikaivos"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:94
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:106 input:94
 #: input:106 standard
 msgid "No Coal"
-msgstr ""
+msgstr "Ei hiiltä"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:95
 #: addons/lutas_atlanteans.wad/mines/low_coalmine/init.lua:107 input:95
 #: input:107 standard
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Hiilen pääsuoni ehtyi"
 
 #: addons/lutas_atlanteans.wad/mines/coalmine/init.lua:97 input:97 standard
 msgctxt "lutas_atlanteans_building"
@@ -449,7 +450,7 @@ msgstr ""
 #: input:45 input:46 input:50 input:52 input:53 input:55 input:57 input:60
 #: input:65 input:69 input:90 standard
 msgid "working"
-msgstr ""
+msgstr "työskentelee"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/lutas_atlanteans.wad/mines/crystalmine/init.lua:63
@@ -458,7 +459,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_crystalmine/init.lua:119 input:63
 #: input:75 input:107 input:119 standard
 msgid "mining granite"
-msgstr ""
+msgstr "graniitin louhinta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
 #: addons/lutas_atlanteans.wad/mines/crystalmine/init.lua:79
@@ -551,13 +552,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:98 input:86 input:98
 #: standard
 msgid "No Iron"
-msgstr ""
+msgstr "Ei rautaa"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:87
 #: addons/lutas_atlanteans.wad/mines/low_ironmine/init.lua:99 input:87 input:99
 #: standard
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Raudan pääsuoni ehtyi"
 
 #: addons/lutas_atlanteans.wad/mines/ironmine/init.lua:89 input:89 standard
 msgctxt "lutas_atlanteans_building"
@@ -648,6 +649,8 @@ msgid ""
 "Hunts animals to produce meat. Hunters working at this house can hunt "
 "crocodiles too."
 msgstr ""
+"Metsästä eläimiä lihantuotantoa varten. Tässä talossa työskentelevät "
+"metsästäjät voivat metsästää myös krokotiileja."
 
 #. TRANSLATORS: Note helptext for an Atlantean production site: Crocodile Hunter’s House, part 1
 #: addons/lutas_atlanteans.wad/postload.lua:53 input:53 standard
@@ -675,6 +678,16 @@ msgid ""
 "average to produce one meat."
 msgstr ""
 
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Quarry, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Woodcutter's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Forester's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Fisher's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Hunter's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Scout's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Temple, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Ferry Yard, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Shipyard, part 2
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Quarry, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Woodcutter's House, part 2
@@ -1631,13 +1644,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:71 input:70
 #: input:71 standard
 msgid "No Fields"
-msgstr ""
+msgstr "Ei peltoja"
 
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:71
 #: addons/lutas_atlanteans.wad/productionsites/farm/init.lua:72 input:71
 #: input:72 standard
 msgid "Out of Fields"
-msgstr ""
+msgstr "Pellot loppu"
 
 #: addons/lutas_atlanteans.wad/productionsites/blackroot_farm/init.lua:72
 #: input:72 standard
@@ -1672,25 +1685,25 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/hunters_house/init.lua:42
 #: input:32 input:42 standard
 msgid "hunting"
-msgstr ""
+msgstr "metsästys"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:43
 #: input:43 standard
 msgid "hunting crocodile"
-msgstr ""
+msgstr "krokotiilin metsästys"
 
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:51
 #: input:51 standard
 msgid "No Crocodiles"
-msgstr ""
+msgstr "Ei krokotiileja"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:53
 #: addons/lutas_atlanteans.wad/productionsites/hunters_house/init.lua:57
 #: input:53 input:57 standard
 msgid "Out of Game"
-msgstr ""
+msgstr "Riista loppu"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/lutas_atlanteans.wad/productionsites/crocodile_hunters_house/init.lua:55
@@ -1749,13 +1762,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/fishers_house/init.lua:80
 #: input:53 input:80 standard
 msgid "No Fish"
-msgstr ""
+msgstr "Ei kalaa"
 
 #: addons/lutas_atlanteans.wad/productionsites/fishbreeders_house/init.lua:54
 #: addons/lutas_atlanteans.wad/productionsites/fishers_house/init.lua:81
 #: input:54 input:81 standard
 msgid "Out of Fish"
-msgstr ""
+msgstr "Kalat loppu"
 
 #: addons/lutas_atlanteans.wad/productionsites/fishbreeders_house/init.lua:55
 #: input:55 standard
@@ -1784,7 +1797,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/fishers_house/init.lua:55
 #: input:42 input:55 standard
 msgid "fishing"
-msgstr ""
+msgstr "kalastus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start collecting seashells because ...
 #: addons/lutas_atlanteans.wad/productionsites/fishers_house/init.lua:67
@@ -1812,7 +1825,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/foresters_house/init.lua:44
 #: input:44 standard
 msgid "planting trees"
-msgstr ""
+msgstr "puiden istutus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/gold_spinning_mill/init.lua:8
@@ -1851,7 +1864,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/hunters_house/init.lua:55
 #: input:55 standard
 msgid "No Game"
-msgstr ""
+msgstr "Ei riistaa"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/lutas_atlanteans.wad/productionsites/hunters_house/init.lua:59
@@ -1903,12 +1916,12 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/quarry/init.lua:49 input:49
 #: standard
 msgid "No Rocks"
-msgstr ""
+msgstr "Ei kiveä"
 
 #: addons/lutas_atlanteans.wad/productionsites/quarry/init.lua:50 input:50
 #: standard
 msgid "Out of Rocks"
-msgstr ""
+msgstr "Kivet loppu"
 
 #: addons/lutas_atlanteans.wad/productionsites/quarry/init.lua:51 input:51
 #: standard
@@ -1928,7 +1941,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/sawmill/init.lua:57 input:57
 #: standard
 msgid "sawing logs"
-msgstr ""
+msgstr "tukkipuun sahaaminen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/scouts_house/init.lua:8 input:8
@@ -1942,7 +1955,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/scouts_house/init.lua:67
 #: input:52 input:67 standard
 msgid "scouting"
-msgstr ""
+msgstr "tiedustella"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/shipyard/init.lua:8 input:8
@@ -1955,7 +1968,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/shipyard/init.lua:83 input:83
 #: standard
 msgid "constructing a ship"
-msgstr ""
+msgstr "laivanrakennus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/smelting_works/init.lua:8
@@ -1969,13 +1982,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/smelting_works/init.lua:78
 #: input:64 input:78 standard
 msgid "smelting iron"
-msgstr ""
+msgstr "raudan sulatus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/lutas_atlanteans.wad/productionsites/smelting_works/init.lua:92
 #: input:92 standard
 msgid "smelting gold"
-msgstr ""
+msgstr "kullan sulatus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/smokery/init.lua:8 input:8
@@ -1988,14 +2001,14 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/smokery/init.lua:70 input:70
 #: standard
 msgid "smoking meat"
-msgstr ""
+msgstr "lihan savustaminen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/lutas_atlanteans.wad/productionsites/smokery/init.lua:83
 #: addons/lutas_atlanteans.wad/productionsites/smokery/init.lua:95 input:83
 #: input:95 standard
 msgid "smoking fish"
-msgstr ""
+msgstr "kalan savustaminen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/productionsites/spiderfarm/init.lua:8 input:8
@@ -2154,12 +2167,12 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/well/init.lua:58 input:58
 #: standard
 msgid "No Water"
-msgstr ""
+msgstr "Ei vettä"
 
 #: addons/lutas_atlanteans.wad/productionsites/well/init.lua:59 input:59
 #: standard
 msgid "Out of Water"
-msgstr ""
+msgstr "Vesi loppu"
 
 #: addons/lutas_atlanteans.wad/productionsites/well/init.lua:60 input:60
 #: standard
@@ -2178,17 +2191,17 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/productionsites/woodcutters_house/init.lua:39
 #: input:39 standard
 msgid "felling trees"
-msgstr ""
+msgstr "puunkaato"
 
 #: addons/lutas_atlanteans.wad/productionsites/woodcutters_house/init.lua:52
 #: input:52 standard
 msgid "No Trees"
-msgstr ""
+msgstr "Ei puita"
 
 #: addons/lutas_atlanteans.wad/productionsites/woodcutters_house/init.lua:53
 #: input:53 standard
 msgid "Out of Trees"
-msgstr ""
+msgstr "Puut loppu"
 
 #: addons/lutas_atlanteans.wad/productionsites/woodcutters_house/init.lua:54
 #: input:54 standard
@@ -2234,7 +2247,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/discovery.lua:11
 #: input:11 standard
 msgid "Discovery"
-msgstr ""
+msgstr "Löydös"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/discovery.lua:13
@@ -2259,7 +2272,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/headquarters.lua:11
 #: input:11 standard
 msgid "Headquarters"
-msgstr ""
+msgstr "Päämajat"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/headquarters.lua:13
@@ -2271,7 +2284,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/new_world.lua:11
 #: input:11 standard
 msgid "New World"
-msgstr ""
+msgstr "Uusi maailma"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/new_world.lua:13
@@ -2283,7 +2296,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:11
 #: input:11 standard
 msgid "Poor Hamlet"
-msgstr ""
+msgstr "Köyhä kylä"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:13
@@ -2296,7 +2309,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 #: input:49 standard
 msgid "Be careful"
-msgstr ""
+msgstr "Varo"
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/poor_hamlet.lua:49
 #: input:49 standard
@@ -2339,12 +2352,12 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:99
 #: input:99 standard
 msgid "Warehouse cleaned!"
-msgstr ""
+msgstr "Varasto puhdistettu!"
 
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:176
 #: input:176 standard
 msgid "%1$s has been cleaned!"
-msgstr ""
+msgstr "%1$s on puhdistettu!"
 
 #. TRANSLATORS: First placeholder is a number around 120, second placeholder is a number around 380.
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/tidy_warehouses.lua:178
@@ -2378,13 +2391,13 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/village.lua:11
 #: input:11 standard
 msgid "Village"
-msgstr ""
+msgstr "Kylä"
 
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/lutas_atlanteans.wad/scripting/starting_conditions/village.lua:13
 #: input:13 standard
 msgid "Start the game with a peaceful village"
-msgstr ""
+msgstr "Aloita peli rauhallisella kylällä"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/lutas_atlanteans.wad/trainingsites/dungeon/init.lua:8 input:8
@@ -2399,7 +2412,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/trainingsites/temple/init.lua:66 input:58
 #: input:61 input:66 standard
 msgid "sleeping"
-msgstr ""
+msgstr "nukkumassa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/lutas_atlanteans.wad/trainingsites/dungeon/init.lua:69 input:69
@@ -2603,6 +2616,8 @@ msgstr ""
 #. TRANSLATORS: Atlantean training site tooltip when it has no soldier assigned
 #. TRANSLATORS: Atlantean training site tooltip when it has no soldiers assigned
 #. TRANSLATORS: Atlantean training site tooltip when it has no soldier assigned
+#. TRANSLATORS: Atlantean training site tooltip when it has no soldiers assigned
+#. TRANSLATORS: Atlantean training site tooltip when it has no soldier assigned
 #: addons/lutas_atlanteans.wad/trainingsites/dungeon/init.lua:130
 #: addons/lutas_atlanteans.wad/trainingsites/labyrinth/init.lua:125
 #: addons/lutas_atlanteans.wad/trainingsites/temple/init.lua:107 input:107
@@ -2611,6 +2626,8 @@ msgctxt "lutas_atlanteans_building"
 msgid "No soldier to train!"
 msgstr ""
 
+#. TRANSLATORS: Atlantean training site tooltip when none of the present soldiers match the current training program
+#. TRANSLATORS: Atlantean training site tooltip when none of the present soldier match the current training program
 #. TRANSLATORS: Atlantean training site tooltip when none of the present soldiers match the current training program
 #. TRANSLATORS: Atlantean training site tooltip when none of the present soldier match the current training program
 #. TRANSLATORS: Atlantean training site tooltip when none of the present soldiers match the current training program
@@ -3359,7 +3376,7 @@ msgstr ""
 #: input:206 standard
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Vesi on elämälle tärkeää!"
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean ware: Water, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:208
@@ -4160,12 +4177,16 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Destroyed Building
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Ashes
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Destroyed Building
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Ashes
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Destroyed Building
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:825
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:916
 #: input:825 input:916 standard
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Tuhoutuneen laivan jäännöksiä."
 
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 1
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 2
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 1
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 2
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 1
@@ -4523,12 +4544,16 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:846
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:881
 #: input:846 input:881 standard
 msgid "This field has just been planted."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
@@ -4885,12 +4910,16 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:867
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:902
 #: input:867 input:902 standard
 msgid "This field is ready for harvesting."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
@@ -5141,7 +5170,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:984
 #: input:984 standard
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Täällä on paljon hiiltä."
 
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean resource indicator: Iron, part 2
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:995
@@ -5165,7 +5194,7 @@ msgstr ""
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1025
 #: input:1025 standard
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "Laivaa rakennetaan tässä paikassa."
 
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Dead Tree
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1033
@@ -5173,6 +5202,9 @@ msgstr ""
 msgid "The remains of an old tree."
 msgstr ""
 
+#. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Balsa Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Ironwood Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Rubber Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Balsa Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Ironwood Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Rubber Tree
@@ -5759,7 +5791,7 @@ msgstr ""
 #: input:1273 standard
 msgctxt "building"
 msgid "Hunts animals to produce meat."
-msgstr ""
+msgstr "Tuota lihaa metsästämällä eläimiä."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Hunter's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1275
@@ -5881,7 +5913,7 @@ msgstr ""
 #: input:1327 standard
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Tutkii tuntematonta aluetta."
 
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Scout's House
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1329
@@ -6198,6 +6230,8 @@ msgid ""
 "trident!"
 msgstr ""
 
+#. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Weapon Smithy
+#. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Armor Smithy
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Weapon Smithy
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Armor Smithy
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Weapon Smithy
@@ -6770,6 +6804,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Iron Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Iron Mine
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Iron Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1562
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1650
 #: input:1562 input:1650 standard
@@ -6777,6 +6813,8 @@ msgctxt "building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr ""
 
+#. TRANSLATORS: Lore helptext for an Atlantean production site: Low Iron Mine
+#. TRANSLATORS: Lore helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Lore helptext for an Atlantean production site: Low Iron Mine
 #. TRANSLATORS: Lore helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Lore helptext for an Atlantean production site: Low Iron Mine
@@ -7308,6 +7346,10 @@ msgstr ""
 #. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Coal Mine
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site:  Coal Mine
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site:  Iron Mine
+#. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Iron Mine
+#. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Coal Mine
+#. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site:  Coal Mine
+#. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site:  Iron Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1569
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1585
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1641
@@ -7317,6 +7359,8 @@ msgctxt "lutas_atlanteans_building"
 msgid "Song from the miners’ guild"
 msgstr ""
 
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Iron Mine
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Iron Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Iron Mine
@@ -7675,6 +7719,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Coal Mine
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Coal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1578
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1634
 #: input:1578 input:1634 standard
@@ -7682,6 +7728,8 @@ msgctxt "building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr ""
 
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Coal Mine
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Coal Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Coal Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Coal Mine
@@ -7865,6 +7913,8 @@ msgid ""
 "If the food supply is steady, this mine can produce coal in %s on average."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Crystal Mine
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Crystal Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Crystal Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Crystal Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Crystal Mine
@@ -8238,6 +8288,8 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Crystal Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Crystal Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Crystal Mine
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Crystal Mine
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1600
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1627
 #: input:1600 input:1627 standard
@@ -8250,6 +8302,8 @@ msgid ""
 "diamond takes %6$s on average."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Gold Mine
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Gold Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Gold Mine
@@ -8622,6 +8676,8 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Gold Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Gold Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Gold Mine
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Gold Mine
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Gold Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1613
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1675
 #: input:1613 input:1675 standard
@@ -8649,6 +8705,8 @@ msgctxt "lutas_atlanteans_building"
 msgid "First part of the Atlantean almanach on architecture"
 msgstr ""
 
+#. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Coal Mine
+#. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Coal Mine
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Coal Mine
@@ -9148,6 +9206,9 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean training site: Dungeon, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean training site: Labyrinth, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Temple, part 3
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean training site: Dungeon, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean training site: Labyrinth, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Temple, part 3
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1697
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1719
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1740
@@ -9238,6 +9299,12 @@ msgid ""
 "priestess has to walk."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Guard
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Big Guardhall
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Low Tower
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Round Tower
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Cone Shaped Tower
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Diamond Castle
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Guard
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Big Guardhall
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Low Tower
@@ -10293,6 +10360,12 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Round Tower
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Cone Shaped Tower
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Diamond Castle
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Guard
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Big Guardhall
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Low Tower
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Round Tower
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Cone Shaped Tower
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Diamond Castle
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1752
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1766
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1779
@@ -10415,6 +10488,8 @@ msgctxt "building"
 msgid "Needs water nearby. Be aware ferries carry wares only, no workers."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Ferry Yard, part 2
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Ferry Yard, part 2
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Ferry Yard, part 2

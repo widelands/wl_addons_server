@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:18+0200\n"
+"POT-Creation-Date: 2026-08-31 03:19+0200\n"
 "PO-Revision-Date: 2025-09-27 12:24+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -22,7 +26,7 @@ msgstr ""
 msgid ""
 "This is the story of the rise of Pachiquima, an amazon from a small mountain "
 "village."
-msgstr ""
+msgstr "Tämä tarina on Pachiquiman noususta, amatsoni pienestä vuorikylästä."
 
 #: addons/Amazon_campaign.wad/addon:9 input:9 standard
 msgid "Amazon_campaign"
@@ -30,58 +34,62 @@ msgstr ""
 
 #: addons/Amazon_campaign.wad/campaigns.lua:18 input:18 standard
 msgid "Medium."
-msgstr ""
+msgstr "Kohtalainen"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:30 input:30 standard
 msgid "The Rise to Power"
-msgstr ""
+msgstr "Valtaannousu"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:32 input:32 standard
 msgid "Introduces the amazons"
-msgstr ""
+msgstr "Amatsonien esittely"
 
 #. TRANSLATORS: A campaign difficulty (easiest of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:37 input:37 standard
 msgid "Easy"
-msgstr ""
+msgstr "Helppo"
 
 #. TRANSLATORS: A campaign difficulty (medium of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:39 input:39 standard
 msgid "Medium"
-msgstr ""
+msgstr "Kohtalainen"
 
 #. TRANSLATORS: A campaign difficulty (hardest of three options)
 #: addons/Amazon_campaign.wad/campaigns.lua:41 input:41 standard
 msgid "Hard"
-msgstr ""
+msgstr "Vaikea"
 
 #: addons/Amazon_campaign.wad/campaigns.lua:45 input:45 standard
 msgid ""
 "This is the story of Pachiquima, an amazon woman from a small mountain "
 "village. We follow her on her journey through life and her rise to power."
 msgstr ""
+"Tämä tarina on amatsoninaisesta Pachiquimasta pienestä vuorikylästä. Me "
+"seuraamme hänen matkaansa läpi elämän ja hänen valtaannousuun."
 
 #: input:6 input:10 standard
 msgid ""
 "The first mission in the Amazon campaign. This will teach you the basics of "
 "their unique economy and start the story of Pachiquima."
 msgstr ""
+"Amazonin kampanjan ensimmäinen tehtävä. Tämä opettaa heidän ainutlaatuisen "
+"taloutensa perusteita ja aloittaa Pachiquiman tarinan."
 
 #: input:8 input:10 standard
 msgid "Welcome to the Jungle"
-msgstr ""
+msgstr "Tervetuloa viidakkoon"
 
 #: input:38 input:50 standard
 msgid "Build the following:"
-msgstr ""
+msgstr "Rakenna seuraavaa:"
 
 #: input:60 standard
 msgid "Collect wood from rare trees"
-msgstr ""
+msgstr "Kerää puuta harvinaisista puista"
 
 #: input:74 standard
 msgid "We need to expand our territory to reach the mines."
-msgstr ""
+msgstr "Kaivoksiin on päästävä laajentamalla aluettamme."
 
 #: input:75 standard
 msgid ""
@@ -89,6 +97,8 @@ msgid ""
 "of a tree! This does mean it can only be build on a construction site that "
 "has a tree on it."
 msgstr ""
+"Puuvartijat ovat amatsoneille ainutlaatuisia. He voivat rakentaa rakennuksen "
+"puunlatvaan! Eli se voidaan rakentaa vain rakennusalueelle, jossa on puu."
 
 #: input:76 standard
 msgid ""
@@ -106,19 +116,19 @@ msgstr ""
 
 #: input:98 standard
 msgid "Start our food production."
-msgstr ""
+msgstr "Aloita ruoantuotantomme."
 
 #: input:111 standard
 msgid "Move to the east"
-msgstr ""
+msgstr "Siirry itään"
 
 #: input:122 standard
 msgid "Building the warehouse"
-msgstr ""
+msgstr "Rakennetaan varastoa"
 
 #: input:131 standard
 msgid "Time to build a ship"
-msgstr ""
+msgstr "Aika rakentaa laiva"
 
 #: input:143 standard
 msgid ""
@@ -127,6 +137,9 @@ msgid ""
 "territory. Kapiqori is the head of one such small village, located on a "
 "mountain."
 msgstr ""
+"Amatsonit asuvat kylissä Amazon-joen varrella. Niitä kyliä on monta, mutta "
+"ne ovat pienikokoisia ja hajallaan pitkin laajaa aluetta. Kapiqori on yksi "
+"niistä kylistä, joka sijaitsee vuorella."
 
 #: input:144 standard
 msgid ""
@@ -134,6 +147,9 @@ msgid ""
 "is melting, leading to more water flowing down. Although this is good for "
 "the trees, the extra water also causes mudflows."
 msgstr ""
+"Kyläläiset ovat hiljattain alkaneet huolestua. Lumi vuorilla on sulamassa, "
+"mikä saa lisää vettä valumaan alas. Vaikka se on hyväksi puille, lisävesi "
+"aiheuttaa myös mutavyöryjä."
 
 #: input:145 standard
 msgid ""
@@ -143,6 +159,11 @@ msgid ""
 "Kapiqori believes this is because Ayllu Apu, the protector god of the "
 "mountain, has become enraged."
 msgstr ""
+"Kapiqoria myös huolettaa. Paikallisista kultakaivoksista on tullut liian "
+"kuumia työntekoon sulavan lumen päällä. Kulta on hyvin tärkeää "
+"amatsoniheimolle. He uskovat sen olevan aurinkojumala Intin kyyneliä, ja "
+"siten pyhää. Kapiqori uskoo sen johtuvan Ayllu Apusta, vuoren "
+"suojelusjumalasta, joka on suuttunut."
 
 #: input:152 standard
 msgid ""
@@ -151,6 +172,10 @@ msgid ""
 "however, have no knowledge of the workings of a volcano and blame it on the "
 "gods."
 msgstr ""
+"Kuten näkyy, vuori onkin tulivuori, mikä on tulossa yhä enemmän "
+"aktiivisemmaksi. Se selittää lämpenevät kaivokset ja sulavan lumen. "
+"Amatsonit eivät kuitenkaan tiedä tulivuoren toiminnasta, vaan syyttävät "
+"siitä jumalia."
 
 #: input:159 standard
 msgid ""
@@ -177,11 +202,11 @@ msgstr ""
 
 #: input:250 standard
 msgid " minutes"
-msgstr ""
+msgstr "minuuttia"
 
 #: input:251 standard
 msgid " to reach the outpost."
-msgstr ""
+msgstr "ulkovartioon pääsemiseksi"
 
 #. TRANSLATORS: scout
 #. TRANSLATORS: pachiquima
@@ -199,7 +224,7 @@ msgstr ""
 #. TRANSLATORS: flavor text
 #: input:390 standard
 msgid "You Have Lost"
-msgstr ""
+msgstr "Sinä hävisit"
 
 #. TRANSLATORS: pachiquima
 #. TRANSLATORS: pachiquima
@@ -208,4 +233,4 @@ msgstr ""
 #. TRANSLATORS: flavor text
 #: input:446 standard
 msgid "Victory"
-msgstr ""
+msgstr "Voitto"

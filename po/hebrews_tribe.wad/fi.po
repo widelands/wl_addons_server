@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-08-30 03:25+0200\n"
+"POT-Creation-Date: 2026-08-31 03:24+0200\n"
 "PO-Revision-Date: 2026-02-17 08:07+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -320,11 +324,13 @@ msgstr ""
 #. TRANSLATORS: Short for "No Trees" for a resource
 #. TRANSLATORS: Short for "No Tree to Collect Branches" for a resource
 #. TRANSLATORS: Short for "No Trees" for a resource
+#. TRANSLATORS: Short for "No Tree to Collect Branches" for a resource
+#. TRANSLATORS: Short for "No Trees" for a resource
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/branch_collectors_hut/init.lua:55
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/clearing_tent/init.lua:54
 #: input:54 input:55 standard
 msgid "No Trees"
-msgstr ""
+msgstr "Ei puita"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/branch_collectors_hut/init.lua:56
 #: input:56 standard
@@ -379,7 +385,7 @@ msgstr ""
 #: input:44 input:47 input:49 input:50 input:51 input:52 input:54 input:55
 #: input:58 input:59 input:71 input:92 standard
 msgid "working"
-msgstr ""
+msgstr "työskentelee"
 
 #. TRANSLATORS: Completed/Skipped/Did not start butchering sheep because ...
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/butchery/init.lua:57
@@ -398,7 +404,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/clay_furnace/init.lua:51
 #: input:51 standard
 msgid "smelting copper"
-msgstr ""
+msgstr "kuparin sulatus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/clay_pit/init.lua:8
@@ -411,7 +417,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/clay_pit/init.lua:49
 #: input:49 standard
 msgid "making clay"
-msgstr ""
+msgstr "savenvalmistus"
 
 #. TRANSLATORS: Short for "No Level Ground" for clay pits
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/clay_pit/init.lua:66
@@ -478,7 +484,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/coppermine/init.lua:69
 #: input:69 standard
 msgid "Main Copper Vein Exhausted"
-msgstr ""
+msgstr "Kuparin pääsuoni ehtyi"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/coppermine/init.lua:71
 #: input:71 standard
@@ -538,27 +544,27 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/farm/init.lua:55
 #: input:55 standard
 msgid "planting wheat"
-msgstr ""
+msgstr "viljan istutus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/farm/init.lua:64
 #: input:64 standard
 msgid "harvesting wheat"
-msgstr ""
+msgstr "viljan korjuu"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/farm/init.lua:74
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/oliveplant/init.lua:75
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/vineyard/init.lua:76
 #: input:74 input:75 input:76 standard
 msgid "No Fields"
-msgstr ""
+msgstr "Ei peltoja"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/farm/init.lua:75
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/oliveplant/init.lua:76
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/vineyard/init.lua:77
 #: input:75 input:76 input:77 standard
 msgid "Out of Fields"
-msgstr ""
+msgstr "Pellot loppu"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/farm/init.lua:76
 #: input:76 standard
@@ -577,17 +583,17 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/fishers_hut/init.lua:45
 #: input:45 standard
 msgid "fishing"
-msgstr ""
+msgstr "kalastus"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/fishers_hut/init.lua:54
 #: input:54 standard
 msgid "No Fish"
-msgstr ""
+msgstr "Ei kalaa"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/fishers_hut/init.lua:55
 #: input:55 standard
 msgid "Out of Fish"
-msgstr ""
+msgstr "Kalat loppu"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/fishers_hut/init.lua:56
 #: input:56 standard
@@ -679,7 +685,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/granitemine/init.lua:65
 #: input:54 input:65 standard
 msgid "mining granite"
-msgstr ""
+msgstr "graniitin louhinta"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/granitemine/init.lua:83
 #: input:83 standard
@@ -724,7 +730,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/mill/init.lua:70
 #: input:70 standard
 msgid "grinding wheat"
-msgstr ""
+msgstr "viljan jauhaminen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding olives because ...
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/mill/init.lua:82
@@ -775,12 +781,12 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/quarry/init.lua:52
 #: input:52 standard
 msgid "No Rocks"
-msgstr ""
+msgstr "Ei kiveä"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/quarry/init.lua:53
 #: input:53 standard
 msgid "Out of Rocks"
-msgstr ""
+msgstr "Kivet loppu"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/quarry/init.lua:54
 #: input:54 standard
@@ -801,7 +807,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/scouts_house/init.lua:59
 #: input:51 input:59 standard
 msgid "scouting"
-msgstr ""
+msgstr "tiedustella"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/shepherds/init.lua:8
@@ -820,7 +826,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/shepherds/init.lua:76
 #: input:76 standard
 msgid "hunting"
-msgstr ""
+msgstr "metsästys"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/shepherds/init.lua:86
@@ -839,7 +845,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/shipyard/init.lua:85
 #: input:85 standard
 msgid "constructing a ship"
-msgstr ""
+msgstr "laivanrakennus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/sofers_workshop/init.lua:8
@@ -950,7 +956,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/weaving_mill/init.lua:60
 #: input:60 standard
 msgid "weaving"
-msgstr ""
+msgstr "kutoaa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felting because ...
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/weaving_mill/init.lua:72
@@ -968,12 +974,12 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/well/init.lua:56
 #: input:56 standard
 msgid "No Water"
-msgstr ""
+msgstr "Ei vettä"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/well/init.lua:57
 #: input:57 standard
 msgid "Out of Water"
-msgstr ""
+msgstr "Vesi loppu"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/productionsites/hebrews/well/init.lua:58
 #: input:58 standard
@@ -1077,7 +1083,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/buildings/trainingsites/hebrews/trainingcamp/init.lua:57
 #: input:57 standard
 msgid "sleeping"
-msgstr ""
+msgstr "nukkumassa"
 
 #: addons/hebrews_tribe.wad/tribes/buildings/trainingsites/hebrews/trainingcamp/init.lua:64
 #: input:64 standard
@@ -1176,7 +1182,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/discovery.lua:11
 #: input:11 standard
 msgid "Discovery"
-msgstr ""
+msgstr "Löydös"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/discovery.lua:13
@@ -1201,7 +1207,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/headquarters.lua:11
 #: input:11 standard
 msgid "Headquarters"
-msgstr ""
+msgstr "Päämajat"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/headquarters.lua:13
@@ -1213,7 +1219,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/new_world.lua:11
 #: input:11 standard
 msgid "New World"
-msgstr ""
+msgstr "Uusi maailma"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/new_world.lua:13
@@ -1225,7 +1231,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/poor_hamlet.lua:11
 #: input:11 standard
 msgid "Poor Hamlet"
-msgstr ""
+msgstr "Köyhä kylä"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/poor_hamlet.lua:13
@@ -1238,7 +1244,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/poor_hamlet.lua:43
 #: input:43 standard
 msgid "Be careful"
-msgstr ""
+msgstr "Varo"
 
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/poor_hamlet.lua:43
 #: input:43 standard
@@ -1278,13 +1284,13 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/village.lua:11
 #: input:11 standard
 msgid "Village"
-msgstr ""
+msgstr "Kylä"
 
 #. TRANSLATORS: This is the tooltip for the "Village" starting condition
 #: addons/hebrews_tribe.wad/tribes/hebrews/starting_conditions/village.lua:13
 #: input:13 standard
 msgid "Start the game with a peaceful village"
-msgstr ""
+msgstr "Aloita peli rauhallisella kylällä"
 
 #: addons/hebrews_tribe.wad/tribes/hebrews/tips.lua:4 input:4 standard
 msgid ""
@@ -1363,7 +1369,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:150 input:150 standard
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Vesi on elämälle tärkeää!"
 
 #. TRANSLATORS: Helptext for a Hebrew ware: Water, part 2
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:152 input:152 standard
@@ -1940,11 +1946,13 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Hebrew immovable: Destroyed Building
 #. TRANSLATORS: Helptext for a Hebrew immovable: Ashes
 #. TRANSLATORS: Helptext for a Hebrew immovable: Destroyed Building
+#. TRANSLATORS: Helptext for a Hebrew immovable: Ashes
+#. TRANSLATORS: Helptext for a Hebrew immovable: Destroyed Building
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:627
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:634 input:627 input:634
 #: standard
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Tuhoutuneen laivan jäännöksiä."
 
 #. TRANSLATORS: Helptext for a Hebrew immovable: Wheat field
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:641 input:641 standard
@@ -2041,6 +2049,9 @@ msgstr ""
 msgid "The remains of an old tree."
 msgstr ""
 
+#. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Balsa Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Ironwood Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Rubber Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Balsa Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Ironwood Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by the Hebrews: Rubber Tree
@@ -2539,6 +2550,8 @@ msgstr ""
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Beater's Workshop
 #. TRANSLATORS: Lore author helptext for a Hebrew warehouse: Headquarters
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Beater's Workshop
+#. TRANSLATORS: Lore author helptext for a Hebrew warehouse: Headquarters
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Beater's Workshop
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:918
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1175 input:918 input:1175
 #: standard
@@ -2546,6 +2559,8 @@ msgctxt "hebrews_building"
 msgid "Book of Exodus"
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters Tent
 #. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters
 #. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters Tent
 #. TRANSLATORS: Purpose helptext for a Hebrew warehouse: Headquarters
@@ -2766,6 +2781,12 @@ msgctxt "hebrews_building"
 msgid "'King Solomon built a fleet of ships at Ezion-Geber.'"
 msgstr ""
 
+#. TRANSLATORS: Lore author helptext for a Hebrew warehouse: Port
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Quarry
+#. TRANSLATORS: Lore author helptext for a Hebrew building: Market
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Solomon's Harbour
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Granite Mine
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Shipyard
 #. TRANSLATORS: Lore author helptext for a Hebrew warehouse: Port
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Quarry
 #. TRANSLATORS: Lore author helptext for a Hebrew building: Market
@@ -3741,6 +3762,10 @@ msgstr ""
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Zizijot Maker's Hut
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Scout's Hut
 #. TRANSLATORS: Lore author helptext for a Hebrew military site: Small Tent
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Well
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Zizijot Maker's Hut
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Scout's Hut
+#. TRANSLATORS: Lore author helptext for a Hebrew military site: Small Tent
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1003
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1071
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1083
@@ -3798,6 +3823,12 @@ msgctxt "hebrews_building"
 msgid "'Come, let us make bricks and burn them thoroughly.'"
 msgstr ""
 
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Brick Kiln
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Butchery
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Dressmakery
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Donkey Farm
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Gold Mine
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Vineyard
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Brick Kiln
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Butchery
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Dressmakery
@@ -4607,6 +4638,9 @@ msgstr ""
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Clearing Tent
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Workshop
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Weaponsmithy
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Clearing Tent
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Workshop
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Weaponsmithy
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1049
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1186
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1208 input:1049 input:1186
@@ -4629,6 +4663,9 @@ msgctxt "hebrews_building"
 msgid "'She puts her hands to the distaff, and her hands hold the spindle.'"
 msgstr ""
 
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Spinning Mill
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Weaving Mill
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Farm
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Spinning Mill
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Weaving Mill
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Farm
@@ -4937,7 +4974,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1085 input:1085 standard
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Tutkii tuntematonta aluetta."
 
 #. TRANSLATORS: Lore helptext for a Hebrew production site: Mill
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1094 input:1094 standard
@@ -5094,6 +5131,9 @@ msgid ""
 "gates.'"
 msgstr ""
 
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Sofer's Workshop
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Copper Mine
+#. TRANSLATORS: Lore author helptext for a Hebrew production site: Deep Gold Mine
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Sofer's Workshop
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Copper Mine
 #. TRANSLATORS: Lore author helptext for a Hebrew production site: Deep Gold Mine
@@ -5749,6 +5789,8 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Hebrew production site: Deep Gold Mine
 #. TRANSLATORS: Performance helptext for a Hebrew production site: Gold Mine
 #. TRANSLATORS: Performance helptext for a Hebrew production site: Deep Gold Mine
+#. TRANSLATORS: Performance helptext for a Hebrew production site: Gold Mine
+#. TRANSLATORS: Performance helptext for a Hebrew production site: Deep Gold Mine
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1328
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1341 input:1328 input:1341
 #: standard
@@ -6055,6 +6097,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Hebrew military site: Massada
 #. TRANSLATORS: Purpose helptext for a Hebrew military site: Small Tent
 #. TRANSLATORS: Purpose helptext for a Hebrew military site: Massada
+#. TRANSLATORS: Purpose helptext for a Hebrew military site: Small Tent
+#. TRANSLATORS: Purpose helptext for a Hebrew military site: Massada
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1412
 #: addons/hebrews_tribe.wad/tribes/hebrews/units.lua:1425 input:1412 input:1425
 #: standard
@@ -6062,6 +6106,8 @@ msgctxt "hebrews_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Hebrew military site: Small Tent
+#. TRANSLATORS: Note helptext for a Hebrew military site: Massada
 #. TRANSLATORS: Note helptext for a Hebrew military site: Small Tent
 #. TRANSLATORS: Note helptext for a Hebrew military site: Massada
 #. TRANSLATORS: Note helptext for a Hebrew military site: Small Tent
@@ -6613,14 +6659,14 @@ msgstr ""
 #: input:8 standard
 msgctxt "resource_indicator"
 msgid "Some Coal"
-msgstr ""
+msgstr "Vähän hiiltä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/hebrews_tribe.wad/tribes/immovables/resi/hebrews/coal_2/init.lua:8
 #: input:8 standard
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr ""
+msgstr "Paljon hiiltä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/hebrews_tribe.wad/tribes/immovables/resi/hebrews/gold_1/init.lua:8
@@ -6655,7 +6701,7 @@ msgstr ""
 #: input:8 standard
 msgctxt "resource_indicator"
 msgid "No Resources"
-msgstr ""
+msgstr "Ei resursseja"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/hebrews_tribe.wad/tribes/immovables/resi/hebrews/stones_1/init.lua:8
@@ -6676,7 +6722,7 @@ msgstr ""
 #: input:8 standard
 msgctxt "resource_indicator"
 msgid "Water"
-msgstr ""
+msgstr "Vettä"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/hebrews_tribe.wad/tribes/immovables/shipconstruction_hebrews/init.lua:8
@@ -6720,6 +6766,8 @@ msgctxt "immovable"
 msgid "Wheat Field (tiny)"
 msgstr ""
 
+#. TRANSLATORS: Lore helptext for a building - it hasn't been written yet.
+#. TRANSLATORS: Purpose helptext for a building - it hasn't been written yet.
 #. TRANSLATORS: Lore helptext for a building - it hasn't been written yet.
 #. TRANSLATORS: Purpose helptext for a building - it hasn't been written yet.
 #. TRANSLATORS: Lore helptext for a building - it hasn't been written yet.
@@ -7351,6 +7399,8 @@ msgstr ""
 #. TRANSLATORS: Worker Encyclopedia: More than 1 worker recruited by a productionsite
 #. TRANSLATORS: Ware Encyclopedia: 1 special worker or soldier recruited by a productionsite
 #. TRANSLATORS: Worker Encyclopedia: More than 1 worker recruited by a productionsite
+#. TRANSLATORS: Ware Encyclopedia: 1 special worker or soldier recruited by a productionsite
+#. TRANSLATORS: Worker Encyclopedia: More than 1 worker recruited by a productionsite
 #: addons/hebrews_tribe.wad/tribes/scripting/help/building_help.lua:819
 #: addons/hebrews_tribe.wad/tribes/scripting/help/worker_help.lua:56 input:56
 #: input:819 standard
@@ -7500,7 +7550,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/scripting/help/format_help.lua:63 input:63
 #: standard
 msgid "Medium"
-msgstr ""
+msgstr "Kohtalainen"
 
 #. TRANSLATORS: Size of a map immovable
 #: addons/hebrews_tribe.wad/tribes/scripting/help/format_help.lua:66 input:66
@@ -7697,6 +7747,8 @@ msgstr ""
 msgid "Multiplayer"
 msgstr ""
 
+#. TRANSLATORS: Ware Encyclopedia: A building producing a ware
+#. TRANSLATORS: Worker Encyclopedia: A building recruiting a worker
 #. TRANSLATORS: Ware Encyclopedia: A building producing a ware
 #. TRANSLATORS: Worker Encyclopedia: A building recruiting a worker
 #. TRANSLATORS: Ware Encyclopedia: A building producing a ware
@@ -8188,13 +8240,13 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/wares/copper/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Copper"
-msgstr ""
+msgstr "Kupari"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/hebrews_tribe.wad/tribes/wares/copper_ore/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Copper Ore"
-msgstr ""
+msgstr "Kuparimalmi"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/hebrews_tribe.wad/tribes/wares/dagger/init.lua:8 input:8 standard
@@ -8340,7 +8392,7 @@ msgstr ""
 #: addons/hebrews_tribe.wad/tribes/wares/wheat/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Wheat"
-msgstr ""
+msgstr "Vilja"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/hebrews_tribe.wad/tribes/wares/wheat_grains/init.lua:8 input:8

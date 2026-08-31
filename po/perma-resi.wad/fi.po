@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:20+0200\n"
+"POT-Creation-Date: 2026-08-31 03:24+0200\n"
 "PO-Revision-Date: 2021-11-27 12:40+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -30,7 +34,7 @@ msgstr ""
 
 #: addons/perma-resi.wad/postload.lua:24 input:24 standard
 msgid "working"
-msgstr ""
+msgstr "työskentelee"
 
 #: addons/perma-resi.wad/postload.lua:42 addons/perma-resi.wad/postload.lua:111
 #: addons/perma-resi.wad/postload.lua:170
@@ -52,7 +56,7 @@ msgstr ""
 #: addons/perma-resi.wad/postload.lua:423 input:55 input:82 input:202 input:309
 #: input:327 input:414 input:423 standard
 msgid "mining granite"
-msgstr ""
+msgstr "graniitin louhinta"
 
 #: addons/perma-resi.wad/postload.lua:71 addons/perma-resi.wad/postload.lua:141
 #: addons/perma-resi.wad/postload.lua:150
@@ -63,7 +67,7 @@ msgstr ""
 #: addons/perma-resi.wad/postload.lua:363 input:71 input:141 input:150
 #: input:159 input:252 input:261 input:354 input:363 standard
 msgid "mining coal"
-msgstr ""
+msgstr "hiilikaivos"
 
 #: addons/perma-resi.wad/postload.lua:91 input:91 standard
 msgid "mining quartz"
@@ -88,7 +92,7 @@ msgstr ""
 #: addons/perma-resi.wad/postload.lua:318
 #: addons/perma-resi.wad/postload.lua:336 input:318 input:336 standard
 msgid "mining marble"
-msgstr ""
+msgstr "marmorin louhinta"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/perma-resi.wad/resi/amazons/init.lua:10
@@ -98,7 +102,7 @@ msgstr ""
 #: addons/perma-resi.wad/resi/frisians/init.lua:10 input:10 standard
 msgctxt "resource_indicator"
 msgid "No Resources"
-msgstr ""
+msgstr "Ei resursseja"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/perma-resi.wad/resi/amazons/init.lua:25
@@ -147,7 +151,7 @@ msgstr ""
 #: addons/perma-resi.wad/resi/frisians/init.lua:32 input:29 input:32 standard
 msgctxt "resource_indicator"
 msgid "Water"
-msgstr ""
+msgstr "Vettä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:54
@@ -156,7 +160,7 @@ msgstr ""
 #: addons/perma-resi.wad/resi/frisians/init.lua:54 input:48 input:54 standard
 msgctxt "resource_indicator"
 msgid "Some Coal"
-msgstr ""
+msgstr "Vähän hiiltä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:98
@@ -181,7 +185,7 @@ msgstr ""
 #: standard
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr ""
+msgstr "Paljon hiiltä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/perma-resi.wad/resi/atlanteans/init.lua:186

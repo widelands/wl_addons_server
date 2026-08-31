@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:18+0200\n"
+"POT-Creation-Date: 2026-08-31 03:19+0200\n"
 "PO-Revision-Date: 2025-04-16 20:23+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -74,7 +78,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaponsmithy/init.lua:71
 #: input:48 input:49 input:71 standard
 msgid "working"
-msgstr ""
+msgstr "työskentelee"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/armorsmithy/init.lua:85
@@ -150,25 +154,25 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:56
 #: input:56 standard
 msgid "planting wheat"
-msgstr ""
+msgstr "viljan istutus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:64
 #: input:64 standard
 msgid "harvesting wheat"
-msgstr ""
+msgstr "viljan korjuu"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:74
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:75
 #: input:74 input:75 standard
 msgid "No Fields"
-msgstr ""
+msgstr "Ei peltoja"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:75
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:76
 #: input:75 input:76 standard
 msgid "Out of Fields"
-msgstr ""
+msgstr "Pellot loppu"
 
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/farm/init.lua:76
 #: input:76 standard
@@ -187,7 +191,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/piggery/init.lua:57
 #: input:57 standard
 msgid "raising pigs"
-msgstr ""
+msgstr "sikojen kasvatus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/sheepfarm/init.lua:8
@@ -200,7 +204,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/sheepfarm/init.lua:59
 #: input:59 standard
 msgid "breeding sheep"
-msgstr ""
+msgstr "lampaiden jalostaminen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/stonemasons_house/init.lua:8
@@ -213,7 +217,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/stonemasons_house/init.lua:57
 #: input:57 standard
 msgid "sculpting a marble column"
-msgstr ""
+msgstr "marmoripylvään veistäminen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/vineyard/init.lua:8
@@ -290,7 +294,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/weaving_mill/init.lua:65
 #: input:65 standard
 msgid "weaving"
-msgstr ""
+msgstr "kutoaa"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/empire_defense_training.wad/tribes/buildings/productionsites/winery/init.lua:8
@@ -317,7 +321,7 @@ msgstr ""
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/colosseum/init.lua:48
 #: input:48 input:87 standard
 msgid "sleeping"
-msgstr ""
+msgstr "nukkumassa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/empire_defense_training.wad/tribes/buildings/trainingsites/empire/arena/init.lua:95

@@ -5,15 +5,16 @@
 #
 # Translators:
 # Atte Timonen, 2025
+# Jaakko Muilu, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-08-30 03:23+0200\n"
+"POT-Creation-Date: 2026-08-31 03:22+0200\n"
 "PO-Revision-Date: 2025-03-29 14:10+0000\n"
-"Last-Translator: Atte Timonen, 2025\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -341,7 +342,7 @@ msgstr ""
 #: standard
 msgctxt "ware"
 msgid "Wheat"
-msgstr ""
+msgstr "Vilja"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_extension.wad/2_wares/wheat_flour/init.lua:8 input:8
@@ -411,7 +412,7 @@ msgstr ""
 #: input:42 input:43 input:50 input:52 input:53 input:54 input:60 input:61
 #: input:62 input:63 input:64 input:67 input:69 input:74 standard
 msgid "working"
-msgstr ""
+msgstr "työskentelee"
 
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/animal_farm_advanced/init.lua:73
@@ -614,13 +615,13 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:260
 #: input:260 input:297 standard
 msgid "No Fields"
-msgstr ""
+msgstr "Ei peltoja"
 
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:298
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:261
 #: input:261 input:298 standard
 msgid "Out of Fields"
-msgstr ""
+msgstr "Pellot loppu"
 
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_advanced/init.lua:299
 #: addons/europeans_food_extension.wad/4_productionsites_agricultur/farm_big_basic/init.lua:262
@@ -661,13 +662,13 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:75
 #: input:75 input:79 standard
 msgid "No Fish"
-msgstr ""
+msgstr "Ei kalaa"
 
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:80
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:76
 #: input:76 input:80 standard
 msgid "Out of Fish"
-msgstr ""
+msgstr "Kalat loppu"
 
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_house_advanced/init.lua:81
 #: input:81 standard
@@ -688,7 +689,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:65
 #: input:65 standard
 msgid "fishing"
-msgstr ""
+msgstr "kalastus"
 
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/fishers_hut_basic/init.lua:77
 #: input:77 standard
@@ -724,14 +725,14 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:79
 #: input:79 standard
 msgid "No Game"
-msgstr ""
+msgstr "Ei riistaa"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:81
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:81
 #: input:81 standard
 msgid "Out of Game"
-msgstr ""
+msgstr "Riista loppu"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_house_advanced/init.lua:83
@@ -753,7 +754,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:68
 #: input:68 standard
 msgid "hunting"
-msgstr ""
+msgstr "metsästys"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/europeans_food_extension.wad/4_productionsites_collectors/hunters_hut_basic/init.lua:83
@@ -772,6 +773,11 @@ msgctxt "europeans_building"
 msgid "Basic Coal Mine"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
@@ -1290,7 +1296,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/coalmine_level_4/init.lua:115
 #: input:115 input:117 input:121 input:124 input:135 standard
 msgid "No Coal"
-msgstr ""
+msgstr "Ei hiiltä"
 
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/coalmine_basic/init.lua:136
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/coalmine_level_1/init.lua:118
@@ -1299,7 +1305,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/coalmine_level_4/init.lua:116
 #: input:116 input:118 input:122 input:125 input:136 standard
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Hiilen pääsuoni ehtyi"
 
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/coalmine_basic/init.lua:138
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/coalmine_level_1/init.lua:120
@@ -1454,7 +1460,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/ironmine_level_4/init.lua:115
 #: input:115 input:118 input:119 input:126 input:127 standard
 msgid "No Iron"
-msgstr ""
+msgstr "Ei rautaa"
 
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/ironmine_basic/init.lua:127
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/ironmine_level_1/init.lua:119
@@ -1463,7 +1469,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/ironmine_level_4/init.lua:116
 #: input:116 input:119 input:120 input:127 input:128 standard
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Raudan pääsuoni ehtyi"
 
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/ironmine_basic/init.lua:129
 #: addons/europeans_food_extension.wad/4_productionsites_mining_with_food/ironmine_level_1/init.lua:121
@@ -1936,6 +1942,8 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_food_extension.wad/6_tradingsites/market_big_food/init.lua:62
 #: addons/europeans_food_extension.wad/6_tradingsites/market_big_food/init.lua:115
 #: addons/europeans_food_extension.wad/6_tradingsites/market_big_food/init.lua:127
@@ -2036,7 +2044,7 @@ msgstr ""
 #: input:95 standard
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Vesi on elämälle tärkeää!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:97
@@ -2987,12 +2995,19 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1002
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1009
 #: input:1002 input:1009 standard
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Tuhoutuneen laivan jäännöksiä."
 
+#. TRANSLATORS: Helptext for an Europeans immovable: barley field
+#. TRANSLATORS: Helptext for an Europeans immovable: corn field
+#. TRANSLATORS: Helptext for an Europeans immovable: oat field
+#. TRANSLATORS: Helptext for an Europeans immovable: rye field
+#. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: corn field
 #. TRANSLATORS: Helptext for an Europeans immovable: oat field
@@ -3437,6 +3452,11 @@ msgstr ""
 msgid "This field has just been planted."
 msgstr ""
 
+#. TRANSLATORS: Helptext for an Europeans immovable: barley field
+#. TRANSLATORS: Helptext for an Europeans immovable: corn field
+#. TRANSLATORS: Helptext for an Europeans immovable: oat field
+#. TRANSLATORS: Helptext for an Europeans immovable: rye field
+#. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: corn field
 #. TRANSLATORS: Helptext for an Europeans immovable: oat field
@@ -4322,6 +4342,11 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans immovable: oat field
 #. TRANSLATORS: Helptext for an Europeans immovable: rye field
 #. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
+#. TRANSLATORS: Helptext for an Europeans immovable: barley field
+#. TRANSLATORS: Helptext for an Europeans immovable: corn field
+#. TRANSLATORS: Helptext for an Europeans immovable: oat field
+#. TRANSLATORS: Helptext for an Europeans immovable: rye field
+#. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1037
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1324
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1387
@@ -4331,6 +4356,11 @@ msgstr ""
 msgid "This field is ready for harvesting."
 msgstr ""
 
+#. TRANSLATORS: Helptext for an Europeans immovable: barley field
+#. TRANSLATORS: Helptext for an Europeans immovable: corn field
+#. TRANSLATORS: Helptext for an Europeans immovable: oat field
+#. TRANSLATORS: Helptext for an Europeans immovable: rye field
+#. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: corn field
 #. TRANSLATORS: Helptext for an Europeans immovable: oat field
@@ -4965,7 +4995,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1574
 #: input:1574 standard
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Täällä on paljon hiiltä."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1585
@@ -4989,7 +5019,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1615
 #: input:1615 standard
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "Laivaa rakennetaan tässä paikassa."
 
 #. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1623
@@ -4997,6 +5027,11 @@ msgstr ""
 msgid "The remains of an old tree."
 msgstr ""
 
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
@@ -5657,6 +5692,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Lumberjack's House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Lumberjack's House
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1750
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1759
 #: input:1750 input:1759 standard
@@ -5726,6 +5763,8 @@ msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
@@ -6152,12 +6191,14 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1858
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1865
 #: input:1858 input:1865 standard
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Tutkii tuntematonta aluetta."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Trading Post
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1872
@@ -6167,6 +6208,8 @@ msgid ""
 "Trading building to sell or purchase wares to or from other allied tribes."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
@@ -6618,6 +6661,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1989
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:1996
 #: input:1989 input:1996 standard
@@ -6722,6 +6767,10 @@ msgid ""
 "and produces leather, meat and fish."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
 #. TRANSLATORS: Purpose helptext for production site: Granite Mine
 #. TRANSLATORS: Purpose helptext for production site: Marble Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
@@ -7429,6 +7478,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Marble Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#. TRANSLATORS: Purpose helptext for production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2132
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2139
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2146
@@ -7440,6 +7493,11 @@ msgid ""
 "mountain terrain."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
@@ -8320,6 +8378,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2195
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2202
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2209
@@ -8330,6 +8393,11 @@ msgctxt "europeans_food_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
@@ -9005,6 +9073,8 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans training site: Big Training Camp
 #. TRANSLATORS: Note helptext for a Europeans training site: Small Training Camp
 #. TRANSLATORS: Note helptext for a Europeans training site: Big Training Camp
+#. TRANSLATORS: Note helptext for a Europeans training site: Small Training Camp
+#. TRANSLATORS: Note helptext for a Europeans training site: Big Training Camp
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2320
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2327
 #: input:2320 input:2327 standard
@@ -9021,6 +9091,8 @@ msgid ""
 "between ports."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
@@ -9557,6 +9629,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Tower
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2353
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2362
 #: addons/europeans_food_extension.wad/tribes/initialization/units.lua:2371
@@ -9567,6 +9643,10 @@ msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr "Toimii varuskuntana laajentaen valtakuntasi vaikutusaluetta."
 
+#. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Tower
+#. TRANSLATORS: Note helptext for an Europeans military site: Castle
 #. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
 #. TRANSLATORS: Note helptext for an Europeans military site: Barrier
 #. TRANSLATORS: Note helptext for an Europeans military site: Tower
@@ -10427,7 +10507,7 @@ msgstr[1] ""
 #: addons/europeans_food_extension.wad/tribes/scripting/starting_conditions/discovery_human.lua:11
 #: input:11 standard
 msgid "Discovery"
-msgstr ""
+msgstr "Löydös"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_food_extension.wad/tribes/scripting/starting_conditions/discovery_human.lua:13
@@ -10452,7 +10532,7 @@ msgstr ""
 #: addons/europeans_food_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:11
 #: input:11 standard
 msgid "Headquarters"
-msgstr ""
+msgstr "Päämajat"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_extension.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13

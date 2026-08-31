@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:18+0200\n"
+"POT-Creation-Date: 2026-08-31 03:19+0200\n"
 "PO-Revision-Date: 2024-01-29 07:14+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -26,7 +30,7 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/addon:9 input:9 standard
 msgid "Editor: Analyse Map"
-msgstr ""
+msgstr "Editori: analysoi kartta"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:12 input:12 standard
 msgid ""
@@ -37,11 +41,11 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/callbacks.lua:13 input:13 standard
 msgid "The Editor does not react for this time!"
-msgstr ""
+msgstr "Editori ei reagoi tällä kertaa!"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:14 input:14 standard
 msgid "If you are sure click the button below and be patient …"
-msgstr ""
+msgstr "Jos olet varma, klikkaa alla olevaa nappia ja ole kärsivällinen..."
 
 #: addons/editor_analyse_map.wad/callbacks.lua:61 input:61 standard
 msgctxt "around_player_position:"
@@ -52,7 +56,7 @@ msgstr[1] ""
 
 #: addons/editor_analyse_map.wad/callbacks.lua:67 input:67 standard
 msgid "Memory usage: %1$10.2f MB"
-msgstr ""
+msgstr "Muistin käyttö: %1$10.2f Mt"
 
 #. TRANSLATORS: Placeholder is "this post in the Widelands forum"
 #: addons/editor_analyse_map.wad/callbacks.lua:76 input:76 standard
@@ -67,15 +71,15 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/callbacks.lua:86 input:86 standard
 msgid "Statistic for the whole map"
-msgstr ""
+msgstr "Koko kartan tilastotietoja"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:95 input:95 standard
 msgid "Players on this map"
-msgstr ""
+msgstr "Pelaajia tällä kartalla"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:97 input:97 standard
 msgid "Other findings on this map"
-msgstr ""
+msgstr "Muita löydöksiä tällä kartalla"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:99 input:99 standard
 msgid "Analysing %1$d map fields"
@@ -88,7 +92,7 @@ msgstr ""
 #. TRANSLATORS: Placeholder is a number
 #: addons/editor_analyse_map.wad/callbacks.lua:125 input:125 standard
 msgid "Vicinity of Player %1$d"
-msgstr ""
+msgstr "Pelaajan %1$d läheisyys"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:131 input:131 standard
 msgid "Findings up to %1$d Fields around this players starting position:"
@@ -98,8 +102,8 @@ msgstr ""
 msgctxt "statistic_for"
 msgid "Statistic for a player"
 msgid_plural "Statistic for players"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Pelaajan tilastotietoja"
+msgstr[1] "Pelaajien tilastotietoja"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:13 input:13 standard
 msgid "%1$d/%2$d"
@@ -107,7 +111,7 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:36 input:36 standard
 msgid "%1$d granite or:"
-msgstr ""
+msgstr "%1$d graniitti tai:"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:37 input:37 standard
 msgid "ca. %1$d granite and ca. %2$d marble"
@@ -127,32 +131,32 @@ msgstr ""
 #. TRANSLATORS: Table header for of player names
 #: addons/editor_analyse_map.wad/helper_functions.lua:126 input:126 standard
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #. TRANSLATORS: Table header for players start field
 #: addons/editor_analyse_map.wad/helper_functions.lua:128 input:128 standard
 msgid "Position"
-msgstr ""
+msgstr "Sijainit"
 
 #. TRANSLATORS: Table header for resource names
 #: addons/editor_analyse_map.wad/helper_functions.lua:130 input:130 standard
 msgid "Found"
-msgstr ""
+msgstr "Löytynyt"
 
 #. TRANSLATORS: Table header for resource amount
 #: addons/editor_analyse_map.wad/helper_functions.lua:132 input:132 standard
 msgid "Amount"
-msgstr ""
+msgstr "Määrä"
 
 #. TRANSLATORS: Table header for fields like "15/30"
 #: addons/editor_analyse_map.wad/helper_functions.lua:134 input:134 standard
 msgid "Around"
-msgstr ""
+msgstr "Ympärillä"
 
 #. TRANSLATORS: Table header for values like "30 Fields"
 #: addons/editor_analyse_map.wad/helper_functions.lua:136 input:136 standard
 msgid "Distance"
-msgstr ""
+msgstr "Etäisyys"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:172 input:172 standard
 msgid "%1$d Fields"
@@ -160,7 +164,7 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/init.lua:8 input:8 standard
 msgid "Analyse the map"
-msgstr ""
+msgstr "Analysoidaan karttaa"
 
 #: addons/editor_analyse_map.wad/init.lua:9 input:9 standard
 msgid "Compare player positions with a few clicks or analyse the whole map."
@@ -168,19 +172,19 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/windows.lua:71 input:71 standard
 msgid "What should be investigated?"
-msgstr ""
+msgstr "Mitä tutkitaan?"
 
 #: addons/editor_analyse_map.wad/windows.lua:92 input:92 standard
 msgid "The whole map"
-msgstr ""
+msgstr "Koko kartta"
 
 #: addons/editor_analyse_map.wad/windows.lua:100 input:100 standard
 msgid "Information about players"
-msgstr ""
+msgstr "Tietoa pelaajista"
 
 #: addons/editor_analyse_map.wad/windows.lua:174 input:174 standard
 msgid "General Options"
-msgstr ""
+msgstr "Yleiset asetukset"
 
 #: addons/editor_analyse_map.wad/windows.lua:187 input:187 standard
 msgid "Show building plots"
@@ -188,15 +192,15 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/windows.lua:194 input:194 standard
 msgid "Show Percent"
-msgstr ""
+msgstr "Näytä prosentti"
 
 #: addons/editor_analyse_map.wad/windows.lua:195 input:195 standard
 msgid "Show the percentage of all mineable resources"
-msgstr ""
+msgstr "Näytä kaikkien louhittavien resurssien prosenttiosuus"
 
 #: addons/editor_analyse_map.wad/windows.lua:202 input:202 standard
 msgid "Calculate Marble"
-msgstr ""
+msgstr "Laske marmoria"
 
 #: addons/editor_analyse_map.wad/windows.lua:203 input:203 standard
 msgid "Include the granite/marmor ratio for rocks"
@@ -204,7 +208,7 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/windows.lua:218 input:218 standard
 msgid "Show memory usage"
-msgstr ""
+msgstr "Näytä muistin käyttö"
 
 #: addons/editor_analyse_map.wad/windows.lua:219 input:219 standard
 msgid "Show memory usage, informational only when investigating the whole map"
@@ -212,7 +216,7 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/windows.lua:233 input:233 standard
 msgid "Investigate the whole map"
-msgstr ""
+msgstr "Tutki koko kartta"
 
 #: addons/editor_analyse_map.wad/windows.lua:240 input:240 standard
 msgid "Investigate the checked players"
@@ -224,16 +228,16 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/windows.lua:309 input:309 standard
 msgid "Analysing"
-msgstr ""
+msgstr "Analysoidaan"
 
 #: input:3 screenshots/editor_analyse_map.wad/descriptions:3 standard
 msgid "Analyse a map, Options"
-msgstr ""
+msgstr "Analysoi kartta, Asetukset"
 
 #: input:4 screenshots/editor_analyse_map.wad/descriptions:4 standard
 msgid "Result for analysing Players"
-msgstr ""
+msgstr "Tulos pelaajien analysoinnista"
 
 #: input:5 screenshots/editor_analyse_map.wad/descriptions:5 standard
 msgid "Result when investigating a whole map"
-msgstr ""
+msgstr "Tulos, kuin tutkitaan koko karttaa"
