@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-08-31 03:23+0200\n"
+"POT-Creation-Date: 2026-09-02 03:22+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
@@ -36,42 +36,42 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr ""
+msgstr "Ohrajauhoja"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:8 input:8 standard
 msgctxt "frisians_building"
 msgid "Barley Mill"
-msgstr ""
+msgstr "Ohramylly"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51 input:51 standard
 msgid "grinding barley"
-msgstr ""
+msgstr "ohran jauhanta"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Leather"
-msgstr ""
+msgstr "Nahka"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8 input:8 standard
 msgctxt "frisians_worker"
 msgid "Miller"
-msgstr ""
+msgstr "Mylläri"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/oat/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Oat"
-msgstr ""
+msgstr "Kaura"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:8 input:8 standard
 msgctxt "frisians_building"
 msgid "Oat Farm"
-msgstr ""
+msgstr "Kauratila"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:65
@@ -87,12 +87,12 @@ msgstr "työskentelee"
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73 input:73 standard
 msgid "planting oat"
-msgstr ""
+msgstr "kauran istutus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:81 input:81 standard
 msgid "harvesting oat"
-msgstr ""
+msgstr "kauran korjuu"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:90
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69 input:69 input:90
@@ -124,7 +124,7 @@ msgstr ""
 #: standard
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr ""
+msgstr "Kaurapelto (keskisuuri)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/ripe/init.lua:8 input:8 standard
@@ -136,13 +136,13 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/oatfield/small/init.lua:8 input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr ""
+msgstr "Kaurapelto (pieni)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/tiny/init.lua:8 input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr ""
+msgstr "Kaurapelto (pikkuruinen)"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:9 input:9 standard
 msgid "This rye field has been harvested."
@@ -158,11 +158,11 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:18 input:18 standard
 msgid "This rye field is growing."
-msgstr ""
+msgstr "Tämä ruispelto kasvaa."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:21 input:21 standard
 msgid "This rye field has just been planted."
-msgstr ""
+msgstr "Tämä ruispelto on juuri istutettu."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:25 input:25 standard
 msgid "This oat field has been harvested."
@@ -178,11 +178,11 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:34 input:34 standard
 msgid "This oat field is growing."
-msgstr ""
+msgstr "Tämä kaurapelto kasvaa."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:37 input:37 standard
 msgid "This oat field has just been planted."
-msgstr ""
+msgstr "Tämä kaurapelto on juuri istutettu."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:45 input:45 standard
 msgid "Salt is washed from the sea and used to conserve meat and fish."
@@ -214,11 +214,11 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:107 input:107 standard
 msgid "The miller grinds barley and rye into flour."
-msgstr ""
+msgstr "Mylläri jauhaa ohraa ja ruista jauhoksi."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:110 input:110 standard
 msgid "The tanner tans furs to produce leather."
-msgstr ""
+msgstr "Nahkuri tuottaa nahkaa turkiksista."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:118 input:118 standard
 msgid "The salter working at the salt works washes salt from the sea."
@@ -234,11 +234,11 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:125 input:125 standard
 msgid "The barley mill grinds barley into barley flour."
-msgstr ""
+msgstr "Ohramylly jauhaa ohraa ohrajauhoksi."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:128 input:128 standard
 msgid "The rye mill grinds rye into rye flour."
-msgstr ""
+msgstr "Ruismylly jauhaa ruista ruisjauhoksi."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:131 input:131 standard
 msgid "The rye farm sows and harvests rye."
@@ -270,19 +270,19 @@ msgstr ""
 #: standard
 msgctxt "frisians_building"
 msgid "producing fur"
-msgstr ""
+msgstr "turkiksen tuotanto"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:217
 #: addons/frisians-economy-ultra.wad/postload.lua:246 input:217 input:246
 #: standard
 msgid "baking bread"
-msgstr ""
+msgstr "leivän leivonta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking honey bread because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:235 input:235 standard
 msgid "baking honey bread"
-msgstr ""
+msgstr "hunajaleivän leivonta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:267 input:267 standard
@@ -293,7 +293,7 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Ruis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:8 input:8 standard
@@ -321,13 +321,13 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/rye_flour/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr ""
+msgstr "Ruisjauho"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:8 input:8 standard
 msgctxt "frisians_building"
 msgid "Rye Mill"
-msgstr ""
+msgstr "Ruismylly"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51 input:51 standard
@@ -346,7 +346,7 @@ msgstr ""
 #: standard
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Ruispelto (keskisuuri)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/ripe/init.lua:8 input:8 standard
@@ -358,19 +358,19 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/ryefield/small/init.lua:8 input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Ruispelto (pieni)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/tiny/init.lua:8 input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Ruispelto (pikkuruinen)"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/salt/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Salt"
-msgstr ""
+msgstr "Suola"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:8 input:8 standard
@@ -388,7 +388,7 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/tanner/init.lua:8 input:8 standard
 msgctxt "frisians_worker"
 msgid "Tanner"
-msgstr ""
+msgstr "Nahkuri"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:8 input:8 standard

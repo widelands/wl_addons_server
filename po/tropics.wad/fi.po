@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:21+0200\n"
+"POT-Creation-Date: 2026-09-02 03:24+0200\n"
 "PO-Revision-Date: 2021-05-29 21:09+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -22,7 +26,7 @@ msgstr ""
 #: addons/tropics.wad/addon:2 addons/tropics.wad/editor.lua:8 input:7 input:8
 #: standard
 msgid "Tropics"
-msgstr ""
+msgstr "Tropiikki"
 
 #: addons/tropics.wad/addon:3 input:6 standard
 msgid ""
@@ -34,11 +38,11 @@ msgstr ""
 #. TRANSLATORS: A category in the editor for placing immovables on the map.
 #: addons/tropics.wad/editor.lua:37 input:37 standard
 msgid "Tropical Trees"
-msgstr ""
+msgstr "Trooppiset puut"
 
 #: addons/tropics.wad/immovables/trees/corymbia/init.lua:14 input:14 standard
 msgid "Corymbia (Sapling)"
-msgstr ""
+msgstr "Huiskiloeukalyptus (taimi)"
 
 #: addons/tropics.wad/immovables/trees/corymbia/init.lua:39 input:39 standard
 msgid "Corymbia (Pole)"
@@ -46,19 +50,19 @@ msgstr ""
 
 #: addons/tropics.wad/immovables/trees/corymbia/init.lua:65 input:65 standard
 msgid "Corymbia (Mature)"
-msgstr ""
+msgstr "Huiskiloeukalyptus (täysikasvuinen)"
 
 #: addons/tropics.wad/immovables/trees/corymbia/init.lua:91 input:91 standard
 msgid "Corymbia (Old)"
-msgstr ""
+msgstr "Huiskiloeukalyptus (vanha)"
 
 #: addons/tropics.wad/immovables/trees/corymbia/init.lua:92 input:92 standard
 msgid "Corymbia"
-msgstr ""
+msgstr "Huiskiloeukalyptus"
 
 #: addons/tropics.wad/immovables/trees/ebonytree/init.lua:14 input:14 standard
 msgid "Ebonytree (Sapling)"
-msgstr ""
+msgstr "Eebenpuu (taimi)"
 
 #: addons/tropics.wad/immovables/trees/ebonytree/init.lua:39 input:39 standard
 msgid "Ebonytree (Pole)"
@@ -66,19 +70,19 @@ msgstr ""
 
 #: addons/tropics.wad/immovables/trees/ebonytree/init.lua:65 input:65 standard
 msgid "Ebonytree (Mature)"
-msgstr ""
+msgstr "Eebenpuu (täysikasvuinen)"
 
 #: addons/tropics.wad/immovables/trees/ebonytree/init.lua:90 input:90 standard
 msgid "Ebonytree (Old)"
-msgstr ""
+msgstr "Eebenpuu (vanha)"
 
 #: addons/tropics.wad/immovables/trees/ebonytree/init.lua:91 input:91 standard
 msgid "Ebonytree"
-msgstr ""
+msgstr "Eebenpuu"
 
 #: addons/tropics.wad/immovables/trees/kapok/init.lua:14 input:14 standard
 msgid "Kapok (Sapling)"
-msgstr ""
+msgstr "Kapokki (taimi)"
 
 #: addons/tropics.wad/immovables/trees/kapok/init.lua:39 input:39 standard
 msgid "Kapok (Pole)"
@@ -86,15 +90,15 @@ msgstr ""
 
 #: addons/tropics.wad/immovables/trees/kapok/init.lua:65 input:65 standard
 msgid "Kapok (Mature)"
-msgstr ""
+msgstr "Kapokki (täysikasvuinen)"
 
 #: addons/tropics.wad/immovables/trees/kapok/init.lua:91 input:91 standard
 msgid "Kapok (Old)"
-msgstr ""
+msgstr "Kapokki (vanha)"
 
 #: addons/tropics.wad/immovables/trees/kapok/init.lua:92 input:92 standard
 msgid "Kapok Tree"
-msgstr ""
+msgstr "Kapokki"
 
 #: addons/tropics.wad/immovables/trees/lapacho/init.lua:14 input:14 standard
 msgid "Lapacho (Sapling)"
@@ -118,7 +122,7 @@ msgstr ""
 
 #: addons/tropics.wad/immovables/trees/mangrove/init.lua:14 input:14 standard
 msgid "Mangrove (Sapling)"
-msgstr ""
+msgstr "Mangrove (taimi)"
 
 #: addons/tropics.wad/immovables/trees/mangrove/init.lua:39 input:39 standard
 msgid "Mangrove (Pole)"
@@ -126,11 +130,11 @@ msgstr ""
 
 #: addons/tropics.wad/immovables/trees/mangrove/init.lua:65 input:65 standard
 msgid "Mangrove (Mature)"
-msgstr ""
+msgstr "Mangrove (täysikasvuinen)"
 
 #: addons/tropics.wad/immovables/trees/mangrove/init.lua:96 input:96 standard
 msgid "Mangrove (Old)"
-msgstr ""
+msgstr "Mangrove (vanha)"
 
 #: addons/tropics.wad/immovables/trees/mangrove/init.lua:97 input:97 standard
 msgid "Mangrove"
@@ -159,7 +163,7 @@ msgstr ""
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:14 input:14
 #: standard
 msgid "Syargus Palm (Sapling)"
-msgstr ""
+msgstr "Prinsessapalmu (taimi)"
 
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:39 input:39
 #: standard
@@ -169,17 +173,17 @@ msgstr ""
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:65 input:65
 #: standard
 msgid "Syargus Palm (Mature)"
-msgstr ""
+msgstr "Prinsessapalmu (täysikasvuinen)"
 
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:90 input:90
 #: standard
 msgid "Syargus Palm (Old)"
-msgstr ""
+msgstr "Prinsessapalmu (vanha)"
 
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:91 input:91
 #: standard
 msgid "Syargus Palm"
-msgstr ""
+msgstr "Prinsessapalmu"
 
 #: addons/tropics.wad/terrains/init.lua:10 input:10 standard
 msgid "Wet Soil 1"
@@ -219,19 +223,19 @@ msgstr ""
 
 #: addons/tropics.wad/terrains/init.lua:128 input:128 standard
 msgid "Mountain 1"
-msgstr ""
+msgstr "Vuori 1"
 
 #: addons/tropics.wad/terrains/init.lua:142 input:142 standard
 msgid "Mountain 2"
-msgstr ""
+msgstr "Vuori 2"
 
 #: addons/tropics.wad/terrains/init.lua:156 input:156 standard
 msgid "Mountain 3"
-msgstr ""
+msgstr "Vuori 3"
 
 #: addons/tropics.wad/terrains/init.lua:171 input:171 standard
 msgid "Beach"
-msgstr ""
+msgstr "Ranta"
 
 #: addons/tropics.wad/terrains/init.lua:184 input:184 standard
 msgid "Tropical Fen 1"
@@ -243,15 +247,15 @@ msgstr ""
 
 #: addons/tropics.wad/terrains/init.lua:210 input:210 standard
 msgid "Tropical Swamp"
-msgstr ""
+msgstr "Trooppinen suo"
 
 #: addons/tropics.wad/terrains/init.lua:225 input:225 standard
 msgid "Tropical Water"
-msgstr ""
+msgstr "Trooppinen vesi"
 
 #: addons/tropics.wad/terrains/init.lua:239 input:239 standard
 msgid "Muddy river water"
-msgstr ""
+msgstr "Mutainen jokivesi"
 
 #: input:3 screenshots/tropics.wad/descriptions:1 standard
 msgid ""

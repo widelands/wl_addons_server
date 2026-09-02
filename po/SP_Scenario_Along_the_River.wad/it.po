@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-08-29 03:17+0200\n"
+"POT-Creation-Date: 2026-09-02 03:18+0200\n"
 "PO-Revision-Date: 2021-10-06 10:02+0000\n"
 "Last-Translator: Daniele Vintauri <duriumingabbia@gmail.com>, 2026\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
@@ -152,6 +152,10 @@ msgid ""
 "will need it as a basis for further exploration. Furthermore we could use it "
 "to store some gold that we will mine from the surrounding hills."
 msgstr ""
+"Costruisci un magazzino vicino alla guardiola pirata che hai conquistato "
+"vicino al torrente; ci servirà per diversi scopi. Ad esempio, possiamo "
+"usarlo per depositarci un po' di oro che andremo a estrarre dalle colline "
+"vicine."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:43
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:52
@@ -163,7 +167,7 @@ msgstr "Porta pale"
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:54
 #: input:45 input:54 standard
 msgid "Bring Four Shovels to the new Warehouse"
-msgstr ""
+msgstr "Porta 4 pale al nuovo magazzino."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:46
 #: input:46 standard
@@ -204,7 +208,7 @@ msgstr "Libera i nostri esploratori dai pirati"
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:72
 #: input:72 standard
 msgid "Conquer the Stronghold on the Island"
-msgstr ""
+msgstr "Conquista la Fortezza sull'isola"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:73
 #: input:73 standard
@@ -219,7 +223,7 @@ msgstr "Sconfiggi Hjalmar"
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:81
 #: input:81 standard
 msgid "Defeat the Armies of Hjalmar"
-msgstr ""
+msgstr "Sconfiggi gli eserciti di Hjalmar"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:82
 #: input:82 standard
@@ -238,7 +242,7 @@ msgstr "Sconfiggi Runar"
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:90
 #: input:90 standard
 msgid "Defeat the Armies of Runar"
-msgstr ""
+msgstr "Sconfiggi gli eserciti di Runar"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:91
 #: input:91 standard
@@ -484,6 +488,10 @@ msgid ""
 "have been looted from the gold diggers’ huts nearby. This gold ore will be "
 "transported to our headquarters."
 msgstr ""
+"Sire, abbiamo rinvenuto 25 unità di minerale d'oro all'interno della "
+"guardiola dei pirati. Probabilmente sono state saccheggiate dalle capanne "
+"dei cercatori d'oro nelle vicinanze. Questo minerale d'oro verrà trasportato "
+"al nostro quartier generale."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:73
 #: input:73 standard
@@ -493,6 +501,10 @@ msgid ""
 "this area. There is a good building spot only three steps away from the "
 "sentry."
 msgstr ""
+"Visto il successo della nostra espansione in quest'area, dovremmo "
+"considerare la costruzione di un magazzino a sud-ovest della torretta per "
+"esplorare ulteriormente la zona. C'è un ottimo punto edificabile a soli tre "
+"passi dalla guardiola."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:79
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:86
@@ -547,6 +559,8 @@ msgid ""
 "Sire, we have defeated the pirates. They have hidden some gold in their last "
 "bastion which is now being transferred to our headquarters."
 msgstr ""
+"Sire, abbiamo sconfitto i pirati. Hanno nascosto dell'oro nel loro ultimo "
+"bastione, che ora viene trasferito al nostro quartier generale."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:106
 #: input:106 standard

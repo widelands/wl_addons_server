@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Jaakko Muilu, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:20+0200\n"
+"POT-Creation-Date: 2026-09-02 03:22+0200\n"
 "PO-Revision-Date: 2021-03-20 17:12+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
 "fi/)\n"
 "Language: fi\n"
@@ -21,7 +25,7 @@ msgstr ""
 #: addons/first_heroes_win.wad/addon:2 addons/first_heroes_win.wad/init.lua:32
 #: input:9 input:32 standard
 msgid "First Heroes Win"
-msgstr ""
+msgstr "Ensimmäiset sankarit voittavat"
 
 #: addons/first_heroes_win.wad/addon:3 input:6 standard
 msgid ""
@@ -41,38 +45,38 @@ msgstr[1] ""
 
 #: addons/first_heroes_win.wad/init.lua:41 input:41 standard
 msgid "Number of heroes"
-msgstr ""
+msgstr "Sankareiden määrä"
 
 #: addons/first_heroes_win.wad/init.lua:98 input:98 standard
 msgid "Hero created!"
-msgstr ""
+msgstr "Sankari luotu!"
 
 #: addons/first_heroes_win.wad/init.lua:99 input:99 standard
 msgid "%1% has created a hero!"
-msgstr ""
+msgstr "%1% on luonut sankarin!"
 
 #: addons/first_heroes_win.wad/init.lua:101 input:101 standard
 msgid "You have a new Hero!"
-msgstr ""
+msgstr "Sinulla on uusi sankari!"
 
 #: addons/first_heroes_win.wad/init.lua:103 input:103 standard
 msgid "Hero Statistics:"
-msgstr ""
+msgstr "Sankarin tilastot:"
 
 #. TRANSLATORS: "Player x has y Heroes"
 #: addons/first_heroes_win.wad/init.lua:106 input:106 standard
 msgid "%1% has %2%"
-msgstr ""
+msgstr "%1% omistaa %2%"
 
 #: addons/first_heroes_win.wad/init.lua:106 input:106 standard
 msgid "%1% hero"
 msgid_plural "%1% heroes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1% sankari"
+msgstr[1] "%1% sankaria"
 
 #. TRANSLATORS: This is an item in a list in the form "Player Name: 3 heroes"
 #: addons/first_heroes_win.wad/init.lua:119 input:119 standard
 msgid "%1%: %2% hero"
 msgid_plural "%1%: %2% heroes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1%: %2% sankari"
+msgstr[1] "%1%: %2% sankaria"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-09-01 03:23+0200\n"
+"POT-Creation-Date: 2026-09-02 03:24+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
@@ -28,7 +28,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/init.lua:11 input:7 input:11
 #: standard
 msgid "Sumatrans"
-msgstr ""
+msgstr "Sumatralaiset"
 
 #: addons/sumatran_tribe.wad/addon:3 input:6 standard
 msgid ""
@@ -78,7 +78,7 @@ msgstr ""
 
 #: addons/sumatran_tribe.wad/immovables/palm_leaves/init.lua:7 input:7 standard
 msgid "Palm Leaves"
-msgstr ""
+msgstr "Palmunlehtiä"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/sumatran_tribe.wad/immovables/resi_coal_1/init.lua:8 input:8 standard
@@ -790,6 +790,8 @@ msgid ""
 "area."
 msgstr ""
 
+#. TRANSLATORS: Format string for a latin quote and its translation
+#. TRANSLATORS: Format string for a Latin quote and its translation
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
 #. TRANSLATORS: Format string for a latin quote and its translation
@@ -1784,7 +1786,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Tropical Swamp"
-msgstr ""
+msgstr "Trooppinen suo"
 
 #. TRANSLATORS: Completed/Skipped/Did not start giving home to more animals because ...
 #: addons/sumatran_tribe.wad/productionsites/tropical_swamp/init.lua:63
@@ -2233,6 +2235,8 @@ msgctxt "sumatran_building"
 msgid "upgrading warrior attack from level 2 to level 3"
 msgstr ""
 
+#. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
+#. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
@@ -3300,6 +3304,9 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:338
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:364
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:390 input:338
@@ -3316,6 +3323,8 @@ msgid ""
 "Copper is needed for armor production. It is a rare building material too."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
@@ -3547,6 +3556,12 @@ msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Kitchen Tools, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Fire Tongs, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Buckets, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 2
@@ -4332,6 +4347,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Sheet
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper Sheet
+#. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:531
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:542 input:531
 #: input:542 standard
@@ -4403,6 +4420,8 @@ msgid ""
 "and palm wine – to train warriors in defense."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
+#. TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
@@ -4871,6 +4890,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
 #. TRANSLATORS: Helptext for a Sumatran worker: Farmer
 #. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
+#. TRANSLATORS: Helptext for a Sumatran worker: Farmer
+#. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:749
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:756 input:749
 #: input:756 standard
@@ -4899,6 +4920,8 @@ msgctxt "sumatran_worker"
 msgid "Discovers resources for mining."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran worker: Miner
+#. TRANSLATORS: Helptext for a Sumatran worker: Master Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Master Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Miner
@@ -5342,6 +5365,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
 #. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
+#. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
+#. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:891
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:898 input:891
 #: input:898 standard
@@ -5392,13 +5417,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:947 input:947
 #: standard
 msgid "This reed field has just been planted."
-msgstr ""
+msgstr "Tämä ruokopelto on juuri istutettu."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:954 input:954
 #: standard
 msgid "This reed field is growing."
-msgstr ""
+msgstr "Tämä ruokopelto kasvaa."
 
 #. TRANSLATORS: Helptext for a Sumatran immovable: Reed Field
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:961 input:961
@@ -5539,7 +5564,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1104 input:1104
 #: standard
 msgid "There is only a little bit of coal here."
-msgstr ""
+msgstr "Täällä on vain vähän hiiltä."
 
 #. TRANSLATORS: Helptext for a Sumatran resource indicator: Iron, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1113
@@ -5694,6 +5719,18 @@ msgid ""
 "needs %3$s, %4$s or %5$s on average to cut down one tree respectively."
 msgstr ""
 
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s Tent, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Winery, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Shipyard, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 2
@@ -7210,6 +7247,8 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
 #. TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
 #. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
+#. TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
+#. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1378
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1720 input:1378
 #: input:1720 standard
@@ -7430,6 +7469,8 @@ msgid ""
 "new chief and %2% to gain one carrier."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
@@ -7912,6 +7953,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1564
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1574 input:1564
 #: input:1574 standard
@@ -8121,6 +8164,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1584
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1594 input:1584
 #: input:1594 standard
@@ -8149,6 +8194,8 @@ msgid ""
 "needed."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
@@ -8970,6 +9017,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Watchtower
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Fortified Tower
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Fort
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Guard Post
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Small Sentry
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Big Sentry
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Watchtower
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Fortified Tower
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Fort
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1662
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1671
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1680
@@ -8981,6 +9034,11 @@ msgctxt "sumatran_building"
 msgid "Garrisons warriors to expand your territory."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Sumatran military site: Guard Post
+#. TRANSLATORS: Note helptext for a Sumatran military site: Small Sentry
+#. TRANSLATORS: Note helptext for a Sumatran military site: Big Sentry
+#. TRANSLATORS: Note helptext for a Sumatran military site: Watchtower
+#. TRANSLATORS: Note helptext for a Sumatran military site: Fort
 #. TRANSLATORS: Note helptext for a Sumatran military site: Guard Post
 #. TRANSLATORS: Note helptext for a Sumatran military site: Small Sentry
 #. TRANSLATORS: Note helptext for a Sumatran military site: Big Sentry

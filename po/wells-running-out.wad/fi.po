@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-08-31 03:25+0200\n"
+"POT-Creation-Date: 2026-09-02 03:24+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
@@ -38,7 +38,7 @@ msgstr ""
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:7 input:7 standard
 msgctxt "barbarians_building"
 msgid "Deep Well"
-msgstr ""
+msgstr "Syvä kaivo"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:25
@@ -76,7 +76,7 @@ msgstr ""
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:7 input:7 standard
 msgctxt "frisians_building"
 msgid "Deep Well"
-msgstr ""
+msgstr "Syvä kaivo"
 
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:38 input:38 standard
 msgctxt "frisians_building"
@@ -101,8 +101,8 @@ msgstr ""
 #, lua-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d sekunti"
+msgstr[1] "%d sekuntia"
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:35 input:35 standard
