@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-09-03 03:36+0200\n"
+"POT-Creation-Date: 2026-09-04 03:25+0200\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
@@ -790,6 +790,8 @@ msgid ""
 "area."
 msgstr ""
 
+#. TRANSLATORS: Format string for a latin quote and its translation
+#. TRANSLATORS: Format string for a Latin quote and its translation
 #. TRANSLATORS: Format string for a latin quote and its translation
 #. TRANSLATORS: Format string for a Latin quote and its translation
 #. TRANSLATORS: Format string for a latin quote and its translation
@@ -2419,6 +2421,8 @@ msgstr ""
 #. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
 #. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
+#. TRANSLATORS: Sumatran training site tooltip when it has no warriors assigned
+#. TRANSLATORS: Sumatran training site tooltip when it has no warrior assigned
 #: addons/sumatran_tribe.wad/trainingsites/hunting_camp/init.lua:163
 #: addons/sumatran_tribe.wad/trainingsites/training_camp/init.lua:192 input:163
 #: input:192 standard
@@ -3314,6 +3318,9 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper Ore, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Iron Ore, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Gold Ore, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:338
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:364
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:390 input:338
@@ -3330,6 +3337,8 @@ msgid ""
 "Copper is needed for armor production. It is a rare building material too."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Iron, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper, part 2
@@ -3565,6 +3574,12 @@ msgid ""
 "The felling ax is the tool to cut down trees and is used by woodcutters."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Kitchen Tools, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Fire Tongs, part 2
+#. TRANSLATORS: Helptext for a Sumatran ware: Buckets, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Felling Ax, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Hammer, part 2
 #. TRANSLATORS: Helptext for a Sumatran ware: Machete, part 2
@@ -4366,6 +4381,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
 #. TRANSLATORS: Helptext for a Sumatran ware: Copper Sheet
 #. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
+#. TRANSLATORS: Helptext for a Sumatran ware: Copper Sheet
+#. TRANSLATORS: Helptext for a Sumatran ware: Gold Sheet
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:531
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:542 input:531
 #: input:542 standard
@@ -4437,6 +4454,8 @@ msgid ""
 "and palm wine – to train warriors in defense."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
+#. TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (male)
 #. TRANSLATORS: Helptext for a Sumatran worker: Carrier (female)
@@ -4913,6 +4932,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
 #. TRANSLATORS: Helptext for a Sumatran worker: Farmer
 #. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
+#. TRANSLATORS: Helptext for a Sumatran worker: Farmer
+#. TRANSLATORS: Helptext for a Sumatran worker: Experienced Farmer
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:749
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:756 input:749
 #: input:756 standard
@@ -4941,6 +4962,8 @@ msgctxt "sumatran_worker"
 msgid "Discovers resources for mining."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran worker: Miner
+#. TRANSLATORS: Helptext for a Sumatran worker: Master Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Master Miner
 #. TRANSLATORS: Helptext for a Sumatran worker: Miner
@@ -5210,6 +5233,8 @@ msgid ""
 "camps."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
+#. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
 #. TRANSLATORS: Helptext for a Sumatran immovable: Destroyed Building
 #. TRANSLATORS: Helptext for a Sumatran immovable: Ashes
@@ -6836,6 +6861,18 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 2
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Shipyard, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Woodcutter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Palm Planter’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Jungle Preserver’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Stonecutter’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s Tent, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Hunter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Water Carrier’s Hut, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Winery, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran training site: Hunting Camp, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 2
+#. TRANSLATORS: Performance helptext for a Sumatran production site: Shipyard, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1236
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1255
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1270
@@ -7288,6 +7325,8 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
 #. TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
 #. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
+#. TRANSLATORS: Note helptext for a Sumatran production site: Reed Yard
+#. TRANSLATORS: Note helptext for a Sumatran production site: Ferry Yard
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1378
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1720 input:1378
 #: input:1720 standard
@@ -7324,7 +7363,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Forges the tools that your workers need."
-msgstr ""
+msgstr "Takoo työläistesi tarvitsemia työkaluja."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Tools Workshop
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1401 input:1401
@@ -7375,7 +7414,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Produces shields and armor."
-msgstr ""
+msgstr "Tuottaa kilpiä ja panssareita."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1426 input:1426
 #: standard
@@ -7388,14 +7427,14 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Produces palm wine."
-msgstr ""
+msgstr "Tuottaa palmuviiniä."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Winery
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1435 input:1435
 #: standard
 msgctxt "sumatran_building"
 msgid "The worker needs old palms around his house."
-msgstr ""
+msgstr "Työläinen tarvitsee öljypalmuja talonsa ympärille."
 
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Winery, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1438 input:1438
@@ -7450,7 +7489,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Produces clothing."
-msgstr ""
+msgstr "Tuottaa vaatteita."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1467 input:1467
 #: standard
@@ -7463,7 +7502,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Smelts ore into iron, copper and gold."
-msgstr ""
+msgstr "Sulattaa malmia raudaksi, kupariksi ja kullaksi."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1475 input:1475
 #: standard
@@ -7478,7 +7517,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Polttaa tukkipuuta hiileksi."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1483 input:1483
 #: standard
@@ -7491,14 +7530,14 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Recruits warriors, hunters, chiefs and carriers."
-msgstr ""
+msgstr "Värvää sotureita, metsästäjiä, kokkeja ja kantajia."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Tribal Gathering, part 2
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1493 input:1493
 #: standard
 msgctxt "sumatran_building"
 msgid "Equips the recruits with all necessary weapons and clothing."
-msgstr ""
+msgstr "Varustaa värvättyjä kaikilla tarpeellisilla aseilla ja vaatteilla."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1495 input:1495
 #: standard
@@ -7508,6 +7547,8 @@ msgid ""
 "new chief and %2% to gain one carrier."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Plantation
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Cassava Fields
@@ -7735,7 +7776,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Breeds chickens for eggs and meat."
-msgstr ""
+msgstr "Kasvattaa kanoja munia ja lihaa varten."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Chicken Farm
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1526 input:1526
@@ -7757,7 +7798,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Weaves cloth out of reed and palm leaves."
-msgstr ""
+msgstr "Kutoo kangasta ruo'osta ja palmunlehdistä."
 
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1535 input:1535
 #: standard
@@ -7816,6 +7857,8 @@ msgctxt "sumatran_building"
 msgid "The miner needs %1% on average to produce one piece of ore."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
@@ -8211,6 +8254,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1584
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1594 input:1584
 #: input:1594 standard
@@ -8421,12 +8466,14 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Stone Mine
+#. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1604
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1614 input:1604
 #: input:1614 standard
 msgctxt "sumatran_building"
 msgid "Digs raw diamonds and granite out of the ground in mountain terrain."
-msgstr ""
+msgstr "Kaivaa maasta raakatimantteja ja graniittia vuorimaastossa."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1606 input:1606
@@ -8445,6 +8492,8 @@ msgid ""
 "The miner needs %1% on average to produce one piece of granite or raw "
 "diamond."
 msgstr ""
+"Louhija tarvitsee %1% keskimäärin tuottaakseen yhden palan graniittia tai "
+"raakatimanttia."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1616 input:1616
@@ -8463,6 +8512,8 @@ msgid ""
 "The miners need %1% on average to produce one piece of granite or raw "
 "diamond."
 msgstr ""
+"Louhija tarvitsee %1% keskimäärin tuottaakseen yhden palan graniittia tai "
+"raakatimanttia."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Training Camp, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1627 input:1627
@@ -8476,7 +8527,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Equips the warriors with all necessary armor parts and weapons."
-msgstr ""
+msgstr "Varustaa soturit kaikilla tarpeellisilla panssarin osilla ja aseilla."
 
 #. TRANSLATORS: Performance helptext for a Sumatran training site: Training Camp, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1633 input:1633
@@ -8494,7 +8545,7 @@ msgstr ""
 #, lua-format
 msgctxt "sumatran_building"
 msgid "Complete training of one soldier takes %s."
-msgstr ""
+msgstr "Yhden soturin koko koulutus kestää %s."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Hunting Camp
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1643 input:1643
@@ -8528,8 +8579,14 @@ msgstr ""
 #, lua-format
 msgctxt "sumatran_building"
 msgid "Complete training of one soldier takes %s on average."
-msgstr ""
+msgstr "Soturin koko koulutus kestää %s keskimäärin."
 
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Guard Post
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Small Sentry
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Big Sentry
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Watchtower
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Fortified Tower
+#. TRANSLATORS: Purpose helptext for a Sumatran military site: Fort
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Guard Post
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Small Sentry
 #. TRANSLATORS: Purpose helptext for a Sumatran military site: Big Sentry
@@ -9542,6 +9599,11 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Sumatran military site: Big Sentry
 #. TRANSLATORS: Note helptext for a Sumatran military site: Watchtower
 #. TRANSLATORS: Note helptext for a Sumatran military site: Fort
+#. TRANSLATORS: Note helptext for a Sumatran military site: Guard Post
+#. TRANSLATORS: Note helptext for a Sumatran military site: Small Sentry
+#. TRANSLATORS: Note helptext for a Sumatran military site: Big Sentry
+#. TRANSLATORS: Note helptext for a Sumatran military site: Watchtower
+#. TRANSLATORS: Note helptext for a Sumatran military site: Fort
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1664
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1673
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1682
@@ -9570,7 +9632,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "Builds ferries."
-msgstr ""
+msgstr "Rakentaa aitoja."
 
 #. TRANSLATORS: Performance helptext for a Sumatran production site: Ferry Yard, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1723 input:1723
@@ -9604,7 +9666,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
-msgstr ""
+msgstr "'Älä kiroile rakentajalle, jolla on rakennusmateriaalit vähissä.'"
 
 #. TRANSLATORS: Lore author helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1750 input:1750
@@ -9793,42 +9855,42 @@ msgstr ""
 #: standard
 msgctxt "sumatrans"
 msgid "Worker missing"
-msgstr ""
+msgstr "Työläinen puuttuu"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is 1 worker coming
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1798 input:1798
 #: standard
 msgctxt "sumatrans"
 msgid "Worker is coming"
-msgstr ""
+msgstr "Työläinen on tulossa"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1800 input:1800
 #: standard
 msgctxt "sumatrans"
 msgid "Workers missing"
-msgstr ""
+msgstr "Työläisiä puuttuu"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1802 input:1802
 #: standard
 msgctxt "sumatrans"
 msgid "Workers are coming"
-msgstr ""
+msgstr "Työläisiä on tulossa"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is 1 experienced worker missing
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1804 input:1804
 #: standard
 msgctxt "sumatrans"
 msgid "Expert missing"
-msgstr ""
+msgstr "Asiantuntija puuttuu"
 
 #. TRANSLATORS: Productivity label on a Sumatran building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1806 input:1806
 #: standard
 msgctxt "sumatrans"
 msgid "Experts missing"
-msgstr ""
+msgstr "Asiantuntijoita puuttuu"
 
 #. TRANSLATORS: %1% is the number of sumatran warriors the plural refers to. %2% is the maximum number of warrior slots in the building.
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1820 input:1820
@@ -9845,8 +9907,8 @@ msgstr[1] ""
 msgctxt "sumatran_soldier"
 msgid "%1% warrior"
 msgid_plural "%1% warriors"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1% soturi"
+msgstr[1] "%1% soturia"
 
 #. TRANSLATORS: %1% is the number of sumatran warriors the plural refers to. %2% are currently open warrior slots in the building. %3% is the maximum number of warrior slots in the building
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1824 input:1824
@@ -9871,14 +9933,14 @@ msgstr[1] ""
 #: standard
 msgctxt "ware"
 msgid "Copper Armor"
-msgstr ""
+msgstr "Kuparipanssari"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/armor_golden/init.lua:8 input:8
 #: standard
 msgctxt "ware"
 msgid "Golden Armor"
-msgstr ""
+msgstr "Kultapanssari"
 
 #. TRANSLATORS: This is a ware name.
 #: addons/sumatran_tribe.wad/tribes/wares/cassavaleaves/init.lua:8 input:8
@@ -9912,41 +9974,41 @@ msgstr ""
 #: standard
 msgctxt "ware"
 msgid "Crocodile Jacket"
-msgstr ""
+msgstr "Krokotiilitakki"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/crocodile_shoes/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_ware"
 msgid "Crocodile Shoes"
-msgstr ""
+msgstr "Krokotiilikengät"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/crocodile_skin/init.lua:8 input:8
 #: standard
 msgctxt "ware"
 msgid "Crocodile Skin"
-msgstr ""
+msgstr "Krokotiilinnahka"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/diamond_raw/init.lua:8 input:8
 #: standard
 msgctxt "ware"
 msgid "Raw Diamond"
-msgstr ""
+msgstr "Raakatimantti"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/eggs/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Eggs"
-msgstr ""
+msgstr "Munia"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/food_waste/init.lua:8 input:8
 #: standard
 msgctxt "ware"
 msgid "Food Waste"
-msgstr ""
+msgstr "Ruokajäte"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/gold_sheet/init.lua:8 input:8
@@ -9959,14 +10021,14 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/wares/palm_wine/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Palm Wine"
-msgstr ""
+msgstr "Palmuviini"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/palmleaves/init.lua:8 input:8
 #: standard
 msgctxt "ware"
 msgid "Palm Leaves"
-msgstr ""
+msgstr "Palmunlehdet"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/sandedwood/init.lua:8 input:8
@@ -9980,7 +10042,7 @@ msgstr ""
 #: standard
 msgctxt "ware"
 msgid "Golden Shield"
-msgstr ""
+msgstr "Kultainen kilpi"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/starch/init.lua:8 input:8 standard
@@ -9993,20 +10055,20 @@ msgstr ""
 #: standard
 msgctxt "ware"
 msgid "Tropical Wood"
-msgstr ""
+msgstr "Trooppinen puu"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/warriors_dress/init.lua:8 input:8
 #: standard
 msgctxt "ware"
 msgid "Warrior’s Dress"
-msgstr ""
+msgstr "Soturin mekko"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/sumatran_tribe.wad/tribes/wares/whetstone/init.lua:8 input:8 standard
 msgctxt "ware"
 msgid "Whetstone"
-msgstr ""
+msgstr "Hiomakivi"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/armorsmith/init.lua:8 input:8
@@ -10019,13 +10081,13 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/breeder/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Breeder"
-msgstr ""
+msgstr "Kasvattaja"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/builder/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Builder"
-msgstr ""
+msgstr "Rakentaja"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/carrier/init.lua:8 input:8 standard
@@ -10057,28 +10119,28 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/cook/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Cook"
-msgstr ""
+msgstr "Kokki"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/coppersmith/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Coppersmith"
-msgstr ""
+msgstr "Kupariseppä"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/craftsman/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Craftsman"
-msgstr ""
+msgstr "Käsityöläinen"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/craftsman_experienced/init.lua:8
 #: input:8 standard
 msgctxt "sumatran_worker"
 msgid "Experienced Craftsman"
-msgstr ""
+msgstr "Kokenut käsityöläinen"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/dressmaker/init.lua:8 input:8
@@ -10091,40 +10153,40 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/farmer/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Farmer"
-msgstr ""
+msgstr "Maanviljelijä"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/farmer_experienced/init.lua:8
 #: input:8 standard
 msgctxt "sumatran_worker"
 msgid "Experienced Farmer"
-msgstr ""
+msgstr "Kokenut maanviljelijä"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/ferry/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Ferry"
-msgstr ""
+msgstr "Lautta"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/forester/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Forester"
-msgstr ""
+msgstr "Metsuri"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/geologist/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Geologist"
-msgstr ""
+msgstr "Geologi"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/hunter/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Hunter"
-msgstr ""
+msgstr "Metsästäjä"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/hunter_chief/init.lua:8 input:8
@@ -10138,7 +10200,7 @@ msgstr ""
 #: standard
 msgctxt "sumatran_worker"
 msgid "Jungle Ghost"
-msgstr ""
+msgstr "Viidakon aave"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/leaf_gatherer/init.lua:8 input:8
@@ -10151,20 +10213,20 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/miner/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Miner"
-msgstr ""
+msgstr "Louhija"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/miner_master/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Master Miner"
-msgstr ""
+msgstr "Mestarilouhija"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/recruit/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Recruit"
-msgstr ""
+msgstr "Värvätty"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/reedcutter/init.lua:8 input:8
@@ -10177,65 +10239,65 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/workers/scout/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Scout"
-msgstr ""
+msgstr "Tiedustelija"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/shipwright/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Shipwright"
-msgstr ""
+msgstr "Laivanrakentaja"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/smelter/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Smelter"
-msgstr ""
+msgstr "Sulattaja"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/soldier/init.lua:107 input:107
 #: standard
 msgctxt "sumatran_worker"
 msgid "Warrior"
-msgstr ""
+msgstr "Soturi"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/stonecutter/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Stonecutter"
-msgstr ""
+msgstr "Kivenhakkaaja"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/tribal_chief/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Tribal Chief"
-msgstr ""
+msgstr "Heimopäällikkö"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/water_carrier/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Water Carrier"
-msgstr ""
+msgstr "Vedenkantaja"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/weaver/init.lua:8 input:8 standard
 msgctxt "sumatran_worker"
 msgid "Weaver"
-msgstr ""
+msgstr "Kutoja"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/winemaker/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Winemaker"
-msgstr ""
+msgstr "Viininvalmistaja"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/sumatran_tribe.wad/tribes/workers/woodcutter/init.lua:8 input:8
 #: standard
 msgctxt "sumatran_worker"
 msgid "Woodcutter"
-msgstr ""
+msgstr "Puunhakkaaja"
