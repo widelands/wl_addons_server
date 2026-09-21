@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-09-02 03:22+0200\n"
+"POT-Creation-Date: 2026-09-21 03:24+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/addon:2 input:7 standard
 msgid "Frisians Economy Ultra"
-msgstr ""
+msgstr "Friisien talous ultra"
 
 #: addons/frisians-economy-ultra.wad/addon:3 input:6 standard
 msgid ""
@@ -117,7 +117,7 @@ msgstr ""
 #: standard
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr ""
+msgstr "Karapelto (puitu)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/medium/init.lua:8 input:8
@@ -146,15 +146,16 @@ msgstr "Kaurapelto (pikkuruinen)"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:9 input:9 standard
 msgid "This rye field has been harvested."
-msgstr ""
+msgstr "Tämä ruispelto on puitu."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:12 input:12 standard
 msgid "This rye field is ready for harvesting."
-msgstr ""
+msgstr "Tämä ruispelto on valmis puitavaksi."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:15 input:15 standard
 msgid "This rye field is flowering. Beekeepers can use it to produce honey."
 msgstr ""
+"Tämä ruispelto kukoistaa. Mehiläistarhaajat voivat tuottaa niillä hunajaa."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:18 input:18 standard
 msgid "This rye field is growing."
@@ -166,15 +167,16 @@ msgstr "Tämä ruispelto on juuri istutettu."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:25 input:25 standard
 msgid "This oat field has been harvested."
-msgstr ""
+msgstr "Tämä kaurapelto on puitu."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:28 input:28 standard
 msgid "This oat field is ready for harvesting."
-msgstr ""
+msgstr "Tämä kaurapelto on valmis puitavaksi."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:31 input:31 standard
 msgid "This oat field is flowering. Beekeepers can use it to produce honey."
 msgstr ""
+"Tämä kaurapelto kukoistaa. Mehiläistarhaajat voivat tuottaa niillä hunajaa."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:34 input:34 standard
 msgid "This oat field is growing."
@@ -186,7 +188,7 @@ msgstr "Tämä kaurapelto on juuri istutettu."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:45 input:45 standard
 msgid "Salt is washed from the sea and used to conserve meat and fish."
-msgstr ""
+msgstr "Suolaa huuhdotaan merestä, ja sillä säilötään lihaa ja kalaa."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:48 input:48 standard
 msgid "Rye is used to bake bread. It needs to be ground into flour first."
@@ -202,11 +204,11 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:57 input:57 standard
 msgid "Oat is used to bake bread and also fed to the reindeer."
-msgstr ""
+msgstr "Kauralla leivotaan leipää, ja sillä myös ruokitaan poroja."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:60 input:60 standard
 msgid "Fur can be tanned into leather, which is needed to produce garments."
-msgstr ""
+msgstr "Turkiksista tehdään nahkoja, joita tarvitaan pukineiden tuottamiseen."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:104 input:104 standard
 msgid "The salter washes salt from the shores of the sea."
@@ -230,7 +232,7 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:122 input:122 standard
 msgid "The tannery tans fur into leather."
-msgstr ""
+msgstr "Nahkuri tuottaa nahkaa turkiksista."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:125 input:125 standard
 msgid "The barley mill grinds barley into barley flour."
@@ -242,11 +244,11 @@ msgstr "Ruismylly jauhaa ruista ruisjauhoksi."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:131 input:131 standard
 msgid "The rye farm sows and harvests rye."
-msgstr ""
+msgstr "Ruistila kylvää ja pui ruista."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:134 input:134 standard
 msgid "The oat farm sows and harvests oat."
-msgstr ""
+msgstr "Kauratila kylvää ja pui kauraa."
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:144 input:144 standard
@@ -262,7 +264,7 @@ msgstr "lihan savustaminen"
 #: addons/frisians-economy-ultra.wad/postload.lua:171 input:171 standard
 msgctxt "frisians_building"
 msgid "rearing reindeer"
-msgstr ""
+msgstr "poronkasvatus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:181
@@ -299,17 +301,17 @@ msgstr "Ruis"
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:8 input:8 standard
 msgctxt "frisians_building"
 msgid "Rye Farm"
-msgstr ""
+msgstr "Ruistila"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:52 input:52 standard
 msgid "planting rye"
-msgstr ""
+msgstr "rukiin istuttaminen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:60 input:60 standard
 msgid "harvesting rye"
-msgstr ""
+msgstr "rukiin puinti"
 
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:71 input:71 standard
 msgctxt "frisians_building"
@@ -332,14 +334,14 @@ msgstr "Ruismylly"
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51 input:51 standard
 msgid "grinding rye"
-msgstr ""
+msgstr "rukiin jauhaminen"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:8 input:8
 #: standard
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Ruispelto (puitu)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:8 input:8
@@ -394,7 +396,7 @@ msgstr "Nahkuri"
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:8 input:8 standard
 msgctxt "frisians_building"
 msgid "Tannery"
-msgstr ""
+msgstr "Nahkuri"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tanning fur because ...
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:47 input:47 standard
@@ -403,4 +405,4 @@ msgstr ""
 
 #: input:3 screenshots/frisians-economy-ultra.wad/descriptions:1 standard
 msgid "Example screenshot of version 1"
-msgstr ""
+msgstr "Version 1 mallikuvankaappaus"
