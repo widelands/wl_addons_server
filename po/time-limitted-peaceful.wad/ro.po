@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR "Widelands Development Team"
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-10-03 03:28+0200\n"
+"PO-Revision-Date: 2023-06-22 14:38+0000\n"
+"Language-Team: Romanian (https://app.transifex.com/widelands/teams/35159/"
+"ro/)\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: addons/time-limitted-peaceful.wad/addon:6 input:6 standard
+msgid ""
+"The game is peaceful for 45 minutes.<br><br>(For a different time adapt the "
+"constant in the code in 'init.lua'.)"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/addon:9 input:9 standard
+msgid "Time limited peaceful mode"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:32 input:32 standard
+msgid "Peaceful mode ends now"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:33 input:33 standard
+msgid "All players can attack each other. (Team mates excluded of course.)"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:81 input:81 standard
+msgid "win condition config"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:92 input:92 standard
+msgid "Peaceful mode for ..."
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:93 input:93 standard
+msgid "Duration of peaceful mode"
+msgstr ""

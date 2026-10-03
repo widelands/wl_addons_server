@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR "Widelands Development Team"
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-10-03 03:28+0200\n"
+"PO-Revision-Date: 2024-01-10 16:15+0000\n"
+"Language-Team: Romanian (https://app.transifex.com/widelands/teams/35159/"
+"ro/)\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: addons/no-stats-till-spied.wad/addon:4 input:9 standard
+msgid "No player stats until a scout spied them"
+msgstr ""
+
+#: addons/no-stats-till-spied.wad/addon:5 input:6 standard
+msgid "It needs a scout to know details about the other players."
+msgstr ""
+
+#: addons/no-stats-till-spied.wad/init.lua:18 input:18 standard
+msgid "No player statistics till spied"
+msgstr ""
+
+#: addons/no-stats-till-spied.wad/init.lua:19 input:19 standard
+msgid ""
+"Players have statistics about their XXX in their warehouses (all buildings "
+"storing wares).\n"
+"            To know statistics about other players, you need a scout to spy "
+"there."
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a player
+#: addons/no-stats-till-spied.wad/init.lua:67 input:67 standard
+#, lua-format
+msgid "A spy has now information about %s. Find it in statistics."
+msgstr ""
+
+#: addons/no-stats-till-spied.wad/init.lua:69 input:69 standard
+msgid "A spy gives information"
+msgstr ""

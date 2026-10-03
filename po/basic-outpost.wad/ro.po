@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR "Widelands Development Team"
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-10-03 03:21+0200\n"
+"PO-Revision-Date: 2023-11-25 14:32+0000\n"
+"Language-Team: Romanian (https://app.transifex.com/widelands/teams/35159/"
+"ro/)\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/basic-outpost.wad/addon:4 addons/basic-outpost.wad/amazons.lua:11
+#: addons/basic-outpost.wad/atlanteans.lua:11
+#: addons/basic-outpost.wad/barbarians.lua:11
+#: addons/basic-outpost.wad/empire.lua:11
+#: addons/basic-outpost.wad/frisians.lua:11 input:9 input:11 standard
+msgid "Basic Outpost"
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Basics" starting condition
+#: addons/basic-outpost.wad/amazons.lua:13
+#: addons/basic-outpost.wad/atlanteans.lua:13
+#: addons/basic-outpost.wad/barbarians.lua:13
+#: addons/basic-outpost.wad/empire.lua:13
+#: addons/basic-outpost.wad/frisians.lua:13 input:13 standard
+msgid ""
+"Start the game with your headquarters and a small selection of wares - just "
+"enough to create a few tools to help establish a full economy. Warning: the "
+"AI can’t successfully start from this."
+msgstr ""
+
+#: input:6 standard
+msgid ""
+"A low wares starting condition. Like a 'struggling outpost' but with enough "
+"extra resources to make some tools, so that getting established is faster "
+"and more flexible. Suitable for reasonably balanced low wares starts, or "
+"handicap starts vs full outpost.<br> <br>Here is a basic tip for Basic "
+"Outpost: You only start with a small amount of iron for new tools. So click "
+"on a flag to change the economy targets of all tools to zero. Otherwise "
+"you'll be wasting iron on tools you don't need."
+msgstr ""

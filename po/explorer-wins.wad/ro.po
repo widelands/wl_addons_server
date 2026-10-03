@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR "Widelands Development Team"
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-10-03 03:27+0200\n"
+"PO-Revision-Date: 2022-10-29 17:44+0000\n"
+"Language-Team: Romanian (https://app.transifex.com/widelands/teams/35159/"
+"ro/)\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: addons/explorer-wins.wad/addon:6 input:6 standard
+msgid "The player who has explored most of the world wins the game"
+msgstr ""
+
+#: addons/explorer-wins.wad/addon:9 input:9 standard
+msgid "explorer wins"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:19 input:19 standard
+msgid "Explorer Wins"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:21 input:21 standard
+#, lua-format
+msgid "The player who has explored %1d%% of the world wins the game"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:26 input:26 standard
+msgid "% explored"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:46 input:46 standard
+msgid ""
+"There are %1$d fields on the map, but only %2$d are terrestrial, which is "
+"%3$d%%. You need to explore %4$d%%."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:50 input:50 standard
+msgid "Probably not winnable"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:50 input:50 standard
+msgid "This map is probably not winnable with %1$s."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:52 input:52 standard
+msgid "Maybe not winnable"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:52 input:52 standard
+msgid "This map is maybe not winnable with %1$s."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:69 input:69 standard
+msgid "You can explore by expanding, with a scout, with ships, ..."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:94 input:94 standard
+msgid "Win condition not compatible with \"No fog of war\""
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:95 input:95 standard
+msgid ""
+"The win condition %1$s can not be played with \"No fog of war\" enabled."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:96 input:96 standard
+msgid "Continue playing endlessly or restart with fog."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:150 input:150 standard
+msgid "Player %1$1d has explored %2$1d%%"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:152 input:152 standard
+#, lua-format
+msgid " (%d fields)"
+msgstr ""

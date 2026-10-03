@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR "Widelands Development Team"
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-10-03 03:21+0200\n"
+"PO-Revision-Date: 2025-08-27 12:08+0000\n"
+"Language-Team: Romanian (https://app.transifex.com/widelands/teams/35159/"
+"ro/)\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: addons/economy_modifier.wad/addon:2 input:7 standard
+msgid "Economy Modifier Addon"
+msgstr ""
+
+#: addons/economy_modifier.wad/addon:3 input:6 standard
+msgid ""
+"This mod changes the production logic so that buildings only create wares or "
+"workers if they are required. Each ware has a predefined target value, which "
+"can still be modified during gameplay."
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:262 input:262 standard
+msgid "gathering water"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:271
+#: addons/economy_modifier.wad/postload.lua:280
+#: addons/economy_modifier.wad/postload.lua:289
+#: addons/economy_modifier.wad/postload.lua:298 input:271 input:280 input:289
+#: input:298 standard
+msgid "mining water"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:309 input:309 standard
+msgid "cutting granite"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:316
+#: addons/economy_modifier.wad/postload.lua:323
+#: addons/economy_modifier.wad/postload.lua:330
+#: addons/economy_modifier.wad/postload.lua:344 input:316 input:323 input:330
+#: input:344 standard
+msgid "quarrying granite"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:337 input:337 standard
+msgid "quarrying marble"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:353
+#: addons/economy_modifier.wad/postload.lua:388
+#: addons/economy_modifier.wad/postload.lua:409
+#: addons/economy_modifier.wad/postload.lua:416
+#: addons/economy_modifier.wad/postload.lua:430 input:353 input:388 input:409
+#: input:416 input:430 standard
+msgid "planting trees"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:360 input:360 standard
+msgid "harvesting balsa"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:367 input:367 standard
+msgid "harvesting ironwood"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:374 input:374 standard
+msgid "harvesting rubber"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:381
+#: addons/economy_modifier.wad/postload.lua:395
+#: addons/economy_modifier.wad/postload.lua:402
+#: addons/economy_modifier.wad/postload.lua:423
+#: addons/economy_modifier.wad/postload.lua:437 input:381 input:395 input:402
+#: input:423 input:437 standard
+msgid "felling trees"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:446 input:446 standard
+msgid "gathering fish"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:453
+#: addons/economy_modifier.wad/postload.lua:460 input:453 input:460 standard
+msgid "breeding fish"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:467
+#: addons/economy_modifier.wad/postload.lua:474
+#: addons/economy_modifier.wad/postload.lua:481
+#: addons/economy_modifier.wad/postload.lua:488 input:467 input:474 input:481
+#: input:488 standard
+msgid "fishing"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:497 input:497 standard
+msgid "gathering meat"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:504 input:504 standard
+msgid "releasing game"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:511
+#: addons/economy_modifier.wad/postload.lua:525
+#: addons/economy_modifier.wad/postload.lua:532
+#: addons/economy_modifier.wad/postload.lua:539 input:511 input:525 input:532
+#: input:539 standard
+msgid "hunting"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:518 input:518 standard
+msgid "releasing"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:557 input:557 standard
+msgid "making honey"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:566 input:566 standard
+msgid "harvesting cassava"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:573 input:573 standard
+msgid "harvesting cocoa"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:580 input:580 standard
+msgid "harvesting blackroot"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:587 input:587 standard
+msgid "harvesting corn"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:594
+#: addons/economy_modifier.wad/postload.lua:609 input:594 input:609 standard
+msgid "harvesting wheat"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:602
+#: addons/economy_modifier.wad/postload.lua:639 input:602 input:639 standard
+msgid "harvesting reed"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:616 input:616 standard
+msgid "harvesting grapes"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:623 input:623 standard
+msgid "gathering berries"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:630 input:630 standard
+msgid "harvesting barley"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:648 input:648 standard
+msgid "making a rope"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:657 input:657 standard
+msgid "grinding blackroot"
+msgstr ""
+
+#: addons/economy_modifier.wad/postload.lua:668 input:668 standard
+msgid "making wine"
+msgstr ""
