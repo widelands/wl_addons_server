@@ -3,7 +3,7 @@ include("scripting/richtext.lua")
 include("scripting/messages.lua")
 include("scripting/win_conditions/win_condition_functions.lua")
 
-include(path.dirname(__file__) .. "helpers.lua")
+local h = include(path.dirname(__file__) .. "helpers.lua")
 
 local wc_dir = "win_cond_military_influence.wad"
 push_textdomain(wc_dir, true)
@@ -13,6 +13,8 @@ local soldier_descrs = {}
 local max_soldier_levels = {}
 local max_soldier_strengths = {}
 local min_soldier_strengths = {}
+local hero_bonuses = {}
+local rookie_bonuses = {}
 
 local num_to_idx = {}
 local all_points = {}
@@ -21,7 +23,6 @@ local function update_wc_info() end
 
 local function calculate_points()
    local game = wl.Game()
-
    local gametime = game.time
    if last_calculation_time > 0 and gametime < (last_calculation_time + 10000) then
       return
@@ -36,7 +37,9 @@ local function calculate_points()
    for idx,plr in ipairs(game.players) do
       local num_milsites = 0
       local guarded_area = 0
+      local adjusted_area = 0
       local guards_strength = 0
+      local adjusted_strength = 0
       local total_capacity = 0
       local num_guards = 0
       local soldierstat = 0
@@ -52,32 +55,43 @@ local function calculate_points()
          if #bt > 0 then
             local bd = bt[1].descr
             local is_milsite = bd.type_name == "militarysite"
+            local is_trainingsite = bd.type_name == "trainingsite"
 
-            if is_milsite or bd.type_name == "warehouse" or bd.type_name == "trainingsite" then
+            if is_milsite or bd.type_name == "warehouse" or is_trainingsite then
                local conquer_area = 0
+               local area_bonus_ = 0
 
                if is_milsite then
                   num_milsites = num_milsites + #bt
-                  conquer_area = controlled_fields(bd.conquers)
-                  guarded_area = guarded_area + #bt * conquer_area
+                  conquer_area = h.controlled_fields(bd.conquers)
+                  area_bonus_ = h.area_bonus(bd.conquers)
                   total_capacity = total_capacity + #bt * bd.max_number_of_soldiers
                end
 
                for j,b in ipairs(bt) do
-                  local sums = soldiersums(b, is_milsite, max_soldier_levels[idx], soldier_descrs[idx])
+                  local sums = h.soldiersums(b, is_milsite, max_soldier_levels[idx], soldier_descrs[idx])
                   found_soldiers = found_soldiers + sums.count
                   soldier_levels = soldier_levels + sums.levels
                   soldierstat = soldierstat + sums.stats
                   heroes = heroes + sums.heroes
 
                   if is_milsite then
-                     guards_strength = guards_strength + sums.strength
-                     num_guards = num_guards + sums.count
-                     if sums.count == 0 then
+                     local bonus = h.apply_training_penalty(idx, h.soldier_bonus(sums.strength), b.fields[1])
+                     bonus = 1 + h.apply_hq_penalty(idx, bonus + area_bonus_, b.fields[1])
+
+                     if sums.count > 0 then
                         -- no cheating with empty buildings
-                        guarded_area = guarded_area - conquer_area
+                        guarded_area = guarded_area + conquer_area
+                        adjusted_area = adjusted_area + conquer_area * bonus
+                        guards_strength = guards_strength + sums.strength
+                        adjusted_strength = adjusted_strength + sums.strength * bonus
+                        num_guards = num_guards + sums.count
                      end
+
+                  elseif is_trainingsite then
+                     h.check_trainingsite(idx, b.fields[1])
                   end
+
                end
             end
          end
@@ -87,7 +101,7 @@ local function calculate_points()
 -- needs v1.4~
       local plr_ships = plr:get_ships()
       for n,ship in pairs(plr_ships) do
-         local sums = soldiersums(ship, false, max_soldier_levels[idx], nil)
+         local sums = h.soldiersums(ship, false, max_soldier_levels[idx], nil)
          found_soldiers = found_soldiers + sums.count
          soldier_levels = soldier_levels + sums.levels
          soldierstat = soldierstat + sums.stats
@@ -99,12 +113,21 @@ local function calculate_points()
 -- and ships, see above
       local uncounted_soldiers = total_soldiers - found_soldiers
 
+      -- a player may not own any fields at the start of the game if they’re still
+      -- picking a starting field or if they have Discovery or New World starting
+      -- condition
+      if owned_fields[plr.number] == nil then
+         owned_fields[plr.number] = 0
+      end
+
       all_points[idx] = {
          total_area = owned_fields[plr.number],
          num_milsites = num_milsites,
          total_capacity = total_capacity,
          guarded_area = guarded_area,
+         adjusted_area = adjusted_area,
          guards_strength = guards_strength,
+         adjusted_strength = adjusted_strength,
          soldierstat = soldierstat,
          total_levels = soldier_levels,
          total_soldiers = total_soldiers,
@@ -113,8 +136,8 @@ local function calculate_points()
          uncounted_soldiers = uncounted_soldiers,
          heroes = heroes,
 
-         points = math.exp(math.log(owned_fields[plr.number] * guarded_area) / 6 +
-                           math.log(soldierstat * guards_strength) / 3),
+         points = h.score_weighting(
+            owned_fields[plr.number], adjusted_area, soldierstat, adjusted_strength),
       }
    end
 
@@ -148,6 +171,13 @@ local function generate_score_info(pidx)
       average_strength = 100 * stats.guards_strength / stats.total_capacity / max_soldier_strengths[pidx]
    end
 
+   local average_bonus_area = 0
+   local average_bonus_strength = 0
+   if stats.guards_strength > 0 then
+      average_bonus_area = (stats.adjusted_area / stats.guarded_area - 1) * 100
+      average_bonus_strength = (stats.adjusted_strength / stats.guards_strength - 1) * 100
+   end
+
    push_textdomain(wc_dir, true)
 
    -- TRANSLATORS: Gametime as hours:minutes, e.g. 2:30
@@ -164,20 +194,23 @@ local function generate_score_info(pidx)
 
       h3(_("Area info")) ..
       li_d(b(_("Area score: ") ..
-         score_colour(math.sqrt(stats.total_area * stats.guarded_area))
+         score_colour(math.sqrt(stats.total_area * stats.adjusted_area))
       )) ..
       li_d(b(_("Total area: %d"):bformat(stats.total_area))) ..
-      li_d(b(_("Area controlled by military buildings: %d"):bformat(stats.guarded_area))) ..
+      li_d(_("Area controlled by military buildings: %d"):bformat(stats.guarded_area)) ..
+      li_d(b(_("Controlled area with bonuses and penalties: %d"):bformat(stats.adjusted_area))) ..
       li_d(_("Conquerable map area: %d"):bformat(max_area)) ..
       li_d(_("Player owns %.1f%% of the conquerable map area"):bformat(100 * stats.total_area / max_area)) ..
       li_d(_("Number of military buildings: %d"):bformat(stats.num_milsites)) ..
+      li_d(_("Average bonus/penalty weighted by area: %+.1f%%"):bformat(average_bonus_area)) ..
 
       h3(_("Soldiers info")) ..
       li_d(b(_("Soldiers score: ") ..
-         score_colour(math.sqrt(stats.soldierstat * stats.guards_strength))
+         score_colour(math.sqrt(stats.soldierstat * stats.adjusted_strength))
       )) ..
       li_d(b(_("Soldiers statistics score: %d"):bformat(stats.soldierstat))) ..
-      li_d(b(_("Total effective strength of guards: %d"):bformat(stats.guards_strength))) ..
+      li_d(_("Total effective strength of guards: %d"):bformat(stats.guards_strength)) ..
+      li_d(b(_("Strength of guards with bonuses and penalties: %d"):bformat(stats.adjusted_strength))) ..
       li_d(_("Total number of soldiers: %d"):bformat(stats.total_soldiers)) ..
       li_d(_("Soldiers in buildings: %d"):bformat(stats.found_soldiers)) ..
       li_d(_("Soldiers on roads and ships: %d"):bformat(stats.uncounted_soldiers)) ..
@@ -185,7 +218,8 @@ local function generate_score_info(pidx)
       li_d(_("Sum of all soldier levels: %d"):bformat(stats.total_levels)) ..
       li_d(_("Total number of guards: %d"):bformat(stats.num_guards)) ..
       li_d(_("%.1f%% of available positions"):bformat(average_fill)) ..
-      li_d(_("Average strength of garrisons: %.1f%%"):bformat(average_strength))
+      li_d(_("Average strength of garrisons: %.1f%%"):bformat(average_strength)) ..
+      li_d(_("Average bonus/penalty weighted by strength: %+.1f%%"):bformat(average_bonus_strength))
 
    pop_textdomain()
 
@@ -197,9 +231,10 @@ local helptext_common =
    h2(_("Calculation method")) ..
    p(_("The final score is a weighted geometric mean of four scores:")) ..
    li(_("the total owned area")) ..
-   li(_("the sum of conquer areas of military sites")) ..
+   li(_("the sum of adjusted conquer areas of military sites")) ..
    li(_("the total soldier statistics score")) ..
-   li(_("the total effective strength of soldiers in military sites")) ..
+   li(_("the total adjusted effective strength of soldiers in military sites")) ..
+   p(_("The adjusted scores use bonuses and penalties depending on difficulty.")) ..
    p(_("The areas are counted with half weight. That means that first the area score is " ..
        "calculated as the square root of the product of the two partial area scores, then " ..
        "the final score is the third root of the product of the area score and the two " ..
@@ -237,6 +272,32 @@ local function helptext_strength(pidx)
 end
 
 
+local helptext_bonus =
+   h3(_("Bonuses and penalties")) ..
+   p(_("Each military site gets a bonus or penalty for the relative size of its conquer area " ..
+       "and the relative strength of its garrison. Values above the average of the possible " ..
+       "values get a bonus, below it get a penalty.")) ..
+   p(_("The soldier bonus uses a logarithmic scale for the effective strength:")) ..
+   p(space(styles.get_size("ui_default_indent")) ..
+     _("soldier_bonus = (ln(garrison strength) - 3.5) / 10")) ..
+   p(_("The average value of 3.5 is roughly:")) ..
+   li(_("the strength of a castle full of rookies: ln(12 * 2.76)")) ..
+   li(_("the strength of one very strong hero: ln(33.11)")) ..
+   li(_("the geometric mean of one rookie and a castle full of heroes:") ..
+      "<br>" .. space(2 * styles.get_size("ui_default_indent")) .. "(ln(2.76) + ln(12 * 33.11)) / 2") ..
+   p(_("Dividing by 10 clamps the result to -0.25…+0.25.")) ..
+   p(_("The area bonus simply uses the conquer radius: area_bonus = (r - 9) / 12. " ..
+       "The median radius of 9 belongs to the stronger medium military sites. " ..
+       "Again, the results are between -0.25 and +0.25 for conquer radiuses from 6 to 12.")) ..
+   p(_("There are also two kinds of penalties for military sites in the core area of the " ..
+       "player’s economy. The first one is applied to the soldier bonus of military sites " ..
+       "within 20 steps to a trainingsite, then the area bonus is added and the other penalty " ..
+       "is applied to the sum for military sites within 32 steps of your starting position.")) ..
+   p(_("The penalties decrease linearly with the distance. You can look up the actual " ..
+       "calculation in helpers.lua in the add-on’s directory, because it doesn’t fit here."))
+
+
+
 local helptext_rationale =
    h3(_("Rationale")) ..
    p(_("The total area and the soldier statistics are meant to be the same as the corresponding " ..
@@ -253,21 +314,35 @@ local helptext_rationale =
    p(_("The area score gets less weight than the soldier score because it is usually much " ..
        "easier, faster and cheaper to expand your territory than to train your soldiers, " ..
        "but it is the strength of your army that decides battles in the end, so a strong " ..
-       "army can easily take large territories from a weak one."))
+       "army can easily take large territories from a weak one.")) ..
+   p(_("The bonuses make sure that bigger military buildings are actually worth their " ..
+       "buildcost and time, so all military sites have their use just like in real battle " ..
+       "situations. Sites in the core area are penalised because it’s much easier there to " ..
+       "build and to send strong soldiers. Military sites near trainingsites are also " ..
+       "penalised because it’s much faster to fill them with freshly trained heroes. " ..
+       "Please note that old trainingsite positions are remembered, so you can’t boost your " ..
+       "score just by dismantling a trainingsite after it has filled its neighbourhood with " ..
+       "heroes.")) ..
+   p(_("The goal of all this complexity is to not have a clear winning strategy, to allow " ..
+       "all players play in their own preferred style."))
 
 
-local table_row = table_row_format(10, 12)
+local table_row = h.table_row_format(14, 9)
 local building_info_header = h3(_("Buildings")) .. table_row:bformat(
    b(_("Military site")),
    b(_("Max. soldiers")),
    b(_("Max. soldier strength")),
+   b(_("Max. soldier bonus")),
    b(_("Conquer area")),
+   b(_("Area bonus")),
    b(_("Conquer area / soldier")),
    b(_("Max. strength / conquer area")),
    b(_("Score with all heroes")),
    b(_("Score / hero")),
+   b(_("Score with 1 hero")),
    b(_("Score with all rookies")),
-   b(_("Score / rookie"))
+   b(_("Score / rookie")),
+   b(_("Score with 1 rookie"))
 )
 
 local function soldier_and_building_strengths(pidx)
@@ -277,24 +352,32 @@ local function soldier_and_building_strengths(pidx)
 
    for i,bd in ipairs(wl.Game().players[pidx].tribe.buildings) do
       if bd.type_name == "militarysite" then
-         local conquer_area = controlled_fields(bd.conquers)
+         local conquer_area = h.controlled_fields(bd.conquers)
+         local area_bonus = h.area_bonus(bd.conquers)
          local max_guards_strength = max_soldier_strengths[pidx] * bd.max_number_of_soldiers
-         local max_pts = math.sqrt(conquer_area * max_guards_strength)
+         local max_soldier_bonus = h.soldier_bonus(max_guards_strength)
+         local max_pts = h.building_score(conquer_area, max_guards_strength, area_bonus, max_soldier_bonus)
+         local one_hero_pts = h.building_score(conquer_area, max_soldier_strengths[pidx], area_bonus, hero_bonuses[pidx])
          local all_rookies_strength = min_soldier_strengths[pidx] * bd.max_number_of_soldiers
-         local all_rookies_pts = math.sqrt(conquer_area * all_rookies_strength)
+         local all_rookies_pts = h.building_score(conquer_area, all_rookies_strength, area_bonus, h.soldier_bonus(all_rookies_strength))
+         local one_rookie_pts = h.building_score(conquer_area, min_soldier_strengths[pidx], area_bonus, rookie_bonuses[pidx])
 
          table.insert(milsites, {
             info = table_row:bformat(
                bd.descname,
                string.bformat("%d", bd.max_number_of_soldiers),
                string.bformat("%.1f", max_guards_strength),
+               string.bformat("%+.1f%%", max_soldier_bonus * 100),
                string.bformat("%d", conquer_area),
+               string.bformat("%+.1f%%", area_bonus * 100),
                string.bformat("%.1f", conquer_area / bd.max_number_of_soldiers),
                string.bformat("%.2f", max_guards_strength / conquer_area),
                string.bformat("%.1f", max_pts),
                string.bformat("%.1f", max_pts / bd.max_number_of_soldiers),
+               string.bformat("%.1f", one_hero_pts),
                string.bformat("%.1f", all_rookies_pts),
-               string.bformat("%.1f", all_rookies_pts / bd.max_number_of_soldiers)
+               string.bformat("%.1f", all_rookies_pts / bd.max_number_of_soldiers),
+               string.bformat("%.1f", one_rookie_pts)
             ),
             max_pts = max_pts,
          })
@@ -318,8 +401,8 @@ local function soldier_and_building_strengths(pidx)
       li(_("Hero is %.1f times as strong as rookie"):bformat(max_soldier_strengths[pidx] / min_soldier_strengths[pidx])) ..
       building_info ..
       vspace() ..
-      p(_("(The building scores are only indicative of the potential strength of each building itself, " ..
-          "they are not directly related to the scoring of the win condition.)"))
+      p(_("(The building scores are calculated as the score increase in a hypothetical mid-game " ..
+          "economy when a building of the given type is added with the given soldiers.)"))
 
    pop_textdomain()
 
@@ -366,7 +449,7 @@ function show_wc_info(keep)
                widget = "multilinetextarea",
                name = info_window_scoretxt .. postfix,
                w = messagebox_w_step(0),
-               h = messagebox_h_step(3),
+               h = messagebox_h_step(5),
                scroll_mode = "normal",
                text = rt(generate_score_info(i)),
             },
@@ -386,7 +469,7 @@ function show_wc_info(keep)
          panel = {
             widget = "multilinetextarea",
             name = "plrsoldiersbuildingstxt",
-            w = math.min(2 * styles.get_size("campaign_message_box_default_w"), mv.width - 100),
+            w = math.min(9 * styles.get_size("campaign_message_box_default_w") // 4, mv.width - 100),
             h = messagebox_h_step(3),
             scroll_mode = "normal",
             text = rt(soldier_and_building_strengths(ipidx)),
@@ -403,7 +486,7 @@ function show_wc_info(keep)
          w = messagebox_w_step(5),
          h = messagebox_h_step(6),
          scroll_mode = "normal",
-         text = rt(helptext_common .. helptext_strength(ipidx) .. helptext_rationale),
+         text = rt(helptext_common .. helptext_strength(ipidx) .. helptext_bonus .. helptext_rationale),
       },
    })
 
@@ -628,7 +711,6 @@ local function wc_init()
 
    for idx,player in ipairs(game.players) do
       num_to_idx[player.number] = idx
-
       local sd
       for wi,d in ipairs(player.tribe.workers) do
          if d.type_name == "soldier" then
@@ -639,8 +721,10 @@ local function wc_init()
       soldier_descrs[idx] = sd
       max_soldier_levels[idx] = sd.max_attack_level + sd.max_health_level +
                                 sd.max_defense_level + sd.max_evade_level
-      max_soldier_strengths[idx] = max_strength(sd)
-      min_soldier_strengths[idx] = min_strength(sd)
+      max_soldier_strengths[idx] = h.max_strength(sd)
+      min_soldier_strengths[idx] = h.min_strength(sd)
+      hero_bonuses[idx] = h.soldier_bonus(max_soldier_strengths[idx])
+      rookie_bonuses[idx] = h.soldier_bonus(min_soldier_strengths[idx])
    end
 
    hooks.custom_statistic = {
@@ -671,6 +755,9 @@ local result_title = _("Final Score")
 
 local function wc_func()
    local game = wl.Game()
+
+   -- starting condition scripts are run after wc_init(), so we have to do this here
+   h.init_startpos()
 
    broadcast_objective("win_condition", wc_descname,
       wc_message:bformat(format_remaining_raw_time(game.win_condition_duration))

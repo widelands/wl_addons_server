@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR "Widelands Development Team"
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-10-11 03:31+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: input:6 standard
+msgid "Player statistics"
+msgstr ""
+
+#: input:6 standard
+msgid "Show detailed statistics on each player's wares and buildings."
+msgstr ""
+
+#: input:8 standard
+msgid "Player Statistics"
+msgstr ""
+
+#: input:12 standard
+msgid "Show player statistics"
+msgstr ""
+
+#: input:14 standard
+msgid "Production Sites"
+msgstr ""
+
+#: input:23 standard
+msgid "Military Sites"
+msgstr ""
+
+#: input:32 standard
+msgid "All Buildings"
+msgstr ""
+
+#: input:54 standard
+msgid ""
+"Note: Consumed wares are approximated by subtracting remaining from "
+"produced, because neither it, nor starting stock is available directly."
+msgstr ""
+
+#: input:57 standard
+msgid ""
+"Note: Consumed wares include lost and destroyed wares too, because it is not "
+"available directly, so it is calculated by subtracting remaining from "
+"produced + starting."
+msgstr ""
+
+#: input:73 standard
+msgid "Ware"
+msgstr ""
+
+#: input:74 standard
+msgid "Starting"
+msgstr ""
+
+#: input:75 standard
+msgid "Produced"
+msgstr ""
+
+#: input:76 standard
+msgid "Consumed"
+msgstr ""
+
+#: input:77 standard
+msgid "Remaining"
+msgstr ""
+
+#: input:78 standard
+msgid "Overproduction"
+msgstr ""
+
+#: input:89 input:139 input:180 standard
+msgid "Total"
+msgstr ""
+
+#: input:97 standard
+msgid "Wares"
+msgstr ""
+
+#: input:102 standard
+msgid "Buildings"
+msgstr ""
+
+#: input:107 standard
+msgid "Building Sizes"
+msgstr ""
+
+#: input:112 standard
+msgid "Buildcosts"
+msgstr ""
+
+#: input:127 standard
+msgid "Building material"
+msgstr ""
+
+#: input:128 input:164 standard
+msgid "Prodsites"
+msgstr ""
+
+#: input:129 input:165 standard
+msgid "Milsites"
+msgstr ""
+
+#: input:130 input:166 standard
+msgid "All"
+msgstr ""
+
+#: input:163 standard
+msgid "Building size"
+msgstr ""
+
+#: input:191 standard
+msgid "Small"
+msgstr ""
+
+#: input:192 standard
+msgid "Medium"
+msgstr ""
+
+#: input:193 standard
+msgid "Big"
+msgstr ""
+
+#: input:194 standard
+msgid "Mine"
+msgstr ""
+
+#. TRANSLATORS: Gametime as hours:minutes, e.g. 2:30
+#: input:204 standard
+msgid "%1$d:%2$02d:%3$02d"
+msgstr ""
+
+#: input:206 standard
+msgid "Building"
+msgstr ""
+
+#: input:207 standard
+msgid "Size"
+msgstr ""
+
+#: input:208 standard
+msgid "Count"
+msgstr ""
+
+#: input:210 standard
+#, lua-format
+msgid "Player Statistics at gametime %s"
+msgstr ""
+
+#: input:239 standard
+msgid "Copy to clipboard"
+msgstr ""

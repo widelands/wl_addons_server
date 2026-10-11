@@ -1,5 +1,5 @@
 2
-153
+154
 16_Kingdoms.wad
 16 Kingdoms
 16 Kingdoms randomly spawned in a new World, nobody ever has seen before. The World is rich, ultra rich. The Kingdoms lifed happy side by side over decades. With all this wealth, they became powerful. But power comes with greed, screaming for more power. This led to a constant arms race.  It was only a matter of time until the first conflicts arose...  Will you keep up against your enemies? Once they start their military power increasing they wont stop until you stop them.  It is recomendet to play this map everyone against everyone, with no diplomacy allowed to become an global autocracy. 
@@ -433,7 +433,7 @@ verified
 Aalnase
 Aalnase
 1718728173
-344
+345
 2
 0
 0
@@ -698,7 +698,7 @@ This is the story of the rise of Pachiquima, an amazon from a small mountain vil
 DyingSettler
 DyingSettler
 1758974165
-387
+388
 0
 0
 0
@@ -782,7 +782,7 @@ Mapa de la parte sur del continente americano.
 Ozne333
 ozne333
 1791589336
-0
+5
 0
 0
 0
@@ -811,7 +811,7 @@ dirnames
 33f7c275b0cf46d259894248c0359428
 26d31e83c01490e452075a748e797744
 0
-unchecked
+verified
 Amoebae.wad
 Amoebae
 You are an Amoebae, expand and conquer all other Amoebae... 
@@ -4550,7 +4550,7 @@ Once this waa a large continent floating in a dark sea, know its a group of conn
 Ron_of_Nord
 Ron_of_Nord
 1739941423
-131
+132
 0
 0
 0
@@ -6537,7 +6537,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-1175
+1176
 0
 0
 0
@@ -6776,7 +6776,7 @@ Upgrade of smelting works and stonemason’s houses makes the Barbarians and Emp
 OIPUN
 OIPUN
 1719251296
-1057
+1059
 0
 0
 0
@@ -8702,7 +8702,7 @@ This is the add-on version of the Empire changes proposed in the balancing PRs.
 tothxa
 tothxa
 1777143688
-36
+37
 0
 0
 0
@@ -9381,7 +9381,7 @@ Addon that provides all current features (wares, workers and economy) from all c
 MarkMcWire
 MarkMcWire
 1749228542
-413
+416
 0
 0
 0
@@ -12918,7 +12918,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-1329
+1330
 0
 0
 0
@@ -13687,7 +13687,7 @@ Provides all current features of the Europeans tribe.
 MarkMcWire
 MarkMcWire
 1734192332
-941
+942
 2
 0
 0
@@ -17145,7 +17145,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-1855
+1856
 0
 0
 0
@@ -17391,7 +17391,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-1795
+1797
 0
 0
 0
@@ -18565,7 +18565,7 @@ This add-on adds a new Gallic tribe. It uses graphics of other tribes, until new
 OIPUN
 OIPUN
 1766614957
-297
+298
 0
 0
 0
@@ -23789,7 +23789,7 @@ Adds the Hebrew tribe (Stamm der Hebräer) to Widelands. Features a unique econo
 Carli
 carli2
 1771292281
-199
+200
 0
 0
 0
@@ -27647,7 +27647,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-906
+907
 0
 0
 0
@@ -28377,7 +28377,7 @@ Theme with larger fonts. This version changes scenario and help fonts too.
 Andy Alt, tothxa
 tothxa
 1735340602
-302
+303
 0
 0
 0
@@ -33073,7 +33073,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-1114
+1115
 0
 0
 0
@@ -33475,7 +33475,7 @@ This set of maps contains 10 small and medium-sized maps for 2-8 players. You ca
 OIPUN
 OIPUN
 1615637480
-1140
+1141
 0
 0
 0
@@ -35976,6 +35976,53 @@ c60d460c9655e8f45ba21cd1d41a8b37
 5fd50981ded4f4d00290fcfacf1d751d
 0
 verified
+player_stats.wad
+Player Statistics
+Show detailed statistics on each player's wares and buildings.
+tothxa
+tothxa
+1791672234
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1.0
+0
+25124
+ui_plugin
+0
+0
+9
+addon
+collect_stats.lua
+icon.png
+init.lua
+output_helpers.lua
+player_stats.lua
+plrstat_toolbar.png
+shortcuts.lua
+starting_stock.lua
+0
+9
+837ed6ba5f4bbdabf5161525357421a0
+132bf66c409971b5ca7a09a2b5dcfc20
+2dfdfbf22b41e3039834e8391aec19a8
+a68de8c3108548030f3f3acfb5f0e40d
+55cb7dee514b20b1c14f00f633c15954
+2f526364e450ee3a618967c0a0da3a65
+fe6c623897e9655211138912b6189bed
+af2dad5ac40930a603cadf068557c353
+19256741e93e0a5be5bfd65aa0e7dcf2
+0
+unchecked
 royal.wad
 Royal
 A headquarters-like starting condition with approximately 30% more wares and workers.
@@ -42419,7 +42466,7 @@ This addon needs tropics.wad.
 OIPUN
 OIPUN
 1731948448
-468
+469
 0
 0
 0
@@ -42556,7 +42603,7 @@ Terrains and (alpha) trees for tropical areas. Someday in future this add-on mig
 Yo...
 Yo...
 1622321739
-848
+849
 0
 0
 0
@@ -42962,7 +43009,7 @@ Make the ‘water’ resource more useful by giving wells a larger radius and a 
 Nordfriese
 Nordfriese
 1600000000
-1010
+1011
 0
 0
 0
@@ -43592,7 +43639,7 @@ Contains flowering meadows, clearings, dolomites, wet beach, green and muddy wat
 OIPUN
 OIPUN
 1622916439
-1168
+1169
 0
 0
 0
@@ -44521,9 +44568,9 @@ Cupper
 <font size=18>Well done,txa</font><br>Excelent wincon, 10 points.<br>That must been a lot of work, including the side-quests.  Destroying the enemies is needless 2 win. Makes WL more peaceful.
 0.9
 1779818588
-0.9
+1.0
 5
-29703
+40984
 win_condition
 0
 0
@@ -44560,9 +44607,9 @@ ru.mo
 sk.mo
 sv.mo
 30
-d2c652676d6616f25ee5f1cfec01a1cd
-e1028b32c79ae00a037659a2d15b6ac0
-564158b80c09e69a5db44ecb3afb878b
+7f949f3f4404ba2b41054627a6aa237a
+bd730bccf3531bda009d3eb08e5941bd
+38adaaf63f57267f8bef23da37da22f7
 e735e72a59ebc18d1afa30235920ddeb
 4ab0065c381ff043385adae9a0bb3337
 a55222f338c7c730c33b25ae75f950b8
@@ -44591,4 +44638,4 @@ f8be8f5b027f2c8ee165dbfb17752750
 5c906af16f6c6a65484e01e634617132
 281a2610e128140fac77bd922a122711
 0
-verified
+unchecked
