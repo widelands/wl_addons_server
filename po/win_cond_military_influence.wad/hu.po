@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-10-11 03:31+0200\n"
+"POT-Creation-Date: 2026-10-12 03:28+0200\n"
 "PO-Revision-Date: 2026-05-24 08:16+0000\n"
 "Last-Translator: Tóth András <txa-dev@posteo.hu>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
@@ -505,36 +505,41 @@ msgstr ""
 #: input:201 standard
 #, lua-format
 msgid "Controlled area with bonuses and penalties: %d"
-msgstr ""
+msgstr "Jutalmakkal és levonásokkal módosított őrzött terület: %d"
 
 #: input:205 standard
 msgid "Average bonus/penalty weighted by area: %+.1f%%"
-msgstr ""
+msgstr "Területre súlyozott átlagos jutalom/levonás: %+.1f%%"
 
 #: input:213 standard
 #, lua-format
 msgid "Strength of guards with bonuses and penalties: %d"
-msgstr ""
+msgstr "Őrök ereje jutalmakkal és levonásokkal módosítva: %d"
 
 #: input:222 standard
 msgid "Average bonus/penalty weighted by strength: %+.1f%%"
-msgstr ""
+msgstr "Őrségek erejére súlyozott átlagos jutalom/levonás: %+.1f%%"
 
 #: input:234 standard
 msgid "the sum of adjusted conquer areas of military sites"
 msgstr ""
+"az egyes katonai épületek által ellenőrzött módosított területek méreteinek "
+"összege"
 
 #: input:236 standard
 msgid "the total adjusted effective strength of soldiers in military sites"
 msgstr ""
+"a katonai épületekben elhelyezett katonák módosított eredő erejének összege"
 
 #: input:237 standard
 msgid "The adjusted scores use bonuses and penalties depending on difficulty."
 msgstr ""
+"A részpontszámokat a nehézségtől függő jutalmakkal vagy levonásokkal "
+"módosítjuk."
 
 #: input:276 standard
 msgid "Bonuses and penalties"
-msgstr ""
+msgstr "Jutalmak és levonások"
 
 #: input:277 standard
 msgid ""
@@ -542,34 +547,40 @@ msgid ""
 "conquer area and the relative strength of its garrison. Values above the "
 "average of the possible values get a bonus, below it get a penalty."
 msgstr ""
+"Minden katonai épület pontszámához meghatározunk egy jutalmat vagy levonást "
+"a viszonylagos őrzött területe és az őrségének viszonylagos ereje alapján. A "
+"lehetséges értékek átlaga fölötti értékek jutalmat, az átlag alattiak "
+"levonást kapnak."
 
 #: input:280 standard
 msgid "The soldier bonus uses a logarithmic scale for the effective strength:"
 msgstr ""
+"Az őrség jutalmat az őrök eredő erejéből egy logaritmikus képlettel "
+"számoljuk:"
 
 #: input:282 standard
 msgid "soldier_bonus = (ln(garrison strength) - 3.5) / 10"
-msgstr ""
+msgstr "őrség_jutalom = (ln(őrség_ereje) - 3,5) / 10"
 
 #: input:283 standard
 msgid "The average value of 3.5 is roughly:"
-msgstr ""
+msgstr "A 3,5-ös átlagos értékkel kb. egyenlő:"
 
 #: input:284 standard
 msgid "the strength of a castle full of rookies: ln(12 * 2.76)"
-msgstr ""
+msgstr "egy újoncokkal teli vár ereje: ln(12 * 2,76)"
 
 #: input:285 standard
 msgid "the strength of one very strong hero: ln(33.11)"
-msgstr ""
+msgstr "egy nagyon erős hős ereje: ln(33,11)"
 
 #: input:286 standard
 msgid "the geometric mean of one rookie and a castle full of heroes:"
-msgstr ""
+msgstr "egy újonc és egy hősökkel teli vár erejének mértani közepe:"
 
 #: input:288 standard
 msgid "Dividing by 10 clamps the result to -0.25…+0.25."
-msgstr ""
+msgstr "A 10-zel való osztással a végeredmény -0,25 és +0,25 közé esik."
 
 #: input:289 standard
 msgid ""
@@ -577,6 +588,10 @@ msgid ""
 "The median radius of 9 belongs to the stronger medium military sites. Again, "
 "the results are between -0.25 and +0.25 for conquer radiuses from 6 to 12."
 msgstr ""
+"A területi jutalmat egyszerűen a befolyási övezet sugarából számoljuk: "
+"területi_jutalom = (r - 9) / 12. A 9-es medián sugár az erősebb közepes "
+"méretű katonai épületeknek felel meg. A végeredmény itt is -0,25 és +0,25 "
+"közé esik 6 és 12 közötti sugarak esetén."
 
 #: input:292 standard
 msgid ""
@@ -586,6 +601,11 @@ msgid ""
 "added and the other penalty is applied to the sum for military sites within "
 "32 steps of your starting position."
 msgstr ""
+"Ezen kívül az induló területed közelében lévő katonai épületek további "
+"kétféle levonást kapnak. Az első a kiképzőhelyektől 20 lépés távolságon "
+"belüli épületek őrség jutalmát csökkenti, majd a területi jutalom hozzáadása "
+"után a kapott értéket tovább csökkentjük a főhadiszállásodtól 32 lépés "
+"távolságon belüli épületek esetén."
 
 #: input:296 standard
 msgid ""
@@ -593,6 +613,9 @@ msgid ""
 "actual calculation in helpers.lua in the add-on’s directory, because it "
 "doesn’t fit here."
 msgstr ""
+"A levonások a távolsággal arányosan csökkennek. A pontos számolás leírása "
+"túl hosszú lenne, de a számolást meg tudod nézni a bővítmény könyvtárában a "
+"helpers.lua fájlban."
 
 #: input:318 standard
 msgid ""
@@ -605,28 +628,41 @@ msgid ""
 "remembered, so you can’t boost your score just by dismantling a trainingsite "
 "after it has filled its neighbourhood with heroes."
 msgstr ""
+"A jutalmak biztosítják, hogy a nagyobb katonai épületek is megérjék a rájuk "
+"fordított építőanyagokat és időt, így minden épülettípusnak megvan a saját "
+"szerepe, ahogy a valós harcok esetén is. A kiinduló területeden álló "
+"épületek azért kapnak levonást, mert itt sokkal könnyebb építkezni és "
+"katonákat küldeni. A kiképzőhelyek közelében álló épületek is azért kapnak "
+"levonást, mert ezeket sokkal gyorsabban fel lehet tölteni újonnan kiképzett "
+"hősökkel. Jó, ha tudod, hogy a számolás figyelembe veszi a megszűnt "
+"kiképzőhelyeket is, hogy ne lehessen előnyhöz jutni a kiképzőhely "
+"lebontásával, miután az összes környező katonai épületet megtöltötte "
+"hősökkel."
 
 #: input:326 standard
 msgid ""
 "The goal of all this complexity is to not have a clear winning strategy, to "
 "allow all players play in their own preferred style."
 msgstr ""
+"A számítások azért lettek ilyen bonyolultak, hogy ne legyen egyértelmű, hogy "
+"mi a legjobb stratégia, hanem mindenki nyugodtan játszhasson a saját "
+"megszokott módján."
 
 #: input:335 standard
 msgid "Max. soldier bonus"
-msgstr ""
+msgstr "Max. őrség jutalom"
 
 #: input:337 standard
 msgid "Area bonus"
-msgstr ""
+msgstr "Terület jutalom"
 
 #: input:342 standard
 msgid "Score with 1 hero"
-msgstr ""
+msgstr "Pontszám 1 hőssel"
 
 #: input:345 standard
 msgid "Score with 1 rookie"
-msgstr ""
+msgstr "Pontszám 1 újonccal"
 
 #: input:404 standard
 msgid ""
@@ -634,3 +670,6 @@ msgid ""
 "mid-game economy when a building of the given type is added with the given "
 "soldiers.)"
 msgstr ""
+"(Az épületpontszámok azt a pontszámnövekedést jelentik, amit az adott "
+"katonákkal őrzött adott típusú épület hozzáadásával kapunk egy közepes "
+"játékidőt modellező elméleti gazdaságban.)"

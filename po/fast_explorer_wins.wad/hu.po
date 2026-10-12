@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:20+0200\n"
+"POT-Creation-Date: 2026-10-12 03:26+0200\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
 "Last-Translator: Tóth András <txa-dev@posteo.hu>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
@@ -29,26 +29,33 @@ msgid ""
 "Explorer', but can be used also with every seafaring map. Diplomacy will be "
 "disabled and naval ware fare will be enabled with this add-on."
 msgstr ""
+"Az a játékos nyer, akinek először van legalább 4 teljesen kiképzett katonája "
+"egy hadihajón. Ez a játékmód eredetileg a „Gyors felfedező” térképhez "
+"készült, de használható bármelyik másik hajózásra alkalmas térképpel is. A "
+"tengeri hadviselés automatikusan be lesz kapcsolva, a diplomácia pedig "
+"kikapcsolva."
 
 #: addons/fast_explorer_wins.wad/addon:9
 #: addons/fast_explorer_wins.wad/init.lua:17 input:9 input:17 standard
 msgid "Fast Explorer Wins"
-msgstr ""
+msgstr "A leggyorsabb felfedező nyer"
 
 #: addons/fast_explorer_wins.wad/init.lua:19 input:19 standard
 msgid ""
 "The player who has at least 4 fully trained soldiers in a warship wins the "
 "game."
 msgstr ""
+"Az a játékos nyer, akinek legalább 4 teljesen kiképzett katonája van egy "
+"hadihajón."
 
 #: addons/fast_explorer_wins.wad/init.lua:23 input:23 standard
 msgid "Number of heroes"
-msgstr ""
+msgstr "Hősök száma"
 
 #: addons/fast_explorer_wins.wad/init.lua:158 input:158 standard
 msgctxt "sign indicating no time value"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. TRANSLATORS: A time string hh:mm:ss like 10:03:55
 #: addons/fast_explorer_wins.wad/init.lua:167 input:167 standard
@@ -57,85 +64,86 @@ msgstr "%1$02d:%2$02d:%3$02d"
 
 #: addons/fast_explorer_wins.wad/init.lua:170 input:170 standard
 msgid "Game Over!"
-msgstr ""
+msgstr "Vége a játéknak!"
 
 #: addons/fast_explorer_wins.wad/init.lua:171 input:171 standard
 msgid "Time: %1$s (hh:mm:ss)"
-msgstr ""
+msgstr "Idő: %1$s (óó:pp:mp)"
 
 #. TRANSLATORS: Header of table column Playername
 #: addons/fast_explorer_wins.wad/init.lua:188 input:188 standard
 msgid "Player"
-msgstr ""
+msgstr "Játékos"
 
 #. TRANSLATORS: Header of table column Tribename
 #: addons/fast_explorer_wins.wad/init.lua:190 input:190 standard
 msgid "Tribe"
-msgstr ""
+msgstr "Törzs"
 
 #. TRANSLATORS: Header of table column the time a ship was created
 #: addons/fast_explorer_wins.wad/init.lua:192 input:192 standard
 msgid "Ship at"
-msgstr ""
+msgstr "Hajó ideje"
 
 #. TRANSLATORS: Header of table column of times heroes were created
 #: addons/fast_explorer_wins.wad/init.lua:194 input:194 standard
 msgid "Heroes at"
-msgstr ""
+msgstr "Hősök ideje"
 
 #: addons/fast_explorer_wins.wad/init.lua:246 input:246 standard
 msgid "Widelands Version: %1$s"
-msgstr ""
+msgstr "Widelands verzió: %1$s"
 
 #. TRANSLATORS: Placeholder is "this topic in the Widelands forum"
 #: addons/fast_explorer_wins.wad/init.lua:249 input:249 standard
 msgid "Please make a screenshot by pressing %1$s and post it in %2$s"
 msgstr ""
+"Légy szíves készíts egy képernyőképet a %1$s billentyűvel, és küldd el %2$s!"
 
 #. TRANSLATORS: Will be inserted into "... and post it in %2$s"
 #: addons/fast_explorer_wins.wad/init.lua:251 input:251 standard
 msgid "this topic in the Widelands forum"
-msgstr ""
+msgstr "a Widelands fórumba"
 
 #: addons/fast_explorer_wins.wad/init.lua:270 input:270 standard
 msgid "Ship created!"
-msgstr ""
+msgstr "A hajó elkészült!"
 
 #: addons/fast_explorer_wins.wad/init.lua:271 input:271 standard
 msgid "%1$s has created a ship!"
-msgstr ""
+msgstr "%1$s hajója elkészült!"
 
 #: addons/fast_explorer_wins.wad/init.lua:273 input:273 standard
 msgid "Hero created!"
-msgstr ""
+msgstr "Hős kiképezve!"
 
 #: addons/fast_explorer_wins.wad/init.lua:274 input:274 standard
 msgid "%1$s has created a hero!"
-msgstr ""
+msgstr "%1$s kiképzett egy hőst!"
 
 #: addons/fast_explorer_wins.wad/init.lua:278 input:278 standard
 msgid "You have a new ship!"
-msgstr ""
+msgstr "Elkészült egy új hajód!"
 
 #: addons/fast_explorer_wins.wad/init.lua:280 input:280 standard
 msgid "You have a new hero!"
-msgstr ""
+msgstr "Kiképeztél egy új hőst!"
 
 #: addons/fast_explorer_wins.wad/init.lua:284 input:284 standard
 msgid "Statistics:"
-msgstr ""
+msgstr "Statisztika:"
 
 #. TRANSLATORS: "Player: Name of player"
 #: addons/fast_explorer_wins.wad/init.lua:288 input:288 standard
 msgid "Player: %1$s"
-msgstr ""
+msgstr "Játékos: %1$s"
 
 #. TRANSLATORS: "Heroes: Amount of heroes"
 #: addons/fast_explorer_wins.wad/init.lua:290 input:290 standard
 msgid "Heroes: %1$d "
-msgstr ""
+msgstr "Hősök: %1$d"
 
 #. TRANSLATORS: "Ships: Amount of ships"
 #: addons/fast_explorer_wins.wad/init.lua:294 input:294 standard
 msgid "Ships: %1$d"
-msgstr ""
+msgstr "Hajók: %1$d"
