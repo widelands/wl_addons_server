@@ -2,26 +2,10 @@ if wl.Game == nil then
    return
 end
 
-local function wc_good()
-   return wl.Game().win_condition == "Military Influence"
-end
-
--- This script is run too early for new games and replays, when we cannot get any info about the game yet.
-
--- It's is just crazy, but win_condition="Not set" is reported in localised form until the game is properly set up.
-push_textdomain("widelands")
-local no_wc = _("Not set")
-pop_textdomain()
-
-if not wc_good() and wl.Game().win_condition ~= no_wc then
-   -- we know the win condition, but it's not "Military Influence"
-   return
-end
-
 local wc_info_icon = path.dirname(__file__) .. "info_mil_inf.png"
 
 function register_military_influence_info_()
-   if not wc_good() then
+   if wl.Game().win_condition ~= "Military Influence" then
       return
    end
 
@@ -35,13 +19,11 @@ function register_military_influence_info_()
    mv:update_toolbar()
 end
 
--- Easy case on game loading: the win condition is already known when this script is run.
-if wc_good() then
-   register_military_influence_info_()
-   return
-end
-
--- We don't know the win condition yet. Let's schedule actual work after the game is set up.
+-- This script is run too early for new games and replays, when we cannot get any info
+-- about the game yet. To make it worse, when loading a replay from another one, the
+-- win condition of the old one is still reported.
+-- There's no way to tell which situation we're in so we have to schedule
+-- actual work after the game is set up.
 -- However we can't start a coroutine for sleep() yet, so we have to use a plugin timer.
 -- Single use timers are only possible from v1.4, so we need to check the version first.
 
@@ -63,7 +45,8 @@ else
    -- Plugin timers can not be stopped cleanly.
    -- Any state variable or function we use will be saved with the game and overwritten
    -- on loading.
-   -- Even random is unseeded and there's no way to initialise it or to get the realtime.
+   -- Even random is unseeded in new games and when first loading a replay, and there's
+   -- no way to initialise it or to get the realtime.
    -- So we need some dirty hack:
    -- We create a UI panel on start-up as a marker that we're not finished yet.
 
