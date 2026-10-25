@@ -8,7 +8,7 @@ wl.Descriptions():new_trainingsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Training Camp Level 4"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         unoccupied = {
@@ -31,24 +31,9 @@ wl.Descriptions():new_trainingsite_type {
             fps = 10
         }
     },
-    
+
     size = "medium",
     destructible = true,
-    enhancement = {
-        name = "europeans_battlearena_level_4",
-        enhancement_cost = {
-            brick = 4,
-            grout = 4,
-            reed = 2,
-            gold = 1
-        },
-        enhancement_return_on_dismantle = {
-            brick = 2,
-            grout = 2,
-            reed = 1,
-            gold = 1
-        }
-    },
 
     aihints = {
         trainingsites_max_percent = 5,
@@ -177,10 +162,10 @@ wl.Descriptions():new_trainingsite_type {
             }
         },
     },
-    
+
     soldier_capacity = 4,
     trainer_patience = 16,
-    
+
     messages = {
         -- TRANSLATORS: Europeans training site tooltip when it has no soldiers assigned
         no_soldier = pgettext("europeans_building", "No soldier to train!"),

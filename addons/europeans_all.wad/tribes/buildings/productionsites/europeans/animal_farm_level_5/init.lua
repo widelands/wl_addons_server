@@ -17,18 +17,24 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {84, 81},
-            frames = 20,
-            columns = 5,
-            rows = 4,
-            fps = 10
+           hotspot = {84, 81},
+           frames = 20,
+           columns = 5,
+           rows = 4,
+           fps = 10
         },
         working = {
-            hotspot = {84, 81},
-            frames = 20,
-            columns = 5,
-            rows = 4,
-            fps = 10
+           hotspot = {84, 81},
+           frames = 20,
+           columns = 5,
+           rows = 4,
+           fps = 10
+        },
+        build = {
+           hotspot = {84, 61},
+           frames = 4,
+           columns = 2,
+           rows = 2,
         }
     },
 

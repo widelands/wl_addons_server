@@ -8,7 +8,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Brewery Level 5"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         unoccupied = {
@@ -17,21 +17,27 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {50, 80},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {50, 80},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {50, 61},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         },
         working = {
-            hotspot = {50, 80},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {50, 80},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
         }
     },
-    
+
     size = "medium",
     enhancement = {
         name = "europeans_brewery_level_6",

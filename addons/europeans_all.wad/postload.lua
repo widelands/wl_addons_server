@@ -170,6 +170,66 @@ wl.Descriptions():modify_unit("worker", "amazons_woodcutter_master", "programs",
          "createware=log",
          "return"
       })
+wl.Descriptions():modify_unit("worker", "barbarians_lumberjack", "programs", "set", "making_space", {
+         "findobject=attrib:tree radius:10",
+         "walk=object",
+         "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
+         "animate=hack duration:15s",
+         "playsound=sound/woodcutting/tree_falling priority:100%",
+         "callobject=fall",
+         "animate=idle duration:2s",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "amazons_woodcutter", "programs", "set", "making_space", {
+         "findobject=attrib:tree radius:10",
+         "walk=object",
+         "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
+         "animate=hacking duration:30s",
+         "playsound=sound/woodcutting/tree_falling priority:100%",
+         "callobject=fall",
+         "animate=hacking duration:2s",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "amazons_woodcutter_master", "programs", "set", "making_space", {
+         "findobject=attrib:tree radius:10",
+         "walk=object",
+         "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
+         "animate=hacking duration:25s",
+         "playsound=sound/woodcutting/tree_falling priority:100%",
+         "callobject=fall",
+         "animate=hacking duration:2s",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "atlanteans_woodcutter", "programs", "set", "making_space", {
+         "findobject=attrib:tree radius:10",
+         "walk=object",
+         "playsound=sound/atlanteans/saw/sawing priority:80% allow_multiple",
+         "animate=sawing duration:20s",
+         "playsound=sound/woodcutting/tree_falling priority:100%",
+         "callobject=fall",
+         "animate=idle duration:2s",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "empire_lumberjack", "programs", "set", "making_space", {
+         "findobject=attrib:tree radius:10",
+         "walk=object",
+         "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
+         "animate=hacking duration:20s",
+         "playsound=sound/woodcutting/tree_falling priority:100%",
+         "callobject=fall",
+         "animate=idle duration:2s",
+         "return"
+      })
+wl.Descriptions():modify_unit("worker", "frisians_woodcutter", "programs", "set", "making_space", {
+         "findobject=attrib:tree radius:10",
+         "walk=object",
+         "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
+         "animate=hacking duration:20s",
+         "playsound=sound/woodcutting/tree_falling priority:100%",
+         "callobject=fall",
+         "animate=idle duration:2s",
+         "return"
+      })
 wl.Descriptions():modify_unit("worker", "empire_farmer", "programs", "set", "harvest_rye", {
          "findobject=attrib:ripe_rye radius:2",
          "walk=object",

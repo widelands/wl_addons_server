@@ -12,11 +12,17 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     spritesheets = {
         idle = {
-            hotspot = {40, 69},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {40, 69},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {40, 52},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         }
     },
     animations = {
@@ -24,7 +30,7 @@ wl.Descriptions():new_productionsite_type {
             hotspot = {40, 52}
         }
     },
-    
+
     size = "small",
 
     aihints = {

@@ -8,14 +8,14 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Wood Store"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         idle = {hotspot = {43, 62}},
         working = {basename = "idle", hotspot = {43, 62}},
         build = {hotspot = {43, 62}},
     },
-     
+
     size = "medium",
     buildcost = {
         granite = 3,
@@ -27,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         scrap_wood = 4,
         granite = 2
     },
-    
+
     aihints = {
         prohibited_till = 10800,
         forced_after = 14400,

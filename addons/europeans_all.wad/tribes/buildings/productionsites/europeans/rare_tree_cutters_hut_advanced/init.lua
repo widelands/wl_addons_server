@@ -8,7 +8,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Rare Tree Cutter’s Hut"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         idle = {hotspot = {40, 66}},
@@ -37,6 +37,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=harvest_ironwood",
                 "call=harvest_liana",
                 "call=harvest_log",
+                "call=making_space",
             },
         },
         harvest_balsa = {
@@ -45,7 +46,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs balsa",
                 "callworker=harvest_balsa",
-                "sleep=duration:12s"
+                "sleep=duration:15s"
             },
         },
         harvest_ironwood = {
@@ -54,7 +55,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs ironwood",
                 "callworker=harvest_ironwood",
-                "sleep=duration:12s"
+                "sleep=duration:15s"
             },
         },
         harvest_liana = {
@@ -63,19 +64,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs liana",
                 "callworker=harvest_liana",
-                "sleep=duration:30s",
+                "sleep=duration:15s",
             },
         },
         harvest_log = {
             -- TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
             descname = _("harvesting log"),
             actions = {
-                "return=skipped when economy needs balsa",
-                "return=skipped when economy needs ironwood",
-                "return=skipped when economy needs liana",
-                "return=skipped when economy needs rubber",
+                "return=skipped unless economy needs log",
                 "callworker=harvest_log",
-                "sleep=duration:12s"
+                "sleep=duration:15s"
             },
         },
         harvest_rubber = {
@@ -84,7 +82,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs rubber",
                 "callworker=harvest_rubber",
-                "sleep=duration:12s"
+                "sleep=duration:15s"
+            },
+        },
+        making_space = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making space because ...
+            descname = _("harvesting log"),
+            actions = {
+                "return=skipped when economy needs log",
+                "callworker=making_space",
+                "sleep=duration:15s"
             },
         },
     },
