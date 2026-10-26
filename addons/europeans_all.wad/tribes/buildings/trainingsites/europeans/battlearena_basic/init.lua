@@ -8,7 +8,7 @@ wl.Descriptions():new_trainingsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Battle Arena"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
       unoccupied = {
@@ -37,7 +37,7 @@ wl.Descriptions():new_trainingsite_type {
          hotspot = { 110, 72 }
       },
     },
-    
+
     size = "big",
     destructible = true,
     enhancement = {
@@ -71,7 +71,7 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     aihints = {
-        trainingsites_max_percent = 5,
+        trainingsites_max_percent = 10,
         prohibited_till = 10800,
         forced_after = 14400,
         very_weak_ai_limit = 1,
@@ -116,10 +116,10 @@ wl.Descriptions():new_trainingsite_type {
             }
         },
     },
-    
+
     soldier_capacity = 4,
     trainer_patience = 16,
-    
+
     messages = {
         -- TRANSLATORS: Europeans training site tooltip when it has no soldiers assigned
         no_soldier = pgettext("europeans_building", "No soldier to train!"),

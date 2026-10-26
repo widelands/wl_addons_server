@@ -12,11 +12,17 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     spritesheets = {
         idle = {
-            hotspot = {40, 73},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {40, 73},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {40, 56},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         }
     },
     animations = {
@@ -24,9 +30,9 @@ wl.Descriptions():new_productionsite_type {
             hotspot = {40, 56}
         }
     },
-   
+
     size = "small",
-    
+
     aihints = {
         space_consumer = true,
         prohibited_till = 5400,
@@ -42,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "water", amount = 8 },
     },
-    
+
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...

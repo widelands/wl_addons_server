@@ -8,7 +8,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Lumberjack’s House Level 4"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         unoccupied = {
@@ -17,14 +17,20 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {40, 69},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {40, 69},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {40, 52},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         }
     },
-    
+
     size = "small",
 
     aihints = {
@@ -43,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=felling_trees",
-                "call=felling_trees_idle",
+                "call=making_space",
                 "return=skipped"
             }
         },
@@ -60,17 +66,18 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:20s"
             }
         },
-        felling_trees_idle = {
+        making_space = {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-            descname = pgettext("europeans_building", "felling trees"),
+            descname = pgettext("europeans_building", "making space"),
             actions = {
                 -- time of worker: 29.2-68.8 sec, min+max average 49 sec
                 -- min. time total: 29.2 + 120 = 149.2 sec
                 -- max. time total: 68.8 + 120 = 188.8 sec
                 -- avg. time total: 49 + 120 = 169 sec
                 "return=skipped when economy needs log",
-                "callworker=harvest_tree",
-                "sleep=duration:120s"
+                "return=skipped when economy needs liana",
+                "callworker=harvest",
+                "sleep=duration:60s"
             }
         }
     },

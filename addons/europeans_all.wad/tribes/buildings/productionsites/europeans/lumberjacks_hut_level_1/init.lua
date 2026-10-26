@@ -8,13 +8,13 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Lumberjack’s Hut Level 1"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         idle = { hotspot = {41, 46}},
         unoccupied = { hotspot = {39, 46}}
     },
-    
+
     size = "small",
     enhancement = {
         name = "europeans_lumberjacks_house_level_2",

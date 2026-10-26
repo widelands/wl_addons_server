@@ -17,14 +17,20 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {40, 70},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {40, 70},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {40, 52},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         }
     },
-   
+
     size = "small",
     enhancement = {
         name = "europeans_aqua_farm",
@@ -37,7 +43,7 @@ wl.Descriptions():new_productionsite_type {
             brick = 1
         }
     },
-    
+
     aihints = {
         needs_water = true,
         prohibited_till = 4800,
