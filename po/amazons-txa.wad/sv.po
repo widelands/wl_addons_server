@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:18+0200\n"
+"POT-Creation-Date: 2026-11-04 03:26+0100\n"
 "PO-Revision-Date: 2026-04-25 19:35+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -25,24 +25,26 @@ msgstr ""
 #: addons/amazons-txa.wad/addon:2 addons/amazons-txa.wad/postload.lua:11
 #: input:8 input:11 standard
 msgid "Harder Amazons"
-msgstr ""
+msgstr "Hårdare amasoner"
 
 #: addons/amazons-txa.wad/addon:3 input:6 standard
 msgid ""
 "This is the add-on version of the Amazon changes proposed in the balancing "
 "PR."
 msgstr ""
+"Detta är tilläggsversionen av de ändringar för amasonerna som föreslås i PR:"
+"en om balansering."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/amazons-txa.wad/charcoal_master/init.lua:8 input:8 standard
 msgctxt "amazons_worker"
 msgid "Charcoal Master"
-msgstr ""
+msgstr "Träkolsmästare"
 
 #: addons/amazons-txa.wad/postload.lua:16 input:16 standard
 msgctxt "amazons_worker"
 msgid "Burns rare trees to produce charcoal more efficiently."
-msgstr ""
+msgstr "Bränner sällsynta träd för att framställa träkol effektivare."
 
 #. TRANSLATORS: Lore helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:26 input:26 standard
@@ -54,18 +56,23 @@ msgid ""
 "enough to start learning how to ignite ironwood. You have to start slowly, "
 "with the gentle flames of a balsa fire…’"
 msgstr ""
+"”Du tror att du behärskar konsten att framställa träkol. Men det finaste "
+"träkolet kan endast framställas av gummi när det läggs i den hetaste "
+"järnträdsbrasan. Det du har lärt dig hittills, min flicka, räcker knappt för "
+"att börja lära dig hur järnträ antänds. Du måste börja försiktigt, med de "
+"milda lågorna från en balsabrasa …”"
 
 #. TRANSLATORS: Lore author helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:28 input:28 standard
 msgctxt "amazons_building"
 msgid "Mistress Blackwood, teaching an apprentice"
-msgstr ""
+msgstr "Mästare Blackwood undervisar en lärling"
 
 #. TRANSLATORS: Purpose helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:30 input:30 standard
 msgctxt "amazons_building"
 msgid "Burns rare trees into charcoal."
-msgstr ""
+msgstr "Bränner sällsynta träd till träkol."
 
 #. TRANSLATORS: Performance helptext for an Amazon production site: Rare Tree Kiln
 #: addons/amazons-txa.wad/postload.lua:32 input:32 standard
@@ -75,12 +82,14 @@ msgid ""
 "If fully supplied, the rare tree kiln needs %s on average to produce one "
 "lump of coal."
 msgstr ""
+"När den får alla förnödenheter behöver kolmilan för sällsynta träd i "
+"genomsnitt %s för att producera en bit träkol."
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing charcoal because ...
 #: addons/amazons-txa.wad/programs/charcoal_kiln.lua:6
 #: addons/amazons-txa.wad/rare_tree_kiln/init.lua:43 input:6 input:43 standard
 msgid "producing charcoal"
-msgstr ""
+msgstr "framställning av träkol"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing a light wooden armor because ...
 #: addons/amazons-txa.wad/programs/dressmakery.lua:6 input:6 standard
@@ -145,37 +154,37 @@ msgstr "sover"
 #: addons/amazons-txa.wad/programs/training_glade.lua:18 input:18 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "uppgraderar soldatens undvikningsförmåga från nivå 0 till nivå 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:32 input:32 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "uppgraderar soldatens undvikningsförmåga från nivå 1 till nivå 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:47 input:47 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier evade from level 2 to level 3"
-msgstr ""
+msgstr "uppgraderar soldatens undvikningsförmåga från nivå 2 till nivå 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:62 input:62 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 0 to level 1"
-msgstr ""
+msgstr "uppgraderar soldatens hälsa från nivå 0 till nivå 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:76 input:76 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr ""
+msgstr "uppgraderar soldatens hälsa från nivå 1 till nivå 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:91 input:91 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier health from level 2 to level 3"
-msgstr ""
+msgstr "uppgraderar soldatens hälsa från nivå 2 till nivå 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/amazons-txa.wad/programs/training_glade.lua:106 input:106 standard
@@ -187,10 +196,10 @@ msgstr "uppgradering av soldatförsvar från nivå 0 till nivå 1"
 #: addons/amazons-txa.wad/programs/training_glade.lua:121 input:121 standard
 msgctxt "amazons_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "uppgraderar soldatens försvar från nivå 1 till nivå 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/amazons-txa.wad/rare_tree_kiln/init.lua:8 input:8 standard
 msgctxt "amazons_building"
 msgid "Rare Tree Kiln"
-msgstr ""
+msgstr "Kolmila för sällsynta träd"

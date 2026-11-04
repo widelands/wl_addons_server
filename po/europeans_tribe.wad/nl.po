@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-11-03 03:27+0100\n"
+"POT-Creation-Date: 2026-11-04 03:33+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: Alex Rijckaert, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -87,35 +87,35 @@ msgstr "Voorpost"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:59
-#: input:59 standard
+#: input:59 input:60 standard
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your outpost."
 msgstr "Je soldaten hebben uw voorpost bezet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:61
-#: input:61 standard
+#: input:61 input:62 standard
 msgctxt "europeans_building"
 msgid "Your outpost discovered an aggressor."
 msgstr "Je voorpost heeft een aanvaller ontdekt."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:63
-#: input:63 standard
+#: input:63 input:64 standard
 msgctxt "europeans_building"
 msgid "Your outpost is under attack."
 msgstr "Je voorpost wordt aangevallen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:65
-#: input:65 standard
+#: input:65 input:66 standard
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the outpost."
 msgstr "De vijand heeft je soldaten bij de voorpost verslagen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_1/init.lua:67
-#: input:67 standard
+#: input:67 input:68 standard
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the outpost."
 msgstr "Je soldaten hebben de vijand bij de voorpost verslagen."
@@ -129,35 +129,35 @@ msgstr "Geavanceerde Barrière"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:47
-#: input:47 standard
+#: input:47 input:48 standard
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
 msgstr "Uw soldaten hebben uw geavanceerde barrière bezet."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:49
-#: input:49 standard
+#: input:49 input:50 standard
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
 msgstr "Uw geavanceerde barrière heeft een aanvaller ontdekt."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:51
-#: input:51 standard
+#: input:51 input:52 standard
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
 msgstr "Uw geavanceerde barrière wordt aangevallen."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:53
-#: input:53 standard
+#: input:53 input:54 standard
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
 msgstr "De vijand heeft je soldaten bij de geavanceerde barrière verslagen."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/barrier_level_2/init.lua:55
-#: input:55 standard
+#: input:55 input:56 standard
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
 msgstr "Je soldaten versloegen de vijand bij de geavanceerde barrière."
@@ -172,7 +172,7 @@ msgstr "Basisvesting"
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_basic/init.lua:69
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_1/init.lua:70
-#: input:69 input:70 standard
+#: input:69 input:70 input:72 standard
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your castle."
 msgstr "Je soldaten hebben uw kasteel bezet."
@@ -180,7 +180,7 @@ msgstr "Je soldaten hebben uw kasteel bezet."
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_basic/init.lua:71
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_1/init.lua:72
-#: input:71 input:72 standard
+#: input:71 input:72 input:74 standard
 msgctxt "europeans_building"
 msgid "Your castle discovered an aggressor."
 msgstr "Je kasteel heeft een aanvaller ontdekt."
@@ -188,7 +188,7 @@ msgstr "Je kasteel heeft een aanvaller ontdekt."
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_basic/init.lua:73
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_1/init.lua:74
-#: input:73 input:74 standard
+#: input:73 input:74 input:76 standard
 msgctxt "europeans_building"
 msgid "Your castle is under attack."
 msgstr "Je kasteel wordt aangevallen."
@@ -196,7 +196,7 @@ msgstr "Je kasteel wordt aangevallen."
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_basic/init.lua:75
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_1/init.lua:76
-#: input:75 input:76 standard
+#: input:75 input:76 input:78 standard
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the castle."
 msgstr "De vijand heeft je soldaten in het kasteel verslagen."
@@ -204,7 +204,7 @@ msgstr "De vijand heeft je soldaten in het kasteel verslagen."
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_basic/init.lua:77
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_1/init.lua:78
-#: input:77 input:78 standard
+#: input:77 input:78 input:80 standard
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the castle."
 msgstr "Je soldaten hebben de vijand bij het kasteel verslagen."
@@ -225,35 +225,35 @@ msgstr "Geavanceerde Vesting"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:65
-#: input:65 standard
+#: input:65 input:67 standard
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your fortress."
 msgstr "Je soldaten hebben uw vestiging bezet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:67
-#: input:67 standard
+#: input:67 input:69 standard
 msgctxt "europeans_building"
 msgid "Your fortress discovered an aggressor."
 msgstr "Je vestiging heeft een aanvaller ontdekt."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:69
-#: input:69 standard
+#: input:69 input:71 standard
 msgctxt "europeans_building"
 msgid "Your fortress is under attack."
 msgstr "Je vestiging wordt aangevallen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:71
-#: input:71 standard
+#: input:71 input:73 standard
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the fortress."
 msgstr "De vijand heeft je soldaten bij de de vestiging verslagen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_2/init.lua:73
-#: input:73 standard
+#: input:73 input:75 standard
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the fortress."
 msgstr "Je soldaten hebben de vijand bij de vestiging verslagen."
@@ -267,35 +267,35 @@ msgstr "Geavanceerd Kasteel"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:47
-#: input:47 standard
+#: input:47 input:48 standard
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced castle."
 msgstr "Je soldaten hebben je geavanceerd kasteel bezet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:49
-#: input:49 standard
+#: input:49 input:50 standard
 msgctxt "europeans_building"
 msgid "Your advanced castle discovered an aggressor."
 msgstr "Uw geavanceerd kasteel heeft een aanvaller ontdekt."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:51
-#: input:51 standard
+#: input:51 input:52 standard
 msgctxt "europeans_building"
 msgid "Your advanced castle is under attack."
 msgstr "Je geavanceerd kasteel wordt aangevallen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:53
-#: input:53 standard
+#: input:53 input:54 standard
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced castle."
 msgstr "De vijand heeft je soldaten verslagen in het geavanceerd kasteel."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/castle_level_3/init.lua:55
-#: input:55 standard
+#: input:55 input:56 standard
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced castle."
 msgstr "Je soldaten versloegen de vijand in het geavanceerde kasteel."
@@ -356,35 +356,35 @@ msgstr "Geavanceerde Wachtpost"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:47
-#: input:47 standard
+#: input:47 input:48 standard
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your sentry."
 msgstr "Je soldaten hebben uw wachtpost bezet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:49
-#: input:49 standard
+#: input:49 input:50 standard
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
 msgstr "Je wachtpost heeft een aanvaller ontdekt."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:51
-#: input:51 standard
+#: input:51 input:52 standard
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
 msgstr "Je wachtpost wordt aangevallen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:53
-#: input:53 standard
+#: input:53 input:54 standard
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
 msgstr "De vijand heeft je soldaten in de wachtpost verslagen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/sentry_level_1/init.lua:55
-#: input:55 standard
+#: input:55 input:56 standard
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
 msgstr "Je soldaten hebben de vijand bij de wachtpost verslagen."
@@ -447,35 +447,35 @@ msgstr "Geavanceerde Toren"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:53
-#: input:53 standard
+#: input:53 input:54 standard
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced tower."
 msgstr "Je soldaten hebben je geavanceerde toren bezet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:55
-#: input:55 standard
+#: input:55 input:56 standard
 msgctxt "europeans_building"
 msgid "Your advanced tower discovered an aggressor."
 msgstr "Je geavanceerde toren heeft een aanvaller ontdekt."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:57
-#: input:57 standard
+#: input:57 input:58 standard
 msgctxt "europeans_building"
 msgid "Your advanced tower is under attack."
 msgstr "Je geavanceerde toren wordt aangevallen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:59
-#: input:59 standard
+#: input:59 input:60 standard
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced tower."
 msgstr "De vijand heeft je soldaten bij de geavanceerde toren verslagen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/tribes/buildings/militarysites/europeans/tower_level_1/init.lua:61
-#: input:61 standard
+#: input:61 input:62 standard
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced tower."
 msgstr "Je soldaten hebben de vijand bij de geavanceerde toren verslagen."
@@ -1479,6 +1479,16 @@ msgstr "Basis Steenkoolmijn"
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/coalmine_basic/init.lua:68
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/coalmine_level_1/init.lua:61
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/coalmine_level_2/init.lua:62
@@ -1626,7 +1636,8 @@ msgstr "Dijkerhuis"
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:104
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:114
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:124
-#: input:94 input:104 input:114 input:124 standard
+#: input:94 input:100 input:104 input:110 input:114 input:120 input:124
+#: input:130 standard
 msgid "building a dike"
 msgstr "een dijk bouwen"
 
@@ -1635,7 +1646,8 @@ msgstr "een dijk bouwen"
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:143
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:152
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/dikers_house/init.lua:161
-#: input:134 input:143 input:152 input:161 standard
+#: input:134 input:140 input:143 input:149 input:152 input:158 input:161
+#: input:167 standard
 msgid "diking"
 msgstr "bedijking"
 
@@ -2247,32 +2259,35 @@ msgstr "Geavanceerde Zeldzame Boomsnijdershut"
 
 #. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:44
-#: input:44 standard
+#: input:44 input:45 standard
 msgid "harvesting balsa"
 msgstr "balsa oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:53
-#: input:53 standard
+#: input:53 input:54 standard
 msgid "harvesting ironwood"
 msgstr "ijzerhout oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start cutting liana because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:62
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_basic/init.lua:62
-#: input:62 standard
+#: input:62 input:63 standard
 msgid "cutting lianas"
 msgstr "lianen knippen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making space because ...
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making space because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:71
-#: input:71 standard
+#: input:71 input:72 input:90 standard
 msgid "harvesting log"
 msgstr "Boomstam oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:83
-#: input:83 standard
+#: input:81 input:83 standard
 msgid "harvesting rubber"
 msgstr "rubber oogsten"
 
@@ -2666,6 +2681,14 @@ msgctxt "europeans_building"
 msgid "Cloth Store"
 msgstr "Doekenwinkel"
 
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skidiamondpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skidiamondpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
@@ -3808,6 +3831,10 @@ msgstr "water winnen"
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/well_basic/init.lua:92
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/well_level_1/init.lua:75
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/well_level_2/init.lua:86
@@ -3903,7 +3930,7 @@ msgstr "Basis Trainingskamp"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:64
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:69
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:58
-#: input:58 input:64 input:66 input:69 input:94 standard
+#: input:58 input:59 input:64 input:66 input:69 input:94 standard
 msgid "sleeping"
 msgstr "slapen"
 
@@ -3913,7 +3940,7 @@ msgstr "slapen"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:72
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:77
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:66
-#: input:66 input:72 input:74 input:77 input:102 standard
+#: input:66 input:67 input:72 input:74 input:77 input:102 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr "gezondheid van soldaat upgraden van niveau 0 naar niveau 1"
@@ -3924,7 +3951,7 @@ msgstr "gezondheid van soldaat upgraden van niveau 0 naar niveau 1"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:117
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:137
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:141
-#: input:104 input:117 input:137 input:141 standard
+#: input:104 input:117 input:137 input:141 input:142 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr "soldaat aanval upgraden van niveau 0 naar niveau 1"
@@ -3935,7 +3962,7 @@ msgstr "soldaat aanval upgraden van niveau 0 naar niveau 1"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:162
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:197
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:216
-#: input:132 input:134 input:162 input:197 input:216 standard
+#: input:132 input:134 input:162 input:197 input:216 input:217 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr "soldaat verdediging upgraden van niveau 0 naar niveau 1"
@@ -3946,7 +3973,7 @@ msgstr "soldaat verdediging upgraden van niveau 0 naar niveau 1"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:192
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:227
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:246
-#: input:147 input:164 input:192 input:227 input:246 standard
+#: input:147 input:164 input:192 input:227 input:246 input:247 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr "soldaat ontwijking upgraden van niveau 0 naar niveau 1"
@@ -3957,7 +3984,7 @@ msgstr "soldaat ontwijking upgraden van niveau 0 naar niveau 1"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:227
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:262
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:281
-#: input:167 input:199 input:227 input:262 input:281 standard
+#: input:167 input:199 input:227 input:262 input:281 input:282 standard
 msgctxt "europeans_building"
 msgid "No soldier to train!"
 msgstr "Geen soldaat om te trainen!"
@@ -3968,7 +3995,7 @@ msgstr "Geen soldaat om te trainen!"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:229
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:264
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:283
-#: input:169 input:201 input:229 input:264 input:283 standard
+#: input:169 input:201 input:229 input:264 input:283 input:284 standard
 msgctxt "europeans_building"
 msgid "No soldier found for this training level!"
 msgstr "Geen soldaat gevonden voor dit trainingsniveau!"
@@ -3985,7 +4012,7 @@ msgstr "Trainingskamp Niveau 1"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:87
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:92
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:81
-#: input:81 input:87 input:89 input:92 standard
+#: input:81 input:82 input:87 input:89 input:92 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr "gezondheid van soldaat upgraden van niveau 1 naar niveau 2"
@@ -3995,7 +4022,7 @@ msgstr "gezondheid van soldaat upgraden van niveau 1 naar niveau 2"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:132
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:152
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:156
-#: input:119 input:132 input:152 input:156 standard
+#: input:119 input:132 input:152 input:156 input:157 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
 msgstr "soldaat aanval upgraden van niveau 1 naar niveau 2"
@@ -4005,7 +4032,7 @@ msgstr "soldaat aanval upgraden van niveau 1 naar niveau 2"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:177
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:212
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:231
-#: input:149 input:177 input:212 input:231 standard
+#: input:149 input:177 input:212 input:231 input:232 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
 msgstr "soldaat verdediging upgraden van niveau 1 naar niveau 2"
@@ -4015,7 +4042,7 @@ msgstr "soldaat verdediging upgraden van niveau 1 naar niveau 2"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:207
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:242
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:261
-#: input:179 input:207 input:242 input:261 standard
+#: input:179 input:207 input:242 input:261 input:262 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr "soldaat ontwijking upgraden van niveau 1 naar niveau 2"
@@ -4031,7 +4058,7 @@ msgstr "Trainingskamp Niveau 2"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:102
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:107
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:96
-#: input:96 input:102 input:107 standard
+#: input:96 input:97 input:102 input:107 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 2 to level 3"
 msgstr "gezondheid van soldaat upgraden van niveau 2 naar niveau 3"
@@ -4040,7 +4067,7 @@ msgstr "gezondheid van soldaat upgraden van niveau 2 naar niveau 3"
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_2/init.lua:147
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:167
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:171
-#: input:147 input:167 input:171 standard
+#: input:147 input:167 input:171 input:172 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr "soldaat aanval upgraden van niveau 2 naar niveau 3"
@@ -4055,7 +4082,7 @@ msgstr "Trainingskamp Niveau 3"
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:122
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:111
-#: input:111 input:122 standard
+#: input:111 input:112 input:122 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 3 to level 4"
 msgstr "leven van soldaten upgraden van niveau 3 naar niveau 4"
@@ -4063,7 +4090,7 @@ msgstr "leven van soldaten upgraden van niveau 3 naar niveau 4"
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_3/init.lua:182
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:186
-#: input:182 input:186 standard
+#: input:182 input:186 input:187 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 3 to level 4"
 msgstr "soldaat aanval upgraden van niveau 3 naar niveau 4"
@@ -4077,14 +4104,14 @@ msgstr "Trainingskamp Niveau 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:126
-#: input:126 standard
+#: input:126 input:127 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 4 to level 5"
 msgstr "leven van soldaten upgraden van niveau 4 naar niveau 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/tribes/buildings/trainingsites/europeans/trainingscamp_level_4/init.lua:201
-#: input:201 standard
+#: input:201 input:202 standard
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 4 to level 5"
 msgstr "soldaat aanval upgraden van niveau 4 naar niveau 5"
@@ -4507,6 +4534,10 @@ msgstr "Balsa Boom"
 msgid "Balsa Tree (Pole)"
 msgstr "Balsaboom (Paal)"
 
+#. TRANSLATORS:  This is an Amazon rare tree.
+#. TRANSLATORS: This is an Amazon rare tree.
+#. TRANSLATORS:  This is an Amazon rare tree.
+#. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
 #. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
@@ -5929,6 +5960,10 @@ msgstr "Verdedig en Overwin!"
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:796
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:803 input:796
 #: input:803 standard
@@ -6168,6 +6203,16 @@ msgstr "Op deze plek wordt een schip gebouwd."
 msgid "The remains of an old tree."
 msgstr "De resten van een oude boom."
 
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
@@ -7707,6 +7752,16 @@ msgstr "Wegen en bomen langs de kustlijn blokkeren de watertoevoer."
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1383
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1392
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1401
@@ -7717,6 +7772,14 @@ msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
 msgstr "Velt bomen in de omgeving en verwerkt ze tot boomstammen."
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
@@ -8786,6 +8849,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1444
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1453
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1462
@@ -8796,6 +8865,12 @@ msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
 msgstr "Plant bomen in de omgeving."
 
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
@@ -9578,6 +9653,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1507
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1516
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1525 input:1507
@@ -9586,6 +9665,14 @@ msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr "Zaagt ruwe stukken graniet uit rotsen in de omgeving."
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
@@ -10480,6 +10567,10 @@ msgstr "Hakt blokken graniet en marmer uit rotsen in de omgeving."
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1552
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1559 input:1552
 #: input:1559 standard
@@ -10495,6 +10586,10 @@ msgid ""
 "Trading building to sell or purchase wares to or from other allied tribes."
 msgstr "Handelsgebouw om goederen van andere geallieerde stammen te kopen."
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
@@ -11089,6 +11184,10 @@ msgstr "Haalt water uit de diepte."
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1609
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1618 input:1609
 #: input:1618 standard
@@ -11096,6 +11195,12 @@ msgctxt "europeans_building"
 msgid "Sows and harvests reed."
 msgstr "Zaaien en oogsten van riet."
 
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Vineyard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Vineyard
 #. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Vineyard
@@ -11860,6 +11965,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1645
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1652
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1659 input:1645
@@ -11949,6 +12058,16 @@ msgstr ""
 "nodig hebben. Marmeren zuilen worden alleen gebruikt in geavanceerde "
 "gebouwen."
 
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Recycling Center
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Recycling Center
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
@@ -13397,6 +13516,14 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Marble Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#. TRANSLATORS: Purpose helptext for production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#. TRANSLATORS: Purpose helptext for production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1865
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1872
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1879
@@ -13409,6 +13536,16 @@ msgid ""
 msgstr ""
 "Graaft graniet, marmer, kwarts en diamant uit de grond in bergachtig terrein."
 
+#. TRANSLATORS: Purpose helptext for production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
@@ -14879,6 +15016,16 @@ msgstr "Graaft steenkool uit de grond in bergachtig terrein."
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1928
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1935
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1942
@@ -14889,6 +15036,16 @@ msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr "Graaft ijzererts uit de grond in bergachtig terrein."
 
+#. TRANSLATORS: Purpose helptext for production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
@@ -15703,6 +15860,10 @@ msgstr ""
 "Bouwt schepen die worden gebruikt voor overzeese kolonisatie en voor handel "
 "tussen havens."
 
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
@@ -17323,6 +17484,24 @@ msgstr "Bouwt schepen en extra veerboten."
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2100
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2109
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2118
@@ -17341,6 +17520,22 @@ msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr "Garnizoenstroepen om je territorium uit te breiden."
 
+#. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Tower
+#. TRANSLATORS: Note helptext for an Europeans military site: Castle
+#. TRANSLATORS: Note helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Tower
+#. TRANSLATORS: Note helptext for an Europeans military site: Castle
+#. TRANSLATORS: Note helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
 #. TRANSLATORS: Note helptext for an Europeans military site: Sentry
 #. TRANSLATORS: Note helptext for an Europeans military site: Barrier
@@ -20155,3 +20350,9 @@ msgstr "Gevorderde Werker"
 msgctxt "europeans_worker"
 msgid "Basic Worker"
 msgstr "Basis Werker"
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: input:60 standard
+msgctxt "europeans_building"
+msgid "making space"
+msgstr ""

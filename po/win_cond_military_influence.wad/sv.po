@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-10-11 03:31+0200\n"
+"POT-Creation-Date: 2026-11-04 03:36+0100\n"
 "PO-Revision-Date: 2026-05-24 08:16+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
@@ -27,140 +27,142 @@ msgstr ""
 #: addons/win_cond_military_influence.wad/functions.lua:660 input:8 input:621
 #: input:660 input:704 input:744 standard
 msgid "Military Influence"
-msgstr ""
+msgstr "Militärt inflytande"
 
 #: addons/win_cond_military_influence.wad/addon:3 input:6 standard
 msgid ""
 "Conquer as much as you can and train as many and strong soldiers as you can "
 "in the set time."
 msgstr ""
+"Erövra så mycket som möjligt och träna så många och starka soldater som "
+"möjligt inom den angivna tiden."
 
 #. TRANSLATORS: Gametime as hours:minutes, e.g. 2:30
 #: addons/win_cond_military_influence.wad/functions.lua:154 input:154 input:184
 #: standard
 msgid "%1$d:%2$02d:%3$02d"
-msgstr ""
+msgstr "%1$d:%2$02d:%3$02d"
 
 #. TRANSLATORS: first placeholder is player name, second is game time, third is tribe
 #: addons/win_cond_military_influence.wad/functions.lua:158 input:158 input:188
 #: standard
 msgid "Military Influence Score for %1$s at %2$s with %3$s:"
-msgstr ""
+msgstr "Poäng för militärt inflytande för %1$s vid %2$s med %3$s:"
 
 #: addons/win_cond_military_influence.wad/functions.lua:165 input:165 input:195
 #: standard
 msgid "Area info"
-msgstr ""
+msgstr "Områdesinformation"
 
 #: addons/win_cond_military_influence.wad/functions.lua:166 input:166 input:196
 #: standard
 msgid "Area score: "
-msgstr ""
+msgstr "Områdespoäng: "
 
 #: addons/win_cond_military_influence.wad/functions.lua:169 input:169 input:199
 #: standard
 #, lua-format
 msgid "Total area: %d"
-msgstr ""
+msgstr "Total yta: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:170 input:170 input:200
 #: standard
 #, lua-format
 msgid "Area controlled by military buildings: %d"
-msgstr ""
+msgstr "Yta som kontrolleras av militärbyggnader: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:171 input:171 input:202
 #: standard
 #, lua-format
 msgid "Conquerable map area: %d"
-msgstr ""
+msgstr "Erövringsbar kartyta: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:172 input:172 input:203
 #: standard
 #, lua-format
 msgid "Player owns %.1f%% of the conquerable map area"
-msgstr ""
+msgstr "Spelaren äger %.1f%% av den erövringsbara kartytan"
 
 #: addons/win_cond_military_influence.wad/functions.lua:173 input:173 input:204
 #: standard
 #, lua-format
 msgid "Number of military buildings: %d"
-msgstr ""
+msgstr "Antal militärbyggnader: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:175 input:175 input:207
 #: standard
 msgid "Soldiers info"
-msgstr ""
+msgstr "Soldatinformation"
 
 #: addons/win_cond_military_influence.wad/functions.lua:176 input:176 input:208
 #: standard
 msgid "Soldiers score: "
-msgstr ""
+msgstr "Soldatpoäng: "
 
 #: addons/win_cond_military_influence.wad/functions.lua:179 input:179 input:211
 #: standard
 #, lua-format
 msgid "Soldiers statistics score: %d"
-msgstr ""
+msgstr "Poäng för soldatstatistik: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:180 input:180 input:212
 #: standard
 #, lua-format
 msgid "Total effective strength of guards: %d"
-msgstr ""
+msgstr "Sammanlagd effektiv styrka hos vakter: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:181 input:181 input:214
 #: standard
 #, lua-format
 msgid "Total number of soldiers: %d"
-msgstr ""
+msgstr "Totalt antal soldater: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:182 input:182 input:215
 #: standard
 #, lua-format
 msgid "Soldiers in buildings: %d"
-msgstr ""
+msgstr "Soldater i byggnader: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:183 input:183 input:216
 #: standard
 #, lua-format
 msgid "Soldiers on roads and ships: %d"
-msgstr ""
+msgstr "Soldater på vägar och fartyg: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:184 input:184 input:217
 #: standard
 #, lua-format
 msgid "Number of heroes: %d"
-msgstr ""
+msgstr "Antal hjältar: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:185 input:185 input:218
 #: standard
 #, lua-format
 msgid "Sum of all soldier levels: %d"
-msgstr ""
+msgstr "Summan av alla soldatnivåer: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:186 input:186 input:219
 #: standard
 #, lua-format
 msgid "Total number of guards: %d"
-msgstr ""
+msgstr "Totalt antal vakter: %d"
 
 #: addons/win_cond_military_influence.wad/functions.lua:187 input:187 input:220
 #: standard
 #, lua-format
 msgid "%.1f%% of available positions"
-msgstr ""
+msgstr "%.1f%% av tillgängliga platser"
 
 #: addons/win_cond_military_influence.wad/functions.lua:188 input:188 input:221
 #: standard
 #, lua-format
 msgid "Average strength of garrisons: %.1f%%"
-msgstr ""
+msgstr "Genomsnittlig styrka i garnisoner: %.1f%%"
 
 #: addons/win_cond_military_influence.wad/functions.lua:197 input:197 input:231
 #: standard
 msgid "Calculation method"
-msgstr ""
+msgstr "Beräkningsmetod"
 
 #: addons/win_cond_military_influence.wad/functions.lua:198 input:198 input:232
 #: standard

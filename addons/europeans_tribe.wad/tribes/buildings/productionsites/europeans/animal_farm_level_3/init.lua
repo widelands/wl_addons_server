@@ -77,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time total: 15 + 15 = 30 sec
                 "return=skipped unless economy needs europeans_carrier_donkey",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:15s", -- Feeding cute little baby donkeys ;)
@@ -90,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 15 + 20 + 3.6 = 38.6 sec
                 "return=skipped unless economy needs leather",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s",
@@ -103,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 15 + 20 + 2 * 3.6 = 42.2 sec
                 "return=skipped unless economy needs fur",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s",

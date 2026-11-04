@@ -33,7 +33,7 @@ wl.Descriptions():new_militarysite_type {
 
     size = "big",
     destructible = true,
-    
+
     enhancement = {
         name = "europeans_castle_level_2",
         enhancement_cost = {
@@ -42,11 +42,12 @@ wl.Descriptions():new_militarysite_type {
             marble_column = 4
         },
         enhancement_return_on_dismantle = {
-            granite = 2,
+            brick = 1,
+            granite = 1,
             marble = 4
         },
     },
-    
+
     buildcost = {
         brick = 4,
         grout = 4,
@@ -54,7 +55,8 @@ wl.Descriptions():new_militarysite_type {
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        granite = 4
+        brick = 2,
+        granite = 2
     },
 
     aihints = {},

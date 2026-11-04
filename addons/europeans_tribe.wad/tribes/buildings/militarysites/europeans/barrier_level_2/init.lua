@@ -8,7 +8,7 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Barrier"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     spritesheets = {
       idle = {
@@ -18,10 +18,10 @@ wl.Descriptions():new_militarysite_type {
          hotspot = { 52, 79 }
       }
     },
-    
+
     size = "medium",
     destructible = true,
-    
+
     buildcost = {
         brick = 3,
         grout = 3,
@@ -30,7 +30,8 @@ wl.Descriptions():new_militarysite_type {
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 2,
+        brick = 1,
+        granite = 1,
         marble = 2
     },
 

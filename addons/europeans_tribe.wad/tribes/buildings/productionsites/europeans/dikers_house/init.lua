@@ -9,19 +9,25 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        unoccupied = {
-            hotspot = {75, 76}
-        }
-    },
     spritesheets = {
-        idle = {
-            hotspot = {75, 95},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        },
+      idle = {
+         hotspot = {75, 95},
+         frames = 10,
+         columns = 5,
+         rows = 2,
+         fps = 10
+      },
+      build = {
+         hotspot = {75, 76},
+         frames = 4,
+         columns = 2,
+         rows = 2,
+      }
+    },
+    animations = {
+      unoccupied = {
+         hotspot = {75, 76}
+      }
     },
 
     size = "big",

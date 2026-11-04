@@ -21,7 +21,7 @@ wl.Descriptions():new_militarysite_type {
 
     size = "small",
     destructible = true,
-    
+
     buildcost = {
         brick = 2,
         grout = 2,
@@ -30,16 +30,17 @@ wl.Descriptions():new_militarysite_type {
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 2,
+        brick = 1,
+        granite = 1,
         marble = 1
     },
-    
+
     aihints = {},
 
     max_soldiers = 4,
-    vision_range = 12,
+    vision_range = 10,
     heal_per_second = 120,
-    conquers = 9,
+    conquers = 8,
     prefer_heroes = false,
 
     messages = {

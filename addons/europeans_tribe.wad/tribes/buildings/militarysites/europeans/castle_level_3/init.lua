@@ -8,7 +8,7 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Castle"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     spritesheets = {
       idle = {
@@ -18,10 +18,10 @@ wl.Descriptions():new_militarysite_type {
          hotspot = { 98, 114 }
       }
     },
-    
+
     size = "big",
     destructible = true,
-    
+
     buildcost = {
         brick = 4,
         grout = 4,
@@ -30,16 +30,17 @@ wl.Descriptions():new_militarysite_type {
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        granite = 4,
+        brick = 2,
+        granite = 2,
         marble = 4
     },
-    
+
     aihints = {},
 
     max_soldiers = 18,
-    vision_range = 24,
+    vision_range = 20,
     heal_per_second = 300,
-    conquers = 18,
+    conquers = 14,
     prefer_heroes = true,
 
     messages = {

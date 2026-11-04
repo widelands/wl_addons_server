@@ -8,7 +8,7 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Fortress"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
       unoccupied = {
@@ -32,7 +32,7 @@ wl.Descriptions():new_militarysite_type {
     },
     size = "big",
     destructible = true,
-    
+
     enhancement = {
         name = "europeans_castle_level_1",
         enhancement_cost = {
@@ -40,7 +40,8 @@ wl.Descriptions():new_militarysite_type {
             grout = 2
         },
         enhancement_return_on_dismantle = {
-            granite = 2
+            brick = 1,
+            granite = 1
         },
     },
     buildcost = {
@@ -59,9 +60,9 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 8,
-    vision_range = 12,
+    vision_range = 14,
     heal_per_second = 200,
-    conquers = 9,
+    conquers = 10,
     prefer_heroes = true,
 
     messages = {

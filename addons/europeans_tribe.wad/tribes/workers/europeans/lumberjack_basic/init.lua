@@ -12,10 +12,10 @@ wl.Descriptions():new_worker_type {
 
     experience = 96,
     becomes = "europeans_lumberjack_advanced",
-    
+
     buildcost = {
         europeans_carrier = 1
-    },    
+    },
 
     programs = {
         check_trees = {
@@ -30,6 +30,16 @@ wl.Descriptions():new_worker_type {
             "callobject=fall",
             "animate=idle duration:6s",
             "createware=log",
+            "return"
+        },
+        making_space = {
+            "findobject=attrib:tree radius:8",
+            "walk=object",
+            "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
+            "animate=hack duration:6s",
+            "playsound=sound/woodcutting/tree_falling priority:100%",
+            "callobject=fall",
+            "animate=idle duration:6s",
             "return"
         },
         check_liana = {

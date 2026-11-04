@@ -683,6 +683,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:europeans-minimal-wad]
+file_filter            = po/europeans_minimal.wad/<lang>.po
+source_file            = po/europeans_minimal.wad/europeans_minimal.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:europeans-tribe-wad]
 file_filter            = po/europeans_tribe.wad/<lang>.po
 source_file            = po/europeans_tribe.wad/europeans_tribe.wad.pot

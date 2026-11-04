@@ -9,7 +9,7 @@ wl.Descriptions():new_worker_type {
     descname = pgettext("europeans_worker", "Advanced Lumberjack"),
     icon = dirname .. "menu.png",
     vision_range = 2,
-    
+
     programs = {
         check_trees = {
             "findobject=attrib:tree radius:16",
@@ -34,6 +34,16 @@ wl.Descriptions():new_worker_type {
             "callobject=fall",
             "animate=idle duration:2s",
             "createware=log",
+            "return"
+        },
+        making_space = {
+            "findobject=attrib:tree radius:16",
+            "walk=object",
+            "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
+            "animate=hacking duration:2s",
+            "playsound=sound/woodcutting/tree_falling priority:100%",
+            "callobject=fall",
+            "animate=idle duration:2s",
             "return"
         },
         check_balsa = {

@@ -8,7 +8,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Lumberjack’s House Level 4"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         unoccupied = {
@@ -24,7 +24,7 @@ wl.Descriptions():new_productionsite_type {
             fps = 10
         }
     },
-    
+
     size = "small",
 
     aihints = {
@@ -41,8 +41,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=felling_trees_idle",
                 "call=felling_trees",
+                "call=making_space",
                 "return=skipped"
             }
         },
@@ -55,13 +55,14 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:20s"
             }
         },
-        felling_trees_idle = {
+        making_space = {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-            descname = pgettext("europeans_building", "felling trees"),
+            descname = pgettext("europeans_building", "making space"),
             actions = {
                 "return=skipped when economy needs log",
-                "callworker=harvest_tree",
-                "sleep=duration:120s"
+                "return=skipped when economy needs liana",
+                "callworker=making_space",
+                "sleep=duration:60s"
             }
         }
     },

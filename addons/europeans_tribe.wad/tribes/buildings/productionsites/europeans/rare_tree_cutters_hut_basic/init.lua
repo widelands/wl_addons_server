@@ -61,7 +61,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start cutting liana because ...
             descname = _("cutting lianas"),
             actions = {
-                "return=skipped unless economy needs liana",
+                "return=skipped unless economy needs liana or workers need experience",
                 "callworker=harvest_liana",
                 "sleep=duration:30s",
             },

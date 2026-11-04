@@ -8,7 +8,7 @@ wl.Descriptions():new_trainingsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Trainingcamp Level 4"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         unoccupied = {
@@ -31,11 +31,12 @@ wl.Descriptions():new_trainingsite_type {
             fps = 10
         }
     },
-    
+
     size = "big",
     destructible = true,
-    
+
     aihints = {
+        trainingsites_max_percent = 20,
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         prohibited_till = 3600,
@@ -272,10 +273,10 @@ wl.Descriptions():new_trainingsite_type {
             }
         },
     },
-    
+
     soldier_capacity = 4,
     trainer_patience = 16,
-    
+
     messages = {
         -- TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
         no_soldier = pgettext("europeans_building", "No soldier to train!"),

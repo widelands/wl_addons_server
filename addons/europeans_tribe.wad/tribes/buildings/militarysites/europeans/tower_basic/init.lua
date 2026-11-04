@@ -33,7 +33,7 @@ wl.Descriptions():new_militarysite_type {
 
     size = "medium",
     destructible = true,
-    
+
     enhancement = {
         name = "europeans_tower_level_1",
         enhancement_cost = {
@@ -54,7 +54,7 @@ wl.Descriptions():new_militarysite_type {
         scrap_wood = 3,
         granite = 2
     },
-    
+
     aihints = {
         expansion = true
     },
@@ -62,7 +62,7 @@ wl.Descriptions():new_militarysite_type {
     max_soldiers = 4,
     vision_range = 16,
     heal_per_second = 120,
-    conquers = 12,
+    conquers = 10,
     prefer_heroes = false,
 
     messages = {

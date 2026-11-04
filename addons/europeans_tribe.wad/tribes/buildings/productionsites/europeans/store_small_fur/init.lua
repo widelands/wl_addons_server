@@ -8,31 +8,32 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Fur Store"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        build = {
-            hotspot = {50, 69}
-        }
-    },
     spritesheets = {
-        idle = {
-            hotspot = {50, 69},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        },
-        working = {
-            basename = "idle",
-            hotspot = {50, 69},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        }
+      idle = {
+         hotspot = {50, 69},
+         frames = 10,
+         columns = 5,
+         rows = 2,
+         fps = 10
+      },
+      build = {
+         hotspot = {50, 69},
+         frames = 4,
+         columns = 2,
+         rows = 2,
+      },
+      working = {
+         basename = "idle",
+         hotspot = {50, 69},
+         frames = 10,
+         columns = 5,
+         rows = 2,
+         fps = 10
+      }
     },
-    
+
     size = "medium",
     buildcost = {
         brick = 2,
@@ -43,7 +44,7 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 2
     },
-    
+
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,

@@ -1,0 +1,4515 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR "Widelands Development Team"
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# LINUX-SAUNA, 2026
+# Atte Timonen, 2026
+# Jaakko Muilu, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
+"POT-Creation-Date: 2026-11-04 03:32+0100\n"
+"PO-Revision-Date: 2026-11-03 12:50+0000\n"
+"Last-Translator: Jaakko Muilu, 2026\n"
+"Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
+"fi/)\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: input:4 standard
+msgid "This is the experimental Europeans tribe."
+msgstr ""
+
+#: input:6 standard
+msgid "Demo Tribe with minimum economy and no manufacturing industry."
+msgstr ""
+
+#: input:7 standard
+msgid "Europeans Tribe (Minimum Economy)"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "A Lot of Coal"
+msgstr "Paljon hiiltä"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "A Lot of Crystals"
+msgstr "Paljon kristalleja"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "A Lot of Gold"
+msgstr "Paljon kultaa"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "A Lot of Iron"
+msgstr "Paljon rautaa"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:8 standard
+msgctxt "europeans_building"
+msgid "Big Barracks"
+msgstr "Isoja kasarmeja"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:8 standard
+msgctxt "europeans_building"
+msgid "Big Well"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: input:8 standard
+msgctxt "ware"
+msgid "Copper Coin"
+msgstr "Kuparikolikko"
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: input:8 standard
+msgctxt "ware"
+msgid "Cotton"
+msgstr "Puuvilla"
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:8 standard
+msgctxt "immovable"
+msgid "Dike"
+msgstr ""
+
+#: input:8 standard
+msgctxt "europeans_building"
+msgid "Diker’s House"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:8 standard
+msgctxt "immovable"
+msgid "Dry Pond"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: input:8 standard
+msgctxt "ware"
+msgid "Gold Coin"
+msgstr "Kultakolikko"
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: input:8 standard
+msgctxt "ware"
+msgid "Leather"
+msgstr "Nahka"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "No Resources"
+msgstr "Ei resursseja"
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: input:8 standard
+msgctxt "ware"
+msgid "Ore"
+msgstr "Malmi"
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:8 standard
+msgctxt "immovable"
+msgid "Pond with water"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:8 standard
+msgctxt "immovable"
+msgid "Reed Field (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:8 standard
+msgctxt "immovable"
+msgid "Reed Field (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:8 standard
+msgctxt "immovable"
+msgid "Reed Field (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:8 standard
+msgctxt "immovable"
+msgid "Reed Field (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: input:8 standard
+msgctxt "ware"
+msgid "Scrap wood"
+msgstr "Jätepuu"
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:8 standard
+msgctxt "immovable"
+msgid "Ship Under Construction"
+msgstr "Laiva rakenteilla"
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: input:8 standard
+msgctxt "ware"
+msgid "Silver Coin"
+msgstr "Hopeakolikko"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "Some Coal"
+msgstr "Vähän hiiltä"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "Some Crystals"
+msgstr "Vähän kristalleja"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "Some Gold"
+msgstr "Vähän kultaa"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "Some Iron"
+msgstr "Vähän rautaa"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "immovable"
+msgid "Trade Pole"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:8 standard
+msgctxt "europeans_worker"
+msgid "Trader"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: input:8 standard
+msgctxt "resource_indicator"
+msgid "Water"
+msgstr "Vettä"
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: input:8 standard
+msgctxt "ware"
+msgid "Wood Coin"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Barrier"
+msgstr "Edistynyt muuri"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Berry Farm"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Castle"
+msgstr "Edistynyt linna"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Fortress"
+msgstr "Edistynyt linnoitus"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Advanced Gardener"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Advanced Lumberjack"
+msgstr "Edistynyt tukkijätkä"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Advanced Miner"
+msgstr "Edistynyt louhija"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Rare Tree Cutter’s Hut"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Reed/Cotton Farm"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Advanced Scout"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Scout’s House"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Sentry"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Advanced Shipwright"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Advanced Stonecutter"
+msgstr "Edistynyt kivenhakkaaja"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Advanced Tower"
+msgstr "Edistynyt torni"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Advanced Worker"
+msgstr "Edistynyt työläinen"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Barrier"
+msgstr "Peruseste"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Berry Farm"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Charcoal Kiln"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Coal Mine"
+msgstr "Perushiilikaivos"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Foresters Hut"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Fortress"
+msgstr "Peruslinnoitus"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Basic Gardener"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Gold Mine"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Iron Mine"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Basic Lumberjack"
+msgstr "Perustukkijätkä"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Lumberjack’s Hut"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Basic Miner"
+msgstr "Peruslouhija"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Quarry"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Rare Tree Cutter’s Hut"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Reed/Cotton Farm"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Basic Scout"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Scouts House"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Sentry"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Ship Yard"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Basic Shipwright"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Smelting Works"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Stone Mine"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Basic Stonecutter"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Tower"
+msgstr "Perustorni"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Trainingcamp"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Basic Well"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Basic Worker"
+msgstr "Perustyöläinen"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Big Port"
+msgstr ""
+
+#: input:9 standard
+msgid "Black Currant (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Black Currant (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Black Currant (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Black Currant (tiny)"
+msgstr ""
+
+#: input:9 standard
+msgid "Blueberry Bush (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Blueberry Bush (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Blueberry Bush (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Blueberry Bush (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Builder"
+msgstr "Rakentaja"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Carrier"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Carrier 1"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Carrier 2"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Carrier 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Cattle Farm"
+msgstr "Karjatila"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Charcoal Kiln Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Charcoal Kiln Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Charcoal Kiln Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Charcoal Kiln Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Citadel"
+msgstr "Linnake"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Coal Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Coal Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Coal Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Coal Mine Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Combined Ferry- and Shipyard"
+msgstr ""
+
+#: input:9 standard
+msgid "Cotton Field (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Cotton Field (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Cotton Field (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Cotton Field (tiny)"
+msgstr ""
+
+#: input:9 standard
+msgid "Desert Hackberry (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Desert Hackberry (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Desert Hackberry (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Desert Hackberry (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Diker"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Donkey"
+msgstr "Aasi"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Donkey Farm"
+msgstr "Aasitila"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Ferry"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Food Store"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Forester"
+msgstr "Metsuri"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Foresters Hut Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Foresters Hut Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Foresters Hut Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Foresters Hut Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Fur Store"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Gardening Center"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Geologist"
+msgstr "Geologi"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Gold Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Gold Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Gold Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Gold Mine Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Headquarters"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Horse"
+msgstr "Hevonen"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Horse Farm"
+msgstr "Hevostila"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Iron Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Iron Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Iron Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Iron Mine Level 4"
+msgstr ""
+
+#: input:9 standard
+msgid "Juniper (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Juniper (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Juniper (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Juniper (tiny)"
+msgstr "Kataja (pikkuruinen)"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Lumberjack’s House Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Lumberjack’s House Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Lumberjack’s House Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Lumberjack’s Hut Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Market"
+msgstr "Kauppapaikka"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Mountain Sentry"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Outpost"
+msgstr "Ulkovartio"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Ox"
+msgstr "Härkä"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Plant Store"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Port"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Quarry Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Quarry Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Quarry Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Quarry Level 4"
+msgstr ""
+
+#: input:9 standard
+msgid "Raspberry Bush (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Raspberry Bush (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Raspberry Bush (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Raspberry Bush (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Recruit"
+msgstr "Värvätty"
+
+#: input:9 standard
+msgid "Red Currant (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Red Currant (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Red Currant (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Red Currant (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Reindeer"
+msgstr "Poro"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Reindeer Farm"
+msgstr "Porotila"
+
+#: input:9 standard
+msgid "Sea Buckthorn (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Sea Buckthorn (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Sea Buckthorn (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Sea Buckthorn (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Sheep Farm"
+msgstr "Lammastila"
+
+#. TRANSLATORS: This is the Europeans' ship's name used in lists of units
+#: input:9 standard
+msgctxt "europeans_ship"
+msgid "Ship"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Smelting Works Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Smelting Works Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Smelting Works Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Smelting Works Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Smelting Works Level 5"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Special Tree Plantation"
+msgstr ""
+
+#: input:9 standard
+msgid "Stink Shepherd’s Tree (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Stink Shepherd’s Tree (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Stink Shepherd’s Tree (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Stink Shepherd’s Tree (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Stone Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Stone Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Stone Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Stone Store"
+msgstr ""
+
+#: input:9 standard
+msgid "Strawberries (medium)"
+msgstr ""
+
+#: input:9 standard
+msgid "Strawberries (ripe)"
+msgstr ""
+
+#: input:9 standard
+msgid "Strawberries (small)"
+msgstr ""
+
+#: input:9 standard
+msgid "Strawberries (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:9 standard
+msgctxt "europeans_worker"
+msgid "Tapir"
+msgstr "Tapiiri"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Tapir Farm"
+msgstr "Tapiiritila"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Trading Post"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Trainingcamp Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Trainingcamp Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Trainingcamp Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Trainingcamp Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Water Gatherer’s Hut"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Well Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Well Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Well Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: input:9 standard
+msgctxt "europeans_building"
+msgid "Wood Store"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:10 standard
+msgctxt "immovable"
+msgid "Grapevine (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:10 standard
+msgctxt "immovable"
+msgid "Grapevine (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:10 standard
+msgctxt "immovable"
+msgid "Grapevine (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: input:10 standard
+msgctxt "immovable"
+msgid "Grapevine (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a fictitious tree. Be creative if you want.
+#: input:10 standard
+msgid "Liana Tree (Mature)"
+msgstr ""
+
+#. TRANSLATORS: This is a fictitious tree. Be creative if you want.
+#: input:10 standard
+msgid "Liana Tree (Old)"
+msgstr ""
+
+#. TRANSLATORS: This is a fictitious tree. Be creative if you want.
+#: input:10 standard
+msgid "Liana Tree (Pole)"
+msgstr ""
+
+#. TRANSLATORS: This is a fictitious tree. Be creative if you want.
+#: input:10 standard
+msgid "Liana Tree (Sapling)"
+msgstr ""
+
+#: input:10 standard
+msgid "Mark McWire"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Balsa Tree (Mature)"
+msgstr "Balsepuu (täysikasvuinen)"
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Balsa Tree (Old)"
+msgstr "Balsepuu (vanha)"
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Balsa Tree (Pole)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#. TRANSLATORS: This is an Amazon rare tree.
+#. TRANSLATORS:  This is an Amazon rare tree.
+#. TRANSLATORS: This is an Amazon rare tree.
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Balsa Tree (Sapling)"
+msgstr "Balsepuu (taimi)"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: input:11 standard
+msgid "Discovery"
+msgstr "Löydös"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: input:11 standard
+msgid "Harbors"
+msgstr "Satamia"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: input:11 standard
+msgid "Headquarters with Diker"
+msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: input:11 standard
+msgid "Headquarters with Seafaring"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Ironwood Tree (Mature)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Ironwood Tree (Old)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Ironwood Tree (Pole)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Ironwood Tree (Sapling)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Rubber Tree (Mature)"
+msgstr "Kumipuu (täysikasvuinen)"
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Rubber Tree (Old)"
+msgstr "Kumipuu (vanha)"
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Rubber Tree (Pole)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:11 standard
+msgid "Rubber Tree (Sapling)"
+msgstr "Kumipuu (taimi)"
+
+#. TRANSLATORS: This is a tribe name
+#: input:12 standard
+msgid "Europeans"
+msgstr ""
+
+#. TRANSLATORS: This is a fictitious tree. Be creative if you want.
+#: input:12 standard
+msgid "Liana Tree"
+msgstr ""
+
+#. TRANSLATORS: Format string for a latin quote and its translation
+#: input:12 standard
+msgctxt "europeans_lore"
+msgid "‘%1%’<br>(%2%)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:13 standard
+msgid "Balsa Tree"
+msgstr "Balsepuu"
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:13 standard
+msgid "Ironwood Tree"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: input:13 standard
+msgid "Rubber Tree"
+msgstr "Kumipuu"
+
+#. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
+#: input:13 standard
+msgid "Start the game with one port only."
+msgstr "Aloita peli vain yhdellä satamalla."
+
+#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
+#: input:13 standard
+msgid ""
+"Start the game with three ships on the ocean and only a handful of supplies."
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: input:13 standard
+msgid ""
+"Start the game with your headquarters only. Enables dikers and disables "
+"ports and shipyards."
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: input:13 standard
+msgid ""
+"Start the game with your headquarters only. Enables ports and shipyards and "
+"disables dikers."
+msgstr ""
+
+#: input:13 standard
+msgid "This is the culture of the Europeans."
+msgstr "Tämä on eurooppalaisten kulttuuri."
+
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: input:33 input:36 input:42 input:43 input:44 input:47 input:48 input:49
+#: input:51 input:52 input:53 input:54 input:55 input:56 input:58 input:61
+#: input:62 input:63 input:64 input:65 input:67 input:68 input:74 input:75
+#: input:76 input:78 input:92 input:103 standard
+msgid "working"
+msgstr "työskentelee"
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#: input:41 input:50 input:61 input:62 input:63 input:68 input:70 standard
+msgctxt "europeans_building"
+msgid "mining"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#: input:45 standard
+msgid "harvesting balsa"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: input:48 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your advanced barrier."
+msgstr "Sotilaasi ovat ottaneet haltuun edistyneen muurisi."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:48 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your advanced castle."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:48 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your sentry."
+msgstr "Sotilaasi ovat saapuneet vartiomökillesi."
+
+#: input:49 standard
+msgctxt "shipname"
+msgid "Achlys"
+msgstr ""
+
+#: input:50 standard
+msgctxt "shipname"
+msgid "Aether"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: input:50 standard
+msgctxt "europeans_building"
+msgid "Your advanced barrier discovered an aggressor."
+msgstr "Edistyneellä muurillasi on havaittu vihollinen."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:50 standard
+msgctxt "europeans_building"
+msgid "Your advanced castle discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:50 standard
+msgctxt "europeans_building"
+msgid "Your sentry discovered an aggressor."
+msgstr "Vartiomökkisi havaitsi vastustajan."
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining water because ...
+#: input:50 input:63 input:68 input:70 input:80 standard
+msgctxt "europeans_building"
+msgid "mining water"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
+#: input:50 input:65 standard
+msgid "scouting"
+msgstr "tiedustella"
+
+#: input:51 standard
+msgctxt "shipname"
+msgid "Aion"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: input:51 input:52 input:56 input:60 input:61 input:65 input:72 input:81
+#: standard
+msgctxt "europeans_building"
+msgid "felling trees"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
+#: input:51 input:52 input:56 input:58 input:72 standard
+msgctxt "europeans_building"
+msgid "quarrying"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skidiamondpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skidiamondpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: input:51 input:54 input:57 input:64 input:66 input:72 input:74 input:77
+#: input:107 input:110 input:119 input:122 input:130 input:131 input:134
+#: input:142 input:143 input:146 input:154 input:155 input:158 input:166
+#: input:167 input:170 input:178 input:182 input:190 input:194 input:202
+#: input:206 input:214 input:218 input:226 input:230 input:242 input:254
+#: input:266 standard
+msgid "trading"
+msgstr ""
+
+#: input:52 standard
+msgctxt "shipname"
+msgid "Alcyoneus"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: input:52 standard
+msgctxt "europeans_building"
+msgid "Your advanced barrier is under attack."
+msgstr "Edistynyt muurisi on hyökkäyksen alaisena."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:52 standard
+msgctxt "europeans_building"
+msgid "Your advanced castle is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:52 standard
+msgctxt "europeans_building"
+msgid "Your sentry is under attack."
+msgstr "Vartiomökkiisi on hyökätty."
+
+#: input:53 standard
+msgctxt "shipname"
+msgid "Aloadae"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:53 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your advanced tower."
+msgstr "Soturisi ovat miehittäneet edistyneen tornisi."
+
+#: input:54 standard
+msgctxt "shipname"
+msgid "Ananke"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: input:54 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the advanced barrier."
+msgstr "Vihollinen kukisti sotilaasi edistyneellä muurilla."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:54 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the advanced castle."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:54 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the sentry."
+msgstr "Vihollisen sotilaat päihittivät sotilaasi vartiomökillä."
+
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#: input:54 standard
+msgid "harvesting ironwood"
+msgstr ""
+
+#: input:55 standard
+msgctxt "shipname"
+msgid "Anax"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:55 standard
+msgctxt "europeans_building"
+msgid "Your advanced tower discovered an aggressor."
+msgstr "Edistynyt tornisi havaitsi vastustajan."
+
+#: input:56 standard
+msgctxt "shipname"
+msgid "Antaeus"
+msgstr ""
+
+#: input:56 input:89 input:90 input:98 input:100 input:106 standard
+msgid "No Water"
+msgstr "Ei vettä"
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: input:56 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the advanced barrier."
+msgstr "Sotilaasi kukistivat vihollisen edistyneellä muurilla."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:56 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the advanced castle."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:56 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the sentry."
+msgstr "Sotilaasi päihittivät vihollisen vartiomökillä."
+
+#: input:57 standard
+msgctxt "shipname"
+msgid "Antiphates"
+msgstr ""
+
+#: input:57 input:90 input:91 input:99 input:101 input:107 standard
+msgid "Out of Water"
+msgstr "Vesi loppu"
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:57 standard
+msgctxt "europeans_building"
+msgid "Your advanced tower is under attack."
+msgstr "Edistyneeseen torniisi on hyökätty."
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
+#: input:57 input:60 input:62 input:67 input:87 standard
+msgctxt "europeans_building"
+msgid "planting trees"
+msgstr ""
+
+#: input:58 standard
+msgctxt "shipname"
+msgid "Anytos"
+msgstr ""
+
+#: input:58 standard
+msgctxt "europeans_building"
+msgid ""
+"The carrier working at this water gatherer’s hut can’t find any water in its "
+"vicinity."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:58 input:70 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your guardhouse."
+msgstr ""
+
+#: input:59 standard
+msgctxt "shipname"
+msgid "Aphrodite"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:59 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the advanced tower."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
+#: input:59 input:64 input:66 input:69 input:93 standard
+msgid "sleeping"
+msgstr "nukkumassa"
+
+#: input:60 standard
+msgctxt "shipname"
+msgid "Apollo"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:60 input:72 standard
+msgctxt "europeans_building"
+msgid "Your guardhouse discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:60 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your outpost."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: input:60 standard
+msgctxt "europeans_building"
+msgid "making space"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting bushes because ...
+#: input:60 input:75 standard
+msgid "planting bushes"
+msgstr ""
+
+#: input:61 standard
+msgctxt "shipname"
+msgid "Ares"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:61 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the advanced tower."
+msgstr ""
+
+#: input:62 standard
+msgctxt "shipname"
+msgid "Argus"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:62 input:74 standard
+msgctxt "europeans_building"
+msgid "Your guardhouse is under attack."
+msgstr "Vartiotaloosi on hyökätty."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:62 standard
+msgctxt "europeans_building"
+msgid "Your outpost discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start cutting liana because ...
+#: input:62 input:63 standard
+msgid "cutting lianas"
+msgstr ""
+
+#: input:63 standard
+msgctxt "shipname"
+msgid "Artemis"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
+#: input:63 input:69 input:70 input:71 input:75 input:82 standard
+msgctxt "europeans_building"
+msgid "smelting ore"
+msgstr ""
+
+#: input:64 standard
+msgctxt "shipname"
+msgid "Asteria"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:64 input:76 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the guardhouse."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:64 standard
+msgctxt "europeans_building"
+msgid "Your outpost is under attack."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+#: input:64 input:66 input:69 input:72 input:84 standard
+msgctxt "europeans_building"
+msgid "quarrying granite"
+msgstr ""
+
+#: input:65 standard
+msgctxt "shipname"
+msgid "Asterius"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: input:65 input:68 input:77 input:83 input:85 standard
+msgctxt "europeans_building"
+msgid "trading food for copper coins"
+msgstr ""
+
+#: input:66 standard
+msgctxt "shipname"
+msgid "Astraeus"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:66 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the outpost."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:66 input:78 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the guardhouse."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
+#: input:66 input:68 input:71 input:72 input:78 input:81 input:82 standard
+msgctxt "europeans_building"
+msgid "producing coal"
+msgstr ""
+
+#: input:67 standard
+msgctxt "shipname"
+msgid "Athena"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:67 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your fortress."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:67 input:72 input:74 input:77 input:101 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr ""
+
+#: input:68 standard
+msgctxt "shipname"
+msgid "Atlas"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:68 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the outpost."
+msgstr ""
+
+#: input:69 standard
+msgctxt "shipname"
+msgid "Bacchus"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:69 standard
+msgctxt "europeans_building"
+msgid "Your fortress discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
+#: input:69 standard
+msgctxt "europeans_building"
+msgid "breeding horses"
+msgstr ""
+
+#: input:70 standard
+msgctxt "shipname"
+msgid "Bellona"
+msgstr ""
+
+#. TRANSLATORS: Short for "No Trees to cut lianas" for rare tree cutters house
+#: input:70 input:71 input:72 input:75 input:91 standard
+msgid "No Trees"
+msgstr "Ei puita"
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: input:70 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:70 input:71 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your castle."
+msgstr "Sotilaasi ovat miehittäneet linnasi."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:70 standard
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your medium tower."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start gathering berries because ...
+#: input:70 input:85 standard
+msgid "gathering berries"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting because ...
+#: input:70 input:77 standard
+msgctxt "europeans_building"
+msgid "planting"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start rearing reindeer because ...
+#: input:70 standard
+msgctxt "europeans_building"
+msgid "rearing reindeer"
+msgstr ""
+
+#: input:71 standard
+msgctxt "shipname"
+msgid "Bona Dea"
+msgstr ""
+
+#: input:71 input:72 input:76 input:92 standard
+msgid "Out of Trees"
+msgstr "Puut loppu"
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:71 standard
+msgctxt "europeans_building"
+msgid "Your fortress is under attack."
+msgstr ""
+
+#: input:72 standard
+msgctxt "shipname"
+msgid "Cacus"
+msgstr ""
+
+#: input:72 input:73 input:77 input:93 standard
+msgctxt "europeans_building"
+msgid ""
+"The lumberjack working at this lumberjack’s hut can’t find any trees in his "
+"work area. You should consider enhancing it to increase its working area or "
+"building a ranger’s hut."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: input:72 standard
+msgctxt "europeans_building"
+msgid "Your barrier discovered an aggressor."
+msgstr "Rajalinnakkeesi havaitsi hyökkääjän."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:72 input:73 standard
+msgctxt "europeans_building"
+msgid "Your castle discovered an aggressor."
+msgstr "Linnasi havaitsi vastustajan."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:72 standard
+msgctxt "europeans_building"
+msgid "Your medium tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
+#: input:72 standard
+msgid "breeding sheep and producing leather and wool"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making space because ...
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making space because ...
+#: input:72 input:90 standard
+msgid "harvesting log"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+#: input:72 input:74 input:77 input:80 standard
+msgctxt "europeans_building"
+msgid "quarrying marble"
+msgstr ""
+
+#: input:73 standard
+msgctxt "shipname"
+msgid "Callisto"
+msgstr ""
+
+#: input:73 standard
+msgid "No Tree to Cut Lianas"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:73 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the fortress."
+msgstr ""
+
+#: input:73 input:81 input:84 input:85 input:89 input:91 input:92 input:93
+#: input:95 input:98 input:99 input:100 input:107 standard
+msgctxt "europeans_building"
+msgid "mining granite"
+msgstr ""
+
+#: input:74 standard
+msgctxt "shipname"
+msgid "Carmentis"
+msgstr ""
+
+#: input:74 standard
+msgctxt "europeans_building"
+msgid ""
+"The liana cutter working at this site can’t find any liana tree in her work "
+"area. You should consider dismantling or destroying the building or building "
+"a jungle preserver’s hut."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: input:74 standard
+msgctxt "europeans_building"
+msgid "Your barrier is under attack."
+msgstr "Rajalinnakkeeseesi on hyökätty."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:74 input:75 standard
+msgctxt "europeans_building"
+msgid "Your castle is under attack."
+msgstr "Linnaasi on hyökätty."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:74 standard
+msgctxt "europeans_building"
+msgid "Your medium tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
+#: input:74 input:75 input:84 input:86 input:92 standard
+msgid "idle program"
+msgstr ""
+
+#: input:75 standard
+msgctxt "shipname"
+msgid "Ceres"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:75 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the fortress."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
+#: input:75 standard
+msgctxt "europeans_building"
+msgid "rearing donkeys"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+#: input:75 standard
+msgctxt "europeans_building"
+msgid "recruiting soldier with copper coin"
+msgstr ""
+
+#: input:76 standard
+msgctxt "shipname"
+msgid "Chaos"
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: input:76 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:76 input:77 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the castle."
+msgstr "Vihollinen kukisti sotilaasi linnassa."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:76 standard
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the medium tower."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
+#: input:76 standard
+msgctxt "europeans_building"
+msgid "rearing cattle"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
+#: input:76 input:87 standard
+msgctxt "europeans_building"
+msgid "scouting"
+msgstr ""
+
+#: input:77 standard
+msgctxt "shipname"
+msgid "Charon"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start breeding tapir because ...
+#: input:77 standard
+msgctxt "europeans_building"
+msgid "breeding tapir"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: input:77 standard
+msgid "planting balsa tree"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting because ...
+#: input:77 standard
+msgctxt "europeans_building"
+msgid "planting reed and cotton"
+msgstr ""
+
+#: input:78 standard
+msgctxt "shipname"
+msgid "Chronos"
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: input:78 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:78 input:79 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the castle."
+msgstr "Sotilaasi voittivat vihollisen linnassa."
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: input:78 standard
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the medium tower."
+msgstr ""
+
+#: input:79 standard
+msgctxt "shipname"
+msgid "Chthonius"
+msgstr ""
+
+#: input:80 standard
+msgctxt "shipname"
+msgid "Coeus"
+msgstr ""
+
+#: input:80 input:95 input:175 input:182 standard
+msgid "No Fields"
+msgstr "Ei peltoja"
+
+#. TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
+#: input:80 standard
+msgctxt "europeans_building"
+msgid "constructing a ferry"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: input:80 input:81 input:92 input:100 standard
+msgctxt "europeans_building"
+msgid "trading food for silver coins"
+msgstr ""
+
+#: input:81 standard
+msgctxt "shipname"
+msgid "Crius"
+msgstr ""
+
+#: input:81 input:93 input:95 input:98 input:101 standard
+msgid "No Rocks"
+msgstr "Ei kiveä"
+
+#: input:81 input:96 input:176 input:183 standard
+msgid "Out of Fields"
+msgstr "Pellot loppu"
+
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#: input:81 standard
+msgid "harvesting rubber"
+msgstr ""
+
+#: input:81 input:83 input:87 input:90 input:91 standard
+msgctxt "europeans_building"
+msgid "mining coal"
+msgstr ""
+
+#: input:81 input:89 input:92 input:93 input:100 input:101 input:110 standard
+msgctxt "europeans_building"
+msgid "mining marble"
+msgstr ""
+
+#: input:82 standard
+msgctxt "shipname"
+msgid "Cronus"
+msgstr ""
+
+#: input:82 input:94 input:96 input:99 input:102 standard
+msgid "Out of Rocks"
+msgstr "Kivet loppu"
+
+#: input:82 input:97 standard
+msgctxt "europeans_building"
+msgid ""
+"The fruit farmer working at this farm has no cleared soil to plant his "
+"berrybushes."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
+#: input:82 input:88 input:89 input:94 input:101 input:102 standard
+msgctxt "europeans_building"
+msgid "producing fur"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+#: input:82 standard
+msgctxt "europeans_building"
+msgid "quarrying diamond"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:82 input:87 input:89 input:92 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 1 to level 2"
+msgstr ""
+
+#: input:83 standard
+msgctxt "shipname"
+msgid "Cyclopes"
+msgstr ""
+
+#: input:83 input:95 input:97 standard
+msgctxt "europeans_building"
+msgid ""
+"The stonecutter working at this quarry can’t find any rocks in his work "
+"area. You should consider enhancing it to increase its working area."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
+#: input:83 input:95 input:101 input:112 input:134 input:145 standard
+msgctxt "europeans_building"
+msgid "constructing a ship"
+msgstr ""
+
+#: input:84 standard
+msgctxt "shipname"
+msgid "Damysus"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
+#: input:84 standard
+msgid "breeding sheep and producing meat and wool"
+msgstr ""
+
+#: input:85 standard
+msgctxt "shipname"
+msgid "Demeter"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
+#: input:85 input:88 input:92 standard
+msgctxt "europeans_building"
+msgid "making a pond with water"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+#: input:85 input:88 input:91 standard
+msgctxt "europeans_building"
+msgid "quarrying quartz"
+msgstr ""
+
+#: input:86 standard
+msgctxt "shipname"
+msgid "Diana"
+msgstr ""
+
+#: input:87 standard
+msgctxt "shipname"
+msgid "Dione"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: input:87 standard
+msgid "planting ironwood tree"
+msgstr ""
+
+#: input:88 standard
+msgctxt "shipname"
+msgid "Dionysus"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+#: input:88 standard
+msgctxt "europeans_building"
+msgid "recruiting soldier with silver coin"
+msgstr ""
+
+#: input:89 standard
+msgctxt "shipname"
+msgid "Enceladus"
+msgstr ""
+
+#: input:89 input:108 input:118 standard
+msgctxt "europeans_building"
+msgid "mining quartz"
+msgstr ""
+
+#: input:90 standard
+msgctxt "shipname"
+msgid "Eos"
+msgstr ""
+
+#: input:91 standard
+msgctxt "shipname"
+msgid "Epimetheus"
+msgstr ""
+
+#: input:91 input:92 input:100 input:102 input:108 standard
+msgctxt "europeans_building"
+msgid "The carrier working at this well can’t find any water in his well."
+msgstr ""
+
+#: input:92 standard
+msgctxt "shipname"
+msgid "Erebus"
+msgstr ""
+
+#: input:93 standard
+msgctxt "shipname"
+msgid "Eros"
+msgstr ""
+
+#: input:94 standard
+msgctxt "shipname"
+msgid "Europa"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#: input:94 input:95 input:107 input:115 input:117 standard
+msgctxt "europeans_building"
+msgid "trading food for gold coins"
+msgstr ""
+
+#: input:95 standard
+msgctxt "shipname"
+msgid "Falacer"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
+#: input:95 standard
+msgctxt "ware"
+msgid "Water is the essence of life!"
+msgstr "Vesi on elämälle tärkeää!"
+
+#: input:96 standard
+msgctxt "shipname"
+msgid "Fauna"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
+#: input:96 input:99 input:103 standard
+msgctxt "europeans_building"
+msgid "digging clay"
+msgstr ""
+
+#: input:97 standard
+msgctxt "shipname"
+msgid "Flora"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
+#: input:97 standard
+msgctxt "europeans_ware"
+msgid ""
+"Water is used by the gardener, by the forester, by all farms, and in the "
+"bakery and the brewery. The fish farm and the sheep farm need to be supplied "
+"with water, too."
+msgstr ""
+
+#: input:97 input:99 input:103 input:106 input:116 input:117 input:126 standard
+msgctxt "europeans_building"
+msgid "mining diamond"
+msgstr ""
+
+#: input:97 input:100 input:101 input:108 input:109 standard
+msgctxt "europeans_building"
+msgid "mining ore"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: input:97 standard
+msgid "planting liana tree"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:97 input:102 input:107 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 2 to level 3"
+msgstr ""
+
+#: input:98 standard
+msgctxt "shipname"
+msgid "Fortuna"
+msgstr ""
+
+#: input:99 standard
+msgctxt "shipname"
+msgid "Freyr"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start building a dike because ...
+#: input:99 input:109 input:119 input:129 standard
+msgid "building a dike"
+msgstr ""
+
+#: input:100 standard
+msgctxt "shipname"
+msgid "Furrina"
+msgstr ""
+
+#: input:100 input:103 standard
+msgctxt "europeans_building"
+msgid ""
+"The stonecutter working at this quarry can’t find any stone in his work area."
+msgstr ""
+
+#: input:101 standard
+msgctxt "shipname"
+msgid "Gaia"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+#: input:101 standard
+msgctxt "europeans_building"
+msgid "recruiting soldier with gold coin"
+msgstr ""
+
+#: input:102 standard
+msgctxt "shipname"
+msgid "Ganymede"
+msgstr ""
+
+#: input:103 standard
+msgctxt "shipname"
+msgid "Gegenees"
+msgstr ""
+
+#: input:104 standard
+msgctxt "shipname"
+msgid "Genius"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:104 input:116 input:117 input:137 input:142 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier attack from level 0 to level 1"
+msgstr ""
+
+#: input:105 standard
+msgctxt "shipname"
+msgid "Geryon"
+msgstr ""
+
+#: input:106 standard
+msgctxt "shipname"
+msgid "Hades"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making wool because ...
+#: input:106 standard
+msgid "breeding reindeer and producing wool"
+msgstr ""
+
+#: input:107 standard
+msgctxt "shipname"
+msgid "Helios"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: input:107 standard
+msgctxt "europeans_worker"
+msgid "Soldier"
+msgstr "Sotilas"
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: input:107 standard
+msgid "planting rubber tree"
+msgstr ""
+
+#: input:108 standard
+msgctxt "shipname"
+msgid "Hemera"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
+#: input:108 standard
+msgctxt "europeans_ware"
+msgid ""
+"Logs are an important basic building material. They are produced by felling "
+"trees."
+msgstr ""
+"Tukit ovat tärkeä perusrakennusmateriaali. Niitä tuotetaan kaatamalla puita."
+
+#. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
+#: input:108 input:111 input:115 standard
+msgctxt "europeans_building"
+msgid "digging a dry pond"
+msgstr ""
+
+#: input:109 standard
+msgctxt "shipname"
+msgid "Hephaestus"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
+#: input:110 standard
+msgctxt "europeans_ware"
+msgid ""
+"European lumberjacks fell the trees; foresters take care of the supply of "
+"trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
+msgstr ""
+
+#: input:110 standard
+msgctxt "shipname"
+msgid "Hera"
+msgstr ""
+
+#: input:111 standard
+msgctxt "shipname"
+msgid "Hermes"
+msgstr ""
+
+#: input:112 standard
+msgctxt "shipname"
+msgid "Hestia"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:112 input:122 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 3 to level 4"
+msgstr ""
+
+#: input:113 standard
+msgctxt "shipname"
+msgid "Hyperion"
+msgstr ""
+
+#: input:114 standard
+msgctxt "shipname"
+msgid "Iapetus"
+msgstr ""
+
+#: input:115 standard
+msgctxt "shipname"
+msgid "Io"
+msgstr ""
+
+#: input:115 input:117 input:121 input:124 input:135 standard
+msgid "No Coal"
+msgstr "Ei hiiltä"
+
+#: input:115 input:118 input:119 input:126 input:127 standard
+msgid "No Gold"
+msgstr ""
+
+#: input:115 input:118 input:119 input:126 input:127 standard
+msgid "No Iron"
+msgstr "Ei rautaa"
+
+#: input:115 input:134 input:144 standard
+msgid "No marble"
+msgstr ""
+
+#: input:116 standard
+msgctxt "shipname"
+msgid "Janus"
+msgstr ""
+
+#: input:116 input:118 input:122 input:125 input:136 standard
+msgid "Main Coal Vein Exhausted"
+msgstr "Hiilen pääsuoni ehtyi"
+
+#: input:116 input:119 input:120 input:127 input:128 standard
+msgid "Main Gold Vein Exhausted"
+msgstr ""
+
+#: input:116 input:119 input:120 input:127 input:128 standard
+msgid "Main Iron Vein Exhausted"
+msgstr "Raudan pääsuoni ehtyi"
+
+#: input:116 input:135 input:145 standard
+msgid "Main marble Vein Exhausted"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
+#: input:116 input:123 standard
+msgctxt "europeans_building"
+msgid "filling pond with water"
+msgstr ""
+
+#: input:117 standard
+msgctxt "shipname"
+msgid "Juno"
+msgstr ""
+
+#: input:118 standard
+msgctxt "shipname"
+msgid "Jupiter"
+msgstr ""
+
+#: input:118 input:120 input:124 input:127 input:138 standard
+msgctxt "europeans_building"
+msgid ""
+"This coal mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#: input:118 input:121 input:122 input:129 input:130 standard
+msgctxt "europeans_building"
+msgid ""
+"This gold mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#: input:118 input:121 input:122 input:129 input:130 standard
+msgctxt "europeans_building"
+msgid ""
+"This iron mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#: input:118 standard
+msgctxt "europeans_building"
+msgid ""
+"This stone mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider dismantling or destroying it."
+msgstr ""
+
+#: input:119 standard
+msgctxt "shipname"
+msgid "Lelantos"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:119 input:132 input:152 input:157 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier attack from level 1 to level 2"
+msgstr ""
+
+#: input:120 standard
+msgctxt "shipname"
+msgid "Leto"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Balsa
+#: input:121 standard
+msgctxt "europeans_ware"
+msgid ""
+"Balsa wood is an important trade ware. Balsa trees are cut by an experienced "
+"woodcutter."
+msgstr ""
+
+#: input:121 standard
+msgctxt "shipname"
+msgid "Liber"
+msgstr ""
+
+#: input:122 standard
+msgctxt "shipname"
+msgid "Luna"
+msgstr ""
+
+#: input:123 standard
+msgctxt "shipname"
+msgid "Mars"
+msgstr ""
+
+#: input:124 standard
+msgctxt "shipname"
+msgid "Menoetius"
+msgstr ""
+
+#: input:125 standard
+msgctxt "shipname"
+msgid "Mercury"
+msgstr ""
+
+#: input:126 standard
+msgctxt "shipname"
+msgid "Metis"
+msgstr ""
+
+#: input:127 standard
+msgctxt "shipname"
+msgid "Mimas"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
+#: input:127 input:134 input:154 standard
+msgctxt "europeans_building"
+msgid "planting reed"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:127 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 4 to level 5"
+msgstr ""
+
+#: input:128 standard
+msgctxt "shipname"
+msgid "Minerva"
+msgstr ""
+
+#: input:129 standard
+msgctxt "shipname"
+msgid "Mnemosyne"
+msgstr ""
+
+#: input:130 standard
+msgctxt "shipname"
+msgid "Neptune"
+msgstr ""
+
+#: input:131 standard
+msgctxt "shipname"
+msgid "Nesoi"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:131 input:134 input:162 input:197 input:217 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier defense from level 0 to level 1"
+msgstr ""
+
+#: input:132 standard
+msgctxt "shipname"
+msgid "Nyx"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Ironwood
+#: input:132 standard
+msgctxt "europeans_ware"
+msgid ""
+"This very hard wood is as hard as iron. It is cut by a very experienced "
+"woodcutter."
+msgstr ""
+
+#: input:133 standard
+msgctxt "shipname"
+msgid "Oceanus"
+msgstr ""
+
+#: input:134 standard
+msgctxt "shipname"
+msgid "Odin"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
+#: input:134 standard
+msgctxt "europeans_building"
+msgid "planting berry bushes"
+msgstr ""
+
+#: input:135 standard
+msgctxt "shipname"
+msgid "Orcus"
+msgstr ""
+
+#: input:136 standard
+msgctxt "shipname"
+msgid "Orion"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
+#: input:136 input:143 input:144 standard
+msgctxt "europeans_building"
+msgid "planting cotton"
+msgstr ""
+
+#: input:137 standard
+msgctxt "shipname"
+msgid "Ourea"
+msgstr ""
+
+#: input:137 standard
+msgctxt "europeans_building"
+msgid ""
+"This marble mine’s main vein is exhausted. Expect strongly diminished "
+"returns on investment. You should consider enhancing, dismantling or "
+"destroying it."
+msgstr ""
+
+#: input:137 input:147 standard
+msgctxt "europeans_building"
+msgid ""
+"This stone mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#: input:138 standard
+msgctxt "shipname"
+msgid "Palatua"
+msgstr ""
+
+#: input:139 standard
+msgctxt "shipname"
+msgid "Pallas"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start diking because ...
+#: input:139 input:148 input:157 input:166 standard
+msgid "diking"
+msgstr ""
+
+#: input:140 standard
+msgctxt "shipname"
+msgid "Persephone"
+msgstr ""
+
+#: input:141 standard
+msgctxt "shipname"
+msgid "Perses"
+msgstr ""
+
+#: input:142 standard
+msgctxt "shipname"
+msgid "Phanes"
+msgstr ""
+
+#: input:143 standard
+msgctxt "shipname"
+msgid "Phoebe"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
+#: input:143 standard
+msgctxt "europeans_ware"
+msgid ""
+"Scrap wood is a waste material that arises from the demolition of buildings "
+"or from sawmills."
+msgstr ""
+
+#: input:144 standard
+msgctxt "shipname"
+msgid "Picolous"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
+#: input:145 standard
+msgctxt "europeans_ware"
+msgid "It can be processed into charcoal in charcoal kilns."
+msgstr ""
+
+#: input:145 standard
+msgctxt "shipname"
+msgid "Pluto"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
+#: input:145 input:152 standard
+msgctxt "europeans_building"
+msgid "harvesting"
+msgstr ""
+
+#: input:146 standard
+msgctxt "shipname"
+msgid "Polybotes"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:146 input:164 input:192 input:227 input:247 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr ""
+
+#: input:147 standard
+msgctxt "shipname"
+msgid "Pomona"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:147 input:167 input:172 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier attack from level 2 to level 3"
+msgstr ""
+
+#: input:148 standard
+msgctxt "shipname"
+msgid "Pontus"
+msgstr ""
+
+#: input:149 standard
+msgctxt "shipname"
+msgid "Porphyrion"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:149 input:177 input:212 input:232 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier defense from level 1 to level 2"
+msgstr ""
+
+#: input:150 standard
+msgctxt "shipname"
+msgid "Portunus"
+msgstr ""
+
+#: input:151 standard
+msgctxt "shipname"
+msgid "Poseidon"
+msgstr ""
+
+#: input:152 standard
+msgctxt "shipname"
+msgid "Prometheus"
+msgstr ""
+
+#: input:153 standard
+msgctxt "shipname"
+msgid "Proteus"
+msgstr ""
+
+#: input:154 standard
+msgctxt "shipname"
+msgid "Quirinus"
+msgstr ""
+
+#: input:155 standard
+msgctxt "shipname"
+msgid "Rhea"
+msgstr ""
+
+#: input:156 standard
+msgctxt "shipname"
+msgid "Saturn"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
+#: input:156 input:163 standard
+msgctxt "europeans_building"
+msgid "harvesting reed"
+msgstr ""
+
+#: input:157 standard
+msgctxt "shipname"
+msgid "Selene"
+msgstr ""
+
+#: input:158 standard
+msgctxt "shipname"
+msgid "Sol"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
+#: input:159 standard
+msgctxt "europeans_ware"
+msgid "Reed is an important building material."
+msgstr ""
+
+#: input:159 standard
+msgctxt "shipname"
+msgid "Styx"
+msgstr ""
+
+#: input:160 standard
+msgctxt "shipname"
+msgid "Syceus"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
+#: input:161 standard
+msgctxt "europeans_ware"
+msgid "It is produced by the reed yard."
+msgstr ""
+
+#: input:161 standard
+msgctxt "shipname"
+msgid "Talos"
+msgstr ""
+
+#: input:162 standard
+msgctxt "shipname"
+msgid "Tartarus"
+msgstr ""
+
+#: input:163 standard
+msgctxt "shipname"
+msgid "Tellus"
+msgstr ""
+
+#: input:164 standard
+msgctxt "shipname"
+msgid "Tethys"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
+#: input:164 standard
+msgctxt "europeans_building"
+msgid "planting trees and enhancing the fertility of land"
+msgstr ""
+
+#: input:165 standard
+msgctxt "shipname"
+msgid "Thalassa"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
+#: input:165 input:172 standard
+msgctxt "europeans_building"
+msgid "harvesting cotton"
+msgstr ""
+
+#. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
+#: input:166 input:199 input:227 input:262 input:282 standard
+msgctxt "europeans_building"
+msgid "No soldier to train!"
+msgstr "Ei sotilaita koulutettavaksi!"
+
+#: input:166 standard
+msgctxt "shipname"
+msgid "Theia"
+msgstr ""
+
+#: input:167 standard
+msgctxt "shipname"
+msgid "Themis"
+msgstr ""
+
+#. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
+#: input:168 input:201 input:229 input:264 input:284 standard
+msgctxt "europeans_building"
+msgid "No soldier found for this training level!"
+msgstr ""
+
+#: input:168 standard
+msgctxt "shipname"
+msgid "Thoas"
+msgstr ""
+
+#: input:169 standard
+msgctxt "shipname"
+msgid "Thor"
+msgstr ""
+
+#: input:170 standard
+msgctxt "shipname"
+msgid "Titan"
+msgstr ""
+
+#: input:171 standard
+msgctxt "shipname"
+msgid "Tityos"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
+#: input:172 standard
+msgctxt "europeans_ware"
+msgid "Cotton is a raw material used to make clothing."
+msgstr ""
+
+#: input:172 standard
+msgctxt "shipname"
+msgid "Triton"
+msgstr ""
+
+#: input:173 standard
+msgctxt "shipname"
+msgid "Typhon"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
+#: input:174 standard
+msgctxt "europeans_ware"
+msgid "It is produced by normal farms."
+msgstr ""
+
+#: input:174 standard
+msgctxt "shipname"
+msgid "Uranus"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: input:174 standard
+msgctxt "europeans_building"
+msgid "planting balsa tree"
+msgstr ""
+
+#: input:175 standard
+msgctxt "shipname"
+msgid "Venus"
+msgstr ""
+
+#: input:176 standard
+msgctxt "shipname"
+msgid "Vesta"
+msgstr ""
+
+#: input:177 standard
+msgctxt "europeans_building"
+msgid ""
+"The reed farmer working at this reed farm has no cleared soil to plant his "
+"seeds."
+msgstr ""
+
+#: input:177 standard
+msgctxt "shipname"
+msgid "Volturnus"
+msgstr ""
+
+#: input:178 standard
+msgctxt "shipname"
+msgid "Vulcan"
+msgstr ""
+
+#: input:179 standard
+msgctxt "shipname"
+msgid "Zeus"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:179 input:207 input:242 input:262 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:182 input:187 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier attack from level 3 to level 4"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: input:183 standard
+msgctxt "europeans_building"
+msgid "planting ironwood tree"
+msgstr ""
+
+#: input:184 standard
+msgctxt "europeans_building"
+msgid ""
+"The gardener working at this reed yard has no cleared soil to plant his "
+"seeds."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
+#: input:185 standard
+msgctxt "europeans_ware"
+msgid "Rubber is needed to make improved armor and boots."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
+#: input:187 standard
+msgctxt "europeans_ware"
+msgid "It is produced in tree nursery or in rubber farm."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: input:192 standard
+msgctxt "europeans_building"
+msgid "planting liana tree"
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Liana
+#: input:198 standard
+msgctxt "europeans_ware"
+msgid "Lianas grow on trees. Very durable ropes are made out of them."
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
+#: input:201 standard
+msgctxt "europeans_building"
+msgid "planting rubber tree"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: input:202 standard
+msgctxt "europeans_building"
+msgid "upgrading soldier attack from level 4 to level 5"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start watering and fertilizing because ...
+#: input:210 standard
+msgctxt "europeans_building"
+msgid "watering and fertilizing fields"
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans ware: Honey
+#: input:211 standard
+msgctxt "europeans_ware"
+msgid ""
+"Honey is produced by bees belonging to a farm. It is used to feed animals."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans ware: Fruit
+#: input:220 standard
+msgctxt "europeans_ware"
+msgid ""
+"Fruit are berries gathered from berry bushes by a fruit collector. They are "
+"used to brew fruit wine."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Wool
+#: input:229 standard
+msgctxt "europeans_ware"
+msgid ""
+"The animal farm produces leather, which is used as a raw material for making "
+"boots."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans ware: Fur
+#: input:238 standard
+msgctxt "europeans_ware"
+msgid ""
+"Fur is won from reindeer in a reindeer farm. It is woven into cloth or "
+"turned into fur garments for soldiers."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Wool
+#: input:247 standard
+msgctxt "europeans_ware"
+msgid ""
+"Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms "
+"with level 4 or 5 can produce wool."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
+#: input:260 standard
+msgctxt "ware"
+msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
+#: input:262 standard
+msgctxt "europeans_ware"
+msgid ""
+"The fires of the Europeans smelting works and smithies are usually fed with "
+"coal."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
+#: input:273 standard
+msgctxt "europeans_ware"
+msgid "Granite is a basic building material."
+msgstr "Graniitti on perusrakennusmateriaali."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
+#: input:275 standard
+msgctxt "europeans_ware"
+msgid "The Europeans produces granite blocks in quarries."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
+#: input:286 standard
+msgctxt "europeans_ware"
+msgid "Clay is needed to fill joints."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
+#: input:288 standard
+msgctxt "europeans_ware"
+msgid "The Europeans gets clay from gardeners house."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Marble
+#: input:298 standard
+msgctxt "europeans_ware"
+msgid ""
+"Marble is the beautiful stone which is cut out of the mountains or produced "
+"in a quarry. Marble is used as a building material and gets chiseled into "
+"marble columns in the stonemason’s house."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
+#: input:311 standard
+msgctxt "default_ware"
+msgid "Ore is mined in ore mines."
+msgstr "Malmia louhitaan malmikaivoksissa."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
+#: input:313 standard
+msgctxt "europeans_ware"
+msgid "It is smelted in a smelting works to retrieve all the metals."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
+#: input:324 standard
+msgctxt "ware"
+msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
+#: input:326 standard
+msgctxt "europeans_ware"
+msgid ""
+"It is produced by the smelting works. Some valuable buildings need gold to "
+"be built."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Quartz
+#: input:336 standard
+msgctxt "europeans_ware"
+msgid ""
+"These transparent quartz gems are used for trading. They are produced in a "
+"mine."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Diamond
+#: input:345 standard
+msgctxt "europeans_ware"
+msgid ""
+"These wonderful diamonds are used for trading. They are produced in a mine."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
+#: input:358 standard
+msgctxt "ware"
+msgid ""
+"Copper coins are money made of copper or bronze (copper and tin). Its the "
+"standard barter object."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
+#: input:369 standard
+msgctxt "ware"
+msgid "Silver coins are money made of silver. Its a valuable barter object."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
+#: input:380 standard
+msgctxt "ware"
+msgid "Gold coins are money made of gold. Its most valuable barter object."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Carrier
+#: input:398 standard
+msgctxt "europeans_worker"
+msgid "Used for recruiting all other workers."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Carrier
+#: input:407 standard
+msgctxt "europeans_worker"
+msgid "Carries items along your roads with their hands."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Carrier
+#: input:416 standard
+msgctxt "europeans_worker"
+msgid ""
+"Carries items along your roads with their hands. Only used for busy roads."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Carrier
+#: input:425 standard
+msgctxt "europeans_worker"
+msgid "Carries items along your roads with baskets. Only used for busy roads."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Ox
+#: input:434 standard
+msgctxt "europeans_worker"
+msgid "Carries items along your roads. They are reared in an animal farm."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Donkey
+#: input:443 standard
+msgctxt "europeans_worker"
+msgid ""
+"Donkeys help to carry items along busy roads. They are reared in an animal "
+"farm."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Horse
+#: input:452 standard
+msgctxt "europeans_worker"
+msgid ""
+"Horses help to carry items along busy roads. They are reared in an animal "
+"farm."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans worker: Tapir
+#: input:461 standard
+msgctxt "europeans_worker"
+msgid ""
+"Tapirs help to carry items along busy roads. They are reared in an animal "
+"farm."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans worker: Reindeer
+#: input:470 standard
+msgctxt "europeans_worker"
+msgid ""
+"Reindeers help to carry items along busy roads. They are reared in an animal "
+"farm."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Worker
+#: input:482 input:491 standard
+msgctxt "europeans_worker"
+msgid "General worker with no special ability."
+msgstr "Yleistyöntekijä vailla mitään erikoiskykyjä."
+
+#. TRANSLATORS: Helptext for an Europeans worker: Shipwright
+#: input:500 input:509 standard
+msgctxt "europeans_worker"
+msgid "Works at the shipyard and constructs new ships."
+msgstr "Työskentelee telakalla ja rakentaa uusia laivoja."
+
+#. TRANSLATORS: Helptext for an Europeans worker: Ferry
+#: input:518 standard
+msgctxt "europeans_worker"
+msgid "Ships wares across narrow rivers."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Builder
+#: input:527 standard
+msgctxt "europeans_worker"
+msgid "Works at construction sites to raise new buildings."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
+#: input:539 input:548 standard
+msgctxt "europeans_worker"
+msgid "Fells trees."
+msgstr "Kaataa puita."
+
+#. TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
+#: input:557 standard
+msgctxt "europeans_worker"
+msgid "Plant trees."
+msgstr "Istuttaa puita."
+
+#. TRANSLATORS: Helptext for an Europeans worker: Gardener
+#: input:566 standard
+msgctxt "europeans_worker"
+msgid "Making clay for lime kiln or stonemasons house and planting reed."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Gardener
+#: input:575 standard
+msgctxt "europeans_worker"
+msgid ""
+"Making clay for lime kiln or stonemasons house and planting reed, cotton and "
+"rubber trees."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans worker: Diker
+#: input:584 standard
+msgctxt "europeans_worker"
+msgid "Constructs breakwaters to gain new land from the sea."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Geologist
+#: input:596 standard
+msgctxt "europeans_worker"
+msgid "Discovers resources for mining."
+msgstr "Etsii resursseja louhittaviksi."
+
+#. TRANSLATORS: Helptext for an Europeans worker: Stonecutter
+#: input:605 input:614 standard
+msgctxt "europeans_worker"
+msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Miner
+#: input:623 input:632 standard
+msgctxt "europeans_worker"
+msgid "Mines ore and minerals."
+msgstr "Louhii malmeja ja mineraaleja."
+
+#. TRANSLATORS: Helptext for an Europeans worker: Scout
+#: input:644 input:654 standard
+msgctxt "europeans_worker"
+msgid ""
+"Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Scout
+#: input:664 standard
+msgctxt "europeans_worker"
+msgid ""
+"Traders work in markets or in trading posts to exchange wares with other "
+"tribes."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Recruit
+#: input:673 standard
+msgctxt "europeans_worker"
+msgid "Eager to become a soldier and defend his tribe!"
+msgstr "Haluaa ryhryä sotilaaksi puolustaakseen heimoaan!"
+
+#. TRANSLATORS: Helptext for an Europeans worker: Soldier
+#: input:682 standard
+msgctxt "europeans_worker"
+msgid "Defend and Conquer!"
+msgstr "Puolusta ja valloita!"
+
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#: input:693 input:700 standard
+msgid "The remains of a destroyed building."
+msgstr "Tuhoutuneen laivan jäännöksiä."
+
+#. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
+#: input:707 input:735 input:763 input:791 input:819 input:847 input:875
+#: input:903 input:931 standard
+msgid "This berry bush has just been planted."
+msgstr "Nämä marjapelto on juuri istutettu."
+
+#. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
+#: input:714 input:742 input:770 input:798 input:826 input:854 input:882
+#: input:910 input:938 standard
+msgid "This berry bush is growing."
+msgstr "Tämä marjapelto kasvaa."
+
+#. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
+#: input:721 input:749 input:777 input:805 input:833 input:861 input:889
+#: input:917 input:945 standard
+msgid "This berry bush is flowering. Honey can be produced from it."
+msgstr "Tämä marjapensas kukkii. Hunajaa voidaan tuottaa siitä."
+
+#. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
+#: input:728 input:756 input:784 input:812 input:840 input:868 input:896
+#: input:924 input:952 standard
+msgid "This berry bush is ready for harvesting."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+#: input:959 standard
+msgid "This grapevine has just been planted."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+#: input:966 input:973 standard
+msgid "This grapevine is growing."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+#: input:980 standard
+msgid "This grapevine is ready for harvesting."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans immovable: Pond
+#: input:987 standard
+msgid ""
+"Ponds with water becomes dry after some time. These dry holes vanish after a "
+"while."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans immovable: Pond
+#: input:994 standard
+msgid ""
+"When gardeners dig up earth, they leave holes with water in the ground. "
+"These falls dry after a while or can be used by terraformer to produce new "
+"soil."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
+#: input:1001 standard
+msgid "This reed field has just been planted."
+msgstr "Tämä ruokopelto on juuri istutettu."
+
+#. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
+#: input:1008 standard
+msgid "This reed field is growing."
+msgstr "Tämä ruokopelto kasvaa."
+
+#. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
+#: input:1015 standard
+msgid "This reed field is flowering. Honey can be produced from it."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
+#: input:1022 standard
+msgid "This reed field is ready for harvesting."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
+#: input:1029 standard
+msgid "There are no resources in the ground here."
+msgstr "Tässä maassa ei ole resursseja."
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Water
+#: input:1036 standard
+msgid "There is water in the ground here that can be pulled up by a well."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
+#: input:1044 input:1088 standard
+msgid "Coal veins contain coal that can be dug up by coal mines."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
+#: input:1046 standard
+msgid "There is only a little bit of coal here."
+msgstr "Täällä on vain vähän hiiltä."
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 1
+#: input:1055 input:1099 standard
+msgid "Iron veins contain iron ore that can be dug up by iron mines."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
+#: input:1057 standard
+msgid "There is only a little bit of iron here."
+msgstr "Tässä on vain vähän rautaa."
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 1
+#: input:1066 input:1110 standard
+msgid "Gold veins contain gold ore that can be dug up by gold mines."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
+#: input:1068 standard
+msgid "There is only a little bit of gold here."
+msgstr "Täällä on vain vähän kultaa."
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 1
+#: input:1077 input:1121 standard
+msgid ""
+"Marble is a basic building material and can be dug up by a marble mine. You "
+"will also get granite from the mine."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
+#: input:1079 standard
+msgid "There is only a little bit of marble here."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
+#: input:1090 standard
+msgid "There is a lot of coal here."
+msgstr "Täällä on paljon hiiltä."
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
+#: input:1101 standard
+msgid "There is a lot of iron here."
+msgstr "Tässä on paljon rautaa."
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
+#: input:1112 standard
+msgid "There is a lot of gold here."
+msgstr "Täällä on paljon kultaa."
+
+#. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
+#: input:1123 standard
+msgid "There is a lot of marble here."
+msgstr "Täällä on paljon marmoria."
+
+#. TRANSLATORS: Helptext for an Europeans immovable: Ship Under Construction
+#: input:1131 standard
+msgid "A ship is being constructed at this site."
+msgstr "Laivaa rakennetaan tässä paikassa."
+
+#. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
+#: input:1139 standard
+msgid "The remains of an old tree."
+msgstr "Vanhan puun jäännöksiä."
+
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#: input:1146 input:1153 input:1160 input:1167 input:1174 input:1181 input:1188
+#: input:1195 input:1202 input:1209 input:1216 input:1223 standard
+msgid ""
+"This tree is only planted by the amazon tribe but can be harvested for logs."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Headquarters
+#: input:1235 standard
+msgctxt "europeans_building"
+msgid "Accommodation for your people. Also stores your wares and tools."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for an Europeans warehouse: Headquarters
+#: input:1237 standard
+msgctxt "europeans_building"
+msgid "The headquarters is your main building."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
+#: input:1244 input:1251 standard
+msgctxt "europeans_building"
+msgid ""
+"Serves as a base for overseas colonization and trade. Also stores your "
+"soldiers, wares and tools."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Market
+#: input:1259 standard
+msgctxt "europeans_building"
+msgid "A market enables trading with other tribes."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Water Gatherer's Hut
+#: input:1267 standard
+msgctxt "europeans_building"
+msgid "Draws water out of the rivers and lakes."
+msgstr "Ottaa vettä joista ja järvistä."
+
+#. TRANSLATORS: Note helptext for an Europeans production site: Water Gatherer's Hut, part 1
+#: input:1270 standard
+msgctxt "europeans_building"
+msgid ""
+"The water gatherer’s hut needs open water within the work area. Your workers "
+"cannot dig up water from the ground!"
+msgstr ""
+
+#. TRANSLATORS: Note helptext for an Europeans production site: Water Gatherer's Hut, part 2
+#: input:1272 standard
+msgctxt "europeans_building"
+msgid "Roads and trees along the shoreline block drawing water."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
+#: input:1280 input:1289 input:1298 input:1307 input:1316 standard
+msgctxt "europeans_building"
+msgid "Fells trees in the surrounding area and processes them into logs."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
+#: input:1282 input:1291 input:1300 input:1309 standard
+msgctxt "europeans_building"
+msgid "The lumberjack’s hut needs trees to fell within the work area."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for an Europeans production site: Woodcutters House
+#: input:1318 standard
+msgctxt "europeans_building"
+msgid "The lumberjack’s house needs trees to fell within the work area."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Liana Cutter's Hut
+#: input:1325 standard
+msgctxt "europeans_building"
+msgid "Home of the liana cutter who cuts lianas for making ropes."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for an Europeans production site: Liana Cutter's Hut
+#: input:1327 standard
+msgctxt "europeans_building"
+msgid ""
+"The liana cutter harvests liana from fully matured trees within the work "
+"area which are not being used as lookouts."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Rare Tree Cutter's Hut
+#: input:1334 standard
+msgctxt "europeans_building"
+msgid ""
+"Harvests rare trees in the surrounding area. Delivers ironwood, balsa and "
+"rubber."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
+#: input:1341 input:1350 input:1359 input:1368 input:1377 standard
+msgctxt "europeans_building"
+msgid "Plants trees in the surrounding area."
+msgstr "Istuttaa puita ympäröivälle alueelle."
+
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
+#: input:1343 input:1352 input:1361 input:1370 input:1379 standard
+msgctxt "europeans_building"
+msgid ""
+"The forester’s house needs free space within the work area to plant the "
+"trees."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Rare Tree Plantation
+#: input:1386 standard
+msgctxt "europeans_building"
+msgid "Plants special trees, like balsa, liana, rubber and ironwood."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for an Europeans production site: Rare Tree Plantation
+#: input:1388 standard
+msgctxt "europeans_building"
+msgid "Special trees are planted according to the economy requirements."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gardening Center
+#: input:1395 standard
+msgctxt "europeans_building"
+msgid ""
+"Enhances the fertility of the landscape for trees. Also plants special "
+"trees, like balsa, liana, rubber and ironwood."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for an Europeans production site: Gardening Center
+#: input:1397 standard
+msgctxt "europeans_building"
+msgid ""
+"Only a Jungle Master has the necessary experience to coax more growth from "
+"land."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#: input:1404 input:1413 input:1422 standard
+msgctxt "europeans_building"
+msgid "Cuts raw pieces of granite out of rocks in the vicinity."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
+#: input:1406 input:1415 input:1424 input:1433 input:1442 standard
+msgctxt "europeans_building"
+msgid "The quarry needs rocks to cut within the work area."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
+#: input:1431 input:1440 standard
+msgctxt "europeans_building"
+msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#: input:1449 input:1456 standard
+msgctxt "building"
+msgid "Explores unknown territory."
+msgstr "Tutkii tuntematonta aluetta."
+
+#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Trading Post
+#: input:1463 standard
+msgctxt "europeans_building"
+msgid ""
+"Trading building to sell or purchase wares to or from other allied tribes."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
+#: input:1471 input:1478 input:1485 input:1492 input:1499 standard
+msgctxt "europeans_building"
+msgid "Draws water out of the deep."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
+#: input:1506 input:1515 standard
+msgctxt "europeans_building"
+msgid "Sows and harvests reed."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Vineyard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Vineyard
+#: input:1508 input:1517 input:1526 standard
+msgctxt "europeans_building"
+msgid "This farm needs free space within the work area to plant seeds."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for Europeans production site: Vineyard
+#: input:1524 standard
+msgctxt "europeans_building"
+msgid "Sows and harvests grape."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Berry Farm
+#: input:1533 standard
+msgctxt "europeans_building"
+msgid "Plants berry bushes in the surrounding area."
+msgstr "Istuta marjapensaita ympäröivälle alueelle."
+
+#. TRANSLATORS: Note helptext for a Europeans production site: Berry Farm
+#: input:1535 standard
+msgctxt "europeans_building"
+msgid ""
+"The berry farm needs free space within the work area to plant the bushes."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
+#: input:1542 input:1549 input:1556 standard
+msgctxt "europeans_building"
+msgid "Burns scrap_wood into charcoal."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
+#: input:1563 input:1570 standard
+msgctxt "europeans_building"
+msgid "Burns scrap_wood or logs into charcoal."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Recycling Center
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Recycling Center
+#: input:1577 input:1584 input:1591 input:1598 input:1605 input:1612 standard
+msgctxt "europeans_building"
+msgid "Smelts ore into gold."
+msgstr "Sulattaa malmin kullaksi."
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Cattle Farm
+#: input:1620 standard
+msgctxt "europeans_building"
+msgid "Breeds strong oxen for adding them to the transportation system."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Tapir Farm
+#: input:1627 standard
+msgctxt "europeans_building"
+msgid "Breeds tapirs for adding them to the transportation system."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
+#: input:1634 standard
+msgctxt "europeans_building"
+msgid "Breeds the strong horses for adding them to the transportation system."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
+#: input:1641 standard
+msgctxt "europeans_building"
+msgid ""
+"Breeds cute and helpful donkeys for adding them to the transportation system."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
+#: input:1648 standard
+msgctxt "europeans_building"
+msgid "Keeps sheep for their wool."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Reindeer Farm
+#: input:1655 standard
+msgctxt "europeans_building"
+msgid ""
+"Breeds strong reindeer for adding them to the transportation system. Also "
+"keeps them for their fur, which is turned into armor and cloth."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Diker's House
+#: input:1662 standard
+msgctxt "europeans_building"
+msgid "Constructs breakwaters nearby to gain new land from the sea."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for a Europeans production site: Diker's House
+#: input:1664 standard
+msgctxt "europeans_building"
+msgid ""
+"The diker will terraform the land around each breakwater he builds several "
+"times. You can manually remove breakwaters when the land is sufficiently "
+"secured to prevent wasting resources; to do so, build a flag, road, or "
+"building in the dike’s place."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#. TRANSLATORS: Purpose helptext for production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#: input:1672 input:1679 input:1686 input:1693 standard
+msgctxt "europeans_building"
+msgid ""
+"Digs granite, marble and other valuable minerals out of the ground in "
+"mountain terrain."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
+#: input:1700 input:1707 input:1714 input:1721 input:1728 standard
+msgctxt "europeans_building"
+msgid "Digs coal out of the ground in mountain terrain."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#: input:1735 input:1742 input:1749 input:1756 input:1763 standard
+msgctxt "europeans_building"
+msgid "Digs iron ore out of the ground in mountain terrain."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
+#: input:1770 input:1777 input:1784 input:1791 input:1798 standard
+msgctxt "europeans_building"
+msgid "Digs gold ore out of the ground in mountain terrain."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+#: input:1806 standard
+msgctxt "europeans_building"
+msgid "Store building to sale processed products for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+#: input:1813 standard
+msgctxt "europeans_building"
+msgid "Store building to sale animal products for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+#: input:1820 standard
+msgctxt "europeans_building"
+msgid "Store building to sale plant products for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+#: input:1827 standard
+msgctxt "europeans_building"
+msgid "Store building to sale mining products for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans market: Small Store
+#: input:1834 standard
+msgctxt "europeans_building"
+msgid "Store building to sale wood products for coins."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans training site: Big Barracks, part 1
+#: input:1843 standard
+msgctxt "europeans_building"
+msgid "Trains recruits to soldiers."
+msgstr "Kouluttaa värvättyjä sotilaiksi."
+
+#. TRANSLATORS: Purpose helptext for an Europeans training site: Big Barracks, part 2
+#: input:1845 standard
+msgctxt "europeans_building"
+msgid "Equips the recruits with all necessary armor parts and weapons."
+msgstr "Varustaa soturit kaikilla tarpeellisilla panssarin osilla ja aseilla."
+
+#. TRANSLATORS: Note helptext for a Europeans training site: Training Camp
+#: input:1853 input:1860 input:1867 input:1874 input:1881 standard
+msgctxt "europeans_building"
+msgid "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
+#: input:1888 standard
+msgctxt "europeans_building"
+msgid ""
+"Constructs ships that are used for overseas colonization and for trading "
+"between ports."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
+#: input:1890 input:1899 standard
+msgctxt "europeans_building"
+msgid "Needs water nearby."
+msgstr "Tarvitsee vettä läheltä."
+
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard / Ferry Yard
+#: input:1897 standard
+msgctxt "europeans_building"
+msgid "Constructs ships and additional ferries."
+msgstr "Rakentaa laivoja ja lisää lauttoja."
+
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
+#: input:1907 input:1916 input:1925 input:1934 input:1943 input:1952 input:1961
+#: input:1970 input:1979 input:1988 input:1997 input:2006 standard
+msgctxt "europeans_building"
+msgid "Garrisons soldiers to expand your territory."
+msgstr "Toimii varuskuntana laajentaen valtakuntasi vaikutusaluetta."
+
+#. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Tower
+#. TRANSLATORS: Note helptext for an Europeans military site: Castle
+#. TRANSLATORS: Note helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Tower
+#. TRANSLATORS: Note helptext for an Europeans military site: Castle
+#. TRANSLATORS: Note helptext for an Europeans military site: Fortress
+#: input:1909 input:1918 input:1936 input:1945 input:1954 input:1963 input:1972
+#: input:1981 input:1990 input:1999 input:2008 standard
+msgctxt "europeans_building"
+msgid ""
+"If you’re low on soldiers to occupy new military sites, use the downward "
+"arrow button to decrease the capacity. You can also click on a soldier to "
+"send him away."
+msgstr ""
+
+#. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+#: input:1927 standard
+msgctxt "europeans_building"
+msgid "Modified version which can placed on mountains."
+msgstr ""
+
+#. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
+#: input:2016 standard
+msgctxt "europeans_building"
+msgid "‘Don’t swear at the builder who is short of building materials.’"
+msgstr "'Älä kiroile rakentajalle, jolla on rakennusmateriaalit vähissä.'"
+
+#. TRANSLATORS: Lore author helptext for an Europeans building: Construction Site
+#: input:2018 standard
+msgctxt "europeans_building"
+msgid "Proverb widely used for impossible tasks of any kind"
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans building: Construction Site
+#: input:2020 standard
+msgctxt "europeans_building"
+msgid "A new building is being built at this construction site."
+msgstr "Uutta rakennusta rakennetaan tälle rakennuspaikalle."
+
+#. TRANSLATORS: Lore helptext for an Europeans building: Dismantle Site
+#: input:2027 standard
+msgctxt "europeans_building"
+msgid "‘New paths will appear when you are willing to tear down the old.’"
+msgstr ""
+
+#. TRANSLATORS: Lore author helptext for an Europeans building: Dismantle Site
+#: input:2029 standard
+msgctxt "europeans_building"
+msgid "Proverb"
+msgstr ""
+
+#. TRANSLATORS: Purpose helptext for an Europeans building: Dismantle Site
+#: input:2031 standard
+msgctxt "europeans_building"
+msgid ""
+"A building is being dismantled at this dismantle site, returning some of the "
+"resources that were used during this building’s construction to your tribe’s "
+"stores."
+msgstr ""
+
+#: input:2037 standard
+msgctxt "warehousename"
+msgid "Albania"
+msgstr ""
+
+#: input:2038 standard
+msgctxt "warehousename"
+msgid "Andora"
+msgstr ""
+
+#: input:2039 standard
+msgctxt "warehousename"
+msgid "Armenia"
+msgstr ""
+
+#: input:2040 standard
+msgctxt "warehousename"
+msgid "Austria"
+msgstr ""
+
+#: input:2041 standard
+msgctxt "warehousename"
+msgid "Azerbaijan"
+msgstr ""
+
+#: input:2042 standard
+msgctxt "warehousename"
+msgid "Belaruz"
+msgstr ""
+
+#: input:2043 standard
+msgctxt "warehousename"
+msgid "Belgium"
+msgstr ""
+
+#: input:2044 standard
+msgctxt "warehousename"
+msgid "Bosnia"
+msgstr ""
+
+#: input:2045 standard
+msgctxt "warehousename"
+msgid "Bulgaria"
+msgstr ""
+
+#: input:2046 standard
+msgctxt "warehousename"
+msgid "Corsica"
+msgstr ""
+
+#: input:2047 standard
+msgctxt "warehousename"
+msgid "Creta"
+msgstr ""
+
+#: input:2048 standard
+msgctxt "warehousename"
+msgid "Croatia"
+msgstr ""
+
+#: input:2049 standard
+msgctxt "warehousename"
+msgid "Cyprus"
+msgstr ""
+
+#: input:2050 standard
+msgctxt "warehousename"
+msgid "Czecia"
+msgstr ""
+
+#: input:2051 standard
+msgctxt "warehousename"
+msgid "Denmark"
+msgstr ""
+
+#: input:2052 standard
+msgctxt "warehousename"
+msgid "England"
+msgstr ""
+
+#: input:2053 standard
+msgctxt "warehousename"
+msgid "Espania"
+msgstr ""
+
+#: input:2054 standard
+msgctxt "warehousename"
+msgid "Estonia"
+msgstr ""
+
+#: input:2055 standard
+msgctxt "warehousename"
+msgid "Faroer"
+msgstr ""
+
+#: input:2056 standard
+msgctxt "warehousename"
+msgid "Francia"
+msgstr ""
+
+#: input:2057 standard
+msgctxt "warehousename"
+msgid "Georgia"
+msgstr ""
+
+#: input:2058 standard
+msgctxt "warehousename"
+msgid "Germania"
+msgstr ""
+
+#: input:2059 standard
+msgctxt "warehousename"
+msgid "Gibraltar"
+msgstr ""
+
+#: input:2060 standard
+msgctxt "warehousename"
+msgid "Greece"
+msgstr ""
+
+#: input:2061 standard
+msgctxt "warehousename"
+msgid "Guernsey"
+msgstr ""
+
+#: input:2062 standard
+msgctxt "warehousename"
+msgid "Herzegovina"
+msgstr ""
+
+#: input:2063 standard
+msgctxt "warehousename"
+msgid "Hungaria"
+msgstr ""
+
+#: input:2064 standard
+msgctxt "warehousename"
+msgid "Ireland"
+msgstr ""
+
+#: input:2065 standard
+msgctxt "warehousename"
+msgid "Island"
+msgstr ""
+
+#: input:2066 standard
+msgctxt "warehousename"
+msgid "Italia"
+msgstr ""
+
+#: input:2067 standard
+msgctxt "warehousename"
+msgid "Jersey "
+msgstr ""
+
+#: input:2068 standard
+msgctxt "warehousename"
+msgid "Kosovo"
+msgstr ""
+
+#: input:2069 standard
+msgctxt "warehousename"
+msgid "Latvia"
+msgstr ""
+
+#: input:2070 standard
+msgctxt "warehousename"
+msgid "Liechtenstein"
+msgstr ""
+
+#: input:2071 standard
+msgctxt "warehousename"
+msgid "Lithuania"
+msgstr ""
+
+#: input:2072 standard
+msgctxt "warehousename"
+msgid "Luxembourg"
+msgstr ""
+
+#: input:2073 standard
+msgctxt "warehousename"
+msgid "Malta"
+msgstr ""
+
+#: input:2074 standard
+msgctxt "warehousename"
+msgid "Moldova"
+msgstr ""
+
+#: input:2075 standard
+msgctxt "warehousename"
+msgid "Monaco"
+msgstr ""
+
+#: input:2076 standard
+msgctxt "warehousename"
+msgid "Montenegro"
+msgstr ""
+
+#: input:2077 standard
+msgctxt "warehousename"
+msgid "Netherlands"
+msgstr ""
+
+#: input:2078 standard
+msgctxt "warehousename"
+msgid "Norge"
+msgstr ""
+
+#: input:2079 standard
+msgctxt "warehousename"
+msgid "North Macedonia"
+msgstr ""
+
+#: input:2080 standard
+msgctxt "warehousename"
+msgid "Poland"
+msgstr ""
+
+#: input:2081 standard
+msgctxt "warehousename"
+msgid "Portugal"
+msgstr ""
+
+#: input:2082 standard
+msgctxt "warehousename"
+msgid "Romania"
+msgstr ""
+
+#: input:2083 standard
+msgctxt "warehousename"
+msgid "Russia"
+msgstr ""
+
+#: input:2084 standard
+msgctxt "warehousename"
+msgid "San Marino"
+msgstr ""
+
+#: input:2085 standard
+msgctxt "warehousename"
+msgid "Sardinia"
+msgstr ""
+
+#: input:2086 standard
+msgctxt "warehousename"
+msgid "Scotia"
+msgstr ""
+
+#: input:2087 standard
+msgctxt "warehousename"
+msgid "Serbia"
+msgstr ""
+
+#: input:2088 standard
+msgctxt "warehousename"
+msgid "Sicilia"
+msgstr ""
+
+#: input:2089 standard
+msgctxt "warehousename"
+msgid "Slovakia"
+msgstr ""
+
+#: input:2090 standard
+msgctxt "warehousename"
+msgid "Slowenia"
+msgstr ""
+
+#: input:2091 standard
+msgctxt "warehousename"
+msgid "Suomi"
+msgstr ""
+
+#: input:2092 standard
+msgctxt "warehousename"
+msgid "Sweden"
+msgstr ""
+
+#: input:2093 standard
+msgctxt "warehousename"
+msgid "Swissia"
+msgstr ""
+
+#: input:2094 standard
+msgctxt "warehousename"
+msgid "Turkia"
+msgstr ""
+
+#: input:2095 standard
+msgctxt "warehousename"
+msgid "Ukrainia"
+msgstr ""
+
+#: input:2096 standard
+msgctxt "warehousename"
+msgid "Vatikan"
+msgstr ""
+
+#: input:2097 standard
+msgctxt "warehousename"
+msgid "Wales"
+msgstr ""
+
+#. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
+#: input:2103 standard
+msgctxt "europeans"
+msgid "Worker missing"
+msgstr "Työläinen puuttuu"
+
+#. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
+#: input:2105 standard
+msgctxt "europeans"
+msgid "Worker is coming"
+msgstr "Työläinen on matkalla"
+
+#. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
+#: input:2107 standard
+msgctxt "europeans"
+msgid "Workers missing"
+msgstr "Työläiset puuttuu"
+
+#. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
+#: input:2109 standard
+msgctxt "europeans"
+msgid "Workers are coming"
+msgstr "Työläiset ovat matkalla"
+
+#. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
+#: input:2111 standard
+msgctxt "europeans"
+msgid "Expert missing"
+msgstr ""
+
+#. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
+#: input:2113 standard
+msgctxt "europeans"
+msgid "Experts missing"
+msgstr ""
+
+#. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
+#: input:2127 standard
+msgctxt "europeans_soldier"
+msgid "%1% soldier (+%2%)"
+msgid_plural "%1% soldiers (+%2%)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
+#: input:2129 standard
+msgctxt "europeans_soldier"
+msgid "%1% soldier"
+msgid_plural "%1% soldiers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
+#: input:2131 standard
+msgctxt "europeans_soldier"
+msgid "%1%(+%2%) soldier (+%3%)"
+msgid_plural "%1%(+%2%) soldiers (+%3%)"
+msgstr[0] "%1%(+%2%) sotilas (+%3%)"
+msgstr[1] "%1%(+%2%) sotilasta (+%3%)"
+
+#. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
+#: input:2133 standard
+msgctxt "europeans_soldier"
+msgid "%1%(+%2%) soldier"
+msgid_plural "%1%(+%2%) soldiers"
+msgstr[0] ""
+msgstr[1] ""

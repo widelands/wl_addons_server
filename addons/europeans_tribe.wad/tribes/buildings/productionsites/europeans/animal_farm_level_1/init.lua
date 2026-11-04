@@ -79,7 +79,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time total: 15 + 15 = 30 sec
                 "return=skipped unless economy needs europeans_carrier_tapir",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "animate=working duration:15s",
                 "recruit=europeans_carrier_tapir"
@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 15 + 20 + 3.6 = 38.6 sec
                 "return=skipped unless economy needs leather",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "animate=working duration:20s",
                 "produce=leather"
@@ -103,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 15 + 20 + 2 * 3.6 = 42.2 sec
                 "return=skipped unless economy needs fur",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "animate=working duration:20s",
                 "produce=fur"

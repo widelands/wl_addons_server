@@ -8,7 +8,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Cattle Farm"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         idle = {
@@ -19,7 +19,7 @@ wl.Descriptions():new_productionsite_type {
             hotspot = { 57, 80 },
         },
     },
-    
+
     size = "big",
     enhancement = {
         name = "europeans_animal_farm_level_1",
@@ -78,7 +78,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time total: 15 + 15 = 30 sec
                 "return=skipped unless economy needs europeans_carrier_ox",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:15s", -- Animation of feeding the cattle
@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 15 + 20 + 3.6 = 38.6 sec
                 "return=skipped unless economy needs leather",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s",
@@ -104,7 +104,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time: 15 + 20 + 2 * 3.6 = 42.2 sec
                 "return=skipped unless economy needs fur",
-                 "consume=water fruit honey",
+                "consume=water fruit honey",
                 "sleep=duration:15s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s",
