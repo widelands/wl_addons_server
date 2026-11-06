@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-11-05 03:29+0100\n"
+"POT-Creation-Date: 2026-11-06 03:28+0100\n"
 "PO-Revision-Date: 2026-11-03 12:50+0000\n"
 "Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -27,11 +27,11 @@ msgstr "Dit is de experimentele Europese stam."
 
 #: input:6 standard
 msgid "Demo Tribe with minimum economy and no manufacturing industry."
-msgstr ""
+msgstr "Demo-stam met een minimale economie en zonder verwerkende industrie."
 
 #: input:7 standard
 msgid "Europeans Tribe (Minimum Economy)"
-msgstr ""
+msgstr "Europeanen-stam (Minimale Economie)"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: input:8 standard
@@ -1198,6 +1198,8 @@ msgstr "Balsaboom (Paal)"
 #. TRANSLATORS:  This is an Amazon rare tree.
 #. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
+#. TRANSLATORS: This is an Amazon rare tree.
+#. TRANSLATORS:  This is an Amazon rare tree.
 #: input:11 standard
 msgid "Balsa Tree (Sapling)"
 msgstr "Balsaboom (Zaailing)"
@@ -1351,6 +1353,11 @@ msgstr "werkende"
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #: input:41 input:50 input:61 input:62 input:63 input:68 input:70 standard
 msgctxt "europeans_building"
 msgid "mining"
@@ -1436,6 +1443,10 @@ msgctxt "europeans_building"
 msgid "quarrying"
 msgstr "steenhouwen"
 
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skidiamondpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
@@ -1636,7 +1647,7 @@ msgstr "Je soldaten hebben uw voorpost bezet."
 #: input:60 standard
 msgctxt "europeans_building"
 msgid "making space"
-msgstr ""
+msgstr "plaats maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting bushes because ...
 #: input:60 input:75 standard
@@ -1894,6 +1905,8 @@ msgstr "schapen fokken en leer en wol produceren"
 #. TRANSLATORS: Completed/Skipped/Did not start making space because ...
 #. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #. TRANSLATORS: Completed/Skipped/Did not start making space because ...
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making space because ...
 #: input:72 input:90 standard
 msgid "harvesting log"
 msgstr "Boomstam oogsten"
@@ -1959,6 +1972,8 @@ msgctxt "europeans_building"
 msgid "Your medium tower is under attack."
 msgstr "Je middelhoge toren wordt aangevallen."
 
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
@@ -3248,7 +3263,7 @@ msgstr "De Europeanen produceren granieten blokken in steengroeven."
 #: input:286 standard
 msgctxt "europeans_ware"
 msgid "Clay is needed to fill joints."
-msgstr ""
+msgstr "Klei is nodig om voegen op te vullen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: input:288 standard
@@ -3529,6 +3544,8 @@ msgstr "Verdedig en Overwin!"
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: input:693 input:700 standard
 msgid "The remains of a destroyed building."
 msgstr "De overblijfselen van een verwoest gebouw."
@@ -3715,6 +3732,11 @@ msgstr "De resten van een oude boom."
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #: input:1146 input:1153 input:1160 input:1167 input:1174 input:1181 input:1188
 #: input:1195 input:1202 input:1209 input:1216 input:1223 standard
 msgid ""
@@ -3789,11 +3811,20 @@ msgstr "Wegen en bomen langs de kustlijn blokkeren de watertoevoer."
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
 #: input:1280 input:1289 input:1298 input:1307 input:1316 standard
 msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
 msgstr "Velt bomen in de omgeving en verwerkt ze tot boomstammen."
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
@@ -3854,11 +3885,17 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
 #: input:1341 input:1350 input:1359 input:1368 input:1377 standard
 msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
 msgstr "Plant bomen in de omgeving."
 
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
@@ -3917,11 +3954,17 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: input:1404 input:1413 input:1422 standard
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr "Zaagt ruwe stukken graniet uit rotsen in de omgeving."
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
@@ -3951,6 +3994,8 @@ msgstr "Hakt blokken graniet en marmer uit rotsen in de omgeving."
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #: input:1449 input:1456 standard
 msgctxt "building"
 msgid "Explores unknown territory."
@@ -3969,6 +4014,8 @@ msgstr "Handelsgebouw om goederen van andere geallieerde stammen te kopen."
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #: input:1471 input:1478 input:1485 input:1492 input:1499 standard
 msgctxt "europeans_building"
 msgid "Draws water out of the deep."
@@ -3980,11 +4027,16 @@ msgstr "Haalt water uit de diepte."
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #: input:1506 input:1515 standard
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
 msgstr "Zaaien en oogsten van riet."
 
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Vineyard
 #. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Vineyard
@@ -4034,6 +4086,11 @@ msgctxt "europeans_building"
 msgid "Burns scrap_wood or logs into charcoal."
 msgstr "Verbrandt afvalhout of houtblokken tot houtskool."
 
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Recycling Center
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
@@ -4129,6 +4186,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Marble Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#. TRANSLATORS: Purpose helptext for production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
 #: input:1672 input:1679 input:1686 input:1693 standard
 msgctxt "europeans_building"
 msgid ""
@@ -4137,6 +4198,11 @@ msgid ""
 msgstr ""
 "Graaft graniet, marmer, kwarts en diamant uit de grond in bergachtig terrein."
 
+#. TRANSLATORS: Purpose helptext for production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
@@ -4172,11 +4238,21 @@ msgstr "Graaft steenkool uit de grond in bergachtig terrein."
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #: input:1735 input:1742 input:1749 input:1756 input:1763 standard
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr "Graaft ijzererts uit de grond in bergachtig terrein."
 
+#. TRANSLATORS: Purpose helptext for production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
@@ -4264,6 +4340,8 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
 #: input:1890 input:1899 standard
 msgctxt "europeans_building"
 msgid "Needs water nearby."
@@ -4302,12 +4380,29 @@ msgstr "Bouwt schepen en extra veerboten."
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
 #: input:1907 input:1916 input:1925 input:1934 input:1943 input:1952 input:1961
 #: input:1970 input:1979 input:1988 input:1997 input:2006 standard
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr "Garnizoenstroepen om je territorium uit te breiden."
 
+#. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Europeans military site: Sentry
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Outpost
+#. TRANSLATORS: Note helptext for an Europeans military site: Barrier
+#. TRANSLATORS: Note helptext for an Europeans military site: Tower
+#. TRANSLATORS: Note helptext for an Europeans military site: Castle
+#. TRANSLATORS: Note helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
 #. TRANSLATORS: Note helptext for an Europeans military site: Sentry
 #. TRANSLATORS: Note helptext for an Europeans military site: Barrier

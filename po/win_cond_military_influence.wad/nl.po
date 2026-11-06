@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-10-11 03:31+0200\n"
+"POT-Creation-Date: 2026-11-06 03:32+0100\n"
 "PO-Revision-Date: 2026-05-24 08:16+0000\n"
 "Last-Translator: Alex Rijckaert, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -507,36 +507,39 @@ msgstr ""
 #: input:201 standard
 #, lua-format
 msgid "Controlled area with bonuses and penalties: %d"
-msgstr ""
+msgstr "Beheerd gebied met bonussen en straffen: %d"
 
 #: input:205 standard
 msgid "Average bonus/penalty weighted by area: %+.1f%%"
-msgstr ""
+msgstr "Gemiddelde bonussen/boetes per regio:%+.1f%%"
 
 #: input:213 standard
 #, lua-format
 msgid "Strength of guards with bonuses and penalties: %d"
-msgstr ""
+msgstr "Kracht van bewakers met bonussen en straffen: %d"
 
 #: input:222 standard
 msgid "Average bonus/penalty weighted by strength: %+.1f%%"
-msgstr ""
+msgstr "Gemiddelde bonus/straf, gewogen naar sterkte: %+.1f%%"
 
 #: input:234 standard
 msgid "the sum of adjusted conquer areas of military sites"
-msgstr ""
+msgstr "de som van de gecorrigeerde oppervlakten van de militaire terreinen"
 
 #: input:236 standard
 msgid "the total adjusted effective strength of soldiers in military sites"
 msgstr ""
+"het totale aangepaste effectieve aantal militairen op militaire locaties"
 
 #: input:237 standard
 msgid "The adjusted scores use bonuses and penalties depending on difficulty."
 msgstr ""
+"Bij de aangepaste scores wordt rekening gehouden met bonus- en strafpunten, "
+"afhankelijk van de moeilijkheidsgraad."
 
 #: input:276 standard
 msgid "Bonuses and penalties"
-msgstr ""
+msgstr "Bonussen en strafpunten"
 
 #: input:277 standard
 msgid ""
@@ -544,34 +547,40 @@ msgid ""
 "conquer area and the relative strength of its garrison. Values above the "
 "average of the possible values get a bonus, below it get a penalty."
 msgstr ""
+"Elke militaire locatie krijgt een bonus of een straf op basis van de "
+"relatieve omvang van het veroverde gebied en de relatieve sterkte van het "
+"garnizoen. Waarden die boven het gemiddelde van de mogelijke waarden liggen, "
+"leveren een bonus op; waarden die daaronder liggen, leveren een straf op."
 
 #: input:280 standard
 msgid "The soldier bonus uses a logarithmic scale for the effective strength:"
 msgstr ""
+"De soldatenbonus maakt gebruik van een logaritmische schaal voor de "
+"effectieve sterkte:"
 
 #: input:282 standard
 msgid "soldier_bonus = (ln(garrison strength) - 3.5) / 10"
-msgstr ""
+msgstr "soldier_bonus = (ln(garnizoenssterkte) - 3,5) / 10"
 
 #: input:283 standard
 msgid "The average value of 3.5 is roughly:"
-msgstr ""
+msgstr "De gemiddelde waarde van 3,5 is ongeveer:"
 
 #: input:284 standard
 msgid "the strength of a castle full of rookies: ln(12 * 2.76)"
-msgstr ""
+msgstr "de sterkte van een kasteel vol groentjes: ln(12 * 2,76)"
 
 #: input:285 standard
 msgid "the strength of one very strong hero: ln(33.11)"
-msgstr ""
+msgstr "de kracht van één zeer sterke held: ln(33,11)"
 
 #: input:286 standard
 msgid "the geometric mean of one rookie and a castle full of heroes:"
-msgstr ""
+msgstr "het meetkundig gemiddelde van één groentje en een kasteel vol helden:"
 
 #: input:288 standard
 msgid "Dividing by 10 clamps the result to -0.25…+0.25."
-msgstr ""
+msgstr "Als je door 10 deelt, wordt het resultaat beperkt tot -0,25…+0,25."
 
 #: input:289 standard
 msgid ""
@@ -579,6 +588,10 @@ msgid ""
 "The median radius of 9 belongs to the stronger medium military sites. Again, "
 "the results are between -0.25 and +0.25 for conquer radiuses from 6 to 12."
 msgstr ""
+"De gebiedsbonus wordt eenvoudigweg berekend op basis van de "
+"veroveringsstraal: area_bonus = (r - 9) / 12. De mediane straal van 9 hoort "
+"bij de sterkere middelgrote militaire locaties. Ook hier liggen de "
+"resultaten tussen -0,25 en +0,25 voor veroveringsstralen van 6 tot 12."
 
 #: input:292 standard
 msgid ""
@@ -588,6 +601,11 @@ msgid ""
 "added and the other penalty is applied to the sum for military sites within "
 "32 steps of your starting position."
 msgstr ""
+"Er zijn ook twee soorten straffen voor militaire locaties in het kerngebied "
+"van de economie van de speler. De eerste wordt toegepast op de soldatenbonus "
+"van militaire locaties binnen 20 stappen van een trainingslocatie, waarna de "
+"gebiedsbonus wordt opgeteld; de andere straf wordt toegepast op het totaal "
+"voor militaire locaties binnen 32 stappen van je startpositie."
 
 #: input:296 standard
 msgid ""
@@ -595,6 +613,9 @@ msgid ""
 "actual calculation in helpers.lua in the add-on’s directory, because it "
 "doesn’t fit here."
 msgstr ""
+"De straffen nemen lineair af naarmate de afstand toeneemt. Je kunt de "
+"precieze berekening nalezen in het bestand helpers.lua in de map van de add-"
+"on, omdat deze hier niet past."
 
 #: input:318 standard
 msgid ""
@@ -607,28 +628,40 @@ msgid ""
 "remembered, so you can’t boost your score just by dismantling a trainingsite "
 "after it has filled its neighbourhood with heroes."
 msgstr ""
+"De bonussen zorgen ervoor dat grotere militaire gebouwen daadwerkelijk hun "
+"bouwkosten en tijd waard zijn, zodat alle militaire locaties net als in "
+"echte gevechtssituaties hun nut hebben. Locaties in het kerngebied krijgen "
+"een straf omdat het daar veel gemakkelijker is om te bouwen en sterke "
+"soldaten te sturen. Militaire locaties in de buurt van trainingslocaties "
+"krijgen ook een straf omdat het veel sneller gaat om ze te vullen met pas "
+"getrainde helden. Houd er rekening mee dat de posities van oude "
+"trainingslocaties worden onthouden, dus je kunt je score niet verhogen door "
+"simpelweg een trainingslocatie af te breken nadat deze de omgeving heeft "
+"gevuld met helden."
 
 #: input:326 standard
 msgid ""
 "The goal of all this complexity is to not have a clear winning strategy, to "
 "allow all players play in their own preferred style."
 msgstr ""
+"Het doel van al deze complexiteit is juist dat er geen duidelijke winnende "
+"strategie is, zodat alle spelers in hun eigen favoriete stijl kunnen spelen."
 
 #: input:335 standard
 msgid "Max. soldier bonus"
-msgstr ""
+msgstr "Max. soldatenbonus"
 
 #: input:337 standard
 msgid "Area bonus"
-msgstr ""
+msgstr "Gebiedsbonus"
 
 #: input:342 standard
 msgid "Score with 1 hero"
-msgstr ""
+msgstr "Scoor met 1 held"
 
 #: input:345 standard
 msgid "Score with 1 rookie"
-msgstr ""
+msgstr "Scoor met 1 nieuwkomer"
 
 #: input:404 standard
 msgid ""
@@ -636,3 +669,6 @@ msgid ""
 "mid-game economy when a building of the given type is added with the given "
 "soldiers.)"
 msgstr ""
+"(De scores voor gebouwen worden berekend als de stijging van de score in een "
+"hypothetische economie halverwege het spel wanneer een gebouw van het "
+"betreffende type wordt toegevoegd met de betreffende soldaten.)"
