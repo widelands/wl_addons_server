@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Andi Chandler <andi@gowling.com>, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:18+0200\n"
+"POT-Creation-Date: 2026-11-09 03:19+0100\n"
 "PO-Revision-Date: 2024-02-27 16:25+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2026\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
 "teams/35159/en_GB/)\n"
 "Language: en_GB\n"
@@ -23,60 +27,62 @@ msgid ""
 "Add immovable markers evenly on the map to have some points of orientation. "
 "Uses Snowman for position 0,0 and Column for other positions."
 msgstr ""
+"Add immovable markers evenly on the map to have some points of orientation. "
+"Uses Snowman for position 0,0 and Column for other positions."
 
 #: addons/editor_add_markers.wad/addon:9 input:9 standard
 msgid "Editor: Place markers evenly on the map"
-msgstr ""
+msgstr "Editor: Place markers evenly on the map"
 
 #: addons/editor_add_markers.wad/init.lua:8
 #: addons/editor_add_markers.wad/settings_window.lua:57
 #: addons/editor_add_markers.wad/settings_window.lua:140 input:8 input:57
 #: input:140 standard
 msgid "Place markers"
-msgstr ""
+msgstr "Place markers"
 
 #: addons/editor_add_markers.wad/init.lua:9 input:9 standard
 msgid "Place markers evenly on the map to get some points of orientation."
-msgstr ""
+msgstr "Place markers evenly on the map to get some points of orientation."
 
 #: addons/editor_add_markers.wad/settings_window.lua:17 input:17 standard
 msgid "%1$d Fields"
-msgstr ""
+msgstr "%1$d Fields"
 
 #: addons/editor_add_markers.wad/settings_window.lua:73 input:73 standard
 msgid "Choose the distance between markers:"
-msgstr ""
+msgstr "Choose the distance between markers:"
 
 #: addons/editor_add_markers.wad/settings_window.lua:85 input:85 standard
 msgid "Horizontally"
-msgstr ""
+msgstr "Horizontally"
 
 #: addons/editor_add_markers.wad/settings_window.lua:99
 #: addons/editor_add_markers.wad/settings_window.lua:129 input:99 input:129
 #: standard
 msgid "Choose a distance"
-msgstr ""
+msgstr "Choose a distance"
 
 #: addons/editor_add_markers.wad/settings_window.lua:115 input:115 standard
 msgid "Vertically"
-msgstr ""
+msgstr "Vertically"
 
 #: addons/editor_add_markers.wad/settings_window.lua:147 input:147 standard
 msgid "Undo"
-msgstr ""
+msgstr "Undo"
 
 #: addons/editor_add_markers.wad/settings_window.lua:154 input:154 standard
 msgid "Center position 0,0"
-msgstr ""
+msgstr "Centre position 0,0"
 
 #: addons/editor_add_markers.wad/settings_window.lua:162 input:162 standard
 msgid "Remove all markers"
-msgstr ""
+msgstr "Remove all markers"
 
 #: addons/editor_add_markers.wad/settings_window.lua:171 input:171 standard
 msgid "Hide"
-msgstr ""
+msgstr "Hide"
 
 #: addons/editor_add_markers.wad/settings_window.lua:172 input:172 standard
 msgid "Hide window to keep the settings"
-msgstr ""
+msgstr "Hide window to keep the settings"

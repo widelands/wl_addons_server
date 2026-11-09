@@ -19,8 +19,11 @@ wl.Descriptions():new_immovable_type {
       fill_pond = {
          "transform=pond_water"
       },
+      with_stack = {
+         "transform=pond_burning",
+      }
    },
-   
+
    animation_directory = dirname,
    animations = {
       idle = {

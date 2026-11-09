@@ -7,9 +7,9 @@ wl.Descriptions():new_worker_type {
     name = "europeans_gardener_advanced",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext ("europeans_worker", "Advanced Gardener"),
-    icon = dirname .. "menu.png",  
+    icon = dirname .. "menu.png",
     vision_range = 2,
-    
+
     programs = {
         check_space = {
             "findspace=size:any radius:6 avoid:field",
@@ -176,10 +176,26 @@ wl.Descriptions():new_worker_type {
             "createware=reed",
             "return"
         },
+        build_stack = {
+           "findobject=attrib:pond_dry radius:6",
+           "walk=object",
+           "animate=dig duration:14s",
+           "callobject=with_stack",
+           "animate=dig duration:1s",
+           "return"
+        },
+        collect_coal = {
+           "findobject=attrib:pond_coal radius:6",
+           "walk=object",
+           "animate=gathering duration:8s",
+           "callobject=fall_dry",
+           "createware=coal",
+           "return"
+        },
     },
 
     ware_hotspot = {0, 20},
-    
+
     animation_directory = dirname,
     animations = {
         idle = {

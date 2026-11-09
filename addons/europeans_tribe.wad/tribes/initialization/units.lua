@@ -30,7 +30,7 @@ wl.Descriptions():new_tribe {
     },
 
     bridge_height = 8,
-    
+
     collectors_points_table = {
         { ware = "diamond", points = 1 },
         { ware = "gold", points = 2 },
@@ -1501,6 +1501,15 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "europeans_charcoal_burners_house",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Burner's House
+                purpose = pgettext("europeans_building", "Burns logs into charcoal."),
+                -- TRANSLATORS: Note helptext for a Europeans production site: Charcoal Burner's House
+                note = pgettext("europeans_building", "The charcoal burner’s house needs holes in the ground that were dug by a clay pit’s worker nearby to erect charcoal stacks in them."),
+            }
+        },
+        {
             name = "europeans_quarry_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
@@ -2289,7 +2298,7 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Vatikan"),
         pgettext("warehousename", "Wales"),
     },
-        
+
    -- Productionsite status strings
 
    -- TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
@@ -2324,7 +2333,7 @@ wl.Descriptions():new_tribe {
    UNUSED_soldier_2 = npgettext("europeans_soldier", "%1%(+%2%) soldier (+%3%)", "%1%(+%2%) soldiers (+%3%)", 0),
    -- TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
    UNUSED_soldier_3 = npgettext("europeans_soldier", "%1%(+%2%) soldier", "%1%(+%2%) soldiers", 0),
-   
+
     -- Special types
     builder = "europeans_builder",
     carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3", "europeans_carrier_ox", "europeans_carrier_donkey", "europeans_carrier_horse"},
@@ -2334,7 +2343,7 @@ wl.Descriptions():new_tribe {
     scouts_house = "europeans_scouts_house_advanced",
     ship = "europeans_ship",
     soldier = "europeans_soldier",
-    
+
     fastplace = {
         barracks = "europeans_big_barracks",
         building_materials_primary = "europeans_weaving_mill_basic",
