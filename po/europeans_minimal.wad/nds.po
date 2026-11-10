@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-11-09 03:25+0100\n"
+"POT-Creation-Date: 2026-11-10 03:25+0100\n"
 "PO-Revision-Date: 2026-11-03 12:50+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2026\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1272,7 +1272,7 @@ msgid "Rubber Tree (Sapling)"
 msgstr "Gummiboom (Kiensel)"
 
 #. TRANSLATORS: This is a tribe name
-#: input:12 standard
+#: input:12 standard input:7
 msgid "Europeans"
 msgstr "Europäers"
 
@@ -5118,3 +5118,7 @@ msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
 msgstr[0] "%1%(+%2%) Soldat"
 msgstr[1] "%1%(+%2%) Soldaten"
+
+#: standard input:6
+msgid "obsolete"
+msgstr ""

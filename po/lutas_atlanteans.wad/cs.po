@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-11-09 03:28+0100\n"
+"POT-Creation-Date: 2026-11-10 03:29+0100\n"
 "PO-Revision-Date: 2025-04-13 08:05+0000\n"
 "Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -707,6 +707,16 @@ msgstr ""
 "obyčejný domek lovce a lovci potřebují na získání jednoho kusu masa v "
 "průměru %2$s."
 
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Quarry, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Woodcutter's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Forester's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Fisher's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Hunter's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Scout's House, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Temple, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Ferry Yard, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Shipyard, part 2
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Crocodile Hunter’s House, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Quarry, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Woodcutter's House, part 2
@@ -3457,6 +3467,8 @@ msgstr "cvičení útoku vojáka z úrovně 3 na úroveň 4"
 #. TRANSLATORS: Atlantean training site tooltip when it has no soldier assigned
 #. TRANSLATORS: Atlantean training site tooltip when it has no soldiers assigned
 #. TRANSLATORS: Atlantean training site tooltip when it has no soldier assigned
+#. TRANSLATORS: Atlantean training site tooltip when it has no soldiers assigned
+#. TRANSLATORS: Atlantean training site tooltip when it has no soldier assigned
 #: addons/lutas_atlanteans.wad/trainingsites/dungeon/init.lua:130
 #: addons/lutas_atlanteans.wad/trainingsites/labyrinth/init.lua:125
 #: addons/lutas_atlanteans.wad/trainingsites/temple/init.lua:107 input:107
@@ -3465,6 +3477,8 @@ msgctxt "lutas_atlanteans_building"
 msgid "No soldier to train!"
 msgstr "Nejsou vojáci k výcviku!"
 
+#. TRANSLATORS: Atlantean training site tooltip when none of the present soldiers match the current training program
+#. TRANSLATORS: Atlantean training site tooltip when none of the present soldier match the current training program
 #. TRANSLATORS: Atlantean training site tooltip when none of the present soldiers match the current training program
 #. TRANSLATORS: Atlantean training site tooltip when none of the present soldier match the current training program
 #. TRANSLATORS: Atlantean training site tooltip when none of the present soldiers match the current training program
@@ -5370,12 +5384,16 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Destroyed Building
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Ashes
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Destroyed Building
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Ashes
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Destroyed Building
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:825
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:916
 #: input:825 input:916 standard
 msgid "The remains of a destroyed building."
 msgstr "Pozůstatky zničené budovy."
 
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 1
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 2
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 1
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 2
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Seashell 1
@@ -6000,12 +6018,16 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:846
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:881
 #: input:846 input:881 standard
 msgid "This field has just been planted."
 msgstr "Toto je právě oseté pole."
 
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
@@ -6626,12 +6648,16 @@ msgstr "Toto je rostoucí pole."
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:867
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:902
 #: input:867 input:902 standard
 msgid "This field is ready for harvesting."
 msgstr "Toto pole je připraveno ke sklizni."
 
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
+#. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Corn Field
 #. TRANSLATORS: Helptext for a Lutas’ Atlantean immovable: Blackroot Field
@@ -7050,6 +7076,9 @@ msgstr "Na tomto místě se staví loď."
 msgid "The remains of an old tree."
 msgstr "Trouchnivějíci zbytky starého stromu."
 
+#. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Balsa Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Ironwood Tree
+#. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Rubber Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Balsa Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Ironwood Tree
 #. TRANSLATORS: Helptext for an Amazon immovable usable by Atlanteans: Rubber Tree
@@ -8679,6 +8708,8 @@ msgstr ""
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Armor Smithy
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Weapon Smithy
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Armor Smithy
+#. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Weapon Smithy
+#. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site: Armor Smithy
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1454
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1470
 #: input:1454 input:1470 standard
@@ -9239,6 +9270,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Iron Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Iron Mine
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Iron Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1562
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1650
 #: input:1562 input:1650 standard
@@ -9246,6 +9279,8 @@ msgctxt "building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr "Těží železnou rudu v horském terénu."
 
+#. TRANSLATORS: Lore helptext for an Atlantean production site: Low Iron Mine
+#. TRANSLATORS: Lore helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Lore helptext for an Atlantean production site: Low Iron Mine
 #. TRANSLATORS: Lore helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Lore helptext for an Atlantean production site: Low Iron Mine
@@ -10175,6 +10210,10 @@ msgstr ""
 #. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Coal Mine
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site:  Coal Mine
 #. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site:  Iron Mine
+#. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Iron Mine
+#. TRANSLATORS: Lore author helptext for an Atlantean production site:  Low Coal Mine
+#. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site:  Coal Mine
+#. TRANSLATORS: Lore author helptext for a Lutas’ Atlantean production site:  Iron Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1569
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1585
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1641
@@ -10184,6 +10223,8 @@ msgctxt "lutas_atlanteans_building"
 msgid "Song from the miners’ guild"
 msgstr "píseň cechu horníků"
 
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Iron Mine
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Iron Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Iron Mine
@@ -10808,6 +10849,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Coal Mine
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Coal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1578
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1634
 #: input:1578 input:1634 standard
@@ -10815,6 +10858,8 @@ msgctxt "building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr "Kutá uhlí v horském terénu."
 
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Coal Mine
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Coal Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Coal Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Coal Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Coal Mine
@@ -11132,6 +11177,8 @@ msgstr ""
 "Pokud je stabilní přísun jídla, může tento důl vytěžit v průměru jednu "
 "hroudu uhlí za %s."
 
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Crystal Mine
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Crystal Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Crystal Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Crystal Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Crystal Mine
@@ -11773,6 +11820,8 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Crystal Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Crystal Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Crystal Mine
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Crystal Mine
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Crystal Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1600
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1627
 #: input:1600 input:1627 standard
@@ -11790,6 +11839,8 @@ msgstr ""
 "pouze jeden druh nerostné suroviny, pak v průměru produkce žulového kvádru "
 "zabere %4$s, produkce křemene zabere %5$s a produkce diamantu zabere %6$s."
 
+#. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Gold Mine
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Gold Mine
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Atlantean production site: Low Gold Mine
@@ -12431,6 +12482,8 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Gold Mine
 #. TRANSLATORS: Performance helptext for an Atlantean production site: Low Gold Mine
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Gold Mine
+#. TRANSLATORS: Performance helptext for an Atlantean production site: Low Gold Mine
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Gold Mine
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1613
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1675
 #: input:1613 input:1675 standard
@@ -12463,6 +12516,8 @@ msgctxt "lutas_atlanteans_building"
 msgid "First part of the Atlantean almanach on architecture"
 msgstr "citát z první části Atlantského almanachu architektury"
 
+#. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Coal Mine
+#. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Coal Mine
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Iron Mine
 #. TRANSLATORS: Lore helptext for a Lutas’ Atlantean production site: Coal Mine
@@ -13298,6 +13353,9 @@ msgstr ""
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean training site: Dungeon, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean training site: Labyrinth, part 2
 #. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Temple, part 3
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean training site: Dungeon, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean training site: Labyrinth, part 2
+#. TRANSLATORS: Performance helptext for a Lutas’ Atlantean production site: Temple, part 3
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1697
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1719
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1740
@@ -13400,6 +13458,12 @@ msgstr ""
 "zlepšení jednoho stupně zdraví vojáka %1$s až %2$s, podle toho, jak dlouhou "
 "cestu musí kněžka urazit."
 
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Guard
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Big Guardhall
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Low Tower
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Round Tower
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Cone Shaped Tower
+#. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Diamond Castle
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Guard
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Big Guardhall
 #. TRANSLATORS: Purpose helptext for a Lutas’ Atlantean military site: Low Tower
@@ -15247,6 +15311,12 @@ msgstr "Obsazením budovy svou posádkou rozšiřuješ svá území."
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Round Tower
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Cone Shaped Tower
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Diamond Castle
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Guard
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Big Guardhall
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Low Tower
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Round Tower
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Cone Shaped Tower
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean military site: Diamond Castle
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1752
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1766
 #: addons/lutas_atlanteans.wad/tribes/lutas_atlanteans_tribe/units.lua:1779
@@ -15384,6 +15454,8 @@ msgstr ""
 "Potřebuje ve svém okolí vodní plochu. Nezapomeň, že přívozy převáží pouze "
 "zboží, žádné pracovníky."
 
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Ferry Yard, part 2
+#. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Ferry Yard, part 2
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for a Lutas’ Atlantean production site: Ferry Yard, part 2

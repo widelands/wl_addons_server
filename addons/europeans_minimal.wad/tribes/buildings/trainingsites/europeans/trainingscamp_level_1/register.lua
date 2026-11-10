@@ -1,3 +1,0 @@
-return {
-    europeans_trainingcamp_level_1 = { "trainingsite", "__replace_if_exists" },
-}
