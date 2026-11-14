@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/stonecutters_hut/"
@@ -27,13 +27,13 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 1,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 2
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
     },
 
     working_positions = {
-        europeans_stonecutter_basic = 2
+        amazons_stonecutter = 1
     },
 
     programs = {
@@ -52,7 +52,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=cut_granite on failure fail",
                 "call=cut_granite on failure fail",
-                "call=cut_marble on failure fail", -- This will find marble 1 out of 5 times
                 "call=cut_granite on failure fail",
                 "call=cut_granite on failure fail",
                 "sleep=duration:25s",
@@ -65,14 +64,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs granite",
                 "callworker=cut_granite"
-            }
-        },
-        cut_marble = {
-            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
-           descname = pgettext("europeans_building", "quarrying marble"),
-            actions = {
-                "return=skipped unless economy needs marble",
-                "callworker=cut_marble"
             }
         },
     },

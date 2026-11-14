@@ -232,7 +232,7 @@ function place_headquarters(player, startfield)
     local fields = startfield:region(radius)
 
     while not hq do
-        hq = place_building_in_region(player, "europeans_headquarters", fields)
+        hq = place_building_in_region(player, "europeans_empire_headquarters", fields)
         radius = radius + 1
         fields = startfield:region(radius)
     end
@@ -258,13 +258,32 @@ function place_initial_port(player, startfield)
             end
             print (player.name, radius, #port_fields)
             if #port_fields > 0 then
-                hq = place_building_in_region(player, "europeans_port_big", port_fields)
+                hq = place_building_in_region(player, player.tribe.port, port_fields)
             else
                 radius = radius + 2
             end
         end
     else
         place_headquarters(player, startfield)
+    end
+end
+
+function place_port(player, startx, starty, radius)
+    local game = wl.Game()
+    local map = game.map
+    local centerfield = map:get_field(startx, starty)
+    local fields = centerfield:region(radius)
+
+    local tribe = player.tribe
+    local portname = tribe.port
+    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
+        for i, portfield in pairs(map.port_spaces) do
+             for j, field in pairs(fields) do
+                 if (portfield.x == field.x) and (portfield.y == field.y) then
+                     place_building(player, portfield.x, portfield.y, 0, portname)
+                 end
+             end
+        end
     end
 end
 
@@ -287,19 +306,35 @@ function set_starting_warecount(player)
     local worker_economy = warehouses[1].flag.worker_economy
 
     for i, worker in ipairs(tribe.workers) do
-        if string.find(worker.name, "builder") then
+        if string.find(worker.name, "soldier") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, math.ceil((worker_economy:target_quantity(worker.name) + 16) / #warehouses))
+                warehouse:set_soldiers({0,0,0,0}, ((worker_economy:target_quantity(worker.name)) / #warehouses))
             end
-        elseif string.find(worker.name, "soldier") then
+        elseif string.find(worker.name, "carrier") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_soldiers({0,0,0,0}, ((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
+                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name)) / #warehouses))
+            end
+        elseif string.find(worker.name, "builder") then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 16) / #warehouses))
+            end
+        elseif string.find(worker.name, "worker") then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 8) / #warehouses))
+            end
+        elseif string.find(worker.name, "basic") then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 8) / #warehouses))
+            end
+        elseif string.find(worker.name, "advanced") then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
             end
         elseif string.find(worker.name, "ferry") then
             print(worker.name)
         else
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, math.floor((worker_economy:target_quantity(worker.name) + 1) / #warehouses))
+                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 4) / #warehouses))
             end
         end
     end
@@ -307,11 +342,11 @@ function set_starting_warecount(player)
     for i, ware in ipairs(tribe.wares) do
         if (ware:is_construction_material(player.tribe_name)) then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_wares(ware.name, math.ceil((ware_economy:target_quantity(ware.name) + 32) / #warehouses))
+                warehouse:set_wares(ware.name, ((ware_economy:target_quantity(ware.name) + 32) / #warehouses))
             end
         else
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_wares(ware.name, math.floor((ware_economy:target_quantity(ware.name) + 1) / #warehouses))
+                warehouse:set_wares(ware.name, 1)
             end
         end
     end

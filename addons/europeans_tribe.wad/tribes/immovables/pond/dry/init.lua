@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 local dirname = path.dirname (__file__)
 
@@ -19,11 +19,14 @@ wl.Descriptions():new_immovable_type {
       fill_pond = {
          "transform=pond_water"
       },
+      with_fish = {
+         "transform=pond_growing",
+      },
       with_stack = {
          "transform=pond_burning",
       }
    },
-
+   
    animation_directory = dirname,
    animations = {
       idle = {

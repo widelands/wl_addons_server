@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/quarry/"
@@ -17,24 +17,30 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {40, 71},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {40, 71},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {40, 53},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         }
     },
 
     size = "small",
 
     aihints = {
-        basic_amount = 1,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 2
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
     },
 
     working_positions = {
-        europeans_stonecutter_advanced = 2
+        empire_stonemason = 1
     },
 
     programs = {
@@ -52,11 +58,10 @@ wl.Descriptions():new_productionsite_type {
            descname = pgettext("europeans_building", "quarrying"),
             actions = {
                 "call=cut_granite on failure fail",
-                "call=cut_marble on failure fail", -- This will find marble 3 out of 6 times
                 "call=cut_granite on failure fail",
-                "call=cut_marble_diamond on failure fail", -- This will find marble 3 out of 6 times and diamond 1 out of 7 times
+                "call=cut_marble on failure fail", -- This will find marble 2 out of 5 times
                 "call=cut_granite on failure fail",
-                "call=cut_marble_quartz on failure fail", -- This will find marble 3 out of 6 times and quartz 1 out of 7 times
+                "call=cut_marble_quartz on failure fail", -- This will find marble 2 out of 5 times and quartz 1 out of 5 times
                 "sleep=duration:10s",
                 "return=skipped"
             }
@@ -77,18 +82,9 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=cut_marble"
             }
         },
-        cut_marble_diamond = {
-            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
-           descname = pgettext("europeans_building", "quarrying diamond"),
-            actions = {
-                "return=skipped unless economy needs marble or economy needs diamond",
-                "callworker=cut_marble",
-                "produce=diamond"
-            }
-        },
         cut_marble_quartz = {
             -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
-           descname = pgettext("europeans_building", "quarrying quartz"),
+           descname = pgettext("europeans_building", "quarrying marble"),
             actions = {
                 "return=skipped unless economy needs marble or economy needs quartz",
                 "callworker=cut_marble",

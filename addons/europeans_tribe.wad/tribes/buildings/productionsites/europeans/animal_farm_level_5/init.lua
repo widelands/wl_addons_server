@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/reindeer_farm/"
@@ -17,37 +17,42 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {84, 81},
-            frames = 20,
-            columns = 5,
-            rows = 4,
-            fps = 10
+           hotspot = {84, 81},
+           frames = 20,
+           columns = 5,
+           rows = 4,
+           fps = 10
         },
         working = {
-            hotspot = {84, 81},
-            frames = 20,
-            columns = 5,
-            rows = 4,
-            fps = 10
+           hotspot = {84, 81},
+           frames = 20,
+           columns = 5,
+           rows = 4,
+           fps = 10
+        },
+        build = {
+           hotspot = {84, 61},
+           frames = 4,
+           columns = 2,
+           rows = 2,
         }
     },
 
     size = "big",
 
     aihints = {
-        prohibited_till = 3600,
+        prohibited_till = 2400,
         very_weak_ai_limit = 1,
         weak_ai_limit = 1
     },
 
     working_positions = {
-        europeans_worker_basic = 2,
+        frisians_reindeer_breeder = 2
     },
 
     inputs = {
         { name = "water", amount = 8 },
-        { name = "fruit", amount = 8 },
-        { name = "honey", amount = 8 }
+        { name = "oat", amount = 8 }
     },
 
     programs = {
@@ -61,9 +66,9 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_deer",
                 "call=make_wool",
                 "call=recruit_deer",
-                "call=make_leather",
+                "call=make_fur_leather",
                 "call=recruit_deer",
-                "call=make_fur",
+                "call=make_fur_meat",
             }
         },
         recruit_deer = {
@@ -71,35 +76,35 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing reindeer"),
             actions = {
                 -- time: 15 + 15 = 30 sec
-                "return=skipped unless economy needs europeans_carrier_reindeer",
-                "consume=water fruit honey",
+                "return=skipped unless economy needs frisians_reindeer",
+                "consume=water oat",
                 "sleep=duration:15s",
                 "animate=working duration:15s",
-                "recruit=europeans_carrier_reindeer"
+                "recruit=frisians_reindeer"
             }
         },
-        make_leather = {
+        make_fur_leather = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
             descname = pgettext("europeans_building", "producing fur"),
             actions = {
                 -- time: 15 + 20 + 3.6 = 38.6 sec
-                "return=skipped unless economy needs leather",
-                "consume=water fruit honey",
+                "return=skipped unless economy needs fur",
+                "consume=water oat",
                 "sleep=duration:15s",
                 "animate=working duration:20s",
-                "produce=leather"
+                "produce=fur leather"
             }
         },
-        make_fur = {
+        make_fur_meat = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
             descname = pgettext("europeans_building", "producing fur"),
             actions = {
                 -- time: 15 + 20 + 2 * 3.6 = 42.2 sec
                 "return=skipped unless economy needs fur",
-                "consume=water fruit honey",
+                "consume=water oat",
                 "sleep=duration:15s",
                 "animate=working duration:20s",
-                "produce=fur"
+                "produce=fur meat"
             }
         },
         make_wool = {
@@ -107,7 +112,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _("breeding reindeer and producing wool"),
             actions = {
                 "return=skipped unless economy needs wool",
-                "consume=water fruit honey",
+                "consume=water oat",
                 "sleep=duration:15s",
                 "animate=working duration:20s",
                 "produce=wool"

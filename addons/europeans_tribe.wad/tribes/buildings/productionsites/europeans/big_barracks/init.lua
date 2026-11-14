@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 local dirname = path.dirname(__file__)
 
@@ -7,7 +7,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Big Barracks"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
       idle = {
@@ -18,7 +18,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 64, 106 }
       },
     },
-    
+
     size = "big",
     destructible = true,
     buildcost = {
@@ -46,90 +46,112 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
+        prohibited_till = 10800,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
-        prohibited_till = 1800
+        normal_ai_limit = 3
     },
 
     working_positions = {
-        europeans_recruit = 2
+        amazons_trainer = 1,
+        atlanteans_trainer = 1,
+        barbarians_trainer = 1,
+        empire_trainer = 1,
+        frisians_trainer = 1
     },
 
     inputs = {
-        { name = "europeans_recruit", amount = 6 },
-        { name = "armor", amount = 6 },
-        { name = "coin_copper", amount = 2 },
-        { name = "coin_silver", amount = 2 },
-        { name = "coin_gold", amount = 2 }
+        { name = "amazons_carrier", amount = 8 },
+        { name = "atlanteans_recruit", amount = 8 },
+        { name = "barbarians_recruit", amount = 8 },
+        { name = "empire_recruit", amount = 8 },
+        { name = "frisians_carrier", amount = 8 },
+        { name = "armor", amount = 12 },
+        { name = "fur_garment", amount = 12 },
+        { name = "tunic", amount = 8 },
+        { name = "tabard", amount = 8 },
+        { name = "boots_sturdy", amount = 16 },
+        { name = "helmet", amount = 16 },
+        { name = "shield_steel", amount = 16 },
+        { name = "spear", amount = 16 },
+        { name = "ax", amount = 8 },
+        { name = "sword_short", amount = 8 },
     },
-    
+
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=recruit_soldier_gold",
-                "sleep=duration:30s",
-                "call=recruit_soldier_silver",
-                "sleep=duration:30s",
-                "call=recruit_soldier_copper",
+                "call=recruit_amazons_soldier",
+                "call=recruit_atlanteans_soldier",
+                "call=recruit_barbarians_soldier",
+                "call=recruit_empire_soldier",
                 "return=skipped"
             }
         },
-        recruit_soldier_copper = {
+        recruit_amazons_soldier = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-            descname = pgettext("europeans_building", "recruiting soldier with copper coin"),
+            descname = pgettext("europeans_building", "recruiting amazons soldier"),
             actions = {
+                -- time total: 15 + 15 = 30 sec
                 "return=skipped unless economy needs europeans_soldier",
-                "return=failed unless site has armor",
-                "return=failed unless site has coin_copper",
-                "consume=europeans_recruit",
-                "consume=armor",
-                "animate=working duration:25s",
-                "consume=coin_copper",
-                "animate=working duration:5s",
+                "consume=amazons_carrier tunic boots_sturdy helmet shield_steel spear",
+                "sleep=duration:15s",
+                "animate=working duration:15s",
                 "recruit=europeans_soldier"
             }
         },
-        recruit_soldier_silver = {
+        recruit_atlanteans_soldier = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-            descname = pgettext("europeans_building", "recruiting soldier with silver coin"),
+            descname = pgettext("europeans_building", "recruiting atlanteans soldier"),
             actions = {
+                -- time total: 30 sec
                 "return=skipped unless economy needs europeans_soldier",
-                "return=failed unless site has armor:2",
-                "return=failed unless site has coin_silver",
-                "consume=europeans_recruit:2",
-                "consume=armor",
+                "consume=atlanteans_recruit tabard boots_sturdy helmet shield_steel spear",
+                "sleep=duration:15s",
                 "animate=working duration:15s",
-                "consume=armor",
-                "animate=working duration:15s",
-                "consume=coin_silver",
-                "animate=working duration:5s",
-                "recruit=europeans_soldier:2"
+                "recruit=europeans_soldier"
             }
         },
-        recruit_soldier_gold = {
+        recruit_barbarians_soldier = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-            descname = pgettext("europeans_building", "recruiting soldier with gold coin"),
+            descname = pgettext("europeans_building", "recruiting barbarians soldier"),
             actions = {
+                -- time total: 30 sec
                 "return=skipped unless economy needs europeans_soldier",
-                "return=failed unless site has armor:3",
-                "return=failed unless site has coin_gold",
-                "consume=europeans_recruit:3",
-                "consume=armor",
-                "animate=working duration:10s",
-                "consume=armor",
-                "animate=working duration:10s",
-                "consume=armor",
-                "animate=working duration:10s",
-                "consume=coin_gold",
-                "animate=working duration:5s",
-                "recruit=europeans_soldier:3"
+                "consume=barbarians_recruit fur_garment boots_sturdy helmet shield_steel ax",
+                "sleep=duration:15s",
+                "animate=working duration:15s",
+                "recruit=europeans_soldier"
+            }
+        },
+        recruit_empire_soldier = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+            descname = pgettext("europeans_building", "recruiting empire soldier"),
+            actions = {
+                -- time total: 30 sec
+                "return=skipped unless economy needs europeans_soldier",
+                "consume=empire_recruit armor boots_sturdy helmet shield_steel spear",
+                "sleep=duration:15s",
+                "animate=working duration:15s",
+                "recruit=europeans_soldier"
+            }
+        },
+        recruit_frisians_soldier = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+            descname = pgettext("europeans_building", "recruiting frisians soldier"),
+            actions = {
+                -- time total: 30 sec
+                "return=skipped unless economy needs europeans_soldier",
+                "consume=frisians_carrier fur_garment boots_sturdy helmet shield_steel sword_short",
+                "sleep=duration:15s",
+                "animate=working duration:15s",
+                "recruit=europeans_soldier"
             }
         },
     },
 }
-
 
 pop_textdomain()
 

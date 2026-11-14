@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 local dirname = path.dirname(__file__)
 
@@ -23,11 +23,15 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
     
     working_positions = {
-        europeans_carrier = 3
+        barbarians_carrier = 1,
+        atlanteans_carrier = 1,
+        empire_carrier = 1,
+        frisians_carrier = 1
     },
     
     programs = {

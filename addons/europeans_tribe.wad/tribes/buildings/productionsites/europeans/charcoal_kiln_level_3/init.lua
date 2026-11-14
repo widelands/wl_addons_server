@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/empire/charcoal_kiln/"
@@ -43,17 +43,17 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         prohibited_till = 900,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 2
+        weak_ai_limit = 2,
+        normal_ai_limit = 4
     },
 
     working_positions = {
-        europeans_worker_advanced = 1,
-        europeans_worker_basic = 1
+        empire_charcoal_burner = 1
     },
 
     inputs = {
-        { name = "scrap_wood", amount = 12 },
-        { name = "log", amount = 12 }
+        { name = "scrap_wood", amount = 10 },
+        { name = "log", amount = 10 }
     },
 
     programs = {
@@ -71,8 +71,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
-                "return=skipped unless site has scrap_wood:10",
-                "consume=scrap_wood:10",
+                "return=skipped unless site has scrap_wood:8",
+                "consume=scrap_wood:8",
                 "animate=working duration:5m",
                 "produce=coal:5"
             }
@@ -81,9 +81,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
+                "return=skipped unless economy needs coal",
                 "return=skipped when economy needs log and not economy needs coal",
-                "return=skipped unless site has log:10",
-                "consume=log:10",
+                "return=skipped unless site has log:8",
+                "consume=log:8",
                 "animate=working duration:5m",
                 "produce=coal:5"
             }

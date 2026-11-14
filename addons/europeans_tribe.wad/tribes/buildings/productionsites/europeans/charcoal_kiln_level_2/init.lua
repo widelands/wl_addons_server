@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/charcoal_kiln/"
@@ -42,17 +42,16 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         prohibited_till = 900,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 2
+        weak_ai_limit = 2,
+        normal_ai_limit = 4
     },
 
     working_positions = {
-        europeans_worker_advanced = 1,
-        europeans_worker_basic = 1
+        atlanteans_charcoal_burner = 1
     },
 
     inputs = {
-        { name = "scrap_wood", amount = 10 },
-        { name = "log", amount = 10 }
+        { name = "scrap_wood", amount = 6 }
     },
 
     programs = {
@@ -61,8 +60,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=burn_wood",
-                "sleep=duration:30s",
-                "call=burn_log",
                 "return=skipped"
             }
         },
@@ -70,21 +67,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
-                "return=skipped unless site has scrap_wood:8",
-                "consume=scrap_wood:8",
-                "animate=working duration:5m",
-                "produce=coal:4"
-            }
-        },
-        burn_log = {
-            -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
-            descname = pgettext("europeans_building", "producing coal"),
-            actions = {
-                "return=skipped when economy needs log and not economy needs coal",
-                "return=skipped unless site has log:8",
-                "consume=log:8",
-                "animate=working duration:5m",
-                "produce=coal:4"
+                "return=skipped unless site has scrap_wood:4",
+                "consume=scrap_wood:4",
+                "animate=working duration:4m",
+                "produce=coal:2"
             }
         }
     },

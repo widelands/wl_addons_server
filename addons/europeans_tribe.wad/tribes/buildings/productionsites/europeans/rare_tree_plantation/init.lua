@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/rare_tree_plantation/"
@@ -45,20 +45,20 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         space_consumer = true,
-        prohibited_till = 1800,
+        prohibited_till = 5400,
         basic_amount = 1,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2
     },
 
     working_positions = {
-        europeans_forester = 1
+        amazons_jungle_master = 1
     },
     
     inputs = {
         { name = "water", amount = 8 },
     },
-
+    
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
@@ -76,9 +76,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
             descname = _("planting balsa tree"),
             actions = {
+                -- time of worker: 11.2-32.8 sec, mean 21.784 sec
+                -- min. time: 11.2 + 13 = 24.2 sec
+                -- max. time: 32.8 + 13 = 45.8 sec
+                -- mean time: 21.784 + 13 = 34.784 sec
                 "return=skipped unless economy needs balsa or economy needs log",
                 "consume=water",
-                "callworker=plant_balsa_tree",
+                "callworker=plant_balsa",
                 "sleep=duration:13s"
             },
         },
@@ -86,9 +90,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
             descname = _("planting ironwood tree"),
             actions = {
+                -- time of worker: 11.2-32.8 sec, mean 21.784 sec
+                -- min. time: 11.2 + 13 = 24.2 sec
+                -- max. time: 32.8 + 13 = 45.8 sec
+                -- mean time: 21.784 + 13 = 34.784 sec
                 "return=skipped unless economy needs ironwood or economy needs log",
                 "consume=water",
-                "callworker=plant_ironwood_tree",
+                "callworker=plant_ironwood",
                 "sleep=duration:13s"
             },
         },
@@ -96,9 +104,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
             descname = _("planting liana tree"),
             actions = {
+                -- time of worker: 11.2-32.8 sec, mean 21.784 sec
+                -- min. time: 11.2 + 13 = 24.2 sec
+                -- max. time: 32.8 + 13 = 45.8 sec
+                -- mean time: 21.784 + 13 = 34.784 sec
                 "return=skipped unless economy needs liana or economy needs log",
                 "consume=water",
-                "callworker=plant_liana_tree",
+                "callworker=plant_liana",
                 "sleep=duration:13s"
             },
         },
@@ -106,9 +118,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing only one ration because ... (can produce more efficient when supply is good)
             descname = _("planting rubber tree"),
             actions = {
+                -- time of worker: 11.2-32.8 sec, mean 21.784 sec
+                -- min. time: 11.2 + 13 = 24.2 sec
+                -- max. time: 32.8 + 13 = 45.8 sec
+                -- mean time: 21.784 + 13 = 34.784 sec
                 "return=skipped unless economy needs rubber or economy needs log",
                 "consume=water",
-                "callworker=plant_rubber_tree",
+                "callworker=plant_rubber",
                 "sleep=duration:13s"
             },
         },

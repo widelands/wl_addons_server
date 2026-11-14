@@ -1,3 +1,3 @@
 return {
-    pond_coal = { "field", "pond_coal", "__replace_if_exists" }
+    pond_coal = { "pond_coal", "__replace_if_exists" },
 }

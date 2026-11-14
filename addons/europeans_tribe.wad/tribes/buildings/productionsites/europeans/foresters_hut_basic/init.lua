@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/rangers_hut/"
@@ -59,13 +59,14 @@ wl.Descriptions():new_productionsite_type {
     
     aihints = {
         space_consumer = true,
-        prohibited_till = 1800,
+        prohibited_till = 5400,
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
 
     working_positions = {
-        europeans_forester = 1
+        barbarians_ranger = 1
     },
 
     inputs = {
@@ -86,7 +87,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = pgettext("europeans_building", "planting trees"),
             actions = {
-                "callworker=plant_tree",
+                -- time of worker: 16.7-38.3 sec, mean 27.284 sec
+                -- min. time total: 16.7 + 11.5 = 28.2 sec
+                -- max. time total: 38.3 + 11.5 = 49.8 sec
+                -- mean time total: 27.284 + 11.5 = 38.784 sec
+                "callworker=plant",
                 "sleep=duration:11s500ms"
             }
         }

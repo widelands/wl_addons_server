@@ -1,50 +1,50 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/ships/atlanteans/"
 
 wl.Descriptions():new_ship_type {
-    name = "europeans_ship",
-    -- TRANSLATORS: This is the Europeans' ship's name used in lists of units
-    descname = pgettext("europeans_ship", "Ship"),
-    icon = dirname .. "menu.png",
-    capacity = 32,
-    vision_range = 4,
-    
-    hitpoints    = 50000,
-    min_attack   =   100,
-    max_attack   = 10000,
-    defense         =  5,
-    attack_accuracy = 60,
-    heal_per_second = 100,
+   name = "europeans_ship",
+   -- TRANSLATORS: This is the Atlanteans' ship's name used in lists of units
+   descname = pgettext("atlanteans_ship", "Ship"),
+   animation_directory = dirname,
+   icon = dirname .. "menu.png",
+   capacity = 30,
+   vision_range = 4,
 
-    animation_directory = dirname,
-    spritesheets = {
-        idle = {
-           fps = 10,
-           frames = 39,
-           rows = 7,
-           columns = 6,
-           hotspot = { 58, 55 }
-        },
-        sail = {
-           fps = 10,
-           frames = 40,
-           rows = 7,
-           columns = 6,
-           directional = true,
-           hotspot = { 86, 85 }
-        },
-        sinking = {
-           fps = 7,
-           frames = 22,
-           rows = 6,
-           columns = 4,
-           hotspot = { 58, 54 }
-        },
+   hitpoints    = 50000,
+   min_attack   =   100,
+   max_attack   = 10000,
+   defense         =  5,
+   attack_accuracy = 60,
+   heal_per_second = 100,
+
+   spritesheets = {
+      idle = {
+         fps = 10,
+         frames = 39,
+         rows = 7,
+         columns = 6,
+         hotspot = { 58, 55 }
+      },
+      sail = {
+         fps = 10,
+         frames = 40,
+         rows = 7,
+         columns = 6,
+         directional = true,
+         hotspot = { 86, 85 }
+      },
+      sinking = {
+         fps = 7,
+         frames = 22,
+         rows = 6,
+         columns = 4,
+         hotspot = { 58, 54 }
+      },
    },
 
-    names = {
+   names = {
         -- German / Greek / Roman Gods or Giants
         pgettext("shipname", "Achlys"),
         pgettext("shipname", "Aether"),
@@ -177,7 +177,7 @@ wl.Descriptions():new_ship_type {
         pgettext("shipname", "Volturnus"),
         pgettext("shipname", "Vulcan"),
         pgettext("shipname", "Zeus"),
-    }
+   }
 }
 
 pop_textdomain()

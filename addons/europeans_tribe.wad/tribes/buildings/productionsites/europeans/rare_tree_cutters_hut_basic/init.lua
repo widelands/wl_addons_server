@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/liana_cutters_hut/"
@@ -44,7 +44,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_lumberjack_basic = 1
+        amazons_liana_cutter = 1,
+        amazons_woodcutter = 1
     },
 
 
@@ -61,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start cutting liana because ...
             descname = _("cutting lianas"),
             actions = {
-                "return=skipped unless economy needs liana or workers need experience",
+                "return=skipped unless economy needs liana",
                 "callworker=harvest_liana",
                 "sleep=duration:30s",
             },
@@ -71,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
         -- TRANSLATORS: Short for "No Trees to cut lianas" for rare tree cutters house
         title = _("No Trees"),
         heading = _("No Tree to Cut Lianas"),
-        message = pgettext ("europeans_building", "The liana cutter working at this site can’t find any liana tree in her work area. You should consider dismantling or destroying the building or building a jungle preserver’s hut."),
+        message = pgettext ("europeans_building", "The liana cutter working at this site can’t find any tree in her work area. You should consider dismantling or destroying the building or building a jungle preserver’s hut."),
         productivity_threshold = 33
     },
 }

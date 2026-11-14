@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/rare_tree_cutters_hut/"
@@ -24,7 +24,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_lumberjack_advanced = 2
+        amazons_woodcutter_master = 2
     },
 
     programs = {

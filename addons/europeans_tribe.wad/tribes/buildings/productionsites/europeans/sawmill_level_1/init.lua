@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/sawmill/"
@@ -42,13 +42,13 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         supports_seafaring = true,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2
+        prohibited_till = 600,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 3
     },
 
     working_positions = {
-        europeans_worker_advanced = 1,
-        europeans_worker_basic = 1
+        atlanteans_sawyer = 2
     },
 
     inputs = {

@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/rope_weaver_booth/"
@@ -39,13 +39,14 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         supports_seafaring = true,
+        prohibited_till = 600,
+        basic_amount = 1,
         very_weak_ai_limit = 1,
-        weak_ai_limit = 2
+        weak_ai_limit = 1
     },
 
     working_positions = {
-        europeans_worker_basic = 2,
-        europeans_worker_advanced = 1
+        amazons_liana_cutter = 2
     },
 
     inputs = {

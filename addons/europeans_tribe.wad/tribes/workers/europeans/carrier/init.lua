@@ -1,43 +1,43 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/workers/barbarians/carrier/"
+local dirname = "tribes/workers/atlanteans/carrier/"
 
 wl.Descriptions():new_carrier_type {
-    name = "europeans_carrier",
-    -- TRANSLATORS: This is a worker name used in lists of workers
-    descname = pgettext("europeans_worker", "Carrier"),
-    icon = dirname .. "menu.png",
-    vision_range = 2,
+   name = "europeans_carrier",
+   -- TRANSLATORS: This is a worker name used in lists of workers
+   descname = pgettext("atlanteans_worker", "Carrier"),
+   animation_directory = dirname,
+   icon = dirname .. "menu.png",
+   vision_range = 2,
 
-    animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            fps = 5,
-            frames = 100,
-            columns = 10,
-            rows = 10,
-            hotspot = { 11, 18 }
-        },
-        walk = {
-            fps = 10,
-            frames = 10,
-            columns = 3,
-            rows = 4,
-            directional = true,
-            hotspot = { 6, 16 }
-        },
-        walkload = {
-            fps = 10,
-            frames = 10,
-            columns = 3,
-            rows = 4,
-            directional = true,
-            hotspot = { 6, 18 }
-        }
-    },
-    
-    buildcost = {}, -- This will give the worker the property "buildable"
+   buildcost = {}, -- This will give the worker the property "buildable"
+
+   spritesheets = {
+      idle = {
+         fps = 10,
+         frames = 50,
+         rows = 8,
+         columns = 7,
+         hotspot = { 13, 24 }
+      },
+      walk = {
+         fps = 10,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 8, 25 }
+      },
+      walkload = {
+         fps = 10,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 8, 25 }
+      },
+   }
 }
 
 pop_textdomain()

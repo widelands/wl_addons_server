@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/jungle_preservers_hut/"
@@ -39,13 +39,14 @@ wl.Descriptions():new_productionsite_type {
     
     aihints = {
         space_consumer = true,
-        prohibited_till = 1800,
+        prohibited_till = 5400,
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
 
     working_positions = {
-        europeans_forester = 1
+        amazons_jungle_preserver = 1
     },
 
     inputs = {
@@ -66,7 +67,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = pgettext("europeans_building", "planting trees"),
             actions = {
-                "callworker=plant_tree",
+                -- time of worker: 11.2-36.4 sec, mean 24.088 sec
+                -- min. time total: 11.2 + 10 = 21.2 sec
+                -- max. time total: 36.4 + 10 = 46.4 sec
+                -- mean time total: 24.088 + 10 = 34.088 sec
+                "callworker=plant",
                 "sleep=duration:10s"
             }
         }

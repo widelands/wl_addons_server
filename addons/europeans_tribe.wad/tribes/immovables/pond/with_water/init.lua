@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 local dirname = path.dirname (__file__)
 
@@ -18,9 +18,6 @@ wl.Descriptions():new_immovable_type {
       },
       drain_pond = {
          "transform=pond_dry"
-      },
-      plant_cotton_in_pond = {
-         "transform=cottonfield_tiny"
       },
       plant_reed_in_pond = {
          "transform=reedfield_tiny"

@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/empire/sheepfarm/"
@@ -42,19 +42,18 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        prohibited_till = 3600,
+        prohibited_till = 2400,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2
     },
 
     working_positions = {
-        europeans_worker_basic = 2,
+        empire_shepherd = 2
     },
 
     inputs = {
         { name = "water", amount = 8 },
-        { name = "fruit", amount = 8 },
-        { name = "honey", amount = 8 }
+        { name = "oat", amount = 8 }
     },
 
     programs = {
@@ -65,19 +64,19 @@ wl.Descriptions():new_productionsite_type {
                 "call=make_wool",
                 "call=make_wool",
                 "call=make_wool",
-                "call=make_leather"
+                "call=make_leather_meat"
             }
         },
-        make_leather = {
+        make_leather_meat = {
             -- TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
             descname = _("breeding sheep and producing leather and wool"),
             actions = {
-                "return=skipped unless economy needs leather",
-                "consume=water fruit honey",
+                "return=skipped unless economy needs leather or economy needs meat",
+                "consume=water oat",
                 "sleep=duration:25s",
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:30s",
-                "produce=leather"
+                "produce=leather meat"
             }
         },
         make_wool = {
@@ -85,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _("breeding sheep and producing meat and wool"),
             actions = {
                 "return=skipped unless economy needs wool",
-                "consume=water fruit honey",
+                "consume=water oat",
                 "sleep=duration:25s",
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:30s",

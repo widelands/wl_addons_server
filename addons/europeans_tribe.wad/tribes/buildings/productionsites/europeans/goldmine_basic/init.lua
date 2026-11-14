@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/goldmine/"
@@ -37,7 +37,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_goldmine_level_1",
         enhancement_cost = {
-            planks = 4
+            planks = 3
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
@@ -57,11 +57,12 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_miner_basic = 1
+        barbarians_miner = 2
     },
 
     inputs = {
-        { name = "blackwood", amount = 6 }
+        { name = "ration", amount = 6 },
+        { name = "beer", amount = 6 }
     },
 
     programs = {
@@ -69,55 +70,46 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore",
-                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs ore",
-                "return=skipped unless site has blackwood:3",
-                "consume=blackwood",
-                "call=mine_granite",
+                "return=skipped unless economy needs gold_ore",
+                "return=skipped when economy needs ration and not economy needs granite and not economy needs marble and not economy needs gold_ore",
+                "consume=ration beer",
+                "call=mine_ore",
                 "call=mine_marble",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_granite",
+                "consume=ration beer",
+                "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_granite",
+                "consume=ration beer",
+                "call=mine_ore",
                 "call=mine_marble",
                 "call=mine_ore",
-            }
-        },
-        mine_granite = {
-            descname = pgettext("europeans_building", "mining granite"),
-            actions = {
-                "animate=working duration:10s",
-                "mine=resource_gold radius:4 yield:20% when_empty:2% experience_on_fail:10%",
-                "produce=granite",
             }
         },
         mine_marble = {
             descname = pgettext("europeans_building", "mining marble"),
             actions = {
-                "animate=working duration:25s",
-                "mine=resource_gold radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "animate=working duration:10s",
+                "mine=resource_gold radius:4 yield:20% when_empty:2% experience_on_fail:5%",
                 "produce=marble",
             }
         },
         mine_ore = {
-            descname = pgettext("europeans_building", "mining ore"),
+            descname = pgettext("europeans_building", "mining gold_ore"),
             actions = {
                 "animate=working duration:10s",
-                "mine=resource_gold radius:4 yield:20% when_empty:2% experience_on_fail:10%",
-                "produce=ore",
+                "mine=resource_gold radius:4 yield:20% when_empty:2% experience_on_fail:5%",
+                "produce=granite gold_dust gold_ore",
             }
         },
         encyclopedia = {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=blackwood:3",
-                "produce=granite:3 marble:2 ore:4",
+                "consume=ration:3 beer:3",
+                "produce=granite:7 marble:2 gold_dust:7 gold_ore:7",
             }
         },
     },

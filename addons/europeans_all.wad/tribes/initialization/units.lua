@@ -246,8 +246,8 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Frisian ware: Wool
-                    purpose = pgettext("frisians_ware", "Leather is made out of fur, which is used as a raw material for making clothes.")
+                    -- TRANSLATORS: Helptext for an Frisian ware: Leather
+                    purpose = pgettext("frisians_ware", "Leather is made out of animal skin, which is used as a raw material for making clothes.")
                 }
             },
             {
@@ -521,15 +521,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "smoked_fish",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Atlantean ware: Smoked Fish
-                    purpose = pgettext("atlanteans_ware", "As no Atlantean likes raw fish, smoking it in a smokery is the most common way to make it edible.")
-                }
-            },
-            {
                 name = "meat",
                 default_target_quantity = 32,
                 preciousness = 1,
@@ -540,15 +531,6 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Empire ware: Meat, part 2
                         pgettext("empire_ware", "Meat can also be obtained as pork from piggeries. It is used in the inns and taverns to prepare lunch for the miners and is consumed at the training sites (arena, colosseum, training camp).")
                     }
-                }
-            },
-            {
-                name = "smoked_meat",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Atlantean ware: Smoked Meat
-                    purpose = pgettext("atlanteans_ware", "Smoked meat is made out of meat in a smokery. It is delivered to the mines and training sites (labyrinth and dungeon) where the miners and soldiers prepare a nutritious lunch for themselves.")
                 }
             },
         },
@@ -608,6 +590,24 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Frisian ware: Honey Bread
                     purpose = pgettext("frisians_ware", "This bread is sweetened with honey. It is consumed by the most experienced miners and in advanced soldier training.")
+                }
+            },
+            {
+                name = "smoked_fish",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Atlantean ware: Smoked Fish
+                    purpose = pgettext("atlanteans_ware", "As no Atlantean likes raw fish, smoking it in a smokery is the most common way to make it edible.")
+                }
+            },
+            {
+                name = "smoked_meat",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Atlantean ware: Smoked Meat
+                    purpose = pgettext("atlanteans_ware", "Smoked meat is made out of meat in a smokery. It is delivered to the mines and training sites (labyrinth and dungeon) where the miners and soldiers prepare a nutritious lunch for themselves.")
                 }
             },
             {
@@ -5792,13 +5792,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_battlearena_basic",
-            helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
-                note = pgettext("europeans_building", "Trains soldiers in ‘Evade’."),
-            }
-        },
-        {
             name = "europeans_barracks_basic",
             helptexts = {
                 -- TRANSLATORS: Note helptext for a Europeans training site: Barracks
@@ -5831,6 +5824,13 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Note helptext for a Europeans training site: Barracks
                 note = pgettext("europeans_building", "Improves soldiers' ‘Health’ through additional armor."),
+            }
+        },
+        {
+            name = "europeans_battlearena_basic",
+            helptexts = {
+                -- TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
+                note = pgettext("europeans_building", "Trains soldiers in ‘Evade’."),
             }
         },
         {

@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/granitemine/"
@@ -37,7 +37,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_stonemine_level_1",
         enhancement_cost = {
-            planks = 4
+            planks = 3
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
@@ -55,11 +55,12 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_miner_basic = 1
+        barbarians_miner = 2
     },
 
     inputs = {
-        { name = "blackwood", amount = 6 }
+        { name = "ration", amount = 6 },
+        { name = "beer", amount = 6 }
     },
 
     programs = {
@@ -67,32 +68,32 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs granite or economy needs marble or economy needs diamond",
-                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs diamond",
+                "return=skipped unless economy needs granite or economy needs marble or economy needs quartz",
+                "return=skipped when economy needs ration and not economy needs granite and not economy needs marble and not economy needs quartz",
                 "sleep=duration:5s",
                 "call=mine_granite_basic",
-                "return=skipped unless site has blackwood:3",
-                "consume=blackwood",
+                "return=skipped unless site has ration:3",
+                "consume=ration beer",
                 "call=mine_granite",
                 "call=mine_granite",
                 "call=mine_marble",
                 "sleep=duration:5s",
-                "consume=blackwood",
+                "consume=ration beer",
                 "call=mine_granite",
                 "call=mine_marble",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=blackwood",
+                "consume=ration beer",
                 "call=mine_granite",
                 "call=mine_marble",
-                "call=mine_diamond",
+                "call=mine_quartz",
             }
         },
         mine_granite = {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:10s",
-                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
+                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:5%",
                 "produce=granite",
             }
         },
@@ -100,9 +101,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "return=skipped unless economy needs granite",
-                "return=skipped when site has blackwood:3",
+                "return=skipped when site has ration:3",
                 "animate=working duration:30s",
-                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
+                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:5%",
                 "produce=granite",
             }
         },
@@ -110,39 +111,31 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining marble"),
             actions = {
                 "animate=working duration:10s",
-                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
+                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:5%",
                 "produce=marble",
             }
         },
         mine_quartz = {
             descname = pgettext("europeans_building", "mining quartz"),
             actions = {
-                "animate=working duration:25s",
-                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
+                "animate=working duration:10s",
+                "mine=resource_stones radius:4 yield:20% when_empty:2% experience_on_fail:5%",
                 "produce=quartz",
-            }
-        },
-        mine_diamond = {
-            descname = pgettext("europeans_building", "mining diamond"),
-            actions = {
-                "animate=working duration:25s",
-                "mine=resource_stones radius:4 yield:25% when_empty:5% experience_on_fail:10%",
-                "produce=diamond",
             }
         },
         encyclopedia = {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=blackwood:3",
-                "produce=granite:4 marble:3 quartz diamond",
+                "consume=ration:3 beer:3",
+                "produce=granite:4 marble:3 quartz:2",
             }
         },
     },
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource
-        title = _"No marble",
-        heading = _"Main marble Vein Exhausted",
+        title = _"No rare stone",
+        heading = _"Main Rare Stone Vein Exhausted",
         message =
             pgettext("europeans_building", "This stone mine’s main vein is exhausted. Expect strongly diminished returns on investment. You should consider enhancing, dismantling or destroying it."),
     },

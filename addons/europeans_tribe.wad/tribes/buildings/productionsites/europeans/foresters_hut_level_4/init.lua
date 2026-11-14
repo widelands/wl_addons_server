@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/foresters_house/"
@@ -12,11 +12,17 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     spritesheets = {
         idle = {
-            hotspot = {40, 73},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {40, 73},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {40, 56},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         }
     },
     animations = {
@@ -24,24 +30,25 @@ wl.Descriptions():new_productionsite_type {
             hotspot = {40, 56}
         }
     },
-   
+
     size = "small",
-    
+
     aihints = {
         space_consumer = true,
-        prohibited_till = 1800,
+        prohibited_till = 5400,
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
 
     working_positions = {
-        europeans_forester = 1
+        frisians_forester = 1
     },
 
     inputs = {
         { name = "water", amount = 8 },
     },
-    
+
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
@@ -56,7 +63,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = pgettext("europeans_building", "planting trees"),
             actions = {
-                "callworker=plant_tree",
+                -- time of worker: 12.2-33.8 sec, mean 22.784 sec
+                -- min. time total: 12.2 + 8 = 20.2 sec
+                -- max. time total: 33.8 + 8 = 41.8 sec
+                -- mean time total: 22.784 + 8 = 30.784 sec
+                "callworker=plant",
                 "sleep=duration:8s"
             }
         }

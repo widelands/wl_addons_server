@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/weaving_mill/"
@@ -17,31 +17,39 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {50, 78},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {50, 77},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {50, 58},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         },
         working = {
-            hotspot = {50, 78},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {50, 77},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
         }
     },
-    
+
     size = "big",
 
     aihints = {
         supports_seafaring = true,
+        prohibited_till = 600,
+        basic_amount = 1,
         very_weak_ai_limit = 1,
-        weak_ai_limit = 2
+        weak_ai_limit = 1
     },
 
     working_positions = {
-        europeans_worker_advanced = 3
+        frisians_seamstress = 2
     },
 
     inputs = {
@@ -49,9 +57,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "wool", amount = 8 },
         { name = "spider_silk", amount = 8 },
         { name = "liana", amount = 8 },
-        { name = "rubber", amount = 4 },
         { name = "fur", amount = 4 },
-        { name = "leather", amount = 4 }
+        { name = "fur_garment_old", amount = 4 }
     },
 
     programs = {
@@ -59,45 +66,38 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=produce_cloth",
+                "call=produce_cloth_wool",
                 "sleep=duration:30s",
                 "call=produce_spidercloth",
                 "sleep=duration:30s",
-                "call=produce_armor",
+                "call=produce_cloth_fur",
                 "sleep=duration:30s",
                 "call=produce_rope",
                 "return=skipped"
             }
         },
-        produce_armor = {
-            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
-            descname = pgettext("europeans_building", "tailoring a suit of armor"),
+        produce_cloth_fur = {
+            -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
+            descname = _("weaving cloth out of fur"),
             actions = {
-                "return=skipped unless economy needs armor",
-                "return=skipped when economy needs cotton and economy needs spider_silk and economy needs wool and not economy needs armor",
-                "return=skipped when economy needs leather and economy needs rubber and not economy needs armor",
-                "return=skipped when economy needs cloth and not economy needs armor",
-                "return=skipped when economy needs fur and not economy needs armor",
-                "return=skipped when economy needs rope and not economy needs armor",
-                "return=skipped when economy needs spidercloth and not economy needs armor",
-                "consume=fur:2 cotton,spider_silk,wool:4 leather,rubber:2",
+                -- time total: 25.4 + 20 + 3.6 = 49 sec
+                "return=skipped unless economy needs cloth",
+                "consume=fur,fur_garment_old",
+                "sleep=duration:25s400ms",
+                "animate=working duration:20s",
+                "produce=cloth"
+            },
+        },
+        produce_cloth_wool = {
+            -- TRANSLATORS: Completed/Skipped/Did not start weaving because ...
+            descname = _("weaving cloth out of wool"),
+            actions = {
+                -- time total: 20.4 + 15 + 5 + 3.6 = 44 sec
+                "return=skipped unless economy needs cloth",
+                "consume=wool:4",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:3m",
-                "produce=armor:4"
-            }
-        },
-        produce_cloth = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-            descname = pgettext("europeans_building", "weaving cloth"),
-            actions = {
-                "return=skipped unless economy needs cloth",
-                "return=skipped when economy needs cotton and economy needs wool and not economy needs cloth",
-                "return=skipped when economy needs armor and not economy needs cloth",
-                "return=skipped when economy needs rope and not economy needs cloth",
-                "return=skipped when economy needs spidercloth and not economy needs cloth",
-                "consume=cotton,wool:4",
-                "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:3m",
+                "sleep=duration:5s",
                 "produce=cloth:4"
             }
         },
@@ -106,10 +106,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving rope"),
             actions = {
                 "return=skipped unless economy needs rope",
-                "return=skipped when economy needs liana and not economy needs rope",
-                "return=skipped when economy needs armor and not economy needs rope",
-                "return=skipped when economy needs cloth and not economy needs rope",
-                "return=skipped when economy needs spidercloth and not economy needs rope",
                 "consume=liana:4",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:3m",
@@ -121,10 +117,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving spidercloth"),
             actions = {
                 "return=skipped unless economy needs spidercloth",
-                "return=skipped when economy needs spider_silk and not economy needs spidercloth",
-                "return=skipped when economy needs armor and not economy needs spidercloth",
-                "return=skipped when economy needs cloth and not economy needs spidercloth",
-                "return=skipped when economy needs rope and not economy needs spidercloth",
                 "consume=spider_silk:4",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:3m",

@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/quarry/"
@@ -31,14 +31,13 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 1,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 2
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
     },
 
     working_positions = {
-        europeans_stonecutter_basic = 1,
-        europeans_stonecutter_advanced = 1
+        atlanteans_stonecutter = 1
     },
 
     programs = {
@@ -82,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
         },
         cut_marble_quartz = {
             -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
-           descname = pgettext("europeans_building", "quarrying quartz"),
+           descname = pgettext("europeans_building", "quarrying marble"),
             actions = {
                 "return=skipped unless economy needs marble or economy needs quartz",
                 "callworker=cut_marble",

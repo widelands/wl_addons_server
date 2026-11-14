@@ -378,5 +378,4 @@ wl.Descriptions():modify_unit("worker", "frisians_diker", "programs", "set", "di
          "animate=work duration:10s",
          "return"
       })
-
 pop_textdomain()

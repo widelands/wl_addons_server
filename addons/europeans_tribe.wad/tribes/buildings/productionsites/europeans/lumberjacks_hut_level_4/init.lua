@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/woodcutters_house/"
@@ -17,11 +17,17 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {40, 69},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {40, 69},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {40, 52},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         }
     },
 
@@ -29,11 +35,12 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
 
     working_positions = {
-        europeans_lumberjack_basic = 1
+        frisians_woodcutter = 1
     },
 
     programs = {
@@ -50,8 +57,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
+                -- time of worker: 29.2-68.8 sec, min+max average 49 sec
+                -- min. time total: 29.2 + 20 = 49.2 sec
+                -- max. time total: 68.8 + 20 = 88.8 sec
+                -- avg. time total: 49 + 20 = 69 sec
                 "return=skipped unless economy needs log or workers need experience",
-                "callworker=harvest_tree",
+                "callworker=harvest",
                 "sleep=duration:20s"
             }
         },
@@ -59,9 +70,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "making space"),
             actions = {
+                -- time of worker: 29.2-68.8 sec, min+max average 49 sec
+                -- min. time total: 29.2 + 120 = 149.2 sec
+                -- max. time total: 68.8 + 120 = 188.8 sec
+                -- avg. time total: 49 + 120 = 169 sec
                 "return=skipped when economy needs log",
                 "return=skipped when economy needs liana",
-                "callworker=making_space",
+                "callworker=harvest",
                 "sleep=duration:60s"
             }
         }

@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/woodcutters_hut/"
@@ -8,13 +8,13 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Lumberjack’s Hut Level 1"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         idle = { hotspot = {41, 46}},
         unoccupied = { hotspot = {39, 46}}
     },
-    
+
     size = "small",
     enhancement = {
         name = "europeans_lumberjacks_house_level_2",
@@ -29,11 +29,12 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
 
     working_positions = {
-        europeans_lumberjack_basic = 1
+        amazons_woodcutter = 1
     },
 
     programs = {
@@ -41,7 +42,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=felling_trees_idle",
                 "call=felling_trees",
                 "return=skipped"
             }
@@ -50,18 +50,17 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
+                -- time of woodcutter: 39.2-78.8 sec, min+max average 59 sec
+                -- min. time total: 39.2 + 10 = 49.2 sec
+                -- max. time total: 78.8 + 10 = 88.8 sec
+                -- avg. time total: 59 + 10 = 69 sec
+                -- time of master woodcutter: 34.2-73.8, min+max average 54 sec
+                -- min. time total: 34.2 + 10 = 44.2 sec
+                -- max. time total: 73.8 + 10 = 83.8 sec
+                -- avg. time total: 54 + 10 = 64 sec
                 "return=skipped unless economy needs log or workers need experience",
-                "callworker=harvest_tree",
+                "callworker=harvest_log",
                 "sleep=duration:10s"
-            }
-        },
-        felling_trees_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-            descname = pgettext("europeans_building", "felling trees"),
-            actions = {
-                "return=skipped when economy needs log",
-                "callworker=harvest_tree",
-                "sleep=duration:120s"
             }
         }
     },

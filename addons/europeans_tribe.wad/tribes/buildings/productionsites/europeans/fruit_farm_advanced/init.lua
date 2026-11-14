@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/berry_farm/"
@@ -6,7 +6,7 @@ local dirname = "tribes/buildings/productionsites/frisians/berry_farm/"
 wl.Descriptions():new_productionsite_type {
     name = "europeans_fruit_farm_advanced",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext ("europeans_building", "Advanced Berry Farm"),
+    descname = pgettext ("europeans_building", "Berry Farm"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
@@ -17,19 +17,17 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {40, 73},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {40, 73},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
         },
-        working = {
-            basename = "idle",
-            hotspot = {40, 73},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+        build = {
+           hotspot = {40, 55},
+           frames = 3,
+           columns = 3,
+           rows = 1,
         }
     },
 
@@ -37,13 +35,14 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         space_consumer = true,
-        prohibited_till = 3600,
+        prohibited_till = 5400,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2
     },
 
     working_positions = {
-        europeans_gardener_advanced = 2
+        frisians_berry_farmer = 1,
+        frisians_fruit_collector = 1
     },
 
     programs = {
@@ -51,18 +50,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _("working"),
             actions = {
+                "call=planting_grape",
                 "call=planting_berry_bushes",
+                "call=gathering_grape",
                 "call=gathering_berries",
-            }
-        },
-        planting_berry_bushes = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting bushes because ...
-            descname = _("planting bushes"),
-            actions = {
-                "return=skipped unless economy needs fruit or economy needs honey",
-                "callworker=plant_berrybush",
-                "sleep=duration:21s",
-                "callworker=bees"
             }
         },
         gathering_berries = {
@@ -71,7 +62,34 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fruit",
                 "sleep=duration:21s",
-                "callworker=harvest_berrybush",
+                "callworker=harvest_berry",
+            }
+        },
+        gathering_grape = {
+            -- TRANSLATORS: Completed/Skipped/Did not start gathering berries because ...
+            descname = _("gathering berries"),
+            actions = {
+                "return=skipped unless economy needs grape",
+                "sleep=duration:21s",
+                "callworker=harvest_grape",
+            }
+        },
+        planting_berry_bushes = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting bushes because ...
+            descname = _("planting bushes"),
+            actions = {
+                "return=skipped unless economy needs fruit or economy needs honey",
+                "callworker=plant_berry",
+                "sleep=duration:21s"
+            }
+        },
+        planting_grape = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting bushes because ...
+            descname = _("planting bushes"),
+            actions = {
+                "return=skipped unless economy needs grape or economy needs honey",
+                "callworker=plant_grape",
+                "sleep=duration:21s"
             }
         },
     },

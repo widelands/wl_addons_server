@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/spiderfarm/"
@@ -32,19 +32,19 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        prohibited_till = 3600,
+        prohibited_till = 2400,
         basic_amount = 1,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2
     },
 
     working_positions = {
-        europeans_worker_basic = 2
+        atlanteans_spiderbreeder = 1
     },
 
     inputs = {
         { name = "water", amount = 6 },
-        { name = "fruit", amount = 6 }
+        { name = "corn", amount = 6 }
     },
 
     programs = {
@@ -53,7 +53,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _("working"),
             actions = {
                 "return=skipped unless economy needs spider_silk",
-                "consume=water fruit",
+                "consume=water corn",
                 "sleep=duration:25s",
                 "animate=working duration:30s",
                 "produce=spider_silk"

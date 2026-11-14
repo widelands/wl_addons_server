@@ -1,17 +1,19 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/workers/empire/geologist/"
+local dirname = "tribes/workers/atlanteans/geologist/"
 
 wl.Descriptions():new_worker_type {
     name = "europeans_geologist",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Geologist"),
+    animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
-    
+
     buildcost = {
-        europeans_carrier = 1
+        europeans_carrier = 1,
+        hammer = 1
     },
 
     programs = {
@@ -19,7 +21,7 @@ wl.Descriptions():new_worker_type {
         -- The specialized geologist command walks the geologist around his starting
         -- location, executing the search program from time to time.
         expedition = {
-            "repeatsearch=search repetitions:16 radius:6"
+            "repeatsearch=search repetitions:15 radius:5"
         },
         -- Search program, executed when we have found a place to hack on
         search = {
@@ -31,40 +33,38 @@ wl.Descriptions():new_worker_type {
         }
     },
 
-    animation_directory = dirname,
     spritesheets = {
         idle = {
             fps = 10,
             frames = 10,
             rows = 4,
             columns = 3,
-            hotspot = { 9, 21 }
+            hotspot = { 10, 23 }
         },
         hacking = {
             fps = 10,
             frames = 10,
             rows = 4,
             columns = 3,
-            hotspot = { 11, 18 }
+            hotspot = { 12, 20 }
         },
         walk = {
             fps = 10,
-            frames = 10,
-            rows = 4,
-            columns = 3,
+            frames = 20,
+            rows = 5,
+            columns = 4,
             directional = true,
-            hotspot = { 9, 21 }
+            hotspot = { 11, 23 }
         },
         walkload = {
             basename = "walk",
             fps = 10,
-            frames = 10,
-            rows = 4,
-            columns = 3,
+            frames = 20,
+            rows = 5,
+            columns = 4,
             directional = true,
-            hotspot = { 9, 21 }
+            hotspot = { 11, 23 }
         },
-    }
+    },
 }
-
 pop_textdomain()

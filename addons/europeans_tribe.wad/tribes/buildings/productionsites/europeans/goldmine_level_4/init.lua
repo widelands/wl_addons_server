@@ -1,7 +1,7 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/empire/goldmine_deep/"
+local dirname = "tribes/buildings/productionsites/empire/goldmine/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_goldmine_level_4",
@@ -15,33 +15,45 @@ wl.Descriptions():new_productionsite_type {
          frames = 1,
          columns = 1,
          rows = 1,
-         hotspot = { 51, 66 },
+         hotspot = { 51, 54 },
       },
       empty = {
          frames = 1,
          columns = 1,
          rows = 1,
-         hotspot = { 51, 66 },
+         hotspot = { 51, 54 },
       },
       working = {
          fps = 10,
          frames = 10,
          columns = 10,
          rows = 1,
-         hotspot = { 51, 66 },
+         hotspot = { 51, 54 },
       },
     },
     
     size = "mine",
+    enhancement = {
+        name = "europeans_goldmine_level_5",
+        enhancement_cost = {
+            planks = 3
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 2,
+            granite = 1,
+            marble = 1
+        }
+    },
 
     aihints = {},
 
     working_positions = {
-        europeans_miner_advanced = 3
+        empire_miner = 3
     },
 
     inputs = {
-        { name = "blackwood", amount = 8 }
+        { name = "meal", amount = 8 },
+        { name = "wine", amount = 8 }
     },
 
     programs = {
@@ -49,64 +61,55 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore",
-                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs ore",
-                "return=skipped unless site has blackwood:4",
-                "consume=blackwood",
-                "call=mine_granite",
+                "return=skipped unless economy needs gold_ore",
+                "return=skipped when economy needs meal and not economy needs granite and not economy needs marble and not economy needs gold_ore",
+                "consume=meal wine",
+                "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_marble",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_granite",
+                "consume=meal wine",
+                "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_marble",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_granite",
+                "consume=meal wine",
+                "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_marble",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_granite",
+                "consume=meal wine",
+                "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_marble",
                 "call=mine_ore",
-            }
-        },
-        mine_granite = {
-            descname = pgettext("europeans_building", "mining granite"),
-            actions = {
-                "animate=working duration:30s",
-                "mine=resource_gold radius:8 yield:100% when_empty:20% experience_on_fail:10%",
-                "produce=granite",
             }
         },
         mine_marble = {
             descname = pgettext("europeans_building", "mining marble"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_gold radius:8 yield:100% when_empty:20% experience_on_fail:10%",
+                "mine=resource_gold radius:5 yield:60% when_empty:10% experience_on_fail:12%",
                 "produce=marble",
             }
         },
         mine_ore = {
-            descname = pgettext("europeans_building", "mining ore"),
+            descname = pgettext("europeans_building", "mining gold_ore"),
             actions = {
                 "animate=working duration:30s",
-                "mine=resource_gold radius:8 yield:100% when_empty:20% experience_on_fail:10%",
-                "produce=ore",
+                "mine=resource_gold radius:5 yield:60% when_empty:10% experience_on_fail:12%",
+                "produce=granite gold_dust gold_ore",
             }
         },
         encyclopedia = {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=blackwood:4",
-                "produce=granite:4 marble:4 ore:8",
+                "consume=meal:4 wine:4",
+                "produce=granite:12 marble:4 gold_dust:12 gold_ore:12",
             }
         },
     },

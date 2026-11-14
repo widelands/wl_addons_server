@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/coalmine/"
@@ -37,7 +37,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_coalmine_level_1",
         enhancement_cost = {
-            planks = 4
+            planks = 3
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
@@ -55,11 +55,12 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_miner_basic = 1
+        barbarians_miner = 2
     },
 
     inputs = {
-        { name = "blackwood", amount = 6 }
+        { name = "ration", amount = 6 },
+        { name = "beer", amount = 6 }
     },
 
     programs = {
@@ -68,21 +69,18 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs coal",
-                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs diamond and not economy needs coal",
-                "sleep=duration:5s",
-                "call=mine_stone_basic",
-                "return=skipped unless site has blackwood:3",
-                "consume=blackwood",
-                "call=mine_stone",
+                "return=skipped when economy needs ration and not economy needs granite and not economy needs coal and not economy needs diamond",
+                "consume=ration beer",
+                "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_stone",
+                "consume=ration beer",
+                "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_stone",
+                "consume=ration beer",
+                "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_diamond",
             }
@@ -91,33 +89,15 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining coal"),
             actions = {
                 "animate=working duration:10s",
-                "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:10%",
-                "produce=coal",
-            }
-        },
-        mine_stone = {
-            descname = pgettext("europeans_building", "mining granite"),
-            actions = {
-                "animate=working duration:10s",
-                "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:10%",
-                "produce=granite",
-            }
-        },
-        mine_stone_basic = {
-            descname = pgettext("europeans_building", "mining granite"),
-            actions = {
-                "return=skipped unless economy needs granite",
-                "return=skipped when site has blackwood:3",
-                "animate=working duration:30s",
-                "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:10%",
-                "produce=granite",
+                "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:5%",
+                "produce=granite coal",
             }
         },
         mine_diamond = {
             descname = pgettext("europeans_building", "mining diamond"),
             actions = {
-                "animate=working duration:25s",
-                "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "animate=working duration:10s",
+                "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:5%",
                 "produce=diamond",
             }
         },
@@ -125,8 +105,8 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=blackwood:3",
-                "produce=coal:4 granite:3 diamond",
+                "consume=ration:3 beer:3",
+                "produce=coal:7 granite:7 diamond",
             }
         },
     },

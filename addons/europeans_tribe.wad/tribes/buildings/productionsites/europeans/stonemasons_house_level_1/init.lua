@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/brick_kiln/"
@@ -17,21 +17,27 @@ wl.Descriptions():new_productionsite_type {
     },
     spritesheets = {
         idle = {
-            hotspot = {50, 72},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {50, 72},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
+        },
+        build = {
+           hotspot = {50, 58},
+           frames = 4,
+           columns = 2,
+           rows = 2,
         },
         working = {
-            hotspot = {50, 75},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
+           hotspot = {50, 75},
+           frames = 10,
+           columns = 5,
+           rows = 2,
+           fps = 10
         }
     },
-    
+
     size = "medium",
     enhancement = {
         name = "europeans_stonemasons_house_level_2",
@@ -46,13 +52,15 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 1
+        prohibited_till = 600,
+        basic_amount = 1,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 3
     },
 
     working_positions = {
-        europeans_worker_advanced = 1,
-        europeans_worker_basic = 1
+        barbarians_lime_burner = 1,
+        frisians_brickmaker = 1
     },
 
     inputs = {

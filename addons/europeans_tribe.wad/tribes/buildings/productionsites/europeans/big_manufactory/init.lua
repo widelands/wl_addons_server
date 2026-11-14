@@ -1,0 +1,354 @@
+push_textdomain("europeans_all.wad", true)
+
+-- local dirname = path.dirname(__file__)
+local dirname = "tribes/buildings/productionsites/frisians/tailors_shop/"
+
+wl.Descriptions():new_productionsite_type {
+    name = "europeans_big_manufactory",
+    -- TRANSLATORS: This is a building name used in lists of buildings
+    descname = pgettext("europeans_building", "Big Manufactory"),
+    icon = dirname .. "menu.png",
+
+    animation_directory = dirname,
+    animations = {
+        unoccupied = {
+            hotspot = {50, 72}
+        }
+    },
+    spritesheets = {
+        idle = {
+            hotspot = {50, 82},
+            frames = 10,
+            columns = 5,
+            rows = 2,
+            fps = 10
+        },
+        working = {
+            hotspot = {50, 82},
+            frames = 10,
+            columns = 5,
+            rows = 2,
+            fps = 10
+        }
+    },
+
+    size = "big",
+    buildcost = {
+        log = 2,
+        granite = 2,
+        blackwood = 2,
+        grout = 2,
+        cloth = 2,
+        planks = 2,
+        brick = 2,
+        marble = 2,
+        rope = 2,
+        spidercloth = 2,
+        quartz = 2
+    },
+    return_on_dismantle = {
+        scrap_wood = 4,
+        granite = 1,
+        marble = 1,
+        grout = 1,
+        cloth = 1,
+        rope = 1,
+        brick = 1,
+        quartz = 1
+    },
+
+    aihints = {
+        prohibited_till = 900,
+        basic_amount = 1,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2
+    },
+
+    working_positions = {
+        amazons_dressmaker = 1,
+        amazons_stone_carver = 1,
+        atlanteans_weaver = 1,
+        barbarians_weaver = 1,
+        empire_weaver = 1,
+        frisians_seamstress = 1
+    },
+
+    inputs = {
+        { name = "cloth", amount = 12 },
+        { name = "spidercloth", amount = 8 },
+        { name = "fur", amount = 8 },
+        { name = "fur_garment_old", amount = 8 },
+        { name = "rubber", amount = 8 },
+        { name = "leather", amount = 8 },
+        { name = "rope", amount = 8 },
+        { name = "blackwood", amount = 6 },
+        { name = "balsa", amount = 6 },
+        { name = "ironwood", amount = 6 },
+        { name = "granite", amount = 6 },
+        { name = "quartz", amount = 6 },
+        { name = "gold_thread", amount = 6 },
+    },
+
+    programs = {
+        main = {
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _("working"),
+            actions = {
+                "call=produce_armor",
+                "call=produce_basket",
+                "call=produce_boots_sturdy",
+                "call=produce_chisel",
+                "call=produce_felling_ax",
+                "call=produce_firestones",
+                "call=produce_fishing_net_cloth",
+                "call=produce_fishing_net_silk",
+                "call=produce_fur_garment",
+                "call=produce_hammer",
+                "call=produce_hunting_bow",
+                "call=produce_kitchen_tools",
+                "call=produce_machete",
+                "call=produce_needles",
+                "call=produce_pick",
+                "call=produce_shovel",
+                "call=produce_stone_bowl",
+                "call=produce_tabard",
+                "call=produce_tunic",
+            }
+        },
+        produce_armor = {
+            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+            descname = _("tailoring an armor"),
+            actions = {
+                -- time: 20.4 + 20 + 3.6 = 44 sec
+                "return=skipped unless economy needs armor",
+                "consume=cloth rope gold_thread",
+                "sleep=duration:20s400ms",
+                "playsound=sound/mill/weaving priority:90%",
+                "animate=working duration:20s",
+                "produce=armor"
+            }
+        },
+        produce_basket = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
+            descname = _("making a basket"),
+            actions = {
+                -- time: 31.567 + 35 + 3.6 = 70.167 sec
+                "return=skipped unless economy needs basket",
+                "consume=cloth blackwood rope",
+                "sleep=duration:31s567ms",
+                "animate=working duration:35s",
+                "produce=basket"
+            },
+        },
+        produce_boots_sturdy = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making sturdy boots because ...
+            descname = _("making sturdy boots"),
+            actions = {
+                -- time: 32.4 + 35 + 3.6 = 71 sec
+                "return=skipped unless economy needs boots_sturdy",
+                "consume=rubber balsa",
+                "sleep=duration:32s400ms",
+                "animate=working duration:35s",
+                "produce=boots_sturdy"
+            },
+        },
+        produce_chisel = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a chisel because ...
+            descname = _("making a chisel"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs chisel",
+                "consume=quartz",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=chisel"
+            },
+        },
+        produce_felling_ax = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
+            descname = _("making a felling ax"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs felling_ax",
+                "consume=blackwood quartz",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=felling_ax"
+            },
+        },
+        produce_firestones = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making firestones because ...
+            descname = _("making firestones"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs firestones",
+                "consume=quartz",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=firestones"
+            },
+        },
+        produce_fishing_net_cloth = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
+            descname = _("making a fishing net"),
+            actions = {
+                -- time: 31.567 + 35 + 3.6 = 70.167 sec
+                "return=skipped unless economy needs fishing_net",
+                "consume=cloth:2",
+                "sleep=duration:31s567ms",
+                "animate=working duration:35s",
+                "produce=fishing_net"
+            },
+        },
+        produce_fishing_net_silk = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
+            descname = _("making a fishing net"),
+            actions = {
+                -- time: 32.4 + 35 + 3.6 = 71 sec
+                "return=skipped unless economy needs fishing_net",
+                "consume=spidercloth:2",
+                "sleep=duration:32s400ms",
+                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+                "animate=working duration:35s",
+                "produce=fishing_net"
+            }
+        },
+        produce_fur_garment = {
+            -- TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
+            descname = _("sewing fur garment"),
+            actions = {
+                -- time total: 20.4 + 20 + 3.6 = 44 sec
+                "return=skipped unless economy needs fur_garment or workers need experience",
+                "consume=fur,fur_garment_old leather",
+                "sleep=duration:20s400ms",
+                "animate=working duration:20s",
+                "produce=fur_garment"
+            },
+        },
+        produce_hammer = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
+            descname = _("making a hammer"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs hammer",
+                "consume=blackwood granite",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=hammer"
+            },
+        },
+        produce_hunting_bow = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a hunting bow because ...
+            descname = _("making a hunting bow"),
+            actions = {
+                -- time: 32.4 + 35 + 3.6 = 71 sec
+                "return=skipped unless economy needs hunting_bow",
+                "consume=blackwood rope",
+                "sleep=duration:32s400ms",
+                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+                "animate=working duration:35s",
+                "produce=hunting_bow"
+            }
+        },
+        produce_kitchen_tools = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
+            descname = _("making kitchen tools"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs kitchen_tools",
+                "consume=blackwood granite",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=kitchen_tools"
+            },
+        },
+        produce_machete = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a machete because ...
+            descname = _("making a machete"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs machete",
+                "consume=blackwood quartz",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=machete"
+            },
+        },
+        produce_needles = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making needles because ...
+            descname = _("making needles"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs needles",
+                "consume=quartz",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=needles"
+            },
+        },
+        produce_pick = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
+            descname = _("making a pick"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs pick",
+                "consume=blackwood quartz",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=pick"
+            },
+        },
+        produce_shovel = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
+            descname = _("making a shovel"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs shovel",
+                "consume=blackwood ironwood",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=shovel"
+            },
+        },
+        produce_stone_bowl = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a stone bowl because ...
+            descname = _("making a stone bowl"),
+            actions = {
+                -- time: 30.4 + 35 + 3.6 = 69 sec
+                "return=skipped unless economy needs stone_bowl",
+                "consume=granite",
+                "sleep=duration:30s400ms",
+                "animate=working duration:35s",
+                "produce=stone_bowl"
+            },
+        },
+        produce_tabard = {
+            -- TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
+            descname = _("tailoring a tabard"),
+            actions = {
+                -- time: 20.4 + 20 + 3.6 = 44 sec
+                "return=skipped unless economy needs tabard",
+                "consume=spidercloth gold_thread",
+                "sleep=duration:20s400ms",
+                "playsound=sound/mill/weaving priority:90%",
+                "animate=working duration:20s",
+                "produce=tabard"
+            }
+        },
+        produce_tunic = {
+            -- TRANSLATORS: Completed/Skipped/Did not start sewing a tunic because ...
+            descname = _("sewing a tunic"),
+            actions = {
+                -- time: 32.4 + 35 + 3.6 = 71 sec
+                "return=skipped unless economy needs tunic",
+                "consume=cloth rubber rope",
+                "sleep=duration:32s400ms",
+                "animate=working duration:35s",
+                "produce=tunic"
+            },
+        },
+    },
+
+}
+
+pop_textdomain()

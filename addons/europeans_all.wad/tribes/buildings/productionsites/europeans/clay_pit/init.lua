@@ -52,7 +52,7 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         space_consumer = true,
-        prohibited_till = 5400,
+        prohibited_till = 1800,
         basic_amount = 1,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2

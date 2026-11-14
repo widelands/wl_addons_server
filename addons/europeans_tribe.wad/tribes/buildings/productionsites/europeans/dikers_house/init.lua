@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/dikers_house/"
@@ -9,25 +9,19 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-      idle = {
-         hotspot = {75, 95},
-         frames = 10,
-         columns = 5,
-         rows = 2,
-         fps = 10
-      },
-      build = {
-         hotspot = {75, 76},
-         frames = 4,
-         columns = 2,
-         rows = 2,
-      }
-    },
     animations = {
-      unoccupied = {
-         hotspot = {75, 76}
-      }
+        unoccupied = {
+            hotspot = {75, 76}
+        }
+    },
+    spritesheets = {
+        idle = {
+            hotspot = {75, 95},
+            frames = 10,
+            columns = 5,
+            rows = 2,
+            fps = 10
+        },
     },
 
     size = "big",
@@ -56,12 +50,14 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_diker = 1
+        frisians_diker = 1
     },
     aihints = {
         needs_water = true,
-        very_weak_ai_limit = 2,
-        weak_ai_limit = 4
+        prohibited_till = 10800,
+        forced_after = 14400,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1
     },
 
     inputs = {
@@ -119,7 +115,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start building a dike because ...
             descname = _("building a dike"),
             actions = {
-                "return=skipped unless site has log:4",
+                "return=skipped when economy needs log",
                 "callworker=check_build",
                 "consume=log:4",
                 "callworker=build"
@@ -175,7 +171,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix AI
             descname = "dummy program",
             actions = {
-                "produce=ore marble granite",
+                "produce=gold_dust gold_ore iron_ore quartz diamond marble granite",
             },
         },
     },

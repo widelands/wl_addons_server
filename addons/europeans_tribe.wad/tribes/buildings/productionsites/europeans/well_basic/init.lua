@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/well/"
@@ -42,24 +42,23 @@ wl.Descriptions():new_productionsite_type {
         }
     },
     buildcost = {
-        blackwood = 2,
-        grout = 2,
         granite = 2,
+        log = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        grout = 1,
         granite = 1
     },
 
     aihints = {
         basic_amount = 2,
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
 
     working_positions = {
-        europeans_carrier = 1
+        barbarians_carrier = 1
     },
 
     programs = {

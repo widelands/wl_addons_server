@@ -2,9 +2,9 @@
 --              Headquarters Starting Conditions for Europeans
 -- =======================================================================
 
-include "addons/europeans_tribe.wad/tribes/scripting/starting_conditions.lua"
+include "addons/europeans_all.wad/tribes/scripting/starting_conditions.lua"
 
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 local init = {
     -- TRANSLATORS: This is the name of a starting condition
@@ -22,7 +22,6 @@ local init = {
         player:allow_workers("all")
     end
           
-    player:forbid_buildings{"europeans_dikers_house"}
     place_initial_port(player, sf)
     set_starting_warecount(player)
     

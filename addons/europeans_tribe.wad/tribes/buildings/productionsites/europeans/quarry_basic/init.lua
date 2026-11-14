@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/quarry/"
@@ -50,11 +50,12 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         basic_amount = 1,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 2
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
     },
 
     working_positions = {
-        europeans_stonecutter_basic = 2
+        barbarians_stonemason = 1
     },
 
     programs = {

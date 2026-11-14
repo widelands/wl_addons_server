@@ -1,7 +1,6 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
--- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/empire/scouts_house/"
+local dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_trading_post",
@@ -10,39 +9,28 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-      build = {
-         frames = 3,
-         columns = 3,
-         rows = 1,
-         hotspot = { 55, 57 }
-      },
-      idle = {
-         fps = 10,
-         frames = 12,
-         columns = 6,
-         rows = 2,
-         hotspot = { 55, 57 }
-      },
+    animations = {
+        idle = {
+            hotspot = { 60, 59 },
+        },
     },
-    
+
     size = "small",
-    destructible = true,
-        
+
     aihints = {
-        prohibited_till = 7200
+        prohibited_till = 10800,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2
     },
 
     working_positions = {
-        europeans_trader = 1
+        atlanteans_trader = 1
     },
 
     inputs = {
-        { name = "meal", amount = 2 },
-        { name = "coin_copper", amount = 8 },
-        { name = "coin_silver", amount = 6 },
-        { name = "coin_gold", amount = 4 },
-        { name = "diamond", amount = 4 }
+        { name = "gold", amount = 2 },
+        { name = "iron", amount = 3 },
+        { name = "coal", amount = 4 },
     },
 
     programs = {
@@ -50,38 +38,44 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs granite or economy needs marble",
-                "return=skipped unless site has meal",
-                "consume=meal",
-                "sleep=duration:30s",
-                "call=trade_granite_copper",
-                "sleep=duration:30s",
-                "call=trade_granite_diamond"
+                "call=trade_coal",
+                "call=trade_iron",
+                "call=trade_gold",
             }
         },
-        trade_granite_copper = {
+        trade_coal = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs granite",
                 "callworker=find_pole",
-                "return=failed unless site has coin_copper:5",
-                "consume=coin_copper:2",
-                "callworker=purchase_granite_copper",
-                "produce=granite:6",
+                "return=failed unless site has coal:4",
+                "return=skipped unless economy needs coin_copper",
+                "consume=coal:4",
+                "callworker=coal_trade",
                 "sleep=duration:30s",
             }
         },
-        trade_granite_diamond = {
+        trade_iron = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs granite",
                 "callworker=find_pole",
-                "return=failed unless site has diamond:2",
-                "consume=diamond:2",
-                "callworker=purchase_granite_diamond",
-                "produce=granite:12",
+                "return=failed unless site has iron:3",
+                "return=skipped unless economy needs coin_silver",
+                "consume=iron:3",
+                "callworker=iron_trade",
+                "sleep=duration:30s",
+            }
+        },
+        trade_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "callworker=find_pole",
+                "return=failed unless site has gold:2",
+                "return=skipped unless economy needs coin_gold",
+                "consume=gold:2",
+                "callworker=gold_trade",
                 "sleep=duration:30s",
             }
         },

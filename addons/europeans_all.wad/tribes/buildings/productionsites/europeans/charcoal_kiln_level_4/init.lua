@@ -34,7 +34,7 @@ wl.Descriptions():new_productionsite_type {
     },
     animations = {
         unoccupied = {
-            hotspot = {50, 64}
+            hotspot = {50, 63}
         }
     },
 

@@ -1,7 +1,7 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
-local dirname = "tribes/buildings/productionsites/empire/coalmine/"
+local dirname = "tribes/buildings/productionsites/atlanteans/coalmine/"
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_coalmine_level_3",
@@ -10,25 +10,16 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    spritesheets = {
+    animations = {
       idle = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 51, 54 }
-      },
-      empty = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 51, 54 }
+         hotspot = { 53, 61 },
       },
       working = {
-         fps = 10,
-         frames = 10,
-         columns = 10,
-         rows = 1,
-         hotspot = { 51, 54 }
+         basename = "idle",
+         hotspot = { 53, 61 },
+      },
+      empty = {
+         hotspot = { 53, 61 },
       },
     },
     
@@ -36,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_coalmine_level_4",
         enhancement_cost = {
-            planks = 4
+            planks = 3
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
@@ -47,12 +38,12 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_miner_advanced = 2,
-        europeans_miner_basic = 1
+        atlanteans_miner = 3
     },
 
     inputs = {
-        { name = "blackwood", amount = 8 }
+        { name = "meal", amount = 8 },
+        { name = "chocolate", amount = 8 }
     },
 
     programs = {
@@ -61,26 +52,25 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs coal",
-                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs diamond and not economy needs coal",
-                "return=skipped unless site has blackwood:4",
-                "consume=blackwood",
-                "call=mine_stone",
+                "return=skipped when economy needs meal and not economy needs granite and not economy needs diamond and not economy needs coal",
+                "consume=meal chocolate",
+                "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_stone",
+                "consume=meal chocolate",
+                "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_diamond",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_stone",
+                "consume=meal chocolate",
+                "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=blackwood",
-                "call=mine_stone",
+                "consume=meal chocolate",
+                "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_diamond",
@@ -90,23 +80,15 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining coal"),
             actions = {
                 "animate=working duration:25s",
-                "mine=resource_coal radius:8 yield:80% when_empty:15% experience_on_fail:10%",
-                "produce=coal",
-            }
-        },
-        mine_stone = {
-            descname = pgettext("europeans_building", "mining granite"),
-            actions = {
-                "animate=working duration:25s",
-                "mine=resource_coal radius:8 yield:80% when_empty:15% experience_on_fail:10%",
-                "produce=granite",
+                "mine=resource_coal radius:5 yield:50% when_empty:8% experience_on_fail:10%",
+                "produce=granite coal",
             }
         },
         mine_diamond = {
             descname = pgettext("europeans_building", "mining diamond"),
             actions = {
                 "animate=working duration:25s",
-                "mine=resource_coal radius:8 yield:80% when_empty:15% experience_on_fail:10%",
+                "mine=resource_coal radius:5 yield:50% when_empty:8% experience_on_fail:10%",
                 "produce=diamond",
             }
         },
@@ -114,8 +96,8 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=blackwood:4",
-                "produce=coal:8 granite:4 diamond:2",
+                "consume=meal:4 chocolate:4",
+                "produce=coal:12 granite:12 diamond:2",
             }
         },
     },

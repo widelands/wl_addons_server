@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/empire/well/"
@@ -32,22 +32,21 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             brick = 1,
             grout = 1,
-            planks = 1,
             reed = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1,
             brick = 1
         }
     },
 
     aihints = {
         very_weak_ai_limit = 4,
-        weak_ai_limit = 8
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
 
     working_positions = {
-        europeans_carrier = 1
+        empire_carrier = 1
     },
 
     programs = {

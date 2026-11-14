@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/tapir_farm/"
@@ -44,19 +44,19 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        prohibited_till = 3600,
+        prohibited_till = 2400,
         very_weak_ai_limit = 1,
         weak_ai_limit = 1
     },
 
     working_positions = {
-        europeans_worker_basic = 2,
+        amazons_tapir_breeder = 1,
+        amazons_wilderness_keeper = 1
     },
 
     inputs = {
         { name = "water", amount = 8 },
-        { name = "fruit", amount = 8 },
-        { name = "honey", amount = 8 }
+        { name = "cassavaroot", amount = 8 }
     },
 
     programs = {
@@ -66,11 +66,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 -- time total: 30 + 38.6 + 30 + 38.6 + 30 + 42.2 = 209.4 sec
                 "call=recruit_tapir",
-                "call=make_leather",
+                "call=make_fur_leather",
                 "call=recruit_tapir",
-                "call=make_leather",
+                "call=make_fur_leather",
                 "call=recruit_tapir",
-                "call=make_fur",
+                "call=make_fur_meat",
             }
         },
         recruit_tapir = {
@@ -78,35 +78,35 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "breeding tapir"),
             actions = {
                 -- time total: 15 + 15 = 30 sec
-                "return=skipped unless economy needs europeans_carrier_tapir",
-                "consume=water fruit honey",
+                "return=skipped unless economy needs amazons_tapir",
+                "consume=cassavaroot water",
                 "sleep=duration:15s",
                 "animate=working duration:15s",
-                "recruit=europeans_carrier_tapir"
+                "recruit=amazons_tapir"
             }
         },
-        make_leather = {
+        make_fur_leather = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
             descname = pgettext("europeans_building", "producing fur"),
             actions = {
                 -- time: 15 + 20 + 3.6 = 38.6 sec
-                "return=skipped unless economy needs leather",
-                "consume=water fruit honey",
+                "return=skipped unless economy needs fur or economy needs leather",
+                "consume=cassavaroot water",
                 "sleep=duration:15s",
                 "animate=working duration:20s",
-                "produce=leather"
+                "produce=fur leather"
             }
         },
-        make_fur = {
+        make_fur_meat = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
             descname = pgettext("europeans_building", "producing fur"),
             actions = {
                 -- time: 15 + 20 + 2 * 3.6 = 42.2 sec
-                "return=skipped unless economy needs fur",
-                "consume=water fruit honey",
+                "return=skipped unless economy needs fur or economy needs meat",
+                "consume=cassavaroot water",
                 "sleep=duration:15s",
                 "animate=working duration:20s",
-                "produce=fur"
+                "produce=fur meat"
             }
         },
     },

@@ -45,14 +45,13 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         requires_supporters = true,
-        prohibited_till = 900,
-        basic_amount = 2,
-        very_weak_ai_limit = 3,
-        weak_ai_limit = 4
+        prohibited_till = 5400,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2
     },
 
     working_positions = {
-        europeans_gardener_advanced = 1
+        frisians_charcoal_burner = 1
     },
 
     inputs = {
@@ -79,9 +78,9 @@ wl.Descriptions():new_productionsite_type {
                 -- min. time: 22.2 + 15 = 37.2 sec
                 -- max. time: 54.6 + 15 = 69.6 sec
                 "return=skipped unless economy needs coal",
-                "callworker=check_pond_dry",
+                "callworker=find_pond",
                 "consume=log:3",
-                "callworker=build_stack",
+                "callworker=make_stack",
                 "consume=clay",
                 "sleep=duration:15s",
             },

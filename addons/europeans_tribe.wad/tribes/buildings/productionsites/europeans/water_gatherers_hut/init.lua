@@ -1,4 +1,4 @@
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/water_gatherers_hut/"
@@ -35,7 +35,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_worker_basic = 1
+        amazons_carrier = 1
     },
 
     programs = {
@@ -43,9 +43,15 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _("working"),
             actions = {
+                -- obtaining second bucket from hut takes takes 3.6 sec
+                -- time of worker: 8.2-40.6 sec, min+max average 24.4 sec
+                -- min. time total: 8.2 + 20 + 3.6 = 31.8 sec
+                -- max. time total: 40.6 + 20 + 3.6 = 64.2 sec
+                -- avg. time total: 24.4 + 20 + 3.6 = 48 sec
                 "return=skipped unless economy needs water",
                 "sleep=duration:20s",
                 "callworker=fetch_water",
+                -- she carries 2 buckets so we need to create one now
                 "produce=water",
             }
         },
