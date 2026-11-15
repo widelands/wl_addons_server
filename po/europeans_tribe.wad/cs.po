@@ -4,17 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Ondřej Itřech, 2026
+# af24e571988b09e5b46468ac89010e87_d1b4333, 2026
 # Zlopez <michal.konecny@psmail.xyz>, 2026
+# Ondřej Itřech, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-11-14 03:27+0100\n"
+"POT-Creation-Date: 2026-11-15 03:27+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
-"Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2026\n"
+"Last-Translator: Ondřej Itřech, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -755,6 +756,11 @@ msgctxt "europeans_building"
 msgid "Basic Coal Mine"
 msgstr "Jednoduchý důl na uhlí"
 
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
@@ -2353,6 +2359,8 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making space because ...
 #. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #. TRANSLATORS: Completed/Skipped/Did not start making space because ...
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making space because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:71
 #: input:71 input:72 input:90 standard
 msgid "harvesting log"
@@ -3368,6 +3376,16 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:57
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:113
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:125
@@ -3647,6 +3665,8 @@ msgctxt "europeans_building"
 msgid "mining water"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
@@ -4673,6 +4693,8 @@ msgstr "Balzovník jihoamerický"
 msgid "Balsa Tree (Pole)"
 msgstr "Balzovník jihoamerický (stromek)"
 
+#. TRANSLATORS:  This is an Amazon rare tree.
+#. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
 #. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
@@ -6062,6 +6084,8 @@ msgstr "Bránit a dobývat!"
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:796
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:803 input:796
 #: input:803 input:2640 input:2647 standard
@@ -6310,6 +6334,11 @@ msgid "There is a lot of marble here."
 msgstr "Zde je velké ložisko mramoru."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for an Amazon immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for an Atlantean immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for a Barbarian immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for an Empire immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for a Frisian immovable: Ship Under Construction
 #. TRANSLATORS: Helptext for an Amazon immovable: Ship Under Construction
 #. TRANSLATORS: Helptext for an Atlantean immovable: Ship Under Construction
 #. TRANSLATORS: Helptext for a Barbarian immovable: Ship Under Construction
@@ -7121,6 +7150,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Headquarters
 #. TRANSLATORS: Purpose helptext for an Empire warehouse: Headquarters
 #. TRANSLATORS: Purpose helptext for a Frisian warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for an Amazon warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for an Empire warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Headquarters
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1338 input:1338
 #: input:3891 input:3909 input:3928 input:3946 input:3964 standard
 msgctxt "europeans_building"
@@ -7129,6 +7163,11 @@ msgstr ""
 "Poskytuje ubytování tvým lidem a také skladuje tvé suroviny a nástroje."
 
 #. TRANSLATORS: Note helptext for an Europeans warehouse: Headquarters
+#. TRANSLATORS: Note helptext for an Amazon warehouse: Headquarters
+#. TRANSLATORS: Note helptext for an Atlantean warehouse: Headquarters
+#. TRANSLATORS: Note helptext for a Barbarian warehouse: Headquarters
+#. TRANSLATORS: Note helptext for an Empire warehouse: Headquarters
+#. TRANSLATORS: Note helptext for a Frisian warehouse: Headquarters
 #. TRANSLATORS: Note helptext for an Amazon warehouse: Headquarters
 #. TRANSLATORS: Note helptext for an Atlantean warehouse: Headquarters
 #. TRANSLATORS: Note helptext for a Barbarian warehouse: Headquarters
@@ -7146,6 +7185,11 @@ msgstr "Hlavní budova je tvou klíčovou budovou."
 #. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Port
 #. TRANSLATORS: Purpose helptext for an Empire warehouse: Port
 #. TRANSLATORS: Purpose helptext for a Frisian warehouse: Port
+#. TRANSLATORS: Purpose helptext for an Amazon warehouse: Port
+#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Port
+#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Port
+#. TRANSLATORS: Purpose helptext for an Empire warehouse: Port
+#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Port
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1347
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1354 input:1347
 #: input:1354 input:3900 input:3919 input:3937 input:3955 input:3973 standard
@@ -7158,6 +7202,11 @@ msgstr ""
 "nástroje a poskytuje přístřeší vojákům."
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Market
+#. TRANSLATORS: Purpose helptext for an Amazon market: Market
+#. TRANSLATORS: Purpose helptext for an Atlantean market: Market
+#. TRANSLATORS: Purpose helptext for a Barbarian market: Market
+#. TRANSLATORS: Purpose helptext for an Empire market: Market
+#. TRANSLATORS: Purpose helptext for a Frisian market: Market
 #. TRANSLATORS: Purpose helptext for an Amazon market: Market
 #. TRANSLATORS: Purpose helptext for an Atlantean market: Market
 #. TRANSLATORS: Purpose helptext for a Barbarian market: Market
@@ -7192,6 +7241,11 @@ msgctxt "europeans_building"
 msgid "Roads and trees along the shoreline block drawing water."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
@@ -8598,6 +8652,10 @@ msgstr "Kácí stromy ve svém okolí a zpracovává je na klády."
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1385
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1394
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1403
@@ -8644,6 +8702,9 @@ msgid ""
 "rubber."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
@@ -9585,6 +9646,9 @@ msgstr "Vysazuje stromy ve svém okolí."
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1446
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1455
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1464
@@ -9943,6 +10007,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1507
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1516
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1525 input:1507
@@ -9951,6 +10017,10 @@ msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr "Získává surovou žulu ze skal ve svém okolí."
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
@@ -11223,6 +11293,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1574
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1581
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1588
@@ -11235,6 +11307,8 @@ msgctxt "europeans_building"
 msgid "Draws water out of the deep."
 msgstr "Čerpá podzemní vodu."
 
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
@@ -12023,6 +12097,15 @@ msgstr ""
 #. TRANSLATORS: Note helptext for Europeans production site: Cocoa Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Corn Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Cotton Plantation
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Vineyard
+#. TRANSLATORS: Note helptext for Europeans production site: Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Blackroot Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Cotton Plantation
+#. TRANSLATORS: Note helptext for Europeans production site: Cocoa Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Corn Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Cotton Plantation
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1611
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1620
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1629 input:1611
@@ -12055,6 +12138,8 @@ msgid ""
 "The berry farm needs free space within the work area to plant the bushes."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
@@ -13959,6 +14044,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Rock Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Rock Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Stone Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Rock Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Rock Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1865
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1872
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1879
@@ -14740,6 +14832,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for Europeans production site: Coal Mine
@@ -15538,6 +15637,13 @@ msgstr "Doluje uhlí v horském terénu."
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1928
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1935
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1942
@@ -16327,6 +16433,13 @@ msgstr "Doluje železnou rudu v horském terénu."
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1963
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1970
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1977
@@ -16400,6 +16513,8 @@ msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Shipyard
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Shipyard
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
@@ -18153,6 +18268,37 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Frisian military site: Outpost
 #. TRANSLATORS: Purpose helptext for a Frisian military site: Tower
 #. TRANSLATORS: Purpose helptext for a Frisian military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Patrol Post
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Treetop Sentry
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Warriors’ Dwelling
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Tower
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Observation Tower
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Fortification
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhouse
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhall
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Small Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: High Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Castle
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Sentry
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Barrier
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Tower
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Fortress
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Empire military site: Blockhouse
+#. TRANSLATORS: Purpose helptext for an Empire military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Empire military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Empire military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Empire military site: Tower
+#. TRANSLATORS: Purpose helptext for an Empire military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Empire military site: Castle
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Wooden Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: High Wooden Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Sentinel
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Outpost
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Fortress
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2100
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2109
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2118
@@ -19408,6 +19554,30 @@ msgstr "Obsazením budovy svou posádkou rozšiřuješ svá území."
 #. TRANSLATORS: Note helptext for an Europeans military site: Tower
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
 #. TRANSLATORS: Note helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Note helptext for an Atlantean military site: Guardhouse
+#. TRANSLATORS: Note helptext for an Atlantean military site: Guardhall
+#. TRANSLATORS: Note helptext for an Atlantean military site: Small Tower
+#. TRANSLATORS: Note helptext for an Atlantean military site: Tower
+#. TRANSLATORS: Note helptext for an Atlantean military site: High Tower
+#. TRANSLATORS: Note helptext for an Atlantean military site: Castle
+#. TRANSLATORS: Note helptext for a Barbarian military site: Sentry
+#. TRANSLATORS: Note helptext for a Barbarian military site: Barrier
+#. TRANSLATORS: Note helptext for a Barbarian military site: Tower
+#. TRANSLATORS: Note helptext for a Barbarian military site: Fortress
+#. TRANSLATORS: Note helptext for a Barbarian military site: Citadel
+#. TRANSLATORS: Note helptext for an Empire military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Empire military site: Sentry
+#. TRANSLATORS: Note helptext for an Empire military site: Outpost
+#. TRANSLATORS: Note helptext for an Empire military site: Barrier
+#. TRANSLATORS: Note helptext for an Empire military site: Tower
+#. TRANSLATORS: Note helptext for an Empire military site: Fortress
+#. TRANSLATORS: Note helptext for an Empire military site: Castle
+#. TRANSLATORS: Note helptext for a Frisian military site: Wooden Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: High Wooden Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: Sentinel
+#. TRANSLATORS: Note helptext for a Frisian military site: Outpost
+#. TRANSLATORS: Note helptext for a Frisian military site: Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: Fortress
 #. TRANSLATORS: Note helptext for an Atlantean military site: Guardhouse
 #. TRANSLATORS: Note helptext for an Atlantean military site: Guardhall
 #. TRANSLATORS: Note helptext for an Atlantean military site: Small Tower
@@ -21099,7 +21269,7 @@ msgstr ""
 #: input:8 standard
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr ""
+msgstr "Ječná mouka"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
@@ -21111,37 +21281,37 @@ msgstr ""
 #: input:8 standard
 msgctxt "ware"
 msgid "Oat"
-msgstr ""
+msgstr "Oves"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr ""
+msgstr "Ovesné pole (sklizené)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr ""
+msgstr "Ovesné pole (vzrostlé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr ""
+msgstr "Ovesné pole (zralé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr ""
+msgstr "Ovesné pole (malé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr ""
+msgstr "Ovesné pole (oseté)"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: input:8 standard
@@ -21171,43 +21341,43 @@ msgstr ""
 #: input:8 standard
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Žito"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Žitné pole (sklizené)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Žitné pole (vzrostlé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "Žitné pole (zralé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Žitné pole (malé)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Žitné pole (oseté)"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: input:8 standard
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr ""
+msgstr "Žitná mouka"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: input:8 standard
@@ -21219,7 +21389,7 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Advanced Mill"
-msgstr ""
+msgstr "Pokročilý mlýn"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21291,25 +21461,25 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Battle Arena"
-msgstr ""
+msgstr "Jednoduchá bojová aréna"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Brewery"
-msgstr ""
+msgstr "Jednoduchý pivovar"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Ferry Yard"
-msgstr ""
+msgstr "Jednoduché převoznictví"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Fisher’s Hut"
-msgstr ""
+msgstr "Jednoduchá rybářská chata"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21321,19 +21491,19 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Hunter’s Hut"
-msgstr ""
+msgstr "Jednoduchá lovecká chata"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Inn"
-msgstr ""
+msgstr "Jednoduchý hostinec"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Mill"
-msgstr ""
+msgstr "Jednoduchý mlýn"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21351,13 +21521,13 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Shipyard"
-msgstr ""
+msgstr "Jednoduchá loděnice"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Basic Tavern"
-msgstr ""
+msgstr "Jednoduchá hospoda"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21369,25 +21539,25 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Battle Arena Level 1"
-msgstr ""
+msgstr "Bojová aréna úrovně 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Battle Arena Level 2"
-msgstr ""
+msgstr "Bojová aréna úrovně 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Battle Arena Level 3"
-msgstr ""
+msgstr "Bojová aréna úrovně 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Battle Arena Level 4"
-msgstr ""
+msgstr "Bojová aréna úrovně 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21513,7 +21683,7 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Coal Mine Level 5"
-msgstr ""
+msgstr "Důl na uhlí úrovně 5"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21633,7 +21803,7 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Gold Mine Level 5"
-msgstr ""
+msgstr "Důl na zlato úrovně 5"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21723,13 +21893,13 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Inn Level 1"
-msgstr ""
+msgstr "Hostinec úrovně 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Inn Level 2"
-msgstr ""
+msgstr "Hostinec úrovně 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21741,7 +21911,7 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Iron Mine Level 5"
-msgstr ""
+msgstr "Důl na železo úrovně 5"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21891,19 +22061,19 @@ msgstr ""
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Tavern Level 1"
-msgstr ""
+msgstr "Hospoda úrovně 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Tavern Level 2"
-msgstr ""
+msgstr "Hospoda úrovně 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "europeans_building"
 msgid "Tavern Level 3"
-msgstr ""
+msgstr "Hospoda úrovně 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -22226,7 +22396,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: input:45 input:47 input:49 input:50 input:69 standard
 msgid "hunting"
-msgstr ""
+msgstr "lovení"
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:46 standard
@@ -22267,7 +22437,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: input:46 input:48 input:50 input:62 input:65 input:86 standard
 msgid "fishing"
-msgstr ""
+msgstr "rybaření"
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:47 standard
@@ -22338,7 +22508,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
 #: input:48 input:67 standard
 msgid "enhancing the fertility of land"
-msgstr ""
+msgstr "zvyšování úrodnosti půdy"
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:49 standard
@@ -22415,7 +22585,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start spinning gold because ...
 #: input:51 standard
 msgid "spinning gold"
-msgstr ""
+msgstr "předení zlata"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:52 standard
@@ -22450,7 +22620,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
 #: input:52 standard
 msgid "planting blackroot"
-msgstr ""
+msgstr "setí rozrazilu"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:53 standard
@@ -22467,12 +22637,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting cassava because ...
 #: input:53 standard
 msgid "planting cassava"
-msgstr ""
+msgstr "sázení manioku"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
 #: input:53 standard
 msgid "planting corn"
-msgstr ""
+msgstr "setí kukuřice"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: input:53 standard
@@ -22625,11 +22795,11 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: input:58 input:62 standard
 msgid "planting reed"
-msgstr ""
+msgstr "vysazování rákosu"
 
 #: input:59 input:61 input:63 input:65 input:83 standard
 msgid "No Game"
-msgstr ""
+msgstr "Žádná zvěř"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:59 standard
@@ -22657,7 +22827,7 @@ msgstr ""
 
 #: input:60 input:62 input:64 input:76 input:79 standard
 msgid "No Fish"
-msgstr ""
+msgstr "Žádné ryby"
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:60 standard
@@ -22710,7 +22880,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
 #: input:60 standard
 msgid "harvesting blackroot"
-msgstr ""
+msgstr "sklízení rozrazilu"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: input:60 input:71 standard
@@ -22720,12 +22890,12 @@ msgstr ""
 
 #: input:61 input:63 input:65 input:77 input:80 standard
 msgid "Out of Fish"
-msgstr ""
+msgstr "Došly ryby"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: input:61 input:63 input:65 input:67 input:85 standard
 msgid "Out of Game"
-msgstr ""
+msgstr "Došla zvěř"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:61 standard
@@ -22748,12 +22918,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cassava because ...
 #: input:61 standard
 msgid "harvesting cassava"
-msgstr ""
+msgstr "sklízení manioku"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: input:61 standard
 msgid "harvesting corn"
-msgstr ""
+msgstr "sklízení kukuřice"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: input:61 standard
@@ -22763,7 +22933,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: input:61 input:109 standard
 msgid "planting rye"
-msgstr ""
+msgstr "setí žita"
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:62 standard
@@ -22952,12 +23122,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: input:68 input:70 standard
 msgid "harvesting reed"
-msgstr ""
+msgstr "sklízení rákosu"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grapevines because ...
 #: input:68 standard
 msgid "planting grapevines"
-msgstr ""
+msgstr "vysazování révy"
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:69 standard
@@ -22974,22 +23144,22 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: input:69 input:117 standard
 msgid "harvesting rye"
-msgstr ""
+msgstr "sklízení žita"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: input:69 input:74 input:81 input:83 input:86 input:94 input:95 input:100
 #: input:108 standard
 msgid "smelting gold"
-msgstr ""
+msgstr "slévání zlata"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
 #: input:70 input:75 input:91 input:130 input:169 standard
 msgid "preparing a meal"
-msgstr ""
+msgstr "připravování jídla"
 
 #: input:71 standard
 msgid "No Flowers"
-msgstr ""
+msgstr "Žádné květy"
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:71 standard
@@ -23006,34 +23176,34 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: input:71 input:73 input:87 input:91 input:96 standard
 msgid "constructing a ship"
-msgstr ""
+msgstr "stavění lodě"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
 #: input:71 standard
 msgid "planting barley"
-msgstr ""
+msgstr "setí ječmene"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
 #: input:71 input:72 input:83 input:84 input:85 input:86 input:88 input:104
 #: input:111 input:137 input:143 input:182 standard
 msgid "preparing a ration"
-msgstr ""
+msgstr "chystání malé svačiny"
 
 #: input:72 standard
 msgid "Out of Flowers"
-msgstr ""
+msgstr "Došly květy"
 
 #: input:72 standard
 msgctxt "europeans_building"
 msgid ""
 "The blackroot farmer working at this blackroot farm has no cleared soil to "
 "plant his seeds."
-msgstr ""
+msgstr "Pěstitel rozrazilu nemůže sázet rozrazil, protože nemá kam sázet."
 
 #. TRANSLATORS: Completed/Skipped/Did not start making clay because ...
 #: input:72 standard
 msgid "making clay"
-msgstr ""
+msgstr "mísení cihlářské hlíny"
 
 #: input:73 standard
 msgctxt "europeans_building"
@@ -23066,7 +23236,7 @@ msgstr ""
 #: input:73 input:98 input:108 input:150 standard
 msgctxt "europeans_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
-msgstr ""
+msgstr "Sedlák pracující na tomto statku nemá žádnou volnou půdu pro osev."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:74 standard
@@ -23077,7 +23247,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish because ...
 #: input:74 standard
 msgid "breeding fish"
-msgstr ""
+msgstr "chování ryb"
 
 #: input:75 standard
 msgctxt "europeans_building"
@@ -23114,7 +23284,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grapevines because ...
 #: input:76 standard
 msgid "harvesting grapes"
-msgstr ""
+msgstr "sklízení hroznů"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: input:77 input:80 input:93 standard
@@ -23143,12 +23313,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
 #: input:78 input:86 input:128 standard
 msgid "planting wheat"
-msgstr ""
+msgstr "setí pšenice"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
 #: input:79 standard
 msgid "harvesting barley"
-msgstr ""
+msgstr "sklízení ječmene"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:80 standard
@@ -23165,7 +23335,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: input:80 standard
 msgid "grinding barley"
-msgstr ""
+msgstr "mletí ječmene"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: input:81 standard
@@ -23187,7 +23357,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start grinding blackroot because ...
 #: input:82 input:98 standard
 msgid "grinding blackroot"
-msgstr ""
+msgstr "mletí rozrazilu"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:84 standard
@@ -23204,16 +23374,16 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: input:86 input:95 input:136 standard
 msgid "harvesting wheat"
-msgstr ""
+msgstr "sklízení pšenice"
 
 #. TRANSLATORS: Short for "No Level Ground" for clay pits
 #: input:88 standard
 msgid "No Ground"
-msgstr ""
+msgstr "Došlo místo"
 
 #: input:89 standard
 msgid "No Level Ground"
-msgstr ""
+msgstr "Žádný vhodný terén"
 
 #: input:90 standard
 msgctxt "europeans_building"
@@ -23237,7 +23407,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: input:90 standard
 msgid "planting oat"
-msgstr ""
+msgstr "setí ovsa"
 
 #: input:91 input:93 input:96 input:100 input:107 standard
 msgctxt "europeans_building"
@@ -23261,6 +23431,8 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Klády jsou důležitým základním stavebním materiálem. Získávají se těžbou "
+"stromů."
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: input:95 standard
@@ -23281,17 +23453,17 @@ msgstr ""
 #: input:96 input:98 input:101 input:117 input:124 input:150 input:156
 #: input:195 standard
 msgid "preparing a snack"
-msgstr ""
+msgstr "chystání svačiny"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding corn because ...
 #: input:97 input:117 standard
 msgid "grinding corn"
-msgstr ""
+msgstr "mletí kukuřice"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: input:98 standard
 msgid "harvesting oat"
-msgstr ""
+msgstr "sklízení ovsa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing chocolate because ...
 #: input:100 input:103 input:106 input:119 standard
@@ -23311,7 +23483,7 @@ msgstr ""
 #: input:107 standard
 msgctxt "ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Prkna jsou důležitým stavebním materiálem."
 
 #: input:107 standard
 msgctxt "europeans_building"
@@ -23374,7 +23546,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: input:120 standard
 msgid "tailoring an armor"
-msgstr ""
+msgstr "šití zbroje"
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Blackwood
 #: input:121 standard
@@ -23392,7 +23564,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging an ax because ...
 #: input:125 standard
 msgid "forging an ax"
-msgstr ""
+msgstr "kování sekery"
 
 #: input:126 input:128 input:133 input:135 input:136 input:138 input:143
 #: standard
@@ -23422,7 +23594,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
 #: input:133 input:140 standard
 msgid "making a basket"
-msgstr ""
+msgstr "vyrábění koše"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding oat because ...
 #: input:135 standard
@@ -23465,12 +23637,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
 #: input:153 standard
 msgid "making a bread paddle"
-msgstr ""
+msgstr "vyrábění lopaty na chléb"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: input:154 standard
 msgid "grinding rye"
-msgstr ""
+msgstr "mletí žita"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a chisel because ...
 #: input:157 standard
@@ -23488,17 +23660,17 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
 #: input:166 standard
 msgid "making a pair of buckets"
-msgstr ""
+msgstr "vyrábění kýblů"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
 #: input:169 input:179 standard
 msgid "making a felling ax"
-msgstr ""
+msgstr "vyrábění dřevorubecké sekery"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding wheat because ...
 #: input:172 standard
 msgid "grinding wheat"
-msgstr ""
+msgstr "mletí pšenice"
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Reed
 #: input:179 standard
@@ -23522,12 +23694,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: input:192 standard
 msgid "making fire tongs"
-msgstr ""
+msgstr "vyrábění kovářských kleští"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
 #: input:193 input:205 standard
 msgid "making a fishing net"
-msgstr ""
+msgstr "vyrábění rybářské sítě"
 
 #. TRANSLATORS: Helptext for an Amazon ware: Rope
 #: input:200 standard
@@ -23540,7 +23712,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a fishing rod because ...
 #: input:205 standard
 msgid "making a fishing rod"
-msgstr ""
+msgstr "vyrábění rybářského prutu"
 
 #. TRANSLATORS: Helptext for an Amazons ware: Cotton, part 1
 #: input:211 standard
@@ -23557,12 +23729,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
 #: input:218 input:230 standard
 msgid "making a hammer"
-msgstr ""
+msgstr "vyrábění kladiva"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: input:218 standard
 msgid "sewing fur garment"
-msgstr ""
+msgstr "šití kožešinového oděvu"
 
 #. TRANSLATORS: Helptext for an Empire ware: Wool
 #: input:223 standard
@@ -23573,7 +23745,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
 #: input:231 standard
 msgid "forging a helmet"
-msgstr ""
+msgstr "kování přilby"
 
 #. TRANSLATORS: Helptext for a Frisian ware: Fur
 #: input:232 standard
@@ -23592,12 +23764,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a hunting bow because ...
 #: input:242 standard
 msgid "making a hunting bow"
-msgstr ""
+msgstr "vyrábění loveckého luku"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
 #: input:244 standard
 msgid "making a hook pole"
-msgstr ""
+msgstr "vyrábění uzenářského háku"
 
 #. TRANSLATORS: Helptext for an Frisian ware: Leather
 #: input:250 standard
@@ -23610,12 +23782,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
 #: input:255 input:270 standard
 msgid "making kitchen tools"
-msgstr ""
+msgstr "vyrábění kuchyňského náčiní"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hunting spear because ...
 #: input:257 standard
 msgid "making a hunting spear"
-msgstr ""
+msgstr "vyrábění loveckého oštěpu"
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Cloth
 #: input:259 standard
@@ -23631,17 +23803,17 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making needles because ...
 #: input:279 input:296 standard
 msgid "making needles"
-msgstr ""
+msgstr "vyrábění jehlic"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
 #: input:283 standard
 msgid "making milking tongs"
-msgstr ""
+msgstr "vyrábění pavoučích kleští"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
 #: input:291 input:308 standard
 msgid "making a pick"
-msgstr ""
+msgstr "vyrábění krumpáče"
 
 #. TRANSLATORS: Helptext for an Empire ware: Water, part 2
 #: input:292 standard
@@ -23662,7 +23834,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
 #: input:303 input:359 standard
 msgid "making a shovel"
-msgstr ""
+msgstr "vyrábění lopaty"
 
 #. TRANSLATORS: Helptext for an Amazon ware: Cocoa Beans
 #: input:312 standard
@@ -23680,7 +23852,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
 #: input:321 standard
 msgid "making a saw"
-msgstr ""
+msgstr "vyrábění pily"
 
 #. TRANSLATORS: Helptext for a Frisian ware: Honey
 #: input:322 standard
@@ -23693,7 +23865,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
 #: input:327 standard
 msgid "tailoring a tabard"
-msgstr ""
+msgstr "šití tabardu"
 
 #. TRANSLATORS: Helptext for an Empire ware: Grape
 #: input:331 standard
@@ -23706,18 +23878,18 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
 #: input:334 standard
 msgid "making a scythe"
-msgstr ""
+msgstr "vyrábění kosy"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing a tunic because ...
 #: input:340 standard
 msgid "sewing a tunic"
-msgstr ""
+msgstr "šití haleny"
 
 #. TRANSLATORS: Helptext for an Empire ware: Wheat, part 1
 #: input:341 standard
 msgctxt "ware"
 msgid "Wheat is essential for survival."
-msgstr ""
+msgstr "Pšenice je nezbytná k přežití."
 
 #. TRANSLATORS: Helptext for an Empire ware: Wheat, part 2
 #: input:343 standard
@@ -23730,7 +23902,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: input:347 standard
 msgid "forging a steel shield"
-msgstr ""
+msgstr "kování ocelového štítu"
 
 #. TRANSLATORS: Helptext for an Empire ware: rye, part 1
 #: input:354 standard
@@ -23758,7 +23930,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a spear because ...
 #: input:372 standard
 msgid "forging a spear"
-msgstr ""
+msgstr "vyrábění oštěpu"
 
 #. TRANSLATORS: Helptext for an Atlantean ware: Blackroot
 #: input:375 standard
@@ -23903,6 +24075,7 @@ msgid ""
 "Meat contains a lot of energy, and it is obtained from wild game taken by "
 "hunters."
 msgstr ""
+"Maso je velmi vydatnou potravinou a získává ho lovec lovem divoké zvěře."
 
 #. TRANSLATORS: Helptext for an Empire ware: Meat, part 2
 #: input:532 standard
@@ -23920,6 +24093,8 @@ msgid ""
 "A small bite to keep miners strong and working. The scout also consumes "
 "rations on his scouting trips."
 msgstr ""
+"Malé sousto, které udrží pracující horníky při síle. Průzkumník také "
+"potřebuje malé svačiny, aby se mohl vydávat na průzkum."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Ration, part 2
 #: input:545 standard
@@ -23957,7 +24132,7 @@ msgstr ""
 #: input:590 standard
 msgctxt "ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "Žula je základním stavebním materiálem."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Granite, part 2
 #: input:592 standard
@@ -24027,7 +24202,7 @@ msgstr ""
 #: input:669 standard
 msgctxt "default_ware"
 msgid "Iron ore is mined in iron mines."
-msgstr ""
+msgstr "Železná ruda se těží v železorudných dolech."
 
 #. TRANSLATORS: Helptext for an Empire ware: Iron Ore, part 2
 #: input:671 standard
@@ -24035,6 +24210,8 @@ msgctxt "empire_ware"
 msgid "It is smelted in a smelting works to retrieve the iron."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Frisian ware: Scrap Iron
+#. TRANSLATORS: Helptext for a Frisian ware: Scrap metal (mixed)
 #. TRANSLATORS: Helptext for a Frisian ware: Scrap Iron
 #. TRANSLATORS: Helptext for a Frisian ware: Scrap metal (mixed)
 #: input:681 input:729 standard
@@ -24062,7 +24239,7 @@ msgstr ""
 #: input:704 standard
 msgctxt "ware"
 msgid "Gold ore is mined in a gold mine."
-msgstr ""
+msgstr "Zlatá ruda se těží v zlatém dole."
 
 #. TRANSLATORS: Helptext for an Empire ware: Gold Ore, part 2
 #: input:706 standard
@@ -24091,7 +24268,7 @@ msgstr ""
 msgctxt "ware"
 msgid ""
 "Gold is the most valuable of all metals, and it is smelted out of gold ore."
-msgstr ""
+msgstr "Zlato je nejcennějším kovem a slévá se z tavené zlaté rudy."
 
 #. TRANSLATORS: Helptext for an Empire ware: Gold, part 2
 #: input:741 standard
@@ -24113,7 +24290,7 @@ msgstr ""
 #: input:797 standard
 msgctxt "ware"
 msgid "The felling ax is the tool to chop down trees."
-msgstr ""
+msgstr "Dřevorubecká sekera je nástroj na kácení stromů."
 
 #. TRANSLATORS: Helptext for an Empire ware: Felling Ax, part 2
 #: input:799 standard
@@ -24144,7 +24321,7 @@ msgstr ""
 #: input:839 standard
 msgctxt "ware"
 msgid "Shovels are needed for the proper handling of plants."
-msgstr ""
+msgstr "Lopaty jsou potřeba pro správné pěstování rostlin."
 
 #. TRANSLATORS: Helptext for an Empire ware: Shovel, part 2
 #: input:841 standard
@@ -24158,7 +24335,7 @@ msgstr ""
 #: input:852 standard
 msgctxt "ware"
 msgid "The scythe is the tool of the farmers."
-msgstr ""
+msgstr "Kosa je nástrojem sedláků."
 
 #. TRANSLATORS: Helptext for an Empire ware: Scythe, part 2
 #: input:854 standard
@@ -24178,7 +24355,7 @@ msgstr ""
 #: input:874 standard
 msgctxt "ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Kovářské kleště jsou nástrojem používaným při tavení rudy."
 
 #. TRANSLATORS: Helptext for an Empire ware: Fire Tongs, part 2
 #: input:876 standard
@@ -24190,7 +24367,7 @@ msgstr ""
 #: input:887 standard
 msgctxt "ware"
 msgid "The hammer is an essential tool."
-msgstr ""
+msgstr "Kladivo je nepostradatelným nástrojem."
 
 #. TRANSLATORS: Helptext for an Empire ware: Hammer, part 2
 #: input:889 standard
@@ -24240,7 +24417,7 @@ msgstr ""
 #: input:945 standard
 msgctxt "ware"
 msgid "Fishing rods are needed by fishers to catch fish."
-msgstr ""
+msgstr "Rybářské pruty potřebují rybáři na chytání ryb."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Fishing Rod, part 2
 #: input:947 standard
@@ -24271,6 +24448,8 @@ msgid ""
 "This spear is light enough to be thrown, but heavy enough to kill any animal "
 "in one blow. It is only used by hunters."
 msgstr ""
+"Tento oštěp je dost lehký na to, aby se jím dalo házet, a přesto dost těžký "
+"na to, aby zabil jakékoli zvíře jednou ranou. Používají ho pouze lovci."
 
 #. TRANSLATORS: Helptext for an Empire ware: Hunting Spear, part 2
 #: input:978 standard
@@ -24291,6 +24470,8 @@ msgstr ""
 msgctxt "ware"
 msgid "The bread paddle is the tool of the baker, each baker needs one."
 msgstr ""
+"Lopata na chléb je nástrojem pekařů a pekařek, žádný z nich se bez ní "
+"neobejde."
 
 #. TRANSLATORS: Helptext for an Empire ware: Bread Paddle, part 2
 #: input:1000 standard
@@ -25096,6 +25277,9 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Barbarian worker: Miner
 #. TRANSLATORS: Helptext for a Barbarian worker: Chief Miner
 #. TRANSLATORS: Helptext for a Barbarian worker: Master Miner
+#. TRANSLATORS: Helptext for a Barbarian worker: Miner
+#. TRANSLATORS: Helptext for a Barbarian worker: Chief Miner
+#. TRANSLATORS: Helptext for a Barbarian worker: Master Miner
 #: input:2185 input:2194 input:2203 standard
 msgctxt "barbarians_worker"
 msgid "Works deep in the mines to obtain coal, iron, gold or granite."
@@ -25109,11 +25293,15 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Empire worker: Miner
 #. TRANSLATORS: Helptext for an Empire worker: Master Miner
+#. TRANSLATORS: Helptext for an Empire worker: Miner
+#. TRANSLATORS: Helptext for an Empire worker: Master Miner
 #: input:2221 input:2230 standard
 msgctxt "empire_worker"
 msgid "Works deep in the mines to obtain coal, iron, gold or marble."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Frisian worker: Miner
+#. TRANSLATORS: Helptext for a Frisian worker: Master Miner
 #. TRANSLATORS: Helptext for a Frisian worker: Miner
 #. TRANSLATORS: Helptext for a Frisian worker: Master Miner
 #: input:2239 input:2248 standard
@@ -25241,6 +25429,8 @@ msgctxt "frisians_worker"
 msgid "Sews armor out of fur garments and metal."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Barbarian worker: Blacksmith
+#. TRANSLATORS: Helptext for a Barbarian worker: Master Blacksmith
 #. TRANSLATORS: Helptext for a Barbarian worker: Blacksmith
 #. TRANSLATORS: Helptext for a Barbarian worker: Master Blacksmith
 #: input:2446 input:2455 standard
@@ -25372,12 +25562,12 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Amazon immovable: Balsa Tree Sapling
 #: input:2670 input:2698 input:2726 input:2754 standard
 msgid "This balsa tree has just been planted."
-msgstr ""
+msgstr "Toto je právě vysazený balzovník."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Balsa Tree Pole
 #: input:2677 input:2705 input:2733 input:2761 standard
 msgid "This balsa tree is growing."
-msgstr ""
+msgstr "Tento balzovník roste."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Balsa Tree Mature
 #: input:2684 input:2712 input:2740 input:2768 standard
@@ -25396,8 +25586,16 @@ msgstr ""
 #: input:2992 input:3020 standard
 msgid ""
 "This berry bush is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Tento ovocný keř již kvete. Včelař tu může zajistit získání medu."
 
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cotton Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: corn field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
+#. TRANSLATORS: Helptext for an Empire immovable: Rye field
+#. TRANSLATORS: Helptext for an Empire immovable: Wheat field
 #. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
 #. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
 #. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
@@ -25409,8 +25607,16 @@ msgstr ""
 #: input:3034 input:3069 input:3104 input:3139 input:3195 input:3370 input:3587
 #: input:3622 standard
 msgid "This field has just been planted."
-msgstr ""
+msgstr "Toto je právě oseté pole."
 
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cotton Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: corn field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
+#. TRANSLATORS: Helptext for an Empire immovable: Rye field
+#. TRANSLATORS: Helptext for an Empire immovable: Wheat field
 #. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
 #. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
 #. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
@@ -25423,8 +25629,10 @@ msgstr ""
 #: input:3202 input:3209 input:3377 input:3594 input:3601 input:3629 input:3636
 #: standard
 msgid "This field is growing."
-msgstr ""
+msgstr "Toto je rostoucí pole."
 
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
 #. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
 #. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
 #: input:3048 input:3384 standard
@@ -25439,11 +25647,26 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
 #. TRANSLATORS: Helptext for an Empire immovable: Rye field
 #. TRANSLATORS: Helptext for an Empire immovable: Wheat field
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cotton Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: corn field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
+#. TRANSLATORS: Helptext for an Empire immovable: Rye field
+#. TRANSLATORS: Helptext for an Empire immovable: Wheat field
 #: input:3055 input:3090 input:3125 input:3160 input:3216 input:3391 input:3608
 #: input:3643 standard
 msgid "This field is ready for harvesting."
-msgstr ""
+msgstr "Toto pole je připraveno ke sklizni."
 
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: corn field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
+#. TRANSLATORS: Helptext for an Empire immovable: Rye field
+#. TRANSLATORS: Helptext for an Empire immovable: Wheat field
 #. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
 #. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
 #. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
@@ -25454,7 +25677,7 @@ msgstr ""
 #: input:3062 input:3097 input:3132 input:3223 input:3398 input:3615 input:3650
 #: standard
 msgid "This field has been harvested."
-msgstr ""
+msgstr "Toto pole bylo sklizeno."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Cocoa Tree Sapling
 #: input:3167 standard
@@ -25479,12 +25702,12 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Amazon immovable: Ironwood Tree Sapling
 #: input:3258 input:3286 input:3314 input:3342 standard
 msgid "This ironwood tree has just been planted."
-msgstr ""
+msgstr "Toto je právě vysazený železodřevný strom."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Ironwood Tree Pole
 #: input:3265 input:3293 input:3321 input:3349 standard
 msgid "This ironwood tree is growing."
-msgstr ""
+msgstr "Tento železodřevný strom roste."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Ironwood Tree Mature
 #: input:3272 input:3300 input:3328 input:3356 standard
@@ -25505,6 +25728,9 @@ msgid ""
 "vanish after a while. Aqua farms can use them as ponds to grow fish in them, "
 "whereas charcoal burners erect their charcoal stacks in them."
 msgstr ""
+"Když kopáči hlíny těží, zanechávají za sebou jámy v zemi. Tyto jámy po "
+"nějakém čase zmizí. Rybí sádka mohou tyto jámy využívat jako rybníčky na "
+"chov ryb, zatímco uhlíři v nich budují své milíře."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: input:3412 standard
@@ -25512,6 +25738,8 @@ msgid ""
 "Fish are maturing in this pond. A fisher working from an aqua farm will be "
 "able to catch them when they are bigger."
 msgstr ""
+"V tomto rybníčku dospívají ryby. Až dorostou, bude je rybář pracující na "
+"rybí sádce moci vylovit."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: input:3419 standard
@@ -25519,6 +25747,8 @@ msgid ""
 "Fish are living in this pond. A fisher working from an aqua farm can catch "
 "them as food."
 msgstr ""
+"V tomto rybníčku již plavou ryby. Rybář pracující na rybí sádce je může "
+"chytit, aby mohly posloužit jako jídlo."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: input:3426 standard
@@ -25526,23 +25756,25 @@ msgid ""
 "A charcoal stack is burning in this earthen hole. When it has burnt down, a "
 "charcoal burner will be able to gather coal from it."
 msgstr ""
+"V této jámě je dýmající milíř. Až nastane správný čas uhlíř z něj bude moci "
+"získat uhlí."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: input:3433 standard
 msgid ""
 "A charcoal stack, which had been erected in this earthen hole, is ready for "
 "a charcoal burner to gather coal from it."
-msgstr ""
+msgstr "Milíř, který byl postaven v této jámě, je připraven na sběr uhlí."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Sapling
 #: input:3475 input:3503 input:3531 input:3559 standard
 msgid "This rubber tree has just been planted."
-msgstr ""
+msgstr "Toto je právě vysazený kaučukovník."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
 #: input:3482 input:3510 input:3538 input:3566 standard
 msgid "This rubber tree is growing."
-msgstr ""
+msgstr "Tento kaučukovník roste."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
 #: input:3489 input:3517 input:3545 input:3573 standard
@@ -25580,12 +25812,19 @@ msgstr ""
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #: input:3858 input:3865 input:3872 input:3879 standard
 msgid ""
 "This tree is only planted by the european and amazon tribes but can be "
 "harvested for rubber."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for an Amazon warehouse: Port
+#. TRANSLATORS: Note helptext for an Atlantean warehouse: Port
+#. TRANSLATORS: Note helptext for an Barbarian warehouse: Port
+#. TRANSLATORS: Note helptext for an Empire warehouse: Port
+#. TRANSLATORS: Note helptext for a Frisian warehouse: Port
 #. TRANSLATORS: Note helptext for an Amazon warehouse: Port
 #. TRANSLATORS: Note helptext for an Atlantean warehouse: Port
 #. TRANSLATORS: Note helptext for an Barbarian warehouse: Port
@@ -25609,6 +25848,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
 #: input:4243 input:4252 input:4261 input:4270 input:4279 standard
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat and leather."
@@ -25617,11 +25859,17 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
 #: input:4245 input:4254 input:4263 input:4272 input:4281 standard
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
-msgstr ""
+msgstr "Lovecká chata potřebuje ve svém okolí zvěř."
 
+#. TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Fishers House
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers House
@@ -25633,11 +25881,19 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 1
 #: input:4291 input:4304 input:4317 input:4330 input:4343 standard
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
 msgstr ""
+"Domek rybáře potřebuje ve své pracovní oblasti vodní plochu, ve které jsou "
+"ryby."
 
+#. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 2
+#. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 2
+#. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 2
@@ -25665,6 +25921,8 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Keeps bees and lets them swarm over flowering fields to produce honey."
 msgstr ""
+"Chová včely a zajišťuje, aby se rojily v místech kvetoucích polí a "
+"produkovaly med."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Beekeeper's House
 #: input:4364 standard
@@ -25698,6 +25956,8 @@ msgctxt "europeans_building"
 msgid "Smelts iron ore into iron and gold dust into gold."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
 #: input:4523 input:4530 input:4537 standard
@@ -25768,6 +26028,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Food Preserver
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Food Preserver
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
 #: input:4614 input:4621 input:4628 standard
 msgctxt "europeans_building"
 msgid "Prepares rations to feed the scouts and miners."
@@ -25789,10 +26051,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Big Inn
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Inn
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Drinking Hall
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Big Inn
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Inn
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Drinking Hall
 #: input:4649 input:4656 input:4663 standard
 msgctxt "europeans_building"
 msgid "Prepares rations, snacks and meals to feed all miners."
-msgstr ""
+msgstr "Připravuje malé svačiny, svačiny a jídlo pro všechny horníky."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Farm
 #: input:4671 standard
@@ -25830,6 +26095,8 @@ msgctxt "europeans_building"
 msgid "Sows and harvests cocoa beans."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for Europeans production site: Corn Farm
+#. TRANSLATORS: Purpose helptext for Europeans production site: Cotton Plantation
 #. TRANSLATORS: Purpose helptext for Europeans production site: Corn Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Cotton Plantation
 #: input:4725 input:4734 standard
@@ -25903,6 +26170,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's House
 #: input:5123 input:5132 input:5141 input:5159 standard
 msgctxt "europeans_building"
 msgid "Explores unknown territory."
@@ -25925,11 +26196,16 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Ferry Yard
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ferry Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Ferry Yard
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Ferry Yard
 #: input:5167 input:5180 input:5193 input:5206 input:5219 standard
 msgctxt "europeans_building"
 msgid "Builds ferries."
-msgstr ""
+msgstr "Staví přívozy."
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 1
@@ -25943,12 +26219,19 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
+#. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 2
+#. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard, part 2
+#. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 2
+#. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
 #: input:5172 input:5185 input:5198 input:5211 input:5224 input:5237 input:5250
 #: input:5263 input:5276 input:5289 standard
 msgctxt "europeans_building"
 msgid "Roads and trees along the shoreline block access to water."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 1
@@ -25968,11 +26251,19 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans training site: Barracks
 #. TRANSLATORS: Note helptext for a Europeans training site: Initiation Site
 #. TRANSLATORS: Note helptext for a Europeans training site: Barracks
+#. TRANSLATORS: Note helptext for a Europeans training site: Initiation Site
+#. TRANSLATORS: Note helptext for a Europeans training site: Barracks
 #: input:5309 input:5316 input:5323 input:5330 input:5337 standard
 msgctxt "europeans_building"
 msgid "Improves the health of soldiers through healers, in exchange for money."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
+#. TRANSLATORS: Note helptext for a Europeans training site: Training Glade
+#. TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
+#. TRANSLATORS: Note helptext for a Europeans training site: Arena
+#. TRANSLATORS: Note helptext for a Europeans training site: Colosseum
+#. TRANSLATORS: Note helptext for a Europeans training site: Training Arena
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
 #. TRANSLATORS: Note helptext for a Europeans training site: Training Glade
 #. TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
@@ -25991,12 +26282,23 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans training site: Dungeon
 #. TRANSLATORS: Note helptext for a Europeans training site: Trainingcamp
 #. TRANSLATORS: Note helptext for a Europeans training site: Training Camp
+#. TRANSLATORS: Note helptext for a Europeans training site: Trainingcamp
+#. TRANSLATORS: Note helptext for a Europeans training site: Warriors Gathering
+#. TRANSLATORS: Note helptext for a Europeans training site: Dungeon
+#. TRANSLATORS: Note helptext for a Europeans training site: Trainingcamp
+#. TRANSLATORS: Note helptext for a Europeans training site: Training Camp
 #: input:5386 input:5393 input:5400 input:5407 input:5414 standard
 msgctxt "europeans_building"
 msgid ""
 "An instructor improves soldiers' handling of weapons in exchange for payment."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for an Amazon military site: Patrol Post
+#. TRANSLATORS: Note helptext for an Amazon military site: Warriors’ Dwelling
+#. TRANSLATORS: Note helptext for an Amazon military site: Tower
+#. TRANSLATORS: Note helptext for an Amazon military site: Observation Tower
+#. TRANSLATORS: Note helptext for an Amazon military site: Fortress
+#. TRANSLATORS: Note helptext for an Amazon military site: Fortification
 #. TRANSLATORS: Note helptext for an Amazon military site: Patrol Post
 #. TRANSLATORS: Note helptext for an Amazon military site: Warriors’ Dwelling
 #. TRANSLATORS: Note helptext for an Amazon military site: Tower
@@ -26122,6 +26424,8 @@ msgid ""
 "felt that the spirit of our fathers was with us.’"
 msgstr ""
 
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Barrier
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Tower
 #. TRANSLATORS: Lore author helptext for a Barbarian military site: Barrier
 #. TRANSLATORS: Lore author helptext for a Barbarian military site: Tower
 #: input:5587 input:5601 standard

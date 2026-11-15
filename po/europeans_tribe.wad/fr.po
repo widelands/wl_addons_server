@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Atanase Albaran, 2025
-# C138, 2025
+# C138, 2026
+# Atanase Albaran, 2026
 # David D, 2026
 #
 #, fuzzy
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-11-14 03:27+0100\n"
+"POT-Creation-Date: 2026-11-15 03:27+0100\n"
 "PO-Revision-Date: 2024-12-14 17:38+0000\n"
 "Last-Translator: David D, 2026\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
@@ -756,6 +756,11 @@ msgctxt "europeans_building"
 msgid "Basic Coal Mine"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
@@ -2343,6 +2348,8 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making space because ...
 #. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
 #. TRANSLATORS: Completed/Skipped/Did not start making space because ...
+#. TRANSLATORS: Completed/Skipped/Did not start cutting trees because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making space because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/rare_tree_cutters_hut_advanced/init.lua:71
 #: input:71 input:72 input:90 standard
 msgid "harvesting log"
@@ -3358,6 +3365,16 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skiwoolpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skimealpped/Did not start trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:57
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:113
 #: addons/europeans_tribe.wad/tribes/buildings/productionsites/europeans/store_small_cloth/init.lua:125
@@ -3637,6 +3654,8 @@ msgctxt "europeans_building"
 msgid "mining water"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
@@ -4663,6 +4682,8 @@ msgstr ""
 msgid "Balsa Tree (Pole)"
 msgstr ""
 
+#. TRANSLATORS:  This is an Amazon rare tree.
+#. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
 #. TRANSLATORS: This is an Amazon rare tree.
 #. TRANSLATORS:  This is an Amazon rare tree.
@@ -6041,6 +6062,8 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
+#. TRANSLATORS: Helptext for an Europeans immovable: Ashes
+#. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:796
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:803 input:796
 #: input:803 input:2640 input:2647 standard
@@ -6285,6 +6308,11 @@ msgid "There is a lot of marble here."
 msgstr "Il y a beaucoup de marbre ici."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for an Amazon immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for an Atlantean immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for a Barbarian immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for an Empire immovable: Ship Under Construction
+#. TRANSLATORS: Helptext for a Frisian immovable: Ship Under Construction
 #. TRANSLATORS: Helptext for an Amazon immovable: Ship Under Construction
 #. TRANSLATORS: Helptext for an Atlantean immovable: Ship Under Construction
 #. TRANSLATORS: Helptext for a Barbarian immovable: Ship Under Construction
@@ -7097,6 +7125,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Headquarters
 #. TRANSLATORS: Purpose helptext for an Empire warehouse: Headquarters
 #. TRANSLATORS: Purpose helptext for a Frisian warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for an Amazon warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for an Empire warehouse: Headquarters
+#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Headquarters
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1338 input:1338
 #: input:3891 input:3909 input:3928 input:3946 input:3964 standard
 msgctxt "europeans_building"
@@ -7104,6 +7137,11 @@ msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans warehouse: Headquarters
+#. TRANSLATORS: Note helptext for an Amazon warehouse: Headquarters
+#. TRANSLATORS: Note helptext for an Atlantean warehouse: Headquarters
+#. TRANSLATORS: Note helptext for a Barbarian warehouse: Headquarters
+#. TRANSLATORS: Note helptext for an Empire warehouse: Headquarters
+#. TRANSLATORS: Note helptext for a Frisian warehouse: Headquarters
 #. TRANSLATORS: Note helptext for an Amazon warehouse: Headquarters
 #. TRANSLATORS: Note helptext for an Atlantean warehouse: Headquarters
 #. TRANSLATORS: Note helptext for a Barbarian warehouse: Headquarters
@@ -7121,6 +7159,11 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Port
 #. TRANSLATORS: Purpose helptext for an Empire warehouse: Port
 #. TRANSLATORS: Purpose helptext for a Frisian warehouse: Port
+#. TRANSLATORS: Purpose helptext for an Amazon warehouse: Port
+#. TRANSLATORS: Purpose helptext for an Atlantean warehouse: Port
+#. TRANSLATORS: Purpose helptext for a Barbarian warehouse: Port
+#. TRANSLATORS: Purpose helptext for an Empire warehouse: Port
+#. TRANSLATORS: Purpose helptext for a Frisian warehouse: Port
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1347
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1354 input:1347
 #: input:1354 input:3900 input:3919 input:3937 input:3955 input:3973 standard
@@ -7131,6 +7174,11 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans market: Market
+#. TRANSLATORS: Purpose helptext for an Amazon market: Market
+#. TRANSLATORS: Purpose helptext for an Atlantean market: Market
+#. TRANSLATORS: Purpose helptext for a Barbarian market: Market
+#. TRANSLATORS: Purpose helptext for an Empire market: Market
+#. TRANSLATORS: Purpose helptext for a Frisian market: Market
 #. TRANSLATORS: Purpose helptext for an Amazon market: Market
 #. TRANSLATORS: Purpose helptext for an Atlantean market: Market
 #. TRANSLATORS: Purpose helptext for a Barbarian market: Market
@@ -7165,6 +7213,11 @@ msgctxt "europeans_building"
 msgid "Roads and trees along the shoreline block drawing water."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutters House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Woodcutters House
@@ -8571,6 +8624,10 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Woodcutters House
+#. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1385
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1394
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1403
@@ -8613,6 +8670,9 @@ msgid ""
 "rubber."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
@@ -9554,6 +9614,9 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Jungle Preserver's Hut
+#. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1446
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1455
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1464
@@ -9910,6 +9973,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1507
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1516
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1525 input:1507
@@ -9918,6 +9983,10 @@ msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
+#. TRANSLATORS: Note helptext for a Europeans production site: Quarry
+#. TRANSLATORS: Note helptext for an Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for a Europeans production site: Stonecutters Hut
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
@@ -11190,6 +11259,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Well
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1574
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1581
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1588
@@ -11202,6 +11273,8 @@ msgctxt "europeans_building"
 msgid "Draws water out of the deep."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Reed Yard
@@ -11990,6 +12063,15 @@ msgstr ""
 #. TRANSLATORS: Note helptext for Europeans production site: Cocoa Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Corn Farm
 #. TRANSLATORS: Note helptext for Europeans production site: Cotton Plantation
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Yard
+#. TRANSLATORS: Note helptext for Europeans production site: Reed Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Vineyard
+#. TRANSLATORS: Note helptext for Europeans production site: Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Blackroot Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Cotton Plantation
+#. TRANSLATORS: Note helptext for Europeans production site: Cocoa Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Corn Farm
+#. TRANSLATORS: Note helptext for Europeans production site: Cotton Plantation
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1611
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1620
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1629 input:1611
@@ -12022,6 +12104,8 @@ msgid ""
 "The berry farm needs free space within the work area to plant the bushes."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Wood Hardener
@@ -13926,6 +14010,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Deep Marble Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Rock Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Rock Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Granite Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Stone Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Marble Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deep Marble Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Rock Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Rock Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1865
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1872
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1879
@@ -14707,6 +14798,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deep Coal Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deeper Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for Europeans production site: Coal Mine
@@ -15505,6 +15603,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1928
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1935
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1942
@@ -16294,6 +16399,13 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for Europeans production site: Deeper Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1963
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1970
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:1977
@@ -16367,6 +16479,8 @@ msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Health’, ‘Evade’,‘Defense’ and 'Attack'."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Shipyard
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Shipyard
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
@@ -18118,6 +18232,37 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Frisian military site: Outpost
 #. TRANSLATORS: Purpose helptext for a Frisian military site: Tower
 #. TRANSLATORS: Purpose helptext for a Frisian military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Patrol Post
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Treetop Sentry
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Warriors’ Dwelling
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Tower
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Observation Tower
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Amazon military site: Fortification
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhouse
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Guardhall
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Small Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: High Tower
+#. TRANSLATORS: Purpose helptext for an Atlantean military site: Castle
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Sentry
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Barrier
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Tower
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Fortress
+#. TRANSLATORS: Purpose helptext for a Barbarian military site: Citadel
+#. TRANSLATORS: Purpose helptext for an Empire military site: Blockhouse
+#. TRANSLATORS: Purpose helptext for an Empire military site: Sentry
+#. TRANSLATORS: Purpose helptext for an Empire military site: Outpost
+#. TRANSLATORS: Purpose helptext for an Empire military site: Barrier
+#. TRANSLATORS: Purpose helptext for an Empire military site: Tower
+#. TRANSLATORS: Purpose helptext for an Empire military site: Fortress
+#. TRANSLATORS: Purpose helptext for an Empire military site: Castle
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Wooden Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: High Wooden Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Sentinel
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Outpost
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Tower
+#. TRANSLATORS: Purpose helptext for a Frisian military site: Fortress
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2100
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2109
 #: addons/europeans_tribe.wad/tribes/initialization/units.lua:2118
@@ -19373,6 +19518,30 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans military site: Tower
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
 #. TRANSLATORS: Note helptext for an Europeans military site: Fortress
+#. TRANSLATORS: Note helptext for an Atlantean military site: Guardhouse
+#. TRANSLATORS: Note helptext for an Atlantean military site: Guardhall
+#. TRANSLATORS: Note helptext for an Atlantean military site: Small Tower
+#. TRANSLATORS: Note helptext for an Atlantean military site: Tower
+#. TRANSLATORS: Note helptext for an Atlantean military site: High Tower
+#. TRANSLATORS: Note helptext for an Atlantean military site: Castle
+#. TRANSLATORS: Note helptext for a Barbarian military site: Sentry
+#. TRANSLATORS: Note helptext for a Barbarian military site: Barrier
+#. TRANSLATORS: Note helptext for a Barbarian military site: Tower
+#. TRANSLATORS: Note helptext for a Barbarian military site: Fortress
+#. TRANSLATORS: Note helptext for a Barbarian military site: Citadel
+#. TRANSLATORS: Note helptext for an Empire military site: Blockhouse
+#. TRANSLATORS: Note helptext for an Empire military site: Sentry
+#. TRANSLATORS: Note helptext for an Empire military site: Outpost
+#. TRANSLATORS: Note helptext for an Empire military site: Barrier
+#. TRANSLATORS: Note helptext for an Empire military site: Tower
+#. TRANSLATORS: Note helptext for an Empire military site: Fortress
+#. TRANSLATORS: Note helptext for an Empire military site: Castle
+#. TRANSLATORS: Note helptext for a Frisian military site: Wooden Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: High Wooden Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: Sentinel
+#. TRANSLATORS: Note helptext for a Frisian military site: Outpost
+#. TRANSLATORS: Note helptext for a Frisian military site: Tower
+#. TRANSLATORS: Note helptext for a Frisian military site: Fortress
 #. TRANSLATORS: Note helptext for an Atlantean military site: Guardhouse
 #. TRANSLATORS: Note helptext for an Atlantean military site: Guardhall
 #. TRANSLATORS: Note helptext for an Atlantean military site: Small Tower
@@ -21053,7 +21222,7 @@ msgstr ""
 #: input:8 standard
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr ""
+msgstr "Farine d'orge"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
@@ -21065,43 +21234,43 @@ msgstr ""
 #: input:8 standard
 msgctxt "ware"
 msgid "Oat"
-msgstr ""
+msgstr "Avoine"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr ""
+msgstr "Champ d'avoine (récolté)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr ""
+msgstr "Champ d'avoine (moyen)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr ""
+msgstr "Champ d'avoine (mûr)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr ""
+msgstr "Champ d'avoine (petit)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr ""
+msgstr "Champ d'avoine (petit)"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: input:8 standard
 msgctxt "ware"
 msgid "Oat Flour"
-msgstr ""
+msgstr "Farine d'avoine"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
@@ -21125,49 +21294,49 @@ msgstr ""
 #: input:8 standard
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Seigle"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Champ de seigle (moissonné)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Champ de seigle (moyen)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "Champ de seigle (mûr)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Champ de seigle (petit)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: input:8 standard
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Champ de seigle (minuscule)"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: input:8 standard
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr ""
+msgstr "Farine de seigle"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: input:8 standard
 msgctxt "ware"
 msgid "Wheat Flour"
-msgstr ""
+msgstr "Farine de blé"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21419,13 +21588,13 @@ msgstr ""
 #: input:9 standard
 msgctxt "atlanteans_worker"
 msgid "Builder"
-msgstr ""
+msgstr "Bâtisseur"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: input:9 standard
 msgctxt "atlanteans_worker"
 msgid "Carrier"
-msgstr ""
+msgstr "Porteur"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21437,13 +21606,13 @@ msgstr ""
 #: input:9 standard
 msgctxt "atlanteans_building"
 msgid "Castle"
-msgstr ""
+msgstr "Château"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "empire_building"
 msgid "Castle"
-msgstr ""
+msgstr "Château"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21455,7 +21624,7 @@ msgstr ""
 #: input:9 standard
 msgctxt "barbarians_building"
 msgid "Citadel"
-msgstr ""
+msgstr "Citadelle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21557,19 +21726,19 @@ msgstr ""
 #: input:9 standard
 msgctxt "amazons_building"
 msgid "Fortification"
-msgstr ""
+msgstr "Fortification"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "amazons_building"
 msgid "Fortress"
-msgstr ""
+msgstr "Forteresse"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "barbarians_building"
 msgid "Fortress"
-msgstr ""
+msgstr "Forteresse"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21641,7 +21810,7 @@ msgstr ""
 #: input:9 standard
 msgctxt "atlanteans_building"
 msgid "High Tower"
-msgstr ""
+msgstr "Tour haute"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21719,7 +21888,7 @@ msgstr ""
 #: input:9 standard
 msgctxt "amazons_building"
 msgid "Observation Tower"
-msgstr ""
+msgstr "Tour de guet"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21821,7 +21990,7 @@ msgstr ""
 #: input:9 standard
 msgctxt "atlanteans_building"
 msgid "Small Tower"
-msgstr ""
+msgstr "Petite tour"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21863,19 +22032,19 @@ msgstr ""
 #: input:9 standard
 msgctxt "amazons_building"
 msgid "Tower"
-msgstr ""
+msgstr "Tour"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "atlanteans_building"
 msgid "Tower"
-msgstr ""
+msgstr "Tour"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
 msgctxt "barbarians_building"
 msgid "Tower"
-msgstr ""
+msgstr "Tour"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: input:9 standard
@@ -21947,115 +22116,115 @@ msgstr ""
 #: input:30 standard
 msgctxt "atlanteans_building"
 msgid "Your soldiers have occupied your high tower."
-msgstr ""
+msgstr "Vos soldats ont occupé votre tour haute."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:31 standard
 msgctxt "amazons_building"
 msgid "Your soldiers have occupied your observation tower."
-msgstr ""
+msgstr "Vos soldats ont occupé votre tour de guet."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:32 standard
 msgctxt "atlanteans_building"
 msgid "Your high tower discovered an aggressor."
-msgstr ""
+msgstr "Votre tour haute a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:32 standard
 msgctxt "empire_building"
 msgid "Your soldiers have occupied your castle."
-msgstr ""
+msgstr "Vos soldats ont occupé votre château."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:33 standard
 msgctxt "amazons_building"
 msgid "Your observation tower discovered an aggressor."
-msgstr ""
+msgstr "Votre tour de guet a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:33 standard
 msgctxt "amazons_building"
 msgid "Your soldiers have occupied your fortification."
-msgstr ""
+msgstr "Vos soldats ont occupé votre fortification."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:34 standard
 msgctxt "empire_building"
 msgid "Your castle discovered an aggressor."
-msgstr ""
+msgstr "Votre château a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:34 standard
 msgctxt "atlanteans_building"
 msgid "Your high tower is under attack."
-msgstr ""
+msgstr "Votre tour haute est attaquée."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:35 standard
 msgctxt "amazons_building"
 msgid "Your fortification discovered an aggressor."
-msgstr ""
+msgstr "Votre fortification a découvert un agresseur."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:35 standard
 msgctxt "amazons_building"
 msgid "Your observation tower is under attack."
-msgstr ""
+msgstr "Votre tour de guet est attaquée."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:36 standard
 msgctxt "atlanteans_building"
 msgid "The enemy defeated your soldiers at the high tower."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la tour haute."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:36 standard
 msgctxt "empire_building"
 msgid "Your castle is under attack."
-msgstr ""
+msgstr "Votre château est attaqué."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:37 standard
 msgctxt "amazons_building"
 msgid "The enemy defeated your soldiers at the observation tower."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la tour de guet."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:37 standard
 msgctxt "amazons_building"
 msgid "Your fortification is under attack."
-msgstr ""
+msgstr "Votre fortification est attaquée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:38 standard
 msgctxt "empire_building"
 msgid "The enemy defeated your soldiers at the castle."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats au château."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:38 standard
 msgctxt "atlanteans_building"
 msgid "Your soldiers defeated the enemy at the high tower."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la tour haute."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:39 standard
 msgctxt "amazons_building"
 msgid "The enemy defeated your soldiers at the fortification."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la fortification."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:39 standard
 msgctxt "amazons_building"
 msgid "Your soldiers defeated the enemy at the observation tower."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la tour de guet."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:40 standard
 msgctxt "empire_building"
 msgid "Your soldiers defeated the enemy at the castle."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi au château."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:40 standard
@@ -22073,7 +22242,7 @@ msgstr ""
 #: input:41 standard
 msgctxt "amazons_building"
 msgid "Your soldiers defeated the enemy at the fortification."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la fortification."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:41 standard
@@ -22097,7 +22266,7 @@ msgstr ""
 #: input:42 standard
 msgctxt "atlanteans_building"
 msgid "Your soldiers have occupied your small tower."
-msgstr ""
+msgstr "Vos soldats ont occupé votre petite tour."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:42 standard
@@ -22139,13 +22308,13 @@ msgstr ""
 #: input:44 standard
 msgctxt "atlanteans_building"
 msgid "Your small tower discovered an aggressor."
-msgstr ""
+msgstr "Votre petite tour a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:44 standard
 msgctxt "barbarians_building"
 msgid "Your soldiers have occupied your citadel."
-msgstr ""
+msgstr "Vos soldats ont occupé votre citadelle."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:44 standard
@@ -22180,7 +22349,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: input:45 input:47 input:49 input:50 input:69 standard
 msgid "hunting"
-msgstr ""
+msgstr "chasse"
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:46 standard
@@ -22192,13 +22361,13 @@ msgstr ""
 #: input:46 standard
 msgctxt "barbarians_building"
 msgid "Your citadel discovered an aggressor."
-msgstr ""
+msgstr "Votre citadelle a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:46 standard
 msgctxt "atlanteans_building"
 msgid "Your small tower is under attack."
-msgstr ""
+msgstr "Votre petite tour est attaquée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:46 standard
@@ -22221,7 +22390,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: input:46 input:48 input:50 input:62 input:65 input:86 standard
 msgid "fishing"
-msgstr ""
+msgstr "pêche"
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:47 standard
@@ -22251,7 +22420,7 @@ msgstr ""
 #: input:48 standard
 msgctxt "atlanteans_building"
 msgid "The enemy defeated your soldiers at the small tower."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la petite tour."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:48 standard
@@ -22269,7 +22438,7 @@ msgstr ""
 #: input:48 standard
 msgctxt "barbarians_building"
 msgid "Your citadel is under attack."
-msgstr ""
+msgstr "Votre citadelle est attaquée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:48 standard
@@ -22287,7 +22456,7 @@ msgstr ""
 #: input:48 standard
 msgctxt "atlanteans_building"
 msgid "Your soldiers have occupied your castle."
-msgstr ""
+msgstr "Vos soldats ont occupé votre château."
 
 #. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
 #: input:48 input:67 standard
@@ -22322,7 +22491,7 @@ msgstr ""
 #: input:50 standard
 msgctxt "barbarians_building"
 msgid "The enemy defeated your soldiers at the citadel."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la citadelle."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:50 standard
@@ -22334,7 +22503,7 @@ msgstr ""
 #: input:50 standard
 msgctxt "atlanteans_building"
 msgid "Your castle discovered an aggressor."
-msgstr ""
+msgstr "Votre château a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:50 standard
@@ -22346,7 +22515,7 @@ msgstr ""
 #: input:50 standard
 msgctxt "atlanteans_building"
 msgid "Your soldiers defeated the enemy at the small tower."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la petite tour."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:50 standard
@@ -22369,7 +22538,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start spinning gold because ...
 #: input:51 standard
 msgid "spinning gold"
-msgstr ""
+msgstr "filage de l’or"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:52 standard
@@ -22387,13 +22556,13 @@ msgstr ""
 #: input:52 standard
 msgctxt "atlanteans_building"
 msgid "Your castle is under attack."
-msgstr ""
+msgstr "Votre château est attaqué."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:52 standard
 msgctxt "barbarians_building"
 msgid "Your soldiers defeated the enemy at the citadel."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la citadelle."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:52 standard
@@ -22426,7 +22595,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
 #: input:53 standard
 msgid "planting corn"
-msgstr ""
+msgstr "plantation de maïs"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: input:53 standard
@@ -22437,7 +22606,7 @@ msgstr ""
 #: input:54 standard
 msgctxt "atlanteans_building"
 msgid "The enemy defeated your soldiers at the castle."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats au château."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:54 standard
@@ -22503,7 +22672,7 @@ msgstr ""
 #: input:56 standard
 msgctxt "atlanteans_building"
 msgid "Your soldiers defeated the enemy at the castle."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi au château."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:56 standard
@@ -22568,7 +22737,7 @@ msgstr ""
 #: input:58 standard
 msgctxt "atlanteans_building"
 msgid "Your soldiers have occupied your tower."
-msgstr ""
+msgstr "Vos soldats ont occupé votre tour."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:58 standard
@@ -22579,11 +22748,11 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: input:58 input:62 standard
 msgid "planting reed"
-msgstr ""
+msgstr "plante des roseaux"
 
 #: input:59 input:61 input:63 input:65 input:83 standard
 msgid "No Game"
-msgstr ""
+msgstr "Pas de gibier"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:59 standard
@@ -22611,7 +22780,7 @@ msgstr ""
 
 #: input:60 input:62 input:64 input:76 input:79 standard
 msgid "No Fish"
-msgstr ""
+msgstr "Pas de poisson"
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:60 standard
@@ -22647,19 +22816,19 @@ msgstr ""
 #: input:60 standard
 msgctxt "amazons_building"
 msgid "Your soldiers have occupied your tower."
-msgstr ""
+msgstr "Vos soldats ont occupé votre tour."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:60 standard
 msgctxt "barbarians_building"
 msgid "Your soldiers have occupied your tower."
-msgstr ""
+msgstr "Vos soldats ont occupé votre tour."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:60 standard
 msgctxt "atlanteans_building"
 msgid "Your tower discovered an aggressor."
-msgstr ""
+msgstr "Votre tour a découvert un assaillant."
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
 #: input:60 standard
@@ -22674,12 +22843,12 @@ msgstr ""
 
 #: input:61 input:63 input:65 input:77 input:80 standard
 msgid "Out of Fish"
-msgstr ""
+msgstr "Plus de poisson"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: input:61 input:63 input:65 input:67 input:85 standard
 msgid "Out of Game"
-msgstr ""
+msgstr "Plus de gibier"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:61 standard
@@ -22702,12 +22871,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cassava because ...
 #: input:61 standard
 msgid "harvesting cassava"
-msgstr ""
+msgstr "récolte de manioc"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: input:61 standard
 msgid "harvesting corn"
-msgstr ""
+msgstr "récolte de maïs"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: input:61 standard
@@ -22717,7 +22886,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: input:61 input:109 standard
 msgid "planting rye"
-msgstr ""
+msgstr "la plantation de seigle"
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:62 standard
@@ -22755,19 +22924,19 @@ msgstr ""
 #: input:62 standard
 msgctxt "amazons_building"
 msgid "Your tower discovered an aggressor."
-msgstr ""
+msgstr "Votre tour a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:62 standard
 msgctxt "barbarians_building"
 msgid "Your tower discovered an aggressor."
-msgstr ""
+msgstr "Votre tour a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:62 standard
 msgctxt "atlanteans_building"
 msgid "Your tower is under attack."
-msgstr ""
+msgstr "Votre tour est attaquée."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:63 standard
@@ -22794,13 +22963,13 @@ msgstr ""
 #: input:63 standard
 msgctxt "amazons_building"
 msgid "Your soldiers have occupied your fortress."
-msgstr ""
+msgstr "Vos soldats ont occupé votre forteresse."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:64 standard
 msgctxt "atlanteans_building"
 msgid "The enemy defeated your soldiers at the tower."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la tour."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:64 standard
@@ -22818,24 +22987,24 @@ msgstr ""
 #: input:64 standard
 msgctxt "amazons_building"
 msgid "Your tower is under attack."
-msgstr ""
+msgstr "Votre tour est attaquée."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:64 standard
 msgctxt "barbarians_building"
 msgid "Your tower is under attack."
-msgstr ""
+msgstr "Votre tour est attaquée."
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: input:64 standard
 msgid "harvesting cocoa"
-msgstr ""
+msgstr "récolte de cacao"
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:65 standard
 msgctxt "amazons_building"
 msgid "Your fortress discovered an aggressor."
-msgstr ""
+msgstr "Votre forteresse a découvert un assaillant."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:65 standard
@@ -22859,25 +23028,25 @@ msgstr ""
 #: input:66 standard
 msgctxt "amazons_building"
 msgid "The enemy defeated your soldiers at the tower."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la tour."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:66 standard
 msgctxt "barbarians_building"
 msgid "The enemy defeated your soldiers at the tower."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la tour."
 
 #. TRANSLATORS: Message sent by an Atlantean military site
 #: input:66 standard
 msgctxt "atlanteans_building"
 msgid "Your soldiers defeated the enemy at the tower."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la tour."
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:67 standard
 msgctxt "amazons_building"
 msgid "Your fortress is under attack."
-msgstr ""
+msgstr "Votre forteresse est attaquée."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:67 standard
@@ -22895,29 +23064,29 @@ msgstr ""
 #: input:68 standard
 msgctxt "amazons_building"
 msgid "Your soldiers defeated the enemy at the tower."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la tour."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:68 standard
 msgctxt "barbarians_building"
 msgid "Your soldiers defeated the enemy at the tower."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la tour."
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: input:68 input:70 standard
 msgid "harvesting reed"
-msgstr ""
+msgstr "récolte des roseaux"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grapevines because ...
 #: input:68 standard
 msgid "planting grapevines"
-msgstr ""
+msgstr "plante des vignes"
 
 #. TRANSLATORS: Message sent by an Amazon military site
 #: input:69 standard
 msgctxt "amazons_building"
 msgid "The enemy defeated your soldiers at the fortress."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la forteresse."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:69 standard
@@ -22928,18 +23097,18 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: input:69 input:117 standard
 msgid "harvesting rye"
-msgstr ""
+msgstr "le moissonnage du seigle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: input:69 input:74 input:81 input:83 input:86 input:94 input:95 input:100
 #: input:108 standard
 msgid "smelting gold"
-msgstr ""
+msgstr "fusion de l'or"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
 #: input:70 input:75 input:91 input:130 input:169 standard
 msgid "preparing a meal"
-msgstr ""
+msgstr "préparation d'un repas"
 
 #: input:71 standard
 msgid "No Flowers"
@@ -22949,7 +23118,7 @@ msgstr ""
 #: input:71 standard
 msgctxt "amazons_building"
 msgid "Your soldiers defeated the enemy at the fortress."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la forteresse."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: input:71 standard
@@ -22960,7 +23129,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: input:71 input:73 input:87 input:91 input:96 standard
 msgid "constructing a ship"
-msgstr ""
+msgstr "construit un navire"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
 #: input:71 standard
@@ -22971,7 +23140,7 @@ msgstr ""
 #: input:71 input:72 input:83 input:84 input:85 input:86 input:88 input:104
 #: input:111 input:137 input:143 input:182 standard
 msgid "preparing a ration"
-msgstr ""
+msgstr "préparation d'une ration"
 
 #: input:72 standard
 msgid "Out of Flowers"
@@ -22987,7 +23156,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making clay because ...
 #: input:72 standard
 msgid "making clay"
-msgstr ""
+msgstr "fabrication d’argile"
 
 #: input:73 standard
 msgctxt "europeans_building"
@@ -23031,7 +23200,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish because ...
 #: input:74 standard
 msgid "breeding fish"
-msgstr ""
+msgstr "élève des poissons"
 
 #: input:75 standard
 msgctxt "europeans_building"
@@ -23068,7 +23237,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grapevines because ...
 #: input:76 standard
 msgid "harvesting grapes"
-msgstr ""
+msgstr "récolte de raisin"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: input:77 input:80 input:93 standard
@@ -23086,7 +23255,7 @@ msgstr ""
 #: input:78 standard
 msgctxt "barbarians_building"
 msgid "Your soldiers have occupied your fortress."
-msgstr ""
+msgstr "Vos soldats ont occupé votre forteresse."
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: input:78 input:87 standard
@@ -23097,12 +23266,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
 #: input:78 input:86 input:128 standard
 msgid "planting wheat"
-msgstr ""
+msgstr "semer du blé"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
 #: input:79 standard
 msgid "harvesting barley"
-msgstr ""
+msgstr "récolter l’orge"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:80 standard
@@ -23114,12 +23283,12 @@ msgstr ""
 #: input:80 standard
 msgctxt "barbarians_building"
 msgid "Your fortress discovered an aggressor."
-msgstr ""
+msgstr "Votre forteresse a découvert un assaillant."
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: input:80 standard
 msgid "grinding barley"
-msgstr ""
+msgstr "à moudre de l'orge"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: input:81 standard
@@ -23130,7 +23299,7 @@ msgstr ""
 #: input:82 standard
 msgctxt "barbarians_building"
 msgid "Your fortress is under attack."
-msgstr ""
+msgstr "Votre forteresse est attaquée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: input:82 standard
@@ -23147,27 +23316,27 @@ msgstr ""
 #: input:84 standard
 msgctxt "barbarians_building"
 msgid "The enemy defeated your soldiers at the fortress."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la forteresse."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: input:86 standard
 msgctxt "barbarians_building"
 msgid "Your soldiers defeated the enemy at the fortress."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la forteresse."
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: input:86 input:95 input:136 standard
 msgid "harvesting wheat"
-msgstr ""
+msgstr "récolte de blé"
 
 #. TRANSLATORS: Short for "No Level Ground" for clay pits
 #: input:88 standard
 msgid "No Ground"
-msgstr ""
+msgstr "Aucun plat"
 
 #: input:89 standard
 msgid "No Level Ground"
-msgstr ""
+msgstr "Sol sans plat"
 
 #: input:90 standard
 msgctxt "europeans_building"
@@ -23191,7 +23360,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: input:90 standard
 msgid "planting oat"
-msgstr ""
+msgstr "Planter de l'avoine"
 
 #: input:91 input:93 input:96 input:100 input:107 standard
 msgctxt "europeans_building"
@@ -23215,6 +23384,8 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Les grumes sont d'importants matériaux de construction de base. Elles sont "
+"produites par l'abattage d'arbres."
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: input:95 standard
@@ -23235,7 +23406,7 @@ msgstr ""
 #: input:96 input:98 input:101 input:117 input:124 input:150 input:156
 #: input:195 standard
 msgid "preparing a snack"
-msgstr ""
+msgstr "préparation d'une collation"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding corn because ...
 #: input:97 input:117 standard
@@ -23245,7 +23416,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: input:98 standard
 msgid "harvesting oat"
-msgstr ""
+msgstr "Récolter de l'avoine"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing chocolate because ...
 #: input:100 input:103 input:106 input:119 standard
@@ -23424,7 +23595,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: input:154 standard
 msgid "grinding rye"
-msgstr ""
+msgstr "à moudre du seigle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a chisel because ...
 #: input:157 standard
@@ -23452,7 +23623,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start grinding wheat because ...
 #: input:172 standard
 msgid "grinding wheat"
-msgstr ""
+msgstr "En cours de moudre le blé"
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Reed
 #: input:179 standard
@@ -23476,7 +23647,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: input:192 standard
 msgid "making fire tongs"
-msgstr ""
+msgstr "fabrication de pinces à feu"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
 #: input:193 input:205 standard
@@ -23516,7 +23687,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: input:218 standard
 msgid "sewing fur garment"
-msgstr ""
+msgstr "à coudre des vêtement en fourrure"
 
 #. TRANSLATORS: Helptext for an Empire ware: Wool
 #: input:223 standard
@@ -23527,7 +23698,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
 #: input:231 standard
 msgid "forging a helmet"
-msgstr ""
+msgstr "forgeage d'un casque"
 
 #. TRANSLATORS: Helptext for a Frisian ware: Fur
 #: input:232 standard
@@ -23564,7 +23735,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
 #: input:255 input:270 standard
 msgid "making kitchen tools"
-msgstr ""
+msgstr "fabrication d'outils de cuisine"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hunting spear because ...
 #: input:257 standard
@@ -23634,7 +23805,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
 #: input:321 standard
 msgid "making a saw"
-msgstr ""
+msgstr "fabrication d'une scie"
 
 #. TRANSLATORS: Helptext for a Frisian ware: Honey
 #: input:322 standard
@@ -23684,7 +23855,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: input:347 standard
 msgid "forging a steel shield"
-msgstr ""
+msgstr "fabrication d'un bouclier acier"
 
 #. TRANSLATORS: Helptext for an Empire ware: rye, part 1
 #: input:354 standard
@@ -23712,7 +23883,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start forging a spear because ...
 #: input:372 standard
 msgid "forging a spear"
-msgstr ""
+msgstr "forgeage d'une lance"
 
 #. TRANSLATORS: Helptext for an Atlantean ware: Blackroot
 #: input:375 standard
@@ -23857,6 +24028,8 @@ msgid ""
 "Meat contains a lot of energy, and it is obtained from wild game taken by "
 "hunters."
 msgstr ""
+"La viande contient beaucoup d'énergie, et est fournie par le gibier abattu "
+"par les chasseurs."
 
 #. TRANSLATORS: Helptext for an Empire ware: Meat, part 2
 #: input:532 standard
@@ -23911,7 +24084,7 @@ msgstr ""
 #: input:590 standard
 msgctxt "ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "Le granit est un matériau de construction de base."
 
 #. TRANSLATORS: Helptext for a Barbarian ware: Granite, part 2
 #: input:592 standard
@@ -23989,6 +24162,8 @@ msgctxt "empire_ware"
 msgid "It is smelted in a smelting works to retrieve the iron."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Frisian ware: Scrap Iron
+#. TRANSLATORS: Helptext for a Frisian ware: Scrap metal (mixed)
 #. TRANSLATORS: Helptext for a Frisian ware: Scrap Iron
 #. TRANSLATORS: Helptext for a Frisian ware: Scrap metal (mixed)
 #: input:681 input:729 standard
@@ -25050,6 +25225,9 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Barbarian worker: Miner
 #. TRANSLATORS: Helptext for a Barbarian worker: Chief Miner
 #. TRANSLATORS: Helptext for a Barbarian worker: Master Miner
+#. TRANSLATORS: Helptext for a Barbarian worker: Miner
+#. TRANSLATORS: Helptext for a Barbarian worker: Chief Miner
+#. TRANSLATORS: Helptext for a Barbarian worker: Master Miner
 #: input:2185 input:2194 input:2203 standard
 msgctxt "barbarians_worker"
 msgid "Works deep in the mines to obtain coal, iron, gold or granite."
@@ -25063,11 +25241,15 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Empire worker: Miner
 #. TRANSLATORS: Helptext for an Empire worker: Master Miner
+#. TRANSLATORS: Helptext for an Empire worker: Miner
+#. TRANSLATORS: Helptext for an Empire worker: Master Miner
 #: input:2221 input:2230 standard
 msgctxt "empire_worker"
 msgid "Works deep in the mines to obtain coal, iron, gold or marble."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Frisian worker: Miner
+#. TRANSLATORS: Helptext for a Frisian worker: Master Miner
 #. TRANSLATORS: Helptext for a Frisian worker: Miner
 #. TRANSLATORS: Helptext for a Frisian worker: Master Miner
 #: input:2239 input:2248 standard
@@ -25195,6 +25377,8 @@ msgctxt "frisians_worker"
 msgid "Sews armor out of fur garments and metal."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a Barbarian worker: Blacksmith
+#. TRANSLATORS: Helptext for a Barbarian worker: Master Blacksmith
 #. TRANSLATORS: Helptext for a Barbarian worker: Blacksmith
 #. TRANSLATORS: Helptext for a Barbarian worker: Master Blacksmith
 #: input:2446 input:2455 standard
@@ -25360,11 +25544,27 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
 #. TRANSLATORS: Helptext for an Empire immovable: Rye field
 #. TRANSLATORS: Helptext for an Empire immovable: Wheat field
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cotton Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: corn field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
+#. TRANSLATORS: Helptext for an Empire immovable: Rye field
+#. TRANSLATORS: Helptext for an Empire immovable: Wheat field
 #: input:3034 input:3069 input:3104 input:3139 input:3195 input:3370 input:3587
 #: input:3622 standard
 msgid "This field has just been planted."
-msgstr ""
+msgstr "Ce champ vient juste d'être planté."
 
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cotton Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: corn field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
+#. TRANSLATORS: Helptext for an Empire immovable: Rye field
+#. TRANSLATORS: Helptext for an Empire immovable: Wheat field
 #. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
 #. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
 #. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
@@ -25377,8 +25577,10 @@ msgstr ""
 #: input:3202 input:3209 input:3377 input:3594 input:3601 input:3629 input:3636
 #: standard
 msgid "This field is growing."
-msgstr ""
+msgstr "Ce champ est en croissance."
 
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
 #. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
 #. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
 #: input:3048 input:3384 standard
@@ -25393,11 +25595,26 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
 #. TRANSLATORS: Helptext for an Empire immovable: Rye field
 #. TRANSLATORS: Helptext for an Empire immovable: Wheat field
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cotton Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: corn field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
+#. TRANSLATORS: Helptext for an Empire immovable: Rye field
+#. TRANSLATORS: Helptext for an Empire immovable: Wheat field
 #: input:3055 input:3090 input:3125 input:3160 input:3216 input:3391 input:3608
 #: input:3643 standard
 msgid "This field is ready for harvesting."
-msgstr ""
+msgstr "Ce champ est prêt pour la récolte."
 
+#. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
+#. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
+#. TRANSLATORS: Helptext for an Atlanteans immovable: corn field
+#. TRANSLATORS: Helptext for a Frisian immovable: Oat Field
+#. TRANSLATORS: Helptext for an Empire immovable: Rye field
+#. TRANSLATORS: Helptext for an Empire immovable: Wheat field
 #. TRANSLATORS: Helptext for a Frisian immovable: Barley Field
 #. TRANSLATORS: Helptext for an Atlanteans immovable: blackroot field
 #. TRANSLATORS: Helptext for an Amazon immovable: Cassava Field
@@ -25534,12 +25751,19 @@ msgstr ""
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
+#. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #: input:3858 input:3865 input:3872 input:3879 standard
 msgid ""
 "This tree is only planted by the european and amazon tribes but can be "
 "harvested for rubber."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for an Amazon warehouse: Port
+#. TRANSLATORS: Note helptext for an Atlantean warehouse: Port
+#. TRANSLATORS: Note helptext for an Barbarian warehouse: Port
+#. TRANSLATORS: Note helptext for an Empire warehouse: Port
+#. TRANSLATORS: Note helptext for a Frisian warehouse: Port
 #. TRANSLATORS: Note helptext for an Amazon warehouse: Port
 #. TRANSLATORS: Note helptext for an Atlantean warehouse: Port
 #. TRANSLATORS: Note helptext for an Barbarian warehouse: Port
@@ -25563,11 +25787,17 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
 #: input:4243 input:4252 input:4261 input:4270 input:4279 standard
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat and leather."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunters House
@@ -25579,6 +25809,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
 #. TRANSLATORS: Purpose helptext for Europeans production site: Fishers House
+#. TRANSLATORS: Purpose helptext for Europeans production site: Fishers Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Hunter-Gatherer's Hut
+#. TRANSLATORS: Purpose helptext for Europeans production site: Fishers House
 #: input:4288 input:4301 input:4314 input:4327 input:4340 standard
 msgctxt "europeans_building"
 msgid "Fishes on the coast or in lakes near the fisher’s house."
@@ -25587,11 +25820,17 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 1
 #: input:4291 input:4304 input:4317 input:4330 input:4343 standard
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 2
+#. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 2
+#. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Fisher's Hut, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Hunter-Gatherer's Hut, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Fishers House, part 2
@@ -25652,6 +25891,8 @@ msgctxt "europeans_building"
 msgid "Smelts iron ore into iron and gold dust into gold."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Furnace
 #: input:4523 input:4530 input:4537 standard
@@ -25722,6 +25963,8 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Food Preserver
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Food Preserver
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
 #: input:4614 input:4621 input:4628 standard
 msgctxt "europeans_building"
 msgid "Prepares rations to feed the scouts and miners."
@@ -25740,6 +25983,9 @@ msgid ""
 "Prepares rations and snacks to feed the miners in the basic and deep mines."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Big Inn
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Inn
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Drinking Hall
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Big Inn
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Inn
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Drinking Hall
@@ -25784,6 +26030,8 @@ msgctxt "europeans_building"
 msgid "Sows and harvests cocoa beans."
 msgstr ""
 
+#. TRANSLATORS: Purpose helptext for Europeans production site: Corn Farm
+#. TRANSLATORS: Purpose helptext for Europeans production site: Cotton Plantation
 #. TRANSLATORS: Purpose helptext for Europeans production site: Corn Farm
 #. TRANSLATORS: Purpose helptext for Europeans production site: Cotton Plantation
 #: input:4725 input:4734 standard
@@ -25857,6 +26105,10 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's Hut
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's House
 #: input:5123 input:5132 input:5141 input:5159 standard
 msgctxt "europeans_building"
 msgid "Explores unknown territory."
@@ -25879,11 +26131,16 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for Europeans production site: Ferry Yard
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ferry Yard
+#. TRANSLATORS: Purpose helptext for Europeans production site: Ferry Yard
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
+#. TRANSLATORS: Purpose helptext for a Europeans production site: Ferry Yard
 #: input:5167 input:5180 input:5193 input:5206 input:5219 standard
 msgctxt "europeans_building"
 msgid "Builds ferries."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 1
@@ -25897,12 +26154,19 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 2
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
+#. TRANSLATORS: Note helptext for a Europeans production site: Ferry Yard, part 2
+#. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard, part 2
+#. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 2
+#. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 2
 #: input:5172 input:5185 input:5198 input:5211 input:5224 input:5237 input:5250
 #: input:5263 input:5276 input:5289 standard
 msgctxt "europeans_building"
 msgid "Roads and trees along the shoreline block access to water."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 1
+#. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 1
 #. TRANSLATORS: Note helptext for an Europeans production site: Shipyard, part 1
 #. TRANSLATORS: Note helptext for a Europeans production site: Shipyard, part 1
@@ -25922,11 +26186,19 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans training site: Barracks
 #. TRANSLATORS: Note helptext for a Europeans training site: Initiation Site
 #. TRANSLATORS: Note helptext for a Europeans training site: Barracks
+#. TRANSLATORS: Note helptext for a Europeans training site: Initiation Site
+#. TRANSLATORS: Note helptext for a Europeans training site: Barracks
 #: input:5309 input:5316 input:5323 input:5330 input:5337 standard
 msgctxt "europeans_building"
 msgid "Improves the health of soldiers through healers, in exchange for money."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
+#. TRANSLATORS: Note helptext for a Europeans training site: Training Glade
+#. TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
+#. TRANSLATORS: Note helptext for a Europeans training site: Arena
+#. TRANSLATORS: Note helptext for a Europeans training site: Colosseum
+#. TRANSLATORS: Note helptext for a Europeans training site: Training Arena
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
 #. TRANSLATORS: Note helptext for a Europeans training site: Training Glade
 #. TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
@@ -25945,12 +26217,23 @@ msgstr ""
 #. TRANSLATORS: Note helptext for a Europeans training site: Dungeon
 #. TRANSLATORS: Note helptext for a Europeans training site: Trainingcamp
 #. TRANSLATORS: Note helptext for a Europeans training site: Training Camp
+#. TRANSLATORS: Note helptext for a Europeans training site: Trainingcamp
+#. TRANSLATORS: Note helptext for a Europeans training site: Warriors Gathering
+#. TRANSLATORS: Note helptext for a Europeans training site: Dungeon
+#. TRANSLATORS: Note helptext for a Europeans training site: Trainingcamp
+#. TRANSLATORS: Note helptext for a Europeans training site: Training Camp
 #: input:5386 input:5393 input:5400 input:5407 input:5414 standard
 msgctxt "europeans_building"
 msgid ""
 "An instructor improves soldiers' handling of weapons in exchange for payment."
 msgstr ""
 
+#. TRANSLATORS: Note helptext for an Amazon military site: Patrol Post
+#. TRANSLATORS: Note helptext for an Amazon military site: Warriors’ Dwelling
+#. TRANSLATORS: Note helptext for an Amazon military site: Tower
+#. TRANSLATORS: Note helptext for an Amazon military site: Observation Tower
+#. TRANSLATORS: Note helptext for an Amazon military site: Fortress
+#. TRANSLATORS: Note helptext for an Amazon military site: Fortification
 #. TRANSLATORS: Note helptext for an Amazon military site: Patrol Post
 #. TRANSLATORS: Note helptext for an Amazon military site: Warriors’ Dwelling
 #. TRANSLATORS: Note helptext for an Amazon military site: Tower
@@ -26076,6 +26359,8 @@ msgid ""
 "felt that the spirit of our fathers was with us.’"
 msgstr ""
 
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Barrier
+#. TRANSLATORS: Lore author helptext for a Barbarian military site: Tower
 #. TRANSLATORS: Lore author helptext for a Barbarian military site: Barrier
 #. TRANSLATORS: Lore author helptext for a Barbarian military site: Tower
 #: input:5587 input:5601 standard

@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Daniel Nylander <po@danielnylander.se>, 2025
+# Daniel Nylander <po@danielnylander.se>, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \"https://www.widelands.org/wiki/ReportingBugs/\"\n"
-"POT-Creation-Date: 2026-06-12 03:21+0200\n"
+"POT-Creation-Date: 2026-11-15 03:29+0100\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -27,6 +27,8 @@ msgid ""
 "The game is peaceful for 45 minutes.<br><br>(For a different time adapt the "
 "constant in the code in 'init.lua'.)"
 msgstr ""
+"Spelet är fredligt i 45 minuter.<br><br>(Om du vill använda en annan tid "
+"ändrar du konstanten i koden i 'init.lua'.)"
 
 #: addons/time-limitted-peaceful.wad/addon:9 input:9 standard
 msgid "Time limited peaceful mode"
