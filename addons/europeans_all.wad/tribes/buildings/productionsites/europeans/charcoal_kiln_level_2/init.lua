@@ -1,29 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/charcoal_kiln/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_charcoal_kiln_level_2",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Charcoal Kiln Level 2"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 50, 61 },
-        },
-    },
-    spritesheets = {
-        working = {
-            frames = 5,
-            columns = 5,
-            rows = 1,
-            hotspot = { 50, 61 },
-        },
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "medium",
     enhancement = {
         name = "europeans_charcoal_kiln_level_3",
@@ -38,7 +31,7 @@ wl.Descriptions():new_productionsite_type {
             marble = 1
         }
     },
-   
+
     aihints = {
         prohibited_till = 900,
         very_weak_ai_limit = 2,

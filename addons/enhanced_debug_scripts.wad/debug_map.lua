@@ -93,11 +93,17 @@ function change_terrain(startx, starty, radius, terrainname)
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
 
-    for _, field in ipairs(fields) do
-        -- Terrain-Typ setzen
-        field.terr = terrainname
-        -- Deko-Variante explizit gleichsetzen
-        field.terd = terrainname
+    -- Terrainbeschreibung holen
+    if game:get_terrain_description(terrainname) then
+        local terrdesc = game:get_terrain_description(terrainname)
+
+        for _, field in ipairs(fields) do
+            field.terr = terrdesc.name
+            field.terd = terrdesc.name
+        end
+    else
+        print("Warnung: Terrain '" .. terrainname .. "' existiert nicht!")
+        return
     end
 end
 

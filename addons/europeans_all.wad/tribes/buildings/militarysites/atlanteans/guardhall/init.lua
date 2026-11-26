@@ -1,15 +1,23 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/militarysites/atlanteans/guardhall/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_militarysite_type {
    name = "europeans_atlanteans_guardhall",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("atlanteans_building", "Guardhall"),
    icon = dirname .. "menu.png",
-   size = "medium",
 
+   animation_directory = dirname,
+   animations = animations,
+   spritesheets = spritesheets,
+
+   size = "medium",
    buildcost = {
       log = 2,
       planks = 3,
@@ -24,13 +32,6 @@ wl.Descriptions():new_militarysite_type {
 
    aihints = {
       fighting = true
-   },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 62, 73 },
-      }
    },
 
    max_soldiers = 7,

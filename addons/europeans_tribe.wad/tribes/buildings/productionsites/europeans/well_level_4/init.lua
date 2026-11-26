@@ -7,7 +7,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Big Well"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     animations = {
         idle = {
@@ -18,7 +18,7 @@ wl.Descriptions():new_productionsite_type {
             hotspot = { 40, 55 }
         },
     },
-    
+
     size = "medium",
 
     aihints = {
@@ -26,14 +26,14 @@ wl.Descriptions():new_productionsite_type {
         weak_ai_limit = 8,
         normal_ai_limit = 16,
     },
-    
+
     working_positions = {
         barbarians_carrier = 1,
         atlanteans_carrier = 1,
         empire_carrier = 1,
         frisians_carrier = 1
     },
-    
+
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
@@ -88,7 +88,7 @@ wl.Descriptions():new_productionsite_type {
             }
         }
     },
-    
+
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource
         title = _"No Water",

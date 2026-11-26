@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/trainingsites/amazons/warriors_gathering/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_trainingcamp_level_1",
@@ -10,19 +14,8 @@ wl.Descriptions():new_trainingsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {hotspot = {43, 54}},
-        unoccupied = {hotspot = {43, 54}},
-    },
-    spritesheets = {
-        working = {
-            hotspot = {43, 54},
-            fps = 15,
-            frames = 30,
-            columns = 6,
-            rows = 5
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
     destructible = true,
@@ -40,7 +33,7 @@ wl.Descriptions():new_trainingsite_type {
             granite = 1,
             spidercloth = 1,
             diamond = 1,
-            gold = 1
+            scrap_metal_mixed = 1
         }
     },
 

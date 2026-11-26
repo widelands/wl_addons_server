@@ -1,22 +1,24 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/warehouses/atlanteans/headquarters/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_warehouse_type {
    name = "europeans_atlanteans_headquarters",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("europeans_building", "Headquarters"),
    icon = dirname .. "menu.png",
-   size = "big",
-   destructible = false,
 
    animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 84, 117 },
-      },
-   },
+   animations = animations,
+   spritesheets = spritesheets,
+
+   size = "big",
+   destructible = false,
 
    aihints = {
       prohibited_till = 21600,

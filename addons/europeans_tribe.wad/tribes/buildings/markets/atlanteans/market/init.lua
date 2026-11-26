@@ -1,30 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/markets/atlanteans/market/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_market_type {
    name = "europeans_atlanteans_market",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("europeans_building", "Market"),
-   animation_directory = dirname,
    icon = dirname .. "menu.png",
-   
+
    animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 85, 105 }
-      }
-   },
-   spritesheets = {
-      build = {
-         frames = 2,
-         columns = 2,
-         rows = 1,
-         hotspot = { 85, 105 }
-      }
-   },
-   
+   animations = animations,
+   spritesheets = spritesheets,
+
    size = "big",
    buildcost = {
       log = 3,

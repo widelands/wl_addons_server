@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/goldmine/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_goldmine_basic",
@@ -10,28 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-      idle = {
-         hotspot = { 21, 36 },
-      },
-      empty = {
-         hotspot = { 21, 36 },
-      },
-    },
-    spritesheets = {
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 21, 36 }
-      },
-      working = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 21, 36 }
-      },
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "mine",
     enhancement = {

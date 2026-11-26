@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/warehouses/amazons/warehouse/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_store_wood_advanced",
@@ -10,11 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {hotspot = {43, 62}},
-        working = {basename = "idle", hotspot = {43, 62}},
-        build = {hotspot = {43, 62}},
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
     buildcost = {
@@ -46,8 +47,9 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "gold", amount = 8 },
-        { name = "ironwood", amount = 12 },
+        { name = "log", amount = 18 },
         { name = "balsa", amount = 12 },
+        { name = "ironwood", amount = 12 },
         { name = "rubber", amount = 12 },
     },
 
@@ -71,9 +73,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
                 "sleep=duration:30s",
-                "call=trade_ironwood_copper",
+                "call=trade_log_copper",
                 "sleep=duration:30s",
                 "call=trade_balsa_copper",
+                "sleep=duration:30s",
+                "call=trade_ironwood_copper",
                 "sleep=duration:30s",
                 "call=trade_rubber_copper"
             }
@@ -86,9 +90,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
                 "sleep=duration:30s",
-                "call=trade_ironwood_silver",
+                "call=trade_log_silver",
                 "sleep=duration:30s",
                 "call=trade_balsa_silver",
+                "sleep=duration:30s",
+                "call=trade_ironwood_silver",
                 "sleep=duration:30s",
                 "call=trade_rubber_silver"
             }
@@ -101,11 +107,49 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",
                 "sleep=duration:30s",
-                "call=trade_ironwood_gold",
+                "call=trade_log_gold",
                 "sleep=duration:30s",
                 "call=trade_balsa_gold",
                 "sleep=duration:30s",
+                "call=trade_ironwood_gold",
+                "sleep=duration:30s",
                 "call=trade_rubber_gold"
+            }
+        },
+        trade_balsa_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs balsa",
+                "return=skipped unless site has gold",
+                "consume=balsa:2 gold",
+                "animate=working duration:20s",
+                "produce=coin_copper:3",
+                "sleep=duration:30s",
+            }
+        },
+        trade_balsa_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs balsa",
+                "return=skipped unless site has gold",
+                "consume=balsa:3 gold",
+                "animate=working duration:20s",
+                "produce=coin_silver:3",
+                "sleep=duration:30s",
+            }
+        },
+        trade_balsa_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs balsa",
+                "return=skipped unless site has gold",
+                "consume=balsa:4 gold",
+                "animate=working duration:20s",
+                "produce=coin_gold:3",
+                "sleep=duration:30s",
             }
         },
         trade_ironwood_copper = {
@@ -144,39 +188,39 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
-        trade_balsa_copper = {
+        trade_log_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs balsa",
+                "return=skipped when economy needs log",
                 "return=skipped unless site has gold",
-                "consume=balsa:2 gold",
+                "consume=log:4 gold",
                 "animate=working duration:20s",
-                "produce=coin_copper:3",
+                "produce=coin_copper:2",
                 "sleep=duration:30s",
             }
         },
-        trade_balsa_silver = {
+        trade_log_silver = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs balsa",
+                "return=skipped when economy needs log",
                 "return=skipped unless site has gold",
-                "consume=balsa:3 gold",
+                "consume=log:6 gold",
                 "animate=working duration:20s",
-                "produce=coin_silver:3",
+                "produce=coin_silver:2",
                 "sleep=duration:30s",
             }
         },
-        trade_balsa_gold = {
+        trade_log_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs balsa",
+                "return=skipped when economy needs log",
                 "return=skipped unless site has gold",
-                "consume=balsa:4 gold",
+                "consume=log:8 gold",
                 "animate=working duration:20s",
-                "produce=coin_gold:3",
+                "produce=coin_gold:2",
                 "sleep=duration:30s",
             }
         },

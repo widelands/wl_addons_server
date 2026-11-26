@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/woodcutters_house/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_lumberjacks_house_level_4",
@@ -10,26 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        unoccupied = {
-            hotspot = {40, 52}
-        }
-    },
-    spritesheets = {
-        idle = {
-           hotspot = {40, 69},
-           frames = 10,
-           columns = 5,
-           rows = 2,
-           fps = 10
-        },
-        build = {
-           hotspot = {40, 52},
-           frames = 3,
-           columns = 3,
-           rows = 1,
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "small",
 
@@ -75,7 +61,6 @@ wl.Descriptions():new_productionsite_type {
                 -- max. time total: 68.8 + 120 = 188.8 sec
                 -- avg. time total: 49 + 120 = 169 sec
                 "return=skipped when economy needs log",
-                "return=skipped when economy needs liana",
                 "callworker=harvest",
                 "sleep=duration:60s"
             }

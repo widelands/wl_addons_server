@@ -1,15 +1,23 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/militarysites/empire/sentry/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_militarysite_type {
    name = "europeans_empire_sentry",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("empire_building", "Sentry"),
    icon = dirname .. "menu.png",
-   size = "small",
 
+   animation_directory = dirname,
+   animations = animations,
+   spritesheets = spritesheets,
+
+   size = "small",
    buildcost = {
       planks = 1,
       log = 1,
@@ -18,16 +26,6 @@ wl.Descriptions():new_militarysite_type {
    return_on_dismantle = {
       granite = 1,
       planks = 1
-   },
-
-   animation_directory = dirname,
-   spritesheets = {
-      idle = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 38, 61 }
-      }
    },
 
    aihints = {

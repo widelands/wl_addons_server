@@ -1,35 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/inn/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_inn_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Inn"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 57, 88 },
-        },
-    },
-    spritesheets = {
-        build = {
-            frames = 4,
-            rows = 2,
-            columns = 2,
-            hotspot = { 51, 81 }
-        },
-        working = {
-            frames = 20,
-            rows = 5,
-            columns = 4,
-            hotspot = { 51, 81 }
-        },
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "medium",
     enhancement = {
         name = "europeans_inn_level_1",

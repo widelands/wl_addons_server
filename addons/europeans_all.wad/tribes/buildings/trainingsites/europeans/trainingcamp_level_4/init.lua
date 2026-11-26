@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/trainingsites/frisians/training_camp/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_trainingcamp_level_4",
@@ -10,27 +14,8 @@ wl.Descriptions():new_trainingsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        unoccupied = {
-            hotspot = {50, 60}
-        }
-    },
-    spritesheets = {
-        idle = {
-            hotspot = {50, 79},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        },
-        working = {
-            hotspot = {50, 79},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
     destructible = true,

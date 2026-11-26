@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/hunters_house/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_hunters_house_level_2",
@@ -10,12 +14,9 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 40, 49 },
-        },
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "small",
     enhancement = {
         name = "europeans_hunters_house_level_3",

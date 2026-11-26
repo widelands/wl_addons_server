@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/well/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_well_level_3",
@@ -10,21 +14,9 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-        working = {
-            hotspot = {19, 33},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        }
-    },
-    animations = {
-        idle = {
-            hotspot = {19, 33}
-        }
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "medium",
     enhancement = {
         name = "europeans_well_level_4",
@@ -92,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
     },
-    
+
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource
         title = _"No Water",

@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/warehouses/frisians/warehouse/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_store_fur",
@@ -10,29 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            hotspot = {50, 69},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        },
-        build = {
-           hotspot = {50, 69},
-           frames = 4,
-           columns = 2,
-           rows = 2,
-        },
-        working = {
-            basename = "idle",
-            hotspot = {50, 69},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
     buildcost = {

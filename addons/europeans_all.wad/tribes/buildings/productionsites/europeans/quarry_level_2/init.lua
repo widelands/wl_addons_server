@@ -1,21 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/quarry/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_quarry_level_2",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Quarry Level 2"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 40, 49 },
-        },
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "small",
     enhancement = {
         name = "europeans_quarry_level_3",

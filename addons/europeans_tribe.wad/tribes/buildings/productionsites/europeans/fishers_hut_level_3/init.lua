@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/empire/fishers_house/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_fishers_house_level_3",
@@ -10,15 +14,9 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            frames = 1,
-            columns = 1,
-            rows = 1,
-            hotspot = { 41, 59 },
-        },
-    },
-   
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "small",
     enhancement = {
         name = "europeans_fishers_house_level_4",
@@ -31,7 +29,7 @@ wl.Descriptions():new_productionsite_type {
             brick = 1
         }
     },
-    
+
     aihints = {
         needs_water = true,
         prohibited_till = 4800,

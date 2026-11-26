@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/rope_weaver_booth/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_weaving_mill_level_1",
@@ -10,20 +14,9 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {hotspot = {43, 44}},
-        unoccupied = {hotspot = {43, 44}},
-    },
-    spritesheets = {
-        working = {
-            hotspot = {43, 44},
-            fps = 15,
-            frames = 30,
-            columns = 6,
-            rows = 5
-        }
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "big",
     enhancement = {
         name = "europeans_weaving_mill_level_2",

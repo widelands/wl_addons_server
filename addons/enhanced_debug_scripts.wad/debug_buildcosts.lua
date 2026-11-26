@@ -126,5 +126,31 @@ function apply_buildcost_ruleset(tribe, ruleset)
     end
 end
 
+-- Warenziel setzen
+function set_ware_target(player_number, target, amount)
+    amount = amount or 1
+    iterate_players(player_number, function(player)
+        local tribe = player.tribe
+        for _, ware in ipairs(tribe.wares) do
+            if target == "all" or ware.name == target then
+                wl.Descriptions():modify_unit("ware", ware.name, "target_quantity", tribe.name, amount)
+            end
+        end
+    end)
+end
+
+-- Workerziel setzen
+function set_worker_target(target, amount)
+    amount = amount or 1
+    local game = wl.Game()
+    for _, player in ipairs(game.players) do
+        local tribe = player.tribe
+        for _, worker in ipairs(tribe.workers) do
+            if target == "all" or worker.name == target then
+                wl.Descriptions():modify_unit("worker", worker.name, "target_quantity", amount)
+            end
+        end
+    end
+end
 
 pop_textdomain()

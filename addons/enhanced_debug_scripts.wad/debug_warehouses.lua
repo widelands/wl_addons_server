@@ -34,10 +34,31 @@ function force_port(startx, starty, radius, player_number, complete)
                 print ("There is already a Port/Warehouse on field: ", portfield.x, portfield.y)
                 return false
             else
-                print ("New Port", player.tribe.port, "at: ", portfield.x, portfield.y)
                 if field.immovable then field.immovable:remove() end
                 return player:place_building(player.tribe.port, field, not (complete or false), true)
+                print ("New Port", player.tribe.port, "at: ", portfield.x, portfield.y)
             end
+        end
+        ::continue::
+    end
+end
+
+function replace_port(startx, starty, radius, player_number, complete)
+    complete = complete or true
+
+    local game = wl.Game()
+    local map = game.map
+    if not (map.allows_seafaring and map.number_of_port_spaces > 0) then return end
+
+    for _, portfield in pairs(map.port_spaces) do
+        if map_distance(startx, starty, portfield.x, portfield.y) <= radius then
+            local field = map:get_field(portfield.x, portfield.y)
+            local player = (player_number > 0) and game.players[player_number] or field.owner
+            if not player then goto continue end
+
+            if field.immovable then field.immovable:remove() end
+            return player:place_building(player.tribe.port, field, not (complete or false), true)
+            print ("New Port", player.tribe.port, "at: ", portfield.x, portfield.y)
         end
         ::continue::
     end
@@ -331,7 +352,7 @@ function set_warehouse_stock(startx, starty, target, amount)
 
         elseif category == "metals" then
             for _, tbuilding in ipairs(tribe.buildings) do
-                if string.find(tbuilding.name, "smelting") and tbuilding.output_ware_types then
+                if (string.find(tbuilding.name, "furnace") or string.find(tbuilding.name, "smelting")) and tbuilding.output_ware_types then
                     for waretype, _ in pairs(tbuilding.output_ware_types) do
                         apply_ware(waretype.name)
                     end

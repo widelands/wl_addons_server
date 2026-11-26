@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/empire/armorsmithy/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_metal_manufactory",
@@ -10,33 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            frames = 1,
-            columns = 1,
-            rows = 1,
-            hotspot = { 50, 66 },
-        },
-        unoccupied = {
-            frames = 1,
-            columns = 1,
-            rows = 1,
-            hotspot = { 50, 66 },
-        },
-        build = {
-            frames = 4,
-            columns = 4,
-            rows = 1,
-            hotspot = { 50, 66 }
-        },
-        working = {
-            fps = 5,
-            frames = 20,
-            columns = 10,
-            rows = 2,
-            hotspot = { 50, 66 }
-        },
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "big",
     buildcost = {

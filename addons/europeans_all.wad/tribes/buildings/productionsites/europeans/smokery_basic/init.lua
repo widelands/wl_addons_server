@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/smokery/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_smokery_basic",
@@ -10,22 +14,9 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 54, 74 },
-        },
+    animations = animations,
+    spritesheets = spritesheets,
 
-    },
-    spritesheets = {
-        working = {
-            fps = 20,
-            frames = 5,
-            columns = 5,
-            rows = 1,
-            hotspot = { 54, 74 },
-        },
-    },
-    
     size = "medium",
     enhancement = {
         name = "europeans_smokery_advanced",

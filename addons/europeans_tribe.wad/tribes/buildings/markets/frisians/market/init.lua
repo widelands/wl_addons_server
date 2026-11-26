@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/markets/frisians/market/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_market_type {
    name = "europeans_frisians_market",
@@ -10,21 +14,8 @@ wl.Descriptions():new_market_type {
    icon = dirname .. "menu.png",
 
    animation_directory = dirname,
-   spritesheets = {
-      idle = {
-         hotspot = {90, 95},
-         frames = 10,
-         columns = 5,
-         rows = 2,
-         fps = 10
-      },
-      build = {
-         hotspot = {90, 95},
-         frames = 5,
-         columns = 5,
-         rows = 1
-      }
-   },
+   animations = animations,
+   spritesheets = spritesheets,
 
    size = "big",
    buildcost = {

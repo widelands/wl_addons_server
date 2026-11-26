@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/rangers_hut/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_foresters_house_basic",
@@ -10,33 +14,9 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-      unoccupied = {
-         hotspot = { 45, 49 },
-      },
-    },
-    spritesheets = {
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 45, 49 }
-      },
-      idle = {
-         frames = 20,
-         rows = 5,
-         columns = 4,
-         hotspot = { 45, 49 }
-      },
-      working = {
-         basename = "idle",
-         frames = 20,
-         rows = 5,
-         columns = 4,
-         hotspot = { 45, 49 }
-      },
-    },
-   
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "small",
     enhancement = {
         name = "europeans_foresters_house_level_1",
@@ -56,7 +36,7 @@ wl.Descriptions():new_productionsite_type {
         scrap_wood = 2,
         granite = 1
     },
-    
+
     aihints = {
         space_consumer = true,
         prohibited_till = 5400,
@@ -72,7 +52,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "water", amount = 8 },
     },
-    
+
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...

@@ -1,27 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/weaving_mill/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_weaving_mill_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Weaving Mill"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-      idle = {
-         hotspot = { 27, 56 },
-      },
-      build = {
-         hotspot = { 27, 56 },
-      },
-      working = {
-         hotspot = { 27, 56 },
-      },
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "big",
     enhancement = {
         name = "europeans_weaving_mill_level_1",
@@ -34,7 +29,7 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         }
     },
-    
+
     buildcost = {
         granite = 4,
         blackwood = 4,

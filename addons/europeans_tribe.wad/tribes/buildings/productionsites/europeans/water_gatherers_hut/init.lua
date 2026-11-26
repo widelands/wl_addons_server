@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/water_gatherers_hut/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_water_gatherers_hut",
@@ -10,10 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {hotspot = {39, 46}},
-        unoccupied = {hotspot = {39, 46}}
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "small",
     buildcost = {

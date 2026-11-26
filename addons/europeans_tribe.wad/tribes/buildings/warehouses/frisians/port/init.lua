@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/warehouses/frisians/port/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_warehouse_type {
    name = "europeans_frisians_port",
@@ -9,9 +13,13 @@ wl.Descriptions():new_warehouse_type {
    descname = pgettext ("europeans_building", "Port"),
    animation_directory = dirname,
    icon = dirname .. "menu.png",
+
+   animation_directory = dirname,
+   animations = animations,
+   spritesheets = spritesheets,
+
    size = "port",
    map_check = {"seafaring"},
-
    buildcost = {
       brick = 6,
       granite = 4,
@@ -24,25 +32,9 @@ wl.Descriptions():new_warehouse_type {
       brick = 3,
       granite = 2,
       log = 3,
-      gold = 1,
       cloth = 1,
-      reed = 2
-   },
-
-   spritesheets = {
-      idle = {
-         hotspot = {64, 117},
-         frames = 10,
-         columns = 5,
-         rows = 2,
-         fps = 10
-      },
-      build = {
-         hotspot = {64, 117},
-         frames = 4,
-         columns = 2,
-         rows = 2,
-      }
+      reed = 2,
+      scrap_metal_mixed = 1
    },
 
    aihints = {

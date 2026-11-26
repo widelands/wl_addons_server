@@ -1,37 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/warehouses/barbarians/warehouse/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_store_plants",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Plants Store"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            frames = 1,
-            rows = 1,
-            columns = 1,
-            hotspot = { 60, 78 }
-        },
-        working = {
-            basename = "idle",
-            frames = 1,
-            rows = 1,
-            columns = 1,
-            hotspot = { 60, 78 }
-        },
-        build = {
-            frames = 4,
-            rows = 2,
-            columns = 2,
-            hotspot = { 60, 78 }
-        },
-    },
-     
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "medium",
     buildcost = {
         granite = 3,
@@ -44,7 +29,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2,
         grout = 2
     },
-    
+
     aihints = {
         prohibited_till = 10800,
         forced_after = 14400,

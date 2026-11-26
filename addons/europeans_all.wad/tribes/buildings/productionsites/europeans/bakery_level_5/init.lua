@@ -1,39 +1,24 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/honey_bread_bakery/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_bakery_level_5",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Bakery Level 5"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        unoccupied = {
-            hotspot = {50, 70}
-        }
-    },
-    spritesheets = {
-        idle = {
-            hotspot = {50, 82},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        },
-        working = {
-            hotspot = {50, 82},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
-    
+
     aihints = {
         prohibited_till = 3600,
         very_weak_ai_limit = 1,

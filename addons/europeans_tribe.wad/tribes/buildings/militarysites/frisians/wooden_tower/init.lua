@@ -1,17 +1,24 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/militarysites/frisians/wooden_tower/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_militarysite_type {
    name = "europeans_frisians_wooden_tower",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext ("frisians_building", "Wooden Tower"),
-   animation_directory = dirname,
    icon = dirname .. "menu.png",
+
+   animation_directory = dirname,
+   animations = animations,
+   spritesheets = spritesheets,
+
    size = "small",
    vision_range = 14,
-
    enhancement = {
       name = "europeans_frisians_wooden_tower_high",
       enhancement_cost = {
@@ -29,27 +36,6 @@ wl.Descriptions():new_militarysite_type {
    },
    return_on_dismantle = {
       log = 2
-   },
-
-   spritesheets = {
-      idle = {
-         hotspot = {22, 69},
-         frames = 10,
-         columns = 5,
-         rows = 2,
-         fps = 10
-      },
-      build = {
-         hotspot = {22, 69},
-         frames = 3,
-         columns = 3,
-         rows = 1,
-      }
-   },
-   animations = {
-      unoccupied = {
-         hotspot = {22, 69}
-      }
    },
 
    aihints = {

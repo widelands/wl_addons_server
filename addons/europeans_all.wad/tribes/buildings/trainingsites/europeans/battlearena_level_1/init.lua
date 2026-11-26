@@ -1,27 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/trainingsites/amazons/training_glade/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_battlearena_level_1",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Battle Arena Level 1"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        idle = {hotspot = {92, 92}},
-        unoccupied = {hotspot = {92, 92}}
-    },
-    spritesheets = { working = {
-        hotspot = {92, 92},
-        fps = 15,
-        frames = 30,
-        columns = 6,
-        rows = 5
-    }},
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "big",
     destructible = true,
     enhancement = {
@@ -38,7 +33,7 @@ wl.Descriptions():new_trainingsite_type {
             granite = 1,
             spidercloth = 1,
             diamond = 1,
-            gold = 1
+            scrap_metal_mixed = 1
         }
     },
 

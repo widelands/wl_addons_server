@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/empire/weaving_mill/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_weaving_mill_level_3",
@@ -10,30 +14,9 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-      idle = {
-         hotspot = { 65, 62 },
-      },
-      unoccupied = {
-         hotspot = { 65, 62 },
-      },
-    },
-    spritesheets = {
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 65, 62 }
-      },
-      working = {
-         fps = 5,
-         frames = 11,
-         rows = 4,
-         columns = 3,
-         hotspot = { 65, 62 }
-      },
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "big",
     enhancement = {
         name = "europeans_weaving_mill_level_4",
@@ -48,7 +31,7 @@ wl.Descriptions():new_productionsite_type {
             reed = 1
         }
     },
-    
+
     aihints = {
         supports_seafaring = true,
         prohibited_till = 600,

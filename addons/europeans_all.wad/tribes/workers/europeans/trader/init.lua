@@ -1,14 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "campaigns/atl02.wmf/scripting/tribes/atlanteans_trader/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_worker_type {
    name = "atlanteans_trader",
    -- TRANSLATORS: This is a worker name used in lists of workers
    descname = pgettext("atlanteans_worker", "Trader"),
-   animation_directory = dirname,
    icon = dirname .. "menu.png",
+
+   animation_directory = dirname,
+   animations = animations,
+   spritesheets = spritesheets,
+
    vision_range = 3,
 
    buildcost = {
@@ -42,23 +50,6 @@ wl.Descriptions():new_worker_type {
          "findobject=attrib:tradepole radius:80",
       }
    },
-
-   spritesheets = {
-      idle = {
-         frames = 1,
-         rows = 1,
-         columns = 1,
-         hotspot = { 36, 44 }
-      },
-      walk = {
-         fps = 10,
-         frames = 10,
-         rows = 2,
-         columns = 5,
-         directional = true,
-         hotspot = { 36, 44 }
-      },
-   }
 }
 
 pop_textdomain()

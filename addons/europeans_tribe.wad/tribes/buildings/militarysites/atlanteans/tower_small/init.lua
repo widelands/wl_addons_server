@@ -1,16 +1,24 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/militarysites/atlanteans/tower_small/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_militarysite_type {
    name = "europeans_atlanteans_tower_small",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("atlanteans_building", "Small Tower"),
    icon = dirname .. "menu.png",
+
+   animation_directory = dirname,
+   animations = animations,
+   spritesheets = spritesheets,
+
    size = "small",
    vision_range = 13,
-
    buildcost = {
       log = 1,
       planks = 2,
@@ -19,13 +27,6 @@ wl.Descriptions():new_militarysite_type {
    return_on_dismantle = {
       planks = 1,
       granite = 1
-   },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 46, 71 },
-      }
    },
 
    aihints = {

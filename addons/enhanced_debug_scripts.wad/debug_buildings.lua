@@ -19,8 +19,8 @@ function building_matches(tbuilding, building_name, tribe_name)
 end
 
 function field_is_free_for_building(field)
-    return not field.immovable 
-       or (field.immovable.descr.type_name ~= "constructionsite" 
+    return not field.immovable
+       or (field.immovable.descr.type_name ~= "constructionsite"
        and field.immovable.descr.type_name ~= "warehouse")
 end
 
@@ -60,7 +60,9 @@ function force_building(startx, starty, radius, building_name, complete)
     local found_building = nil
 
     for _, tbuilding in ipairs(player.tribe.buildings) do
-        if tbuilding.name == building_name or string.find(tbuilding.name, building_name, 1, true) then
+        if tbuilding.name == building_name then
+            found_building = tbuilding.name
+        elseif string.find(tbuilding.name, building_name, 1, true) then
             found_building = tbuilding.name
             break
         end
@@ -138,8 +140,8 @@ function upgrade_all_buildings_in_region(startx, starty, radius)
     local game, map = wl.Game(), wl.Game().map
     for _, f in ipairs(map:get_field(startx, starty):region(radius or 0)) do
         local b = f.immovable
-        if b and valid_building_types[b.descr.type_name] then 
-            b:enhance(true) 
+        if b and valid_building_types[b.descr.type_name] then
+            b:enhance(true)
             return true
         end
     end

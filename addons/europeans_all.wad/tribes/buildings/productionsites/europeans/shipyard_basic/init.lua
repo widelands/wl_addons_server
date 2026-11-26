@@ -1,34 +1,21 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/shipyard/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_shipyard_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Shipyard"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 62, 48 },
-        },
-        unoccupied = {
-            hotspot = { 62, 48 },
-        },
-        working = {
-            hotspot = { 61, 47 },
-        },
-    },
-    spritesheets = {
-        build = {
-            frames = 4,
-            rows = 2,
-            columns = 2,
-            hotspot = { 61, 47 }
-        },
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     map_check = {"seafaring"},
     size = "medium",

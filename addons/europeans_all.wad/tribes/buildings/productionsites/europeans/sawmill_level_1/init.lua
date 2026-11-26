@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/sawmill/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_sawmill_level_1",
@@ -10,20 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 60, 68 },
-        },
-    },
-    spritesheets = {
-        working = {
-            fps = 25,
-            frames = 19,
-            columns = 10,
-            rows = 2,
-            hotspot = { 60, 68 },
-        },
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
     enhancement = {

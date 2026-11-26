@@ -1,25 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/trainingsites/atlanteans/dungeon/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_trainingcamp_level_2",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Training Camp Level 2"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 55, 59 },
-        },
-        working = {
-            basename = "idle",
-            hotspot = { 55, 59 },
-        }
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "medium",
     destructible = true,
     enhancement = {
@@ -35,7 +32,7 @@ wl.Descriptions():new_trainingsite_type {
             scrap_wood = 3,
             granite = 1,
             marble = 2,
-            gold = 1
+            scrap_metal_mixed = 1
         }
     },
 

@@ -1,37 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/empire/smelting_works/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_smelting_works_level_3",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Smelting Works Level 3"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    spritesheets = {
-      idle = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 48, 60 },
-      },
-      build = {
-         frames = 4,
-         columns = 4,
-         rows = 1,
-         hotspot = { 48, 60 },
-      },
-      working = {
-         fps = 5,
-         frames = 20,
-         columns = 10,
-         rows = 2,
-         hotspot = { 48, 60 },
-      },
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "medium",
     enhancement = {
         name = "europeans_smelting_works_level_4",

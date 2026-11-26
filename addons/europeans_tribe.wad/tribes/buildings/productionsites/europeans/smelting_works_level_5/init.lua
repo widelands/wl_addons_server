@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/recycling_center/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_smelting_works_level_5",
@@ -10,40 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        unoccupied = {
-            hotspot = {50, 58}
-        }
-    },
-    spritesheets = {
-        idle = {
-           hotspot = {50, 70},
-           frames = 10,
-           columns = 5,
-           rows = 2,
-           fps = 10
-        },
-        build = {
-           hotspot = {50, 58},
-           frames = 3,
-           columns = 3,
-           rows = 1,
-        },
-        working_metal = {
-           hotspot = {50, 71}, -- the whole animation is one pixel lower
-           frames = 10,
-           columns = 5,
-           rows = 2,
-           fps = 10
-        },
-        working_fur = {
-           hotspot = {50, 70},
-           frames = 10,
-           columns = 5,
-           rows = 2,
-           fps = 10
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
 

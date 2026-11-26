@@ -1,16 +1,24 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/militarysites/amazons/tower/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_militarysite_type {
    name = "europeans_amazons_tower",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext ("amazons_building", "Tower"),
    icon = dirname .. "menu.png",
+
+   animation_directory = dirname,
+   animations = animations,
+   spritesheets = spritesheets,
+
    size = "medium",
    vision_range = 16,
-
    enhancement = {
       name = "europeans_amazons_observation_tower",
       enhancement_cost = {
@@ -36,12 +44,6 @@ wl.Descriptions():new_militarysite_type {
       granite = 1,
       log = 1,
       ironwood = 1
-   },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {hotspot = {50, 81}},
-      unoccupied = {hotspot = {50, 81}},
    },
 
    aihints = {

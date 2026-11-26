@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/rare_tree_plantation/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_special_tree_plantation",
@@ -10,16 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {unoccupied = {hotspot = {48, 50}}},
-    spritesheets = {
-        idle = {
-            hotspot = {49, 50},
-            fps = 4,
-            frames = 4,
-            columns = 2,
-            rows = 2
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
     enhancement = {
@@ -54,11 +50,11 @@ wl.Descriptions():new_productionsite_type {
     working_positions = {
         amazons_jungle_master = 1
     },
-    
+
     inputs = {
         { name = "water", amount = 8 },
     },
-    
+
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...

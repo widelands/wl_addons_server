@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/reindeer_farm/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_animal_farm_level_5",
@@ -10,33 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        unoccupied = {
-            hotspot = {84, 59}
-        }
-    },
-    spritesheets = {
-        idle = {
-           hotspot = {84, 81},
-           frames = 20,
-           columns = 5,
-           rows = 4,
-           fps = 10
-        },
-        working = {
-           hotspot = {84, 81},
-           frames = 20,
-           columns = 5,
-           rows = 4,
-           fps = 10
-        },
-        build = {
-           hotspot = {84, 61},
-           frames = 4,
-           columns = 2,
-           rows = 2,
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "big",
 

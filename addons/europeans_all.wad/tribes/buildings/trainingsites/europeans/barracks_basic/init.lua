@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/barbarians/barracks/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_barracks_basic",
@@ -10,23 +14,8 @@ wl.Descriptions():new_trainingsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = {55, 49}
-        },
-        working = {
-            basename = "idle",
-            hotspot = {55, 49}
-        }
-    },
-    spritesheets = {
-        build = {
-            hotspot = {55, 49},
-            frames = 3,
-            columns = 1,
-            rows = 3
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
     destructible = true,
@@ -44,7 +33,7 @@ wl.Descriptions():new_trainingsite_type {
             granite = 1,
             rope = 1,
             rubber = 1,
-            gold = 1
+            scrap_metal_mixed = 1
         }
     },
     buildcost = {
@@ -57,7 +46,7 @@ wl.Descriptions():new_trainingsite_type {
         scrap_wood = 4,
         granite = 2,
         reed = 2,
-        gold = 1
+        scrap_metal_mixed = 1
     },
 
     aihints = {

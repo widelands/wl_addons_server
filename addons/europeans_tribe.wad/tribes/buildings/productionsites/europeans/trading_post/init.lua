@@ -1,6 +1,10 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 local dirname = path.dirname(__file__)
+--local animations = get_animations(dirname)
+--local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_trading_post",

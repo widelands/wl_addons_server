@@ -1,6 +1,10 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 local dirname = path.dirname(__file__)
+--local animations = get_animations(dirname)
+--local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_store_animals",
@@ -46,7 +50,7 @@ wl.Descriptions():new_productionsite_type {
         empire_scout = 1,
         frisians_scout = 1
     },
-    
+
     inputs = {
         { name = "gold", amount = 12 },
         { name = "barbarians_ox", amount = 6 },
@@ -55,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "empire_donkey", amount = 6 },
         { name = "frisians_reindeer", amount = 6 },
     },
-    
+
      programs = {
           main = {
                 -- TRANSLATORS: Completed/Skipped/Did not start trading because ...

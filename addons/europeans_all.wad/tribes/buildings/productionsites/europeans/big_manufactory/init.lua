@@ -1,37 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/tailors_shop/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_big_manufactory",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Big Manufactory"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
-    animations = {
-        unoccupied = {
-            hotspot = {50, 72}
-        }
-    },
-    spritesheets = {
-        idle = {
-            hotspot = {50, 82},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        },
-        working = {
-            hotspot = {50, 82},
-            frames = 10,
-            columns = 5,
-            rows = 2,
-            fps = 10
-        }
-    },
-    
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "big",
     buildcost = {
         log = 2,
@@ -56,14 +41,14 @@ wl.Descriptions():new_productionsite_type {
         brick = 1,
         quartz = 1
     },
-    
+
     aihints = {
         prohibited_till = 900,
         basic_amount = 1,
         very_weak_ai_limit = 1,
         weak_ai_limit = 2
     },
-    
+
     working_positions = {
         amazons_dressmaker = 1,
         amazons_stone_carver = 1,
@@ -88,7 +73,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "quartz", amount = 6 },
         { name = "gold_thread", amount = 6 },
     },
-    
+
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...

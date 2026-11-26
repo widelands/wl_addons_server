@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/amazons/jungle_preservers_hut/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_foresters_house_level_1",
@@ -10,21 +14,9 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            hotspot = {50, 46},
-            fps = 4,
-            frames = 4,
-            columns = 2,
-            rows = 2
-        }
-    },
-    animations = {
-        unoccupied = {
-            hotspot = {39, 46}
-        }
-    },
-   
+    animations = animations,
+    spritesheets = spritesheets,
+
     size = "small",
     enhancement = {
         name = "europeans_foresters_house_level_2",
@@ -36,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
             granite = 1
         }
     },
-    
+
     aihints = {
         space_consumer = true,
         prohibited_till = 5400,
@@ -52,7 +44,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "water", amount = 8 },
     },
-    
+
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...

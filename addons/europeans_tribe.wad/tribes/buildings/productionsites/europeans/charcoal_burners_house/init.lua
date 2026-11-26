@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/frisians/charcoal_burners_house/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_charcoal_burners_house",
@@ -10,26 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        unoccupied = {
-            hotspot = {43, 56}
-        }
-    },
-    spritesheets = {
-        idle = {
-           hotspot = {43, 74},
-           frames = 10,
-           columns = 5,
-           rows = 2,
-           fps = 10
-        },
-        build = {
-           hotspot = {43, 56},
-           frames = 3,
-           columns = 3,
-           rows = 1,
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "small",
     buildcost = {

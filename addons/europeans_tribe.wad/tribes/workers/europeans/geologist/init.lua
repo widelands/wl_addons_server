@@ -1,14 +1,22 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/workers/atlanteans/geologist/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_worker_type {
     name = "europeans_geologist",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Geologist"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
+
+    animation_directory = dirname,
+    animations = animations,
+    spritesheets = spritesheets,
+
     vision_range = 2,
 
     buildcost = {
@@ -26,45 +34,12 @@ wl.Descriptions():new_worker_type {
         -- Search program, executed when we have found a place to hack on
         search = {
             "animate=hacking duration:5s",
-            "animate=idle duration:2s",
+            "animate=working duration:2s",
             "playsound=sound/hammering/geologist_hammer priority:50% allow_multiple",
             "animate=hacking duration:3s",
             "findresources"
         }
     },
 
-    spritesheets = {
-        idle = {
-            fps = 10,
-            frames = 10,
-            rows = 4,
-            columns = 3,
-            hotspot = { 10, 23 }
-        },
-        hacking = {
-            fps = 10,
-            frames = 10,
-            rows = 4,
-            columns = 3,
-            hotspot = { 12, 20 }
-        },
-        walk = {
-            fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
-            directional = true,
-            hotspot = { 11, 23 }
-        },
-        walkload = {
-            basename = "walk",
-            fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
-            directional = true,
-            hotspot = { 11, 23 }
-        },
-    },
 }
 pop_textdomain()

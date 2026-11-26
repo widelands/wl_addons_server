@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/trainingsites/empire/trainingcamp/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_trainingcamp_level_3",
@@ -10,21 +14,8 @@ wl.Descriptions():new_trainingsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            frames = 1,
-            columns = 1,
-            rows = 1,
-            hotspot = { 87, 113 }
-        },
-        working = {
-            basename = "idle",
-            frames = 1,
-            columns = 1,
-            rows = 1,
-            hotspot = { 87, 113 }
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "medium",
     destructible = true,
@@ -40,7 +31,7 @@ wl.Descriptions():new_trainingsite_type {
             brick = 2,
             grout = 2,
             reed = 1,
-            gold = 1
+            scrap_metal_mixed = 1
         }
     },
 

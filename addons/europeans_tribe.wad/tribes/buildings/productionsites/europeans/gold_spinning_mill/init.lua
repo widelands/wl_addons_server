@@ -1,7 +1,11 @@
+include "addons/europeans_tribe.wad/animations.lua"
+
 push_textdomain("europeans_all.wad", true)
 
 -- local dirname = path.dirname(__file__)
 local dirname = "tribes/buildings/productionsites/atlanteans/gold_spinning_mill/"
+local animations = get_animations(dirname)
+local spritesheets = get_spritesheets(dirname)
 
 wl.Descriptions():new_productionsite_type {
     name = "europeans_gold_spinning_mill",
@@ -10,15 +14,8 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 34, 74 },
-        },
-        working = {
-            basename = "idle",
-            hotspot = { 34, 74 },
-        }
-    },
+    animations = animations,
+    spritesheets = spritesheets,
 
     size = "small",
     buildcost = {
